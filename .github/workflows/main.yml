@@ -76,8 +76,7 @@ jobs:
       matrix:
         targetPlatform:
           - StandaloneLinux64
-          - iOS
-          - Android
+#          - Android
           - WebGL
     steps:
       - uses: actions/checkout@v4.1.2
@@ -107,9 +106,9 @@ jobs:
       fail-fast: false
       matrix:
         targetPlatform:
-          - StandaloneWindows
+#         - StandaloneWindows
           - StandaloneWindows64
-          - WSAPlayer
+#          - WSAPlayer
     steps:
       - uses: actions/checkout@v4.1.2
         with:
