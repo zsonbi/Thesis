@@ -68,8 +68,7 @@ jobs:
           path: ${{ steps.testRunner.outputs.artifactsPath }}
 
   build:
-    needs: checklicense
-#    needs: test
+    needs: test
     name: Build for ${{ matrix.targetPlatform }}
     runs-on: ubuntu-latest
     strategy:
@@ -78,7 +77,7 @@ jobs:
         targetPlatform:
           - StandaloneLinux64
 #          - Android
-          - WebGL
+#          - WebGL
     steps:
       - uses: actions/checkout@v4.1.2
         with:
@@ -101,14 +100,15 @@ jobs:
 
 
   buildForWindows:
+    needs: test
     name: Build for ${{ matrix.targetPlatform }}
     runs-on: windows-2019
     strategy:
       fail-fast: false
       matrix:
         targetPlatform:
-#         - StandaloneWindows
-          - StandaloneWindows64
+          - StandaloneWindows
+#          - StandaloneWindows64
 #          - WSAPlayer
     steps:
       - uses: actions/checkout@v4.1.2
