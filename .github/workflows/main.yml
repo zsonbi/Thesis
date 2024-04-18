@@ -54,7 +54,7 @@ jobs:
         with:
           path: Library
           key: Library-test
-      - uses: game-ci/unity-test-runner@v2
+      - uses: game-ci/unity-test-runner@v4.1.1
         id: testRunner
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
