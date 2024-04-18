@@ -102,7 +102,7 @@ jobs:
   buildForWindows:
     needs: test
     name: Build for ${{ matrix.targetPlatform }}
-    runs-on: windows-2019
+    runs-on: windows-latest
     strategy:
       fail-fast: false
       matrix:
