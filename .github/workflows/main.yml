@@ -75,7 +75,7 @@ jobs:
       fail-fast: false
       matrix:
         targetPlatform:
-          - StandaloneLinux64
+#          - StandaloneLinux64
 #          - Android
           - WebGL
     steps:
