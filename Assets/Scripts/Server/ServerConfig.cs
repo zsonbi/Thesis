@@ -5,7 +5,7 @@ namespace Config
         public const TaskType DEFAULT_TASKTYPE = TaskType.GoodTask;
         public const TaskIntervals DEFAULT_TASKINTERVALS = TaskIntervals.Daily;
 
-        public const string SERVERPATH = "http://192.168.0.251:5555";
+        public const string SERVERPATH = "http://89.134.179.209:5555";
 
         /// <summary>
         /// Needs "UserIdentification", "Password"
