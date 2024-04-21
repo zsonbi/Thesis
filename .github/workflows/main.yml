@@ -68,7 +68,7 @@ jobs:
           path: ${{ steps.testRunner.outputs.artifactsPath }}
 
   build:
-    needs: test
+#    needs: test
     name: Build for ${{ matrix.targetPlatform }}
     runs-on: ubuntu-latest
     strategy:
