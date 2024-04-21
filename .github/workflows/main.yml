@@ -75,9 +75,8 @@ jobs:
       fail-fast: false
       matrix:
         targetPlatform:
-#          - StandaloneLinux64
+          - StandaloneLinux64
 #          - Android
-          - WebGL
     steps:
       - uses: actions/checkout@v4.1.2
         with:
@@ -97,12 +96,7 @@ jobs:
         with:
           name: Build-${{ matrix.targetPlatform }}
           path: build
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        if: matrix.targetPlatform == 'WebGL'
-        with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: build/WebGL/${{ env.PROJECT_NAME }} # The folder the action should deploy.
+
 
 
   buildForWindows:
@@ -136,3 +130,39 @@ jobs:
           name: Build-${{ matrix.targetPlatform }}
           path: build
      
+  buildForWebGL:
+    #    needs: test
+        name: Build for ${{ matrix.targetPlatform }}
+        runs-on: ubuntu-latest
+        strategy:
+          fail-fast: false
+          matrix:
+            targetPlatform:
+              - WebGL
+        steps:
+          - uses: actions/checkout@v4.1.2
+            with:
+              lfs: true
+          - uses: actions/cache@v4.0.2
+            with:
+              path: Library
+              key: Library-${{ matrix.targetPlatform }}
+          - uses: game-ci/unity-builder@v4.2.3
+            env:
+              UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+              UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+              UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+            with:
+              targetPlatform: ${{ matrix.targetPlatform }}
+              buildMethod: BuildScript.BuildWebGL
+          - uses: actions/upload-artifact@v3
+            with:
+              name: Build-${{ matrix.targetPlatform }}
+              path: build
+          - name: Deploy to GitHub Pages
+            uses: JamesIves/github-pages-deploy-action@4.1.1
+            if: matrix.targetPlatform == 'WebGL'
+            with:
+              branch: gh-pages # The branch the action should deploy to.
+              folder: build/WebGL/${{ env.PROJECT_NAME }} # The folder the action should deploy.
+             
