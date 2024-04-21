@@ -68,7 +68,7 @@ jobs:
           path: ${{ steps.testRunner.outputs.artifactsPath }}
 
   build:
-    needs: test
+#    needs: test
     name: Build for ${{ matrix.targetPlatform }}
     runs-on: ubuntu-latest
     strategy:
@@ -77,7 +77,7 @@ jobs:
         targetPlatform:
           - StandaloneLinux64
 #          - Android
-#          - WebGL
+          - WebGL
     steps:
       - uses: actions/checkout@v4.1.2
         with:
@@ -97,6 +97,12 @@ jobs:
         with:
           name: Build-${{ matrix.targetPlatform }}
           path: build
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        if: matrix.targetPlatform == 'WebGL'
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build/WebGL/${{ env.PROJECT_NAME }} # The folder the action should deploy.
 
 
   buildForWindows:
@@ -129,3 +135,4 @@ jobs:
         with:
           name: Build-${{ matrix.targetPlatform }}
           path: build
+     
