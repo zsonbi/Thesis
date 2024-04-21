@@ -1,98 +1,131 @@
-name: Release on Main 😎
+name: Unity Actions
 
-on: 
-  # This allows for manual triggering of the action
-  workflow_dispatch:
-  # This will run this action on every push to the main branch - update as required
-  push:
-    branches:
-      - main
-      - Automation
+on:
+  pull_request: {}
+  push: {}
+  workflow_dispatch: {}
 
-jobs:    
-  build-project:
-    name: Build project ✨
+### Refer to https://game.ci/docs/github/getting-started
+jobs:
+  checklicense:
+    name: Check for UNITY_LICENSE in GitHub Secrets
     runs-on: ubuntu-latest
+    outputs:
+      is_unity_license_set: ${{ steps.checklicense_job.outputs.is_unity_license_set }}
+    steps:
+      - name: Check whether unity activation requests should be done
+        id: checklicense_job
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        run: |
+            echo "Skip activation job: ${{ env.UNITY_LICENSE != '' }}"
+            export is_unity_license_set="${{ env.UNITY_LICENSE != '' }}"
+            echo "is_unity_license_set=$is_unity_license_set" >> $GITHUB_OUTPUT
 
-    # Enter in project properties here
-    env:
-      PROJECT_NAME: Thesis
+  activation:
+    needs: checklicense
+    if: needs.checklicense.outputs.is_unity_license_set == 'false'
+    name: Request manual activation file 🔑
+    runs-on: ubuntu-latest
+    steps:
+      # Request manual activation file
+      - name: Request manual activation file
+        id: getManualLicenseFile
+        uses: game-ci/unity-request-activation-file@v2
+      # Upload artifact (Unity_v20XX.X.XXXX.alf)
+      - name: Expose as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ steps.getManualLicenseFile.outputs.filePath }}
+          path: ${{ steps.getManualLicenseFile.outputs.filePath }}
 
+  test:
+    needs: checklicense
+    if: needs.checklicense.outputs.is_unity_license_set == 'true'
+    name: Run all tests ✨
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.1.2
+        with:
+          lfs: true
+      - uses: actions/cache@v4.0.2
+        with:
+          path: Library
+          key: Library-test
+      - uses: game-ci/unity-test-runner@v4.1.1
+        id: testRunner
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/upload-artifact@v3
+        with:
+          name: Test results (all modes)
+          path: ${{ steps.testRunner.outputs.artifactsPath }}
+
+  build:
+    needs: test
+    name: Build for ${{ matrix.targetPlatform }}
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        targetPlatform:         # These are the definitions from: https://docs.unity3d.com/ScriptReference/BuildTarget.html
-          - StandaloneOSX       # Build a macOS standalone (Intel 64-bit).
-#          - StandaloneWindows64 # Build a Windows 64-bit standalone.
-          - StandaloneLinux64   # Build a Linux 64-bit standalone
-          - WebGL               # Build for WebGL
-
+        targetPlatform:
+          - StandaloneLinux64
+#          - Android
+#          - WebGL
     steps:
-      # Checkout
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v4.1.2
         with:
           lfs: true
-
-      # Cache
-      - uses: actions/cache@v2
+      - uses: actions/cache@v4.0.2
         with:
           path: Library
           key: Library-${{ matrix.targetPlatform }}
-
-      # Build
-      - name: Build project
-        uses: game-ci/unity-builder@v2
+      - uses: game-ci/unity-builder@v4.2.3
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-          ## Use below variables for Professional Serial
-          # UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-          # UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-          # UNITY_SERIAL: ${{ secrets.UNITY_SERIAL }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
-          targetPlatform:  ${{ matrix.targetPlatform }}
-          buildName: ${{ env.PROJECT_NAME }}
-
-      # We manually compress the MacOS build, as uploading as an Artifact causes issues on MacOS
-      - name: Compress Build (MacOS)
-        if: matrix.targetPlatform == 'StandaloneOSX'
-        run: |
-          pushd build/${{ matrix.targetPlatform }}
-          sudo zip -r ${{ env.PROJECT_NAME }}-${{ matrix.targetPlatform }}.zip ./${{ env.PROJECT_NAME }}.app
-          popd
-          sudo mv build/${{ matrix.targetPlatform }}/${{ env.PROJECT_NAME }}-${{ matrix.targetPlatform }}.zip build/${{ env.PROJECT_NAME }}-${{ matrix.targetPlatform }}.zip
-          
-      - name: Compress Build
-        if: matrix.targetPlatform != 'StandaloneOSX'
-        run: |
-          pushd build/${{ matrix.targetPlatform }}
-          sudo zip -r ${{ env.PROJECT_NAME }}-${{ matrix.targetPlatform }}.zip ./*
-          popd
-          sudo mv build/${{ matrix.targetPlatform }}/${{ env.PROJECT_NAME }}-${{ matrix.targetPlatform }}.zip build/${{ env.PROJECT_NAME }}-${{ matrix.targetPlatform }}.zip
-
-      # Upload Artifacts
-      - name: Upload Artifacts
-        uses: actions/upload-artifact@v2
+          targetPlatform: ${{ matrix.targetPlatform }}
+      - uses: actions/upload-artifact@v3
         with:
-          name: ${{ env.PROJECT_NAME }}-${{ matrix.targetPlatform }}
-          path: build/${{ env.PROJECT_NAME }}-${{ matrix.targetPlatform }}.zip
+          name: Build-${{ matrix.targetPlatform }}
+          path: build
 
-      #Upload to Pages (For WebGL builds)
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        if: matrix.targetPlatform == 'WebGL'
-        with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: build/WebGL/${{ env.PROJECT_NAME }} # The folder the action should deploy.
 
-      # More details on usage here: https://github.com/marketplace/actions/create-release
-      - name: Create Release
-        id: create_release
-        uses: ncipollo/release-action@v1
+  buildForWindows:
+    needs: test
+    name: Build for ${{ matrix.targetPlatform }}
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        targetPlatform:
+          - StandaloneWindows
+#          - StandaloneWindows64
+#          - WSAPlayer
+    steps:
+      - uses: actions/checkout@v4.1.2
         with:
-          prerelease: true
-          allowUpdates: true
-          tag: "0.0.1" # Or what ever tag you want, but there must be a tag!
-          body: "Pre-release"
-          artifacts: 'build/${{ env.PROJECT_NAME }}-${{ matrix.targetPlatform }}.zip'
-          token: ${{ secrets.GITHUB_TOKEN }}
+          lfs: true
+      - uses: actions/cache@v4.0.2
+        with:
+          path: Library
+          key: Library-${{ matrix.targetPlatform }}
+      - uses: game-ci/unity-builder@v4.2.3
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          targetPlatform: ${{ matrix.targetPlatform }}
+      - uses: actions/upload-artifact@v3
+        with:
+          name: Build-${{ matrix.targetPlatform }}
+          path: build
