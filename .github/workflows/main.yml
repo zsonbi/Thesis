@@ -163,6 +163,7 @@ jobs:
             with:
               targetPlatform: ${{ matrix.targetPlatform }}
               buildMethod: BuildCommand.PerformBuild
+              buildName: WebGL
           - uses: actions/upload-artifact@v3
             with:
               name: Build-${{ matrix.targetPlatform }}
