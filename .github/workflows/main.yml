@@ -139,7 +139,7 @@ jobs:
 #           retention-days: 1
 
   buildForWebGL:
-        needs: test
+        # needs: test
         name: Build for ${{ matrix.targetPlatform }}
         runs-on: ubuntu-latest
         strategy:
