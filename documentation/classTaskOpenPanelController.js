@@ -1,0 +1,28 @@
+var classTaskOpenPanelController =
+[
+    [ "Awake", "classTaskOpenPanelController.html#ae2abd4f00deee569cebc44ad15d5bb67", null ],
+    [ "Start", "classTaskOpenPanelController.html#a8ceefffb2ce7ecd82cdd0a1010380c54", null ],
+    [ "OpenUp", "classTaskOpenPanelController.html#a1147a8c395515fe25ff585e12095bd3d", null ],
+    [ "OpenUp", "classTaskOpenPanelController.html#a510d3b27a55f6c441d24e509b2bbd4e2", null ],
+    [ "MakeItBadHabit", "classTaskOpenPanelController.html#a060a72263cf32b7c54928306df58adc9", null ],
+    [ "MakeItGoodTask", "classTaskOpenPanelController.html#a51848899b40753a10e249992b6c82ea5", null ],
+    [ "Cancel", "classTaskOpenPanelController.html#a721ffa89dcd6e24eb32eb194a161356b", null ],
+    [ "Save", "classTaskOpenPanelController.html#a8f6a5485cd8aa866f2983339beeece7e", null ],
+    [ "SavedTask", "classTaskOpenPanelController.html#a709f198720328de8bf1b9dfbf72ecc4a", null ],
+    [ "DeleteTask", "classTaskOpenPanelController.html#a20a5400ef991e24a2832a97dceb6e82d", null ],
+    [ "DeletedTask", "classTaskOpenPanelController.html#a5cfa9ad8bb8f3783ffc7df689579b2ef", null ],
+    [ "CollectFromFields", "classTaskOpenPanelController.html#a82a9ebc3acdf5014bfcb673bd6dcb5e7", null ],
+    [ "UpdateButtons", "classTaskOpenPanelController.html#aeb6c1cf2f3da2be35bb515f455d3f0d8", null ],
+    [ "TaskContainer", "classTaskOpenPanelController.html#a728b1ff0ed67d120ac2cfbbf996e077f", null ],
+    [ "TaskClosedEventHandler", "classTaskOpenPanelController.html#abfd13ff61856b69cdf082d3b2f7a1aaf", null ],
+    [ "tasksOpenPanel", "classTaskOpenPanelController.html#a5296f8a4492644b074eb63257d82ddec", null ],
+    [ "taskNameInput", "classTaskOpenPanelController.html#abc961ea4fb9a9820e28284f8503eb252", null ],
+    [ "taskIntervals", "classTaskOpenPanelController.html#a022cf15c01615aab856791aa77b9bcab", null ],
+    [ "descriptionInput", "classTaskOpenPanelController.html#ac26c1c06372467e95fc5b3a4f20dec0a", null ],
+    [ "goodTaskButton", "classTaskOpenPanelController.html#ae473d6c892d798cb0e155e5a5935fe22", null ],
+    [ "badHabitButton", "classTaskOpenPanelController.html#af20ca26287f42c551b86d9c34fb4a6d2", null ],
+    [ "UIController", "classTaskOpenPanelController.html#a34b191dcdd1e7ad7eb910a50592a66dc", null ],
+    [ "deleteTaskButton", "classTaskOpenPanelController.html#a4f9d89c38e1248523d5084b0adf14f99", null ],
+    [ "isNewTask", "classTaskOpenPanelController.html#ac0fa9db0872e1f4e4872117d5420ea42", null ],
+    [ "TASKINTERVALS", "classTaskOpenPanelController.html#a317d00246568f7c682c5d1c27032762b", null ]
+];
