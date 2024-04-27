@@ -5,7 +5,7 @@ using DataTypes;
 /// <summary>
 /// Used for generating a new world
 /// </summary>
-public class WorldGenerator : MonoBehaviour
+public class Chunk : MonoBehaviour
 {
     [Header("Materials for the tiles")]
     [SerializeField]
@@ -54,14 +54,16 @@ public class WorldGenerator : MonoBehaviour
     {
         //Load the values from the settings
         LoadFromSettings();
-
         //Randomizes the offset
         if (RandomizeOffset)
         {
             this.XOffset = Random.Range(0, 99999);
             this.ZOffset = Random.Range(0, 99999);
         }
+    }
 
+    public void InitChunk(int xOffset, int zOffset)
+    {
         for (ChunkCellType i = 0; i <= ChunkCellType.Road; i++)
         {
             chunkCells.Add(i, new List<Vector3>());
@@ -80,6 +82,11 @@ public class WorldGenerator : MonoBehaviour
         //        CombineMeshes(i);
         //}
         CreateMeshes();
+        this.gameObject.transform.localPosition = new Vector3(xOffset * GameConfig.CHUNK_SIZE, 0, zOffset * GameConfig.CHUNK_SIZE);
+    }
+
+    public void HideChunk()
+    {
     }
 
     private void CreateMeshes()

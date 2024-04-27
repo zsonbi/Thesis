@@ -82,19 +82,18 @@ public class RoadGenerator
             return;
         }
 
-        if (Mathf.Pow(forwardCounter - 30, 3) / 20000 > Random.Range(0.1f, 1f))
+        if (Mathf.Pow(forwardCounter - 7, 3) / 1000 > Random.Range(0f, 1f) && !CheckForward(roadPos + DirectionConverter.VectorFromDirection(roadDir), roadPos + DirectionConverter.VectorFromDirection(roadDir), 0))
         {
-            int interSectionCount = Random.Range(0, 3);
+            int interSectionCount = Random.Range(2, 3);
             List<Vector2Int> possibleDirs = new List<Vector2Int>();
 
-            if (!RoadMatrix[roadPos.y, roadPos.x - 1])
-                possibleDirs.Add(new Vector2Int(roadPos.x - 1, roadPos.y));
-            if (!RoadMatrix[roadPos.y, roadPos.x + 1])
-                possibleDirs.Add(new Vector2Int(roadPos.x + 1, roadPos.y));
-            if (!RoadMatrix[roadPos.y - 1, roadPos.x])
-                possibleDirs.Add(new Vector2Int(roadPos.x, roadPos.y - 1));
-            if (!RoadMatrix[roadPos.y + 1, roadPos.x])
-                possibleDirs.Add(new Vector2Int(roadPos.x, roadPos.y + 1));
+            possibleDirs.Add(new Vector2Int(roadPos.x - 1, roadPos.y));
+
+            possibleDirs.Add(new Vector2Int(roadPos.x + 1, roadPos.y));
+
+            possibleDirs.Add(new Vector2Int(roadPos.x, roadPos.y - 1));
+
+            possibleDirs.Add(new Vector2Int(roadPos.x, roadPos.y + 1));
 
             //Debug.Log(possibleDirs.Count);
 
@@ -102,10 +101,35 @@ public class RoadGenerator
             {
                 int index = Random.Range(0, possibleDirs.Count);
 
-                CreateRoad(possibleDirs[index], DirectionConverter.DirectionFromVector(possibleDirs[index] - roadPos), 0);
+                if (!CheckForward(possibleDirs[index], possibleDirs[index] - roadPos, 0))
+                {
+                    CreateRoad(possibleDirs[index], DirectionConverter.DirectionFromVector(possibleDirs[index] - roadPos), 0);
+                }
                 possibleDirs.RemoveAt(index);
             }
         }
-        CreateRoad(roadPos + DirectionConverter.VectorFromDirection(roadDir), roadDir, forwardCounter + 1);
+        else
+        {
+            CreateRoad(roadPos + DirectionConverter.VectorFromDirection(roadDir), roadDir, forwardCounter + 1);
+        }
+    }
+
+    private bool CheckForward(Vector2Int position, Vector2Int dir, int counter)
+    {
+        if (position.x < 0 || position.y < 0 || position.y >= size || position.x >= size)
+            return false;
+
+        if (RoadMatrix[position.y, position.x])
+        {
+            return true;
+        }
+        else if (counter < 8)
+        {
+            return CheckForward(position + dir, dir, counter + 1);
+        }
+        else
+        {
+            return false;
+        }
     }
 }
