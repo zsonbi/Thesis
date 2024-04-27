@@ -7,14 +7,28 @@ namespace Game
 {
     namespace World
     {
+        /// <summary>
+        /// A class for handling chunk loading and unloading
+        /// </summary>
         public class World : MonoBehaviour
         {
+            /// <summary>
+            /// Chunk prefab for the chunk creation
+            /// </summary>
             [SerializeField]
             private GameObject ChunkPrefab;
 
+            [SerializeField]
+            private int ScaleAmount = 1;
+
+            /// <summary>
+            /// The chunks of the world
+            /// </summary>
             private Chunk[,] Chunks;
 
-            // Start is called before the first frame update
+            /// <summary>
+            /// Start is called before the first frame update
+            /// </summary>
             private void Start()
             {
                 Chunks = new Chunk[GameConfig.CHUNK_COUNT, GameConfig.CHUNK_COUNT];
@@ -26,8 +40,15 @@ namespace Game
                         LoadChunk(j, i);
                     }
                 }
+
+                this.transform.localScale = new Vector3(ScaleAmount, 1, ScaleAmount);
             }
 
+            /// <summary>
+            /// Loads a chunk
+            /// </summary>
+            /// <param name="x">The x index of the chunk (horizontal)</param>
+            /// <param name="z">The z index of the chunk (vertical)</param>
             public void LoadChunk(int x, int z)
             {
                 if (Chunks[z, x] == null)
@@ -52,6 +73,10 @@ namespace Game
                     }
 
                     Chunks[z, x].InitChunk(x, z, edges);
+                }
+                else
+                {
+                    Chunks[z, x].Display();
                 }
             }
         }
