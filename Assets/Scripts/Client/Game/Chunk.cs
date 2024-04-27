@@ -40,6 +40,8 @@ public class Chunk : MonoBehaviour
     //private byte[,] waterLayer { get => layers[0]; } //1 for water tiles
     private byte[,] moveLayer { get => layers[0]; } //1 for passable tiles
 
+    public List<EdgeRoadContainer> EdgeRoads { get => roadGenerator.EdgeRoads; }
+
     //private byte[,] grassLayer { get => layers[2]; } //1 for grass tiles used for the prop generation
     //private byte[,] plantLayer { get => layers[3]; } //1 where the plants are
 
@@ -62,14 +64,21 @@ public class Chunk : MonoBehaviour
         }
     }
 
-    public void InitChunk(int xOffset, int zOffset)
+    private void Display()
+    {
+        this.gameObject.SetActive(true);
+    }
+
+    public void InitChunk(int xOffset, int zOffset, List<EdgeRoadContainer> edgeRoads)
     {
         for (ChunkCellType i = 0; i <= ChunkCellType.Road; i++)
         {
             chunkCells.Add(i, new List<Vector3>());
         }
+        if (edgeRoads.Count == 0)
+            Debug.Log($"Didn't get edges: ({zOffset},{xOffset})");
 
-        roadGenerator = new RoadGenerator(GameConfig.CHUNK_SIZE, new Vector2Int(GameConfig.CHUNK_SIZE / 2, 0));
+        roadGenerator = new RoadGenerator(GameConfig.CHUNK_SIZE, edgeRoads);
 
         //Create the tiles
         CreateTiles();
@@ -172,7 +181,7 @@ public class Chunk : MonoBehaviour
     /// <returns>the proper TileType</returns>
     private ChunkCellType DetermineTileType(int x, int z)
     {
-        if (roadGenerator.RoadMatrix[x, z])
+        if (roadGenerator.RoadMatrix[z, x])
         {
             return ChunkCellType.Road;
         }
@@ -180,7 +189,7 @@ public class Chunk : MonoBehaviour
         float noise = Mathf.PerlinNoise((float)(x / (float)xSize * 5f) + XOffset, (float)(z / (float)zSize * 5f) + ZOffset) * 10f - 1.5f;
 
         // Debug.Log("noise:" + noise);
-        if (noise > 0.15f)
+        if (noise > 0.15f || true)
         {
             return ChunkCellType.Grass;
         }

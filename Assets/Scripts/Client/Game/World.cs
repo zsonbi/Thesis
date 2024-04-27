@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class World : MonoBehaviour
@@ -18,10 +19,35 @@ public class World : MonoBehaviour
         {
             for (int j = 0; j < GameConfig.CHUNK_COUNT; j++)
             {
-                Chunks[i, j] = Instantiate(ChunkPrefab, this.transform, false).GetComponent<Chunk>();
-
-                Chunks[i, j].InitChunk(j, i);
+                LoadChunk(j, i);
             }
+        }
+    }
+
+    public void LoadChunk(int x, int z)
+    {
+        if (Chunks[z, x] == null)
+        {
+            Chunks[z, x] = Instantiate(ChunkPrefab, this.transform, false).GetComponent<Chunk>();
+            List<EdgeRoadContainer> edges = new List<EdgeRoadContainer>();
+            if (z - 1 >= 0 && Chunks[z - 1, x] != null)
+            {
+                edges.AddRange(Chunks[z - 1, x].EdgeRoads.Where(x => x.EdgeRoad.y == GameConfig.CHUNK_SIZE - 1));
+            }
+            if (z + 1 < GameConfig.CHUNK_COUNT && Chunks[z + 1, x] != null)
+            {
+                edges.AddRange(Chunks[z + 1, x].EdgeRoads.Where(x => x.EdgeRoad.y == 0));
+            }
+            if (x - 1 >= 0 && Chunks[z, x - 1] != null)
+            {
+                edges.AddRange(Chunks[z, x - 1].EdgeRoads.Where(x => x.EdgeRoad.x == GameConfig.CHUNK_SIZE - 1));
+            }
+            if (x + 1 < GameConfig.CHUNK_COUNT && Chunks[z, x + 1] != null)
+            {
+                edges.AddRange(Chunks[z, x + 1].EdgeRoads.Where(x => x.EdgeRoad.x == 0));
+            }
+
+            Chunks[z, x].InitChunk(x, z, edges);
         }
     }
 }

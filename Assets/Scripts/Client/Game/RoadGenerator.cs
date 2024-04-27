@@ -32,35 +32,30 @@ public class RoadGenerator
     /// <param name="numberOfEdgeRoads">How many roads should be on the matrix edges</param>
     /// <param name="size"></param>
     /// <param name="generateStartPos"></param>
-    public RoadGenerator(int size, Vector2Int generateStartPos)
+    public RoadGenerator(int size, List<EdgeRoadContainer> startPositions)
     {
         this.RoadMatrix = new bool[size, size];
         this.EdgeRoads = new List<EdgeRoadContainer>();
         this.size = size;
-        Direction dir;
+        if (startPositions.Count == 0)
+        {
+            startPositions.Add(new EdgeRoadContainer(new Vector2Int(GameConfig.CHUNK_SIZE / 2, 0), 0, new Vector2Int(0, 1)));
+            this.RoadMatrix[0, GameConfig.CHUNK_SIZE / 2] = true;
+            EdgeRoads.Add(new EdgeRoadContainer(new Vector2Int(GameConfig.CHUNK_SIZE / 2, 0), 0, new Vector2Int(0, -1)));
+        }
 
-        if (generateStartPos.x == 0)
+        foreach (var generateStartPos in startPositions)
         {
-            dir = Direction.Right;
-        }
-        else if (generateStartPos.x == size - 1)
-        {
-            dir = Direction.Left;
-        }
-        else if (generateStartPos.y == 0)
-        {
-            dir = Direction.Down;
-        }
-        else
-        {
-            dir = Direction.Up;
-        }
-        this.RoadMatrix[generateStartPos.y, generateStartPos.x] = true;
+            Vector2Int startPos = generateStartPos.EdgeRoad + generateStartPos.Direction;
+            Vector2Int newStart = new Vector2Int(startPos.x % GameConfig.CHUNK_SIZE, startPos.y % GameConfig.CHUNK_SIZE);
+            RoadMatrix[newStart.y, newStart.x] = true;
+            EdgeRoads.Add(new EdgeRoadContainer(newStart, 0, generateStartPos.Direction));
 
-        CreateRoad(generateStartPos + DirectionConverter.VectorFromDirection(dir), dir);
+            CreateRoad(newStart + generateStartPos.Direction, generateStartPos.Direction, generateStartPos.roadCounter);
+        }
     }
 
-    private void CreateRoad(Vector2Int roadPos, Direction roadDir, int forwardCounter = 0)
+    private void CreateRoad(Vector2Int roadPos, Vector2Int roadDir, int forwardCounter = 0)
     {
         if (RoadMatrix[roadPos.y, roadPos.x])
         {
@@ -71,7 +66,7 @@ public class RoadGenerator
         numberOfPlacedRoads++;
         if (roadPos.x == 0 || roadPos.x == size - 1 || roadPos.y == 0 || roadPos.y == size - 1)
         {
-            this.EdgeRoads.Add(new EdgeRoadContainer(roadPos, forwardCounter));
+            this.EdgeRoads.Add(new EdgeRoadContainer(roadPos, forwardCounter, roadDir));
             return;
         }
 
@@ -82,7 +77,7 @@ public class RoadGenerator
             return;
         }
 
-        if (Mathf.Pow(forwardCounter - 7, 3) / 1000 > Random.Range(0f, 1f) && !CheckForward(roadPos + DirectionConverter.VectorFromDirection(roadDir), roadPos + DirectionConverter.VectorFromDirection(roadDir), 0))
+        if (Mathf.Pow(forwardCounter - 7, 3) / 1000 > Random.Range(0f, 1f) && !CheckForward(roadPos + roadDir, roadDir, 0))
         {
             int interSectionCount = Random.Range(2, 3);
             List<Vector2Int> possibleDirs = new List<Vector2Int>();
@@ -103,14 +98,14 @@ public class RoadGenerator
 
                 if (!CheckForward(possibleDirs[index], possibleDirs[index] - roadPos, 0))
                 {
-                    CreateRoad(possibleDirs[index], DirectionConverter.DirectionFromVector(possibleDirs[index] - roadPos), 0);
+                    CreateRoad(possibleDirs[index], possibleDirs[index] - roadPos, 0);
                 }
                 possibleDirs.RemoveAt(index);
             }
         }
         else
         {
-            CreateRoad(roadPos + DirectionConverter.VectorFromDirection(roadDir), roadDir, forwardCounter + 1);
+            CreateRoad(roadPos + roadDir, roadDir, forwardCounter + 1);
         }
     }
 
