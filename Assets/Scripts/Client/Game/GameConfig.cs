@@ -1,18 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class GameConfig : MonoBehaviour
+public static class GameConfig
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public const int CHUNK_SIZE = 256;
 }
