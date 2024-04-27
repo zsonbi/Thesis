@@ -5,34 +5,32 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField]
-    ConstantForce2D constantForceComponent;
+    private ConstantForce constantForceComponent;
 
     [SerializeField]
-    private int speed=2;
+    private int speed = 2;
 
-    public int Speed {  get=>speed; }
+    public int Speed { get => speed; }
+
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if(Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
-            constantForceComponent.force=new Vector2 (0,constantForceComponent.force.y+Speed*Time.deltaTime);
+            constantForceComponent.relativeForce = new Vector3(0, 0, constantForceComponent.relativeForce.z + Speed * Time.deltaTime);
         }
-        else if (Input.GetKey(KeyCode.S) && constantForceComponent.force.y>0)
+        else if (Input.GetKey(KeyCode.S) && constantForceComponent.relativeForce.z > 0)
         {
-            constantForceComponent.force = new Vector2(0, constantForceComponent.force.y - Speed * Time.deltaTime);
+            constantForceComponent.relativeForce = new Vector3(0, 0, constantForceComponent.relativeForce.z - Speed * Time.deltaTime * 2);
         }
-        else if(constantForceComponent.force.y > 0)
+        else if (constantForceComponent.relativeForce.z > 0)
         {
-            constantForceComponent.force = new Vector2(0, constantForceComponent.force.y - Time.deltaTime);
+            constantForceComponent.relativeForce = new Vector3(0, 0, constantForceComponent.relativeForce.z - Time.deltaTime);
         }
-
-
     }
 }
