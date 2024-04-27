@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['registered_232',['Registered',['../classUserController.html#a153195b18b8cdc3734cde9e15262688d',1,'UserController']]],
-  ['removetask_233',['RemoveTask',['../classUIController.html#a83df197d227b54bd09ba927cfb2d5cd1',1,'UIController']]],
-  ['resetcomplete_234',['ResetComplete',['../classTaskContainer.html#a13c5778d0867ec1015c47bcb61490fce',1,'TaskContainer']]]
+  ['openeditor_318',['OpenEditor',['../classTask.html#ac5bae959560b5162fa60ca2340e370b9',1,'Task']]],
+  ['openup_319',['OpenUp',['../classTaskOpenPanelController.html#a1147a8c395515fe25ff585e12095bd3d',1,'TaskOpenPanelController.OpenUp()'],['../classTaskOpenPanelController.html#a510d3b27a55f6c441d24e509b2bbd4e2',1,'TaskOpenPanelController.OpenUp(TaskContainer taskContainer=null)']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['onokaction_268',['onOkAction',['../classModalWindow.html#a71dd3e1790029da28d45d0e19defd7da',1,'ModalWindow']]],
-  ['othertype_269',['otherType',['../classPhpReturnObject.html#ad2a1c634a6680164fa4f57ec577d6777',1,'PhpReturnObject']]]
+  ['numberofdifferentobjects_366',['numberOfDifferentObjects',['../classGame_1_1World_1_1Chunk.html#a5bbbec98bf11364db59e4538fc661ce8',1,'Game::World::Chunk']]],
+  ['numberofplacedroads_367',['numberOfPlacedRoads',['../classGame_1_1World_1_1RoadGenerator.html#a8fe39641e0201cc241dc19e833d74003',1,'Game::World::RoadGenerator']]]
 ];

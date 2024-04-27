@@ -222,24 +222,6 @@ for (i = 0, l = charts.length; i < l; i++) {
 
 var assemblies = [
   {
-    "name": "Assembly-CSharp",
-    "classes": [
-      { "name": "Chunk", "rp": "Assembly_CSharp_Chunk.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 18, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "GameConfig", "rp": "Assembly_CSharp_GameConfig.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 18, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "GameWorld", "rp": "Assembly_CSharp_GameWorld.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 18, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "ModalWindow", "rp": "Assembly_CSharp_ModalWindow.html", "cl": 0, "ucl": 19, "cal": 19, "tl": 43, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Player", "rp": "Assembly_CSharp_Player.html", "cl": 0, "ucl": 18, "cal": 18, "tl": 38, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Police", "rp": "Assembly_CSharp_Police.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 18, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Task", "rp": "Assembly_CSharp_Task.html", "cl": 0, "ucl": 72, "cal": 72, "tl": 129, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "TaskApiResponse", "rp": "Assembly_CSharp_TaskApiResponse.html", "cl": 0, "ucl": 9, "cal": 9, "tl": 16, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "TaskClosedEventArgs", "rp": "Assembly_CSharp_TaskClosedEventArgs.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 14, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "TaskContainer", "rp": "Assembly_CSharp_TaskContainer.html", "cl": 0, "ucl": 57, "cal": 57, "tl": 79, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "TaskOpenPanelController", "rp": "Assembly_CSharp_TaskOpenPanelController.html", "cl": 0, "ucl": 105, "cal": 105, "tl": 192, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "UIController", "rp": "Assembly_CSharp_UIController.html", "cl": 0, "ucl": 79, "cal": 79, "tl": 133, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "User.UserData", "rp": "Assembly_CSharp_UserData.html", "cl": 0, "ucl": 21, "cal": 21, "tl": 34, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "UserController", "rp": "Assembly_CSharp_UserController.html", "cl": 0, "ucl": 98, "cal": 98, "tl": 198, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-    ]},
-  {
     "name": "Assembly-CSharp-Editor",
     "classes": [
       { "name": "BuildCommand", "rp": "Assembly_CSharp_Editor_BuildCommand.html", "cl": 0, "ucl": 197, "cal": 197, "tl": 310, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
@@ -249,7 +231,30 @@ var assemblies = [
   {
     "name": "Tests",
     "classes": [
+      { "name": "Tests.GameTests.RoadGeneratorTests", "rp": "Tests_RoadGeneratorTests.html", "cl": 26, "ucl": 0, "cal": 26, "tl": 55, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Tests.MainMenuTest", "rp": "Tests_MainMenuTest.html", "cl": 4, "ucl": 0, "cal": 4, "tl": 24, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+    ]},
+  {
+    "name": "ThesisScripts",
+    "classes": [
+      { "name": "DirectionConverter", "rp": "ThesisScripts_DirectionConverter.html", "cl": 0, "ucl": 21, "cal": 21, "tl": 46, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "EdgeRoadContainer", "rp": "ThesisScripts_EdgeRoadContainer.html", "cl": 9, "ucl": 0, "cal": 9, "tl": 15, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.World.Chunk", "rp": "ThesisScripts_Chunk.html", "cl": 0, "ucl": 95, "cal": 95, "tl": 211, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.World.RoadGenerator", "rp": "ThesisScripts_RoadGenerator.html", "cl": 68, "ucl": 3, "cal": 71, "tl": 136, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.World.World", "rp": "ThesisScripts_World.html", "cl": 0, "ucl": 34, "cal": 34, "tl": 59, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "GameWorld", "rp": "ThesisScripts_GameWorld.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 18, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "MeshGenerator", "rp": "ThesisScripts_MeshGenerator.html", "cl": 0, "ucl": 27, "cal": 27, "tl": 96, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "ModalWindow", "rp": "ThesisScripts_ModalWindow.html", "cl": 0, "ucl": 19, "cal": 19, "tl": 43, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Player", "rp": "ThesisScripts_Player.html", "cl": 0, "ucl": 18, "cal": 18, "tl": 36, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Police", "rp": "ThesisScripts_Police.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 18, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Task", "rp": "ThesisScripts_Task.html", "cl": 0, "ucl": 72, "cal": 72, "tl": 129, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "TaskApiResponse", "rp": "ThesisScripts_TaskApiResponse.html", "cl": 0, "ucl": 9, "cal": 9, "tl": 16, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "TaskClosedEventArgs", "rp": "ThesisScripts_TaskClosedEventArgs.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 14, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "TaskContainer", "rp": "ThesisScripts_TaskContainer.html", "cl": 0, "ucl": 57, "cal": 57, "tl": 79, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "TaskOpenPanelController", "rp": "ThesisScripts_TaskOpenPanelController.html", "cl": 0, "ucl": 105, "cal": 105, "tl": 192, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UIController", "rp": "ThesisScripts_UIController.html", "cl": 0, "ucl": 79, "cal": 79, "tl": 133, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "User.UserData", "rp": "ThesisScripts_UserData.html", "cl": 0, "ucl": 21, "cal": 21, "tl": 34, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UserController", "rp": "ThesisScripts_UserController.html", "cl": 0, "ucl": 98, "cal": 98, "tl": 198, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
     ]},
 ];
 
@@ -263,6 +268,13 @@ var riskHotspotMetrics = [
 
 var riskHotspots = [
   {
+    "assembly": "ThesisScripts", "class": "Game.World.World", "reportPath": "ThesisScripts_World.html", "methodName": "System.Void Game.World.World::LoadChunk(System.Int32, System.Int32)", "methodShortName": "LoadChunk(...)", "fileIndex": 0, "line": 32,
+    "metrics": [
+      { "value": 14, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 210, "exceeded": true },
+    ]},
+  {
     "assembly": "Assembly-CSharp-Editor", "class": "ReadmeEditor", "reportPath": "Assembly_CSharp_Editor_ReadmeEditor.html", "methodName": "System.Void ReadmeEditor::OnInspectorGUI()", "methodShortName": "OnInspectorGUI()", "fileIndex": 0, "line": 124,
     "metrics": [
       { "value": 7, "exceeded": false },
@@ -271,6 +283,20 @@ var riskHotspots = [
     ]},
   {
     "assembly": "Assembly-CSharp-Editor", "class": "BuildCommand", "reportPath": "Assembly_CSharp_Editor_BuildCommand.html", "methodName": "static System.Void BuildCommand::PerformBuild()", "methodShortName": "PerformBuild()", "fileIndex": 0, "line": 179,
+    "metrics": [
+      { "value": 6, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 42, "exceeded": true },
+    ]},
+  {
+    "assembly": "ThesisScripts", "class": "DirectionConverter", "reportPath": "ThesisScripts_DirectionConverter.html", "methodName": "static UnityEngine.Vector2Int DirectionConverter::VectorFromDirection(DataTypes.Direction)", "methodShortName": "VectorFromDirection(...)", "fileIndex": 0, "line": 27,
+    "metrics": [
+      { "value": 6, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 42, "exceeded": true },
+    ]},
+  {
+    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "ChunkCellType Game.World.Chunk::DetermineTileType(System.Int32, System.Int32)", "methodShortName": "DetermineTileType(...)", "fileIndex": 0, "line": 187,
     "metrics": [
       { "value": 6, "exceeded": false },
       { "value": 0, "exceeded": false },

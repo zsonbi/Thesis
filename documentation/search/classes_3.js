@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['phpreturnobject_164',['PhpReturnObject',['../classPhpReturnObject.html',1,'']]],
-  ['player_165',['Player',['../classPlayer.html',1,'']]],
-  ['police_166',['Police',['../classPolice.html',1,'']]]
+  ['gameconfig_225',['GameConfig',['../classGameConfig.html',1,'']]],
+  ['gameworld_226',['GameWorld',['../classGameWorld.html',1,'']]]
 ];

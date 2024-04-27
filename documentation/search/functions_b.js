@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['update_246',['Update',['../classTask.html#af9f1345d4a839ad0f723879fb0990d0b',1,'Task.Update()'],['../classChunk.html#af19f0b1040ddee794d5a4cd699b877dc',1,'Chunk.Update()'],['../classGameConfig.html#afb569e97d6dbacdd85327009fc111c0e',1,'GameConfig.Update()'],['../classGameWorld.html#a25186a88e3ba0c5df2571793d66de5aa',1,'GameWorld.Update()'],['../classPlayer.html#aace80372e18e32fe177e295fe5d93ba8',1,'Player.Update()'],['../classPolice.html#ac84e37036984c51ff034ded82e1d3a14',1,'Police.Update()'],['../classUIController.html#adc5b0854a26bbcd71cc33274960bd0a9',1,'UIController.Update()']]],
-  ['updatebuttons_247',['UpdateButtons',['../classTaskOpenPanelController.html#aeb6c1cf2f3da2be35bb515f455d3f0d8',1,'TaskOpenPanelController']]],
-  ['updatelabels_248',['UpdateLabels',['../classTask.html#afa7aa5d3d98273fdfc9676f19238d343',1,'Task']]],
-  ['updatetask_249',['UpdateTask',['../classUIController.html#a811acc501fd4d1e7f090601c61f88e49',1,'UIController']]],
-  ['updatetimeremaining_250',['UpdateTimeRemaining',['../classTask.html#a389c34790ee448b0078d1cc2865af024',1,'Task']]],
-  ['updatevalues_251',['UpdateValues',['../classTaskContainer.html#a69909e5c987547bb505b3e5b352034d6',1,'TaskContainer']]]
+  ['taskapiresponse_331',['TaskApiResponse',['../classTaskApiResponse.html#ac8b447c390e8731a94df7b348d5c7253',1,'TaskApiResponse']]],
+  ['taskclosedeventargs_332',['TaskClosedEventArgs',['../classTaskClosedEventArgs.html#a57230d0ae37abc4ee1d589b212363ca3',1,'TaskClosedEventArgs']]],
+  ['taskcompleted_333',['TaskCompleted',['../classTask.html#a74ac07ea5dd82ff0f8c628f9351368cc',1,'Task']]],
+  ['taskcontainer_334',['TaskContainer',['../classTaskContainer.html#aced82a8c8b149e8950f93acfc54eb4b9',1,'TaskContainer.TaskContainer(int id, string taskName, int taskType, int periodRate, string description, DateTime added, DateTime lastCompleted, int completed)'],['../classTaskContainer.html#a23381450125246537dfe70229da15522',1,'TaskContainer.TaskContainer()']]]
 ];

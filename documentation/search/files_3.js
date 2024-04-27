@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['phpreturnobject_2ecs_185',['PhpReturnObject.cs',['../PhpReturnObject_8cs.html',1,'']]],
-  ['player_2ecs_186',['Player.cs',['../Player_8cs.html',1,'']]],
-  ['police_2ecs_187',['Police.cs',['../Police_8cs.html',1,'']]]
+  ['gameconfig_2ecs_254',['GameConfig.cs',['../GameConfig_8cs.html',1,'']]],
+  ['gameworld_2ecs_255',['GameWorld.cs',['../GameWorld_8cs.html',1,'']]]
 ];

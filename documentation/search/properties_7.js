@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['registered_318',['Registered',['../classUser_1_1UserData.html#adf1a00f3bd39a418cccf26f04a79c831',1,'User::UserData']]],
-  ['res_319',['Res',['../classTaskApiResponse.html#a2611913421afc995268212b863e84dd6',1,'TaskApiResponse']]]
+  ['movelayer_441',['moveLayer',['../classGame_1_1World_1_1Chunk.html#a767dcbcb0dd23237d420abe3bdac438d',1,'Game::World::Chunk']]]
 ];

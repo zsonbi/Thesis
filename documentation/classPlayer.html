@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -111,9 +112,9 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a8b7706d4a53f950bbcbc5f21d020ec50"><td class="memItemLeft" align="right" valign="top">ConstantForce2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a8b7706d4a53f950bbcbc5f21d020ec50">constantForceComponent</a></td></tr>
-<tr class="separator:a8b7706d4a53f950bbcbc5f21d020ec50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c20097d19738d79ebe1d8dda74e166a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a4c20097d19738d79ebe1d8dda74e166a">speed</a> =2</td></tr>
+<tr class="memitem:a58544378b52518df4b712f96145a8e93"><td class="memItemLeft" align="right" valign="top">ConstantForce&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a58544378b52518df4b712f96145a8e93">constantForceComponent</a></td></tr>
+<tr class="separator:a58544378b52518df4b712f96145a8e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c20097d19738d79ebe1d8dda74e166a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html#a4c20097d19738d79ebe1d8dda74e166a">speed</a> = 2</td></tr>
 <tr class="separator:a4c20097d19738d79ebe1d8dda74e166a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -143,9 +144,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Player_8cs_source.html#l00015">15</a> of file <a class="el" href="Player_8cs_source.html">Player.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        </div>
+<p class="definition">Definition at line <a class="el" href="Player_8cs_source.html#l00016">16</a> of file <a class="el" href="Player_8cs_source.html">Player.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
@@ -175,22 +175,20 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Player_8cs_source.html#l00021">21</a> of file <a class="el" href="Player_8cs_source.html">Player.cs</a>.</p>
 <div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">if</span>(Input.GetKey(KeyCode.W))</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">if</span> (Input.GetKey(KeyCode.W))</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <a class="code" href="classPlayer.html#a8b7706d4a53f950bbcbc5f21d020ec50">constantForceComponent</a>.force=<span class="keyword">new</span> Vector2 (0,<a class="code" href="classPlayer.html#a8b7706d4a53f950bbcbc5f21d020ec50">constantForceComponent</a>.force.y+<a class="code" href="classPlayer.html#aac3a86fcdf79b227f213afbcf88494d1">Speed</a>*Time.deltaTime);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <a class="code" href="classPlayer.html#a58544378b52518df4b712f96145a8e93">constantForceComponent</a>.relativeForce = <span class="keyword">new</span> Vector3(0, 0, <a class="code" href="classPlayer.html#a58544378b52518df4b712f96145a8e93">constantForceComponent</a>.relativeForce.z + <a class="code" href="classPlayer.html#aac3a86fcdf79b227f213afbcf88494d1">Speed</a> * Time.deltaTime);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (Input.GetKey(KeyCode.S) &amp;&amp; <a class="code" href="classPlayer.html#a8b7706d4a53f950bbcbc5f21d020ec50">constantForceComponent</a>.force.y&gt;0)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (Input.GetKey(KeyCode.S) &amp;&amp; <a class="code" href="classPlayer.html#a58544378b52518df4b712f96145a8e93">constantForceComponent</a>.relativeForce.z &gt; 0)</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <a class="code" href="classPlayer.html#a8b7706d4a53f950bbcbc5f21d020ec50">constantForceComponent</a>.force = <span class="keyword">new</span> Vector2(0, <a class="code" href="classPlayer.html#a8b7706d4a53f950bbcbc5f21d020ec50">constantForceComponent</a>.force.y - <a class="code" href="classPlayer.html#aac3a86fcdf79b227f213afbcf88494d1">Speed</a> * Time.deltaTime);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <a class="code" href="classPlayer.html#a58544378b52518df4b712f96145a8e93">constantForceComponent</a>.relativeForce = <span class="keyword">new</span> Vector3(0, 0, <a class="code" href="classPlayer.html#a58544378b52518df4b712f96145a8e93">constantForceComponent</a>.relativeForce.z - <a class="code" href="classPlayer.html#aac3a86fcdf79b227f213afbcf88494d1">Speed</a> * Time.deltaTime * 2);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="classPlayer.html#a8b7706d4a53f950bbcbc5f21d020ec50">constantForceComponent</a>.force.y &gt; 0)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classPlayer.html#a58544378b52518df4b712f96145a8e93">constantForceComponent</a>.relativeForce.z &gt; 0)</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <a class="code" href="classPlayer.html#a8b7706d4a53f950bbcbc5f21d020ec50">constantForceComponent</a>.force = <span class="keyword">new</span> Vector2(0, <a class="code" href="classPlayer.html#a8b7706d4a53f950bbcbc5f21d020ec50">constantForceComponent</a>.force.y - Time.deltaTime);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <a class="code" href="classPlayer.html#a58544378b52518df4b712f96145a8e93">constantForceComponent</a>.relativeForce = <span class="keyword">new</span> Vector3(0, 0, <a class="code" href="classPlayer.html#a58544378b52518df4b712f96145a8e93">constantForceComponent</a>.relativeForce.z - Time.deltaTime);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
-<div class="ttc" id="aclassPlayer_html_a8b7706d4a53f950bbcbc5f21d020ec50"><div class="ttname"><a href="classPlayer.html#a8b7706d4a53f950bbcbc5f21d020ec50">Player.constantForceComponent</a></div><div class="ttdeci">ConstantForce2D constantForceComponent</div><div class="ttdef"><b>Definition:</b> <a href="Player_8cs_source.html#l00008">Player.cs:8</a></div></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
+<div class="ttc" id="aclassPlayer_html_a58544378b52518df4b712f96145a8e93"><div class="ttname"><a href="classPlayer.html#a58544378b52518df4b712f96145a8e93">Player.constantForceComponent</a></div><div class="ttdeci">ConstantForce constantForceComponent</div><div class="ttdef"><b>Definition:</b> <a href="Player_8cs_source.html#l00008">Player.cs:8</a></div></div>
 <div class="ttc" id="aclassPlayer_html_aac3a86fcdf79b227f213afbcf88494d1"><div class="ttname"><a href="classPlayer.html#aac3a86fcdf79b227f213afbcf88494d1">Player.Speed</a></div><div class="ttdeci">int Speed</div><div class="ttdef"><b>Definition:</b> <a href="Player_8cs_source.html#l00013">Player.cs:13</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Player_8cs_source.html#l00008">constantForceComponent</a>, and <a class="el" href="Player_8cs_source.html#l00013">Speed</a>.</p>
@@ -198,8 +196,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a8b7706d4a53f950bbcbc5f21d020ec50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b7706d4a53f950bbcbc5f21d020ec50">&#9670;&nbsp;</a></span>constantForceComponent</h2>
+<a id="a58544378b52518df4b712f96145a8e93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58544378b52518df4b712f96145a8e93">&#9670;&nbsp;</a></span>constantForceComponent</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -208,7 +206,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ConstantForce2D Player.constantForceComponent</td>
+          <td class="memname">ConstantForce Player.constantForceComponent</td>
         </tr>
       </table>
   </td>
@@ -234,7 +232,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Player.speed =2</td>
+          <td class="memname">int Player.speed = 2</td>
         </tr>
       </table>
   </td>
@@ -270,7 +268,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="Player_8cs_source.html#l00013">13</a> of file <a class="el" href="Player_8cs_source.html">Player.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{  <span class="keyword">get</span>=&gt;<a class="code" href="classPlayer.html#a4c20097d19738d79ebe1d8dda74e166a">speed</a>; }</div>
+<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{ <span class="keyword">get</span> =&gt; <a class="code" href="classPlayer.html#a4c20097d19738d79ebe1d8dda74e166a">speed</a>; }</div>
 <div class="ttc" id="aclassPlayer_html_a4c20097d19738d79ebe1d8dda74e166a"><div class="ttname"><a href="classPlayer.html#a4c20097d19738d79ebe1d8dda74e166a">Player.speed</a></div><div class="ttdeci">int speed</div><div class="ttdef"><b>Definition:</b> <a href="Player_8cs_source.html#l00011">Player.cs:11</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="Player_8cs_source.html#l00021">Update()</a>.</p>

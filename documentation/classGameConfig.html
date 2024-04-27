@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -82,88 +83,74 @@ $(document).ready(function(){initNavTree('classGameConfig.html',''); initResizab
 
 <div class="header">
   <div class="summary">
-<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classGameConfig-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">GameConfig Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for GameConfig:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="classGameConfig.png" alt=""/>
- </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a1fc7ce121991553751b52a9a2467070f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameConfig.html#a1fc7ce121991553751b52a9a2467070f">Start</a> ()</td></tr>
-<tr class="separator:a1fc7ce121991553751b52a9a2467070f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb569e97d6dbacdd85327009fc111c0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameConfig.html#afb569e97d6dbacdd85327009fc111c0e">Update</a> ()</td></tr>
-<tr class="separator:afb569e97d6dbacdd85327009fc111c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a767e83ea60cba2fff6d2c7faccf4890d"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameConfig.html#a767e83ea60cba2fff6d2c7faccf4890d">CHUNK_SIZE</a> = 32</td></tr>
+<tr class="separator:a767e83ea60cba2fff6d2c7faccf4890d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa2ddc4407f1664515de38348aadd1f7"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a> = 8</td></tr>
+<tr class="separator:afa2ddc4407f1664515de38348aadd1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
+<p class="definition">Definition at line <a class="el" href="GameConfig_8cs_source.html#l00001">1</a> of file <a class="el" href="GameConfig_8cs_source.html">GameConfig.cs</a>.</p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a767e83ea60cba2fff6d2c7faccf4890d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a767e83ea60cba2fff6d2c7faccf4890d">&#9670;&nbsp;</a></span>CHUNK_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int GameConfig.CHUNK_SIZE = 32</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="GameConfig_8cs_source.html#l00003">3</a> of file <a class="el" href="GameConfig_8cs_source.html">GameConfig.cs</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="Chunk_8cs_source.html#l00076">Game.World.Chunk.InitChunk()</a>, <a class="el" href="World_8cs_source.html#l00031">Game.World.World.LoadChunk()</a>, <a class="el" href="Chunk_8cs_source.html#l00121">Game.World.Chunk.LoadFromSettings()</a>, and <a class="el" href="RoadGenerator_8cs_source.html#l00039">Game.World.RoadGenerator.RoadGenerator()</a>.</p>
+
+</div>
+</div>
+<a id="afa2ddc4407f1664515de38348aadd1f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa2ddc4407f1664515de38348aadd1f7">&#9670;&nbsp;</a></span>CHUNK_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int GameConfig.CHUNK_COUNT = 8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 <p class="definition">Definition at line <a class="el" href="GameConfig_8cs_source.html#l00005">5</a> of file <a class="el" href="GameConfig_8cs_source.html">GameConfig.cs</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1fc7ce121991553751b52a9a2467070f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fc7ce121991553751b52a9a2467070f">&#9670;&nbsp;</a></span>Start()</h2>
 
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GameConfig.Start </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p class="reference">Referenced by <a class="el" href="World_8cs_source.html#l00031">Game.World.World.LoadChunk()</a>, and <a class="el" href="World_8cs_source.html#l00018">Game.World.World.Start()</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="GameConfig_8cs_source.html#l00008">8</a> of file <a class="el" href="GameConfig_8cs_source.html">GameConfig.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="afb569e97d6dbacdd85327009fc111c0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb569e97d6dbacdd85327009fc111c0e">&#9670;&nbsp;</a></span>Update()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GameConfig.Update </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="GameConfig_8cs_source.html#l00014">14</a> of file <a class="el" href="GameConfig_8cs_source.html">GameConfig.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div>
-</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

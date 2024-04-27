@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['init_216',['Init',['../classUser_1_1UserData.html#a7cb36daccedbf78e18d4504d403c07c4',1,'User::UserData']]],
-  ['initvalues_217',['InitValues',['../classTask.html#a15ee955da77f711c5924ac81d184e33f',1,'Task']]],
-  ['isvalidemail_218',['IsValidEmail',['../classUserController.html#a4ddf4a375cad51a8784cb9be7ba11b23',1,'UserController']]]
+  ['hide_299',['Hide',['../classModalWindow.html#a34671e7d80905810cf4f7d6657a125f3',1,'ModalWindow']]],
+  ['hidechunk_300',['HideChunk',['../classGame_1_1World_1_1Chunk.html#a118e0c25d254444e6663404fd61749d9',1,'Game::World::Chunk']]]
 ];

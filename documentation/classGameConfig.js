@@ -1,5 +1,5 @@
 var classGameConfig =
 [
-    [ "Start", "classGameConfig.html#a1fc7ce121991553751b52a9a2467070f", null ],
-    [ "Update", "classGameConfig.html#afb569e97d6dbacdd85327009fc111c0e", null ]
+    [ "CHUNK_SIZE", "classGameConfig.html#a767e83ea60cba2fff6d2c7faccf4890d", null ],
+    [ "CHUNK_COUNT", "classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7", null ]
 ];

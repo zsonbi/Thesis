@@ -1,10 +1,17 @@
 var searchData=
 [
-  ['registered_91',['Registered',['../classUser_1_1UserData.html#adf1a00f3bd39a418cccf26f04a79c831',1,'User.UserData.Registered()'],['../classUserController.html#a153195b18b8cdc3734cde9e15262688d',1,'UserController.Registered(Dictionary&lt; string, string &gt; result)']]],
-  ['registerpanel_92',['RegisterPanel',['../classUserController.html#a692c4e9c9007889fbab83b5b2567b847',1,'UserController']]],
-  ['remainingtimelabel_93',['RemainingTimeLabel',['../classTask.html#ade0e80b36d8be5e9dcc4dd0a3ec590e7',1,'Task']]],
-  ['removetask_94',['RemoveTask',['../classUIController.html#a83df197d227b54bd09ba927cfb2d5cd1',1,'UIController']]],
-  ['res_95',['Res',['../classTaskApiResponse.html#a2611913421afc995268212b863e84dd6',1,'TaskApiResponse']]],
-  ['resetcomplete_96',['ResetComplete',['../classTaskContainer.html#a13c5778d0867ec1015c47bcb61490fce',1,'TaskContainer']]],
-  ['result_97',['result',['../classPhpReturnObject.html#aa5be083ea53bb1ee8900ff41b408b483',1,'PhpReturnObject']]]
+  ['pathforcheckloggedin_120',['PATHFORCHECKLOGGEDIN',['../classConfig_1_1ServerConfig.html#a5db97261b8e437dcf4d91713905aabec',1,'Config::ServerConfig']]],
+  ['pathforlogin_121',['PATHFORLOGIN',['../classConfig_1_1ServerConfig.html#afb8d71401f0aa0ea68ad081fcf50528e',1,'Config::ServerConfig']]],
+  ['pathforregister_122',['PATHFORREGISTER',['../classConfig_1_1ServerConfig.html#acfccecb1f295219e10b582dd5e408862',1,'Config::ServerConfig']]],
+  ['pathfortaskcomplete_123',['PATHFORTASKCOMPLETE',['../classConfig_1_1ServerConfig.html#a035aa0d84a40a409fb2f6454150067f5',1,'Config::ServerConfig']]],
+  ['pathfortaskdelete_124',['PATHFORTASKDELETE',['../classConfig_1_1ServerConfig.html#ad110d8ce915ab25e33b87a358d9dd7fd',1,'Config::ServerConfig']]],
+  ['pathfortasksave_125',['PATHFORTASKSAVE',['../classConfig_1_1ServerConfig.html#a834aa29afe57b0ee50c63699ebab68c2',1,'Config::ServerConfig']]],
+  ['pathfortasksquery_126',['PATHFORTASKSQUERY',['../classConfig_1_1ServerConfig.html#a47231cfa790f15bbd226c2dc2202c448',1,'Config::ServerConfig']]],
+  ['phpreturnobject_127',['PhpReturnObject',['../classPhpReturnObject.html',1,'']]],
+  ['phpreturnobject_2ecs_128',['PhpReturnObject.cs',['../PhpReturnObject_8cs.html',1,'']]],
+  ['plantparent_129',['plantParent',['../classGame_1_1World_1_1Chunk.html#a3056e3684dc1ebe77812c6d60ec4b140',1,'Game::World::Chunk']]],
+  ['player_130',['Player',['../classPlayer.html',1,'']]],
+  ['player_2ecs_131',['Player.cs',['../Player_8cs.html',1,'']]],
+  ['police_132',['Police',['../classPolice.html',1,'']]],
+  ['police_2ecs_133',['Police.cs',['../Police_8cs.html',1,'']]]
 ];

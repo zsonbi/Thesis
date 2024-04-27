@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['taskcontainer_322',['TaskContainer',['../classTask.html#a33ba651e0039ad7aa4fc883038606d92',1,'Task']]],
-  ['taskinterval_323',['TaskInterval',['../classTaskContainer.html#a3c24cb3ae67ff49c37aef29db834ed28',1,'TaskContainer']]],
-  ['taskname_324',['TaskName',['../classTaskContainer.html#a9fb073d189cb8e94d4ac68647193a44e',1,'TaskContainer']]],
-  ['tasks_325',['Tasks',['../classTaskApiResponse.html#aa2a64cf43a7ff73262f1eacd9b7cae24',1,'TaskApiResponse']]],
-  ['tasktype_326',['TaskType',['../classTaskContainer.html#ab9fd04ceac907a64d1afc75cd4235e92',1,'TaskContainer']]]
+  ['registered_443',['Registered',['../classUser_1_1UserData.html#adf1a00f3bd39a418cccf26f04a79c831',1,'User::UserData']]],
+  ['res_444',['Res',['../classTaskApiResponse.html#a2611913421afc995268212b863e84dd6',1,'TaskApiResponse']]],
+  ['roadcounter_445',['roadCounter',['../classEdgeRoadContainer.html#a6e168394bc99da132d3038d61888583d',1,'EdgeRoadContainer']]],
+  ['roadmatrix_446',['RoadMatrix',['../classGame_1_1World_1_1RoadGenerator.html#a7fca47366b7f100826237bbc011034ac',1,'Game::World::RoadGenerator']]]
 ];
