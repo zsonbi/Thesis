@@ -98,7 +98,7 @@ namespace Game
                     parent.transform.parent = this.transform;
                     MeshFilter meshFilter = parent.GetComponent<MeshFilter>();
                     parent.GetComponent<MeshRenderer>().material = TileMaterials[(int)item.Key];
-                    parent.GetComponent<MeshCollider>().sharedMaterial = PhysicsMaterials[(int)(item.Key)];
+                   parent.GetComponent<MeshCollider>().sharedMaterial = PhysicsMaterials[(int)(item.Key)];
                     meshFilter.mesh = MeshGenerator.CreateMultiShape(item.Value);
                     parent.GetComponent<MeshCollider>().sharedMesh = meshFilter.mesh;
                 }
