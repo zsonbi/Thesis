@@ -55,6 +55,11 @@ namespace UnityStandardAssets.Vehicles.Car
         public float Revs { get; private set; }
         public float AccelInput { get; private set; }
 
+        private void OnCollisionEnter(Collision collision)
+        {
+            Debug.Log(collision.gameObject.name);
+        }
+
         // Use this for initialization
         private void Start()
         {
