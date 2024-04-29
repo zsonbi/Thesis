@@ -94,7 +94,7 @@ namespace Game
                 }
 
                 //Should the road change direction
-                if (Mathf.Pow(forwardCounter - 7, 3) / 500 > Random.Range(0f, 1f) && !CheckForward(roadPos + roadDir, roadDir, 0))
+                if (Mathf.Pow(forwardCounter - 7, 3) / 300 > Random.Range(0f, 1f) && !CheckForward(roadPos + roadDir, roadDir, 0))
                 {
                     int interSectionCount = Random.Range(2, 3);
                     List<Vector2Int> possibleDirs = new List<Vector2Int>();
@@ -139,7 +139,7 @@ namespace Game
                 {
                     return true;
                 }
-                else if (counter < 8)
+                else if (counter < 6)
                 {
                     return CheckForward(position + dir, dir, counter + 1);
                 }

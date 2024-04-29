@@ -42,7 +42,7 @@ public static class Server
                 }
                 else
                 {
-                    Debug.Log("Server crashed");
+                    Debug.Log("Server crashed URL:" + url);
                 }
             }
         }
