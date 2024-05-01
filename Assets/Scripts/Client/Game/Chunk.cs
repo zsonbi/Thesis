@@ -38,6 +38,11 @@ namespace Game
             /// </summary>
             public int xSize { get; private set; }
 
+            public int Row { get; private set; }
+            public int Col { get; private set; }
+
+            public bool Loaded { get => this.gameObject.activeSelf; }
+
             public List<EdgeRoadContainer> EdgeRoads { get => roadGenerator.EdgeRoads; }
 
             private Dictionary<ChunkCellType, List<Vector3>> chunkCells = new Dictionary<ChunkCellType, List<Vector3>>();
@@ -63,6 +68,8 @@ namespace Game
 
             public void InitChunk(int xOffset, int zOffset, List<EdgeRoadContainer> edgeRoads)
             {
+                this.Row = zOffset;
+                this.Col = xOffset;
                 for (ChunkCellType i = 0; i <= ChunkCellType.Road; i++)
                 {
                     chunkCells.Add(i, new List<Vector3>());
@@ -83,11 +90,13 @@ namespace Game
                 //        CombineMeshes(i);
                 //}
                 CreateMeshes();
-                this.gameObject.transform.localPosition = new Vector3(xOffset * GameConfig.CHUNK_SIZE, 0, zOffset * GameConfig.CHUNK_SIZE);
+                this.gameObject.transform.localPosition = new Vector3(xOffset * GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE, 0, zOffset * GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE);
+                this.gameObject.transform.localScale = new Vector3(GameConfig.CHUNK_SCALE, 1, GameConfig.CHUNK_SCALE);
             }
 
             public void HideChunk()
             {
+                this.gameObject.SetActive(false);
             }
 
             private void CreateMeshes()
@@ -98,7 +107,7 @@ namespace Game
                     parent.transform.parent = this.transform;
                     MeshFilter meshFilter = parent.GetComponent<MeshFilter>();
                     parent.GetComponent<MeshRenderer>().material = TileMaterials[(int)item.Key];
-                   parent.GetComponent<MeshCollider>().sharedMaterial = PhysicsMaterials[(int)(item.Key)];
+                    parent.GetComponent<MeshCollider>().sharedMaterial = PhysicsMaterials[(int)(item.Key)];
                     meshFilter.mesh = MeshGenerator.CreateMultiShape(item.Value);
                     parent.GetComponent<MeshCollider>().sharedMesh = meshFilter.mesh;
                 }

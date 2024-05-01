@@ -33,15 +33,17 @@ namespace Game
             {
                 Chunks = new Chunk[GameConfig.CHUNK_COUNT, GameConfig.CHUNK_COUNT];
 
-                for (int i = 0; i < GameConfig.CHUNK_COUNT; i++)
-                {
-                    for (int j = 0; j < GameConfig.CHUNK_COUNT; j++)
-                    {
-                        LoadChunk(j, i);
-                    }
-                }
+                LoadChunk(0, 0);
 
-                this.transform.localScale = new Vector3(ScaleAmount, 1, ScaleAmount);
+                //for (int i = 0; i < GameConfig.CHUNK_COUNT; i++)
+                //{
+                //    for (int j = 0; j < GameConfig.CHUNK_COUNT; j++)
+                //    {
+                //        LoadChunk(j, i);
+                //    }
+                //}
+
+                //this.transform.localScale = new Vector3(ScaleAmount, 1, ScaleAmount);
             }
 
             /// <summary>
@@ -77,6 +79,14 @@ namespace Game
                 else
                 {
                     Chunks[z, x].Display();
+                }
+            }
+
+            public void HideChunk(int x, int z)
+            {
+                if (Chunks[z, x] is not null)
+                {
+                    Chunks[z, x].HideChunk();
                 }
             }
         }
