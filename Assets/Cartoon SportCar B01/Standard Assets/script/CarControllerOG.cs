@@ -3,9 +3,20 @@ using UnityEngine;
 
 namespace UnityStandardAssets.Vehicles.Car
 {
-   
+    internal enum CarDriveType
+    {
+        FrontWheelDrive,
+        RearWheelDrive,
+        FourWheelDrive
+    }
 
-    public class CarController : MonoBehaviour
+    internal enum SpeedType
+    {
+        MPH,
+        KPH
+    }
+
+    public class CarControllerOG : MonoBehaviour
     {
         [SerializeField] private CarDriveType m_CarDriveType = CarDriveType.FourWheelDrive;
         [SerializeField] private WheelCollider[] m_WheelColliders = new WheelCollider[4];
@@ -44,10 +55,10 @@ namespace UnityStandardAssets.Vehicles.Car
         public float Revs { get; private set; }
         public float AccelInput { get; private set; }
 
-        //private void OnCollisionEnter(Collision collision)
-        //{
-        //    Debug.Log(collision.gameObject.name);
-        //}
+        private void OnCollisionEnter(Collision collision)
+        {
+            Debug.Log(collision.gameObject.name);
+        }
 
         // Use this for initialization
         private void Start()
