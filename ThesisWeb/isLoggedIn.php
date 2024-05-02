@@ -12,6 +12,7 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     echo json_encode($resArray);
 }
 
-
+$resArray=array_merge(array("res"=>"failed"),$user);
+echo json_encode($resArray);
 
 ?>
