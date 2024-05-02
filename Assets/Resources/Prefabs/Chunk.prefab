@@ -49,7 +49,11 @@ MonoBehaviour:
   - {fileID: 2100000, guid: dace4b574e7666845b7e458e9b386ad2, type: 2}
   - {fileID: 2100000, guid: d8fcf9518cd61874e962c069b3afff78, type: 2}
   - {fileID: 2100000, guid: e2d36c841f15b664984cf5eae960474f, type: 2}
-  TileScale: 10
+  PhysicsMaterials:
+  - {fileID: 13400000, guid: 1ba3aeb1e7f540c40a9fca82de497841, type: 2}
+  - {fileID: 13400000, guid: 21d896b1fe8374542a5b0cebd7701ed9, type: 2}
+  - {fileID: 13400000, guid: ea198269102ab714983799a3c65ef4f1, type: 2}
+  - {fileID: 13400000, guid: b068d3fdf447ede4e931397903c3bc53, type: 2}
   XOffset: 0
   ZOffset: 0
   RandomizeOffset: 1

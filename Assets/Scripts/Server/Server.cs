@@ -15,7 +15,7 @@ public static class Server
     /// <param name="form">The data to send for the server refer to the serverconfig what it needs</param>
     /// <param name="onComplete">When the response arrives what to do</param>
     /// <param name="beforeComplete">What to do before the completion so we can show it before that to the user and validate it later</param>
-    public static IEnumerator SendRequest<T>(string url, WWWForm form, Action<T> onComplete, Action beforeComplete = null)
+    public static IEnumerator SendRequest<T>(string url, WWWForm form, Action<T> onComplete = null, Action beforeComplete = null)
     {
         using (UnityWebRequest webRequest = UnityWebRequest.Post(url, form))
         {
@@ -38,11 +38,11 @@ public static class Server
                 T result = JsonConvert.DeserializeObject<T>(webRequest.downloadHandler.text);
                 if (result is not null)
                 {
-                    onComplete(result);
+                    onComplete?.Invoke(result);
                 }
                 else
                 {
-                    Debug.Log("Server crashed");
+                    Debug.Log("Server crashed URL:" + url);
                 }
             }
         }
