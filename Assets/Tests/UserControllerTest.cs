@@ -46,8 +46,9 @@ namespace Tests
 
             {
                 Login("test", "test");
-                Assert.IsTrue(User.UserData.LoggedIn);
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                Assert.IsTrue(User.UserData.LoggedIn);
+
                 //   Assert.AreEqual("test@gmail.com", User.UserData.Email);
             }
 
@@ -55,9 +56,9 @@ namespace Tests
             public IEnumerator LoginTestUserName()
             {
                 Login("test", "test");
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
                 Assert.IsTrue(User.UserData.LoggedIn);
                 Assert.AreEqual("test", User.UserData.Username);
-                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
             }
         }
     }
