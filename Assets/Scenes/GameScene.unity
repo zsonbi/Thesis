@@ -191,6 +191,17 @@ WheelCollider:
   m_CorrespondingSourceObject: {fileID: 3699891372420641560, guid: 53de21bfbcd04564fadad1d022e759f0, type: 3}
   m_PrefabInstance: {fileID: 2980580755406144773}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1182204200 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7976258788379953556, guid: 0b328d3fa0a63d948bcca262bfa2227b, type: 3}
+  m_PrefabInstance: {fileID: 1037636375067061139}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f80350d7b5c2f344384c2e01cb875e94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!146 &1454228190 stripped
 WheelCollider:
   m_CorrespondingSourceObject: {fileID: 1492265129099997590, guid: 53de21bfbcd04564fadad1d022e759f0, type: 3}
@@ -347,6 +358,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7544207952693903157, guid: 765eb30185385d34a877d533c844ea11, type: 3}
+      propertyPath: world
+      value: 
+      objectReference: {fileID: 1182204200}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
