@@ -1,6 +1,4 @@
 using System;
-using System.Collections.Generic;
-using UnityEngine;
 
 namespace User
 {
@@ -31,8 +29,6 @@ namespace User
         public static void Logout()
         {
             LoggedIn = false;
-            WWWForm form = new WWWForm();
-            Server.SendRequest<Dictionary<string, string>>(Config.ServerConfig.PATHFORLOGOUT, form);
         }
     }
 }
