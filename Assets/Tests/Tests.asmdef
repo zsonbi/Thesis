@@ -4,8 +4,7 @@
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
-        "ThesisScripts",
-        "Unity.TextMeshPro"
+        "ThesisScripts"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

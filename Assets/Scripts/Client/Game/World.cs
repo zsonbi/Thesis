@@ -7,50 +7,27 @@ namespace Game
 {
     namespace World
     {
-        /// <summary>
-        /// A class for handling chunk loading and unloading
-        /// </summary>
         public class World : MonoBehaviour
         {
-            /// <summary>
-            /// Chunk prefab for the chunk creation
-            /// </summary>
             [SerializeField]
             private GameObject ChunkPrefab;
 
-            [SerializeField]
-            private int ScaleAmount = 1;
-
-            /// <summary>
-            /// The chunks of the world
-            /// </summary>
             private Chunk[,] Chunks;
 
-            /// <summary>
-            /// Start is called before the first frame update
-            /// </summary>
+            // Start is called before the first frame update
             private void Start()
             {
                 Chunks = new Chunk[GameConfig.CHUNK_COUNT, GameConfig.CHUNK_COUNT];
 
-                LoadChunk(0, 0);
-
-                //for (int i = 0; i < GameConfig.CHUNK_COUNT; i++)
-                //{
-                //    for (int j = 0; j < GameConfig.CHUNK_COUNT; j++)
-                //    {
-                //        LoadChunk(j, i);
-                //    }
-                //}
-
-                //this.transform.localScale = new Vector3(ScaleAmount, 1, ScaleAmount);
+                for (int i = 0; i < GameConfig.CHUNK_COUNT; i++)
+                {
+                    for (int j = 0; j < GameConfig.CHUNK_COUNT; j++)
+                    {
+                        LoadChunk(j, i);
+                    }
+                }
             }
 
-            /// <summary>
-            /// Loads a chunk
-            /// </summary>
-            /// <param name="x">The x index of the chunk (horizontal)</param>
-            /// <param name="z">The z index of the chunk (vertical)</param>
             public void LoadChunk(int x, int z)
             {
                 if (Chunks[z, x] == null)
@@ -75,18 +52,6 @@ namespace Game
                     }
 
                     Chunks[z, x].InitChunk(x, z, edges);
-                }
-                else
-                {
-                    Chunks[z, x].Display();
-                }
-            }
-
-            public void HideChunk(int x, int z)
-            {
-                if (Chunks[z, x] is not null)
-                {
-                    Chunks[z, x].HideChunk();
                 }
             }
         }
