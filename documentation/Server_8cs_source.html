@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('Server_8cs_source.html',''); initResiz
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classServer.html">    8</a></span>&#160;<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code" href="classServer.html">Server</a></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classServer.html#a35044059fd0182c77c1fee7c1c1f7eb7">   18</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> IEnumerator <a class="code" href="classServer.html#a35044059fd0182c77c1fee7c1c1f7eb7">SendRequest&lt;T&gt;</a>(<span class="keywordtype">string</span> url, WWWForm form, Action&lt;T&gt; onComplete, Action beforeComplete = <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classServer.html#a574afc26ebadee555fb1cab198c62de3">   18</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> IEnumerator <a class="code" href="classServer.html#a574afc26ebadee555fb1cab198c62de3">SendRequest&lt;T&gt;</a>(<span class="keywordtype">string</span> url, WWWForm form, Action&lt;T&gt; onComplete = <span class="keyword">null</span>, Action beforeComplete = <span class="keyword">null</span>)</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">using</span> (UnityWebRequest webRequest = UnityWebRequest.Post(url, form))</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        {</div>
@@ -118,18 +118,18 @@ $(document).ready(function(){initNavTree('Server_8cs_source.html',''); initResiz
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                T result = JsonConvert.DeserializeObject&lt;T&gt;(webRequest.downloadHandler.text);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                <span class="keywordflow">if</span> (result is not <span class="keyword">null</span>)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                    onComplete(result);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                    onComplete?.Invoke(result);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                    Debug.Log(<span class="stringliteral">&quot;Server crashed&quot;</span>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                    Debug.Log(<span class="stringliteral">&quot;Server crashed URL:&quot;</span> + url);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            }</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
 <div class="ttc" id="aclassServer_html"><div class="ttname"><a href="classServer.html">Server</a></div><div class="ttdef"><b>Definition:</b> <a href="Server_8cs_source.html#l00008">Server.cs:9</a></div></div>
-<div class="ttc" id="aclassServer_html_a35044059fd0182c77c1fee7c1c1f7eb7"><div class="ttname"><a href="classServer.html#a35044059fd0182c77c1fee7c1c1f7eb7">Server.SendRequest&lt; T &gt;</a></div><div class="ttdeci">static IEnumerator SendRequest&lt; T &gt;(string url, WWWForm form, Action&lt; T &gt; onComplete, Action beforeComplete=null)</div><div class="ttdoc">Send a request to the server</div><div class="ttdef"><b>Definition:</b> <a href="Server_8cs_source.html#l00018">Server.cs:18</a></div></div>
+<div class="ttc" id="aclassServer_html_a574afc26ebadee555fb1cab198c62de3"><div class="ttname"><a href="classServer.html#a574afc26ebadee555fb1cab198c62de3">Server.SendRequest&lt; T &gt;</a></div><div class="ttdeci">static IEnumerator SendRequest&lt; T &gt;(string url, WWWForm form, Action&lt; T &gt; onComplete=null, Action beforeComplete=null)</div><div class="ttdoc">Send a request to the server</div><div class="ttdef"><b>Definition:</b> <a href="Server_8cs_source.html#l00018">Server.cs:18</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

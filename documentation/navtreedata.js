@@ -54,8 +54,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"ChunkCellType_8cs.html",
-"classUserController.html"
+"CarProbeScript_8cs.html",
+"classTaskOpenPanelController.html#aeb6c1cf2f3da2be35bb515f455d3f0d8"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

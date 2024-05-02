@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['id_79',['Id',['../classTaskContainer.html#a3d249451bde17c2603ac780a39fe91de',1,'TaskContainer.Id()'],['../classUser_1_1UserData.html#ad7366dd36c68d5392877660c58be3322',1,'User.UserData.Id()']]],
-  ['init_80',['Init',['../classUser_1_1UserData.html#a7cb36daccedbf78e18d4504d403c07c4',1,'User::UserData']]],
-  ['initchunk_81',['InitChunk',['../classGame_1_1World_1_1Chunk.html#a2a46b2990184bcf7d689e56ac4e3f141',1,'Game::World::Chunk']]],
-  ['initvalues_82',['InitValues',['../classTask.html#a15ee955da77f711c5924ac81d184e33f',1,'Task']]],
-  ['isnewtask_83',['isNewTask',['../classTaskOpenPanelController.html#ac0fa9db0872e1f4e4872117d5420ea42',1,'TaskOpenPanelController']]],
-  ['isvalidemail_84',['IsValidEmail',['../classUserController.html#a4ddf4a375cad51a8784cb9be7ba11b23',1,'UserController']]]
+  ['hide_83',['Hide',['../classModalWindow.html#a34671e7d80905810cf4f7d6657a125f3',1,'ModalWindow']]],
+  ['hidechunk_84',['HideChunk',['../classGame_1_1World_1_1Chunk.html#a118e0c25d254444e6663404fd61749d9',1,'Game.World.Chunk.HideChunk()'],['../classGame_1_1World_1_1World.html#ae9340be3ea91fd00e8863b7f9d2574b0',1,'Game.World.World.HideChunk()']]],
+  ['hourly_85',['Hourly',['../TaskIntervals_8cs.html#a4ba022096603875ae402bb772ec906f9a769cb50c95fd3a43c659aa73aba99e5b',1,'TaskIntervals.cs']]]
 ];

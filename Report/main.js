@@ -222,6 +222,42 @@ for (i = 0, l = charts.length; i < l; i++) {
 
 var assemblies = [
   {
+    "name": "Assembly-CSharp",
+    "classes": [
+      { "name": "brake_light", "rp": "Assembly_CSharp_brake_light.html", "cl": 0, "ucl": 19, "cal": 19, "tl": 35, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "CameraSwitch", "rp": "Assembly_CSharp_CameraSwitch.html", "cl": 0, "ucl": 12, "cal": 12, "tl": 31, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "on_off_light", "rp": "Assembly_CSharp_on_off_light.html", "cl": 0, "ucl": 9, "cal": 9, "tl": 22, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "OpenElement", "rp": "Assembly_CSharp_OpenElement.html", "cl": 0, "ucl": 12, "cal": 12, "tl": 27, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.Cameras.AbstractTargetFollower", "rp": "Assembly_CSharp_AbstractTargetFollower.html", "cl": 0, "ucl": 50, "cal": 50, "tl": 104, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.Cameras.AutoCam", "rp": "Assembly_CSharp_AutoCam.html", "cl": 0, "ucl": 60, "cal": 60, "tl": 107, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.Cameras.FreeLookCam", "rp": "Assembly_CSharp_FreeLookCam.html", "cl": 0, "ucl": 57, "cal": 57, "tl": 115, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.Cameras.PivotBasedCameraRig", "rp": "Assembly_CSharp_PivotBasedCameraRig.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 28, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.Cameras.ProtectCameraFromWallClip", "rp": "Assembly_CSharp_ProtectCameraFromWallClip.html", "cl": 0, "ucl": 58, "cal": 58, "tl": 124, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.CrossPlatformInput.AxisTouchButton", "rp": "Assembly_CSharp_AxisTouchButton.html", "cl": 0, "ucl": 41, "cal": 41, "tl": 75, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.CrossPlatformInput.ButtonHandler", "rp": "Assembly_CSharp_ButtonHandler.html", "cl": 0, "ucl": 19, "cal": 19, "tl": 50, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager", "rp": "Assembly_CSharp_CrossPlatformInputManager.html", "cl": 0, "ucl": 133, "cal": 133, "tl": 318, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.CrossPlatformInput.InputAxisScrollbar", "rp": "Assembly_CSharp_InputAxisScrollbar.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 17, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.CrossPlatformInput.Inspector.TiltInputAxisStylePropertyDrawer", "rp": "Assembly_CSharp_TiltInputAxisStylePropertyDrawer.html", "cl": 0, "ucl": 24, "cal": 24, "tl": 145, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.CrossPlatformInput.Joystick", "rp": "Assembly_CSharp_Joystick.html", "cl": 0, "ucl": 69, "cal": 69, "tl": 118, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.CrossPlatformInput.MobileControlRig", "rp": "Assembly_CSharp_MobileControlRig.html", "cl": 0, "ucl": 32, "cal": 32, "tl": 85, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.CrossPlatformInput.PlatformSpecific.MobileInput", "rp": "Assembly_CSharp_MobileInput.html", "cl": 0, "ucl": 79, "cal": 79, "tl": 133, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.CrossPlatformInput.PlatformSpecific.StandaloneInput", "rp": "Assembly_CSharp_StandaloneInput.html", "cl": 0, "ucl": 27, "cal": 27, "tl": 79, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.CrossPlatformInput.TiltInput", "rp": "Assembly_CSharp_TiltInput.html", "cl": 0, "ucl": 34, "cal": 34, "tl": 145, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.CrossPlatformInput.TouchPad", "rp": "Assembly_CSharp_TouchPad.html", "cl": 0, "ucl": 64, "cal": 64, "tl": 156, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.CrossPlatformInput.VirtualInput", "rp": "Assembly_CSharp_VirtualInput.html", "cl": 0, "ucl": 60, "cal": 60, "tl": 134, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.ImageEffects.DepthOfField", "rp": "Assembly_CSharp_DepthOfField.html", "cl": 0, "ucl": 234, "cal": 234, "tl": 387, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.ImageEffects.PostEffectsBase", "rp": "Assembly_CSharp_PostEffectsBase.html", "cl": 0, "ucl": 150, "cal": 150, "tl": 243, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.ImageEffects.VignetteAndChromaticAberration", "rp": "Assembly_CSharp_VignetteAndChromaticAberration.html", "cl": 0, "ucl": 62, "cal": 62, "tl": 114, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.Utility.PlatformSpecificContent", "rp": "Assembly_CSharp_PlatformSpecificContent.html", "cl": 0, "ucl": 48, "cal": 48, "tl": 108, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.Utility.SimpleActivatorMenu", "rp": "Assembly_CSharp_SimpleActivatorMenu.html", "cl": 0, "ucl": 11, "cal": 11, "tl": 35, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.Vehicles.Car.CarAudio", "rp": "Assembly_CSharp_CarAudio.html", "cl": 0, "ucl": 76, "cal": 76, "tl": 174, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.Vehicles.Car.CarController", "rp": "Assembly_CSharp_CarController.html", "cl": 0, "ucl": 137, "cal": 137, "tl": 244, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.Vehicles.Car.CarControllerOG", "rp": "Assembly_CSharp_CarControllerOG.html", "cl": 0, "ucl": 186, "cal": 186, "tl": 336, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.Vehicles.Car.CarUserControl", "rp": "Assembly_CSharp_CarUserControl.html", "cl": 0, "ucl": 9, "cal": 9, "tl": 33, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.Vehicles.Car.SkidTrail", "rp": "Assembly_CSharp_SkidTrail.html", "cl": 0, "ucl": 9, "cal": 9, "tl": 25, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.Vehicles.Car.WheelEffects", "rp": "Assembly_CSharp_WheelEffects.html", "cl": 0, "ucl": 53, "cal": 53, "tl": 94, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+    ]},
+  {
     "name": "Assembly-CSharp-Editor",
     "classes": [
       { "name": "BuildCommand", "rp": "Assembly_CSharp_Editor_BuildCommand.html", "cl": 0, "ucl": 197, "cal": 197, "tl": 310, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
@@ -233,28 +269,31 @@ var assemblies = [
     "classes": [
       { "name": "Tests.GameTests.RoadGeneratorTests", "rp": "Tests_RoadGeneratorTests.html", "cl": 26, "ucl": 0, "cal": 26, "tl": 55, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Tests.MainMenuTest", "rp": "Tests_MainMenuTest.html", "cl": 4, "ucl": 0, "cal": 4, "tl": 24, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Tests.UITests.UserControllerTests", "rp": "Tests_UserControllerTests.html", "cl": 25, "ucl": 1, "cal": 26, "tl": 65, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
     ]},
   {
     "name": "ThesisScripts",
     "classes": [
+      { "name": "CarProbeScript", "rp": "ThesisScripts_CarProbeScript.html", "cl": 0, "ucl": 29, "cal": 29, "tl": 50, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "DirectionConverter", "rp": "ThesisScripts_DirectionConverter.html", "cl": 0, "ucl": 21, "cal": 21, "tl": 46, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "EdgeRoadContainer", "rp": "ThesisScripts_EdgeRoadContainer.html", "cl": 9, "ucl": 0, "cal": 9, "tl": 15, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Game.World.Chunk", "rp": "ThesisScripts_Chunk.html", "cl": 0, "ucl": 95, "cal": 95, "tl": 211, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Game.World.RoadGenerator", "rp": "ThesisScripts_RoadGenerator.html", "cl": 68, "ucl": 3, "cal": 71, "tl": 136, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Game.World.World", "rp": "ThesisScripts_World.html", "cl": 0, "ucl": 34, "cal": 34, "tl": 59, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.GameController", "rp": "ThesisScripts_GameController.html", "cl": 0, "ucl": 5, "cal": 5, "tl": 22, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.World.Chunk", "rp": "ThesisScripts_Chunk.html", "cl": 0, "ucl": 79, "cal": 79, "tl": 171, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.World.RoadGenerator", "rp": "ThesisScripts_RoadGenerator.html", "cl": 70, "ucl": 3, "cal": 73, "tl": 153, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.World.World", "rp": "ThesisScripts_World.html", "cl": 0, "ucl": 38, "cal": 38, "tl": 94, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "GameWorld", "rp": "ThesisScripts_GameWorld.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 18, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "MeshGenerator", "rp": "ThesisScripts_MeshGenerator.html", "cl": 0, "ucl": 27, "cal": 27, "tl": 96, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "ModalWindow", "rp": "ThesisScripts_ModalWindow.html", "cl": 0, "ucl": 19, "cal": 19, "tl": 43, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Player", "rp": "ThesisScripts_Player.html", "cl": 0, "ucl": 18, "cal": 18, "tl": 36, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Player", "rp": "ThesisScripts_Player.html", "cl": 0, "ucl": 19, "cal": 19, "tl": 80, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Police", "rp": "ThesisScripts_Police.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 18, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Task", "rp": "ThesisScripts_Task.html", "cl": 0, "ucl": 72, "cal": 72, "tl": 129, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "TaskApiResponse", "rp": "ThesisScripts_TaskApiResponse.html", "cl": 0, "ucl": 9, "cal": 9, "tl": 16, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Task", "rp": "ThesisScripts_Task.html", "cl": 38, "ucl": 34, "cal": 72, "tl": 129, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "TaskApiResponse", "rp": "ThesisScripts_TaskApiResponse.html", "cl": 9, "ucl": 0, "cal": 9, "tl": 16, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "TaskClosedEventArgs", "rp": "ThesisScripts_TaskClosedEventArgs.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 14, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "TaskContainer", "rp": "ThesisScripts_TaskContainer.html", "cl": 0, "ucl": 57, "cal": 57, "tl": 79, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "TaskOpenPanelController", "rp": "ThesisScripts_TaskOpenPanelController.html", "cl": 0, "ucl": 105, "cal": 105, "tl": 192, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "UIController", "rp": "ThesisScripts_UIController.html", "cl": 0, "ucl": 79, "cal": 79, "tl": 133, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "User.UserData", "rp": "ThesisScripts_UserData.html", "cl": 0, "ucl": 21, "cal": 21, "tl": 34, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "UserController", "rp": "ThesisScripts_UserController.html", "cl": 0, "ucl": 98, "cal": 98, "tl": 198, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "TaskContainer", "rp": "ThesisScripts_TaskContainer.html", "cl": 36, "ucl": 21, "cal": 57, "tl": 79, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "TaskOpenPanelController", "rp": "ThesisScripts_TaskOpenPanelController.html", "cl": 14, "ucl": 91, "cal": 105, "tl": 192, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UIController", "rp": "ThesisScripts_UIController.html", "cl": 41, "ucl": 38, "cal": 79, "tl": 133, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "User.UserData", "rp": "ThesisScripts_UserData.html", "cl": 23, "ucl": 0, "cal": 23, "tl": 38, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UserController", "rp": "ThesisScripts_UserController.html", "cl": 35, "ucl": 63, "cal": 98, "tl": 198, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
     ]},
 ];
 
@@ -268,11 +307,102 @@ var riskHotspotMetrics = [
 
 var riskHotspots = [
   {
-    "assembly": "ThesisScripts", "class": "Game.World.World", "reportPath": "ThesisScripts_World.html", "methodName": "System.Void Game.World.World::LoadChunk(System.Int32, System.Int32)", "methodShortName": "LoadChunk(...)", "fileIndex": 0, "line": 32,
+    "assembly": "Assembly-CSharp", "class": "UnityStandardAssets.ImageEffects.DepthOfField", "reportPath": "Assembly_CSharp_DepthOfField.html", "methodName": "System.Void UnityStandardAssets.ImageEffects.DepthOfField::OnRenderImage(UnityEngine.RenderTexture, UnityEngine.RenderTexture)", "methodShortName": "OnRenderImage(...)", "fileIndex": 0, "line": 147,
+    "metrics": [
+      { "value": 27, "exceeded": true },
+      { "value": 0, "exceeded": false },
+      { "value": 756, "exceeded": true },
+    ]},
+  {
+    "assembly": "Assembly-CSharp", "class": "UnityStandardAssets.Cameras.ProtectCameraFromWallClip", "reportPath": "Assembly_CSharp_ProtectCameraFromWallClip.html", "methodName": "System.Void UnityStandardAssets.Cameras.ProtectCameraFromWallClip::LateUpdate()", "methodShortName": "LateUpdate()", "fileIndex": 0, "line": 41,
+    "metrics": [
+      { "value": 16, "exceeded": true },
+      { "value": 0, "exceeded": false },
+      { "value": 272, "exceeded": true },
+    ]},
+  {
+    "assembly": "ThesisScripts", "class": "CarProbeScript", "reportPath": "ThesisScripts_CarProbeScript.html", "methodName": "System.Void CarProbeScript::OnTriggerEnter(UnityEngine.Collider)", "methodShortName": "OnTriggerEnter(...)", "fileIndex": 0, "line": 18,
+    "metrics": [
+      { "value": 15, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 240, "exceeded": true },
+    ]},
+  {
+    "assembly": "ThesisScripts", "class": "Game.World.World", "reportPath": "ThesisScripts_World.html", "methodName": "System.Void Game.World.World::LoadChunk(System.Int32, System.Int32)", "methodShortName": "LoadChunk(...)", "fileIndex": 0, "line": 55,
     "metrics": [
       { "value": 14, "exceeded": false },
       { "value": 0, "exceeded": false },
       { "value": 210, "exceeded": true },
+    ]},
+  {
+    "assembly": "Assembly-CSharp", "class": "UnityStandardAssets.Cameras.AutoCam", "reportPath": "Assembly_CSharp_AutoCam.html", "methodName": "System.Void UnityStandardAssets.Cameras.AutoCam::FollowTarget(System.Single)", "methodShortName": "FollowTarget(...)", "fileIndex": 0, "line": 28,
+    "metrics": [
+      { "value": 13, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 182, "exceeded": true },
+    ]},
+  {
+    "assembly": "Assembly-CSharp", "class": "UnityStandardAssets.Vehicles.Car.CarAudio", "reportPath": "Assembly_CSharp_CarAudio.html", "methodName": "System.Void UnityStandardAssets.Vehicles.Car.CarAudio::Update()", "methodShortName": "Update()", "fileIndex": 0, "line": 88,
+    "metrics": [
+      { "value": 13, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 182, "exceeded": true },
+    ]},
+  {
+    "assembly": "Assembly-CSharp", "class": "UnityStandardAssets.ImageEffects.VignetteAndChromaticAberration", "reportPath": "Assembly_CSharp_VignetteAndChromaticAberration.html", "methodName": "System.Void UnityStandardAssets.ImageEffects.VignetteAndChromaticAberration::OnRenderImage(UnityEngine.RenderTexture, UnityEngine.RenderTexture)", "methodShortName": "OnRenderImage(...)", "fileIndex": 0, "line": 51,
+    "metrics": [
+      { "value": 11, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 132, "exceeded": true },
+    ]},
+  {
+    "assembly": "Assembly-CSharp", "class": "UnityStandardAssets.Utility.PlatformSpecificContent", "reportPath": "Assembly_CSharp_PlatformSpecificContent.html", "methodName": "System.Void UnityStandardAssets.Utility.PlatformSpecificContent::EnableContent(System.Boolean)", "methodShortName": "EnableContent(...)", "fileIndex": 0, "line": 81,
+    "metrics": [
+      { "value": 9, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 90, "exceeded": true },
+    ]},
+  {
+    "assembly": "Assembly-CSharp", "class": "UnityStandardAssets.Vehicles.Car.CarController", "reportPath": "Assembly_CSharp_CarController.html", "methodName": "System.Void UnityStandardAssets.Vehicles.Car.CarController::ApplyDrive(System.Single, System.Single)", "methodShortName": "ApplyDrive(...)", "fileIndex": 0, "line": 131,
+    "metrics": [
+      { "value": 9, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 90, "exceeded": true },
+    ]},
+  {
+    "assembly": "Assembly-CSharp", "class": "UnityStandardAssets.Vehicles.Car.CarControllerOG", "reportPath": "Assembly_CSharp_CarControllerOG.html", "methodName": "System.Void UnityStandardAssets.Vehicles.Car.CarControllerOG::ApplyDrive(System.Single, System.Single)", "methodShortName": "ApplyDrive(...)", "fileIndex": 0, "line": 202,
+    "metrics": [
+      { "value": 9, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 90, "exceeded": true },
+    ]},
+  {
+    "assembly": "Assembly-CSharp", "class": "UnityStandardAssets.CrossPlatformInput.TiltInput", "reportPath": "Assembly_CSharp_TiltInput.html", "methodName": "System.Void UnityStandardAssets.CrossPlatformInput.TiltInput::Update()", "methodShortName": "Update()", "fileIndex": 0, "line": 57,
+    "metrics": [
+      { "value": 8, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 72, "exceeded": true },
+    ]},
+  {
+    "assembly": "Assembly-CSharp", "class": "UnityStandardAssets.ImageEffects.PostEffectsBase", "reportPath": "Assembly_CSharp_PostEffectsBase.html", "methodName": "UnityEngine.Material UnityStandardAssets.ImageEffects.PostEffectsBase::CheckShaderAndCreateMaterial(UnityEngine.Shader, UnityEngine.Material)", "methodShortName": "CheckShaderAndCreateMaterial(...)", "fileIndex": 0, "line": 15,
+    "metrics": [
+      { "value": 7, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 56, "exceeded": true },
+    ]},
+  {
+    "assembly": "Assembly-CSharp", "class": "UnityStandardAssets.ImageEffects.PostEffectsBase", "reportPath": "Assembly_CSharp_PostEffectsBase.html", "methodName": "UnityEngine.Material UnityStandardAssets.ImageEffects.PostEffectsBase::CreateMaterial(UnityEngine.Shader, UnityEngine.Material)", "methodShortName": "CreateMaterial(...)", "fileIndex": 0, "line": 44,
+    "metrics": [
+      { "value": 7, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 56, "exceeded": true },
+    ]},
+  {
+    "assembly": "Assembly-CSharp", "class": "UnityStandardAssets.ImageEffects.PostEffectsBase", "reportPath": "Assembly_CSharp_PostEffectsBase.html", "methodName": "System.Boolean UnityStandardAssets.ImageEffects.PostEffectsBase::CheckSupport(System.Boolean)", "methodShortName": "CheckSupport(...)", "fileIndex": 0, "line": 92,
+    "metrics": [
+      { "value": 7, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 56, "exceeded": true },
     ]},
   {
     "assembly": "Assembly-CSharp-Editor", "class": "ReadmeEditor", "reportPath": "Assembly_CSharp_Editor_ReadmeEditor.html", "methodName": "System.Void ReadmeEditor::OnInspectorGUI()", "methodShortName": "OnInspectorGUI()", "fileIndex": 0, "line": 124,
@@ -280,6 +410,34 @@ var riskHotspots = [
       { "value": 7, "exceeded": false },
       { "value": 0, "exceeded": false },
       { "value": 56, "exceeded": true },
+    ]},
+  {
+    "assembly": "Assembly-CSharp", "class": "brake_light", "reportPath": "Assembly_CSharp_brake_light.html", "methodName": "System.Void brake_light::Update()", "methodShortName": "Update()", "fileIndex": 0, "line": 13,
+    "metrics": [
+      { "value": 6, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 42, "exceeded": true },
+    ]},
+  {
+    "assembly": "Assembly-CSharp", "class": "UnityStandardAssets.Cameras.AbstractTargetFollower", "reportPath": "Assembly_CSharp_AbstractTargetFollower.html", "methodName": "System.Void UnityStandardAssets.Cameras.AbstractTargetFollower::FixedUpdate()", "methodShortName": "FixedUpdate()", "fileIndex": 0, "line": 36,
+    "metrics": [
+      { "value": 6, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 42, "exceeded": true },
+    ]},
+  {
+    "assembly": "Assembly-CSharp", "class": "UnityStandardAssets.Cameras.AbstractTargetFollower", "reportPath": "Assembly_CSharp_AbstractTargetFollower.html", "methodName": "System.Void UnityStandardAssets.Cameras.AbstractTargetFollower::LateUpdate()", "methodShortName": "LateUpdate()", "fileIndex": 0, "line": 51,
+    "metrics": [
+      { "value": 6, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 42, "exceeded": true },
+    ]},
+  {
+    "assembly": "Assembly-CSharp", "class": "UnityStandardAssets.Cameras.AbstractTargetFollower", "reportPath": "Assembly_CSharp_AbstractTargetFollower.html", "methodName": "System.Void UnityStandardAssets.Cameras.AbstractTargetFollower::ManualUpdate()", "methodShortName": "ManualUpdate()", "fileIndex": 0, "line": 66,
+    "metrics": [
+      { "value": 6, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 42, "exceeded": true },
     ]},
   {
     "assembly": "Assembly-CSharp-Editor", "class": "BuildCommand", "reportPath": "Assembly_CSharp_Editor_BuildCommand.html", "methodName": "static System.Void BuildCommand::PerformBuild()", "methodShortName": "PerformBuild()", "fileIndex": 0, "line": 179,
@@ -296,7 +454,7 @@ var riskHotspots = [
       { "value": 42, "exceeded": true },
     ]},
   {
-    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "ChunkCellType Game.World.Chunk::DetermineTileType(System.Int32, System.Int32)", "methodShortName": "DetermineTileType(...)", "fileIndex": 0, "line": 187,
+    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "ChunkCellType Game.World.Chunk::DetermineTileType(System.Int32, System.Int32)", "methodShortName": "DetermineTileType(...)", "fileIndex": 0, "line": 147,
     "metrics": [
       { "value": 6, "exceeded": false },
       { "value": 0, "exceeded": false },

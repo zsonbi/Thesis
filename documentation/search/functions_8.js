@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['openeditor_318',['OpenEditor',['../classTask.html#ac5bae959560b5162fa60ca2340e370b9',1,'Task']]],
-  ['openup_319',['OpenUp',['../classTaskOpenPanelController.html#a1147a8c395515fe25ff585e12095bd3d',1,'TaskOpenPanelController.OpenUp()'],['../classTaskOpenPanelController.html#a510d3b27a55f6c441d24e509b2bbd4e2',1,'TaskOpenPanelController.OpenUp(TaskContainer taskContainer=null)']]]
+  ['makeitbadhabit_330',['MakeItBadHabit',['../classTaskOpenPanelController.html#a060a72263cf32b7c54928306df58adc9',1,'TaskOpenPanelController']]],
+  ['makeitgoodtask_331',['MakeItGoodTask',['../classTaskOpenPanelController.html#a51848899b40753a10e249992b6c82ea5',1,'TaskOpenPanelController']]],
+  ['movetologinscene_332',['MoveToLoginScene',['../classUIController.html#aaed55bd192a151e06198240fb0a17e82',1,'UIController']]],
+  ['movetologinwindow_333',['MoveToLoginWindow',['../classUserController.html#a5cd64bbf032c4a46b5424e6822130682',1,'UserController']]],
+  ['movetomainscence_334',['MoveToMainScence',['../classUserController.html#af5f6a515315a0fb42dea26a6e9887a3e',1,'UserController']]],
+  ['movetoregisterwindow_335',['MoveToRegisterWindow',['../classUserController.html#a91636780faccc06a94f04336cd3ebe8d',1,'UserController']]]
 ];

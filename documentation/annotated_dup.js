@@ -8,11 +8,13 @@ var annotated_dup =
         [ "Chunk", "classGame_1_1World_1_1Chunk.html", "classGame_1_1World_1_1Chunk" ],
         [ "RoadGenerator", "classGame_1_1World_1_1RoadGenerator.html", "classGame_1_1World_1_1RoadGenerator" ],
         [ "World", "classGame_1_1World_1_1World.html", "classGame_1_1World_1_1World" ]
-      ] ]
+      ] ],
+      [ "GameController", "classGame_1_1GameController.html", "classGame_1_1GameController" ]
     ] ],
     [ "User", "namespaceUser.html", [
       [ "UserData", "classUser_1_1UserData.html", "classUser_1_1UserData" ]
     ] ],
+    [ "CarProbeScript", "classCarProbeScript.html", "classCarProbeScript" ],
     [ "DirectionConverter", "classDirectionConverter.html", "classDirectionConverter" ],
     [ "EdgeRoadContainer", "classEdgeRoadContainer.html", "classEdgeRoadContainer" ],
     [ "GameConfig", "classGameConfig.html", "classGameConfig" ],

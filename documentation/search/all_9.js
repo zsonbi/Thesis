@@ -1,17 +1,15 @@
 var searchData=
 [
-  ['makeitbadhabit_97',['MakeItBadHabit',['../classTaskOpenPanelController.html#a060a72263cf32b7c54928306df58adc9',1,'TaskOpenPanelController']]],
-  ['makeitgoodtask_98',['MakeItGoodTask',['../classTaskOpenPanelController.html#a51848899b40753a10e249992b6c82ea5',1,'TaskOpenPanelController']]],
-  ['meshgenerator_99',['MeshGenerator',['../classMeshGenerator.html',1,'']]],
-  ['meshgenerator_2ecs_100',['MeshGenerator.cs',['../MeshGenerator_8cs.html',1,'']]],
-  ['modalcontenttext_101',['ModalContentText',['../classModalWindow.html#aeca4ae4bd865300df08b118e4b03ae9c',1,'ModalWindow']]],
-  ['modaltitletext_102',['ModalTitleText',['../classModalWindow.html#aac919191f446c3687a66a0e8b4ecadcd',1,'ModalWindow']]],
-  ['modalwindow_103',['ModalWindow',['../classModalWindow.html',1,'ModalWindow'],['../classUIController.html#ad4b65fcdc4f0ebbbc19c45b3af5e305b',1,'UIController.ModalWindow()'],['../classUserController.html#a0fcf36dbe7a418f491ec58e566aa8c5b',1,'UserController.ModalWindow()']]],
-  ['modalwindowscript_2ecs_104',['ModalWindowScript.cs',['../ModalWindowScript_8cs.html',1,'']]],
-  ['monthly_105',['Monthly',['../TaskIntervals_8cs.html#a4ba022096603875ae402bb772ec906f9a9030e39f00132d583da4122532e509e9',1,'TaskIntervals.cs']]],
-  ['movelayer_106',['moveLayer',['../classGame_1_1World_1_1Chunk.html#a767dcbcb0dd23237d420abe3bdac438d',1,'Game::World::Chunk']]],
-  ['movetologinscene_107',['MoveToLoginScene',['../classUIController.html#aaed55bd192a151e06198240fb0a17e82',1,'UIController']]],
-  ['movetologinwindow_108',['MoveToLoginWindow',['../classUserController.html#a5cd64bbf032c4a46b5424e6822130682',1,'UserController']]],
-  ['movetomainscence_109',['MoveToMainScence',['../classUserController.html#af5f6a515315a0fb42dea26a6e9887a3e',1,'UserController']]],
-  ['movetoregisterwindow_110',['MoveToRegisterWindow',['../classUserController.html#a91636780faccc06a94f04336cd3ebe8d',1,'UserController']]]
+  ['lastcompleted_92',['LastCompleted',['../classTaskContainer.html#a9b62401362cb6b1c3b5094477308cfe5',1,'TaskContainer']]],
+  ['lastloggedin_93',['LastLoggedIn',['../classUser_1_1UserData.html#a5d88a92697600df1a952dda76dd51a96',1,'User::UserData']]],
+  ['left_94',['Left',['../namespaceDataTypes.html#a3bc22b847fe90cda4414fc931bd61622a945d5e233cf7d6240f6b783b36a374ff',1,'DataTypes']]],
+  ['loadbadhabits_95',['LoadBadHabits',['../classUIController.html#a51150c9459f1e990c72b16a035e53663',1,'UIController']]],
+  ['loadchunk_96',['LoadChunk',['../classGame_1_1World_1_1World.html#a493b241083c4d31b835315b66ce09753',1,'Game::World::World']]],
+  ['loaded_97',['Loaded',['../classGame_1_1World_1_1Chunk.html#a879b48e73c901d1ae0a712a78074021a',1,'Game::World::Chunk']]],
+  ['loadfromsettings_98',['LoadFromSettings',['../classGame_1_1World_1_1Chunk.html#adc0bbcb5890b573408d5f323ce40f1d5',1,'Game::World::Chunk']]],
+  ['loadgoodtasks_99',['LoadGoodTasks',['../classUIController.html#a88565f5d091a1c84ebc6bd4f8fce4015',1,'UIController']]],
+  ['loadtasks_100',['LoadTasks',['../classUIController.html#a0dc545de64fb2603baf048d46c983e5c',1,'UIController']]],
+  ['loggedin_101',['LoggedIn',['../classUser_1_1UserData.html#acdd4d87ab2fd5a0a81895656a6853b71',1,'User.UserData.LoggedIn()'],['../classUserController.html#ad8331cc247707871d80cab9927f62285',1,'UserController.LoggedIn(Dictionary&lt; string, string &gt; result)']]],
+  ['loginpanel_102',['LoginPanel',['../classUserController.html#a98d6b3d688cc0a31fd46d7eb90309d85',1,'UserController']]],
+  ['logout_103',['Logout',['../classUser_1_1UserData.html#a5affa4ff1f31fa4bd6a329b50a0b8933',1,'User::UserData']]]
 ];

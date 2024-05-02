@@ -8,6 +8,8 @@ var hierarchy =
     [ "GameConfig", "classGameConfig.html", null ],
     [ "MeshGenerator", "classMeshGenerator.html", null ],
     [ "MonoBehaviour", null, [
+      [ "CarProbeScript", "classCarProbeScript.html", null ],
+      [ "Game.GameController", "classGame_1_1GameController.html", null ],
       [ "Game.World.Chunk", "classGame_1_1World_1_1Chunk.html", null ],
       [ "Game.World.World", "classGame_1_1World_1_1World.html", null ],
       [ "GameWorld", "classGameWorld.html", null ],

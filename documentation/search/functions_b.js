@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['taskapiresponse_331',['TaskApiResponse',['../classTaskApiResponse.html#ac8b447c390e8731a94df7b348d5c7253',1,'TaskApiResponse']]],
-  ['taskclosedeventargs_332',['TaskClosedEventArgs',['../classTaskClosedEventArgs.html#a57230d0ae37abc4ee1d589b212363ca3',1,'TaskClosedEventArgs']]],
-  ['taskcompleted_333',['TaskCompleted',['../classTask.html#a74ac07ea5dd82ff0f8c628f9351368cc',1,'Task']]],
-  ['taskcontainer_334',['TaskContainer',['../classTaskContainer.html#aced82a8c8b149e8950f93acfc54eb4b9',1,'TaskContainer.TaskContainer(int id, string taskName, int taskType, int periodRate, string description, DateTime added, DateTime lastCompleted, int completed)'],['../classTaskContainer.html#a23381450125246537dfe70229da15522',1,'TaskContainer.TaskContainer()']]]
+  ['registered_340',['Registered',['../classUserController.html#a153195b18b8cdc3734cde9e15262688d',1,'UserController']]],
+  ['removetask_341',['RemoveTask',['../classUIController.html#a83df197d227b54bd09ba927cfb2d5cd1',1,'UIController']]],
+  ['resetcomplete_342',['ResetComplete',['../classTaskContainer.html#a13c5778d0867ec1015c47bcb61490fce',1,'TaskContainer']]],
+  ['roadgenerator_343',['RoadGenerator',['../classGame_1_1World_1_1RoadGenerator.html#a1c1c38998e4fe4814684c6289c16343a',1,'Game::World::RoadGenerator']]]
 ];
