@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DataTypes;
+using System.Linq;
 
 namespace Game
 {
@@ -51,7 +52,7 @@ namespace Game
                 {
                     startPositions.Add(new EdgeRoadContainer(new Vector2Int(GameConfig.CHUNK_SIZE / 2, 0), 0, new Vector2Int(0, 1)));
                     this.RoadMatrix[0, GameConfig.CHUNK_SIZE / 2] = true;
-                    EdgeRoads.Add(new EdgeRoadContainer(new Vector2Int(GameConfig.CHUNK_SIZE / 2, 0), 0, new Vector2Int(0, -1)));
+                    EdgeRoads.Add(new EdgeRoadContainer(new Vector2Int(GameConfig.CHUNK_SIZE / 2, 0), 1, new Vector2Int(0, -1)));
                     numberOfPlacedRoads++;
                 }
 
@@ -61,8 +62,9 @@ namespace Game
                     Vector2Int newStart = new Vector2Int((startPos.x + size) % size, (startPos.y + size) % size);
                     RoadMatrix[newStart.y, newStart.x] = true;
                     numberOfPlacedRoads++;
-                    EdgeRoads.Add(new EdgeRoadContainer(newStart, 0, generateStartPos.Direction));
-                    CreateRoad(newStart + generateStartPos.Direction, generateStartPos.Direction, generateStartPos.roadCounter);
+                    EdgeRoads.Add(new EdgeRoadContainer(newStart, 1, generateStartPos.Direction));
+                    // CreateRoad(newStart + generateStartPos.Direction, generateStartPos.Direction, generateStartPos.roadCounter);
+                    CreateNewRoad(newStart.y + generateStartPos.Direction.y, newStart.x + generateStartPos.Direction.x, generateStartPos.Direction.y, generateStartPos.Direction.x, generateStartPos.roadCounter);
                 }
             }
 
@@ -146,6 +148,51 @@ namespace Game
                 else
                 {
                     return false;
+                }
+            }
+
+            private void CreateNewRoad(int row, int col, int dirRow, int dirCol, int counter = 0)
+            {
+                if (row < 0 || col < 0 || row >= size || col >= size)
+                    return;
+
+                if (RoadMatrix[row, col])
+                {
+                    return;
+                }
+                RoadMatrix[row, col] = true;
+                if (col == 0 || col == size - 1 || row == 0 || row == size - 1)
+                {
+                    this.EdgeRoads.Add(new EdgeRoadContainer(new Vector2Int(col, row), counter, new Vector2Int(dirCol, dirRow)));
+                    return;
+                }
+                if (counter % 4 == 0)
+                {
+                    int interSectionCount = Random.Range(2, 4);
+                    List<Vector2Int> possibleDirs = new List<Vector2Int>();
+
+                    //The possible directions
+                    possibleDirs.Add(new Vector2Int(-1, 0));
+                    possibleDirs.Add(new Vector2Int(1, 0));
+                    possibleDirs.Add(new Vector2Int(0, -1));
+                    possibleDirs.Add(new Vector2Int(0, 1));
+
+                    for (int i = 0; i < interSectionCount && possibleDirs.Count != 0; i++)
+                    {
+                        int index = Random.Range(0, possibleDirs.Count);
+
+                        //  if (!CheckForward(possibleDirs[index], possibleDirs[index] - roadPos, 0))
+                        //  {
+                        CreateNewRoad(row + possibleDirs[index].y, col + possibleDirs[index].x, possibleDirs[index].y, possibleDirs[index].x, 1);
+                        //  }
+                        possibleDirs.RemoveAt(index);
+                    }
+                }
+                else
+                {
+                    counter++;
+
+                    CreateNewRoad(row + dirRow, col + dirCol, dirRow, dirCol, counter);
                 }
             }
         }

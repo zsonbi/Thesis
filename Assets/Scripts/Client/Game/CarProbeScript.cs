@@ -34,7 +34,7 @@ public class CarProbeScript : MonoBehaviour
         {
             for (int j = -2; j <= 2; j++)
             {
-                if(Mathf.Abs(i) <=1 && Mathf.Abs(j) <= 1)
+                if (Mathf.Abs(i) <= 1 && Mathf.Abs(j) <= 1)
                 {
                     continue;
                 }
@@ -45,6 +45,5 @@ public class CarProbeScript : MonoBehaviour
                 }
             }
         }
-
     }
 }

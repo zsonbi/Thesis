@@ -1,6 +1,6 @@
 public static class GameConfig
 {
-    public const int CHUNK_SIZE = 128;
+    public const int CHUNK_SIZE = 64;
 
     public const int CHUNK_COUNT = 64;
 

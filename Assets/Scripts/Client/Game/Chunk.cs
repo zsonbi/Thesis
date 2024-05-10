@@ -89,8 +89,10 @@ namespace Game
                 //    if (objectsToCombine[i].Count != 0)
                 //        CombineMeshes(i);
                 //}
+
                 CreateMeshes();
                 this.gameObject.transform.localPosition = new Vector3(xOffset * GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE, 0, zOffset * GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE);
+
                 this.gameObject.transform.localScale = new Vector3(GameConfig.CHUNK_SCALE, 1, GameConfig.CHUNK_SCALE);
             }
 

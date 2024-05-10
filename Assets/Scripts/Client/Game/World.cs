@@ -55,7 +55,7 @@ namespace Game
             {
                 if (Chunks[z, x] == null)
                 {
-                    Chunks[z, x] = Instantiate(ChunkPrefab, this.transform, false).GetComponent<Chunk>();
+                    Chunks[z, x] = Instantiate(ChunkPrefab, this.transform, true).GetComponent<Chunk>();
                     List<EdgeRoadContainer> edges = new List<EdgeRoadContainer>();
                     if (z - 1 >= 0 && Chunks[z - 1, x] != null)
                     {
