@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 005750db3cdaaf644974ed09b0df6cb0
+guid: af8820414b4b00847a6b817958c29797
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,43 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material
-    second: {fileID: 2100000, guid: 6cd653d753aa0f74db80efc666e5799c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: Material.003
     second: {fileID: 2100000, guid: 981eb5709052d2244b7ce5d9c93cc729, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.004
-    second: {fileID: 2100000, guid: 6cd653d753aa0f74db80efc666e5799c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.005
-    second: {fileID: 2100000, guid: 67227bd2aded40a4393108220bae3809, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.006
-    second: {fileID: 2100000, guid: 67227bd2aded40a4393108220bae3809, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: curvedMat
-    second: {fileID: 2100000, guid: 67227bd2aded40a4393108220bae3809, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: grassMat
-    second: {fileID: 2100000, guid: 981eb5709052d2244b7ce5d9c93cc729, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: straightMat
-    second: {fileID: 2100000, guid: 6cd653d753aa0f74db80efc666e5799c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
