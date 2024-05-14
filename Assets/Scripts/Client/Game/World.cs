@@ -21,6 +21,9 @@ namespace Game
             [SerializeField]
             private int ScaleAmount = 1;
 
+
+
+
             /// <summary>
             /// The chunks of the world
             /// </summary>

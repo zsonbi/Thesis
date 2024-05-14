@@ -27,7 +27,10 @@ namespace Game
 
             [Header("Randomize Offset")]
             public bool RandomizeOffset = false;
-
+            [SerializeField]
+            public GameObject straightRoadPrefab;
+            [SerializeField]
+            public GameObject grassPrefab;
             /// <summary>
             /// The size of the world on the z axis
             /// </summary>
@@ -90,8 +93,10 @@ namespace Game
                 //        CombineMeshes(i);
                 //}
 
-                CreateMeshes();
-                this.gameObject.transform.localPosition = new Vector3(xOffset * GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE, 0, zOffset * GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE);
+                //CreateMeshes();
+
+
+                this.gameObject.transform.localPosition = new Vector3(xOffset * GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE*16, 0, zOffset * GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE*16);
 
                 this.gameObject.transform.localScale = new Vector3(GameConfig.CHUNK_SCALE, 1, GameConfig.CHUNK_SCALE);
             }
@@ -132,8 +137,33 @@ namespace Game
                 {
                     for (int z = 0; z < zSize; z++)
                     {
+
+
                         ChunkCellType tileType = DetermineTileType(x, z);
+                        GameObject created=null;
+                        switch (tileType)
+                        {
+                            case ChunkCellType.Road:
+                                created= Instantiate(straightRoadPrefab,this.transform);
+
+                                break;
+                            case ChunkCellType.Grass:
+                                created = Instantiate(grassPrefab, this.transform);
+
+                                break;
+                            case ChunkCellType.Sand:
+                                break;
+                            case ChunkCellType.Water:
+                                break;
+                            default:
+                                break;
+                        }
+                        if(created!= null) { 
+                        created.transform.localPosition = new Vector3(x*32, created.transform.localPosition.y ,z*32);
+                        }
+                        continue;                        
                         chunkCells[tileType].Add(new Vector3(x, 0f, z));
+
                     }
                 }
             }
