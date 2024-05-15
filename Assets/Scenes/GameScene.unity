@@ -362,6 +362,18 @@ PrefabInstance:
       propertyPath: world
       value: 
       objectReference: {fileID: 1182204200}
+    - target: {fileID: 7916595530007337726, guid: 765eb30185385d34a877d533c844ea11, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8191521
+      objectReference: {fileID: 0}
+    - target: {fileID: 7916595530007337726, guid: 765eb30185385d34a877d533c844ea11, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5735764
+      objectReference: {fileID: 0}
+    - target: {fileID: 7916595530007337726, guid: 765eb30185385d34a877d533c844ea11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 70
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -431,6 +443,14 @@ PrefabInstance:
       propertyPath: ScaleAmount
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7976258788379953556, guid: 0b328d3fa0a63d948bcca262bfa2227b, type: 3}
+      propertyPath: grassPrefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: 25776dd1c8fa4f445a5016550173108e, type: 3}
+    - target: {fileID: 7976258788379953556, guid: 0b328d3fa0a63d948bcca262bfa2227b, type: 3}
+      propertyPath: straightRoadPrefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: 42e0569e4e06b0441ae75cb469a00fcc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

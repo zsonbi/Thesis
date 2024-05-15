@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using DataTypes;
+using Assets.Scripts.Client.DataTypes;
 
 namespace Game
 {
@@ -27,7 +28,20 @@ namespace Game
 
             [Header("Randomize Offset")]
             public bool RandomizeOffset = false;
+            [SerializeField]
+            public GameObject straightRoadPrefab;
 
+            [SerializeField]
+            private GameObject curvedRoadPrefab;
+
+            [SerializeField]
+            private GameObject threeWayRoadPrefab;
+
+            [SerializeField]
+            private GameObject crossRoadsPrefab;
+
+            [SerializeField]
+            public GameObject grassPrefab;
             /// <summary>
             /// The size of the world on the z axis
             /// </summary>
@@ -47,6 +61,8 @@ namespace Game
 
             private Dictionary<ChunkCellType, List<Vector3>> chunkCells = new Dictionary<ChunkCellType, List<Vector3>>();
             private RoadGenerator roadGenerator;
+            private World world;
+
 
             // Start is called before the first frame update
             private void Awake()
@@ -66,11 +82,12 @@ namespace Game
                 this.gameObject.SetActive(true);
             }
 
-            public void InitChunk(int xOffset, int zOffset, List<EdgeRoadContainer> edgeRoads)
+            public void InitChunk(int xOffset, int zOffset, List<EdgeRoadContainer> edgeRoads, World world)
             {
+                this.world = world;
                 this.Row = zOffset;
                 this.Col = xOffset;
-                for (ChunkCellType i = 0; i <= ChunkCellType.Road; i++)
+                for (ChunkCellType i = 0; i <= ChunkCellType.StraightRoad; i++)
                 {
                     chunkCells.Add(i, new List<Vector3>());
                 }
@@ -89,8 +106,12 @@ namespace Game
                 //    if (objectsToCombine[i].Count != 0)
                 //        CombineMeshes(i);
                 //}
-                CreateMeshes();
-                this.gameObject.transform.localPosition = new Vector3(xOffset * GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE, 0, zOffset * GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE);
+
+                //CreateMeshes();
+
+
+                this.gameObject.transform.localPosition = new Vector3(xOffset * GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * 32, 0, zOffset * GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * 32);
+
                 this.gameObject.transform.localScale = new Vector3(GameConfig.CHUNK_SCALE, 1, GameConfig.CHUNK_SCALE);
             }
 
@@ -130,9 +151,160 @@ namespace Game
                 {
                     for (int z = 0; z < zSize; z++)
                     {
-                        ChunkCellType tileType = DetermineTileType(x, z);
-                        chunkCells[tileType].Add(new Vector3(x, 0f, z));
+
+
+                        ChunkCellContainer tileType = DetermineTileType(x, z);
+                        GameObject created = null;
+                        switch (tileType.Type)
+                        {
+                            case ChunkCellType.StraightRoad:
+                                created = Instantiate(straightRoadPrefab, this.transform);
+                                break;
+
+                            case ChunkCellType.CurvedRoad:
+                                created = Instantiate(curvedRoadPrefab, this.transform);
+                                break;
+
+                            case ChunkCellType.ThreeWay:
+                                created = Instantiate(threeWayRoadPrefab, this.transform);
+                                break;
+
+                            case ChunkCellType.CrossRoads:
+                                created = Instantiate(crossRoadsPrefab, this.transform);
+                                break;
+
+                            case ChunkCellType.Grass:
+                                created = Instantiate(grassPrefab, this.transform);
+
+                                break;
+                            case ChunkCellType.Sand:
+                                break;
+                            case ChunkCellType.Water:
+                                break;
+                            default:
+                                break;
+                        }
+                        if (created != null)
+                        {
+                            created.transform.localPosition = new Vector3(x * 32, created.transform.localPosition.y, z * 32);
+                            if (tileType.Orientation != Vector3.zero)
+                                created.transform.Rotate(tileType.Orientation);
+                        }
+
+                        //chunkCells[tileType].Add(new Vector3(x, 0f, z));
+
                     }
+                }
+            }
+
+            private ChunkCellContainer DetermineRoadType(int x, int z)
+            {
+                int roadCount = 0;
+
+                int firstIndex = -1;
+                int lastIndex = -1;
+                int secondIndex = -1;
+
+
+                if (x - 1 >= 0 && roadGenerator.RoadMatrix[z, x - 1])
+                {
+                    roadCount++;
+                    firstIndex = 0;
+                    lastIndex = 0;
+                }
+
+                if (z + 1 < GameConfig.CHUNK_SIZE && roadGenerator.RoadMatrix[z + 1, x])
+                {
+                    roadCount++;
+
+                    if (firstIndex == -1)
+                    {
+                        firstIndex = 1;
+                    }
+                    else
+                    {
+                        secondIndex=1;
+                    }
+                    lastIndex = 1;
+                }
+
+
+                if (x + 1 < GameConfig.CHUNK_SIZE && roadGenerator.RoadMatrix[z, x + 1])
+                {
+                    roadCount++;
+
+                    if (firstIndex == -1)
+                    {
+                        firstIndex = 2;
+                    }
+                    else if(secondIndex == -1) 
+                    {
+                        secondIndex = 2;
+                    }
+                    lastIndex = 2;
+
+                }
+
+
+                if (z - 1 >= 0 && roadGenerator.RoadMatrix[z - 1, x])
+                {
+                    roadCount++;
+
+                    if (firstIndex == -1)
+                    {
+                        firstIndex = 3;
+                    }
+                    else if (secondIndex == -1)
+                    {
+                        secondIndex = 3;
+                    }
+                    lastIndex = 3;
+                }
+
+
+
+
+
+
+                if (roadCount == 4)
+                {
+                    return new ChunkCellContainer(ChunkCellType.CrossRoads, Vector3.zero);
+                }
+                else if (roadCount == 3)
+                {
+                    //if (lastIndex == 3)
+                    //{
+                    //    return new ChunkCellContainer(ChunkCellType.ThreeWay, new Vector3(0, (firstIndex+1) * 90, 0));
+                    //}
+
+                    if(firstIndex==0 && lastIndex == 3)
+                    {
+                        if (secondIndex == 1)
+                        {
+                            return new ChunkCellContainer(ChunkCellType.ThreeWay, new Vector3(0, ( 1) * 90, 0));
+                        }
+                        else
+                        {
+                            return new ChunkCellContainer(ChunkCellType.ThreeWay, Vector3.zero);
+                        }
+                    }
+
+
+                    return new ChunkCellContainer(ChunkCellType.ThreeWay, new Vector3(0, (secondIndex + 1) * 90, 0));
+
+                }
+                else if (roadCount == 2 && (lastIndex - firstIndex) % 2 == 1)
+                {
+                    if (secondIndex==3 && firstIndex==0)
+                    {
+                        return new ChunkCellContainer(ChunkCellType.CurvedRoad, new Vector3(0, (-1) * 90, 0));
+                    }
+
+                    return new ChunkCellContainer(ChunkCellType.CurvedRoad, new Vector3(0, (lastIndex - 1) * 90, 0));
+                }
+                else
+                {
+                    return new ChunkCellContainer(ChunkCellType.StraightRoad, new Vector3(0, (lastIndex % 2 + 1) * 90, 0));
                 }
             }
 
@@ -143,11 +315,11 @@ namespace Game
             /// <param name="x">x coord where we want to sample the perlin noise</param>
             /// <param name="z">z coord where we want to sample the perlin noise</param>
             /// <returns>the proper TileType</returns>
-            private ChunkCellType DetermineTileType(int x, int z)
+            private ChunkCellContainer DetermineTileType(int x, int z)
             {
                 if (roadGenerator.RoadMatrix[z, x])
                 {
-                    return ChunkCellType.Road;
+                    return DetermineRoadType((int)x, (int)z);
                 }
 
                 float noise = Mathf.PerlinNoise((float)(x / (float)xSize * 5f) + XOffset, (float)(z / (float)zSize * 5f) + ZOffset) * 10f - 1.5f;
@@ -155,15 +327,15 @@ namespace Game
                 // Debug.Log("noise:" + noise);
                 if (noise > 0.15f || true)
                 {
-                    return ChunkCellType.Grass;
+                    return new ChunkCellContainer(ChunkCellType.Grass, Vector3.zero);
                 }
                 else if (noise > 0.05f)
                 {
-                    return ChunkCellType.Sand;
+                    return new ChunkCellContainer(ChunkCellType.Sand, Vector3.zero);
                 }
                 else
                 {
-                    return ChunkCellType.Water;
+                    return new ChunkCellContainer(ChunkCellType.Water, Vector3.zero);
                 }
             }
         }

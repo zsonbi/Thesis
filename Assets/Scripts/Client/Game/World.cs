@@ -21,6 +21,9 @@ namespace Game
             [SerializeField]
             private int ScaleAmount = 1;
 
+
+
+
             /// <summary>
             /// The chunks of the world
             /// </summary>
@@ -55,7 +58,7 @@ namespace Game
             {
                 if (Chunks[z, x] == null)
                 {
-                    Chunks[z, x] = Instantiate(ChunkPrefab, this.transform, false).GetComponent<Chunk>();
+                    Chunks[z, x] = Instantiate(ChunkPrefab, this.transform, true).GetComponent<Chunk>();
                     List<EdgeRoadContainer> edges = new List<EdgeRoadContainer>();
                     if (z - 1 >= 0 && Chunks[z - 1, x] != null)
                     {
@@ -74,7 +77,7 @@ namespace Game
                         edges.AddRange(Chunks[z, x + 1].EdgeRoads.Where(x => x.EdgeRoad.x == 0));
                     }
 
-                    Chunks[z, x].InitChunk(x, z, edges);
+                    Chunks[z, x].InitChunk(x, z, edges,this);
                 }
                 else
                 {
