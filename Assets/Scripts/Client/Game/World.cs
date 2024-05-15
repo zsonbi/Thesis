@@ -77,7 +77,7 @@ namespace Game
                         edges.AddRange(Chunks[z, x + 1].EdgeRoads.Where(x => x.EdgeRoad.x == 0));
                     }
 
-                    Chunks[z, x].InitChunk(x, z, edges);
+                    Chunks[z, x].InitChunk(x, z, edges,this);
                 }
                 else
                 {
