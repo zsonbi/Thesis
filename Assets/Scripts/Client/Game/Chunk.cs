@@ -187,7 +187,7 @@ namespace Game
                         if (created != null)
                         {
                             created.transform.localPosition = new Vector3(x * 32, created.transform.localPosition.y, z * 32);
-                            if(tileType.Orientation!=Vector3.zero)
+                            if (tileType.Orientation != Vector3.zero)
                                 created.transform.Rotate(tileType.Orientation);
                         }
 
@@ -199,110 +199,68 @@ namespace Game
 
             private ChunkCellContainer DetermineRoadType(int x, int z)
             {
-                bool lastWasRoad = false;
-                bool twoRoadsBetween = false;
-                int index = 0;
                 int roadCount = 0;
-                int center = -1;
 
-                if (z - 1 >= 0 && roadGenerator.RoadMatrix[z - 1, x])
-                {
-                    lastWasRoad = true;
-                }
+                int firstIndex = -1;
+                int lastIndex = -1;
+                int secondIndex = -1;
 
 
                 if (x - 1 >= 0 && roadGenerator.RoadMatrix[z, x - 1])
                 {
                     roadCount++;
-                    if (lastWasRoad)
-                    {
-                        twoRoadsBetween = true;
-                    }
-
-                    lastWasRoad = true;
-                  
-                }
-                else
-                {
-                   
-                    lastWasRoad = false;
+                    firstIndex = 0;
+                    lastIndex = 0;
                 }
 
                 if (z + 1 < GameConfig.CHUNK_SIZE && roadGenerator.RoadMatrix[z + 1, x])
                 {
                     roadCount++;
-                    
 
-                    if (lastWasRoad)
+                    if (firstIndex == -1)
                     {
-                        if (twoRoadsBetween)
-                        {
-                            center = index;
-                        }
-                        twoRoadsBetween = true;
+                        firstIndex = 1;
                     }
-                    lastWasRoad = true;
-                    index = 1;
+                    else
+                    {
+                        secondIndex=1;
+                    }
+                    lastIndex = 1;
+                }
 
-                }
-                else
-                {
-                    lastWasRoad = false;
-                }
 
                 if (x + 1 < GameConfig.CHUNK_SIZE && roadGenerator.RoadMatrix[z, x + 1])
                 {
                     roadCount++;
-                   
-                    if (lastWasRoad)
+
+                    if (firstIndex == -1)
                     {
-                        if (twoRoadsBetween)
-                        {
-                            center = index;
-                        }
-                        twoRoadsBetween = true;
+                        firstIndex = 2;
                     }
-                    lastWasRoad = true;
-                    index = 2;
+                    else if(secondIndex == -1) 
+                    {
+                        secondIndex = 2;
+                    }
+                    lastIndex = 2;
 
                 }
-                else
-                {
-                    lastWasRoad = false;
-                }
+
 
                 if (z - 1 >= 0 && roadGenerator.RoadMatrix[z - 1, x])
                 {
                     roadCount++;
-                    //if (roadCount == 3 && center==-1)
-                    //{
-                    //    center = 3;
-                    //}
-                    if (lastWasRoad)
-                    {
-                        if (twoRoadsBetween)
-                        {
-                            center = index;
-                        }
-                        twoRoadsBetween = true;
-                    }
-                    
-                    lastWasRoad = true;
-                    index = 3;
-                }
-                else { lastWasRoad = false; }
-                if (lastWasRoad && x - 1 >= 0 && roadGenerator.RoadMatrix[z, x - 1])
-                {
 
-                        if (twoRoadsBetween)
-                        {
-                            center = index;
-                        }
-                        twoRoadsBetween = true;
-                    
-                  
-                    index = 0;
+                    if (firstIndex == -1)
+                    {
+                        firstIndex = 3;
+                    }
+                    else if (secondIndex == -1)
+                    {
+                        secondIndex = 3;
+                    }
+                    lastIndex = 3;
                 }
+
 
 
 
@@ -314,15 +272,39 @@ namespace Game
                 }
                 else if (roadCount == 3)
                 {
-                    return new ChunkCellContainer(ChunkCellType.ThreeWay, new Vector3(0, (center+1) * 90, 0));
+                    //if (lastIndex == 3)
+                    //{
+                    //    return new ChunkCellContainer(ChunkCellType.ThreeWay, new Vector3(0, (firstIndex+1) * 90, 0));
+                    //}
+
+                    if(firstIndex==0 && lastIndex == 3)
+                    {
+                        if (secondIndex == 1)
+                        {
+                            return new ChunkCellContainer(ChunkCellType.ThreeWay, new Vector3(0, ( 1) * 90, 0));
+                        }
+                        else
+                        {
+                            return new ChunkCellContainer(ChunkCellType.ThreeWay, Vector3.zero);
+                        }
+                    }
+
+
+                    return new ChunkCellContainer(ChunkCellType.ThreeWay, new Vector3(0, (secondIndex + 1) * 90, 0));
+
                 }
-                else if (roadCount == 2 && twoRoadsBetween)
+                else if (roadCount == 2 && (lastIndex - firstIndex) % 2 == 1)
                 {
-                    return new ChunkCellContainer(ChunkCellType.CurvedRoad, new Vector3(0,(index-1)*90,0));
+                    if (secondIndex==3 && firstIndex==0)
+                    {
+                        return new ChunkCellContainer(ChunkCellType.CurvedRoad, new Vector3(0, (-1) * 90, 0));
+                    }
+
+                    return new ChunkCellContainer(ChunkCellType.CurvedRoad, new Vector3(0, (lastIndex - 1) * 90, 0));
                 }
                 else
                 {
-                    return new ChunkCellContainer(ChunkCellType.StraightRoad, new Vector3(0, (index%2+1) * 90, 0));
+                    return new ChunkCellContainer(ChunkCellType.StraightRoad, new Vector3(0, (lastIndex % 2 + 1) * 90, 0));
                 }
             }
 
@@ -345,11 +327,11 @@ namespace Game
                 // Debug.Log("noise:" + noise);
                 if (noise > 0.15f || true)
                 {
-                    return new ChunkCellContainer( ChunkCellType.Grass,Vector3.zero);
+                    return new ChunkCellContainer(ChunkCellType.Grass, Vector3.zero);
                 }
                 else if (noise > 0.05f)
                 {
-                    return new ChunkCellContainer( ChunkCellType.Sand,Vector3.zero);
+                    return new ChunkCellContainer(ChunkCellType.Sand, Vector3.zero);
                 }
                 else
                 {
