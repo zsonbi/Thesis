@@ -17,7 +17,7 @@ public class CarProbeScript : MonoBehaviour
     private void OnTriggerEnter(Collider collision)
     {
         Debug.Log(collision.gameObject.name);
-        Chunk chunk = collision.gameObject.transform.parent.gameObject.GetComponent<Chunk>();
+        Chunk chunk = collision.gameObject.transform.parent.transform.parent.gameObject.GetComponent<Chunk>();
 
         for (int i = -1; i <= 1; i++)
         {
