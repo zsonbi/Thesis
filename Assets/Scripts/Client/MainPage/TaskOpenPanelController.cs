@@ -4,6 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Linq;
+using Thesis_backend.Data_Structures;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -114,42 +115,42 @@ public class TaskOpenPanelController : MonoBehaviour
     public void Save()
     {
         CollectFromFields();
-        WWWForm form = new WWWForm();
-        form.AddField("id", TaskContainer.Id);
-        form.AddField("taskName", TaskContainer.TaskName);
-        form.AddField("description", TaskContainer.Description);
-        form.AddField("periodRate", (int)TaskContainer.TaskInterval);
-        form.AddField("taskType", (int)TaskContainer.TaskType);
 
-        StartCoroutine(Server.SendRequest<Dictionary<string, string>>(ServerConfig.PATHFORTASKSAVE, form, SavedTask));
-    }
-
-    private void SavedTask(Dictionary<string, string> result)
-    {
-        if (result["res"] == "success")
+        TaskRequest taskRequest = new TaskRequest()
         {
-            this.TaskClosedEventHandler?.Invoke(this, new TaskClosedEventArgs(true));
-            tasksOpenPanel.SetActive(false);
-            if (TaskContainer.Id == -1)
-            {
-                UIController.CreateTask(this.TaskContainer);
-            }
-            else
-            {
-                UIController.UpdateTask(TaskContainer.Id);
-            }
+            TaskName = this.TaskContainer.TaskName,
+            Description = this.TaskContainer.Description,
+            PeriodRate = (int)TaskContainer.TaskInterval,
+            TaskType = Convert.ToBoolean(TaskContainer.TaskType)
+        };
+
+        if (isNewTask)
+        {
+            StartCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.Task>(ServerConfig.PATHFORTASKCREATE, taskRequest, SavedTask));
         }
         else
         {
-            UIController.ModalWindow.Show("Error", "Can't save the task");
+            StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.Task>(ServerConfig.PATHFORTASKUPDATE(TaskContainer.Id), taskRequest, SavedTask));
+        }
+    }
+
+    private void SavedTask(Thesis_backend.Data_Structures.Task savedTask)
+    {
+        this.TaskClosedEventHandler?.Invoke(this, new TaskClosedEventArgs(true));
+        tasksOpenPanel.SetActive(false);
+        if (TaskContainer.Id == -1)
+        {
+            UIController.CreateTask(this.TaskContainer);
+        }
+        else
+        {
+            UIController.UpdateTask(TaskContainer.Id);
         }
     }
 
     public void DeleteTask()
     {
-        WWWForm form = new WWWForm();
-        form.AddField("id", TaskContainer.Id);
-        StartCoroutine(Server.SendRequest<Dictionary<string, string>>(ServerConfig.PATHFORTASKDELETE, form, DeletedTask));
+        StartCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORTASKDELETE(TaskContainer.Id)));
     }
 
     private void DeletedTask(Dictionary<string, string> result)
