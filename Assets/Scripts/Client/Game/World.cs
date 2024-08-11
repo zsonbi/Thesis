@@ -39,7 +39,7 @@ namespace Game
                 LoadChunk(GameConfig.CHUNK_COUNT / 2, GameConfig.CHUNK_COUNT / 2);
 
                 Vector3 baseChunkPos = Chunks[GameConfig.CHUNK_COUNT / 2, GameConfig.CHUNK_COUNT / 2].gameObject.transform.localPosition;
-                playerCar.transform.localPosition = new Vector3(baseChunkPos.x + GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * 16, baseChunkPos.y + 10, baseChunkPos.z);
+                playerCar.transform.localPosition = new Vector3(baseChunkPos.x + GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * 16 + 10, baseChunkPos.y + 2, baseChunkPos.z);
 
                 //for (int i = 0; i < GameConfig.CHUNK_COUNT; i++)
                 //{
