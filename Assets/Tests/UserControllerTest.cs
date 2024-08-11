@@ -45,7 +45,7 @@ namespace Tests
             public IEnumerator LoginTestEmail()
 
             {
-                Login("test", "test");
+                Login("test2", "test");
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
                 Assert.IsTrue(User.UserData.LoggedIn);
 
@@ -55,7 +55,7 @@ namespace Tests
             [UnityTest]
             public IEnumerator LoginTestUserName()
             {
-                Login("test", "test");
+                Login("test2", "test");
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
                 Assert.IsTrue(User.UserData.LoggedIn);
                 Assert.AreEqual("test", User.UserData.Username);
