@@ -21,8 +21,8 @@ namespace Game
             [SerializeField]
             private int ScaleAmount = 1;
 
-
-
+            [SerializeField]
+            private GameObject playerCar;
 
             /// <summary>
             /// The chunks of the world
@@ -36,7 +36,10 @@ namespace Game
             {
                 Chunks = new Chunk[GameConfig.CHUNK_COUNT, GameConfig.CHUNK_COUNT];
 
-                LoadChunk(0, 0);
+                LoadChunk(GameConfig.CHUNK_COUNT / 2, GameConfig.CHUNK_COUNT / 2);
+
+                Vector3 baseChunkPos = Chunks[GameConfig.CHUNK_COUNT / 2, GameConfig.CHUNK_COUNT / 2].gameObject.transform.localPosition;
+                playerCar.transform.localPosition = new Vector3(baseChunkPos.x + GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * 16, baseChunkPos.y + 10, baseChunkPos.z);
 
                 //for (int i = 0; i < GameConfig.CHUNK_COUNT; i++)
                 //{
@@ -77,7 +80,7 @@ namespace Game
                         edges.AddRange(Chunks[z, x + 1].EdgeRoads.Where(x => x.EdgeRoad.x == 0));
                     }
 
-                    Chunks[z, x].InitChunk(x, z, edges,this);
+                    Chunks[z, x].InitChunk(x, z, edges, this);
                 }
                 else
                 {

@@ -123,6 +123,16 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &25900004 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 161566, guid: 765eb30185385d34a877d533c844ea11, type: 3}
+  m_PrefabInstance: {fileID: 433104870351859873}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &25900008 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 470836, guid: 765eb30185385d34a877d533c844ea11, type: 3}
+  m_PrefabInstance: {fileID: 433104870351859873}
+  m_PrefabAsset: {fileID: 0}
 --- !u!146 &681732316 stripped
 WheelCollider:
   m_CorrespondingSourceObject: {fileID: 3110534259557331941, guid: 53de21bfbcd04564fadad1d022e759f0, type: 3}
@@ -202,6 +212,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f80350d7b5c2f344384c2e01cb875e94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1182204201 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7831316495570905897, guid: 0b328d3fa0a63d948bcca262bfa2227b, type: 3}
+  m_PrefabInstance: {fileID: 1037636375067061139}
+  m_PrefabAsset: {fileID: 0}
 --- !u!146 &1454228190 stripped
 WheelCollider:
   m_CorrespondingSourceObject: {fileID: 1492265129099997590, guid: 53de21bfbcd04564fadad1d022e759f0, type: 3}
@@ -312,7 +327,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1182204201}
     m_Modifications:
     - target: {fileID: 161566, guid: 765eb30185385d34a877d533c844ea11, type: 3}
       propertyPath: m_Name
@@ -440,6 +455,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7976258788379953556, guid: 0b328d3fa0a63d948bcca262bfa2227b, type: 3}
+      propertyPath: playerCar
+      value: 
+      objectReference: {fileID: 25900004}
+    - target: {fileID: 7976258788379953556, guid: 0b328d3fa0a63d948bcca262bfa2227b, type: 3}
       propertyPath: ScaleAmount
       value: 3
       objectReference: {fileID: 0}
@@ -453,7 +472,10 @@ PrefabInstance:
       objectReference: {fileID: 919132149155446097, guid: 42e0569e4e06b0441ae75cb469a00fcc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 7831316495570905897, guid: 0b328d3fa0a63d948bcca262bfa2227b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 25900008}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b328d3fa0a63d948bcca262bfa2227b, type: 3}
 --- !u!1001 &2980580755406144773
@@ -574,7 +596,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 2980580755406144773}
-  - {fileID: 433104870351859873}
   - {fileID: 1037636375067061139}
   - {fileID: 910769249}
   - {fileID: 1912757236}
