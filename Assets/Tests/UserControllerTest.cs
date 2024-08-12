@@ -32,11 +32,11 @@ namespace Tests
                     GameObject.Destroy(this.userController.transform.parent.gameObject);
             }
 
-            private void Login(string userName, string passWord)
+            private void Login(string userName, string password)
             {
                 TMPro.TMP_InputField[] fields = this.userController.LoginPanel.GetComponentsInChildren<TMPro.TMP_InputField>();
                 fields[0].text = userName;
-                fields[1].text = passWord;
+                fields[1].text = password;
 
                 this.userController.SendLogin();
             }
@@ -58,7 +58,7 @@ namespace Tests
                 Login("test2", "test");
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
                 Assert.IsTrue(User.UserData.LoggedIn);
-                Assert.AreEqual("test", User.UserData.Username);
+                Assert.AreEqual("test2", User.UserData.Username);
             }
         }
     }
