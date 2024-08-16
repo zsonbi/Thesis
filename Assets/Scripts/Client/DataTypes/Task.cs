@@ -56,8 +56,8 @@ public class Task : MonoBehaviour
         if (!TaskContainer.Completed)
         {
             WWWForm form = new WWWForm();
-            form.AddField("id", TaskContainer.Id);
-            StartCoroutine(Server.SendRequest<Dictionary<string, string>>(ServerConfig.PATHFORTASKCOMPLETE, form, TaskCompleted));
+
+            StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.Task>(ServerConfig.PATHFORTASKCOMPLETE(TaskContainer.Id), onComplete: TaskCompleted));
         }
     }
 
@@ -66,16 +66,9 @@ public class Task : MonoBehaviour
         taskOpenPanelController.OpenUp(this.TaskContainer);
     }
 
-    private void TaskCompleted(Dictionary<string, string> result)
+    private void TaskCompleted(Thesis_backend.Data_Structures.Task result)
     {
-        if (result["res"] == "success")
-        {
-            CompleteStateChange(true);
-        }
-        else
-        {
-            Debug.Log("Can't complete task");
-        }
+        CompleteStateChange(true);
     }
 
     public void UpdateLabels()

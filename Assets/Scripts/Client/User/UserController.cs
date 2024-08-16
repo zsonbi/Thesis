@@ -6,6 +6,7 @@ using System;
 using Config;
 using System.Net.Mail;
 using User;
+using Thesis_backend.Data_Structures;
 
 public class UserController : MonoBehaviour
 {
@@ -47,7 +48,7 @@ public class UserController : MonoBehaviour
         }
 
         WWWForm form = new WWWForm();
-        StartCoroutine(Server.SendRequest<Dictionary<string, string>>(ServerConfig.PATHFORCHECKLOGGEDIN, form, LoggedIn));
+        StartCoroutine(Server.SendGetRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORCHECKLOGGEDIN, LoggedIn));
     }
 
     /// <summary>
@@ -55,41 +56,25 @@ public class UserController : MonoBehaviour
     /// </summary>
     public void SendLogin()
     {
-        WWWForm form = new WWWForm();
         TMPro.TMP_InputField[] fields = LoginPanel.GetComponentsInChildren<TMPro.TMP_InputField>();
-        foreach (var item in fields)
-        {
-            if (item.text == "")
-            {
-                ModalWindow.Show("Login error", $"{item.name} is empty!");
-                return;
-            }
-            else
-            {
-                form.AddField(item.name, item.text);
-            }
-        }
 
-        StartCoroutine(Server.SendRequest<Dictionary<string, string>>(ServerConfig.PATHFORLOGIN, form, LoggedIn));
+        UserLoginRequest userLoginRequest = new UserLoginRequest()
+        {
+            UserIdentification = fields[0].text,
+            Password = fields[1].text,
+        };
+
+        StartCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORLOGIN, userLoginRequest, LoggedIn));
     }
 
     /// <summary>
     /// When the login request's was responded log the user in
     /// </summary>
     /// <param name="result">The server's response</param>
-    private void LoggedIn(Dictionary<string, string> result)
+    private void LoggedIn(Thesis_backend.Data_Structures.User result)
     {
-        if (result.ContainsKey("res") && result["res"] == "success")
-        {
-            UserData.Init(result["username"], result["email"], Convert.ToInt32(result["id"]), Convert.ToInt32(result["settingsId"]), -1, DateTime.Parse(result["lastLoggedIn"]), DateTime.Parse(result["registered"]));
-            StartCoroutine(MoveToMainScence());
-        }
-        else if (result.ContainsKey("error"))
-        {
-            Debug.Log(result["error"]);
-
-            ModalWindow.Show("Login error", result["error"]);
-        }
+        UserData.Init(result);
+        StartCoroutine(MoveToMainScence());
     }
 
     /// <summary>
@@ -97,20 +82,7 @@ public class UserController : MonoBehaviour
     /// </summary>
     public void SendRegister()
     {
-        WWWForm form = new WWWForm();
         TMPro.TMP_InputField[] fields = RegisterPanel.GetComponentsInChildren<TMPro.TMP_InputField>();
-        foreach (var item in fields)
-        {
-            if (item.text == "")
-            {
-                ModalWindow.Show("Register error", $"{item.name} is empty!");
-                return;
-            }
-            else
-            {
-                form.AddField(item.name, item.text);
-            }
-        }
 
         if (!IsValidEmail(fields[0].text))
         {
@@ -123,27 +95,24 @@ public class UserController : MonoBehaviour
             ModalWindow.Show("Register error", "Passwords does not match!");
             return;
         }
+        UserRequest userRequest = new UserRequest()
+        {
+            UserName = fields[1].text,
+            Email = fields[0].text,
+            Password = fields[2].text,
+        };
 
-        StartCoroutine(Server.SendRequest<Dictionary<string, string>>(ServerConfig.PATHFORREGISTER, form, Registered));
+        StartCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORREGISTER, userRequest, Registered));
     }
 
     /// <summary>
     /// When the login request's was responded register the user and log him in
     /// </summary>
     /// <param name="result">The server's response</param>
-    private void Registered(Dictionary<string, string> result)
+    private void Registered(Thesis_backend.Data_Structures.User loggedInUser)
     {
-        if (result.ContainsKey("res") && result["res"] == "success")
-        {
-            UserData.Init(result["username"], result["email"], Convert.ToInt32(result["id"]), Convert.ToInt32(result["settingsId"]), -1, DateTime.Parse(result["lastLoggedIn"]), DateTime.Parse(result["registered"]));
-
-            StartCoroutine(MoveToMainScence());
-        }
-        else if (result.ContainsKey("error"))
-        {
-            Debug.Log(result["error"]);
-            ModalWindow.Show("Register error", result["error"]);
-        }
+        UserData.Init(loggedInUser);
+        StartCoroutine(MoveToMainScence());
     }
 
     /// <summary>

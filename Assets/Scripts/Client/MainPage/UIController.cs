@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using User;
 using TMPro;
 using Config;
+using Thesis_backend.Data_Structures;
 
 public class UIController : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class UIController : MonoBehaviour
     [SerializeField]
     public ModalWindow ModalWindow;
 
-    private Dictionary<int, Task> tasks = new Dictionary<int, Task>();
+    private Dictionary<long, Task> tasks = new Dictionary<long, Task>();
 
     // Start is called before the first frame update
     private void Start()
@@ -44,7 +45,7 @@ public class UIController : MonoBehaviour
     {
     }
 
-    public void RemoveTask(int taskId)
+    public void RemoveTask(long taskId)
     {
         if (tasks.ContainsKey(taskId))
         {
@@ -54,7 +55,7 @@ public class UIController : MonoBehaviour
         }
     }
 
-    public void UpdateTask(int taskId)
+    public void UpdateTask(long taskId)
     {
         if (tasks.ContainsKey(taskId))
         {
@@ -119,14 +120,14 @@ public class UIController : MonoBehaviour
 
     private void LoadTasks()
     {
-        StartCoroutine(Server.SendRequest<TaskApiResponse>(ServerConfig.PATHFORTASKSQUERY, new WWWForm(), CreateTaskPrefabs));
+        StartCoroutine(Server.SendGetRequest<List<Thesis_backend.Data_Structures.Task>>(ServerConfig.PATHFORTASKSQUERY, CreateTaskPrefabs));
     }
 
-    private void CreateTaskPrefabs(TaskApiResponse requestResult)
+    private void CreateTaskPrefabs(List<Thesis_backend.Data_Structures.Task> requestResult)
     {
-        foreach (var item in requestResult.Tasks)
+        foreach (var item in requestResult)
         {
-            CreateTask(item);
+            CreateTask(new TaskContainer(item.ID, item.TaskName, System.Convert.ToInt32(item.TaskType), item.PeriodRate, item.Description, item.Updated, item.LastCompleted, item.Completed));
         }
         LoadGoodTasks();
     }
