@@ -45,6 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f80350d7b5c2f344384c2e01cb875e94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CopCars:
+  - {fileID: 161566, guid: 1c44499667174e6458ca6f9aa852f054, type: 3}
+  CitizenCars: []
   ChunkPrefab: {fileID: 3043629960552327854, guid: a2b32ec04c406a449871ffd6a040f91a, type: 3}
   ScaleAmount: 1
   playerCar: {fileID: 7166112966524075547}

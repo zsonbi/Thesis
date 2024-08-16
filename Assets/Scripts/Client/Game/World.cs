@@ -12,6 +12,12 @@ namespace Game
         /// </summary>
         public class World : MonoBehaviour
         {
+            [SerializeField]
+            private List<GameObject> CopCars;
+
+            [SerializeField]
+            private List<GameObject> CitizenCars;
+
             /// <summary>
             /// Chunk prefab for the chunk creation
             /// </summary>
@@ -23,6 +29,8 @@ namespace Game
 
             [SerializeField]
             private GameObject playerCar;
+
+            public Vector3 PlayerPos => playerCar.transform.localPosition;
 
             /// <summary>
             /// The chunks of the world
@@ -40,6 +48,14 @@ namespace Game
 
                 Vector3 baseChunkPos = Chunks[GameConfig.CHUNK_COUNT / 2, GameConfig.CHUNK_COUNT / 2].gameObject.transform.localPosition;
                 playerCar.transform.localPosition = new Vector3(baseChunkPos.x + GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * 16 + 10, baseChunkPos.y + 2, baseChunkPos.z);
+
+                foreach (var item in CopCars)
+                {
+                    CopCar copCar = Instantiate(item, this.gameObject.transform, true).GetComponent<CopCar>();
+                    copCar.Init(this);
+
+                    copCar.transform.transform.localPosition = new Vector3(baseChunkPos.x + GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * 16 + 50, baseChunkPos.y + 2, baseChunkPos.z);
+                }
 
                 //for (int i = 0; i < GameConfig.CHUNK_COUNT; i++)
                 //{

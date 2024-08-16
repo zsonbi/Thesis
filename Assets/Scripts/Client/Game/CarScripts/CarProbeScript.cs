@@ -13,7 +13,10 @@ public class CarProbeScript : MonoBehaviour
     {
         Debug.Log(collision.gameObject.name);
         Chunk chunk = collision.gameObject.transform.parent.transform.parent.gameObject.GetComponent<Chunk>();
-
+        if (chunk is null)
+        {
+            return;
+        }
         SpawnNearbyChunks(chunk.Row, chunk.Col);
 
         DespawnFarAwayChunks(chunk.Row, chunk.Col);
@@ -32,7 +35,8 @@ public class CarProbeScript : MonoBehaviour
 
                 if (i + row >= 0 && j + col >= 0 && i + row < GameConfig.CHUNK_COUNT && j + col < GameConfig.CHUNK_COUNT)
                 {
-                    world.HideChunk(j + col, i + row);
+                    if (world is not null)
+                        world.HideChunk(j + col, i + row);
                 }
             }
         }
@@ -75,6 +79,7 @@ public class CarProbeScript : MonoBehaviour
         {
             return;
         }
-        world.LoadChunk(col, row);
+        if (world is not null)
+            world.LoadChunk(col, row);
     }
 }
