@@ -30,7 +30,7 @@ namespace Game
             [SerializeField]
             private GameObject playerCar;
 
-            public Vector3 PlayerPos => playerCar.transform.localPosition;
+            public Vector3 PlayerPos => playerCar.transform.position;
 
             /// <summary>
             /// The chunks of the world
@@ -46,15 +46,16 @@ namespace Game
 
                 LoadChunk(GameConfig.CHUNK_COUNT / 2, GameConfig.CHUNK_COUNT / 2);
 
-                Vector3 baseChunkPos = Chunks[GameConfig.CHUNK_COUNT / 2, GameConfig.CHUNK_COUNT / 2].gameObject.transform.localPosition;
-                playerCar.transform.localPosition = new Vector3(baseChunkPos.x + GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * 16 + 10, baseChunkPos.y + 2, baseChunkPos.z);
-
+                Vector3 baseChunkPos = Chunks[GameConfig.CHUNK_COUNT / 2, GameConfig.CHUNK_COUNT / 2].gameObject.transform.position;
+                playerCar.transform.position = new Vector3(baseChunkPos.x + GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL / 2 + 10, baseChunkPos.y + 2, baseChunkPos.z);
+                PlayerCar player = playerCar.GetComponent<PlayerCar>();
+                player.Init(this);
                 foreach (var item in CopCars)
                 {
                     CopCar copCar = Instantiate(item, this.gameObject.transform, true).GetComponent<CopCar>();
                     copCar.Init(this);
 
-                    copCar.transform.transform.localPosition = new Vector3(baseChunkPos.x + GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * 16 + 50, baseChunkPos.y + 2, baseChunkPos.z);
+                    copCar.transform.transform.position = new Vector3(baseChunkPos.x + GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL / 2 + 50, baseChunkPos.y + 2, baseChunkPos.z);
                 }
 
                 //for (int i = 0; i < GameConfig.CHUNK_COUNT; i++)
@@ -110,6 +111,17 @@ namespace Game
                 {
                     Chunks[z, x].HideChunk();
                 }
+            }
+
+            public Chunk GetChunk(int x, int z)
+            {
+                if (Chunks[z, x] is null)
+                {
+                    LoadChunk(x, z);
+                    HideChunk(x, z);
+                }
+
+                return Chunks[z, x];
             }
         }
     }
