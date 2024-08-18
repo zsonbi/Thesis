@@ -7,7 +7,7 @@ namespace Game
     public class GameController : MonoBehaviour
     {
         [SerializeField]
-        private World.World world;
+        private World.GameWorld world;
 
         [SerializeField]
         private GameObject playerPrefab;
@@ -24,7 +24,7 @@ namespace Game
         public Player Player { get; private set; }
         public List<Police> Enemies { get; private set; }
 
-        public World.World World { get => world; private set => world = value; }
+        public World.GameWorld World { get => world; private set => world = value; }
 
         private PlayerCar player;
 

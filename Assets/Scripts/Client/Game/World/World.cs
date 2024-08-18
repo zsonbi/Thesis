@@ -10,7 +10,7 @@ namespace Game
         /// <summary>
         /// A class for handling chunk loading and unloading
         /// </summary>
-        public class World : MonoBehaviour
+        public class GameWorld : MonoBehaviour
         {
             /// <summary>
             /// Chunk prefab for the chunk creation

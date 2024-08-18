@@ -63,7 +63,7 @@ namespace Game
 
             private Dictionary<ChunkCellType, List<Vector3>> chunkCells = new Dictionary<ChunkCellType, List<Vector3>>();
             private RoadGenerator roadGenerator;
-            private World world;
+            private GameWorld world;
 
             // Start is called before the first frame update
             private void Awake()
@@ -83,7 +83,7 @@ namespace Game
                 this.gameObject.SetActive(true);
             }
 
-            public void InitChunk(int xOffset, int zOffset, List<EdgeRoadContainer> edgeRoads, World world)
+            public void InitChunk(int xOffset, int zOffset, List<EdgeRoadContainer> edgeRoads, GameWorld world)
             {
                 this.world = world;
                 this.Row = zOffset;
