@@ -6,8 +6,10 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class CopCar : NpcCar
 {
-    public void Update()
+    protected override void Update()
     {
+        base.Update();
+
         float steering = DetermineSteeringDirection();
         float v = 10;
 
