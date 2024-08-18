@@ -1,3 +1,4 @@
+using Game;
 using Game.World;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,12 +7,16 @@ using UnityEngine;
 [RequireComponent(typeof(CarController))]
 public class Car : MonoBehaviour
 {
-    protected World world;
+    protected GameController gameController;
     protected CarController carController;
     protected Chunk lastChunk;
 
     protected virtual void Update()
     {
+        if (gameController is null)
+        {
+            return;
+        }
         if (ChangeChunkIfNeeded())
         {
         }
@@ -23,11 +28,11 @@ public class Car : MonoBehaviour
         int col = (int)(this.gameObject.transform.position.x / (GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL));
         Debug.Log("col:" + col);
         Debug.Log("row:" + row);
-        if (lastChunk != this.world.GetChunk(col, row))
+        if (lastChunk != this.gameController.World.GetChunk(col, row))
         {
-            ChunkChanged(this.world.GetChunk(col, row));
+            ChunkChanged(this.gameController.World.GetChunk(col, row));
 
-            lastChunk = this.world.GetChunk(col, row);
+            lastChunk = this.gameController.World.GetChunk(col, row);
             this.gameObject.transform.parent = lastChunk.transform;
             return true;
         }
@@ -39,9 +44,9 @@ public class Car : MonoBehaviour
     {
     }
 
-    public void Init(World world)
+    public void Init(GameController world)
     {
-        this.world = world;
+        this.gameController = world;
     }
 
     // Start is called before the first frame update

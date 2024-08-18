@@ -4,19 +4,121 @@ using UnityEngine;
 
 namespace Game
 {
-
     public class GameController : MonoBehaviour
     {
+        [SerializeField]
+        private World.World world;
+
+        [SerializeField]
+        private GameObject playerPrefab;
+
+        [SerializeField]
+        private List<GameObject> CopCars;
+
+        [SerializeField]
+        private List<GameObject> CitizenCars;
+
+        [SerializeField]
+        private int probeSize = 1;
+
         public Player Player { get; private set; }
         public List<Police> Enemies { get; private set; }
 
-        public World.World World { get; private set; }
+        public World.World World { get => world; private set => world = value; }
 
+        private PlayerCar player;
+
+        public Vector3 PlayerPos => playerPrefab.transform.position;
+
+        public void Start()
+        {
+            //player = Instantiate(playerPrefab).GetComponent<PlayerCar>();
+            player = playerPrefab.GetComponent<PlayerCar>();
+            NewGame();
+        }
 
         public void NewGame()
         {
+            World.CreateNewGame();
+            Vector3 baseChunkPos = World.GetChunk(GameConfig.CHUNK_COUNT / 2, GameConfig.CHUNK_COUNT / 2).gameObject.transform.position;
+            player.gameObject.transform.position = new Vector3(baseChunkPos.x + GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL / 2 + 10, baseChunkPos.y + 2, baseChunkPos.z);
 
+            player.Init(this);
+
+            foreach (var item in CopCars)
+            {
+                CopCar copCar = Instantiate(item, this.gameObject.transform, true).GetComponent<CopCar>();
+                copCar.Init(this);
+
+                copCar.transform.transform.position = new Vector3(baseChunkPos.x + GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL / 2 + 50, baseChunkPos.y + 2, baseChunkPos.z);
+            }
+        }
+
+        public void LoadAndDespawnChunks(int centerRow, int centerColumn)
+        {
+            SpawnNearbyChunks(centerRow, centerColumn);
+            DespawnFarAwayChunks(centerRow, centerColumn);
+        }
+
+        private void DespawnFarAwayChunks(int row, int col)
+        {
+            for (int i = -(probeSize + 1); i <= probeSize + 1; i++)
+            {
+                for (int j = -(probeSize + 1); j <= probeSize + 1; j++)
+                {
+                    if (Mathf.Abs(i) <= probeSize && Mathf.Abs(j) <= probeSize)
+                    {
+                        continue;
+                    }
+
+                    if (i + row >= 0 && j + col >= 0 && i + row < GameConfig.CHUNK_COUNT && j + col < GameConfig.CHUNK_COUNT)
+                    {
+                        if (world is not null)
+                            world.HideChunk(j + col, i + row);
+                    }
+                }
+            }
+        }
+
+        private void SpawnNearbyChunks(int row, int col)
+        {
+            ValidateAndLoadChunk(row, col);
+
+            for (int currSize = 1; currSize <= probeSize; currSize++)
+            {
+                for (int x = 0 - currSize; x <= 0 + currSize; x += currSize * 2)
+                {
+                    for (int y = 0; y <= currSize - 1; y++)
+                    {
+                        ValidateAndLoadChunk(row + y, col + x);
+                        ValidateAndLoadChunk(row - y, col + x);
+                    }
+                }
+
+                for (int y = 0 - currSize; y <= 0 + currSize; y += currSize * 2)
+                {
+                    for (int x = 0; x <= currSize - 1; x++)
+                    {
+                        ValidateAndLoadChunk(row + y, col + x);
+                        ValidateAndLoadChunk(row + y, col - x);
+                    }
+                }
+
+                ValidateAndLoadChunk(row + currSize, col + currSize);
+                ValidateAndLoadChunk(row - currSize, col - currSize);
+                ValidateAndLoadChunk(row + currSize, col - currSize);
+                ValidateAndLoadChunk(row - currSize, col + currSize);
+            }
+        }
+
+        private void ValidateAndLoadChunk(int row, int col)
+        {
+            if (row < 0 || row >= GameConfig.CHUNK_COUNT || col < 0 || col >= GameConfig.CHUNK_COUNT)
+            {
+                return;
+            }
+            if (world is not null)
+                world.LoadChunk(col, row);
         }
     }
-
 }
