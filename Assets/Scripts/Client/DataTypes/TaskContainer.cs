@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class TaskContainer
 {
-    public int Id { get; private set; }
+    public long Id { get; private set; }
     public string TaskName { get; private set; }
     public TaskType TaskType { get; private set; }
     public TaskIntervals TaskInterval { get; private set; }
@@ -16,7 +16,7 @@ public class TaskContainer
     public bool Completed { get; private set; }
 
     [Newtonsoft.Json.JsonConstructor]
-    public TaskContainer(int id, string taskName, int taskType, int periodRate, string description, DateTime added, DateTime lastCompleted, int completed)
+    public TaskContainer(long id, string taskName, int taskType, int periodRate, string description, DateTime added, DateTime lastCompleted, bool completed)
     {
         Id = id;
         TaskName = taskName;
@@ -25,7 +25,7 @@ public class TaskContainer
         Description = description;
         Added = added;
         LastCompleted = lastCompleted;
-        Completed = completed != 0;
+        Completed = completed;
     }
 
     public TaskContainer()

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Thesis_backend.Data_Structures;
 using UnityEngine;
 
 namespace User
@@ -8,22 +9,22 @@ namespace User
     {
         public static string Username { get; private set; }
         public static string Email { get; private set; }
-        public static int Id { get; private set; }
-        public static int SettingsId { get; private set; }
-        public static int GameId { get; private set; }
+        public static long Id { get; private set; }
+        public static UserSettings SettingsId { get; private set; }
+        public static long GameId { get; private set; }
         public static DateTime LastLoggedIn { get; private set; }
         public static DateTime Registered { get; private set; }
         public static bool LoggedIn { get; private set; } = false;
 
-        public static void Init(string username, string email, int id, int settingsId, int gameId, DateTime lastLoginTime, DateTime registerTime)
+        public static void Init(Thesis_backend.Data_Structures.User loggedInUser)
         {
-            Username = username;
-            Email = email;
-            Id = id;
-            SettingsId = settingsId;
-            GameId = gameId;
-            LastLoggedIn = lastLoginTime;
-            Registered = registerTime;
+            Username = loggedInUser.Username;
+            Email = loggedInUser.Email;
+            Id = loggedInUser.ID;
+            SettingsId = loggedInUser.UserSettings;
+            GameId = loggedInUser.GameId;
+            LastLoggedIn = loggedInUser.LastLoggedIn;
+            Registered = loggedInUser.Registered;
 
             LoggedIn = true;
         }
@@ -31,8 +32,7 @@ namespace User
         public static void Logout()
         {
             LoggedIn = false;
-            WWWForm form = new WWWForm();
-            Server.SendRequest<Dictionary<string, string>>(Config.ServerConfig.PATHFORLOGOUT, form);
+            Debug.Log(Server.SendDeleteRequest<string>(Config.ServerConfig.PATHFORLOGOUT));
         }
     }
 }

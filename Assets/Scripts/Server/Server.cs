@@ -15,9 +15,9 @@ public static class Server
     /// <param name="form">The data to send for the server refer to the serverconfig what it needs</param>
     /// <param name="onComplete">When the response arrives what to do</param>
     /// <param name="beforeComplete">What to do before the completion so we can show it before that to the user and validate it later</param>
-    public static IEnumerator SendRequest<T>(string url, WWWForm form, Action<T> onComplete = null, Action beforeComplete = null)
+    public static IEnumerator SendPostRequest<T>(string url, object dataToSend, Action<T> onComplete = null, Action beforeComplete = null)
     {
-        using (UnityWebRequest webRequest = UnityWebRequest.Post(url, form))
+        using (UnityWebRequest webRequest = UnityWebRequest.Post(url, JsonConvert.SerializeObject(dataToSend), "application/json"))
         {
             // Request and wait for the desired page.
             yield return webRequest.SendWebRequest();
@@ -34,15 +34,128 @@ public static class Server
                 }
 
                 Debug.Log(webRequest.downloadHandler.text);
-
-                T result = JsonConvert.DeserializeObject<T>(webRequest.downloadHandler.text);
+                T? result = default;
+                try
+                {
+                    result = JsonConvert.DeserializeObject<T>(webRequest.downloadHandler.text);
+                }
+                catch
+                {
+                    Debug.Log($"Couldn't serialize response: {webRequest.downloadHandler.text}");
+                }
                 if (result is not null)
                 {
                     onComplete?.Invoke(result);
                 }
-                else
+            }
+        }
+    }
+
+    public static IEnumerator SendPatchRequest<T>(string url, object dataToSend = null, Action<T> onComplete = null, Action beforeComplete = null)
+    {
+        using (UnityWebRequest webRequest = UnityWebRequest.Put(url, JsonConvert.SerializeObject(dataToSend)))
+        {
+            webRequest.method = "PATCH";
+
+            // Request and wait for the desired page.
+            yield return webRequest.SendWebRequest();
+
+            if (webRequest.result == UnityWebRequest.Result.ConnectionError)
+            {
+                Debug.Log(webRequest.error);
+            }
+            else
+            {
+                if (beforeComplete != null)
                 {
-                    Debug.Log("Server crashed URL:" + url);
+                    beforeComplete();
+                }
+
+                Debug.Log(webRequest.downloadHandler.text);
+                T? result = default;
+                try
+                {
+                    result = JsonConvert.DeserializeObject<T>(webRequest.downloadHandler.text);
+                }
+                catch
+                {
+                    Debug.Log($"Couldn't serialize response: {webRequest.downloadHandler.text}");
+                }
+                if (result is not null)
+                {
+                    onComplete?.Invoke(result);
+                }
+            }
+        }
+    }
+
+    public static IEnumerator SendGetRequest<T>(string url, Action<T> onComplete = null, Action beforeComplete = null, Action failAction = null)
+    {
+        using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
+        {
+            // Request and wait for the desired page.
+            yield return webRequest.SendWebRequest();
+
+            if (webRequest.result == UnityWebRequest.Result.ConnectionError)
+            {
+                Debug.Log(webRequest.error);
+            }
+            else
+            {
+                if (beforeComplete != null)
+                {
+                    beforeComplete();
+                }
+
+                Debug.Log(webRequest.downloadHandler.text);
+                T? result = default;
+                try
+                {
+                    result = JsonConvert.DeserializeObject<T>(webRequest.downloadHandler.text);
+                }
+                catch
+                {
+                    Debug.Log($"Couldn't serialize response: {webRequest.downloadHandler.text}");
+                }
+                if (result is not null)
+                {
+                    onComplete?.Invoke(result);
+                }
+            }
+        }
+    }
+
+    public static IEnumerator SendDeleteRequest<T>(string url, Action<T> onComplete = null, Action beforeComplete = null, Action failAction = null)
+    {
+        using (UnityWebRequest webRequest = UnityWebRequest.Delete(url))
+        {
+            // Request and wait for the desired page.
+            yield return webRequest.SendWebRequest();
+
+            if (webRequest.result == UnityWebRequest.Result.ConnectionError)
+            {
+                Debug.Log(webRequest.error);
+            }
+            else
+            {
+                if (beforeComplete != null)
+                {
+                    beforeComplete();
+                }
+
+                Debug.Log(webRequest.downloadHandler.text);
+                T? result = default;
+                try
+                {
+                    result = JsonConvert.DeserializeObject<T>(webRequest.downloadHandler.text);
+                }
+                catch
+                {
+                    Debug.Log($"Couldn't serialize response: {webRequest.downloadHandler.text}");
+                }
+                if (result is not null)
+                {
+                    onComplete?.Invoke(result);
                 }
             }
         }
