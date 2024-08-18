@@ -30,6 +30,13 @@ namespace Config
         public const string PATHFORLOGOUT = SERVERPATH + "/api/Users/Logout";
 
         /// <summary>
+        /// Just need to be sent
+        /// Cleares the users session
+        /// (Still need to reset the userData)
+        /// </summary>
+        public const string PATHFORLOGOUT = SERVERPATH + "/logout.php";
+
+        /// <summary>
         /// Saves a task (modifies it if other id than -1 was given)
         /// Needs to be already logged in "taskName", "description", "periodRate", "taskType"
         /// Optional "id"
