@@ -26,6 +26,8 @@ namespace Game
             //player = Instantiate(playerPrefab).GetComponent<PlayerCar>();
             player = playerPrefab.GetComponent<PlayerCar>();
             NewGame();
+            Application.targetFrameRate = 60;
+            QualitySettings.vSyncCount = 0;
         }
 
         public void NewGame()

@@ -1,6 +1,5 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Text.Json.Serialization;
 
 namespace Thesis_backend.Data_Structures
 {
