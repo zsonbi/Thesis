@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using DataTypes;
 using Assets.Scripts.Client.DataTypes;
+using System.Linq;
 
 namespace Game
 {
@@ -64,6 +65,7 @@ namespace Game
             private Dictionary<ChunkCellType, List<Vector3>> chunkCells = new Dictionary<ChunkCellType, List<Vector3>>();
             private RoadGenerator roadGenerator;
             private GameWorld world;
+            private List<Vector3> roads = new List<Vector3>();
 
             // Start is called before the first frame update
             private void Awake()
@@ -118,6 +120,15 @@ namespace Game
             public void HideChunk()
             {
                 this.gameObject.SetActive(false);
+            }
+
+            public Vector3 GetARandomRoad()
+            {
+                if (roads.Count == 0)
+                {
+                    return new Vector3(GameConfig.CHUNK_SIZE / 2, 0, GameConfig.CHUNK_SIZE / 2);
+                }
+                return roads[Random.Range(0, roads.Count)];
             }
 
             private void CreateMeshes()
@@ -309,6 +320,7 @@ namespace Game
             {
                 if (roadGenerator.RoadMatrix[z, x])
                 {
+                    roads.Add(new Vector3(x, 0, z));
                     return DetermineRoadType((int)x, (int)z);
                 }
 

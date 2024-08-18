@@ -24,16 +24,13 @@ public class Car : MonoBehaviour
 
     protected bool ChangeChunkIfNeeded()
     {
-        int row = (int)(this.gameObject.transform.position.z / (GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL));
-        int col = (int)(this.gameObject.transform.position.x / (GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL));
-        Debug.Log("col:" + col);
-        Debug.Log("row:" + row);
-        if (lastChunk != this.gameController.World.GetChunk(col, row))
+        Chunk newChunk = this.gameController.World.GetChunk(this.gameObject.transform.position);
+        if (lastChunk != newChunk)
         {
-            ChunkChanged(this.gameController.World.GetChunk(col, row));
+            ChunkChanged(newChunk);
 
-            lastChunk = this.gameController.World.GetChunk(col, row);
-            this.gameObject.transform.parent = lastChunk.transform;
+            lastChunk = newChunk;
+            this.gameObject.transform.parent = newChunk.transform;
             return true;
         }
 

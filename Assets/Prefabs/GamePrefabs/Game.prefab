@@ -30,6 +30,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2912037510868576065}
   - {fileID: 6120148820394963053}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -47,9 +48,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   world: {fileID: 6264528156740965072}
   playerPrefab: {fileID: 6571433515760428383}
-  CopCars:
-  - {fileID: 161566, guid: 1c44499667174e6458ca6f9aa852f054, type: 3}
-  CitizenCars: []
   probeSize: 1
 --- !u!1001 &4053607113279396676
 PrefabInstance:
@@ -128,4 +126,78 @@ MonoBehaviour:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7166112966524075547, guid: 0b328d3fa0a63d948bcca262bfa2227b, type: 3}
   m_PrefabInstance: {fileID: 4053607113279396676}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7004436442755334063
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6470620811567988443}
+    m_Modifications:
+    - target: {fileID: 1750785985834093286, guid: a7da432015eff4f468cea51a4979b5fd, type: 3}
+      propertyPath: m_Name
+      value: CarSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286490915820820718, guid: a7da432015eff4f468cea51a4979b5fd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286490915820820718, guid: a7da432015eff4f468cea51a4979b5fd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286490915820820718, guid: a7da432015eff4f468cea51a4979b5fd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286490915820820718, guid: a7da432015eff4f468cea51a4979b5fd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286490915820820718, guid: a7da432015eff4f468cea51a4979b5fd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286490915820820718, guid: a7da432015eff4f468cea51a4979b5fd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286490915820820718, guid: a7da432015eff4f468cea51a4979b5fd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286490915820820718, guid: a7da432015eff4f468cea51a4979b5fd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286490915820820718, guid: a7da432015eff4f468cea51a4979b5fd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286490915820820718, guid: a7da432015eff4f468cea51a4979b5fd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5944533888646792174, guid: a7da432015eff4f468cea51a4979b5fd, type: 3}
+      propertyPath: gameController
+      value: 
+      objectReference: {fileID: 4416725613737383521}
+    - target: {fileID: 5944533888646792174, guid: a7da432015eff4f468cea51a4979b5fd, type: 3}
+      propertyPath: CopCars.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5944533888646792174, guid: a7da432015eff4f468cea51a4979b5fd, type: 3}
+      propertyPath: CopCars.Array.data[0]
+      value: 
+      objectReference: {fileID: 161566, guid: 1c44499667174e6458ca6f9aa852f054, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a7da432015eff4f468cea51a4979b5fd, type: 3}
+--- !u!4 &2912037510868576065 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5286490915820820718, guid: a7da432015eff4f468cea51a4979b5fd, type: 3}
+  m_PrefabInstance: {fileID: 7004436442755334063}
   m_PrefabAsset: {fileID: 0}

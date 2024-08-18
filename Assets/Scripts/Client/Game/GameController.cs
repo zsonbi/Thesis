@@ -13,16 +13,7 @@ namespace Game
         private GameObject playerPrefab;
 
         [SerializeField]
-        private List<GameObject> CopCars;
-
-        [SerializeField]
-        private List<GameObject> CitizenCars;
-
-        [SerializeField]
         private int probeSize = 1;
-
-        public Player Player { get; private set; }
-        public List<Police> Enemies { get; private set; }
 
         public World.GameWorld World { get => world; private set => world = value; }
 
@@ -44,14 +35,6 @@ namespace Game
             player.gameObject.transform.position = new Vector3(baseChunkPos.x + GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL / 2 + 10, baseChunkPos.y + 2, baseChunkPos.z);
 
             player.Init(this);
-
-            foreach (var item in CopCars)
-            {
-                CopCar copCar = Instantiate(item, this.gameObject.transform, true).GetComponent<CopCar>();
-                copCar.Init(this);
-
-                copCar.transform.transform.position = new Vector3(baseChunkPos.x + GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL / 2 + 50, baseChunkPos.y + 2, baseChunkPos.z);
-            }
         }
 
         public void LoadAndDespawnChunks(int centerRow, int centerColumn)
