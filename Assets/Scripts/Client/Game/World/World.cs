@@ -10,14 +10,8 @@ namespace Game
         /// <summary>
         /// A class for handling chunk loading and unloading
         /// </summary>
-        public class World : MonoBehaviour
+        public class GameWorld : MonoBehaviour
         {
-            [SerializeField]
-            private List<GameObject> CopCars;
-
-            [SerializeField]
-            private List<GameObject> CitizenCars;
-
             /// <summary>
             /// Chunk prefab for the chunk creation
             /// </summary>
@@ -27,46 +21,16 @@ namespace Game
             [SerializeField]
             private int ScaleAmount = 1;
 
-            [SerializeField]
-            private GameObject playerCar;
-
-            public Vector3 PlayerPos => playerCar.transform.position;
-
             /// <summary>
             /// The chunks of the world
             /// </summary>
             private Chunk[,] Chunks;
 
-            /// <summary>
-            /// Start is called before the first frame update
-            /// </summary>
-            private void Start()
+            public void CreateNewGame()
             {
                 Chunks = new Chunk[GameConfig.CHUNK_COUNT, GameConfig.CHUNK_COUNT];
 
                 LoadChunk(GameConfig.CHUNK_COUNT / 2, GameConfig.CHUNK_COUNT / 2);
-
-                Vector3 baseChunkPos = Chunks[GameConfig.CHUNK_COUNT / 2, GameConfig.CHUNK_COUNT / 2].gameObject.transform.position;
-                playerCar.transform.position = new Vector3(baseChunkPos.x + GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL / 2 + 10, baseChunkPos.y + 2, baseChunkPos.z);
-                PlayerCar player = playerCar.GetComponent<PlayerCar>();
-                player.Init(this);
-                foreach (var item in CopCars)
-                {
-                    CopCar copCar = Instantiate(item, this.gameObject.transform, true).GetComponent<CopCar>();
-                    copCar.Init(this);
-
-                    copCar.transform.transform.position = new Vector3(baseChunkPos.x + GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL / 2 + 50, baseChunkPos.y + 2, baseChunkPos.z);
-                }
-
-                //for (int i = 0; i < GameConfig.CHUNK_COUNT; i++)
-                //{
-                //    for (int j = 0; j < GameConfig.CHUNK_COUNT; j++)
-                //    {
-                //        LoadChunk(j, i);
-                //    }
-                //}
-
-                //this.transform.localScale = new Vector3(ScaleAmount, 1, ScaleAmount);
             }
 
             /// <summary>

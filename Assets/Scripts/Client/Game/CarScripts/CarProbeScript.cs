@@ -5,7 +5,7 @@ using UnityEngine;
 public class CarProbeScript : MonoBehaviour
 {
     [SerializeField]
-    private World world;
+    private GameWorld world;
 
     private int probeSize = 1;
 
