@@ -26,6 +26,17 @@ namespace Game
             /// </summary>
             private Chunk[,] Chunks;
 
+            public Chunk GetChunk(Vector3 GameObjectPos)
+            {
+                int row = (int)(GameObjectPos.z / (GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL));
+                int col = (int)(GameObjectPos.x / (GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL));
+                if (row < 0 || col < 0 || row >= GameConfig.CHUNK_COUNT || col >= GameConfig.CHUNK_COUNT)
+                {
+                    return null;
+                }
+                return Chunks[row, col];
+            }
+
             public void CreateNewGame()
             {
                 Chunks = new Chunk[GameConfig.CHUNK_COUNT, GameConfig.CHUNK_COUNT];

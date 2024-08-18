@@ -88,7 +88,7 @@ jobs:
       matrix:
         targetPlatform:
           - StandaloneLinux64
-#          - Android
+          - Android
     steps:
       - uses: actions/checkout@v4.1.2
         with:
