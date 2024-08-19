@@ -34,7 +34,6 @@ namespace Config
         /// Cleares the users session
         /// (Still need to reset the userData)
         /// </summary>
-        public const string PATHFORLOGOUT = SERVERPATH + "/logout.php";
 
         /// <summary>
         /// Saves a task (modifies it if other id than -1 was given)
