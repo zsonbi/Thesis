@@ -21,7 +21,6 @@ public class CarSpawner : MonoBehaviour
 
     public void Update()
     {
-        return;
         timer += Time.deltaTime;
         if (timer > spawnInterval)
         {

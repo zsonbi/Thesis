@@ -18,7 +18,7 @@ public class CarController : MonoBehaviour
 {
     [SerializeField] private CarDriveType m_CarDriveType = CarDriveType.FourWheelDrive;
     [SerializeField] private WheelCollider[] m_WheelColliders = new WheelCollider[4];
-    [SerializeField] private GameObject[] m_WheelMeshes = new GameObject[4];
+
     [SerializeField] private Vector3 m_CentreOfMassOffset;
     [SerializeField] private float m_MaximumSteerAngle;
     [Range(0, 1)][SerializeField] private float m_SteerHelper; // 0 is raw physics , 1 the car will grip in the direction it is facing
@@ -32,7 +32,6 @@ public class CarController : MonoBehaviour
     [SerializeField] private float m_SlipLimit;
     [SerializeField] private float m_BrakeTorque;
 
-    private Quaternion[] m_WheelMeshLocalRotations;
     private Vector3 m_Prevpos, m_Pos;
     private float m_SteerAngle;
     private int m_GearNum;
@@ -64,11 +63,6 @@ public class CarController : MonoBehaviour
     // Use this for initialization
     private void Start()
     {
-        m_WheelMeshLocalRotations = new Quaternion[4];
-        for (int i = 0; i < 4; i++)
-        {
-            m_WheelMeshLocalRotations[i] = m_WheelMeshes[i].transform.localRotation;
-        }
         m_WheelColliders[0].attachedRigidbody.centerOfMass = m_CentreOfMassOffset;
 
         m_MaxHandbrakeTorque = float.MaxValue;
@@ -84,8 +78,6 @@ public class CarController : MonoBehaviour
             Quaternion quat;
             Vector3 position;
             m_WheelColliders[i].GetWorldPose(out position, out quat);
-            m_WheelMeshes[i].transform.position = position;
-            m_WheelMeshes[i].transform.rotation = quat;
         }
 
         //clamp input values
