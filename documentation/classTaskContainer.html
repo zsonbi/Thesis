@@ -93,8 +93,8 @@ $(document).ready(function(){initNavTree('classTaskContainer.html',''); initResi
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aced82a8c8b149e8950f93acfc54eb4b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTaskContainer.html#aced82a8c8b149e8950f93acfc54eb4b9">TaskContainer</a> (int id, string taskName, int taskType, int periodRate, string description, DateTime added, DateTime lastCompleted, int completed)</td></tr>
-<tr class="separator:aced82a8c8b149e8950f93acfc54eb4b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaab3ab1eb28a90117eeebe14e34c683f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTaskContainer.html#aaab3ab1eb28a90117eeebe14e34c683f">TaskContainer</a> (long id, string taskName, int taskType, int periodRate, string description, DateTime added, DateTime lastCompleted, bool completed)</td></tr>
+<tr class="separator:aaab3ab1eb28a90117eeebe14e34c683f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23381450125246537dfe70229da15522"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTaskContainer.html#a23381450125246537dfe70229da15522">TaskContainer</a> ()</td></tr>
 <tr class="separator:a23381450125246537dfe70229da15522"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69909e5c987547bb505b3e5b352034d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTaskContainer.html#a69909e5c987547bb505b3e5b352034d6">UpdateValues</a> (string taskName, <a class="el" href="TaskType_8cs.html#aa7f5c268cc89ed3067c26142ca3e16d7">TaskType</a> taskType, <a class="el" href="TaskIntervals_8cs.html#a4ba022096603875ae402bb772ec906f9">TaskIntervals</a> taskInterval, string description, DateTime? lastCompleted=null, bool? completed=null)</td></tr>
@@ -108,8 +108,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a3d249451bde17c2603ac780a39fe91de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTaskContainer.html#a3d249451bde17c2603ac780a39fe91de">Id</a><code> [get, private set]</code></td></tr>
-<tr class="separator:a3d249451bde17c2603ac780a39fe91de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3f8a8a6c64547d6cccec4ae0376b3af"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTaskContainer.html#ad3f8a8a6c64547d6cccec4ae0376b3af">Id</a><code> [get, private set]</code></td></tr>
+<tr class="separator:ad3f8a8a6c64547d6cccec4ae0376b3af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fb073d189cb8e94d4ac68647193a44e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTaskContainer.html#a9fb073d189cb8e94d4ac68647193a44e">TaskName</a><code> [get, private set]</code></td></tr>
 <tr class="separator:a9fb073d189cb8e94d4ac68647193a44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9fd04ceac907a64d1afc75cd4235e92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="TaskType_8cs.html#aa7f5c268cc89ed3067c26142ca3e16d7">TaskType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTaskContainer.html#ab9fd04ceac907a64d1afc75cd4235e92">TaskType</a><code> [get, private set]</code></td></tr>
@@ -129,8 +129,8 @@ Properties</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="TaskContainer_8cs_source.html#l00007">7</a> of file <a class="el" href="TaskContainer_8cs_source.html">TaskContainer.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aced82a8c8b149e8950f93acfc54eb4b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aced82a8c8b149e8950f93acfc54eb4b9">&#9670;&nbsp;</a></span>TaskContainer() <span class="overload">[1/2]</span></h2>
+<a id="aaab3ab1eb28a90117eeebe14e34c683f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaab3ab1eb28a90117eeebe14e34c683f">&#9670;&nbsp;</a></span>TaskContainer() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,7 +141,7 @@ Properties</h2></td></tr>
         <tr>
           <td class="memname">TaskContainer.TaskContainer </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">long&#160;</td>
           <td class="paramname"><em>id</em>, </td>
         </tr>
         <tr>
@@ -183,7 +183,7 @@ Properties</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>completed</em>&#160;</td>
         </tr>
         <tr>
@@ -201,24 +201,24 @@ Properties</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="TaskContainer_8cs_source.html#l00019">19</a> of file <a class="el" href="TaskContainer_8cs_source.html">TaskContainer.cs</a>.</p>
 <div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="classTaskContainer.html#a3d249451bde17c2603ac780a39fe91de">Id</a> = id;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="classTaskContainer.html#ad3f8a8a6c64547d6cccec4ae0376b3af">Id</a> = id;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="classTaskContainer.html#a9fb073d189cb8e94d4ac68647193a44e">TaskName</a> = taskName;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="TaskType_8cs.html#aa7f5c268cc89ed3067c26142ca3e16d7">TaskType</a> = (<a class="code" href="classTaskContainer.html#ab9fd04ceac907a64d1afc75cd4235e92">TaskType</a>)taskType;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="classTaskContainer.html#a3c24cb3ae67ff49c37aef29db834ed28">TaskInterval</a> = (<a class="code" href="TaskIntervals_8cs.html#a4ba022096603875ae402bb772ec906f9">TaskIntervals</a>)periodRate;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="classTaskContainer.html#af401dad3c30393c6aa3ac8189becbf98">Description</a> = description;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="classTaskContainer.html#aae85502d5da352d86da7c7520c2e8a78">Added</a> = added;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="classTaskContainer.html#a9b62401362cb6b1c3b5094477308cfe5">LastCompleted</a> = lastCompleted;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="classTaskContainer.html#ac6f776ce0daac2449d63c160e6cf3886">Completed</a> = completed != 0;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="classTaskContainer.html#ac6f776ce0daac2449d63c160e6cf3886">Completed</a> = completed;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
 <div class="ttc" id="aTaskIntervals_8cs_html_a4ba022096603875ae402bb772ec906f9"><div class="ttname"><a href="TaskIntervals_8cs.html#a4ba022096603875ae402bb772ec906f9">TaskIntervals</a></div><div class="ttdeci">TaskIntervals</div><div class="ttdef"><b>Definition:</b> <a href="TaskIntervals_8cs_source.html#l00001">TaskIntervals.cs:2</a></div></div>
 <div class="ttc" id="aTaskType_8cs_html_aa7f5c268cc89ed3067c26142ca3e16d7"><div class="ttname"><a href="TaskType_8cs.html#aa7f5c268cc89ed3067c26142ca3e16d7">TaskType</a></div><div class="ttdeci">TaskType</div><div class="ttdef"><b>Definition:</b> <a href="TaskType_8cs_source.html#l00001">TaskType.cs:2</a></div></div>
 <div class="ttc" id="aclassTaskContainer_html_a3c24cb3ae67ff49c37aef29db834ed28"><div class="ttname"><a href="classTaskContainer.html#a3c24cb3ae67ff49c37aef29db834ed28">TaskContainer.TaskInterval</a></div><div class="ttdeci">TaskIntervals TaskInterval</div><div class="ttdef"><b>Definition:</b> <a href="TaskContainer_8cs_source.html#l00012">TaskContainer.cs:12</a></div></div>
-<div class="ttc" id="aclassTaskContainer_html_a3d249451bde17c2603ac780a39fe91de"><div class="ttname"><a href="classTaskContainer.html#a3d249451bde17c2603ac780a39fe91de">TaskContainer.Id</a></div><div class="ttdeci">int Id</div><div class="ttdef"><b>Definition:</b> <a href="TaskContainer_8cs_source.html#l00009">TaskContainer.cs:9</a></div></div>
 <div class="ttc" id="aclassTaskContainer_html_a9b62401362cb6b1c3b5094477308cfe5"><div class="ttname"><a href="classTaskContainer.html#a9b62401362cb6b1c3b5094477308cfe5">TaskContainer.LastCompleted</a></div><div class="ttdeci">DateTime LastCompleted</div><div class="ttdef"><b>Definition:</b> <a href="TaskContainer_8cs_source.html#l00015">TaskContainer.cs:15</a></div></div>
 <div class="ttc" id="aclassTaskContainer_html_a9fb073d189cb8e94d4ac68647193a44e"><div class="ttname"><a href="classTaskContainer.html#a9fb073d189cb8e94d4ac68647193a44e">TaskContainer.TaskName</a></div><div class="ttdeci">string TaskName</div><div class="ttdef"><b>Definition:</b> <a href="TaskContainer_8cs_source.html#l00010">TaskContainer.cs:10</a></div></div>
 <div class="ttc" id="aclassTaskContainer_html_aae85502d5da352d86da7c7520c2e8a78"><div class="ttname"><a href="classTaskContainer.html#aae85502d5da352d86da7c7520c2e8a78">TaskContainer.Added</a></div><div class="ttdeci">DateTime Added</div><div class="ttdef"><b>Definition:</b> <a href="TaskContainer_8cs_source.html#l00014">TaskContainer.cs:14</a></div></div>
 <div class="ttc" id="aclassTaskContainer_html_ab9fd04ceac907a64d1afc75cd4235e92"><div class="ttname"><a href="classTaskContainer.html#ab9fd04ceac907a64d1afc75cd4235e92">TaskContainer.TaskType</a></div><div class="ttdeci">TaskType TaskType</div><div class="ttdef"><b>Definition:</b> <a href="TaskContainer_8cs_source.html#l00011">TaskContainer.cs:11</a></div></div>
 <div class="ttc" id="aclassTaskContainer_html_ac6f776ce0daac2449d63c160e6cf3886"><div class="ttname"><a href="classTaskContainer.html#ac6f776ce0daac2449d63c160e6cf3886">TaskContainer.Completed</a></div><div class="ttdeci">bool Completed</div><div class="ttdef"><b>Definition:</b> <a href="TaskContainer_8cs_source.html#l00016">TaskContainer.cs:16</a></div></div>
+<div class="ttc" id="aclassTaskContainer_html_ad3f8a8a6c64547d6cccec4ae0376b3af"><div class="ttname"><a href="classTaskContainer.html#ad3f8a8a6c64547d6cccec4ae0376b3af">TaskContainer.Id</a></div><div class="ttdeci">long Id</div><div class="ttdef"><b>Definition:</b> <a href="TaskContainer_8cs_source.html#l00009">TaskContainer.cs:9</a></div></div>
 <div class="ttc" id="aclassTaskContainer_html_af401dad3c30393c6aa3ac8189becbf98"><div class="ttname"><a href="classTaskContainer.html#af401dad3c30393c6aa3ac8189becbf98">TaskContainer.Description</a></div><div class="ttdeci">string Description</div><div class="ttdef"><b>Definition:</b> <a href="TaskContainer_8cs_source.html#l00013">TaskContainer.cs:13</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="TaskContainer_8cs_source.html#l00014">Added</a>, <a class="el" href="TaskContainer_8cs_source.html#l00016">Completed</a>, <a class="el" href="TaskContainer_8cs_source.html#l00013">Description</a>, <a class="el" href="TaskContainer_8cs_source.html#l00009">Id</a>, <a class="el" href="TaskContainer_8cs_source.html#l00015">LastCompleted</a>, <a class="el" href="TaskContainer_8cs_source.html#l00012">TaskInterval</a>, <a class="el" href="TaskContainer_8cs_source.html#l00010">TaskName</a>, and <a class="el" href="TaskContainer_8cs_source.html#l00011">TaskType</a>.</p>
@@ -250,7 +250,7 @@ Properties</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="TaskContainer_8cs_source.html#l00031">31</a> of file <a class="el" href="TaskContainer_8cs_source.html">TaskContainer.cs</a>.</p>
 <div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        this.<a class="code" href="classTaskContainer.html#a3d249451bde17c2603ac780a39fe91de">Id</a> = -1;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        this.<a class="code" href="classTaskContainer.html#ad3f8a8a6c64547d6cccec4ae0376b3af">Id</a> = -1;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        this.<a class="code" href="classTaskContainer.html#a9fb073d189cb8e94d4ac68647193a44e">TaskName</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        this.<a class="code" href="classTaskContainer.html#af401dad3c30393c6aa3ac8189becbf98">Description</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        this.<a class="code" href="TaskType_8cs.html#aa7f5c268cc89ed3067c26142ca3e16d7">TaskType</a> = <a class="code" href="classConfig_1_1ServerConfig.html">ServerConfig</a>.<a class="code" href="classConfig_1_1ServerConfig.html#ae695ed1003d463a61dfa9383869c6155">DEFAULT_TASKTYPE</a>;</div>
@@ -345,7 +345,7 @@ Properties</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="TaskContainer_8cs_source.html#l00016">Completed</a>, <a class="el" href="TaskContainer_8cs_source.html#l00013">Description</a>, <a class="el" href="TaskContainer_8cs_source.html#l00015">LastCompleted</a>, <a class="el" href="TaskContainer_8cs_source.html#l00012">TaskInterval</a>, and <a class="el" href="TaskContainer_8cs_source.html#l00010">TaskName</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TaskOpenPanelController_8cs_source.html#l00170">TaskOpenPanelController.CollectFromFields()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TaskOpenPanelController_8cs_source.html#l00171">TaskOpenPanelController.CollectFromFields()</a>.</p>
 
 </div>
 </div>
@@ -378,7 +378,7 @@ Properties</h2></td></tr>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        this.<a class="code" href="TaskType_8cs.html#aa7f5c268cc89ed3067c26142ca3e16d7">TaskType</a> = newType;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="TaskOpenPanelController_8cs_source.html#l00096">TaskOpenPanelController.MakeItBadHabit()</a>, and <a class="el" href="TaskOpenPanelController_8cs_source.html#l00102">TaskOpenPanelController.MakeItGoodTask()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TaskOpenPanelController_8cs_source.html#l00097">TaskOpenPanelController.MakeItBadHabit()</a>, and <a class="el" href="TaskOpenPanelController_8cs_source.html#l00103">TaskOpenPanelController.MakeItGoodTask()</a>.</p>
 
 </div>
 </div>
@@ -417,7 +417,7 @@ Properties</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="TaskContainer_8cs_source.html#l00016">Completed</a>, and <a class="el" href="TaskContainer_8cs_source.html#l00015">LastCompleted</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Task_8cs_source.html#l00088">Task.CompleteStateChange()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Task_8cs_source.html#l00081">Task.CompleteStateChange()</a>.</p>
 
 </div>
 </div>
@@ -451,13 +451,13 @@ Properties</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="TaskContainer_8cs_source.html#l00016">Completed</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Task_8cs_source.html#l00088">Task.CompleteStateChange()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Task_8cs_source.html#l00081">Task.CompleteStateChange()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
-<a id="a3d249451bde17c2603ac780a39fe91de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d249451bde17c2603ac780a39fe91de">&#9670;&nbsp;</a></span>Id</h2>
+<a id="ad3f8a8a6c64547d6cccec4ae0376b3af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3f8a8a6c64547d6cccec4ae0376b3af">&#9670;&nbsp;</a></span>Id</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -466,7 +466,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int TaskContainer.Id</td>
+          <td class="memname">long TaskContainer.Id</td>
         </tr>
       </table>
   </td>
@@ -479,7 +479,7 @@ Properties</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="TaskContainer_8cs_source.html#l00009">9</a> of file <a class="el" href="TaskContainer_8cs_source.html">TaskContainer.cs</a>.</p>
 <div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="Task_8cs_source.html#l00054">Task.CompleteTask()</a>, <a class="el" href="UIController_8cs_source.html#l00099">UIController.CreateTask()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00155">TaskOpenPanelController.DeletedTask()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00148">TaskOpenPanelController.DeleteTask()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00114">TaskOpenPanelController.Save()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00127">TaskOpenPanelController.SavedTask()</a>, and <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Task_8cs_source.html#l00054">Task.CompleteTask()</a>, <a class="el" href="UIController_8cs_source.html#l00100">UIController.CreateTask()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00156">TaskOpenPanelController.DeletedTask()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00151">TaskOpenPanelController.DeleteTask()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00115">TaskOpenPanelController.Save()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00137">TaskOpenPanelController.SavedTask()</a>, and <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>.</p>
 
 </div>
 </div>
@@ -506,7 +506,7 @@ Properties</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="TaskContainer_8cs_source.html#l00010">10</a> of file <a class="el" href="TaskContainer_8cs_source.html">TaskContainer.cs</a>.</p>
 <div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="TaskOpenPanelController_8cs_source.html#l00063">TaskOpenPanelController.OpenUp()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00114">TaskOpenPanelController.Save()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>, <a class="el" href="Task_8cs_source.html#l00081">Task.UpdateLabels()</a>, and <a class="el" href="TaskContainer_8cs_source.html#l00043">UpdateValues()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TaskOpenPanelController_8cs_source.html#l00064">TaskOpenPanelController.OpenUp()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00115">TaskOpenPanelController.Save()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>, <a class="el" href="Task_8cs_source.html#l00074">Task.UpdateLabels()</a>, and <a class="el" href="TaskContainer_8cs_source.html#l00043">UpdateValues()</a>.</p>
 
 </div>
 </div>
@@ -533,7 +533,7 @@ Properties</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="TaskContainer_8cs_source.html#l00011">11</a> of file <a class="el" href="TaskContainer_8cs_source.html">TaskContainer.cs</a>.</p>
 <div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="TaskOpenPanelController_8cs_source.html#l00170">TaskOpenPanelController.CollectFromFields()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00114">TaskOpenPanelController.Save()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>, and <a class="el" href="TaskOpenPanelController_8cs_source.html#l00179">TaskOpenPanelController.UpdateButtons()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TaskOpenPanelController_8cs_source.html#l00171">TaskOpenPanelController.CollectFromFields()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00115">TaskOpenPanelController.Save()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>, and <a class="el" href="TaskOpenPanelController_8cs_source.html#l00180">TaskOpenPanelController.UpdateButtons()</a>.</p>
 
 </div>
 </div>
@@ -560,7 +560,7 @@ Properties</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="TaskContainer_8cs_source.html#l00012">12</a> of file <a class="el" href="TaskContainer_8cs_source.html">TaskContainer.cs</a>.</p>
 <div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="Task_8cs_source.html#l00124">Task.CalculateIfCompleteable()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00063">TaskOpenPanelController.OpenUp()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00114">TaskOpenPanelController.Save()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>, <a class="el" href="Task_8cs_source.html#l00081">Task.UpdateLabels()</a>, <a class="el" href="Task_8cs_source.html#l00105">Task.UpdateTimeRemaining()</a>, and <a class="el" href="TaskContainer_8cs_source.html#l00043">UpdateValues()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Task_8cs_source.html#l00117">Task.CalculateIfCompleteable()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00064">TaskOpenPanelController.OpenUp()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00115">TaskOpenPanelController.Save()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>, <a class="el" href="Task_8cs_source.html#l00074">Task.UpdateLabels()</a>, <a class="el" href="Task_8cs_source.html#l00098">Task.UpdateTimeRemaining()</a>, and <a class="el" href="TaskContainer_8cs_source.html#l00043">UpdateValues()</a>.</p>
 
 </div>
 </div>
@@ -587,7 +587,7 @@ Properties</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="TaskContainer_8cs_source.html#l00013">13</a> of file <a class="el" href="TaskContainer_8cs_source.html">TaskContainer.cs</a>.</p>
 <div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="TaskOpenPanelController_8cs_source.html#l00063">TaskOpenPanelController.OpenUp()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00114">TaskOpenPanelController.Save()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>, and <a class="el" href="TaskContainer_8cs_source.html#l00043">UpdateValues()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TaskOpenPanelController_8cs_source.html#l00064">TaskOpenPanelController.OpenUp()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00115">TaskOpenPanelController.Save()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>, and <a class="el" href="TaskContainer_8cs_source.html#l00043">UpdateValues()</a>.</p>
 
 </div>
 </div>
@@ -641,7 +641,7 @@ Properties</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="TaskContainer_8cs_source.html#l00015">15</a> of file <a class="el" href="TaskContainer_8cs_source.html">TaskContainer.cs</a>.</p>
 <div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="Task_8cs_source.html#l00124">Task.CalculateIfCompleteable()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00065">Complete()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>, <a class="el" href="Task_8cs_source.html#l00105">Task.UpdateTimeRemaining()</a>, and <a class="el" href="TaskContainer_8cs_source.html#l00043">UpdateValues()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Task_8cs_source.html#l00117">Task.CalculateIfCompleteable()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00065">Complete()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>, <a class="el" href="Task_8cs_source.html#l00098">Task.UpdateTimeRemaining()</a>, and <a class="el" href="TaskContainer_8cs_source.html#l00043">UpdateValues()</a>.</p>
 
 </div>
 </div>
@@ -668,7 +668,7 @@ Properties</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="TaskContainer_8cs_source.html#l00016">16</a> of file <a class="el" href="TaskContainer_8cs_source.html">TaskContainer.cs</a>.</p>
 <div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="TaskContainer_8cs_source.html#l00065">Complete()</a>, <a class="el" href="Task_8cs_source.html#l00054">Task.CompleteTask()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00075">ResetComplete()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>, <a class="el" href="Task_8cs_source.html#l00033">Task.Update()</a>, <a class="el" href="Task_8cs_source.html#l00105">Task.UpdateTimeRemaining()</a>, and <a class="el" href="TaskContainer_8cs_source.html#l00043">UpdateValues()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TaskContainer_8cs_source.html#l00065">Complete()</a>, <a class="el" href="Task_8cs_source.html#l00054">Task.CompleteTask()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00075">ResetComplete()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>, <a class="el" href="Task_8cs_source.html#l00033">Task.Update()</a>, <a class="el" href="Task_8cs_source.html#l00098">Task.UpdateTimeRemaining()</a>, and <a class="el" href="TaskContainer_8cs_source.html#l00043">UpdateValues()</a>.</p>
 
 </div>
 </div>

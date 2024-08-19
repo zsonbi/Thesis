@@ -1,5 +1,14 @@
 var annotated_dup =
 [
+    [ "Assets", "namespaceAssets.html", [
+      [ "Scripts", "namespaceAssets_1_1Scripts.html", [
+        [ "Client", "namespaceAssets_1_1Scripts_1_1Client.html", [
+          [ "DataTypes", "namespaceAssets_1_1Scripts_1_1Client_1_1DataTypes.html", [
+            [ "ChunkCellContainer", "structAssets_1_1Scripts_1_1Client_1_1DataTypes_1_1ChunkCellContainer.html", "structAssets_1_1Scripts_1_1Client_1_1DataTypes_1_1ChunkCellContainer" ]
+          ] ]
+        ] ]
+      ] ]
+    ] ],
     [ "Config", "namespaceConfig.html", [
       [ "ServerConfig", "classConfig_1_1ServerConfig.html", "classConfig_1_1ServerConfig" ]
     ] ],
@@ -7,23 +16,49 @@ var annotated_dup =
       [ "World", "namespaceGame_1_1World.html", [
         [ "Chunk", "classGame_1_1World_1_1Chunk.html", "classGame_1_1World_1_1Chunk" ],
         [ "RoadGenerator", "classGame_1_1World_1_1RoadGenerator.html", "classGame_1_1World_1_1RoadGenerator" ],
-        [ "World", "classGame_1_1World_1_1World.html", "classGame_1_1World_1_1World" ]
+        [ "GameWorld", "classGame_1_1World_1_1GameWorld.html", "classGame_1_1World_1_1GameWorld" ]
       ] ],
       [ "GameController", "classGame_1_1GameController.html", "classGame_1_1GameController" ]
+    ] ],
+    [ "Thesis_backend", "namespaceThesis__backend.html", [
+      [ "Data_Structures", "namespaceThesis__backend_1_1Data__Structures.html", [
+        [ "TaskRequest", "structThesis__backend_1_1Data__Structures_1_1TaskRequest.html", "structThesis__backend_1_1Data__Structures_1_1TaskRequest" ],
+        [ "UserLoginRequest", "structThesis__backend_1_1Data__Structures_1_1UserLoginRequest.html", "structThesis__backend_1_1Data__Structures_1_1UserLoginRequest" ],
+        [ "UserRequest", "structThesis__backend_1_1Data__Structures_1_1UserRequest.html", "structThesis__backend_1_1Data__Structures_1_1UserRequest" ]
+      ] ]
+    ] ],
+    [ "UnityStandardAssets", "namespaceUnityStandardAssets.html", [
+      [ "CrossPlatformInput", "namespaceUnityStandardAssets_1_1CrossPlatformInput.html", [
+        [ "PlatformSpecific", "namespaceUnityStandardAssets_1_1CrossPlatformInput_1_1PlatformSpecific.html", [
+          [ "MobileInput", "classUnityStandardAssets_1_1CrossPlatformInput_1_1PlatformSpecific_1_1MobileInput.html", "classUnityStandardAssets_1_1CrossPlatformInput_1_1PlatformSpecific_1_1MobileInput" ],
+          [ "StandaloneInput", "classUnityStandardAssets_1_1CrossPlatformInput_1_1PlatformSpecific_1_1StandaloneInput.html", "classUnityStandardAssets_1_1CrossPlatformInput_1_1PlatformSpecific_1_1StandaloneInput" ]
+        ] ],
+        [ "AxisTouchButton", "classUnityStandardAssets_1_1CrossPlatformInput_1_1AxisTouchButton.html", "classUnityStandardAssets_1_1CrossPlatformInput_1_1AxisTouchButton" ],
+        [ "ButtonHandler", "classUnityStandardAssets_1_1CrossPlatformInput_1_1ButtonHandler.html", "classUnityStandardAssets_1_1CrossPlatformInput_1_1ButtonHandler" ],
+        [ "CrossPlatformInputManager", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager" ],
+        [ "InputAxisScrollbar", "classUnityStandardAssets_1_1CrossPlatformInput_1_1InputAxisScrollbar.html", "classUnityStandardAssets_1_1CrossPlatformInput_1_1InputAxisScrollbar" ],
+        [ "Joystick", "classUnityStandardAssets_1_1CrossPlatformInput_1_1Joystick.html", "classUnityStandardAssets_1_1CrossPlatformInput_1_1Joystick" ],
+        [ "MobileControlRig", "classUnityStandardAssets_1_1CrossPlatformInput_1_1MobileControlRig.html", "classUnityStandardAssets_1_1CrossPlatformInput_1_1MobileControlRig" ],
+        [ "TiltInput", "classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput.html", "classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput" ],
+        [ "TouchPad", "classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html", "classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad" ],
+        [ "VirtualInput", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput" ]
+      ] ]
     ] ],
     [ "User", "namespaceUser.html", [
       [ "UserData", "classUser_1_1UserData.html", "classUser_1_1UserData" ]
     ] ],
-    [ "CarProbeScript", "classCarProbeScript.html", "classCarProbeScript" ],
+    [ "Car", "classCar.html", "classCar" ],
+    [ "CarController", "classCarController.html", "classCarController" ],
+    [ "CarProbeScript", "classCarProbeScript.html", null ],
+    [ "CarSpawner", "classCarSpawner.html", "classCarSpawner" ],
+    [ "CopCar", "classCopCar.html", "classCopCar" ],
     [ "DirectionConverter", "classDirectionConverter.html", "classDirectionConverter" ],
     [ "EdgeRoadContainer", "classEdgeRoadContainer.html", "classEdgeRoadContainer" ],
     [ "GameConfig", "classGameConfig.html", "classGameConfig" ],
-    [ "GameWorld", "classGameWorld.html", "classGameWorld" ],
     [ "MeshGenerator", "classMeshGenerator.html", "classMeshGenerator" ],
     [ "ModalWindow", "classModalWindow.html", "classModalWindow" ],
+    [ "NpcCar", "classNpcCar.html", "classNpcCar" ],
     [ "PhpReturnObject", "classPhpReturnObject.html", "classPhpReturnObject" ],
-    [ "Player", "classPlayer.html", "classPlayer" ],
-    [ "Police", "classPolice.html", "classPolice" ],
     [ "Server", "classServer.html", "classServer" ],
     [ "Task", "classTask.html", "classTask" ],
     [ "TaskApiResponse", "classTaskApiResponse.html", "classTaskApiResponse" ],

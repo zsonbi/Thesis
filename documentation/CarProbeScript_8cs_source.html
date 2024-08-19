@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Bomberman: Assets/Scripts/Client/Game/CarProbeScript.cs Source File</title>
+<title>Bomberman: Assets/Scripts/Client/Game/CarScripts/CarProbeScript.cs Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,76 +86,97 @@ $(document).ready(function(){initNavTree('CarProbeScript_8cs_source.html',''); i
 <div class="title">CarProbeScript.cs</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="CarProbeScript_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> <a class="code" href="namespaceGame.html">Game</a>.<a class="code" href="namespaceGame_1_1World.html">World</a>;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System.Collections;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;[RequireComponent(typeof(BoxCollider))]</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classCarProbeScript.html">    7</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classCarProbeScript.html">CarProbeScript</a> : MonoBehaviour</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    [SerializeField]</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classCarProbeScript.html#a6499ac8e6ed7b4e12680b7abc0d181ff">   10</a></span>&#160;    <span class="keyword">private</span> <a class="code" href="classGame_1_1World_1_1World.html">World</a> <a class="code" href="classCarProbeScript.html#a6499ac8e6ed7b4e12680b7abc0d181ff">world</a>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="comment">// Start is called before the first frame update</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classCarProbeScript.html#a54e08b5612c9e70edf4e236d71cefcaa">   13</a></span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code" href="classCarProbeScript.html#a54e08b5612c9e70edf4e236d71cefcaa">Start</a>()</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    }</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classCarProbeScript.html#a2fe8de5e54d3f4c1b6e7114edd4c1e75">   17</a></span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code" href="classCarProbeScript.html#a2fe8de5e54d3f4c1b6e7114edd4c1e75">OnTriggerEnter</a>(Collider collision)</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        Debug.Log(collision.gameObject.name);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="classGame_1_1World_1_1Chunk.html">Chunk</a> chunk = collision.gameObject.transform.parent.gameObject.GetComponent&lt;<a class="code" href="classGame_1_1World_1_1Chunk.html">Chunk</a>&gt;();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = -1; i &lt;= 1; i++)</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = -1; j &lt;= 1; j++)</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                <span class="keywordflow">if</span> (i + chunk.<a class="code" href="classGame_1_1World_1_1Chunk.html#adce4d80142d5a8146a23758358504814">Row</a> &gt;= 0 &amp;&amp; j + chunk.<a class="code" href="classGame_1_1World_1_1Chunk.html#ad6574f4e35ae5e51f25bec7e1a47d2bc">Col</a> &gt;= 0 &amp;&amp; i + chunk.<a class="code" href="classGame_1_1World_1_1Chunk.html#adce4d80142d5a8146a23758358504814">Row</a> &lt; <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a> &amp;&amp; j + chunk.<a class="code" href="classGame_1_1World_1_1Chunk.html#ad6574f4e35ae5e51f25bec7e1a47d2bc">Col</a> &lt; <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a>)</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                    <a class="code" href="classCarProbeScript.html#a6499ac8e6ed7b4e12680b7abc0d181ff">world</a>.<a class="code" href="classGame_1_1World_1_1World.html#a493b241083c4d31b835315b66ce09753">LoadChunk</a>(j + chunk.<a class="code" href="classGame_1_1World_1_1Chunk.html#ad6574f4e35ae5e51f25bec7e1a47d2bc">Col</a>, i + chunk.<a class="code" href="classGame_1_1World_1_1Chunk.html#adce4d80142d5a8146a23758358504814">Row</a>);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                }</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            }</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = -2; i &lt;= 2; i++)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = -2; j &lt;= 2; j++)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                <span class="keywordflow">if</span>(Mathf.Abs(i) &lt;=1 &amp;&amp; Mathf.Abs(j) &lt;= 1)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                    <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <span class="keywordflow">if</span> (i + chunk.<a class="code" href="classGame_1_1World_1_1Chunk.html#adce4d80142d5a8146a23758358504814">Row</a> &gt;= 0 &amp;&amp; j + chunk.<a class="code" href="classGame_1_1World_1_1Chunk.html#ad6574f4e35ae5e51f25bec7e1a47d2bc">Col</a> &gt;= 0 &amp;&amp; i + chunk.<a class="code" href="classGame_1_1World_1_1Chunk.html#adce4d80142d5a8146a23758358504814">Row</a> &lt; <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a> &amp;&amp; j + chunk.<a class="code" href="classGame_1_1World_1_1Chunk.html#ad6574f4e35ae5e51f25bec7e1a47d2bc">Col</a> &lt; <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a>)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                    <a class="code" href="classCarProbeScript.html#a6499ac8e6ed7b4e12680b7abc0d181ff">world</a>.<a class="code" href="classGame_1_1World_1_1World.html#ae9340be3ea91fd00e8863b7f9d2574b0">HideChunk</a>(j + chunk.<a class="code" href="classGame_1_1World_1_1Chunk.html#ad6574f4e35ae5e51f25bec7e1a47d2bc">Col</a>, i + chunk.<a class="code" href="classGame_1_1World_1_1Chunk.html#adce4d80142d5a8146a23758358504814">Row</a>);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
-<div class="ttc" id="aclassCarProbeScript_html"><div class="ttname"><a href="classCarProbeScript.html">CarProbeScript</a></div><div class="ttdef"><b>Definition:</b> <a href="CarProbeScript_8cs_source.html#l00007">CarProbeScript.cs:8</a></div></div>
-<div class="ttc" id="aclassCarProbeScript_html_a2fe8de5e54d3f4c1b6e7114edd4c1e75"><div class="ttname"><a href="classCarProbeScript.html#a2fe8de5e54d3f4c1b6e7114edd4c1e75">CarProbeScript.OnTriggerEnter</a></div><div class="ttdeci">void OnTriggerEnter(Collider collision)</div><div class="ttdef"><b>Definition:</b> <a href="CarProbeScript_8cs_source.html#l00017">CarProbeScript.cs:17</a></div></div>
-<div class="ttc" id="aclassCarProbeScript_html_a54e08b5612c9e70edf4e236d71cefcaa"><div class="ttname"><a href="classCarProbeScript.html#a54e08b5612c9e70edf4e236d71cefcaa">CarProbeScript.Start</a></div><div class="ttdeci">void Start()</div><div class="ttdef"><b>Definition:</b> <a href="CarProbeScript_8cs_source.html#l00013">CarProbeScript.cs:13</a></div></div>
-<div class="ttc" id="aclassCarProbeScript_html_a6499ac8e6ed7b4e12680b7abc0d181ff"><div class="ttname"><a href="classCarProbeScript.html#a6499ac8e6ed7b4e12680b7abc0d181ff">CarProbeScript.world</a></div><div class="ttdeci">World world</div><div class="ttdef"><b>Definition:</b> <a href="CarProbeScript_8cs_source.html#l00010">CarProbeScript.cs:10</a></div></div>
-<div class="ttc" id="aclassGameConfig_html"><div class="ttname"><a href="classGameConfig.html">GameConfig</a></div><div class="ttdef"><b>Definition:</b> <a href="GameConfig_8cs_source.html#l00001">GameConfig.cs:2</a></div></div>
-<div class="ttc" id="aclassGameConfig_html_afa2ddc4407f1664515de38348aadd1f7"><div class="ttname"><a href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">GameConfig.CHUNK_COUNT</a></div><div class="ttdeci">const int CHUNK_COUNT</div><div class="ttdef"><b>Definition:</b> <a href="GameConfig_8cs_source.html#l00005">GameConfig.cs:5</a></div></div>
-<div class="ttc" id="aclassGame_1_1World_1_1Chunk_html"><div class="ttname"><a href="classGame_1_1World_1_1Chunk.html">Game.World.Chunk</a></div><div class="ttdoc">Used for generating a new world</div><div class="ttdef"><b>Definition:</b> <a href="Chunk_8cs_source.html#l00012">Chunk.cs:13</a></div></div>
-<div class="ttc" id="aclassGame_1_1World_1_1Chunk_html_ad6574f4e35ae5e51f25bec7e1a47d2bc"><div class="ttname"><a href="classGame_1_1World_1_1Chunk.html#ad6574f4e35ae5e51f25bec7e1a47d2bc">Game.World.Chunk.Col</a></div><div class="ttdeci">int Col</div><div class="ttdef"><b>Definition:</b> <a href="Chunk_8cs_source.html#l00042">Chunk.cs:42</a></div></div>
-<div class="ttc" id="aclassGame_1_1World_1_1Chunk_html_adce4d80142d5a8146a23758358504814"><div class="ttname"><a href="classGame_1_1World_1_1Chunk.html#adce4d80142d5a8146a23758358504814">Game.World.Chunk.Row</a></div><div class="ttdeci">int Row</div><div class="ttdef"><b>Definition:</b> <a href="Chunk_8cs_source.html#l00041">Chunk.cs:41</a></div></div>
-<div class="ttc" id="aclassGame_1_1World_1_1World_html"><div class="ttname"><a href="classGame_1_1World_1_1World.html">Game.World.World</a></div><div class="ttdoc">A class for handling chunk loading and unloading</div><div class="ttdef"><b>Definition:</b> <a href="World_8cs_source.html#l00013">World.cs:14</a></div></div>
-<div class="ttc" id="aclassGame_1_1World_1_1World_html_a493b241083c4d31b835315b66ce09753"><div class="ttname"><a href="classGame_1_1World_1_1World.html#a493b241083c4d31b835315b66ce09753">Game.World.World.LoadChunk</a></div><div class="ttdeci">void LoadChunk(int x, int z)</div><div class="ttdoc">Loads a chunk</div><div class="ttdef"><b>Definition:</b> <a href="World_8cs_source.html#l00054">World.cs:54</a></div></div>
-<div class="ttc" id="aclassGame_1_1World_1_1World_html_ae9340be3ea91fd00e8863b7f9d2574b0"><div class="ttname"><a href="classGame_1_1World_1_1World.html#ae9340be3ea91fd00e8863b7f9d2574b0">Game.World.World.HideChunk</a></div><div class="ttdeci">void HideChunk(int x, int z)</div><div class="ttdef"><b>Definition:</b> <a href="World_8cs_source.html#l00085">World.cs:85</a></div></div>
-<div class="ttc" id="anamespaceGame_1_1World_html"><div class="ttname"><a href="namespaceGame_1_1World.html">Game.World</a></div><div class="ttdef"><b>Definition:</b> <a href="Chunk_8cs_source.html#l00007">Chunk.cs:8</a></div></div>
-<div class="ttc" id="anamespaceGame_html"><div class="ttname"><a href="namespaceGame.html">Game</a></div><div class="ttdef"><b>Definition:</b> <a href="Chunk_8cs_source.html#l00005">Chunk.cs:6</a></div></div>
+<a href="CarProbeScript_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;[RequireComponent(typeof(BoxCollider))]</div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="classCarProbeScript.html">    4</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classCarProbeScript.html">CarProbeScript</a> : MonoBehaviour</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="comment">//[SerializeField]</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="comment">//private GameWorld world;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="comment">//private int probeSize = 1;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="comment">//private void OnTriggerEnter(Collider collision)</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="comment">//{</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="comment">//    Debug.Log(collision.gameObject.name);</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">//    Chunk chunk = collision.gameObject.transform.parent.transform.parent.gameObject.GetComponent&lt;Chunk&gt;();</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">//    if (chunk is null)</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">//    {</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">//        return;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">//    }</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">//    SpawnNearbyChunks(chunk.Row, chunk.Col);</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">//    DespawnFarAwayChunks(chunk.Row, chunk.Col);</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">//}</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">//private void DespawnFarAwayChunks(int row, int col)</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">//{</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">//    for (int i = -(probeSize + 1); i &lt;= probeSize + 1; i++)</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">//    {</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">//        for (int j = -(probeSize + 1); j &lt;= probeSize + 1; j++)</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">//        {</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">//            if (Mathf.Abs(i) &lt;= probeSize &amp;&amp; Mathf.Abs(j) &lt;= probeSize)</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">//            {</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">//                continue;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">//            }</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">//            if (i + row &gt;= 0 &amp;&amp; j + col &gt;= 0 &amp;&amp; i + row &lt; GameConfig.CHUNK_COUNT &amp;&amp; j + col &lt; GameConfig.CHUNK_COUNT)</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">//            {</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">//                if (world is not null)</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">//                    world.HideChunk(j + col, i + row);</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">//            }</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">//        }</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">//    }</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">//}</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//private void SpawnNearbyChunks(int row, int col)</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">//{</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">//    ValidateAndLoadChunk(row, col);</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">//    for (int currSize = 1; currSize &lt;= probeSize; currSize++)</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">//    {</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">//        for (int x = 0 - currSize; x &lt;= 0 + currSize; x += currSize * 2)</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//        {</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//            for (int y = 0; y &lt;= currSize - 1; y++)</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">//            {</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">//                ValidateAndLoadChunk(row + y, col + x);</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">//                ValidateAndLoadChunk(row - y, col + x);</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">//            }</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">//        }</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">//        for (int y = 0 - currSize; y &lt;= 0 + currSize; y += currSize * 2)</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">//        {</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">//            for (int x = 0; x &lt;= currSize - 1; x++)</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">//            {</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//                ValidateAndLoadChunk(row + y, col + x);</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//                ValidateAndLoadChunk(row + y, col - x);</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">//            }</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">//        }</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">//        ValidateAndLoadChunk(row + currSize, col + currSize);</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">//        ValidateAndLoadChunk(row - currSize, col - currSize);</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">//        ValidateAndLoadChunk(row + currSize, col - currSize);</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">//        ValidateAndLoadChunk(row - currSize, col + currSize);</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">//    }</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">//}</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">//private void ValidateAndLoadChunk(int row, int col)</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">//{</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">//    if (row &lt; 0 || row &gt;= GameConfig.CHUNK_COUNT || col &lt; 0 || col &gt;= GameConfig.CHUNK_COUNT)</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">//    {</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">//        return;</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">//    }</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">//    if (world is not null)</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">//        world.LoadChunk(col, row);</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">//}</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="ttc" id="aclassCarProbeScript_html"><div class="ttname"><a href="classCarProbeScript.html">CarProbeScript</a></div><div class="ttdef"><b>Definition:</b> <a href="CarProbeScript_8cs_source.html#l00004">CarProbeScript.cs:5</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="dir_f13b41af88cf68434578284aaf699e39.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_b4c904401dbe33553ac15eee5be660d8.html">Client</a></li><li class="navelem"><a class="el" href="dir_ce7e763aa82549855ad9efe753725bf6.html">Game</a></li><li class="navelem"><a class="el" href="CarProbeScript_8cs.html">CarProbeScript.cs</a></li>
+    <li class="navelem"><a class="el" href="dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="dir_f13b41af88cf68434578284aaf699e39.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_b4c904401dbe33553ac15eee5be660d8.html">Client</a></li><li class="navelem"><a class="el" href="dir_ce7e763aa82549855ad9efe753725bf6.html">Game</a></li><li class="navelem"><a class="el" href="dir_02daac45f3276bf7726dfe0aac208fe9.html">CarScripts</a></li><li class="navelem"><a class="el" href="CarProbeScript_8cs.html">CarProbeScript.cs</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

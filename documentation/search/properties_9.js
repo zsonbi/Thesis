@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['registered_470',['Registered',['../classUser_1_1UserData.html#adf1a00f3bd39a418cccf26f04a79c831',1,'User::UserData']]],
-  ['res_471',['Res',['../classTaskApiResponse.html#a2611913421afc995268212b863e84dd6',1,'TaskApiResponse']]],
-  ['roadcounter_472',['roadCounter',['../classEdgeRoadContainer.html#a6e168394bc99da132d3038d61888583d',1,'EdgeRoadContainer']]],
-  ['roadmatrix_473',['RoadMatrix',['../classGame_1_1World_1_1RoadGenerator.html#a7fca47366b7f100826237bbc011034ac',1,'Game::World::RoadGenerator']]],
-  ['row_474',['Row',['../classGame_1_1World_1_1Chunk.html#adce4d80142d5a8146a23758358504814',1,'Game::World::Chunk']]]
+  ['name_960',['name',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualAxis.html#a176a271ea7cb1d9b52194ac0894c1b7b',1,'UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager.VirtualAxis.name()'],['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualButton.html#a2c32a0ba1321140c06327f467ed12071',1,'UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager.VirtualButton.name()']]],
+  ['numberofedgeroads_961',['NumberOfEdgeRoads',['../classGame_1_1World_1_1RoadGenerator.html#ac93b64c4463f09f30fe8e892d43e8758',1,'Game::World::RoadGenerator']]]
 ];

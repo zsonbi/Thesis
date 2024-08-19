@@ -29,6 +29,7 @@ var NAVTREE =
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ]
       ] ]
     ] ],
@@ -36,9 +37,10 @@ var NAVTREE =
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
+        [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
+        [ "Enumerations", "functions_enum.html", null ],
         [ "Properties", "functions_prop.html", null ]
       ] ]
     ] ],
@@ -54,8 +56,10 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"CarProbeScript_8cs.html",
-"classTaskOpenPanelController.html#aeb6c1cf2f3da2be35bb515f455d3f0d8"
+"ApiTypes_2Task_8cs.html",
+"classGame_1_1GameController.html",
+"classUnityStandardAssets_1_1CrossPlatformInput_1_1Joystick.html",
+"namespaceUnityStandardAssets_1_1CrossPlatformInput.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

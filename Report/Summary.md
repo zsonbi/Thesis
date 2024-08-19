@@ -1,21 +1,21 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 05/02/2024 - 10:10:20 |
+| Generated on: | 08/19/2024 - 07:26:32 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 4 |
-| Classes: | 58 |
-| Files: | 57 |
-| Covered lines: | 330 |
-| Uncovered lines: | 2683 |
-| Coverable lines: | 3013 |
-| Total lines: | 6008 |
-| Line coverage: | 10.9% (330 of 3013) |
+| Classes: | 82 |
+| Files: | 80 |
+| Covered lines: | 237 |
+| Uncovered lines: | 3717 |
+| Coverable lines: | 3954 |
+| Total lines: | 8057 |
+| Line coverage: | 5.9% (237 of 3954) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 94 |
-| Total methods: | 456 |
-| Method coverage: | 20.6% (94 of 456) |
+| Covered methods: | 98 |
+| Total methods: | 693 |
+| Method coverage: | 14.1% (98 of 693) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -60,24 +60,48 @@
 |Tests.GameTests.RoadGeneratorTests|26|0|26|55|100%|0|0||3|3|100%|
 |Tests.MainMenuTest|4|0|4|24|100%|0|0||1|1|100%|
 |Tests.UITests.UserControllerTests|25|1|26|65|96.1%|0|0||6|6|100%|
-|**ThesisScripts**|**275**|**499**|**774**|**1605**|**35.5%**|**0**|**0**|****|**84**|**160**|**52.5%**|
-|CarProbeScript|0|29|29|50|0%|0|0||0|2|0%|
+|**ThesisScripts**|**182**|**1533**|**1715**|**3799**|**10.6%**|**0**|**0**|****|**88**|**397**|**22.1%**|
+|Assets.Scripts.Client.DataTypes.ChunkCellContainer|0|6|6|15|0%|0|0||0|5|0%|
+|Car|0|26|26|54|0%|0|0||0|5|0%|
+|CarController|0|137|137|254|0%|0|0||0|18|0%|
+|CarSpawner|0|21|21|49|0%|0|0||0|4|0%|
+|Config.ServerConfig|0|3|3|67|0%|0|0||0|3|0%|
+|CopCar|0|6|6|18|0%|0|0||0|1|0%|
 |DirectionConverter|0|21|21|46|0%|0|0||0|2|0%|
 |EdgeRoadContainer|9|0|9|15|100%|0|0||7|7|100%|
-|Game.GameController|0|5|5|22|0%|0|0||0|7|0%|
-|Game.World.Chunk|0|79|79|171|0%|0|0||0|19|0%|
-|Game.World.RoadGenerator|70|3|73|153|95.8%|0|0||7|8|87.5%|
-|Game.World.World|0|38|38|94|0%|0|0||0|4|0%|
-|GameWorld|0|4|4|18|0%|0|0||0|2|0%|
+|Game.GameController|0|68|68|109|0%|0|0||0|10|0%|
+|Game.World.Chunk|0|179|179|345|0%|0|0||0|21|0%|
+|Game.World.GameWorld|0|54|54|103|0%|0|0||0|6|0%|
+|Game.World.RoadGenerator|55|49|104|200|52.8%|0|0||6|9|66.6%|
 |MeshGenerator|0|27|27|96|0%|0|0||0|2|0%|
 |ModalWindow|0|19|19|43|0%|0|0||0|4|0%|
-|Player|0|19|19|80|0%|0|0||0|5|0%|
-|Police|0|4|4|18|0%|0|0||0|2|0%|
-|Task|38|34|72|129|52.7%|0|0||9|12|75%|
-|TaskApiResponse|9|0|9|16|100%|0|0||7|7|100%|
+|NpcCar|0|6|6|16|0%|0|0||0|1|0%|
+|PlayerCar|0|10|10|27|0%|0|0||0|3|0%|
+|Task|2|63|65|122|3%|0|0||1|12|8.3%|
+|TaskApiResponse|0|9|9|16|0%|0|0||0|7|0%|
 |TaskClosedEventArgs|0|4|4|14|0%|0|0||0|1|0%|
-|TaskContainer|36|21|57|79|63.1%|0|0||20|22|90.9%|
-|TaskOpenPanelController|14|91|105|192|13.3%|0|0||4|15|26.6%|
-|UIController|41|38|79|133|51.8%|0|0||7|11|63.6%|
-|User.UserData|23|0|23|38|100%|0|0||18|18|100%|
-|UserController|35|63|98|198|35.7%|0|0||5|10|50%|
+|TaskContainer|22|35|57|79|38.5%|0|0||18|22|81.8%|
+|TaskOpenPanelController|14|84|98|193|14.2%|0|0||4|15|26.6%|
+|Thesis_backend.Data_Structures.DbElement|1|1|2|11|50%|0|0||2|3|66.6%|
+|Thesis_backend.Data_Structures.Game|0|4|4|13|0%|0|0||0|8|0%|
+|Thesis_backend.Data_Structures.Task|0|9|9|19|0%|0|0||0|17|0%|
+|Thesis_backend.Data_Structures.TaskRequest|0|4|4|16|0%|0|0||0|8|0%|
+|Thesis_backend.Data_Structures.User|8|1|9|21|88.8%|0|0||17|18|94.4%|
+|Thesis_backend.Data_Structures.UserLoginRequest|2|0|2|14|100%|0|0||4|4|100%|
+|Thesis_backend.Data_Structures.UserRequest|0|3|3|15|0%|0|0||0|6|0%|
+|Thesis_backend.Data_Structures.UserSettings|0|4|4|15|0%|0|0||0|8|0%|
+|UIController|22|57|79|134|27.8%|0|0||6|11|54.5%|
+|UnityStandardAssets.CrossPlatformInput.AxisTouchButton|0|41|41|75|0%|0|0||0|6|0%|
+|UnityStandardAssets.CrossPlatformInput.ButtonHandler|0|19|19|50|0%|0|0||0|7|0%|
+|UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager|0|133|133|318|0%|0|0||0|47|0%|
+|UnityStandardAssets.CrossPlatformInput.InputAxisScrollbar|0|4|4|17|0%|0|0||0|2|0%|
+|UnityStandardAssets.CrossPlatformInput.Inspector.TiltInputAxisStylePropertyDrawer|0|24|24|145|0%|0|0||0|1|0%|
+|UnityStandardAssets.CrossPlatformInput.Joystick|0|69|69|118|0%|0|0||0|9|0%|
+|UnityStandardAssets.CrossPlatformInput.MobileControlRig|0|32|32|85|0%|0|0||0|6|0%|
+|UnityStandardAssets.CrossPlatformInput.PlatformSpecific.MobileInput|0|79|79|133|0%|0|0||0|13|0%|
+|UnityStandardAssets.CrossPlatformInput.PlatformSpecific.StandaloneInput|0|27|27|79|0%|0|0||0|11|0%|
+|UnityStandardAssets.CrossPlatformInput.TiltInput|0|34|34|145|0%|0|0||0|4|0%|
+|UnityStandardAssets.CrossPlatformInput.TouchPad|0|64|64|156|0%|0|0||0|9|0%|
+|UnityStandardAssets.CrossPlatformInput.VirtualInput|0|60|60|134|0%|0|0||0|13|0%|
+|User.UserData|22|0|22|38|100%|0|0||18|18|100%|
+|UserController|25|37|62|167|40.3%|0|0||5|10|50%|

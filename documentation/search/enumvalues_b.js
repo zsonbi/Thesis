@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['water_450',['Water',['../ChunkCellType_8cs.html#a49876fbcd15399310f369ea380f29c6ba27634ff8002b12e75d98e07ccd005d18',1,'ChunkCellType.cs']]],
-  ['weekly_451',['Weekly',['../TaskIntervals_8cs.html#a4ba022096603875ae402bb772ec906f9a6c25e6a6da95b3d583c6ec4c3f82ed4d',1,'TaskIntervals.cs']]]
+  ['onlyhorizontal_920',['OnlyHorizontal',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1Joystick.html#a6d8c31bfbf3b5fb568caa04cfd87f901aad0df54cc6571aea4edb7176c3149ef9',1,'UnityStandardAssets.CrossPlatformInput.Joystick.OnlyHorizontal()'],['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#a97d0cfd4e00c26253919746e84ebb7e5aad0df54cc6571aea4edb7176c3149ef9',1,'UnityStandardAssets.CrossPlatformInput.TouchPad.OnlyHorizontal()']]],
+  ['onlyvertical_921',['OnlyVertical',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1Joystick.html#a6d8c31bfbf3b5fb568caa04cfd87f901ae9490dd647be2142274984691da814fb',1,'UnityStandardAssets.CrossPlatformInput.Joystick.OnlyVertical()'],['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#a97d0cfd4e00c26253919746e84ebb7e5ae9490dd647be2142274984691da814fb',1,'UnityStandardAssets.CrossPlatformInput.TouchPad.OnlyVertical()']]]
 ];

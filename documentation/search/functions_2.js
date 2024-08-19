@@ -1,8 +1,28 @@
 var searchData=
 [
-  ['deletedtask_310',['DeletedTask',['../classTaskOpenPanelController.html#a5cfa9ad8bb8f3783ffc7df689579b2ef',1,'TaskOpenPanelController']]],
-  ['deletetask_311',['DeleteTask',['../classTaskOpenPanelController.html#a20a5400ef991e24a2832a97dceb6e82d',1,'TaskOpenPanelController']]],
-  ['determinetiletype_312',['DetermineTileType',['../classGame_1_1World_1_1Chunk.html#a1becaf2f197cd5fa669b25f5595a0e83',1,'Game::World::Chunk']]],
-  ['directionfromvector_313',['DirectionFromVector',['../classDirectionConverter.html#a94df088e51f8eb199cc02c4600daad67',1,'DirectionConverter']]],
-  ['display_314',['Display',['../classGame_1_1World_1_1Chunk.html#a475512064d145228ca7084735b7e2f2f',1,'Game::World::Chunk']]]
+  ['calculateifcompleteable_605',['CalculateIfCompleteable',['../classTask.html#a4d56208ab0047bdf0c1d02cf1ec1d668',1,'Task']]],
+  ['cancel_606',['Cancel',['../classTaskOpenPanelController.html#a721ffa89dcd6e24eb32eb194a161356b',1,'TaskOpenPanelController']]],
+  ['capspeed_607',['CapSpeed',['../classCarController.html#a7012f2fcc06c586a763717bb9cd371f5',1,'CarController']]],
+  ['changechunkifneeded_608',['ChangeChunkIfNeeded',['../classCar.html#a3914b30f9419b0acb0d1b17d7a7ca826',1,'Car']]],
+  ['changetype_609',['ChangeType',['../classTaskContainer.html#ab3b16d10cac93561b04f4fac8df74ae9',1,'TaskContainer']]],
+  ['checkenablecontrolrig_610',['CheckEnableControlRig',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1MobileControlRig.html#a9c108c3f3efeced8dc96be91608b46d3',1,'UnityStandardAssets::CrossPlatformInput::MobileControlRig']]],
+  ['checkforward_611',['CheckForward',['../classGame_1_1World_1_1RoadGenerator.html#aff41fff01a6f7955370796e82d542b5c',1,'Game::World::RoadGenerator']]],
+  ['checkloggedin_612',['CheckLoggedIn',['../classUserController.html#abbbad31f2ee93bb26f25943253add8b4',1,'UserController']]],
+  ['chunkcellcontainer_613',['ChunkCellContainer',['../structAssets_1_1Scripts_1_1Client_1_1DataTypes_1_1ChunkCellContainer.html#a33c61af685733648b9cbd0fb474c4aa1',1,'Assets::Scripts::Client::DataTypes::ChunkCellContainer']]],
+  ['chunkchanged_614',['ChunkChanged',['../classCar.html#aacde6d4492d2057147002c59bca761ae',1,'Car']]],
+  ['collectfromfields_615',['CollectFromFields',['../classTaskOpenPanelController.html#a82a9ebc3acdf5014bfcb673bd6dcb5e7',1,'TaskOpenPanelController']]],
+  ['complete_616',['Complete',['../classTaskContainer.html#a6bfe65d5636ad96f7914da31981aa9b1',1,'TaskContainer']]],
+  ['completestatechange_617',['CompleteStateChange',['../classTask.html#ab038488663fbbdc1fa7383c624af6ce6',1,'Task']]],
+  ['completetask_618',['CompleteTask',['../classTask.html#a47418789c59ccd5f6b0627f16e39af18',1,'Task']]],
+  ['confirmbuttonclick_619',['ConfirmButtonClick',['../classModalWindow.html#a46a471a1811a5d97211d524b382395b3',1,'ModalWindow']]],
+  ['createmeshes_620',['CreateMeshes',['../classGame_1_1World_1_1Chunk.html#a62cdce00483394aaa5fec7f8af5e56b6',1,'Game::World::Chunk']]],
+  ['createmultishape_621',['CreateMultiShape',['../classMeshGenerator.html#a787a658ce21855df23d7d84059274cdc',1,'MeshGenerator']]],
+  ['createnewgame_622',['CreateNewGame',['../classGame_1_1World_1_1GameWorld.html#a0ac477b133462da967c03dbc6905c10c',1,'Game::World::GameWorld']]],
+  ['createnewroad_623',['CreateNewRoad',['../classGame_1_1World_1_1RoadGenerator.html#a891ca31f3771968672e5578077e4f336',1,'Game::World::RoadGenerator']]],
+  ['createroad_624',['CreateRoad',['../classGame_1_1World_1_1RoadGenerator.html#ab3b7fa7ff101a87611b4be39e1777d51',1,'Game::World::RoadGenerator']]],
+  ['createtask_625',['CreateTask',['../classUIController.html#adb941c060c4b3c2acdc916e9722a55d1',1,'UIController']]],
+  ['createtaskprefabs_626',['CreateTaskPrefabs',['../classUIController.html#af135c74f54f69944d2416f0d69789e06',1,'UIController']]],
+  ['createtiles_627',['CreateTiles',['../classGame_1_1World_1_1Chunk.html#aac3343253a33a36a09318ebc76bd9f08',1,'Game::World::Chunk']]],
+  ['createvirtualaxes_628',['CreateVirtualAxes',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1Joystick.html#abbf197eb0a6092bfd0dadb952782bdf6',1,'UnityStandardAssets.CrossPlatformInput.Joystick.CreateVirtualAxes()'],['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#a3568beab05be1e698e0ff82d8c765dd7',1,'UnityStandardAssets.CrossPlatformInput.TouchPad.CreateVirtualAxes()']]],
+  ['crossplatforminputmanager_629',['CrossPlatformInputManager',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#ad84dc10990b823198ba171dd69392364',1,'UnityStandardAssets::CrossPlatformInput::CrossPlatformInputManager']]]
 ];

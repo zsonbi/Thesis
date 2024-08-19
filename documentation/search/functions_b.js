@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['registered_340',['Registered',['../classUserController.html#a153195b18b8cdc3734cde9e15262688d',1,'UserController']]],
-  ['removetask_341',['RemoveTask',['../classUIController.html#a83df197d227b54bd09ba927cfb2d5cd1',1,'UIController']]],
-  ['resetcomplete_342',['ResetComplete',['../classTaskContainer.html#a13c5778d0867ec1015c47bcb61490fce',1,'TaskContainer']]],
-  ['roadgenerator_343',['RoadGenerator',['../classGame_1_1World_1_1RoadGenerator.html#a1c1c38998e4fe4814684c6289c16343a',1,'Game::World::RoadGenerator']]]
+  ['newgame_671',['NewGame',['../classGame_1_1GameController.html#afebcc1da5668237c79d17d38ca2d761a',1,'Game::GameController']]]
 ];

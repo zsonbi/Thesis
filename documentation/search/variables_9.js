@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['onokaction_388',['onOkAction',['../classModalWindow.html#a71dd3e1790029da28d45d0e19defd7da',1,'ModalWindow']]],
-  ['othertype_389',['otherType',['../classPhpReturnObject.html#ad2a1c634a6680164fa4f57ec577d6777',1,'PhpReturnObject']]]
+  ['lastchunk_777',['lastChunk',['../classCar.html#ac737bd30bf29d3bdd38db4a237b15371',1,'Car']]],
+  ['loginpanel_778',['LoginPanel',['../classUserController.html#a98d6b3d688cc0a31fd46d7eb90309d85',1,'UserController']]]
 ];

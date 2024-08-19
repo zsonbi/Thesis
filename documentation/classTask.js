@@ -4,7 +4,7 @@ var classTask =
     [ "InitValues", "classTask.html#a15ee955da77f711c5924ac81d184e33f", null ],
     [ "CompleteTask", "classTask.html#a47418789c59ccd5f6b0627f16e39af18", null ],
     [ "OpenEditor", "classTask.html#ac5bae959560b5162fa60ca2340e370b9", null ],
-    [ "TaskCompleted", "classTask.html#a74ac07ea5dd82ff0f8c628f9351368cc", null ],
+    [ "TaskCompleted", "classTask.html#ad555ae3bb351fbea0cd484c36461a950", null ],
     [ "UpdateLabels", "classTask.html#afa7aa5d3d98273fdfc9676f19238d343", null ],
     [ "CompleteStateChange", "classTask.html#ab038488663fbbdc1fa7383c624af6ce6", null ],
     [ "UpdateTimeRemaining", "classTask.html#a389c34790ee448b0078d1cc2865af024", null ],

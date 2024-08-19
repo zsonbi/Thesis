@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['carprobescript_236',['CarProbeScript',['../classCarProbeScript.html',1,'']]],
-  ['chunk_237',['Chunk',['../classGame_1_1World_1_1Chunk.html',1,'Game::World']]]
+  ['axismapping_488',['AxisMapping',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput_1_1AxisMapping.html',1,'UnityStandardAssets::CrossPlatformInput::TiltInput']]],
+  ['axistouchbutton_489',['AxisTouchButton',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1AxisTouchButton.html',1,'UnityStandardAssets::CrossPlatformInput']]]
 ];

@@ -1,0 +1,28 @@
+var classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput =
+[
+    [ "AxisExists", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#ab5744afc94aa095e2f8149bc44920360", null ],
+    [ "ButtonExists", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#a5d70deed210f91fc144d9a62cab4c535", null ],
+    [ "RegisterVirtualAxis", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#aa530866e5a5597cee5f56a80b5074914", null ],
+    [ "RegisterVirtualButton", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#a6073a4d0dc59419c956d3454217f07c3", null ],
+    [ "UnRegisterVirtualAxis", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#a97ed9f03493198eab55eb47e9fa77801", null ],
+    [ "UnRegisterVirtualButton", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#aff127b39add01c4d34a6b5a396d42ea1", null ],
+    [ "VirtualAxisReference", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#af19a8841bf61b55baa6d791a82f67cdd", null ],
+    [ "SetVirtualMousePositionX", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#a7eec67e6da5890b0d14ec6e9f1adb43d", null ],
+    [ "SetVirtualMousePositionY", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#acf54ec0ee9e7e54bb603538e49ff3d61", null ],
+    [ "SetVirtualMousePositionZ", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#a2f5097b2d04f3af6db5a1bad128fbaa1", null ],
+    [ "GetAxis", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#acc3057ff75396039d6b27f518f2c0806", null ],
+    [ "GetButton", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#a74f82647d8ca8e17d4f89d94c19a891c", null ],
+    [ "GetButtonDown", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#ae7cfad86082449cfd335b337450241a7", null ],
+    [ "GetButtonUp", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#a91fa118a5b6f1e66d6551a385b664d07", null ],
+    [ "SetButtonDown", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#aff10ff821f722ce82e9a48b5406e836e", null ],
+    [ "SetButtonUp", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#a03e5f4e3650d7322569b5b39f53a8522", null ],
+    [ "SetAxisPositive", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#abd4920b94dff2454bac3daa6c355c71d", null ],
+    [ "SetAxisNegative", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#ad3af2e79617bf02ba1d9dd51162a404a", null ],
+    [ "SetAxisZero", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#ad2b9d1001a194fd34c26086a39e25849", null ],
+    [ "SetAxis", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#ab0bef7a37bb6e5962d7d2dffea4d083f", null ],
+    [ "MousePosition", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#a204a66311a817e49ca0f137a2aa584d2", null ],
+    [ "m_VirtualAxes", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#abb0e84e118d732a626c67adb78b26eff", null ],
+    [ "m_VirtualButtons", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#adbc824b5db08f6929aee3be874bc76cb", null ],
+    [ "m_AlwaysUseVirtual", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#abe7ea4edf0c3003a5a19969530cd855e", null ],
+    [ "virtualMousePosition", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#afa1db3ff31769359a2ba5de88d860e45", null ]
+];

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['zsize_485',['zSize',['../classGame_1_1World_1_1Chunk.html#a042af1aae72efc1399c9f41f99f2b2bb',1,'Game::World::Chunk']]]
+  ['useridentification_979',['UserIdentification',['../structThesis__backend_1_1Data__Structures_1_1UserLoginRequest.html#ae813d85bafbb41662c667bdbd6f1b117',1,'Thesis_backend::Data_Structures::UserLoginRequest']]],
+  ['username_980',['UserName',['../structThesis__backend_1_1Data__Structures_1_1UserRequest.html#ac32ca4d6291f2e301bd73a0fe1755a2c',1,'Thesis_backend::Data_Structures::UserRequest']]],
+  ['username_981',['Username',['../classUser_1_1UserData.html#a5c87b878e86cbc7c969d456431716c71',1,'User::UserData']]]
 ];

@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['everyfourhours_436',['EveryFourHours',['../TaskIntervals_8cs.html#a4ba022096603875ae402bb772ec906f9affe09c441a907306d9878f402089f5a2',1,'TaskIntervals.cs']]],
-  ['everytwodays_437',['EveryTwoDays',['../TaskIntervals_8cs.html#a4ba022096603875ae402bb772ec906f9a5828dc3da0e997a1a13f4b1f9ec4c605',1,'TaskIntervals.cs']]],
-  ['everytwohours_438',['EveryTwoHours',['../TaskIntervals_8cs.html#a4ba022096603875ae402bb772ec906f9a11f3fbab10b7251e640ef6d5c43c7b59',1,'TaskIntervals.cs']]],
-  ['everytwoweeks_439',['EveryTwoWeeks',['../TaskIntervals_8cs.html#a4ba022096603875ae402bb772ec906f9a4e70e387acd04cf273c5da1ad2fcb436',1,'TaskIntervals.cs']]]
+  ['crossroads_900',['CrossRoads',['../ChunkCellType_8cs.html#a49876fbcd15399310f369ea380f29c6ba653b0c7486619b3c2dac7647443ed636',1,'ChunkCellType.cs']]],
+  ['curvedroad_901',['CurvedRoad',['../ChunkCellType_8cs.html#a49876fbcd15399310f369ea380f29c6ba8abc75638a8412bba7bda979b7894109',1,'ChunkCellType.cs']]]
 ];

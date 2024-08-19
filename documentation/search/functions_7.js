@@ -1,10 +1,6 @@
 var searchData=
 [
-  ['loadbadhabits_323',['LoadBadHabits',['../classUIController.html#a51150c9459f1e990c72b16a035e53663',1,'UIController']]],
-  ['loadchunk_324',['LoadChunk',['../classGame_1_1World_1_1World.html#a493b241083c4d31b835315b66ce09753',1,'Game::World::World']]],
-  ['loadfromsettings_325',['LoadFromSettings',['../classGame_1_1World_1_1Chunk.html#adc0bbcb5890b573408d5f323ce40f1d5',1,'Game::World::Chunk']]],
-  ['loadgoodtasks_326',['LoadGoodTasks',['../classUIController.html#a88565f5d091a1c84ebc6bd4f8fce4015',1,'UIController']]],
-  ['loadtasks_327',['LoadTasks',['../classUIController.html#a0dc545de64fb2603baf048d46c983e5c',1,'UIController']]],
-  ['loggedin_328',['LoggedIn',['../classUserController.html#ad8331cc247707871d80cab9927f62285',1,'UserController']]],
-  ['logout_329',['Logout',['../classUser_1_1UserData.html#a5affa4ff1f31fa4bd6a329b50a0b8933',1,'User::UserData']]]
+  ['handleinput_648',['HandleInput',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1InputAxisScrollbar.html#a67a8adfeb9772b29115dfb34c52b11d0',1,'UnityStandardAssets::CrossPlatformInput::InputAxisScrollbar']]],
+  ['hide_649',['Hide',['../classModalWindow.html#a34671e7d80905810cf4f7d6657a125f3',1,'ModalWindow']]],
+  ['hidechunk_650',['HideChunk',['../classGame_1_1World_1_1Chunk.html#a118e0c25d254444e6663404fd61749d9',1,'Game.World.Chunk.HideChunk()'],['../classGame_1_1World_1_1GameWorld.html#ae827c1689140d8e00bfbd0845822793f',1,'Game.World.GameWorld.HideChunk()']]]
 ];

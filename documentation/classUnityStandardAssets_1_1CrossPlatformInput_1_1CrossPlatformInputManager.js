@@ -1,0 +1,37 @@
+var classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager =
+[
+    [ "VirtualAxis", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualAxis.html", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualAxis" ],
+    [ "VirtualButton", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualButton.html", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualButton" ],
+    [ "ActiveInputMethod", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a4745a6f6fea88c350df29db10de7d4dd", [
+      [ "Hardware", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a4745a6f6fea88c350df29db10de7d4dda3c02a379965ab0dfcd77b1c484450433", null ],
+      [ "Touch", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a4745a6f6fea88c350df29db10de7d4ddaf0f31c9700c6b10d8a20dc487b2ae6a8", null ]
+    ] ],
+    [ "CrossPlatformInputManager", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#ad84dc10990b823198ba171dd69392364", null ],
+    [ "SwitchActiveInputMethod", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a095ca441f60cbd866d4221f4daea4a2e", null ],
+    [ "AxisExists", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a2b2ce7bfb83e8cc7f23b9f7fcf6dff5f", null ],
+    [ "ButtonExists", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#abaceaf9f4dfd3ddecf0ab364c84c3d2d", null ],
+    [ "RegisterVirtualAxis", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a343c5d5b8bc64c0bace025f52e5e9c2d", null ],
+    [ "RegisterVirtualButton", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a2a1a682607122996df9e363a996bc4ad", null ],
+    [ "UnRegisterVirtualAxis", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a1fe0c362a754984b83e2e228b0adf3a6", null ],
+    [ "UnRegisterVirtualButton", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#ae9e694bb5f52ff1311d8c0b3ab644276", null ],
+    [ "VirtualAxisReference", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#ab494bb21f494748f2036d20a05d496df", null ],
+    [ "GetAxis", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#aac45b5560ebbc7c815dc22cba0dc1048", null ],
+    [ "GetAxisRaw", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#ad5fefc184e12a2384ac780a7b79c034c", null ],
+    [ "GetAxis", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#ab47114db79b971c925b631db34e7128e", null ],
+    [ "GetButton", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#abdeb5871a5d867418422070b3ff2483a", null ],
+    [ "GetButtonDown", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a130706ec909ffbe649c9bc8534da8fa3", null ],
+    [ "GetButtonUp", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#aef02595f4157113175d4c1be60402fbe", null ],
+    [ "SetButtonDown", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a2e30cf8aa09003f7501c1f0d59c1dd0b", null ],
+    [ "SetButtonUp", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#adc185d28b9d06ee83035ef9b255682e1", null ],
+    [ "SetAxisPositive", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a69563e20d7a30525e6873a03508ee127", null ],
+    [ "SetAxisNegative", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a2f7717dab92a1288e0cc6fdfbac750f1", null ],
+    [ "SetAxisZero", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a8861163d3e2bba52c8d937caad7ae6be", null ],
+    [ "SetAxis", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#aaf138dbfc77d62b02679f3e156cc26b6", null ],
+    [ "SetVirtualMousePositionX", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a6170d9de0c506b1d6a6215df7d4accee", null ],
+    [ "SetVirtualMousePositionY", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a48f3e5dbfe6617a6dedcf49e8788162f", null ],
+    [ "SetVirtualMousePositionZ", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a94556375cf07502e86568bf9157a9f70", null ],
+    [ "activeInput", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a2fd062567521339fc67fdb20737bdb42", null ],
+    [ "s_TouchInput", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#aa60fa3e720da09db02061e7c9721e25b", null ],
+    [ "s_HardwareInput", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a279aed823018da2da2cc8266d16d6408", null ],
+    [ "mousePosition", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a38301395eaaa739f3f0794933a188280", null ]
+];

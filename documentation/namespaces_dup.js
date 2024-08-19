@@ -1,5 +1,6 @@
 var namespaces_dup =
 [
+    [ "Assets", "namespaceAssets.html", "namespaceAssets" ],
     [ "Config", "namespaceConfig.html", "namespaceConfig" ],
     [ "DataTypes", "namespaceDataTypes.html", [
       [ "Direction", "namespaceDataTypes.html#a3bc22b847fe90cda4414fc931bd61622", [
@@ -11,5 +12,7 @@ var namespaces_dup =
       ] ]
     ] ],
     [ "Game", "namespaceGame.html", "namespaceGame" ],
+    [ "Thesis_backend", "namespaceThesis__backend.html", "namespaceThesis__backend" ],
+    [ "UnityStandardAssets", "namespaceUnityStandardAssets.html", "namespaceUnityStandardAssets" ],
     [ "User", "namespaceUser.html", "namespaceUser" ]
 ];

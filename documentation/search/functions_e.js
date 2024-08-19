@@ -1,9 +1,11 @@
 var searchData=
 [
-  ['update_355',['Update',['../classTask.html#af9f1345d4a839ad0f723879fb0990d0b',1,'Task.Update()'],['../classGameWorld.html#a25186a88e3ba0c5df2571793d66de5aa',1,'GameWorld.Update()'],['../classPlayer.html#aace80372e18e32fe177e295fe5d93ba8',1,'Player.Update()'],['../classPolice.html#ac84e37036984c51ff034ded82e1d3a14',1,'Police.Update()'],['../classUIController.html#adc5b0854a26bbcd71cc33274960bd0a9',1,'UIController.Update()']]],
-  ['updatebuttons_356',['UpdateButtons',['../classTaskOpenPanelController.html#aeb6c1cf2f3da2be35bb515f455d3f0d8',1,'TaskOpenPanelController']]],
-  ['updatelabels_357',['UpdateLabels',['../classTask.html#afa7aa5d3d98273fdfc9676f19238d343',1,'Task']]],
-  ['updatetask_358',['UpdateTask',['../classUIController.html#a811acc501fd4d1e7f090601c61f88e49',1,'UIController']]],
-  ['updatetimeremaining_359',['UpdateTimeRemaining',['../classTask.html#a389c34790ee448b0078d1cc2865af024',1,'Task']]],
-  ['updatevalues_360',['UpdateValues',['../classTaskContainer.html#a69909e5c987547bb505b3e5b352034d6',1,'TaskContainer']]]
+  ['registered_683',['Registered',['../classUserController.html#a7ea984403404863e3067bc44275d4858',1,'UserController']]],
+  ['registervirtualaxis_684',['RegisterVirtualAxis',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a343c5d5b8bc64c0bace025f52e5e9c2d',1,'UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager.RegisterVirtualAxis()'],['../classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#aa530866e5a5597cee5f56a80b5074914',1,'UnityStandardAssets.CrossPlatformInput.VirtualInput.RegisterVirtualAxis()']]],
+  ['registervirtualbutton_685',['RegisterVirtualButton',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a2a1a682607122996df9e363a996bc4ad',1,'UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager.RegisterVirtualButton()'],['../classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#a6073a4d0dc59419c956d3454217f07c3',1,'UnityStandardAssets.CrossPlatformInput.VirtualInput.RegisterVirtualButton()']]],
+  ['released_686',['Released',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualButton.html#a0fc705bf079daeec58834c0eda4787ed',1,'UnityStandardAssets::CrossPlatformInput::CrossPlatformInputManager::VirtualButton']]],
+  ['remove_687',['Remove',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualAxis.html#af4dc5cd83e45dc874b7b659f03cdc926',1,'UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager.VirtualAxis.Remove()'],['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualButton.html#ac421e5de77f8384401a3e20d18101401',1,'UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager.VirtualButton.Remove()']]],
+  ['removetask_688',['RemoveTask',['../classUIController.html#a08f677b5c4ffd71ca10ec2b3b428df4c',1,'UIController']]],
+  ['resetcomplete_689',['ResetComplete',['../classTaskContainer.html#a13c5778d0867ec1015c47bcb61490fce',1,'TaskContainer']]],
+  ['roadgenerator_690',['RoadGenerator',['../classGame_1_1World_1_1RoadGenerator.html#a1c1c38998e4fe4814684c6289c16343a',1,'Game::World::RoadGenerator']]]
 ];

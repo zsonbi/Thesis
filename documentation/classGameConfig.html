@@ -92,11 +92,13 @@ $(document).ready(function(){initNavTree('classGameConfig.html',''); initResizab
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a767e83ea60cba2fff6d2c7faccf4890d"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameConfig.html#a767e83ea60cba2fff6d2c7faccf4890d">CHUNK_SIZE</a> = 128</td></tr>
+<tr class="memitem:a767e83ea60cba2fff6d2c7faccf4890d"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameConfig.html#a767e83ea60cba2fff6d2c7faccf4890d">CHUNK_SIZE</a> = 32</td></tr>
 <tr class="separator:a767e83ea60cba2fff6d2c7faccf4890d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa2ddc4407f1664515de38348aadd1f7"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a> = 64</td></tr>
 <tr class="separator:afa2ddc4407f1664515de38348aadd1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28c600fb4f244669276b23704ada46ee"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameConfig.html#a28c600fb4f244669276b23704ada46ee">CHUNK_SCALE</a> = 6f</td></tr>
+<tr class="memitem:a915ac5cd4099430ccc48cea1f4876c4b"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameConfig.html#a915ac5cd4099430ccc48cea1f4876c4b">CHUNK_CELL</a> = 32</td></tr>
+<tr class="separator:a915ac5cd4099430ccc48cea1f4876c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28c600fb4f244669276b23704ada46ee"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameConfig.html#a28c600fb4f244669276b23704ada46ee">CHUNK_SCALE</a> = 1f</td></tr>
 <tr class="separator:a28c600fb4f244669276b23704ada46ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -113,7 +115,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const int GameConfig.CHUNK_SIZE = 128</td>
+          <td class="memname">const int GameConfig.CHUNK_SIZE = 32</td>
         </tr>
       </table>
   </td>
@@ -125,7 +127,7 @@ Static Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="GameConfig_8cs_source.html#l00003">3</a> of file <a class="el" href="GameConfig_8cs_source.html">GameConfig.cs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Chunk_8cs_source.html#l00069">Game.World.Chunk.InitChunk()</a>, <a class="el" href="World_8cs_source.html#l00054">Game.World.World.LoadChunk()</a>, <a class="el" href="Chunk_8cs_source.html#l00118">Game.World.Chunk.LoadFromSettings()</a>, and <a class="el" href="RoadGenerator_8cs_source.html#l00045">Game.World.RoadGenerator.RoadGenerator()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Chunk_8cs_source.html#l00212">Game.World.Chunk.DetermineRoadType()</a>, <a class="el" href="Chunk_8cs_source.html#l00125">Game.World.Chunk.GetARandomRoad()</a>, <a class="el" href="World_8cs_source.html#l00029">Game.World.GameWorld.GetChunk()</a>, <a class="el" href="Chunk_8cs_source.html#l00088">Game.World.Chunk.InitChunk()</a>, <a class="el" href="World_8cs_source.html#l00052">Game.World.GameWorld.LoadChunk()</a>, <a class="el" href="Chunk_8cs_source.html#l00150">Game.World.Chunk.LoadFromSettings()</a>, <a class="el" href="GameController_8cs_source.html#l00033">Game.GameController.NewGame()</a>, and <a class="el" href="RoadGenerator_8cs_source.html#l00046">Game.World.RoadGenerator.RoadGenerator()</a>.</p>
 
 </div>
 </div>
@@ -151,7 +153,33 @@ Static Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="GameConfig_8cs_source.html#l00005">5</a> of file <a class="el" href="GameConfig_8cs_source.html">GameConfig.cs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="World_8cs_source.html#l00054">Game.World.World.LoadChunk()</a>, <a class="el" href="CarProbeScript_8cs_source.html#l00017">CarProbeScript.OnTriggerEnter()</a>, and <a class="el" href="World_8cs_source.html#l00032">Game.World.World.Start()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="World_8cs_source.html#l00040">Game.World.GameWorld.CreateNewGame()</a>, <a class="el" href="GameController_8cs_source.html#l00048">Game.GameController.DespawnFarAwayChunks()</a>, <a class="el" href="World_8cs_source.html#l00029">Game.World.GameWorld.GetChunk()</a>, <a class="el" href="World_8cs_source.html#l00052">Game.World.GameWorld.LoadChunk()</a>, <a class="el" href="GameController_8cs_source.html#l00033">Game.GameController.NewGame()</a>, and <a class="el" href="GameController_8cs_source.html#l00099">Game.GameController.ValidateAndLoadChunk()</a>.</p>
+
+</div>
+</div>
+<a id="a915ac5cd4099430ccc48cea1f4876c4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a915ac5cd4099430ccc48cea1f4876c4b">&#9670;&nbsp;</a></span>CHUNK_CELL</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int GameConfig.CHUNK_CELL = 32</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="GameConfig_8cs_source.html#l00007">7</a> of file <a class="el" href="GameConfig_8cs_source.html">GameConfig.cs</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="World_8cs_source.html#l00029">Game.World.GameWorld.GetChunk()</a>, <a class="el" href="Chunk_8cs_source.html#l00088">Game.World.Chunk.InitChunk()</a>, <a class="el" href="GameController_8cs_source.html#l00033">Game.GameController.NewGame()</a>, and <a class="el" href="CarSpawner_8cs_source.html#l00032">CarSpawner.SpawnPolice()</a>.</p>
 
 </div>
 </div>
@@ -165,7 +193,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const float GameConfig.CHUNK_SCALE = 6f</td>
+          <td class="memname">const float GameConfig.CHUNK_SCALE = 1f</td>
         </tr>
       </table>
   </td>
@@ -175,9 +203,9 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GameConfig_8cs_source.html#l00007">7</a> of file <a class="el" href="GameConfig_8cs_source.html">GameConfig.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="GameConfig_8cs_source.html#l00009">9</a> of file <a class="el" href="GameConfig_8cs_source.html">GameConfig.cs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Chunk_8cs_source.html#l00069">Game.World.Chunk.InitChunk()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="World_8cs_source.html#l00029">Game.World.GameWorld.GetChunk()</a>, <a class="el" href="Chunk_8cs_source.html#l00088">Game.World.Chunk.InitChunk()</a>, <a class="el" href="GameController_8cs_source.html#l00033">Game.GameController.NewGame()</a>, and <a class="el" href="CarSpawner_8cs_source.html#l00032">CarSpawner.SpawnPolice()</a>.</p>
 
 </div>
 </div>
