@@ -44,6 +44,7 @@ GameObject:
   m_Component:
   - component: {fileID: 432028}
   - component: {fileID: 14689242}
+  - component: {fileID: 649890274514380188}
   m_Layer: 0
   m_Name: WheelHubRearLeft
   m_TagString: Untagged
@@ -105,6 +106,18 @@ WheelCollider:
   m_LayerOverridePriority: 0
   m_Enabled: 1
   m_ProvidesContacts: 0
+--- !u!114 &649890274514380188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48a96ed5c5baead4a8bae6029ed4131c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &153480
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,6 +583,7 @@ GameObject:
   m_Component:
   - component: {fileID: 400160}
   - component: {fileID: 14677570}
+  - component: {fileID: 8453280739316607454}
   m_Layer: 0
   m_Name: WheelHubRearRight
   m_TagString: Untagged
@@ -631,6 +645,18 @@ WheelCollider:
   m_LayerOverridePriority: 0
   m_Enabled: 1
   m_ProvidesContacts: 0
+--- !u!114 &8453280739316607454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48a96ed5c5baead4a8bae6029ed4131c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &180508
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,6 +667,7 @@ GameObject:
   m_Component:
   - component: {fileID: 416586}
   - component: {fileID: 14600250}
+  - component: {fileID: 3047543179448195440}
   m_Layer: 0
   m_Name: WheelHubFrontRight
   m_TagString: Untagged
@@ -702,6 +729,18 @@ WheelCollider:
   m_LayerOverridePriority: 0
   m_Enabled: 1
   m_ProvidesContacts: 0
+--- !u!114 &3047543179448195440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48a96ed5c5baead4a8bae6029ed4131c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &194804
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,6 +751,7 @@ GameObject:
   m_Component:
   - component: {fileID: 488362}
   - component: {fileID: 14686064}
+  - component: {fileID: 9023302839641649280}
   m_Layer: 0
   m_Name: WheelHubFrontLeft
   m_TagString: Untagged
@@ -773,6 +813,18 @@ WheelCollider:
   m_LayerOverridePriority: 0
   m_Enabled: 1
   m_ProvidesContacts: 0
+--- !u!114 &9023302839641649280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48a96ed5c5baead4a8bae6029ed4131c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2484552604856296236
 GameObject:
   m_ObjectHideFlags: 0

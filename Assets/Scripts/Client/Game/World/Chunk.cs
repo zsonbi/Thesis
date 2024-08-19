@@ -13,13 +13,13 @@ namespace Game
         /// </summary>
         public class Chunk : MonoBehaviour
         {
-            [Header("Materials for the tiles")]
-            [SerializeField]
-            private Material[] TileMaterials;
+            //[Header("Materials for the tiles")]
+            //[SerializeField]
+            //private Material[] TileMaterials;
 
-            [SerializeField]
-            [Header("PhysicsMaterials")]
-            private PhysicMaterial[] PhysicsMaterials;
+            //[SerializeField]
+            //[Header("PhysicsMaterials")]
+            //private PhysicMaterial[] PhysicsMaterials;
 
             [Header("Offset of perlin noise on X axis")]
             public float XOffset = 0f;
@@ -44,6 +44,9 @@ namespace Game
 
             [SerializeField]
             public GameObject grassPrefab;
+
+            [SerializeField]
+            public PhysicMaterial grassPhysics;
 
             /// <summary>
             /// The size of the world on the z axis
@@ -135,13 +138,13 @@ namespace Game
             {
                 foreach (var item in chunkCells)
                 {
-                    GameObject parent = new GameObject(item.Key.ToString() + "Mesh", typeof(MeshFilter), typeof(MeshRenderer), typeof(MeshCollider));
-                    parent.transform.parent = this.transform;
-                    MeshFilter meshFilter = parent.GetComponent<MeshFilter>();
-                    parent.GetComponent<MeshRenderer>().material = TileMaterials[(int)item.Key];
-                    parent.GetComponent<MeshCollider>().sharedMaterial = PhysicsMaterials[(int)(item.Key)];
-                    meshFilter.mesh = MeshGenerator.CreateMultiShape(item.Value);
-                    parent.GetComponent<MeshCollider>().sharedMesh = meshFilter.mesh;
+                    //GameObject parent = new GameObject(item.Key.ToString() + "Mesh", typeof(MeshFilter), typeof(MeshRenderer), typeof(MeshCollider));
+                    //parent.transform.parent = this.transform;
+                    //MeshFilter meshFilter = parent.GetComponent<MeshFilter>();
+                    //parent.GetComponent<MeshRenderer>().material = TileMaterials[(int)item.Key];
+                    //parent.GetComponent<MeshCollider>().sharedMaterial = PhysicsMaterials[(int)(item.Key)];
+                    //meshFilter.mesh = MeshGenerator.CreateMultiShape(item.Value);
+                    //parent.GetComponent<MeshCollider>().sharedMesh = meshFilter.mesh;
                 }
             }
 
@@ -184,7 +187,8 @@ namespace Game
 
                             case ChunkCellType.Grass:
                                 created = Instantiate(grassPrefab, this.transform);
-
+                                //Collider renderer = created.GetComponentInChildren<Collider>();
+                                //renderer.material = grassPhysics;
                                 break;
 
                             case ChunkCellType.Sand:
