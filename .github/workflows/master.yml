@@ -127,6 +127,16 @@ jobs:
         with:
           path: Library
           key: Library-${{ matrix.targetPlatform }}
+      - name: Free Disk Space for Android
+        run: |
+          sudo swapoff -a
+          sudo rm -f /swapfile
+          sudo apt clean
+          docker rmi $(docker image ls -aq)
+          df -h
+          # Before
+          echo "Disk space before:"
+          df -h
       - uses: game-ci/unity-builder@v4.2.3
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
