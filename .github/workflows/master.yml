@@ -78,9 +78,9 @@ jobs:
           retention-days: 4hr
 
 
-  build:
+  buildForLinux:
     needs: test
-    if: contains(github.ref, 'master')
+    if: contains(github.ref, 'master') || contains(github.ref, 'Android-CI/CD-build')
     name: Build for ${{ matrix.targetPlatform }}
     runs-on: ubuntu-latest
     strategy:
@@ -88,7 +88,6 @@ jobs:
       matrix:
         targetPlatform:
           - StandaloneLinux64
-          - Android
     steps:
       - uses: actions/checkout@v4.1.2
         with:
@@ -110,8 +109,46 @@ jobs:
           path: build
           retention-days: 1
 
-      
-        
+  buildForAndroid:
+    needs: test
+    if: contains(github.ref, 'master') || contains(github.ref, 'Android-CI/CD-build')
+    name: Build for ${{ matrix.targetPlatform }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        targetPlatform:
+          - Android
+    steps:
+      - uses: actions/checkout@v4.1.2
+        with:
+          lfs: true
+      - uses: actions/cache@v4.0.2
+        with:
+          path: Library
+          key: Library-${{ matrix.targetPlatform }}
+      - name: Free Disk Space for Android
+        run: |
+          sudo swapoff -a
+          sudo rm -f /swapfile
+          sudo apt clean
+          docker rmi $(docker image ls -aq)
+          df -h
+          # Before
+          echo "Disk space before:"
+          df -h
+      - uses: game-ci/unity-builder@v4.2.3
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          targetPlatform: ${{ matrix.targetPlatform }}
+      - uses: actions/upload-artifact@v4.3.3
+        with:
+          name: Build-${{ matrix.targetPlatform }}
+          path: build
+          retention-days: 1
 
   buildForWindows:
     if: contains(github.ref, 'master')
