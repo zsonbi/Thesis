@@ -269,27 +269,28 @@ var assemblies = [
     "classes": [
       { "name": "Tests.GameTests.RoadGeneratorTests", "rp": "Tests_RoadGeneratorTests.html", "cl": 26, "ucl": 0, "cal": 26, "tl": 55, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Tests.MainMenuTest", "rp": "Tests_MainMenuTest.html", "cl": 4, "ucl": 0, "cal": 4, "tl": 24, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Tests.UITests.UserControllerTests", "rp": "Tests_UserControllerTests.html", "cl": 26, "ucl": 0, "cal": 26, "tl": 65, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Tests.UITests.UserControllerTests", "rp": "Tests_UserControllerTests.html", "cl": 25, "ucl": 1, "cal": 26, "tl": 65, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
     ]},
   {
     "name": "ThesisScripts",
     "classes": [
       { "name": "Assets.Scripts.Client.DataTypes.ChunkCellContainer", "rp": "ThesisScripts_ChunkCellContainer.html", "cl": 0, "ucl": 6, "cal": 6, "tl": 15, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Car", "rp": "ThesisScripts_Car.html", "cl": 0, "ucl": 26, "cal": 26, "tl": 54, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "CarController", "rp": "ThesisScripts_CarController.html", "cl": 0, "ucl": 137, "cal": 137, "tl": 254, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "CarController", "rp": "ThesisScripts_CarController.html", "cl": 0, "ucl": 129, "cal": 129, "tl": 246, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "CarSpawner", "rp": "ThesisScripts_CarSpawner.html", "cl": 0, "ucl": 21, "cal": 21, "tl": 49, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Config.ServerConfig", "rp": "ThesisScripts_ServerConfig.html", "cl": 0, "ucl": 3, "cal": 3, "tl": 67, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "CopCar", "rp": "ThesisScripts_CopCar.html", "cl": 0, "ucl": 6, "cal": 6, "tl": 18, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "DirectionConverter", "rp": "ThesisScripts_DirectionConverter.html", "cl": 0, "ucl": 21, "cal": 21, "tl": 46, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "EdgeRoadContainer", "rp": "ThesisScripts_EdgeRoadContainer.html", "cl": 9, "ucl": 0, "cal": 9, "tl": 15, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "EnableWheelPhysicMaterial", "rp": "ThesisScripts_EnableWheelPhysicMaterial.html", "cl": 0, "ucl": 16, "cal": 16, "tl": 34, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.GameController", "rp": "ThesisScripts_GameController.html", "cl": 0, "ucl": 68, "cal": 68, "tl": 109, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Game.World.Chunk", "rp": "ThesisScripts_Chunk.html", "cl": 0, "ucl": 179, "cal": 179, "tl": 345, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.World.Chunk", "rp": "ThesisScripts_Chunk.html", "cl": 0, "ucl": 172, "cal": 172, "tl": 349, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.World.GameWorld", "rp": "ThesisScripts_GameWorld.html", "cl": 0, "ucl": 54, "cal": 54, "tl": 103, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.World.RoadGenerator", "rp": "ThesisScripts_RoadGenerator.html", "cl": 55, "ucl": 49, "cal": 104, "tl": 200, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "MeshGenerator", "rp": "ThesisScripts_MeshGenerator.html", "cl": 0, "ucl": 27, "cal": 27, "tl": 96, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "ModalWindow", "rp": "ThesisScripts_ModalWindow.html", "cl": 0, "ucl": 19, "cal": 19, "tl": 43, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "NpcCar", "rp": "ThesisScripts_NpcCar.html", "cl": 0, "ucl": 6, "cal": 6, "tl": 16, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "PlayerCar", "rp": "ThesisScripts_PlayerCar.html", "cl": 0, "ucl": 10, "cal": 10, "tl": 27, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "PlayerCar", "rp": "ThesisScripts_PlayerCar.html", "cl": 0, "ucl": 11, "cal": 11, "tl": 29, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Task", "rp": "ThesisScripts_Task.html", "cl": 2, "ucl": 63, "cal": 65, "tl": 122, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "TaskApiResponse", "rp": "ThesisScripts_TaskApiResponse.html", "cl": 0, "ucl": 9, "cal": 9, "tl": 16, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "TaskClosedEventArgs", "rp": "ThesisScripts_TaskClosedEventArgs.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 14, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
@@ -338,7 +339,7 @@ var riskHotspots = [
       { "value": 756, "exceeded": true },
     ]},
   {
-    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "Assets.Scripts.Client.DataTypes.ChunkCellContainer Game.World.Chunk::DetermineRoadType(System.Int32, System.Int32)", "methodShortName": "DetermineRoadType(...)", "fileIndex": 0, "line": 213,
+    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "Assets.Scripts.Client.DataTypes.ChunkCellContainer Game.World.Chunk::DetermineRoadType(System.Int32, System.Int32)", "methodShortName": "DetermineRoadType(...)", "fileIndex": 0, "line": 217,
     "metrics": [
       { "value": 23, "exceeded": true },
       { "value": 0, "exceeded": false },
@@ -373,7 +374,7 @@ var riskHotspots = [
       { "value": 182, "exceeded": true },
     ]},
   {
-    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "System.Void Game.World.Chunk::CreateTiles()", "methodShortName": "CreateTiles()", "fileIndex": 0, "line": 160,
+    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "System.Void Game.World.Chunk::CreateTiles()", "methodShortName": "CreateTiles()", "fileIndex": 0, "line": 163,
     "metrics": [
       { "value": 13, "exceeded": false },
       { "value": 0, "exceeded": false },
@@ -422,7 +423,7 @@ var riskHotspots = [
       { "value": 90, "exceeded": true },
     ]},
   {
-    "assembly": "ThesisScripts", "class": "CarController", "reportPath": "ThesisScripts_CarController.html", "methodName": "System.Void CarController::ApplyDrive(System.Single, System.Single)", "methodShortName": "ApplyDrive(...)", "fileIndex": 0, "line": 142,
+    "assembly": "ThesisScripts", "class": "CarController", "reportPath": "ThesisScripts_CarController.html", "methodName": "System.Void CarController::ApplyDrive(System.Single, System.Single)", "methodShortName": "ApplyDrive(...)", "fileIndex": 0, "line": 134,
     "metrics": [
       { "value": 9, "exceeded": false },
       { "value": 0, "exceeded": false },
@@ -534,7 +535,7 @@ var riskHotspots = [
       { "value": 42, "exceeded": true },
     ]},
   {
-    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "Assets.Scripts.Client.DataTypes.ChunkCellContainer Game.World.Chunk::DetermineTileType(System.Int32, System.Int32)", "methodShortName": "DetermineTileType(...)", "fileIndex": 0, "line": 320,
+    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "Assets.Scripts.Client.DataTypes.ChunkCellContainer Game.World.Chunk::DetermineTileType(System.Int32, System.Int32)", "methodShortName": "DetermineTileType(...)", "fileIndex": 0, "line": 324,
     "metrics": [
       { "value": 6, "exceeded": false },
       { "value": 0, "exceeded": false },

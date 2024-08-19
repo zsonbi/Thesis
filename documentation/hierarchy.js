@@ -32,6 +32,7 @@ var hierarchy =
       [ "CarController", "classCarController.html", null ],
       [ "CarProbeScript", "classCarProbeScript.html", null ],
       [ "CarSpawner", "classCarSpawner.html", null ],
+      [ "EnableWheelPhysicMaterial", "classEnableWheelPhysicMaterial.html", null ],
       [ "Game.GameController", "classGame_1_1GameController.html", null ],
       [ "Game.World.Chunk", "classGame_1_1World_1_1Chunk.html", null ],
       [ "Game.World.GameWorld", "classGame_1_1World_1_1GameWorld.html", null ],

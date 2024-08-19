@@ -10,6 +10,9 @@ var dir_02daac45f3276bf7726dfe0aac208fe9 =
     [ "CopCar.cs", "CopCar_8cs.html", [
       [ "CopCar", "classCopCar.html", "classCopCar" ]
     ] ],
+    [ "enableWheelPhysicsMaterial.cs", "enableWheelPhysicsMaterial_8cs.html", [
+      [ "EnableWheelPhysicMaterial", "classEnableWheelPhysicMaterial.html", "classEnableWheelPhysicMaterial" ]
+    ] ],
     [ "NpcCar.cs", "NpcCar_8cs.html", [
       [ "NpcCar", "classNpcCar.html", "classNpcCar" ]
     ] ],

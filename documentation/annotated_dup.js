@@ -54,6 +54,7 @@ var annotated_dup =
     [ "CopCar", "classCopCar.html", "classCopCar" ],
     [ "DirectionConverter", "classDirectionConverter.html", "classDirectionConverter" ],
     [ "EdgeRoadContainer", "classEdgeRoadContainer.html", "classEdgeRoadContainer" ],
+    [ "EnableWheelPhysicMaterial", "classEnableWheelPhysicMaterial.html", "classEnableWheelPhysicMaterial" ],
     [ "GameConfig", "classGameConfig.html", "classGameConfig" ],
     [ "MeshGenerator", "classMeshGenerator.html", "classMeshGenerator" ],
     [ "ModalWindow", "classModalWindow.html", "classModalWindow" ],

@@ -1,21 +1,21 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 08/19/2024 - 20:16:19 |
+| Generated on: | 08/19/2024 - 21:29:32 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 4 |
-| Classes: | 82 |
-| Files: | 80 |
-| Covered lines: | 238 |
-| Uncovered lines: | 3716 |
-| Coverable lines: | 3954 |
-| Total lines: | 8057 |
-| Line coverage: | 6% (238 of 3954) |
+| Classes: | 83 |
+| Files: | 81 |
+| Covered lines: | 237 |
+| Uncovered lines: | 3719 |
+| Coverable lines: | 3956 |
+| Total lines: | 8089 |
+| Line coverage: | 5.9% (237 of 3956) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 98 |
-| Total methods: | 693 |
-| Method coverage: | 14.1% (98 of 693) |
+| Total methods: | 695 |
+| Method coverage: | 14.1% (98 of 695) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -56,27 +56,28 @@
 |BuildCommand|0|197|197|310|0%|0|0||0|15|0%|
 |BuildScript|0|4|4|11|0%|0|0||0|1|0%|
 |ReadmeEditor|0|140|140|242|0%|0|0||0|14|0%|
-|**Tests**|**56**|**0**|**56**|**144**|**100%**|**0**|**0**|****|**10**|**10**|**100%**|
+|**Tests**|**55**|**1**|**56**|**144**|**98.2%**|**0**|**0**|****|**10**|**10**|**100%**|
 |Tests.GameTests.RoadGeneratorTests|26|0|26|55|100%|0|0||3|3|100%|
 |Tests.MainMenuTest|4|0|4|24|100%|0|0||1|1|100%|
-|Tests.UITests.UserControllerTests|26|0|26|65|100%|0|0||6|6|100%|
-|**ThesisScripts**|**182**|**1533**|**1715**|**3799**|**10.6%**|**0**|**0**|****|**88**|**397**|**22.1%**|
+|Tests.UITests.UserControllerTests|25|1|26|65|96.1%|0|0||6|6|100%|
+|**ThesisScripts**|**182**|**1535**|**1717**|**3831**|**10.5%**|**0**|**0**|****|**88**|**399**|**22%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|0|6|6|15|0%|0|0||0|5|0%|
 |Car|0|26|26|54|0%|0|0||0|5|0%|
-|CarController|0|137|137|254|0%|0|0||0|18|0%|
+|CarController|0|129|129|246|0%|0|0||0|18|0%|
 |CarSpawner|0|21|21|49|0%|0|0||0|4|0%|
 |Config.ServerConfig|0|3|3|67|0%|0|0||0|3|0%|
 |CopCar|0|6|6|18|0%|0|0||0|1|0%|
 |DirectionConverter|0|21|21|46|0%|0|0||0|2|0%|
 |EdgeRoadContainer|9|0|9|15|100%|0|0||7|7|100%|
+|EnableWheelPhysicMaterial|0|16|16|34|0%|0|0||0|2|0%|
 |Game.GameController|0|68|68|109|0%|0|0||0|10|0%|
-|Game.World.Chunk|0|179|179|345|0%|0|0||0|21|0%|
+|Game.World.Chunk|0|172|172|349|0%|0|0||0|21|0%|
 |Game.World.GameWorld|0|54|54|103|0%|0|0||0|6|0%|
 |Game.World.RoadGenerator|55|49|104|200|52.8%|0|0||6|9|66.6%|
 |MeshGenerator|0|27|27|96|0%|0|0||0|2|0%|
 |ModalWindow|0|19|19|43|0%|0|0||0|4|0%|
 |NpcCar|0|6|6|16|0%|0|0||0|1|0%|
-|PlayerCar|0|10|10|27|0%|0|0||0|3|0%|
+|PlayerCar|0|11|11|29|0%|0|0||0|3|0%|
 |Task|2|63|65|122|3%|0|0||1|12|8.3%|
 |TaskApiResponse|0|9|9|16|0%|0|0||0|7|0%|
 |TaskClosedEventArgs|0|4|4|14|0%|0|0||0|1|0%|

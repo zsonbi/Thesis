@@ -57,9 +57,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "ApiTypes_2Task_8cs.html",
-"classGame_1_1GameController.html",
-"classUnityStandardAssets_1_1CrossPlatformInput_1_1Joystick.html",
-"namespaceUnityStandardAssets_1_1CrossPlatformInput.html"
+"classGameConfig.html#a28c600fb4f244669276b23704ada46ee",
+"classUnityStandardAssets_1_1CrossPlatformInput_1_1InputAxisScrollbar.html#a67a8adfeb9772b29115dfb34c52b11d0",
+"namespaceThesis__backend_1_1Data__Structures.html#aa44d6a0f27adec065161aeeb258e68c1"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
