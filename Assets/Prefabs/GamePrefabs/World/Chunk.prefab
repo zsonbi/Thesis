@@ -44,21 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d7f9c8ebdf61a24da12d98a7cd73034, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TileMaterials:
-  - {fileID: 2100000, guid: 981eb5709052d2244b7ce5d9c93cc729, type: 2}
-  - {fileID: 2100000, guid: dace4b574e7666845b7e458e9b386ad2, type: 2}
-  - {fileID: 2100000, guid: d8fcf9518cd61874e962c069b3afff78, type: 2}
-  - {fileID: 2100000, guid: e2d36c841f15b664984cf5eae960474f, type: 2}
-  PhysicsMaterials:
-  - {fileID: 13400000, guid: 1ba3aeb1e7f540c40a9fca82de497841, type: 2}
-  - {fileID: 13400000, guid: 21d896b1fe8374542a5b0cebd7701ed9, type: 2}
-  - {fileID: 13400000, guid: ea198269102ab714983799a3c65ef4f1, type: 2}
-  - {fileID: 13400000, guid: b068d3fdf447ede4e931397903c3bc53, type: 2}
   XOffset: 0
   ZOffset: 0
   RandomizeOffset: 1
-  straightRoadPrefab: {fileID: 919132149155446097, guid: 42e0569e4e06b0441ae75cb469a00fcc, type: 3}
-  curvedRoadPrefab: {fileID: 919132149155446097, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
-  threeWayRoadPrefab: {fileID: 919132149155446097, guid: af8820414b4b00847a6b817958c29797, type: 3}
-  crossRoadsPrefab: {fileID: 919132149155446097, guid: ede7176812895b747b6364e755bc6315, type: 3}
-  grassPrefab: {fileID: 919132149155446097, guid: 25776dd1c8fa4f445a5016550173108e, type: 3}
+  straightRoadPrefab: {fileID: 8792510264172217276, guid: d20e47dad4e352445a0f69a789eb292d, type: 3}
+  curvedRoadPrefab: {fileID: 8792510264172217276, guid: 455824e8459ba2b46a7987faad6e6eed, type: 3}
+  threeWayRoadPrefab: {fileID: 8792510264172217276, guid: 488f02dbbaa5cd54eab7c1cc7cf9ed97, type: 3}
+  crossRoadsPrefab: {fileID: 8792510264172217276, guid: 5e2e3770314ce3f45b34c122a3dfc6e8, type: 3}
+  grassPrefab: {fileID: 2390087413359802030, guid: 7ae6eea8817321349bfe65fd435efa88, type: 3}
+  grassPhysics: {fileID: 13400000, guid: 1ba3aeb1e7f540c40a9fca82de497841, type: 2}
