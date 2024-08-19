@@ -269,7 +269,7 @@ var assemblies = [
     "classes": [
       { "name": "Tests.GameTests.RoadGeneratorTests", "rp": "Tests_RoadGeneratorTests.html", "cl": 26, "ucl": 0, "cal": 26, "tl": 55, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Tests.MainMenuTest", "rp": "Tests_MainMenuTest.html", "cl": 4, "ucl": 0, "cal": 4, "tl": 24, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Tests.UITests.UserControllerTests", "rp": "Tests_UserControllerTests.html", "cl": 25, "ucl": 1, "cal": 26, "tl": 65, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Tests.UITests.UserControllerTests", "rp": "Tests_UserControllerTests.html", "cl": 26, "ucl": 0, "cal": 26, "tl": 65, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
     ]},
   {
     "name": "ThesisScripts",

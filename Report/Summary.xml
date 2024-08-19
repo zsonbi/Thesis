@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>08/19/2024 - 12:31:09</Generatedon>
+    <Generatedon>08/19/2024 - 20:16:19</Generatedon>
     <Parser>MultiReportParser (3x OpenCoverParser)</Parser>
     <Assemblies>4</Assemblies>
     <Classes>82</Classes>
     <Files>80</Files>
-    <Coveredlines>237</Coveredlines>
-    <Uncoveredlines>3717</Uncoveredlines>
+    <Coveredlines>238</Coveredlines>
+    <Uncoveredlines>3716</Uncoveredlines>
     <Coverablelines>3954</Coverablelines>
     <Totallines>8057</Totallines>
-    <Linecoverage>5.9</Linecoverage>
+    <Linecoverage>6</Linecoverage>
     <Coveredbranches>0</Coveredbranches>
     <Totalbranches>0</Totalbranches>
     <Coveredmethods>98</Coveredmethods>
@@ -57,10 +57,10 @@
       <Class name="BuildScript" coverage="0" coveredlines="0" coverablelines="4" totallines="11" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
       <Class name="ReadmeEditor" coverage="0" coveredlines="0" coverablelines="140" totallines="242" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="14" methodcoverage="0" />
     </Assembly>
-    <Assembly name="Tests" classes="3" coverage="98.2" coveredlines="55" coverablelines="56" totallines="144" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="10" totalmethods="10" methodcoverage="100">
+    <Assembly name="Tests" classes="3" coverage="100" coveredlines="56" coverablelines="56" totallines="144" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="10" totalmethods="10" methodcoverage="100">
       <Class name="Tests.GameTests.RoadGeneratorTests" coverage="100" coveredlines="26" coverablelines="26" totallines="55" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
       <Class name="Tests.MainMenuTest" coverage="100" coveredlines="4" coverablelines="4" totallines="24" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
-      <Class name="Tests.UITests.UserControllerTests" coverage="96.1" coveredlines="25" coverablelines="26" totallines="65" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="6" methodcoverage="100" />
+      <Class name="Tests.UITests.UserControllerTests" coverage="100" coveredlines="26" coverablelines="26" totallines="65" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="6" methodcoverage="100" />
     </Assembly>
     <Assembly name="ThesisScripts" classes="44" coverage="10.6" coveredlines="182" coverablelines="1715" totallines="3799" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="88" totalmethods="397" methodcoverage="22.1">
       <Class name="Assets.Scripts.Client.DataTypes.ChunkCellContainer" coverage="0" coveredlines="0" coverablelines="6" totallines="15" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />

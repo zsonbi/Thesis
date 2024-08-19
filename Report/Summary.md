@@ -1,16 +1,16 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 08/19/2024 - 12:31:09 |
+| Generated on: | 08/19/2024 - 20:16:19 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 4 |
 | Classes: | 82 |
 | Files: | 80 |
-| Covered lines: | 237 |
-| Uncovered lines: | 3717 |
+| Covered lines: | 238 |
+| Uncovered lines: | 3716 |
 | Coverable lines: | 3954 |
 | Total lines: | 8057 |
-| Line coverage: | 5.9% (237 of 3954) |
+| Line coverage: | 6% (238 of 3954) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 98 |
@@ -56,10 +56,10 @@
 |BuildCommand|0|197|197|310|0%|0|0||0|15|0%|
 |BuildScript|0|4|4|11|0%|0|0||0|1|0%|
 |ReadmeEditor|0|140|140|242|0%|0|0||0|14|0%|
-|**Tests**|**55**|**1**|**56**|**144**|**98.2%**|**0**|**0**|****|**10**|**10**|**100%**|
+|**Tests**|**56**|**0**|**56**|**144**|**100%**|**0**|**0**|****|**10**|**10**|**100%**|
 |Tests.GameTests.RoadGeneratorTests|26|0|26|55|100%|0|0||3|3|100%|
 |Tests.MainMenuTest|4|0|4|24|100%|0|0||1|1|100%|
-|Tests.UITests.UserControllerTests|25|1|26|65|96.1%|0|0||6|6|100%|
+|Tests.UITests.UserControllerTests|26|0|26|65|100%|0|0||6|6|100%|
 |**ThesisScripts**|**182**|**1533**|**1715**|**3799**|**10.6%**|**0**|**0**|****|**88**|**397**|**22.1%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|0|6|6|15|0%|0|0||0|5|0%|
 |Car|0|26|26|54|0%|0|0||0|5|0%|

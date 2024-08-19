@@ -1,15 +1,15 @@
 {
   "summary": {
-    "generatedon": "2024-08-19T12:31:09Z",
+    "generatedon": "2024-08-19T20:16:19Z",
     "parser": "MultiReportParser (3x OpenCoverParser)",
     "assemblies": 4,
     "classes": 82,
     "files": 80,
-    "coveredlines": 237,
-    "uncoveredlines": 3717,
+    "coveredlines": 238,
+    "uncoveredlines": 3716,
     "coverablelines": 3954,
     "totallines": 8057,
-    "linecoverage": 5.9,
+    "linecoverage": 6,
     "coveredbranches": 0,
     "totalbranches": 0,
     "coveredmethods": 98,
@@ -55,10 +55,10 @@
         { "name": "BuildCommand", "coverage": 0, "coveredlines": 0, "coverablelines": 197, "totallines": 310, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 15 },
         { "name": "BuildScript", "coverage": 0, "coveredlines": 0, "coverablelines": 4, "totallines": 11, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
         { "name": "ReadmeEditor", "coverage": 0, "coveredlines": 0, "coverablelines": 140, "totallines": 242, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 14 } ] },
-      { "name": "Tests", "classes": 3, "coverage": 98.2, "coveredlines": 55, "coverablelines": 56, "totallines": 144, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 10, "totalmethods": 10, "classesinassembly": [
+      { "name": "Tests", "classes": 3, "coverage": 100, "coveredlines": 56, "coverablelines": 56, "totallines": 144, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 10, "totalmethods": 10, "classesinassembly": [
         { "name": "Tests.GameTests.RoadGeneratorTests", "coverage": 100, "coveredlines": 26, "coverablelines": 26, "totallines": 55, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 3, "totalmethods": 3 },
         { "name": "Tests.MainMenuTest", "coverage": 100, "coveredlines": 4, "coverablelines": 4, "totallines": 24, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 1, "totalmethods": 1 },
-        { "name": "Tests.UITests.UserControllerTests", "coverage": 96.1, "coveredlines": 25, "coverablelines": 26, "totallines": 65, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 6, "totalmethods": 6 } ] },
+        { "name": "Tests.UITests.UserControllerTests", "coverage": 100, "coveredlines": 26, "coverablelines": 26, "totallines": 65, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 6, "totalmethods": 6 } ] },
       { "name": "ThesisScripts", "classes": 44, "coverage": 10.6, "coveredlines": 182, "coverablelines": 1715, "totallines": 3799, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 22.1, "coveredmethods": 88, "totalmethods": 397, "classesinassembly": [
         { "name": "Assets.Scripts.Client.DataTypes.ChunkCellContainer", "coverage": 0, "coveredlines": 0, "coverablelines": 6, "totallines": 15, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 5 },
         { "name": "Car", "coverage": 0, "coveredlines": 0, "coverablelines": 26, "totallines": 54, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 5 },
