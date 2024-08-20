@@ -5,5 +5,7 @@ using UnityEngine;
 public enum BuildingType
 {
     Hospital,
-    Large_Panel
+    Large_Panel,
+    Small_Panel,
+
 }

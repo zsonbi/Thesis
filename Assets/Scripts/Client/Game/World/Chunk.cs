@@ -542,18 +542,16 @@ namespace Game
 
                         if (building.RowCount % 2 == 0)
                         {
-                            zPosCorrection = GameConfig.CHUNK_SIZE / 2;
+                            zPosCorrection = GameConfig.CHUNK_SIZE / -2;
                         }
                         if (building.ColumnCount % 2 == 0)
                         {
-                            xPosCorrection = GameConfig.CHUNK_SIZE / -2;
+                            xPosCorrection = GameConfig.CHUNK_SIZE / 2;
                         }
                     }
 
                     if (Random.Range(0, 10) == 0)
                     {
-                        buildingCells[row, col].Occupy();
-
                         float rotation = ((int)buildingCells[row, col].RoadDirection) % 4 * 90f;
                         var absolutePosition = GetAbsolutePosition();
                         Vector3 postition = new Vector3(absolutePosition.Item1 + col * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL + xPosCorrection, 0, absolutePosition.Item2 + row * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL + zPosCorrection);
