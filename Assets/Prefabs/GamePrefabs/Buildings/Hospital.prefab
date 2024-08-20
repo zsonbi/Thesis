@@ -47,9 +47,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingType: 0
   rowCount: 3
-  columnCount: 3
+  columnCount: 1
   direction: 2
-  addressableKey: Hospital
+  addressableKey: Buildings/Hospital.prefab
 --- !u!1001 &5126349480750228239
 PrefabInstance:
   m_ObjectHideFlags: 0

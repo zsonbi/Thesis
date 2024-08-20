@@ -497,44 +497,72 @@ namespace Game
                 {
                     for (int j = 1; j < GameConfig.CHUNK_SIZE - 1; j++)
                     {
-                        if (buildingCells[i, j].GotRoadNext && buildingCells[i, j].Buildable)
+                        LockAndTryToPlaceBuilding(Random.Range(0, this.buildings.Count), i, j);
+                    }
+                }
+            }
+
+            private void LockAndTryToPlaceBuilding(int index, int row, int col)
+            {
+                if (buildingCells[row, col].GotRoadNext && buildingCells[row, col].Buildable)
+                {
+                    Building building = this.buildings[index];
+                    List<BuildingCell> neighbourBuildingCells = new List<BuildingCell>();
+                    float zPosCorrection = 0f;
+                    float xPosCorrection = 0f;
+                    if (((int)buildingCells[row, col].RoadDirection) % 2 == 1)
+                    {
+                        for (int i = building.RowCount / -2; i < Mathf.CeilToInt(building.RowCount / 2f); i++)
                         {
-                            Building building = this.buildings[Random.Range(0, this.buildings.Count)];
-                            BuildingCell[] neighbourBuildingCells = new BuildingCell[2];
-
-                            if (((int)buildingCells[i, j].RoadDirection) % 2 == 1)
+                            if (!buildingCells[row, col + i].Buildable)
                             {
-                                if (!buildingCells[i, j - 1].Buildable || !buildingCells[i, j + 1].Buildable)
-                                {
-                                    continue;
-                                }
-                                neighbourBuildingCells[0] = (buildingCells[i, j - 1]);
-                                neighbourBuildingCells[1] = (buildingCells[i, j + 1]);
+                                return;
                             }
-                            else
+                            neighbourBuildingCells.Add(buildingCells[row, col + i]);
+                        }
+                        if (building.RowCount % 2 == 0)
+                        {
+                            xPosCorrection = GameConfig.CHUNK_SIZE / -2;
+                        }
+                        if (building.ColumnCount % 2 == 0)
+                        {
+                            zPosCorrection = GameConfig.CHUNK_SIZE / 2;
+                        }
+                    }
+                    else
+                    {
+                        for (int i = building.RowCount / -2; i < Mathf.CeilToInt(building.RowCount / 2f); i++)
+                        {
+                            if (!buildingCells[row + i, col].Buildable)
                             {
-                                if (!buildingCells[i - 1, j].Buildable || !buildingCells[i + 1, j].Buildable)
-                                {
-                                    continue;
-                                }
-                                neighbourBuildingCells[0] = (buildingCells[i - 1, j]);
-                                neighbourBuildingCells[1] = (buildingCells[i + 1, j]);
+                                return;
                             }
+                            neighbourBuildingCells.Add(buildingCells[row + i, col]);
+                        }
 
-                            if (Random.Range(0, 10) == 0)
-                            {
-                                buildingCells[i, j].Occupy();
+                        if (building.RowCount % 2 == 0)
+                        {
+                            zPosCorrection = GameConfig.CHUNK_SIZE / 2;
+                        }
+                        if (building.ColumnCount % 2 == 0)
+                        {
+                            xPosCorrection = GameConfig.CHUNK_SIZE / -2;
+                        }
+                    }
 
-                                float rotation = ((int)buildingCells[i, j].RoadDirection) % 4 * 90f;
-                                var absolutePosition = GetAbsolutePosition();
-                                Vector3 postition = new Vector3(absolutePosition.Item1 + j * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL, 0, absolutePosition.Item2 + i * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL);
-                                Addressables.InstantiateAsync(building.AddressableKey, postition, Quaternion.Euler(0, rotation, 0), this.gameObject.transform);
+                    if (Random.Range(0, 10) == 0)
+                    {
+                        buildingCells[row, col].Occupy();
 
-                                foreach (var item in neighbourBuildingCells)
-                                {
-                                    item.Occupy();
-                                }
-                            }
+                        float rotation = ((int)buildingCells[row, col].RoadDirection) % 4 * 90f;
+                        var absolutePosition = GetAbsolutePosition();
+                        Vector3 postition = new Vector3(absolutePosition.Item1 + col * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL + xPosCorrection, 0, absolutePosition.Item2 + row * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL + zPosCorrection);
+
+                        Addressables.InstantiateAsync(building.AddressableKey, postition, Quaternion.Euler(0, rotation, 0), this.gameObject.transform);
+
+                        foreach (var item in neighbourBuildingCells)
+                        {
+                            item.Occupy();
                         }
                     }
                 }

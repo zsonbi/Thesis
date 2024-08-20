@@ -18,7 +18,7 @@ MonoBehaviour:
   m_GUID: c3394c0f623c75e4e8a1be6f87dd5ca3
   m_SerializeEntries:
   - m_GUID: 1f9a5f95bff10024bac45e6b24d72ca3
-    m_Address: Assets/Prefabs/GamePrefabs/Buildings
+    m_Address: Buildings
     m_ReadOnly: 0
     m_SerializedLabels:
     - Buildings
