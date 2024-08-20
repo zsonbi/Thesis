@@ -1,34 +1,37 @@
 using UnityEngine;
 using System.Collections;
 
-public class EnableWheelPhysicMaterial : MonoBehaviour
+namespace Game
 {
-    private WheelCollider wheel;
-
-    private float originalSidewaysStiffness;
-    private float originalForwardStiffness;
-
-    private void Start()
+    public class EnableWheelPhysicMaterial : MonoBehaviour
     {
-        wheel = GetComponent<WheelCollider>();
+        private WheelCollider wheel;
 
-        originalSidewaysStiffness = wheel.sidewaysFriction.stiffness;
-        originalForwardStiffness = wheel.forwardFriction.stiffness;
-    }
+        private float originalSidewaysStiffness;
+        private float originalForwardStiffness;
 
-    // static friction of the ground material.
-    private void FixedUpdate()
-    {
-        WheelHit hit;
-        if (wheel.GetGroundHit(out hit))
+        private void Start()
         {
-            WheelFrictionCurve fFriction = wheel.forwardFriction;
-            fFriction.stiffness = hit.collider.material.staticFriction * originalForwardStiffness;
-            wheel.forwardFriction = fFriction;
+            wheel = GetComponent<WheelCollider>();
 
-            WheelFrictionCurve sFriction = wheel.sidewaysFriction;
-            sFriction.stiffness = hit.collider.material.staticFriction * originalSidewaysStiffness;
-            wheel.sidewaysFriction = sFriction;
+            originalSidewaysStiffness = wheel.sidewaysFriction.stiffness;
+            originalForwardStiffness = wheel.forwardFriction.stiffness;
+        }
+
+        // static friction of the ground material.
+        private void FixedUpdate()
+        {
+            WheelHit hit;
+            if (wheel.GetGroundHit(out hit))
+            {
+                WheelFrictionCurve fFriction = wheel.forwardFriction;
+                fFriction.stiffness = hit.collider.material.staticFriction * originalForwardStiffness;
+                wheel.forwardFriction = fFriction;
+
+                WheelFrictionCurve sFriction = wheel.sidewaysFriction;
+                sFriction.stiffness = hit.collider.material.staticFriction * originalSidewaysStiffness;
+                wheel.sidewaysFriction = sFriction;
+            }
         }
     }
 }

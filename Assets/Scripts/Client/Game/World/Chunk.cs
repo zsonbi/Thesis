@@ -13,14 +13,6 @@ namespace Game
         /// </summary>
         public class Chunk : MonoBehaviour
         {
-            //[Header("Materials for the tiles")]
-            //[SerializeField]
-            //private Material[] TileMaterials;
-
-            //[SerializeField]
-            //[Header("PhysicsMaterials")]
-            //private PhysicMaterial[] PhysicsMaterials;
-
             [Header("Offset of perlin noise on X axis")]
             public float XOffset = 0f;
 
@@ -45,6 +37,9 @@ namespace Game
             [SerializeField]
             public GameObject grassPrefab;
 
+            [SerializeField]
+            public List<Building> buildings;
+
             /// <summary>
             /// The size of the world on the z axis
             /// </summary>
@@ -65,8 +60,9 @@ namespace Game
             private Dictionary<ChunkCellType, List<Vector3>> chunkCells = new Dictionary<ChunkCellType, List<Vector3>>();
             private RoadGenerator roadGenerator;
             private GameWorld world;
-            private List<Vector3> roads = new List<Vector3>();
+            private List<Vector3Int> roads = new List<Vector3Int>();
             private Dictionary<ChunkCellType, List<GameObject>> objectsToCombine;
+            private BuildingCell[,] buildingCells;
 
             // Start is called before the first frame update
             private void Awake()
@@ -103,6 +99,7 @@ namespace Game
 
                 //Create the tiles
                 CreateTiles();
+                GenerateBuildings();
                 ////Create the props
                 //AddEnviromentObjects();
                 //Combine the objects
@@ -134,42 +131,6 @@ namespace Game
                 }
                 return roads[Random.Range(0, roads.Count)];
             }
-
-            ////--------------------------------------------------------------
-            ///// <summary>
-            ///// Combines the gameobjects into meshes and cleares out that index of the objectsToCombine
-            ///// </summary>
-            ///// <param name="cellType">the index of the objectsToCombine we want to combine</param>
-            //private void CombineMeshes(ChunkCellType cellType)
-            //{
-            //    //Creates the parent which will have the combined mesh
-            //    GameObject parent = new GameObject(objectsToCombine[cellType][0].name.Replace("(Clone)", "") + "Mesh", typeof(MeshFilter), typeof(MeshRenderer));
-            //    MeshFilter[] meshFilters = parent.GetComponentsInChildren<MeshFilter>();
-            //    //Assign the material of the first gameobject in the list to the parent
-            //    parent.GetComponent<MeshRenderer>().material = objectsToCombine[cellType][0].GetComponent<MeshRenderer>().material;
-            //    parent.transform.parent = this.transform;
-            //    foreach (var meshFilter in meshFilters)
-            //    {
-            //        meshFilter.mesh = new Mesh();
-            //        //Makes so that really big meshes are supported also
-            //        meshFilter.mesh.indexFormat = UnityEngine.Rendering.IndexFormat.UInt32;
-            //        CombineInstance[] combine = new CombineInstance[objectsToCombine[cellType].Count];
-            //        for (int i = 0; i < objectsToCombine[cellType].Count; i++)
-            //        {
-            //            MeshFilter objectMeshFilter = objectsToCombine[cellType][i].GetComponent<MeshFilter>();
-            //            combine[i].mesh = objectMeshFilter.sharedMesh;
-            //            combine[i].transform = objectMeshFilter.transform.localToWorldMatrix;
-            //        }
-            //        meshFilter.mesh.CombineMeshes(combine, true, true);
-            //        meshFilter.gameObject.SetActive(true);
-            //    }
-            //    //Empties the list and deletes the no longer used gameobjects
-            //    do
-            //    {
-            //        Destroy(objectsToCombine[cellType][0]);
-            //        objectsToCombine[cellType].RemoveAt(0);
-            //    } while (objectsToCombine[cellType].Count > 0);
-            //}
 
             //--------------------------------------------------------------
             /// <summary>
@@ -410,7 +371,7 @@ namespace Game
             {
                 if (roadGenerator.RoadMatrix[z, x])
                 {
-                    roads.Add(new Vector3(x, 0, z));
+                    roads.Add(new Vector3Int(x, 0, z));
                     return DetermineRoadType((int)x, (int)z);
                 }
 
@@ -428,6 +389,90 @@ namespace Game
                 else
                 {
                     return new ChunkCellContainer(ChunkCellType.Water, Vector3.zero);
+                }
+            }
+
+            public void GenerateBuildings()
+            {
+                buildingCells = new BuildingCell[GameConfig.CHUNK_SIZE, GameConfig.CHUNK_SIZE];
+                GenerateCellMatrix();
+                AddBuildings();
+            }
+
+            private void GenerateCellMatrix()
+            {
+                foreach (var road in roads)
+                {
+                    for (var i = road.z - 1; i < road.z + 1; i++)
+                    {
+                        for (int j = road.x - 1; j < road.x; j++)
+                        {
+                            if (i < 0 || j < 0 || i >= GameConfig.CHUNK_SIZE || j >= GameConfig.CHUNK_SIZE || buildingCells[i, j] != null)
+                            {
+                                continue;
+                            }
+                            if (i == 0 && j == 0 || roadGenerator.RoadMatrix[i, j])
+                            {
+                                buildingCells[i, j] = new BuildingCell(Direction.None, false);
+                            }
+                            else
+                            {
+                                Direction roadDir = Direction.None;
+                                if (i > road.z)
+                                {
+                                    roadDir = Direction.Down;
+                                }
+                                else if (i < road.z)
+                                {
+                                    roadDir = Direction.Up;
+                                }
+                                else
+                                {
+                                    if (j > road.x)
+                                    {
+                                        roadDir = Direction.Right;
+                                    }
+                                    else if (j < road.x)
+                                    {
+                                        roadDir = Direction.Left;
+                                    }
+                                }
+                                buildingCells[i, j] = new BuildingCell(roadDir, true);
+                            }
+                        }
+                    }
+                }
+
+                for (int i = 0; i < GameConfig.CHUNK_SIZE; i++)
+                {
+                    for (int j = 0; j < GameConfig.CHUNK_SIZE; j++)
+                    {
+                        if (buildingCells[i, j] is null)
+                        {
+                            buildingCells[i, j] = new BuildingCell(Direction.None, true);
+                        }
+                    }
+                }
+            }
+
+            private void AddBuildings()
+            {
+                for (int i = 0; i < GameConfig.CHUNK_SIZE; i++)
+                {
+                    for (int j = 0; j < GameConfig.CHUNK_SIZE; j++)
+                    {
+                        if (buildingCells[i, j].GotRoadNext && buildingCells[i, j].Buildable)
+                        {
+                            if (Random.Range(0, 100) == 0)
+                            {
+                                buildingCells[i, j].Occupy();
+
+                                GameObject testBuilding = Instantiate(this.buildings[0].gameObject, this.transform);
+
+                                testBuilding.transform.position = new Vector3(j * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL, 0, i * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL);
+                            }
+                        }
+                    }
                 }
             }
         }

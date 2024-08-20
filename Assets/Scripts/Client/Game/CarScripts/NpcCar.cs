@@ -3,14 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NpcCar : Car
+namespace Game
 {
-    public float DetermineSteeringDirection()
+    public class NpcCar : Car
     {
-        Vector3 difference = this.gameController.PlayerPos - this.gameObject.transform.position;
-        Quaternion.RotateTowards(Quaternion.LookRotation(difference), this.gameObject.transform.rotation, Time.deltaTime);
-        Vector3 crossProduct = Vector3.Cross(this.transform.forward, difference);
-        //Debug.Log(crossProduct.y);
-        return (crossProduct.y * 0.75f);
+        public float DetermineSteeringDirection()
+        {
+            Vector3 difference = this.gameController.PlayerPos - this.gameObject.transform.position;
+            Quaternion.RotateTowards(Quaternion.LookRotation(difference), this.gameObject.transform.rotation, Time.deltaTime);
+            Vector3 crossProduct = Vector3.Cross(this.transform.forward, difference);
+            //Debug.Log(crossProduct.y);
+            return (crossProduct.y * 0.75f);
+        }
     }
 }
