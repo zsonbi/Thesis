@@ -29,28 +29,28 @@ namespace Game
                             }
                             if (i == 0 && j == 0)
                             {
-                                buildingCells[i, j] = new BuildingCell(Direction.None, false);
+                                buildingCells[i, j] = new BuildingCell(BuildingDirection.None, false);
                             }
                             else
                             {
-                                Direction roadDir = Direction.None;
+                                BuildingDirection roadDir = BuildingDirection.None;
                                 if (i > road.z)
                                 {
-                                    roadDir = Direction.Down;
+                                    roadDir = BuildingDirection.Down;
                                 }
                                 else if (i < road.z)
                                 {
-                                    roadDir = Direction.Up;
+                                    roadDir = BuildingDirection.Up;
                                 }
                                 else
                                 {
                                     if (j > road.x)
                                     {
-                                        roadDir = Direction.Right;
+                                        roadDir = BuildingDirection.Right;
                                     }
                                     else if (j < road.x)
                                     {
-                                        roadDir = Direction.Left;
+                                        roadDir = BuildingDirection.Left;
                                     }
                                 }
                                 buildingCells[i, j] = new BuildingCell(roadDir, true);

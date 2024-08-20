@@ -11,11 +11,11 @@ namespace Game
     {
         internal class BuildingCell
         {
-            public Direction RoadDirection { get; private set; }
+            public BuildingDirection RoadDirection { get; private set; }
             public bool Buildable { get; private set; }
-            public bool GotRoadNext => RoadDirection != Direction.None;
+            public bool GotRoadNext => RoadDirection != BuildingDirection.None;
 
-            public BuildingCell(Direction roadDirection, bool buildable)
+            public BuildingCell(BuildingDirection roadDirection, bool buildable)
             {
                 this.RoadDirection = roadDirection;
                 Buildable = buildable;

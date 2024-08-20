@@ -396,49 +396,65 @@ namespace Game
             {
                 buildingCells = new BuildingCell[GameConfig.CHUNK_SIZE, GameConfig.CHUNK_SIZE];
                 GenerateCellMatrix();
-                AddBuildings();
+                AddLargeRoadBuildings();
             }
 
             private void GenerateCellMatrix()
             {
                 foreach (var road in roads)
                 {
-                    for (var i = road.z - 1; i < road.z + 1; i++)
+                    buildingCells[road.z, road.x] = new BuildingCell(BuildingDirection.None, false);
+
+                    for (var i = road.z - 1; i <= road.z + 1; i += 2)
                     {
-                        for (int j = road.x - 1; j < road.x; j++)
+                        if (i < 0 || i >= GameConfig.CHUNK_SIZE || buildingCells[i, road.x] != null)
                         {
-                            if (i < 0 || j < 0 || i >= GameConfig.CHUNK_SIZE || j >= GameConfig.CHUNK_SIZE || buildingCells[i, j] != null)
+                            continue;
+                        }
+                        if (roadGenerator.RoadMatrix[i, road.x])
+                        {
+                            buildingCells[i, road.x] = new BuildingCell(BuildingDirection.None, false);
+                        }
+                        else
+                        {
+                            BuildingDirection roadDir = BuildingDirection.None;
+                            if (i > road.z)
                             {
-                                continue;
+                                roadDir = BuildingDirection.Down;
                             }
-                            if (i == 0 && j == 0 || roadGenerator.RoadMatrix[i, j])
+                            else if (i < road.z)
                             {
-                                buildingCells[i, j] = new BuildingCell(Direction.None, false);
+                                roadDir = BuildingDirection.Up;
                             }
-                            else
+
+                            buildingCells[i, road.x] = new BuildingCell(roadDir, true);
+                        }
+                    }
+
+                    for (int j = road.x - 1; j <= road.x + 1; j += 2)
+                    {
+                        if (j < 0 || j >= GameConfig.CHUNK_SIZE || buildingCells[road.z, j] != null)
+                        {
+                            continue;
+                        }
+                        if (roadGenerator.RoadMatrix[road.z, j])
+                        {
+                            buildingCells[road.z, j] = new BuildingCell(BuildingDirection.None, false);
+                        }
+                        else
+                        {
+                            BuildingDirection roadDir = BuildingDirection.None;
+
+                            if (j > road.x)
                             {
-                                Direction roadDir = Direction.None;
-                                if (i > road.z)
-                                {
-                                    roadDir = Direction.Down;
-                                }
-                                else if (i < road.z)
-                                {
-                                    roadDir = Direction.Up;
-                                }
-                                else
-                                {
-                                    if (j > road.x)
-                                    {
-                                        roadDir = Direction.Right;
-                                    }
-                                    else if (j < road.x)
-                                    {
-                                        roadDir = Direction.Left;
-                                    }
-                                }
-                                buildingCells[i, j] = new BuildingCell(roadDir, true);
+                                roadDir = BuildingDirection.Left;
                             }
+                            else if (j < road.x)
+                            {
+                                roadDir = BuildingDirection.Right;
+                            }
+
+                            buildingCells[road.z, j] = new BuildingCell(roadDir, true);
                         }
                     }
                 }
@@ -449,27 +465,52 @@ namespace Game
                     {
                         if (buildingCells[i, j] is null)
                         {
-                            buildingCells[i, j] = new BuildingCell(Direction.None, true);
+                            buildingCells[i, j] = new BuildingCell(BuildingDirection.None, true);
                         }
                     }
                 }
             }
 
-            private void AddBuildings()
+            private void AddLargeRoadBuildings()
             {
-                for (int i = 0; i < GameConfig.CHUNK_SIZE; i++)
+                for (int i = 1; i < GameConfig.CHUNK_SIZE - 1; i++)
                 {
-                    for (int j = 0; j < GameConfig.CHUNK_SIZE; j++)
+                    for (int j = 1; j < GameConfig.CHUNK_SIZE - 1; j++)
                     {
                         if (buildingCells[i, j].GotRoadNext && buildingCells[i, j].Buildable)
                         {
-                            if (Random.Range(0, 100) == 0)
+                            BuildingCell[] neighbourBuildingCells = new BuildingCell[2];
+                            if (((int)buildingCells[i, j].RoadDirection) % 2 == 1)
+                            {
+                                if (!buildingCells[i, j - 1].Buildable || !buildingCells[i, j + 1].Buildable)
+                                {
+                                    continue;
+                                }
+                                neighbourBuildingCells[0] = (buildingCells[i, j - 1]);
+                                neighbourBuildingCells[1] = (buildingCells[i, j + 1]);
+                            }
+                            else
+                            {
+                                if (!buildingCells[i - 1, j].Buildable || !buildingCells[i + 1, j].Buildable)
+                                {
+                                    continue;
+                                }
+                                neighbourBuildingCells[0] = (buildingCells[i - 1, j]);
+                                neighbourBuildingCells[1] = (buildingCells[i + 1, j]);
+                            }
+
+                            if (Random.Range(0, 10) == 0)
                             {
                                 buildingCells[i, j].Occupy();
 
                                 GameObject testBuilding = Instantiate(this.buildings[0].gameObject, this.transform);
-
+                                float rotation = ((int)buildingCells[i, j].RoadDirection) % 4 * 90f;
                                 testBuilding.transform.position = new Vector3(j * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL, 0, i * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL);
+                                testBuilding.transform.Rotate(new Vector3(0, rotation, 0));
+                                foreach (var item in neighbourBuildingCells)
+                                {
+                                    item.Occupy();
+                                }
                             }
                         }
                     }
