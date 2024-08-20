@@ -51,6 +51,13 @@ MonoBehaviour:
   curvedRoadPrefab: {fileID: 8792510264172217276, guid: 455824e8459ba2b46a7987faad6e6eed, type: 3}
   threeWayRoadPrefab: {fileID: 8792510264172217276, guid: 488f02dbbaa5cd54eab7c1cc7cf9ed97, type: 3}
   crossRoadsPrefab: {fileID: 8792510264172217276, guid: 5e2e3770314ce3f45b34c122a3dfc6e8, type: 3}
-  grassPrefab: {fileID: 2390087413359802030, guid: 7ae6eea8817321349bfe65fd435efa88, type: 3}
+  grassPrefab:
+    m_AssetGUID: 7ae6eea8817321349bfe65fd435efa88
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
   buildings:
-  - {fileID: 7194149187121481411, guid: 74307624911ff594f993f180a93bfb21, type: 3}
+  - m_AssetGUID: 74307624911ff594f993f180a93bfb21
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0

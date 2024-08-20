@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using DataTypes;
 using Assets.Scripts.Client.DataTypes;
 using System.Linq;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement;
+using System.Threading.Tasks;
+using System.Collections;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 namespace Game
 {
@@ -35,10 +40,10 @@ namespace Game
             private GameObject crossRoadsPrefab;
 
             [SerializeField]
-            public GameObject grassPrefab;
+            public AssetReference grassPrefab;
 
             [SerializeField]
-            public List<Building> buildings;
+            public List<AssetReference> buildings;
 
             /// <summary>
             /// The size of the world on the z axis
@@ -78,12 +83,17 @@ namespace Game
                 objectsToCombine = new Dictionary<ChunkCellType, List<GameObject>>();
             }
 
+            private (float, float) GetAbsolutePosition()
+            {
+                return (Col * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL * GameConfig.CHUNK_SIZE, Row * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL * GameConfig.CHUNK_SIZE);
+            }
+
             public void Display()
             {
                 this.gameObject.SetActive(true);
             }
 
-            public void InitChunk(int xOffset, int zOffset, List<EdgeRoadContainer> edgeRoads, GameWorld world)
+            public async Task InitChunk(int xOffset, int zOffset, List<EdgeRoadContainer> edgeRoads, GameWorld world)
             {
                 this.world = world;
                 this.Row = zOffset;
@@ -99,7 +109,7 @@ namespace Game
 
                 //Create the tiles
                 CreateTiles();
-                GenerateBuildings();
+
                 ////Create the props
                 //AddEnviromentObjects();
                 //Combine the objects
@@ -116,6 +126,7 @@ namespace Game
                 this.gameObject.transform.localPosition = new Vector3(xOffset * GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL, 0, zOffset * GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL);
 
                 this.gameObject.transform.localScale = new Vector3(GameConfig.CHUNK_SCALE, 1, GameConfig.CHUNK_SCALE);
+                await GenerateBuildings();
             }
 
             public void HideChunk()
@@ -203,7 +214,7 @@ namespace Game
             //---------------------------------------------------------------------------
             // <summary>
             // Creates the tiles for the world
-            private void CreateTiles()
+            private async void CreateTiles()
             {
                 for (int x = 0; x < xSize; x++)
                 {
@@ -230,7 +241,7 @@ namespace Game
                                 break;
 
                             case ChunkCellType.Grass:
-                                created = Instantiate(grassPrefab, this.transform);
+                                created = grassPrefab.InstantiateAsync(this.gameObject.transform).WaitForCompletion();
                                 break;
 
                             case ChunkCellType.Sand:
@@ -392,11 +403,11 @@ namespace Game
                 }
             }
 
-            public void GenerateBuildings()
+            public async Task GenerateBuildings()
             {
                 buildingCells = new BuildingCell[GameConfig.CHUNK_SIZE, GameConfig.CHUNK_SIZE];
-                GenerateCellMatrix();
-                AddLargeRoadBuildings();
+                await Task.Run(() => GenerateCellMatrix());
+                await AddLargeRoadBuildings();
             }
 
             private void GenerateCellMatrix()
@@ -471,7 +482,7 @@ namespace Game
                 }
             }
 
-            private void AddLargeRoadBuildings()
+            private async Task AddLargeRoadBuildings()
             {
                 for (int i = 1; i < GameConfig.CHUNK_SIZE - 1; i++)
                 {
@@ -503,10 +514,11 @@ namespace Game
                             {
                                 buildingCells[i, j].Occupy();
 
-                                GameObject testBuilding = Instantiate(this.buildings[0].gameObject, this.transform);
                                 float rotation = ((int)buildingCells[i, j].RoadDirection) % 4 * 90f;
-                                testBuilding.transform.position = new Vector3(j * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL, 0, i * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL);
-                                testBuilding.transform.Rotate(new Vector3(0, rotation, 0));
+                                var absolutePosition = GetAbsolutePosition();
+                                Vector3 postition = new Vector3(absolutePosition.Item1 + j * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL, 0, absolutePosition.Item2 + i * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL);
+                                this.buildings[0].InstantiateAsync(postition, Quaternion.Euler(0, rotation, 0), this.gameObject.transform);
+
                                 foreach (var item in neighbourBuildingCells)
                                 {
                                     item.Occupy();

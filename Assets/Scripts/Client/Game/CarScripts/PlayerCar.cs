@@ -9,9 +9,9 @@ namespace Game
     {
         private int probeSize = 1;
 
-        protected override void ChunkChanged(Chunk newChunk)
+        protected override async void ChunkChanged(Chunk newChunk)
         {
-            gameController.LoadAndDespawnChunks(newChunk.Row, newChunk.Col);
+            await gameController.LoadAndDespawnChunks(newChunk.Row, newChunk.Col);
         }
 
         private void FixedUpdate()

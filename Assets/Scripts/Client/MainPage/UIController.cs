@@ -24,7 +24,7 @@ public class UIController : MonoBehaviour
     [SerializeField]
     public ModalWindow ModalWindow;
 
-    private Dictionary<long, Task> tasks = new Dictionary<long, Task>();
+    private Dictionary<long, PlayerTask> tasks = new Dictionary<long, PlayerTask>();
 
     // Start is called before the first frame update
     private void Start()
@@ -49,7 +49,7 @@ public class UIController : MonoBehaviour
     {
         if (tasks.ContainsKey(taskId))
         {
-            Task TaskToRemove = tasks[taskId];
+            PlayerTask TaskToRemove = tasks[taskId];
             tasks.Remove(taskId);
             Destroy(TaskToRemove.gameObject);
         }
@@ -100,7 +100,7 @@ public class UIController : MonoBehaviour
     public GameObject CreateTask(TaskContainer taskContainer)
     {
         GameObject task = Instantiate(TaskPrefab, TaskParent.transform);
-        Task taskComponent = task.GetComponent<Task>();
+        PlayerTask taskComponent = task.GetComponent<PlayerTask>();
         taskComponent.InitValues(taskContainer, taskOpenPanelController);
         tasks.Add(taskContainer.Id, taskComponent);
         return task;
@@ -120,10 +120,10 @@ public class UIController : MonoBehaviour
 
     private void LoadTasks()
     {
-        StartCoroutine(Server.SendGetRequest<List<Thesis_backend.Data_Structures.Task>>(ServerConfig.PATHFORTASKSQUERY, CreateTaskPrefabs));
+        StartCoroutine(Server.SendGetRequest<List<Thesis_backend.Data_Structures.PlayerTask>>(ServerConfig.PATHFORTASKSQUERY, CreateTaskPrefabs));
     }
 
-    private void CreateTaskPrefabs(List<Thesis_backend.Data_Structures.Task> requestResult)
+    private void CreateTaskPrefabs(List<Thesis_backend.Data_Structures.PlayerTask> requestResult)
     {
         foreach (var item in requestResult)
         {

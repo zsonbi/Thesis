@@ -126,15 +126,15 @@ public class TaskOpenPanelController : MonoBehaviour
 
         if (isNewTask)
         {
-            StartCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.Task>(ServerConfig.PATHFORTASKCREATE, taskRequest, SavedTask));
+            StartCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.PlayerTask>(ServerConfig.PATHFORTASKCREATE, taskRequest, SavedTask));
         }
         else
         {
-            StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.Task>(ServerConfig.PATHFORTASKUPDATE(TaskContainer.Id), taskRequest, SavedTask));
+            StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.PlayerTask>(ServerConfig.PATHFORTASKUPDATE(TaskContainer.Id), taskRequest, SavedTask));
         }
     }
 
-    private void SavedTask(Thesis_backend.Data_Structures.Task savedTask)
+    private void SavedTask(Thesis_backend.Data_Structures.PlayerTask savedTask)
     {
         this.TaskClosedEventHandler?.Invoke(this, new TaskClosedEventArgs(true));
         tasksOpenPanel.SetActive(false);

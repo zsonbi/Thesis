@@ -39,7 +39,7 @@ namespace Game
             return false;
         }
 
-        protected virtual void ChunkChanged(Chunk newChunk)
+        protected virtual async void ChunkChanged(Chunk newChunk)
         {
         }
 

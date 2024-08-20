@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Game
@@ -37,11 +38,11 @@ namespace Game
                 return Chunks[row, col];
             }
 
-            public void CreateNewGame()
+            public async Task CreateNewGame()
             {
                 Chunks = new Chunk[GameConfig.CHUNK_COUNT, GameConfig.CHUNK_COUNT];
 
-                LoadChunk(GameConfig.CHUNK_COUNT / 2, GameConfig.CHUNK_COUNT / 2);
+                await LoadChunk(GameConfig.CHUNK_COUNT / 2, GameConfig.CHUNK_COUNT / 2);
             }
 
             /// <summary>
@@ -49,7 +50,7 @@ namespace Game
             /// </summary>
             /// <param name="x">The x index of the chunk (horizontal)</param>
             /// <param name="z">The z index of the chunk (vertical)</param>
-            public void LoadChunk(int x, int z)
+            public async Task LoadChunk(int x, int z)
             {
                 if (Chunks[z, x] == null)
                 {
@@ -72,7 +73,7 @@ namespace Game
                         edges.AddRange(Chunks[z, x + 1].EdgeRoads.Where(x => x.EdgeRoad.x == 0));
                     }
 
-                    Chunks[z, x].InitChunk(x, z, edges, this);
+                    await Chunks[z, x].InitChunk(x, z, edges, this);
                 }
                 else
                 {
