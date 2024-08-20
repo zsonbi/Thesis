@@ -57,7 +57,7 @@ MonoBehaviour:
     m_SubObjectType: 
     m_EditorAssetChanged: 0
   buildings:
-  - m_AssetGUID: 74307624911ff594f993f180a93bfb21
-    m_SubObjectName: 
-    m_SubObjectType: 
-    m_EditorAssetChanged: 0
+  - {fileID: 7194149187121481411, guid: 74307624911ff594f993f180a93bfb21, type: 3}
+  - {fileID: 7194149187121481411, guid: 9db66a0d2fb0790489db7dfc53a0eed9, type: 3}
+  assetLabel:
+    m_LabelString: Buildings

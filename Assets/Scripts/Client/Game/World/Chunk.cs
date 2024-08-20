@@ -42,8 +42,7 @@ namespace Game
             [SerializeField]
             public AssetReference grassPrefab;
 
-            [SerializeField]
-            public List<AssetReference> buildings;
+            public List<Building> buildings;
 
             /// <summary>
             /// The size of the world on the z axis
@@ -72,6 +71,9 @@ namespace Game
             // Start is called before the first frame update
             private void Awake()
             {
+                buildings = new List<Building>();
+
+                Addressables.LoadAssetsAsync<GameObject>("Buildings", BuildingLoaded).WaitForCompletion();
                 //Load the values from the settings
                 LoadFromSettings();
                 //Randomizes the offset
@@ -81,6 +83,13 @@ namespace Game
                     this.ZOffset = Random.Range(0, 99999);
                 }
                 objectsToCombine = new Dictionary<ChunkCellType, List<GameObject>>();
+            }
+
+            // Callback for when each asset is loaded
+            private void BuildingLoaded(GameObject building)
+            {
+                buildings.Add(building.GetComponent<Building>());
+                buildings.Last().SetAddressableKey($"Buildings/{building.name}.prefab");
             }
 
             private (float, float) GetAbsolutePosition()
@@ -490,7 +499,9 @@ namespace Game
                     {
                         if (buildingCells[i, j].GotRoadNext && buildingCells[i, j].Buildable)
                         {
+                            Building building = this.buildings[Random.Range(0, this.buildings.Count)];
                             BuildingCell[] neighbourBuildingCells = new BuildingCell[2];
+
                             if (((int)buildingCells[i, j].RoadDirection) % 2 == 1)
                             {
                                 if (!buildingCells[i, j - 1].Buildable || !buildingCells[i, j + 1].Buildable)
@@ -517,7 +528,7 @@ namespace Game
                                 float rotation = ((int)buildingCells[i, j].RoadDirection) % 4 * 90f;
                                 var absolutePosition = GetAbsolutePosition();
                                 Vector3 postition = new Vector3(absolutePosition.Item1 + j * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL, 0, absolutePosition.Item2 + i * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL);
-                                this.buildings[0].InstantiateAsync(postition, Quaternion.Euler(0, rotation, 0), this.gameObject.transform);
+                                Addressables.InstantiateAsync(building.AddressableKey, postition, Quaternion.Euler(0, rotation, 0), this.gameObject.transform);
 
                                 foreach (var item in neighbourBuildingCells)
                                 {

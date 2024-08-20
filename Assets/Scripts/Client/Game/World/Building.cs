@@ -17,8 +17,17 @@ public class Building : MonoBehaviour
     [SerializeField]
     private Direction direction = Direction.Down;
 
+    [SerializeField]
+    private string addressableKey;
+
     public BuildingType BuildingType => buildingType;
     public int RowCount => rowCount;
     public int ColumnCount => columnCount;
     public Direction Direction => direction;
+    public string AddressableKey => addressableKey;
+
+    public void SetAddressableKey(string newKey)
+    {
+        this.addressableKey = newKey;
+    }
 }

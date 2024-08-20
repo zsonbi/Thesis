@@ -10,21 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Default Local Group
+  m_Name: Buildings
   m_EditorClassIdentifier: 
-  m_GroupName: Default Local Group
+  m_GroupName: Buildings
   m_Data:
     m_SerializedData: []
-  m_GUID: 14f354c66b69bd24fb77602fa45ddbac
+  m_GUID: c3394c0f623c75e4e8a1be6f87dd5ca3
   m_SerializeEntries:
-  - m_GUID: 7ae6eea8817321349bfe65fd435efa88
-    m_Address: GrassPrefab
+  - m_GUID: 1f9a5f95bff10024bac45e6b24d72ca3
+    m_Address: Assets/Prefabs/GamePrefabs/Buildings
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - Buildings
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 8b5a45749b741ae44970f7692d798825, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: c85a2daaba6a42f489da53cbaeb4e715, type: 2}
-    - {fileID: 11400000, guid: 1f2ff8ae9d6c3514eb730f73214821f8, type: 2}
+    - {fileID: 11400000, guid: 69e67c3bab07f3a49a57f28031917e57, type: 2}
+    - {fileID: 11400000, guid: 8cd07d7224a6f9244b41ecf23c70db9c, type: 2}
