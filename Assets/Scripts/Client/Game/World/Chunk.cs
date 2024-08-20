@@ -45,9 +45,6 @@ namespace Game
             [SerializeField]
             public GameObject grassPrefab;
 
-            [SerializeField]
-            public PhysicMaterial grassPhysics;
-
             /// <summary>
             /// The size of the world on the z axis
             /// </summary>
@@ -69,6 +66,7 @@ namespace Game
             private RoadGenerator roadGenerator;
             private GameWorld world;
             private List<Vector3> roads = new List<Vector3>();
+            private Dictionary<ChunkCellType, List<GameObject>> objectsToCombine;
 
             // Start is called before the first frame update
             private void Awake()
@@ -81,6 +79,7 @@ namespace Game
                     this.XOffset = Random.Range(0, 99999);
                     this.ZOffset = Random.Range(0, 99999);
                 }
+                objectsToCombine = new Dictionary<ChunkCellType, List<GameObject>>();
             }
 
             public void Display()
@@ -107,11 +106,13 @@ namespace Game
                 ////Create the props
                 //AddEnviromentObjects();
                 //Combine the objects
-                //for (byte i = 0; i < numberOfDifferentObjects; i++)
-                //{
-                //    if (objectsToCombine[i].Count != 0)
-                //        CombineMeshes(i);
-                //}
+                foreach (var item in objectsToCombine)
+                {
+                    if (item.Value.Count != 0)
+                    {
+                        //   CombineMeshes(item.Key);
+                    }
+                }
 
                 //CreateMeshes();
 
@@ -134,17 +135,99 @@ namespace Game
                 return roads[Random.Range(0, roads.Count)];
             }
 
+            ////--------------------------------------------------------------
+            ///// <summary>
+            ///// Combines the gameobjects into meshes and cleares out that index of the objectsToCombine
+            ///// </summary>
+            ///// <param name="cellType">the index of the objectsToCombine we want to combine</param>
+            //private void CombineMeshes(ChunkCellType cellType)
+            //{
+            //    //Creates the parent which will have the combined mesh
+            //    GameObject parent = new GameObject(objectsToCombine[cellType][0].name.Replace("(Clone)", "") + "Mesh", typeof(MeshFilter), typeof(MeshRenderer));
+            //    MeshFilter[] meshFilters = parent.GetComponentsInChildren<MeshFilter>();
+            //    //Assign the material of the first gameobject in the list to the parent
+            //    parent.GetComponent<MeshRenderer>().material = objectsToCombine[cellType][0].GetComponent<MeshRenderer>().material;
+            //    parent.transform.parent = this.transform;
+            //    foreach (var meshFilter in meshFilters)
+            //    {
+            //        meshFilter.mesh = new Mesh();
+            //        //Makes so that really big meshes are supported also
+            //        meshFilter.mesh.indexFormat = UnityEngine.Rendering.IndexFormat.UInt32;
+            //        CombineInstance[] combine = new CombineInstance[objectsToCombine[cellType].Count];
+            //        for (int i = 0; i < objectsToCombine[cellType].Count; i++)
+            //        {
+            //            MeshFilter objectMeshFilter = objectsToCombine[cellType][i].GetComponent<MeshFilter>();
+            //            combine[i].mesh = objectMeshFilter.sharedMesh;
+            //            combine[i].transform = objectMeshFilter.transform.localToWorldMatrix;
+            //        }
+            //        meshFilter.mesh.CombineMeshes(combine, true, true);
+            //        meshFilter.gameObject.SetActive(true);
+            //    }
+            //    //Empties the list and deletes the no longer used gameobjects
+            //    do
+            //    {
+            //        Destroy(objectsToCombine[cellType][0]);
+            //        objectsToCombine[cellType].RemoveAt(0);
+            //    } while (objectsToCombine[cellType].Count > 0);
+            //}
+
+            //--------------------------------------------------------------
+            /// <summary>
+            /// Combines the gameobjects into meshes and cleares out that index of the objectsToCombine
+            /// </summary>
+            /// <param name="cellType">the index of the objectsToCombine we want to combine</param>
+            private void CombineMeshes(ChunkCellType cellType)
+            {
+                MeshRenderer[] filters = objectsToCombine[cellType][0].GetComponentsInChildren<MeshRenderer>();
+                int itr = 0;
+                foreach (MeshRenderer filter in filters)
+                {
+                    //Creates the parent which will have the combined mesh
+                    GameObject parent = new GameObject(objectsToCombine[cellType][0].name.Replace("(Clone)", "") + "Mesh", typeof(MeshFilter), typeof(MeshRenderer), typeof(MeshCollider));
+                    MeshFilter meshFilter = parent.GetComponent<MeshFilter>();
+                    //Assign the material of the first gameobject in the list to the parent
+                    parent.GetComponent<MeshRenderer>().material = filter.material;
+                    parent.transform.parent = this.transform;
+
+                    meshFilter.mesh = new Mesh();
+                    //Makes so that really big meshes are supported also
+                    meshFilter.mesh.indexFormat = UnityEngine.Rendering.IndexFormat.UInt32;
+                    CombineInstance[] combine = new CombineInstance[objectsToCombine[cellType].Count];
+                    for (int i = 0; i < objectsToCombine[cellType].Count; i++)
+                    {
+                        MeshFilter[] objectMeshFilters = objectsToCombine[cellType][i].GetComponentsInChildren<MeshFilter>();
+                        combine[i].mesh = objectMeshFilters[itr].sharedMesh;
+                        combine[i].transform = objectMeshFilters[itr].transform.localToWorldMatrix;
+                    }
+                    meshFilter.mesh.CombineMeshes(combine, true, true);
+                    meshFilter.gameObject.SetActive(true);
+
+                    MeshCollider collider = parent.GetComponent<MeshCollider>();
+                    collider.sharedMesh = meshFilter.sharedMesh;
+                    parent.isStatic = true;
+
+                    itr++;
+                }
+
+                //Empties the list and deletes the no longer used gameobjects
+                do
+                {
+                    Destroy(objectsToCombine[cellType][0]);
+                    objectsToCombine[cellType].RemoveAt(0);
+                } while (objectsToCombine[cellType].Count > 0);
+            }
+
             private void CreateMeshes()
             {
                 foreach (var item in chunkCells)
                 {
-                    //GameObject parent = new GameObject(item.Key.ToString() + "Mesh", typeof(MeshFilter), typeof(MeshRenderer), typeof(MeshCollider));
-                    //parent.transform.parent = this.transform;
-                    //MeshFilter meshFilter = parent.GetComponent<MeshFilter>();
+                    GameObject parent = new GameObject(item.Key.ToString() + "Mesh", typeof(MeshFilter), typeof(MeshRenderer), typeof(MeshCollider));
+                    parent.transform.parent = this.transform;
+                    MeshFilter meshFilter = parent.GetComponent<MeshFilter>();
                     //parent.GetComponent<MeshRenderer>().material = TileMaterials[(int)item.Key];
                     //parent.GetComponent<MeshCollider>().sharedMaterial = PhysicsMaterials[(int)(item.Key)];
-                    //meshFilter.mesh = MeshGenerator.CreateMultiShape(item.Value);
-                    //parent.GetComponent<MeshCollider>().sharedMesh = meshFilter.mesh;
+                    meshFilter.mesh = MeshGenerator.CreateMultiShape(item.Value);
+                    parent.GetComponent<MeshCollider>().sharedMesh = meshFilter.mesh;
                 }
             }
 
@@ -187,8 +270,6 @@ namespace Game
 
                             case ChunkCellType.Grass:
                                 created = Instantiate(grassPrefab, this.transform);
-                                //Collider renderer = created.GetComponentInChildren<Collider>();
-                                //renderer.material = grassPhysics;
                                 break;
 
                             case ChunkCellType.Sand:
@@ -207,7 +288,12 @@ namespace Game
                             if (tileType.Orientation != Vector3.zero)
                                 created.transform.Rotate(tileType.Orientation);
                         }
-
+                        if (!objectsToCombine.ContainsKey(tileType.Type))
+                        {
+                            objectsToCombine.Add(tileType.Type, new List<GameObject>());
+                        }
+                        created.isStatic = true;
+                        objectsToCombine[tileType.Type].Add(created);
                         //chunkCells[tileType].Add(new Vector3(x, 0f, z));
                     }
                 }

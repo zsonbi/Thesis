@@ -52,4 +52,3 @@ MonoBehaviour:
   threeWayRoadPrefab: {fileID: 8792510264172217276, guid: 488f02dbbaa5cd54eab7c1cc7cf9ed97, type: 3}
   crossRoadsPrefab: {fileID: 8792510264172217276, guid: 5e2e3770314ce3f45b34c122a3dfc6e8, type: 3}
   grassPrefab: {fileID: 2390087413359802030, guid: 7ae6eea8817321349bfe65fd435efa88, type: 3}
-  grassPhysics: {fileID: 13400000, guid: 1ba3aeb1e7f540c40a9fca82de497841, type: 2}
