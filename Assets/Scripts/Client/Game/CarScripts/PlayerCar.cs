@@ -23,5 +23,7 @@ internal class PlayerCar : Car
 #else
             carController.Move(h, v, v, 0f);
 #endif
+
+        Debug.Log(carController.CurrentSpeed);
     }
 }
