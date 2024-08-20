@@ -4,51 +4,54 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(CarController))]
-public class Car : MonoBehaviour
+namespace Game
 {
-    protected GameController gameController;
-    protected CarController carController;
-    protected Chunk lastChunk;
-
-    protected virtual void Update()
+    [RequireComponent(typeof(CarController))]
+    public class Car : MonoBehaviour
     {
-        if (gameController is null)
-        {
-            return;
-        }
-        if (ChangeChunkIfNeeded())
-        {
-        }
-    }
+        protected GameController gameController;
+        protected CarController carController;
+        protected Chunk lastChunk;
 
-    protected bool ChangeChunkIfNeeded()
-    {
-        Chunk newChunk = this.gameController.World.GetChunk(this.gameObject.transform.position);
-        if (lastChunk != newChunk)
+        protected virtual void Update()
         {
-            ChunkChanged(newChunk);
-
-            lastChunk = newChunk;
-            this.gameObject.transform.parent = newChunk.transform;
-            return true;
+            if (gameController is null)
+            {
+                return;
+            }
+            if (ChangeChunkIfNeeded())
+            {
+            }
         }
 
-        return false;
-    }
+        protected bool ChangeChunkIfNeeded()
+        {
+            Chunk newChunk = this.gameController.World.GetChunk(this.gameObject.transform.position);
+            if (lastChunk != newChunk)
+            {
+                ChunkChanged(newChunk);
 
-    protected virtual void ChunkChanged(Chunk newChunk)
-    {
-    }
+                lastChunk = newChunk;
+                this.gameObject.transform.parent = newChunk.transform;
+                return true;
+            }
 
-    public void Init(GameController world)
-    {
-        this.gameController = world;
-    }
+            return false;
+        }
 
-    // Start is called before the first frame update
-    private void Awake()
-    {
-        this.carController = this.gameObject.GetComponent<CarController>();
+        protected virtual async void ChunkChanged(Chunk newChunk)
+        {
+        }
+
+        public void Init(GameController world)
+        {
+            this.gameController = world;
+        }
+
+        // Start is called before the first frame update
+        private void Awake()
+        {
+            this.carController = this.gameObject.GetComponent<CarController>();
+        }
     }
 }

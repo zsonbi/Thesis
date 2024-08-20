@@ -3,7 +3,7 @@ using System;
 
 namespace Thesis_backend.Data_Structures
 {
-    public record Task : DbElement
+    public record PlayerTask : DbElement
     {
         public User TaskOwner { get; set; }
         public string TaskName { get; set; }

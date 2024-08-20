@@ -1,5 +1,6 @@
 using Game.World;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Game
@@ -21,27 +22,27 @@ namespace Game
 
         public Vector3 PlayerPos => playerPrefab.transform.position;
 
-        public void Start()
+        public async void Start()
         {
             //player = Instantiate(playerPrefab).GetComponent<PlayerCar>();
             player = playerPrefab.GetComponent<PlayerCar>();
-            NewGame();
+            await NewGame();
             Application.targetFrameRate = 60;
             QualitySettings.vSyncCount = 0;
         }
 
-        public void NewGame()
+        public async Task NewGame()
         {
-            World.CreateNewGame();
+            await World.CreateNewGame();
             Vector3 baseChunkPos = World.GetChunk(GameConfig.CHUNK_COUNT / 2, GameConfig.CHUNK_COUNT / 2).gameObject.transform.position;
             player.gameObject.transform.position = new Vector3(baseChunkPos.x + GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL / 2 + 10, baseChunkPos.y + 2, baseChunkPos.z);
 
             player.Init(this);
         }
 
-        public void LoadAndDespawnChunks(int centerRow, int centerColumn)
+        public async Task LoadAndDespawnChunks(int centerRow, int centerColumn)
         {
-            SpawnNearbyChunks(centerRow, centerColumn);
+            await SpawnNearbyChunks(centerRow, centerColumn);
             DespawnFarAwayChunks(centerRow, centerColumn);
         }
 
@@ -65,7 +66,7 @@ namespace Game
             }
         }
 
-        private void SpawnNearbyChunks(int row, int col)
+        private async Task SpawnNearbyChunks(int row, int col)
         {
             ValidateAndLoadChunk(row, col);
 
@@ -89,21 +90,21 @@ namespace Game
                     }
                 }
 
-                ValidateAndLoadChunk(row + currSize, col + currSize);
-                ValidateAndLoadChunk(row - currSize, col - currSize);
-                ValidateAndLoadChunk(row + currSize, col - currSize);
-                ValidateAndLoadChunk(row - currSize, col + currSize);
+                await ValidateAndLoadChunk(row + currSize, col + currSize);
+                await ValidateAndLoadChunk(row - currSize, col - currSize);
+                await ValidateAndLoadChunk(row + currSize, col - currSize);
+                await ValidateAndLoadChunk(row - currSize, col + currSize);
             }
         }
 
-        private void ValidateAndLoadChunk(int row, int col)
+        private async Task ValidateAndLoadChunk(int row, int col)
         {
             if (row < 0 || row >= GameConfig.CHUNK_COUNT || col < 0 || col >= GameConfig.CHUNK_COUNT)
             {
                 return;
             }
             if (world is not null)
-                world.LoadChunk(col, row);
+                await world.LoadChunk(col, row);
         }
     }
 }

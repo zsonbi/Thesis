@@ -4,15 +4,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class CopCar : NpcCar
+namespace Game
 {
-    protected override void Update()
+    public class CopCar : NpcCar
     {
-        base.Update();
+        protected override void Update()
+        {
+            base.Update();
 
-        float steering = DetermineSteeringDirection();
-        float v = 10;
+            float steering = DetermineSteeringDirection();
+            float v = 10;
 
-        carController.Move(steering, v, 0f, 0f);
+            carController.Move(steering, v, 0f, 0f);
+        }
     }
 }

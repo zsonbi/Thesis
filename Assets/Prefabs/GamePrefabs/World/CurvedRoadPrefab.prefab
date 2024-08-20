@@ -9,12 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8447757992062049022}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedRoadPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8447757992062049022
 Transform:
@@ -80,38 +80,130 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7058057572581143746, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -7058057572581143746, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -7029948723529949830, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -7029948723529949830, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -6762517014755441986, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -6762517014755441986, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: -5649496677165748205, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 13400000, guid: b068d3fdf447ede4e931397903c3bc53, type: 2}
+    - target: {fileID: -5649496677165748205, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: -5586662916885441195, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 13400000, guid: b068d3fdf447ede4e931397903c3bc53, type: 2}
+    - target: {fileID: -5586662916885441195, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: -3464447691518478215, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 13400000, guid: 1ba3aeb1e7f540c40a9fca82de497841, type: 2}
+    - target: {fileID: -3464447691518478215, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: -3463794191080941676, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 13400000, guid: b068d3fdf447ede4e931397903c3bc53, type: 2}
+    - target: {fileID: -3463794191080941676, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: -3319436993132114744, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 13400000, guid: b068d3fdf447ede4e931397903c3bc53, type: 2}
+    - target: {fileID: -3319436993132114744, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: -1114319738945884446, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -1114319738945884446, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
       propertyPath: m_Name
       value: CurvedRoad1Way
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2125145206723017005, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2125145206723017005, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3856501175389307441, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 13400000, guid: b068d3fdf447ede4e931397903c3bc53, type: 2}
+    - target: {fileID: 3856501175389307441, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 4840304971901067434, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4840304971901067434, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097485731247386677, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097485731247386677, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8283413853521186527, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 13400000, guid: b068d3fdf447ede4e931397903c3bc53, type: 2}
+    - target: {fileID: 8283413853521186527, guid: 005750db3cdaaf644974ed09b0df6cb0, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

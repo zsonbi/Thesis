@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using DataTypes;
 using Assets.Scripts.Client.DataTypes;
 using System.Linq;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement;
+using System.Threading.Tasks;
+using System.Collections;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 namespace Game
 {
@@ -13,14 +18,6 @@ namespace Game
         /// </summary>
         public class Chunk : MonoBehaviour
         {
-            //[Header("Materials for the tiles")]
-            //[SerializeField]
-            //private Material[] TileMaterials;
-
-            //[SerializeField]
-            //[Header("PhysicsMaterials")]
-            //private PhysicMaterial[] PhysicsMaterials;
-
             [Header("Offset of perlin noise on X axis")]
             public float XOffset = 0f;
 
@@ -43,7 +40,9 @@ namespace Game
             private GameObject crossRoadsPrefab;
 
             [SerializeField]
-            public GameObject grassPrefab;
+            public AssetReference grassPrefab;
+
+            public List<Building> buildings;
 
             /// <summary>
             /// The size of the world on the z axis
@@ -65,12 +64,16 @@ namespace Game
             private Dictionary<ChunkCellType, List<Vector3>> chunkCells = new Dictionary<ChunkCellType, List<Vector3>>();
             private RoadGenerator roadGenerator;
             private GameWorld world;
-            private List<Vector3> roads = new List<Vector3>();
+            private List<Vector3Int> roads = new List<Vector3Int>();
             private Dictionary<ChunkCellType, List<GameObject>> objectsToCombine;
+            private BuildingCell[,] buildingCells;
 
             // Start is called before the first frame update
             private void Awake()
             {
+                buildings = new List<Building>();
+
+                Addressables.LoadAssetsAsync<GameObject>("Buildings", BuildingLoaded).WaitForCompletion();
                 //Load the values from the settings
                 LoadFromSettings();
                 //Randomizes the offset
@@ -82,12 +85,24 @@ namespace Game
                 objectsToCombine = new Dictionary<ChunkCellType, List<GameObject>>();
             }
 
+            // Callback for when each asset is loaded
+            private void BuildingLoaded(GameObject building)
+            {
+                buildings.Add(building.GetComponent<Building>());
+                buildings.Last().SetAddressableKey($"Buildings/{building.name}.prefab");
+            }
+
+            private (float, float) GetAbsolutePosition()
+            {
+                return (Col * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL * GameConfig.CHUNK_SIZE, Row * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL * GameConfig.CHUNK_SIZE);
+            }
+
             public void Display()
             {
                 this.gameObject.SetActive(true);
             }
 
-            public void InitChunk(int xOffset, int zOffset, List<EdgeRoadContainer> edgeRoads, GameWorld world)
+            public async Task InitChunk(int xOffset, int zOffset, List<EdgeRoadContainer> edgeRoads, GameWorld world)
             {
                 this.world = world;
                 this.Row = zOffset;
@@ -103,6 +118,7 @@ namespace Game
 
                 //Create the tiles
                 CreateTiles();
+
                 ////Create the props
                 //AddEnviromentObjects();
                 //Combine the objects
@@ -119,6 +135,7 @@ namespace Game
                 this.gameObject.transform.localPosition = new Vector3(xOffset * GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL, 0, zOffset * GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL);
 
                 this.gameObject.transform.localScale = new Vector3(GameConfig.CHUNK_SCALE, 1, GameConfig.CHUNK_SCALE);
+                await GenerateBuildings();
             }
 
             public void HideChunk()
@@ -134,42 +151,6 @@ namespace Game
                 }
                 return roads[Random.Range(0, roads.Count)];
             }
-
-            ////--------------------------------------------------------------
-            ///// <summary>
-            ///// Combines the gameobjects into meshes and cleares out that index of the objectsToCombine
-            ///// </summary>
-            ///// <param name="cellType">the index of the objectsToCombine we want to combine</param>
-            //private void CombineMeshes(ChunkCellType cellType)
-            //{
-            //    //Creates the parent which will have the combined mesh
-            //    GameObject parent = new GameObject(objectsToCombine[cellType][0].name.Replace("(Clone)", "") + "Mesh", typeof(MeshFilter), typeof(MeshRenderer));
-            //    MeshFilter[] meshFilters = parent.GetComponentsInChildren<MeshFilter>();
-            //    //Assign the material of the first gameobject in the list to the parent
-            //    parent.GetComponent<MeshRenderer>().material = objectsToCombine[cellType][0].GetComponent<MeshRenderer>().material;
-            //    parent.transform.parent = this.transform;
-            //    foreach (var meshFilter in meshFilters)
-            //    {
-            //        meshFilter.mesh = new Mesh();
-            //        //Makes so that really big meshes are supported also
-            //        meshFilter.mesh.indexFormat = UnityEngine.Rendering.IndexFormat.UInt32;
-            //        CombineInstance[] combine = new CombineInstance[objectsToCombine[cellType].Count];
-            //        for (int i = 0; i < objectsToCombine[cellType].Count; i++)
-            //        {
-            //            MeshFilter objectMeshFilter = objectsToCombine[cellType][i].GetComponent<MeshFilter>();
-            //            combine[i].mesh = objectMeshFilter.sharedMesh;
-            //            combine[i].transform = objectMeshFilter.transform.localToWorldMatrix;
-            //        }
-            //        meshFilter.mesh.CombineMeshes(combine, true, true);
-            //        meshFilter.gameObject.SetActive(true);
-            //    }
-            //    //Empties the list and deletes the no longer used gameobjects
-            //    do
-            //    {
-            //        Destroy(objectsToCombine[cellType][0]);
-            //        objectsToCombine[cellType].RemoveAt(0);
-            //    } while (objectsToCombine[cellType].Count > 0);
-            //}
 
             //--------------------------------------------------------------
             /// <summary>
@@ -242,7 +223,7 @@ namespace Game
             //---------------------------------------------------------------------------
             // <summary>
             // Creates the tiles for the world
-            private void CreateTiles()
+            private async void CreateTiles()
             {
                 for (int x = 0; x < xSize; x++)
                 {
@@ -269,7 +250,7 @@ namespace Game
                                 break;
 
                             case ChunkCellType.Grass:
-                                created = Instantiate(grassPrefab, this.transform);
+                                created = grassPrefab.InstantiateAsync(this.gameObject.transform).WaitForCompletion();
                                 break;
 
                             case ChunkCellType.Sand:
@@ -410,7 +391,7 @@ namespace Game
             {
                 if (roadGenerator.RoadMatrix[z, x])
                 {
-                    roads.Add(new Vector3(x, 0, z));
+                    roads.Add(new Vector3Int(x, 0, z));
                     return DetermineRoadType((int)x, (int)z);
                 }
 
@@ -428,6 +409,160 @@ namespace Game
                 else
                 {
                     return new ChunkCellContainer(ChunkCellType.Water, Vector3.zero);
+                }
+            }
+
+            public async Task GenerateBuildings()
+            {
+                buildingCells = new BuildingCell[GameConfig.CHUNK_SIZE, GameConfig.CHUNK_SIZE];
+                await Task.Run(() => GenerateCellMatrix());
+                await AddLargeRoadBuildings();
+            }
+
+            private void GenerateCellMatrix()
+            {
+                foreach (var road in roads)
+                {
+                    buildingCells[road.z, road.x] = new BuildingCell(BuildingDirection.None, false);
+
+                    for (var i = road.z - 1; i <= road.z + 1; i += 2)
+                    {
+                        if (i < 0 || i >= GameConfig.CHUNK_SIZE || buildingCells[i, road.x] != null)
+                        {
+                            continue;
+                        }
+                        if (roadGenerator.RoadMatrix[i, road.x])
+                        {
+                            buildingCells[i, road.x] = new BuildingCell(BuildingDirection.None, false);
+                        }
+                        else
+                        {
+                            BuildingDirection roadDir = BuildingDirection.None;
+                            if (i > road.z)
+                            {
+                                roadDir = BuildingDirection.Down;
+                            }
+                            else if (i < road.z)
+                            {
+                                roadDir = BuildingDirection.Up;
+                            }
+
+                            buildingCells[i, road.x] = new BuildingCell(roadDir, true);
+                        }
+                    }
+
+                    for (int j = road.x - 1; j <= road.x + 1; j += 2)
+                    {
+                        if (j < 0 || j >= GameConfig.CHUNK_SIZE || buildingCells[road.z, j] != null)
+                        {
+                            continue;
+                        }
+                        if (roadGenerator.RoadMatrix[road.z, j])
+                        {
+                            buildingCells[road.z, j] = new BuildingCell(BuildingDirection.None, false);
+                        }
+                        else
+                        {
+                            BuildingDirection roadDir = BuildingDirection.None;
+
+                            if (j > road.x)
+                            {
+                                roadDir = BuildingDirection.Left;
+                            }
+                            else if (j < road.x)
+                            {
+                                roadDir = BuildingDirection.Right;
+                            }
+
+                            buildingCells[road.z, j] = new BuildingCell(roadDir, true);
+                        }
+                    }
+                }
+
+                for (int i = 0; i < GameConfig.CHUNK_SIZE; i++)
+                {
+                    for (int j = 0; j < GameConfig.CHUNK_SIZE; j++)
+                    {
+                        if (buildingCells[i, j] is null)
+                        {
+                            buildingCells[i, j] = new BuildingCell(BuildingDirection.None, true);
+                        }
+                    }
+                }
+            }
+
+            private async Task AddLargeRoadBuildings()
+            {
+                for (int i = 1; i < GameConfig.CHUNK_SIZE - 1; i++)
+                {
+                    for (int j = 1; j < GameConfig.CHUNK_SIZE - 1; j++)
+                    {
+                        LockAndTryToPlaceBuilding(Random.Range(0, this.buildings.Count), i, j);
+                    }
+                }
+            }
+
+            private void LockAndTryToPlaceBuilding(int index, int row, int col)
+            {
+                if (buildingCells[row, col].GotRoadNext && buildingCells[row, col].Buildable)
+                {
+                    Building building = this.buildings[index];
+                    List<BuildingCell> neighbourBuildingCells = new List<BuildingCell>();
+                    float zPosCorrection = 0f;
+                    float xPosCorrection = 0f;
+                    if (((int)buildingCells[row, col].RoadDirection) % 2 == 1)
+                    {
+                        for (int i = building.RowCount / -2; i < Mathf.CeilToInt(building.RowCount / 2f); i++)
+                        {
+                            if (!buildingCells[row, col + i].Buildable)
+                            {
+                                return;
+                            }
+                            neighbourBuildingCells.Add(buildingCells[row, col + i]);
+                        }
+                        if (building.RowCount % 2 == 0)
+                        {
+                            xPosCorrection = GameConfig.CHUNK_SIZE / -2;
+                        }
+                        if (building.ColumnCount % 2 == 0)
+                        {
+                            zPosCorrection = GameConfig.CHUNK_SIZE / 2;
+                        }
+                    }
+                    else
+                    {
+                        for (int i = building.RowCount / -2; i < Mathf.CeilToInt(building.RowCount / 2f); i++)
+                        {
+                            if (!buildingCells[row + i, col].Buildable)
+                            {
+                                return;
+                            }
+                            neighbourBuildingCells.Add(buildingCells[row + i, col]);
+                        }
+
+                        if (building.RowCount % 2 == 0)
+                        {
+                            zPosCorrection = GameConfig.CHUNK_SIZE / -2;
+                        }
+                        if (building.ColumnCount % 2 == 0)
+                        {
+                            xPosCorrection = GameConfig.CHUNK_SIZE / 2;
+                        }
+                    }
+
+                    if (Random.Range(0, 10) == 0)
+                    {
+                        float rotation = ((int)buildingCells[row, col].RoadDirection) % 4 * 90f;
+                        var absolutePosition = GetAbsolutePosition();
+                        Vector3 postition = new Vector3(absolutePosition.Item1 + col * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL + xPosCorrection, 0, absolutePosition.Item2 + row * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL + zPosCorrection);
+
+                        Addressables.InstantiateAsync(building.AddressableKey, postition, Quaternion.Euler(0, rotation, 0), this.gameObject.transform);
+
+                        foreach (var item in neighbourBuildingCells)
+                        {
+                            item.Occupy();
+                        }
+                    }
                 }
             }
         }
