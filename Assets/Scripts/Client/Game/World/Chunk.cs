@@ -550,7 +550,7 @@ namespace Game
                         }
                     }
 
-                    if (Random.Range(0, 10) == 0)
+                    if (Random.Range(0, 3) == 0)
                     {
                         float rotation = ((int)buildingCells[row, col].RoadDirection) % 4 * 90f;
                         var absolutePosition = GetAbsolutePosition();
