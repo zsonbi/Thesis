@@ -9,6 +9,6 @@ PhysicMaterial:
   m_Name: RoadMaterial
   dynamicFriction: 0.5
   staticFriction: 4
-  bounciness: 0
+  bounciness: 0.1
   frictionCombine: 3
   bounceCombine: 3
