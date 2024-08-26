@@ -108,6 +108,7 @@ jobs:
       - uses: actions/upload-artifact@v4.3.3
         with:
           name: Build-${{ matrix.targetPlatform }}
+          if: always()
           path: build
           retention-days: 1
 
@@ -151,6 +152,7 @@ jobs:
       - uses: actions/upload-artifact@v4.3.3
         with:
           name: Build-${{ matrix.targetPlatform }}
+          if: always()
           path: build
           retention-days: 1
 
@@ -223,6 +225,8 @@ jobs:
               sudo mkdir -p Report;
               sudo chmod -R 777 release;
               sudo chmod -R 777 Report;
+            if: always()
+            
          
           - uses: actions/download-artifact@v4.1.7
             with:
