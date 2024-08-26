@@ -80,7 +80,7 @@ jobs:
 
   buildForLinux:
     needs: test
-    if: contains(github.ref, 'master') || contains(github.ref, 'Android-CI/CD-build')
+    if: contains(github.ref, 'master') || contains(github.ref, 'Skins-and-buildings')
     name: Build for ${{ matrix.targetPlatform }}
     runs-on: ubuntu-latest
     strategy:
@@ -113,7 +113,7 @@ jobs:
 
   buildForAndroid:
     needs: test
-    if: contains(github.ref, 'master') || contains(github.ref, 'Android-CI/CD-build')
+    if: contains(github.ref, 'master') || contains(github.ref, 'Skins-and-buildings')
     name: Build for ${{ matrix.targetPlatform }}
     runs-on: ubuntu-latest
     strategy:
@@ -155,7 +155,7 @@ jobs:
           retention-days: 1
 
   buildForWindows:
-    if: contains(github.ref, 'master')
+    if: contains(github.ref, 'master' || contains(github.ref, 'Skins-and-buildings')
     needs: test
     name: Build for ${{ matrix.targetPlatform }}
     runs-on: windows-latest
@@ -191,7 +191,7 @@ jobs:
 
   buildForWebGL:
         needs: test
-        if: contains(github.ref, 'master') || contains(github.ref, 'workflow-setup')
+        if: contains(github.ref, 'master') || contains(github.ref, 'Skins-and-buildings')
         name: Build for ${{ matrix.targetPlatform }}
         runs-on: ubuntu-latest
         strategy:
