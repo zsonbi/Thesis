@@ -96,6 +96,8 @@ jobs:
         with:
           path: Library
           key: Library-${{ matrix.targetPlatform }}
+      - name: Install Blender
+        run: sudo apt-get install blender -y
       - uses: game-ci/unity-builder@v4.2.3
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
@@ -137,6 +139,8 @@ jobs:
           # Before
           echo "Disk space before:"
           df -h
+      - name: Install Blender
+        run: sudo apt-get install blender -y
       - uses: game-ci/unity-builder@v4.2.3
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
@@ -170,6 +174,8 @@ jobs:
         with:
           path: Library
           key: Library-${{ matrix.targetPlatform }}
+      - name: Install Blender
+        run: sudo apt-get install blender -y
       - uses: game-ci/unity-builder@v4.2.3
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
@@ -201,6 +207,8 @@ jobs:
             with:
               path: Library
               key: Library-${{ matrix.targetPlatform }}
+          - name: Install Blender
+            run: sudo apt-get install blender -y
           - uses: game-ci/unity-builder@v4.2.3
             env:
               UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
