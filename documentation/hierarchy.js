@@ -24,20 +24,22 @@ var hierarchy =
     ] ],
     [ "MeshGenerator", "classMeshGenerator.html", null ],
     [ "MonoBehaviour", null, [
-      [ "Car", "classCar.html", [
-        [ "NpcCar", "classNpcCar.html", [
-          [ "CopCar", "classCopCar.html", null ]
+      [ "Building", "classBuilding.html", null ],
+      [ "CameraScript", "classCameraScript.html", null ],
+      [ "Game.Car", "classGame_1_1Car.html", [
+        [ "Game.NpcCar", "classGame_1_1NpcCar.html", [
+          [ "Game.CopCar", "classGame_1_1CopCar.html", null ]
         ] ]
       ] ],
-      [ "CarController", "classCarController.html", null ],
-      [ "CarProbeScript", "classCarProbeScript.html", null ],
-      [ "CarSpawner", "classCarSpawner.html", null ],
-      [ "EnableWheelPhysicMaterial", "classEnableWheelPhysicMaterial.html", null ],
+      [ "Game.CarController", "classGame_1_1CarController.html", null ],
+      [ "Game.CarProbeScript", "classGame_1_1CarProbeScript.html", null ],
+      [ "Game.EnableWheelPhysicMaterial", "classGame_1_1EnableWheelPhysicMaterial.html", null ],
       [ "Game.GameController", "classGame_1_1GameController.html", null ],
+      [ "Game.World.CarSpawner", "classGame_1_1World_1_1CarSpawner.html", null ],
       [ "Game.World.Chunk", "classGame_1_1World_1_1Chunk.html", null ],
       [ "Game.World.GameWorld", "classGame_1_1World_1_1GameWorld.html", null ],
       [ "ModalWindow", "classModalWindow.html", null ],
-      [ "Task", "classTask.html", null ],
+      [ "PlayerTask", "classPlayerTask.html", null ],
       [ "TaskOpenPanelController", "classTaskOpenPanelController.html", null ],
       [ "UIController", "classUIController.html", null ],
       [ "UnityStandardAssets.CrossPlatformInput.AxisTouchButton", "classUnityStandardAssets_1_1CrossPlatformInput_1_1AxisTouchButton.html", null ],

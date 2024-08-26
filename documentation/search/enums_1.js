@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['chunkcelltype_897',['ChunkCellType',['../ChunkCellType_8cs.html#a49876fbcd15399310f369ea380f29c6b',1,'ChunkCellType.cs']]],
-  ['controlstyle_898',['ControlStyle',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#ab4c68ac6f2b8a41c5029c105833ebfb6',1,'UnityStandardAssets::CrossPlatformInput::TouchPad']]]
+  ['buildingdirection_956',['BuildingDirection',['../namespaceDataTypes.html#a28b73b3b0b416b3b22c23aee2a226126',1,'DataTypes']]],
+  ['buildingtype_957',['BuildingType',['../BuildingType_8cs.html#aba2b45f536f3c9719aea96bb472784a4',1,'BuildingType.cs']]]
 ];

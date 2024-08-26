@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['phpreturnobject_515',['PhpReturnObject',['../classPhpReturnObject.html',1,'']]]
+  ['phpreturnobject_551',['PhpReturnObject',['../classPhpReturnObject.html',1,'']]],
+  ['playertask_552',['PlayerTask',['../classPlayerTask.html',1,'']]]
 ];

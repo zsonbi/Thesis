@@ -104,11 +104,11 @@ Inheritance diagram for Game.World.GameWorld:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a78654137c458c1b1917285e28d3d270b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGame_1_1World_1_1Chunk.html">Chunk</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1World_1_1GameWorld.html#a78654137c458c1b1917285e28d3d270b">GetChunk</a> (Vector3 GameObjectPos)</td></tr>
 <tr class="separator:a78654137c458c1b1917285e28d3d270b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ac477b133462da967c03dbc6905c10c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1World_1_1GameWorld.html#a0ac477b133462da967c03dbc6905c10c">CreateNewGame</a> ()</td></tr>
-<tr class="separator:a0ac477b133462da967c03dbc6905c10c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64b84422928c9278154b1fa922780daf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1World_1_1GameWorld.html#a64b84422928c9278154b1fa922780daf">LoadChunk</a> (int x, int z)</td></tr>
-<tr class="memdesc:a64b84422928c9278154b1fa922780daf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a chunk  <a href="classGame_1_1World_1_1GameWorld.html#a64b84422928c9278154b1fa922780daf">More...</a><br /></td></tr>
-<tr class="separator:a64b84422928c9278154b1fa922780daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bc9140bbdf4b45f229d4e900db98d9b"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1World_1_1GameWorld.html#a5bc9140bbdf4b45f229d4e900db98d9b">CreateNewGame</a> ()</td></tr>
+<tr class="separator:a5bc9140bbdf4b45f229d4e900db98d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a730e116826e3519544de155b667042ba"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1World_1_1GameWorld.html#a730e116826e3519544de155b667042ba">LoadChunk</a> (int x, int z)</td></tr>
+<tr class="memdesc:a730e116826e3519544de155b667042ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a chunk  <a href="classGame_1_1World_1_1GameWorld.html#a730e116826e3519544de155b667042ba">More...</a><br /></td></tr>
+<tr class="separator:a730e116826e3519544de155b667042ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae827c1689140d8e00bfbd0845822793f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1World_1_1GameWorld.html#ae827c1689140d8e00bfbd0845822793f">HideChunk</a> (int x, int z)</td></tr>
 <tr class="separator:ae827c1689140d8e00bfbd0845822793f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65121f349aba25f65860ed459504684d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGame_1_1World_1_1Chunk.html">Chunk</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1World_1_1GameWorld.html#a65121f349aba25f65860ed459504684d">GetChunk</a> (int x, int z)</td></tr>
@@ -128,7 +128,7 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for handling chunk loading and unloading </p>
 
-<p class="definition">Definition at line <a class="el" href="World_8cs_source.html#l00013">13</a> of file <a class="el" href="World_8cs_source.html">World.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="World_8cs_source.html#l00014">14</a> of file <a class="el" href="World_8cs_source.html">World.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a78654137c458c1b1917285e28d3d270b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a78654137c458c1b1917285e28d3d270b">&#9670;&nbsp;</a></span>GetChunk() <span class="overload">[1/2]</span></h2>
@@ -154,31 +154,31 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="World_8cs_source.html#l00029">29</a> of file <a class="el" href="World_8cs_source.html">World.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <span class="keywordtype">int</span> row = (int)(GameObjectPos.z / (<a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#a767e83ea60cba2fff6d2c7faccf4890d">CHUNK_SIZE</a> * <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#a28c600fb4f244669276b23704ada46ee">CHUNK_SCALE</a> * <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#a915ac5cd4099430ccc48cea1f4876c4b">CHUNK_CELL</a>));</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <span class="keywordtype">int</span> col = (int)(GameObjectPos.x / (<a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#a767e83ea60cba2fff6d2c7faccf4890d">CHUNK_SIZE</a> * <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#a28c600fb4f244669276b23704ada46ee">CHUNK_SCALE</a> * <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#a915ac5cd4099430ccc48cea1f4876c4b">CHUNK_CELL</a>));</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <span class="keywordflow">if</span> (row &lt; 0 || col &lt; 0 || row &gt;= <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a> || col &gt;= <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a>)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[row, col];</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            }</div>
+<p class="definition">Definition at line <a class="el" href="World_8cs_source.html#l00030">30</a> of file <a class="el" href="World_8cs_source.html">World.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <span class="keywordtype">int</span> row = (int)(GameObjectPos.z / (<a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#a767e83ea60cba2fff6d2c7faccf4890d">CHUNK_SIZE</a> * <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#a28c600fb4f244669276b23704ada46ee">CHUNK_SCALE</a> * <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#a915ac5cd4099430ccc48cea1f4876c4b">CHUNK_CELL</a>));</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <span class="keywordtype">int</span> col = (int)(GameObjectPos.x / (<a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#a767e83ea60cba2fff6d2c7faccf4890d">CHUNK_SIZE</a> * <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#a28c600fb4f244669276b23704ada46ee">CHUNK_SCALE</a> * <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#a915ac5cd4099430ccc48cea1f4876c4b">CHUNK_CELL</a>));</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                <span class="keywordflow">if</span> (row &lt; 0 || col &lt; 0 || row &gt;= <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a> || col &gt;= <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a>)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[row, col];</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            }</div>
 <div class="ttc" id="aclassGameConfig_html"><div class="ttname"><a href="classGameConfig.html">GameConfig</a></div><div class="ttdef"><b>Definition:</b> <a href="GameConfig_8cs_source.html#l00001">GameConfig.cs:2</a></div></div>
 <div class="ttc" id="aclassGameConfig_html_a28c600fb4f244669276b23704ada46ee"><div class="ttname"><a href="classGameConfig.html#a28c600fb4f244669276b23704ada46ee">GameConfig.CHUNK_SCALE</a></div><div class="ttdeci">const float CHUNK_SCALE</div><div class="ttdef"><b>Definition:</b> <a href="GameConfig_8cs_source.html#l00009">GameConfig.cs:9</a></div></div>
 <div class="ttc" id="aclassGameConfig_html_a767e83ea60cba2fff6d2c7faccf4890d"><div class="ttname"><a href="classGameConfig.html#a767e83ea60cba2fff6d2c7faccf4890d">GameConfig.CHUNK_SIZE</a></div><div class="ttdeci">const int CHUNK_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="GameConfig_8cs_source.html#l00003">GameConfig.cs:3</a></div></div>
 <div class="ttc" id="aclassGameConfig_html_a915ac5cd4099430ccc48cea1f4876c4b"><div class="ttname"><a href="classGameConfig.html#a915ac5cd4099430ccc48cea1f4876c4b">GameConfig.CHUNK_CELL</a></div><div class="ttdeci">const int CHUNK_CELL</div><div class="ttdef"><b>Definition:</b> <a href="GameConfig_8cs_source.html#l00007">GameConfig.cs:7</a></div></div>
 <div class="ttc" id="aclassGameConfig_html_afa2ddc4407f1664515de38348aadd1f7"><div class="ttname"><a href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">GameConfig.CHUNK_COUNT</a></div><div class="ttdeci">const int CHUNK_COUNT</div><div class="ttdef"><b>Definition:</b> <a href="GameConfig_8cs_source.html#l00005">GameConfig.cs:5</a></div></div>
-<div class="ttc" id="aclassGame_1_1World_1_1GameWorld_html_a206bf3980c7611f2981797081c2ac1ff"><div class="ttname"><a href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Game.World.GameWorld.Chunks</a></div><div class="ttdeci">Chunk[,] Chunks</div><div class="ttdoc">The chunks of the world</div><div class="ttdef"><b>Definition:</b> <a href="World_8cs_source.html#l00027">World.cs:27</a></div></div>
+<div class="ttc" id="aclassGame_1_1World_1_1GameWorld_html_a206bf3980c7611f2981797081c2ac1ff"><div class="ttname"><a href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Game.World.GameWorld.Chunks</a></div><div class="ttdeci">Chunk[,] Chunks</div><div class="ttdoc">The chunks of the world</div><div class="ttdef"><b>Definition:</b> <a href="World_8cs_source.html#l00028">World.cs:28</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="GameConfig_8cs_source.html#l00007">GameConfig.CHUNK_CELL</a>, <a class="el" href="GameConfig_8cs_source.html#l00005">GameConfig.CHUNK_COUNT</a>, <a class="el" href="GameConfig_8cs_source.html#l00009">GameConfig.CHUNK_SCALE</a>, <a class="el" href="GameConfig_8cs_source.html#l00003">GameConfig.CHUNK_SIZE</a>, and <a class="el" href="World_8cs_source.html#l00027">Game.World.GameWorld.Chunks</a>.</p>
+<p class="reference">References <a class="el" href="GameConfig_8cs_source.html#l00007">GameConfig.CHUNK_CELL</a>, <a class="el" href="GameConfig_8cs_source.html#l00005">GameConfig.CHUNK_COUNT</a>, <a class="el" href="GameConfig_8cs_source.html#l00009">GameConfig.CHUNK_SCALE</a>, <a class="el" href="GameConfig_8cs_source.html#l00003">GameConfig.CHUNK_SIZE</a>, and <a class="el" href="World_8cs_source.html#l00028">Game.World.GameWorld.Chunks</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Car_8cs_source.html#l00025">Car.ChangeChunkIfNeeded()</a>, <a class="el" href="GameController_8cs_source.html#l00033">Game.GameController.NewGame()</a>, and <a class="el" href="CarSpawner_8cs_source.html#l00032">CarSpawner.SpawnPolice()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Car_8cs_source.html#l00027">Game.Car.ChangeChunkIfNeeded()</a>, <a class="el" href="GameController_8cs_source.html#l00034">Game.GameController.NewGame()</a>, and <a class="el" href="CarSpawner_8cs_source.html#l00036">Game.World.CarSpawner.SpawnPolice()</a>.</p>
 
 </div>
 </div>
-<a id="a0ac477b133462da967c03dbc6905c10c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ac477b133462da967c03dbc6905c10c">&#9670;&nbsp;</a></span>CreateNewGame()</h2>
+<a id="a5bc9140bbdf4b45f229d4e900db98d9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bc9140bbdf4b45f229d4e900db98d9b">&#9670;&nbsp;</a></span>CreateNewGame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -187,7 +187,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Game.World.GameWorld.CreateNewGame </td>
+          <td class="memname">async Task Game.World.GameWorld.CreateNewGame </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -200,22 +200,22 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="World_8cs_source.html#l00040">40</a> of file <a class="el" href="World_8cs_source.html">World.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a> = <span class="keyword">new</span> Chunk[<a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a>, <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a>];</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <a class="code" href="classGame_1_1World_1_1GameWorld.html#a64b84422928c9278154b1fa922780daf">LoadChunk</a>(<a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a> / 2, <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a> / 2);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            }</div>
-<div class="ttc" id="aclassGame_1_1World_1_1GameWorld_html_a64b84422928c9278154b1fa922780daf"><div class="ttname"><a href="classGame_1_1World_1_1GameWorld.html#a64b84422928c9278154b1fa922780daf">Game.World.GameWorld.LoadChunk</a></div><div class="ttdeci">void LoadChunk(int x, int z)</div><div class="ttdoc">Loads a chunk</div><div class="ttdef"><b>Definition:</b> <a href="World_8cs_source.html#l00052">World.cs:52</a></div></div>
+<p class="definition">Definition at line <a class="el" href="World_8cs_source.html#l00041">41</a> of file <a class="el" href="World_8cs_source.html">World.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a> = <span class="keyword">new</span> Chunk[<a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a>, <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a>];</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                await <a class="code" href="classGame_1_1World_1_1GameWorld.html#a730e116826e3519544de155b667042ba">LoadChunk</a>(<a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a> / 2, <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a> / 2);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            }</div>
+<div class="ttc" id="aclassGame_1_1World_1_1GameWorld_html_a730e116826e3519544de155b667042ba"><div class="ttname"><a href="classGame_1_1World_1_1GameWorld.html#a730e116826e3519544de155b667042ba">Game.World.GameWorld.LoadChunk</a></div><div class="ttdeci">async Task LoadChunk(int x, int z)</div><div class="ttdoc">Loads a chunk</div><div class="ttdef"><b>Definition:</b> <a href="World_8cs_source.html#l00053">World.cs:53</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="GameConfig_8cs_source.html#l00005">GameConfig.CHUNK_COUNT</a>, <a class="el" href="World_8cs_source.html#l00027">Game.World.GameWorld.Chunks</a>, and <a class="el" href="World_8cs_source.html#l00052">Game.World.GameWorld.LoadChunk()</a>.</p>
+<p class="reference">References <a class="el" href="GameConfig_8cs_source.html#l00005">GameConfig.CHUNK_COUNT</a>, <a class="el" href="World_8cs_source.html#l00028">Game.World.GameWorld.Chunks</a>, and <a class="el" href="World_8cs_source.html#l00053">Game.World.GameWorld.LoadChunk()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00033">Game.GameController.NewGame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00034">Game.GameController.NewGame()</a>.</p>
 
 </div>
 </div>
-<a id="a64b84422928c9278154b1fa922780daf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64b84422928c9278154b1fa922780daf">&#9670;&nbsp;</a></span>LoadChunk()</h2>
+<a id="a730e116826e3519544de155b667042ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a730e116826e3519544de155b667042ba">&#9670;&nbsp;</a></span>LoadChunk()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -224,7 +224,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Game.World.GameWorld.LoadChunk </td>
+          <td class="memname">async Task Game.World.GameWorld.LoadChunk </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>x</em>, </td>
@@ -257,43 +257,43 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="World_8cs_source.html#l00052">52</a> of file <a class="el" href="World_8cs_source.html">World.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z, x] == <span class="keyword">null</span>)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    <a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z, x] = Instantiate(<a class="code" href="classGame_1_1World_1_1GameWorld.html#a860bbea1d19413d639e7963e53e45d58">ChunkPrefab</a>, this.transform, <span class="keyword">true</span>).GetComponent&lt;Chunk&gt;();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                    List&lt;EdgeRoadContainer&gt; edges = <span class="keyword">new</span> List&lt;EdgeRoadContainer&gt;();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                    <span class="keywordflow">if</span> (z - 1 &gt;= 0 &amp;&amp; <a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z - 1, x] != <span class="keyword">null</span>)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                    {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                        edges.AddRange(<a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z - 1, x].EdgeRoads.Where(x =&gt; x.EdgeRoad.y == <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#a767e83ea60cba2fff6d2c7faccf4890d">CHUNK_SIZE</a> - 1));</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                    }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                    <span class="keywordflow">if</span> (z + 1 &lt; <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a> &amp;&amp; <a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z + 1, x] != <span class="keyword">null</span>)</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                    {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                        edges.AddRange(<a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z + 1, x].EdgeRoads.Where(x =&gt; x.EdgeRoad.y == 0));</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                    }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                    <span class="keywordflow">if</span> (x - 1 &gt;= 0 &amp;&amp; <a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z, x - 1] != <span class="keyword">null</span>)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                    {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                        edges.AddRange(<a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z, x - 1].EdgeRoads.Where(x =&gt; x.EdgeRoad.x == <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#a767e83ea60cba2fff6d2c7faccf4890d">CHUNK_SIZE</a> - 1));</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                    }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                    <span class="keywordflow">if</span> (x + 1 &lt; <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a> &amp;&amp; <a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z, x + 1] != <span class="keyword">null</span>)</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                    {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                        edges.AddRange(<a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z, x + 1].EdgeRoads.Where(x =&gt; x.EdgeRoad.x == 0));</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                    }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                    <a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z, x].<a class="code" href="classGame_1_1World_1_1Chunk.html#a8c50dbba38fc9e26f3d2ff9b43cd40b8">InitChunk</a>(x, z, edges, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                    <a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z, x].<a class="code" href="classGame_1_1World_1_1Chunk.html#a475512064d145228ca7084735b7e2f2f">Display</a>();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            }</div>
-<div class="ttc" id="aclassGame_1_1World_1_1Chunk_html_a475512064d145228ca7084735b7e2f2f"><div class="ttname"><a href="classGame_1_1World_1_1Chunk.html#a475512064d145228ca7084735b7e2f2f">Game.World.Chunk.Display</a></div><div class="ttdeci">void Display()</div><div class="ttdef"><b>Definition:</b> <a href="Chunk_8cs_source.html#l00086">Chunk.cs:86</a></div></div>
-<div class="ttc" id="aclassGame_1_1World_1_1Chunk_html_a8c50dbba38fc9e26f3d2ff9b43cd40b8"><div class="ttname"><a href="classGame_1_1World_1_1Chunk.html#a8c50dbba38fc9e26f3d2ff9b43cd40b8">Game.World.Chunk.InitChunk</a></div><div class="ttdeci">void InitChunk(int xOffset, int zOffset, List&lt; EdgeRoadContainer &gt; edgeRoads, GameWorld world)</div><div class="ttdef"><b>Definition:</b> <a href="Chunk_8cs_source.html#l00091">Chunk.cs:91</a></div></div>
-<div class="ttc" id="aclassGame_1_1World_1_1GameWorld_html_a860bbea1d19413d639e7963e53e45d58"><div class="ttname"><a href="classGame_1_1World_1_1GameWorld.html#a860bbea1d19413d639e7963e53e45d58">Game.World.GameWorld.ChunkPrefab</a></div><div class="ttdeci">GameObject ChunkPrefab</div><div class="ttdoc">Chunk prefab for the chunk creation</div><div class="ttdef"><b>Definition:</b> <a href="World_8cs_source.html#l00019">World.cs:19</a></div></div>
+<p class="definition">Definition at line <a class="el" href="World_8cs_source.html#l00053">53</a> of file <a class="el" href="World_8cs_source.html">World.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z, x] == <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                    <a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z, x] = Instantiate(<a class="code" href="classGame_1_1World_1_1GameWorld.html#a860bbea1d19413d639e7963e53e45d58">ChunkPrefab</a>, this.transform, <span class="keyword">true</span>).GetComponent&lt;Chunk&gt;();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                    List&lt;EdgeRoadContainer&gt; edges = <span class="keyword">new</span> List&lt;EdgeRoadContainer&gt;();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                    <span class="keywordflow">if</span> (z - 1 &gt;= 0 &amp;&amp; <a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z - 1, x] != <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                    {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                        edges.AddRange(<a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z - 1, x].EdgeRoads.Where(x =&gt; x.EdgeRoad.y == <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#a767e83ea60cba2fff6d2c7faccf4890d">CHUNK_SIZE</a> - 1));</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                    }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                    <span class="keywordflow">if</span> (z + 1 &lt; <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a> &amp;&amp; <a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z + 1, x] != <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                    {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                        edges.AddRange(<a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z + 1, x].EdgeRoads.Where(x =&gt; x.EdgeRoad.y == 0));</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                    <span class="keywordflow">if</span> (x - 1 &gt;= 0 &amp;&amp; <a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z, x - 1] != <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                    {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                        edges.AddRange(<a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z, x - 1].EdgeRoads.Where(x =&gt; x.EdgeRoad.x == <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#a767e83ea60cba2fff6d2c7faccf4890d">CHUNK_SIZE</a> - 1));</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                    <span class="keywordflow">if</span> (x + 1 &lt; <a class="code" href="classGameConfig.html">GameConfig</a>.<a class="code" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a> &amp;&amp; <a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z, x + 1] != <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                    {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                        edges.AddRange(<a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z, x + 1].EdgeRoads.Where(x =&gt; x.EdgeRoad.x == 0));</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                    }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                    await <a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z, x].<a class="code" href="classGame_1_1World_1_1Chunk.html#a16255274ddf726bfa6e345189459e07d">InitChunk</a>(x, z, edges, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                    <a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z, x].<a class="code" href="classGame_1_1World_1_1Chunk.html#a475512064d145228ca7084735b7e2f2f">Display</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            }</div>
+<div class="ttc" id="aclassGame_1_1World_1_1Chunk_html_a16255274ddf726bfa6e345189459e07d"><div class="ttname"><a href="classGame_1_1World_1_1Chunk.html#a16255274ddf726bfa6e345189459e07d">Game.World.Chunk.InitChunk</a></div><div class="ttdeci">async Task InitChunk(int xOffset, int zOffset, List&lt; EdgeRoadContainer &gt; edgeRoads, GameWorld world)</div><div class="ttdef"><b>Definition:</b> <a href="Chunk_8cs_source.html#l00105">Chunk.cs:105</a></div></div>
+<div class="ttc" id="aclassGame_1_1World_1_1Chunk_html_a475512064d145228ca7084735b7e2f2f"><div class="ttname"><a href="classGame_1_1World_1_1Chunk.html#a475512064d145228ca7084735b7e2f2f">Game.World.Chunk.Display</a></div><div class="ttdeci">void Display()</div><div class="ttdef"><b>Definition:</b> <a href="Chunk_8cs_source.html#l00100">Chunk.cs:100</a></div></div>
+<div class="ttc" id="aclassGame_1_1World_1_1GameWorld_html_a860bbea1d19413d639e7963e53e45d58"><div class="ttname"><a href="classGame_1_1World_1_1GameWorld.html#a860bbea1d19413d639e7963e53e45d58">Game.World.GameWorld.ChunkPrefab</a></div><div class="ttdeci">GameObject ChunkPrefab</div><div class="ttdoc">Chunk prefab for the chunk creation</div><div class="ttdef"><b>Definition:</b> <a href="World_8cs_source.html#l00020">World.cs:20</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="GameConfig_8cs_source.html#l00005">GameConfig.CHUNK_COUNT</a>, <a class="el" href="GameConfig_8cs_source.html#l00003">GameConfig.CHUNK_SIZE</a>, <a class="el" href="World_8cs_source.html#l00019">Game.World.GameWorld.ChunkPrefab</a>, <a class="el" href="World_8cs_source.html#l00027">Game.World.GameWorld.Chunks</a>, <a class="el" href="Chunk_8cs_source.html#l00086">Game.World.Chunk.Display()</a>, and <a class="el" href="Chunk_8cs_source.html#l00091">Game.World.Chunk.InitChunk()</a>.</p>
+<p class="reference">References <a class="el" href="GameConfig_8cs_source.html#l00005">GameConfig.CHUNK_COUNT</a>, <a class="el" href="GameConfig_8cs_source.html#l00003">GameConfig.CHUNK_SIZE</a>, <a class="el" href="World_8cs_source.html#l00020">Game.World.GameWorld.ChunkPrefab</a>, <a class="el" href="World_8cs_source.html#l00028">Game.World.GameWorld.Chunks</a>, <a class="el" href="Chunk_8cs_source.html#l00100">Game.World.Chunk.Display()</a>, and <a class="el" href="Chunk_8cs_source.html#l00105">Game.World.Chunk.InitChunk()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="World_8cs_source.html#l00040">Game.World.GameWorld.CreateNewGame()</a>, <a class="el" href="World_8cs_source.html#l00091">Game.World.GameWorld.GetChunk()</a>, and <a class="el" href="GameController_8cs_source.html#l00099">Game.GameController.ValidateAndLoadChunk()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="World_8cs_source.html#l00041">Game.World.GameWorld.CreateNewGame()</a>, <a class="el" href="World_8cs_source.html#l00092">Game.World.GameWorld.GetChunk()</a>, and <a class="el" href="GameController_8cs_source.html#l00100">Game.GameController.ValidateAndLoadChunk()</a>.</p>
 
 </div>
 </div>
@@ -331,18 +331,18 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="World_8cs_source.html#l00083">83</a> of file <a class="el" href="World_8cs_source.html">World.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z, x] is not <span class="keyword">null</span>)</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                    <a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z, x].<a class="code" href="classGame_1_1World_1_1Chunk.html#a118e0c25d254444e6663404fd61749d9">HideChunk</a>();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            }</div>
-<div class="ttc" id="aclassGame_1_1World_1_1Chunk_html_a118e0c25d254444e6663404fd61749d9"><div class="ttname"><a href="classGame_1_1World_1_1Chunk.html#a118e0c25d254444e6663404fd61749d9">Game.World.Chunk.HideChunk</a></div><div class="ttdeci">void HideChunk()</div><div class="ttdef"><b>Definition:</b> <a href="Chunk_8cs_source.html#l00123">Chunk.cs:123</a></div></div>
+<p class="definition">Definition at line <a class="el" href="World_8cs_source.html#l00084">84</a> of file <a class="el" href="World_8cs_source.html">World.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z, x] is not <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                    <a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z, x].<a class="code" href="classGame_1_1World_1_1Chunk.html#a118e0c25d254444e6663404fd61749d9">HideChunk</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            }</div>
+<div class="ttc" id="aclassGame_1_1World_1_1Chunk_html_a118e0c25d254444e6663404fd61749d9"><div class="ttname"><a href="classGame_1_1World_1_1Chunk.html#a118e0c25d254444e6663404fd61749d9">Game.World.Chunk.HideChunk</a></div><div class="ttdeci">void HideChunk()</div><div class="ttdef"><b>Definition:</b> <a href="Chunk_8cs_source.html#l00141">Chunk.cs:141</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="World_8cs_source.html#l00027">Game.World.GameWorld.Chunks</a>, and <a class="el" href="Chunk_8cs_source.html#l00123">Game.World.Chunk.HideChunk()</a>.</p>
+<p class="reference">References <a class="el" href="World_8cs_source.html#l00028">Game.World.GameWorld.Chunks</a>, and <a class="el" href="Chunk_8cs_source.html#l00141">Game.World.Chunk.HideChunk()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00048">Game.GameController.DespawnFarAwayChunks()</a>, and <a class="el" href="World_8cs_source.html#l00091">Game.World.GameWorld.GetChunk()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00049">Game.GameController.DespawnFarAwayChunks()</a>, and <a class="el" href="World_8cs_source.html#l00092">Game.World.GameWorld.GetChunk()</a>.</p>
 
 </div>
 </div>
@@ -380,19 +380,19 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="World_8cs_source.html#l00091">91</a> of file <a class="el" href="World_8cs_source.html">World.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z, x] is <span class="keyword">null</span>)</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                    <a class="code" href="classGame_1_1World_1_1GameWorld.html#a64b84422928c9278154b1fa922780daf">LoadChunk</a>(x, z);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                    <a class="code" href="classGame_1_1World_1_1GameWorld.html#ae827c1689140d8e00bfbd0845822793f">HideChunk</a>(x, z);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z, x];</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            }</div>
-<div class="ttc" id="aclassGame_1_1World_1_1GameWorld_html_ae827c1689140d8e00bfbd0845822793f"><div class="ttname"><a href="classGame_1_1World_1_1GameWorld.html#ae827c1689140d8e00bfbd0845822793f">Game.World.GameWorld.HideChunk</a></div><div class="ttdeci">void HideChunk(int x, int z)</div><div class="ttdef"><b>Definition:</b> <a href="World_8cs_source.html#l00083">World.cs:83</a></div></div>
+<p class="definition">Definition at line <a class="el" href="World_8cs_source.html#l00092">92</a> of file <a class="el" href="World_8cs_source.html">World.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z, x] is <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                    <a class="code" href="classGame_1_1World_1_1GameWorld.html#a730e116826e3519544de155b667042ba">LoadChunk</a>(x, z);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                    <a class="code" href="classGame_1_1World_1_1GameWorld.html#ae827c1689140d8e00bfbd0845822793f">HideChunk</a>(x, z);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff">Chunks</a>[z, x];</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            }</div>
+<div class="ttc" id="aclassGame_1_1World_1_1GameWorld_html_ae827c1689140d8e00bfbd0845822793f"><div class="ttname"><a href="classGame_1_1World_1_1GameWorld.html#ae827c1689140d8e00bfbd0845822793f">Game.World.GameWorld.HideChunk</a></div><div class="ttdeci">void HideChunk(int x, int z)</div><div class="ttdef"><b>Definition:</b> <a href="World_8cs_source.html#l00084">World.cs:84</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="World_8cs_source.html#l00027">Game.World.GameWorld.Chunks</a>, <a class="el" href="World_8cs_source.html#l00083">Game.World.GameWorld.HideChunk()</a>, and <a class="el" href="World_8cs_source.html#l00052">Game.World.GameWorld.LoadChunk()</a>.</p>
+<p class="reference">References <a class="el" href="World_8cs_source.html#l00028">Game.World.GameWorld.Chunks</a>, <a class="el" href="World_8cs_source.html#l00084">Game.World.GameWorld.HideChunk()</a>, and <a class="el" href="World_8cs_source.html#l00053">Game.World.GameWorld.LoadChunk()</a>.</p>
 
 </div>
 </div>
@@ -419,9 +419,9 @@ Private Attributes</h2></td></tr>
 
 <p><a class="el" href="classGame_1_1World_1_1Chunk.html" title="Used for generating a new world">Chunk</a> prefab for the chunk creation </p>
 
-<p class="definition">Definition at line <a class="el" href="World_8cs_source.html#l00019">19</a> of file <a class="el" href="World_8cs_source.html">World.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="World_8cs_source.html#l00020">20</a> of file <a class="el" href="World_8cs_source.html">World.cs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="World_8cs_source.html#l00052">Game.World.GameWorld.LoadChunk()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="World_8cs_source.html#l00053">Game.World.GameWorld.LoadChunk()</a>.</p>
 
 </div>
 </div>
@@ -445,7 +445,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="World_8cs_source.html#l00022">22</a> of file <a class="el" href="World_8cs_source.html">World.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="World_8cs_source.html#l00023">23</a> of file <a class="el" href="World_8cs_source.html">World.cs</a>.</p>
 
 </div>
 </div>
@@ -471,9 +471,9 @@ Private Attributes</h2></td></tr>
 
 <p>The chunks of the world </p>
 
-<p class="definition">Definition at line <a class="el" href="World_8cs_source.html#l00027">27</a> of file <a class="el" href="World_8cs_source.html">World.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="World_8cs_source.html#l00028">28</a> of file <a class="el" href="World_8cs_source.html">World.cs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="World_8cs_source.html#l00040">Game.World.GameWorld.CreateNewGame()</a>, <a class="el" href="World_8cs_source.html#l00029">Game.World.GameWorld.GetChunk()</a>, <a class="el" href="World_8cs_source.html#l00083">Game.World.GameWorld.HideChunk()</a>, and <a class="el" href="World_8cs_source.html#l00052">Game.World.GameWorld.LoadChunk()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="World_8cs_source.html#l00041">Game.World.GameWorld.CreateNewGame()</a>, <a class="el" href="World_8cs_source.html#l00030">Game.World.GameWorld.GetChunk()</a>, <a class="el" href="World_8cs_source.html#l00084">Game.World.GameWorld.HideChunk()</a>, and <a class="el" href="World_8cs_source.html#l00053">Game.World.GameWorld.LoadChunk()</a>.</p>
 
 </div>
 </div>

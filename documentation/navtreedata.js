@@ -56,10 +56,10 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"ApiTypes_2Task_8cs.html",
-"classGameConfig.html#a28c600fb4f244669276b23704ada46ee",
-"classUnityStandardAssets_1_1CrossPlatformInput_1_1InputAxisScrollbar.html#a67a8adfeb9772b29115dfb34c52b11d0",
-"namespaceThesis__backend_1_1Data__Structures.html#aa44d6a0f27adec065161aeeb258e68c1"
+"ApiTypes_2PlayerTask_8cs.html",
+"classGame_1_1CarController.html#a668b8439a2b56186422d5423dac7c0f5",
+"classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a2f7717dab92a1288e0cc6fdfbac750f1",
+"functions_func_l.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

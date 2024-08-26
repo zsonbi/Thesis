@@ -8,7 +8,7 @@ var classTaskOpenPanelController =
     [ "MakeItGoodTask", "classTaskOpenPanelController.html#a51848899b40753a10e249992b6c82ea5", null ],
     [ "Cancel", "classTaskOpenPanelController.html#a721ffa89dcd6e24eb32eb194a161356b", null ],
     [ "Save", "classTaskOpenPanelController.html#a8f6a5485cd8aa866f2983339beeece7e", null ],
-    [ "SavedTask", "classTaskOpenPanelController.html#a861c34bf5bd58bcaea0e9a309d4cb14c", null ],
+    [ "SavedTask", "classTaskOpenPanelController.html#ab2e7b5784cea9de501d94d73d2f89714", null ],
     [ "DeleteTask", "classTaskOpenPanelController.html#a20a5400ef991e24a2832a97dceb6e82d", null ],
     [ "DeletedTask", "classTaskOpenPanelController.html#a5cfa9ad8bb8f3783ffc7df689579b2ef", null ],
     [ "CollectFromFields", "classTaskOpenPanelController.html#a82a9ebc3acdf5014bfcb673bd6dcb5e7", null ],

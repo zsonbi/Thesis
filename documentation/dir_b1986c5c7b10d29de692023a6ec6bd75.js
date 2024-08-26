@@ -2,7 +2,7 @@ var dir_b1986c5c7b10d29de692023a6ec6bd75 =
 [
     [ "DbElement.cs", "DbElement_8cs.html", "DbElement_8cs" ],
     [ "Game.cs", "Game_8cs.html", "Game_8cs" ],
-    [ "Task.cs", "ApiTypes_2Task_8cs.html", "ApiTypes_2Task_8cs" ],
+    [ "PlayerTask.cs", "ApiTypes_2PlayerTask_8cs.html", "ApiTypes_2PlayerTask_8cs" ],
     [ "TaskRequest.cs", "TaskRequest_8cs.html", [
       [ "TaskRequest", "structThesis__backend_1_1Data__Structures_1_1TaskRequest.html", "structThesis__backend_1_1Data__Structures_1_1TaskRequest" ]
     ] ],

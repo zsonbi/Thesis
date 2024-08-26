@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['newgame_677',['NewGame',['../classGame_1_1GameController.html#afebcc1da5668237c79d17d38ca2d761a',1,'Game::GameController']]]
+  ['newgame_726',['NewGame',['../classGame_1_1GameController.html#af5c50c52cffcab3018ca54be6a421d7f',1,'Game::GameController']]]
 ];

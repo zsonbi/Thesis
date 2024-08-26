@@ -14,10 +14,17 @@ var annotated_dup =
     ] ],
     [ "Game", "namespaceGame.html", [
       [ "World", "namespaceGame_1_1World.html", [
+        [ "CarSpawner", "classGame_1_1World_1_1CarSpawner.html", "classGame_1_1World_1_1CarSpawner" ],
         [ "Chunk", "classGame_1_1World_1_1Chunk.html", "classGame_1_1World_1_1Chunk" ],
         [ "RoadGenerator", "classGame_1_1World_1_1RoadGenerator.html", "classGame_1_1World_1_1RoadGenerator" ],
         [ "GameWorld", "classGame_1_1World_1_1GameWorld.html", "classGame_1_1World_1_1GameWorld" ]
       ] ],
+      [ "Car", "classGame_1_1Car.html", "classGame_1_1Car" ],
+      [ "CarController", "classGame_1_1CarController.html", "classGame_1_1CarController" ],
+      [ "CarProbeScript", "classGame_1_1CarProbeScript.html", null ],
+      [ "CopCar", "classGame_1_1CopCar.html", "classGame_1_1CopCar" ],
+      [ "EnableWheelPhysicMaterial", "classGame_1_1EnableWheelPhysicMaterial.html", "classGame_1_1EnableWheelPhysicMaterial" ],
+      [ "NpcCar", "classGame_1_1NpcCar.html", "classGame_1_1NpcCar" ],
       [ "GameController", "classGame_1_1GameController.html", "classGame_1_1GameController" ]
     ] ],
     [ "Thesis_backend", "namespaceThesis__backend.html", [
@@ -47,21 +54,16 @@ var annotated_dup =
     [ "User", "namespaceUser.html", [
       [ "UserData", "classUser_1_1UserData.html", "classUser_1_1UserData" ]
     ] ],
-    [ "Car", "classCar.html", "classCar" ],
-    [ "CarController", "classCarController.html", "classCarController" ],
-    [ "CarProbeScript", "classCarProbeScript.html", null ],
-    [ "CarSpawner", "classCarSpawner.html", "classCarSpawner" ],
-    [ "CopCar", "classCopCar.html", "classCopCar" ],
+    [ "Building", "classBuilding.html", "classBuilding" ],
+    [ "CameraScript", "classCameraScript.html", "classCameraScript" ],
     [ "DirectionConverter", "classDirectionConverter.html", "classDirectionConverter" ],
     [ "EdgeRoadContainer", "classEdgeRoadContainer.html", "classEdgeRoadContainer" ],
-    [ "EnableWheelPhysicMaterial", "classEnableWheelPhysicMaterial.html", "classEnableWheelPhysicMaterial" ],
     [ "GameConfig", "classGameConfig.html", "classGameConfig" ],
     [ "MeshGenerator", "classMeshGenerator.html", "classMeshGenerator" ],
     [ "ModalWindow", "classModalWindow.html", "classModalWindow" ],
-    [ "NpcCar", "classNpcCar.html", "classNpcCar" ],
     [ "PhpReturnObject", "classPhpReturnObject.html", "classPhpReturnObject" ],
+    [ "PlayerTask", "classPlayerTask.html", "classPlayerTask" ],
     [ "Server", "classServer.html", "classServer" ],
-    [ "Task", "classTask.html", "classTask" ],
     [ "TaskApiResponse", "classTaskApiResponse.html", "classTaskApiResponse" ],
     [ "TaskClosedEventArgs", "classTaskClosedEventArgs.html", "classTaskClosedEventArgs" ],
     [ "TaskContainer", "classTaskContainer.html", "classTaskContainer" ],

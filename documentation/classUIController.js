@@ -9,11 +9,11 @@ var classUIController =
     [ "CreateTask", "classUIController.html#adb941c060c4b3c2acdc916e9722a55d1", null ],
     [ "MoveToLoginScene", "classUIController.html#aaed55bd192a151e06198240fb0a17e82", null ],
     [ "LoadTasks", "classUIController.html#a0dc545de64fb2603baf048d46c983e5c", null ],
-    [ "CreateTaskPrefabs", "classUIController.html#af135c74f54f69944d2416f0d69789e06", null ],
+    [ "CreateTaskPrefabs", "classUIController.html#aef326ce7569d6884464eb729d92cea6b", null ],
     [ "UsernameInputText", "classUIController.html#aa9f04610798bf39ac1e69edd964b0448", null ],
     [ "TaskParent", "classUIController.html#a9ab18b7625588d4afeaaa4b22f68828c", null ],
     [ "TaskPrefab", "classUIController.html#ac90812040e8042eb7e79ab22e474f0e0", null ],
     [ "taskOpenPanelController", "classUIController.html#a2e224cab1100d1d235f2231375a8635c", null ],
     [ "ModalWindow", "classUIController.html#ad4b65fcdc4f0ebbbc19c45b3af5e305b", null ],
-    [ "tasks", "classUIController.html#a198e78fbae87579e7425a3f984421c2b", null ]
+    [ "tasks", "classUIController.html#a6ce27e28397d9fd1f1459fdce7bf744c", null ]
 ];
