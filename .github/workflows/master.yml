@@ -98,8 +98,14 @@ jobs:
           key: Library-${{ matrix.targetPlatform }}
       - name: Install Blender
         run: 
-            sudo apt-get install blender -y
-            echo "/usr/bin/blender" >> $GITHUB_PATH
+              apt-get update
+              apt-get install -y wget xz-utils
+              wget https://download.blender.org/release/Blender3.6/blender-3.6.0-linux-x64.tar.xz
+              tar -xvf blender-3.6.0-linux-x64.tar.xz
+              mv blender-3.6.0-linux-x64 /opt/blender
+              ln -s /opt/blender/blender /usr/bin/blender
+              blender --version
+
       - uses: game-ci/unity-builder@v4.2.3
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
@@ -144,8 +150,13 @@ jobs:
           df -h
       - name: Install Blender
         run: 
-            sudo apt-get install blender -y
-            echo "/usr/bin/blender" >> $GITHUB_PATH
+              apt-get update
+              apt-get install -y wget xz-utils
+              wget https://download.blender.org/release/Blender3.6/blender-3.6.0-linux-x64.tar.xz
+              tar -xvf blender-3.6.0-linux-x64.tar.xz
+              mv blender-3.6.0-linux-x64 /opt/blender
+              ln -s /opt/blender/blender /usr/bin/blender
+              blender --version
       - uses: game-ci/unity-builder@v4.2.3
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
