@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>08/26/2024 - 22:17:10</Generatedon>
+    <Generatedon>09/01/2024 - 20:42:58</Generatedon>
     <Parser>MultiReportParser (3x OpenCoverParser)</Parser>
     <Assemblies>4</Assemblies>
     <Classes>87</Classes>
     <Files>85</Files>
     <Coveredlines>236</Coveredlines>
-    <Uncoveredlines>3976</Uncoveredlines>
-    <Coverablelines>4212</Coverablelines>
-    <Totallines>8486</Totallines>
-    <Linecoverage>5.6</Linecoverage>
+    <Uncoveredlines>4006</Uncoveredlines>
+    <Coverablelines>4242</Coverablelines>
+    <Totallines>8517</Totallines>
+    <Linecoverage>5.5</Linecoverage>
     <Coveredbranches>0</Coveredbranches>
     <Totalbranches>0</Totalbranches>
     <Coveredmethods>97</Coveredmethods>
@@ -62,7 +62,7 @@
       <Class name="Tests.MainMenuTest" coverage="100" coveredlines="4" coverablelines="4" totallines="24" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
       <Class name="Tests.UITests.UserControllerTests" coverage="100" coveredlines="26" coverablelines="26" totallines="65" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="6" methodcoverage="100" />
     </Assembly>
-    <Assembly name="ThesisScripts" classes="49" coverage="9.1" coveredlines="180" coverablelines="1973" totallines="4228" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="87" totalmethods="424" methodcoverage="20.5">
+    <Assembly name="ThesisScripts" classes="49" coverage="8.9" coveredlines="180" coverablelines="2003" totallines="4259" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="87" totalmethods="424" methodcoverage="20.5">
       <Class name="Assets.Scripts.Client.DataTypes.ChunkCellContainer" coverage="0" coveredlines="0" coverablelines="6" totallines="15" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
       <Class name="Building" coverage="0" coveredlines="0" coverablelines="9" totallines="33" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="7" methodcoverage="0" />
       <Class name="CameraScript" coverage="0" coveredlines="0" coverablelines="6" totallines="23" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
@@ -75,7 +75,7 @@
       <Class name="Game.EnableWheelPhysicMaterial" coverage="0" coveredlines="0" coverablelines="16" totallines="37" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
       <Class name="Game.GameController" coverage="0" coveredlines="0" coverablelines="68" totallines="110" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="10" methodcoverage="0" />
       <Class name="Game.NpcCar" coverage="0" coveredlines="0" coverablelines="6" totallines="19" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
-      <Class name="Game.PlayerCar" coverage="0" coveredlines="0" coverablelines="11" totallines="32" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="3" methodcoverage="0" />
+      <Class name="Game.PlayerCar" coverage="0" coveredlines="0" coverablelines="41" totallines="63" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="3" methodcoverage="0" />
       <Class name="Game.World.BuildingCell" coverage="0" coveredlines="0" coverablelines="11" totallines="30" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="7" methodcoverage="0" />
       <Class name="Game.World.BuildingGenerator" coverage="0" coveredlines="0" coverablelines="43" totallines="64" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
       <Class name="Game.World.CarSpawner" coverage="0" coveredlines="0" coverablelines="21" totallines="55" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />

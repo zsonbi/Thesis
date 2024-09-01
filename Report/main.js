@@ -286,7 +286,7 @@ var assemblies = [
       { "name": "Game.EnableWheelPhysicMaterial", "rp": "ThesisScripts_EnableWheelPhysicMaterial.html", "cl": 0, "ucl": 16, "cal": 16, "tl": 37, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.GameController", "rp": "ThesisScripts_GameController.html", "cl": 0, "ucl": 68, "cal": 68, "tl": 110, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.NpcCar", "rp": "ThesisScripts_NpcCar.html", "cl": 0, "ucl": 6, "cal": 6, "tl": 19, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Game.PlayerCar", "rp": "ThesisScripts_PlayerCar.html", "cl": 0, "ucl": 11, "cal": 11, "tl": 32, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.PlayerCar", "rp": "ThesisScripts_PlayerCar.html", "cl": 0, "ucl": 41, "cal": 41, "tl": 63, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.World.BuildingCell", "rp": "ThesisScripts_BuildingCell.html", "cl": 0, "ucl": 11, "cal": 11, "tl": 30, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.World.BuildingGenerator", "rp": "ThesisScripts_BuildingGenerator.html", "cl": 0, "ucl": 43, "cal": 43, "tl": 64, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.World.CarSpawner", "rp": "ThesisScripts_CarSpawner.html", "cl": 0, "ucl": 21, "cal": 21, "tl": 55, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
@@ -407,6 +407,13 @@ var riskHotspots = [
     ]},
   {
     "assembly": "Assembly-CSharp", "class": "UnityStandardAssets.Vehicles.Car.CarAudio", "reportPath": "Assembly_CSharp_CarAudio.html", "methodName": "System.Void UnityStandardAssets.Vehicles.Car.CarAudio::Update()", "methodShortName": "Update()", "fileIndex": 0, "line": 88,
+    "metrics": [
+      { "value": 13, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 182, "exceeded": true },
+    ]},
+  {
+    "assembly": "ThesisScripts", "class": "Game.PlayerCar", "reportPath": "ThesisScripts_PlayerCar.html", "methodName": "System.Void Game.PlayerCar::FixedUpdate()", "methodShortName": "FixedUpdate()", "fileIndex": 0, "line": 18,
     "metrics": [
       { "value": 13, "exceeded": false },
       { "value": 0, "exceeded": false },
