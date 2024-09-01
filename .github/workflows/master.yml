@@ -236,7 +236,21 @@ jobs:
               path: Library
               key: Library-${{ matrix.targetPlatform }}
           - name: Install Blender
-            run: sudo apt-get install blender -y
+            run: 
+                  sudo apt-get update;
+                  sudo apt-get install -y wget xz-utils;
+                  sudo wget https://download.blender.org/release/Blender3.6/blender-3.6.0-linux-x64.tar.xz;
+                  sudo tar -xvf blender-3.6.0-linux-x64.tar.xz;
+                  sudo mv blender-3.6.0-linux-x64 /opt/blender;
+                  sudo ln -s /opt/blender/blender /usr/bin/blender;
+                  sudo rm -rf blender-3.6.0-linux-x64.tar.xz
+                  blender --version;
+    
+          - name: Clean up Blender tar file
+            run: rm blender-3.6.0-linux-x64.tar.xz
+    
+          - name: Reset Git changes (if needed)
+            run: git reset --hard
           - uses: game-ci/unity-builder@v4.2.3
             env:
               UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
