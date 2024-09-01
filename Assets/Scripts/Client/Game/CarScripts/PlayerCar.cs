@@ -16,15 +16,46 @@ namespace Game
 
         private void FixedUpdate()
         {
-            // pass the input to the car!
-            float h = CrossPlatformInputManager.GetAxis("Horizontal");
-            float v = CrossPlatformInputManager.GetAxis("Vertical");
-#if !MOBILE_INPUT
-            float handbrake = CrossPlatformInputManager.GetAxis("Jump");
-            carController.Move(h, v, v, handbrake);
-#else
-            carController.Move(h, v, v, 0f);
-#endif
+            float h = 0;
+            if (!Input.touchSupported)
+            {
+                // pass the input to the car!
+
+                h = CrossPlatformInputManager.GetAxis("Horizontal");
+                float v = CrossPlatformInputManager.GetAxis("Vertical");
+                float handbrake = CrossPlatformInputManager.GetAxis("Jump");
+                carController.Move(h, v, v, handbrake);
+            }
+            else
+            {
+                bool reverse = false;
+                if (Input.touchCount > 0)
+                {
+                    for (int i = 0; i < Input.touchCount; i++)
+                    {
+                        Touch touch = Input.GetTouch(i);
+
+                        if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Stationary)
+                        {
+                            if (h != 0)
+                            {
+                                reverse = true;
+                            }
+                            //Check if the touch is on the right or left side of the screen
+
+                            if (touch.position.x > Screen.width / 2)
+                            {
+                                h = 1;
+                            }
+                            else if (touch.position.x < Screen.width / 2)
+                            {
+                                h = -1;
+                            }
+                        }
+                    }
+                }
+                carController.Move(reverse ? 0 : h, Input.touchCount > 1 ? -20 : 10, 0f, 0f);
+            }
 
             Debug.Log(carController.CurrentSpeed);
         }
