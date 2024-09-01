@@ -107,6 +107,11 @@ jobs:
               sudo rm -rf blender-3.6.0-linux-x64.tar.xz
               blender --version;
 
+      - name: Clean up Blender tar file
+        run: rm blender-3.6.0-linux-x64.tar.xz
+
+      - name: Reset Git changes (if needed)
+        run: git reset --hard
       - uses: game-ci/unity-builder@v4.2.3
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
@@ -159,6 +164,12 @@ jobs:
               sudo ln -s /opt/blender/blender /usr/bin/blender;
               sudo rm -rf blender-3.6.0-linux-x64.tar.xz
               blender --version;
+
+      - name: Clean up Blender tar file
+        run: rm blender-3.6.0-linux-x64.tar.xz
+
+      - name: Reset Git changes (if needed)
+        run: git reset --hard
       - uses: game-ci/unity-builder@v4.2.3
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
