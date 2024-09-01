@@ -98,12 +98,12 @@ jobs:
           key: Library-${{ matrix.targetPlatform }}
       - name: Install Blender
         run: 
-              apt-get update
-              apt-get install -y wget xz-utils
-              wget https://download.blender.org/release/Blender3.6/blender-3.6.0-linux-x64.tar.xz
-              tar -xvf blender-3.6.0-linux-x64.tar.xz
-              mv blender-3.6.0-linux-x64 /opt/blender
-              ln -s /opt/blender/blender /usr/bin/blender
+              sudo apt-get update
+              sudo apt-get install -y wget xz-utils
+              sudo wget https://download.blender.org/release/Blender3.6/blender-3.6.0-linux-x64.tar.xz
+              sudo tar -xvf blender-3.6.0-linux-x64.tar.xz
+              sudo mv blender-3.6.0-linux-x64 /opt/blender
+              sudo ln -s /opt/blender/blender /usr/bin/blender
               blender --version
 
       - uses: game-ci/unity-builder@v4.2.3
@@ -150,12 +150,12 @@ jobs:
           df -h
       - name: Install Blender
         run: 
-              apt-get update
-              apt-get install -y wget xz-utils
-              wget https://download.blender.org/release/Blender3.6/blender-3.6.0-linux-x64.tar.xz
-              tar -xvf blender-3.6.0-linux-x64.tar.xz
-              mv blender-3.6.0-linux-x64 /opt/blender
-              ln -s /opt/blender/blender /usr/bin/blender
+              sudo apt-get update
+              sudo apt-get install -y wget xz-utils
+              sudo wget https://download.blender.org/release/Blender3.6/blender-3.6.0-linux-x64.tar.xz
+              sudo tar -xvf blender-3.6.0-linux-x64.tar.xz
+              sudo mv blender-3.6.0-linux-x64 /opt/blender
+              sudo ln -s /opt/blender/blender /usr/bin/blender
               blender --version
       - uses: game-ci/unity-builder@v4.2.3
         env:
