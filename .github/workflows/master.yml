@@ -96,30 +96,6 @@ jobs:
         with:
           path: Library
           key: Library-${{ matrix.targetPlatform }}
-      - name: Install Blender
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y wget xz-utils
-          wget https://download.blender.org/release/Blender3.6/blender-3.6.0-linux-x64.tar.xz
-          sudo mkdir -p /opt/blender && sudo tar -xvf blender-3.6.0-linux-x64.tar.xz -C /opt/blender --strip-components=1
-          sudo ln -s /opt/blender/blender /usr/bin/blender
-          sudo chmod 777 -R /opt/blender
-
-      - name: Verify Blender Installation
-        run: |
-          if ! command -v blender &> /dev/null; then
-            echo "Blender could not be found"
-            exit 1
-          else
-            echo "Blender is installed and available"
-            blender --version
-          fi
-
-      - name: Clean Up Working Directory
-        run: |
-          rm -rf blender-3.6.0-linux-x64.tar.xz
-          ls -la
-          
       - uses: game-ci/unity-builder@v4.2.3
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
@@ -164,22 +140,7 @@ jobs:
           # Before
           echo "Disk space before:"
           df -h
-      - name: Install Blender
-        run: 
-              sudo apt-get update;
-              sudo apt-get install -y wget xz-utils;
-              sudo wget https://download.blender.org/release/Blender3.6/blender-3.6.0-linux-x64.tar.xz;
-              sudo tar -xvf blender-3.6.0-linux-x64.tar.xz;
-              sudo mv blender-3.6.0-linux-x64 /opt/blender;
-              sudo ln -s /opt/blender/blender /usr/bin/blender;
-              sudo rm -rf blender-3.6.0-linux-x64.tar.xz
-              blender --version;
-
-      - name: Clean up Blender tar file
-        run: rm blender-3.6.0-linux-x64.tar.xz
-
-      - name: Reset Git changes (if needed)
-        run: git reset --hard
+    
       - uses: game-ci/unity-builder@v4.2.3
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
@@ -190,6 +151,7 @@ jobs:
       - uses: actions/upload-artifact@v4.3.3
         with:
           name: Build-${{ matrix.targetPlatform }}
+          customImage: zsonbi/ubuntu_unity_with_blender:3.1.0
           if: always()
           path: build
           retention-days: 1
