@@ -101,10 +101,8 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y wget xz-utils
           wget https://download.blender.org/release/Blender3.6/blender-3.6.0-linux-x64.tar.xz
-          tar -xvf blender-3.6.0-linux-x64.tar.xz
-          sudo mv blender-3.6.0-linux-x64 /opt/blender
+          sudo mkdir -p /opt/blender && sudo tar -xvf blender-3.6.0-linux-x64.tar.xz -C /opt/blender --strip-components=1
           sudo ln -s /opt/blender/blender /usr/bin/blender
-          blender --version
 
       - name: Verify Blender Installation
         run: |
@@ -118,8 +116,8 @@ jobs:
 
       - name: Clean Up Working Directory
         run: |
-          git reset --hard
-          git clean -fd
+          rm -rf blender-3.6.0-linux-x64.tar.xz
+          ls -la
           
       - uses: game-ci/unity-builder@v4.2.3
         env:
