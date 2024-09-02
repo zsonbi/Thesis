@@ -103,6 +103,7 @@ jobs:
           wget https://download.blender.org/release/Blender3.6/blender-3.6.0-linux-x64.tar.xz
           sudo mkdir -p /opt/blender && sudo tar -xvf blender-3.6.0-linux-x64.tar.xz -C /opt/blender --strip-components=1
           sudo ln -s /opt/blender/blender /usr/bin/blender
+          sudo chmod 777 -R /opt/blender
 
       - name: Verify Blender Installation
         run: |
@@ -124,7 +125,7 @@ jobs:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-          PATH: /usr/bin:$PATH
+          PATH: /opt/blender/blender:$PATH
         with:
           targetPlatform: ${{ matrix.targetPlatform }}
       - uses: actions/upload-artifact@v4.3.3
