@@ -116,6 +116,11 @@ jobs:
             blender --version
           fi
 
+      - name: Clean Up Working Directory
+        run: |
+          git reset --hard
+          git clean -fd
+          
       - uses: game-ci/unity-builder@v4.2.3
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
