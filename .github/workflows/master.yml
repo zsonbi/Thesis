@@ -127,6 +127,8 @@ jobs:
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
           targetPlatform: ${{ matrix.targetPlatform }}
+          customImage: "./docker/Dockerfile"
+
       - uses: actions/upload-artifact@v4.3.3
         with:
           name: Build-${{ matrix.targetPlatform }}
