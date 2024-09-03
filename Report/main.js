@@ -262,7 +262,6 @@ var assemblies = [
     "classes": [
       { "name": "BuildCommand", "rp": "Assembly_CSharp_Editor_BuildCommand.html", "cl": 0, "ucl": 197, "cal": 197, "tl": 310, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "BuildScript", "rp": "Assembly_CSharp_Editor_BuildScript.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 11, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "ReadmeEditor", "rp": "Assembly_CSharp_Editor_ReadmeEditor.html", "cl": 0, "ucl": 140, "cal": 140, "tl": 242, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
     ]},
   {
     "name": "Tests",
@@ -512,13 +511,6 @@ var riskHotspots = [
     ]},
   {
     "assembly": "Assembly-CSharp", "class": "UnityStandardAssets.ImageEffects.PostEffectsBase", "reportPath": "Assembly_CSharp_PostEffectsBase.html", "methodName": "System.Boolean UnityStandardAssets.ImageEffects.PostEffectsBase::CheckSupport(System.Boolean)", "methodShortName": "CheckSupport(...)", "fileIndex": 0, "line": 92,
-    "metrics": [
-      { "value": 7, "exceeded": false },
-      { "value": 0, "exceeded": false },
-      { "value": 56, "exceeded": true },
-    ]},
-  {
-    "assembly": "Assembly-CSharp-Editor", "class": "ReadmeEditor", "reportPath": "Assembly_CSharp_Editor_ReadmeEditor.html", "methodName": "System.Void ReadmeEditor::OnInspectorGUI()", "methodShortName": "OnInspectorGUI()", "fileIndex": 0, "line": 124,
     "metrics": [
       { "value": 7, "exceeded": false },
       { "value": 0, "exceeded": false },
