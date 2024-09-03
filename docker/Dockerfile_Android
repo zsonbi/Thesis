@@ -13,8 +13,13 @@ RUN apt-get update && \
     wget https://download.blender.org/release/Blender$BLENDER_SHORT_VERSION/blender-$BLENDER_FULL_VERSION-linux-x64.tar.xz && \
     tar -xf blender-$BLENDER_FULL_VERSION-linux-x64.tar.xz -C /opt && \
     rm blender-$BLENDER_FULL_VERSION-linux-x64.tar.xz
+
+# Manually add Blender to the PATH and verify installation in the same RUN command
+RUN alias blender='/opt/blender-3.6.8-linux-x64/blender'
+
 # Add Blender to the PATH
 ENV PATH="$PATH:/opt/blender-$BLENDER_FULL_VERSION-linux-x64"
 
-# Verify Blender installation
+RUN cp -r /opt/blender-3.6.8-linux-x64/* /bin/
+# # Verify Blender installation
 RUN blender --version

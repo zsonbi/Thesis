@@ -157,7 +157,7 @@ jobs:
           retention-days: 1
 
   buildForWindows:
-    if: contains(github.ref, 'master') || contains(github.ref, 'Skins-and-buildings')
+    if: contains(github.ref, 'master') || contains(github.ref, 'none')
     needs: test
     name: Build for ${{ matrix.targetPlatform }}
     runs-on: windows-latest
