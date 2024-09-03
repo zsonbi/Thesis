@@ -1,8 +1,8 @@
 ARG GAMECI_IMAGE=unityci/editor:ubuntu-6000.0.17f1-base-3.1.0
 FROM $GAMECI_IMAGE
 
-ARG BLENDER_SHORT_VERSION=3.6
-ARG BLENDER_FULL_VERSION=3.6.8
+ARG BLENDER_SHORT_VERSION=4.1
+ARG BLENDER_FULL_VERSION=4.1.0
 
 RUN echo "BLENDER_SHORT_VERSION: $BLENDER_SHORT_VERSION"
 RUN echo "BLENDER_FULL_VERSION: $BLENDER_FULL_VERSION"
@@ -15,6 +15,9 @@ RUN apt-get update && \
     rm blender-$BLENDER_FULL_VERSION-linux-x64.tar.xz
 # Add Blender to the PATH
 ENV PATH="$PATH:/opt/blender-$BLENDER_FULL_VERSION-linux-x64"
+
+RUN cp -r /opt/blender-$BLENDER_FULL_VERSION-linux-x64/* /bin/
+
 
 # Verify Blender installation
 RUN blender --version
