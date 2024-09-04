@@ -10,7 +10,5 @@ public static class BuildScript
 
         // Build WebGL
         BuildPipeline.BuildPlayer(EditorBuildSettings.scenes, "BuildOutputPath", BuildTarget.WebGL, BuildOptions.None);
-
-        AddressableAssetSettings.BuildPlayerContent();
     }
 }

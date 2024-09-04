@@ -2,6 +2,7 @@ using UnityEditor;
 using System.Linq;
 using System;
 using System.IO;
+using UnityEditor.AddressableAssets.Settings;
 
 internal static class BuildCommand
 {
@@ -178,9 +179,11 @@ internal static class BuildCommand
     private static void PerformBuild()
     {
         var buildTarget = GetBuildTarget();
-        if(buildTarget==BuildTarget.WebGL){
-        PlayerSettings.WebGL.compressionFormat = WebGLCompressionFormat.Disabled;
-         } Console.WriteLine(":: Performing build");
+        if (buildTarget == BuildTarget.WebGL)
+        {
+            PlayerSettings.WebGL.compressionFormat = WebGLCompressionFormat.Disabled;
+        }
+        Console.WriteLine(":: Performing build");
         if (TryGetEnv(VERSION_NUMBER_VAR, out var bundleVersionNumber))
         {
             if (buildTarget == BuildTarget.iOS)
@@ -204,7 +207,7 @@ internal static class BuildCommand
         var fixedBuildPath = GetFixedBuildPath(buildTarget, buildPath, buildName);
 
         SetScriptingBackendFromEnv(buildTarget);
-
+        AddressableAssetSettings.BuildPlayerContent();
         var buildReport = BuildPipeline.BuildPlayer(GetEnabledScenes(), fixedBuildPath, buildTarget, buildOptions);
 
         if (buildReport.summary.result != UnityEditor.Build.Reporting.BuildResult.Succeeded)
