@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>09/03/2024 - 22:22:05</Generatedon>
+    <Generatedon>09/04/2024 - 08:48:09</Generatedon>
     <Parser>MultiReportParser (3x OpenCoverParser)</Parser>
     <Assemblies>4</Assemblies>
     <Classes>86</Classes>
     <Files>84</Files>
     <Coveredlines>236</Coveredlines>
-    <Uncoveredlines>3866</Uncoveredlines>
-    <Coverablelines>4102</Coverablelines>
-    <Totallines>8275</Totallines>
+    <Uncoveredlines>3869</Uncoveredlines>
+    <Coverablelines>4105</Coverablelines>
+    <Totallines>8281</Totallines>
     <Linecoverage>5.7</Linecoverage>
     <Coveredbranches>0</Coveredbranches>
     <Totalbranches>0</Totalbranches>
@@ -52,9 +52,9 @@
       <Class name="UnityStandardAssets.Vehicles.Car.SkidTrail" coverage="0" coveredlines="0" coverablelines="9" totallines="25" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
       <Class name="UnityStandardAssets.Vehicles.Car.WheelEffects" coverage="0" coveredlines="0" coverablelines="53" totallines="94" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="10" methodcoverage="0" />
     </Assembly>
-    <Assembly name="Assembly-CSharp-Editor" classes="2" coverage="0" coveredlines="0" coverablelines="201" totallines="321" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="16" methodcoverage="0">
-      <Class name="BuildCommand" coverage="0" coveredlines="0" coverablelines="197" totallines="310" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="15" methodcoverage="0" />
-      <Class name="BuildScript" coverage="0" coveredlines="0" coverablelines="4" totallines="11" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
+    <Assembly name="Assembly-CSharp-Editor" classes="2" coverage="0" coveredlines="0" coverablelines="204" totallines="327" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="16" methodcoverage="0">
+      <Class name="BuildCommand" coverage="0" coveredlines="0" coverablelines="200" totallines="313" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="15" methodcoverage="0" />
+      <Class name="BuildScript" coverage="0" coveredlines="0" coverablelines="4" totallines="14" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
     </Assembly>
     <Assembly name="Tests" classes="3" coverage="100" coveredlines="56" coverablelines="56" totallines="144" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="10" totalmethods="10" methodcoverage="100">
       <Class name="Tests.GameTests.RoadGeneratorTests" coverage="100" coveredlines="26" coverablelines="26" totallines="55" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />

@@ -260,8 +260,8 @@ var assemblies = [
   {
     "name": "Assembly-CSharp-Editor",
     "classes": [
-      { "name": "BuildCommand", "rp": "Assembly_CSharp_Editor_BuildCommand.html", "cl": 0, "ucl": 197, "cal": 197, "tl": 310, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "BuildScript", "rp": "Assembly_CSharp_Editor_BuildScript.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 11, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "BuildCommand", "rp": "Assembly_CSharp_Editor_BuildCommand.html", "cl": 0, "ucl": 200, "cal": 200, "tl": 313, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "BuildScript", "rp": "Assembly_CSharp_Editor_BuildScript.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 14, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
     ]},
   {
     "name": "Tests",
@@ -552,7 +552,7 @@ var riskHotspots = [
       { "value": 42, "exceeded": true },
     ]},
   {
-    "assembly": "Assembly-CSharp-Editor", "class": "BuildCommand", "reportPath": "Assembly_CSharp_Editor_BuildCommand.html", "methodName": "static System.Void BuildCommand::PerformBuild()", "methodShortName": "PerformBuild()", "fileIndex": 0, "line": 179,
+    "assembly": "Assembly-CSharp-Editor", "class": "BuildCommand", "reportPath": "Assembly_CSharp_Editor_BuildCommand.html", "methodName": "static System.Void BuildCommand::PerformBuild()", "methodShortName": "PerformBuild()", "fileIndex": 0, "line": 180,
     "metrics": [
       { "value": 6, "exceeded": false },
       { "value": 0, "exceeded": false },

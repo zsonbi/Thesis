@@ -1,16 +1,16 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 09/03/2024 - 22:22:05 |
+| Generated on: | 09/04/2024 - 08:48:09 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 4 |
 | Classes: | 86 |
 | Files: | 84 |
 | Covered lines: | 236 |
-| Uncovered lines: | 3866 |
-| Coverable lines: | 4102 |
-| Total lines: | 8275 |
-| Line coverage: | 5.7% (236 of 4102) |
+| Uncovered lines: | 3869 |
+| Coverable lines: | 4105 |
+| Total lines: | 8281 |
+| Line coverage: | 5.7% (236 of 4105) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 97 |
@@ -52,9 +52,9 @@
 |UnityStandardAssets.Vehicles.Car.CarUserControl|0|9|9|33|0%|0|0||0|2|0%|
 |UnityStandardAssets.Vehicles.Car.SkidTrail|0|9|9|25|0%|0|0||0|1|0%|
 |UnityStandardAssets.Vehicles.Car.WheelEffects|0|53|53|94|0%|0|0||0|10|0%|
-|**Assembly-CSharp-Editor**|**0**|**201**|**201**|**321**|**0%**|**0**|**0**|****|**0**|**16**|**0%**|
-|BuildCommand|0|197|197|310|0%|0|0||0|15|0%|
-|BuildScript|0|4|4|11|0%|0|0||0|1|0%|
+|**Assembly-CSharp-Editor**|**0**|**204**|**204**|**327**|**0%**|**0**|**0**|****|**0**|**16**|**0%**|
+|BuildCommand|0|200|200|313|0%|0|0||0|15|0%|
+|BuildScript|0|4|4|14|0%|0|0||0|1|0%|
 |**Tests**|**56**|**0**|**56**|**144**|**100%**|**0**|**0**|****|**10**|**10**|**100%**|
 |Tests.GameTests.RoadGeneratorTests|26|0|26|55|100%|0|0||3|3|100%|
 |Tests.MainMenuTest|4|0|4|24|100%|0|0||1|1|100%|
