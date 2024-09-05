@@ -47,6 +47,8 @@ internal static class BuildCommand
 
         if (buildTargetName.ToLower() == "android")
         {
+            PlayerSettings.stripEngineCode = false;
+
 #if !UNITY_5_6_OR_NEWER
 			// https://issuetracker.unity3d.com/issues/buildoptions-dot-acceptexternalmodificationstoplayer-causes-unityexception-unknown-project-type-0
 			// Fixed in Unity 5.6.0
