@@ -8,6 +8,10 @@ using UnityEngine.ResourceManagement;
 using System.Threading.Tasks;
 using System.Collections;
 using UnityEngine.ResourceManagement.AsyncOperations;
+using UnityEditor;
+using System.Threading;
+using Cysharp.Threading.Tasks;
+using UnityEngine.LowLevel;
 
 namespace Game
 {
@@ -40,7 +44,7 @@ namespace Game
             private GameObject crossRoadsPrefab;
 
             [SerializeField]
-            public AssetReference grassPrefab;
+            public GameObject grassPrefab;
 
             public List<Building> buildings;
 
@@ -68,12 +72,22 @@ namespace Game
             private Dictionary<ChunkCellType, List<GameObject>> objectsToCombine;
             private BuildingCell[,] buildingCells;
 
+            [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterAssembliesLoaded)]
+            public static void InitUniTaskLoop()
+            {
+                var loop = PlayerLoop.GetCurrentPlayerLoop();
+                Cysharp.Threading.Tasks.PlayerLoopHelper.Initialize(ref loop);
+            }
+
             // Start is called before the first frame update
-            private void Awake()
+            private async void Awake()
             {
                 buildings = new List<Building>();
+                //PlayerLoopHelper.Initialize();
+                var handle = Addressables.LoadAssetsAsync<GameObject>("Buildings", BuildingLoaded);
 
-                Addressables.LoadAssetsAsync<GameObject>("Buildings", BuildingLoaded).WaitForCompletion();
+                await handle.Task;
+
                 //Load the values from the settings
                 LoadFromSettings();
                 //Randomizes the offset
@@ -82,7 +96,9 @@ namespace Game
                     this.XOffset = Random.Range(0, 99999);
                     this.ZOffset = Random.Range(0, 99999);
                 }
-                objectsToCombine = new Dictionary<ChunkCellType, List<GameObject>>();
+
+                this.objectsToCombine = new Dictionary<ChunkCellType, List<GameObject>>();
+                Debug.Log("World buildings");
             }
 
             // Callback for when each asset is loaded
@@ -104,6 +120,15 @@ namespace Game
 
             public async Task InitChunk(int xOffset, int zOffset, List<EdgeRoadContainer> edgeRoads, GameWorld world)
             {
+                while (objectsToCombine is null)
+                {
+#if UNITY_WEBGL
+                    await UniTask.Delay(System.TimeSpan.FromSeconds(0.1f), ignoreTimeScale: false);
+#else
+                    await Task.Delay(10);
+#endif
+                }
+                Debug.Log("WORLD CREATED after" + buildings.Count);
                 this.world = world;
                 this.Row = zOffset;
                 this.Col = xOffset;
@@ -250,7 +275,7 @@ namespace Game
                                 break;
 
                             case ChunkCellType.Grass:
-                                created = grassPrefab.InstantiateAsync(this.gameObject.transform).WaitForCompletion();
+                                created = Instantiate(grassPrefab, this.transform);
                                 break;
 
                             case ChunkCellType.Sand:
@@ -415,7 +440,11 @@ namespace Game
             public async Task GenerateBuildings()
             {
                 buildingCells = new BuildingCell[GameConfig.CHUNK_SIZE, GameConfig.CHUNK_SIZE];
+#if UNITY_WEBGL
+                GenerateCellMatrix();
+#else
                 await Task.Run(() => GenerateCellMatrix());
+#endif
                 await AddLargeRoadBuildings();
             }
 

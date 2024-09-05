@@ -16,46 +16,44 @@ namespace Game
 
         private void FixedUpdate()
         {
-            float h = 0;
-            if (!Input.touchSupported)
-            {
-                // pass the input to the car!
+            float turning = 0;
 
-                h = CrossPlatformInputManager.GetAxis("Horizontal");
-                float v = CrossPlatformInputManager.GetAxis("Vertical");
-                float handbrake = CrossPlatformInputManager.GetAxis("Jump");
-                carController.Move(h, v, v, handbrake);
-            }
-            else
+            // pass the input to the car!
+
+            turning = CrossPlatformInputManager.GetAxis("Horizontal");
+            float accel = CrossPlatformInputManager.GetAxis("Vertical");
+            bool reverse = false;
+            //  if (Input.touchSupported)
+            // {
+            if (Input.touchCount > 0)
             {
-                bool reverse = false;
-                if (Input.touchCount > 0)
+                for (int i = 0; i < Input.touchCount; i++)
                 {
-                    for (int i = 0; i < Input.touchCount; i++)
+                    Touch touch = Input.GetTouch(i);
+
+                    if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Stationary)
                     {
-                        Touch touch = Input.GetTouch(i);
-
-                        if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Stationary)
+                        if (turning != 0)
                         {
-                            if (h != 0)
-                            {
-                                reverse = true;
-                            }
-                            //Check if the touch is on the right or left side of the screen
+                            reverse = true;
+                        }
+                        //Check if the touch is on the right or left side of the screen
 
-                            if (touch.position.x > Screen.width / 2)
-                            {
-                                h = 1;
-                            }
-                            else if (touch.position.x < Screen.width / 2)
-                            {
-                                h = -1;
-                            }
+                        if (touch.position.x > Screen.width / 2)
+                        {
+                            turning = 1;
+                        }
+                        else if (touch.position.x < Screen.width / 2)
+                        {
+                            turning = -1;
                         }
                     }
                 }
-                carController.Move(reverse ? 0 : h, Input.touchCount > 1 ? -20 : 10, 0f, 0f);
             }
+            if (accel == 0)
+                accel = Input.touchCount > 1 ? -20 : 10;
+            //   }
+            carController.Move(reverse ? 0 : turning, accel, 0f, 0f);
 
             Debug.Log(carController.CurrentSpeed);
         }

@@ -5,7 +5,7 @@ namespace Config
         public const TaskType DEFAULT_TASKTYPE = TaskType.GoodTask;
         public const TaskIntervals DEFAULT_TASKINTERVALS = TaskIntervals.Daily;
 
-        public const string SERVERPATH = "http://86.101.97.99:8000";
+        public const string SERVERPATH = "http://picidolgok.hu:8000";
 
         /// <summary>
         /// Needs "UserIdentification", "Password"

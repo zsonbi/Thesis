@@ -22,11 +22,17 @@ namespace Game
 
         public Vector3 PlayerPos => playerPrefab.transform.position;
 
-        public async void Start()
+        private async void Awake()
+        {
+            player = playerPrefab.GetComponent<PlayerCar>();
+
+            await NewGame();
+        }
+
+        private void Start()
         {
             //player = Instantiate(playerPrefab).GetComponent<PlayerCar>();
-            player = playerPrefab.GetComponent<PlayerCar>();
-            await NewGame();
+
             Application.targetFrameRate = 60;
             QualitySettings.vSyncCount = 0;
         }
@@ -68,7 +74,7 @@ namespace Game
 
         private async Task SpawnNearbyChunks(int row, int col)
         {
-            ValidateAndLoadChunk(row, col);
+            await ValidateAndLoadChunk(row, col);
 
             for (int currSize = 1; currSize <= probeSize; currSize++)
             {
@@ -76,8 +82,8 @@ namespace Game
                 {
                     for (int y = 0; y <= currSize - 1; y++)
                     {
-                        ValidateAndLoadChunk(row + y, col + x);
-                        ValidateAndLoadChunk(row - y, col + x);
+                        await ValidateAndLoadChunk(row + y, col + x);
+                        await ValidateAndLoadChunk(row - y, col + x);
                     }
                 }
 
@@ -85,8 +91,8 @@ namespace Game
                 {
                     for (int x = 0; x <= currSize - 1; x++)
                     {
-                        ValidateAndLoadChunk(row + y, col + x);
-                        ValidateAndLoadChunk(row + y, col - x);
+                        await ValidateAndLoadChunk(row + y, col + x);
+                        await ValidateAndLoadChunk(row + y, col - x);
                     }
                 }
 
