@@ -9,7 +9,7 @@ on:
 jobs:
   checklicense:
     name: Check for UNITY_LICENSE in GitHub Secrets
-    runs-on: ubuntu-latest
+    runs-on: malna
     outputs:
       is_unity_license_set: ${{ steps.checklicense_job.outputs.is_unity_license_set }}
     steps:
@@ -47,7 +47,7 @@ jobs:
     needs: checklicense
     if: needs.checklicense.outputs.is_unity_license_set == 'true' 
     name: Run all tests ✨
-    runs-on: ubuntu-latest
+    runs-on: malna
     steps:
       - uses: actions/checkout@v4.1.2
         with:
@@ -82,7 +82,7 @@ jobs:
     needs: test
     if: contains(github.ref, 'master') || contains(github.ref, 'Skins-and-buildings')
     name: Build for ${{ matrix.targetPlatform }}
-    runs-on: ubuntu-latest
+    runs-on: malna
     strategy:
       fail-fast: false
       matrix:
@@ -126,7 +126,7 @@ jobs:
     needs: test
     if: contains(github.ref, 'master') || contains(github.ref, 'Skins-and-buildings')
     name: Build for ${{ matrix.targetPlatform }}
-    runs-on: ubuntu-latest
+    runs-on: malna
     strategy:
       fail-fast: false
       matrix:
@@ -202,7 +202,7 @@ jobs:
         needs: test
         if: contains(github.ref, 'master') || contains(github.ref, 'Skins-and-buildings')
         name: Build for ${{ matrix.targetPlatform }}
-        runs-on: ubuntu-latest
+        runs-on: malna
         strategy:
           fail-fast: false
           matrix:
