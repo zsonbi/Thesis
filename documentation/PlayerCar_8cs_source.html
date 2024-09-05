@@ -104,59 +104,57 @@ $(document).ready(function(){initNavTree('PlayerCar_8cs_source.html',''); initRe
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> FixedUpdate()</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keywordtype">float</span> h = 0;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keywordflow">if</span> (!Input.touchSupported)</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                <span class="comment">// pass the input to the car!</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                h = <a class="code" href="classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html">CrossPlatformInputManager</a>.<a class="code" href="classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#aac45b5560ebbc7c815dc22cba0dc1048">GetAxis</a>(<span class="stringliteral">&quot;Horizontal&quot;</span>);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <span class="keywordtype">float</span> v = <a class="code" href="classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html">CrossPlatformInputManager</a>.<a class="code" href="classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#aac45b5560ebbc7c815dc22cba0dc1048">GetAxis</a>(<span class="stringliteral">&quot;Vertical&quot;</span>);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                <span class="keywordtype">float</span> handbrake = <a class="code" href="classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html">CrossPlatformInputManager</a>.<a class="code" href="classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#aac45b5560ebbc7c815dc22cba0dc1048">GetAxis</a>(<span class="stringliteral">&quot;Jump&quot;</span>);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                <a class="code" href="classGame_1_1Car.html#a7909ccf394182ee69fe4d374cb393602">carController</a>.<a class="code" href="classGame_1_1CarController.html#ae3eb6260519b20b09bc1226be3919be2">Move</a>(h, v, v, handbrake);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <span class="keywordtype">bool</span> reverse = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <span class="keywordflow">if</span> (Input.touchCount &gt; 0)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; Input.touchCount; i++)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keywordtype">float</span> turning = 0;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="comment">// pass the input to the car!</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            turning = <a class="code" href="classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html">CrossPlatformInputManager</a>.<a class="code" href="classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#aac45b5560ebbc7c815dc22cba0dc1048">GetAxis</a>(<span class="stringliteral">&quot;Horizontal&quot;</span>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keywordtype">float</span> accel = <a class="code" href="classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html">CrossPlatformInputManager</a>.<a class="code" href="classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#aac45b5560ebbc7c815dc22cba0dc1048">GetAxis</a>(<span class="stringliteral">&quot;Vertical&quot;</span>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordtype">bool</span> reverse = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="comment">//  if (Input.touchSupported)</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="comment">// {</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordflow">if</span> (Input.touchCount &gt; 0)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; Input.touchCount; i++)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                    Touch touch = Input.GetTouch(i);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                    <span class="keywordflow">if</span> (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Stationary)</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                    {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                        Touch touch = Input.GetTouch(i);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                        <span class="keywordflow">if</span> (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Stationary)</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                        {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                            <span class="keywordflow">if</span> (h != 0)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                            {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                reverse = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                            }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                            <span class="comment">//Check if the touch is on the right or left side of the screen</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                            <span class="keywordflow">if</span> (touch.position.x &gt; Screen.width / 2)</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                            {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                h = 1;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                            }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (touch.position.x &lt; Screen.width / 2)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                            {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                h = -1;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                            }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                        }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <a class="code" href="classGame_1_1Car.html#a7909ccf394182ee69fe4d374cb393602">carController</a>.<a class="code" href="classGame_1_1CarController.html#ae3eb6260519b20b09bc1226be3919be2">Move</a>(reverse ? 0 : h, Input.touchCount &gt; 1 ? -20 : 10, 0f, 0f);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            Debug.Log(<a class="code" href="classGame_1_1Car.html#a7909ccf394182ee69fe4d374cb393602">carController</a>.<a class="code" href="classGame_1_1CarController.html#aa6c3800c56fb0d4470a5ca5daaa5df6c">CurrentSpeed</a>);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                        <span class="keywordflow">if</span> (turning != 0)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                        {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                            reverse = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                        }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                        <span class="comment">//Check if the touch is on the right or left side of the screen</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                        <span class="keywordflow">if</span> (touch.position.x &gt; Screen.width / 2)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                        {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                            turning = 1;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                        }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (touch.position.x &lt; Screen.width / 2)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                        {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                            turning = -1;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                        }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">if</span> (accel == 0)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                accel = Input.touchCount &gt; 1 ? -20 : 10;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="comment">//   }</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <a class="code" href="classGame_1_1Car.html#a7909ccf394182ee69fe4d374cb393602">carController</a>.<a class="code" href="classGame_1_1CarController.html#ae3eb6260519b20b09bc1226be3919be2">Move</a>(reverse ? 0 : turning, accel, 0f, 0f);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            Debug.Log(<a class="code" href="classGame_1_1Car.html#a7909ccf394182ee69fe4d374cb393602">carController</a>.<a class="code" href="classGame_1_1CarController.html#aa6c3800c56fb0d4470a5ca5daaa5df6c">CurrentSpeed</a>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
 <div class="ttc" id="aclassGame_1_1CarController_html_aa6c3800c56fb0d4470a5ca5daaa5df6c"><div class="ttname"><a href="classGame_1_1CarController.html#aa6c3800c56fb0d4470a5ca5daaa5df6c">Game.CarController.CurrentSpeed</a></div><div class="ttdeci">float CurrentSpeed</div><div class="ttdef"><b>Definition:</b> <a href="CarController_8cs_source.html#l00051">CarController.cs:52</a></div></div>
 <div class="ttc" id="aclassGame_1_1CarController_html_ae3eb6260519b20b09bc1226be3919be2"><div class="ttname"><a href="classGame_1_1CarController.html#ae3eb6260519b20b09bc1226be3919be2">Game.CarController.Move</a></div><div class="ttdeci">void Move(float steering, float accel, float footbrake, float handbrake)</div><div class="ttdef"><b>Definition:</b> <a href="CarController_8cs_source.html#l00076">CarController.cs:76</a></div></div>
 <div class="ttc" id="aclassGame_1_1Car_html_a7909ccf394182ee69fe4d374cb393602"><div class="ttname"><a href="classGame_1_1Car.html#a7909ccf394182ee69fe4d374cb393602">Game.Car.carController</a></div><div class="ttdeci">CarController carController</div><div class="ttdef"><b>Definition:</b> <a href="Car_8cs_source.html#l00013">Car.cs:13</a></div></div>
 <div class="ttc" id="aclassGame_1_1Car_html_a98cca5b2f769481e4ac7408a0a742fd9"><div class="ttname"><a href="classGame_1_1Car.html#a98cca5b2f769481e4ac7408a0a742fd9">Game.Car.gameController</a></div><div class="ttdeci">GameController gameController</div><div class="ttdef"><b>Definition:</b> <a href="Car_8cs_source.html#l00012">Car.cs:12</a></div></div>
-<div class="ttc" id="aclassGame_1_1GameController_html_af623e7876622503e3d0f985ad9b08e47"><div class="ttname"><a href="classGame_1_1GameController.html#af623e7876622503e3d0f985ad9b08e47">Game.GameController.LoadAndDespawnChunks</a></div><div class="ttdeci">async Task LoadAndDespawnChunks(int centerRow, int centerColumn)</div><div class="ttdef"><b>Definition:</b> <a href="GameController_8cs_source.html#l00043">GameController.cs:43</a></div></div>
-<div class="ttc" id="aclassGame_1_1World_1_1Chunk_html"><div class="ttname"><a href="classGame_1_1World_1_1Chunk.html">Game.World.Chunk</a></div><div class="ttdoc">Used for generating a new world</div><div class="ttdef"><b>Definition:</b> <a href="Chunk_8cs_source.html#l00019">Chunk.cs:20</a></div></div>
-<div class="ttc" id="aclassGame_1_1World_1_1Chunk_html_ad6574f4e35ae5e51f25bec7e1a47d2bc"><div class="ttname"><a href="classGame_1_1World_1_1Chunk.html#ad6574f4e35ae5e51f25bec7e1a47d2bc">Game.World.Chunk.Col</a></div><div class="ttdeci">int Col</div><div class="ttdef"><b>Definition:</b> <a href="Chunk_8cs_source.html#l00058">Chunk.cs:58</a></div></div>
-<div class="ttc" id="aclassGame_1_1World_1_1Chunk_html_adce4d80142d5a8146a23758358504814"><div class="ttname"><a href="classGame_1_1World_1_1Chunk.html#adce4d80142d5a8146a23758358504814">Game.World.Chunk.Row</a></div><div class="ttdeci">int Row</div><div class="ttdef"><b>Definition:</b> <a href="Chunk_8cs_source.html#l00057">Chunk.cs:57</a></div></div>
+<div class="ttc" id="aclassGame_1_1GameController_html_af623e7876622503e3d0f985ad9b08e47"><div class="ttname"><a href="classGame_1_1GameController.html#af623e7876622503e3d0f985ad9b08e47">Game.GameController.LoadAndDespawnChunks</a></div><div class="ttdeci">async Task LoadAndDespawnChunks(int centerRow, int centerColumn)</div><div class="ttdef"><b>Definition:</b> <a href="GameController_8cs_source.html#l00049">GameController.cs:49</a></div></div>
+<div class="ttc" id="aclassGame_1_1World_1_1Chunk_html"><div class="ttname"><a href="classGame_1_1World_1_1Chunk.html">Game.World.Chunk</a></div><div class="ttdoc">Used for generating a new world</div><div class="ttdef"><b>Definition:</b> <a href="Chunk_8cs_source.html#l00023">Chunk.cs:24</a></div></div>
+<div class="ttc" id="aclassGame_1_1World_1_1Chunk_html_ad6574f4e35ae5e51f25bec7e1a47d2bc"><div class="ttname"><a href="classGame_1_1World_1_1Chunk.html#ad6574f4e35ae5e51f25bec7e1a47d2bc">Game.World.Chunk.Col</a></div><div class="ttdeci">int Col</div><div class="ttdef"><b>Definition:</b> <a href="Chunk_8cs_source.html#l00062">Chunk.cs:62</a></div></div>
+<div class="ttc" id="aclassGame_1_1World_1_1Chunk_html_adce4d80142d5a8146a23758358504814"><div class="ttname"><a href="classGame_1_1World_1_1Chunk.html#adce4d80142d5a8146a23758358504814">Game.World.Chunk.Row</a></div><div class="ttdeci">int Row</div><div class="ttdef"><b>Definition:</b> <a href="Chunk_8cs_source.html#l00061">Chunk.cs:61</a></div></div>
 <div class="ttc" id="aclassUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_html"><div class="ttname"><a href="classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html">UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager</a></div><div class="ttdef"><b>Definition:</b> <a href="CrossPlatformInputManager_8cs_source.html#l00007">CrossPlatformInputManager.cs:8</a></div></div>
 <div class="ttc" id="aclassUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_html_aac45b5560ebbc7c815dc22cba0dc1048"><div class="ttname"><a href="classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#aac45b5560ebbc7c815dc22cba0dc1048">UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager.GetAxis</a></div><div class="ttdeci">static float GetAxis(string name)</div><div class="ttdef"><b>Definition:</b> <a href="CrossPlatformInputManager_8cs_source.html#l00093">CrossPlatformInputManager.cs:93</a></div></div>
 <div class="ttc" id="anamespaceGame_1_1World_html"><div class="ttname"><a href="namespaceGame_1_1World.html">Game.World</a></div><div class="ttdef"><b>Definition:</b> <a href="BuildingCell_8cs_source.html#l00010">BuildingCell.cs:11</a></div></div>

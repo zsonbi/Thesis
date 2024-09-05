@@ -1,6 +1,7 @@
 var classGame_1_1GameController =
 [
-    [ "Start", "classGame_1_1GameController.html#ae168622afac009edfaae9179fb1b45b1", null ],
+    [ "Awake", "classGame_1_1GameController.html#a72ac9aa223ee085e0bd2d660466a494a", null ],
+    [ "Start", "classGame_1_1GameController.html#a1d3159c95407370de0809d00266a6a20", null ],
     [ "NewGame", "classGame_1_1GameController.html#af5c50c52cffcab3018ca54be6a421d7f", null ],
     [ "LoadAndDespawnChunks", "classGame_1_1GameController.html#af623e7876622503e3d0f985ad9b08e47", null ],
     [ "DespawnFarAwayChunks", "classGame_1_1GameController.html#a9d697eb362c93e3208af1a5c2385742d", null ],

@@ -1,19 +1,19 @@
 {
   "summary": {
-    "generatedon": "2024-09-04T22:38:19Z",
+    "generatedon": "2024-09-05T21:35:09Z",
     "parser": "MultiReportParser (3x OpenCoverParser)",
     "assemblies": 4,
     "classes": 86,
     "files": 84,
     "coveredlines": 236,
-    "uncoveredlines": 3869,
-    "coverablelines": 4105,
-    "totallines": 8281,
+    "uncoveredlines": 3878,
+    "coverablelines": 4114,
+    "totallines": 8316,
     "linecoverage": 5.7,
     "coveredbranches": 0,
     "totalbranches": 0,
     "coveredmethods": 97,
-    "totalmethods": 706,
+    "totalmethods": 708,
     "methodcoverage": 13.7
  },
   "coverage": {
@@ -51,14 +51,14 @@
         { "name": "UnityStandardAssets.Vehicles.Car.CarUserControl", "coverage": 0, "coveredlines": 0, "coverablelines": 9, "totallines": 33, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
         { "name": "UnityStandardAssets.Vehicles.Car.SkidTrail", "coverage": 0, "coveredlines": 0, "coverablelines": 9, "totallines": 25, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
         { "name": "UnityStandardAssets.Vehicles.Car.WheelEffects", "coverage": 0, "coveredlines": 0, "coverablelines": 53, "totallines": 94, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 10 } ] },
-      { "name": "Assembly-CSharp-Editor", "classes": 2, "coverage": 0, "coveredlines": 0, "coverablelines": 204, "totallines": 327, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 16, "classesinassembly": [
-        { "name": "BuildCommand", "coverage": 0, "coveredlines": 0, "coverablelines": 200, "totallines": 313, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 15 },
+      { "name": "Assembly-CSharp-Editor", "classes": 2, "coverage": 0, "coveredlines": 0, "coverablelines": 205, "totallines": 329, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 16, "classesinassembly": [
+        { "name": "BuildCommand", "coverage": 0, "coveredlines": 0, "coverablelines": 201, "totallines": 315, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 15 },
         { "name": "BuildScript", "coverage": 0, "coveredlines": 0, "coverablelines": 4, "totallines": 14, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 } ] },
       { "name": "Tests", "classes": 3, "coverage": 100, "coveredlines": 56, "coverablelines": 56, "totallines": 144, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 10, "totalmethods": 10, "classesinassembly": [
         { "name": "Tests.GameTests.RoadGeneratorTests", "coverage": 100, "coveredlines": 26, "coverablelines": 26, "totallines": 55, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 3, "totalmethods": 3 },
         { "name": "Tests.MainMenuTest", "coverage": 100, "coveredlines": 4, "coverablelines": 4, "totallines": 24, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 1, "totalmethods": 1 },
         { "name": "Tests.UITests.UserControllerTests", "coverage": 100, "coveredlines": 26, "coverablelines": 26, "totallines": 65, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 6, "totalmethods": 6 } ] },
-      { "name": "ThesisScripts", "classes": 49, "coverage": 8.9, "coveredlines": 180, "coverablelines": 2003, "totallines": 4259, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 20.5, "coveredmethods": 87, "totalmethods": 424, "classesinassembly": [
+      { "name": "ThesisScripts", "classes": 49, "coverage": 8.9, "coveredlines": 180, "coverablelines": 2011, "totallines": 4292, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 20.4, "coveredmethods": 87, "totalmethods": 426, "classesinassembly": [
         { "name": "Assets.Scripts.Client.DataTypes.ChunkCellContainer", "coverage": 0, "coveredlines": 0, "coverablelines": 6, "totallines": 15, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 5 },
         { "name": "Building", "coverage": 0, "coveredlines": 0, "coverablelines": 9, "totallines": 33, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 7 },
         { "name": "CameraScript", "coverage": 0, "coveredlines": 0, "coverablelines": 6, "totallines": 23, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
@@ -69,13 +69,13 @@
         { "name": "Game.CarController", "coverage": 0, "coveredlines": 0, "coverablelines": 129, "totallines": 249, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 18 },
         { "name": "Game.CopCar", "coverage": 0, "coveredlines": 0, "coverablelines": 6, "totallines": 21, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
         { "name": "Game.EnableWheelPhysicMaterial", "coverage": 0, "coveredlines": 0, "coverablelines": 16, "totallines": 37, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
-        { "name": "Game.GameController", "coverage": 0, "coveredlines": 0, "coverablelines": 68, "totallines": 110, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 10 },
+        { "name": "Game.GameController", "coverage": 0, "coveredlines": 0, "coverablelines": 70, "totallines": 116, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 11 },
         { "name": "Game.NpcCar", "coverage": 0, "coveredlines": 0, "coverablelines": 6, "totallines": 19, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
-        { "name": "Game.PlayerCar", "coverage": 0, "coveredlines": 0, "coverablelines": 41, "totallines": 63, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 3 },
+        { "name": "Game.PlayerCar", "coverage": 0, "coveredlines": 0, "coverablelines": 36, "totallines": 61, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 3 },
         { "name": "Game.World.BuildingCell", "coverage": 0, "coveredlines": 0, "coverablelines": 11, "totallines": 30, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 7 },
         { "name": "Game.World.BuildingGenerator", "coverage": 0, "coveredlines": 0, "coverablelines": 43, "totallines": 64, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
         { "name": "Game.World.CarSpawner", "coverage": 0, "coveredlines": 0, "coverablelines": 21, "totallines": 55, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 },
-        { "name": "Game.World.Chunk", "coverage": 0, "coveredlines": 0, "coverablelines": 359, "totallines": 570, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 28 },
+        { "name": "Game.World.Chunk", "coverage": 0, "coveredlines": 0, "coverablelines": 370, "totallines": 599, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 29 },
         { "name": "Game.World.GameWorld", "coverage": 0, "coveredlines": 0, "coverablelines": 54, "totallines": 104, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 6 },
         { "name": "Game.World.RoadGenerator", "coverage": 52.8, "coveredlines": 55, "coverablelines": 104, "totallines": 200, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 66.6, "coveredmethods": 6, "totalmethods": 9 },
         { "name": "MeshGenerator", "coverage": 0, "coveredlines": 0, "coverablelines": 27, "totallines": 96, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },

@@ -1,6 +1,7 @@
 var classGame_1_1World_1_1Chunk =
 [
-    [ "Awake", "classGame_1_1World_1_1Chunk.html#a1e2260982c26ac758548321ac5fe877d", null ],
+    [ "InitUniTaskLoop", "classGame_1_1World_1_1Chunk.html#a40aa70982f2ae4ecb1cbf4ada9bf9e76", null ],
+    [ "Awake", "classGame_1_1World_1_1Chunk.html#a697c68dad0a2d0dcad6d09d96f614b04", null ],
     [ "BuildingLoaded", "classGame_1_1World_1_1Chunk.html#ad96b568d5f7a03b6b4ea194b387c0af1", null ],
     [ "GetAbsolutePosition", "classGame_1_1World_1_1Chunk.html#af37779d40ed9cd07b577d5bca61627b7", null ],
     [ "Display", "classGame_1_1World_1_1Chunk.html#a475512064d145228ca7084735b7e2f2f", null ],
@@ -24,7 +25,7 @@ var classGame_1_1World_1_1Chunk =
     [ "curvedRoadPrefab", "classGame_1_1World_1_1Chunk.html#a032731bad732a8acc8a81495eb2446a6", null ],
     [ "threeWayRoadPrefab", "classGame_1_1World_1_1Chunk.html#a50fb8bf02e6fe0f1aed259fd03e25c29", null ],
     [ "crossRoadsPrefab", "classGame_1_1World_1_1Chunk.html#a7abecf4e7c8c6ef8a164e24731f843ac", null ],
-    [ "grassPrefab", "classGame_1_1World_1_1Chunk.html#a7bb3260a1f688c3a9ef38e64effe5a8c", null ],
+    [ "grassPrefab", "classGame_1_1World_1_1Chunk.html#afcf6bf6be6ba7bdb0f870f6bb60af90d", null ],
     [ "buildings", "classGame_1_1World_1_1Chunk.html#a383aef6b54e3e575c1865fa019cfaa07", null ],
     [ "chunkCells", "classGame_1_1World_1_1Chunk.html#aa628279d377ce42de2f8c1bfe08f921f", null ],
     [ "roadGenerator", "classGame_1_1World_1_1Chunk.html#a6177a02fdbf5c1b5f31085368ec44c88", null ],

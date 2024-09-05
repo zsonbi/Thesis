@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a2b2ce7bfb83e8cc7f23b9f7fcf6dff5f":[1,0,4,0,3,5],
+"classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a2e30cf8aa09003f7501c1f0d59c1dd0b":[1,0,4,0,3,18],
 "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a2f7717dab92a1288e0cc6fdfbac750f1":[1,0,4,0,3,21],
 "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a2fd062567521339fc67fdb20737bdb42":[1,0,4,0,3,27],
 "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a343c5d5b8bc64c0bace025f52e5e9c2d":[1,0,4,0,3,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "functions_func_d.html":[1,2,1,3],
 "functions_func_e.html":[1,2,1,4],
 "functions_func_f.html":[1,2,1,5],
-"functions_func_g.html":[1,2,1,6],
-"functions_func_h.html":[1,2,1,7],
-"functions_func_i.html":[1,2,1,8]
+"functions_func_g.html":[1,2,1,6]
 };
