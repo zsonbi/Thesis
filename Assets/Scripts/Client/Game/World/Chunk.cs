@@ -8,10 +8,12 @@ using UnityEngine.ResourceManagement;
 using System.Threading.Tasks;
 using System.Collections;
 using UnityEngine.ResourceManagement.AsyncOperations;
+
 using UnityEditor;
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using UnityEngine.LowLevel;
+
 
 namespace Game
 {
@@ -44,7 +46,9 @@ namespace Game
             private GameObject crossRoadsPrefab;
 
             [SerializeField]
-            public GameObject grassPrefab;
+            public AssetReference grassPrefab;
+
+            public List<Building> buildings;
 
             public List<Building> buildings;
 
@@ -72,6 +76,7 @@ namespace Game
             private Dictionary<ChunkCellType, List<GameObject>> objectsToCombine;
             private BuildingCell[,] buildingCells;
 
+
             [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterAssembliesLoaded)]
             public static void InitUniTaskLoop()
             {
@@ -79,14 +84,17 @@ namespace Game
                 Cysharp.Threading.Tasks.PlayerLoopHelper.Initialize(ref loop);
             }
 
+
             // Start is called before the first frame update
             private async void Awake()
             {
                 buildings = new List<Building>();
+
                 //PlayerLoopHelper.Initialize();
                 var handle = Addressables.LoadAssetsAsync<GameObject>("Buildings", BuildingLoaded);
 
                 await handle.Task;
+
 
                 //Load the values from the settings
                 LoadFromSettings();
@@ -99,6 +107,18 @@ namespace Game
 
                 this.objectsToCombine = new Dictionary<ChunkCellType, List<GameObject>>();
                 Debug.Log("World buildings");
+            }
+
+            // Callback for when each asset is loaded
+            private void BuildingLoaded(GameObject building)
+            {
+                buildings.Add(building.GetComponent<Building>());
+                buildings.Last().SetAddressableKey($"Buildings/{building.name}.prefab");
+            }
+
+            private (float, float) GetAbsolutePosition()
+            {
+                return (Col * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL * GameConfig.CHUNK_SIZE, Row * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL * GameConfig.CHUNK_SIZE);
             }
 
             // Callback for when each asset is loaded
@@ -275,7 +295,7 @@ namespace Game
                                 break;
 
                             case ChunkCellType.Grass:
-                                created = Instantiate(grassPrefab, this.transform);
+                                created = grassPrefab.InstantiateAsync(this.gameObject.transform).WaitForCompletion();
                                 break;
 
                             case ChunkCellType.Sand:
@@ -440,11 +460,13 @@ namespace Game
             public async Task GenerateBuildings()
             {
                 buildingCells = new BuildingCell[GameConfig.CHUNK_SIZE, GameConfig.CHUNK_SIZE];
+
 #if UNITY_WEBGL
                 GenerateCellMatrix();
 #else
                 await Task.Run(() => GenerateCellMatrix());
 #endif
+
                 await AddLargeRoadBuildings();
             }
 
@@ -579,7 +601,9 @@ namespace Game
                         }
                     }
 
+
                     if (Random.Range(0, 3) == 0)
+
                     {
                         float rotation = ((int)buildingCells[row, col].RoadDirection) % 4 * 90f;
                         var absolutePosition = GetAbsolutePosition();

@@ -22,9 +22,12 @@ namespace Game
 
         public Vector3 PlayerPos => playerPrefab.transform.position;
 
+
         private async void Awake()
+
         {
             player = playerPrefab.GetComponent<PlayerCar>();
+
 
             await NewGame();
         }
@@ -32,6 +35,7 @@ namespace Game
         private void Start()
         {
             //player = Instantiate(playerPrefab).GetComponent<PlayerCar>();
+
 
             Application.targetFrameRate = 60;
             QualitySettings.vSyncCount = 0;
