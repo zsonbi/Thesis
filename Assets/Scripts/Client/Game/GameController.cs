@@ -24,13 +24,13 @@ namespace Game
 
         private async void Awake()
         {
-        }
-
-        private async void Start()
-        {
             player = playerPrefab.GetComponent<PlayerCar>();
 
             await NewGame();
+        }
+
+        private void Start()
+        {
             //player = Instantiate(playerPrefab).GetComponent<PlayerCar>();
 
             Application.targetFrameRate = 60;

@@ -28,7 +28,7 @@ jobs:
     needs: checklicense
     if: needs.checklicense.outputs.is_unity_license_set == 'false'
     name: Request manual activation file 🔑
-    runs-on: ubuntu-latest
+    runs-on: my-pc
     steps:
       # Request manual activation file
       - name: Request manual activation file
