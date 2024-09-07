@@ -9,9 +9,9 @@ public class EffectScript : MonoBehaviour
     private ParticleSystem particleSystem;
 
     [SerializeField]
-    private ParticleEffectType effectType;
+    private EffectType effectType;
 
-    public ParticleEffectType EffectType => effectType;
+    public EffectType EffectType => effectType;
 
     // Runs when the sccript is loaded
     void Awake()

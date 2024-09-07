@@ -1,6 +1,6 @@
 namespace DataTypes
 {
-    public enum ParticleEffectType : byte
+    public enum EffectType : byte
     {
         Smoke=0,
         Fire=1,
