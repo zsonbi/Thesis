@@ -52,6 +52,10 @@ namespace Game
 
                 lastChunk = newChunk;
                 this.gameObject.transform.parent = newChunk.transform;
+                if (this.gameObject.isStatic)
+                {
+                    this.gameObject.isStatic = false;
+                }
                 return true;
             }
 
