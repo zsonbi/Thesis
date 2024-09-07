@@ -16,6 +16,11 @@ namespace Game
 
         private void FixedUpdate()
         {
+            if (!Alive)
+            {
+                return;
+            }
+
             float turning = 0;
 
             // pass the input to the car!

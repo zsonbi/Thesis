@@ -10,6 +10,11 @@ namespace Game
     {
         protected override void Update()
         {
+            if (!Alive)
+            {
+                return;
+            }
+
             base.Update();
 
             float steering = DetermineSteeringDirection();
