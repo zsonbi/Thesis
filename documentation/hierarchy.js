@@ -26,6 +26,7 @@ var hierarchy =
     [ "MonoBehaviour", null, [
       [ "Building", "classBuilding.html", null ],
       [ "CameraScript", "classCameraScript.html", null ],
+      [ "EffectScript", "classEffectScript.html", null ],
       [ "Game.Car", "classGame_1_1Car.html", [
         [ "Game.NpcCar", "classGame_1_1NpcCar.html", [
           [ "Game.CopCar", "classGame_1_1CopCar.html", null ]
@@ -38,6 +39,7 @@ var hierarchy =
       [ "Game.World.CarSpawner", "classGame_1_1World_1_1CarSpawner.html", null ],
       [ "Game.World.Chunk", "classGame_1_1World_1_1Chunk.html", null ],
       [ "Game.World.GameWorld", "classGame_1_1World_1_1GameWorld.html", null ],
+      [ "GameUI", "classGameUI.html", null ],
       [ "ModalWindow", "classModalWindow.html", null ],
       [ "PlayerTask", "classPlayerTask.html", null ],
       [ "TaskOpenPanelController", "classTaskOpenPanelController.html", null ],

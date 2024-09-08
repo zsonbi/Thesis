@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mappingtype_964',['MappingType',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput_1_1AxisMapping.html#a237892bdafa6578dcf66b355a470e58b',1,'UnityStandardAssets::CrossPlatformInput::TiltInput::AxisMapping']]]
+  ['effecttype_0',['EffectType',['../namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578',1,'DataTypes']]]
 ];

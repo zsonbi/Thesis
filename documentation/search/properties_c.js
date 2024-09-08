@@ -1,10 +1,6 @@
 var searchData=
 [
-  ['registered_1042',['Registered',['../classUser_1_1UserData.html#adf1a00f3bd39a418cccf26f04a79c831',1,'User::UserData']]],
-  ['res_1043',['Res',['../classTaskApiResponse.html#a2611913421afc995268212b863e84dd6',1,'TaskApiResponse']]],
-  ['revs_1044',['Revs',['../classGame_1_1CarController.html#a9325ab1c68cd86d8f6c26c3fc86ea455',1,'Game::CarController']]],
-  ['roadcounter_1045',['roadCounter',['../classEdgeRoadContainer.html#a6e168394bc99da132d3038d61888583d',1,'EdgeRoadContainer']]],
-  ['roadmatrix_1046',['RoadMatrix',['../classGame_1_1World_1_1RoadGenerator.html#a7fca47366b7f100826237bbc011034ac',1,'Game::World::RoadGenerator']]],
-  ['row_1047',['Row',['../classGame_1_1World_1_1Chunk.html#adce4d80142d5a8146a23758358504814',1,'Game::World::Chunk']]],
-  ['rowcount_1048',['RowCount',['../classBuilding.html#ae5d484df6ed27cc77d2c338bfda53435',1,'Building']]]
+  ['password_0',['password',['../structThesis__backend_1_1Data__Structures_1_1UserLoginRequest.html#a07ca93307f8ebf442dfda4727fd95e1a',1,'Thesis_backend.Data_Structures.UserLoginRequest.Password'],['../structThesis__backend_1_1Data__Structures_1_1UserRequest.html#afa2f27304c5e9d503eb2bf1cba3be812',1,'Thesis_backend.Data_Structures.UserRequest.Password']]],
+  ['periodrate_1',['PeriodRate',['../structThesis__backend_1_1Data__Structures_1_1TaskRequest.html#adc3f7466d608725775c675a78aee51d5',1,'Thesis_backend::Data_Structures::TaskRequest']]],
+  ['playerpos_2',['PlayerPos',['../classGame_1_1GameController.html#aeb425ec760007866c0ea8882d64a3171',1,'Game::GameController']]]
 ];

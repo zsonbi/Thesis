@@ -1,21 +1,21 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 09/05/2024 - 21:35:10 |
+| Generated on: | 09/08/2024 - 21:22:54 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 4 |
-| Classes: | 86 |
-| Files: | 84 |
-| Covered lines: | 236 |
-| Uncovered lines: | 3878 |
-| Coverable lines: | 4114 |
-| Total lines: | 8316 |
-| Line coverage: | 5.7% (236 of 4114) |
+| Classes: | 88 |
+| Files: | 86 |
+| Covered lines: | 235 |
+| Uncovered lines: | 4020 |
+| Coverable lines: | 4255 |
+| Total lines: | 8566 |
+| Line coverage: | 5.5% (235 of 4255) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 97 |
-| Total methods: | 708 |
-| Method coverage: | 13.7% (97 of 708) |
+| Total methods: | 736 |
+| Method coverage: | 13.1% (97 of 736) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -55,30 +55,32 @@
 |**Assembly-CSharp-Editor**|**0**|**205**|**205**|**329**|**0%**|**0**|**0**|****|**0**|**16**|**0%**|
 |BuildCommand|0|201|201|315|0%|0|0||0|15|0%|
 |BuildScript|0|4|4|14|0%|0|0||0|1|0%|
-|**Tests**|**56**|**0**|**56**|**144**|**100%**|**0**|**0**|****|**10**|**10**|**100%**|
+|**Tests**|**55**|**1**|**56**|**144**|**98.2%**|**0**|**0**|****|**10**|**10**|**100%**|
 |Tests.GameTests.RoadGeneratorTests|26|0|26|55|100%|0|0||3|3|100%|
 |Tests.MainMenuTest|4|0|4|24|100%|0|0||1|1|100%|
-|Tests.UITests.UserControllerTests|26|0|26|65|100%|0|0||6|6|100%|
-|**ThesisScripts**|**180**|**1831**|**2011**|**4292**|**8.9%**|**0**|**0**|****|**87**|**426**|**20.4%**|
+|Tests.UITests.UserControllerTests|25|1|26|65|96.1%|0|0||6|6|100%|
+|**ThesisScripts**|**180**|**1972**|**2152**|**4542**|**8.3%**|**0**|**0**|****|**87**|**454**|**19.1%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|0|6|6|15|0%|0|0||0|5|0%|
 |Building|0|9|9|33|0%|0|0||0|7|0%|
 |CameraScript|0|6|6|23|0%|0|0||0|2|0%|
 |Config.ServerConfig|0|3|3|67|0%|0|0||0|3|0%|
 |DirectionConverter|0|21|21|46|0%|0|0||0|2|0%|
 |EdgeRoadContainer|9|0|9|15|100%|0|0||7|7|100%|
-|Game.Car|0|26|26|57|0%|0|0||0|5|0%|
+|EffectScript|0|4|4|23|0%|0|0||0|2|0%|
+|Game.Car|0|78|78|131|0%|0|0||0|12|0%|
 |Game.CarController|0|129|129|249|0%|0|0||0|18|0%|
-|Game.CopCar|0|6|6|21|0%|0|0||0|1|0%|
+|Game.CopCar|0|10|10|26|0%|0|0||0|1|0%|
 |Game.EnableWheelPhysicMaterial|0|16|16|37|0%|0|0||0|2|0%|
-|Game.GameController|0|70|70|116|0%|0|0||0|11|0%|
+|Game.GameController|0|96|96|157|0%|0|0||0|17|0%|
 |Game.NpcCar|0|6|6|19|0%|0|0||0|1|0%|
-|Game.PlayerCar|0|36|36|61|0%|0|0||0|3|0%|
+|Game.PlayerCar|0|40|40|67|0%|0|0||0|3|0%|
 |Game.World.BuildingCell|0|11|11|30|0%|0|0||0|7|0%|
 |Game.World.BuildingGenerator|0|43|43|64|0%|0|0||0|2|0%|
-|Game.World.CarSpawner|0|21|21|55|0%|0|0||0|4|0%|
+|Game.World.CarSpawner|0|24|24|60|0%|0|0||0|5|0%|
 |Game.World.Chunk|0|370|370|599|0%|0|0||0|29|0%|
-|Game.World.GameWorld|0|54|54|104|0%|0|0||0|6|0%|
+|Game.World.GameWorld|0|68|68|119|0%|0|0||0|6|0%|
 |Game.World.RoadGenerator|55|49|104|200|52.8%|0|0||6|9|66.6%|
+|GameUI|0|34|34|81|0%|0|0||0|12|0%|
 |MeshGenerator|0|27|27|96|0%|0|0||0|2|0%|
 |ModalWindow|0|19|19|43|0%|0|0||0|4|0%|
 |PlayerTask|0|65|65|122|0%|0|0||0|12|0%|

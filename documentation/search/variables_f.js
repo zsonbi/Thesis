@@ -1,11 +1,12 @@
 var searchData=
 [
-  ['s_5fhardwareinput_922',['s_HardwareInput',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a279aed823018da2da2cc8266d16d6408',1,'UnityStandardAssets::CrossPlatformInput::CrossPlatformInputManager']]],
-  ['s_5ftouchinput_923',['s_TouchInput',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#aa60fa3e720da09db02061e7c9721e25b',1,'UnityStandardAssets::CrossPlatformInput::CrossPlatformInputManager']]],
-  ['scaleamount_924',['ScaleAmount',['../classGame_1_1World_1_1GameWorld.html#ae1a35f705f296cf00c5a12044b8f4f9b',1,'Game::World::GameWorld']]],
-  ['serverpath_925',['SERVERPATH',['../classConfig_1_1ServerConfig.html#aa9e50cfff68e59c43984d969588bf7e6',1,'Config::ServerConfig']]],
-  ['set_926',['set',['../namespaceThesis__backend_1_1Data__Structures.html#aa44d6a0f27adec065161aeeb258e68c1',1,'Thesis_backend::Data_Structures']]],
-  ['size_927',['size',['../classGame_1_1World_1_1RoadGenerator.html#a3790c6d7db157b46eccff1e06fd8ca89',1,'Game::World::RoadGenerator']]],
-  ['spawninterval_928',['spawnInterval',['../classGame_1_1World_1_1CarSpawner.html#a8a8c7d30161c6cc94e7b92038abc965a',1,'Game::World::CarSpawner']]],
-  ['straightroadprefab_929',['straightRoadPrefab',['../classGame_1_1World_1_1Chunk.html#add690b20dc02d37c97bd78c4a257d065',1,'Game::World::Chunk']]]
+  ['randomizeoffset_0',['RandomizeOffset',['../classGame_1_1World_1_1Chunk.html#a1fde640c5dab35b0c3cd62e2baa19745',1,'Game::World::Chunk']]],
+  ['registerpanel_1',['RegisterPanel',['../classUserController.html#a692c4e9c9007889fbab83b5b2567b847',1,'UserController']]],
+  ['remainingtimelabel_2',['RemainingTimeLabel',['../classPlayerTask.html#aa708c665a31745c693b9349a97661a84',1,'PlayerTask']]],
+  ['responsespeed_3',['responseSpeed',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1AxisTouchButton.html#adf1bf30668ea4383040d07ebb00fb373',1,'UnityStandardAssets::CrossPlatformInput::AxisTouchButton']]],
+  ['result_4',['result',['../classPhpReturnObject.html#aa5be083ea53bb1ee8900ff41b408b483',1,'PhpReturnObject']]],
+  ['returntocentrespeed_5',['returnToCentreSpeed',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1AxisTouchButton.html#a2a194c4af2b74c29b5388c9e0bffd4f5',1,'UnityStandardAssets::CrossPlatformInput::AxisTouchButton']]],
+  ['roadgenerator_6',['roadGenerator',['../classGame_1_1World_1_1Chunk.html#a6177a02fdbf5c1b5f31085368ec44c88',1,'Game::World::Chunk']]],
+  ['roads_7',['roads',['../classGame_1_1World_1_1Chunk.html#a5dd795d2a271645312c82470e4ef8b4d',1,'Game::World::Chunk']]],
+  ['rowcount_8',['rowCount',['../classBuilding.html#aa80c140b3bdf134a2529c59e68b31c91',1,'Building']]]
 ];

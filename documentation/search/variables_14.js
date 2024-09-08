@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['xoffset_952',['XOffset',['../classGame_1_1World_1_1Chunk.html#af8b1726b0f705ddfaca6df2a0b27682c',1,'Game::World::Chunk']]],
-  ['xsensitivity_953',['Xsensitivity',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#a32afeb376c688e6faeec4de083d1e256',1,'UnityStandardAssets::CrossPlatformInput::TouchPad']]]
+  ['wheel_0',['wheel',['../classGame_1_1EnableWheelPhysicMaterial.html#a03de850462789e12455c42ac055aaf93',1,'Game::EnableWheelPhysicMaterial']]],
+  ['world_1',['world',['../classGame_1_1GameController.html#a9edcc4224cf73fc093ea0a29b6bda19a',1,'Game.GameController.world'],['../classGame_1_1World_1_1Chunk.html#a7a32cc1f7693b115f165dc86e906464b',1,'Game.World.Chunk.world']]]
 ];

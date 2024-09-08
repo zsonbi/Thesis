@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['pathfortaskcomplete_737',['PATHFORTASKCOMPLETE',['../classConfig_1_1ServerConfig.html#a955b28390e3951d761ba63dd0ed10843',1,'Config::ServerConfig']]],
-  ['pathfortaskdelete_738',['PATHFORTASKDELETE',['../classConfig_1_1ServerConfig.html#a9112c3cf42da18b1222b5324f98ee40c',1,'Config::ServerConfig']]],
-  ['pathfortaskupdate_739',['PATHFORTASKUPDATE',['../classConfig_1_1ServerConfig.html#a69cfac1052256f93e049889a0594911d',1,'Config::ServerConfig']]],
-  ['pressed_740',['Pressed',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualButton.html#a286f1c4c3001579bf3268312620808e7',1,'UnityStandardAssets::CrossPlatformInput::CrossPlatformInputManager::VirtualButton']]]
+  ['pathfortaskcomplete_0',['PATHFORTASKCOMPLETE',['../classConfig_1_1ServerConfig.html#a955b28390e3951d761ba63dd0ed10843',1,'Config::ServerConfig']]],
+  ['pathfortaskdelete_1',['PATHFORTASKDELETE',['../classConfig_1_1ServerConfig.html#a9112c3cf42da18b1222b5324f98ee40c',1,'Config::ServerConfig']]],
+  ['pathfortaskupdate_2',['PATHFORTASKUPDATE',['../classConfig_1_1ServerConfig.html#a69cfac1052256f93e049889a0594911d',1,'Config::ServerConfig']]],
+  ['playerdied_3',['PlayerDied',['../classGame_1_1GameController.html#a4ee6ddd9c52134a0bb30c3c0a7bef350',1,'Game::GameController']]],
+  ['pressed_4',['Pressed',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualButton.html#a286f1c4c3001579bf3268312620808e7',1,'UnityStandardAssets::CrossPlatformInput::CrossPlatformInputManager::VirtualButton']]]
 ];

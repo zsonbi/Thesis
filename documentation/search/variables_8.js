@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['k_5freversingthreshold_843',['k_ReversingThreshold',['../classGame_1_1CarController.html#a0ca069eb30e5ab0b6c626097bef79c9a',1,'Game::CarController']]]
+  ['infamygameovertext_0',['InfamyGameOverText',['../classGameUI.html#aa8e76e961829a93e64faeb9e5f65c6bb',1,'GameUI']]],
+  ['infamyingametext_1',['InfamyInGameText',['../classGameUI.html#a98156491737508882846fa4f9b4ee2de',1,'GameUI']]],
+  ['ingamecontainer_2',['ingameContainer',['../classGameUI.html#aa87d6d5f2504f45f0d15aa727e409995',1,'GameUI']]],
+  ['isnewtask_3',['isNewTask',['../classTaskOpenPanelController.html#ac0fa9db0872e1f4e4872117d5420ea42',1,'TaskOpenPanelController']]]
 ];

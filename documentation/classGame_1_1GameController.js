@@ -2,6 +2,8 @@ var classGame_1_1GameController =
 [
     [ "Awake", "classGame_1_1GameController.html#a72ac9aa223ee085e0bd2d660466a494a", null ],
     [ "Start", "classGame_1_1GameController.html#a1d3159c95407370de0809d00266a6a20", null ],
+    [ "Update", "classGame_1_1GameController.html#ac7bf604631786f89b01d5313ad796b8b", null ],
+    [ "PlayerDied", "classGame_1_1GameController.html#a4ee6ddd9c52134a0bb30c3c0a7bef350", null ],
     [ "NewGame", "classGame_1_1GameController.html#af5c50c52cffcab3018ca54be6a421d7f", null ],
     [ "LoadAndDespawnChunks", "classGame_1_1GameController.html#af623e7876622503e3d0f985ad9b08e47", null ],
     [ "DespawnFarAwayChunks", "classGame_1_1GameController.html#a9d697eb362c93e3208af1a5c2385742d", null ],
@@ -10,7 +12,12 @@ var classGame_1_1GameController =
     [ "world", "classGame_1_1GameController.html#a9edcc4224cf73fc093ea0a29b6bda19a", null ],
     [ "playerPrefab", "classGame_1_1GameController.html#a90501b4e974f4698f38d1c6ccc7bd859", null ],
     [ "probeSize", "classGame_1_1GameController.html#aaeff5e958583d17489b7ab80d45ba19d", null ],
+    [ "gameUI", "classGame_1_1GameController.html#aec4a7fe16d8f45bbba715971e3e51526", null ],
+    [ "ScoreCounter", "classGame_1_1GameController.html#aefe69ae4f272fa03c90f236f5e9f472e", null ],
+    [ "carSpawner", "classGame_1_1GameController.html#a0de72291f83213c5c510b414eb9d6375", null ],
     [ "player", "classGame_1_1GameController.html#a1153aac7245a1c82e4f40877519ffa0a", null ],
     [ "World", "classGame_1_1GameController.html#ae490910e1402d5777d9aa387023a433b", null ],
-    [ "PlayerPos", "classGame_1_1GameController.html#aeb425ec760007866c0ea8882d64a3171", null ]
+    [ "Score", "classGame_1_1GameController.html#a110137fc8dd59568f1df0e13951e7940", null ],
+    [ "PlayerPos", "classGame_1_1GameController.html#aeb425ec760007866c0ea8882d64a3171", null ],
+    [ "Running", "classGame_1_1GameController.html#a05d01ce3124c9d29e70cdee04539baeb", null ]
 ];

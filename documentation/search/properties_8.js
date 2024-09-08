@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['matchwithinputmanager_1033',['matchWithInputManager',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualAxis.html#a0a36c8bbe98e6f8d28c92e3e259019c6',1,'UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager.VirtualAxis.matchWithInputManager()'],['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualButton.html#a463a12ebf8d58cbc22fd79fb0d5df773',1,'UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager.VirtualButton.matchWithInputManager()']]],
-  ['maxspeed_1034',['MaxSpeed',['../classGame_1_1CarController.html#a436c7b9e3ca9d81f7392e83a4029c3fe',1,'Game::CarController']]],
-  ['mouseposition_1035',['mousePosition',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a38301395eaaa739f3f0794933a188280',1,'UnityStandardAssets::CrossPlatformInput::CrossPlatformInputManager']]]
+  ['lastcompleted_0',['LastCompleted',['../classTaskContainer.html#a9b62401362cb6b1c3b5094477308cfe5',1,'TaskContainer']]],
+  ['lastloggedin_1',['LastLoggedIn',['../classUser_1_1UserData.html#a5d88a92697600df1a952dda76dd51a96',1,'User::UserData']]],
+  ['loaded_2',['Loaded',['../classGame_1_1World_1_1Chunk.html#a879b48e73c901d1ae0a712a78074021a',1,'Game::World::Chunk']]],
+  ['loggedin_3',['LoggedIn',['../classUser_1_1UserData.html#acdd4d87ab2fd5a0a81895656a6853b71',1,'User::UserData']]]
 ];

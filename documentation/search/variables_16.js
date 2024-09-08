@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zoffset_955',['ZOffset',['../classGame_1_1World_1_1Chunk.html#aea865eea078579088f52d2b98413b69b',1,'Game::World::Chunk']]]
+  ['ysensitivity_0',['Ysensitivity',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#a2481cb2206a2127c4abe6945621752ab',1,'UnityStandardAssets::CrossPlatformInput::TouchPad']]]
 ];
