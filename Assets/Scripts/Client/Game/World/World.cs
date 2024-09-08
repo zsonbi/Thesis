@@ -40,6 +40,21 @@ namespace Game
 
             public async Task CreateNewGame()
             {
+                if (Chunks is not null)
+                {
+                    for (int i = 0; i < Chunks.GetLength(0); i++)
+                    {
+                        for (int j = 0; j < Chunks.GetLength(1); j++)
+                        {
+                            if (Chunks[i, j] != null)
+                            {
+                                Destroy(Chunks[i, j].gameObject);
+                                Chunks[i, j] = null;
+                            }
+                        }
+                    }
+                }
+
                 Chunks = new Chunk[GameConfig.CHUNK_COUNT, GameConfig.CHUNK_COUNT];
 
                 await LoadChunk(GameConfig.CHUNK_COUNT / 2, GameConfig.CHUNK_COUNT / 2);
@@ -89,11 +104,11 @@ namespace Game
                 }
             }
 
-            public Chunk GetChunk(int x, int z)
+            public async Task<Chunk> GetChunk(int x, int z)
             {
                 if (Chunks[z, x] is null)
                 {
-                    LoadChunk(x, z);
+                    await LoadChunk(x, z);
                     HideChunk(x, z);
                 }
 

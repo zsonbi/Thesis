@@ -225,10 +225,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2949761259120669772, guid: 6576b6345999f4646b1cc3991c005084, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6183202918527860477, guid: 6576b6345999f4646b1cc3991c005084, type: 3}
       propertyPath: m_Name
       value: Game

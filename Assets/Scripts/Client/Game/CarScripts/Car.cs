@@ -68,7 +68,14 @@ namespace Game
 
         public void Init(GameController world)
         {
+            this.health = MAX_HEALTH;
             this.gameController = world;
+
+            if (effects.ContainsKey(EffectType.Smoke))
+                effects[EffectType.Smoke].gameObject.SetActive(false);
+
+            if (effects.ContainsKey(EffectType.Fire))
+                effects[EffectType.Fire].gameObject.SetActive(false);
         }
 
         private void OnCollisionEnter(Collision collision)

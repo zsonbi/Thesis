@@ -23,20 +23,21 @@ namespace Game
         public World.GameWorld World
         { get => world; private set => world = value; }
 
-        private float ScoreCounter=0;
+        private float ScoreCounter = 0;
 
-        public int Score { get=>Mathf.RoundToInt(ScoreCounter); private set=>ScoreCounter=value; }
+        private CarSpawner carSpawner;
+
+        public int Score { get => Mathf.RoundToInt(ScoreCounter); private set => ScoreCounter = value; }
 
         private PlayerCar player;
 
-        public Vector3 PlayerPos => playerPrefab.transform.position;
+        public Vector3 PlayerPos => player.gameObject.transform.position;
 
-        public bool Running { get;private set; }=true;
+        public bool Running { get; private set; } = true;
 
         private async void Awake()
         {
-            player = playerPrefab.GetComponent<PlayerCar>();
-
+            this.carSpawner = this.GetComponentInChildren<CarSpawner>();
             gameUI = this.gameObject.GetComponentInChildren<GameUI>();
             if (gameUI is null)
             {
@@ -59,10 +60,11 @@ namespace Game
 
         private void Update()
         {
-            if (!Running) {
-            return;
-                }
-            this.ScoreCounter+=Time.deltaTime;
+            if (!Running)
+            {
+                return;
+            }
+            this.ScoreCounter += Time.deltaTime;
         }
 
         private void PlayerDied(object? sender, EventArgs args)
@@ -73,14 +75,16 @@ namespace Game
 
         public async Task NewGame()
         {
-            this.Score=0;
-            await World.CreateNewGame();
-            Vector3 baseChunkPos = World.GetChunk(GameConfig.CHUNK_COUNT / 2, GameConfig.CHUNK_COUNT / 2).gameObject.transform.position;
-            player.gameObject.transform.position = new Vector3(baseChunkPos.x + GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL / 2 + 10, baseChunkPos.y + 2, baseChunkPos.z);
-            
+            player = Instantiate(playerPrefab, this.transform).GetComponent<PlayerCar>();
             player.Init(this);
-            player.DestroyedEvent+=PlayerDied;
-            this.Running=true;
+            player.DestroyedEvent += PlayerDied;
+            this.carSpawner.Reset();
+            this.Score = 0;
+            await World.CreateNewGame();
+            Vector3 baseChunkPos = (await World.GetChunk(GameConfig.CHUNK_COUNT / 2, GameConfig.CHUNK_COUNT / 2)).gameObject.transform.position;
+            player.gameObject.transform.position = new Vector3(baseChunkPos.x + GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL / 2 + 10, baseChunkPos.y + 2, baseChunkPos.z);
+
+            this.Running = true;
         }
 
         public async Task LoadAndDespawnChunks(int centerRow, int centerColumn)
