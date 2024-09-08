@@ -80,7 +80,7 @@ jobs:
 
   buildForLinux:
     needs: test
-    if: contains(github.ref, 'master') || contains(github.ref, 'Skins-and-buildings')
+    if: contains(github.ref, 'master') || contains(github.ref, 'Game-UI')
     name: Build for ${{ matrix.targetPlatform }}
     runs-on: my-pc
     strategy:
@@ -124,7 +124,7 @@ jobs:
 
   buildForAndroid:
     needs: test
-    if: contains(github.ref, 'master') || contains(github.ref, 'Skins-and-buildings')
+    if: contains(github.ref, 'master') || contains(github.ref, 'Game-UI')
     name: Build for ${{ matrix.targetPlatform }}
     runs-on: my-pc
     strategy:
@@ -200,7 +200,7 @@ jobs:
 
   buildForWebGL:
         needs: test
-        if: contains(github.ref, 'master') || contains(github.ref, 'Skins-and-buildings')
+        if: contains(github.ref, 'master') || contains(github.ref, 'Game-UI')
         name: Build for ${{ matrix.targetPlatform }}
         runs-on: my-pc
         strategy:
