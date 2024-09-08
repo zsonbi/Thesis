@@ -107,7 +107,7 @@ jobs:
         with:
           lfs: true
       - name: Fetch full history for Git
-        run: 
+        run: |
             git config --global --add safe.directory /home/ubuntu/actions-runner/_work/Thesis/Thesis
             git fetch --unshallow || true
       - uses: game-ci/unity-builder@v4.2.3
