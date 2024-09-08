@@ -98,7 +98,7 @@ jobs:
           sudo swapoff -a
           sudo rm -f /swapfile
           sudo apt clean
-          docker rmi $(docker image ls -aq)
+          docker rmi $(docker image ls -aq)  || true
           df -h
           # Before
           echo "Disk space before:"
@@ -140,7 +140,7 @@ jobs:
       - name: Free Disk Space for Android
         run: |
           sudo apt clean
-          docker rmi $(docker image ls -aq)
+          docker rmi $(docker image ls -aq)  || true
           df -h
           # Before
           echo "Disk space before:"
@@ -217,7 +217,7 @@ jobs:
               sudo swapoff -a
               sudo rm -f /swapfile
               sudo apt clean
-              docker rmi $(docker image ls -aq)
+              docker rmi $(docker image ls -aq)  || true
               df -h
               # Before
               echo "Disk space before:"
