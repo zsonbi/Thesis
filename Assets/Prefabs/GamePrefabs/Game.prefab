@@ -336,6 +336,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3096277543432659424}
     - target: {fileID: 4138837217917458749, guid: 8121f7efa9ff94441829c5c0493251f0, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4138837217917458749, guid: 8121f7efa9ff94441829c5c0493251f0, type: 3}
       propertyPath: m_SortingOrder
       value: -1
       objectReference: {fileID: 0}
@@ -377,6 +381,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5410427855802247400, guid: 8121f7efa9ff94441829c5c0493251f0, type: 3}
       propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5410427855802247400, guid: 8121f7efa9ff94441829c5c0493251f0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5410427855802247400, guid: 8121f7efa9ff94441829c5c0493251f0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5410427855802247400, guid: 8121f7efa9ff94441829c5c0493251f0, type: 3}
+      propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5410427855802247400, guid: 8121f7efa9ff94441829c5c0493251f0, type: 3}
@@ -425,6 +441,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5410427855802247400, guid: 8121f7efa9ff94441829c5c0493251f0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428522662631097233, guid: 8121f7efa9ff94441829c5c0493251f0, type: 3}
+      propertyPath: m_PresetInfoIsWorld
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

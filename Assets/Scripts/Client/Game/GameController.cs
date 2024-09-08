@@ -16,7 +16,11 @@ namespace Game
         [SerializeField]
         private int probeSize = 1;
 
-        public World.GameWorld World { get => world; private set => world = value; }
+        private GameUI gameUI;
+
+        [SerializeField]
+        public World.GameWorld World
+        { get => world; private set => world = value; }
 
         private PlayerCar player;
 
@@ -26,6 +30,15 @@ namespace Game
         {
             player = playerPrefab.GetComponent<PlayerCar>();
 
+            gameUI = this.gameObject.GetComponentInChildren<GameUI>();
+            if (gameUI is null)
+            {
+                Debug.LogError("Can't load the ui");
+            }
+            else
+            {
+                gameUI.Init(this);
+            }
             await NewGame();
         }
 
