@@ -1,19 +1,19 @@
 {
   "summary": {
-    "generatedon": "2024-09-12T12:58:17Z",
+    "generatedon": "2024-09-12T16:02:00Z",
     "parser": "MultiReportParser (3x OpenCoverParser)",
     "assemblies": 4,
     "classes": 88,
     "files": 86,
     "coveredlines": 235,
-    "uncoveredlines": 4020,
-    "coverablelines": 4255,
-    "totallines": 8566,
+    "uncoveredlines": 4027,
+    "coverablelines": 4262,
+    "totallines": 8579,
     "linecoverage": 5.5,
     "coveredbranches": 0,
     "totalbranches": 0,
     "coveredmethods": 97,
-    "totalmethods": 736,
+    "totalmethods": 737,
     "methodcoverage": 13.1
  },
   "coverage": {
@@ -58,7 +58,7 @@
         { "name": "Tests.GameTests.RoadGeneratorTests", "coverage": 100, "coveredlines": 26, "coverablelines": 26, "totallines": 55, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 3, "totalmethods": 3 },
         { "name": "Tests.MainMenuTest", "coverage": 100, "coveredlines": 4, "coverablelines": 4, "totallines": 24, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 1, "totalmethods": 1 },
         { "name": "Tests.UITests.UserControllerTests", "coverage": 96.1, "coveredlines": 25, "coverablelines": 26, "totallines": 65, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 6, "totalmethods": 6 } ] },
-      { "name": "ThesisScripts", "classes": 51, "coverage": 8.3, "coveredlines": 180, "coverablelines": 2152, "totallines": 4542, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 19.1, "coveredmethods": 87, "totalmethods": 454, "classesinassembly": [
+      { "name": "ThesisScripts", "classes": 51, "coverage": 8.3, "coveredlines": 180, "coverablelines": 2159, "totallines": 4555, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 19.1, "coveredmethods": 87, "totalmethods": 455, "classesinassembly": [
         { "name": "Assets.Scripts.Client.DataTypes.ChunkCellContainer", "coverage": 0, "coveredlines": 0, "coverablelines": 6, "totallines": 15, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 5 },
         { "name": "Building", "coverage": 0, "coveredlines": 0, "coverablelines": 9, "totallines": 33, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 7 },
         { "name": "CameraScript", "coverage": 0, "coveredlines": 0, "coverablelines": 6, "totallines": 23, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
@@ -70,7 +70,7 @@
         { "name": "Game.CarController", "coverage": 0, "coveredlines": 0, "coverablelines": 129, "totallines": 249, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 18 },
         { "name": "Game.CopCar", "coverage": 0, "coveredlines": 0, "coverablelines": 10, "totallines": 26, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
         { "name": "Game.EnableWheelPhysicMaterial", "coverage": 0, "coveredlines": 0, "coverablelines": 16, "totallines": 37, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
-        { "name": "Game.GameController", "coverage": 0, "coveredlines": 0, "coverablelines": 96, "totallines": 157, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 17 },
+        { "name": "Game.GameController", "coverage": 0, "coveredlines": 0, "coverablelines": 95, "totallines": 157, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 17 },
         { "name": "Game.NpcCar", "coverage": 0, "coveredlines": 0, "coverablelines": 6, "totallines": 19, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
         { "name": "Game.PlayerCar", "coverage": 0, "coveredlines": 0, "coverablelines": 40, "totallines": 67, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 3 },
         { "name": "Game.World.BuildingCell", "coverage": 0, "coveredlines": 0, "coverablelines": 11, "totallines": 30, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 7 },
@@ -79,7 +79,7 @@
         { "name": "Game.World.Chunk", "coverage": 0, "coveredlines": 0, "coverablelines": 370, "totallines": 599, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 29 },
         { "name": "Game.World.GameWorld", "coverage": 0, "coveredlines": 0, "coverablelines": 68, "totallines": 119, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 6 },
         { "name": "Game.World.RoadGenerator", "coverage": 52.8, "coveredlines": 55, "coverablelines": 104, "totallines": 200, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 66.6, "coveredmethods": 6, "totalmethods": 9 },
-        { "name": "GameUI", "coverage": 0, "coveredlines": 0, "coverablelines": 34, "totallines": 81, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 12 },
+        { "name": "GameUI", "coverage": 0, "coveredlines": 0, "coverablelines": 39, "totallines": 88, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 12 },
         { "name": "MeshGenerator", "coverage": 0, "coveredlines": 0, "coverablelines": 27, "totallines": 96, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
         { "name": "ModalWindow", "coverage": 0, "coveredlines": 0, "coverablelines": 19, "totallines": 43, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 },
         { "name": "PlayerTask", "coverage": 0, "coveredlines": 0, "coverablelines": 65, "totallines": 122, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 12 },
@@ -95,7 +95,7 @@
         { "name": "Thesis_backend.Data_Structures.UserLoginRequest", "coverage": 100, "coveredlines": 2, "coverablelines": 2, "totallines": 14, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 4, "totalmethods": 4 },
         { "name": "Thesis_backend.Data_Structures.UserRequest", "coverage": 0, "coveredlines": 0, "coverablelines": 3, "totallines": 15, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 6 },
         { "name": "Thesis_backend.Data_Structures.UserSettings", "coverage": 0, "coveredlines": 0, "coverablelines": 4, "totallines": 15, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 8 },
-        { "name": "UIController", "coverage": 27.8, "coveredlines": 22, "coverablelines": 79, "totallines": 134, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 54.5, "coveredmethods": 6, "totalmethods": 11 },
+        { "name": "UIController", "coverage": 26.8, "coveredlines": 22, "coverablelines": 82, "totallines": 139, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 50, "coveredmethods": 6, "totalmethods": 12 },
         { "name": "UnityStandardAssets.CrossPlatformInput.AxisTouchButton", "coverage": 0, "coveredlines": 0, "coverablelines": 41, "totallines": 75, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 6 },
         { "name": "UnityStandardAssets.CrossPlatformInput.ButtonHandler", "coverage": 0, "coveredlines": 0, "coverablelines": 19, "totallines": 50, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 7 },
         { "name": "UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager", "coverage": 0, "coveredlines": 0, "coverablelines": 133, "totallines": 318, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 47 },
@@ -109,6 +109,6 @@
         { "name": "UnityStandardAssets.CrossPlatformInput.TouchPad", "coverage": 0, "coveredlines": 0, "coverablelines": 64, "totallines": 156, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 9 },
         { "name": "UnityStandardAssets.CrossPlatformInput.VirtualInput", "coverage": 0, "coveredlines": 0, "coverablelines": 60, "totallines": 134, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 13 },
         { "name": "User.UserData", "coverage": 100, "coveredlines": 22, "coverablelines": 22, "totallines": 38, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 18, "totalmethods": 18 },
-        { "name": "UserController", "coverage": 40.3, "coveredlines": 25, "coverablelines": 62, "totallines": 167, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 50, "coveredmethods": 5, "totalmethods": 10 } ] } ]
+        { "name": "UserController", "coverage": 40.3, "coveredlines": 25, "coverablelines": 62, "totallines": 168, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 50, "coveredmethods": 5, "totalmethods": 10 } ] } ]
   }
 }

@@ -9,6 +9,7 @@ var classUIController =
     [ "CreateTask", "classUIController.html#adb941c060c4b3c2acdc916e9722a55d1", null ],
     [ "MoveToLoginScene", "classUIController.html#aaed55bd192a151e06198240fb0a17e82", null ],
     [ "LoadTasks", "classUIController.html#a0dc545de64fb2603baf048d46c983e5c", null ],
+    [ "LoadGameScene", "classUIController.html#a82af697550638ec112eef61c75105fb4", null ],
     [ "CreateTaskPrefabs", "classUIController.html#aef326ce7569d6884464eb729d92cea6b", null ],
     [ "UsernameInputText", "classUIController.html#aa9f04610798bf39ac1e69edd964b0448", null ],
     [ "TaskParent", "classUIController.html#a9ab18b7625588d4afeaaa4b22f68828c", null ],

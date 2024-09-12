@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#a1320e5a84e9360b022e022d60d1a8fc8":[0,0,5,0,9,19],
 "classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#a1320e5a84e9360b022e022d60d1a8fc8":[1,0,4,0,8,19],
 "classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#a1338b6e2123c8547d13f4adad495f9e0":[0,0,5,0,9,13],
 "classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#a1338b6e2123c8547d13f4adad495f9e0":[1,0,4,0,8,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578":[0,0,2,2],
 "namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578abc93fd0fa19ed26b6adf8293ada55404":[0,0,2,2,0],
 "namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578abd2b7e5f85a6ea65065c4ebc6d7c95bb":[0,0,2,2,1],
-"namespaceGame.html":[0,0,3],
-"namespaceGame_1_1World.html":[0,0,3,0]
+"namespaceGame.html":[0,0,3]
 };

@@ -118,6 +118,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a51150c9459f1e990c72b16a035e53663"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb941c060c4b3c2acdc916e9722a55d1" id="r_adb941c060c4b3c2acdc916e9722a55d1"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUIController.html#adb941c060c4b3c2acdc916e9722a55d1">CreateTask</a> (<a class="el" href="classTaskContainer.html">TaskContainer</a> taskContainer)</td></tr>
 <tr class="separator:adb941c060c4b3c2acdc916e9722a55d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82af697550638ec112eef61c75105fb4" id="r_a82af697550638ec112eef61c75105fb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUIController.html#a82af697550638ec112eef61c75105fb4">LoadGameScene</a> ()</td></tr>
+<tr class="separator:a82af697550638ec112eef61c75105fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -354,7 +356,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="TaskOpenPanelController_8cs_source.html#l00103">TaskOpenPanelController.MakeItGoodTask()</a>, <a class="el" href="UIController_8cs_source.html#l00022">taskOpenPanelController</a>, <a class="el" href="UIController_8cs_source.html#l00016">TaskParent</a>, and <a class="el" href="UIController_8cs_source.html#l00027">tasks</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="UIController_8cs_source.html#l00126">CreateTaskPrefabs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="UIController_8cs_source.html#l00131">CreateTaskPrefabs()</a>.</p>
 
 </div>
 </div>
@@ -441,7 +443,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="TaskContainer_8cs_source.html#l00009">TaskContainer.Id</a>, <a class="el" href="PlayerTask_8cs_source.html#l00041">PlayerTask.InitValues()</a>, <a class="el" href="UIController_8cs_source.html#l00022">taskOpenPanelController</a>, <a class="el" href="UIController_8cs_source.html#l00016">TaskParent</a>, <a class="el" href="UIController_8cs_source.html#l00019">TaskPrefab</a>, and <a class="el" href="UIController_8cs_source.html#l00027">tasks</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="UIController_8cs_source.html#l00126">CreateTaskPrefabs()</a>, and <a class="el" href="TaskOpenPanelController_8cs_source.html#l00137">TaskOpenPanelController.SavedTask()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="UIController_8cs_source.html#l00131">CreateTaskPrefabs()</a>, and <a class="el" href="TaskOpenPanelController_8cs_source.html#l00137">TaskOpenPanelController.SavedTask()</a>.</p>
 
 </div>
 </div>
@@ -514,12 +516,42 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="aclassConfig_1_1ServerConfig_html"><div class="ttname"><a href="classConfig_1_1ServerConfig.html">Config.ServerConfig</a></div><div class="ttdef"><b>Definition</b> <a href="ServerConfig_8cs_source.html#l00003">ServerConfig.cs:4</a></div></div>
 <div class="ttc" id="aclassConfig_1_1ServerConfig_html_a47231cfa790f15bbd226c2dc2202c448"><div class="ttname"><a href="classConfig_1_1ServerConfig.html#a47231cfa790f15bbd226c2dc2202c448">Config.ServerConfig.PATHFORTASKSQUERY</a></div><div class="ttdeci">const string PATHFORTASKSQUERY</div><div class="ttdoc">Gets all the tasks Needs to be already logged in.</div><div class="ttdef"><b>Definition</b> <a href="ServerConfig_8cs_source.html#l00053">ServerConfig.cs:53</a></div></div>
 <div class="ttc" id="aclassServer_html"><div class="ttname"><a href="classServer.html">Server</a></div><div class="ttdef"><b>Definition</b> <a href="Server_8cs_source.html#l00008">Server.cs:9</a></div></div>
-<div class="ttc" id="aclassUIController_html_aef326ce7569d6884464eb729d92cea6b"><div class="ttname"><a href="classUIController.html#aef326ce7569d6884464eb729d92cea6b">UIController.CreateTaskPrefabs</a></div><div class="ttdeci">void CreateTaskPrefabs(List&lt; Thesis_backend.Data_Structures.PlayerTask &gt; requestResult)</div><div class="ttdef"><b>Definition</b> <a href="UIController_8cs_source.html#l00126">UIController.cs:126</a></div></div>
+<div class="ttc" id="aclassUIController_html_aef326ce7569d6884464eb729d92cea6b"><div class="ttname"><a href="classUIController.html#aef326ce7569d6884464eb729d92cea6b">UIController.CreateTaskPrefabs</a></div><div class="ttdeci">void CreateTaskPrefabs(List&lt; Thesis_backend.Data_Structures.PlayerTask &gt; requestResult)</div><div class="ttdef"><b>Definition</b> <a href="UIController_8cs_source.html#l00131">UIController.cs:131</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="UIController_8cs_source.html#l00126">CreateTaskPrefabs()</a>, and <a class="el" href="ServerConfig_8cs_source.html#l00053">Config.ServerConfig.PATHFORTASKSQUERY</a>.</p>
+<p class="reference">References <a class="el" href="UIController_8cs_source.html#l00131">CreateTaskPrefabs()</a>, and <a class="el" href="ServerConfig_8cs_source.html#l00053">Config.ServerConfig.PATHFORTASKSQUERY</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="UIController_8cs_source.html#l00030">Start()</a>.</p>
 
+</div>
+</div>
+<a id="a82af697550638ec112eef61c75105fb4" name="a82af697550638ec112eef61c75105fb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82af697550638ec112eef61c75105fb4">&#9670;&#160;</a></span>LoadGameScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UIController.LoadGameScene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="UIController_8cs_source.html#l00126">126</a> of file <a class="el" href="UIController_8cs_source.html">UIController.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  127</span>    {</div>
+<div class="line"><span class="lineno">  128</span>        SceneManager.LoadScene(<span class="stringliteral">&quot;GameScene&quot;</span>, LoadSceneMode.Single);</div>
+<div class="line"><span class="lineno">  129</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aef326ce7569d6884464eb729d92cea6b" name="aef326ce7569d6884464eb729d92cea6b"></a>
@@ -546,14 +578,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="UIController_8cs_source.html#l00126">126</a> of file <a class="el" href="UIController_8cs_source.html">UIController.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  127</span>    {</div>
-<div class="line"><span class="lineno">  128</span>        <span class="keywordflow">foreach</span> (var item <span class="keywordflow">in</span> requestResult)</div>
-<div class="line"><span class="lineno">  129</span>        {</div>
-<div class="line"><span class="lineno">  130</span>            <a class="code hl_function" href="classUIController.html#adb941c060c4b3c2acdc916e9722a55d1">CreateTask</a>(<span class="keyword">new</span> <a class="code hl_class" href="classTaskContainer.html">TaskContainer</a>(item.ID, item.TaskName, System.Convert.ToInt32(item.TaskType), item.PeriodRate, item.Description, item.Updated, item.LastCompleted, item.Completed));</div>
-<div class="line"><span class="lineno">  131</span>        }</div>
-<div class="line"><span class="lineno">  132</span>        <a class="code hl_function" href="classUIController.html#a88565f5d091a1c84ebc6bd4f8fce4015">LoadGoodTasks</a>();</div>
-<div class="line"><span class="lineno">  133</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="UIController_8cs_source.html#l00131">131</a> of file <a class="el" href="UIController_8cs_source.html">UIController.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  132</span>    {</div>
+<div class="line"><span class="lineno">  133</span>        <span class="keywordflow">foreach</span> (var item <span class="keywordflow">in</span> requestResult)</div>
+<div class="line"><span class="lineno">  134</span>        {</div>
+<div class="line"><span class="lineno">  135</span>            <a class="code hl_function" href="classUIController.html#adb941c060c4b3c2acdc916e9722a55d1">CreateTask</a>(<span class="keyword">new</span> <a class="code hl_class" href="classTaskContainer.html">TaskContainer</a>(item.ID, item.TaskName, System.Convert.ToInt32(item.TaskType), item.PeriodRate, item.Description, item.Updated, item.LastCompleted, item.Completed));</div>
+<div class="line"><span class="lineno">  136</span>        }</div>
+<div class="line"><span class="lineno">  137</span>        <a class="code hl_function" href="classUIController.html#a88565f5d091a1c84ebc6bd4f8fce4015">LoadGoodTasks</a>();</div>
+<div class="line"><span class="lineno">  138</span>    }</div>
 <div class="ttc" id="aclassTaskContainer_html"><div class="ttname"><a href="classTaskContainer.html">TaskContainer</a></div><div class="ttdef"><b>Definition</b> <a href="TaskContainer_8cs_source.html#l00007">TaskContainer.cs:8</a></div></div>
 <div class="ttc" id="aclassUIController_html_a88565f5d091a1c84ebc6bd4f8fce4015"><div class="ttname"><a href="classUIController.html#a88565f5d091a1c84ebc6bd4f8fce4015">UIController.LoadGoodTasks</a></div><div class="ttdeci">void LoadGoodTasks()</div><div class="ttdef"><b>Definition</b> <a href="UIController_8cs_source.html#l00066">UIController.cs:66</a></div></div>
 <div class="ttc" id="aclassUIController_html_adb941c060c4b3c2acdc916e9722a55d1"><div class="ttname"><a href="classUIController.html#adb941c060c4b3c2acdc916e9722a55d1">UIController.CreateTask</a></div><div class="ttdeci">GameObject CreateTask(TaskContainer taskContainer)</div><div class="ttdef"><b>Definition</b> <a href="UIController_8cs_source.html#l00100">UIController.cs:100</a></div></div>
