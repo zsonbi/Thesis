@@ -47,7 +47,7 @@ namespace Game
             {
                 gameUI.Init(this);
             }
-            await NewGame();
+         //   await NewGame();
         }
 
         private void Start()

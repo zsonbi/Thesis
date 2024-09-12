@@ -123,6 +123,11 @@ public class UIController : MonoBehaviour
         StartCoroutine(Server.SendGetRequest<List<Thesis_backend.Data_Structures.PlayerTask>>(ServerConfig.PATHFORTASKSQUERY, CreateTaskPrefabs));
     }
 
+    public void LoadGameScene()
+    {
+        SceneManager.LoadScene("GameScene", LoadSceneMode.Single);
+    }
+
     private void CreateTaskPrefabs(List<Thesis_backend.Data_Structures.PlayerTask> requestResult)
     {
         foreach (var item in requestResult)
