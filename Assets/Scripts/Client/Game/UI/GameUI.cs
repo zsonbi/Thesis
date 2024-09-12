@@ -44,6 +44,9 @@ public class GameUI : MonoBehaviour
     public void NewGame()
     {
         HideGameOverScreen();
+        ingameContainer.SetActive(true);
+        mainMenuContainer.SetActive(false);
+
         gameController?.NewGame();
     }
 
@@ -73,6 +76,8 @@ public class GameUI : MonoBehaviour
     public void BackToGameMenu()
     {
         HideGameOverScreen();
+        ingameContainer.SetActive(false);
+        mainMenuContainer.SetActive(true);
     }
 
     public void DoubleScore()
