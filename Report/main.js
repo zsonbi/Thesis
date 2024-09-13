@@ -275,7 +275,7 @@ var assemblies = [
     "classes": [
       { "name": "Assets.Scripts.Client.DataTypes.ChunkCellContainer", "rp": "ThesisScripts_ChunkCellContainer.html", "cl": 0, "ucl": 6, "cal": 6, "tl": 15, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Building", "rp": "ThesisScripts_Building.html", "cl": 0, "ucl": 9, "cal": 9, "tl": 33, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "CameraScript", "rp": "ThesisScripts_CameraScript.html", "cl": 0, "ucl": 6, "cal": 6, "tl": 23, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "CameraScript", "rp": "ThesisScripts_CameraScript.html", "cl": 0, "ucl": 7, "cal": 7, "tl": 24, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Config.ServerConfig", "rp": "ThesisScripts_ServerConfig.html", "cl": 0, "ucl": 3, "cal": 3, "tl": 67, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "DirectionConverter", "rp": "ThesisScripts_DirectionConverter.html", "cl": 0, "ucl": 21, "cal": 21, "tl": 46, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "EdgeRoadContainer", "rp": "ThesisScripts_EdgeRoadContainer.html", "cl": 9, "ucl": 0, "cal": 9, "tl": 15, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },

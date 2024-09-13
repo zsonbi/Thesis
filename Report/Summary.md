@@ -1,16 +1,16 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 09/13/2024 - 13:02:55 |
+| Generated on: | 09/13/2024 - 22:49:39 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 4 |
 | Classes: | 88 |
 | Files: | 86 |
 | Covered lines: | 237 |
-| Uncovered lines: | 4025 |
-| Coverable lines: | 4262 |
-| Total lines: | 8579 |
-| Line coverage: | 5.5% (237 of 4262) |
+| Uncovered lines: | 4026 |
+| Coverable lines: | 4263 |
+| Total lines: | 8580 |
+| Line coverage: | 5.5% (237 of 4263) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 98 |
@@ -59,10 +59,10 @@
 |Tests.GameTests.RoadGeneratorTests|26|0|26|55|100%|0|0||3|3|100%|
 |Tests.MainMenuTest|4|0|4|24|100%|0|0||1|1|100%|
 |Tests.UITests.UserControllerTests|25|1|26|65|96.1%|0|0||6|6|100%|
-|**ThesisScripts**|**182**|**1977**|**2159**|**4555**|**8.4%**|**0**|**0**|****|**88**|**455**|**19.3%**|
+|**ThesisScripts**|**182**|**1978**|**2160**|**4556**|**8.4%**|**0**|**0**|****|**88**|**455**|**19.3%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|0|6|6|15|0%|0|0||0|5|0%|
 |Building|0|9|9|33|0%|0|0||0|7|0%|
-|CameraScript|0|6|6|23|0%|0|0||0|2|0%|
+|CameraScript|0|7|7|24|0%|0|0||0|2|0%|
 |Config.ServerConfig|0|3|3|67|0%|0|0||0|3|0%|
 |DirectionConverter|0|21|21|46|0%|0|0||0|2|0%|
 |EdgeRoadContainer|9|0|9|15|100%|0|0||7|7|100%|

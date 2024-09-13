@@ -57,11 +57,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "ApiTypes_2PlayerTask_8cs.html",
-"classGameConfig.html#aaa4c6f88644eeb0a06821ca198931d12",
-"classGame_1_1World_1_1Chunk.html#a5dd795d2a271645312c82470e4ef8b4d",
-"classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a343c5d5b8bc64c0bace025f52e5e9c2d",
-"classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#a1320e5a84e9360b022e022d60d1a8fc8",
-"namespaceGame_1_1World.html"
+"classGameConfig.html#a14c1a5a65b4d5cc697574822c6372f1a",
+"classGame_1_1World_1_1Chunk.html#a475512064d145228ca7084735b7e2f2f",
+"classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a2e30cf8aa09003f7501c1f0d59c1dd0b",
+"classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput_1_1AxisMapping.html#aba5d982b878f8b4e15867b731782ed63",
+"namespaceDataTypes.html#a3bc22b847fe90cda4414fc931bd61622a945d5e233cf7d6240f6b783b36a374ff"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
