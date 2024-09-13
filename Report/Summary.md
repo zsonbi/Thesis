@@ -1,21 +1,21 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 09/13/2024 - 11:18:02 |
+| Generated on: | 09/13/2024 - 12:07:51 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 4 |
 | Classes: | 88 |
 | Files: | 86 |
-| Covered lines: | 235 |
-| Uncovered lines: | 4027 |
+| Covered lines: | 237 |
+| Uncovered lines: | 4025 |
 | Coverable lines: | 4262 |
 | Total lines: | 8579 |
-| Line coverage: | 5.5% (235 of 4262) |
+| Line coverage: | 5.5% (237 of 4262) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 97 |
+| Covered methods: | 98 |
 | Total methods: | 737 |
-| Method coverage: | 13.1% (97 of 737) |
+| Method coverage: | 13.2% (98 of 737) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -59,7 +59,7 @@
 |Tests.GameTests.RoadGeneratorTests|26|0|26|55|100%|0|0||3|3|100%|
 |Tests.MainMenuTest|4|0|4|24|100%|0|0||1|1|100%|
 |Tests.UITests.UserControllerTests|25|1|26|65|96.1%|0|0||6|6|100%|
-|**ThesisScripts**|**180**|**1979**|**2159**|**4555**|**8.3%**|**0**|**0**|****|**87**|**455**|**19.1%**|
+|**ThesisScripts**|**182**|**1977**|**2159**|**4555**|**8.4%**|**0**|**0**|****|**88**|**455**|**19.3%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|0|6|6|15|0%|0|0||0|5|0%|
 |Building|0|9|9|33|0%|0|0||0|7|0%|
 |CameraScript|0|6|6|23|0%|0|0||0|2|0%|
@@ -83,7 +83,7 @@
 |GameUI|0|39|39|88|0%|0|0||0|12|0%|
 |MeshGenerator|0|27|27|96|0%|0|0||0|2|0%|
 |ModalWindow|0|19|19|43|0%|0|0||0|4|0%|
-|PlayerTask|0|65|65|122|0%|0|0||0|12|0%|
+|PlayerTask|2|63|65|122|3%|0|0||1|12|8.3%|
 |TaskApiResponse|0|9|9|16|0%|0|0||0|7|0%|
 |TaskClosedEventArgs|0|4|4|14|0%|0|0||0|1|0%|
 |TaskContainer|22|35|57|79|38.5%|0|0||18|22|81.8%|

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>09/13/2024 - 11:18:02</Generatedon>
+    <Generatedon>09/13/2024 - 12:07:51</Generatedon>
     <Parser>MultiReportParser (3x OpenCoverParser)</Parser>
     <Assemblies>4</Assemblies>
     <Classes>88</Classes>
     <Files>86</Files>
-    <Coveredlines>235</Coveredlines>
-    <Uncoveredlines>4027</Uncoveredlines>
+    <Coveredlines>237</Coveredlines>
+    <Uncoveredlines>4025</Uncoveredlines>
     <Coverablelines>4262</Coverablelines>
     <Totallines>8579</Totallines>
     <Linecoverage>5.5</Linecoverage>
     <Coveredbranches>0</Coveredbranches>
     <Totalbranches>0</Totalbranches>
-    <Coveredmethods>97</Coveredmethods>
+    <Coveredmethods>98</Coveredmethods>
     <Totalmethods>737</Totalmethods>
-    <Methodcoverage>13.1</Methodcoverage>
+    <Methodcoverage>13.2</Methodcoverage>
   </Summary>
   <Coverage>
     <Assembly name="Assembly-CSharp" classes="32" coverage="0" coveredlines="0" coverablelines="1842" totallines="3841" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="256" methodcoverage="0">
@@ -61,7 +61,7 @@
       <Class name="Tests.MainMenuTest" coverage="100" coveredlines="4" coverablelines="4" totallines="24" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
       <Class name="Tests.UITests.UserControllerTests" coverage="96.1" coveredlines="25" coverablelines="26" totallines="65" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="6" methodcoverage="100" />
     </Assembly>
-    <Assembly name="ThesisScripts" classes="51" coverage="8.3" coveredlines="180" coverablelines="2159" totallines="4555" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="87" totalmethods="455" methodcoverage="19.1">
+    <Assembly name="ThesisScripts" classes="51" coverage="8.4" coveredlines="182" coverablelines="2159" totallines="4555" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="88" totalmethods="455" methodcoverage="19.3">
       <Class name="Assets.Scripts.Client.DataTypes.ChunkCellContainer" coverage="0" coveredlines="0" coverablelines="6" totallines="15" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
       <Class name="Building" coverage="0" coveredlines="0" coverablelines="9" totallines="33" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="7" methodcoverage="0" />
       <Class name="CameraScript" coverage="0" coveredlines="0" coverablelines="6" totallines="23" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
@@ -85,7 +85,7 @@
       <Class name="GameUI" coverage="0" coveredlines="0" coverablelines="39" totallines="88" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="12" methodcoverage="0" />
       <Class name="MeshGenerator" coverage="0" coveredlines="0" coverablelines="27" totallines="96" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
       <Class name="ModalWindow" coverage="0" coveredlines="0" coverablelines="19" totallines="43" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
-      <Class name="PlayerTask" coverage="0" coveredlines="0" coverablelines="65" totallines="122" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="12" methodcoverage="0" />
+      <Class name="PlayerTask" coverage="3" coveredlines="2" coverablelines="65" totallines="122" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="12" methodcoverage="8.3" />
       <Class name="TaskApiResponse" coverage="0" coveredlines="0" coverablelines="9" totallines="16" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="7" methodcoverage="0" />
       <Class name="TaskClosedEventArgs" coverage="0" coveredlines="0" coverablelines="4" totallines="14" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
       <Class name="TaskContainer" coverage="38.5" coveredlines="22" coverablelines="57" totallines="79" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="18" totalmethods="22" methodcoverage="81.8" />
