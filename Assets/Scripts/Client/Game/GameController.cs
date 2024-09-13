@@ -33,7 +33,7 @@ namespace Game
 
         public Vector3 PlayerPos => player.gameObject.transform.position;
 
-        public bool Running { get; private set; } = true;
+        public bool Running { get; private set; } = false;
 
         private async void Awake()
         {
@@ -47,7 +47,7 @@ namespace Game
             {
                 gameUI.Init(this);
             }
-         //   await NewGame();
+            //   await NewGame();
         }
 
         private void Start()

@@ -18,6 +18,7 @@ public class CameraScript : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        this.transform.position = new Vector3(CameraOffset.x + gameController.PlayerPos.x, CameraOffset.y, CameraOffset.z + gameController.PlayerPos.z);
+        if (this.gameController.Running)
+            this.transform.position = new Vector3(CameraOffset.x + gameController.PlayerPos.x, CameraOffset.y, CameraOffset.z + gameController.PlayerPos.z);
     }
 }
