@@ -56,7 +56,7 @@ public static class Server
         using (UnityWebRequest webRequest = UnityWebRequest.Put(url, JsonConvert.SerializeObject(dataToSend)))
         {
             webRequest.method = "PATCH";
-
+            webRequest.SetRequestHeader("Content-Type", "application/json");
             // Request and wait for the desired page.
             yield return webRequest.SendWebRequest();
 

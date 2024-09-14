@@ -138,7 +138,11 @@ public class TaskOpenPanelController : MonoBehaviour
     {
         this.TaskClosedEventHandler?.Invoke(this, new TaskClosedEventArgs(true));
         tasksOpenPanel.SetActive(false);
-        if (TaskContainer.Id == -1)
+        bool isNewTask = TaskContainer.Id == -1;
+
+        this.TaskContainer = new TaskContainer(savedTask);
+
+        if (isNewTask)
         {
             UIController.CreateTask(this.TaskContainer);
         }
