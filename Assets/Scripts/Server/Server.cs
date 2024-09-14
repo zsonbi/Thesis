@@ -19,6 +19,8 @@ public static class Server
     {
         using (UnityWebRequest webRequest = UnityWebRequest.Post(url, JsonConvert.SerializeObject(dataToSend), "application/json"))
         {
+            webRequest.SetRequestHeader("Access-Control-Allow-Credentials", "true");  // Ensures credentials are allowed if needed
+
             // Request and wait for the desired page.
             yield return webRequest.SendWebRequest();
 
@@ -57,6 +59,8 @@ public static class Server
         {
             webRequest.method = "PATCH";
             webRequest.SetRequestHeader("Content-Type", "application/json");
+            webRequest.SetRequestHeader("Access-Control-Allow-Credentials", "true");  // Ensures credentials are allowed if needed
+
             // Request and wait for the desired page.
             yield return webRequest.SendWebRequest();
 
@@ -93,6 +97,8 @@ public static class Server
     {
         using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
         {
+            webRequest.SetRequestHeader("Access-Control-Allow-Credentials", "true");  // Ensures credentials are allowed if needed
+
             // Request and wait for the desired page.
             yield return webRequest.SendWebRequest();
 
