@@ -11,5 +11,6 @@ var searchData=
   ['player_8',['player',['../classGame_1_1GameController.html#a1153aac7245a1c82e4f40877519ffa0a',1,'Game::GameController']]],
   ['playerprefab_9',['playerPrefab',['../classGame_1_1GameController.html#a90501b4e974f4698f38d1c6ccc7bd859',1,'Game::GameController']]],
   ['playertask_10',['PlayerTask',['../namespaceThesis__backend_1_1Data__Structures.html#ae656f3c7a1335db8207ae56dcbd213a7',1,'Thesis_backend::Data_Structures']]],
-  ['probesize_11',['probeSize',['../classGame_1_1GameController.html#aaeff5e958583d17489b7ab80d45ba19d',1,'Game::GameController']]]
+  ['police_5fgame_5fover_11',['POLICE_GAME_OVER',['../classGameConfig.html#af9951f79cdc3576ae67b6f0f4cf3e6dc',1,'GameConfig']]],
+  ['probesize_12',['probeSize',['../classGame_1_1GameController.html#aaeff5e958583d17489b7ab80d45ba19d',1,'Game::GameController']]]
 ];

@@ -54,6 +54,7 @@ var hierarchy =
       [ "UserController", "classUserController.html", null ]
     ] ],
     [ "PhpReturnObject", "classPhpReturnObject.html", null ],
+    [ "Game.PlayerCar.PoliceContainer", "classGame_1_1PlayerCar_1_1PoliceContainer.html", null ],
     [ "Game.World.RoadGenerator", "classGame_1_1World_1_1RoadGenerator.html", null ],
     [ "Server", "classServer.html", null ],
     [ "Config.ServerConfig", "classConfig_1_1ServerConfig.html", null ],

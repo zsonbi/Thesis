@@ -1,21 +1,21 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 09/14/2024 - 09:31:00 |
+| Generated on: | 09/14/2024 - 10:28:44 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 4 |
 | Classes: | 88 |
 | Files: | 86 |
 | Covered lines: | 237 |
-| Uncovered lines: | 4026 |
-| Coverable lines: | 4263 |
-| Total lines: | 8580 |
-| Line coverage: | 5.5% (237 of 4263) |
+| Uncovered lines: | 4058 |
+| Coverable lines: | 4295 |
+| Total lines: | 8629 |
+| Line coverage: | 5.5% (237 of 4295) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 98 |
-| Total methods: | 737 |
-| Method coverage: | 13.2% (98 of 737) |
+| Total methods: | 743 |
+| Method coverage: | 13.1% (98 of 743) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -59,7 +59,7 @@
 |Tests.GameTests.RoadGeneratorTests|26|0|26|55|100%|0|0||3|3|100%|
 |Tests.MainMenuTest|4|0|4|24|100%|0|0||1|1|100%|
 |Tests.UITests.UserControllerTests|25|1|26|65|96.1%|0|0||6|6|100%|
-|**ThesisScripts**|**182**|**1978**|**2160**|**4556**|**8.4%**|**0**|**0**|****|**88**|**455**|**19.3%**|
+|**ThesisScripts**|**182**|**2010**|**2192**|**4605**|**8.3%**|**0**|**0**|****|**88**|**461**|**19%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|0|6|6|15|0%|0|0||0|5|0%|
 |Building|0|9|9|33|0%|0|0||0|7|0%|
 |CameraScript|0|7|7|24|0%|0|0||0|2|0%|
@@ -73,7 +73,7 @@
 |Game.EnableWheelPhysicMaterial|0|16|16|37|0%|0|0||0|2|0%|
 |Game.GameController|0|95|95|157|0%|0|0||0|17|0%|
 |Game.NpcCar|0|6|6|19|0%|0|0||0|1|0%|
-|Game.PlayerCar|0|40|40|67|0%|0|0||0|3|0%|
+|Game.PlayerCar|0|72|72|116|0%|0|0||0|9|0%|
 |Game.World.BuildingCell|0|11|11|30|0%|0|0||0|7|0%|
 |Game.World.BuildingGenerator|0|43|43|64|0%|0|0||0|2|0%|
 |Game.World.CarSpawner|0|24|24|60|0%|0|0||0|5|0%|

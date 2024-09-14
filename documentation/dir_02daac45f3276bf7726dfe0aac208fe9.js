@@ -7,5 +7,5 @@ var dir_02daac45f3276bf7726dfe0aac208fe9 =
     [ "EffectScript.cs", "EffectScript_8cs.html", "EffectScript_8cs" ],
     [ "enableWheelPhysicsMaterial.cs", "enableWheelPhysicsMaterial_8cs.html", "enableWheelPhysicsMaterial_8cs" ],
     [ "NpcCar.cs", "NpcCar_8cs.html", "NpcCar_8cs" ],
-    [ "PlayerCar.cs", "PlayerCar_8cs.html", null ]
+    [ "PlayerCar.cs", "PlayerCar_8cs.html", "PlayerCar_8cs" ]
 ];

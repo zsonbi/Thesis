@@ -1,7 +1,7 @@
 var searchData=
 [
   ['particlesystem_0',['particleSystem',['../classEffectScript.html#ac5f9f01ee64cb5063c52a937db4791e0',1,'EffectScript']]],
-  ['password_1',['password',['../structThesis__backend_1_1Data__Structures_1_1UserRequest.html#afa2f27304c5e9d503eb2bf1cba3be812',1,'Thesis_backend.Data_Structures.UserRequest.Password'],['../structThesis__backend_1_1Data__Structures_1_1UserLoginRequest.html#a07ca93307f8ebf442dfda4727fd95e1a',1,'Thesis_backend.Data_Structures.UserLoginRequest.Password']]],
+  ['password_1',['password',['../structThesis__backend_1_1Data__Structures_1_1UserLoginRequest.html#a07ca93307f8ebf442dfda4727fd95e1a',1,'Thesis_backend.Data_Structures.UserLoginRequest.Password'],['../structThesis__backend_1_1Data__Structures_1_1UserRequest.html#afa2f27304c5e9d503eb2bf1cba3be812',1,'Thesis_backend.Data_Structures.UserRequest.Password']]],
   ['passwordhash_2',['PasswordHash',['../namespaceThesis__backend_1_1Data__Structures.html#a0a47e498b447bfade12a294e01757fec',1,'Thesis_backend::Data_Structures']]],
   ['pathforcheckloggedin_3',['PATHFORCHECKLOGGEDIN',['../classConfig_1_1ServerConfig.html#a5db97261b8e437dcf4d91713905aabec',1,'Config::ServerConfig']]],
   ['pathforlogin_4',['PATHFORLOGIN',['../classConfig_1_1ServerConfig.html#afb8d71401f0aa0ea68ad081fcf50528e',1,'Config::ServerConfig']]],
@@ -21,10 +21,13 @@ var searchData=
   ['playerdied_18',['PlayerDied',['../classGame_1_1GameController.html#a4ee6ddd9c52134a0bb30c3c0a7bef350',1,'Game::GameController']]],
   ['playerpos_19',['PlayerPos',['../classGame_1_1GameController.html#aeb425ec760007866c0ea8882d64a3171',1,'Game::GameController']]],
   ['playerprefab_20',['playerPrefab',['../classGame_1_1GameController.html#a90501b4e974f4698f38d1c6ccc7bd859',1,'Game::GameController']]],
-  ['playertask_21',['playertask',['../classPlayerTask.html',1,'PlayerTask'],['../namespaceThesis__backend_1_1Data__Structures.html#ae656f3c7a1335db8207ae56dcbd213a7',1,'Thesis_backend.Data_Structures.PlayerTask']]],
+  ['playertask_21',['playertask',['../namespaceThesis__backend_1_1Data__Structures.html#ae656f3c7a1335db8207ae56dcbd213a7',1,'Thesis_backend.Data_Structures.PlayerTask'],['../classPlayerTask.html',1,'PlayerTask']]],
   ['playertask_2ecs_22',['playertask.cs',['../PlayerTask_8cs.html',1,'(Global Namespace)'],['../ApiTypes_2PlayerTask_8cs.html',1,'(Global Namespace)']]],
-  ['pressed_23',['Pressed',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualButton.html#a286f1c4c3001579bf3268312620808e7',1,'UnityStandardAssets::CrossPlatformInput::CrossPlatformInputManager::VirtualButton']]],
-  ['privacy_24',['privacy',['../namespaceThesis__backend_1_1Data__Structures.html#ab6c62166e52fb7c9d5f6d26794a3ce89',1,'Thesis_backend::Data_Structures']]],
-  ['probesize_25',['probeSize',['../classGame_1_1GameController.html#aaeff5e958583d17489b7ab80d45ba19d',1,'Game::GameController']]],
-  ['profilepic_26',['ProfilePic',['../namespaceThesis__backend_1_1Data__Structures.html#a05fa93d2eeca2ac0cde9696371d8a263',1,'Thesis_backend::Data_Structures']]]
+  ['police_5fgame_5fover_23',['POLICE_GAME_OVER',['../classGameConfig.html#af9951f79cdc3576ae67b6f0f4cf3e6dc',1,'GameConfig']]],
+  ['policecar_24',['PoliceCar',['../classGame_1_1PlayerCar_1_1PoliceContainer.html#aac2693dd8c3d43d842deb9546ad0bb91',1,'Game::PlayerCar::PoliceContainer']]],
+  ['policecontainer_25',['policecontainer',['../classGame_1_1PlayerCar_1_1PoliceContainer.html#a79442268fab7d4bf98066096e9babe84',1,'Game.PlayerCar.PoliceContainer.PoliceContainer()'],['../classGame_1_1PlayerCar_1_1PoliceContainer.html',1,'Game.PlayerCar.PoliceContainer']]],
+  ['pressed_26',['Pressed',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualButton.html#a286f1c4c3001579bf3268312620808e7',1,'UnityStandardAssets::CrossPlatformInput::CrossPlatformInputManager::VirtualButton']]],
+  ['privacy_27',['privacy',['../namespaceThesis__backend_1_1Data__Structures.html#ab6c62166e52fb7c9d5f6d26794a3ce89',1,'Thesis_backend::Data_Structures']]],
+  ['probesize_28',['probeSize',['../classGame_1_1GameController.html#aaeff5e958583d17489b7ab80d45ba19d',1,'Game::GameController']]],
+  ['profilepic_29',['ProfilePic',['../namespaceThesis__backend_1_1Data__Structures.html#a05fa93d2eeca2ac0cde9696371d8a263',1,'Thesis_backend::Data_Structures']]]
 ];

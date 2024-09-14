@@ -8,7 +8,7 @@ var searchData=
   ['taskcontainer_5',['taskcontainer',['../classTaskContainer.html#a23381450125246537dfe70229da15522',1,'TaskContainer.TaskContainer()'],['../classTaskContainer.html#aaab3ab1eb28a90117eeebe14e34c683f',1,'TaskContainer.TaskContainer(long id, string taskName, int taskType, int periodRate, string description, DateTime added, DateTime lastCompleted, bool completed)'],['../classTaskOpenPanelController.html#a728b1ff0ed67d120ac2cfbbf996e077f',1,'TaskOpenPanelController.TaskContainer'],['../classPlayerTask.html#a76fa7d76c9748acbba576725d3a89fb8',1,'PlayerTask.TaskContainer'],['../classTaskContainer.html',1,'TaskContainer']]],
   ['taskcontainer_2ecs_6',['TaskContainer.cs',['../TaskContainer_8cs.html',1,'']]],
   ['taskinterval_7',['TaskInterval',['../classTaskContainer.html#a3c24cb3ae67ff49c37aef29db834ed28',1,'TaskContainer']]],
-  ['taskintervals_8',['taskintervals',['../classTaskOpenPanelController.html#a317d00246568f7c682c5d1c27032762b',1,'TaskOpenPanelController.TASKINTERVALS'],['../TaskIntervals_8cs.html#a4ba022096603875ae402bb772ec906f9',1,'TaskIntervals:&#160;TaskIntervals.cs'],['../classTaskOpenPanelController.html#a022cf15c01615aab856791aa77b9bcab',1,'TaskOpenPanelController.taskIntervals']]],
+  ['taskintervals_8',['taskintervals',['../TaskIntervals_8cs.html#a4ba022096603875ae402bb772ec906f9',1,'TaskIntervals:&#160;TaskIntervals.cs'],['../classTaskOpenPanelController.html#a022cf15c01615aab856791aa77b9bcab',1,'TaskOpenPanelController.taskIntervals'],['../classTaskOpenPanelController.html#a317d00246568f7c682c5d1c27032762b',1,'TaskOpenPanelController.TASKINTERVALS']]],
   ['taskintervals_2ecs_9',['TaskIntervals.cs',['../TaskIntervals_8cs.html',1,'']]],
   ['taskintervalslabel_10',['TaskIntervalsLabel',['../classPlayerTask.html#aaaf194f9b4925b73dca4caa7ffb905bb',1,'PlayerTask']]],
   ['taskname_11',['taskname',['../classTaskContainer.html#a9fb073d189cb8e94d4ac68647193a44e',1,'TaskContainer.TaskName'],['../structThesis__backend_1_1Data__Structures_1_1TaskRequest.html#a2395e5dc649c2efb0eb44f685e74bfcf',1,'Thesis_backend.Data_Structures.TaskRequest.TaskName'],['../namespaceThesis__backend_1_1Data__Structures.html#ac46ce5278ffa5998648bbb9fffa38676',1,'Thesis_backend.Data_Structures.TaskName']]],
@@ -21,7 +21,7 @@ var searchData=
   ['taskrequest_18',['TaskRequest',['../structThesis__backend_1_1Data__Structures_1_1TaskRequest.html',1,'Thesis_backend::Data_Structures']]],
   ['taskrequest_2ecs_19',['TaskRequest.cs',['../TaskRequest_8cs.html',1,'']]],
   ['taskresponse_2ecs_20',['TaskResponse.cs',['../TaskResponse_8cs.html',1,'']]],
-  ['tasks_21',['tasks',['../classUIController.html#a6ce27e28397d9fd1f1459fdce7bf744c',1,'UIController.tasks'],['../classTaskApiResponse.html#aa2a64cf43a7ff73262f1eacd9b7cae24',1,'TaskApiResponse.Tasks']]],
+  ['tasks_21',['tasks',['../classTaskApiResponse.html#aa2a64cf43a7ff73262f1eacd9b7cae24',1,'TaskApiResponse.Tasks'],['../classUIController.html#a6ce27e28397d9fd1f1459fdce7bf744c',1,'UIController.tasks']]],
   ['tasksopenpanel_22',['tasksOpenPanel',['../classTaskOpenPanelController.html#a5296f8a4492644b074eb63257d82ddec',1,'TaskOpenPanelController']]],
   ['tasktype_23',['tasktype',['../namespaceThesis__backend_1_1Data__Structures.html#a3a9f635c8310a391a3c2d8adeefc5189',1,'Thesis_backend.Data_Structures.TaskType'],['../TaskType_8cs.html#aa7f5c268cc89ed3067c26142ca3e16d7',1,'TaskType:&#160;TaskType.cs'],['../structThesis__backend_1_1Data__Structures_1_1TaskRequest.html#ac007e8f0cf2ae376dde9708f93407985',1,'Thesis_backend.Data_Structures.TaskRequest.TaskType'],['../classTaskContainer.html#ab9fd04ceac907a64d1afc75cd4235e92',1,'TaskContainer.TaskType']]],
   ['tasktype_2ecs_24',['TaskType.cs',['../TaskType_8cs.html',1,'']]],
@@ -33,9 +33,10 @@ var searchData=
   ['tiltinput_30',['TiltInput',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput.html',1,'UnityStandardAssets::CrossPlatformInput']]],
   ['tiltinput_2ecs_31',['TiltInput.cs',['../TiltInput_8cs.html',1,'']]],
   ['timer_32',['timer',['../classGame_1_1World_1_1CarSpawner.html#a563614c1c52a824da81cbeac0cd6f438',1,'Game::World::CarSpawner']]],
-  ['touch_33',['Touch',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a4745a6f6fea88c350df29db10de7d4ddaf0f31c9700c6b10d8a20dc487b2ae6a8',1,'UnityStandardAssets::CrossPlatformInput::CrossPlatformInputManager']]],
-  ['touchpad_34',['TouchPad',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html',1,'UnityStandardAssets::CrossPlatformInput']]],
-  ['touchpad_2ecs_35',['TouchPad.cs',['../TouchPad_8cs.html',1,'']]],
-  ['tractioncontrol_36',['TractionControl',['../classGame_1_1CarController.html#a298e55b1a36b51f9c4e4aa7883056a00',1,'Game::CarController']]],
-  ['type_37',['type',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput_1_1AxisMapping.html#aba5d982b878f8b4e15867b731782ed63',1,'UnityStandardAssets.CrossPlatformInput.TiltInput.AxisMapping.type'],['../structAssets_1_1Scripts_1_1Client_1_1DataTypes_1_1ChunkCellContainer.html#ab94400b8d16cc62c34eb3b6be776d486',1,'Assets.Scripts.Client.DataTypes.ChunkCellContainer.Type']]]
+  ['timereamaining_33',['TimeReamaining',['../classGame_1_1PlayerCar_1_1PoliceContainer.html#a531bbac045cd1299035956978a10f63b',1,'Game::PlayerCar::PoliceContainer']]],
+  ['touch_34',['Touch',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a4745a6f6fea88c350df29db10de7d4ddaf0f31c9700c6b10d8a20dc487b2ae6a8',1,'UnityStandardAssets::CrossPlatformInput::CrossPlatformInputManager']]],
+  ['touchpad_35',['TouchPad',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html',1,'UnityStandardAssets::CrossPlatformInput']]],
+  ['touchpad_2ecs_36',['TouchPad.cs',['../TouchPad_8cs.html',1,'']]],
+  ['tractioncontrol_37',['TractionControl',['../classGame_1_1CarController.html#a298e55b1a36b51f9c4e4aa7883056a00',1,'Game::CarController']]],
+  ['type_38',['type',['../structAssets_1_1Scripts_1_1Client_1_1DataTypes_1_1ChunkCellContainer.html#ab94400b8d16cc62c34eb3b6be776d486',1,'Assets.Scripts.Client.DataTypes.ChunkCellContainer.Type'],['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput_1_1AxisMapping.html#aba5d982b878f8b4e15867b731782ed63',1,'UnityStandardAssets.CrossPlatformInput.TiltInput.AxisMapping.type']]]
 ];

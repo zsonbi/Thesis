@@ -6,7 +6,7 @@ var searchData=
   ['taskintervalslabel_3',['TaskIntervalsLabel',['../classPlayerTask.html#aaaf194f9b4925b73dca4caa7ffb905bb',1,'PlayerTask']]],
   ['tasknameinput_4',['taskNameInput',['../classTaskOpenPanelController.html#abc961ea4fb9a9820e28284f8503eb252',1,'TaskOpenPanelController']]],
   ['tasknamelabel_5',['TaskNameLabel',['../classPlayerTask.html#a485a646242e4337aba2f4b3201fc4220',1,'PlayerTask']]],
-  ['taskopenpanelcontroller_6',['taskopenpanelcontroller',['../classUIController.html#a2e224cab1100d1d235f2231375a8635c',1,'UIController.taskOpenPanelController'],['../classPlayerTask.html#a597d38eeec0585511499143b41323c10',1,'PlayerTask.taskOpenPanelController']]],
+  ['taskopenpanelcontroller_6',['taskopenpanelcontroller',['../classPlayerTask.html#a597d38eeec0585511499143b41323c10',1,'PlayerTask.taskOpenPanelController'],['../classUIController.html#a2e224cab1100d1d235f2231375a8635c',1,'UIController.taskOpenPanelController']]],
   ['taskparent_7',['TaskParent',['../classUIController.html#a9ab18b7625588d4afeaaa4b22f68828c',1,'UIController']]],
   ['taskprefab_8',['TaskPrefab',['../classUIController.html#ac90812040e8042eb7e79ab22e474f0e0',1,'UIController']]],
   ['tasks_9',['tasks',['../classUIController.html#a6ce27e28397d9fd1f1459fdce7bf744c',1,'UIController']]],
@@ -14,5 +14,6 @@ var searchData=
   ['threewayroadprefab_11',['threeWayRoadPrefab',['../classGame_1_1World_1_1Chunk.html#a50fb8bf02e6fe0f1aed259fd03e25c29',1,'Game::World::Chunk']]],
   ['tiltaroundaxis_12',['tiltAroundAxis',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput.html#ad83fbef4affa001aab207586dd91e2e7',1,'UnityStandardAssets::CrossPlatformInput::TiltInput']]],
   ['timer_13',['timer',['../classGame_1_1World_1_1CarSpawner.html#a563614c1c52a824da81cbeac0cd6f438',1,'Game::World::CarSpawner']]],
-  ['type_14',['type',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput_1_1AxisMapping.html#aba5d982b878f8b4e15867b731782ed63',1,'UnityStandardAssets::CrossPlatformInput::TiltInput::AxisMapping']]]
+  ['timereamaining_14',['TimeReamaining',['../classGame_1_1PlayerCar_1_1PoliceContainer.html#a531bbac045cd1299035956978a10f63b',1,'Game::PlayerCar::PoliceContainer']]],
+  ['type_15',['type',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput_1_1AxisMapping.html#aba5d982b878f8b4e15867b731782ed63',1,'UnityStandardAssets::CrossPlatformInput::TiltInput::AxisMapping']]]
 ];

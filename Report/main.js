@@ -286,7 +286,7 @@ var assemblies = [
       { "name": "Game.EnableWheelPhysicMaterial", "rp": "ThesisScripts_EnableWheelPhysicMaterial.html", "cl": 0, "ucl": 16, "cal": 16, "tl": 37, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.GameController", "rp": "ThesisScripts_GameController.html", "cl": 0, "ucl": 95, "cal": 95, "tl": 157, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.NpcCar", "rp": "ThesisScripts_NpcCar.html", "cl": 0, "ucl": 6, "cal": 6, "tl": 19, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Game.PlayerCar", "rp": "ThesisScripts_PlayerCar.html", "cl": 0, "ucl": 40, "cal": 40, "tl": 67, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.PlayerCar", "rp": "ThesisScripts_PlayerCar.html", "cl": 0, "ucl": 72, "cal": 72, "tl": 116, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.World.BuildingCell", "rp": "ThesisScripts_BuildingCell.html", "cl": 0, "ucl": 11, "cal": 11, "tl": 30, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.World.BuildingGenerator", "rp": "ThesisScripts_BuildingGenerator.html", "cl": 0, "ucl": 43, "cal": 43, "tl": 64, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.World.CarSpawner", "rp": "ThesisScripts_CarSpawner.html", "cl": 0, "ucl": 24, "cal": 24, "tl": 60, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
@@ -386,7 +386,7 @@ var riskHotspots = [
       { "value": 240, "exceeded": true },
     ]},
   {
-    "assembly": "ThesisScripts", "class": "Game.PlayerCar", "reportPath": "ThesisScripts_PlayerCar.html", "methodName": "System.Void Game.PlayerCar::FixedUpdate()", "methodShortName": "FixedUpdate()", "fileIndex": 0, "line": 18,
+    "assembly": "ThesisScripts", "class": "Game.PlayerCar", "reportPath": "ThesisScripts_PlayerCar.html", "methodName": "System.Void Game.PlayerCar::FixedUpdate()", "methodShortName": "FixedUpdate()", "fileIndex": 0, "line": 47,
     "metrics": [
       { "value": 14, "exceeded": false },
       { "value": 0, "exceeded": false },

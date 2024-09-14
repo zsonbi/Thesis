@@ -7,7 +7,7 @@ var searchData=
   ['effects_4',['effects',['../classGame_1_1Car.html#ac67b86743a162f5ad38583ff62a1624c',1,'Game::Car']]],
   ['effectscript_5',['EffectScript',['../classEffectScript.html',1,'']]],
   ['effectscript_2ecs_6',['EffectScript.cs',['../EffectScript_8cs.html',1,'']]],
-  ['effecttype_7',['effecttype',['../classEffectScript.html#ac4319f7cf51016ea01df7d617c428771',1,'EffectScript.effectType'],['../namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578',1,'DataTypes.EffectType'],['../classEffectScript.html#af5ad6b27182277327ed9fb1715cf4ced',1,'EffectScript.EffectType']]],
+  ['effecttype_7',['effecttype',['../classEffectScript.html#af5ad6b27182277327ed9fb1715cf4ced',1,'EffectScript.EffectType'],['../namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578',1,'DataTypes.EffectType'],['../classEffectScript.html#ac4319f7cf51016ea01df7d617c428771',1,'EffectScript.effectType']]],
   ['effecttype_2ecs_8',['EffectType.cs',['../EffectType_8cs.html',1,'']]],
   ['email_9',['email',['../structThesis__backend_1_1Data__Structures_1_1UserRequest.html#a9050ad9e70d8c5d470de4908e45fe10f',1,'Thesis_backend.Data_Structures.UserRequest.Email'],['../classUser_1_1UserData.html#ada9b925ce41df1de09d9f197d45d2c7c',1,'User.UserData.Email'],['../namespaceThesis__backend_1_1Data__Structures.html#a03c0a7d197c29929b4a9d0467e2a0943',1,'Thesis_backend.Data_Structures.Email']]],
   ['enablecontrolrig_10',['EnableControlRig',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1MobileControlRig.html#a41daf1bab70720498e338a4ed4c5a790',1,'UnityStandardAssets::CrossPlatformInput::MobileControlRig']]],

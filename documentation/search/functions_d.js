@@ -4,5 +4,6 @@ var searchData=
   ['pathfortaskdelete_1',['PATHFORTASKDELETE',['../classConfig_1_1ServerConfig.html#a9112c3cf42da18b1222b5324f98ee40c',1,'Config::ServerConfig']]],
   ['pathfortaskupdate_2',['PATHFORTASKUPDATE',['../classConfig_1_1ServerConfig.html#a69cfac1052256f93e049889a0594911d',1,'Config::ServerConfig']]],
   ['playerdied_3',['PlayerDied',['../classGame_1_1GameController.html#a4ee6ddd9c52134a0bb30c3c0a7bef350',1,'Game::GameController']]],
-  ['pressed_4',['Pressed',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualButton.html#a286f1c4c3001579bf3268312620808e7',1,'UnityStandardAssets::CrossPlatformInput::CrossPlatformInputManager::VirtualButton']]]
+  ['policecontainer_4',['PoliceContainer',['../classGame_1_1PlayerCar_1_1PoliceContainer.html#a79442268fab7d4bf98066096e9babe84',1,'Game::PlayerCar::PoliceContainer']]],
+  ['pressed_5',['Pressed',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualButton.html#a286f1c4c3001579bf3268312620808e7',1,'UnityStandardAssets::CrossPlatformInput::CrossPlatformInputManager::VirtualButton']]]
 ];
