@@ -1,5 +1,6 @@
 using Game.World;
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
@@ -7,11 +8,39 @@ namespace Game
 {
     internal class PlayerCar : Car
     {
+        private class PoliceContainer
+        {
+            public float TimeReamaining;
+            public GameObject PoliceCar { get; private set; }
+
+            public PoliceContainer(GameObject policeCar)
+            {
+                this.PoliceCar = policeCar;
+                this.TimeReamaining = GameConfig.POLICE_GAME_OVER;
+            }
+        }
+
         private int probeSize = 1;
+
+        private List<PoliceContainer> policeContacts = new List<PoliceContainer>();
 
         protected override async void ChunkChanged(Chunk newChunk)
         {
             await gameController.LoadAndDespawnChunks(newChunk.Row, newChunk.Col);
+        }
+
+        protected override void Update()
+        {
+            base.Update();
+
+            for (int i = 0; i < policeContacts.Count; i++)
+            {
+                policeContacts[i].TimeReamaining -= Time.deltaTime;
+                if (policeContacts[i].TimeReamaining <= 0f)
+                {
+                    this.DestroyedEvent?.Invoke(this, EventArgs.Empty);
+                }
+            }
         }
 
         private void FixedUpdate()
@@ -62,6 +91,26 @@ namespace Game
             carController.Move(reverse ? 0 : turning, accel, 0f, 0f);
 
             Debug.Log(carController.CurrentSpeed);
+        }
+
+        protected override void OnCollisionEnter(Collision collision)
+        {
+            base.OnCollisionEnter(collision);
+
+            if (collision.gameObject.tag == "Police")
+            {
+                policeContacts.Add(new PoliceContainer(collision.gameObject));
+            }
+        }
+
+        private void OnCollisionExit(Collision collision)
+        {
+            if (collision.gameObject.tag == "Police")
+            {
+                policeContacts.RemoveAll(x => x.PoliceCar == collision.gameObject);
+
+                Debug.Log("Removed" + collision.gameObject);
+            }
         }
     }
 }

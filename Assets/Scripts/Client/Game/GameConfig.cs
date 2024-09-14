@@ -15,4 +15,6 @@ public static class GameConfig
     public const float SMOKE_THRESHOLD = 0.6f;
 
     public const float FIRE_THRESHOLD = 0.2f;
+
+    public const float POLICE_GAME_OVER = 3f;
 }
