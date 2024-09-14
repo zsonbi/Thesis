@@ -1,6 +1,7 @@
 var classTaskContainer =
 [
     [ "TaskContainer", "classTaskContainer.html#aaab3ab1eb28a90117eeebe14e34c683f", null ],
+    [ "TaskContainer", "classTaskContainer.html#a0608e18e9875784f3a2f2e905331f3af", null ],
     [ "TaskContainer", "classTaskContainer.html#a23381450125246537dfe70229da15522", null ],
     [ "UpdateValues", "classTaskContainer.html#a69909e5c987547bb505b3e5b352034d6", null ],
     [ "ChangeType", "classTaskContainer.html#ab3b16d10cac93561b04f4fac8df74ae9", null ],

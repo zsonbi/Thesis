@@ -1,19 +1,19 @@
 {
   "summary": {
-    "generatedon": "2024-09-14T18:32:36Z",
+    "generatedon": "2024-09-14T23:03:21Z",
     "parser": "MultiReportParser (3x OpenCoverParser)",
     "assemblies": 4,
     "classes": 88,
     "files": 86,
     "coveredlines": 237,
-    "uncoveredlines": 4058,
-    "coverablelines": 4295,
-    "totallines": 8629,
+    "uncoveredlines": 4071,
+    "coverablelines": 4308,
+    "totallines": 8645,
     "linecoverage": 5.5,
     "coveredbranches": 0,
     "totalbranches": 0,
     "coveredmethods": 98,
-    "totalmethods": 743,
+    "totalmethods": 744,
     "methodcoverage": 13.1
  },
   "coverage": {
@@ -58,7 +58,7 @@
         { "name": "Tests.GameTests.RoadGeneratorTests", "coverage": 100, "coveredlines": 26, "coverablelines": 26, "totallines": 55, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 3, "totalmethods": 3 },
         { "name": "Tests.MainMenuTest", "coverage": 100, "coveredlines": 4, "coverablelines": 4, "totallines": 24, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 1, "totalmethods": 1 },
         { "name": "Tests.UITests.UserControllerTests", "coverage": 96.1, "coveredlines": 25, "coverablelines": 26, "totallines": 65, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 6, "totalmethods": 6 } ] },
-      { "name": "ThesisScripts", "classes": 51, "coverage": 8.3, "coveredlines": 182, "coverablelines": 2192, "totallines": 4605, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 19, "coveredmethods": 88, "totalmethods": 461, "classesinassembly": [
+      { "name": "ThesisScripts", "classes": 51, "coverage": 8.2, "coveredlines": 182, "coverablelines": 2205, "totallines": 4621, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 19, "coveredmethods": 88, "totalmethods": 462, "classesinassembly": [
         { "name": "Assets.Scripts.Client.DataTypes.ChunkCellContainer", "coverage": 0, "coveredlines": 0, "coverablelines": 6, "totallines": 15, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 5 },
         { "name": "Building", "coverage": 0, "coveredlines": 0, "coverablelines": 9, "totallines": 33, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 7 },
         { "name": "CameraScript", "coverage": 0, "coveredlines": 0, "coverablelines": 7, "totallines": 24, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
@@ -85,8 +85,8 @@
         { "name": "PlayerTask", "coverage": 3, "coveredlines": 2, "coverablelines": 65, "totallines": 122, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 8.3, "coveredmethods": 1, "totalmethods": 12 },
         { "name": "TaskApiResponse", "coverage": 0, "coveredlines": 0, "coverablelines": 9, "totallines": 16, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 7 },
         { "name": "TaskClosedEventArgs", "coverage": 0, "coveredlines": 0, "coverablelines": 4, "totallines": 14, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
-        { "name": "TaskContainer", "coverage": 38.5, "coveredlines": 22, "coverablelines": 57, "totallines": 79, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 81.8, "coveredmethods": 18, "totalmethods": 22 },
-        { "name": "TaskOpenPanelController", "coverage": 14.2, "coveredlines": 14, "coverablelines": 98, "totallines": 193, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 26.6, "coveredmethods": 4, "totalmethods": 15 },
+        { "name": "TaskContainer", "coverage": 32.3, "coveredlines": 22, "coverablelines": 68, "totallines": 91, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 78.2, "coveredmethods": 18, "totalmethods": 23 },
+        { "name": "TaskOpenPanelController", "coverage": 14, "coveredlines": 14, "coverablelines": 100, "totallines": 197, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 26.6, "coveredmethods": 4, "totalmethods": 15 },
         { "name": "Thesis_backend.Data_Structures.DbElement", "coverage": 50, "coveredlines": 1, "coverablelines": 2, "totallines": 11, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 66.6, "coveredmethods": 2, "totalmethods": 3 },
         { "name": "Thesis_backend.Data_Structures.Game", "coverage": 0, "coveredlines": 0, "coverablelines": 4, "totallines": 13, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 8 },
         { "name": "Thesis_backend.Data_Structures.PlayerTask", "coverage": 0, "coveredlines": 0, "coverablelines": 9, "totallines": 19, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 17 },

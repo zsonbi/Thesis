@@ -1,21 +1,21 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 09/14/2024 - 18:32:36 |
+| Generated on: | 09/14/2024 - 23:03:21 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 4 |
 | Classes: | 88 |
 | Files: | 86 |
 | Covered lines: | 237 |
-| Uncovered lines: | 4058 |
-| Coverable lines: | 4295 |
-| Total lines: | 8629 |
-| Line coverage: | 5.5% (237 of 4295) |
+| Uncovered lines: | 4071 |
+| Coverable lines: | 4308 |
+| Total lines: | 8645 |
+| Line coverage: | 5.5% (237 of 4308) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 98 |
-| Total methods: | 743 |
-| Method coverage: | 13.1% (98 of 743) |
+| Total methods: | 744 |
+| Method coverage: | 13.1% (98 of 744) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -59,7 +59,7 @@
 |Tests.GameTests.RoadGeneratorTests|26|0|26|55|100%|0|0||3|3|100%|
 |Tests.MainMenuTest|4|0|4|24|100%|0|0||1|1|100%|
 |Tests.UITests.UserControllerTests|25|1|26|65|96.1%|0|0||6|6|100%|
-|**ThesisScripts**|**182**|**2010**|**2192**|**4605**|**8.3%**|**0**|**0**|****|**88**|**461**|**19%**|
+|**ThesisScripts**|**182**|**2023**|**2205**|**4621**|**8.2%**|**0**|**0**|****|**88**|**462**|**19%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|0|6|6|15|0%|0|0||0|5|0%|
 |Building|0|9|9|33|0%|0|0||0|7|0%|
 |CameraScript|0|7|7|24|0%|0|0||0|2|0%|
@@ -86,8 +86,8 @@
 |PlayerTask|2|63|65|122|3%|0|0||1|12|8.3%|
 |TaskApiResponse|0|9|9|16|0%|0|0||0|7|0%|
 |TaskClosedEventArgs|0|4|4|14|0%|0|0||0|1|0%|
-|TaskContainer|22|35|57|79|38.5%|0|0||18|22|81.8%|
-|TaskOpenPanelController|14|84|98|193|14.2%|0|0||4|15|26.6%|
+|TaskContainer|22|46|68|91|32.3%|0|0||18|23|78.2%|
+|TaskOpenPanelController|14|86|100|197|14%|0|0||4|15|26.6%|
 |Thesis_backend.Data_Structures.DbElement|1|1|2|11|50%|0|0||2|3|66.6%|
 |Thesis_backend.Data_Structures.Game|0|4|4|13|0%|0|0||0|8|0%|
 |Thesis_backend.Data_Structures.PlayerTask|0|9|9|19|0%|0|0||0|17|0%|
