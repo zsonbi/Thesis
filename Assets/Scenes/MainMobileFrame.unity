@@ -2191,7 +2191,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1099981841}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1957104791}
+        m_TargetAssemblyTypeName: FriendHandler, ThesisScripts
+        m_MethodName: Show
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1099981841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2324,6 +2336,14 @@ PrefabInstance:
     - target: {fileID: 7951555436767864944, guid: 0723e76612dcd404b952bc05af149e63, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 1176892763}
+    - target: {fileID: 7951555436767864944, guid: 0723e76612dcd404b952bc05af149e63, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Hide
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951555436767864944, guid: 0723e76612dcd404b952bc05af149e63, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ProfileHandler, ThesisScripts
       objectReference: {fileID: 0}
     - target: {fileID: 8161596304387292324, guid: 0723e76612dcd404b952bc05af149e63, type: 3}
       propertyPath: m_Pivot.x
@@ -4519,6 +4539,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8161596304387292324, guid: eabec96549fb5f842a9f769a41591d1a, type: 3}
   m_PrefabInstance: {fileID: 1957104789}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1957104791 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 481518582554757896, guid: eabec96549fb5f842a9f769a41591d1a, type: 3}
+  m_PrefabInstance: {fileID: 1957104789}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 219de12cd3691764da5e7fa9e4f12a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1968491399
 PrefabInstance:
   m_ObjectHideFlags: 0

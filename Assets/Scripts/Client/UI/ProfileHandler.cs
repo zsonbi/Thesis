@@ -10,23 +10,14 @@ using User;
 
 public class ProfileHandler : MonoBehaviour
 {
-
-
-
-
-
-
     public void Show()
     {
-
         this.gameObject.SetActive(true);
         LoadFromApi();
     }
 
-
     public void SendFriendRequest()
     {
-
     }
 
     public void Hide()
@@ -36,7 +27,6 @@ public class ProfileHandler : MonoBehaviour
 
     private void LoadFromApi()
     {
-
     }
 
     /// <summary>
@@ -44,7 +34,11 @@ public class ProfileHandler : MonoBehaviour
     /// </summary>
     public void SendLogout()
     {
-        StartCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORLOGIN, LoggedOut));
+        StartCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORLOGOUT, LoggedOut));
+
+        //UserData.Instance.Logout();
+
+        //  StartCoroutine(MoveToLoginScene());
     }
 
     /// <summary>
@@ -53,6 +47,8 @@ public class ProfileHandler : MonoBehaviour
     /// <param name="result">The server's response</param>
     private void LoggedOut(string result)
     {
+        UserData.Instance.Logout();
+
         StartCoroutine(MoveToLoginScene());
     }
 
@@ -67,5 +63,4 @@ public class ProfileHandler : MonoBehaviour
             yield return null;
         }
     }
-
 }

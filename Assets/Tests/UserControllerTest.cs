@@ -26,7 +26,7 @@ namespace Tests
             [TearDown]
             public void Shutdown()
             {
-                User.UserData.Logout();
+                User.UserData.Instance.Logout();
 
                 if (userController != null)
                     GameObject.Destroy(this.userController.transform.parent.gameObject);
@@ -47,7 +47,7 @@ namespace Tests
             {
                 Login("test2", "test");
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
-                Assert.IsTrue(User.UserData.LoggedIn);
+                Assert.IsTrue(User.UserData.Instance.LoggedIn);
 
                 //   Assert.AreEqual("test@gmail.com", User.UserData.Email);
             }
@@ -57,8 +57,8 @@ namespace Tests
             {
                 Login("test2", "test");
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
-                Assert.IsTrue(User.UserData.LoggedIn);
-                Assert.AreEqual("test2", User.UserData.Username);
+                Assert.IsTrue(User.UserData.Instance.LoggedIn);
+                Assert.AreEqual("test2", User.UserData.Instance.Username);
             }
         }
     }

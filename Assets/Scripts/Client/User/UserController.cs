@@ -41,7 +41,7 @@ public class UserController : MonoBehaviour
     /// </summary>
     private void CheckLoggedIn()
     {
-        if (UserData.LoggedIn)
+        if (UserData.Instance.LoggedIn)
         {
             MoveToMainScence();
             return;
@@ -73,7 +73,7 @@ public class UserController : MonoBehaviour
     /// <param name="result">The server's response</param>
     private void LoggedIn(Thesis_backend.Data_Structures.User result)
     {
-        UserData.Init(result);
+        UserData.Instance.Init(result);
         StartCoroutine(MoveToMainScence());
     }
 
@@ -111,7 +111,7 @@ public class UserController : MonoBehaviour
     /// <param name="result">The server's response</param>
     private void Registered(Thesis_backend.Data_Structures.User loggedInUser)
     {
-        UserData.Init(loggedInUser);
+        UserData.Instance.Init(loggedInUser);
         StartCoroutine(MoveToMainScence());
     }
 
@@ -164,5 +164,4 @@ public class UserController : MonoBehaviour
         RegisterPanel.SetActive(false);
         LoginPanel.SetActive(true);
     }
-
 }

@@ -29,13 +29,13 @@ public class UIController : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        if (!UserData.LoggedIn)
+        if (!UserData.Instance.LoggedIn)
         {
             StartCoroutine(MoveToLoginScene());
         }
         else
         {
-            UsernameInputText.text = UserData.Username;
+            UsernameInputText.text = UserData.Instance.Username;
             LoadTasks();
         }
     }
