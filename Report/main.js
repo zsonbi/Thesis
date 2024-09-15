@@ -268,7 +268,7 @@ var assemblies = [
     "classes": [
       { "name": "Tests.GameTests.RoadGeneratorTests", "rp": "Tests_RoadGeneratorTests.html", "cl": 26, "ucl": 0, "cal": 26, "tl": 55, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Tests.MainMenuTest", "rp": "Tests_MainMenuTest.html", "cl": 4, "ucl": 0, "cal": 4, "tl": 24, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Tests.UITests.UserControllerTests", "rp": "Tests_UserControllerTests.html", "cl": 25, "ucl": 1, "cal": 26, "tl": 65, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Tests.UITests.UserControllerTests", "rp": "Tests_UserControllerTests.html", "cl": 26, "ucl": 0, "cal": 26, "tl": 65, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
     ]},
   {
     "name": "ThesisScripts",
@@ -309,7 +309,7 @@ var assemblies = [
       { "name": "Thesis_backend.Data_Structures.UserLoginRequest", "rp": "ThesisScripts_UserLoginRequest.html", "cl": 2, "ucl": 0, "cal": 2, "tl": 14, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Thesis_backend.Data_Structures.UserRequest", "rp": "ThesisScripts_UserRequest.html", "cl": 0, "ucl": 3, "cal": 3, "tl": 15, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Thesis_backend.Data_Structures.UserSettings", "rp": "ThesisScripts_UserSettings.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 15, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "UIController", "rp": "ThesisScripts_UIController.html", "cl": 22, "ucl": 60, "cal": 82, "tl": 139, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UIController", "rp": "ThesisScripts_UIController.html", "cl": 32, "ucl": 50, "cal": 82, "tl": 139, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "UnityStandardAssets.CrossPlatformInput.AxisTouchButton", "rp": "ThesisScripts_AxisTouchButton.html", "cl": 0, "ucl": 41, "cal": 41, "tl": 75, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "UnityStandardAssets.CrossPlatformInput.ButtonHandler", "rp": "ThesisScripts_ButtonHandler.html", "cl": 0, "ucl": 19, "cal": 19, "tl": 50, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager", "rp": "ThesisScripts_CrossPlatformInputManager.html", "cl": 0, "ucl": 133, "cal": 133, "tl": 318, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },

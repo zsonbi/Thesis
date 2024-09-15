@@ -1,20 +1,20 @@
 {
   "summary": {
-    "generatedon": "2024-09-14T23:03:21Z",
+    "generatedon": "2024-09-14T23:37:32Z",
     "parser": "MultiReportParser (3x OpenCoverParser)",
     "assemblies": 4,
     "classes": 88,
     "files": 86,
-    "coveredlines": 237,
-    "uncoveredlines": 4071,
+    "coveredlines": 248,
+    "uncoveredlines": 4060,
     "coverablelines": 4308,
     "totallines": 8645,
-    "linecoverage": 5.5,
+    "linecoverage": 5.7,
     "coveredbranches": 0,
     "totalbranches": 0,
-    "coveredmethods": 98,
+    "coveredmethods": 99,
     "totalmethods": 744,
-    "methodcoverage": 13.1
+    "methodcoverage": 13.3
  },
   "coverage": {
     "assemblies": [
@@ -54,11 +54,11 @@
       { "name": "Assembly-CSharp-Editor", "classes": 2, "coverage": 0, "coveredlines": 0, "coverablelines": 205, "totallines": 329, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 16, "classesinassembly": [
         { "name": "BuildCommand", "coverage": 0, "coveredlines": 0, "coverablelines": 201, "totallines": 315, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 15 },
         { "name": "BuildScript", "coverage": 0, "coveredlines": 0, "coverablelines": 4, "totallines": 14, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 } ] },
-      { "name": "Tests", "classes": 3, "coverage": 98.2, "coveredlines": 55, "coverablelines": 56, "totallines": 144, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 10, "totalmethods": 10, "classesinassembly": [
+      { "name": "Tests", "classes": 3, "coverage": 100, "coveredlines": 56, "coverablelines": 56, "totallines": 144, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 10, "totalmethods": 10, "classesinassembly": [
         { "name": "Tests.GameTests.RoadGeneratorTests", "coverage": 100, "coveredlines": 26, "coverablelines": 26, "totallines": 55, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 3, "totalmethods": 3 },
         { "name": "Tests.MainMenuTest", "coverage": 100, "coveredlines": 4, "coverablelines": 4, "totallines": 24, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 1, "totalmethods": 1 },
-        { "name": "Tests.UITests.UserControllerTests", "coverage": 96.1, "coveredlines": 25, "coverablelines": 26, "totallines": 65, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 6, "totalmethods": 6 } ] },
-      { "name": "ThesisScripts", "classes": 51, "coverage": 8.2, "coveredlines": 182, "coverablelines": 2205, "totallines": 4621, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 19, "coveredmethods": 88, "totalmethods": 462, "classesinassembly": [
+        { "name": "Tests.UITests.UserControllerTests", "coverage": 100, "coveredlines": 26, "coverablelines": 26, "totallines": 65, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 6, "totalmethods": 6 } ] },
+      { "name": "ThesisScripts", "classes": 51, "coverage": 8.7, "coveredlines": 192, "coverablelines": 2205, "totallines": 4621, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 19.2, "coveredmethods": 89, "totalmethods": 462, "classesinassembly": [
         { "name": "Assets.Scripts.Client.DataTypes.ChunkCellContainer", "coverage": 0, "coveredlines": 0, "coverablelines": 6, "totallines": 15, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 5 },
         { "name": "Building", "coverage": 0, "coveredlines": 0, "coverablelines": 9, "totallines": 33, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 7 },
         { "name": "CameraScript", "coverage": 0, "coveredlines": 0, "coverablelines": 7, "totallines": 24, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
@@ -95,7 +95,7 @@
         { "name": "Thesis_backend.Data_Structures.UserLoginRequest", "coverage": 100, "coveredlines": 2, "coverablelines": 2, "totallines": 14, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 4, "totalmethods": 4 },
         { "name": "Thesis_backend.Data_Structures.UserRequest", "coverage": 0, "coveredlines": 0, "coverablelines": 3, "totallines": 15, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 6 },
         { "name": "Thesis_backend.Data_Structures.UserSettings", "coverage": 0, "coveredlines": 0, "coverablelines": 4, "totallines": 15, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 8 },
-        { "name": "UIController", "coverage": 26.8, "coveredlines": 22, "coverablelines": 82, "totallines": 139, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 50, "coveredmethods": 6, "totalmethods": 12 },
+        { "name": "UIController", "coverage": 39, "coveredlines": 32, "coverablelines": 82, "totallines": 139, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 58.3, "coveredmethods": 7, "totalmethods": 12 },
         { "name": "UnityStandardAssets.CrossPlatformInput.AxisTouchButton", "coverage": 0, "coveredlines": 0, "coverablelines": 41, "totallines": 75, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 6 },
         { "name": "UnityStandardAssets.CrossPlatformInput.ButtonHandler", "coverage": 0, "coveredlines": 0, "coverablelines": 19, "totallines": 50, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 7 },
         { "name": "UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager", "coverage": 0, "coveredlines": 0, "coverablelines": 133, "totallines": 318, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 47 },
