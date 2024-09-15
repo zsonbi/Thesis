@@ -1,21 +1,21 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 09/15/2024 - 08:16:32 |
+| Generated on: | 09/15/2024 - 16:22:03 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 4 |
-| Classes: | 88 |
-| Files: | 86 |
-| Covered lines: | 237 |
-| Uncovered lines: | 4071 |
-| Coverable lines: | 4308 |
-| Total lines: | 8645 |
-| Line coverage: | 5.5% (237 of 4308) |
+| Classes: | 90 |
+| Files: | 88 |
+| Covered lines: | 238 |
+| Uncovered lines: | 4109 |
+| Coverable lines: | 4347 |
+| Total lines: | 8765 |
+| Line coverage: | 5.4% (238 of 4347) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 98 |
-| Total methods: | 744 |
-| Method coverage: | 13.1% (98 of 744) |
+| Covered methods: | 99 |
+| Total methods: | 757 |
+| Method coverage: | 13% (99 of 757) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -59,7 +59,7 @@
 |Tests.GameTests.RoadGeneratorTests|26|0|26|55|100%|0|0||3|3|100%|
 |Tests.MainMenuTest|4|0|4|24|100%|0|0||1|1|100%|
 |Tests.UITests.UserControllerTests|25|1|26|65|96.1%|0|0||6|6|100%|
-|**ThesisScripts**|**182**|**2023**|**2205**|**4621**|**8.2%**|**0**|**0**|****|**88**|**462**|**19%**|
+|**ThesisScripts**|**183**|**2061**|**2244**|**4741**|**8.1%**|**0**|**0**|****|**89**|**475**|**18.7%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|0|6|6|15|0%|0|0||0|5|0%|
 |Building|0|9|9|33|0%|0|0||0|7|0%|
 |CameraScript|0|7|7|24|0%|0|0||0|2|0%|
@@ -67,6 +67,7 @@
 |DirectionConverter|0|21|21|46|0%|0|0||0|2|0%|
 |EdgeRoadContainer|9|0|9|15|100%|0|0||7|7|100%|
 |EffectScript|0|4|4|23|0%|0|0||0|2|0%|
+|FriendHandler|1|14|15|49|6.6%|0|0||1|6|16.6%|
 |Game.Car|0|78|78|131|0%|0|0||0|12|0%|
 |Game.CarController|0|129|129|249|0%|0|0||0|18|0%|
 |Game.CopCar|0|10|10|26|0%|0|0||0|1|0%|
@@ -84,6 +85,7 @@
 |MeshGenerator|0|27|27|96|0%|0|0||0|2|0%|
 |ModalWindow|0|19|19|43|0%|0|0||0|4|0%|
 |PlayerTask|2|63|65|122|3%|0|0||1|12|8.3%|
+|ProfileHandler|0|24|24|71|0%|0|0||0|7|0%|
 |TaskApiResponse|0|9|9|16|0%|0|0||0|7|0%|
 |TaskClosedEventArgs|0|4|4|14|0%|0|0||0|1|0%|
 |TaskContainer|22|46|68|91|32.3%|0|0||18|23|78.2%|

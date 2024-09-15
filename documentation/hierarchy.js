@@ -27,6 +27,7 @@ var hierarchy =
       [ "Building", "classBuilding.html", null ],
       [ "CameraScript", "classCameraScript.html", null ],
       [ "EffectScript", "classEffectScript.html", null ],
+      [ "FriendHandler", "classFriendHandler.html", null ],
       [ "Game.Car", "classGame_1_1Car.html", [
         [ "Game.NpcCar", "classGame_1_1NpcCar.html", [
           [ "Game.CopCar", "classGame_1_1CopCar.html", null ]
@@ -42,6 +43,7 @@ var hierarchy =
       [ "GameUI", "classGameUI.html", null ],
       [ "ModalWindow", "classModalWindow.html", null ],
       [ "PlayerTask", "classPlayerTask.html", null ],
+      [ "ProfileHandler", "classProfileHandler.html", null ],
       [ "TaskOpenPanelController", "classTaskOpenPanelController.html", null ],
       [ "UIController", "classUIController.html", null ],
       [ "UnityStandardAssets.CrossPlatformInput.AxisTouchButton", "classUnityStandardAssets_1_1CrossPlatformInput_1_1AxisTouchButton.html", null ],

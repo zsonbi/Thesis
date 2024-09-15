@@ -21,7 +21,7 @@ var searchData=
   ['taskrequest_18',['TaskRequest',['../structThesis__backend_1_1Data__Structures_1_1TaskRequest.html',1,'Thesis_backend::Data_Structures']]],
   ['taskrequest_2ecs_19',['TaskRequest.cs',['../TaskRequest_8cs.html',1,'']]],
   ['taskresponse_2ecs_20',['TaskResponse.cs',['../TaskResponse_8cs.html',1,'']]],
-  ['tasks_21',['tasks',['../classTaskApiResponse.html#aa2a64cf43a7ff73262f1eacd9b7cae24',1,'TaskApiResponse.Tasks'],['../classUIController.html#a6ce27e28397d9fd1f1459fdce7bf744c',1,'UIController.tasks']]],
+  ['tasks_21',['tasks',['../classUIController.html#a6ce27e28397d9fd1f1459fdce7bf744c',1,'UIController.tasks'],['../classTaskApiResponse.html#aa2a64cf43a7ff73262f1eacd9b7cae24',1,'TaskApiResponse.Tasks']]],
   ['tasksopenpanel_22',['tasksOpenPanel',['../classTaskOpenPanelController.html#a5296f8a4492644b074eb63257d82ddec',1,'TaskOpenPanelController']]],
   ['tasktype_23',['tasktype',['../namespaceThesis__backend_1_1Data__Structures.html#a3a9f635c8310a391a3c2d8adeefc5189',1,'Thesis_backend.Data_Structures.TaskType'],['../TaskType_8cs.html#aa7f5c268cc89ed3067c26142ca3e16d7',1,'TaskType:&#160;TaskType.cs'],['../structThesis__backend_1_1Data__Structures_1_1TaskRequest.html#ac007e8f0cf2ae376dde9708f93407985',1,'Thesis_backend.Data_Structures.TaskRequest.TaskType'],['../classTaskContainer.html#ab9fd04ceac907a64d1afc75cd4235e92',1,'TaskContainer.TaskType']]],
   ['tasktype_2ecs_24',['TaskType.cs',['../TaskType_8cs.html',1,'']]],
@@ -38,5 +38,5 @@ var searchData=
   ['touchpad_35',['TouchPad',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html',1,'UnityStandardAssets::CrossPlatformInput']]],
   ['touchpad_2ecs_36',['TouchPad.cs',['../TouchPad_8cs.html',1,'']]],
   ['tractioncontrol_37',['TractionControl',['../classGame_1_1CarController.html#a298e55b1a36b51f9c4e4aa7883056a00',1,'Game::CarController']]],
-  ['type_38',['type',['../structAssets_1_1Scripts_1_1Client_1_1DataTypes_1_1ChunkCellContainer.html#ab94400b8d16cc62c34eb3b6be776d486',1,'Assets.Scripts.Client.DataTypes.ChunkCellContainer.Type'],['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput_1_1AxisMapping.html#aba5d982b878f8b4e15867b731782ed63',1,'UnityStandardAssets.CrossPlatformInput.TiltInput.AxisMapping.type']]]
+  ['type_38',['type',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput_1_1AxisMapping.html#aba5d982b878f8b4e15867b731782ed63',1,'UnityStandardAssets.CrossPlatformInput.TiltInput.AxisMapping.type'],['../structAssets_1_1Scripts_1_1Client_1_1DataTypes_1_1ChunkCellContainer.html#ab94400b8d16cc62c34eb3b6be776d486',1,'Assets.Scripts.Client.DataTypes.ChunkCellContainer.Type']]]
 ];

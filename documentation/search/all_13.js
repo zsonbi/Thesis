@@ -25,13 +25,14 @@ var searchData=
   ['userdata_2ecs_22',['UserData.cs',['../UserData_8cs.html',1,'']]],
   ['userid_23',['UserId',['../namespaceThesis__backend_1_1Data__Structures.html#a5a31f37b4843773759fb1b3b21f17159',1,'Thesis_backend::Data_Structures']]],
   ['useridentification_24',['UserIdentification',['../structThesis__backend_1_1Data__Structures_1_1UserLoginRequest.html#ae813d85bafbb41662c667bdbd6f1b117',1,'Thesis_backend::Data_Structures::UserLoginRequest']]],
-  ['userloginrequest_25',['UserLoginRequest',['../structThesis__backend_1_1Data__Structures_1_1UserLoginRequest.html',1,'Thesis_backend::Data_Structures']]],
-  ['userloginrequest_2ecs_26',['UserLoginRequest.cs',['../UserLoginRequest_8cs.html',1,'']]],
-  ['username_27',['username',['../classUser_1_1UserData.html#a5c87b878e86cbc7c969d456431716c71',1,'User.UserData.Username'],['../structThesis__backend_1_1Data__Structures_1_1UserRequest.html#ac32ca4d6291f2e301bd73a0fe1755a2c',1,'Thesis_backend.Data_Structures.UserRequest.UserName']]],
-  ['usernameinputtext_28',['UsernameInputText',['../classUIController.html#aa9f04610798bf39ac1e69edd964b0448',1,'UIController']]],
-  ['userrequest_29',['UserRequest',['../structThesis__backend_1_1Data__Structures_1_1UserRequest.html',1,'Thesis_backend::Data_Structures']]],
-  ['userrequest_2ecs_30',['UserRequest.cs',['../UserRequest_8cs.html',1,'']]],
-  ['usersettings_31',['UserSettings',['../namespaceThesis__backend_1_1Data__Structures.html#a33bcc9cf08bba0bcbe12dd0eb5a1fd8b',1,'Thesis_backend::Data_Structures']]],
-  ['usersettings_2ecs_32',['UserSettings.cs',['../UserSettings_8cs.html',1,'']]],
-  ['usertasks_33',['UserTasks',['../namespaceThesis__backend_1_1Data__Structures.html#ada8de2284cf373b7e8934a49b598cdfa',1,'Thesis_backend::Data_Structures']]]
+  ['useridentificationinput_25',['userIdentificationInput',['../classFriendHandler.html#ab7b8799f46b57d04061a8111bb633f19',1,'FriendHandler']]],
+  ['userloginrequest_26',['UserLoginRequest',['../structThesis__backend_1_1Data__Structures_1_1UserLoginRequest.html',1,'Thesis_backend::Data_Structures']]],
+  ['userloginrequest_2ecs_27',['UserLoginRequest.cs',['../UserLoginRequest_8cs.html',1,'']]],
+  ['username_28',['username',['../structThesis__backend_1_1Data__Structures_1_1UserRequest.html#ac32ca4d6291f2e301bd73a0fe1755a2c',1,'Thesis_backend.Data_Structures.UserRequest.UserName'],['../classUser_1_1UserData.html#a5c87b878e86cbc7c969d456431716c71',1,'User.UserData.Username']]],
+  ['usernameinputtext_29',['UsernameInputText',['../classUIController.html#aa9f04610798bf39ac1e69edd964b0448',1,'UIController']]],
+  ['userrequest_30',['UserRequest',['../structThesis__backend_1_1Data__Structures_1_1UserRequest.html',1,'Thesis_backend::Data_Structures']]],
+  ['userrequest_2ecs_31',['UserRequest.cs',['../UserRequest_8cs.html',1,'']]],
+  ['usersettings_32',['UserSettings',['../namespaceThesis__backend_1_1Data__Structures.html#a33bcc9cf08bba0bcbe12dd0eb5a1fd8b',1,'Thesis_backend::Data_Structures']]],
+  ['usersettings_2ecs_33',['UserSettings.cs',['../UserSettings_8cs.html',1,'']]],
+  ['usertasks_34',['UserTasks',['../namespaceThesis__backend_1_1Data__Structures.html#ada8de2284cf373b7e8934a49b598cdfa',1,'Thesis_backend::Data_Structures']]]
 ];

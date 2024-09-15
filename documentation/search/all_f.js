@@ -1,7 +1,7 @@
 var searchData=
 [
   ['particlesystem_0',['particleSystem',['../classEffectScript.html#ac5f9f01ee64cb5063c52a937db4791e0',1,'EffectScript']]],
-  ['password_1',['password',['../structThesis__backend_1_1Data__Structures_1_1UserLoginRequest.html#a07ca93307f8ebf442dfda4727fd95e1a',1,'Thesis_backend.Data_Structures.UserLoginRequest.Password'],['../structThesis__backend_1_1Data__Structures_1_1UserRequest.html#afa2f27304c5e9d503eb2bf1cba3be812',1,'Thesis_backend.Data_Structures.UserRequest.Password']]],
+  ['password_1',['password',['../structThesis__backend_1_1Data__Structures_1_1UserRequest.html#afa2f27304c5e9d503eb2bf1cba3be812',1,'Thesis_backend.Data_Structures.UserRequest.Password'],['../structThesis__backend_1_1Data__Structures_1_1UserLoginRequest.html#a07ca93307f8ebf442dfda4727fd95e1a',1,'Thesis_backend.Data_Structures.UserLoginRequest.Password']]],
   ['passwordhash_2',['PasswordHash',['../namespaceThesis__backend_1_1Data__Structures.html#a0a47e498b447bfade12a294e01757fec',1,'Thesis_backend::Data_Structures']]],
   ['pathforcheckloggedin_3',['PATHFORCHECKLOGGEDIN',['../classConfig_1_1ServerConfig.html#a5db97261b8e437dcf4d91713905aabec',1,'Config::ServerConfig']]],
   ['pathforlogin_4',['PATHFORLOGIN',['../classConfig_1_1ServerConfig.html#afb8d71401f0aa0ea68ad081fcf50528e',1,'Config::ServerConfig']]],
@@ -29,5 +29,7 @@ var searchData=
   ['pressed_26',['Pressed',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualButton.html#a286f1c4c3001579bf3268312620808e7',1,'UnityStandardAssets::CrossPlatformInput::CrossPlatformInputManager::VirtualButton']]],
   ['privacy_27',['privacy',['../namespaceThesis__backend_1_1Data__Structures.html#ab6c62166e52fb7c9d5f6d26794a3ce89',1,'Thesis_backend::Data_Structures']]],
   ['probesize_28',['probeSize',['../classGame_1_1GameController.html#aaeff5e958583d17489b7ab80d45ba19d',1,'Game::GameController']]],
-  ['profilepic_29',['ProfilePic',['../namespaceThesis__backend_1_1Data__Structures.html#a05fa93d2eeca2ac0cde9696371d8a263',1,'Thesis_backend::Data_Structures']]]
+  ['profilehandler_29',['ProfileHandler',['../classProfileHandler.html',1,'']]],
+  ['profilehandler_2ecs_30',['ProfileHandler.cs',['../ProfileHandler_8cs.html',1,'']]],
+  ['profilepic_31',['ProfilePic',['../namespaceThesis__backend_1_1Data__Structures.html#a05fa93d2eeca2ac0cde9696371d8a263',1,'Thesis_backend::Data_Structures']]]
 ];
