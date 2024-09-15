@@ -13,10 +13,10 @@ public class FriendHandler : MonoBehaviour
     private GameObject FriendsContainer;
 
     [SerializeField]
-    private TMP_InputField taskNameInput;
+    private TMP_InputField userIdentificationInput;
 
 
-    private bool showPending=true;
+    private bool showPending = true;
 
     public void ShowPendingChanged(Boolean newValue)
     {
