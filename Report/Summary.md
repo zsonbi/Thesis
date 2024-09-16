@@ -1,21 +1,21 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 09/15/2024 - 16:22:03 |
+| Generated on: | 09/16/2024 - 00:11:55 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 4 |
 | Classes: | 90 |
 | Files: | 88 |
-| Covered lines: | 238 |
-| Uncovered lines: | 4109 |
-| Coverable lines: | 4347 |
-| Total lines: | 8765 |
-| Line coverage: | 5.4% (238 of 4347) |
+| Covered lines: | 245 |
+| Uncovered lines: | 4110 |
+| Coverable lines: | 4355 |
+| Total lines: | 8773 |
+| Line coverage: | 5.6% (245 of 4355) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 99 |
-| Total methods: | 757 |
-| Method coverage: | 13% (99 of 757) |
+| Covered methods: | 102 |
+| Total methods: | 760 |
+| Method coverage: | 13.4% (102 of 760) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -59,7 +59,7 @@
 |Tests.GameTests.RoadGeneratorTests|26|0|26|55|100%|0|0||3|3|100%|
 |Tests.MainMenuTest|4|0|4|24|100%|0|0||1|1|100%|
 |Tests.UITests.UserControllerTests|25|1|26|65|96.1%|0|0||6|6|100%|
-|**ThesisScripts**|**183**|**2061**|**2244**|**4741**|**8.1%**|**0**|**0**|****|**89**|**475**|**18.7%**|
+|**ThesisScripts**|**190**|**2062**|**2252**|**4749**|**8.4%**|**0**|**0**|****|**92**|**478**|**19.2%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|0|6|6|15|0%|0|0||0|5|0%|
 |Building|0|9|9|33|0%|0|0||0|7|0%|
 |CameraScript|0|7|7|24|0%|0|0||0|2|0%|
@@ -85,7 +85,7 @@
 |MeshGenerator|0|27|27|96|0%|0|0||0|2|0%|
 |ModalWindow|0|19|19|43|0%|0|0||0|4|0%|
 |PlayerTask|2|63|65|122|3%|0|0||1|12|8.3%|
-|ProfileHandler|0|24|24|71|0%|0|0||0|7|0%|
+|ProfileHandler|0|25|25|66|0%|0|0||0|7|0%|
 |TaskApiResponse|0|9|9|16|0%|0|0||0|7|0%|
 |TaskClosedEventArgs|0|4|4|14|0%|0|0||0|1|0%|
 |TaskContainer|22|46|68|91|32.3%|0|0||18|23|78.2%|
@@ -111,5 +111,5 @@
 |UnityStandardAssets.CrossPlatformInput.TiltInput|0|34|34|145|0%|0|0||0|4|0%|
 |UnityStandardAssets.CrossPlatformInput.TouchPad|0|64|64|156|0%|0|0||0|9|0%|
 |UnityStandardAssets.CrossPlatformInput.VirtualInput|0|60|60|134|0%|0|0||0|13|0%|
-|User.UserData|22|0|22|38|100%|0|0||18|18|100%|
-|UserController|25|37|62|168|40.3%|0|0||5|10|50%|
+|User.UserData|29|0|29|52|100%|0|0||21|21|100%|
+|UserController|25|37|62|167|40.3%|0|0||5|10|50%|

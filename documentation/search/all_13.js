@@ -21,7 +21,7 @@ var searchData=
   ['user_2ecs_18',['User.cs',['../User_8cs.html',1,'']]],
   ['usercontroller_19',['UserController',['../classUserController.html',1,'']]],
   ['usercontroller_2ecs_20',['UserController.cs',['../UserController_8cs.html',1,'']]],
-  ['userdata_21',['UserData',['../classUser_1_1UserData.html',1,'User']]],
+  ['userdata_21',['userdata',['../classUser_1_1UserData.html',1,'User.UserData'],['../classUser_1_1UserData.html#a17f4ef142f45e3e62d75c3f0a4ca751b',1,'User.UserData.UserData()']]],
   ['userdata_2ecs_22',['UserData.cs',['../UserData_8cs.html',1,'']]],
   ['userid_23',['UserId',['../namespaceThesis__backend_1_1Data__Structures.html#a5a31f37b4843773759fb1b3b21f17159',1,'Thesis_backend::Data_Structures']]],
   ['useridentification_24',['UserIdentification',['../structThesis__backend_1_1Data__Structures_1_1UserLoginRequest.html#ae813d85bafbb41662c667bdbd6f1b117',1,'Thesis_backend::Data_Structures::UserLoginRequest']]],

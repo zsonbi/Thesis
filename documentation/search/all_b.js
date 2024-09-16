@@ -18,5 +18,5 @@ var searchData=
   ['loggedin_15',['loggedin',['../classUser_1_1UserData.html#acdd4d87ab2fd5a0a81895656a6853b71',1,'User.UserData.LoggedIn'],['../classUserController.html#a7c361646155ff6adaf7f6b2f0fc44821',1,'UserController.LoggedIn()']]],
   ['loggedout_16',['LoggedOut',['../classProfileHandler.html#a7c3f5f6c1313403adcf0f6293818e1cc',1,'ProfileHandler']]],
   ['loginpanel_17',['LoginPanel',['../classUserController.html#a98d6b3d688cc0a31fd46d7eb90309d85',1,'UserController']]],
-  ['logout_18',['Logout',['../classUser_1_1UserData.html#a5affa4ff1f31fa4bd6a329b50a0b8933',1,'User::UserData']]]
+  ['logout_18',['Logout',['../classUser_1_1UserData.html#a8c8911482003919ea4fbab040c755f8f',1,'User::UserData']]]
 ];

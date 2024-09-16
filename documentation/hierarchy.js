@@ -53,6 +53,7 @@ var hierarchy =
       [ "UnityStandardAssets.CrossPlatformInput.MobileControlRig", "classUnityStandardAssets_1_1CrossPlatformInput_1_1MobileControlRig.html", null ],
       [ "UnityStandardAssets.CrossPlatformInput.TiltInput", "classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput.html", null ],
       [ "UnityStandardAssets.CrossPlatformInput.TouchPad", "classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html", null ],
+      [ "User.UserData", "classUser_1_1UserData.html", null ],
       [ "UserController", "classUserController.html", null ]
     ] ],
     [ "PhpReturnObject", "classPhpReturnObject.html", null ],
@@ -63,7 +64,6 @@ var hierarchy =
     [ "TaskApiResponse", "classTaskApiResponse.html", null ],
     [ "TaskContainer", "classTaskContainer.html", null ],
     [ "Thesis_backend.Data_Structures.TaskRequest", "structThesis__backend_1_1Data__Structures_1_1TaskRequest.html", null ],
-    [ "User.UserData", "classUser_1_1UserData.html", null ],
     [ "Thesis_backend.Data_Structures.UserLoginRequest", "structThesis__backend_1_1Data__Structures_1_1UserLoginRequest.html", null ],
     [ "Thesis_backend.Data_Structures.UserRequest", "structThesis__backend_1_1Data__Structures_1_1UserRequest.html", null ],
     [ "UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager.VirtualAxis", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualAxis.html", null ],

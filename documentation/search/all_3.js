@@ -16,7 +16,7 @@ var searchData=
   ['determineroadtype_13',['DetermineRoadType',['../classGame_1_1World_1_1Chunk.html#a1555876e070101d46bd238aeaa2b8980',1,'Game::World::Chunk']]],
   ['determinesteeringdirection_14',['DetermineSteeringDirection',['../classGame_1_1NpcCar.html#afa799070532b5440d2dbbfed550453c5',1,'Game::NpcCar']]],
   ['determinetiletype_15',['DetermineTileType',['../classGame_1_1World_1_1Chunk.html#ac4b762352bb5f90952fe57e5c0ee208f',1,'Game::World::Chunk']]],
-  ['direction_16',['direction',['../classBuilding.html#a75b55df58b2b6d4575fc172df885cc2c',1,'Building.direction'],['../classEdgeRoadContainer.html#a649b048e2f71ca94d7aa7c8727077d0e',1,'EdgeRoadContainer.Direction'],['../classBuilding.html#a3efcc2aeb8be0d490e49da18774963f2',1,'Building.Direction'],['../namespaceDataTypes.html#a3bc22b847fe90cda4414fc931bd61622',1,'DataTypes.Direction']]],
+  ['direction_16',['direction',['../classEdgeRoadContainer.html#a649b048e2f71ca94d7aa7c8727077d0e',1,'EdgeRoadContainer.Direction'],['../classBuilding.html#a3efcc2aeb8be0d490e49da18774963f2',1,'Building.Direction'],['../classBuilding.html#a75b55df58b2b6d4575fc172df885cc2c',1,'Building.direction'],['../namespaceDataTypes.html#a3bc22b847fe90cda4414fc931bd61622',1,'DataTypes.Direction']]],
   ['direction_2ecs_17',['Direction.cs',['../Direction_8cs.html',1,'']]],
   ['directionconverter_18',['DirectionConverter',['../classDirectionConverter.html',1,'']]],
   ['directionconverter_2ecs_19',['DirectionConverter.cs',['../DirectionConverter_8cs.html',1,'']]],

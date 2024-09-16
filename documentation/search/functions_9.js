@@ -11,5 +11,5 @@ var searchData=
   ['lockandtrytoplacebuilding_8',['LockAndTryToPlaceBuilding',['../classGame_1_1World_1_1Chunk.html#af2946e1e1b9e325d6004d166b2b26193',1,'Game::World::Chunk']]],
   ['loggedin_9',['LoggedIn',['../classUserController.html#a7c361646155ff6adaf7f6b2f0fc44821',1,'UserController']]],
   ['loggedout_10',['LoggedOut',['../classProfileHandler.html#a7c3f5f6c1313403adcf0f6293818e1cc',1,'ProfileHandler']]],
-  ['logout_11',['Logout',['../classUser_1_1UserData.html#a5affa4ff1f31fa4bd6a329b50a0b8933',1,'User::UserData']]]
+  ['logout_11',['Logout',['../classUser_1_1UserData.html#a8c8911482003919ea4fbab040c755f8f',1,'User::UserData']]]
 ];

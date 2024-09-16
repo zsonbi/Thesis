@@ -61,7 +61,7 @@ var NAVTREEINDEX =
 "classGame_1_1World_1_1Chunk.html#a23e6d6bcd332dd8e8c29b829a880e5e0",
 "classUnityStandardAssets_1_1CrossPlatformInput_1_1ButtonHandler.html#a77cfb8fa2c78ff59e1a2cc20fd139943",
 "classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput.html#aa7335a4f6c00d866ef0e4ba28a2785ba",
-"functions_y.html"
+"functions_r.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
