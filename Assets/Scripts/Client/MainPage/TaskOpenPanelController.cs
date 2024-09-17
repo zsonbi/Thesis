@@ -96,20 +96,25 @@ public class TaskOpenPanelController : MonoBehaviour
 
     public void MakeItBadHabit()
     {
-        this.TaskContainer.ChangeType(TaskType.BadHabit);
+        this.TaskContainer?.ChangeType(TaskType.BadHabit);
         UpdateButtons();
+
+        UIController.LoadBadHabits(false);
     }
 
     public void MakeItGoodTask()
     {
-        this.TaskContainer.ChangeType(TaskType.GoodTask);
+        this.TaskContainer?.ChangeType(TaskType.GoodTask);
         UpdateButtons();
+
+        UIController.LoadGoodTasks(false);
     }
 
     public void Cancel()
     {
         this.TaskClosedEventHandler?.Invoke(this, new TaskClosedEventArgs(false));
         tasksOpenPanel.SetActive(false);
+        this.TaskContainer = new TaskContainer();
     }
 
     public void Save()
@@ -150,6 +155,7 @@ public class TaskOpenPanelController : MonoBehaviour
         {
             UIController.UpdateTask(TaskContainer.Id);
         }
+        this.TaskContainer = new TaskContainer();
     }
 
     public void DeleteTask()

@@ -63,7 +63,7 @@ public class UIController : MonoBehaviour
         }
     }
 
-    public void LoadGoodTasks()
+    public void LoadGoodTasks(bool updateDisplay = true)
     {
         foreach (var task in tasks)
         {
@@ -77,10 +77,11 @@ public class UIController : MonoBehaviour
             }
         }
         TaskParent.GetComponentInChildren<TMP_Text>().text = "Good tasks";
-        taskOpenPanelController.MakeItGoodTask();
+        if (updateDisplay)
+            taskOpenPanelController.MakeItGoodTask();
     }
 
-    public void LoadBadHabits()
+    public void LoadBadHabits(bool updateDisplay = true)
     {
         foreach (var task in tasks)
         {
@@ -94,7 +95,8 @@ public class UIController : MonoBehaviour
             }
         }
         TaskParent.GetComponentInChildren<TMP_Text>().text = "Bad habits";
-        taskOpenPanelController.MakeItBadHabit();
+        if (updateDisplay)
+            taskOpenPanelController.MakeItBadHabit();
     }
 
     public GameObject CreateTask(TaskContainer taskContainer)

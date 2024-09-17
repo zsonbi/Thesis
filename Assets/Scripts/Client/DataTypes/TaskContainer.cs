@@ -30,11 +30,11 @@ public class TaskContainer
 
     public TaskContainer(Thesis_backend.Data_Structures.PlayerTask savedTask)
     {
-        this.TaskName= savedTask.TaskName;
+        this.TaskName = savedTask.TaskName;
         this.TaskType = savedTask.TaskType ? TaskType.BadHabit : TaskType.GoodTask;
-        this.TaskInterval= (TaskIntervals)savedTask.PeriodRate;
+        this.TaskInterval = (TaskIntervals)savedTask.PeriodRate;
         this.Completed = savedTask.Completed;
-        this.Id=savedTask.ID;
+        this.Id = savedTask.ID;
         this.Description = savedTask.Description;
         this.LastCompleted = savedTask.LastCompleted;
         this.Added = savedTask.Updated;
