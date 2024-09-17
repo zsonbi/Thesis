@@ -1,4 +1,5 @@
 using Game.World;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
@@ -16,17 +17,37 @@ namespace Game
         [SerializeField]
         private int probeSize = 1;
 
-        public World.GameWorld World { get => world; private set => world = value; }
+        private GameUI gameUI;
+
+        [SerializeField]
+        public World.GameWorld World
+        { get => world; private set => world = value; }
+
+        private float ScoreCounter = 0;
+
+        private CarSpawner carSpawner;
+
+        public int Score { get => Mathf.RoundToInt(ScoreCounter); private set => ScoreCounter = value; }
 
         private PlayerCar player;
 
-        public Vector3 PlayerPos => playerPrefab.transform.position;
+        public Vector3 PlayerPos => player.gameObject.transform.position;
+
+        public bool Running { get; private set; } = false;
 
         private async void Awake()
         {
-            player = playerPrefab.GetComponent<PlayerCar>();
-
-            await NewGame();
+            this.carSpawner = this.GetComponentInChildren<CarSpawner>();
+            gameUI = this.gameObject.GetComponentInChildren<GameUI>();
+            if (gameUI is null)
+            {
+                Debug.LogError("Can't load the ui");
+            }
+            else
+            {
+                gameUI.Init(this);
+            }
+            //   await NewGame();
         }
 
         private void Start()
@@ -37,13 +58,33 @@ namespace Game
             QualitySettings.vSyncCount = 0;
         }
 
+        private void Update()
+        {
+            if (!Running)
+            {
+                return;
+            }
+            this.ScoreCounter += Time.deltaTime;
+        }
+
+        private void PlayerDied(object? sender, EventArgs args)
+        {
+            this.gameUI.ShowEndGameScreen();
+            Running = false;
+        }
+
         public async Task NewGame()
         {
+            player = Instantiate(playerPrefab, this.transform).GetComponent<PlayerCar>();
+            player.Init(this);
+            player.DestroyedEvent += PlayerDied;
+            this.carSpawner.Reset();
+            this.Score = 0;
             await World.CreateNewGame();
-            Vector3 baseChunkPos = World.GetChunk(GameConfig.CHUNK_COUNT / 2, GameConfig.CHUNK_COUNT / 2).gameObject.transform.position;
+            Vector3 baseChunkPos = (await World.GetChunk(GameConfig.CHUNK_COUNT / 2, GameConfig.CHUNK_COUNT / 2)).gameObject.transform.position;
             player.gameObject.transform.position = new Vector3(baseChunkPos.x + GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL / 2 + 10, baseChunkPos.y + 2, baseChunkPos.z);
 
-            player.Init(this);
+            this.Running = true;
         }
 
         public async Task LoadAndDespawnChunks(int centerRow, int centerColumn)

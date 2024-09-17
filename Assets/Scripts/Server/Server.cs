@@ -19,10 +19,12 @@ public static class Server
     {
         using (UnityWebRequest webRequest = UnityWebRequest.Post(url, JsonConvert.SerializeObject(dataToSend), "application/json"))
         {
+            webRequest.SetRequestHeader("Access-Control-Allow-Credentials", "true");  // Ensures credentials are allowed if needed
+
             // Request and wait for the desired page.
             yield return webRequest.SendWebRequest();
 
-            if (webRequest.result == UnityWebRequest.Result.ConnectionError)
+            if (webRequest.result != UnityWebRequest.Result.Success)
             {
                 Debug.Log(webRequest.error);
             }
@@ -37,7 +39,12 @@ public static class Server
                 T? result = default;
                 try
                 {
-                    result = JsonConvert.DeserializeObject<T>(webRequest.downloadHandler.text);
+                    if (typeof(T) == typeof(string))
+                    {
+                        result = (T)(object)webRequest.downloadHandler.text;
+                    }
+                    else
+                        result = JsonConvert.DeserializeObject<T>(webRequest.downloadHandler.text);
                 }
                 catch
                 {
@@ -56,11 +63,13 @@ public static class Server
         using (UnityWebRequest webRequest = UnityWebRequest.Put(url, JsonConvert.SerializeObject(dataToSend)))
         {
             webRequest.method = "PATCH";
+            webRequest.SetRequestHeader("Content-Type", "application/json");
+            webRequest.SetRequestHeader("Access-Control-Allow-Credentials", "true");  // Ensures credentials are allowed if needed
 
             // Request and wait for the desired page.
             yield return webRequest.SendWebRequest();
 
-            if (webRequest.result == UnityWebRequest.Result.ConnectionError)
+            if (webRequest.result != UnityWebRequest.Result.Success)
             {
                 Debug.Log(webRequest.error);
             }
@@ -75,7 +84,12 @@ public static class Server
                 T? result = default;
                 try
                 {
-                    result = JsonConvert.DeserializeObject<T>(webRequest.downloadHandler.text);
+                    if (typeof(T) == typeof(string))
+                    {
+                        result = (T)(object)webRequest.downloadHandler.text;
+                    }
+                    else
+                        result = JsonConvert.DeserializeObject<T>(webRequest.downloadHandler.text);
                 }
                 catch
                 {
@@ -93,10 +107,12 @@ public static class Server
     {
         using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
         {
+            webRequest.SetRequestHeader("Access-Control-Allow-Credentials", "true");  // Ensures credentials are allowed if needed
+
             // Request and wait for the desired page.
             yield return webRequest.SendWebRequest();
 
-            if (webRequest.result == UnityWebRequest.Result.ConnectionError)
+            if (webRequest.result != UnityWebRequest.Result.Success)
             {
                 Debug.Log(webRequest.error);
             }
@@ -111,7 +127,12 @@ public static class Server
                 T? result = default;
                 try
                 {
-                    result = JsonConvert.DeserializeObject<T>(webRequest.downloadHandler.text);
+                    if (typeof(T) == typeof(string))
+                    {
+                        result = (T)(object)webRequest.downloadHandler.text;
+                    }
+                    else
+                        result = JsonConvert.DeserializeObject<T>(webRequest.downloadHandler.text);
                 }
                 catch
                 {
@@ -127,12 +148,16 @@ public static class Server
 
     public static IEnumerator SendDeleteRequest<T>(string url, Action<T> onComplete = null, Action beforeComplete = null, Action failAction = null)
     {
-        using (UnityWebRequest webRequest = UnityWebRequest.Delete(url))
+        using (UnityWebRequest webRequest = UnityWebRequest.Put(url, new byte[0]))
         {
+            webRequest.method = "DELETE";
+            webRequest.SetRequestHeader("Content-Type", "application/json");
+            webRequest.SetRequestHeader("Access-Control-Allow-Credentials", "true");  // Ensures credentials are allowed if needed
+
             // Request and wait for the desired page.
             yield return webRequest.SendWebRequest();
 
-            if (webRequest.result == UnityWebRequest.Result.ConnectionError)
+            if (webRequest.result != UnityWebRequest.Result.Success)
             {
                 Debug.Log(webRequest.error);
             }
@@ -147,7 +172,12 @@ public static class Server
                 T? result = default;
                 try
                 {
-                    result = JsonConvert.DeserializeObject<T>(webRequest.downloadHandler.text);
+                    if (typeof(T) == typeof(string))
+                    {
+                        result = (T)(object)webRequest.downloadHandler.text;
+                    }
+                    else
+                        result = JsonConvert.DeserializeObject<T>(webRequest.downloadHandler.text);
                 }
                 catch
                 {

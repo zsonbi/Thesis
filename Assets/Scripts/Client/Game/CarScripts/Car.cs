@@ -1,4 +1,3 @@
-using Codice.CM.Common;
 using Cysharp.Threading.Tasks.Triggers;
 using DataTypes;
 using Game;
@@ -52,6 +51,10 @@ namespace Game
 
                 lastChunk = newChunk;
                 this.gameObject.transform.parent = newChunk.transform;
+                if (this.gameObject.isStatic)
+                {
+                    this.gameObject.isStatic = false;
+                }
                 return true;
             }
 
@@ -64,10 +67,17 @@ namespace Game
 
         public void Init(GameController world)
         {
+            this.health = MAX_HEALTH;
             this.gameController = world;
+
+            if (effects.ContainsKey(EffectType.Smoke))
+                effects[EffectType.Smoke].gameObject.SetActive(false);
+
+            if (effects.ContainsKey(EffectType.Fire))
+                effects[EffectType.Fire].gameObject.SetActive(false);
         }
 
-        private void OnCollisionEnter(Collision collision)
+        protected virtual void OnCollisionEnter(Collision collision)
         {
             Debug.Log("Collided " + gameObject.name + "with " + collision.gameObject.name + "at " + collision.relativeVelocity.sqrMagnitude);
             float dmgAmount = collision.relativeVelocity.sqrMagnitude / 500f;

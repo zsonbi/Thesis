@@ -12,9 +12,9 @@ namespace Game
         {
             if (!Alive)
             {
+                carController.Move(0f, 0f, 0f, 0f);
                 return;
             }
-
             base.Update();
 
             float steering = DetermineSteeringDirection();

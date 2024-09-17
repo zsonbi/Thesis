@@ -29,13 +29,13 @@ public class UIController : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        if (!UserData.LoggedIn)
+        if (!UserData.Instance.LoggedIn)
         {
             StartCoroutine(MoveToLoginScene());
         }
         else
         {
-            UsernameInputText.text = UserData.Username;
+            UsernameInputText.text = UserData.Instance.Username;
             LoadTasks();
         }
     }
@@ -63,7 +63,7 @@ public class UIController : MonoBehaviour
         }
     }
 
-    public void LoadGoodTasks()
+    public void LoadGoodTasks(bool updateDisplay = true)
     {
         foreach (var task in tasks)
         {
@@ -77,10 +77,11 @@ public class UIController : MonoBehaviour
             }
         }
         TaskParent.GetComponentInChildren<TMP_Text>().text = "Good tasks";
-        taskOpenPanelController.MakeItGoodTask();
+        if (updateDisplay)
+            taskOpenPanelController.MakeItGoodTask();
     }
 
-    public void LoadBadHabits()
+    public void LoadBadHabits(bool updateDisplay = true)
     {
         foreach (var task in tasks)
         {
@@ -94,7 +95,8 @@ public class UIController : MonoBehaviour
             }
         }
         TaskParent.GetComponentInChildren<TMP_Text>().text = "Bad habits";
-        taskOpenPanelController.MakeItBadHabit();
+        if (updateDisplay)
+            taskOpenPanelController.MakeItBadHabit();
     }
 
     public GameObject CreateTask(TaskContainer taskContainer)
@@ -121,6 +123,11 @@ public class UIController : MonoBehaviour
     private void LoadTasks()
     {
         StartCoroutine(Server.SendGetRequest<List<Thesis_backend.Data_Structures.PlayerTask>>(ServerConfig.PATHFORTASKSQUERY, CreateTaskPrefabs));
+    }
+
+    public void LoadGameScene()
+    {
+        SceneManager.LoadScene("GameScene", LoadSceneMode.Single);
     }
 
     private void CreateTaskPrefabs(List<Thesis_backend.Data_Structures.PlayerTask> requestResult)

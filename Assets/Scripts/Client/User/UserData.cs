@@ -1,3 +1,4 @@
+using Config;
 using System;
 using System.Collections.Generic;
 using Thesis_backend.Data_Structures;
@@ -5,18 +6,21 @@ using UnityEngine;
 
 namespace User
 {
-    public static class UserData
+    public class UserData : MonoBehaviour
     {
-        public static string Username { get; private set; }
-        public static string Email { get; private set; }
-        public static long Id { get; private set; }
-        public static UserSettings SettingsId { get; private set; }
-        public static long GameId { get; private set; }
-        public static DateTime LastLoggedIn { get; private set; }
-        public static DateTime Registered { get; private set; }
-        public static bool LoggedIn { get; private set; } = false;
+        private static UserData instance = null;
+        public static UserData Instance { get => instance is null ? Create() : instance; }
 
-        public static void Init(Thesis_backend.Data_Structures.User loggedInUser)
+        public string Username { get; private set; }
+        public string Email { get; private set; }
+        public long Id { get; private set; }
+        public UserSettings SettingsId { get; private set; }
+        public long GameId { get; private set; }
+        public DateTime LastLoggedIn { get; private set; }
+        public DateTime Registered { get; private set; }
+        public bool LoggedIn { get; private set; } = false;
+
+        public void Init(Thesis_backend.Data_Structures.User loggedInUser)
         {
             Username = loggedInUser.Username;
             Email = loggedInUser.Email;
@@ -29,10 +33,20 @@ namespace User
             LoggedIn = true;
         }
 
-        public static void Logout()
+        private static UserData Create()
+        {
+            instance = new UserData();
+            return instance;
+        }
+
+        private UserData()
+        {
+        }
+
+        public void Logout()
         {
             LoggedIn = false;
-            Debug.Log(Server.SendDeleteRequest<string>(Config.ServerConfig.PATHFORLOGOUT));
+            //StartCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORLOGOUT));
         }
     }
 }

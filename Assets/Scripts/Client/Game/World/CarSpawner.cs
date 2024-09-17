@@ -47,6 +47,11 @@ namespace Game
                 }
             }
 
+            public void Reset()
+            {
+                this.timer = 0;
+            }
+
             public void SpawnNpc()
             {
             }

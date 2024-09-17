@@ -80,7 +80,7 @@ jobs:
 
   buildForLinux:
     needs: test
-    if: contains(github.ref, 'master') || contains(github.ref, 'Skins-and-buildings')
+    if: contains(github.ref, 'master') || contains(github.ref, 'Game-UI')
     name: Build for ${{ matrix.targetPlatform }}
     runs-on: my-pc
     strategy:
@@ -89,9 +89,6 @@ jobs:
         targetPlatform:
           - StandaloneLinux64
     steps:
-      - uses: actions/checkout@v4.1.2
-        with:
-          lfs: true
       - uses: actions/cache@v4.0.2
         with:
           path: Library
@@ -101,11 +98,18 @@ jobs:
           sudo swapoff -a
           sudo rm -f /swapfile
           sudo apt clean
-          docker rmi $(docker image ls -aq)
+          docker rmi $(docker image ls -aq)  || true
           df -h
           # Before
           echo "Disk space before:"
           df -h
+      - uses: actions/checkout@v4.1.2
+        with:
+          lfs: true
+      - name: Fetch full history for Git
+        run: |
+            git config --global --add safe.directory /home/ubuntu/actions-runner/_work/Thesis/Thesis
+            git fetch --unshallow || true
       - uses: game-ci/unity-builder@v4.2.3
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
@@ -124,7 +128,7 @@ jobs:
 
   buildForAndroid:
     needs: test
-    if: contains(github.ref, 'master') || contains(github.ref, 'Skins-and-buildings')
+    if: contains(github.ref, 'master') || contains(github.ref, 'Game-UI')
     name: Build for ${{ matrix.targetPlatform }}
     runs-on: my-pc
     strategy:
@@ -133,9 +137,6 @@ jobs:
         targetPlatform:
           - Android
     steps:
-      - uses: actions/checkout@v4.1.2
-        with:
-          lfs: true
       - uses: actions/cache@v4.0.2
         with:
           path: Library
@@ -143,12 +144,14 @@ jobs:
       - name: Free Disk Space for Android
         run: |
           sudo apt clean
-          docker rmi $(docker image ls -aq)
+          docker rmi $(docker image ls -aq)  || true
           df -h
           # Before
           echo "Disk space before:"
           df -h
-    
+      - uses: actions/checkout@v4.1.2
+        with:
+          lfs: true
       - uses: game-ci/unity-builder@v4.2.3
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
@@ -200,7 +203,7 @@ jobs:
 
   buildForWebGL:
         needs: test
-        if: contains(github.ref, 'master') || contains(github.ref, 'Skins-and-buildings')
+        if: contains(github.ref, 'master') || contains(github.ref, 'Game-UI')
         name: Build for ${{ matrix.targetPlatform }}
         runs-on: my-pc
         strategy:
@@ -209,9 +212,6 @@ jobs:
             targetPlatform:
               - WebGL
         steps:
-          - uses: actions/checkout@v4.1.2
-            with:
-              lfs: true
           - uses: actions/cache@v4.0.2
             with:
               path: Library
@@ -221,11 +221,14 @@ jobs:
               sudo swapoff -a
               sudo rm -f /swapfile
               sudo apt clean
-              docker rmi $(docker image ls -aq)
+              docker rmi $(docker image ls -aq)  || true
               df -h
               # Before
               echo "Disk space before:"
               df -h
+          - uses: actions/checkout@v4.1.2
+            with:
+              lfs: true
           - uses: game-ci/unity-builder@v4.2.3
             env:
               UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
