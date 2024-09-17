@@ -260,18 +260,16 @@ Properties</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="TaskContainer_8cs_source.html#l00031">31</a> of file <a class="el" href="TaskContainer_8cs_source.html">TaskContainer.cs</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   32</span>    {</div>
-<div class="line"><span class="lineno">   33</span>        this.<a class="code hl_property" href="classTaskContainer.html#a9fb073d189cb8e94d4ac68647193a44e">TaskName</a>= savedTask.TaskName;</div>
+<div class="line"><span class="lineno">   33</span>        this.TaskName = savedTask.TaskName;</div>
 <div class="line"><span class="lineno">   34</span>        this.TaskType = savedTask.TaskType ? TaskType.BadHabit : <a class="code hl_enumeration" href="TaskType_8cs.html#aa7f5c268cc89ed3067c26142ca3e16d7">TaskType</a>.GoodTask;</div>
-<div class="line"><span class="lineno">   35</span>        this.<a class="code hl_property" href="classTaskContainer.html#a3c24cb3ae67ff49c37aef29db834ed28">TaskInterval</a>= (<a class="code hl_enumeration" href="TaskIntervals_8cs.html#a4ba022096603875ae402bb772ec906f9">TaskIntervals</a>)savedTask.PeriodRate;</div>
+<div class="line"><span class="lineno">   35</span>        this.TaskInterval = (<a class="code hl_enumeration" href="TaskIntervals_8cs.html#a4ba022096603875ae402bb772ec906f9">TaskIntervals</a>)savedTask.PeriodRate;</div>
 <div class="line"><span class="lineno">   36</span>        this.Completed = savedTask.Completed;</div>
-<div class="line"><span class="lineno">   37</span>        this.<a class="code hl_property" href="classTaskContainer.html#ad3f8a8a6c64547d6cccec4ae0376b3af">Id</a>=savedTask.ID;</div>
+<div class="line"><span class="lineno">   37</span>        this.Id = savedTask.ID;</div>
 <div class="line"><span class="lineno">   38</span>        this.Description = savedTask.Description;</div>
 <div class="line"><span class="lineno">   39</span>        this.LastCompleted = savedTask.LastCompleted;</div>
 <div class="line"><span class="lineno">   40</span>        this.Added = savedTask.Updated;</div>
 <div class="line"><span class="lineno">   41</span>    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="TaskContainer_8cs_source.html#l00009">Id</a>, <a class="el" href="TaskContainer_8cs_source.html#l00012">TaskInterval</a>, and <a class="el" href="TaskContainer_8cs_source.html#l00010">TaskName</a>.</p>
-
 </div>
 </div>
 <a id="a23381450125246537dfe70229da15522" name="a23381450125246537dfe70229da15522"></a>
@@ -392,7 +390,7 @@ Properties</h2></td></tr>
 <div class="line"><span class="lineno">   69</span>        }</div>
 <div class="line"><span class="lineno">   70</span>    }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="TaskOpenPanelController_8cs_source.html#l00175">TaskOpenPanelController.CollectFromFields()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TaskOpenPanelController_8cs_source.html#l00181">TaskOpenPanelController.CollectFromFields()</a>.</p>
 
 </div>
 </div>
@@ -425,7 +423,7 @@ Properties</h2></td></tr>
 <div class="line"><span class="lineno">   74</span>        this.TaskType = newType;</div>
 <div class="line"><span class="lineno">   75</span>    }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="TaskOpenPanelController_8cs_source.html#l00097">TaskOpenPanelController.MakeItBadHabit()</a>, and <a class="el" href="TaskOpenPanelController_8cs_source.html#l00103">TaskOpenPanelController.MakeItGoodTask()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TaskOpenPanelController_8cs_source.html#l00097">TaskOpenPanelController.MakeItBadHabit()</a>, and <a class="el" href="TaskOpenPanelController_8cs_source.html#l00105">TaskOpenPanelController.MakeItGoodTask()</a>.</p>
 
 </div>
 </div>
@@ -464,7 +462,7 @@ Properties</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="TaskContainer_8cs_source.html#l00016">Completed</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="PlayerTask_8cs_source.html#l00081">PlayerTask.CompleteStateChange()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TaskDisplayHandler_8cs_source.html#l00081">PlayerTask.CompleteStateChange()</a>.</p>
 
 </div>
 </div>
@@ -496,7 +494,7 @@ Properties</h2></td></tr>
 <div class="line"><span class="lineno">   89</span>        this.Completed = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   90</span>    }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="PlayerTask_8cs_source.html#l00081">PlayerTask.CompleteStateChange()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TaskDisplayHandler_8cs_source.html#l00081">PlayerTask.CompleteStateChange()</a>.</p>
 
 </div>
 </div>
@@ -524,7 +522,7 @@ Properties</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="TaskContainer_8cs_source.html#l00009">9</a> of file <a class="el" href="TaskContainer_8cs_source.html">TaskContainer.cs</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">    9</span>{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="PlayerTask_8cs_source.html#l00054">PlayerTask.CompleteTask()</a>, <a class="el" href="UIController_8cs_source.html#l00100">UIController.CreateTask()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00160">TaskOpenPanelController.DeletedTask()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00155">TaskOpenPanelController.DeleteTask()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00115">TaskOpenPanelController.Save()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00137">TaskOpenPanelController.SavedTask()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>, and <a class="el" href="TaskContainer_8cs_source.html#l00031">TaskContainer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TaskDisplayHandler_8cs_source.html#l00054">PlayerTask.CompleteTask()</a>, <a class="el" href="UIController_8cs_source.html#l00102">UIController.CreateTask()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00166">TaskOpenPanelController.DeletedTask()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00161">TaskOpenPanelController.DeleteTask()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00120">TaskOpenPanelController.Save()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00142">TaskOpenPanelController.SavedTask()</a>, and <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>.</p>
 
 </div>
 </div>
@@ -551,7 +549,7 @@ Properties</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="TaskContainer_8cs_source.html#l00010">10</a> of file <a class="el" href="TaskContainer_8cs_source.html">TaskContainer.cs</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   10</span>{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="TaskOpenPanelController_8cs_source.html#l00064">TaskOpenPanelController.OpenUp()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00115">TaskOpenPanelController.Save()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00031">TaskContainer()</a>, and <a class="el" href="PlayerTask_8cs_source.html#l00074">PlayerTask.UpdateLabels()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TaskOpenPanelController_8cs_source.html#l00064">TaskOpenPanelController.OpenUp()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00120">TaskOpenPanelController.Save()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>, and <a class="el" href="TaskDisplayHandler_8cs_source.html#l00074">PlayerTask.UpdateLabels()</a>.</p>
 
 </div>
 </div>
@@ -578,7 +576,7 @@ Properties</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="TaskContainer_8cs_source.html#l00011">11</a> of file <a class="el" href="TaskContainer_8cs_source.html">TaskContainer.cs</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   11</span>{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="TaskOpenPanelController_8cs_source.html#l00175">TaskOpenPanelController.CollectFromFields()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00115">TaskOpenPanelController.Save()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>, and <a class="el" href="TaskOpenPanelController_8cs_source.html#l00184">TaskOpenPanelController.UpdateButtons()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TaskOpenPanelController_8cs_source.html#l00181">TaskOpenPanelController.CollectFromFields()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00120">TaskOpenPanelController.Save()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>, and <a class="el" href="TaskOpenPanelController_8cs_source.html#l00190">TaskOpenPanelController.UpdateButtons()</a>.</p>
 
 </div>
 </div>
@@ -605,7 +603,7 @@ Properties</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="TaskContainer_8cs_source.html#l00012">12</a> of file <a class="el" href="TaskContainer_8cs_source.html">TaskContainer.cs</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   12</span>{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="PlayerTask_8cs_source.html#l00117">PlayerTask.CalculateIfCompleteable()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00064">TaskOpenPanelController.OpenUp()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00115">TaskOpenPanelController.Save()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00031">TaskContainer()</a>, <a class="el" href="PlayerTask_8cs_source.html#l00074">PlayerTask.UpdateLabels()</a>, and <a class="el" href="PlayerTask_8cs_source.html#l00098">PlayerTask.UpdateTimeRemaining()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TaskDisplayHandler_8cs_source.html#l00117">PlayerTask.CalculateIfCompleteable()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00064">TaskOpenPanelController.OpenUp()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00120">TaskOpenPanelController.Save()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>, <a class="el" href="TaskDisplayHandler_8cs_source.html#l00074">PlayerTask.UpdateLabels()</a>, and <a class="el" href="TaskDisplayHandler_8cs_source.html#l00098">PlayerTask.UpdateTimeRemaining()</a>.</p>
 
 </div>
 </div>
@@ -632,7 +630,7 @@ Properties</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="TaskContainer_8cs_source.html#l00013">13</a> of file <a class="el" href="TaskContainer_8cs_source.html">TaskContainer.cs</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   13</span>{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="TaskOpenPanelController_8cs_source.html#l00064">TaskOpenPanelController.OpenUp()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00115">TaskOpenPanelController.Save()</a>, and <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TaskOpenPanelController_8cs_source.html#l00064">TaskOpenPanelController.OpenUp()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00120">TaskOpenPanelController.Save()</a>, and <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>.</p>
 
 </div>
 </div>
@@ -686,7 +684,7 @@ Properties</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="TaskContainer_8cs_source.html#l00015">15</a> of file <a class="el" href="TaskContainer_8cs_source.html">TaskContainer.cs</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   15</span>{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="PlayerTask_8cs_source.html#l00117">PlayerTask.CalculateIfCompleteable()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>, and <a class="el" href="PlayerTask_8cs_source.html#l00098">PlayerTask.UpdateTimeRemaining()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TaskDisplayHandler_8cs_source.html#l00117">PlayerTask.CalculateIfCompleteable()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>, and <a class="el" href="TaskDisplayHandler_8cs_source.html#l00098">PlayerTask.UpdateTimeRemaining()</a>.</p>
 
 </div>
 </div>
@@ -713,12 +711,12 @@ Properties</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="TaskContainer_8cs_source.html#l00016">16</a> of file <a class="el" href="TaskContainer_8cs_source.html">TaskContainer.cs</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   16</span>{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="TaskContainer_8cs_source.html#l00077">Complete()</a>, <a class="el" href="PlayerTask_8cs_source.html#l00054">PlayerTask.CompleteTask()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>, <a class="el" href="PlayerTask_8cs_source.html#l00033">PlayerTask.Update()</a>, and <a class="el" href="PlayerTask_8cs_source.html#l00098">PlayerTask.UpdateTimeRemaining()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TaskContainer_8cs_source.html#l00077">Complete()</a>, <a class="el" href="TaskDisplayHandler_8cs_source.html#l00054">PlayerTask.CompleteTask()</a>, <a class="el" href="TaskContainer_8cs_source.html#l00019">TaskContainer()</a>, <a class="el" href="TaskDisplayHandler_8cs_source.html#l00033">PlayerTask.Update()</a>, and <a class="el" href="TaskDisplayHandler_8cs_source.html#l00098">PlayerTask.UpdateTimeRemaining()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Assets/Scripts/Client/DataTypes/<a class="el" href="TaskContainer_8cs_source.html">TaskContainer.cs</a></li>
+<li>Assets/Scripts/Client/MainPage/DisplayElements/<a class="el" href="TaskContainer_8cs_source.html">TaskContainer.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

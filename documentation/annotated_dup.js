@@ -64,7 +64,6 @@ var annotated_dup =
     [ "GameUI", "classGameUI.html", "classGameUI" ],
     [ "MeshGenerator", "classMeshGenerator.html", "classMeshGenerator" ],
     [ "ModalWindow", "classModalWindow.html", "classModalWindow" ],
-    [ "PhpReturnObject", "classPhpReturnObject.html", "classPhpReturnObject" ],
     [ "PlayerTask", "classPlayerTask.html", "classPlayerTask" ],
     [ "ProfileHandler", "classProfileHandler.html", "classProfileHandler" ],
     [ "Server", "classServer.html", "classServer" ],

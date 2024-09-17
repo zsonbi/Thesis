@@ -14,6 +14,5 @@ var searchData=
   ['openup_11',['openup',['../classTaskOpenPanelController.html#a1147a8c395515fe25ff585e12095bd3d',1,'TaskOpenPanelController.OpenUp()'],['../classTaskOpenPanelController.html#a510d3b27a55f6c441d24e509b2bbd4e2',1,'TaskOpenPanelController.OpenUp(TaskContainer taskContainer=null)']]],
   ['orientation_12',['Orientation',['../structAssets_1_1Scripts_1_1Client_1_1DataTypes_1_1ChunkCellContainer.html#a0918e1d9d1b2e13a9b0c9c0e578939e9',1,'Assets::Scripts::Client::DataTypes::ChunkCellContainer']]],
   ['originalforwardstiffness_13',['originalForwardStiffness',['../classGame_1_1EnableWheelPhysicMaterial.html#a95a6b255895d8fdbecd883ce8dcc7887',1,'Game::EnableWheelPhysicMaterial']]],
-  ['originalsidewaysstiffness_14',['originalSidewaysStiffness',['../classGame_1_1EnableWheelPhysicMaterial.html#ada97322b625b6571e6d3fcf0af8cf4cf',1,'Game::EnableWheelPhysicMaterial']]],
-  ['othertype_15',['otherType',['../classPhpReturnObject.html#ad2a1c634a6680164fa4f57ec577d6777',1,'PhpReturnObject']]]
+  ['originalsidewaysstiffness_14',['originalSidewaysStiffness',['../classGame_1_1EnableWheelPhysicMaterial.html#ada97322b625b6571e6d3fcf0af8cf4cf',1,'Game::EnableWheelPhysicMaterial']]]
 ];

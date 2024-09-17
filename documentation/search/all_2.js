@@ -49,7 +49,7 @@ var searchData=
   ['completetask_46',['CompleteTask',['../classPlayerTask.html#a62ed33a7c17cacc5a2c6c418764a885e',1,'PlayerTask']]],
   ['config_47',['Config',['../namespaceConfig.html',1,'']]],
   ['confirmbuttonclick_48',['ConfirmButtonClick',['../classModalWindow.html#a46a471a1811a5d97211d524b382395b3',1,'ModalWindow']]],
-  ['controlstyle_49',['controlstyle',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#ad6ec0252344c6ee56d386f560e0b2240',1,'UnityStandardAssets.CrossPlatformInput.TouchPad.controlStyle'],['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#ab4c68ac6f2b8a41c5029c105833ebfb6',1,'UnityStandardAssets.CrossPlatformInput.TouchPad.ControlStyle']]],
+  ['controlstyle_49',['controlstyle',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#ab4c68ac6f2b8a41c5029c105833ebfb6',1,'UnityStandardAssets.CrossPlatformInput.TouchPad.ControlStyle'],['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#ad6ec0252344c6ee56d386f560e0b2240',1,'UnityStandardAssets.CrossPlatformInput.TouchPad.controlStyle']]],
   ['copcar_50',['CopCar',['../classGame_1_1CopCar.html',1,'Game']]],
   ['copcar_2ecs_51',['CopCar.cs',['../CopCar_8cs.html',1,'']]],
   ['copcars_52',['CopCars',['../classGame_1_1World_1_1CarSpawner.html#aae87e13674ea01abc1a7f7b11afe30a2',1,'Game::World::CarSpawner']]],

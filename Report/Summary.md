@@ -1,16 +1,16 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 09/16/2024 - 00:11:55 |
+| Generated on: | 09/17/2024 - 15:11:47 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 4 |
 | Classes: | 90 |
 | Files: | 88 |
-| Covered lines: | 245 |
-| Uncovered lines: | 4110 |
-| Coverable lines: | 4355 |
-| Total lines: | 8773 |
-| Line coverage: | 5.6% (245 of 4355) |
+| Covered lines: | 247 |
+| Uncovered lines: | 4114 |
+| Coverable lines: | 4361 |
+| Total lines: | 8783 |
+| Line coverage: | 5.6% (247 of 4361) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 102 |
@@ -59,11 +59,11 @@
 |Tests.GameTests.RoadGeneratorTests|26|0|26|55|100%|0|0||3|3|100%|
 |Tests.MainMenuTest|4|0|4|24|100%|0|0||1|1|100%|
 |Tests.UITests.UserControllerTests|25|1|26|65|96.1%|0|0||6|6|100%|
-|**ThesisScripts**|**190**|**2062**|**2252**|**4749**|**8.4%**|**0**|**0**|****|**92**|**478**|**19.2%**|
+|**ThesisScripts**|**192**|**2066**|**2258**|**4759**|**8.5%**|**0**|**0**|****|**92**|**478**|**19.2%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|0|6|6|15|0%|0|0||0|5|0%|
 |Building|0|9|9|33|0%|0|0||0|7|0%|
 |CameraScript|0|7|7|24|0%|0|0||0|2|0%|
-|Config.ServerConfig|0|3|3|67|0%|0|0||0|3|0%|
+|Config.ServerConfig|0|3|3|69|0%|0|0||0|3|0%|
 |DirectionConverter|0|21|21|46|0%|0|0||0|2|0%|
 |EdgeRoadContainer|9|0|9|15|100%|0|0||7|7|100%|
 |EffectScript|0|4|4|23|0%|0|0||0|2|0%|
@@ -89,7 +89,7 @@
 |TaskApiResponse|0|9|9|16|0%|0|0||0|7|0%|
 |TaskClosedEventArgs|0|4|4|14|0%|0|0||0|1|0%|
 |TaskContainer|22|46|68|91|32.3%|0|0||18|23|78.2%|
-|TaskOpenPanelController|14|86|100|197|14%|0|0||4|15|26.6%|
+|TaskOpenPanelController|15|89|104|203|14.4%|0|0||4|15|26.6%|
 |Thesis_backend.Data_Structures.DbElement|1|1|2|11|50%|0|0||2|3|66.6%|
 |Thesis_backend.Data_Structures.Game|0|4|4|13|0%|0|0||0|8|0%|
 |Thesis_backend.Data_Structures.PlayerTask|0|9|9|19|0%|0|0||0|17|0%|
@@ -98,7 +98,7 @@
 |Thesis_backend.Data_Structures.UserLoginRequest|2|0|2|14|100%|0|0||4|4|100%|
 |Thesis_backend.Data_Structures.UserRequest|0|3|3|15|0%|0|0||0|6|0%|
 |Thesis_backend.Data_Structures.UserSettings|0|4|4|15|0%|0|0||0|8|0%|
-|UIController|22|60|82|139|26.8%|0|0||6|12|50%|
+|UIController|23|61|84|141|27.3%|0|0||6|12|50%|
 |UnityStandardAssets.CrossPlatformInput.AxisTouchButton|0|41|41|75|0%|0|0||0|6|0%|
 |UnityStandardAssets.CrossPlatformInput.ButtonHandler|0|19|19|50|0%|0|0||0|7|0%|
 |UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager|0|133|133|318|0%|0|0||0|47|0%|

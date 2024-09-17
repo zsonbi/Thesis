@@ -1,5 +1,6 @@
 var dir_3083be55f4179b515ef99b9310ea3a95 =
 [
-    [ "TaskOpenPanelController.cs", "TaskOpenPanelController_8cs.html", "TaskOpenPanelController_8cs" ],
+    [ "DisplayElements", "dir_635f2425a262c0487727e68c64134362.html", "dir_635f2425a262c0487727e68c64134362" ],
+    [ "WindowHandlers", "dir_e5b44f8c1b4d3cff1ecd1b4ae406e752.html", "dir_e5b44f8c1b4d3cff1ecd1b4ae406e752" ],
     [ "UIController.cs", "UIController_8cs.html", "UIController_8cs" ]
 ];
