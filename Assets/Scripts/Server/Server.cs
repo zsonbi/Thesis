@@ -46,7 +46,7 @@ public static class Server
                     else
                         result = JsonConvert.DeserializeObject<T>(webRequest.downloadHandler.text);
                 }
-                catch
+                catch (Exception e)
                 {
                     Debug.Log($"Couldn't serialize response: {webRequest.downloadHandler.text}");
                 }
@@ -134,7 +134,7 @@ public static class Server
                     else
                         result = JsonConvert.DeserializeObject<T>(webRequest.downloadHandler.text);
                 }
-                catch
+                catch (Exception e)
                 {
                     Debug.Log($"Couldn't serialize response: {webRequest.downloadHandler.text}");
                 }

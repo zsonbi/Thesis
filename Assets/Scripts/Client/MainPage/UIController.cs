@@ -24,7 +24,7 @@ public class UIController : MonoBehaviour
     [SerializeField]
     public ModalWindow ModalWindow;
 
-    private Dictionary<long, PlayerTask> tasks = new Dictionary<long, PlayerTask>();
+    private Dictionary<long, TaskDisplayHandler> tasks = new Dictionary<long, TaskDisplayHandler>();
 
     // Start is called before the first frame update
     private void Start()
@@ -49,7 +49,7 @@ public class UIController : MonoBehaviour
     {
         if (tasks.ContainsKey(taskId))
         {
-            PlayerTask TaskToRemove = tasks[taskId];
+            TaskDisplayHandler TaskToRemove = tasks[taskId];
             tasks.Remove(taskId);
             Destroy(TaskToRemove.gameObject);
         }
@@ -102,7 +102,7 @@ public class UIController : MonoBehaviour
     public GameObject CreateTask(TaskContainer taskContainer)
     {
         GameObject task = Instantiate(TaskPrefab, TaskParent.transform);
-        PlayerTask taskComponent = task.GetComponent<PlayerTask>();
+        TaskDisplayHandler taskComponent = task.GetComponent<TaskDisplayHandler>();
         taskComponent.InitValues(taskContainer, taskOpenPanelController);
         tasks.Add(taskContainer.Id, taskComponent);
         return task;

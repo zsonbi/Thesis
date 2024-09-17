@@ -31,6 +31,14 @@ namespace Config
         /// </summary>
         public const string PATHFORLOGOUT = SERVERPATH + "/api/Users/Logout";
 
+        public const string PATH_FOR_FRIEND_REQUEST_SEND = SERVERPATH + "/api/Friends/Send";
+
+        public static string PATH_FOR_FRIEND_ACCEPT(long friendRequestId) => SERVERPATH + $"/api/Friends/{friendRequestId}/Accept";
+
+        public static string PATH_FOR_FRIEND_DELETE(long friendRequestId) => SERVERPATH + $"/api/Friends/{friendRequestId}/Delete";
+
+        public const string PATH_FOR_FRIEND_GETALL = SERVERPATH + "/api/Friends/GetAll";
+
         /// <summary>
         /// Just need to be sent
         /// Cleares the users session
