@@ -116,6 +116,7 @@ public class UIController : MonoBehaviour
 
         taskComponent.InitValues(taskContainer, taskOpenPanelController, this);
 
+
         tasks.Add(taskContainer.Id, taskComponent);
         return task;
     }
