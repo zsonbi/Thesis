@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>09/18/2024 - 12:08:03</Generatedon>
+    <Generatedon>09/18/2024 - 15:01:50</Generatedon>
     <Parser>MultiReportParser (3x OpenCoverParser)</Parser>
     <Assemblies>4</Assemblies>
     <Classes>91</Classes>
@@ -9,7 +9,7 @@
     <Coveredlines>252</Coveredlines>
     <Uncoveredlines>4182</Uncoveredlines>
     <Coverablelines>4434</Coverablelines>
-    <Totallines>8914</Totallines>
+    <Totallines>8915</Totallines>
     <Linecoverage>5.6</Linecoverage>
     <Coveredbranches>0</Coveredbranches>
     <Totalbranches>0</Totalbranches>
@@ -61,11 +61,11 @@
       <Class name="Tests.MainMenuTest" coverage="100" coveredlines="4" coverablelines="4" totallines="24" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
       <Class name="Tests.UITests.UserControllerTests" coverage="96.1" coveredlines="25" coverablelines="26" totallines="65" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="6" methodcoverage="100" />
     </Assembly>
-    <Assembly name="ThesisScripts" classes="54" coverage="8.4" coveredlines="197" coverablelines="2331" totallines="4890" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="96" totalmethods="497" methodcoverage="19.3">
+    <Assembly name="ThesisScripts" classes="54" coverage="8.4" coveredlines="197" coverablelines="2331" totallines="4891" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="96" totalmethods="497" methodcoverage="19.3">
       <Class name="Assets.Scripts.Client.DataTypes.ChunkCellContainer" coverage="0" coveredlines="0" coverablelines="6" totallines="15" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
       <Class name="Building" coverage="0" coveredlines="0" coverablelines="9" totallines="33" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="7" methodcoverage="0" />
       <Class name="CameraScript" coverage="0" coveredlines="0" coverablelines="7" totallines="24" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
-      <Class name="Config.ServerConfig" coverage="0" coveredlines="0" coverablelines="5" totallines="77" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
+      <Class name="Config.ServerConfig" coverage="0" coveredlines="0" coverablelines="5" totallines="78" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
       <Class name="DirectionConverter" coverage="0" coveredlines="0" coverablelines="21" totallines="46" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
       <Class name="EdgeRoadContainer" coverage="100" coveredlines="9" coverablelines="9" totallines="15" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="7" totalmethods="7" methodcoverage="100" />
       <Class name="EffectScript" coverage="0" coveredlines="0" coverablelines="4" totallines="23" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />

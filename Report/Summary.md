@@ -1,7 +1,7 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 09/18/2024 - 12:08:02 |
+| Generated on: | 09/18/2024 - 15:01:50 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 4 |
 | Classes: | 91 |
@@ -9,7 +9,7 @@
 | Covered lines: | 252 |
 | Uncovered lines: | 4182 |
 | Coverable lines: | 4434 |
-| Total lines: | 8914 |
+| Total lines: | 8915 |
 | Line coverage: | 5.6% (252 of 4434) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
@@ -59,11 +59,11 @@
 |Tests.GameTests.RoadGeneratorTests|26|0|26|55|100%|0|0||3|3|100%|
 |Tests.MainMenuTest|4|0|4|24|100%|0|0||1|1|100%|
 |Tests.UITests.UserControllerTests|25|1|26|65|96.1%|0|0||6|6|100%|
-|**ThesisScripts**|**197**|**2134**|**2331**|**4890**|**8.4%**|**0**|**0**|****|**96**|**497**|**19.3%**|
+|**ThesisScripts**|**197**|**2134**|**2331**|**4891**|**8.4%**|**0**|**0**|****|**96**|**497**|**19.3%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|0|6|6|15|0%|0|0||0|5|0%|
 |Building|0|9|9|33|0%|0|0||0|7|0%|
 |CameraScript|0|7|7|24|0%|0|0||0|2|0%|
-|Config.ServerConfig|0|5|5|77|0%|0|0||0|5|0%|
+|Config.ServerConfig|0|5|5|78|0%|0|0||0|5|0%|
 |DirectionConverter|0|21|21|46|0%|0|0||0|2|0%|
 |EdgeRoadContainer|9|0|9|15|100%|0|0||7|7|100%|
 |EffectScript|0|4|4|23|0%|0|0||0|2|0%|
