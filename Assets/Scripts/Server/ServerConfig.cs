@@ -5,8 +5,9 @@ namespace Config
         public const TaskType DEFAULT_TASKTYPE = TaskType.GoodTask;
         public const TaskIntervals DEFAULT_TASKINTERVALS = TaskIntervals.Daily;
 
-        public const string SERVERPATH = "http://thesis.picidolgok.hu:8000";
-        //public const string SERVERPATH = "https://thesis.picidolgok.hu:8001";
+        //public const string SERVERPATH = "http://thesis.picidolgok.hu:8000";
+        public const string SERVERPATH = "https://thesis.picidolgok.hu:8001";
+
         //public const string SERVERPATH = "http://localhost:5133";
 
         /// <summary>
@@ -30,6 +31,14 @@ namespace Config
         /// (Still need to reset the userData)
         /// </summary>
         public const string PATHFORLOGOUT = SERVERPATH + "/api/Users/Logout";
+
+        public const string PATH_FOR_FRIEND_REQUEST_SEND = SERVERPATH + "/api/Friends/Send";
+
+        public static string PATH_FOR_FRIEND_ACCEPT(long friendRequestId) => SERVERPATH + $"/api/Friends/{friendRequestId}/Accept";
+
+        public static string PATH_FOR_FRIEND_DELETE(long friendRequestId) => SERVERPATH + $"/api/Friends/{friendRequestId}/Delete";
+
+        public const string PATH_FOR_FRIEND_GETALL = SERVERPATH + "/api/Friends/GetAll";
 
         /// <summary>
         /// Just need to be sent

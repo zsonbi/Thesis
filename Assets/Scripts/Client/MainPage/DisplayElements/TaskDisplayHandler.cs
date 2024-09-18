@@ -9,7 +9,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 
-public class PlayerTask : MonoBehaviour
+public class TaskDisplayHandler : MonoBehaviour
 {
     private static Color AVAILIBLE_FOR_COMPLETE_COLOR = new Color(70 / 255f, 1f, 0, 1f);
     private static Color DISABLED_FOR_COMPLETE_COLOR = new Color(73 / 255f, 59 / 255f, 71 / 255f, 1f);
@@ -53,12 +53,9 @@ public class PlayerTask : MonoBehaviour
 
     public void CompleteTask()
     {
-        if (!TaskContainer.Completed)
-        {
-            WWWForm form = new WWWForm();
+        WWWForm form = new WWWForm();
 
-            StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.PlayerTask>(ServerConfig.PATHFORTASKCOMPLETE(TaskContainer.Id), onComplete: TaskCompleted));
-        }
+        StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.PlayerTask>(ServerConfig.PATHFORTASKCOMPLETE(TaskContainer.Id), onComplete: TaskCompleted));
     }
 
     public void OpenEditor()
