@@ -6,10 +6,10 @@ using UnityEngine;
 
 namespace User
 {
-    public class UserData : MonoBehaviour
+    public class UserData
     {
         private static UserData instance = null;
-        public static UserData Instance { get => instance is null ? Create() : instance; }
+        public static UserData Instance { get => GetOrCreate(); }
 
         public string Username { get; private set; }
         public string Email { get; private set; }
@@ -33,9 +33,13 @@ namespace User
             LoggedIn = true;
         }
 
-        private static UserData Create()
+        private static UserData GetOrCreate()
         {
-            instance = new UserData();
+            if (instance is null)
+            {
+                instance = new UserData();
+            }
+
             return instance;
         }
 

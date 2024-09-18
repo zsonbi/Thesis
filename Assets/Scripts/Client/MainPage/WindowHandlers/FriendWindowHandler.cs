@@ -6,7 +6,7 @@ using Thesis_backend.Data_Structures;
 using TMPro;
 using UnityEngine;
 
-public class FriendHandler : MonoBehaviour
+public class FriendWindowHandler : MonoBehaviour
 {
     [SerializeField]
     private GameObject FriendsContainer;
@@ -19,9 +19,10 @@ public class FriendHandler : MonoBehaviour
 
     private bool showPending = true;
 
-    public void ShowPendingChanged(Boolean newValue)
+    public void ShowPendingChanged(bool newValue)
     {
         this.showPending = newValue;
+        LoadFriends();
     }
 
     public void Show()
@@ -42,6 +43,11 @@ public class FriendHandler : MonoBehaviour
 
     private void SentFriendRequest(Friend friend)
     {
+        if (showPending)
+        {
+            FriendHandler friendDisplay = Instantiate(friendPrefab, this.FriendsContainer.transform).GetComponent<FriendHandler>();
+            friendDisplay.InitValues(friend);
+        }
     }
 
     public void Hide()
@@ -56,10 +62,28 @@ public class FriendHandler : MonoBehaviour
 
     private void DisplayFriends(List<Friend> friends)
     {
+        //Delete the previous ones
+        for (int i = 0; i < this.FriendsContainer.transform.childCount; i++)
+        {
+            Destroy(this.FriendsContainer.transform.GetChild(i).gameObject);
+        }
+        this.FriendsContainer.transform.DetachChildren();
+
         foreach (var item in friends)
         {
-            FriendDisplayHandler friendDisplay = Instantiate(friendPrefab, this.FriendsContainer.transform).GetComponent<FriendDisplayHandler>();
-            friendDisplay.InitValues(item);
+            if (showPending)
+            {
+                FriendHandler friendDisplay = Instantiate(friendPrefab, this.FriendsContainer.transform).GetComponent<FriendHandler>();
+                friendDisplay.InitValues(item);
+            }
+            else
+            {
+                if (!item.Pending)
+                {
+                    FriendHandler friendDisplay = Instantiate(friendPrefab, this.FriendsContainer.transform).GetComponent<FriendHandler>();
+                    friendDisplay.InitValues(item);
+                }
+            }
         }
     }
 }

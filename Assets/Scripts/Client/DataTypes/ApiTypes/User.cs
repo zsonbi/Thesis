@@ -14,8 +14,11 @@ namespace Thesis_backend.Data_Structures
         public long GameId { get; set; }
         public DateTime LastLoggedIn { get; set; }
         public DateTime Registered { get; set; }
-        public List<Thesis_backend.Data_Structures.PlayerTask>? UserTasks { get; set; }
+        public List<PlayerTask> UserTasks { get; set; }
+
+        public long TotalScore { get; set; }
+        public long Currency { get; set; }
         [JsonIgnore]
-        public override object Serialize => new { Username, PasswordHash, Email, UserSettings?.Serialize, GameId, LastLoggedIn, Registered, UserTasks };
+        public override object Serialize => new { Username, PasswordHash, Email, UserSettings?.Serialize, GameId, LastLoggedIn, Registered, UserTasks, TotalScore, Currency };
     }
 }
