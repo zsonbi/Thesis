@@ -46,7 +46,7 @@ public static class Server
                     else
                         result = JsonConvert.DeserializeObject<T>(webRequest.downloadHandler.text);
                 }
-                catch
+                catch (Exception e)
                 {
                     Debug.Log($"Couldn't serialize response: {webRequest.downloadHandler.text}");
                 }
@@ -134,7 +134,7 @@ public static class Server
                     else
                         result = JsonConvert.DeserializeObject<T>(webRequest.downloadHandler.text);
                 }
-                catch
+                catch (Exception e)
                 {
                     Debug.Log($"Couldn't serialize response: {webRequest.downloadHandler.text}");
                 }
@@ -160,6 +160,10 @@ public static class Server
             if (webRequest.result != UnityWebRequest.Result.Success)
             {
                 Debug.Log(webRequest.error);
+                if (webRequest.downloadHandler.text is not null)
+                {
+                    Debug.Log(webRequest.downloadHandler.text);
+                }
             }
             else
             {

@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 5011779821344112440}
   - component: {fileID: 7031215623155004765}
   m_Layer: 5
-  m_Name: ProfilePanel
+  m_Name: ProfileWindow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
