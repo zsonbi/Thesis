@@ -31,7 +31,11 @@
       </div>
     </div>
     <script>
-
+    const originalfetch = fetch;
+      fetch = function( url,data) {
+          data = {...data, ...{credentials : "include"}};
+          return originalfetch(url,data);
+      };
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
