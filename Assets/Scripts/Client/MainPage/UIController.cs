@@ -13,6 +13,9 @@ public class UIController : MonoBehaviour
     private TMP_Text UsernameInputText;
 
     [SerializeField]
+    private TMP_Text CurrencyText;
+
+    [SerializeField]
     private GameObject TaskParent;
 
     [SerializeField]
@@ -36,8 +39,15 @@ public class UIController : MonoBehaviour
         else
         {
             UsernameInputText.text = UserData.Instance.Username;
+            CurrencyText.text = UserData.Instance.Currency.ToString();
             LoadTasks();
         }
+    }
+
+    public void UpdateUserData(Thesis_backend.Data_Structures.User user)
+    {
+        UserData.Instance.Init(user);
+        CurrencyText.text = UserData.Instance.Currency.ToString();
     }
 
     // Update is called once per frame
@@ -103,7 +113,7 @@ public class UIController : MonoBehaviour
     {
         GameObject task = Instantiate(TaskPrefab, TaskParent.transform);
         TaskDisplayHandler taskComponent = task.GetComponent<TaskDisplayHandler>();
-        taskComponent.InitValues(taskContainer, taskOpenPanelController);
+        taskComponent.InitValues(taskContainer, taskOpenPanelController, this);
         tasks.Add(taskContainer.Id, taskComponent);
         return task;
     }
