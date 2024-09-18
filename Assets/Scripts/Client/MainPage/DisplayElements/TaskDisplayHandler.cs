@@ -26,6 +26,8 @@ public class TaskDisplayHandler : MonoBehaviour
     [SerializeField]
     private Button CompleteButton;
 
+    private UIController UIController;
+
     private TaskOpenPanelController taskOpenPanelController;
 
     public TaskContainer TaskContainer { get; private set; }
@@ -38,7 +40,7 @@ public class TaskDisplayHandler : MonoBehaviour
         }
     }
 
-    public void InitValues(TaskContainer taskContainer, TaskOpenPanelController taskOpenPanelController)
+    public void InitValues(TaskContainer taskContainer, TaskOpenPanelController taskOpenPanelController, UIController uIController)
     {
         this.TaskContainer = taskContainer;
 
@@ -47,7 +49,7 @@ public class TaskDisplayHandler : MonoBehaviour
             CompleteStateChange(true);
         }
         this.taskOpenPanelController = taskOpenPanelController;
-
+        this.UIController = uIController;
         UpdateLabels();
     }
 
@@ -66,6 +68,7 @@ public class TaskDisplayHandler : MonoBehaviour
     private void TaskCompleted(Thesis_backend.Data_Structures.PlayerTask result)
     {
         CompleteStateChange(true);
+        StartCoroutine(Server.SendGetRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORCHECKLOGGEDIN, UIController.UpdateUserData));
     }
 
     public void UpdateLabels()
