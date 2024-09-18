@@ -19,5 +19,6 @@ var searchData=
   ['controlstyle_16',['controlStyle',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#ad6ec0252344c6ee56d386f560e0b2240',1,'UnityStandardAssets::CrossPlatformInput::TouchPad']]],
   ['copcars_17',['CopCars',['../classGame_1_1World_1_1CarSpawner.html#aae87e13674ea01abc1a7f7b11afe30a2',1,'Game::World::CarSpawner']]],
   ['crossroadsprefab_18',['crossRoadsPrefab',['../classGame_1_1World_1_1Chunk.html#a7abecf4e7c8c6ef8a164e24731f843ac',1,'Game::World::Chunk']]],
-  ['curvedroadprefab_19',['curvedRoadPrefab',['../classGame_1_1World_1_1Chunk.html#a032731bad732a8acc8a81495eb2446a6',1,'Game::World::Chunk']]]
+  ['currencytext_19',['CurrencyText',['../classUIController.html#a3e222d5afb352c2dc6620eaf3fe344fc',1,'UIController']]],
+  ['curvedroadprefab_20',['curvedRoadPrefab',['../classGame_1_1World_1_1Chunk.html#a032731bad732a8acc8a81495eb2446a6',1,'Game::World::Chunk']]]
 ];

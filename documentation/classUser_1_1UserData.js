@@ -13,5 +13,7 @@ var classUser_1_1UserData =
     [ "GameId", "classUser_1_1UserData.html#a494001e9077dde7401055d06d8a7bbfb", null ],
     [ "LastLoggedIn", "classUser_1_1UserData.html#a5d88a92697600df1a952dda76dd51a96", null ],
     [ "Registered", "classUser_1_1UserData.html#adf1a00f3bd39a418cccf26f04a79c831", null ],
-    [ "LoggedIn", "classUser_1_1UserData.html#acdd4d87ab2fd5a0a81895656a6853b71", null ]
+    [ "LoggedIn", "classUser_1_1UserData.html#acdd4d87ab2fd5a0a81895656a6853b71", null ],
+    [ "TotalScore", "classUser_1_1UserData.html#af0e9fbaa735541a3cf36613d93d5af2b", null ],
+    [ "Currency", "classUser_1_1UserData.html#a0330e3b12f5c73c905684e77f84d78e9", null ]
 ];

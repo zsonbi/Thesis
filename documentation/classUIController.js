@@ -1,6 +1,7 @@
 var classUIController =
 [
     [ "Start", "classUIController.html#a676b3b972c33885db4565ee43f23e459", null ],
+    [ "UpdateUserData", "classUIController.html#aa136c114c34d616dd76542083b6b2c7e", null ],
     [ "Update", "classUIController.html#adc5b0854a26bbcd71cc33274960bd0a9", null ],
     [ "RemoveTask", "classUIController.html#a08f677b5c4ffd71ca10ec2b3b428df4c", null ],
     [ "UpdateTask", "classUIController.html#a9544f24e7e0826794ec177ecc08bea3f", null ],
@@ -12,6 +13,7 @@ var classUIController =
     [ "LoadGameScene", "classUIController.html#a82af697550638ec112eef61c75105fb4", null ],
     [ "CreateTaskPrefabs", "classUIController.html#aef326ce7569d6884464eb729d92cea6b", null ],
     [ "UsernameInputText", "classUIController.html#aa9f04610798bf39ac1e69edd964b0448", null ],
+    [ "CurrencyText", "classUIController.html#a3e222d5afb352c2dc6620eaf3fe344fc", null ],
     [ "TaskParent", "classUIController.html#a9ab18b7625588d4afeaaa4b22f68828c", null ],
     [ "TaskPrefab", "classUIController.html#ac90812040e8042eb7e79ab22e474f0e0", null ],
     [ "taskOpenPanelController", "classUIController.html#a2e224cab1100d1d235f2231375a8635c", null ],

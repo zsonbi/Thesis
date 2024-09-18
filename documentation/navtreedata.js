@@ -39,7 +39,7 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", null ],
+        [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Properties", "functions_prop.html", null ]
       ] ]
@@ -59,9 +59,9 @@ var NAVTREEINDEX =
 "AxisTouchButton_8cs.html",
 "classConfig_1_1ServerConfig.html#ae695ed1003d463a61dfa9383869c6155",
 "classGame_1_1World_1_1CarSpawner.html#a8a8c7d30161c6cc94e7b92038abc965a",
-"classUnityStandardAssets_1_1CrossPlatformInput_1_1AxisTouchButton.html#a9c105241897864df983162333ca012e2",
-"classUnityStandardAssets_1_1CrossPlatformInput_1_1PlatformSpecific_1_1StandaloneInput.html#abae28eb1ca17a873cc6eed480085e0fb",
-"functions_func_i.html"
+"classUnityStandardAssets_1_1CrossPlatformInput_1_1AxisTouchButton.html#a854d21df612c905d76e94202de62d7f4",
+"classUnityStandardAssets_1_1CrossPlatformInput_1_1PlatformSpecific_1_1StandaloneInput.html#ab657b9df7411909f1319c7ecf918689c",
+"functions_func_b.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

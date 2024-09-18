@@ -34,10 +34,10 @@ var searchData=
   ['tiltinput_2ecs_31',['TiltInput.cs',['../TiltInput_8cs.html',1,'']]],
   ['timer_32',['timer',['../classGame_1_1World_1_1CarSpawner.html#a563614c1c52a824da81cbeac0cd6f438',1,'Game::World::CarSpawner']]],
   ['timereamaining_33',['TimeReamaining',['../classGame_1_1PlayerCar_1_1PoliceContainer.html#a531bbac045cd1299035956978a10f63b',1,'Game::PlayerCar::PoliceContainer']]],
-  ['totalscore_34',['TotalScore',['../namespaceThesis__backend_1_1Data__Structures.html#ab65ae00cbe1b1602c72df38d32dff1df',1,'Thesis_backend::Data_Structures']]],
+  ['totalscore_34',['totalscore',['../namespaceThesis__backend_1_1Data__Structures.html#ab65ae00cbe1b1602c72df38d32dff1df',1,'Thesis_backend.Data_Structures.TotalScore'],['../classUser_1_1UserData.html#af0e9fbaa735541a3cf36613d93d5af2b',1,'User.UserData.TotalScore']]],
   ['touch_35',['Touch',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#a4745a6f6fea88c350df29db10de7d4ddaf0f31c9700c6b10d8a20dc487b2ae6a8',1,'UnityStandardAssets::CrossPlatformInput::CrossPlatformInputManager']]],
   ['touchpad_36',['TouchPad',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html',1,'UnityStandardAssets::CrossPlatformInput']]],
   ['touchpad_2ecs_37',['TouchPad.cs',['../TouchPad_8cs.html',1,'']]],
   ['tractioncontrol_38',['TractionControl',['../classGame_1_1CarController.html#a298e55b1a36b51f9c4e4aa7883056a00',1,'Game::CarController']]],
-  ['type_39',['type',['../structAssets_1_1Scripts_1_1Client_1_1DataTypes_1_1ChunkCellContainer.html#ab94400b8d16cc62c34eb3b6be776d486',1,'Assets.Scripts.Client.DataTypes.ChunkCellContainer.Type'],['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput_1_1AxisMapping.html#aba5d982b878f8b4e15867b731782ed63',1,'UnityStandardAssets.CrossPlatformInput.TiltInput.AxisMapping.type']]]
+  ['type_39',['type',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput_1_1AxisMapping.html#aba5d982b878f8b4e15867b731782ed63',1,'UnityStandardAssets.CrossPlatformInput.TiltInput.AxisMapping.type'],['../structAssets_1_1Scripts_1_1Client_1_1DataTypes_1_1ChunkCellContainer.html#ab94400b8d16cc62c34eb3b6be776d486',1,'Assets.Scripts.Client.DataTypes.ChunkCellContainer.Type']]]
 ];
