@@ -113,7 +113,9 @@ public class UIController : MonoBehaviour
     {
         GameObject task = Instantiate(TaskPrefab, TaskParent.transform);
         TaskDisplayHandler taskComponent = task.GetComponent<TaskDisplayHandler>();
+
         taskComponent.InitValues(taskContainer, taskOpenPanelController, this);
+
         tasks.Add(taskContainer.Id, taskComponent);
         return task;
     }
