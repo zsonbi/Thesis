@@ -7,5 +7,6 @@ var User_8cs =
     [ "GameId", "User_8cs.html#a8521df3417b4e7a5ba1c522603f146be", null ],
     [ "LastLoggedIn", "User_8cs.html#aae518baa5cf2ea5aa7ab44999037e244", null ],
     [ "Registered", "User_8cs.html#a88348bf6d36a46b767b886bd5005d08e", null ],
-    [ "UserTasks", "User_8cs.html#ada8de2284cf373b7e8934a49b598cdfa", null ]
+    [ "UserTasks", "User_8cs.html#a8b30e275a60f50c5591aa22763911cf9", null ],
+    [ "TotalScore", "User_8cs.html#ab65ae00cbe1b1602c72df38d32dff1df", null ]
 ];

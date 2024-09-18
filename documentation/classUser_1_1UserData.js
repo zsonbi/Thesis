@@ -2,7 +2,7 @@ var classUser_1_1UserData =
 [
     [ "UserData", "classUser_1_1UserData.html#a17f4ef142f45e3e62d75c3f0a4ca751b", null ],
     [ "Init", "classUser_1_1UserData.html#abb372911b5e49023a977bd064f46bb6e", null ],
-    [ "Create", "classUser_1_1UserData.html#a5feab845ce9cdcd69bc1c0dffa319ba2", null ],
+    [ "GetOrCreate", "classUser_1_1UserData.html#ab54ef99b57b9d4b7bc6cdd84955b3306", null ],
     [ "Logout", "classUser_1_1UserData.html#a8c8911482003919ea4fbab040c755f8f", null ],
     [ "instance", "classUser_1_1UserData.html#a0e7511fcf06639282624b12e673442e3", null ],
     [ "Instance", "classUser_1_1UserData.html#aac822a62e0ef2a7d0dbe623643146faa", null ],

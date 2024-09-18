@@ -1,5 +1,7 @@
 var classConfig_1_1ServerConfig =
 [
+    [ "PATH_FOR_FRIEND_ACCEPT", "classConfig_1_1ServerConfig.html#a7e8a6c00e86ee263e4e91d76e91865d8", null ],
+    [ "PATH_FOR_FRIEND_DELETE", "classConfig_1_1ServerConfig.html#a10be54228c36baeb2de629e8122d926f", null ],
     [ "PATHFORTASKUPDATE", "classConfig_1_1ServerConfig.html#a69cfac1052256f93e049889a0594911d", null ],
     [ "PATHFORTASKCOMPLETE", "classConfig_1_1ServerConfig.html#a955b28390e3951d761ba63dd0ed10843", null ],
     [ "PATHFORTASKDELETE", "classConfig_1_1ServerConfig.html#a9112c3cf42da18b1222b5324f98ee40c", null ],
@@ -10,6 +12,8 @@ var classConfig_1_1ServerConfig =
     [ "PATHFORREGISTER", "classConfig_1_1ServerConfig.html#acfccecb1f295219e10b582dd5e408862", null ],
     [ "PATHFORCHECKLOGGEDIN", "classConfig_1_1ServerConfig.html#a5db97261b8e437dcf4d91713905aabec", null ],
     [ "PATHFORLOGOUT", "classConfig_1_1ServerConfig.html#a7819f4ecc6ef2da4d578378a91f2de18", null ],
+    [ "PATH_FOR_FRIEND_REQUEST_SEND", "classConfig_1_1ServerConfig.html#a63702bf419df8f2795af3f45cc917020", null ],
+    [ "PATH_FOR_FRIEND_GETALL", "classConfig_1_1ServerConfig.html#a735cfd33683ca5dd2b7cd9bdcfbcdda9", null ],
     [ "PATHFORTASKSAVE", "classConfig_1_1ServerConfig.html#a834aa29afe57b0ee50c63699ebab68c2", null ],
     [ "PATHFORTASKCREATE", "classConfig_1_1ServerConfig.html#aaeb650363d941d644e7171e2ca583ceb", null ],
     [ "PATHFORTASKSQUERY", "classConfig_1_1ServerConfig.html#a47231cfa790f15bbd226c2dc2202c448", null ]

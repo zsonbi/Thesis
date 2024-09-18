@@ -1,11 +1,7 @@
 var searchData=
 [
-  ['registered_0',['Registered',['../classUser_1_1UserData.html#adf1a00f3bd39a418cccf26f04a79c831',1,'User::UserData']]],
-  ['res_1',['Res',['../classTaskApiResponse.html#a2611913421afc995268212b863e84dd6',1,'TaskApiResponse']]],
-  ['revs_2',['Revs',['../classGame_1_1CarController.html#a9325ab1c68cd86d8f6c26c3fc86ea455',1,'Game::CarController']]],
-  ['roadcounter_3',['roadCounter',['../classEdgeRoadContainer.html#a6e168394bc99da132d3038d61888583d',1,'EdgeRoadContainer']]],
-  ['roadmatrix_4',['RoadMatrix',['../classGame_1_1World_1_1RoadGenerator.html#a7fca47366b7f100826237bbc011034ac',1,'Game::World::RoadGenerator']]],
-  ['row_5',['Row',['../classGame_1_1World_1_1Chunk.html#adce4d80142d5a8146a23758358504814',1,'Game::World::Chunk']]],
-  ['rowcount_6',['RowCount',['../classBuilding.html#ae5d484df6ed27cc77d2c338bfda53435',1,'Building']]],
-  ['running_7',['Running',['../classGame_1_1GameController.html#a05d01ce3124c9d29e70cdee04539baeb',1,'Game::GameController']]]
+  ['password_0',['password',['../structThesis__backend_1_1Data__Structures_1_1UserLoginRequest.html#a07ca93307f8ebf442dfda4727fd95e1a',1,'Thesis_backend.Data_Structures.UserLoginRequest.Password'],['../structThesis__backend_1_1Data__Structures_1_1UserRequest.html#afa2f27304c5e9d503eb2bf1cba3be812',1,'Thesis_backend.Data_Structures.UserRequest.Password']]],
+  ['periodrate_1',['PeriodRate',['../structThesis__backend_1_1Data__Structures_1_1TaskRequest.html#adc3f7466d608725775c675a78aee51d5',1,'Thesis_backend::Data_Structures::TaskRequest']]],
+  ['playerpos_2',['PlayerPos',['../classGame_1_1GameController.html#aeb425ec760007866c0ea8882d64a3171',1,'Game::GameController']]],
+  ['policecar_3',['PoliceCar',['../classGame_1_1PlayerCar_1_1PoliceContainer.html#aac2693dd8c3d43d842deb9546ad0bb91',1,'Game::PlayerCar::PoliceContainer']]]
 ];

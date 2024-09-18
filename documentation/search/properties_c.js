@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['password_0',['password',['../structThesis__backend_1_1Data__Structures_1_1UserLoginRequest.html#a07ca93307f8ebf442dfda4727fd95e1a',1,'Thesis_backend.Data_Structures.UserLoginRequest.Password'],['../structThesis__backend_1_1Data__Structures_1_1UserRequest.html#afa2f27304c5e9d503eb2bf1cba3be812',1,'Thesis_backend.Data_Structures.UserRequest.Password']]],
-  ['periodrate_1',['PeriodRate',['../structThesis__backend_1_1Data__Structures_1_1TaskRequest.html#adc3f7466d608725775c675a78aee51d5',1,'Thesis_backend::Data_Structures::TaskRequest']]],
-  ['playerpos_2',['PlayerPos',['../classGame_1_1GameController.html#aeb425ec760007866c0ea8882d64a3171',1,'Game::GameController']]],
-  ['policecar_3',['PoliceCar',['../classGame_1_1PlayerCar_1_1PoliceContainer.html#aac2693dd8c3d43d842deb9546ad0bb91',1,'Game::PlayerCar::PoliceContainer']]]
+  ['orientation_0',['Orientation',['../structAssets_1_1Scripts_1_1Client_1_1DataTypes_1_1ChunkCellContainer.html#a0918e1d9d1b2e13a9b0c9c0e578939e9',1,'Assets::Scripts::Client::DataTypes::ChunkCellContainer']]]
 ];

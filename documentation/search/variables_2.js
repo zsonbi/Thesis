@@ -15,7 +15,7 @@ var searchData=
   ['chunks_12',['Chunks',['../classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff',1,'Game::World::GameWorld']]],
   ['citizencars_13',['CitizenCars',['../classGame_1_1World_1_1CarSpawner.html#a5ec2d0fc41fe93daf28b76854b916844',1,'Game::World::CarSpawner']]],
   ['columncount_14',['columnCount',['../classBuilding.html#a0b7c04d7ece54fe0199e640fe475d787',1,'Building']]],
-  ['completebutton_15',['CompleteButton',['../classPlayerTask.html#a40a0f0a14c513a18a1ddcdeda74f23d5',1,'PlayerTask']]],
+  ['completebutton_15',['CompleteButton',['../classTaskDisplayHandler.html#a2cfd7e61e0fc131acda2e8e6919f00dd',1,'TaskDisplayHandler']]],
   ['controlstyle_16',['controlStyle',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#ad6ec0252344c6ee56d386f560e0b2240',1,'UnityStandardAssets::CrossPlatformInput::TouchPad']]],
   ['copcars_17',['CopCars',['../classGame_1_1World_1_1CarSpawner.html#aae87e13674ea01abc1a7f7b11afe30a2',1,'Game::World::CarSpawner']]],
   ['crossroadsprefab_18',['crossRoadsPrefab',['../classGame_1_1World_1_1Chunk.html#a7abecf4e7c8c6ef8a164e24731f843ac',1,'Game::World::Chunk']]],

@@ -16,5 +16,5 @@ var classUIController =
     [ "TaskPrefab", "classUIController.html#ac90812040e8042eb7e79ab22e474f0e0", null ],
     [ "taskOpenPanelController", "classUIController.html#a2e224cab1100d1d235f2231375a8635c", null ],
     [ "ModalWindow", "classUIController.html#ad4b65fcdc4f0ebbbc19c45b3af5e305b", null ],
-    [ "tasks", "classUIController.html#a6ce27e28397d9fd1f1459fdce7bf744c", null ]
+    [ "tasks", "classUIController.html#a0f6d191fc05b2463ae19052164b18030", null ]
 ];

@@ -100,12 +100,6 @@ $(document).ready(function(){initNavTree('classUser_1_1UserData.html',''); initR
   <div class="headertitle"><div class="title">User.UserData Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for User.UserData:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="classUser_1_1UserData.png" alt=""/>
- </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -142,8 +136,8 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
-<tr class="memitem:a5feab845ce9cdcd69bc1c0dffa319ba2" id="r_a5feab845ce9cdcd69bc1c0dffa319ba2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classUser_1_1UserData.html">UserData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUser_1_1UserData.html#a5feab845ce9cdcd69bc1c0dffa319ba2">Create</a> ()</td></tr>
-<tr class="separator:a5feab845ce9cdcd69bc1c0dffa319ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab54ef99b57b9d4b7bc6cdd84955b3306" id="r_ab54ef99b57b9d4b7bc6cdd84955b3306"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classUser_1_1UserData.html">UserData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUser_1_1UserData.html#ab54ef99b57b9d4b7bc6cdd84955b3306">GetOrCreate</a> ()</td></tr>
+<tr class="separator:ab54ef99b57b9d4b7bc6cdd84955b3306"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -177,11 +171,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="UserData_8cs_source.html#l00042">42</a> of file <a class="el" href="UserData_8cs_source.html">UserData.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   43</span>        {</div>
-<div class="line"><span class="lineno">   44</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="UserData_8cs_source.html#l00046">46</a> of file <a class="el" href="UserData_8cs_source.html">UserData.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   47</span>        {</div>
+<div class="line"><span class="lineno">   48</span>        }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="UserData_8cs_source.html#l00036">User.UserData.Create()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="UserData_8cs_source.html#l00036">User.UserData.GetOrCreate()</a>.</p>
 
 </div>
 </div>
@@ -237,8 +231,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a5feab845ce9cdcd69bc1c0dffa319ba2" name="a5feab845ce9cdcd69bc1c0dffa319ba2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5feab845ce9cdcd69bc1c0dffa319ba2">&#9670;&#160;</a></span>Create()</h2>
+<a id="ab54ef99b57b9d4b7bc6cdd84955b3306" name="ab54ef99b57b9d4b7bc6cdd84955b3306"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab54ef99b57b9d4b7bc6cdd84955b3306">&#9670;&#160;</a></span>GetOrCreate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -247,7 +241,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classUser_1_1UserData.html">UserData</a> User.UserData.Create </td>
+          <td class="memname">static <a class="el" href="classUser_1_1UserData.html">UserData</a> User.UserData.GetOrCreate </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -262,13 +256,17 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="UserData_8cs_source.html#l00036">36</a> of file <a class="el" href="UserData_8cs_source.html">UserData.cs</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   37</span>        {</div>
-<div class="line"><span class="lineno">   38</span>            <a class="code hl_variable" href="classUser_1_1UserData.html#a0e7511fcf06639282624b12e673442e3">instance</a> = <span class="keyword">new</span> <a class="code hl_function" href="classUser_1_1UserData.html#a17f4ef142f45e3e62d75c3f0a4ca751b">UserData</a>();</div>
-<div class="line"><span class="lineno">   39</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="classUser_1_1UserData.html#a0e7511fcf06639282624b12e673442e3">instance</a>;</div>
-<div class="line"><span class="lineno">   40</span>        }</div>
+<div class="line"><span class="lineno">   38</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classUser_1_1UserData.html#a0e7511fcf06639282624b12e673442e3">instance</a> is <span class="keyword">null</span>)</div>
+<div class="line"><span class="lineno">   39</span>            {</div>
+<div class="line"><span class="lineno">   40</span>                <a class="code hl_variable" href="classUser_1_1UserData.html#a0e7511fcf06639282624b12e673442e3">instance</a> = <span class="keyword">new</span> <a class="code hl_function" href="classUser_1_1UserData.html#a17f4ef142f45e3e62d75c3f0a4ca751b">UserData</a>();</div>
+<div class="line"><span class="lineno">   41</span>            }</div>
+<div class="line"><span class="lineno">   42</span> </div>
+<div class="line"><span class="lineno">   43</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="classUser_1_1UserData.html#a0e7511fcf06639282624b12e673442e3">instance</a>;</div>
+<div class="line"><span class="lineno">   44</span>        }</div>
 <div class="ttc" id="aclassUser_1_1UserData_html_a0e7511fcf06639282624b12e673442e3"><div class="ttname"><a href="classUser_1_1UserData.html#a0e7511fcf06639282624b12e673442e3">User.UserData.instance</a></div><div class="ttdeci">static UserData instance</div><div class="ttdef"><b>Definition</b> <a href="UserData_8cs_source.html#l00011">UserData.cs:11</a></div></div>
-<div class="ttc" id="aclassUser_1_1UserData_html_a17f4ef142f45e3e62d75c3f0a4ca751b"><div class="ttname"><a href="classUser_1_1UserData.html#a17f4ef142f45e3e62d75c3f0a4ca751b">User.UserData.UserData</a></div><div class="ttdeci">UserData()</div><div class="ttdef"><b>Definition</b> <a href="UserData_8cs_source.html#l00042">UserData.cs:42</a></div></div>
+<div class="ttc" id="aclassUser_1_1UserData_html_a17f4ef142f45e3e62d75c3f0a4ca751b"><div class="ttname"><a href="classUser_1_1UserData.html#a17f4ef142f45e3e62d75c3f0a4ca751b">User.UserData.UserData</a></div><div class="ttdeci">UserData()</div><div class="ttdef"><b>Definition</b> <a href="UserData_8cs_source.html#l00046">UserData.cs:46</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="UserData_8cs_source.html#l00011">User.UserData.instance</a>, and <a class="el" href="UserData_8cs_source.html#l00042">User.UserData.UserData()</a>.</p>
+<p class="reference">References <a class="el" href="UserData_8cs_source.html#l00011">User.UserData.instance</a>, and <a class="el" href="UserData_8cs_source.html#l00046">User.UserData.UserData()</a>.</p>
 
 </div>
 </div>
@@ -295,11 +293,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="UserData_8cs_source.html#l00046">46</a> of file <a class="el" href="UserData_8cs_source.html">UserData.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   47</span>        {</div>
-<div class="line"><span class="lineno">   48</span>            <a class="code hl_property" href="classUser_1_1UserData.html#acdd4d87ab2fd5a0a81895656a6853b71">LoggedIn</a> = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   49</span>            <span class="comment">//StartCoroutine(Server.SendDeleteRequest&lt;string&gt;(ServerConfig.PATHFORLOGOUT));</span></div>
-<div class="line"><span class="lineno">   50</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="UserData_8cs_source.html#l00050">50</a> of file <a class="el" href="UserData_8cs_source.html">UserData.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   51</span>        {</div>
+<div class="line"><span class="lineno">   52</span>            <a class="code hl_property" href="classUser_1_1UserData.html#acdd4d87ab2fd5a0a81895656a6853b71">LoggedIn</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   53</span>            <span class="comment">//StartCoroutine(Server.SendDeleteRequest&lt;string&gt;(ServerConfig.PATHFORLOGOUT));</span></div>
+<div class="line"><span class="lineno">   54</span>        }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="UserData_8cs_source.html#l00021">User.UserData.LoggedIn</a>.</p>
 
@@ -330,7 +328,7 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="UserData_8cs_source.html#l00011">11</a> of file <a class="el" href="UserData_8cs_source.html">UserData.cs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="UserData_8cs_source.html#l00036">User.UserData.Create()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="UserData_8cs_source.html#l00036">User.UserData.GetOrCreate()</a>.</p>
 
 </div>
 </div>
@@ -356,10 +354,10 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="UserData_8cs_source.html#l00012">12</a> of file <a class="el" href="UserData_8cs_source.html">UserData.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   12</span>{ <span class="keyword">get</span> =&gt; <a class="code hl_variable" href="classUser_1_1UserData.html#a0e7511fcf06639282624b12e673442e3">instance</a> is <span class="keyword">null</span> ? <a class="code hl_function" href="classUser_1_1UserData.html#a5feab845ce9cdcd69bc1c0dffa319ba2">Create</a>() : <a class="code hl_variable" href="classUser_1_1UserData.html#a0e7511fcf06639282624b12e673442e3">instance</a>; }</div>
-<div class="ttc" id="aclassUser_1_1UserData_html_a5feab845ce9cdcd69bc1c0dffa319ba2"><div class="ttname"><a href="classUser_1_1UserData.html#a5feab845ce9cdcd69bc1c0dffa319ba2">User.UserData.Create</a></div><div class="ttdeci">static UserData Create()</div><div class="ttdef"><b>Definition</b> <a href="UserData_8cs_source.html#l00036">UserData.cs:36</a></div></div>
+<div class="fragment"><div class="line"><span class="lineno">   12</span>{ <span class="keyword">get</span> =&gt; <a class="code hl_function" href="classUser_1_1UserData.html#ab54ef99b57b9d4b7bc6cdd84955b3306">GetOrCreate</a>(); }</div>
+<div class="ttc" id="aclassUser_1_1UserData_html_ab54ef99b57b9d4b7bc6cdd84955b3306"><div class="ttname"><a href="classUser_1_1UserData.html#ab54ef99b57b9d4b7bc6cdd84955b3306">User.UserData.GetOrCreate</a></div><div class="ttdeci">static UserData GetOrCreate()</div><div class="ttdef"><b>Definition</b> <a href="UserData_8cs_source.html#l00036">UserData.cs:36</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="UserController_8cs_source.html#l00042">UserController.CheckLoggedIn()</a>, <a class="el" href="UserController_8cs_source.html#l00074">UserController.LoggedIn()</a>, <a class="el" href="ProfileHandler_8cs_source.html#l00048">ProfileHandler.LoggedOut()</a>, <a class="el" href="UserController_8cs_source.html#l00112">UserController.Registered()</a>, and <a class="el" href="UIController_8cs_source.html#l00030">UIController.Start()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="UserController_8cs_source.html#l00042">UserController.CheckLoggedIn()</a>, <a class="el" href="FriendHandler_8cs_source.html#l00031">FriendHandler.InitValues()</a>, <a class="el" href="UserController_8cs_source.html#l00074">UserController.LoggedIn()</a>, <a class="el" href="ProfileHandler_8cs_source.html#l00048">ProfileHandler.LoggedOut()</a>, <a class="el" href="UserController_8cs_source.html#l00112">UserController.Registered()</a>, and <a class="el" href="UIController_8cs_source.html#l00030">UIController.Start()</a>.</p>
 
 </div>
 </div>
@@ -440,7 +438,7 @@ Static Private Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="UserData_8cs_source.html#l00016">16</a> of file <a class="el" href="UserData_8cs_source.html">UserData.cs</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   16</span>{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="UserData_8cs_source.html#l00023">User.UserData.Init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="UserData_8cs_source.html#l00023">User.UserData.Init()</a>, and <a class="el" href="FriendHandler_8cs_source.html#l00031">FriendHandler.InitValues()</a>.</p>
 
 </div>
 </div>
@@ -575,7 +573,7 @@ Static Private Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="UserData_8cs_source.html#l00021">21</a> of file <a class="el" href="UserData_8cs_source.html">UserData.cs</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   21</span>{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; } = <span class="keyword">false</span>;</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="UserController_8cs_source.html#l00042">UserController.CheckLoggedIn()</a>, <a class="el" href="UserData_8cs_source.html#l00023">User.UserData.Init()</a>, <a class="el" href="UserData_8cs_source.html#l00046">User.UserData.Logout()</a>, and <a class="el" href="UIController_8cs_source.html#l00030">UIController.Start()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="UserController_8cs_source.html#l00042">UserController.CheckLoggedIn()</a>, <a class="el" href="UserData_8cs_source.html#l00023">User.UserData.Init()</a>, <a class="el" href="UserData_8cs_source.html#l00050">User.UserData.Logout()</a>, and <a class="el" href="UIController_8cs_source.html#l00030">UIController.Start()</a>.</p>
 
 </div>
 </div>

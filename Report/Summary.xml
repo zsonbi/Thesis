@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>09/17/2024 - 15:11:48</Generatedon>
+    <Generatedon>09/18/2024 - 12:08:03</Generatedon>
     <Parser>MultiReportParser (3x OpenCoverParser)</Parser>
     <Assemblies>4</Assemblies>
-    <Classes>90</Classes>
-    <Files>88</Files>
-    <Coveredlines>247</Coveredlines>
-    <Uncoveredlines>4114</Uncoveredlines>
-    <Coverablelines>4361</Coverablelines>
-    <Totallines>8783</Totallines>
+    <Classes>91</Classes>
+    <Files>89</Files>
+    <Coveredlines>252</Coveredlines>
+    <Uncoveredlines>4182</Uncoveredlines>
+    <Coverablelines>4434</Coverablelines>
+    <Totallines>8914</Totallines>
     <Linecoverage>5.6</Linecoverage>
     <Coveredbranches>0</Coveredbranches>
     <Totalbranches>0</Totalbranches>
-    <Coveredmethods>102</Coveredmethods>
-    <Totalmethods>760</Totalmethods>
-    <Methodcoverage>13.4</Methodcoverage>
+    <Coveredmethods>106</Coveredmethods>
+    <Totalmethods>779</Totalmethods>
+    <Methodcoverage>13.6</Methodcoverage>
   </Summary>
   <Coverage>
     <Assembly name="Assembly-CSharp" classes="32" coverage="0" coveredlines="0" coverablelines="1842" totallines="3841" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="256" methodcoverage="0">
@@ -61,15 +61,16 @@
       <Class name="Tests.MainMenuTest" coverage="100" coveredlines="4" coverablelines="4" totallines="24" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
       <Class name="Tests.UITests.UserControllerTests" coverage="96.1" coveredlines="25" coverablelines="26" totallines="65" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="6" methodcoverage="100" />
     </Assembly>
-    <Assembly name="ThesisScripts" classes="53" coverage="8.5" coveredlines="192" coverablelines="2258" totallines="4759" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="92" totalmethods="478" methodcoverage="19.2">
+    <Assembly name="ThesisScripts" classes="54" coverage="8.4" coveredlines="197" coverablelines="2331" totallines="4890" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="96" totalmethods="497" methodcoverage="19.3">
       <Class name="Assets.Scripts.Client.DataTypes.ChunkCellContainer" coverage="0" coveredlines="0" coverablelines="6" totallines="15" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
       <Class name="Building" coverage="0" coveredlines="0" coverablelines="9" totallines="33" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="7" methodcoverage="0" />
       <Class name="CameraScript" coverage="0" coveredlines="0" coverablelines="7" totallines="24" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
-      <Class name="Config.ServerConfig" coverage="0" coveredlines="0" coverablelines="3" totallines="69" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="3" methodcoverage="0" />
+      <Class name="Config.ServerConfig" coverage="0" coveredlines="0" coverablelines="5" totallines="77" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
       <Class name="DirectionConverter" coverage="0" coveredlines="0" coverablelines="21" totallines="46" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
       <Class name="EdgeRoadContainer" coverage="100" coveredlines="9" coverablelines="9" totallines="15" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="7" totalmethods="7" methodcoverage="100" />
       <Class name="EffectScript" coverage="0" coveredlines="0" coverablelines="4" totallines="23" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
-      <Class name="FriendHandler" coverage="6.6" coveredlines="1" coverablelines="15" totallines="49" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="6" methodcoverage="16.6" />
+      <Class name="FriendHandler" coverage="0" coveredlines="0" coverablelines="38" totallines="77" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="8" methodcoverage="0" />
+      <Class name="FriendWindowHandler" coverage="2" coveredlines="1" coverablelines="50" totallines="89" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="8" methodcoverage="12.5" />
       <Class name="Game.Car" coverage="0" coveredlines="0" coverablelines="78" totallines="131" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="12" methodcoverage="0" />
       <Class name="Game.CarController" coverage="0" coveredlines="0" coverablelines="129" totallines="249" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="18" methodcoverage="0" />
       <Class name="Game.CopCar" coverage="0" coveredlines="0" coverablelines="10" totallines="26" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
@@ -86,17 +87,17 @@
       <Class name="GameUI" coverage="0" coveredlines="0" coverablelines="39" totallines="88" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="12" methodcoverage="0" />
       <Class name="MeshGenerator" coverage="0" coveredlines="0" coverablelines="27" totallines="96" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
       <Class name="ModalWindow" coverage="0" coveredlines="0" coverablelines="19" totallines="43" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
-      <Class name="PlayerTask" coverage="3" coveredlines="2" coverablelines="65" totallines="122" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="12" methodcoverage="8.3" />
       <Class name="ProfileHandler" coverage="0" coveredlines="0" coverablelines="25" totallines="66" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="7" methodcoverage="0" />
-      <Class name="TaskApiResponse" coverage="0" coveredlines="0" coverablelines="9" totallines="16" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="7" methodcoverage="0" />
       <Class name="TaskClosedEventArgs" coverage="0" coveredlines="0" coverablelines="4" totallines="14" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
       <Class name="TaskContainer" coverage="32.3" coveredlines="22" coverablelines="68" totallines="91" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="18" totalmethods="23" methodcoverage="78.2" />
+      <Class name="TaskDisplayHandler" coverage="3.2" coveredlines="2" coverablelines="62" totallines="119" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="12" methodcoverage="8.3" />
       <Class name="TaskOpenPanelController" coverage="14.4" coveredlines="15" coverablelines="104" totallines="203" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="15" methodcoverage="26.6" />
       <Class name="Thesis_backend.Data_Structures.DbElement" coverage="50" coveredlines="1" coverablelines="2" totallines="11" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="3" methodcoverage="66.6" />
+      <Class name="Thesis_backend.Data_Structures.Friend" coverage="0" coveredlines="0" coverablelines="5" totallines="18" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="10" methodcoverage="0" />
       <Class name="Thesis_backend.Data_Structures.Game" coverage="0" coveredlines="0" coverablelines="4" totallines="13" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="8" methodcoverage="0" />
       <Class name="Thesis_backend.Data_Structures.PlayerTask" coverage="0" coveredlines="0" coverablelines="9" totallines="19" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="17" methodcoverage="0" />
       <Class name="Thesis_backend.Data_Structures.TaskRequest" coverage="0" coveredlines="0" coverablelines="4" totallines="16" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="8" methodcoverage="0" />
-      <Class name="Thesis_backend.Data_Structures.User" coverage="88.8" coveredlines="8" coverablelines="9" totallines="21" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="17" totalmethods="18" methodcoverage="94.4" />
+      <Class name="Thesis_backend.Data_Structures.User" coverage="90.9" coveredlines="10" coverablelines="11" totallines="24" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="21" totalmethods="22" methodcoverage="95.4" />
       <Class name="Thesis_backend.Data_Structures.UserLoginRequest" coverage="100" coveredlines="2" coverablelines="2" totallines="14" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="4" methodcoverage="100" />
       <Class name="Thesis_backend.Data_Structures.UserRequest" coverage="0" coveredlines="0" coverablelines="3" totallines="15" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="6" methodcoverage="0" />
       <Class name="Thesis_backend.Data_Structures.UserSettings" coverage="0" coveredlines="0" coverablelines="4" totallines="15" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="8" methodcoverage="0" />
@@ -113,7 +114,7 @@
       <Class name="UnityStandardAssets.CrossPlatformInput.TiltInput" coverage="0" coveredlines="0" coverablelines="34" totallines="145" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
       <Class name="UnityStandardAssets.CrossPlatformInput.TouchPad" coverage="0" coveredlines="0" coverablelines="64" totallines="156" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="9" methodcoverage="0" />
       <Class name="UnityStandardAssets.CrossPlatformInput.VirtualInput" coverage="0" coveredlines="0" coverablelines="60" totallines="134" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="13" methodcoverage="0" />
-      <Class name="User.UserData" coverage="100" coveredlines="29" coverablelines="29" totallines="52" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="21" totalmethods="21" methodcoverage="100" />
+      <Class name="User.UserData" coverage="100" coveredlines="32" coverablelines="32" totallines="56" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="21" totalmethods="21" methodcoverage="100" />
       <Class name="UserController" coverage="40.3" coveredlines="25" coverablelines="62" totallines="167" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="10" methodcoverage="50" />
     </Assembly>
   </Coverage>

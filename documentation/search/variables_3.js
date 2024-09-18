@@ -6,6 +6,6 @@ var searchData=
   ['descriptioninput_3',['descriptionInput',['../classTaskOpenPanelController.html#ac26c1c06372467e95fc5b3a4f20dec0a',1,'TaskOpenPanelController']]],
   ['destroyedevent_4',['DestroyedEvent',['../classGame_1_1Car.html#a42b4de37fc1597ce39395c959bf2ddff',1,'Game::Car']]],
   ['direction_5',['direction',['../classBuilding.html#a75b55df58b2b6d4575fc172df885cc2c',1,'Building']]],
-  ['disabled_5ffor_5fcomplete_5fcolor_6',['DISABLED_FOR_COMPLETE_COLOR',['../classPlayerTask.html#a9edc3d4006cb7a4ac2b4bf8fde1b1022',1,'PlayerTask']]],
+  ['disabled_5ffor_5fcomplete_5fcolor_6',['DISABLED_FOR_COMPLETE_COLOR',['../classTaskDisplayHandler.html#a6113afa3c7779b0d5a4dca2434c32949',1,'TaskDisplayHandler']]],
   ['doesitneedupdating_7',['DoesItNeedUpdating',['../classTaskClosedEventArgs.html#acafb152ed30977f169e272682461d6cf',1,'TaskClosedEventArgs']]]
 ];

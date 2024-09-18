@@ -7,7 +7,7 @@ var searchData=
   ['init_4',['init',['../classGame_1_1Car.html#a73919d2b4768ace830efe5e84cb3e0d5',1,'Game.Car.Init()'],['../classGameUI.html#a86e861e18879f93819ab1feac66f2f22',1,'GameUI.Init()'],['../classUser_1_1UserData.html#abb372911b5e49023a977bd064f46bb6e',1,'User.UserData.Init()']]],
   ['initchunk_5',['InitChunk',['../classGame_1_1World_1_1Chunk.html#a16255274ddf726bfa6e345189459e07d',1,'Game::World::Chunk']]],
   ['initunitaskloop_6',['InitUniTaskLoop',['../classGame_1_1World_1_1Chunk.html#a40aa70982f2ae4ecb1cbf4ada9bf9e76',1,'Game::World::Chunk']]],
-  ['initvalues_7',['InitValues',['../classPlayerTask.html#ad146397b10ae47ae71de4dccd2064eed',1,'PlayerTask']]],
+  ['initvalues_7',['initvalues',['../classFriendHandler.html#a89b20a1b9aad9bb9eb0a69781ed1c7ba',1,'FriendHandler.InitValues()'],['../classTaskDisplayHandler.html#a75441505ac11dde5b7192808eef2f522',1,'TaskDisplayHandler.InitValues()']]],
   ['inputaxisscrollbar_8',['InputAxisScrollbar',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1InputAxisScrollbar.html',1,'UnityStandardAssets::CrossPlatformInput']]],
   ['inputaxisscrollbar_2ecs_9',['InputAxisScrollbar.cs',['../InputAxisScrollbar_8cs.html',1,'']]],
   ['instance_10',['instance',['../classUser_1_1UserData.html#a0e7511fcf06639282624b12e673442e3',1,'User.UserData.instance'],['../classUser_1_1UserData.html#aac822a62e0ef2a7d0dbe623643146faa',1,'User.UserData.Instance']]],

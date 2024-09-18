@@ -1,4 +1,4 @@
 var TaskDisplayHandler_8cs =
 [
-    [ "PlayerTask", "classPlayerTask.html", "classPlayerTask" ]
+    [ "TaskDisplayHandler", "classTaskDisplayHandler.html", "classTaskDisplayHandler" ]
 ];

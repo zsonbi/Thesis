@@ -28,6 +28,7 @@ var hierarchy =
       [ "CameraScript", "classCameraScript.html", null ],
       [ "EffectScript", "classEffectScript.html", null ],
       [ "FriendHandler", "classFriendHandler.html", null ],
+      [ "FriendWindowHandler", "classFriendWindowHandler.html", null ],
       [ "Game.Car", "classGame_1_1Car.html", [
         [ "Game.NpcCar", "classGame_1_1NpcCar.html", [
           [ "Game.CopCar", "classGame_1_1CopCar.html", null ]
@@ -42,8 +43,8 @@ var hierarchy =
       [ "Game.World.GameWorld", "classGame_1_1World_1_1GameWorld.html", null ],
       [ "GameUI", "classGameUI.html", null ],
       [ "ModalWindow", "classModalWindow.html", null ],
-      [ "PlayerTask", "classPlayerTask.html", null ],
       [ "ProfileHandler", "classProfileHandler.html", null ],
+      [ "TaskDisplayHandler", "classTaskDisplayHandler.html", null ],
       [ "TaskOpenPanelController", "classTaskOpenPanelController.html", null ],
       [ "UIController", "classUIController.html", null ],
       [ "UnityStandardAssets.CrossPlatformInput.AxisTouchButton", "classUnityStandardAssets_1_1CrossPlatformInput_1_1AxisTouchButton.html", null ],
@@ -53,16 +54,15 @@ var hierarchy =
       [ "UnityStandardAssets.CrossPlatformInput.MobileControlRig", "classUnityStandardAssets_1_1CrossPlatformInput_1_1MobileControlRig.html", null ],
       [ "UnityStandardAssets.CrossPlatformInput.TiltInput", "classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput.html", null ],
       [ "UnityStandardAssets.CrossPlatformInput.TouchPad", "classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html", null ],
-      [ "User.UserData", "classUser_1_1UserData.html", null ],
       [ "UserController", "classUserController.html", null ]
     ] ],
     [ "Game.PlayerCar.PoliceContainer", "classGame_1_1PlayerCar_1_1PoliceContainer.html", null ],
     [ "Game.World.RoadGenerator", "classGame_1_1World_1_1RoadGenerator.html", null ],
     [ "Server", "classServer.html", null ],
     [ "Config.ServerConfig", "classConfig_1_1ServerConfig.html", null ],
-    [ "TaskApiResponse", "classTaskApiResponse.html", null ],
     [ "TaskContainer", "classTaskContainer.html", null ],
     [ "Thesis_backend.Data_Structures.TaskRequest", "structThesis__backend_1_1Data__Structures_1_1TaskRequest.html", null ],
+    [ "User.UserData", "classUser_1_1UserData.html", null ],
     [ "Thesis_backend.Data_Structures.UserLoginRequest", "structThesis__backend_1_1Data__Structures_1_1UserLoginRequest.html", null ],
     [ "Thesis_backend.Data_Structures.UserRequest", "structThesis__backend_1_1Data__Structures_1_1UserRequest.html", null ],
     [ "UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager.VirtualAxis", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualAxis.html", null ],

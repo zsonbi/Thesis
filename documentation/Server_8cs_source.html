@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('Server_8cs_source.html',''); initResiz
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                        result = JsonConvert.DeserializeObject&lt;T&gt;(webRequest.downloadHandler.text);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                }</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                <span class="keywordflow">catch</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                <span class="keywordflow">catch</span> (Exception e)</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                {</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                    Debug.Log($<span class="stringliteral">&quot;Couldn&#39;t serialize response: {webRequest.downloadHandler.text}&quot;</span>);</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                }</div>
@@ -232,7 +232,7 @@ $(document).ready(function(){initNavTree('Server_8cs_source.html',''); initResiz
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                        result = JsonConvert.DeserializeObject&lt;T&gt;(webRequest.downloadHandler.text);</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                }</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                <span class="keywordflow">catch</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                <span class="keywordflow">catch</span> (Exception e)</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                {</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                    Debug.Log($<span class="stringliteral">&quot;Couldn&#39;t serialize response: {webRequest.downloadHandler.text}&quot;</span>);</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                }</div>
@@ -260,38 +260,42 @@ $(document).ready(function(){initNavTree('Server_8cs_source.html',''); initResiz
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>            <span class="keywordflow">if</span> (webRequest.result != UnityWebRequest.Result.Success)</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            {</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                Debug.Log(webRequest.error);</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            }</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            {</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                <span class="keywordflow">if</span> (beforeComplete != <span class="keyword">null</span>)</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                {</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                    beforeComplete();</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>                }</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                Debug.Log(webRequest.downloadHandler.text);</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                T? result = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>                <span class="keywordflow">try</span></div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                {</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                    <span class="keywordflow">if</span> (typeof(T) == typeof(<span class="keywordtype">string</span>))</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                    {</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                        result = (T)(<span class="keywordtype">object</span>)webRequest.downloadHandler.text;</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                    }</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                        result = JsonConvert.DeserializeObject&lt;T&gt;(webRequest.downloadHandler.text);</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                }</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                <span class="keywordflow">catch</span></div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                {</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                    Debug.Log($<span class="stringliteral">&quot;Couldn&#39;t serialize response: {webRequest.downloadHandler.text}&quot;</span>);</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>                <span class="keywordflow">if</span> (webRequest.downloadHandler.text is not <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                {</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                    Debug.Log(webRequest.downloadHandler.text);</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                }</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            }</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>            <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            {</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                <span class="keywordflow">if</span> (beforeComplete != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                {</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                    beforeComplete();</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>                }</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                Debug.Log(webRequest.downloadHandler.text);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                T? result = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                {</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                    <span class="keywordflow">if</span> (typeof(T) == typeof(<span class="keywordtype">string</span>))</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                    {</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                        result = (T)(<span class="keywordtype">object</span>)webRequest.downloadHandler.text;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                    }</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                        result = JsonConvert.DeserializeObject&lt;T&gt;(webRequest.downloadHandler.text);</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                }</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                <span class="keywordflow">if</span> (result is not <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                <span class="keywordflow">catch</span></div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                {</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                    onComplete?.Invoke(result);</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                    Debug.Log($<span class="stringliteral">&quot;Couldn&#39;t serialize response: {webRequest.downloadHandler.text}&quot;</span>);</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                }</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>            }</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        }</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    }</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                <span class="keywordflow">if</span> (result is not <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>                {</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>                    onComplete?.Invoke(result);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>                }</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            }</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        }</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    }</div>
 </div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>}</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>}</div>
 </div>
 <div class="ttc" id="aclassServer_html"><div class="ttname"><a href="classServer.html">Server</a></div><div class="ttdef"><b>Definition</b> <a href="Server_8cs_source.html#l00008">Server.cs:9</a></div></div>
 <div class="ttc" id="aclassServer_html_a1fcf4aff06a9e4fd31a78c563c83d90c"><div class="ttname"><a href="classServer.html#a1fcf4aff06a9e4fd31a78c563c83d90c">Server.SendDeleteRequest&lt; T &gt;</a></div><div class="ttdeci">static IEnumerator SendDeleteRequest&lt; T &gt;(string url, Action&lt; T &gt; onComplete=null, Action beforeComplete=null, Action failAction=null)</div><div class="ttdef"><b>Definition</b> <a href="Server_8cs_source.html#l00149">Server.cs:149</a></div></div>

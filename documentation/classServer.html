@@ -207,7 +207,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   46</span>                    <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">   47</span>                        result = JsonConvert.DeserializeObject&lt;T&gt;(webRequest.downloadHandler.text);</div>
 <div class="line"><span class="lineno">   48</span>                }</div>
-<div class="line"><span class="lineno">   49</span>                <span class="keywordflow">catch</span></div>
+<div class="line"><span class="lineno">   49</span>                <span class="keywordflow">catch</span> (Exception e)</div>
 <div class="line"><span class="lineno">   50</span>                {</div>
 <div class="line"><span class="lineno">   51</span>                    Debug.Log($<span class="stringliteral">&quot;Couldn&#39;t serialize response: {webRequest.downloadHandler.text}&quot;</span>);</div>
 <div class="line"><span class="lineno">   52</span>                }</div>
@@ -391,7 +391,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  134</span>                    <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  135</span>                        result = JsonConvert.DeserializeObject&lt;T&gt;(webRequest.downloadHandler.text);</div>
 <div class="line"><span class="lineno">  136</span>                }</div>
-<div class="line"><span class="lineno">  137</span>                <span class="keywordflow">catch</span></div>
+<div class="line"><span class="lineno">  137</span>                <span class="keywordflow">catch</span> (Exception e)</div>
 <div class="line"><span class="lineno">  138</span>                {</div>
 <div class="line"><span class="lineno">  139</span>                    Debug.Log($<span class="stringliteral">&quot;Couldn&#39;t serialize response: {webRequest.downloadHandler.text}&quot;</span>);</div>
 <div class="line"><span class="lineno">  140</span>                }</div>
@@ -465,36 +465,40 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  160</span>            <span class="keywordflow">if</span> (webRequest.result != UnityWebRequest.Result.Success)</div>
 <div class="line"><span class="lineno">  161</span>            {</div>
 <div class="line"><span class="lineno">  162</span>                Debug.Log(webRequest.error);</div>
-<div class="line"><span class="lineno">  163</span>            }</div>
-<div class="line"><span class="lineno">  164</span>            <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  165</span>            {</div>
-<div class="line"><span class="lineno">  166</span>                <span class="keywordflow">if</span> (beforeComplete != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">  167</span>                {</div>
-<div class="line"><span class="lineno">  168</span>                    beforeComplete();</div>
-<div class="line"><span class="lineno">  169</span>                }</div>
-<div class="line"><span class="lineno">  170</span> </div>
-<div class="line"><span class="lineno">  171</span>                Debug.Log(webRequest.downloadHandler.text);</div>
-<div class="line"><span class="lineno">  172</span>                T? result = <span class="keywordflow">default</span>;</div>
-<div class="line"><span class="lineno">  173</span>                <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  174</span>                {</div>
-<div class="line"><span class="lineno">  175</span>                    <span class="keywordflow">if</span> (typeof(T) == typeof(<span class="keywordtype">string</span>))</div>
-<div class="line"><span class="lineno">  176</span>                    {</div>
-<div class="line"><span class="lineno">  177</span>                        result = (T)(<span class="keywordtype">object</span>)webRequest.downloadHandler.text;</div>
-<div class="line"><span class="lineno">  178</span>                    }</div>
-<div class="line"><span class="lineno">  179</span>                    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  180</span>                        result = JsonConvert.DeserializeObject&lt;T&gt;(webRequest.downloadHandler.text);</div>
-<div class="line"><span class="lineno">  181</span>                }</div>
-<div class="line"><span class="lineno">  182</span>                <span class="keywordflow">catch</span></div>
-<div class="line"><span class="lineno">  183</span>                {</div>
-<div class="line"><span class="lineno">  184</span>                    Debug.Log($<span class="stringliteral">&quot;Couldn&#39;t serialize response: {webRequest.downloadHandler.text}&quot;</span>);</div>
+<div class="line"><span class="lineno">  163</span>                <span class="keywordflow">if</span> (webRequest.downloadHandler.text is not <span class="keyword">null</span>)</div>
+<div class="line"><span class="lineno">  164</span>                {</div>
+<div class="line"><span class="lineno">  165</span>                    Debug.Log(webRequest.downloadHandler.text);</div>
+<div class="line"><span class="lineno">  166</span>                }</div>
+<div class="line"><span class="lineno">  167</span>            }</div>
+<div class="line"><span class="lineno">  168</span>            <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  169</span>            {</div>
+<div class="line"><span class="lineno">  170</span>                <span class="keywordflow">if</span> (beforeComplete != <span class="keyword">null</span>)</div>
+<div class="line"><span class="lineno">  171</span>                {</div>
+<div class="line"><span class="lineno">  172</span>                    beforeComplete();</div>
+<div class="line"><span class="lineno">  173</span>                }</div>
+<div class="line"><span class="lineno">  174</span> </div>
+<div class="line"><span class="lineno">  175</span>                Debug.Log(webRequest.downloadHandler.text);</div>
+<div class="line"><span class="lineno">  176</span>                T? result = <span class="keywordflow">default</span>;</div>
+<div class="line"><span class="lineno">  177</span>                <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  178</span>                {</div>
+<div class="line"><span class="lineno">  179</span>                    <span class="keywordflow">if</span> (typeof(T) == typeof(<span class="keywordtype">string</span>))</div>
+<div class="line"><span class="lineno">  180</span>                    {</div>
+<div class="line"><span class="lineno">  181</span>                        result = (T)(<span class="keywordtype">object</span>)webRequest.downloadHandler.text;</div>
+<div class="line"><span class="lineno">  182</span>                    }</div>
+<div class="line"><span class="lineno">  183</span>                    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  184</span>                        result = JsonConvert.DeserializeObject&lt;T&gt;(webRequest.downloadHandler.text);</div>
 <div class="line"><span class="lineno">  185</span>                }</div>
-<div class="line"><span class="lineno">  186</span>                <span class="keywordflow">if</span> (result is not <span class="keyword">null</span>)</div>
+<div class="line"><span class="lineno">  186</span>                <span class="keywordflow">catch</span></div>
 <div class="line"><span class="lineno">  187</span>                {</div>
-<div class="line"><span class="lineno">  188</span>                    onComplete?.Invoke(result);</div>
+<div class="line"><span class="lineno">  188</span>                    Debug.Log($<span class="stringliteral">&quot;Couldn&#39;t serialize response: {webRequest.downloadHandler.text}&quot;</span>);</div>
 <div class="line"><span class="lineno">  189</span>                }</div>
-<div class="line"><span class="lineno">  190</span>            }</div>
-<div class="line"><span class="lineno">  191</span>        }</div>
-<div class="line"><span class="lineno">  192</span>    }</div>
+<div class="line"><span class="lineno">  190</span>                <span class="keywordflow">if</span> (result is not <span class="keyword">null</span>)</div>
+<div class="line"><span class="lineno">  191</span>                {</div>
+<div class="line"><span class="lineno">  192</span>                    onComplete?.Invoke(result);</div>
+<div class="line"><span class="lineno">  193</span>                }</div>
+<div class="line"><span class="lineno">  194</span>            }</div>
+<div class="line"><span class="lineno">  195</span>        }</div>
+<div class="line"><span class="lineno">  196</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>

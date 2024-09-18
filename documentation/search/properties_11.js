@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['virtualmouseposition_0',['virtualMousePosition',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#afa1db3ff31769359a2ba5de88d860e45',1,'UnityStandardAssets::CrossPlatformInput::VirtualInput']]]
+  ['useridentification_0',['UserIdentification',['../structThesis__backend_1_1Data__Structures_1_1UserLoginRequest.html#ae813d85bafbb41662c667bdbd6f1b117',1,'Thesis_backend::Data_Structures::UserLoginRequest']]],
+  ['username_1',['username',['../structThesis__backend_1_1Data__Structures_1_1UserRequest.html#ac32ca4d6291f2e301bd73a0fe1755a2c',1,'Thesis_backend.Data_Structures.UserRequest.UserName'],['../classUser_1_1UserData.html#a5c87b878e86cbc7c969d456431716c71',1,'User.UserData.Username']]]
 ];

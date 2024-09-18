@@ -6,8 +6,14 @@ var searchData=
   ['fixedupdate_3',['FixedUpdate',['../classGame_1_1EnableWheelPhysicMaterial.html#adee701db67f582a1cd3945bfc3728a86',1,'Game::EnableWheelPhysicMaterial']]],
   ['float_4',['float',['../classGame_1_1World_1_1Chunk.html#a0e6a5ff281afb8fd6116903dbcf40a2d',1,'Game::World::Chunk']]],
   ['forwardaxis_5',['ForwardAxis',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput.html#a33494fd997ae63aea22ffb585244f187ab8587f332713f2facfcf4519ace9485b',1,'UnityStandardAssets::CrossPlatformInput::TiltInput']]],
-  ['friendhandler_6',['FriendHandler',['../classFriendHandler.html',1,'']]],
-  ['friendhandler_2ecs_7',['FriendHandler.cs',['../FriendHandler_8cs.html',1,'']]],
-  ['friendscontainer_8',['FriendsContainer',['../classFriendHandler.html#a12bd927fa6f6ab62baca649040e4bd84',1,'FriendHandler']]],
-  ['fulltiltangle_9',['fullTiltAngle',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput.html#a92a6ef18b52f2409658b7a50037ac831',1,'UnityStandardAssets::CrossPlatformInput::TiltInput']]]
+  ['friend_6',['friend',['../namespaceThesis__backend_1_1Data__Structures.html#a4c3393a9cb2a72b4d735daeff4d0ea1d',1,'Thesis_backend.Data_Structures.Friend'],['../classFriendHandler.html#a0fabf78eaabddfe9a99a8663d598420c',1,'FriendHandler.Friend']]],
+  ['friend_2ecs_7',['Friend.cs',['../Friend_8cs.html',1,'']]],
+  ['friendhandler_8',['FriendHandler',['../classFriendHandler.html',1,'']]],
+  ['friendhandler_2ecs_9',['FriendHandler.cs',['../FriendHandler_8cs.html',1,'']]],
+  ['friendnamelabel_10',['FriendNameLabel',['../classFriendHandler.html#a4a577fc0b09f48dce3fb23c6b202466a',1,'FriendHandler']]],
+  ['friendprefab_11',['friendPrefab',['../classFriendWindowHandler.html#acbe50994b86f49303f273b7a936a3756',1,'FriendWindowHandler']]],
+  ['friendscontainer_12',['FriendsContainer',['../classFriendWindowHandler.html#a7427725cbd2e3d3561a799f3dfd9f5d5',1,'FriendWindowHandler']]],
+  ['friendwindowhandler_13',['FriendWindowHandler',['../classFriendWindowHandler.html',1,'']]],
+  ['friendwindowhandler_2ecs_14',['FriendWindowHandler.cs',['../FriendWindowHandler_8cs.html',1,'']]],
+  ['fulltiltangle_15',['fullTiltAngle',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput.html#a92a6ef18b52f2409658b7a50037ac831',1,'UnityStandardAssets::CrossPlatformInput::TiltInput']]]
 ];
