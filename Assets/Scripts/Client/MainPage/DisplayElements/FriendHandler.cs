@@ -36,6 +36,10 @@ public class FriendHandler : MonoBehaviour
         {
             FriendNameLabel.text = this.Friend.Sender.Username;
             ScoreText.text = this.Friend.Sender.TotalScore.ToString();
+            if (Friend.Pending)
+            {
+                AcceptButton.gameObject.SetActive(true);
+            }
         }
         else
         {
@@ -59,7 +63,7 @@ public class FriendHandler : MonoBehaviour
 
     public void DeleteFriend()
     {
-        StartCoroutine(Server.SendDeleteRequest<Thesis_backend.Data_Structures.Friend>(ServerConfig.PATH_FOR_FRIEND_DELETE(this.Friend.ID), onComplete: Accepted));
+        StartCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATH_FOR_FRIEND_DELETE(this.Friend.ID), onComplete: Deleted));
     }
 
     private void Accepted(Thesis_backend.Data_Structures.Friend result)
@@ -70,8 +74,11 @@ public class FriendHandler : MonoBehaviour
         this.ScoreLabelText.gameObject.SetActive(true);
     }
 
-    private void Deleted(Thesis_backend.Data_Structures.PlayerTask result)
+    private void Deleted(string result)
     {
-        Destroy(this.gameObject);
+        if (result == "Deleted")
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
