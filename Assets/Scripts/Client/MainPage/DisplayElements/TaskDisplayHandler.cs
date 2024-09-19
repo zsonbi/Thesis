@@ -99,7 +99,7 @@ public class TaskDisplayHandler : MonoBehaviour
     {
         if (TaskContainer.Completed)
         {
-            TimeSpan difference = TimeSpan.FromMinutes((int)TaskContainer.TaskInterval) - (DateTime.Now - TaskContainer.LastCompleted);
+            TimeSpan difference = TimeSpan.FromMinutes((int)TaskContainer.TaskInterval) - (DateTime.UtcNow - TaskContainer.LastCompleted);
 
             if (difference.TotalMinutes <= 0)
             {
@@ -116,7 +116,7 @@ public class TaskDisplayHandler : MonoBehaviour
 
     private bool CalculateIfCompleteable()
     {
-        TimeSpan difference = TimeSpan.FromMinutes((int)TaskContainer.TaskInterval) - (DateTime.Now - TaskContainer.LastCompleted);
+        TimeSpan difference = TimeSpan.FromMinutes((int)TaskContainer.TaskInterval) - (DateTime.UtcNow - TaskContainer.LastCompleted);
         return difference.TotalMinutes <= 0;
     }
 }

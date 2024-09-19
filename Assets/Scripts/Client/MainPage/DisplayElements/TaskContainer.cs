@@ -80,7 +80,7 @@ public class TaskContainer
         {
             return;
         }
-        this.LastCompleted = DateTime.Now;
+        this.LastCompleted = DateTime.UtcNow;
         this.Completed = true;
     }
 

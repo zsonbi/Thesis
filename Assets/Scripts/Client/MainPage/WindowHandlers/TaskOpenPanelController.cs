@@ -58,10 +58,17 @@ public class TaskOpenPanelController : MonoBehaviour
 
     public void OpenUp()
     {
-        OpenUp(null);
+        if (this.TaskContainer is not null)
+        {
+            OpenUp(type: this.TaskContainer.TaskType);
+        }
+        else
+        {
+            OpenUp(null);
+        }
     }
 
-    public void OpenUp(TaskContainer taskContainer = null)
+    public void OpenUp(TaskContainer taskContainer = null, TaskType type = TaskType.GoodTask)
     {
         if (taskContainer is not null)
         {
@@ -71,6 +78,7 @@ public class TaskOpenPanelController : MonoBehaviour
         else
         {
             this.TaskContainer = new TaskContainer();
+            this.TaskContainer.ChangeType(type);
             this.isNewTask = true;
         }
 
