@@ -1,14 +1,14 @@
 {
   "summary": {
-    "generatedon": "2024-09-19T21:02:08Z",
+    "generatedon": "2024-09-19T21:31:00Z",
     "parser": "MultiReportParser (3x OpenCoverParser)",
     "assemblies": 4,
     "classes": 91,
     "files": 89,
     "coveredlines": 257,
-    "uncoveredlines": 4195,
-    "coverablelines": 4452,
-    "totallines": 8941,
+    "uncoveredlines": 4202,
+    "coverablelines": 4459,
+    "totallines": 8949,
     "linecoverage": 5.7,
     "coveredbranches": 0,
     "totalbranches": 0,
@@ -58,7 +58,7 @@
         { "name": "Tests.GameTests.RoadGeneratorTests", "coverage": 100, "coveredlines": 26, "coverablelines": 26, "totallines": 55, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 3, "totalmethods": 3 },
         { "name": "Tests.MainMenuTest", "coverage": 100, "coveredlines": 4, "coverablelines": 4, "totallines": 24, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 1, "totalmethods": 1 },
         { "name": "Tests.UITests.UserControllerTests", "coverage": 96.1, "coveredlines": 25, "coverablelines": 26, "totallines": 65, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 6, "totalmethods": 6 } ] },
-      { "name": "ThesisScripts", "classes": 54, "coverage": 8.5, "coveredlines": 202, "coverablelines": 2349, "totallines": 4917, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 19.9, "coveredmethods": 100, "totalmethods": 502, "classesinassembly": [
+      { "name": "ThesisScripts", "classes": 54, "coverage": 8.5, "coveredlines": 202, "coverablelines": 2356, "totallines": 4925, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 19.9, "coveredmethods": 100, "totalmethods": 502, "classesinassembly": [
         { "name": "Assets.Scripts.Client.DataTypes.ChunkCellContainer", "coverage": 0, "coveredlines": 0, "coverablelines": 6, "totallines": 15, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 5 },
         { "name": "Building", "coverage": 0, "coveredlines": 0, "coverablelines": 9, "totallines": 33, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 7 },
         { "name": "CameraScript", "coverage": 0, "coveredlines": 0, "coverablelines": 7, "totallines": 24, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
@@ -88,7 +88,7 @@
         { "name": "TaskClosedEventArgs", "coverage": 0, "coveredlines": 0, "coverablelines": 4, "totallines": 14, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
         { "name": "TaskContainer", "coverage": 32.3, "coveredlines": 22, "coverablelines": 68, "totallines": 91, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 78.2, "coveredmethods": 18, "totalmethods": 23 },
         { "name": "TaskDisplayHandler", "coverage": 3.1, "coveredlines": 2, "coverablelines": 64, "totallines": 122, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 8.3, "coveredmethods": 1, "totalmethods": 12 },
-        { "name": "TaskOpenPanelController", "coverage": 14.4, "coveredlines": 15, "coverablelines": 104, "totallines": 203, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 26.6, "coveredmethods": 4, "totalmethods": 15 },
+        { "name": "TaskOpenPanelController", "coverage": 13.5, "coveredlines": 15, "coverablelines": 111, "totallines": 211, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 26.6, "coveredmethods": 4, "totalmethods": 15 },
         { "name": "Thesis_backend.Data_Structures.DbElement", "coverage": 50, "coveredlines": 1, "coverablelines": 2, "totallines": 11, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 66.6, "coveredmethods": 2, "totalmethods": 3 },
         { "name": "Thesis_backend.Data_Structures.Friend", "coverage": 0, "coveredlines": 0, "coverablelines": 5, "totallines": 18, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 10 },
         { "name": "Thesis_backend.Data_Structures.Game", "coverage": 0, "coveredlines": 0, "coverablelines": 4, "totallines": 13, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 8 },

@@ -1,16 +1,16 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 09/19/2024 - 21:02:08 |
+| Generated on: | 09/19/2024 - 21:31:00 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 4 |
 | Classes: | 91 |
 | Files: | 89 |
 | Covered lines: | 257 |
-| Uncovered lines: | 4195 |
-| Coverable lines: | 4452 |
-| Total lines: | 8941 |
-| Line coverage: | 5.7% (257 of 4452) |
+| Uncovered lines: | 4202 |
+| Coverable lines: | 4459 |
+| Total lines: | 8949 |
+| Line coverage: | 5.7% (257 of 4459) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 110 |
@@ -59,7 +59,7 @@
 |Tests.GameTests.RoadGeneratorTests|26|0|26|55|100%|0|0||3|3|100%|
 |Tests.MainMenuTest|4|0|4|24|100%|0|0||1|1|100%|
 |Tests.UITests.UserControllerTests|25|1|26|65|96.1%|0|0||6|6|100%|
-|**ThesisScripts**|**202**|**2147**|**2349**|**4917**|**8.5%**|**0**|**0**|****|**100**|**502**|**19.9%**|
+|**ThesisScripts**|**202**|**2154**|**2356**|**4925**|**8.5%**|**0**|**0**|****|**100**|**502**|**19.9%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|0|6|6|15|0%|0|0||0|5|0%|
 |Building|0|9|9|33|0%|0|0||0|7|0%|
 |CameraScript|0|7|7|24|0%|0|0||0|2|0%|
@@ -89,7 +89,7 @@
 |TaskClosedEventArgs|0|4|4|14|0%|0|0||0|1|0%|
 |TaskContainer|22|46|68|91|32.3%|0|0||18|23|78.2%|
 |TaskDisplayHandler|2|62|64|122|3.1%|0|0||1|12|8.3%|
-|TaskOpenPanelController|15|89|104|203|14.4%|0|0||4|15|26.6%|
+|TaskOpenPanelController|15|96|111|211|13.5%|0|0||4|15|26.6%|
 |Thesis_backend.Data_Structures.DbElement|1|1|2|11|50%|0|0||2|3|66.6%|
 |Thesis_backend.Data_Structures.Friend|0|5|5|18|0%|0|0||0|10|0%|
 |Thesis_backend.Data_Structures.Game|0|4|4|13|0%|0|0||0|8|0%|

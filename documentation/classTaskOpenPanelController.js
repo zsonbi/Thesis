@@ -3,7 +3,7 @@ var classTaskOpenPanelController =
     [ "Awake", "classTaskOpenPanelController.html#ae2abd4f00deee569cebc44ad15d5bb67", null ],
     [ "Start", "classTaskOpenPanelController.html#a8ceefffb2ce7ecd82cdd0a1010380c54", null ],
     [ "OpenUp", "classTaskOpenPanelController.html#a1147a8c395515fe25ff585e12095bd3d", null ],
-    [ "OpenUp", "classTaskOpenPanelController.html#a510d3b27a55f6c441d24e509b2bbd4e2", null ],
+    [ "OpenUp", "classTaskOpenPanelController.html#adecf2caa7f6fe68e389d13669ce30ac8", null ],
     [ "MakeItBadHabit", "classTaskOpenPanelController.html#a060a72263cf32b7c54928306df58adc9", null ],
     [ "MakeItGoodTask", "classTaskOpenPanelController.html#a51848899b40753a10e249992b6c82ea5", null ],
     [ "Cancel", "classTaskOpenPanelController.html#a721ffa89dcd6e24eb32eb194a161356b", null ],

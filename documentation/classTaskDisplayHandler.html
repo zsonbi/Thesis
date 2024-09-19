@@ -494,7 +494,7 @@ Static Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">   99</span>    {</div>
 <div class="line"><span class="lineno">  100</span>        <span class="keywordflow">if</span> (<a class="code hl_class" href="classTaskContainer.html">TaskContainer</a>.<a class="code hl_property" href="classTaskContainer.html#ac6f776ce0daac2449d63c160e6cf3886">Completed</a>)</div>
 <div class="line"><span class="lineno">  101</span>        {</div>
-<div class="line"><span class="lineno">  102</span>            TimeSpan difference = TimeSpan.FromMinutes((<span class="keywordtype">int</span>)<a class="code hl_class" href="classTaskContainer.html">TaskContainer</a>.<a class="code hl_property" href="classTaskContainer.html#a3c24cb3ae67ff49c37aef29db834ed28">TaskInterval</a>) - (DateTime.Now - <a class="code hl_class" href="classTaskContainer.html">TaskContainer</a>.<a class="code hl_property" href="classTaskContainer.html#a9b62401362cb6b1c3b5094477308cfe5">LastCompleted</a>);</div>
+<div class="line"><span class="lineno">  102</span>            TimeSpan difference = TimeSpan.FromMinutes((<span class="keywordtype">int</span>)<a class="code hl_class" href="classTaskContainer.html">TaskContainer</a>.<a class="code hl_property" href="classTaskContainer.html#a3c24cb3ae67ff49c37aef29db834ed28">TaskInterval</a>) - (DateTime.UtcNow - <a class="code hl_class" href="classTaskContainer.html">TaskContainer</a>.<a class="code hl_property" href="classTaskContainer.html#a9b62401362cb6b1c3b5094477308cfe5">LastCompleted</a>);</div>
 <div class="line"><span class="lineno">  103</span> </div>
 <div class="line"><span class="lineno">  104</span>            <span class="keywordflow">if</span> (difference.TotalMinutes &lt;= 0)</div>
 <div class="line"><span class="lineno">  105</span>            {</div>
@@ -541,7 +541,7 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="TaskDisplayHandler_8cs_source.html#l00117">117</a> of file <a class="el" href="TaskDisplayHandler_8cs_source.html">TaskDisplayHandler.cs</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  118</span>    {</div>
-<div class="line"><span class="lineno">  119</span>        TimeSpan difference = TimeSpan.FromMinutes((<span class="keywordtype">int</span>)<a class="code hl_class" href="classTaskContainer.html">TaskContainer</a>.<a class="code hl_property" href="classTaskContainer.html#a3c24cb3ae67ff49c37aef29db834ed28">TaskInterval</a>) - (DateTime.Now - <a class="code hl_class" href="classTaskContainer.html">TaskContainer</a>.<a class="code hl_property" href="classTaskContainer.html#a9b62401362cb6b1c3b5094477308cfe5">LastCompleted</a>);</div>
+<div class="line"><span class="lineno">  119</span>        TimeSpan difference = TimeSpan.FromMinutes((<span class="keywordtype">int</span>)<a class="code hl_class" href="classTaskContainer.html">TaskContainer</a>.<a class="code hl_property" href="classTaskContainer.html#a3c24cb3ae67ff49c37aef29db834ed28">TaskInterval</a>) - (DateTime.UtcNow - <a class="code hl_class" href="classTaskContainer.html">TaskContainer</a>.<a class="code hl_property" href="classTaskContainer.html#a9b62401362cb6b1c3b5094477308cfe5">LastCompleted</a>);</div>
 <div class="line"><span class="lineno">  120</span>        <span class="keywordflow">return</span> difference.TotalMinutes &lt;= 0;</div>
 <div class="line"><span class="lineno">  121</span>    }</div>
 </div><!-- fragment -->
