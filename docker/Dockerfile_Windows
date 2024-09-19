@@ -3,29 +3,26 @@ FROM unityci/editor:windows-6000.0.17f1-base-3.1.0
 
 # Blender version arguments
 ARG BLENDER_SHORT_VERSION=4.1
-ARG BLENDER_FULL_VERSION=4.1.0
+ARG BLENDER_FULL_VERSION=4.1.1
 
 # Install Blender using PowerShell
 SHELL ["powershell", "-Command"]
 
-# RUN Invoke-WebRequest -Uri "https://download.blender.org/release/Blender3.6/blender-3.6.12-windows-x64.zip" -OutFile "C:\\blender.zip" -Verbose ; \
-#     Expand-Archive -Path "C:\\blender.zip" -DestinationPath "C:\\blender" ; \
-#     Remove-Item "C:\\blender.zip" -Force
-
-RUN  powershell -Command ` \
-    Invoke-WebRequest -Uri https://aka.ms/vs/16/release/vs_community.exe -OutFile vs_community.exe; `\
-    Start-Process -FilePath vs_community.exe -Args '--quiet --wait --norestart --add Microsoft.VisualStudio.Component.VC.ATL --add Microsoft.VisualStudio.Component.VC.2019.x86.x64' -NoNewWindow -Wait; `\
+# Install Visual Studio Build Tools with required components
+RUN Invoke-WebRequest -Uri https://aka.ms/vs/16/release/vs_community.exe -OutFile vs_community.exe; \
+    Start-Process -FilePath vs_community.exe -ArgumentList '--quiet', '--wait', '--norestart', '--add', 'Microsoft.VisualStudio.Component.VC.ATL', '--add', 'Microsoft.VisualStudio.Component.VC.2019.x86.x64' -NoNewWindow -Wait; \
     Remove-Item -Force vs_community.exe
 
 # Download and install Blender
-RUN powershell -Command `\
-    Invoke-WebRequest -Uri https://download.blender.org/release/Blender3.6/blender-3.6.9-windows-x64.msi -OutFile blender.msi; `\
-    Start-Process -FilePath msiexec.exe -Args '/i blender.msi /quiet /norestart' -NoNewWindow -Wait; `\
+RUN Invoke-WebRequest -Uri https://download.blender.org/release/Blender4.1/blender-4.1.1-windows-x64.msi -OutFile blender.msi; \
+    Start-Process -FilePath msiexec.exe -ArgumentList '/i', 'blender.msi', '/quiet', '/norestart' -NoNewWindow -Wait; \
     Remove-Item -Force blender.msi
 
-# Add Blender to the PATH environment variable
-ENV PATH="C:\\Program Files\\Blender Foundation\\Blender 3.6;${PATH}"
+# Check if Blender was installed and print the directory contents
+RUN Get-ChildItem 'C:\\Program Files\\Blender Foundation' -Recurse
 
+# Add Blender to the PATH environment variable
+ENV PATH="C:\\Program Files\\Blender Foundation\\Blender 4.1;${PATH}"
 
 # Verify Blender installation
-#RUN blender --version
+RUN "C:\\Program Files\\Blender Foundation\\Blender 4.1\\blender.exe" --version
