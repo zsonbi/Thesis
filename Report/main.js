@@ -280,7 +280,7 @@ var assemblies = [
       { "name": "DirectionConverter", "rp": "ThesisScripts_DirectionConverter.html", "cl": 0, "ucl": 21, "cal": 21, "tl": 46, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "EdgeRoadContainer", "rp": "ThesisScripts_EdgeRoadContainer.html", "cl": 9, "ucl": 0, "cal": 9, "tl": 15, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "EffectScript", "rp": "ThesisScripts_EffectScript.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 23, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "FriendHandler", "rp": "ThesisScripts_FriendHandler.html", "cl": 0, "ucl": 38, "cal": 38, "tl": 77, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "FriendHandler", "rp": "ThesisScripts_FriendHandler.html", "cl": 0, "ucl": 45, "cal": 45, "tl": 84, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "FriendWindowHandler", "rp": "ThesisScripts_FriendWindowHandler.html", "cl": 1, "ucl": 49, "cal": 50, "tl": 89, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.Car", "rp": "ThesisScripts_Car.html", "cl": 0, "ucl": 78, "cal": 78, "tl": 131, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.CarController", "rp": "ThesisScripts_CarController.html", "cl": 0, "ucl": 129, "cal": 129, "tl": 249, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },

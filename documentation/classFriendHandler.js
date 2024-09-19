@@ -5,7 +5,7 @@ var classFriendHandler =
     [ "AcceptFriendRequest", "classFriendHandler.html#aa0b0d99f8ebd9211ff12370d61223818", null ],
     [ "DeleteFriend", "classFriendHandler.html#a67169954526afe4bdb375c603a46fb6f", null ],
     [ "Accepted", "classFriendHandler.html#a3964b3b8615733191242dc29f9a72353", null ],
-    [ "Deleted", "classFriendHandler.html#a6ba56e9634c6fee09b23dcee43d74b31", null ],
+    [ "Deleted", "classFriendHandler.html#a3c0bc10876798e557dbb518a47f03867", null ],
     [ "FriendNameLabel", "classFriendHandler.html#a4a577fc0b09f48dce3fb23c6b202466a", null ],
     [ "ScoreText", "classFriendHandler.html#a610bd1786d38bfeec8dc82639eb7a10f", null ],
     [ "ScoreLabelText", "classFriendHandler.html#ac64f979c137a9c135a627a3cb285d034", null ],

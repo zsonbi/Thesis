@@ -126,8 +126,8 @@ Properties</h2></td></tr>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a3964b3b8615733191242dc29f9a72353" id="r_a3964b3b8615733191242dc29f9a72353"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFriendHandler.html#a3964b3b8615733191242dc29f9a72353">Accepted</a> (<a class="el" href="namespaceThesis__backend_1_1Data__Structures.html#a4c3393a9cb2a72b4d735daeff4d0ea1d">Thesis_backend.Data_Structures.Friend</a> result)</td></tr>
 <tr class="separator:a3964b3b8615733191242dc29f9a72353"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ba56e9634c6fee09b23dcee43d74b31" id="r_a6ba56e9634c6fee09b23dcee43d74b31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFriendHandler.html#a6ba56e9634c6fee09b23dcee43d74b31">Deleted</a> (<a class="el" href="namespaceThesis__backend_1_1Data__Structures.html#ae656f3c7a1335db8207ae56dcbd213a7">Thesis_backend.Data_Structures.PlayerTask</a> result)</td></tr>
-<tr class="separator:a6ba56e9634c6fee09b23dcee43d74b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c0bc10876798e557dbb518a47f03867" id="r_a3c0bc10876798e557dbb518a47f03867"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFriendHandler.html#a3c0bc10876798e557dbb518a47f03867">Deleted</a> (string result)</td></tr>
+<tr class="separator:a3c0bc10876798e557dbb518a47f03867"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -207,21 +207,25 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   36</span>        {</div>
 <div class="line"><span class="lineno">   37</span>            FriendNameLabel.text = this.<a class="code hl_property" href="classFriendHandler.html#a0fabf78eaabddfe9a99a8663d598420c">Friend</a>.Sender.Username;</div>
 <div class="line"><span class="lineno">   38</span>            ScoreText.text = this.<a class="code hl_property" href="classFriendHandler.html#a0fabf78eaabddfe9a99a8663d598420c">Friend</a>.Sender.TotalScore.ToString();</div>
-<div class="line"><span class="lineno">   39</span>        }</div>
-<div class="line"><span class="lineno">   40</span>        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   41</span>        {</div>
-<div class="line"><span class="lineno">   42</span>            FriendNameLabel.text = this.<a class="code hl_property" href="classFriendHandler.html#a0fabf78eaabddfe9a99a8663d598420c">Friend</a>.Receiver.Username;</div>
-<div class="line"><span class="lineno">   43</span>            ScoreText.text = this.<a class="code hl_property" href="classFriendHandler.html#a0fabf78eaabddfe9a99a8663d598420c">Friend</a>.Receiver.TotalScore.ToString();</div>
-<div class="line"><span class="lineno">   44</span> </div>
-<div class="line"><span class="lineno">   45</span>            <span class="keywordflow">if</span> (<span class="keyword">friend</span>.<a class="code hl_property" href="namespaceThesis__backend_1_1Data__Structures.html#a955e55f5e0196c97e00d592def7e4a84">Pending</a>)</div>
-<div class="line"><span class="lineno">   46</span>            {</div>
-<div class="line"><span class="lineno">   47</span>                <a class="code hl_variable" href="classFriendHandler.html#a203bde9c90d561fa01d19ca43d720a56">AcceptButton</a>.gameObject.SetActive(<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">   48</span>                <a class="code hl_variable" href="classFriendHandler.html#a9629a048122afa33aec6cc7d2eef839b">Pendingtext</a>.gameObject.SetActive(<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">   49</span>            }</div>
-<div class="line"><span class="lineno">   50</span>        }</div>
-<div class="line"><span class="lineno">   51</span>        this.<a class="code hl_variable" href="classFriendHandler.html#a610bd1786d38bfeec8dc82639eb7a10f">ScoreText</a>.gameObject.SetActive(!<span class="keyword">friend</span>.<a class="code hl_property" href="namespaceThesis__backend_1_1Data__Structures.html#a955e55f5e0196c97e00d592def7e4a84">Pending</a>);</div>
-<div class="line"><span class="lineno">   52</span>        this.<a class="code hl_variable" href="classFriendHandler.html#ac64f979c137a9c135a627a3cb285d034">ScoreLabelText</a>.gameObject.SetActive(!<span class="keyword">friend</span>.<a class="code hl_property" href="namespaceThesis__backend_1_1Data__Structures.html#a955e55f5e0196c97e00d592def7e4a84">Pending</a>);</div>
-<div class="line"><span class="lineno">   53</span>    }</div>
+<div class="line"><span class="lineno">   39</span>            <span class="keywordflow">if</span> (<a class="code hl_property" href="classFriendHandler.html#a0fabf78eaabddfe9a99a8663d598420c">Friend</a>.Pending)</div>
+<div class="line"><span class="lineno">   40</span>            {</div>
+<div class="line"><span class="lineno">   41</span>                <a class="code hl_variable" href="classFriendHandler.html#a203bde9c90d561fa01d19ca43d720a56">AcceptButton</a>.gameObject.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   42</span>            }</div>
+<div class="line"><span class="lineno">   43</span>        }</div>
+<div class="line"><span class="lineno">   44</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   45</span>        {</div>
+<div class="line"><span class="lineno">   46</span>            FriendNameLabel.text = this.<a class="code hl_property" href="classFriendHandler.html#a0fabf78eaabddfe9a99a8663d598420c">Friend</a>.Receiver.Username;</div>
+<div class="line"><span class="lineno">   47</span>            ScoreText.text = this.<a class="code hl_property" href="classFriendHandler.html#a0fabf78eaabddfe9a99a8663d598420c">Friend</a>.Receiver.TotalScore.ToString();</div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>            <span class="keywordflow">if</span> (<span class="keyword">friend</span>.<a class="code hl_property" href="namespaceThesis__backend_1_1Data__Structures.html#a955e55f5e0196c97e00d592def7e4a84">Pending</a>)</div>
+<div class="line"><span class="lineno">   50</span>            {</div>
+<div class="line"><span class="lineno">   51</span>                <a class="code hl_variable" href="classFriendHandler.html#a203bde9c90d561fa01d19ca43d720a56">AcceptButton</a>.gameObject.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   52</span>                <a class="code hl_variable" href="classFriendHandler.html#a9629a048122afa33aec6cc7d2eef839b">Pendingtext</a>.gameObject.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   53</span>            }</div>
+<div class="line"><span class="lineno">   54</span>        }</div>
+<div class="line"><span class="lineno">   55</span>        this.<a class="code hl_variable" href="classFriendHandler.html#a610bd1786d38bfeec8dc82639eb7a10f">ScoreText</a>.gameObject.SetActive(!<span class="keyword">friend</span>.<a class="code hl_property" href="namespaceThesis__backend_1_1Data__Structures.html#a955e55f5e0196c97e00d592def7e4a84">Pending</a>);</div>
+<div class="line"><span class="lineno">   56</span>        this.<a class="code hl_variable" href="classFriendHandler.html#ac64f979c137a9c135a627a3cb285d034">ScoreLabelText</a>.gameObject.SetActive(!<span class="keyword">friend</span>.<a class="code hl_property" href="namespaceThesis__backend_1_1Data__Structures.html#a955e55f5e0196c97e00d592def7e4a84">Pending</a>);</div>
+<div class="line"><span class="lineno">   57</span>    }</div>
 <div class="ttc" id="aclassFriendHandler_html_a0fabf78eaabddfe9a99a8663d598420c"><div class="ttname"><a href="classFriendHandler.html#a0fabf78eaabddfe9a99a8663d598420c">FriendHandler.Friend</a></div><div class="ttdeci">Friend Friend</div><div class="ttdef"><b>Definition</b> <a href="FriendHandler_8cs_source.html#l00025">FriendHandler.cs:25</a></div></div>
 <div class="ttc" id="aclassFriendHandler_html_a203bde9c90d561fa01d19ca43d720a56"><div class="ttname"><a href="classFriendHandler.html#a203bde9c90d561fa01d19ca43d720a56">FriendHandler.AcceptButton</a></div><div class="ttdeci">Button AcceptButton</div><div class="ttdef"><b>Definition</b> <a href="FriendHandler_8cs_source.html#l00020">FriendHandler.cs:20</a></div></div>
 <div class="ttc" id="aclassFriendHandler_html_a610bd1786d38bfeec8dc82639eb7a10f"><div class="ttname"><a href="classFriendHandler.html#a610bd1786d38bfeec8dc82639eb7a10f">FriendHandler.ScoreText</a></div><div class="ttdeci">TMP_Text ScoreText</div><div class="ttdef"><b>Definition</b> <a href="FriendHandler_8cs_source.html#l00014">FriendHandler.cs:14</a></div></div>
@@ -261,18 +265,18 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="FriendHandler_8cs_source.html#l00055">55</a> of file <a class="el" href="FriendHandler_8cs_source.html">FriendHandler.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   56</span>    {</div>
-<div class="line"><span class="lineno">   57</span>        StartCoroutine(<a class="code hl_class" href="classServer.html">Server</a>.SendPatchRequest&lt;<a class="code hl_namespace" href="namespaceThesis__backend.html">Thesis_backend</a>.<a class="code hl_namespace" href="namespaceThesis__backend_1_1Data__Structures.html">Data_Structures</a>.Friend&gt;(<a class="code hl_class" href="classConfig_1_1ServerConfig.html">ServerConfig</a>.<a class="code hl_function" href="classConfig_1_1ServerConfig.html#a7e8a6c00e86ee263e4e91d76e91865d8">PATH_FOR_FRIEND_ACCEPT</a>(<span class="keyword">this</span>.Friend.ID), onComplete: <a class="code hl_function" href="classFriendHandler.html#a3964b3b8615733191242dc29f9a72353">Accepted</a>));</div>
-<div class="line"><span class="lineno">   58</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="FriendHandler_8cs_source.html#l00059">59</a> of file <a class="el" href="FriendHandler_8cs_source.html">FriendHandler.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   60</span>    {</div>
+<div class="line"><span class="lineno">   61</span>        StartCoroutine(<a class="code hl_class" href="classServer.html">Server</a>.SendPatchRequest&lt;<a class="code hl_namespace" href="namespaceThesis__backend.html">Thesis_backend</a>.<a class="code hl_namespace" href="namespaceThesis__backend_1_1Data__Structures.html">Data_Structures</a>.Friend&gt;(<a class="code hl_class" href="classConfig_1_1ServerConfig.html">ServerConfig</a>.<a class="code hl_function" href="classConfig_1_1ServerConfig.html#a7e8a6c00e86ee263e4e91d76e91865d8">PATH_FOR_FRIEND_ACCEPT</a>(<span class="keyword">this</span>.Friend.ID), onComplete: <a class="code hl_function" href="classFriendHandler.html#a3964b3b8615733191242dc29f9a72353">Accepted</a>));</div>
+<div class="line"><span class="lineno">   62</span>    }</div>
 <div class="ttc" id="aclassConfig_1_1ServerConfig_html"><div class="ttname"><a href="classConfig_1_1ServerConfig.html">Config.ServerConfig</a></div><div class="ttdef"><b>Definition</b> <a href="ServerConfig_8cs_source.html#l00003">ServerConfig.cs:4</a></div></div>
 <div class="ttc" id="aclassConfig_1_1ServerConfig_html_a7e8a6c00e86ee263e4e91d76e91865d8"><div class="ttname"><a href="classConfig_1_1ServerConfig.html#a7e8a6c00e86ee263e4e91d76e91865d8">Config.ServerConfig.PATH_FOR_FRIEND_ACCEPT</a></div><div class="ttdeci">static string PATH_FOR_FRIEND_ACCEPT(long friendRequestId)</div></div>
-<div class="ttc" id="aclassFriendHandler_html_a3964b3b8615733191242dc29f9a72353"><div class="ttname"><a href="classFriendHandler.html#a3964b3b8615733191242dc29f9a72353">FriendHandler.Accepted</a></div><div class="ttdeci">void Accepted(Thesis_backend.Data_Structures.Friend result)</div><div class="ttdef"><b>Definition</b> <a href="FriendHandler_8cs_source.html#l00065">FriendHandler.cs:65</a></div></div>
+<div class="ttc" id="aclassFriendHandler_html_a3964b3b8615733191242dc29f9a72353"><div class="ttname"><a href="classFriendHandler.html#a3964b3b8615733191242dc29f9a72353">FriendHandler.Accepted</a></div><div class="ttdeci">void Accepted(Thesis_backend.Data_Structures.Friend result)</div><div class="ttdef"><b>Definition</b> <a href="FriendHandler_8cs_source.html#l00069">FriendHandler.cs:69</a></div></div>
 <div class="ttc" id="aclassServer_html"><div class="ttname"><a href="classServer.html">Server</a></div><div class="ttdef"><b>Definition</b> <a href="Server_8cs_source.html#l00008">Server.cs:9</a></div></div>
 <div class="ttc" id="anamespaceThesis__backend_1_1Data__Structures_html"><div class="ttname"><a href="namespaceThesis__backend_1_1Data__Structures.html">Thesis_backend.Data_Structures</a></div><div class="ttdef"><b>Definition</b> <a href="DbElement_8cs_source.html#l00003">DbElement.cs:4</a></div></div>
 <div class="ttc" id="anamespaceThesis__backend_html"><div class="ttname"><a href="namespaceThesis__backend.html">Thesis_backend</a></div><div class="ttdef"><b>Definition</b> <a href="DbElement_8cs_source.html#l00003">DbElement.cs:4</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="FriendHandler_8cs_source.html#l00065">Accepted()</a>, and <a class="el" href="classConfig_1_1ServerConfig.html#a7e8a6c00e86ee263e4e91d76e91865d8">Config.ServerConfig.PATH_FOR_FRIEND_ACCEPT()</a>.</p>
+<p class="reference">References <a class="el" href="FriendHandler_8cs_source.html#l00069">Accepted()</a>, and <a class="el" href="classConfig_1_1ServerConfig.html#a7e8a6c00e86ee263e4e91d76e91865d8">Config.ServerConfig.PATH_FOR_FRIEND_ACCEPT()</a>.</p>
 
 </div>
 </div>
@@ -299,13 +303,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="FriendHandler_8cs_source.html#l00060">60</a> of file <a class="el" href="FriendHandler_8cs_source.html">FriendHandler.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   61</span>    {</div>
-<div class="line"><span class="lineno">   62</span>        StartCoroutine(<a class="code hl_class" href="classServer.html">Server</a>.SendDeleteRequest&lt;<a class="code hl_namespace" href="namespaceThesis__backend.html">Thesis_backend</a>.<a class="code hl_namespace" href="namespaceThesis__backend_1_1Data__Structures.html">Data_Structures</a>.Friend&gt;(<a class="code hl_class" href="classConfig_1_1ServerConfig.html">ServerConfig</a>.<a class="code hl_function" href="classConfig_1_1ServerConfig.html#a10be54228c36baeb2de629e8122d926f">PATH_FOR_FRIEND_DELETE</a>(<span class="keyword">this</span>.Friend.ID), onComplete: <a class="code hl_function" href="classFriendHandler.html#a3964b3b8615733191242dc29f9a72353">Accepted</a>));</div>
-<div class="line"><span class="lineno">   63</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="FriendHandler_8cs_source.html#l00064">64</a> of file <a class="el" href="FriendHandler_8cs_source.html">FriendHandler.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   65</span>    {</div>
+<div class="line"><span class="lineno">   66</span>        StartCoroutine(<a class="code hl_class" href="classServer.html">Server</a>.SendDeleteRequest&lt;<span class="keywordtype">string</span>&gt;(<a class="code hl_class" href="classConfig_1_1ServerConfig.html">ServerConfig</a>.<a class="code hl_function" href="classConfig_1_1ServerConfig.html#a10be54228c36baeb2de629e8122d926f">PATH_FOR_FRIEND_DELETE</a>(<span class="keyword">this</span>.Friend.ID), onComplete: <a class="code hl_function" href="classFriendHandler.html#a3c0bc10876798e557dbb518a47f03867">Deleted</a>));</div>
+<div class="line"><span class="lineno">   67</span>    }</div>
 <div class="ttc" id="aclassConfig_1_1ServerConfig_html_a10be54228c36baeb2de629e8122d926f"><div class="ttname"><a href="classConfig_1_1ServerConfig.html#a10be54228c36baeb2de629e8122d926f">Config.ServerConfig.PATH_FOR_FRIEND_DELETE</a></div><div class="ttdeci">static string PATH_FOR_FRIEND_DELETE(long friendRequestId)</div></div>
+<div class="ttc" id="aclassFriendHandler_html_a3c0bc10876798e557dbb518a47f03867"><div class="ttname"><a href="classFriendHandler.html#a3c0bc10876798e557dbb518a47f03867">FriendHandler.Deleted</a></div><div class="ttdeci">void Deleted(string result)</div><div class="ttdef"><b>Definition</b> <a href="FriendHandler_8cs_source.html#l00077">FriendHandler.cs:77</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="FriendHandler_8cs_source.html#l00065">Accepted()</a>, and <a class="el" href="classConfig_1_1ServerConfig.html#a10be54228c36baeb2de629e8122d926f">Config.ServerConfig.PATH_FOR_FRIEND_DELETE()</a>.</p>
+<p class="reference">References <a class="el" href="FriendHandler_8cs_source.html#l00077">Deleted()</a>, and <a class="el" href="classConfig_1_1ServerConfig.html#a10be54228c36baeb2de629e8122d926f">Config.ServerConfig.PATH_FOR_FRIEND_DELETE()</a>.</p>
 
 </div>
 </div>
@@ -333,20 +338,20 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="FriendHandler_8cs_source.html#l00065">65</a> of file <a class="el" href="FriendHandler_8cs_source.html">FriendHandler.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   66</span>    {</div>
-<div class="line"><span class="lineno">   67</span>        this.Friend.Pending = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   68</span>        this.<a class="code hl_variable" href="classFriendHandler.html#a203bde9c90d561fa01d19ca43d720a56">AcceptButton</a>.gameObject.SetActive(<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">   69</span>        this.<a class="code hl_variable" href="classFriendHandler.html#a610bd1786d38bfeec8dc82639eb7a10f">ScoreText</a>.gameObject.SetActive(<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">   70</span>        this.<a class="code hl_variable" href="classFriendHandler.html#ac64f979c137a9c135a627a3cb285d034">ScoreLabelText</a>.gameObject.SetActive(<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">   71</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="FriendHandler_8cs_source.html#l00069">69</a> of file <a class="el" href="FriendHandler_8cs_source.html">FriendHandler.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   70</span>    {</div>
+<div class="line"><span class="lineno">   71</span>        this.Friend.Pending = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   72</span>        this.<a class="code hl_variable" href="classFriendHandler.html#a203bde9c90d561fa01d19ca43d720a56">AcceptButton</a>.gameObject.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   73</span>        this.<a class="code hl_variable" href="classFriendHandler.html#a610bd1786d38bfeec8dc82639eb7a10f">ScoreText</a>.gameObject.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   74</span>        this.<a class="code hl_variable" href="classFriendHandler.html#ac64f979c137a9c135a627a3cb285d034">ScoreLabelText</a>.gameObject.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   75</span>    }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="FriendHandler_8cs_source.html#l00055">AcceptFriendRequest()</a>, and <a class="el" href="FriendHandler_8cs_source.html#l00060">DeleteFriend()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="FriendHandler_8cs_source.html#l00059">AcceptFriendRequest()</a>.</p>
 
 </div>
 </div>
-<a id="a6ba56e9634c6fee09b23dcee43d74b31" name="a6ba56e9634c6fee09b23dcee43d74b31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ba56e9634c6fee09b23dcee43d74b31">&#9670;&#160;</a></span>Deleted()</h2>
+<a id="a3c0bc10876798e557dbb518a47f03867" name="a3c0bc10876798e557dbb518a47f03867"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c0bc10876798e557dbb518a47f03867">&#9670;&#160;</a></span>Deleted()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -357,7 +362,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void FriendHandler.Deleted </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceThesis__backend_1_1Data__Structures.html#ae656f3c7a1335db8207ae56dcbd213a7">Thesis_backend::Data_Structures::PlayerTask</a>&#160;</td>
+          <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>result</em></td><td>)</td>
           <td></td>
         </tr>
@@ -369,11 +374,16 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="FriendHandler_8cs_source.html#l00073">73</a> of file <a class="el" href="FriendHandler_8cs_source.html">FriendHandler.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   74</span>    {</div>
-<div class="line"><span class="lineno">   75</span>        Destroy(this.gameObject);</div>
-<div class="line"><span class="lineno">   76</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="FriendHandler_8cs_source.html#l00077">77</a> of file <a class="el" href="FriendHandler_8cs_source.html">FriendHandler.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   78</span>    {</div>
+<div class="line"><span class="lineno">   79</span>        <span class="keywordflow">if</span> (result == <span class="stringliteral">&quot;Deleted&quot;</span>)</div>
+<div class="line"><span class="lineno">   80</span>        {</div>
+<div class="line"><span class="lineno">   81</span>            Destroy(this.gameObject);</div>
+<div class="line"><span class="lineno">   82</span>        }</div>
+<div class="line"><span class="lineno">   83</span>    }</div>
 </div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="FriendHandler_8cs_source.html#l00064">DeleteFriend()</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['deleted_0',['Deleted',['../classFriendHandler.html#a6ba56e9634c6fee09b23dcee43d74b31',1,'FriendHandler']]],
+  ['deleted_0',['Deleted',['../classFriendHandler.html#a3c0bc10876798e557dbb518a47f03867',1,'FriendHandler']]],
   ['deletedtask_1',['DeletedTask',['../classTaskOpenPanelController.html#a5cfa9ad8bb8f3783ffc7df689579b2ef',1,'TaskOpenPanelController']]],
   ['deletefriend_2',['DeleteFriend',['../classFriendHandler.html#a67169954526afe4bdb375c603a46fb6f',1,'FriendHandler']]],
   ['deletetask_3',['DeleteTask',['../classTaskOpenPanelController.html#a20a5400ef991e24a2832a97dceb6e82d',1,'TaskOpenPanelController']]],

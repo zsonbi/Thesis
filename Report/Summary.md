@@ -1,16 +1,16 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 09/19/2024 - 08:18:36 |
+| Generated on: | 09/19/2024 - 15:15:43 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 4 |
 | Classes: | 91 |
 | Files: | 89 |
 | Covered lines: | 257 |
-| Uncovered lines: | 4188 |
-| Coverable lines: | 4445 |
-| Total lines: | 8934 |
-| Line coverage: | 5.7% (257 of 4445) |
+| Uncovered lines: | 4195 |
+| Coverable lines: | 4452 |
+| Total lines: | 8941 |
+| Line coverage: | 5.7% (257 of 4452) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 110 |
@@ -59,7 +59,7 @@
 |Tests.GameTests.RoadGeneratorTests|26|0|26|55|100%|0|0||3|3|100%|
 |Tests.MainMenuTest|4|0|4|24|100%|0|0||1|1|100%|
 |Tests.UITests.UserControllerTests|25|1|26|65|96.1%|0|0||6|6|100%|
-|**ThesisScripts**|**202**|**2140**|**2342**|**4910**|**8.6%**|**0**|**0**|****|**100**|**502**|**19.9%**|
+|**ThesisScripts**|**202**|**2147**|**2349**|**4917**|**8.5%**|**0**|**0**|****|**100**|**502**|**19.9%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|0|6|6|15|0%|0|0||0|5|0%|
 |Building|0|9|9|33|0%|0|0||0|7|0%|
 |CameraScript|0|7|7|24|0%|0|0||0|2|0%|
@@ -67,7 +67,7 @@
 |DirectionConverter|0|21|21|46|0%|0|0||0|2|0%|
 |EdgeRoadContainer|9|0|9|15|100%|0|0||7|7|100%|
 |EffectScript|0|4|4|23|0%|0|0||0|2|0%|
-|FriendHandler|0|38|38|77|0%|0|0||0|8|0%|
+|FriendHandler|0|45|45|84|0%|0|0||0|8|0%|
 |FriendWindowHandler|1|49|50|89|2%|0|0||1|8|12.5%|
 |Game.Car|0|78|78|131|0%|0|0||0|12|0%|
 |Game.CarController|0|129|129|249|0%|0|0||0|18|0%|

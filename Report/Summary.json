@@ -1,14 +1,14 @@
 {
   "summary": {
-    "generatedon": "2024-09-19T08:18:36Z",
+    "generatedon": "2024-09-19T15:15:43Z",
     "parser": "MultiReportParser (3x OpenCoverParser)",
     "assemblies": 4,
     "classes": 91,
     "files": 89,
     "coveredlines": 257,
-    "uncoveredlines": 4188,
-    "coverablelines": 4445,
-    "totallines": 8934,
+    "uncoveredlines": 4195,
+    "coverablelines": 4452,
+    "totallines": 8941,
     "linecoverage": 5.7,
     "coveredbranches": 0,
     "totalbranches": 0,
@@ -58,7 +58,7 @@
         { "name": "Tests.GameTests.RoadGeneratorTests", "coverage": 100, "coveredlines": 26, "coverablelines": 26, "totallines": 55, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 3, "totalmethods": 3 },
         { "name": "Tests.MainMenuTest", "coverage": 100, "coveredlines": 4, "coverablelines": 4, "totallines": 24, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 1, "totalmethods": 1 },
         { "name": "Tests.UITests.UserControllerTests", "coverage": 96.1, "coveredlines": 25, "coverablelines": 26, "totallines": 65, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 6, "totalmethods": 6 } ] },
-      { "name": "ThesisScripts", "classes": 54, "coverage": 8.6, "coveredlines": 202, "coverablelines": 2342, "totallines": 4910, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 19.9, "coveredmethods": 100, "totalmethods": 502, "classesinassembly": [
+      { "name": "ThesisScripts", "classes": 54, "coverage": 8.5, "coveredlines": 202, "coverablelines": 2349, "totallines": 4917, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 19.9, "coveredmethods": 100, "totalmethods": 502, "classesinassembly": [
         { "name": "Assets.Scripts.Client.DataTypes.ChunkCellContainer", "coverage": 0, "coveredlines": 0, "coverablelines": 6, "totallines": 15, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 5 },
         { "name": "Building", "coverage": 0, "coveredlines": 0, "coverablelines": 9, "totallines": 33, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 7 },
         { "name": "CameraScript", "coverage": 0, "coveredlines": 0, "coverablelines": 7, "totallines": 24, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
@@ -66,7 +66,7 @@
         { "name": "DirectionConverter", "coverage": 0, "coveredlines": 0, "coverablelines": 21, "totallines": 46, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
         { "name": "EdgeRoadContainer", "coverage": 100, "coveredlines": 9, "coverablelines": 9, "totallines": 15, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 7, "totalmethods": 7 },
         { "name": "EffectScript", "coverage": 0, "coveredlines": 0, "coverablelines": 4, "totallines": 23, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
-        { "name": "FriendHandler", "coverage": 0, "coveredlines": 0, "coverablelines": 38, "totallines": 77, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 8 },
+        { "name": "FriendHandler", "coverage": 0, "coveredlines": 0, "coverablelines": 45, "totallines": 84, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 8 },
         { "name": "FriendWindowHandler", "coverage": 2, "coveredlines": 1, "coverablelines": 50, "totallines": 89, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 12.5, "coveredmethods": 1, "totalmethods": 8 },
         { "name": "Game.Car", "coverage": 0, "coveredlines": 0, "coverablelines": 78, "totallines": 131, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 12 },
         { "name": "Game.CarController", "coverage": 0, "coveredlines": 0, "coverablelines": 129, "totallines": 249, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 18 },

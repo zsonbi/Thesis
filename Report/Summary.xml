@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>09/19/2024 - 08:18:36</Generatedon>
+    <Generatedon>09/19/2024 - 15:15:43</Generatedon>
     <Parser>MultiReportParser (3x OpenCoverParser)</Parser>
     <Assemblies>4</Assemblies>
     <Classes>91</Classes>
     <Files>89</Files>
     <Coveredlines>257</Coveredlines>
-    <Uncoveredlines>4188</Uncoveredlines>
-    <Coverablelines>4445</Coverablelines>
-    <Totallines>8934</Totallines>
+    <Uncoveredlines>4195</Uncoveredlines>
+    <Coverablelines>4452</Coverablelines>
+    <Totallines>8941</Totallines>
     <Linecoverage>5.7</Linecoverage>
     <Coveredbranches>0</Coveredbranches>
     <Totalbranches>0</Totalbranches>
@@ -61,7 +61,7 @@
       <Class name="Tests.MainMenuTest" coverage="100" coveredlines="4" coverablelines="4" totallines="24" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
       <Class name="Tests.UITests.UserControllerTests" coverage="96.1" coveredlines="25" coverablelines="26" totallines="65" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="6" methodcoverage="100" />
     </Assembly>
-    <Assembly name="ThesisScripts" classes="54" coverage="8.6" coveredlines="202" coverablelines="2342" totallines="4910" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="100" totalmethods="502" methodcoverage="19.9">
+    <Assembly name="ThesisScripts" classes="54" coverage="8.5" coveredlines="202" coverablelines="2349" totallines="4917" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="100" totalmethods="502" methodcoverage="19.9">
       <Class name="Assets.Scripts.Client.DataTypes.ChunkCellContainer" coverage="0" coveredlines="0" coverablelines="6" totallines="15" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
       <Class name="Building" coverage="0" coveredlines="0" coverablelines="9" totallines="33" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="7" methodcoverage="0" />
       <Class name="CameraScript" coverage="0" coveredlines="0" coverablelines="7" totallines="24" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
@@ -69,7 +69,7 @@
       <Class name="DirectionConverter" coverage="0" coveredlines="0" coverablelines="21" totallines="46" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
       <Class name="EdgeRoadContainer" coverage="100" coveredlines="9" coverablelines="9" totallines="15" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="7" totalmethods="7" methodcoverage="100" />
       <Class name="EffectScript" coverage="0" coveredlines="0" coverablelines="4" totallines="23" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
-      <Class name="FriendHandler" coverage="0" coveredlines="0" coverablelines="38" totallines="77" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="8" methodcoverage="0" />
+      <Class name="FriendHandler" coverage="0" coveredlines="0" coverablelines="45" totallines="84" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="8" methodcoverage="0" />
       <Class name="FriendWindowHandler" coverage="2" coveredlines="1" coverablelines="50" totallines="89" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="8" methodcoverage="12.5" />
       <Class name="Game.Car" coverage="0" coveredlines="0" coverablelines="78" totallines="131" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="12" methodcoverage="0" />
       <Class name="Game.CarController" coverage="0" coveredlines="0" coverablelines="129" totallines="249" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="18" methodcoverage="0" />
