@@ -20,5 +20,5 @@ public static class GameConfig
 
     public const float POLICE_RAYCAST_FORWARD_DISTANCE = 40f;
     public const float POLICE_RAYCAST_SIDE_DISTANCE = 50f;
-    public const float POLICE_REVERSE_DISTANCE = 20f;
+    public const float POLICE_REVERSE_DISTANCE = 30f;
 }
