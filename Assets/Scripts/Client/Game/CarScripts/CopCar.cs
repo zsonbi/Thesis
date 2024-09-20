@@ -48,7 +48,6 @@ namespace Game
                         if (hitForward.distance < GameConfig.POLICE_REVERSE_DISTANCE)
                         {
                             v = -40;
-                            Debug.Log("Hit forward " + hitForward.collider.gameObject.name);
                         }
                         else if (Vector3.Distance(gameController.PlayerPos, this.gameObject.transform.position) > 4f)
                         {

@@ -225,10 +225,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1697880916826380940, guid: 6576b6345999f4646b1cc3991c005084, type: 3}
-      propertyPath: m_CullingMask.m_Bits
-      value: 983
+    - target: {fileID: 3696324750804204609, guid: 6576b6345999f4646b1cc3991c005084, type: 3}
+      propertyPath: CopCars.Array.size
+      value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3696324750804204609, guid: 6576b6345999f4646b1cc3991c005084, type: 3}
+      propertyPath: CopCars.Array.data[0]
+      value: 
+      objectReference: {fileID: 161566, guid: 1c44499667174e6458ca6f9aa852f054, type: 3}
+    - target: {fileID: 3696324750804204609, guid: 6576b6345999f4646b1cc3991c005084, type: 3}
+      propertyPath: CopCars.Array.data[1]
+      value: 
+      objectReference: {fileID: 161566, guid: 1c44499667174e6458ca6f9aa852f054, type: 3}
+    - target: {fileID: 3696324750804204609, guid: 6576b6345999f4646b1cc3991c005084, type: 3}
+      propertyPath: CopCars.Array.data[2]
+      value: 
+      objectReference: {fileID: 161566, guid: d46f2d35e5d96f64b8f83cde009f08cd, type: 3}
     - target: {fileID: 6183202918527860477, guid: 6576b6345999f4646b1cc3991c005084, type: 3}
       propertyPath: m_Name
       value: Game

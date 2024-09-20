@@ -25,6 +25,11 @@ namespace Game
 
             public void Update()
             {
+                if (!gameController.Running)
+                {
+                    return;
+                }
+
                 timer += Time.deltaTime;
                 if (timer > spawnInterval)
                 {
