@@ -35,6 +35,8 @@ namespace Game
 
         public bool Running { get; private set; } = false;
 
+        public int Difficulty { get; private set; } = 0;
+
         private async void Awake()
         {
             this.carSpawner = this.GetComponentInChildren<CarSpawner>();
@@ -64,6 +66,15 @@ namespace Game
             {
                 return;
             }
+            if (this.Difficulty < 5)
+            {
+                if (Difficulty < this.ScoreCounter / 20)
+                {
+                    this.Difficulty = (int)this.ScoreCounter / 20;
+                    this.gameUI.ChangeDifficulyDisplay(Difficulty);
+                }
+            }
+
             this.ScoreCounter += Time.deltaTime;
         }
 
@@ -83,7 +94,7 @@ namespace Game
             await World.CreateNewGame();
             Vector3 baseChunkPos = (await World.GetChunk(GameConfig.CHUNK_COUNT / 2, GameConfig.CHUNK_COUNT / 2)).gameObject.transform.position;
             player.gameObject.transform.position = new Vector3(baseChunkPos.x + GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL / 2 + 10, baseChunkPos.y + 2, baseChunkPos.z);
-
+            this.gameUI.ChangeDifficulyDisplay(0);
             this.Running = true;
         }
 

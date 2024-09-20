@@ -25,6 +25,9 @@ public class GameUI : MonoBehaviour
     [SerializeField]
     private TMP_Text InfamyInGameText;
 
+    [SerializeField]
+    private StarHandler starHandler;
+
     private GameController gameController;
 
     private void Update()
@@ -49,6 +52,11 @@ public class GameUI : MonoBehaviour
         mainMenuContainer.SetActive(false);
 
         gameController?.NewGame();
+    }
+
+    public void ChangeDifficulyDisplay(int difficulty)
+    {
+        this.starHandler.ChangeDifficulty(difficulty);
     }
 
     public void ShowEndGameScreen()
