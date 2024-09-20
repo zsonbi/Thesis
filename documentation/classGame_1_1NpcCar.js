@@ -1,4 +1,4 @@
 var classGame_1_1NpcCar =
 [
-    [ "DetermineSteeringDirection", "classGame_1_1NpcCar.html#afa799070532b5440d2dbbfed550453c5", null ]
+    [ "DetermineSteeringDirectionTowardsPlayer", "classGame_1_1NpcCar.html#ac7bf4d022d0601c6262c6ffcfcf80a59", null ]
 ];

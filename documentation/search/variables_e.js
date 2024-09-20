@@ -15,5 +15,8 @@ var searchData=
   ['playerprefab_12',['playerPrefab',['../classGame_1_1GameController.html#a90501b4e974f4698f38d1c6ccc7bd859',1,'Game::GameController']]],
   ['playertask_13',['PlayerTask',['../namespaceThesis__backend_1_1Data__Structures.html#ae656f3c7a1335db8207ae56dcbd213a7',1,'Thesis_backend::Data_Structures']]],
   ['police_5fgame_5fover_14',['POLICE_GAME_OVER',['../classGameConfig.html#af9951f79cdc3576ae67b6f0f4cf3e6dc',1,'GameConfig']]],
-  ['probesize_15',['probeSize',['../classGame_1_1GameController.html#aaeff5e958583d17489b7ab80d45ba19d',1,'Game::GameController']]]
+  ['police_5fraycast_5fforward_5fdistance_15',['POLICE_RAYCAST_FORWARD_DISTANCE',['../classGameConfig.html#ae325d8c437c8eaf798fa3fda571cd263',1,'GameConfig']]],
+  ['police_5fraycast_5fside_5fdistance_16',['POLICE_RAYCAST_SIDE_DISTANCE',['../classGameConfig.html#a9d8dbe4c5809c94baca5d11039198d00',1,'GameConfig']]],
+  ['police_5freverse_5fdistance_17',['POLICE_REVERSE_DISTANCE',['../classGameConfig.html#a9365f48351cb59bba3c9174c6874cc18',1,'GameConfig']]],
+  ['probesize_18',['probeSize',['../classGame_1_1GameController.html#aaeff5e958583d17489b7ab80d45ba19d',1,'Game::GameController']]]
 ];

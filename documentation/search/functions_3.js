@@ -6,7 +6,7 @@ var searchData=
   ['deletetask_3',['DeleteTask',['../classTaskOpenPanelController.html#a20a5400ef991e24a2832a97dceb6e82d',1,'TaskOpenPanelController']]],
   ['despawnfarawaychunks_4',['DespawnFarAwayChunks',['../classGame_1_1GameController.html#a9d697eb362c93e3208af1a5c2385742d',1,'Game::GameController']]],
   ['determineroadtype_5',['DetermineRoadType',['../classGame_1_1World_1_1Chunk.html#a1555876e070101d46bd238aeaa2b8980',1,'Game::World::Chunk']]],
-  ['determinesteeringdirection_6',['DetermineSteeringDirection',['../classGame_1_1NpcCar.html#afa799070532b5440d2dbbfed550453c5',1,'Game::NpcCar']]],
+  ['determinesteeringdirectiontowardsplayer_6',['DetermineSteeringDirectionTowardsPlayer',['../classGame_1_1NpcCar.html#ac7bf4d022d0601c6262c6ffcfcf80a59',1,'Game::NpcCar']]],
   ['determinetiletype_7',['DetermineTileType',['../classGame_1_1World_1_1Chunk.html#ac4b762352bb5f90952fe57e5c0ee208f',1,'Game::World::Chunk']]],
   ['directionfromvector_8',['DirectionFromVector',['../classDirectionConverter.html#a94df088e51f8eb199cc02c4600daad67',1,'DirectionConverter']]],
   ['display_9',['Display',['../classGame_1_1World_1_1Chunk.html#a475512064d145228ca7084735b7e2f2f',1,'Game::World::Chunk']]],

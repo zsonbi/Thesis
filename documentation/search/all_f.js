@@ -28,12 +28,15 @@ var searchData=
   ['playertask_25',['PlayerTask',['../namespaceThesis__backend_1_1Data__Structures.html#ae656f3c7a1335db8207ae56dcbd213a7',1,'Thesis_backend::Data_Structures']]],
   ['playertask_2ecs_26',['PlayerTask.cs',['../PlayerTask_8cs.html',1,'']]],
   ['police_5fgame_5fover_27',['POLICE_GAME_OVER',['../classGameConfig.html#af9951f79cdc3576ae67b6f0f4cf3e6dc',1,'GameConfig']]],
-  ['policecar_28',['PoliceCar',['../classGame_1_1PlayerCar_1_1PoliceContainer.html#aac2693dd8c3d43d842deb9546ad0bb91',1,'Game::PlayerCar::PoliceContainer']]],
-  ['policecontainer_29',['policecontainer',['../classGame_1_1PlayerCar_1_1PoliceContainer.html#a79442268fab7d4bf98066096e9babe84',1,'Game.PlayerCar.PoliceContainer.PoliceContainer()'],['../classGame_1_1PlayerCar_1_1PoliceContainer.html',1,'Game.PlayerCar.PoliceContainer']]],
-  ['pressed_30',['Pressed',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualButton.html#a286f1c4c3001579bf3268312620808e7',1,'UnityStandardAssets::CrossPlatformInput::CrossPlatformInputManager::VirtualButton']]],
-  ['privacy_31',['privacy',['../namespaceThesis__backend_1_1Data__Structures.html#ab6c62166e52fb7c9d5f6d26794a3ce89',1,'Thesis_backend::Data_Structures']]],
-  ['probesize_32',['probeSize',['../classGame_1_1GameController.html#aaeff5e958583d17489b7ab80d45ba19d',1,'Game::GameController']]],
-  ['profilehandler_33',['ProfileHandler',['../classProfileHandler.html',1,'']]],
-  ['profilehandler_2ecs_34',['ProfileHandler.cs',['../ProfileHandler_8cs.html',1,'']]],
-  ['profilepic_35',['ProfilePic',['../namespaceThesis__backend_1_1Data__Structures.html#a05fa93d2eeca2ac0cde9696371d8a263',1,'Thesis_backend::Data_Structures']]]
+  ['police_5fraycast_5fforward_5fdistance_28',['POLICE_RAYCAST_FORWARD_DISTANCE',['../classGameConfig.html#ae325d8c437c8eaf798fa3fda571cd263',1,'GameConfig']]],
+  ['police_5fraycast_5fside_5fdistance_29',['POLICE_RAYCAST_SIDE_DISTANCE',['../classGameConfig.html#a9d8dbe4c5809c94baca5d11039198d00',1,'GameConfig']]],
+  ['police_5freverse_5fdistance_30',['POLICE_REVERSE_DISTANCE',['../classGameConfig.html#a9365f48351cb59bba3c9174c6874cc18',1,'GameConfig']]],
+  ['policecar_31',['PoliceCar',['../classGame_1_1PlayerCar_1_1PoliceContainer.html#aac2693dd8c3d43d842deb9546ad0bb91',1,'Game::PlayerCar::PoliceContainer']]],
+  ['policecontainer_32',['policecontainer',['../classGame_1_1PlayerCar_1_1PoliceContainer.html#a79442268fab7d4bf98066096e9babe84',1,'Game.PlayerCar.PoliceContainer.PoliceContainer()'],['../classGame_1_1PlayerCar_1_1PoliceContainer.html',1,'Game.PlayerCar.PoliceContainer']]],
+  ['pressed_33',['Pressed',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualButton.html#a286f1c4c3001579bf3268312620808e7',1,'UnityStandardAssets::CrossPlatformInput::CrossPlatformInputManager::VirtualButton']]],
+  ['privacy_34',['privacy',['../namespaceThesis__backend_1_1Data__Structures.html#ab6c62166e52fb7c9d5f6d26794a3ce89',1,'Thesis_backend::Data_Structures']]],
+  ['probesize_35',['probeSize',['../classGame_1_1GameController.html#aaeff5e958583d17489b7ab80d45ba19d',1,'Game::GameController']]],
+  ['profilehandler_36',['ProfileHandler',['../classProfileHandler.html',1,'']]],
+  ['profilehandler_2ecs_37',['ProfileHandler.cs',['../ProfileHandler_8cs.html',1,'']]],
+  ['profilepic_38',['ProfilePic',['../namespaceThesis__backend_1_1Data__Structures.html#a05fa93d2eeca2ac0cde9696371d8a263',1,'Thesis_backend::Data_Structures']]]
 ];

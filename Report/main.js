@@ -284,7 +284,7 @@ var assemblies = [
       { "name": "FriendWindowHandler", "rp": "ThesisScripts_FriendWindowHandler.html", "cl": 1, "ucl": 49, "cal": 50, "tl": 89, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.Car", "rp": "ThesisScripts_Car.html", "cl": 0, "ucl": 78, "cal": 78, "tl": 131, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.CarController", "rp": "ThesisScripts_CarController.html", "cl": 0, "ucl": 129, "cal": 129, "tl": 249, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Game.CopCar", "rp": "ThesisScripts_CopCar.html", "cl": 0, "ucl": 10, "cal": 10, "tl": 26, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.CopCar", "rp": "ThesisScripts_CopCar.html", "cl": 0, "ucl": 55, "cal": 55, "tl": 83, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.EnableWheelPhysicMaterial", "rp": "ThesisScripts_EnableWheelPhysicMaterial.html", "cl": 0, "ucl": 16, "cal": 16, "tl": 37, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.GameController", "rp": "ThesisScripts_GameController.html", "cl": 0, "ucl": 95, "cal": 95, "tl": 157, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.NpcCar", "rp": "ThesisScripts_NpcCar.html", "cl": 0, "ucl": 6, "cal": 6, "tl": 19, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
@@ -443,6 +443,13 @@ var riskHotspots = [
       { "value": 11, "exceeded": false },
       { "value": 0, "exceeded": false },
       { "value": 132, "exceeded": true },
+    ]},
+  {
+    "assembly": "ThesisScripts", "class": "Game.CopCar", "reportPath": "ThesisScripts_CopCar.html", "methodName": "System.Void Game.CopCar::Update()", "methodShortName": "Update()", "fileIndex": 0, "line": 12,
+    "metrics": [
+      { "value": 10, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 110, "exceeded": true },
     ]},
   {
     "assembly": "ThesisScripts", "class": "Game.GameController", "reportPath": "ThesisScripts_GameController.html", "methodName": "System.Void Game.GameController::DespawnFarAwayChunks(System.Int32, System.Int32)", "methodShortName": "DespawnFarAwayChunks(...)", "fileIndex": 0, "line": 97,
