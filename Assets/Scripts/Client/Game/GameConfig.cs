@@ -17,4 +17,8 @@ public static class GameConfig
     public const float FIRE_THRESHOLD = 0.2f;
 
     public const float POLICE_GAME_OVER = 3f;
+
+    public const float POLICE_RAYCAST_FORWARD_DISTANCE = 40f;
+    public const float POLICE_RAYCAST_SIDE_DISTANCE = 50f;
+    public const float POLICE_REVERSE_DISTANCE = 20f;
 }

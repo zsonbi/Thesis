@@ -7,7 +7,7 @@ namespace Game
 {
     public class NpcCar : Car
     {
-        public float DetermineSteeringDirection()
+        public float DetermineSteeringDirectionTowardsPlayer()
         {
             Vector3 difference = this.gameController.PlayerPos - this.gameObject.transform.position;
             Quaternion.RotateTowards(Quaternion.LookRotation(difference), this.gameObject.transform.rotation, Time.deltaTime);

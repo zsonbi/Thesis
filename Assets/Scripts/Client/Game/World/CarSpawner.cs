@@ -21,7 +21,7 @@ namespace Game
 
             private float timer = 0;
 
-            private const float spawnInterval = 10f;
+            private const float spawnInterval = 3f;
 
             public void Update()
             {

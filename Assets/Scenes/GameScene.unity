@@ -225,6 +225,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1697880916826380940, guid: 6576b6345999f4646b1cc3991c005084, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 983
+      objectReference: {fileID: 0}
     - target: {fileID: 6183202918527860477, guid: 6576b6345999f4646b1cc3991c005084, type: 3}
       propertyPath: m_Name
       value: Game
@@ -268,10 +272,6 @@ PrefabInstance:
     - target: {fileID: 6470620811567988443, guid: 6576b6345999f4646b1cc3991c005084, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7938088062486608440, guid: 6576b6345999f4646b1cc3991c005084, type: 3}
-      propertyPath: m_ClearFlags
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

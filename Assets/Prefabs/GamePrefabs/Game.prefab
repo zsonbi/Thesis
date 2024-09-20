@@ -172,7 +172,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4238564659489465778}
   - component: {fileID: 7938088062486608440}
-  - component: {fileID: 5905159778581836145}
   m_Layer: 0
   m_Name: UICamera
   m_TagString: Untagged
@@ -208,7 +207,7 @@ Camera:
   m_GameObject: {fileID: 6731935029191962916}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 4
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -250,14 +249,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &5905159778581836145
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6731935029191962916}
-  m_Enabled: 1
 --- !u!1001 &4053607113279396676
 PrefabInstance:
   m_ObjectHideFlags: 0
