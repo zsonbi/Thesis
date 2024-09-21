@@ -7,6 +7,7 @@ var searchData=
   ['carspawner_4',['CarSpawner',['../classGame_1_1World_1_1CarSpawner.html',1,'Game::World']]],
   ['chunk_5',['Chunk',['../classGame_1_1World_1_1Chunk.html',1,'Game::World']]],
   ['chunkcellcontainer_6',['ChunkCellContainer',['../structAssets_1_1Scripts_1_1Client_1_1DataTypes_1_1ChunkCellContainer.html',1,'Assets::Scripts::Client::DataTypes']]],
-  ['copcar_7',['CopCar',['../classGame_1_1CopCar.html',1,'Game']]],
-  ['crossplatforminputmanager_8',['CrossPlatformInputManager',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html',1,'UnityStandardAssets::CrossPlatformInput']]]
+  ['coin_7',['Coin',['../classCoin.html',1,'']]],
+  ['copcar_8',['CopCar',['../classGame_1_1CopCar.html',1,'Game']]],
+  ['crossplatforminputmanager_9',['CrossPlatformInputManager',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html',1,'UnityStandardAssets::CrossPlatformInput']]]
 ];

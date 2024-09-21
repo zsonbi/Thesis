@@ -9,6 +9,7 @@ var searchData=
   ['chunk_2ecs_6',['Chunk.cs',['../Chunk_8cs.html',1,'']]],
   ['chunkcellcontainer_2ecs_7',['ChunkCellContainer.cs',['../ChunkCellContainer_8cs.html',1,'']]],
   ['chunkcelltype_2ecs_8',['ChunkCellType.cs',['../ChunkCellType_8cs.html',1,'']]],
-  ['copcar_2ecs_9',['CopCar.cs',['../CopCar_8cs.html',1,'']]],
-  ['crossplatforminputmanager_2ecs_10',['CrossPlatformInputManager.cs',['../CrossPlatformInputManager_8cs.html',1,'']]]
+  ['coin_2ecs_9',['Coin.cs',['../Coin_8cs.html',1,'']]],
+  ['copcar_2ecs_10',['CopCar.cs',['../CopCar_8cs.html',1,'']]],
+  ['crossplatforminputmanager_2ecs_11',['CrossPlatformInputManager.cs',['../CrossPlatformInputManager_8cs.html',1,'']]]
 ];

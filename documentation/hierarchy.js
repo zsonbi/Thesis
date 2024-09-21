@@ -26,6 +26,7 @@ var hierarchy =
     [ "MonoBehaviour", null, [
       [ "Building", "classBuilding.html", null ],
       [ "CameraScript", "classCameraScript.html", null ],
+      [ "Coin", "classCoin.html", null ],
       [ "EffectScript", "classEffectScript.html", null ],
       [ "FriendHandler", "classFriendHandler.html", null ],
       [ "FriendWindowHandler", "classFriendWindowHandler.html", null ],

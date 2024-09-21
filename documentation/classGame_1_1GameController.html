@@ -108,6 +108,8 @@ Inheritance diagram for Game.GameController:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ae085aab3a6eb97e1ed92c1fc0f1adc7f" id="r_ae085aab3a6eb97e1ed92c1fc0f1adc7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1GameController.html#ae085aab3a6eb97e1ed92c1fc0f1adc7f">IncreaseCoinCount</a> (float amount)</td></tr>
+<tr class="separator:ae085aab3a6eb97e1ed92c1fc0f1adc7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5c50c52cffcab3018ca54be6a421d7f" id="r_af5c50c52cffcab3018ca54be6a421d7f"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1GameController.html#af5c50c52cffcab3018ca54be6a421d7f">NewGame</a> ()</td></tr>
 <tr class="separator:af5c50c52cffcab3018ca54be6a421d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af623e7876622503e3d0f985ad9b08e47" id="r_af623e7876622503e3d0f985ad9b08e47"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1GameController.html#af623e7876622503e3d0f985ad9b08e47">LoadAndDespawnChunks</a> (int centerRow, int centerColumn)</td></tr>
@@ -125,6 +127,8 @@ Properties</h2></td></tr>
 <tr class="separator:a05d01ce3124c9d29e70cdee04539baeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1443617f1270553f41e4569c6b26652d" id="r_a1443617f1270553f41e4569c6b26652d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1GameController.html#a1443617f1270553f41e4569c6b26652d">Difficulty</a> = 0<code> [get, private set]</code></td></tr>
 <tr class="separator:a1443617f1270553f41e4569c6b26652d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a10ceefa02d82a44e9e0763a0e064d1" id="r_a5a10ceefa02d82a44e9e0763a0e064d1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1GameController.html#a5a10ceefa02d82a44e9e0763a0e064d1">Coins</a> = 0<code> [get, private set]</code></td></tr>
+<tr class="separator:a5a10ceefa02d82a44e9e0763a0e064d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -187,25 +191,25 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00040">40</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   41</span>        {</div>
-<div class="line"><span class="lineno">   42</span>            this.carSpawner = this.GetComponentInChildren&lt;CarSpawner&gt;();</div>
-<div class="line"><span class="lineno">   43</span>            <a class="code hl_variable" href="classGame_1_1GameController.html#aec4a7fe16d8f45bbba715971e3e51526">gameUI</a> = this.gameObject.GetComponentInChildren&lt;<a class="code hl_class" href="classGameUI.html">GameUI</a>&gt;();</div>
-<div class="line"><span class="lineno">   44</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1GameController.html#aec4a7fe16d8f45bbba715971e3e51526">gameUI</a> is <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   45</span>            {</div>
-<div class="line"><span class="lineno">   46</span>                Debug.LogError(<span class="stringliteral">&quot;Can&#39;t load the ui&quot;</span>);</div>
-<div class="line"><span class="lineno">   47</span>            }</div>
-<div class="line"><span class="lineno">   48</span>            <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   49</span>            {</div>
-<div class="line"><span class="lineno">   50</span>                <a class="code hl_variable" href="classGame_1_1GameController.html#aec4a7fe16d8f45bbba715971e3e51526">gameUI</a>.<a class="code hl_function" href="classGameUI.html#a86e861e18879f93819ab1feac66f2f22">Init</a>(<span class="keyword">this</span>);</div>
-<div class="line"><span class="lineno">   51</span>            }</div>
-<div class="line"><span class="lineno">   52</span>            <span class="comment">//   await NewGame();</span></div>
-<div class="line"><span class="lineno">   53</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00042">42</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   43</span>        {</div>
+<div class="line"><span class="lineno">   44</span>            this.carSpawner = this.GetComponentInChildren&lt;CarSpawner&gt;();</div>
+<div class="line"><span class="lineno">   45</span>            <a class="code hl_variable" href="classGame_1_1GameController.html#aec4a7fe16d8f45bbba715971e3e51526">gameUI</a> = this.gameObject.GetComponentInChildren&lt;<a class="code hl_class" href="classGameUI.html">GameUI</a>&gt;();</div>
+<div class="line"><span class="lineno">   46</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1GameController.html#aec4a7fe16d8f45bbba715971e3e51526">gameUI</a> is <span class="keyword">null</span>)</div>
+<div class="line"><span class="lineno">   47</span>            {</div>
+<div class="line"><span class="lineno">   48</span>                Debug.LogError(<span class="stringliteral">&quot;Can&#39;t load the ui&quot;</span>);</div>
+<div class="line"><span class="lineno">   49</span>            }</div>
+<div class="line"><span class="lineno">   50</span>            <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   51</span>            {</div>
+<div class="line"><span class="lineno">   52</span>                <a class="code hl_variable" href="classGame_1_1GameController.html#aec4a7fe16d8f45bbba715971e3e51526">gameUI</a>.<a class="code hl_function" href="classGameUI.html#a86e861e18879f93819ab1feac66f2f22">Init</a>(<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">   53</span>            }</div>
+<div class="line"><span class="lineno">   54</span>            <span class="comment">//   await NewGame();</span></div>
+<div class="line"><span class="lineno">   55</span>        }</div>
 <div class="ttc" id="aclassGameUI_html"><div class="ttname"><a href="classGameUI.html">GameUI</a></div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00008">GameUI.cs:9</a></div></div>
-<div class="ttc" id="aclassGameUI_html_a86e861e18879f93819ab1feac66f2f22"><div class="ttname"><a href="classGameUI.html#a86e861e18879f93819ab1feac66f2f22">GameUI.Init</a></div><div class="ttdeci">void Init(GameController gameController)</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00043">GameUI.cs:43</a></div></div>
+<div class="ttc" id="aclassGameUI_html_a86e861e18879f93819ab1feac66f2f22"><div class="ttname"><a href="classGameUI.html#a86e861e18879f93819ab1feac66f2f22">GameUI.Init</a></div><div class="ttdeci">void Init(GameController gameController)</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00050">GameUI.cs:50</a></div></div>
 <div class="ttc" id="aclassGame_1_1GameController_html_aec4a7fe16d8f45bbba715971e3e51526"><div class="ttname"><a href="classGame_1_1GameController.html#aec4a7fe16d8f45bbba715971e3e51526">Game.GameController.gameUI</a></div><div class="ttdeci">GameUI gameUI</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00020">GameController.cs:20</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="GameController_8cs_source.html#l00020">Game.GameController.gameUI</a>, and <a class="el" href="GameUI_8cs_source.html#l00043">GameUI.Init()</a>.</p>
+<p class="reference">References <a class="el" href="GameController_8cs_source.html#l00020">Game.GameController.gameUI</a>, and <a class="el" href="GameUI_8cs_source.html#l00050">GameUI.Init()</a>.</p>
 
 </div>
 </div>
@@ -232,13 +236,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00055">55</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   56</span>        {</div>
-<div class="line"><span class="lineno">   57</span>            <span class="comment">//player = Instantiate(playerPrefab).GetComponent&lt;PlayerCar&gt;();</span></div>
-<div class="line"><span class="lineno">   58</span> </div>
-<div class="line"><span class="lineno">   59</span>            Application.targetFrameRate = 60;</div>
-<div class="line"><span class="lineno">   60</span>            QualitySettings.vSyncCount = 0;</div>
-<div class="line"><span class="lineno">   61</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00057">57</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>        {</div>
+<div class="line"><span class="lineno">   59</span>            <span class="comment">//player = Instantiate(playerPrefab).GetComponent&lt;PlayerCar&gt;();</span></div>
+<div class="line"><span class="lineno">   60</span> </div>
+<div class="line"><span class="lineno">   61</span>            Application.targetFrameRate = 60;</div>
+<div class="line"><span class="lineno">   62</span>            QualitySettings.vSyncCount = 0;</div>
+<div class="line"><span class="lineno">   63</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -265,30 +269,61 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00063">63</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   64</span>        {</div>
-<div class="line"><span class="lineno">   65</span>            <span class="keywordflow">if</span> (!<a class="code hl_property" href="classGame_1_1GameController.html#a05d01ce3124c9d29e70cdee04539baeb">Running</a>)</div>
-<div class="line"><span class="lineno">   66</span>            {</div>
-<div class="line"><span class="lineno">   67</span>                <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   68</span>            }</div>
-<div class="line"><span class="lineno">   69</span>            <span class="keywordflow">if</span> (this.<a class="code hl_property" href="classGame_1_1GameController.html#a1443617f1270553f41e4569c6b26652d">Difficulty</a> &lt; 5)</div>
-<div class="line"><span class="lineno">   70</span>            {</div>
-<div class="line"><span class="lineno">   71</span>                <span class="keywordflow">if</span> (<a class="code hl_property" href="classGame_1_1GameController.html#a1443617f1270553f41e4569c6b26652d">Difficulty</a> &lt; this.<a class="code hl_variable" href="classGame_1_1GameController.html#aefe69ae4f272fa03c90f236f5e9f472e">ScoreCounter</a> / 20)</div>
-<div class="line"><span class="lineno">   72</span>                {</div>
-<div class="line"><span class="lineno">   73</span>                    this.Difficulty = (int)this.<a class="code hl_variable" href="classGame_1_1GameController.html#aefe69ae4f272fa03c90f236f5e9f472e">ScoreCounter</a> / 20;</div>
-<div class="line"><span class="lineno">   74</span>                    this.<a class="code hl_variable" href="classGame_1_1GameController.html#aec4a7fe16d8f45bbba715971e3e51526">gameUI</a>.<a class="code hl_function" href="classGameUI.html#a30b34140ea9e733d314e461ba9087d04">ChangeDifficulyDisplay</a>(<a class="code hl_property" href="classGame_1_1GameController.html#a1443617f1270553f41e4569c6b26652d">Difficulty</a>);</div>
-<div class="line"><span class="lineno">   75</span>                }</div>
-<div class="line"><span class="lineno">   76</span>            }</div>
-<div class="line"><span class="lineno">   77</span> </div>
-<div class="line"><span class="lineno">   78</span>            this.ScoreCounter += Time.deltaTime;</div>
-<div class="line"><span class="lineno">   79</span>        }</div>
-<div class="ttc" id="aclassGameUI_html_a30b34140ea9e733d314e461ba9087d04"><div class="ttname"><a href="classGameUI.html#a30b34140ea9e733d314e461ba9087d04">GameUI.ChangeDifficulyDisplay</a></div><div class="ttdeci">void ChangeDifficulyDisplay(int difficulty)</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00057">GameUI.cs:57</a></div></div>
+<p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00065">65</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   66</span>        {</div>
+<div class="line"><span class="lineno">   67</span>            <span class="keywordflow">if</span> (!<a class="code hl_property" href="classGame_1_1GameController.html#a05d01ce3124c9d29e70cdee04539baeb">Running</a>)</div>
+<div class="line"><span class="lineno">   68</span>            {</div>
+<div class="line"><span class="lineno">   69</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   70</span>            }</div>
+<div class="line"><span class="lineno">   71</span>            <span class="keywordflow">if</span> (this.<a class="code hl_property" href="classGame_1_1GameController.html#a1443617f1270553f41e4569c6b26652d">Difficulty</a> &lt; 5)</div>
+<div class="line"><span class="lineno">   72</span>            {</div>
+<div class="line"><span class="lineno">   73</span>                <span class="keywordflow">if</span> (<a class="code hl_property" href="classGame_1_1GameController.html#a1443617f1270553f41e4569c6b26652d">Difficulty</a> &lt; this.<a class="code hl_variable" href="classGame_1_1GameController.html#aefe69ae4f272fa03c90f236f5e9f472e">ScoreCounter</a> / 20)</div>
+<div class="line"><span class="lineno">   74</span>                {</div>
+<div class="line"><span class="lineno">   75</span>                    this.Difficulty = (int)this.<a class="code hl_variable" href="classGame_1_1GameController.html#aefe69ae4f272fa03c90f236f5e9f472e">ScoreCounter</a> / 20;</div>
+<div class="line"><span class="lineno">   76</span>                    this.<a class="code hl_variable" href="classGame_1_1GameController.html#aec4a7fe16d8f45bbba715971e3e51526">gameUI</a>.<a class="code hl_function" href="classGameUI.html#a30b34140ea9e733d314e461ba9087d04">ChangeDifficulyDisplay</a>(<a class="code hl_property" href="classGame_1_1GameController.html#a1443617f1270553f41e4569c6b26652d">Difficulty</a>);</div>
+<div class="line"><span class="lineno">   77</span>                }</div>
+<div class="line"><span class="lineno">   78</span>            }</div>
+<div class="line"><span class="lineno">   79</span> </div>
+<div class="line"><span class="lineno">   80</span>            this.ScoreCounter += Time.deltaTime;</div>
+<div class="line"><span class="lineno">   81</span>        }</div>
+<div class="ttc" id="aclassGameUI_html_a30b34140ea9e733d314e461ba9087d04"><div class="ttname"><a href="classGameUI.html#a30b34140ea9e733d314e461ba9087d04">GameUI.ChangeDifficulyDisplay</a></div><div class="ttdeci">void ChangeDifficulyDisplay(int difficulty)</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00064">GameUI.cs:64</a></div></div>
 <div class="ttc" id="aclassGame_1_1GameController_html_a05d01ce3124c9d29e70cdee04539baeb"><div class="ttname"><a href="classGame_1_1GameController.html#a05d01ce3124c9d29e70cdee04539baeb">Game.GameController.Running</a></div><div class="ttdeci">bool Running</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00036">GameController.cs:36</a></div></div>
 <div class="ttc" id="aclassGame_1_1GameController_html_a1443617f1270553f41e4569c6b26652d"><div class="ttname"><a href="classGame_1_1GameController.html#a1443617f1270553f41e4569c6b26652d">Game.GameController.Difficulty</a></div><div class="ttdeci">int Difficulty</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00038">GameController.cs:38</a></div></div>
 <div class="ttc" id="aclassGame_1_1GameController_html_aefe69ae4f272fa03c90f236f5e9f472e"><div class="ttname"><a href="classGame_1_1GameController.html#aefe69ae4f272fa03c90f236f5e9f472e">Game.GameController.ScoreCounter</a></div><div class="ttdeci">float ScoreCounter</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00026">GameController.cs:26</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="GameUI_8cs_source.html#l00057">GameUI.ChangeDifficulyDisplay()</a>, <a class="el" href="GameController_8cs_source.html#l00038">Game.GameController.Difficulty</a>, and <a class="el" href="GameController_8cs_source.html#l00036">Game.GameController.Running</a>.</p>
+<p class="reference">References <a class="el" href="GameUI_8cs_source.html#l00064">GameUI.ChangeDifficulyDisplay()</a>, <a class="el" href="GameController_8cs_source.html#l00038">Game.GameController.Difficulty</a>, and <a class="el" href="GameController_8cs_source.html#l00036">Game.GameController.Running</a>.</p>
 
+</div>
+</div>
+<a id="ae085aab3a6eb97e1ed92c1fc0f1adc7f" name="ae085aab3a6eb97e1ed92c1fc0f1adc7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae085aab3a6eb97e1ed92c1fc0f1adc7f">&#9670;&#160;</a></span>IncreaseCoinCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game.GameController.IncreaseCoinCount </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>amount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00083">83</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   84</span>        {</div>
+<div class="line"><span class="lineno">   85</span>            this.Coins += amount;</div>
+<div class="line"><span class="lineno">   86</span>        }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4ee6ddd9c52134a0bb30c3c0a7bef350" name="a4ee6ddd9c52134a0bb30c3c0a7bef350"></a>
@@ -325,16 +360,16 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00081">81</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   82</span>        {</div>
-<div class="line"><span class="lineno">   83</span>            this.<a class="code hl_variable" href="classGame_1_1GameController.html#aec4a7fe16d8f45bbba715971e3e51526">gameUI</a>.<a class="code hl_function" href="classGameUI.html#a83ab06ae8fd90932efe340c29537a4e5">ShowEndGameScreen</a>();</div>
-<div class="line"><span class="lineno">   84</span>            <a class="code hl_property" href="classGame_1_1GameController.html#a05d01ce3124c9d29e70cdee04539baeb">Running</a> = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   85</span>        }</div>
-<div class="ttc" id="aclassGameUI_html_a83ab06ae8fd90932efe340c29537a4e5"><div class="ttname"><a href="classGameUI.html#a83ab06ae8fd90932efe340c29537a4e5">GameUI.ShowEndGameScreen</a></div><div class="ttdeci">void ShowEndGameScreen()</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00062">GameUI.cs:62</a></div></div>
+<p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00088">88</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   89</span>        {</div>
+<div class="line"><span class="lineno">   90</span>            this.<a class="code hl_variable" href="classGame_1_1GameController.html#aec4a7fe16d8f45bbba715971e3e51526">gameUI</a>.<a class="code hl_function" href="classGameUI.html#a83ab06ae8fd90932efe340c29537a4e5">ShowEndGameScreen</a>();</div>
+<div class="line"><span class="lineno">   91</span>            <a class="code hl_property" href="classGame_1_1GameController.html#a05d01ce3124c9d29e70cdee04539baeb">Running</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   92</span>        }</div>
+<div class="ttc" id="aclassGameUI_html_a83ab06ae8fd90932efe340c29537a4e5"><div class="ttname"><a href="classGameUI.html#a83ab06ae8fd90932efe340c29537a4e5">GameUI.ShowEndGameScreen</a></div><div class="ttdeci">void ShowEndGameScreen()</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00069">GameUI.cs:69</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="GameController_8cs_source.html#l00036">Game.GameController.Running</a>, and <a class="el" href="GameUI_8cs_source.html#l00062">GameUI.ShowEndGameScreen()</a>.</p>
+<p class="reference">References <a class="el" href="GameController_8cs_source.html#l00036">Game.GameController.Running</a>, and <a class="el" href="GameUI_8cs_source.html#l00069">GameUI.ShowEndGameScreen()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00087">Game.GameController.NewGame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00094">Game.GameController.NewGame()</a>.</p>
 
 </div>
 </div>
@@ -361,19 +396,20 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00087">87</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   88</span>        {</div>
-<div class="line"><span class="lineno">   89</span>            <a class="code hl_variable" href="classGame_1_1GameController.html#a1153aac7245a1c82e4f40877519ffa0a">player</a> = Instantiate(<a class="code hl_variable" href="classGame_1_1GameController.html#a90501b4e974f4698f38d1c6ccc7bd859">playerPrefab</a>, this.transform).GetComponent&lt;PlayerCar&gt;();</div>
-<div class="line"><span class="lineno">   90</span>            <a class="code hl_variable" href="classGame_1_1GameController.html#a1153aac7245a1c82e4f40877519ffa0a">player</a>.Init(<span class="keyword">this</span>);</div>
-<div class="line"><span class="lineno">   91</span>            player.DestroyedEvent += <a class="code hl_function" href="classGame_1_1GameController.html#a4ee6ddd9c52134a0bb30c3c0a7bef350">PlayerDied</a>;</div>
-<div class="line"><span class="lineno">   92</span>            this.<a class="code hl_variable" href="classGame_1_1GameController.html#a0de72291f83213c5c510b414eb9d6375">carSpawner</a>.<a class="code hl_function" href="classGame_1_1World_1_1CarSpawner.html#a9ca9f4dfd1b63d182f23c9f630b54463">Reset</a>();</div>
-<div class="line"><span class="lineno">   93</span>            this.Score = 0;</div>
-<div class="line"><span class="lineno">   94</span>            await <a class="code hl_property" href="classGame_1_1GameController.html#ae490910e1402d5777d9aa387023a433b">World</a>.<a class="code hl_function" href="classGame_1_1World_1_1GameWorld.html#a5bc9140bbdf4b45f229d4e900db98d9b">CreateNewGame</a>();</div>
-<div class="line"><span class="lineno">   95</span>            Vector3 baseChunkPos = (await <a class="code hl_property" href="classGame_1_1GameController.html#ae490910e1402d5777d9aa387023a433b">World</a>.<a class="code hl_function" href="classGame_1_1World_1_1GameWorld.html#a78654137c458c1b1917285e28d3d270b">GetChunk</a>(<a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a> / 2, <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a> / 2)).gameObject.transform.position;</div>
-<div class="line"><span class="lineno">   96</span>            player.gameObject.transform.position = <span class="keyword">new</span> Vector3(baseChunkPos.x + <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#a767e83ea60cba2fff6d2c7faccf4890d">CHUNK_SIZE</a> * <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#a28c600fb4f244669276b23704ada46ee">CHUNK_SCALE</a> * <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#a915ac5cd4099430ccc48cea1f4876c4b">CHUNK_CELL</a> / 2 + 10, baseChunkPos.y + 2, baseChunkPos.z);</div>
-<div class="line"><span class="lineno">   97</span>            this.<a class="code hl_variable" href="classGame_1_1GameController.html#aec4a7fe16d8f45bbba715971e3e51526">gameUI</a>.<a class="code hl_function" href="classGameUI.html#a30b34140ea9e733d314e461ba9087d04">ChangeDifficulyDisplay</a>(0);</div>
-<div class="line"><span class="lineno">   98</span>            this.Running = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   99</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00094">94</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   95</span>        {</div>
+<div class="line"><span class="lineno">   96</span>            <a class="code hl_variable" href="classGame_1_1GameController.html#a1153aac7245a1c82e4f40877519ffa0a">player</a> = Instantiate(<a class="code hl_variable" href="classGame_1_1GameController.html#a90501b4e974f4698f38d1c6ccc7bd859">playerPrefab</a>, this.transform).GetComponent&lt;PlayerCar&gt;();</div>
+<div class="line"><span class="lineno">   97</span>            <a class="code hl_variable" href="classGame_1_1GameController.html#a1153aac7245a1c82e4f40877519ffa0a">player</a>.Init(<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">   98</span>            player.DestroyedEvent += <a class="code hl_function" href="classGame_1_1GameController.html#a4ee6ddd9c52134a0bb30c3c0a7bef350">PlayerDied</a>;</div>
+<div class="line"><span class="lineno">   99</span>            this.<a class="code hl_variable" href="classGame_1_1GameController.html#a0de72291f83213c5c510b414eb9d6375">carSpawner</a>.<a class="code hl_function" href="classGame_1_1World_1_1CarSpawner.html#a9ca9f4dfd1b63d182f23c9f630b54463">Reset</a>();</div>
+<div class="line"><span class="lineno">  100</span>            this.Score = 0;</div>
+<div class="line"><span class="lineno">  101</span>            await <a class="code hl_property" href="classGame_1_1GameController.html#ae490910e1402d5777d9aa387023a433b">World</a>.<a class="code hl_function" href="classGame_1_1World_1_1GameWorld.html#a5bc9140bbdf4b45f229d4e900db98d9b">CreateNewGame</a>();</div>
+<div class="line"><span class="lineno">  102</span>            Vector3 baseChunkPos = (await <a class="code hl_property" href="classGame_1_1GameController.html#ae490910e1402d5777d9aa387023a433b">World</a>.<a class="code hl_function" href="classGame_1_1World_1_1GameWorld.html#a78654137c458c1b1917285e28d3d270b">GetChunk</a>(<a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a> / 2, <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a> / 2)).gameObject.transform.position;</div>
+<div class="line"><span class="lineno">  103</span>            player.gameObject.transform.position = <span class="keyword">new</span> Vector3(baseChunkPos.x + <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#a767e83ea60cba2fff6d2c7faccf4890d">CHUNK_SIZE</a> * <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#a28c600fb4f244669276b23704ada46ee">CHUNK_SCALE</a> * <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#a915ac5cd4099430ccc48cea1f4876c4b">CHUNK_CELL</a> / 2 + 10, baseChunkPos.y + 2, baseChunkPos.z);</div>
+<div class="line"><span class="lineno">  104</span>            this.<a class="code hl_variable" href="classGame_1_1GameController.html#aec4a7fe16d8f45bbba715971e3e51526">gameUI</a>.<a class="code hl_function" href="classGameUI.html#a30b34140ea9e733d314e461ba9087d04">ChangeDifficulyDisplay</a>(0);</div>
+<div class="line"><span class="lineno">  105</span>            this.Running = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  106</span>            this.Coins = 0;</div>
+<div class="line"><span class="lineno">  107</span>        }</div>
 <div class="ttc" id="aclassGameConfig_html"><div class="ttname"><a href="classGameConfig.html">GameConfig</a></div><div class="ttdef"><b>Definition</b> <a href="GameConfig_8cs_source.html#l00001">GameConfig.cs:2</a></div></div>
 <div class="ttc" id="aclassGameConfig_html_a28c600fb4f244669276b23704ada46ee"><div class="ttname"><a href="classGameConfig.html#a28c600fb4f244669276b23704ada46ee">GameConfig.CHUNK_SCALE</a></div><div class="ttdeci">const float CHUNK_SCALE</div><div class="ttdef"><b>Definition</b> <a href="GameConfig_8cs_source.html#l00009">GameConfig.cs:9</a></div></div>
 <div class="ttc" id="aclassGameConfig_html_a767e83ea60cba2fff6d2c7faccf4890d"><div class="ttname"><a href="classGameConfig.html#a767e83ea60cba2fff6d2c7faccf4890d">GameConfig.CHUNK_SIZE</a></div><div class="ttdeci">const int CHUNK_SIZE</div><div class="ttdef"><b>Definition</b> <a href="GameConfig_8cs_source.html#l00003">GameConfig.cs:3</a></div></div>
@@ -381,16 +417,16 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="aclassGameConfig_html_afa2ddc4407f1664515de38348aadd1f7"><div class="ttname"><a href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">GameConfig.CHUNK_COUNT</a></div><div class="ttdeci">const int CHUNK_COUNT</div><div class="ttdef"><b>Definition</b> <a href="GameConfig_8cs_source.html#l00005">GameConfig.cs:5</a></div></div>
 <div class="ttc" id="aclassGame_1_1GameController_html_a0de72291f83213c5c510b414eb9d6375"><div class="ttname"><a href="classGame_1_1GameController.html#a0de72291f83213c5c510b414eb9d6375">Game.GameController.carSpawner</a></div><div class="ttdeci">CarSpawner carSpawner</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00028">GameController.cs:28</a></div></div>
 <div class="ttc" id="aclassGame_1_1GameController_html_a1153aac7245a1c82e4f40877519ffa0a"><div class="ttname"><a href="classGame_1_1GameController.html#a1153aac7245a1c82e4f40877519ffa0a">Game.GameController.player</a></div><div class="ttdeci">PlayerCar player</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00032">GameController.cs:32</a></div></div>
-<div class="ttc" id="aclassGame_1_1GameController_html_a4ee6ddd9c52134a0bb30c3c0a7bef350"><div class="ttname"><a href="classGame_1_1GameController.html#a4ee6ddd9c52134a0bb30c3c0a7bef350">Game.GameController.PlayerDied</a></div><div class="ttdeci">void PlayerDied(object? sender, EventArgs args)</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00081">GameController.cs:81</a></div></div>
+<div class="ttc" id="aclassGame_1_1GameController_html_a4ee6ddd9c52134a0bb30c3c0a7bef350"><div class="ttname"><a href="classGame_1_1GameController.html#a4ee6ddd9c52134a0bb30c3c0a7bef350">Game.GameController.PlayerDied</a></div><div class="ttdeci">void PlayerDied(object? sender, EventArgs args)</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00088">GameController.cs:88</a></div></div>
 <div class="ttc" id="aclassGame_1_1GameController_html_a90501b4e974f4698f38d1c6ccc7bd859"><div class="ttname"><a href="classGame_1_1GameController.html#a90501b4e974f4698f38d1c6ccc7bd859">Game.GameController.playerPrefab</a></div><div class="ttdeci">GameObject playerPrefab</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00015">GameController.cs:15</a></div></div>
 <div class="ttc" id="aclassGame_1_1GameController_html_ae490910e1402d5777d9aa387023a433b"><div class="ttname"><a href="classGame_1_1GameController.html#ae490910e1402d5777d9aa387023a433b">Game.GameController.World</a></div><div class="ttdeci">World.GameWorld World</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00023">GameController.cs:24</a></div></div>
 <div class="ttc" id="aclassGame_1_1World_1_1CarSpawner_html_a9ca9f4dfd1b63d182f23c9f630b54463"><div class="ttname"><a href="classGame_1_1World_1_1CarSpawner.html#a9ca9f4dfd1b63d182f23c9f630b54463">Game.World.CarSpawner.Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdef"><b>Definition</b> <a href="CarSpawner_8cs_source.html#l00067">CarSpawner.cs:67</a></div></div>
 <div class="ttc" id="aclassGame_1_1World_1_1GameWorld_html_a5bc9140bbdf4b45f229d4e900db98d9b"><div class="ttname"><a href="classGame_1_1World_1_1GameWorld.html#a5bc9140bbdf4b45f229d4e900db98d9b">Game.World.GameWorld.CreateNewGame</a></div><div class="ttdeci">async Task CreateNewGame()</div><div class="ttdef"><b>Definition</b> <a href="World_8cs_source.html#l00041">World.cs:41</a></div></div>
 <div class="ttc" id="aclassGame_1_1World_1_1GameWorld_html_a78654137c458c1b1917285e28d3d270b"><div class="ttname"><a href="classGame_1_1World_1_1GameWorld.html#a78654137c458c1b1917285e28d3d270b">Game.World.GameWorld.GetChunk</a></div><div class="ttdeci">Chunk GetChunk(Vector3 GameObjectPos)</div><div class="ttdef"><b>Definition</b> <a href="World_8cs_source.html#l00030">World.cs:30</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="GameUI_8cs_source.html#l00057">GameUI.ChangeDifficulyDisplay()</a>, <a class="el" href="GameConfig_8cs_source.html#l00007">GameConfig.CHUNK_CELL</a>, <a class="el" href="GameConfig_8cs_source.html#l00005">GameConfig.CHUNK_COUNT</a>, <a class="el" href="GameConfig_8cs_source.html#l00009">GameConfig.CHUNK_SCALE</a>, <a class="el" href="GameConfig_8cs_source.html#l00003">GameConfig.CHUNK_SIZE</a>, <a class="el" href="World_8cs_source.html#l00041">Game.World.GameWorld.CreateNewGame()</a>, <a class="el" href="World_8cs_source.html#l00030">Game.World.GameWorld.GetChunk()</a>, <a class="el" href="GameController_8cs_source.html#l00032">Game.GameController.player</a>, <a class="el" href="GameController_8cs_source.html#l00081">Game.GameController.PlayerDied()</a>, <a class="el" href="GameController_8cs_source.html#l00015">Game.GameController.playerPrefab</a>, <a class="el" href="CarSpawner_8cs_source.html#l00067">Game.World.CarSpawner.Reset()</a>, and <a class="el" href="GameController_8cs_source.html#l00024">Game.GameController.World</a>.</p>
+<p class="reference">References <a class="el" href="GameUI_8cs_source.html#l00064">GameUI.ChangeDifficulyDisplay()</a>, <a class="el" href="GameConfig_8cs_source.html#l00007">GameConfig.CHUNK_CELL</a>, <a class="el" href="GameConfig_8cs_source.html#l00005">GameConfig.CHUNK_COUNT</a>, <a class="el" href="GameConfig_8cs_source.html#l00009">GameConfig.CHUNK_SCALE</a>, <a class="el" href="GameConfig_8cs_source.html#l00003">GameConfig.CHUNK_SIZE</a>, <a class="el" href="World_8cs_source.html#l00041">Game.World.GameWorld.CreateNewGame()</a>, <a class="el" href="World_8cs_source.html#l00030">Game.World.GameWorld.GetChunk()</a>, <a class="el" href="GameController_8cs_source.html#l00032">Game.GameController.player</a>, <a class="el" href="GameController_8cs_source.html#l00088">Game.GameController.PlayerDied()</a>, <a class="el" href="GameController_8cs_source.html#l00015">Game.GameController.playerPrefab</a>, <a class="el" href="CarSpawner_8cs_source.html#l00067">Game.World.CarSpawner.Reset()</a>, and <a class="el" href="GameController_8cs_source.html#l00024">Game.GameController.World</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameUI_8cs_source.html#l00048">GameUI.NewGame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameUI_8cs_source.html#l00055">GameUI.NewGame()</a>.</p>
 
 </div>
 </div>
@@ -428,15 +464,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00101">101</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  102</span>        {</div>
-<div class="line"><span class="lineno">  103</span>            await <a class="code hl_function" href="classGame_1_1GameController.html#a2003e53e493cca6ace00e260e7161a03">SpawnNearbyChunks</a>(centerRow, centerColumn);</div>
-<div class="line"><span class="lineno">  104</span>            <a class="code hl_function" href="classGame_1_1GameController.html#a9d697eb362c93e3208af1a5c2385742d">DespawnFarAwayChunks</a>(centerRow, centerColumn);</div>
-<div class="line"><span class="lineno">  105</span>        }</div>
-<div class="ttc" id="aclassGame_1_1GameController_html_a2003e53e493cca6ace00e260e7161a03"><div class="ttname"><a href="classGame_1_1GameController.html#a2003e53e493cca6ace00e260e7161a03">Game.GameController.SpawnNearbyChunks</a></div><div class="ttdeci">async Task SpawnNearbyChunks(int row, int col)</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00127">GameController.cs:127</a></div></div>
-<div class="ttc" id="aclassGame_1_1GameController_html_a9d697eb362c93e3208af1a5c2385742d"><div class="ttname"><a href="classGame_1_1GameController.html#a9d697eb362c93e3208af1a5c2385742d">Game.GameController.DespawnFarAwayChunks</a></div><div class="ttdeci">void DespawnFarAwayChunks(int row, int col)</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00107">GameController.cs:107</a></div></div>
+<p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00109">109</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  110</span>        {</div>
+<div class="line"><span class="lineno">  111</span>            await <a class="code hl_function" href="classGame_1_1GameController.html#a2003e53e493cca6ace00e260e7161a03">SpawnNearbyChunks</a>(centerRow, centerColumn);</div>
+<div class="line"><span class="lineno">  112</span>            <a class="code hl_function" href="classGame_1_1GameController.html#a9d697eb362c93e3208af1a5c2385742d">DespawnFarAwayChunks</a>(centerRow, centerColumn);</div>
+<div class="line"><span class="lineno">  113</span>        }</div>
+<div class="ttc" id="aclassGame_1_1GameController_html_a2003e53e493cca6ace00e260e7161a03"><div class="ttname"><a href="classGame_1_1GameController.html#a2003e53e493cca6ace00e260e7161a03">Game.GameController.SpawnNearbyChunks</a></div><div class="ttdeci">async Task SpawnNearbyChunks(int row, int col)</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00135">GameController.cs:135</a></div></div>
+<div class="ttc" id="aclassGame_1_1GameController_html_a9d697eb362c93e3208af1a5c2385742d"><div class="ttname"><a href="classGame_1_1GameController.html#a9d697eb362c93e3208af1a5c2385742d">Game.GameController.DespawnFarAwayChunks</a></div><div class="ttdeci">void DespawnFarAwayChunks(int row, int col)</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00115">GameController.cs:115</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="GameController_8cs_source.html#l00107">Game.GameController.DespawnFarAwayChunks()</a>, and <a class="el" href="GameController_8cs_source.html#l00127">Game.GameController.SpawnNearbyChunks()</a>.</p>
+<p class="reference">References <a class="el" href="GameController_8cs_source.html#l00115">Game.GameController.DespawnFarAwayChunks()</a>, and <a class="el" href="GameController_8cs_source.html#l00135">Game.GameController.SpawnNearbyChunks()</a>.</p>
 
 </div>
 </div>
@@ -474,32 +510,32 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00107">107</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  108</span>        {</div>
-<div class="line"><span class="lineno">  109</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = -(<a class="code hl_variable" href="classGame_1_1GameController.html#aaeff5e958583d17489b7ab80d45ba19d">probeSize</a> + 1); i &lt;= <a class="code hl_variable" href="classGame_1_1GameController.html#aaeff5e958583d17489b7ab80d45ba19d">probeSize</a> + 1; i++)</div>
-<div class="line"><span class="lineno">  110</span>            {</div>
-<div class="line"><span class="lineno">  111</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = -(<a class="code hl_variable" href="classGame_1_1GameController.html#aaeff5e958583d17489b7ab80d45ba19d">probeSize</a> + 1); j &lt;= <a class="code hl_variable" href="classGame_1_1GameController.html#aaeff5e958583d17489b7ab80d45ba19d">probeSize</a> + 1; j++)</div>
-<div class="line"><span class="lineno">  112</span>                {</div>
-<div class="line"><span class="lineno">  113</span>                    <span class="keywordflow">if</span> (Mathf.Abs(i) &lt;= <a class="code hl_variable" href="classGame_1_1GameController.html#aaeff5e958583d17489b7ab80d45ba19d">probeSize</a> &amp;&amp; Mathf.Abs(j) &lt;= <a class="code hl_variable" href="classGame_1_1GameController.html#aaeff5e958583d17489b7ab80d45ba19d">probeSize</a>)</div>
-<div class="line"><span class="lineno">  114</span>                    {</div>
-<div class="line"><span class="lineno">  115</span>                        <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  116</span>                    }</div>
-<div class="line"><span class="lineno">  117</span> </div>
-<div class="line"><span class="lineno">  118</span>                    <span class="keywordflow">if</span> (i + row &gt;= 0 &amp;&amp; j + col &gt;= 0 &amp;&amp; i + row &lt; <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a> &amp;&amp; j + col &lt; <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a>)</div>
-<div class="line"><span class="lineno">  119</span>                    {</div>
-<div class="line"><span class="lineno">  120</span>                        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1GameController.html#a9edcc4224cf73fc093ea0a29b6bda19a">world</a> is not <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">  121</span>                            <a class="code hl_variable" href="classGame_1_1GameController.html#a9edcc4224cf73fc093ea0a29b6bda19a">world</a>.<a class="code hl_function" href="classGame_1_1World_1_1GameWorld.html#ae827c1689140d8e00bfbd0845822793f">HideChunk</a>(j + col, i + row);</div>
-<div class="line"><span class="lineno">  122</span>                    }</div>
-<div class="line"><span class="lineno">  123</span>                }</div>
-<div class="line"><span class="lineno">  124</span>            }</div>
-<div class="line"><span class="lineno">  125</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00115">115</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  116</span>        {</div>
+<div class="line"><span class="lineno">  117</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = -(<a class="code hl_variable" href="classGame_1_1GameController.html#aaeff5e958583d17489b7ab80d45ba19d">probeSize</a> + 1); i &lt;= <a class="code hl_variable" href="classGame_1_1GameController.html#aaeff5e958583d17489b7ab80d45ba19d">probeSize</a> + 1; i++)</div>
+<div class="line"><span class="lineno">  118</span>            {</div>
+<div class="line"><span class="lineno">  119</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = -(<a class="code hl_variable" href="classGame_1_1GameController.html#aaeff5e958583d17489b7ab80d45ba19d">probeSize</a> + 1); j &lt;= <a class="code hl_variable" href="classGame_1_1GameController.html#aaeff5e958583d17489b7ab80d45ba19d">probeSize</a> + 1; j++)</div>
+<div class="line"><span class="lineno">  120</span>                {</div>
+<div class="line"><span class="lineno">  121</span>                    <span class="keywordflow">if</span> (Mathf.Abs(i) &lt;= <a class="code hl_variable" href="classGame_1_1GameController.html#aaeff5e958583d17489b7ab80d45ba19d">probeSize</a> &amp;&amp; Mathf.Abs(j) &lt;= <a class="code hl_variable" href="classGame_1_1GameController.html#aaeff5e958583d17489b7ab80d45ba19d">probeSize</a>)</div>
+<div class="line"><span class="lineno">  122</span>                    {</div>
+<div class="line"><span class="lineno">  123</span>                        <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  124</span>                    }</div>
+<div class="line"><span class="lineno">  125</span> </div>
+<div class="line"><span class="lineno">  126</span>                    <span class="keywordflow">if</span> (i + row &gt;= 0 &amp;&amp; j + col &gt;= 0 &amp;&amp; i + row &lt; <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a> &amp;&amp; j + col &lt; <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a>)</div>
+<div class="line"><span class="lineno">  127</span>                    {</div>
+<div class="line"><span class="lineno">  128</span>                        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1GameController.html#a9edcc4224cf73fc093ea0a29b6bda19a">world</a> is not <span class="keyword">null</span>)</div>
+<div class="line"><span class="lineno">  129</span>                            <a class="code hl_variable" href="classGame_1_1GameController.html#a9edcc4224cf73fc093ea0a29b6bda19a">world</a>.<a class="code hl_function" href="classGame_1_1World_1_1GameWorld.html#ae827c1689140d8e00bfbd0845822793f">HideChunk</a>(j + col, i + row);</div>
+<div class="line"><span class="lineno">  130</span>                    }</div>
+<div class="line"><span class="lineno">  131</span>                }</div>
+<div class="line"><span class="lineno">  132</span>            }</div>
+<div class="line"><span class="lineno">  133</span>        }</div>
 <div class="ttc" id="aclassGame_1_1GameController_html_a9edcc4224cf73fc093ea0a29b6bda19a"><div class="ttname"><a href="classGame_1_1GameController.html#a9edcc4224cf73fc093ea0a29b6bda19a">Game.GameController.world</a></div><div class="ttdeci">World.GameWorld world</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00012">GameController.cs:12</a></div></div>
 <div class="ttc" id="aclassGame_1_1GameController_html_aaeff5e958583d17489b7ab80d45ba19d"><div class="ttname"><a href="classGame_1_1GameController.html#aaeff5e958583d17489b7ab80d45ba19d">Game.GameController.probeSize</a></div><div class="ttdeci">int probeSize</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00018">GameController.cs:18</a></div></div>
 <div class="ttc" id="aclassGame_1_1World_1_1GameWorld_html_ae827c1689140d8e00bfbd0845822793f"><div class="ttname"><a href="classGame_1_1World_1_1GameWorld.html#ae827c1689140d8e00bfbd0845822793f">Game.World.GameWorld.HideChunk</a></div><div class="ttdeci">void HideChunk(int x, int z)</div><div class="ttdef"><b>Definition</b> <a href="World_8cs_source.html#l00099">World.cs:99</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="GameConfig_8cs_source.html#l00005">GameConfig.CHUNK_COUNT</a>, <a class="el" href="World_8cs_source.html#l00099">Game.World.GameWorld.HideChunk()</a>, <a class="el" href="GameController_8cs_source.html#l00018">Game.GameController.probeSize</a>, and <a class="el" href="GameController_8cs_source.html#l00012">Game.GameController.world</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00101">Game.GameController.LoadAndDespawnChunks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00109">Game.GameController.LoadAndDespawnChunks()</a>.</p>
 
 </div>
 </div>
@@ -537,41 +573,41 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00127">127</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  128</span>        {</div>
-<div class="line"><span class="lineno">  129</span>            await <a class="code hl_function" href="classGame_1_1GameController.html#a9818f49a9c0638be6cc6449e5e5000f7">ValidateAndLoadChunk</a>(row, col);</div>
-<div class="line"><span class="lineno">  130</span> </div>
-<div class="line"><span class="lineno">  131</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> currSize = 1; currSize &lt;= <a class="code hl_variable" href="classGame_1_1GameController.html#aaeff5e958583d17489b7ab80d45ba19d">probeSize</a>; currSize++)</div>
-<div class="line"><span class="lineno">  132</span>            {</div>
-<div class="line"><span class="lineno">  133</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0 - currSize; x &lt;= 0 + currSize; x += currSize * 2)</div>
-<div class="line"><span class="lineno">  134</span>                {</div>
-<div class="line"><span class="lineno">  135</span>                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt;= currSize - 1; y++)</div>
-<div class="line"><span class="lineno">  136</span>                    {</div>
-<div class="line"><span class="lineno">  137</span>                        await <a class="code hl_function" href="classGame_1_1GameController.html#a9818f49a9c0638be6cc6449e5e5000f7">ValidateAndLoadChunk</a>(row + y, col + x);</div>
-<div class="line"><span class="lineno">  138</span>                        await <a class="code hl_function" href="classGame_1_1GameController.html#a9818f49a9c0638be6cc6449e5e5000f7">ValidateAndLoadChunk</a>(row - y, col + x);</div>
-<div class="line"><span class="lineno">  139</span>                    }</div>
-<div class="line"><span class="lineno">  140</span>                }</div>
-<div class="line"><span class="lineno">  141</span> </div>
-<div class="line"><span class="lineno">  142</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0 - currSize; y &lt;= 0 + currSize; y += currSize * 2)</div>
-<div class="line"><span class="lineno">  143</span>                {</div>
-<div class="line"><span class="lineno">  144</span>                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt;= currSize - 1; x++)</div>
-<div class="line"><span class="lineno">  145</span>                    {</div>
-<div class="line"><span class="lineno">  146</span>                        await <a class="code hl_function" href="classGame_1_1GameController.html#a9818f49a9c0638be6cc6449e5e5000f7">ValidateAndLoadChunk</a>(row + y, col + x);</div>
-<div class="line"><span class="lineno">  147</span>                        await <a class="code hl_function" href="classGame_1_1GameController.html#a9818f49a9c0638be6cc6449e5e5000f7">ValidateAndLoadChunk</a>(row + y, col - x);</div>
-<div class="line"><span class="lineno">  148</span>                    }</div>
-<div class="line"><span class="lineno">  149</span>                }</div>
-<div class="line"><span class="lineno">  150</span> </div>
-<div class="line"><span class="lineno">  151</span>                await <a class="code hl_function" href="classGame_1_1GameController.html#a9818f49a9c0638be6cc6449e5e5000f7">ValidateAndLoadChunk</a>(row + currSize, col + currSize);</div>
-<div class="line"><span class="lineno">  152</span>                await <a class="code hl_function" href="classGame_1_1GameController.html#a9818f49a9c0638be6cc6449e5e5000f7">ValidateAndLoadChunk</a>(row - currSize, col - currSize);</div>
-<div class="line"><span class="lineno">  153</span>                await <a class="code hl_function" href="classGame_1_1GameController.html#a9818f49a9c0638be6cc6449e5e5000f7">ValidateAndLoadChunk</a>(row + currSize, col - currSize);</div>
-<div class="line"><span class="lineno">  154</span>                await <a class="code hl_function" href="classGame_1_1GameController.html#a9818f49a9c0638be6cc6449e5e5000f7">ValidateAndLoadChunk</a>(row - currSize, col + currSize);</div>
-<div class="line"><span class="lineno">  155</span>            }</div>
-<div class="line"><span class="lineno">  156</span>        }</div>
-<div class="ttc" id="aclassGame_1_1GameController_html_a9818f49a9c0638be6cc6449e5e5000f7"><div class="ttname"><a href="classGame_1_1GameController.html#a9818f49a9c0638be6cc6449e5e5000f7">Game.GameController.ValidateAndLoadChunk</a></div><div class="ttdeci">async Task ValidateAndLoadChunk(int row, int col)</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00158">GameController.cs:158</a></div></div>
+<p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00135">135</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  136</span>        {</div>
+<div class="line"><span class="lineno">  137</span>            await <a class="code hl_function" href="classGame_1_1GameController.html#a9818f49a9c0638be6cc6449e5e5000f7">ValidateAndLoadChunk</a>(row, col);</div>
+<div class="line"><span class="lineno">  138</span> </div>
+<div class="line"><span class="lineno">  139</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> currSize = 1; currSize &lt;= <a class="code hl_variable" href="classGame_1_1GameController.html#aaeff5e958583d17489b7ab80d45ba19d">probeSize</a>; currSize++)</div>
+<div class="line"><span class="lineno">  140</span>            {</div>
+<div class="line"><span class="lineno">  141</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0 - currSize; x &lt;= 0 + currSize; x += currSize * 2)</div>
+<div class="line"><span class="lineno">  142</span>                {</div>
+<div class="line"><span class="lineno">  143</span>                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt;= currSize - 1; y++)</div>
+<div class="line"><span class="lineno">  144</span>                    {</div>
+<div class="line"><span class="lineno">  145</span>                        await <a class="code hl_function" href="classGame_1_1GameController.html#a9818f49a9c0638be6cc6449e5e5000f7">ValidateAndLoadChunk</a>(row + y, col + x);</div>
+<div class="line"><span class="lineno">  146</span>                        await <a class="code hl_function" href="classGame_1_1GameController.html#a9818f49a9c0638be6cc6449e5e5000f7">ValidateAndLoadChunk</a>(row - y, col + x);</div>
+<div class="line"><span class="lineno">  147</span>                    }</div>
+<div class="line"><span class="lineno">  148</span>                }</div>
+<div class="line"><span class="lineno">  149</span> </div>
+<div class="line"><span class="lineno">  150</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0 - currSize; y &lt;= 0 + currSize; y += currSize * 2)</div>
+<div class="line"><span class="lineno">  151</span>                {</div>
+<div class="line"><span class="lineno">  152</span>                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt;= currSize - 1; x++)</div>
+<div class="line"><span class="lineno">  153</span>                    {</div>
+<div class="line"><span class="lineno">  154</span>                        await <a class="code hl_function" href="classGame_1_1GameController.html#a9818f49a9c0638be6cc6449e5e5000f7">ValidateAndLoadChunk</a>(row + y, col + x);</div>
+<div class="line"><span class="lineno">  155</span>                        await <a class="code hl_function" href="classGame_1_1GameController.html#a9818f49a9c0638be6cc6449e5e5000f7">ValidateAndLoadChunk</a>(row + y, col - x);</div>
+<div class="line"><span class="lineno">  156</span>                    }</div>
+<div class="line"><span class="lineno">  157</span>                }</div>
+<div class="line"><span class="lineno">  158</span> </div>
+<div class="line"><span class="lineno">  159</span>                await <a class="code hl_function" href="classGame_1_1GameController.html#a9818f49a9c0638be6cc6449e5e5000f7">ValidateAndLoadChunk</a>(row + currSize, col + currSize);</div>
+<div class="line"><span class="lineno">  160</span>                await <a class="code hl_function" href="classGame_1_1GameController.html#a9818f49a9c0638be6cc6449e5e5000f7">ValidateAndLoadChunk</a>(row - currSize, col - currSize);</div>
+<div class="line"><span class="lineno">  161</span>                await <a class="code hl_function" href="classGame_1_1GameController.html#a9818f49a9c0638be6cc6449e5e5000f7">ValidateAndLoadChunk</a>(row + currSize, col - currSize);</div>
+<div class="line"><span class="lineno">  162</span>                await <a class="code hl_function" href="classGame_1_1GameController.html#a9818f49a9c0638be6cc6449e5e5000f7">ValidateAndLoadChunk</a>(row - currSize, col + currSize);</div>
+<div class="line"><span class="lineno">  163</span>            }</div>
+<div class="line"><span class="lineno">  164</span>        }</div>
+<div class="ttc" id="aclassGame_1_1GameController_html_a9818f49a9c0638be6cc6449e5e5000f7"><div class="ttname"><a href="classGame_1_1GameController.html#a9818f49a9c0638be6cc6449e5e5000f7">Game.GameController.ValidateAndLoadChunk</a></div><div class="ttdeci">async Task ValidateAndLoadChunk(int row, int col)</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00166">GameController.cs:166</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="GameController_8cs_source.html#l00018">Game.GameController.probeSize</a>, and <a class="el" href="GameController_8cs_source.html#l00158">Game.GameController.ValidateAndLoadChunk()</a>.</p>
+<p class="reference">References <a class="el" href="GameController_8cs_source.html#l00018">Game.GameController.probeSize</a>, and <a class="el" href="GameController_8cs_source.html#l00166">Game.GameController.ValidateAndLoadChunk()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00101">Game.GameController.LoadAndDespawnChunks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00109">Game.GameController.LoadAndDespawnChunks()</a>.</p>
 
 </div>
 </div>
@@ -609,20 +645,20 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00158">158</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  159</span>        {</div>
-<div class="line"><span class="lineno">  160</span>            <span class="keywordflow">if</span> (row &lt; 0 || row &gt;= <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a> || col &lt; 0 || col &gt;= <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a>)</div>
-<div class="line"><span class="lineno">  161</span>            {</div>
-<div class="line"><span class="lineno">  162</span>                <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  163</span>            }</div>
-<div class="line"><span class="lineno">  164</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1GameController.html#a9edcc4224cf73fc093ea0a29b6bda19a">world</a> is not <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">  165</span>                await <a class="code hl_variable" href="classGame_1_1GameController.html#a9edcc4224cf73fc093ea0a29b6bda19a">world</a>.<a class="code hl_function" href="classGame_1_1World_1_1GameWorld.html#a730e116826e3519544de155b667042ba">LoadChunk</a>(col, row);</div>
-<div class="line"><span class="lineno">  166</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00166">166</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  167</span>        {</div>
+<div class="line"><span class="lineno">  168</span>            <span class="keywordflow">if</span> (row &lt; 0 || row &gt;= <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a> || col &lt; 0 || col &gt;= <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#afa2ddc4407f1664515de38348aadd1f7">CHUNK_COUNT</a>)</div>
+<div class="line"><span class="lineno">  169</span>            {</div>
+<div class="line"><span class="lineno">  170</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  171</span>            }</div>
+<div class="line"><span class="lineno">  172</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1GameController.html#a9edcc4224cf73fc093ea0a29b6bda19a">world</a> is not <span class="keyword">null</span>)</div>
+<div class="line"><span class="lineno">  173</span>                await <a class="code hl_variable" href="classGame_1_1GameController.html#a9edcc4224cf73fc093ea0a29b6bda19a">world</a>.<a class="code hl_function" href="classGame_1_1World_1_1GameWorld.html#a730e116826e3519544de155b667042ba">LoadChunk</a>(col, row);</div>
+<div class="line"><span class="lineno">  174</span>        }</div>
 <div class="ttc" id="aclassGame_1_1World_1_1GameWorld_html_a730e116826e3519544de155b667042ba"><div class="ttname"><a href="classGame_1_1World_1_1GameWorld.html#a730e116826e3519544de155b667042ba">Game.World.GameWorld.LoadChunk</a></div><div class="ttdeci">async Task LoadChunk(int x, int z)</div><div class="ttdoc">Loads a chunk.</div><div class="ttdef"><b>Definition</b> <a href="World_8cs_source.html#l00068">World.cs:68</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="GameConfig_8cs_source.html#l00005">GameConfig.CHUNK_COUNT</a>, <a class="el" href="World_8cs_source.html#l00068">Game.World.GameWorld.LoadChunk()</a>, and <a class="el" href="GameController_8cs_source.html#l00012">Game.GameController.world</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00127">Game.GameController.SpawnNearbyChunks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00135">Game.GameController.SpawnNearbyChunks()</a>.</p>
 
 </div>
 </div>
@@ -649,7 +685,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00012">12</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00107">Game.GameController.DespawnFarAwayChunks()</a>, and <a class="el" href="GameController_8cs_source.html#l00158">Game.GameController.ValidateAndLoadChunk()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00115">Game.GameController.DespawnFarAwayChunks()</a>, and <a class="el" href="GameController_8cs_source.html#l00166">Game.GameController.ValidateAndLoadChunk()</a>.</p>
 
 </div>
 </div>
@@ -675,7 +711,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00015">15</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00087">Game.GameController.NewGame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00094">Game.GameController.NewGame()</a>.</p>
 
 </div>
 </div>
@@ -701,7 +737,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00018">18</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00107">Game.GameController.DespawnFarAwayChunks()</a>, and <a class="el" href="GameController_8cs_source.html#l00127">Game.GameController.SpawnNearbyChunks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00115">Game.GameController.DespawnFarAwayChunks()</a>, and <a class="el" href="GameController_8cs_source.html#l00135">Game.GameController.SpawnNearbyChunks()</a>.</p>
 
 </div>
 </div>
@@ -727,7 +763,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00020">20</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00040">Game.GameController.Awake()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00042">Game.GameController.Awake()</a>.</p>
 
 </div>
 </div>
@@ -801,7 +837,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00032">32</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00087">Game.GameController.NewGame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00094">Game.GameController.NewGame()</a>.</p>
 
 </div>
 </div>
@@ -829,7 +865,7 @@ Private Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00023">23</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   24</span>{ <span class="keyword">get</span> =&gt; <a class="code hl_variable" href="classGame_1_1GameController.html#a9edcc4224cf73fc093ea0a29b6bda19a">world</a>; <span class="keyword">private</span> <span class="keyword">set</span> =&gt; <a class="code hl_variable" href="classGame_1_1GameController.html#a9edcc4224cf73fc093ea0a29b6bda19a">world</a> = value; }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="Car_8cs_source.html#l00045">Game.Car.ChangeChunkIfNeeded()</a>, <a class="el" href="GameController_8cs_source.html#l00087">Game.GameController.NewGame()</a>, and <a class="el" href="CarSpawner_8cs_source.html#l00058">Game.World.CarSpawner.SpawnPolice()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Car_8cs_source.html#l00045">Game.Car.ChangeChunkIfNeeded()</a>, <a class="el" href="GameController_8cs_source.html#l00094">Game.GameController.NewGame()</a>, and <a class="el" href="CarSpawner_8cs_source.html#l00058">Game.World.CarSpawner.SpawnPolice()</a>.</p>
 
 </div>
 </div>
@@ -856,7 +892,7 @@ Private Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00030">30</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   30</span>{ <span class="keyword">get</span> =&gt; Mathf.RoundToInt(<a class="code hl_variable" href="classGame_1_1GameController.html#aefe69ae4f272fa03c90f236f5e9f472e">ScoreCounter</a>); <span class="keyword">private</span> <span class="keyword">set</span> =&gt; <a class="code hl_variable" href="classGame_1_1GameController.html#aefe69ae4f272fa03c90f236f5e9f472e">ScoreCounter</a> = value; }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="GameUI_8cs_source.html#l00062">GameUI.ShowEndGameScreen()</a>, and <a class="el" href="GameUI_8cs_source.html#l00033">GameUI.Update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameUI_8cs_source.html#l00069">GameUI.ShowEndGameScreen()</a>, and <a class="el" href="GameUI_8cs_source.html#l00039">GameUI.Update()</a>.</p>
 
 </div>
 </div>
@@ -909,7 +945,7 @@ Private Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00036">36</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   36</span>{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; } = <span class="keyword">false</span>;</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00081">Game.GameController.PlayerDied()</a>, <a class="el" href="CameraScript_8cs_source.html#l00019">CameraScript.Update()</a>, <a class="el" href="GameController_8cs_source.html#l00063">Game.GameController.Update()</a>, <a class="el" href="GameUI_8cs_source.html#l00033">GameUI.Update()</a>, and <a class="el" href="CarSpawner_8cs_source.html#l00030">Game.World.CarSpawner.Update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00088">Game.GameController.PlayerDied()</a>, <a class="el" href="CameraScript_8cs_source.html#l00019">CameraScript.Update()</a>, <a class="el" href="GameController_8cs_source.html#l00065">Game.GameController.Update()</a>, <a class="el" href="GameUI_8cs_source.html#l00039">GameUI.Update()</a>, and <a class="el" href="CarSpawner_8cs_source.html#l00030">Game.World.CarSpawner.Update()</a>.</p>
 
 </div>
 </div>
@@ -936,7 +972,34 @@ Private Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00038">38</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   38</span>{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; } = 0;</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00063">Game.GameController.Update()</a>, and <a class="el" href="CarSpawner_8cs_source.html#l00030">Game.World.CarSpawner.Update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00065">Game.GameController.Update()</a>, and <a class="el" href="CarSpawner_8cs_source.html#l00030">Game.World.CarSpawner.Update()</a>.</p>
+
+</div>
+</div>
+<a id="a5a10ceefa02d82a44e9e0763a0e064d1" name="a5a10ceefa02d82a44e9e0763a0e064d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a10ceefa02d82a44e9e0763a0e064d1">&#9670;&#160;</a></span>Coins</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Game.GameController.Coins = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">private set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="GameController_8cs_source.html#l00040">40</a> of file <a class="el" href="GameController_8cs_source.html">GameController.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; } = 0;</div>
+</div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="GameUI_8cs_source.html#l00069">GameUI.ShowEndGameScreen()</a>, and <a class="el" href="GameUI_8cs_source.html#l00039">GameUI.Update()</a>.</p>
 
 </div>
 </div>

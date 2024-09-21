@@ -56,6 +56,7 @@ var annotated_dup =
     ] ],
     [ "Building", "classBuilding.html", "classBuilding" ],
     [ "CameraScript", "classCameraScript.html", "classCameraScript" ],
+    [ "Coin", "classCoin.html", "classCoin" ],
     [ "DirectionConverter", "classDirectionConverter.html", "classDirectionConverter" ],
     [ "EdgeRoadContainer", "classEdgeRoadContainer.html", "classEdgeRoadContainer" ],
     [ "EffectScript", "classEffectScript.html", "classEffectScript" ],

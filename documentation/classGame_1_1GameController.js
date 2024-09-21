@@ -3,6 +3,7 @@ var classGame_1_1GameController =
     [ "Awake", "classGame_1_1GameController.html#a72ac9aa223ee085e0bd2d660466a494a", null ],
     [ "Start", "classGame_1_1GameController.html#a1d3159c95407370de0809d00266a6a20", null ],
     [ "Update", "classGame_1_1GameController.html#ac7bf604631786f89b01d5313ad796b8b", null ],
+    [ "IncreaseCoinCount", "classGame_1_1GameController.html#ae085aab3a6eb97e1ed92c1fc0f1adc7f", null ],
     [ "PlayerDied", "classGame_1_1GameController.html#a4ee6ddd9c52134a0bb30c3c0a7bef350", null ],
     [ "NewGame", "classGame_1_1GameController.html#af5c50c52cffcab3018ca54be6a421d7f", null ],
     [ "LoadAndDespawnChunks", "classGame_1_1GameController.html#af623e7876622503e3d0f985ad9b08e47", null ],
@@ -20,5 +21,6 @@ var classGame_1_1GameController =
     [ "Score", "classGame_1_1GameController.html#a110137fc8dd59568f1df0e13951e7940", null ],
     [ "PlayerPos", "classGame_1_1GameController.html#aeb425ec760007866c0ea8882d64a3171", null ],
     [ "Running", "classGame_1_1GameController.html#a05d01ce3124c9d29e70cdee04539baeb", null ],
-    [ "Difficulty", "classGame_1_1GameController.html#a1443617f1270553f41e4569c6b26652d", null ]
+    [ "Difficulty", "classGame_1_1GameController.html#a1443617f1270553f41e4569c6b26652d", null ],
+    [ "Coins", "classGame_1_1GameController.html#a5a10ceefa02d82a44e9e0763a0e064d1", null ]
 ];

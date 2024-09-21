@@ -26,6 +26,7 @@ var classGame_1_1World_1_1Chunk =
     [ "threeWayRoadPrefab", "classGame_1_1World_1_1Chunk.html#a50fb8bf02e6fe0f1aed259fd03e25c29", null ],
     [ "crossRoadsPrefab", "classGame_1_1World_1_1Chunk.html#a7abecf4e7c8c6ef8a164e24731f843ac", null ],
     [ "grassPrefab", "classGame_1_1World_1_1Chunk.html#afcf6bf6be6ba7bdb0f870f6bb60af90d", null ],
+    [ "coinPrefab", "classGame_1_1World_1_1Chunk.html#a4df8985ce56e237e5fe57939f86419b3", null ],
     [ "buildings", "classGame_1_1World_1_1Chunk.html#a383aef6b54e3e575c1865fa019cfaa07", null ],
     [ "chunkCells", "classGame_1_1World_1_1Chunk.html#aa628279d377ce42de2f8c1bfe08f921f", null ],
     [ "roadGenerator", "classGame_1_1World_1_1Chunk.html#a6177a02fdbf5c1b5f31085368ec44c88", null ],
