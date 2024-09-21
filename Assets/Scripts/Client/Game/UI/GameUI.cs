@@ -14,7 +14,7 @@ public class GameUI : MonoBehaviour
     private GameObject ingameContainer;
 
     [SerializeField]
-    private GameObject shopContainer;
+    private ShopWindow ShopWindow;
 
     [SerializeField]
     private GameObject mainMenuContainer;
@@ -41,7 +41,7 @@ public class GameUI : MonoBehaviour
         if (gameController.Running)
         {
             this.InfamyInGameText.text = "Infamy: " + gameController.Score;
-            this.CoinInGameText.text = "Coins: " + Mathf.RoundToInt(gameController.Coins);
+            this.CoinInGameText.text = Mathf.RoundToInt(gameController.Coins).ToString();
         }
     }
 
@@ -81,8 +81,14 @@ public class GameUI : MonoBehaviour
         CanDouble = true;
     }
 
-    public void ShowShop()
+    public void ShowShopWindow()
     {
+        this.ShopWindow.gameObject.SetActive(true);
+    }
+
+    public void HideShopWindow()
+    {
+        this.ShopWindow.gameObject.SetActive(false);
     }
 
     public void BackToTasks()

@@ -74,5 +74,7 @@ namespace Config
         /// Needs to be already logged in and the task's "id"
         /// </summary>
         public static string PATHFORTASKDELETE(long id) => SERVERPATH + $"/api/Tasks/{id}";
+
+        public const string PATH_FOR_SHOP_GET_ALL = SERVERPATH + "/api/Shop/GetAll";
     }
 }
