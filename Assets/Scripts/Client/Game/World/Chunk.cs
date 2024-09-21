@@ -46,7 +46,10 @@ namespace Game
             [SerializeField]
             public GameObject grassPrefab;
 
-            public List<Building> buildings;
+            [SerializeField]
+            public GameObject coinPrefab;
+
+            private List<Building> buildings;
 
             /// <summary>
             /// The size of the world on the z axis
@@ -294,6 +297,12 @@ namespace Game
                             if (tileType.Orientation != Vector3.zero)
                                 created.transform.Rotate(tileType.Orientation);
                         }
+                        if (roadGenerator.RoadMatrix[z, x] && Random.Range(0f, 1f) <= GameConfig.COIN_RATE)
+                        {
+                            Coin coin = Instantiate(coinPrefab, created.transform).GetComponent<Coin>();
+                            coin.gameObject.transform.position = new Vector3(x * 32, created.transform.localPosition.y + 3, z * 32);
+                        }
+
                         if (!objectsToCombine.ContainsKey(tileType.Type))
                         {
                             objectsToCombine.Add(tileType.Type, new List<GameObject>());
