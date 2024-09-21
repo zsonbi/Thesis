@@ -430,12 +430,20 @@ PrefabInstance:
       objectReference: {fileID: 4416725613737383521}
     - target: {fileID: 5944533888646792174, guid: a7da432015eff4f468cea51a4979b5fd, type: 3}
       propertyPath: CopCars.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5944533888646792174, guid: a7da432015eff4f468cea51a4979b5fd, type: 3}
       propertyPath: CopCars.Array.data[0]
       value: 
       objectReference: {fileID: 161566, guid: 1c44499667174e6458ca6f9aa852f054, type: 3}
+    - target: {fileID: 5944533888646792174, guid: a7da432015eff4f468cea51a4979b5fd, type: 3}
+      propertyPath: CopCars.Array.data[1]
+      value: 
+      objectReference: {fileID: 161566, guid: f0d2a0e754ff1dd48a5848b0ec4494f9, type: 3}
+    - target: {fileID: 5944533888646792174, guid: a7da432015eff4f468cea51a4979b5fd, type: 3}
+      propertyPath: CopCars.Array.data[2]
+      value: 
+      objectReference: {fileID: 161566, guid: d46f2d35e5d96f64b8f83cde009f08cd, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
