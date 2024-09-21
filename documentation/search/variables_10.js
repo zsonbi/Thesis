@@ -12,6 +12,10 @@ var searchData=
   ['showpending_9',['showPending',['../classFriendWindowHandler.html#a995816a4d5c11cca060a0c34688a0b43',1,'FriendWindowHandler']]],
   ['size_10',['size',['../classGame_1_1World_1_1RoadGenerator.html#a3790c6d7db157b46eccff1e06fd8ca89',1,'Game::World::RoadGenerator']]],
   ['smoke_5fthreshold_11',['SMOKE_THRESHOLD',['../classGameConfig.html#aaa4c6f88644eeb0a06821ca198931d12',1,'GameConfig']]],
-  ['spawninterval_12',['spawnInterval',['../classGame_1_1World_1_1CarSpawner.html#a8a8c7d30161c6cc94e7b92038abc965a',1,'Game::World::CarSpawner']]],
-  ['straightroadprefab_13',['straightRoadPrefab',['../classGame_1_1World_1_1Chunk.html#add690b20dc02d37c97bd78c4a257d065',1,'Game::World::Chunk']]]
+  ['spawnintervalstier1_12',['spawnIntervalsTier1',['../classGame_1_1World_1_1CarSpawner.html#a5bef35ae7b6ec689a427e1a82a56a568',1,'Game::World::CarSpawner']]],
+  ['spawnintervalstier2_13',['spawnIntervalsTier2',['../classGame_1_1World_1_1CarSpawner.html#ae30100f5c4e5a3a209fac6fa01664846',1,'Game::World::CarSpawner']]],
+  ['spawnintervalstier3_14',['spawnIntervalsTier3',['../classGame_1_1World_1_1CarSpawner.html#aa4b605aa319424b2d4a33b565a64b1c6',1,'Game::World::CarSpawner']]],
+  ['starhandler_15',['starHandler',['../classGameUI.html#ac84a5b6b36b87b3be0a5ea1379a7431f',1,'GameUI']]],
+  ['stars_16',['Stars',['../classStarHandler.html#ad7b3412a5e6b5859621cc32652e4a6ff',1,'StarHandler']]],
+  ['straightroadprefab_17',['straightRoadPrefab',['../classGame_1_1World_1_1Chunk.html#add690b20dc02d37c97bd78c4a257d065',1,'Game::World::Chunk']]]
 ];

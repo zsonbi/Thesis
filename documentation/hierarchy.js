@@ -44,6 +44,7 @@ var hierarchy =
       [ "GameUI", "classGameUI.html", null ],
       [ "ModalWindow", "classModalWindow.html", null ],
       [ "ProfileHandler", "classProfileHandler.html", null ],
+      [ "StarHandler", "classStarHandler.html", null ],
       [ "TaskDisplayHandler", "classTaskDisplayHandler.html", null ],
       [ "TaskOpenPanelController", "classTaskOpenPanelController.html", null ],
       [ "UIController", "classUIController.html", null ],

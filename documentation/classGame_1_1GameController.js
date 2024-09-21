@@ -19,5 +19,6 @@ var classGame_1_1GameController =
     [ "World", "classGame_1_1GameController.html#ae490910e1402d5777d9aa387023a433b", null ],
     [ "Score", "classGame_1_1GameController.html#a110137fc8dd59568f1df0e13951e7940", null ],
     [ "PlayerPos", "classGame_1_1GameController.html#aeb425ec760007866c0ea8882d64a3171", null ],
-    [ "Running", "classGame_1_1GameController.html#a05d01ce3124c9d29e70cdee04539baeb", null ]
+    [ "Running", "classGame_1_1GameController.html#a05d01ce3124c9d29e70cdee04539baeb", null ],
+    [ "Difficulty", "classGame_1_1GameController.html#a1443617f1270553f41e4569c6b26652d", null ]
 ];

@@ -15,5 +15,6 @@ var searchData=
   ['friendscontainer_12',['FriendsContainer',['../classFriendWindowHandler.html#a7427725cbd2e3d3561a799f3dfd9f5d5',1,'FriendWindowHandler']]],
   ['friendwindowhandler_13',['FriendWindowHandler',['../classFriendWindowHandler.html',1,'']]],
   ['friendwindowhandler_2ecs_14',['FriendWindowHandler.cs',['../FriendWindowHandler_8cs.html',1,'']]],
-  ['fulltiltangle_15',['fullTiltAngle',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput.html#a92a6ef18b52f2409658b7a50037ac831',1,'UnityStandardAssets::CrossPlatformInput::TiltInput']]]
+  ['fullstarsprite_15',['fullStarSprite',['../classStarHandler.html#afa5b6a434226e09ea3893bd39e9c68ac',1,'StarHandler']]],
+  ['fulltiltangle_16',['fullTiltAngle',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput.html#a92a6ef18b52f2409658b7a50037ac831',1,'UnityStandardAssets::CrossPlatformInput::TiltInput']]]
 ];

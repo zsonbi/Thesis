@@ -3,6 +3,7 @@ var classGameUI =
     [ "Update", "classGameUI.html#ae1af03e7079adfabff38492498ea0980", null ],
     [ "Init", "classGameUI.html#a86e861e18879f93819ab1feac66f2f22", null ],
     [ "NewGame", "classGameUI.html#a88d56b428f2ea9ce739552a4a0bbec2f", null ],
+    [ "ChangeDifficulyDisplay", "classGameUI.html#a30b34140ea9e733d314e461ba9087d04", null ],
     [ "ShowEndGameScreen", "classGameUI.html#a83ab06ae8fd90932efe340c29537a4e5", null ],
     [ "HideGameOverScreen", "classGameUI.html#a10aedf7439a9bb7bae657b39b4182c8a", null ],
     [ "ShowShop", "classGameUI.html#a27c821c0a656739e3b7ec2ab0f5c84a9", null ],
@@ -15,6 +16,7 @@ var classGameUI =
     [ "mainMenuContainer", "classGameUI.html#aa76f74d7c8679b04e74043f6e18474e9", null ],
     [ "InfamyGameOverText", "classGameUI.html#aa8e76e961829a93e64faeb9e5f65c6bb", null ],
     [ "InfamyInGameText", "classGameUI.html#a98156491737508882846fa4f9b4ee2de", null ],
+    [ "starHandler", "classGameUI.html#ac84a5b6b36b87b3be0a5ea1379a7431f", null ],
     [ "gameController", "classGameUI.html#a932f4df2bb1e985095ca6ff0427d9cf7", null ],
     [ "CanDouble", "classGameUI.html#a5f52697db99b66d5bb27979372cb2a5c", null ]
 ];

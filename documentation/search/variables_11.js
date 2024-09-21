@@ -12,8 +12,10 @@ var searchData=
   ['tasks_9',['tasks',['../classUIController.html#a0f6d191fc05b2463ae19052164b18030',1,'UIController']]],
   ['tasksopenpanel_10',['tasksOpenPanel',['../classTaskOpenPanelController.html#a5296f8a4492644b074eb63257d82ddec',1,'TaskOpenPanelController']]],
   ['threewayroadprefab_11',['threeWayRoadPrefab',['../classGame_1_1World_1_1Chunk.html#a50fb8bf02e6fe0f1aed259fd03e25c29',1,'Game::World::Chunk']]],
-  ['tiltaroundaxis_12',['tiltAroundAxis',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput.html#ad83fbef4affa001aab207586dd91e2e7',1,'UnityStandardAssets::CrossPlatformInput::TiltInput']]],
-  ['timer_13',['timer',['../classGame_1_1World_1_1CarSpawner.html#a563614c1c52a824da81cbeac0cd6f438',1,'Game::World::CarSpawner']]],
-  ['timereamaining_14',['TimeReamaining',['../classGame_1_1PlayerCar_1_1PoliceContainer.html#a531bbac045cd1299035956978a10f63b',1,'Game::PlayerCar::PoliceContainer']]],
-  ['type_15',['type',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput_1_1AxisMapping.html#aba5d982b878f8b4e15867b731782ed63',1,'UnityStandardAssets::CrossPlatformInput::TiltInput::AxisMapping']]]
+  ['tier1spawnertimer_12',['tier1SpawnerTimer',['../classGame_1_1World_1_1CarSpawner.html#a23d129767331ac8528e9a46c2d197c8a',1,'Game::World::CarSpawner']]],
+  ['tier2spawnertimer_13',['tier2SpawnerTimer',['../classGame_1_1World_1_1CarSpawner.html#a1003d6d74287406eb601b6d9d0e360c7',1,'Game::World::CarSpawner']]],
+  ['tier3spawnertimer_14',['tier3SpawnerTimer',['../classGame_1_1World_1_1CarSpawner.html#a93141b0627ec47b261909bcfa78b0291',1,'Game::World::CarSpawner']]],
+  ['tiltaroundaxis_15',['tiltAroundAxis',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput.html#ad83fbef4affa001aab207586dd91e2e7',1,'UnityStandardAssets::CrossPlatformInput::TiltInput']]],
+  ['timereamaining_16',['TimeReamaining',['../classGame_1_1PlayerCar_1_1PoliceContainer.html#a531bbac045cd1299035956978a10f63b',1,'Game::PlayerCar::PoliceContainer']]],
+  ['type_17',['type',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput_1_1AxisMapping.html#aba5d982b878f8b4e15867b731782ed63',1,'UnityStandardAssets::CrossPlatformInput::TiltInput::AxisMapping']]]
 ];

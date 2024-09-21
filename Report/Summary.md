@@ -1,21 +1,21 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 09/20/2024 - 14:42:45 |
+| Generated on: | 09/21/2024 - 13:16:28 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 4 |
-| Classes: | 91 |
-| Files: | 89 |
-| Covered lines: | 257 |
-| Uncovered lines: | 4249 |
-| Coverable lines: | 4506 |
-| Total lines: | 9010 |
-| Line coverage: | 5.7% (257 of 4506) |
+| Classes: | 94 |
+| Files: | 92 |
+| Covered lines: | 260 |
+| Uncovered lines: | 4298 |
+| Coverable lines: | 4558 |
+| Total lines: | 9111 |
+| Line coverage: | 5.7% (260 of 4558) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 110 |
-| Total methods: | 784 |
-| Method coverage: | 14% (110 of 784) |
+| Covered methods: | 116 |
+| Total methods: | 811 |
+| Method coverage: | 14.3% (116 of 811) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -59,7 +59,7 @@
 |Tests.GameTests.RoadGeneratorTests|26|0|26|55|100%|0|0||3|3|100%|
 |Tests.MainMenuTest|4|0|4|24|100%|0|0||1|1|100%|
 |Tests.UITests.UserControllerTests|25|1|26|65|96.1%|0|0||6|6|100%|
-|**ThesisScripts**|**202**|**2201**|**2403**|**4986**|**8.4%**|**0**|**0**|****|**100**|**502**|**19.9%**|
+|**ThesisScripts**|**205**|**2250**|**2455**|**5087**|**8.3%**|**0**|**0**|****|**106**|**529**|**20%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|0|6|6|15|0%|0|0||0|5|0%|
 |Building|0|9|9|33|0%|0|0||0|7|0%|
 |CameraScript|0|7|7|24|0%|0|0||0|2|0%|
@@ -73,32 +73,35 @@
 |Game.CarController|0|129|129|249|0%|0|0||0|18|0%|
 |Game.CopCar|0|54|54|82|0%|0|0||0|1|0%|
 |Game.EnableWheelPhysicMaterial|0|16|16|37|0%|0|0||0|2|0%|
-|Game.GameController|0|95|95|157|0%|0|0||0|17|0%|
+|Game.GameController|0|105|105|168|0%|0|0||0|19|0%|
 |Game.NpcCar|0|6|6|19|0%|0|0||0|1|0%|
 |Game.PlayerCar|0|72|72|116|0%|0|0||0|9|0%|
 |Game.World.BuildingCell|0|11|11|30|0%|0|0||0|7|0%|
 |Game.World.BuildingGenerator|0|43|43|64|0%|0|0||0|2|0%|
-|Game.World.CarSpawner|0|27|27|65|0%|0|0||0|5|0%|
+|Game.World.CarSpawner|0|43|43|79|0%|0|0||0|5|0%|
 |Game.World.Chunk|0|370|370|599|0%|0|0||0|29|0%|
 |Game.World.GameWorld|0|68|68|119|0%|0|0||0|6|0%|
 |Game.World.RoadGenerator|55|49|104|200|52.8%|0|0||6|9|66.6%|
-|GameUI|0|39|39|88|0%|0|0||0|12|0%|
+|GameUI|0|42|42|96|0%|0|0||0|13|0%|
 |MeshGenerator|0|27|27|96|0%|0|0||0|2|0%|
 |ModalWindow|0|19|19|43|0%|0|0||0|4|0%|
 |ProfileHandler|0|25|25|66|0%|0|0||0|7|0%|
+|StarHandler|0|10|10|28|0%|0|0||0|1|0%|
 |TaskClosedEventArgs|0|4|4|14|0%|0|0||0|1|0%|
 |TaskContainer|22|46|68|91|32.3%|0|0||18|23|78.2%|
 |TaskDisplayHandler|2|62|64|122|3.1%|0|0||1|12|8.3%|
 |TaskOpenPanelController|15|96|111|211|13.5%|0|0||4|15|26.6%|
 |Thesis_backend.Data_Structures.DbElement|1|1|2|11|50%|0|0||2|3|66.6%|
 |Thesis_backend.Data_Structures.Friend|0|5|5|18|0%|0|0||0|10|0%|
-|Thesis_backend.Data_Structures.Game|0|4|4|13|0%|0|0||0|8|0%|
+|Thesis_backend.Data_Structures.Game|0|8|8|18|0%|0|0||0|15|0%|
+|Thesis_backend.Data_Structures.OwnedCar|0|5|5|21|0%|0|0||0|9|0%|
 |Thesis_backend.Data_Structures.PlayerTask|0|9|9|19|0%|0|0||0|17|0%|
+|Thesis_backend.Data_Structures.Shop|0|4|4|14|0%|0|0||0|7|0%|
 |Thesis_backend.Data_Structures.TaskRequest|0|4|4|16|0%|0|0||0|8|0%|
 |Thesis_backend.Data_Structures.User|10|1|11|24|90.9%|0|0||21|22|95.4%|
 |Thesis_backend.Data_Structures.UserLoginRequest|2|0|2|14|100%|0|0||4|4|100%|
 |Thesis_backend.Data_Structures.UserRequest|0|3|3|15|0%|0|0||0|6|0%|
-|Thesis_backend.Data_Structures.UserSettings|0|4|4|15|0%|0|0||0|8|0%|
+|Thesis_backend.Data_Structures.UserSettings|3|1|4|15|75%|0|0||6|8|75%|
 |UIController|24|65|89|154|26.9%|0|0||6|13|46.1%|
 |UnityStandardAssets.CrossPlatformInput.AxisTouchButton|0|41|41|75|0%|0|0||0|6|0%|
 |UnityStandardAssets.CrossPlatformInput.ButtonHandler|0|19|19|50|0%|0|0||0|7|0%|

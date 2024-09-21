@@ -126,108 +126,122 @@ $(document).ready(function(){initNavTree('GameUI_8cs_source.html',''); initResiz
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    [SerializeField]</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classGameUI.html#a98156491737508882846fa4f9b4ee2de">   26</a></span>    <span class="keyword">private</span> TMP_Text <a class="code hl_variable" href="classGameUI.html#a98156491737508882846fa4f9b4ee2de">InfamyInGameText</a>;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classGameUI.html#a932f4df2bb1e985095ca6ff0427d9cf7">   28</a></span>    <span class="keyword">private</span> <a class="code hl_class" href="classGame_1_1GameController.html">GameController</a> <a class="code hl_variable" href="classGameUI.html#a932f4df2bb1e985095ca6ff0427d9cf7">gameController</a>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classGameUI.html#ae1af03e7079adfabff38492498ea0980">   30</a></span>    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGameUI.html#ae1af03e7079adfabff38492498ea0980">Update</a>()</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGameUI.html#a932f4df2bb1e985095ca6ff0427d9cf7">gameController</a>.<a class="code hl_property" href="classGame_1_1GameController.html#a05d01ce3124c9d29e70cdee04539baeb">Running</a>)</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        {</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            this.InfamyInGameText.text = <span class="stringliteral">&quot;Infamy: &quot;</span> + <a class="code hl_variable" href="classGameUI.html#a932f4df2bb1e985095ca6ff0427d9cf7">gameController</a>.<a class="code hl_property" href="classGame_1_1GameController.html#a110137fc8dd59568f1df0e13951e7940">Score</a>;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        }</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    [SerializeField]</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classGameUI.html#ac84a5b6b36b87b3be0a5ea1379a7431f">   29</a></span>    <span class="keyword">private</span> <a class="code hl_class" href="classStarHandler.html">StarHandler</a> <a class="code hl_variable" href="classGameUI.html#ac84a5b6b36b87b3be0a5ea1379a7431f">starHandler</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classGameUI.html#a932f4df2bb1e985095ca6ff0427d9cf7">   31</a></span>    <span class="keyword">private</span> <a class="code hl_class" href="classGame_1_1GameController.html">GameController</a> <a class="code hl_variable" href="classGameUI.html#a932f4df2bb1e985095ca6ff0427d9cf7">gameController</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classGameUI.html#ae1af03e7079adfabff38492498ea0980">   33</a></span>    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGameUI.html#ae1af03e7079adfabff38492498ea0980">Update</a>()</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGameUI.html#a932f4df2bb1e985095ca6ff0427d9cf7">gameController</a>.<a class="code hl_property" href="classGame_1_1GameController.html#a05d01ce3124c9d29e70cdee04539baeb">Running</a>)</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            this.InfamyInGameText.text = <span class="stringliteral">&quot;Infamy: &quot;</span> + <a class="code hl_variable" href="classGameUI.html#a932f4df2bb1e985095ca6ff0427d9cf7">gameController</a>.<a class="code hl_property" href="classGame_1_1GameController.html#a110137fc8dd59568f1df0e13951e7940">Score</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
 </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classGameUI.html#a5f52697db99b66d5bb27979372cb2a5c">   38</a></span>    <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="classGameUI.html#a5f52697db99b66d5bb27979372cb2a5c">CanDouble</a> { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; } = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classGameUI.html#a86e861e18879f93819ab1feac66f2f22">   40</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGameUI.html#a86e861e18879f93819ab1feac66f2f22">Init</a>(<a class="code hl_class" href="classGame_1_1GameController.html">GameController</a> <a class="code hl_variable" href="classGameUI.html#a932f4df2bb1e985095ca6ff0427d9cf7">gameController</a>)</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    {</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        this.gameController = <a class="code hl_variable" href="classGameUI.html#a932f4df2bb1e985095ca6ff0427d9cf7">gameController</a>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classGameUI.html#a5f52697db99b66d5bb27979372cb2a5c">   41</a></span>    <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="classGameUI.html#a5f52697db99b66d5bb27979372cb2a5c">CanDouble</a> { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; } = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classGameUI.html#a86e861e18879f93819ab1feac66f2f22">   43</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGameUI.html#a86e861e18879f93819ab1feac66f2f22">Init</a>(<a class="code hl_class" href="classGame_1_1GameController.html">GameController</a> <a class="code hl_variable" href="classGameUI.html#a932f4df2bb1e985095ca6ff0427d9cf7">gameController</a>)</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        this.gameController = <a class="code hl_variable" href="classGameUI.html#a932f4df2bb1e985095ca6ff0427d9cf7">gameController</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
 </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classGameUI.html#a88d56b428f2ea9ce739552a4a0bbec2f">   45</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGameUI.html#a88d56b428f2ea9ce739552a4a0bbec2f">NewGame</a>()</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    {</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <a class="code hl_function" href="classGameUI.html#a10aedf7439a9bb7bae657b39b4182c8a">HideGameOverScreen</a>();</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <a class="code hl_variable" href="classGameUI.html#aa87d6d5f2504f45f0d15aa727e409995">ingameContainer</a>.SetActive(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <a class="code hl_variable" href="classGameUI.html#aa76f74d7c8679b04e74043f6e18474e9">mainMenuContainer</a>.SetActive(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <a class="code hl_variable" href="classGameUI.html#a932f4df2bb1e985095ca6ff0427d9cf7">gameController</a>?.<a class="code hl_function" href="classGame_1_1GameController.html#af5c50c52cffcab3018ca54be6a421d7f">NewGame</a>();</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
-</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classGameUI.html#a88d56b428f2ea9ce739552a4a0bbec2f">   48</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGameUI.html#a88d56b428f2ea9ce739552a4a0bbec2f">NewGame</a>()</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <a class="code hl_function" href="classGameUI.html#a10aedf7439a9bb7bae657b39b4182c8a">HideGameOverScreen</a>();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <a class="code hl_variable" href="classGameUI.html#aa87d6d5f2504f45f0d15aa727e409995">ingameContainer</a>.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <a class="code hl_variable" href="classGameUI.html#aa76f74d7c8679b04e74043f6e18474e9">mainMenuContainer</a>.SetActive(<span class="keyword">false</span>);</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classGameUI.html#a83ab06ae8fd90932efe340c29537a4e5">   54</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGameUI.html#a83ab06ae8fd90932efe340c29537a4e5">ShowEndGameScreen</a>()</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        InfamyGameOverText.text = <span class="stringliteral">&quot;Infamy: &quot;</span> + <a class="code hl_variable" href="classGameUI.html#a932f4df2bb1e985095ca6ff0427d9cf7">gameController</a>.<a class="code hl_property" href="classGame_1_1GameController.html#a110137fc8dd59568f1df0e13951e7940">Score</a>;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <a class="code hl_variable" href="classGameUI.html#aa87d6d5f2504f45f0d15aa727e409995">ingameContainer</a>.SetActive(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <a class="code hl_variable" href="classGameUI.html#a109e5ae1d753b6fc016227d3b67c9bda">gameOverContainer</a>.SetActive(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <a class="code hl_variable" href="classGameUI.html#a932f4df2bb1e985095ca6ff0427d9cf7">gameController</a>?.<a class="code hl_function" href="classGame_1_1GameController.html#af5c50c52cffcab3018ca54be6a421d7f">NewGame</a>();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
 </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classGameUI.html#a10aedf7439a9bb7bae657b39b4182c8a">   61</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGameUI.html#a10aedf7439a9bb7bae657b39b4182c8a">HideGameOverScreen</a>()</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <a class="code hl_variable" href="classGameUI.html#a109e5ae1d753b6fc016227d3b67c9bda">gameOverContainer</a>.SetActive(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <a class="code hl_variable" href="classGameUI.html#aa87d6d5f2504f45f0d15aa727e409995">ingameContainer</a>.SetActive(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <a class="code hl_property" href="classGameUI.html#a5f52697db99b66d5bb27979372cb2a5c">CanDouble</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classGameUI.html#a30b34140ea9e733d314e461ba9087d04">   57</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGameUI.html#a30b34140ea9e733d314e461ba9087d04">ChangeDifficulyDisplay</a>(<span class="keywordtype">int</span> difficulty)</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        this.starHandler.<a class="code hl_function" href="classStarHandler.html#a21d41812dc81999a048d8b7b0ac58c18">ChangeDifficulty</a>(difficulty);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
 </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classGameUI.html#a27c821c0a656739e3b7ec2ab0f5c84a9">   68</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGameUI.html#a27c821c0a656739e3b7ec2ab0f5c84a9">ShowShop</a>()</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    {</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="foldopen" id="foldopen00062" data-start="{" data-end="}">
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classGameUI.html#a83ab06ae8fd90932efe340c29537a4e5">   62</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGameUI.html#a83ab06ae8fd90932efe340c29537a4e5">ShowEndGameScreen</a>()</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        InfamyGameOverText.text = <span class="stringliteral">&quot;Infamy: &quot;</span> + <a class="code hl_variable" href="classGameUI.html#a932f4df2bb1e985095ca6ff0427d9cf7">gameController</a>.<a class="code hl_property" href="classGame_1_1GameController.html#a110137fc8dd59568f1df0e13951e7940">Score</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <a class="code hl_variable" href="classGameUI.html#aa87d6d5f2504f45f0d15aa727e409995">ingameContainer</a>.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <a class="code hl_variable" href="classGameUI.html#a109e5ae1d753b6fc016227d3b67c9bda">gameOverContainer</a>.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
 </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="foldopen" id="foldopen00072" data-start="{" data-end="}">
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classGameUI.html#a9ac2450560ee9da6b280b3927f4af5fa">   72</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGameUI.html#a9ac2450560ee9da6b280b3927f4af5fa">BackToTasks</a>()</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    {</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <a class="code hl_function" href="classGameUI.html#a10aedf7439a9bb7bae657b39b4182c8a">HideGameOverScreen</a>();</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        SceneManager.LoadScene(<span class="stringliteral">&quot;MainMobileFrame&quot;</span>, LoadSceneMode.Single);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="classGameUI.html#a10aedf7439a9bb7bae657b39b4182c8a">   69</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGameUI.html#a10aedf7439a9bb7bae657b39b4182c8a">HideGameOverScreen</a>()</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <a class="code hl_variable" href="classGameUI.html#a109e5ae1d753b6fc016227d3b67c9bda">gameOverContainer</a>.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <a class="code hl_variable" href="classGameUI.html#aa87d6d5f2504f45f0d15aa727e409995">ingameContainer</a>.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <a class="code hl_property" href="classGameUI.html#a5f52697db99b66d5bb27979372cb2a5c">CanDouble</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
 </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="foldopen" id="foldopen00078" data-start="{" data-end="}">
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classGameUI.html#aa50f29934747a338c85efb6e06c84b09">   78</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGameUI.html#aa50f29934747a338c85efb6e06c84b09">BackToGameMenu</a>()</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    {</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <a class="code hl_function" href="classGameUI.html#a10aedf7439a9bb7bae657b39b4182c8a">HideGameOverScreen</a>();</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <a class="code hl_variable" href="classGameUI.html#aa87d6d5f2504f45f0d15aa727e409995">ingameContainer</a>.SetActive(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <a class="code hl_variable" href="classGameUI.html#aa76f74d7c8679b04e74043f6e18474e9">mainMenuContainer</a>.SetActive(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="foldopen" id="foldopen00076" data-start="{" data-end="}">
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classGameUI.html#a27c821c0a656739e3b7ec2ab0f5c84a9">   76</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGameUI.html#a27c821c0a656739e3b7ec2ab0f5c84a9">ShowShop</a>()</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
 </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="foldopen" id="foldopen00085" data-start="{" data-end="}">
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="classGameUI.html#a11bc07908b8cd6a0fa8894ab9e022e4d">   85</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGameUI.html#a11bc07908b8cd6a0fa8894ab9e022e4d">DoubleScore</a>()</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    {</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="foldopen" id="foldopen00080" data-start="{" data-end="}">
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classGameUI.html#a9ac2450560ee9da6b280b3927f4af5fa">   80</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGameUI.html#a9ac2450560ee9da6b280b3927f4af5fa">BackToTasks</a>()</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <a class="code hl_function" href="classGameUI.html#a10aedf7439a9bb7bae657b39b4182c8a">HideGameOverScreen</a>();</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        SceneManager.LoadScene(<span class="stringliteral">&quot;MainMobileFrame&quot;</span>, LoadSceneMode.Single);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
 </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="foldopen" id="foldopen00086" data-start="{" data-end="}">
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classGameUI.html#aa50f29934747a338c85efb6e06c84b09">   86</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGameUI.html#aa50f29934747a338c85efb6e06c84b09">BackToGameMenu</a>()</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <a class="code hl_function" href="classGameUI.html#a10aedf7439a9bb7bae657b39b4182c8a">HideGameOverScreen</a>();</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <a class="code hl_variable" href="classGameUI.html#aa87d6d5f2504f45f0d15aa727e409995">ingameContainer</a>.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <a class="code hl_variable" href="classGameUI.html#aa76f74d7c8679b04e74043f6e18474e9">mainMenuContainer</a>.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
+</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="foldopen" id="foldopen00093" data-start="{" data-end="}">
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="classGameUI.html#a11bc07908b8cd6a0fa8894ab9e022e4d">   93</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGameUI.html#a11bc07908b8cd6a0fa8894ab9e022e4d">DoubleScore</a>()</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    }</div>
+</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>}</div>
 </div>
 <div class="ttc" id="aclassGameUI_html"><div class="ttname"><a href="classGameUI.html">GameUI</a></div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00008">GameUI.cs:9</a></div></div>
 <div class="ttc" id="aclassGameUI_html_a109e5ae1d753b6fc016227d3b67c9bda"><div class="ttname"><a href="classGameUI.html#a109e5ae1d753b6fc016227d3b67c9bda">GameUI.gameOverContainer</a></div><div class="ttdeci">GameObject gameOverContainer</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00011">GameUI.cs:11</a></div></div>
-<div class="ttc" id="aclassGameUI_html_a10aedf7439a9bb7bae657b39b4182c8a"><div class="ttname"><a href="classGameUI.html#a10aedf7439a9bb7bae657b39b4182c8a">GameUI.HideGameOverScreen</a></div><div class="ttdeci">void HideGameOverScreen()</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00061">GameUI.cs:61</a></div></div>
-<div class="ttc" id="aclassGameUI_html_a11bc07908b8cd6a0fa8894ab9e022e4d"><div class="ttname"><a href="classGameUI.html#a11bc07908b8cd6a0fa8894ab9e022e4d">GameUI.DoubleScore</a></div><div class="ttdeci">void DoubleScore()</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00085">GameUI.cs:85</a></div></div>
-<div class="ttc" id="aclassGameUI_html_a27c821c0a656739e3b7ec2ab0f5c84a9"><div class="ttname"><a href="classGameUI.html#a27c821c0a656739e3b7ec2ab0f5c84a9">GameUI.ShowShop</a></div><div class="ttdeci">void ShowShop()</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00068">GameUI.cs:68</a></div></div>
-<div class="ttc" id="aclassGameUI_html_a5f52697db99b66d5bb27979372cb2a5c"><div class="ttname"><a href="classGameUI.html#a5f52697db99b66d5bb27979372cb2a5c">GameUI.CanDouble</a></div><div class="ttdeci">bool CanDouble</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00038">GameUI.cs:38</a></div></div>
-<div class="ttc" id="aclassGameUI_html_a83ab06ae8fd90932efe340c29537a4e5"><div class="ttname"><a href="classGameUI.html#a83ab06ae8fd90932efe340c29537a4e5">GameUI.ShowEndGameScreen</a></div><div class="ttdeci">void ShowEndGameScreen()</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00054">GameUI.cs:54</a></div></div>
-<div class="ttc" id="aclassGameUI_html_a86e861e18879f93819ab1feac66f2f22"><div class="ttname"><a href="classGameUI.html#a86e861e18879f93819ab1feac66f2f22">GameUI.Init</a></div><div class="ttdeci">void Init(GameController gameController)</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00040">GameUI.cs:40</a></div></div>
-<div class="ttc" id="aclassGameUI_html_a88d56b428f2ea9ce739552a4a0bbec2f"><div class="ttname"><a href="classGameUI.html#a88d56b428f2ea9ce739552a4a0bbec2f">GameUI.NewGame</a></div><div class="ttdeci">void NewGame()</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00045">GameUI.cs:45</a></div></div>
-<div class="ttc" id="aclassGameUI_html_a932f4df2bb1e985095ca6ff0427d9cf7"><div class="ttname"><a href="classGameUI.html#a932f4df2bb1e985095ca6ff0427d9cf7">GameUI.gameController</a></div><div class="ttdeci">GameController gameController</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00028">GameUI.cs:28</a></div></div>
+<div class="ttc" id="aclassGameUI_html_a10aedf7439a9bb7bae657b39b4182c8a"><div class="ttname"><a href="classGameUI.html#a10aedf7439a9bb7bae657b39b4182c8a">GameUI.HideGameOverScreen</a></div><div class="ttdeci">void HideGameOverScreen()</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00069">GameUI.cs:69</a></div></div>
+<div class="ttc" id="aclassGameUI_html_a11bc07908b8cd6a0fa8894ab9e022e4d"><div class="ttname"><a href="classGameUI.html#a11bc07908b8cd6a0fa8894ab9e022e4d">GameUI.DoubleScore</a></div><div class="ttdeci">void DoubleScore()</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00093">GameUI.cs:93</a></div></div>
+<div class="ttc" id="aclassGameUI_html_a27c821c0a656739e3b7ec2ab0f5c84a9"><div class="ttname"><a href="classGameUI.html#a27c821c0a656739e3b7ec2ab0f5c84a9">GameUI.ShowShop</a></div><div class="ttdeci">void ShowShop()</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00076">GameUI.cs:76</a></div></div>
+<div class="ttc" id="aclassGameUI_html_a30b34140ea9e733d314e461ba9087d04"><div class="ttname"><a href="classGameUI.html#a30b34140ea9e733d314e461ba9087d04">GameUI.ChangeDifficulyDisplay</a></div><div class="ttdeci">void ChangeDifficulyDisplay(int difficulty)</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00057">GameUI.cs:57</a></div></div>
+<div class="ttc" id="aclassGameUI_html_a5f52697db99b66d5bb27979372cb2a5c"><div class="ttname"><a href="classGameUI.html#a5f52697db99b66d5bb27979372cb2a5c">GameUI.CanDouble</a></div><div class="ttdeci">bool CanDouble</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00041">GameUI.cs:41</a></div></div>
+<div class="ttc" id="aclassGameUI_html_a83ab06ae8fd90932efe340c29537a4e5"><div class="ttname"><a href="classGameUI.html#a83ab06ae8fd90932efe340c29537a4e5">GameUI.ShowEndGameScreen</a></div><div class="ttdeci">void ShowEndGameScreen()</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00062">GameUI.cs:62</a></div></div>
+<div class="ttc" id="aclassGameUI_html_a86e861e18879f93819ab1feac66f2f22"><div class="ttname"><a href="classGameUI.html#a86e861e18879f93819ab1feac66f2f22">GameUI.Init</a></div><div class="ttdeci">void Init(GameController gameController)</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00043">GameUI.cs:43</a></div></div>
+<div class="ttc" id="aclassGameUI_html_a88d56b428f2ea9ce739552a4a0bbec2f"><div class="ttname"><a href="classGameUI.html#a88d56b428f2ea9ce739552a4a0bbec2f">GameUI.NewGame</a></div><div class="ttdeci">void NewGame()</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00048">GameUI.cs:48</a></div></div>
+<div class="ttc" id="aclassGameUI_html_a932f4df2bb1e985095ca6ff0427d9cf7"><div class="ttname"><a href="classGameUI.html#a932f4df2bb1e985095ca6ff0427d9cf7">GameUI.gameController</a></div><div class="ttdeci">GameController gameController</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00031">GameUI.cs:31</a></div></div>
 <div class="ttc" id="aclassGameUI_html_a98156491737508882846fa4f9b4ee2de"><div class="ttname"><a href="classGameUI.html#a98156491737508882846fa4f9b4ee2de">GameUI.InfamyInGameText</a></div><div class="ttdeci">TMP_Text InfamyInGameText</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00026">GameUI.cs:26</a></div></div>
-<div class="ttc" id="aclassGameUI_html_a9ac2450560ee9da6b280b3927f4af5fa"><div class="ttname"><a href="classGameUI.html#a9ac2450560ee9da6b280b3927f4af5fa">GameUI.BackToTasks</a></div><div class="ttdeci">void BackToTasks()</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00072">GameUI.cs:72</a></div></div>
-<div class="ttc" id="aclassGameUI_html_aa50f29934747a338c85efb6e06c84b09"><div class="ttname"><a href="classGameUI.html#aa50f29934747a338c85efb6e06c84b09">GameUI.BackToGameMenu</a></div><div class="ttdeci">void BackToGameMenu()</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00078">GameUI.cs:78</a></div></div>
+<div class="ttc" id="aclassGameUI_html_a9ac2450560ee9da6b280b3927f4af5fa"><div class="ttname"><a href="classGameUI.html#a9ac2450560ee9da6b280b3927f4af5fa">GameUI.BackToTasks</a></div><div class="ttdeci">void BackToTasks()</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00080">GameUI.cs:80</a></div></div>
+<div class="ttc" id="aclassGameUI_html_aa50f29934747a338c85efb6e06c84b09"><div class="ttname"><a href="classGameUI.html#aa50f29934747a338c85efb6e06c84b09">GameUI.BackToGameMenu</a></div><div class="ttdeci">void BackToGameMenu()</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00086">GameUI.cs:86</a></div></div>
 <div class="ttc" id="aclassGameUI_html_aa76f74d7c8679b04e74043f6e18474e9"><div class="ttname"><a href="classGameUI.html#aa76f74d7c8679b04e74043f6e18474e9">GameUI.mainMenuContainer</a></div><div class="ttdeci">GameObject mainMenuContainer</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00020">GameUI.cs:20</a></div></div>
 <div class="ttc" id="aclassGameUI_html_aa87d6d5f2504f45f0d15aa727e409995"><div class="ttname"><a href="classGameUI.html#aa87d6d5f2504f45f0d15aa727e409995">GameUI.ingameContainer</a></div><div class="ttdeci">GameObject ingameContainer</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00014">GameUI.cs:14</a></div></div>
 <div class="ttc" id="aclassGameUI_html_aa8e76e961829a93e64faeb9e5f65c6bb"><div class="ttname"><a href="classGameUI.html#aa8e76e961829a93e64faeb9e5f65c6bb">GameUI.InfamyGameOverText</a></div><div class="ttdeci">TMP_Text InfamyGameOverText</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00023">GameUI.cs:23</a></div></div>
 <div class="ttc" id="aclassGameUI_html_ac8176587e0b6c9af6808695e21e4026f"><div class="ttname"><a href="classGameUI.html#ac8176587e0b6c9af6808695e21e4026f">GameUI.shopContainer</a></div><div class="ttdeci">GameObject shopContainer</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00017">GameUI.cs:17</a></div></div>
-<div class="ttc" id="aclassGameUI_html_ae1af03e7079adfabff38492498ea0980"><div class="ttname"><a href="classGameUI.html#ae1af03e7079adfabff38492498ea0980">GameUI.Update</a></div><div class="ttdeci">void Update()</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00030">GameUI.cs:30</a></div></div>
+<div class="ttc" id="aclassGameUI_html_ac84a5b6b36b87b3be0a5ea1379a7431f"><div class="ttname"><a href="classGameUI.html#ac84a5b6b36b87b3be0a5ea1379a7431f">GameUI.starHandler</a></div><div class="ttdeci">StarHandler starHandler</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00029">GameUI.cs:29</a></div></div>
+<div class="ttc" id="aclassGameUI_html_ae1af03e7079adfabff38492498ea0980"><div class="ttname"><a href="classGameUI.html#ae1af03e7079adfabff38492498ea0980">GameUI.Update</a></div><div class="ttdeci">void Update()</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00033">GameUI.cs:33</a></div></div>
 <div class="ttc" id="aclassGame_1_1GameController_html"><div class="ttname"><a href="classGame_1_1GameController.html">Game.GameController</a></div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00009">GameController.cs:10</a></div></div>
 <div class="ttc" id="aclassGame_1_1GameController_html_a05d01ce3124c9d29e70cdee04539baeb"><div class="ttname"><a href="classGame_1_1GameController.html#a05d01ce3124c9d29e70cdee04539baeb">Game.GameController.Running</a></div><div class="ttdeci">bool Running</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00036">GameController.cs:36</a></div></div>
 <div class="ttc" id="aclassGame_1_1GameController_html_a110137fc8dd59568f1df0e13951e7940"><div class="ttname"><a href="classGame_1_1GameController.html#a110137fc8dd59568f1df0e13951e7940">Game.GameController.Score</a></div><div class="ttdeci">int Score</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00030">GameController.cs:30</a></div></div>
-<div class="ttc" id="aclassGame_1_1GameController_html_af5c50c52cffcab3018ca54be6a421d7f"><div class="ttname"><a href="classGame_1_1GameController.html#af5c50c52cffcab3018ca54be6a421d7f">Game.GameController.NewGame</a></div><div class="ttdeci">async Task NewGame()</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00076">GameController.cs:76</a></div></div>
+<div class="ttc" id="aclassGame_1_1GameController_html_af5c50c52cffcab3018ca54be6a421d7f"><div class="ttname"><a href="classGame_1_1GameController.html#af5c50c52cffcab3018ca54be6a421d7f">Game.GameController.NewGame</a></div><div class="ttdeci">async Task NewGame()</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00087">GameController.cs:87</a></div></div>
+<div class="ttc" id="aclassStarHandler_html"><div class="ttname"><a href="classStarHandler.html">StarHandler</a></div><div class="ttdef"><b>Definition</b> <a href="StarHandler_8cs_source.html#l00006">StarHandler.cs:7</a></div></div>
+<div class="ttc" id="aclassStarHandler_html_a21d41812dc81999a048d8b7b0ac58c18"><div class="ttname"><a href="classStarHandler.html#a21d41812dc81999a048d8b7b0ac58c18">StarHandler.ChangeDifficulty</a></div><div class="ttdeci">void ChangeDifficulty(int difficulty)</div><div class="ttdef"><b>Definition</b> <a href="StarHandler_8cs_source.html#l00017">StarHandler.cs:17</a></div></div>
 <div class="ttc" id="anamespaceGame_html"><div class="ttname"><a href="namespaceGame.html">Game</a></div><div class="ttdef"><b>Definition</b> <a href="BuildingCell_8cs_source.html#l00008">BuildingCell.cs:9</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

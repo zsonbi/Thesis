@@ -93,7 +93,6 @@ $(document).ready(function(){initNavTree('classGame_1_1World_1_1CarSpawner.html'
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classGame_1_1World_1_1CarSpawner-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Game.World.CarSpawner Class Reference</div></div>
 </div><!--header-->
@@ -109,8 +108,8 @@ Inheritance diagram for Game.World.CarSpawner:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa3644b0af8d08fa431229eececa0c444" id="r_aa3644b0af8d08fa431229eececa0c444"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1World_1_1CarSpawner.html#aa3644b0af8d08fa431229eececa0c444">Update</a> ()</td></tr>
 <tr class="separator:aa3644b0af8d08fa431229eececa0c444"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afaa81fb8d9785f7b38d7126d697565eb" id="r_afaa81fb8d9785f7b38d7126d697565eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1World_1_1CarSpawner.html#afaa81fb8d9785f7b38d7126d697565eb">SpawnPolice</a> ()</td></tr>
-<tr class="separator:afaa81fb8d9785f7b38d7126d697565eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68b1710c3c5c6ab1ea0d64b13da93e49" id="r_a68b1710c3c5c6ab1ea0d64b13da93e49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1World_1_1CarSpawner.html#a68b1710c3c5c6ab1ea0d64b13da93e49">SpawnPolice</a> (GameObject carPrefab)</td></tr>
+<tr class="separator:a68b1710c3c5c6ab1ea0d64b13da93e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ca9f4dfd1b63d182f23c9f630b54463" id="r_a9ca9f4dfd1b63d182f23c9f630b54463"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1World_1_1CarSpawner.html#a9ca9f4dfd1b63d182f23c9f630b54463">Reset</a> ()</td></tr>
 <tr class="separator:a9ca9f4dfd1b63d182f23c9f630b54463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafcd5dcc4956061d31f7366512c7eebe" id="r_aafcd5dcc4956061d31f7366512c7eebe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1World_1_1CarSpawner.html#aafcd5dcc4956061d31f7366512c7eebe">SpawnNpc</a> ()</td></tr>
@@ -124,13 +123,18 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aae87e13674ea01abc1a7f7b11afe30a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ec2d0fc41fe93daf28b76854b916844" id="r_a5ec2d0fc41fe93daf28b76854b916844"><td class="memItemLeft" align="right" valign="top">List&lt; GameObject &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1World_1_1CarSpawner.html#a5ec2d0fc41fe93daf28b76854b916844">CitizenCars</a></td></tr>
 <tr class="separator:a5ec2d0fc41fe93daf28b76854b916844"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a563614c1c52a824da81cbeac0cd6f438" id="r_a563614c1c52a824da81cbeac0cd6f438"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1World_1_1CarSpawner.html#a563614c1c52a824da81cbeac0cd6f438">timer</a> = 0</td></tr>
-<tr class="separator:a563614c1c52a824da81cbeac0cd6f438"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:a8a8c7d30161c6cc94e7b92038abc965a" id="r_a8a8c7d30161c6cc94e7b92038abc965a"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1World_1_1CarSpawner.html#a8a8c7d30161c6cc94e7b92038abc965a">spawnInterval</a> = 3f</td></tr>
-<tr class="separator:a8a8c7d30161c6cc94e7b92038abc965a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bef35ae7b6ec689a427e1a82a56a568" id="r_a5bef35ae7b6ec689a427e1a82a56a568"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; int, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1World_1_1CarSpawner.html#a5bef35ae7b6ec689a427e1a82a56a568">spawnIntervalsTier1</a> = new Dictionary&lt;int, float&gt;() { { 0, 20 }, { 1, 10 }, { 2, 10 }, { 3, 10 }, { 4, 10 }, { 5, 10 } }</td></tr>
+<tr class="separator:a5bef35ae7b6ec689a427e1a82a56a568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae30100f5c4e5a3a209fac6fa01664846" id="r_ae30100f5c4e5a3a209fac6fa01664846"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; int, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1World_1_1CarSpawner.html#ae30100f5c4e5a3a209fac6fa01664846">spawnIntervalsTier2</a> = new Dictionary&lt;int, float&gt;() { { 0, float.PositiveInfinity }, { 1, float.PositiveInfinity }, { 2, float.PositiveInfinity }, { 3, 15 }, { 4, 10 }, { 5, 10 } }</td></tr>
+<tr class="separator:ae30100f5c4e5a3a209fac6fa01664846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4b605aa319424b2d4a33b565a64b1c6" id="r_aa4b605aa319424b2d4a33b565a64b1c6"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; int, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1World_1_1CarSpawner.html#aa4b605aa319424b2d4a33b565a64b1c6">spawnIntervalsTier3</a> = new Dictionary&lt;int, float&gt;() { { 0, float.PositiveInfinity }, { 1, float.PositiveInfinity }, { 2, float.PositiveInfinity }, { 3, float.PositiveInfinity }, { 4, 30 }, { 5, 15 } }</td></tr>
+<tr class="separator:aa4b605aa319424b2d4a33b565a64b1c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23d129767331ac8528e9a46c2d197c8a" id="r_a23d129767331ac8528e9a46c2d197c8a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1World_1_1CarSpawner.html#a23d129767331ac8528e9a46c2d197c8a">tier1SpawnerTimer</a> = 0f</td></tr>
+<tr class="separator:a23d129767331ac8528e9a46c2d197c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1003d6d74287406eb601b6d9d0e360c7" id="r_a1003d6d74287406eb601b6d9d0e360c7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1World_1_1CarSpawner.html#a1003d6d74287406eb601b6d9d0e360c7">tier2SpawnerTimer</a> = 0f</td></tr>
+<tr class="separator:a1003d6d74287406eb601b6d9d0e360c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93141b0627ec47b261909bcfa78b0291" id="r_a93141b0627ec47b261909bcfa78b0291"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1World_1_1CarSpawner.html#a93141b0627ec47b261909bcfa78b0291">tier3SpawnerTimer</a> = 0f</td></tr>
+<tr class="separator:a93141b0627ec47b261909bcfa78b0291"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -159,32 +163,51 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CarSpawner_8cs_source.html#l00026">26</a> of file <a class="el" href="CarSpawner_8cs_source.html">CarSpawner.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   27</span>            {</div>
-<div class="line"><span class="lineno">   28</span>                <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a16e0ea05148bf5a83e445863abf78549">gameController</a>.<a class="code hl_property" href="classGame_1_1GameController.html#a05d01ce3124c9d29e70cdee04539baeb">Running</a>)</div>
-<div class="line"><span class="lineno">   29</span>                {</div>
-<div class="line"><span class="lineno">   30</span>                    <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   31</span>                }</div>
-<div class="line"><span class="lineno">   32</span> </div>
-<div class="line"><span class="lineno">   33</span>                <a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a563614c1c52a824da81cbeac0cd6f438">timer</a> += Time.deltaTime;</div>
-<div class="line"><span class="lineno">   34</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a563614c1c52a824da81cbeac0cd6f438">timer</a> &gt; <a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a8a8c7d30161c6cc94e7b92038abc965a">spawnInterval</a>)</div>
-<div class="line"><span class="lineno">   35</span>                {</div>
-<div class="line"><span class="lineno">   36</span>                    <a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a563614c1c52a824da81cbeac0cd6f438">timer</a> = 0;</div>
-<div class="line"><span class="lineno">   37</span>                    <a class="code hl_function" href="classGame_1_1World_1_1CarSpawner.html#afaa81fb8d9785f7b38d7126d697565eb">SpawnPolice</a>();</div>
-<div class="line"><span class="lineno">   38</span>                }</div>
-<div class="line"><span class="lineno">   39</span>            }</div>
+<p class="definition">Definition at line <a class="el" href="CarSpawner_8cs_source.html#l00030">30</a> of file <a class="el" href="CarSpawner_8cs_source.html">CarSpawner.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>            {</div>
+<div class="line"><span class="lineno">   32</span>                <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a16e0ea05148bf5a83e445863abf78549">gameController</a>.<a class="code hl_property" href="classGame_1_1GameController.html#a05d01ce3124c9d29e70cdee04539baeb">Running</a>)</div>
+<div class="line"><span class="lineno">   33</span>                {</div>
+<div class="line"><span class="lineno">   34</span>                    <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   35</span>                }</div>
+<div class="line"><span class="lineno">   36</span> </div>
+<div class="line"><span class="lineno">   37</span>                <a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a23d129767331ac8528e9a46c2d197c8a">tier1SpawnerTimer</a> += Time.deltaTime;</div>
+<div class="line"><span class="lineno">   38</span>                <a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a1003d6d74287406eb601b6d9d0e360c7">tier2SpawnerTimer</a> += Time.deltaTime;</div>
+<div class="line"><span class="lineno">   39</span>                <a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a93141b0627ec47b261909bcfa78b0291">tier3SpawnerTimer</a> += Time.deltaTime;</div>
+<div class="line"><span class="lineno">   40</span> </div>
+<div class="line"><span class="lineno">   41</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a23d129767331ac8528e9a46c2d197c8a">tier1SpawnerTimer</a> &gt; <a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a5bef35ae7b6ec689a427e1a82a56a568">spawnIntervalsTier1</a>[<a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a16e0ea05148bf5a83e445863abf78549">gameController</a>.<a class="code hl_property" href="classGame_1_1GameController.html#a1443617f1270553f41e4569c6b26652d">Difficulty</a>])</div>
+<div class="line"><span class="lineno">   42</span>                {</div>
+<div class="line"><span class="lineno">   43</span>                    <a class="code hl_function" href="classGame_1_1World_1_1CarSpawner.html#a68b1710c3c5c6ab1ea0d64b13da93e49">SpawnPolice</a>(<a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#aae87e13674ea01abc1a7f7b11afe30a2">CopCars</a>[0]);</div>
+<div class="line"><span class="lineno">   44</span>                    <a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a23d129767331ac8528e9a46c2d197c8a">tier1SpawnerTimer</a> = 0f;</div>
+<div class="line"><span class="lineno">   45</span>                }</div>
+<div class="line"><span class="lineno">   46</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a1003d6d74287406eb601b6d9d0e360c7">tier2SpawnerTimer</a> &gt; <a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#ae30100f5c4e5a3a209fac6fa01664846">spawnIntervalsTier2</a>[<a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a16e0ea05148bf5a83e445863abf78549">gameController</a>.<a class="code hl_property" href="classGame_1_1GameController.html#a1443617f1270553f41e4569c6b26652d">Difficulty</a>])</div>
+<div class="line"><span class="lineno">   47</span>                {</div>
+<div class="line"><span class="lineno">   48</span>                    <a class="code hl_function" href="classGame_1_1World_1_1CarSpawner.html#a68b1710c3c5c6ab1ea0d64b13da93e49">SpawnPolice</a>(<a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#aae87e13674ea01abc1a7f7b11afe30a2">CopCars</a>[1]);</div>
+<div class="line"><span class="lineno">   49</span>                    <a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a1003d6d74287406eb601b6d9d0e360c7">tier2SpawnerTimer</a> = 0f;</div>
+<div class="line"><span class="lineno">   50</span>                }</div>
+<div class="line"><span class="lineno">   51</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a93141b0627ec47b261909bcfa78b0291">tier3SpawnerTimer</a> &gt; <a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#aa4b605aa319424b2d4a33b565a64b1c6">spawnIntervalsTier3</a>[<a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a16e0ea05148bf5a83e445863abf78549">gameController</a>.<a class="code hl_property" href="classGame_1_1GameController.html#a1443617f1270553f41e4569c6b26652d">Difficulty</a>])</div>
+<div class="line"><span class="lineno">   52</span>                {</div>
+<div class="line"><span class="lineno">   53</span>                    <a class="code hl_function" href="classGame_1_1World_1_1CarSpawner.html#a68b1710c3c5c6ab1ea0d64b13da93e49">SpawnPolice</a>(<a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#aae87e13674ea01abc1a7f7b11afe30a2">CopCars</a>[2]);</div>
+<div class="line"><span class="lineno">   54</span>                    <a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a93141b0627ec47b261909bcfa78b0291">tier3SpawnerTimer</a> = 0f;</div>
+<div class="line"><span class="lineno">   55</span>                }</div>
+<div class="line"><span class="lineno">   56</span>            }</div>
 <div class="ttc" id="aclassGame_1_1GameController_html_a05d01ce3124c9d29e70cdee04539baeb"><div class="ttname"><a href="classGame_1_1GameController.html#a05d01ce3124c9d29e70cdee04539baeb">Game.GameController.Running</a></div><div class="ttdeci">bool Running</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00036">GameController.cs:36</a></div></div>
+<div class="ttc" id="aclassGame_1_1GameController_html_a1443617f1270553f41e4569c6b26652d"><div class="ttname"><a href="classGame_1_1GameController.html#a1443617f1270553f41e4569c6b26652d">Game.GameController.Difficulty</a></div><div class="ttdeci">int Difficulty</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00038">GameController.cs:38</a></div></div>
+<div class="ttc" id="aclassGame_1_1World_1_1CarSpawner_html_a1003d6d74287406eb601b6d9d0e360c7"><div class="ttname"><a href="classGame_1_1World_1_1CarSpawner.html#a1003d6d74287406eb601b6d9d0e360c7">Game.World.CarSpawner.tier2SpawnerTimer</a></div><div class="ttdeci">float tier2SpawnerTimer</div><div class="ttdef"><b>Definition</b> <a href="CarSpawner_8cs_source.html#l00027">CarSpawner.cs:27</a></div></div>
 <div class="ttc" id="aclassGame_1_1World_1_1CarSpawner_html_a16e0ea05148bf5a83e445863abf78549"><div class="ttname"><a href="classGame_1_1World_1_1CarSpawner.html#a16e0ea05148bf5a83e445863abf78549">Game.World.CarSpawner.gameController</a></div><div class="ttdeci">GameController gameController</div><div class="ttdef"><b>Definition</b> <a href="CarSpawner_8cs_source.html#l00014">CarSpawner.cs:14</a></div></div>
-<div class="ttc" id="aclassGame_1_1World_1_1CarSpawner_html_a563614c1c52a824da81cbeac0cd6f438"><div class="ttname"><a href="classGame_1_1World_1_1CarSpawner.html#a563614c1c52a824da81cbeac0cd6f438">Game.World.CarSpawner.timer</a></div><div class="ttdeci">float timer</div><div class="ttdef"><b>Definition</b> <a href="CarSpawner_8cs_source.html#l00022">CarSpawner.cs:22</a></div></div>
-<div class="ttc" id="aclassGame_1_1World_1_1CarSpawner_html_a8a8c7d30161c6cc94e7b92038abc965a"><div class="ttname"><a href="classGame_1_1World_1_1CarSpawner.html#a8a8c7d30161c6cc94e7b92038abc965a">Game.World.CarSpawner.spawnInterval</a></div><div class="ttdeci">const float spawnInterval</div><div class="ttdef"><b>Definition</b> <a href="CarSpawner_8cs_source.html#l00024">CarSpawner.cs:24</a></div></div>
-<div class="ttc" id="aclassGame_1_1World_1_1CarSpawner_html_afaa81fb8d9785f7b38d7126d697565eb"><div class="ttname"><a href="classGame_1_1World_1_1CarSpawner.html#afaa81fb8d9785f7b38d7126d697565eb">Game.World.CarSpawner.SpawnPolice</a></div><div class="ttdeci">void SpawnPolice()</div><div class="ttdef"><b>Definition</b> <a href="CarSpawner_8cs_source.html#l00041">CarSpawner.cs:41</a></div></div>
+<div class="ttc" id="aclassGame_1_1World_1_1CarSpawner_html_a23d129767331ac8528e9a46c2d197c8a"><div class="ttname"><a href="classGame_1_1World_1_1CarSpawner.html#a23d129767331ac8528e9a46c2d197c8a">Game.World.CarSpawner.tier1SpawnerTimer</a></div><div class="ttdeci">float tier1SpawnerTimer</div><div class="ttdef"><b>Definition</b> <a href="CarSpawner_8cs_source.html#l00026">CarSpawner.cs:26</a></div></div>
+<div class="ttc" id="aclassGame_1_1World_1_1CarSpawner_html_a5bef35ae7b6ec689a427e1a82a56a568"><div class="ttname"><a href="classGame_1_1World_1_1CarSpawner.html#a5bef35ae7b6ec689a427e1a82a56a568">Game.World.CarSpawner.spawnIntervalsTier1</a></div><div class="ttdeci">Dictionary&lt; int, float &gt; spawnIntervalsTier1</div><div class="ttdef"><b>Definition</b> <a href="CarSpawner_8cs_source.html#l00022">CarSpawner.cs:22</a></div></div>
+<div class="ttc" id="aclassGame_1_1World_1_1CarSpawner_html_a68b1710c3c5c6ab1ea0d64b13da93e49"><div class="ttname"><a href="classGame_1_1World_1_1CarSpawner.html#a68b1710c3c5c6ab1ea0d64b13da93e49">Game.World.CarSpawner.SpawnPolice</a></div><div class="ttdeci">void SpawnPolice(GameObject carPrefab)</div><div class="ttdef"><b>Definition</b> <a href="CarSpawner_8cs_source.html#l00058">CarSpawner.cs:58</a></div></div>
+<div class="ttc" id="aclassGame_1_1World_1_1CarSpawner_html_a93141b0627ec47b261909bcfa78b0291"><div class="ttname"><a href="classGame_1_1World_1_1CarSpawner.html#a93141b0627ec47b261909bcfa78b0291">Game.World.CarSpawner.tier3SpawnerTimer</a></div><div class="ttdeci">float tier3SpawnerTimer</div><div class="ttdef"><b>Definition</b> <a href="CarSpawner_8cs_source.html#l00028">CarSpawner.cs:28</a></div></div>
+<div class="ttc" id="aclassGame_1_1World_1_1CarSpawner_html_aa4b605aa319424b2d4a33b565a64b1c6"><div class="ttname"><a href="classGame_1_1World_1_1CarSpawner.html#aa4b605aa319424b2d4a33b565a64b1c6">Game.World.CarSpawner.spawnIntervalsTier3</a></div><div class="ttdeci">Dictionary&lt; int, float &gt; spawnIntervalsTier3</div><div class="ttdef"><b>Definition</b> <a href="CarSpawner_8cs_source.html#l00024">CarSpawner.cs:24</a></div></div>
+<div class="ttc" id="aclassGame_1_1World_1_1CarSpawner_html_aae87e13674ea01abc1a7f7b11afe30a2"><div class="ttname"><a href="classGame_1_1World_1_1CarSpawner.html#aae87e13674ea01abc1a7f7b11afe30a2">Game.World.CarSpawner.CopCars</a></div><div class="ttdeci">List&lt; GameObject &gt; CopCars</div><div class="ttdef"><b>Definition</b> <a href="CarSpawner_8cs_source.html#l00017">CarSpawner.cs:17</a></div></div>
+<div class="ttc" id="aclassGame_1_1World_1_1CarSpawner_html_ae30100f5c4e5a3a209fac6fa01664846"><div class="ttname"><a href="classGame_1_1World_1_1CarSpawner.html#ae30100f5c4e5a3a209fac6fa01664846">Game.World.CarSpawner.spawnIntervalsTier2</a></div><div class="ttdeci">Dictionary&lt; int, float &gt; spawnIntervalsTier2</div><div class="ttdef"><b>Definition</b> <a href="CarSpawner_8cs_source.html#l00023">CarSpawner.cs:23</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="CarSpawner_8cs_source.html#l00014">Game.World.CarSpawner.gameController</a>, <a class="el" href="GameController_8cs_source.html#l00036">Game.GameController.Running</a>, <a class="el" href="CarSpawner_8cs_source.html#l00024">Game.World.CarSpawner.spawnInterval</a>, <a class="el" href="CarSpawner_8cs_source.html#l00041">Game.World.CarSpawner.SpawnPolice()</a>, and <a class="el" href="CarSpawner_8cs_source.html#l00022">Game.World.CarSpawner.timer</a>.</p>
+<p class="reference">References <a class="el" href="CarSpawner_8cs_source.html#l00017">Game.World.CarSpawner.CopCars</a>, <a class="el" href="GameController_8cs_source.html#l00038">Game.GameController.Difficulty</a>, <a class="el" href="CarSpawner_8cs_source.html#l00014">Game.World.CarSpawner.gameController</a>, <a class="el" href="GameController_8cs_source.html#l00036">Game.GameController.Running</a>, <a class="el" href="CarSpawner_8cs_source.html#l00022">Game.World.CarSpawner.spawnIntervalsTier1</a>, <a class="el" href="CarSpawner_8cs_source.html#l00023">Game.World.CarSpawner.spawnIntervalsTier2</a>, <a class="el" href="CarSpawner_8cs_source.html#l00024">Game.World.CarSpawner.spawnIntervalsTier3</a>, <a class="el" href="CarSpawner_8cs_source.html#l00058">Game.World.CarSpawner.SpawnPolice()</a>, <a class="el" href="CarSpawner_8cs_source.html#l00026">Game.World.CarSpawner.tier1SpawnerTimer</a>, <a class="el" href="CarSpawner_8cs_source.html#l00027">Game.World.CarSpawner.tier2SpawnerTimer</a>, and <a class="el" href="CarSpawner_8cs_source.html#l00028">Game.World.CarSpawner.tier3SpawnerTimer</a>.</p>
 
 </div>
 </div>
-<a id="afaa81fb8d9785f7b38d7126d697565eb" name="afaa81fb8d9785f7b38d7126d697565eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afaa81fb8d9785f7b38d7126d697565eb">&#9670;&#160;</a></span>SpawnPolice()</h2>
+<a id="a68b1710c3c5c6ab1ea0d64b13da93e49" name="a68b1710c3c5c6ab1ea0d64b13da93e49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68b1710c3c5c6ab1ea0d64b13da93e49">&#9670;&#160;</a></span>SpawnPolice()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -195,7 +218,8 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void Game.World.CarSpawner.SpawnPolice </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">GameObject&#160;</td>
+          <td class="paramname"><em>carPrefab</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -206,19 +230,14 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CarSpawner_8cs_source.html#l00041">41</a> of file <a class="el" href="CarSpawner_8cs_source.html">CarSpawner.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   42</span>            {</div>
-<div class="line"><span class="lineno">   43</span>                <span class="keywordflow">foreach</span> (var item <span class="keywordflow">in</span> <a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#aae87e13674ea01abc1a7f7b11afe30a2">CopCars</a>)</div>
-<div class="line"><span class="lineno">   44</span>                {</div>
-<div class="line"><span class="lineno">   45</span>                    <a class="code hl_class" href="classGame_1_1World_1_1Chunk.html">Chunk</a> playerChunk = <a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a16e0ea05148bf5a83e445863abf78549">gameController</a>.<a class="code hl_property" href="classGame_1_1GameController.html#ae490910e1402d5777d9aa387023a433b">World</a>.<a class="code hl_function" href="classGame_1_1World_1_1GameWorld.html#a78654137c458c1b1917285e28d3d270b">GetChunk</a>(<a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a16e0ea05148bf5a83e445863abf78549">gameController</a>.<a class="code hl_property" href="classGame_1_1GameController.html#aeb425ec760007866c0ea8882d64a3171">PlayerPos</a>);</div>
-<div class="line"><span class="lineno">   46</span> </div>
-<div class="line"><span class="lineno">   47</span>                    <a class="code hl_class" href="classGame_1_1CopCar.html">CopCar</a> copCar = Instantiate(item, playerChunk.gameObject.transform, <span class="keyword">true</span>).GetComponent&lt;<a class="code hl_class" href="classGame_1_1CopCar.html">CopCar</a>&gt;();</div>
-<div class="line"><span class="lineno">   48</span>                    copCar.<a class="code hl_function" href="classGame_1_1Car.html#a73919d2b4768ace830efe5e84cb3e0d5">Init</a>(<a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a16e0ea05148bf5a83e445863abf78549">gameController</a>);</div>
-<div class="line"><span class="lineno">   49</span> </div>
-<div class="line"><span class="lineno">   50</span>                    Vector3 roadPos = playerChunk.<a class="code hl_function" href="classGame_1_1World_1_1Chunk.html#aa082f46d92a6ade2f934fc8f2ff3093e">GetARandomRoad</a>();</div>
-<div class="line"><span class="lineno">   51</span>                    copCar.transform.transform.localPosition = <span class="keyword">new</span> Vector3(roadPos.x * <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#a28c600fb4f244669276b23704ada46ee">CHUNK_SCALE</a> * <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#a915ac5cd4099430ccc48cea1f4876c4b">CHUNK_CELL</a>, playerChunk.gameObject.transform.position.y + 2, roadPos.z * <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#a28c600fb4f244669276b23704ada46ee">CHUNK_SCALE</a> * <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#a915ac5cd4099430ccc48cea1f4876c4b">CHUNK_CELL</a>);</div>
-<div class="line"><span class="lineno">   52</span>                }</div>
-<div class="line"><span class="lineno">   53</span>            }</div>
+<p class="definition">Definition at line <a class="el" href="CarSpawner_8cs_source.html#l00058">58</a> of file <a class="el" href="CarSpawner_8cs_source.html">CarSpawner.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   59</span>            {</div>
+<div class="line"><span class="lineno">   60</span>                <a class="code hl_class" href="classGame_1_1World_1_1Chunk.html">Chunk</a> playerChunk = <a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a16e0ea05148bf5a83e445863abf78549">gameController</a>.<a class="code hl_property" href="classGame_1_1GameController.html#ae490910e1402d5777d9aa387023a433b">World</a>.<a class="code hl_function" href="classGame_1_1World_1_1GameWorld.html#a78654137c458c1b1917285e28d3d270b">GetChunk</a>(<a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a16e0ea05148bf5a83e445863abf78549">gameController</a>.<a class="code hl_property" href="classGame_1_1GameController.html#aeb425ec760007866c0ea8882d64a3171">PlayerPos</a>);</div>
+<div class="line"><span class="lineno">   61</span>                <a class="code hl_class" href="classGame_1_1CopCar.html">CopCar</a> copCar = Instantiate(carPrefab, playerChunk.gameObject.transform, <span class="keyword">true</span>).GetComponent&lt;<a class="code hl_class" href="classGame_1_1CopCar.html">CopCar</a>&gt;();</div>
+<div class="line"><span class="lineno">   62</span>                copCar.<a class="code hl_function" href="classGame_1_1Car.html#a73919d2b4768ace830efe5e84cb3e0d5">Init</a>(<a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a16e0ea05148bf5a83e445863abf78549">gameController</a>);</div>
+<div class="line"><span class="lineno">   63</span>                Vector3 roadPos = playerChunk.<a class="code hl_function" href="classGame_1_1World_1_1Chunk.html#aa082f46d92a6ade2f934fc8f2ff3093e">GetARandomRoad</a>();</div>
+<div class="line"><span class="lineno">   64</span>                copCar.transform.transform.localPosition = <span class="keyword">new</span> Vector3(roadPos.x * <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#a28c600fb4f244669276b23704ada46ee">CHUNK_SCALE</a> * <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#a915ac5cd4099430ccc48cea1f4876c4b">CHUNK_CELL</a>, playerChunk.gameObject.transform.position.y + 2, roadPos.z * <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#a28c600fb4f244669276b23704ada46ee">CHUNK_SCALE</a> * <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#a915ac5cd4099430ccc48cea1f4876c4b">CHUNK_CELL</a>);</div>
+<div class="line"><span class="lineno">   65</span>            }</div>
 <div class="ttc" id="aclassGameConfig_html"><div class="ttname"><a href="classGameConfig.html">GameConfig</a></div><div class="ttdef"><b>Definition</b> <a href="GameConfig_8cs_source.html#l00001">GameConfig.cs:2</a></div></div>
 <div class="ttc" id="aclassGameConfig_html_a28c600fb4f244669276b23704ada46ee"><div class="ttname"><a href="classGameConfig.html#a28c600fb4f244669276b23704ada46ee">GameConfig.CHUNK_SCALE</a></div><div class="ttdeci">const float CHUNK_SCALE</div><div class="ttdef"><b>Definition</b> <a href="GameConfig_8cs_source.html#l00009">GameConfig.cs:9</a></div></div>
 <div class="ttc" id="aclassGameConfig_html_a915ac5cd4099430ccc48cea1f4876c4b"><div class="ttname"><a href="classGameConfig.html#a915ac5cd4099430ccc48cea1f4876c4b">GameConfig.CHUNK_CELL</a></div><div class="ttdeci">const int CHUNK_CELL</div><div class="ttdef"><b>Definition</b> <a href="GameConfig_8cs_source.html#l00007">GameConfig.cs:7</a></div></div>
@@ -226,14 +245,13 @@ Static Private Attributes</h2></td></tr>
 <div class="ttc" id="aclassGame_1_1CopCar_html"><div class="ttname"><a href="classGame_1_1CopCar.html">Game.CopCar</a></div><div class="ttdef"><b>Definition</b> <a href="CopCar_8cs_source.html#l00009">CopCar.cs:10</a></div></div>
 <div class="ttc" id="aclassGame_1_1GameController_html_ae490910e1402d5777d9aa387023a433b"><div class="ttname"><a href="classGame_1_1GameController.html#ae490910e1402d5777d9aa387023a433b">Game.GameController.World</a></div><div class="ttdeci">World.GameWorld World</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00023">GameController.cs:24</a></div></div>
 <div class="ttc" id="aclassGame_1_1GameController_html_aeb425ec760007866c0ea8882d64a3171"><div class="ttname"><a href="classGame_1_1GameController.html#aeb425ec760007866c0ea8882d64a3171">Game.GameController.PlayerPos</a></div><div class="ttdeci">Vector3 PlayerPos</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00034">GameController.cs:34</a></div></div>
-<div class="ttc" id="aclassGame_1_1World_1_1CarSpawner_html_aae87e13674ea01abc1a7f7b11afe30a2"><div class="ttname"><a href="classGame_1_1World_1_1CarSpawner.html#aae87e13674ea01abc1a7f7b11afe30a2">Game.World.CarSpawner.CopCars</a></div><div class="ttdeci">List&lt; GameObject &gt; CopCars</div><div class="ttdef"><b>Definition</b> <a href="CarSpawner_8cs_source.html#l00017">CarSpawner.cs:17</a></div></div>
 <div class="ttc" id="aclassGame_1_1World_1_1Chunk_html"><div class="ttname"><a href="classGame_1_1World_1_1Chunk.html">Game.World.Chunk</a></div><div class="ttdoc">Used for generating a new world.</div><div class="ttdef"><b>Definition</b> <a href="Chunk_8cs_source.html#l00023">Chunk.cs:24</a></div></div>
 <div class="ttc" id="aclassGame_1_1World_1_1Chunk_html_aa082f46d92a6ade2f934fc8f2ff3093e"><div class="ttname"><a href="classGame_1_1World_1_1Chunk.html#aa082f46d92a6ade2f934fc8f2ff3093e">Game.World.Chunk.GetARandomRoad</a></div><div class="ttdeci">Vector3 GetARandomRoad()</div><div class="ttdef"><b>Definition</b> <a href="Chunk_8cs_source.html#l00171">Chunk.cs:171</a></div></div>
 <div class="ttc" id="aclassGame_1_1World_1_1GameWorld_html_a78654137c458c1b1917285e28d3d270b"><div class="ttname"><a href="classGame_1_1World_1_1GameWorld.html#a78654137c458c1b1917285e28d3d270b">Game.World.GameWorld.GetChunk</a></div><div class="ttdeci">Chunk GetChunk(Vector3 GameObjectPos)</div><div class="ttdef"><b>Definition</b> <a href="World_8cs_source.html#l00030">World.cs:30</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="GameConfig_8cs_source.html#l00007">GameConfig.CHUNK_CELL</a>, <a class="el" href="GameConfig_8cs_source.html#l00009">GameConfig.CHUNK_SCALE</a>, <a class="el" href="CarSpawner_8cs_source.html#l00017">Game.World.CarSpawner.CopCars</a>, <a class="el" href="CarSpawner_8cs_source.html#l00014">Game.World.CarSpawner.gameController</a>, <a class="el" href="Chunk_8cs_source.html#l00171">Game.World.Chunk.GetARandomRoad()</a>, <a class="el" href="World_8cs_source.html#l00030">Game.World.GameWorld.GetChunk()</a>, <a class="el" href="Car_8cs_source.html#l00068">Game.Car.Init()</a>, <a class="el" href="GameController_8cs_source.html#l00034">Game.GameController.PlayerPos</a>, and <a class="el" href="GameController_8cs_source.html#l00024">Game.GameController.World</a>.</p>
+<p class="reference">References <a class="el" href="GameConfig_8cs_source.html#l00007">GameConfig.CHUNK_CELL</a>, <a class="el" href="GameConfig_8cs_source.html#l00009">GameConfig.CHUNK_SCALE</a>, <a class="el" href="CarSpawner_8cs_source.html#l00014">Game.World.CarSpawner.gameController</a>, <a class="el" href="Chunk_8cs_source.html#l00171">Game.World.Chunk.GetARandomRoad()</a>, <a class="el" href="World_8cs_source.html#l00030">Game.World.GameWorld.GetChunk()</a>, <a class="el" href="Car_8cs_source.html#l00068">Game.Car.Init()</a>, <a class="el" href="GameController_8cs_source.html#l00034">Game.GameController.PlayerPos</a>, and <a class="el" href="GameController_8cs_source.html#l00024">Game.GameController.World</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CarSpawner_8cs_source.html#l00026">Game.World.CarSpawner.Update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CarSpawner_8cs_source.html#l00030">Game.World.CarSpawner.Update()</a>.</p>
 
 </div>
 </div>
@@ -260,12 +278,16 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CarSpawner_8cs_source.html#l00055">55</a> of file <a class="el" href="CarSpawner_8cs_source.html">CarSpawner.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   56</span>            {</div>
-<div class="line"><span class="lineno">   57</span>                this.timer = 0;</div>
-<div class="line"><span class="lineno">   58</span>            }</div>
+<p class="definition">Definition at line <a class="el" href="CarSpawner_8cs_source.html#l00067">67</a> of file <a class="el" href="CarSpawner_8cs_source.html">CarSpawner.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   68</span>            {</div>
+<div class="line"><span class="lineno">   69</span>                <a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a23d129767331ac8528e9a46c2d197c8a">tier1SpawnerTimer</a> = 0f;</div>
+<div class="line"><span class="lineno">   70</span>                <a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a1003d6d74287406eb601b6d9d0e360c7">tier2SpawnerTimer</a> = 0f;</div>
+<div class="line"><span class="lineno">   71</span>                <a class="code hl_variable" href="classGame_1_1World_1_1CarSpawner.html#a93141b0627ec47b261909bcfa78b0291">tier3SpawnerTimer</a> = 0f;</div>
+<div class="line"><span class="lineno">   72</span>            }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00076">Game.GameController.NewGame()</a>.</p>
+<p class="reference">References <a class="el" href="CarSpawner_8cs_source.html#l00026">Game.World.CarSpawner.tier1SpawnerTimer</a>, <a class="el" href="CarSpawner_8cs_source.html#l00027">Game.World.CarSpawner.tier2SpawnerTimer</a>, and <a class="el" href="CarSpawner_8cs_source.html#l00028">Game.World.CarSpawner.tier3SpawnerTimer</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00087">Game.GameController.NewGame()</a>.</p>
 
 </div>
 </div>
@@ -292,9 +314,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CarSpawner_8cs_source.html#l00060">60</a> of file <a class="el" href="CarSpawner_8cs_source.html">CarSpawner.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   61</span>            {</div>
-<div class="line"><span class="lineno">   62</span>            }</div>
+<p class="definition">Definition at line <a class="el" href="CarSpawner_8cs_source.html#l00074">74</a> of file <a class="el" href="CarSpawner_8cs_source.html">CarSpawner.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   75</span>            {</div>
+<div class="line"><span class="lineno">   76</span>            }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -321,7 +343,7 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="CarSpawner_8cs_source.html#l00014">14</a> of file <a class="el" href="CarSpawner_8cs_source.html">CarSpawner.cs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CarSpawner_8cs_source.html#l00041">Game.World.CarSpawner.SpawnPolice()</a>, and <a class="el" href="CarSpawner_8cs_source.html#l00026">Game.World.CarSpawner.Update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CarSpawner_8cs_source.html#l00058">Game.World.CarSpawner.SpawnPolice()</a>, and <a class="el" href="CarSpawner_8cs_source.html#l00030">Game.World.CarSpawner.Update()</a>.</p>
 
 </div>
 </div>
@@ -347,7 +369,7 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="CarSpawner_8cs_source.html#l00017">17</a> of file <a class="el" href="CarSpawner_8cs_source.html">CarSpawner.cs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CarSpawner_8cs_source.html#l00041">Game.World.CarSpawner.SpawnPolice()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CarSpawner_8cs_source.html#l00030">Game.World.CarSpawner.Update()</a>.</p>
 
 </div>
 </div>
@@ -375,8 +397,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a563614c1c52a824da81cbeac0cd6f438" name="a563614c1c52a824da81cbeac0cd6f438"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a563614c1c52a824da81cbeac0cd6f438">&#9670;&#160;</a></span>timer</h2>
+<a id="a5bef35ae7b6ec689a427e1a82a56a568" name="a5bef35ae7b6ec689a427e1a82a56a568"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bef35ae7b6ec689a427e1a82a56a568">&#9670;&#160;</a></span>spawnIntervalsTier1</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -385,7 +407,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float Game.World.CarSpawner.timer = 0</td>
+          <td class="memname">Dictionary&lt;int, float&gt; Game.World.CarSpawner.spawnIntervalsTier1 = new Dictionary&lt;int, float&gt;() { { 0, 20 }, { 1, 10 }, { 2, 10 }, { 3, 10 }, { 4, 10 }, { 5, 10 } }</td>
         </tr>
       </table>
   </td>
@@ -396,13 +418,14 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="CarSpawner_8cs_source.html#l00022">22</a> of file <a class="el" href="CarSpawner_8cs_source.html">CarSpawner.cs</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="CarSpawner_8cs_source.html#l00026">Game.World.CarSpawner.Update()</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   22</span>{ { 0, 20 }, { 1, 10 }, { 2, 10 }, { 3, 10 }, { 4, 10 }, { 5, 10 } };</div>
+</div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="CarSpawner_8cs_source.html#l00030">Game.World.CarSpawner.Update()</a>.</p>
 
 </div>
 </div>
-<a id="a8a8c7d30161c6cc94e7b92038abc965a" name="a8a8c7d30161c6cc94e7b92038abc965a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a8c7d30161c6cc94e7b92038abc965a">&#9670;&#160;</a></span>spawnInterval</h2>
+<a id="ae30100f5c4e5a3a209fac6fa01664846" name="ae30100f5c4e5a3a209fac6fa01664846"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae30100f5c4e5a3a209fac6fa01664846">&#9670;&#160;</a></span>spawnIntervalsTier2</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -411,19 +434,125 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const float Game.World.CarSpawner.spawnInterval = 3f</td>
+          <td class="memname">Dictionary&lt;int, float&gt; Game.World.CarSpawner.spawnIntervalsTier2 = new Dictionary&lt;int, float&gt;() { { 0, float.PositiveInfinity }, { 1, float.PositiveInfinity }, { 2, float.PositiveInfinity }, { 3, 15 }, { 4, 10 }, { 5, 10 } }</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="CarSpawner_8cs_source.html#l00023">23</a> of file <a class="el" href="CarSpawner_8cs_source.html">CarSpawner.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   23</span>{ { 0, float.PositiveInfinity }, { 1, float.PositiveInfinity }, { 2, float.PositiveInfinity }, { 3, 15 }, { 4, 10 }, { 5, 10 } };</div>
+</div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="CarSpawner_8cs_source.html#l00030">Game.World.CarSpawner.Update()</a>.</p>
+
+</div>
+</div>
+<a id="aa4b605aa319424b2d4a33b565a64b1c6" name="aa4b605aa319424b2d4a33b565a64b1c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4b605aa319424b2d4a33b565a64b1c6">&#9670;&#160;</a></span>spawnIntervalsTier3</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt;int, float&gt; Game.World.CarSpawner.spawnIntervalsTier3 = new Dictionary&lt;int, float&gt;() { { 0, float.PositiveInfinity }, { 1, float.PositiveInfinity }, { 2, float.PositiveInfinity }, { 3, float.PositiveInfinity }, { 4, 30 }, { 5, 15 } }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="CarSpawner_8cs_source.html#l00024">24</a> of file <a class="el" href="CarSpawner_8cs_source.html">CarSpawner.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>{ { 0, float.PositiveInfinity }, { 1, float.PositiveInfinity }, { 2, float.PositiveInfinity }, { 3, float.PositiveInfinity }, { 4, 30 }, { 5, 15 } };</div>
+</div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="CarSpawner_8cs_source.html#l00030">Game.World.CarSpawner.Update()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CarSpawner_8cs_source.html#l00026">Game.World.CarSpawner.Update()</a>.</p>
+</div>
+</div>
+<a id="a23d129767331ac8528e9a46c2d197c8a" name="a23d129767331ac8528e9a46c2d197c8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23d129767331ac8528e9a46c2d197c8a">&#9670;&#160;</a></span>tier1SpawnerTimer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Game.World.CarSpawner.tier1SpawnerTimer = 0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="CarSpawner_8cs_source.html#l00026">26</a> of file <a class="el" href="CarSpawner_8cs_source.html">CarSpawner.cs</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="CarSpawner_8cs_source.html#l00067">Game.World.CarSpawner.Reset()</a>, and <a class="el" href="CarSpawner_8cs_source.html#l00030">Game.World.CarSpawner.Update()</a>.</p>
+
+</div>
+</div>
+<a id="a1003d6d74287406eb601b6d9d0e360c7" name="a1003d6d74287406eb601b6d9d0e360c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1003d6d74287406eb601b6d9d0e360c7">&#9670;&#160;</a></span>tier2SpawnerTimer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Game.World.CarSpawner.tier2SpawnerTimer = 0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="CarSpawner_8cs_source.html#l00027">27</a> of file <a class="el" href="CarSpawner_8cs_source.html">CarSpawner.cs</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="CarSpawner_8cs_source.html#l00067">Game.World.CarSpawner.Reset()</a>, and <a class="el" href="CarSpawner_8cs_source.html#l00030">Game.World.CarSpawner.Update()</a>.</p>
+
+</div>
+</div>
+<a id="a93141b0627ec47b261909bcfa78b0291" name="a93141b0627ec47b261909bcfa78b0291"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93141b0627ec47b261909bcfa78b0291">&#9670;&#160;</a></span>tier3SpawnerTimer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Game.World.CarSpawner.tier3SpawnerTimer = 0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="CarSpawner_8cs_source.html#l00028">28</a> of file <a class="el" href="CarSpawner_8cs_source.html">CarSpawner.cs</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="CarSpawner_8cs_source.html#l00067">Game.World.CarSpawner.Reset()</a>, and <a class="el" href="CarSpawner_8cs_source.html#l00030">Game.World.CarSpawner.Update()</a>.</p>
 
 </div>
 </div>
