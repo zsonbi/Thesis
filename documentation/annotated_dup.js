@@ -68,6 +68,8 @@ var annotated_dup =
     [ "ModalWindow", "classModalWindow.html", "classModalWindow" ],
     [ "ProfileHandler", "classProfileHandler.html", "classProfileHandler" ],
     [ "Server", "classServer.html", "classServer" ],
+    [ "ShopItem", "classShopItem.html", "classShopItem" ],
+    [ "ShopWindow", "classShopWindow.html", "classShopWindow" ],
     [ "StarHandler", "classStarHandler.html", "classStarHandler" ],
     [ "TaskClosedEventArgs", "classTaskClosedEventArgs.html", "classTaskClosedEventArgs" ],
     [ "TaskContainer", "classTaskContainer.html", "classTaskContainer" ],

@@ -18,11 +18,12 @@ var searchData=
   ['coingameovertext_15',['CoinGameOverText',['../classGameUI.html#aa757d677e1d9a6252f3501c556975868',1,'GameUI']]],
   ['coiningametext_16',['CoinInGameText',['../classGameUI.html#a2a7e871b172d13cbfa52310a2d76d8b3',1,'GameUI']]],
   ['coinprefab_17',['coinPrefab',['../classGame_1_1World_1_1Chunk.html#a4df8985ce56e237e5fe57939f86419b3',1,'Game::World::Chunk']]],
-  ['columncount_18',['columnCount',['../classBuilding.html#a0b7c04d7ece54fe0199e640fe475d787',1,'Building']]],
-  ['completebutton_19',['CompleteButton',['../classTaskDisplayHandler.html#a2cfd7e61e0fc131acda2e8e6919f00dd',1,'TaskDisplayHandler']]],
-  ['controlstyle_20',['controlStyle',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#ad6ec0252344c6ee56d386f560e0b2240',1,'UnityStandardAssets::CrossPlatformInput::TouchPad']]],
-  ['copcars_21',['CopCars',['../classGame_1_1World_1_1CarSpawner.html#aae87e13674ea01abc1a7f7b11afe30a2',1,'Game::World::CarSpawner']]],
-  ['crossroadsprefab_22',['crossRoadsPrefab',['../classGame_1_1World_1_1Chunk.html#a7abecf4e7c8c6ef8a164e24731f843ac',1,'Game::World::Chunk']]],
-  ['currencytext_23',['CurrencyText',['../classUIController.html#a3e222d5afb352c2dc6620eaf3fe344fc',1,'UIController']]],
-  ['curvedroadprefab_24',['curvedRoadPrefab',['../classGame_1_1World_1_1Chunk.html#a032731bad732a8acc8a81495eb2446a6',1,'Game::World::Chunk']]]
+  ['cointext_18',['CoinText',['../classShopWindow.html#a945b0fbfe08eb39ddb5c1a31af950595',1,'ShopWindow']]],
+  ['columncount_19',['columnCount',['../classBuilding.html#a0b7c04d7ece54fe0199e640fe475d787',1,'Building']]],
+  ['completebutton_20',['CompleteButton',['../classTaskDisplayHandler.html#a2cfd7e61e0fc131acda2e8e6919f00dd',1,'TaskDisplayHandler']]],
+  ['controlstyle_21',['controlStyle',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#ad6ec0252344c6ee56d386f560e0b2240',1,'UnityStandardAssets::CrossPlatformInput::TouchPad']]],
+  ['copcars_22',['CopCars',['../classGame_1_1World_1_1CarSpawner.html#aae87e13674ea01abc1a7f7b11afe30a2',1,'Game::World::CarSpawner']]],
+  ['crossroadsprefab_23',['crossRoadsPrefab',['../classGame_1_1World_1_1Chunk.html#a7abecf4e7c8c6ef8a164e24731f843ac',1,'Game::World::Chunk']]],
+  ['currencytext_24',['CurrencyText',['../classUIController.html#a3e222d5afb352c2dc6620eaf3fe344fc',1,'UIController']]],
+  ['curvedroadprefab_25',['curvedRoadPrefab',['../classGame_1_1World_1_1Chunk.html#a032731bad732a8acc8a81495eb2446a6',1,'Game::World::Chunk']]]
 ];

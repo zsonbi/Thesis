@@ -16,5 +16,6 @@ var classConfig_1_1ServerConfig =
     [ "PATH_FOR_FRIEND_GETALL", "classConfig_1_1ServerConfig.html#a735cfd33683ca5dd2b7cd9bdcfbcdda9", null ],
     [ "PATHFORTASKSAVE", "classConfig_1_1ServerConfig.html#a834aa29afe57b0ee50c63699ebab68c2", null ],
     [ "PATHFORTASKCREATE", "classConfig_1_1ServerConfig.html#aaeb650363d941d644e7171e2ca583ceb", null ],
-    [ "PATHFORTASKSQUERY", "classConfig_1_1ServerConfig.html#a47231cfa790f15bbd226c2dc2202c448", null ]
+    [ "PATHFORTASKSQUERY", "classConfig_1_1ServerConfig.html#a47231cfa790f15bbd226c2dc2202c448", null ],
+    [ "PATH_FOR_SHOP_GET_ALL", "classConfig_1_1ServerConfig.html#ad30c71b0f09c1eea223b115938e7d76f", null ]
 ];

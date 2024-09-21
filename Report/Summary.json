@@ -1,20 +1,20 @@
 {
   "summary": {
-    "generatedon": "2024-09-21T19:37:18Z",
+    "generatedon": "2024-09-21T22:47:10Z",
     "parser": "MultiReportParser (3x OpenCoverParser)",
     "assemblies": 4,
-    "classes": 95,
-    "files": 93,
+    "classes": 97,
+    "files": 95,
     "coveredlines": 260,
-    "uncoveredlines": 4321,
-    "coverablelines": 4581,
-    "totallines": 9160,
+    "uncoveredlines": 4354,
+    "coverablelines": 4614,
+    "totallines": 9250,
     "linecoverage": 5.6,
     "coveredbranches": 0,
     "totalbranches": 0,
     "coveredmethods": 116,
-    "totalmethods": 817,
-    "methodcoverage": 14.1
+    "totalmethods": 824,
+    "methodcoverage": 14
  },
   "coverage": {
     "assemblies": [
@@ -58,12 +58,12 @@
         { "name": "Tests.GameTests.RoadGeneratorTests", "coverage": 100, "coveredlines": 26, "coverablelines": 26, "totallines": 55, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 3, "totalmethods": 3 },
         { "name": "Tests.MainMenuTest", "coverage": 100, "coveredlines": 4, "coverablelines": 4, "totallines": 24, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 1, "totalmethods": 1 },
         { "name": "Tests.UITests.UserControllerTests", "coverage": 96.1, "coveredlines": 25, "coverablelines": 26, "totallines": 65, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 6, "totalmethods": 6 } ] },
-      { "name": "ThesisScripts", "classes": 58, "coverage": 8.2, "coveredlines": 205, "coverablelines": 2478, "totallines": 5136, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 19.8, "coveredmethods": 106, "totalmethods": 535, "classesinassembly": [
+      { "name": "ThesisScripts", "classes": 60, "coverage": 8.1, "coveredlines": 205, "coverablelines": 2511, "totallines": 5226, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 19.5, "coveredmethods": 106, "totalmethods": 542, "classesinassembly": [
         { "name": "Assets.Scripts.Client.DataTypes.ChunkCellContainer", "coverage": 0, "coveredlines": 0, "coverablelines": 6, "totallines": 15, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 5 },
         { "name": "Building", "coverage": 0, "coveredlines": 0, "coverablelines": 9, "totallines": 33, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 7 },
         { "name": "CameraScript", "coverage": 0, "coveredlines": 0, "coverablelines": 7, "totallines": 24, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
         { "name": "Coin", "coverage": 0, "coveredlines": 0, "coverablelines": 7, "totallines": 16, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
-        { "name": "Config.ServerConfig", "coverage": 0, "coveredlines": 0, "coverablelines": 5, "totallines": 78, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 5 },
+        { "name": "Config.ServerConfig", "coverage": 0, "coveredlines": 0, "coverablelines": 5, "totallines": 80, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 5 },
         { "name": "DirectionConverter", "coverage": 0, "coveredlines": 0, "coverablelines": 21, "totallines": 46, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
         { "name": "EdgeRoadContainer", "coverage": 100, "coveredlines": 9, "coverablelines": 9, "totallines": 15, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 7, "totalmethods": 7 },
         { "name": "EffectScript", "coverage": 0, "coveredlines": 0, "coverablelines": 4, "totallines": 23, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
@@ -82,10 +82,12 @@
         { "name": "Game.World.Chunk", "coverage": 0, "coveredlines": 0, "coverablelines": 375, "totallines": 608, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 29 },
         { "name": "Game.World.GameWorld", "coverage": 0, "coveredlines": 0, "coverablelines": 68, "totallines": 119, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 6 },
         { "name": "Game.World.RoadGenerator", "coverage": 52.8, "coveredlines": 55, "coverablelines": 104, "totallines": 200, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 66.6, "coveredmethods": 6, "totalmethods": 9 },
-        { "name": "GameUI", "coverage": 0, "coveredlines": 0, "coverablelines": 44, "totallines": 104, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 13 },
+        { "name": "GameUI", "coverage": 0, "coveredlines": 0, "coverablelines": 48, "totallines": 110, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 14 },
         { "name": "MeshGenerator", "coverage": 0, "coveredlines": 0, "coverablelines": 27, "totallines": 96, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
         { "name": "ModalWindow", "coverage": 0, "coveredlines": 0, "coverablelines": 19, "totallines": 43, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 },
         { "name": "ProfileHandler", "coverage": 0, "coveredlines": 0, "coverablelines": 25, "totallines": 66, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 7 },
+        { "name": "ShopItem", "coverage": 0, "coveredlines": 0, "coverablelines": 10, "totallines": 38, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 3 },
+        { "name": "ShopWindow", "coverage": 0, "coveredlines": 0, "coverablelines": 19, "totallines": 44, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 3 },
         { "name": "StarHandler", "coverage": 0, "coveredlines": 0, "coverablelines": 10, "totallines": 28, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
         { "name": "TaskClosedEventArgs", "coverage": 0, "coveredlines": 0, "coverablelines": 4, "totallines": 14, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
         { "name": "TaskContainer", "coverage": 32.3, "coveredlines": 22, "coverablelines": 68, "totallines": 91, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 78.2, "coveredmethods": 18, "totalmethods": 23 },
