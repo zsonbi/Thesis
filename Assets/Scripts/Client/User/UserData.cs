@@ -15,7 +15,7 @@ namespace User
         public string Email { get; private set; }
         public long Id { get; private set; }
         public UserSettings SettingsId { get; private set; }
-        public long GameId { get; private set; }
+        public Thesis_backend.Data_Structures.Game Game { get; private set; }
         public DateTime LastLoggedIn { get; private set; }
         public DateTime Registered { get; private set; }
         public bool LoggedIn { get; private set; } = false;
@@ -28,7 +28,7 @@ namespace User
             Email = loggedInUser.Email;
             Id = loggedInUser.ID;
             SettingsId = loggedInUser.UserSettings;
-            GameId = loggedInUser.GameId;
+            Game = loggedInUser.Game;
             LastLoggedIn = loggedInUser.LastLoggedIn;
             Registered = loggedInUser.Registered;
             TotalScore = loggedInUser.TotalScore;
