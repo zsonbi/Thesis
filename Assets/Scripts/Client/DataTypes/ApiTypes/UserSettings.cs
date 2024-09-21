@@ -9,7 +9,7 @@ namespace Thesis_backend.Data_Structures
         public User User { get; set; }
         public long UserId { get; set; }
 
-        public string? ProfilePic { get; set; }
+        public string ProfilePic { get; set; }
         public long privacy { get; set; }
     }
 }
