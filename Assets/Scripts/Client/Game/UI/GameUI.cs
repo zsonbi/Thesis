@@ -23,7 +23,13 @@ public class GameUI : MonoBehaviour
     private TMP_Text InfamyGameOverText;
 
     [SerializeField]
+    private TMP_Text CoinGameOverText;
+
+    [SerializeField]
     private TMP_Text InfamyInGameText;
+
+    [SerializeField]
+    private TMP_Text CoinInGameText;
 
     [SerializeField]
     private StarHandler starHandler;
@@ -35,6 +41,7 @@ public class GameUI : MonoBehaviour
         if (gameController.Running)
         {
             this.InfamyInGameText.text = "Infamy: " + gameController.Score;
+            this.CoinInGameText.text = "Coins: " + Mathf.RoundToInt(gameController.Coins);
         }
     }
 
@@ -62,6 +69,7 @@ public class GameUI : MonoBehaviour
     public void ShowEndGameScreen()
     {
         InfamyGameOverText.text = "Infamy: " + gameController.Score;
+        CoinGameOverText.text = "Coins: " + gameController.Coins;
         ingameContainer.SetActive(false);
         gameOverContainer.SetActive(true);
     }

@@ -8,6 +8,9 @@ namespace Game
 {
     internal class PlayerCar : Car
     {
+        [SerializeField]
+        private float coinMultiplier = 1;
+
         private class PoliceContainer
         {
             public float TimeReamaining;
@@ -23,6 +26,11 @@ namespace Game
         private int probeSize = 1;
 
         private List<PoliceContainer> policeContacts = new List<PoliceContainer>();
+
+        public void PickedUpCoin()
+        {
+            this.gameController.IncreaseCoinCount(1 * coinMultiplier);
+        }
 
         protected override async void ChunkChanged(Chunk newChunk)
         {

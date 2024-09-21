@@ -37,6 +37,8 @@ namespace Game
 
         public int Difficulty { get; private set; } = 0;
 
+        public float Coins { get; private set; } = 0;
+
         private async void Awake()
         {
             this.carSpawner = this.GetComponentInChildren<CarSpawner>();
@@ -78,6 +80,11 @@ namespace Game
             this.ScoreCounter += Time.deltaTime;
         }
 
+        public void IncreaseCoinCount(float amount)
+        {
+            this.Coins += amount;
+        }
+
         private void PlayerDied(object? sender, EventArgs args)
         {
             this.gameUI.ShowEndGameScreen();
@@ -96,6 +103,7 @@ namespace Game
             player.gameObject.transform.position = new Vector3(baseChunkPos.x + GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL / 2 + 10, baseChunkPos.y + 2, baseChunkPos.z);
             this.gameUI.ChangeDifficulyDisplay(0);
             this.Running = true;
+            this.Coins = 0;
         }
 
         public async Task LoadAndDespawnChunks(int centerRow, int centerColumn)

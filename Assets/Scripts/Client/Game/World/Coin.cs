@@ -1,24 +1,16 @@
 using Game;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    private GameController gameController;
-
-    public void Init(GameController gameController)
+    private void Update()
     {
-        this.gameController = gameController;
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
+        this.gameObject.transform.Rotate(0, 0, Time.deltaTime * 45);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("coin");
         this.gameObject.SetActive(false);
+        other.gameObject.GetComponentInParent<PlayerCar>().PickedUpCoin();
     }
 }
