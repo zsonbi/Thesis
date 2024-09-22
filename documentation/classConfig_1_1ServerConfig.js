@@ -5,6 +5,7 @@ var classConfig_1_1ServerConfig =
     [ "PATHFORTASKUPDATE", "classConfig_1_1ServerConfig.html#a69cfac1052256f93e049889a0594911d", null ],
     [ "PATHFORTASKCOMPLETE", "classConfig_1_1ServerConfig.html#a955b28390e3951d761ba63dd0ed10843", null ],
     [ "PATHFORTASKDELETE", "classConfig_1_1ServerConfig.html#a9112c3cf42da18b1222b5324f98ee40c", null ],
+    [ "PATH_FOR_BUY_CAR", "classConfig_1_1ServerConfig.html#a7ac624a23651b77f05fe3dfabbd950fc", null ],
     [ "DEFAULT_TASKTYPE", "classConfig_1_1ServerConfig.html#ae695ed1003d463a61dfa9383869c6155", null ],
     [ "DEFAULT_TASKINTERVALS", "classConfig_1_1ServerConfig.html#a69bbf2a306d19fd24eba05a7ec58e501", null ],
     [ "SERVERPATH", "classConfig_1_1ServerConfig.html#aa9e50cfff68e59c43984d969588bf7e6", null ],
@@ -17,5 +18,7 @@ var classConfig_1_1ServerConfig =
     [ "PATHFORTASKSAVE", "classConfig_1_1ServerConfig.html#a834aa29afe57b0ee50c63699ebab68c2", null ],
     [ "PATHFORTASKCREATE", "classConfig_1_1ServerConfig.html#aaeb650363d941d644e7171e2ca583ceb", null ],
     [ "PATHFORTASKSQUERY", "classConfig_1_1ServerConfig.html#a47231cfa790f15bbd226c2dc2202c448", null ],
-    [ "PATH_FOR_SHOP_GET_ALL", "classConfig_1_1ServerConfig.html#ad30c71b0f09c1eea223b115938e7d76f", null ]
+    [ "PATH_FOR_SHOP_GET_ALL", "classConfig_1_1ServerConfig.html#ad30c71b0f09c1eea223b115938e7d76f", null ],
+    [ "PATH_FOR_DOUBLE_COINS", "classConfig_1_1ServerConfig.html#a62005209131131044f0e7cb3a153c98f", null ],
+    [ "PATH_FOR_SAVE_COINS", "classConfig_1_1ServerConfig.html#aa28b72d3a2edcffeb7d4396211f0ade6", null ]
 ];

@@ -112,8 +112,8 @@ var NAVTREEINDEX0 =
 "Game_8cs.html#a6dcf96061eacdfb57f346624d03d787f":[2,0,0,0,0,0,0,3,4],
 "Game_8cs.html#a8073920840e9480edf450160b662b706":[2,0,0,0,0,0,0,3,3],
 "Game_8cs.html#abc2193c437ce44d24dbc7324b916ebc8":[2,0,0,0,0,0,0,3,0],
-"Game_8cs.html#accbebf4a37d371cbb4f72f745e95298c":[2,0,0,0,0,0,0,3,5],
 "Game_8cs.html#acd68958d816c747d85c6ceebf53b8e88":[2,0,0,0,0,0,0,3,1],
+"Game_8cs.html#aef4238adce13ae1ab51753f257e70d8d":[2,0,0,0,0,0,0,3,5],
 "Game_8cs_source.html":[2,0,0,0,0,0,0,3],
 "InputAxisScrollbar_8cs.html":[2,0,0,0,0,1,1,0,4],
 "InputAxisScrollbar_8cs_source.html":[2,0,0,0,0,1,1,0,4],
@@ -216,6 +216,7 @@ var NAVTREEINDEX0 =
 "User_8cs.html#a33bcc9cf08bba0bcbe12dd0eb5a1fd8b":[2,0,0,0,0,0,0,8,2],
 "User_8cs.html#a6a7946e16b9691332dffe63a41be6d8f":[2,0,0,0,0,0,0,8,5],
 "User_8cs.html#a88348bf6d36a46b767b886bd5005d08e":[2,0,0,0,0,0,0,8,4],
+"User_8cs.html#a9b941e9b1cabd32384dc5dd8803b6df8":[2,0,0,0,0,0,0,8,7],
 "User_8cs.html#aae518baa5cf2ea5aa7ab44999037e244":[2,0,0,0,0,0,0,8,3],
 "User_8cs.html#ab65ae00cbe1b1602c72df38d32dff1df":[2,0,0,0,0,0,0,8,6],
 "User_8cs_source.html":[2,0,0,0,0,0,0,8],
@@ -244,10 +245,9 @@ var NAVTREEINDEX0 =
 "classCoin.html":[1,0,8],
 "classCoin.html#a140177a0b7be977ba19cb2b2e08873b0":[1,0,8,1],
 "classCoin.html#a1964d7ad9c017916fca129cb6dab8318":[1,0,8,0],
-"classConfig_1_1ServerConfig.html":[1,0,1,0],
 "classConfig_1_1ServerConfig.html":[0,0,1,0],
+"classConfig_1_1ServerConfig.html":[1,0,1,0],
 "classConfig_1_1ServerConfig.html#a10be54228c36baeb2de629e8122d926f":[1,0,1,0,1],
 "classConfig_1_1ServerConfig.html#a10be54228c36baeb2de629e8122d926f":[0,0,1,0,1],
-"classConfig_1_1ServerConfig.html#a47231cfa790f15bbd226c2dc2202c448":[0,0,1,0,16],
-"classConfig_1_1ServerConfig.html#a47231cfa790f15bbd226c2dc2202c448":[1,0,1,0,16]
+"classConfig_1_1ServerConfig.html#a47231cfa790f15bbd226c2dc2202c448":[1,0,1,0,17]
 };

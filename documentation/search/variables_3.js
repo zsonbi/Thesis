@@ -7,5 +7,6 @@ var searchData=
   ['destroyedevent_4',['DestroyedEvent',['../classGame_1_1Car.html#a42b4de37fc1597ce39395c959bf2ddff',1,'Game::Car']]],
   ['direction_5',['direction',['../classBuilding.html#a75b55df58b2b6d4575fc172df885cc2c',1,'Building']]],
   ['disabled_5ffor_5fcomplete_5fcolor_6',['DISABLED_FOR_COMPLETE_COLOR',['../classTaskDisplayHandler.html#a6113afa3c7779b0d5a4dca2434c32949',1,'TaskDisplayHandler']]],
-  ['doesitneedupdating_7',['DoesItNeedUpdating',['../classTaskClosedEventArgs.html#acafb152ed30977f169e272682461d6cf',1,'TaskClosedEventArgs']]]
+  ['doesitneedupdating_7',['DoesItNeedUpdating',['../classTaskClosedEventArgs.html#acafb152ed30977f169e272682461d6cf',1,'TaskClosedEventArgs']]],
+  ['doublecoinbuton_8',['DoubleCoinButon',['../classGameUI.html#ac5b78624d3c28247136b292e49c2c6bb',1,'GameUI']]]
 ];

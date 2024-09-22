@@ -6,5 +6,6 @@ var User_8cs =
     [ "LastLoggedIn", "User_8cs.html#aae518baa5cf2ea5aa7ab44999037e244", null ],
     [ "Registered", "User_8cs.html#a88348bf6d36a46b767b886bd5005d08e", null ],
     [ "UserTasks", "User_8cs.html#a6a7946e16b9691332dffe63a41be6d8f", null ],
-    [ "TotalScore", "User_8cs.html#ab65ae00cbe1b1602c72df38d32dff1df", null ]
+    [ "TotalScore", "User_8cs.html#ab65ae00cbe1b1602c72df38d32dff1df", null ],
+    [ "CurrentTaskScore", "User_8cs.html#a9b941e9b1cabd32384dc5dd8803b6df8", null ]
 ];

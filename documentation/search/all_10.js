@@ -18,12 +18,13 @@ var searchData=
   ['returntocentrespeed_15',['returnToCentreSpeed',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1AxisTouchButton.html#a2a194c4af2b74c29b5388c9e0bffd4f5',1,'UnityStandardAssets::CrossPlatformInput::AxisTouchButton']]],
   ['revs_16',['Revs',['../classGame_1_1CarController.html#a9325ab1c68cd86d8f6c26c3fc86ea455',1,'Game::CarController']]],
   ['right_17',['right',['../namespaceDataTypes.html#a3bc22b847fe90cda4414fc931bd61622a92b09c7c48c520c3c55e497875da437c',1,'DataTypes.Right'],['../namespaceDataTypes.html#a28b73b3b0b416b3b22c23aee2a226126a92b09c7c48c520c3c55e497875da437c',1,'DataTypes.Right']]],
-  ['roadcounter_18',['roadCounter',['../classEdgeRoadContainer.html#a6e168394bc99da132d3038d61888583d',1,'EdgeRoadContainer']]],
-  ['roadgenerator_19',['roadgenerator',['../classGame_1_1World_1_1Chunk.html#a6177a02fdbf5c1b5f31085368ec44c88',1,'Game.World.Chunk.roadGenerator'],['../classGame_1_1World_1_1RoadGenerator.html#a1c1c38998e4fe4814684c6289c16343a',1,'Game.World.RoadGenerator.RoadGenerator()'],['../classGame_1_1World_1_1RoadGenerator.html',1,'Game.World.RoadGenerator']]],
-  ['roadgenerator_2ecs_20',['RoadGenerator.cs',['../RoadGenerator_8cs.html',1,'']]],
-  ['roadmatrix_21',['RoadMatrix',['../classGame_1_1World_1_1RoadGenerator.html#a7fca47366b7f100826237bbc011034ac',1,'Game::World::RoadGenerator']]],
-  ['roads_22',['roads',['../classGame_1_1World_1_1Chunk.html#a5dd795d2a271645312c82470e4ef8b4d',1,'Game::World::Chunk']]],
-  ['row_23',['Row',['../classGame_1_1World_1_1Chunk.html#adce4d80142d5a8146a23758358504814',1,'Game::World::Chunk']]],
-  ['rowcount_24',['rowcount',['../classBuilding.html#ae5d484df6ed27cc77d2c338bfda53435',1,'Building.RowCount'],['../classBuilding.html#aa80c140b3bdf134a2529c59e68b31c91',1,'Building.rowCount']]],
-  ['running_25',['Running',['../classGame_1_1GameController.html#a05d01ce3124c9d29e70cdee04539baeb',1,'Game::GameController']]]
+  ['rightrotateskin_18',['RightRotateSkin',['../classGameUI.html#af1d2e673a23d21920ab8388bdb2d3506',1,'GameUI']]],
+  ['roadcounter_19',['roadCounter',['../classEdgeRoadContainer.html#a6e168394bc99da132d3038d61888583d',1,'EdgeRoadContainer']]],
+  ['roadgenerator_20',['roadgenerator',['../classGame_1_1World_1_1RoadGenerator.html#a1c1c38998e4fe4814684c6289c16343a',1,'Game.World.RoadGenerator.RoadGenerator()'],['../classGame_1_1World_1_1Chunk.html#a6177a02fdbf5c1b5f31085368ec44c88',1,'Game.World.Chunk.roadGenerator'],['../classGame_1_1World_1_1RoadGenerator.html',1,'Game.World.RoadGenerator']]],
+  ['roadgenerator_2ecs_21',['RoadGenerator.cs',['../RoadGenerator_8cs.html',1,'']]],
+  ['roadmatrix_22',['RoadMatrix',['../classGame_1_1World_1_1RoadGenerator.html#a7fca47366b7f100826237bbc011034ac',1,'Game::World::RoadGenerator']]],
+  ['roads_23',['roads',['../classGame_1_1World_1_1Chunk.html#a5dd795d2a271645312c82470e4ef8b4d',1,'Game::World::Chunk']]],
+  ['row_24',['Row',['../classGame_1_1World_1_1Chunk.html#adce4d80142d5a8146a23758358504814',1,'Game::World::Chunk']]],
+  ['rowcount_25',['rowcount',['../classBuilding.html#ae5d484df6ed27cc77d2c338bfda53435',1,'Building.RowCount'],['../classBuilding.html#aa80c140b3bdf134a2529c59e68b31c91',1,'Building.rowCount']]],
+  ['running_26',['Running',['../classGame_1_1GameController.html#a05d01ce3124c9d29e70cdee04539baeb',1,'Game::GameController']]]
 ];

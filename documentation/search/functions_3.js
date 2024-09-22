@@ -11,5 +11,6 @@ var searchData=
   ['directionfromvector_8',['DirectionFromVector',['../classDirectionConverter.html#a94df088e51f8eb199cc02c4600daad67',1,'DirectionConverter']]],
   ['display_9',['Display',['../classGame_1_1World_1_1Chunk.html#a475512064d145228ca7084735b7e2f2f',1,'Game::World::Chunk']]],
   ['displayfriends_10',['DisplayFriends',['../classFriendWindowHandler.html#a9d6df7fb5f416899e8e19670effc27db',1,'FriendWindowHandler']]],
-  ['doublescore_11',['DoubleScore',['../classGameUI.html#a11bc07908b8cd6a0fa8894ab9e022e4d',1,'GameUI']]]
+  ['doublecoins_11',['DoubleCoins',['../classGameUI.html#a71107d9148809b9914a86c2eea8f8f87',1,'GameUI']]],
+  ['doubledcoins_12',['DoubledCoins',['../classGameUI.html#acdda2628aeead0a63621bfec327cb05c',1,'GameUI']]]
 ];

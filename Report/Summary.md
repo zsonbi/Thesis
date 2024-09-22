@@ -1,21 +1,21 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 09/21/2024 - 22:47:10 |
+| Generated on: | 09/22/2024 - 14:17:00 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 4 |
 | Classes: | 97 |
 | Files: | 95 |
 | Covered lines: | 260 |
-| Uncovered lines: | 4354 |
-| Coverable lines: | 4614 |
-| Total lines: | 9250 |
-| Line coverage: | 5.6% (260 of 4614) |
+| Uncovered lines: | 4411 |
+| Coverable lines: | 4671 |
+| Total lines: | 9355 |
+| Line coverage: | 5.5% (260 of 4671) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 116 |
-| Total methods: | 824 |
-| Method coverage: | 14% (116 of 824) |
+| Total methods: | 838 |
+| Method coverage: | 13.8% (116 of 838) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -59,36 +59,36 @@
 |Tests.GameTests.RoadGeneratorTests|26|0|26|55|100%|0|0||3|3|100%|
 |Tests.MainMenuTest|4|0|4|24|100%|0|0||1|1|100%|
 |Tests.UITests.UserControllerTests|25|1|26|65|96.1%|0|0||6|6|100%|
-|**ThesisScripts**|**205**|**2306**|**2511**|**5226**|**8.1%**|**0**|**0**|****|**106**|**542**|**19.5%**|
+|**ThesisScripts**|**205**|**2363**|**2568**|**5331**|**7.9%**|**0**|**0**|****|**106**|**556**|**19%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|0|6|6|15|0%|0|0||0|5|0%|
 |Building|0|9|9|33|0%|0|0||0|7|0%|
 |CameraScript|0|7|7|24|0%|0|0||0|2|0%|
 |Coin|0|7|7|16|0%|0|0||0|2|0%|
-|Config.ServerConfig|0|5|5|80|0%|0|0||0|5|0%|
+|Config.ServerConfig|0|6|6|86|0%|0|0||0|6|0%|
 |DirectionConverter|0|21|21|46|0%|0|0||0|2|0%|
 |EdgeRoadContainer|9|0|9|15|100%|0|0||7|7|100%|
 |EffectScript|0|4|4|23|0%|0|0||0|2|0%|
 |FriendHandler|0|45|45|84|0%|0|0||0|8|0%|
 |FriendWindowHandler|1|49|50|89|2%|0|0||1|8|12.5%|
-|Game.Car|0|78|78|131|0%|0|0||0|12|0%|
+|Game.Car|0|77|77|131|0%|0|0||0|12|0%|
 |Game.CarController|0|129|129|249|0%|0|0||0|18|0%|
 |Game.CopCar|0|54|54|82|0%|0|0||0|1|0%|
 |Game.EnableWheelPhysicMaterial|0|16|16|37|0%|0|0||0|2|0%|
-|Game.GameController|0|110|110|176|0%|0|0||0|22|0%|
+|Game.GameController|0|115|115|185|0%|0|0||0|23|0%|
 |Game.NpcCar|0|6|6|19|0%|0|0||0|1|0%|
-|Game.PlayerCar|0|76|76|124|0%|0|0||0|10|0%|
+|Game.PlayerCar|0|75|75|127|0%|0|0||0|10|0%|
 |Game.World.BuildingCell|0|11|11|30|0%|0|0||0|7|0%|
 |Game.World.BuildingGenerator|0|43|43|64|0%|0|0||0|2|0%|
 |Game.World.CarSpawner|0|43|43|79|0%|0|0||0|5|0%|
 |Game.World.Chunk|0|375|375|608|0%|0|0||0|29|0%|
 |Game.World.GameWorld|0|68|68|119|0%|0|0||0|6|0%|
 |Game.World.RoadGenerator|55|49|104|200|52.8%|0|0||6|9|66.6%|
-|GameUI|0|48|48|110|0%|0|0||0|14|0%|
+|GameUI|0|72|72|153|0%|0|0||0|21|0%|
 |MeshGenerator|0|27|27|96|0%|0|0||0|2|0%|
 |ModalWindow|0|19|19|43|0%|0|0||0|4|0%|
 |ProfileHandler|0|25|25|66|0%|0|0||0|7|0%|
-|ShopItem|0|10|10|38|0%|0|0||0|3|0%|
-|ShopWindow|0|19|19|44|0%|0|0||0|3|0%|
+|ShopItem|0|16|16|48|0%|0|0||0|5|0%|
+|ShopWindow|0|39|39|74|0%|0|0||0|5|0%|
 |StarHandler|0|10|10|28|0%|0|0||0|1|0%|
 |TaskClosedEventArgs|0|4|4|14|0%|0|0||0|1|0%|
 |TaskContainer|22|46|68|91|32.3%|0|0||18|23|78.2%|
@@ -105,7 +105,7 @@
 |Thesis_backend.Data_Structures.UserLoginRequest|2|0|2|14|100%|0|0||4|4|100%|
 |Thesis_backend.Data_Structures.UserRequest|0|3|3|15|0%|0|0||0|6|0%|
 |Thesis_backend.Data_Structures.UserSettings|3|1|4|15|75%|0|0||6|8|75%|
-|UIController|24|65|89|154|26.9%|0|0||6|13|46.1%|
+|UIController|24|65|89|153|26.9%|0|0||6|13|46.1%|
 |UnityStandardAssets.CrossPlatformInput.AxisTouchButton|0|41|41|75|0%|0|0||0|6|0%|
 |UnityStandardAssets.CrossPlatformInput.ButtonHandler|0|19|19|50|0%|0|0||0|7|0%|
 |UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager|0|133|133|318|0%|0|0||0|47|0%|
@@ -118,5 +118,5 @@
 |UnityStandardAssets.CrossPlatformInput.TiltInput|0|34|34|145|0%|0|0||0|4|0%|
 |UnityStandardAssets.CrossPlatformInput.TouchPad|0|64|64|156|0%|0|0||0|9|0%|
 |UnityStandardAssets.CrossPlatformInput.VirtualInput|0|60|60|134|0%|0|0||0|13|0%|
-|User.UserData|36|0|36|59|100%|0|0||25|25|100%|
+|User.UserData|36|3|39|64|92.3%|0|0||25|26|96.1%|
 |UserController|25|37|62|167|40.3%|0|0||5|10|50%|

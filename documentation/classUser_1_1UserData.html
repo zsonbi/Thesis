@@ -105,6 +105,8 @@ $(document).ready(function(){initNavTree('classUser_1_1UserData.html',''); initR
 Public Member Functions</h2></td></tr>
 <tr class="memitem:abb372911b5e49023a977bd064f46bb6e" id="r_abb372911b5e49023a977bd064f46bb6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUser_1_1UserData.html#abb372911b5e49023a977bd064f46bb6e">Init</a> (<a class="el" href="namespaceThesis__backend_1_1Data__Structures.html#a4f9b73f4dceb969c5046e61901c2a5d1">Thesis_backend.Data_Structures.User</a> loggedInUser)</td></tr>
 <tr class="separator:abb372911b5e49023a977bd064f46bb6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a103846d4ce97a5d089423d4efd1a5ec0" id="r_a103846d4ce97a5d089423d4efd1a5ec0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUser_1_1UserData.html#a103846d4ce97a5d089423d4efd1a5ec0">UpdateTaskScore</a> (long newAmount)</td></tr>
+<tr class="separator:a103846d4ce97a5d089423d4efd1a5ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c8911482003919ea4fbab040c755f8f" id="r_a8c8911482003919ea4fbab040c755f8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUser_1_1UserData.html#a8c8911482003919ea4fbab040c755f8f">Logout</a> ()</td></tr>
 <tr class="separator:a8c8911482003919ea4fbab040c755f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -130,8 +132,8 @@ Properties</h2></td></tr>
 <tr class="separator:acdd4d87ab2fd5a0a81895656a6853b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0e9fbaa735541a3cf36613d93d5af2b" id="r_af0e9fbaa735541a3cf36613d93d5af2b"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUser_1_1UserData.html#af0e9fbaa735541a3cf36613d93d5af2b">TotalScore</a> = 0<code> [get, private set]</code></td></tr>
 <tr class="separator:af0e9fbaa735541a3cf36613d93d5af2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0330e3b12f5c73c905684e77f84d78e9" id="r_a0330e3b12f5c73c905684e77f84d78e9"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUser_1_1UserData.html#a0330e3b12f5c73c905684e77f84d78e9">Currency</a> = 0<code> [get, private set]</code></td></tr>
-<tr class="separator:a0330e3b12f5c73c905684e77f84d78e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44525484961835f1feaa4dbe715101c0" id="r_a44525484961835f1feaa4dbe715101c0"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUser_1_1UserData.html#a44525484961835f1feaa4dbe715101c0">CurrentTaskScore</a> = 0<code> [get, private set]</code></td></tr>
+<tr class="separator:a44525484961835f1feaa4dbe715101c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -175,9 +177,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="UserData_8cs_source.html#l00049">49</a> of file <a class="el" href="UserData_8cs_source.html">UserData.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   50</span>        {</div>
-<div class="line"><span class="lineno">   51</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="UserData_8cs_source.html#l00054">54</a> of file <a class="el" href="UserData_8cs_source.html">UserData.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   55</span>        {</div>
+<div class="line"><span class="lineno">   56</span>        }</div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="UserData_8cs_source.html#l00039">User.UserData.GetOrCreate()</a>.</p>
 
@@ -218,10 +220,10 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   32</span>            <a class="code hl_property" href="classUser_1_1UserData.html#a5d88a92697600df1a952dda76dd51a96">LastLoggedIn</a> = loggedInUser.LastLoggedIn;</div>
 <div class="line"><span class="lineno">   33</span>            <a class="code hl_property" href="classUser_1_1UserData.html#adf1a00f3bd39a418cccf26f04a79c831">Registered</a> = loggedInUser.Registered;</div>
 <div class="line"><span class="lineno">   34</span>            <a class="code hl_property" href="classUser_1_1UserData.html#af0e9fbaa735541a3cf36613d93d5af2b">TotalScore</a> = loggedInUser.TotalScore;</div>
-<div class="line"><span class="lineno">   35</span>            <a class="code hl_property" href="classUser_1_1UserData.html#a0330e3b12f5c73c905684e77f84d78e9">Currency</a> = loggedInUser.Currency;</div>
+<div class="line"><span class="lineno">   35</span>            <a class="code hl_property" href="classUser_1_1UserData.html#a44525484961835f1feaa4dbe715101c0">CurrentTaskScore</a> = loggedInUser.CurrentTaskScore;</div>
 <div class="line"><span class="lineno">   36</span>            <a class="code hl_property" href="classUser_1_1UserData.html#acdd4d87ab2fd5a0a81895656a6853b71">LoggedIn</a> = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">   37</span>        }</div>
-<div class="ttc" id="aclassUser_1_1UserData_html_a0330e3b12f5c73c905684e77f84d78e9"><div class="ttname"><a href="classUser_1_1UserData.html#a0330e3b12f5c73c905684e77f84d78e9">User.UserData.Currency</a></div><div class="ttdeci">long Currency</div><div class="ttdef"><b>Definition</b> <a href="UserData_8cs_source.html#l00023">UserData.cs:23</a></div></div>
+<div class="ttc" id="aclassUser_1_1UserData_html_a44525484961835f1feaa4dbe715101c0"><div class="ttname"><a href="classUser_1_1UserData.html#a44525484961835f1feaa4dbe715101c0">User.UserData.CurrentTaskScore</a></div><div class="ttdeci">long CurrentTaskScore</div><div class="ttdef"><b>Definition</b> <a href="UserData_8cs_source.html#l00023">UserData.cs:23</a></div></div>
 <div class="ttc" id="aclassUser_1_1UserData_html_a5c87b878e86cbc7c969d456431716c71"><div class="ttname"><a href="classUser_1_1UserData.html#a5c87b878e86cbc7c969d456431716c71">User.UserData.Username</a></div><div class="ttdeci">string Username</div><div class="ttdef"><b>Definition</b> <a href="UserData_8cs_source.html#l00014">UserData.cs:14</a></div></div>
 <div class="ttc" id="aclassUser_1_1UserData_html_a5d88a92697600df1a952dda76dd51a96"><div class="ttname"><a href="classUser_1_1UserData.html#a5d88a92697600df1a952dda76dd51a96">User.UserData.LastLoggedIn</a></div><div class="ttdeci">DateTime LastLoggedIn</div><div class="ttdef"><b>Definition</b> <a href="UserData_8cs_source.html#l00019">UserData.cs:19</a></div></div>
 <div class="ttc" id="aclassUser_1_1UserData_html_ac6c907f6c1f72fb15cef61427abf4a8d"><div class="ttname"><a href="classUser_1_1UserData.html#ac6c907f6c1f72fb15cef61427abf4a8d">User.UserData.Id</a></div><div class="ttdeci">long Id</div><div class="ttdef"><b>Definition</b> <a href="UserData_8cs_source.html#l00016">UserData.cs:16</a></div></div>
@@ -232,7 +234,7 @@ Static Private Attributes</h2></td></tr>
 <div class="ttc" id="aclassUser_1_1UserData_html_af0e9fbaa735541a3cf36613d93d5af2b"><div class="ttname"><a href="classUser_1_1UserData.html#af0e9fbaa735541a3cf36613d93d5af2b">User.UserData.TotalScore</a></div><div class="ttdeci">long TotalScore</div><div class="ttdef"><b>Definition</b> <a href="UserData_8cs_source.html#l00022">UserData.cs:22</a></div></div>
 <div class="ttc" id="anamespaceGame_html"><div class="ttname"><a href="namespaceGame.html">Game</a></div><div class="ttdef"><b>Definition</b> <a href="BuildingCell_8cs_source.html#l00008">BuildingCell.cs:9</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="UserData_8cs_source.html#l00023">User.UserData.Currency</a>, <a class="el" href="UserData_8cs_source.html#l00015">User.UserData.Email</a>, <a class="el" href="UserData_8cs_source.html#l00016">User.UserData.Id</a>, <a class="el" href="UserData_8cs_source.html#l00019">User.UserData.LastLoggedIn</a>, <a class="el" href="UserData_8cs_source.html#l00021">User.UserData.LoggedIn</a>, <a class="el" href="UserData_8cs_source.html#l00020">User.UserData.Registered</a>, <a class="el" href="UserData_8cs_source.html#l00017">User.UserData.SettingsId</a>, <a class="el" href="UserData_8cs_source.html#l00022">User.UserData.TotalScore</a>, and <a class="el" href="UserData_8cs_source.html#l00014">User.UserData.Username</a>.</p>
+<p class="reference">References <a class="el" href="UserData_8cs_source.html#l00023">User.UserData.CurrentTaskScore</a>, <a class="el" href="UserData_8cs_source.html#l00015">User.UserData.Email</a>, <a class="el" href="UserData_8cs_source.html#l00016">User.UserData.Id</a>, <a class="el" href="UserData_8cs_source.html#l00019">User.UserData.LastLoggedIn</a>, <a class="el" href="UserData_8cs_source.html#l00021">User.UserData.LoggedIn</a>, <a class="el" href="UserData_8cs_source.html#l00020">User.UserData.Registered</a>, <a class="el" href="UserData_8cs_source.html#l00017">User.UserData.SettingsId</a>, <a class="el" href="UserData_8cs_source.html#l00022">User.UserData.TotalScore</a>, and <a class="el" href="UserData_8cs_source.html#l00014">User.UserData.Username</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="UserController_8cs_source.html#l00074">UserController.LoggedIn()</a>, <a class="el" href="UserController_8cs_source.html#l00112">UserController.Registered()</a>, and <a class="el" href="UIController_8cs_source.html#l00047">UIController.UpdateUserData()</a>.</p>
 
@@ -271,9 +273,42 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   46</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="classUser_1_1UserData.html#a0e7511fcf06639282624b12e673442e3">instance</a>;</div>
 <div class="line"><span class="lineno">   47</span>        }</div>
 <div class="ttc" id="aclassUser_1_1UserData_html_a0e7511fcf06639282624b12e673442e3"><div class="ttname"><a href="classUser_1_1UserData.html#a0e7511fcf06639282624b12e673442e3">User.UserData.instance</a></div><div class="ttdeci">static UserData instance</div><div class="ttdef"><b>Definition</b> <a href="UserData_8cs_source.html#l00011">UserData.cs:11</a></div></div>
-<div class="ttc" id="aclassUser_1_1UserData_html_a17f4ef142f45e3e62d75c3f0a4ca751b"><div class="ttname"><a href="classUser_1_1UserData.html#a17f4ef142f45e3e62d75c3f0a4ca751b">User.UserData.UserData</a></div><div class="ttdeci">UserData()</div><div class="ttdef"><b>Definition</b> <a href="UserData_8cs_source.html#l00049">UserData.cs:49</a></div></div>
+<div class="ttc" id="aclassUser_1_1UserData_html_a17f4ef142f45e3e62d75c3f0a4ca751b"><div class="ttname"><a href="classUser_1_1UserData.html#a17f4ef142f45e3e62d75c3f0a4ca751b">User.UserData.UserData</a></div><div class="ttdeci">UserData()</div><div class="ttdef"><b>Definition</b> <a href="UserData_8cs_source.html#l00054">UserData.cs:54</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="UserData_8cs_source.html#l00011">User.UserData.instance</a>, and <a class="el" href="UserData_8cs_source.html#l00049">User.UserData.UserData()</a>.</p>
+<p class="reference">References <a class="el" href="UserData_8cs_source.html#l00011">User.UserData.instance</a>, and <a class="el" href="UserData_8cs_source.html#l00054">User.UserData.UserData()</a>.</p>
+
+</div>
+</div>
+<a id="a103846d4ce97a5d089423d4efd1a5ec0" name="a103846d4ce97a5d089423d4efd1a5ec0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a103846d4ce97a5d089423d4efd1a5ec0">&#9670;&#160;</a></span>UpdateTaskScore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void User.UserData.UpdateTaskScore </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>newAmount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="UserData_8cs_source.html#l00049">49</a> of file <a class="el" href="UserData_8cs_source.html">UserData.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   50</span>        {</div>
+<div class="line"><span class="lineno">   51</span>            this.CurrentTaskScore = newAmount;</div>
+<div class="line"><span class="lineno">   52</span>        }</div>
+</div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="GameUI_8cs_source.html#l00074">GameUI.DoubledCoins()</a>.</p>
 
 </div>
 </div>
@@ -300,11 +335,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="UserData_8cs_source.html#l00053">53</a> of file <a class="el" href="UserData_8cs_source.html">UserData.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   54</span>        {</div>
-<div class="line"><span class="lineno">   55</span>            <a class="code hl_property" href="classUser_1_1UserData.html#acdd4d87ab2fd5a0a81895656a6853b71">LoggedIn</a> = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   56</span>            <span class="comment">//StartCoroutine(Server.SendDeleteRequest&lt;string&gt;(ServerConfig.PATHFORLOGOUT));</span></div>
-<div class="line"><span class="lineno">   57</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="UserData_8cs_source.html#l00058">58</a> of file <a class="el" href="UserData_8cs_source.html">UserData.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   59</span>        {</div>
+<div class="line"><span class="lineno">   60</span>            <a class="code hl_property" href="classUser_1_1UserData.html#acdd4d87ab2fd5a0a81895656a6853b71">LoggedIn</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   61</span>            <span class="comment">//StartCoroutine(Server.SendDeleteRequest&lt;string&gt;(ServerConfig.PATHFORLOGOUT));</span></div>
+<div class="line"><span class="lineno">   62</span>        }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="UserData_8cs_source.html#l00021">User.UserData.LoggedIn</a>.</p>
 
@@ -364,7 +399,7 @@ Static Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">   12</span>{ <span class="keyword">get</span> =&gt; <a class="code hl_function" href="classUser_1_1UserData.html#ab54ef99b57b9d4b7bc6cdd84955b3306">GetOrCreate</a>(); }</div>
 <div class="ttc" id="aclassUser_1_1UserData_html_ab54ef99b57b9d4b7bc6cdd84955b3306"><div class="ttname"><a href="classUser_1_1UserData.html#ab54ef99b57b9d4b7bc6cdd84955b3306">User.UserData.GetOrCreate</a></div><div class="ttdeci">static UserData GetOrCreate()</div><div class="ttdef"><b>Definition</b> <a href="UserData_8cs_source.html#l00039">UserData.cs:39</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="UserController_8cs_source.html#l00042">UserController.CheckLoggedIn()</a>, <a class="el" href="FriendHandler_8cs_source.html#l00031">FriendHandler.InitValues()</a>, <a class="el" href="UserController_8cs_source.html#l00074">UserController.LoggedIn()</a>, <a class="el" href="ProfileHandler_8cs_source.html#l00048">ProfileHandler.LoggedOut()</a>, <a class="el" href="UserController_8cs_source.html#l00112">UserController.Registered()</a>, <a class="el" href="ShopWindow_8cs_source.html#l00022">ShopWindow.Start()</a>, <a class="el" href="UIController_8cs_source.html#l00033">UIController.Start()</a>, and <a class="el" href="UIController_8cs_source.html#l00047">UIController.UpdateUserData()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="UserController_8cs_source.html#l00042">UserController.CheckLoggedIn()</a>, <a class="el" href="GameUI_8cs_source.html#l00074">GameUI.DoubledCoins()</a>, <a class="el" href="FriendHandler_8cs_source.html#l00031">FriendHandler.InitValues()</a>, <a class="el" href="GameUI_8cs_source.html#l00083">GameUI.LeftRotateSkin()</a>, <a class="el" href="ShopWindow_8cs_source.html#l00049">ShopWindow.LoadedShopItems()</a>, <a class="el" href="UserController_8cs_source.html#l00074">UserController.LoggedIn()</a>, <a class="el" href="ProfileHandler_8cs_source.html#l00048">ProfileHandler.LoggedOut()</a>, <a class="el" href="UserController_8cs_source.html#l00112">UserController.Registered()</a>, <a class="el" href="GameUI_8cs_source.html#l00089">GameUI.RightRotateSkin()</a>, <a class="el" href="UIController_8cs_source.html#l00033">UIController.Start()</a>, <a class="el" href="ShopWindow_8cs_source.html#l00036">ShopWindow.UpdateShop()</a>, and <a class="el" href="UIController_8cs_source.html#l00047">UIController.UpdateUserData()</a>.</p>
 
 </div>
 </div>
@@ -499,7 +534,7 @@ Static Private Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="UserData_8cs_source.html#l00018">18</a> of file <a class="el" href="UserData_8cs_source.html">UserData.cs</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   18</span>{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="ShopWindow_8cs_source.html#l00022">ShopWindow.Start()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameUI_8cs_source.html#l00083">GameUI.LeftRotateSkin()</a>, <a class="el" href="ShopWindow_8cs_source.html#l00049">ShopWindow.LoadedShopItems()</a>, <a class="el" href="GameUI_8cs_source.html#l00089">GameUI.RightRotateSkin()</a>, and <a class="el" href="ShopWindow_8cs_source.html#l00036">ShopWindow.UpdateShop()</a>.</p>
 
 </div>
 </div>
@@ -580,7 +615,7 @@ Static Private Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="UserData_8cs_source.html#l00021">21</a> of file <a class="el" href="UserData_8cs_source.html">UserData.cs</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   21</span>{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; } = <span class="keyword">false</span>;</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="UserController_8cs_source.html#l00042">UserController.CheckLoggedIn()</a>, <a class="el" href="UserData_8cs_source.html#l00025">User.UserData.Init()</a>, <a class="el" href="UserData_8cs_source.html#l00053">User.UserData.Logout()</a>, and <a class="el" href="UIController_8cs_source.html#l00033">UIController.Start()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="UserController_8cs_source.html#l00042">UserController.CheckLoggedIn()</a>, <a class="el" href="UserData_8cs_source.html#l00025">User.UserData.Init()</a>, <a class="el" href="UserData_8cs_source.html#l00058">User.UserData.Logout()</a>, and <a class="el" href="UIController_8cs_source.html#l00033">UIController.Start()</a>.</p>
 
 </div>
 </div>
@@ -611,8 +646,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a0330e3b12f5c73c905684e77f84d78e9" name="a0330e3b12f5c73c905684e77f84d78e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0330e3b12f5c73c905684e77f84d78e9">&#9670;&#160;</a></span>Currency</h2>
+<a id="a44525484961835f1feaa4dbe715101c0" name="a44525484961835f1feaa4dbe715101c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44525484961835f1feaa4dbe715101c0">&#9670;&#160;</a></span>CurrentTaskScore</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -621,7 +656,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">long User.UserData.Currency = 0</td>
+          <td class="memname">long User.UserData.CurrentTaskScore = 0</td>
         </tr>
       </table>
   </td>

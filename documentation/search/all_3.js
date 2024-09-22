@@ -19,7 +19,7 @@ var searchData=
   ['determinesteeringdirectiontowardsplayer_16',['DetermineSteeringDirectionTowardsPlayer',['../classGame_1_1NpcCar.html#ac7bf4d022d0601c6262c6ffcfcf80a59',1,'Game::NpcCar']]],
   ['determinetiletype_17',['DetermineTileType',['../classGame_1_1World_1_1Chunk.html#ac4b762352bb5f90952fe57e5c0ee208f',1,'Game::World::Chunk']]],
   ['difficulty_18',['Difficulty',['../classGame_1_1GameController.html#a1443617f1270553f41e4569c6b26652d',1,'Game::GameController']]],
-  ['direction_19',['direction',['../classEdgeRoadContainer.html#a649b048e2f71ca94d7aa7c8727077d0e',1,'EdgeRoadContainer.Direction'],['../classBuilding.html#a3efcc2aeb8be0d490e49da18774963f2',1,'Building.Direction'],['../classBuilding.html#a75b55df58b2b6d4575fc172df885cc2c',1,'Building.direction'],['../namespaceDataTypes.html#a3bc22b847fe90cda4414fc931bd61622',1,'DataTypes.Direction']]],
+  ['direction_19',['direction',['../classBuilding.html#a75b55df58b2b6d4575fc172df885cc2c',1,'Building.direction'],['../classEdgeRoadContainer.html#a649b048e2f71ca94d7aa7c8727077d0e',1,'EdgeRoadContainer.Direction'],['../classBuilding.html#a3efcc2aeb8be0d490e49da18774963f2',1,'Building.Direction'],['../namespaceDataTypes.html#a3bc22b847fe90cda4414fc931bd61622',1,'DataTypes.Direction']]],
   ['direction_2ecs_20',['Direction.cs',['../Direction_8cs.html',1,'']]],
   ['directionconverter_21',['DirectionConverter',['../classDirectionConverter.html',1,'']]],
   ['directionconverter_2ecs_22',['DirectionConverter.cs',['../DirectionConverter_8cs.html',1,'']]],
@@ -28,6 +28,9 @@ var searchData=
   ['display_25',['Display',['../classGame_1_1World_1_1Chunk.html#a475512064d145228ca7084735b7e2f2f',1,'Game::World::Chunk']]],
   ['displayfriends_26',['DisplayFriends',['../classFriendWindowHandler.html#a9d6df7fb5f416899e8e19670effc27db',1,'FriendWindowHandler']]],
   ['doesitneedupdating_27',['DoesItNeedUpdating',['../classTaskClosedEventArgs.html#acafb152ed30977f169e272682461d6cf',1,'TaskClosedEventArgs']]],
-  ['doublescore_28',['DoubleScore',['../classGameUI.html#a11bc07908b8cd6a0fa8894ab9e022e4d',1,'GameUI']]],
-  ['down_29',['down',['../namespaceDataTypes.html#a28b73b3b0b416b3b22c23aee2a226126a08a38277b0309070706f6652eeae9a53',1,'DataTypes.Down'],['../namespaceDataTypes.html#a3bc22b847fe90cda4414fc931bd61622a08a38277b0309070706f6652eeae9a53',1,'DataTypes.Down']]]
+  ['doublecoinbuton_28',['DoubleCoinButon',['../classGameUI.html#ac5b78624d3c28247136b292e49c2c6bb',1,'GameUI']]],
+  ['doublecoins_29',['DoubleCoins',['../classGameUI.html#a71107d9148809b9914a86c2eea8f8f87',1,'GameUI']]],
+  ['doubled_30',['Doubled',['../classGameUI.html#a1ca68be9e261bb1e9b8811b50a9c8702',1,'GameUI']]],
+  ['doubledcoins_31',['DoubledCoins',['../classGameUI.html#acdda2628aeead0a63621bfec327cb05c',1,'GameUI']]],
+  ['down_32',['down',['../namespaceDataTypes.html#a28b73b3b0b416b3b22c23aee2a226126a08a38277b0309070706f6652eeae9a53',1,'DataTypes.Down'],['../namespaceDataTypes.html#a3bc22b847fe90cda4414fc931bd61622a08a38277b0309070706f6652eeae9a53',1,'DataTypes.Down']]]
 ];

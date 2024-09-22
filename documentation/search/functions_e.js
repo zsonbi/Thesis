@@ -8,5 +8,6 @@ var searchData=
   ['removetask_5',['RemoveTask',['../classUIController.html#a08f677b5c4ffd71ca10ec2b3b428df4c',1,'UIController']]],
   ['reset_6',['Reset',['../classGame_1_1World_1_1CarSpawner.html#a9ca9f4dfd1b63d182f23c9f630b54463',1,'Game::World::CarSpawner']]],
   ['resetcomplete_7',['ResetComplete',['../classTaskContainer.html#a13c5778d0867ec1015c47bcb61490fce',1,'TaskContainer']]],
-  ['roadgenerator_8',['RoadGenerator',['../classGame_1_1World_1_1RoadGenerator.html#a1c1c38998e4fe4814684c6289c16343a',1,'Game::World::RoadGenerator']]]
+  ['rightrotateskin_8',['RightRotateSkin',['../classGameUI.html#af1d2e673a23d21920ab8388bdb2d3506',1,'GameUI']]],
+  ['roadgenerator_9',['RoadGenerator',['../classGame_1_1World_1_1RoadGenerator.html#a1c1c38998e4fe4814684c6289c16343a',1,'Game::World::RoadGenerator']]]
 ];
