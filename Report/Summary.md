@@ -1,21 +1,21 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 09/22/2024 - 21:59:38 |
+| Generated on: | 09/22/2024 - 22:23:18 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 4 |
-| Classes: | 97 |
-| Files: | 95 |
+| Classes: | 96 |
+| Files: | 94 |
 | Covered lines: | 268 |
-| Uncovered lines: | 4408 |
-| Coverable lines: | 4676 |
-| Total lines: | 9363 |
-| Line coverage: | 5.7% (268 of 4676) |
+| Uncovered lines: | 4404 |
+| Coverable lines: | 4672 |
+| Total lines: | 9349 |
+| Line coverage: | 5.7% (268 of 4672) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 132 |
-| Total methods: | 838 |
-| Method coverage: | 15.7% (132 of 838) |
+| Total methods: | 837 |
+| Method coverage: | 15.7% (132 of 837) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -52,9 +52,8 @@
 |UnityStandardAssets.Vehicles.Car.CarUserControl|0|9|9|33|0%|0|0||0|2|0%|
 |UnityStandardAssets.Vehicles.Car.SkidTrail|0|9|9|25|0%|0|0||0|1|0%|
 |UnityStandardAssets.Vehicles.Car.WheelEffects|0|53|53|94|0%|0|0||0|10|0%|
-|**Assembly-CSharp-Editor**|**0**|**205**|**205**|**329**|**0%**|**0**|**0**|****|**0**|**16**|**0%**|
+|**Assembly-CSharp-Editor**|**0**|**201**|**201**|**315**|**0%**|**0**|**0**|****|**0**|**15**|**0%**|
 |BuildCommand|0|201|201|315|0%|0|0||0|15|0%|
-|BuildScript|0|4|4|14|0%|0|0||0|1|0%|
 |**Tests**|**55**|**1**|**56**|**144**|**98.2%**|**0**|**0**|****|**10**|**10**|**100%**|
 |Tests.GameTests.RoadGeneratorTests|26|0|26|55|100%|0|0||3|3|100%|
 |Tests.MainMenuTest|4|0|4|24|100%|0|0||1|1|100%|

@@ -261,7 +261,6 @@ var assemblies = [
     "name": "Assembly-CSharp-Editor",
     "classes": [
       { "name": "BuildCommand", "rp": "Assembly_CSharp_Editor_BuildCommand.html", "cl": 0, "ucl": 201, "cal": 201, "tl": 315, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "BuildScript", "rp": "Assembly_CSharp_Editor_BuildScript.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 14, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
     ]},
   {
     "name": "Tests",
