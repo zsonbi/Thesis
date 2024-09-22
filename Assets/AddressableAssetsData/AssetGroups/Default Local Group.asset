@@ -16,7 +16,13 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 14f354c66b69bd24fb77602fa45ddbac
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: aefbebdd515560a4f89d05df203f1339
+    m_Address: Assets/Prefabs/GamePrefabs/Vehicles/PlayerVariants
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PlayerVariants
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 8b5a45749b741ae44970f7692d798825, type: 2}
   m_SchemaSet:

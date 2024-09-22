@@ -1,9 +1,11 @@
+using Config;
 using Game;
-using System.Collections;
-using System.Collections.Generic;
+using Thesis_backend.Data_Structures;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using User;
 
 public class GameUI : MonoBehaviour
 {
@@ -14,31 +16,81 @@ public class GameUI : MonoBehaviour
     private GameObject ingameContainer;
 
     [SerializeField]
-    private GameObject shopContainer;
+    private ShopWindow ShopWindow;
 
     [SerializeField]
     private GameObject mainMenuContainer;
 
     [SerializeField]
+    private Image SkinDisplay;
+
+    [SerializeField]
     private TMP_Text InfamyGameOverText;
+
+    [SerializeField]
+    private TMP_Text CoinGameOverText;
 
     [SerializeField]
     private TMP_Text InfamyInGameText;
 
     [SerializeField]
+    private TMP_Text CoinInGameText;
+
+    [SerializeField]
     private StarHandler starHandler;
 
+    [SerializeField]
+    private Button DoubleCoinButon;
+
     private GameController gameController;
+    public bool Doubled { get; private set; } = false;
+
+    public int SelectedSkinIndex { get; private set; } = 0;
 
     private void Update()
     {
         if (gameController.Running)
         {
             this.InfamyInGameText.text = "Infamy: " + gameController.Score;
+            this.CoinInGameText.text = Mathf.RoundToInt(gameController.Coins).ToString();
         }
     }
 
-    public bool CanDouble { get; private set; } = true;
+    private void SaveCoins()
+    {
+        StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.Game>(ServerConfig.PATH_FOR_SAVE_COINS, (int)(Doubled ? gameController.Coins * 2 : gameController.Coins), SavedCoins));
+    }
+
+    private void SavedCoins(Thesis_backend.Data_Structures.Game game)
+    {
+        UserData.Instance.Game.Currency = game.Currency;
+    }
+
+    public void DoubleCoins()
+    {
+        StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATH_FOR_DOUBLE_COINS, new WWWForm(), DoubledCoins));
+    }
+
+    private void DoubledCoins(Thesis_backend.Data_Structures.User user)
+    {
+        this.Doubled = true;
+        this.DoubleCoinButon.interactable = false;
+        CoinGameOverText.text = "Coins: " + gameController.Coins * 2;
+
+        UserData.Instance.UpdateTaskScore(user.CurrentTaskScore);
+    }
+
+    public void LeftRotateSkin()
+    {
+        SelectedSkinIndex = (SelectedSkinIndex - 1) % UserData.Instance.Game.OwnedCars.Count;
+        SkinDisplay.sprite = ShopWindow.ShopItemSprites[(int)UserData.Instance.Game.OwnedCars[SelectedSkinIndex].ShopId - 1];
+    }
+
+    public void RightRotateSkin()
+    {
+        SelectedSkinIndex = (SelectedSkinIndex + 1) % UserData.Instance.Game.OwnedCars.Count;
+        SkinDisplay.sprite = ShopWindow.ShopItemSprites[(int)UserData.Instance.Game.OwnedCars[SelectedSkinIndex].ShopId - 1];
+    }
 
     public void Init(GameController gameController)
     {
@@ -62,6 +114,7 @@ public class GameUI : MonoBehaviour
     public void ShowEndGameScreen()
     {
         InfamyGameOverText.text = "Infamy: " + gameController.Score;
+        CoinGameOverText.text = "Coins: " + gameController.Coins;
         ingameContainer.SetActive(false);
         gameOverContainer.SetActive(true);
     }
@@ -70,11 +123,19 @@ public class GameUI : MonoBehaviour
     {
         gameOverContainer.SetActive(false);
         ingameContainer.SetActive(true);
-        CanDouble = true;
+        SaveCoins();
+        Doubled = false;
+        this.DoubleCoinButon.interactable = true;
     }
 
-    public void ShowShop()
+    public void ShowShopWindow()
     {
+        this.ShopWindow.Show();
+    }
+
+    public void HideShopWindow()
+    {
+        this.ShopWindow.Hide();
     }
 
     public void BackToTasks()
@@ -88,9 +149,5 @@ public class GameUI : MonoBehaviour
         HideGameOverScreen();
         ingameContainer.SetActive(false);
         mainMenuContainer.SetActive(true);
-    }
-
-    public void DoubleScore()
-    {
     }
 }

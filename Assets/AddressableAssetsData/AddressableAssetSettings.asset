@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: 14f354c66b69bd24fb77602fa45ddbac
   m_currentHash:
     serializedVersion: 2
-    Hash: a8ba2774036fb819d22a7fcc1fe8eee7
+    Hash: a1ba352065b0aed0ca075239b3ea40e5
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_BundleLocalCatalog: 0
@@ -89,6 +89,7 @@ MonoBehaviour:
     m_LabelNames:
     - default
     - Buildings
+    - PlayerVariants
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: ca9338b05b1ae0b4b9c857ef775a8844, type: 2}

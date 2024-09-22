@@ -20,7 +20,7 @@ namespace User
         public DateTime Registered { get; private set; }
         public bool LoggedIn { get; private set; } = false;
         public long TotalScore { get; private set; } = 0;
-        public long Currency { get; private set; } = 0;
+        public long CurrentTaskScore { get; private set; } = 0;
 
         public void Init(Thesis_backend.Data_Structures.User loggedInUser)
         {
@@ -32,7 +32,7 @@ namespace User
             LastLoggedIn = loggedInUser.LastLoggedIn;
             Registered = loggedInUser.Registered;
             TotalScore = loggedInUser.TotalScore;
-            Currency = loggedInUser.Currency;
+            CurrentTaskScore = loggedInUser.CurrentTaskScore;
             LoggedIn = true;
         }
 
@@ -44,6 +44,11 @@ namespace User
             }
 
             return instance;
+        }
+
+        public void UpdateTaskScore(long newAmount)
+        {
+            this.CurrentTaskScore = newAmount;
         }
 
         private UserData()

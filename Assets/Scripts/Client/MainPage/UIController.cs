@@ -39,7 +39,7 @@ public class UIController : MonoBehaviour
         else
         {
             UsernameInputText.text = UserData.Instance.Username;
-            CurrencyText.text = UserData.Instance.Currency.ToString();
+            CurrencyText.text = UserData.Instance.CurrentTaskScore.ToString();
             LoadTasks();
         }
     }
@@ -47,7 +47,7 @@ public class UIController : MonoBehaviour
     public void UpdateUserData(Thesis_backend.Data_Structures.User user)
     {
         UserData.Instance.Init(user);
-        CurrencyText.text = UserData.Instance.Currency.ToString();
+        CurrencyText.text = UserData.Instance.CurrentTaskScore.ToString();
     }
 
     // Update is called once per frame
@@ -115,7 +115,6 @@ public class UIController : MonoBehaviour
         TaskDisplayHandler taskComponent = task.GetComponent<TaskDisplayHandler>();
 
         taskComponent.InitValues(taskContainer, taskOpenPanelController, this);
-
 
         tasks.Add(taskContainer.Id, taskComponent);
         return task;

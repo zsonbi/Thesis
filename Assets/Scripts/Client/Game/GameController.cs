@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
+using User;
 
 namespace Game
 {
@@ -18,6 +20,8 @@ namespace Game
         private int probeSize = 1;
 
         private GameUI gameUI;
+
+        private Dictionary<long, GameObject> playerVariants = new Dictionary<long, GameObject>();
 
         [SerializeField]
         public World.GameWorld World
@@ -37,8 +41,11 @@ namespace Game
 
         public int Difficulty { get; private set; } = 0;
 
+        public float Coins { get; private set; } = 0;
+
         private async void Awake()
         {
+            var handle = Addressables.LoadAssetsAsync<GameObject>("PlayerVariants", PlayerSkinsLoaded);
             this.carSpawner = this.GetComponentInChildren<CarSpawner>();
             gameUI = this.gameObject.GetComponentInChildren<GameUI>();
             if (gameUI is null)
@@ -78,6 +85,16 @@ namespace Game
             this.ScoreCounter += Time.deltaTime;
         }
 
+        private void PlayerSkinsLoaded(GameObject playerSkin)
+        {
+            this.playerVariants.Add(playerSkin.GetComponent<PlayerCar>().SkinId, playerSkin);
+        }
+
+        public void IncreaseCoinCount(float amount)
+        {
+            this.Coins += amount;
+        }
+
         private void PlayerDied(object? sender, EventArgs args)
         {
             this.gameUI.ShowEndGameScreen();
@@ -86,7 +103,7 @@ namespace Game
 
         public async Task NewGame()
         {
-            player = Instantiate(playerPrefab, this.transform).GetComponent<PlayerCar>();
+            player = Instantiate(playerVariants[UserData.Instance.Game.OwnedCars[gameUI.SelectedSkinIndex].ShopId], this.transform).GetComponent<PlayerCar>();
             player.Init(this);
             player.DestroyedEvent += PlayerDied;
             this.carSpawner.Reset();
@@ -96,6 +113,8 @@ namespace Game
             player.gameObject.transform.position = new Vector3(baseChunkPos.x + GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL / 2 + 10, baseChunkPos.y + 2, baseChunkPos.z);
             this.gameUI.ChangeDifficulyDisplay(0);
             this.Running = true;
+            this.Coins = 0;
+            this.Difficulty = 0;
         }
 
         public async Task LoadAndDespawnChunks(int centerRow, int centerColumn)

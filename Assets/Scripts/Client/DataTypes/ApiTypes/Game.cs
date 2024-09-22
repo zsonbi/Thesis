@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Text.Json.Serialization;
 
 namespace Thesis_backend.Data_Structures
 {
@@ -11,7 +10,7 @@ namespace Thesis_backend.Data_Structures
         public User User { get; set; }
         public long CurrentXP { get; set; }
         public int NextLVLXP { get; set; }
-        public long Currency { get; set; }
+        public int Currency { get; set; }
         public List<OwnedCar>? OwnedCars { get; set; }
 
         public override object Serialize => new { ID, Lvl, CurrentXP, NextLVLXP, UserId, Currency, OwnedCars };

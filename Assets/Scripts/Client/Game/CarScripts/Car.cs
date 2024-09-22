@@ -79,7 +79,7 @@ namespace Game
 
         protected virtual void OnCollisionEnter(Collision collision)
         {
-            Debug.Log("Collided " + gameObject.name + "with " + collision.gameObject.name + "at " + collision.relativeVelocity.sqrMagnitude);
+            //Debug.Log("Collided " + gameObject.name + "with " + collision.gameObject.name + "at " + collision.relativeVelocity.sqrMagnitude);
             float dmgAmount = collision.relativeVelocity.sqrMagnitude / 500f;
 
             if (dmgAmount > GameConfig.CAR_DAMAGE_LOWER_LIMIT)

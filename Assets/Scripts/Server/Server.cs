@@ -27,6 +27,10 @@ public static class Server
             if (webRequest.result != UnityWebRequest.Result.Success)
             {
                 Debug.Log(webRequest.error);
+                if (webRequest.downloadHandler.text is not null)
+                {
+                    Debug.Log(webRequest.downloadHandler.text);
+                }
             }
             else
             {
@@ -72,6 +76,10 @@ public static class Server
             if (webRequest.result != UnityWebRequest.Result.Success)
             {
                 Debug.Log(webRequest.error);
+                if (webRequest.downloadHandler.text is not null)
+                {
+                    Debug.Log(webRequest.downloadHandler.text);
+                }
             }
             else
             {
@@ -115,6 +123,10 @@ public static class Server
             if (webRequest.result != UnityWebRequest.Result.Success)
             {
                 Debug.Log(webRequest.error);
+                if (webRequest.downloadHandler.text is not null)
+                {
+                    Debug.Log(webRequest.downloadHandler.text);
+                }
             }
             else
             {

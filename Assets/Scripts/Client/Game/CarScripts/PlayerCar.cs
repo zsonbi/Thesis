@@ -8,6 +8,12 @@ namespace Game
 {
     internal class PlayerCar : Car
     {
+        [SerializeField]
+        private float coinMultiplier = 1;
+
+        [SerializeField]
+        public int SkinId = 1;
+
         private class PoliceContainer
         {
             public float TimeReamaining;
@@ -23,6 +29,11 @@ namespace Game
         private int probeSize = 1;
 
         private List<PoliceContainer> policeContacts = new List<PoliceContainer>();
+
+        public void PickedUpCoin()
+        {
+            this.gameController.IncreaseCoinCount(1 * coinMultiplier);
+        }
 
         protected override async void ChunkChanged(Chunk newChunk)
         {
@@ -90,7 +101,7 @@ namespace Game
             //   }
             carController.Move(reverse ? 0 : turning, accel, 0f, 0f);
 
-            Debug.Log(carController.CurrentSpeed);
+            //   Debug.Log(carController.CurrentSpeed);
         }
 
         protected override void OnCollisionEnter(Collision collision)
@@ -109,7 +120,7 @@ namespace Game
             {
                 policeContacts.RemoveAll(x => x.PoliceCar == collision.gameObject);
 
-                Debug.Log("Removed" + collision.gameObject);
+                // Debug.Log("Removed" + collision.gameObject);
             }
         }
     }
