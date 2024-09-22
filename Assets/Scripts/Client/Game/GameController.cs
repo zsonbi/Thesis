@@ -114,6 +114,7 @@ namespace Game
             this.gameUI.ChangeDifficulyDisplay(0);
             this.Running = true;
             this.Coins = 0;
+            this.Difficulty = 0;
         }
 
         public async Task LoadAndDespawnChunks(int centerRow, int centerColumn)
