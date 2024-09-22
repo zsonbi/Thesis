@@ -15,7 +15,7 @@ var classGame_1_1GameController =
     [ "playerPrefab", "classGame_1_1GameController.html#a90501b4e974f4698f38d1c6ccc7bd859", null ],
     [ "probeSize", "classGame_1_1GameController.html#aaeff5e958583d17489b7ab80d45ba19d", null ],
     [ "gameUI", "classGame_1_1GameController.html#aec4a7fe16d8f45bbba715971e3e51526", null ],
-    [ "playerVariants", "classGame_1_1GameController.html#a9c3dde476d4788fe398f9fd3b9d58f5c", null ],
+    [ "playerVariants", "classGame_1_1GameController.html#acb9ffaeaae347c476646e0b74f089632", null ],
     [ "ScoreCounter", "classGame_1_1GameController.html#aefe69ae4f272fa03c90f236f5e9f472e", null ],
     [ "carSpawner", "classGame_1_1GameController.html#a0de72291f83213c5c510b414eb9d6375", null ],
     [ "player", "classGame_1_1GameController.html#a1153aac7245a1c82e4f40877519ffa0a", null ],

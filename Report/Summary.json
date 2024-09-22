@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedon": "2024-09-22T14:17:00Z",
+    "generatedon": "2024-09-22T14:37:59Z",
     "parser": "MultiReportParser (3x OpenCoverParser)",
     "assemblies": 4,
     "classes": 97,
@@ -8,7 +8,7 @@
     "coveredlines": 260,
     "uncoveredlines": 4411,
     "coverablelines": 4671,
-    "totallines": 9355,
+    "totallines": 9356,
     "linecoverage": 5.5,
     "coveredbranches": 0,
     "totalbranches": 0,
@@ -58,7 +58,7 @@
         { "name": "Tests.GameTests.RoadGeneratorTests", "coverage": 100, "coveredlines": 26, "coverablelines": 26, "totallines": 55, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 3, "totalmethods": 3 },
         { "name": "Tests.MainMenuTest", "coverage": 100, "coveredlines": 4, "coverablelines": 4, "totallines": 24, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 1, "totalmethods": 1 },
         { "name": "Tests.UITests.UserControllerTests", "coverage": 96.1, "coveredlines": 25, "coverablelines": 26, "totallines": 65, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 6, "totalmethods": 6 } ] },
-      { "name": "ThesisScripts", "classes": 60, "coverage": 7.9, "coveredlines": 205, "coverablelines": 2568, "totallines": 5331, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 19, "coveredmethods": 106, "totalmethods": 556, "classesinassembly": [
+      { "name": "ThesisScripts", "classes": 60, "coverage": 7.9, "coveredlines": 205, "coverablelines": 2568, "totallines": 5332, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 19, "coveredmethods": 106, "totalmethods": 556, "classesinassembly": [
         { "name": "Assets.Scripts.Client.DataTypes.ChunkCellContainer", "coverage": 0, "coveredlines": 0, "coverablelines": 6, "totallines": 15, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 5 },
         { "name": "Building", "coverage": 0, "coveredlines": 0, "coverablelines": 9, "totallines": 33, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 7 },
         { "name": "CameraScript", "coverage": 0, "coveredlines": 0, "coverablelines": 7, "totallines": 24, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
@@ -73,7 +73,7 @@
         { "name": "Game.CarController", "coverage": 0, "coveredlines": 0, "coverablelines": 129, "totallines": 249, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 18 },
         { "name": "Game.CopCar", "coverage": 0, "coveredlines": 0, "coverablelines": 54, "totallines": 82, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
         { "name": "Game.EnableWheelPhysicMaterial", "coverage": 0, "coveredlines": 0, "coverablelines": 16, "totallines": 37, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
-        { "name": "Game.GameController", "coverage": 0, "coveredlines": 0, "coverablelines": 115, "totallines": 185, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 23 },
+        { "name": "Game.GameController", "coverage": 0, "coveredlines": 0, "coverablelines": 115, "totallines": 186, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 23 },
         { "name": "Game.NpcCar", "coverage": 0, "coveredlines": 0, "coverablelines": 6, "totallines": 19, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
         { "name": "Game.PlayerCar", "coverage": 0, "coveredlines": 0, "coverablelines": 75, "totallines": 127, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 10 },
         { "name": "Game.World.BuildingCell", "coverage": 0, "coveredlines": 0, "coverablelines": 11, "totallines": 30, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 7 },

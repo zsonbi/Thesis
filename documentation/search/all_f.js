@@ -32,7 +32,7 @@ var searchData=
   ['playerskinsloaded_29',['PlayerSkinsLoaded',['../classGame_1_1GameController.html#ac1d8730413951a2e3f61985ebb2470cf',1,'Game::GameController']]],
   ['playertask_30',['PlayerTask',['../namespaceThesis__backend_1_1Data__Structures.html#ae656f3c7a1335db8207ae56dcbd213a7',1,'Thesis_backend::Data_Structures']]],
   ['playertask_2ecs_31',['PlayerTask.cs',['../PlayerTask_8cs.html',1,'']]],
-  ['playervariants_32',['playerVariants',['../classGame_1_1GameController.html#a9c3dde476d4788fe398f9fd3b9d58f5c',1,'Game::GameController']]],
+  ['playervariants_32',['playerVariants',['../classGame_1_1GameController.html#acb9ffaeaae347c476646e0b74f089632',1,'Game::GameController']]],
   ['police_5fgame_5fover_33',['POLICE_GAME_OVER',['../classGameConfig.html#af9951f79cdc3576ae67b6f0f4cf3e6dc',1,'GameConfig']]],
   ['police_5fraycast_5fforward_5fdistance_34',['POLICE_RAYCAST_FORWARD_DISTANCE',['../classGameConfig.html#ae325d8c437c8eaf798fa3fda571cd263',1,'GameConfig']]],
   ['police_5fraycast_5fside_5fdistance_35',['POLICE_RAYCAST_SIDE_DISTANCE',['../classGameConfig.html#a9d8dbe4c5809c94baca5d11039198d00',1,'GameConfig']]],
