@@ -1,6 +1,0 @@
-var CrossPlatformInputManager_8cs =
-[
-    [ "UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager" ],
-    [ "UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager.VirtualAxis", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualAxis.html", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualAxis" ],
-    [ "UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager.VirtualButton", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualButton.html", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualButton" ]
-];

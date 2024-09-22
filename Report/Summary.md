@@ -1,7 +1,7 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 09/22/2024 - 16:38:00 |
+| Generated on: | 09/22/2024 - 18:03:01 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 4 |
 | Classes: | 97 |
