@@ -11,6 +11,9 @@ namespace Game
         [SerializeField]
         private float coinMultiplier = 1;
 
+        [SerializeField]
+        public int SkinId = 1;
+
         private class PoliceContainer
         {
             public float TimeReamaining;

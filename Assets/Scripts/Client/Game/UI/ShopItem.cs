@@ -37,7 +37,7 @@ public class ShopItem : MonoBehaviour
 
     public void Buy()
     {
-        StartCoroutine(Server.SendGetRequest<Thesis_backend.Data_Structures.Game>(ServerConfig.PATH_FOR_BUY_CAR(Id), Bought));
+        StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.Game>(ServerConfig.PATH_FOR_BUY_CAR(Id), new WWWForm(), Bought));
     }
 
     private void Bought(Thesis_backend.Data_Structures.Game game)

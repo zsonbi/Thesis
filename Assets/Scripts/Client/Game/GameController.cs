@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 namespace Game
 {
@@ -18,6 +19,8 @@ namespace Game
         private int probeSize = 1;
 
         private GameUI gameUI;
+
+        private Dictionary<int, GameObject> playerVariants = new Dictionary<int, GameObject>();
 
         [SerializeField]
         public World.GameWorld World
@@ -41,6 +44,7 @@ namespace Game
 
         private async void Awake()
         {
+            var handle = Addressables.LoadAssetsAsync<GameObject>("PlayerVariants", PlayerSkinsLoaded);
             this.carSpawner = this.GetComponentInChildren<CarSpawner>();
             gameUI = this.gameObject.GetComponentInChildren<GameUI>();
             if (gameUI is null)
@@ -80,6 +84,11 @@ namespace Game
             this.ScoreCounter += Time.deltaTime;
         }
 
+        private void PlayerSkinsLoaded(GameObject playerSkin)
+        {
+            this.playerVariants.Add(playerSkin.GetComponent<PlayerCar>().SkinId, playerSkin);
+        }
+
         public void IncreaseCoinCount(float amount)
         {
             this.Coins += amount;
@@ -93,7 +102,7 @@ namespace Game
 
         public async Task NewGame()
         {
-            player = Instantiate(playerPrefab, this.transform).GetComponent<PlayerCar>();
+            player = Instantiate(playerVariants[gameUI.SelectedSkinIndex + 1], this.transform).GetComponent<PlayerCar>();
             player.Init(this);
             player.DestroyedEvent += PlayerDied;
             this.carSpawner.Reset();

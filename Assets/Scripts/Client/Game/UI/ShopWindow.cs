@@ -14,7 +14,7 @@ public class ShopWindow : MonoBehaviour
     private GameObject ShopItemPrefab;
 
     [SerializeField]
-    private List<Sprite> ShopItemSprites = new List<Sprite>();
+    public List<Sprite> ShopItemSprites = new List<Sprite>();
 
     [SerializeField]
     private TMP_Text CoinText;

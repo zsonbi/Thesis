@@ -22,6 +22,9 @@ public class GameUI : MonoBehaviour
     private GameObject mainMenuContainer;
 
     [SerializeField]
+    private Image SkinDisplay;
+
+    [SerializeField]
     private TMP_Text InfamyGameOverText;
 
     [SerializeField]
@@ -41,6 +44,8 @@ public class GameUI : MonoBehaviour
 
     private GameController gameController;
     public bool Doubled { get; private set; } = false;
+
+    public int SelectedSkinIndex { get; private set; } = 0;
 
     private void Update()
     {
@@ -73,6 +78,18 @@ public class GameUI : MonoBehaviour
         CoinGameOverText.text = "Coins: " + gameController.Coins * 2;
 
         UserData.Instance.UpdateTaskScore(user.CurrentTaskScore);
+    }
+
+    public void LeftRotateSkin()
+    {
+        SelectedSkinIndex = (SelectedSkinIndex - 1) % UserData.Instance.Game.OwnedCars.Count;
+        SkinDisplay.sprite = ShopWindow.ShopItemSprites[SelectedSkinIndex];
+    }
+
+    public void RightRotateSkin()
+    {
+        SelectedSkinIndex = (SelectedSkinIndex + 1) % UserData.Instance.Game.OwnedCars.Count;
+        SkinDisplay.sprite = ShopWindow.ShopItemSprites[SelectedSkinIndex];
     }
 
     public void Init(GameController gameController)
