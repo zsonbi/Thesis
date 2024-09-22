@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using User;
 
 namespace Game
 {
@@ -20,7 +21,7 @@ namespace Game
 
         private GameUI gameUI;
 
-        private Dictionary<int, GameObject> playerVariants = new Dictionary<int, GameObject>();
+        private Dictionary<long, GameObject> playerVariants = new Dictionary<long, GameObject>();
 
         [SerializeField]
         public World.GameWorld World
@@ -102,7 +103,7 @@ namespace Game
 
         public async Task NewGame()
         {
-            player = Instantiate(playerVariants[gameUI.SelectedSkinIndex + 1], this.transform).GetComponent<PlayerCar>();
+            player = Instantiate(playerVariants[UserData.Instance.Game.OwnedCars[gameUI.SelectedSkinIndex].ShopId], this.transform).GetComponent<PlayerCar>();
             player.Init(this);
             player.DestroyedEvent += PlayerDied;
             this.carSpawner.Reset();
@@ -112,7 +113,7 @@ namespace Game
             player.gameObject.transform.position = new Vector3(baseChunkPos.x + GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL / 2 + 10, baseChunkPos.y + 2, baseChunkPos.z);
             this.gameUI.ChangeDifficulyDisplay(0);
             this.Running = true;
-            this.Coins = 5;
+            this.Coins = 0;
         }
 
         public async Task LoadAndDespawnChunks(int centerRow, int centerColumn)
