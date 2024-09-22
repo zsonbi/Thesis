@@ -97,6 +97,11 @@ namespace Game
 
         private void PlayerDied(object? sender, EventArgs args)
         {
+            if (!Running)
+            {
+                return;
+            }
+
             this.gameUI.ShowEndGameScreen();
             Running = false;
         }

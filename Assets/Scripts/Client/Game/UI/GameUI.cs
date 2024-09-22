@@ -117,6 +117,8 @@ public class GameUI : MonoBehaviour
         CoinGameOverText.text = "Coins: " + gameController.Coins;
         ingameContainer.SetActive(false);
         gameOverContainer.SetActive(true);
+        Doubled = false;
+        this.DoubleCoinButon.interactable = UserData.Instance.CurrentTaskScore >= 1000;
     }
 
     public void HideGameOverScreen()
@@ -124,8 +126,6 @@ public class GameUI : MonoBehaviour
         gameOverContainer.SetActive(false);
         ingameContainer.SetActive(true);
         SaveCoins();
-        Doubled = false;
-        this.DoubleCoinButon.interactable = true;
     }
 
     public void ShowShopWindow()
