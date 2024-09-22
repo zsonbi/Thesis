@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>09/22/2024 - 15:03:33</Generatedon>
+    <Generatedon>09/22/2024 - 15:24:32</Generatedon>
     <Parser>MultiReportParser (3x OpenCoverParser)</Parser>
     <Assemblies>4</Assemblies>
     <Classes>97</Classes>
     <Files>95</Files>
     <Coveredlines>260</Coveredlines>
-    <Uncoveredlines>4412</Uncoveredlines>
-    <Coverablelines>4672</Coverablelines>
-    <Totallines>9357</Totallines>
+    <Uncoveredlines>4413</Uncoveredlines>
+    <Coverablelines>4673</Coverablelines>
+    <Totallines>9358</Totallines>
     <Linecoverage>5.5</Linecoverage>
     <Coveredbranches>0</Coveredbranches>
     <Totalbranches>0</Totalbranches>
@@ -61,7 +61,7 @@
       <Class name="Tests.MainMenuTest" coverage="100" coveredlines="4" coverablelines="4" totallines="24" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
       <Class name="Tests.UITests.UserControllerTests" coverage="96.1" coveredlines="25" coverablelines="26" totallines="65" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="6" methodcoverage="100" />
     </Assembly>
-    <Assembly name="ThesisScripts" classes="60" coverage="7.9" coveredlines="205" coverablelines="2569" totallines="5333" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="106" totalmethods="556" methodcoverage="19">
+    <Assembly name="ThesisScripts" classes="60" coverage="7.9" coveredlines="205" coverablelines="2570" totallines="5334" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="106" totalmethods="556" methodcoverage="19">
       <Class name="Assets.Scripts.Client.DataTypes.ChunkCellContainer" coverage="0" coveredlines="0" coverablelines="6" totallines="15" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
       <Class name="Building" coverage="0" coveredlines="0" coverablelines="9" totallines="33" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="7" methodcoverage="0" />
       <Class name="CameraScript" coverage="0" coveredlines="0" coverablelines="7" totallines="24" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
@@ -89,7 +89,7 @@
       <Class name="MeshGenerator" coverage="0" coveredlines="0" coverablelines="27" totallines="96" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
       <Class name="ModalWindow" coverage="0" coveredlines="0" coverablelines="19" totallines="43" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
       <Class name="ProfileHandler" coverage="0" coveredlines="0" coverablelines="25" totallines="66" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="7" methodcoverage="0" />
-      <Class name="ShopItem" coverage="0" coveredlines="0" coverablelines="16" totallines="48" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
+      <Class name="ShopItem" coverage="0" coveredlines="0" coverablelines="17" totallines="49" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
       <Class name="ShopWindow" coverage="0" coveredlines="0" coverablelines="39" totallines="74" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
       <Class name="StarHandler" coverage="0" coveredlines="0" coverablelines="10" totallines="28" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
       <Class name="TaskClosedEventArgs" coverage="0" coveredlines="0" coverablelines="4" totallines="14" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
