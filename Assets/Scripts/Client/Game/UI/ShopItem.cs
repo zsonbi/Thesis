@@ -43,6 +43,7 @@ public class ShopItem : MonoBehaviour
     private void Bought(Thesis_backend.Data_Structures.Game game)
     {
         UserData.Instance.Game.OwnedCars = game.OwnedCars;
+        UserData.Instance.Game.Currency = game.Currency;
         shopWindow.UpdateShop();
     }
 }

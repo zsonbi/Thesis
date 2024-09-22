@@ -83,13 +83,13 @@ public class GameUI : MonoBehaviour
     public void LeftRotateSkin()
     {
         SelectedSkinIndex = (SelectedSkinIndex - 1) % UserData.Instance.Game.OwnedCars.Count;
-        SkinDisplay.sprite = ShopWindow.ShopItemSprites[SelectedSkinIndex];
+        SkinDisplay.sprite = ShopWindow.ShopItemSprites[(int)UserData.Instance.Game.OwnedCars[SelectedSkinIndex].ShopId - 1];
     }
 
     public void RightRotateSkin()
     {
         SelectedSkinIndex = (SelectedSkinIndex + 1) % UserData.Instance.Game.OwnedCars.Count;
-        SkinDisplay.sprite = ShopWindow.ShopItemSprites[SelectedSkinIndex];
+        SkinDisplay.sprite = ShopWindow.ShopItemSprites[(int)UserData.Instance.Game.OwnedCars[SelectedSkinIndex].ShopId - 1];
     }
 
     public void Init(GameController gameController)

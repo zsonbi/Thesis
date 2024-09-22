@@ -353,7 +353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 125
   coinMultiplier: 1
-  SkinId: 5
+  SkinId: 4
 --- !u!1 &162528
 GameObject:
   m_ObjectHideFlags: 0
