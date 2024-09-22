@@ -17,8 +17,8 @@ namespace Thesis_backend.Data_Structures
         public List<PlayerTask>? UserTasks { get; set; }
 
         public long TotalScore { get; set; }
-        public long Currency { get; set; }
+        public long CurrentTaskScore { get; set; }
         [JsonIgnore]
-        public override object Serialize => new { ID, Username, PasswordHash, Email, userSettings = UserSettings?.Serialize, game = Game?.Serialize, LastLoggedIn, Registered, UserTasks, TotalScore, Currency };
+        public override object Serialize => new { ID, Username, PasswordHash, Email, userSettings = UserSettings?.Serialize, game = Game?.Serialize, LastLoggedIn, Registered, UserTasks, TotalScore, CurrentTaskScore };
     }
 }
