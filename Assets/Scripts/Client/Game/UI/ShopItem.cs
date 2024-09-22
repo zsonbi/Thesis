@@ -1,9 +1,11 @@
+using Config;
 using System.Collections;
 using System.Collections.Generic;
 using Thesis_backend.Data_Structures;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using User;
 
 public class ShopItem : MonoBehaviour
 {
@@ -19,20 +21,28 @@ public class ShopItem : MonoBehaviour
     [SerializeField]
     private Button BuyButton;
 
-    public void Init(Shop item, Sprite image, bool owned)
+    private ShopWindow shopWindow;
+
+    public long Id { get; private set; }
+
+    public void Init(ShopWindow parentWindow, Shop item, Sprite image, bool owned)
     {
+        this.shopWindow = parentWindow;
         this.ProductName.text = item.ProductName;
         this.ProductImage.sprite = image;
         this.Price.text = item.Cost.ToString();
-
+        this.Id = item.ID;
         this.BuyButton.gameObject.SetActive(!owned);
     }
 
     public void Buy()
     {
+        StartCoroutine(Server.SendGetRequest<Thesis_backend.Data_Structures.Game>(ServerConfig.PATH_FOR_BUY_CAR(Id), Bought));
     }
 
-    private void Bought()
+    private void Bought(Thesis_backend.Data_Structures.Game game)
     {
+        UserData.Instance.Game.OwnedCars = game.OwnedCars;
+        shopWindow.UpdateShop();
     }
 }

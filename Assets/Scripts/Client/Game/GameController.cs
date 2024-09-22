@@ -103,7 +103,7 @@ namespace Game
             player.gameObject.transform.position = new Vector3(baseChunkPos.x + GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL / 2 + 10, baseChunkPos.y + 2, baseChunkPos.z);
             this.gameUI.ChangeDifficulyDisplay(0);
             this.Running = true;
-            this.Coins = 0;
+            this.Coins = 5;
         }
 
         public async Task LoadAndDespawnChunks(int centerRow, int centerColumn)

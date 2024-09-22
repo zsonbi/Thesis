@@ -98,7 +98,7 @@ namespace Game
             //   }
             carController.Move(reverse ? 0 : turning, accel, 0f, 0f);
 
-            Debug.Log(carController.CurrentSpeed);
+            //   Debug.Log(carController.CurrentSpeed);
         }
 
         protected override void OnCollisionEnter(Collision collision)
@@ -117,7 +117,7 @@ namespace Game
             {
                 policeContacts.RemoveAll(x => x.PoliceCar == collision.gameObject);
 
-                Debug.Log("Removed" + collision.gameObject);
+                // Debug.Log("Removed" + collision.gameObject);
             }
         }
     }

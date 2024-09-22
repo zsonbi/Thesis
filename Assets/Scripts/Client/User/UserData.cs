@@ -46,6 +46,11 @@ namespace User
             return instance;
         }
 
+        public void UpdateTaskScore(long newAmount)
+        {
+            this.CurrentTaskScore = newAmount;
+        }
+
         private UserData()
         {
         }

@@ -76,5 +76,11 @@ namespace Config
         public static string PATHFORTASKDELETE(long id) => SERVERPATH + $"/api/Tasks/{id}";
 
         public const string PATH_FOR_SHOP_GET_ALL = SERVERPATH + "/api/Shop/GetAll";
+
+        public const string PATH_FOR_DOUBLE_COINS = SERVERPATH + "/api/Game/DoubleCoinsForGame";
+
+        public const string PATH_FOR_SAVE_COINS = SERVERPATH + "/api/Game/AddCoin";
+
+        public static string PATH_FOR_BUY_CAR(long id) => SERVERPATH + "/api/Shop/Buy/{id}";
     }
 }

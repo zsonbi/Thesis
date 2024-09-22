@@ -19,25 +19,55 @@ public class ShopWindow : MonoBehaviour
     [SerializeField]
     private TMP_Text CoinText;
 
-    private void Start()
+    private List<Shop> shopItemsCache;
+
+    public void Show()
     {
-        StartCoroutine(Server.SendGetRequest<List<Shop>>(ServerConfig.PATH_FOR_SHOP_GET_ALL, LoadedShopItems));
+        this.gameObject.SetActive(true);
+
+        UpdateShop();
+    }
+
+    public void Hide()
+    {
+        this.gameObject.SetActive(false);
+    }
+
+    public void UpdateShop()
+    {
+        if (shopItemsCache is null)
+        {
+            StartCoroutine(Server.SendGetRequest<List<Shop>>(ServerConfig.PATH_FOR_SHOP_GET_ALL, LoadedShopItems));
+        }
+        else
+        {
+            LoadedShopItems(shopItemsCache);
+        }
         CoinText.text = UserData.Instance.Game.Currency.ToString();
     }
 
     private void LoadedShopItems(List<Shop> shopItems)
     {
+        //Delete the previous ones
+        for (int i = 0; i < this.ShopParent.transform.childCount; i++)
+        {
+            Destroy(this.ShopParent.transform.GetChild(i).gameObject);
+        }
+        this.ShopParent.transform.DetachChildren();
+
+        this.shopItemsCache = shopItems;
         foreach (var item in shopItems)
         {
             ShopItem shopItem = Instantiate(ShopItemPrefab, ShopParent.transform).GetComponent<ShopItem>();
+            bool owned = UserData.Instance.Game.OwnedCars.Find(x => x.ShopId == item.ID) != null;
             if (ShopItemSprites.Count <= (item.ID - 1))
             {
-                shopItem.Init(item, ShopItemSprites[0], false);
+                shopItem.Init(this, item, ShopItemSprites[0], owned);
                 Debug.LogError("No sprite for this shop item");
             }
             else
             {
-                shopItem.Init(item, ShopItemSprites[(int)(item.ID - 1)], false);
+                shopItem.Init(this, item, ShopItemSprites[(int)(item.ID - 1)], owned);
             }
         }
     }
