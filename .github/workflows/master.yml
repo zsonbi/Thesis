@@ -214,13 +214,8 @@ jobs:
         steps:
           - name: Free Disk Space
             run: |
-              sudo swapoff -a
-              sudo rm -f /swapfile
               sudo apt clean
               docker rmi $(docker image ls -aq)  || true
-              df -h
-              # Before
-              echo "Disk space before:"
               df -h
           - uses: actions/cache@v4.0.2
             with:
