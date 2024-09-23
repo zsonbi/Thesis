@@ -7,5 +7,6 @@ var namespaceGame =
     [ "CopCar", "classGame_1_1CopCar.html", "classGame_1_1CopCar" ],
     [ "EnableWheelPhysicMaterial", "classGame_1_1EnableWheelPhysicMaterial.html", "classGame_1_1EnableWheelPhysicMaterial" ],
     [ "GameController", "classGame_1_1GameController.html", "classGame_1_1GameController" ],
-    [ "NpcCar", "classGame_1_1NpcCar.html", "classGame_1_1NpcCar" ]
+    [ "NpcCar", "classGame_1_1NpcCar.html", "classGame_1_1NpcCar" ],
+    [ "PlayerCar", "classGame_1_1PlayerCar.html", "classGame_1_1PlayerCar" ]
 ];

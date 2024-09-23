@@ -33,7 +33,8 @@ var hierarchy =
       [ "Game.Car", "classGame_1_1Car.html", [
         [ "Game.NpcCar", "classGame_1_1NpcCar.html", [
           [ "Game.CopCar", "classGame_1_1CopCar.html", null ]
-        ] ]
+        ] ],
+        [ "Game.PlayerCar", "classGame_1_1PlayerCar.html", null ]
       ] ],
       [ "Game.CarController", "classGame_1_1CarController.html", null ],
       [ "Game.CarProbeScript", "classGame_1_1CarProbeScript.html", null ],

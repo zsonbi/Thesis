@@ -1,21 +1,21 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 09/23/2024 - 08:59:35 |
+| Generated on: | 09/23/2024 - 15:07:44 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 4 |
 | Classes: | 96 |
 | Files: | 94 |
 | Covered lines: | 268 |
-| Uncovered lines: | 4404 |
-| Coverable lines: | 4672 |
-| Total lines: | 9349 |
-| Line coverage: | 5.7% (268 of 4672) |
+| Uncovered lines: | 4456 |
+| Coverable lines: | 4724 |
+| Total lines: | 9428 |
+| Line coverage: | 5.6% (268 of 4724) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 132 |
-| Total methods: | 837 |
-| Method coverage: | 15.7% (132 of 837) |
+| Total methods: | 849 |
+| Method coverage: | 15.5% (132 of 849) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -58,12 +58,12 @@
 |Tests.GameTests.RoadGeneratorTests|26|0|26|55|100%|0|0||3|3|100%|
 |Tests.MainMenuTest|4|0|4|24|100%|0|0||1|1|100%|
 |Tests.UITests.UserControllerTests|25|1|26|65|96.1%|0|0||6|6|100%|
-|**ThesisScripts**|**213**|**2360**|**2573**|**5339**|**8.2%**|**0**|**0**|****|**122**|**556**|**21.9%**|
+|**ThesisScripts**|**213**|**2412**|**2625**|**5418**|**8.1%**|**0**|**0**|****|**122**|**568**|**21.4%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|0|6|6|15|0%|0|0||0|5|0%|
 |Building|0|9|9|33|0%|0|0||0|7|0%|
 |CameraScript|0|7|7|24|0%|0|0||0|2|0%|
 |Coin|0|7|7|16|0%|0|0||0|2|0%|
-|Config.ServerConfig|0|6|6|86|0%|0|0||0|6|0%|
+|Config.ServerConfig|0|6|6|89|0%|0|0||0|6|0%|
 |DirectionConverter|0|21|21|46|0%|0|0||0|2|0%|
 |EdgeRoadContainer|9|0|9|15|100%|0|0||7|7|100%|
 |EffectScript|0|4|4|23|0%|0|0||0|2|0%|
@@ -73,16 +73,16 @@
 |Game.CarController|0|129|129|249|0%|0|0||0|18|0%|
 |Game.CopCar|0|54|54|82|0%|0|0||0|1|0%|
 |Game.EnableWheelPhysicMaterial|0|16|16|37|0%|0|0||0|2|0%|
-|Game.GameController|0|119|119|192|0%|0|0||0|23|0%|
+|Game.GameController|0|120|120|192|0%|0|0||0|25|0%|
 |Game.NpcCar|0|6|6|19|0%|0|0||0|1|0%|
-|Game.PlayerCar|0|75|75|127|0%|0|0||0|10|0%|
+|Game.PlayerCar|0|108|108|170|0%|0|0||0|16|0%|
 |Game.World.BuildingCell|0|11|11|30|0%|0|0||0|7|0%|
 |Game.World.BuildingGenerator|0|43|43|64|0%|0|0||0|2|0%|
 |Game.World.CarSpawner|0|43|43|79|0%|0|0||0|5|0%|
 |Game.World.Chunk|0|375|375|608|0%|0|0||0|29|0%|
 |Game.World.GameWorld|0|68|68|119|0%|0|0||0|6|0%|
 |Game.World.RoadGenerator|55|49|104|200|52.8%|0|0||6|9|66.6%|
-|GameUI|0|72|72|153|0%|0|0||0|21|0%|
+|GameUI|0|90|90|186|0%|0|0||0|25|0%|
 |MeshGenerator|0|27|27|96|0%|0|0||0|2|0%|
 |ModalWindow|0|19|19|43|0%|0|0||0|4|0%|
 |ProfileHandler|0|25|25|66|0%|0|0||0|7|0%|

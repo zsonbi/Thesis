@@ -20,5 +20,7 @@ var classConfig_1_1ServerConfig =
     [ "PATHFORTASKSQUERY", "classConfig_1_1ServerConfig.html#a47231cfa790f15bbd226c2dc2202c448", null ],
     [ "PATH_FOR_SHOP_GET_ALL", "classConfig_1_1ServerConfig.html#ad30c71b0f09c1eea223b115938e7d76f", null ],
     [ "PATH_FOR_DOUBLE_COINS", "classConfig_1_1ServerConfig.html#a62005209131131044f0e7cb3a153c98f", null ],
-    [ "PATH_FOR_SAVE_COINS", "classConfig_1_1ServerConfig.html#aa28b72d3a2edcffeb7d4396211f0ade6", null ]
+    [ "PATH_FOR_SAVE_COINS", "classConfig_1_1ServerConfig.html#aa28b72d3a2edcffeb7d4396211f0ade6", null ],
+    [ "PATH_FOR_BUY_TURBO", "classConfig_1_1ServerConfig.html#ae50f59dbc4b3e7888891499ecf170f27", null ],
+    [ "PATH_FOR_BUY_IMMUNITY", "classConfig_1_1ServerConfig.html#acd7e5646d9bc5c5ff141b912271c6adc", null ]
 ];

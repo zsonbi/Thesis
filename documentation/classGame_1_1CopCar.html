@@ -186,7 +186,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   18</span> </div>
 <div class="line"><span class="lineno">   19</span>            base.Update();</div>
 <div class="line"><span class="lineno">   20</span>            <span class="keywordtype">float</span> steering = 0;</div>
-<div class="line"><span class="lineno">   21</span>            <span class="keywordtype">float</span> v = 10;</div>
+<div class="line"><span class="lineno">   21</span>            <span class="keywordtype">float</span> v = 1;</div>
 <div class="line"><span class="lineno">   22</span> </div>
 <div class="line"><span class="lineno">   23</span>            <span class="keywordtype">int</span> layerMask = (1 &lt;&lt; 6) | (1 &lt;&lt; 9);</div>
 <div class="line"><span class="lineno">   24</span>            layerMask = ~layerMask;</div>
@@ -209,13 +209,13 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   41</span>                {</div>
 <div class="line"><span class="lineno">   42</span>                    <span class="keywordflow">if</span> (hitForward.collider.gameObject.layer == 1 &lt;&lt; 7)</div>
 <div class="line"><span class="lineno">   43</span>                    {</div>
-<div class="line"><span class="lineno">   44</span>                        v = 20;</div>
+<div class="line"><span class="lineno">   44</span>                        v = 1;</div>
 <div class="line"><span class="lineno">   45</span>                    }</div>
 <div class="line"><span class="lineno">   46</span>                    <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">   47</span>                    {</div>
 <div class="line"><span class="lineno">   48</span>                        <span class="keywordflow">if</span> (hitForward.distance &lt; <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#a9365f48351cb59bba3c9174c6874cc18">POLICE_REVERSE_DISTANCE</a>)</div>
 <div class="line"><span class="lineno">   49</span>                        {</div>
-<div class="line"><span class="lineno">   50</span>                            v = -40;</div>
+<div class="line"><span class="lineno">   50</span>                            v = -2;</div>
 <div class="line"><span class="lineno">   51</span>                        }</div>
 <div class="line"><span class="lineno">   52</span>                        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (Vector3.Distance(<a class="code hl_variable" href="classGame_1_1Car.html#a98cca5b2f769481e4ac7408a0a742fd9">gameController</a>.<a class="code hl_property" href="classGame_1_1GameController.html#aeb425ec760007866c0ea8882d64a3171">PlayerPos</a>, <span class="keyword">this</span>.gameObject.transform.position) &gt; 4f)</div>
 <div class="line"><span class="lineno">   53</span>                        {</div>

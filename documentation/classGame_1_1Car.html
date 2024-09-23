@@ -108,8 +108,9 @@ Inheritance diagram for Game.Car:</div>
  <div class="center">
   <img src="classGame_1_1Car.png" usemap="#Game.Car_map" alt=""/>
   <map id="Game.Car_map" name="Game.Car_map">
-<area href="classGame_1_1NpcCar.html" alt="Game.NpcCar" shape="rect" coords="0,112,102,136"/>
-<area href="classGame_1_1CopCar.html" alt="Game.CopCar" shape="rect" coords="0,168,102,192"/>
+<area href="classGame_1_1NpcCar.html" alt="Game.NpcCar" shape="rect" coords="0,112,106,136"/>
+<area href="classGame_1_1PlayerCar.html" alt="Game.PlayerCar" shape="rect" coords="116,112,222,136"/>
+<area href="classGame_1_1CopCar.html" alt="Game.CopCar" shape="rect" coords="0,168,106,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -191,7 +192,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classGame_1_1CopCar.html#ad1e664d118f85d0c8b21e92d519c1e0b">Game.CopCar</a>.</p>
+<p>Reimplemented in <a class="el" href="classGame_1_1CopCar.html#ad1e664d118f85d0c8b21e92d519c1e0b">Game.CopCar</a>, and <a class="el" href="classGame_1_1PlayerCar.html#a3c11ab5b2bdc057896e172f59b22e03a">Game.PlayerCar</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="Car_8cs_source.html#l00034">34</a> of file <a class="el" href="Car_8cs_source.html">Car.cs</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   35</span>        {</div>
@@ -288,6 +289,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Reimplemented in <a class="el" href="classGame_1_1PlayerCar.html#a18f30f1f6873f043457ce9f81ac47ed4">Game.PlayerCar</a>.</p>
+
 <p class="definition">Definition at line <a class="el" href="Car_8cs_source.html#l00064">64</a> of file <a class="el" href="Car_8cs_source.html">Car.cs</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   65</span>        {</div>
 <div class="line"><span class="lineno">   66</span>        }</div>
@@ -337,7 +340,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Car_8cs_source.html#l00026">Game.Car.effects</a>, and <a class="el" href="Car_8cs_source.html#l00030">Game.Car.MAX_HEALTH</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CarSpawner_8cs_source.html#l00058">Game.World.CarSpawner.SpawnPolice()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00109">Game.GameController.NewGame()</a>, and <a class="el" href="CarSpawner_8cs_source.html#l00058">Game.World.CarSpawner.SpawnPolice()</a>.</p>
 
 </div>
 </div>
@@ -364,6 +367,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classGame_1_1PlayerCar.html#a4f53e5c9f220ed72b83160599e2df51b">Game.PlayerCar</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="Car_8cs_source.html#l00080">80</a> of file <a class="el" href="Car_8cs_source.html">Car.cs</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   81</span>        {</div>
@@ -478,7 +483,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Car_8cs_source.html#l00015">15</a> of file <a class="el" href="Car_8cs_source.html">Car.cs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Car_8cs_source.html#l00034">Game.Car.Update()</a>, and <a class="el" href="CopCar_8cs_source.html#l00011">Game.CopCar.Update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="PlayerCar_8cs_source.html#l00047">Game.PlayerCar.ChunkChanged()</a>, <a class="el" href="PlayerCar_8cs_source.html#l00042">Game.PlayerCar.PickedUpCoin()</a>, <a class="el" href="Car_8cs_source.html#l00034">Game.Car.Update()</a>, <a class="el" href="CopCar_8cs_source.html#l00011">Game.CopCar.Update()</a>, and <a class="el" href="PlayerCar_8cs_source.html#l00064">Game.PlayerCar.Update()</a>.</p>
 
 </div>
 </div>
@@ -504,7 +509,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Car_8cs_source.html#l00016">16</a> of file <a class="el" href="Car_8cs_source.html">Car.cs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CopCar_8cs_source.html#l00011">Game.CopCar.Update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="PlayerCar_8cs_source.html#l00101">Game.PlayerCar.FixedUpdate()</a>, and <a class="el" href="CopCar_8cs_source.html#l00011">Game.CopCar.Update()</a>.</p>
 
 </div>
 </div>
@@ -548,7 +553,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Car_8cs_source.html#l00018">18</a> of file <a class="el" href="Car_8cs_source.html">Car.cs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Car_8cs_source.html#l00080">Game.Car.OnCollisionEnter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Car_8cs_source.html#l00080">Game.Car.OnCollisionEnter()</a>, and <a class="el" href="PlayerCar_8cs_source.html#l00064">Game.PlayerCar.Update()</a>.</p>
 
 </div>
 </div>
@@ -681,7 +686,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Car_8cs_source.html#l00032">32</a> of file <a class="el" href="Car_8cs_source.html">Car.cs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Car_8cs_source.html#l00034">Game.Car.Update()</a>, and <a class="el" href="CopCar_8cs_source.html#l00011">Game.CopCar.Update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="PlayerCar_8cs_source.html#l00101">Game.PlayerCar.FixedUpdate()</a>, <a class="el" href="Car_8cs_source.html#l00034">Game.Car.Update()</a>, and <a class="el" href="CopCar_8cs_source.html#l00011">Game.CopCar.Update()</a>.</p>
 
 </div>
 </div>

@@ -3,7 +3,7 @@ var searchData=
   ['findpairedbutton_0',['FindPairedButton',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1AxisTouchButton.html#a9c105241897864df983162333ca012e2',1,'UnityStandardAssets::CrossPlatformInput::AxisTouchButton']]],
   ['fire_1',['Fire',['../namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578abd2b7e5f85a6ea65065c4ebc6d7c95bb',1,'DataTypes']]],
   ['fire_5fthreshold_2',['FIRE_THRESHOLD',['../classGameConfig.html#ae7461f7cd2d9980ffbadbe707dbe3330',1,'GameConfig']]],
-  ['fixedupdate_3',['FixedUpdate',['../classGame_1_1EnableWheelPhysicMaterial.html#adee701db67f582a1cd3945bfc3728a86',1,'Game::EnableWheelPhysicMaterial']]],
+  ['fixedupdate_3',['fixedupdate',['../classGame_1_1EnableWheelPhysicMaterial.html#adee701db67f582a1cd3945bfc3728a86',1,'Game.EnableWheelPhysicMaterial.FixedUpdate()'],['../classGame_1_1PlayerCar.html#a35789ca2a7fb0aedfa7f7d81d0ff639d',1,'Game.PlayerCar.FixedUpdate()']]],
   ['float_4',['float',['../classGame_1_1World_1_1Chunk.html#a0e6a5ff281afb8fd6116903dbcf40a2d',1,'Game::World::Chunk']]],
   ['forwardaxis_5',['ForwardAxis',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput.html#a33494fd997ae63aea22ffb585244f187ab8587f332713f2facfcf4519ace9485b',1,'UnityStandardAssets::CrossPlatformInput::TiltInput']]],
   ['friend_6',['friend',['../namespaceThesis__backend_1_1Data__Structures.html#a4c3393a9cb2a72b4d735daeff4d0ea1d',1,'Thesis_backend.Data_Structures.Friend'],['../classFriendHandler.html#a0fabf78eaabddfe9a99a8663d598420c',1,'FriendHandler.Friend']]],

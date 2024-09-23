@@ -12,5 +12,7 @@ var classGameConfig =
     [ "POLICE_RAYCAST_FORWARD_DISTANCE", "classGameConfig.html#ae325d8c437c8eaf798fa3fda571cd263", null ],
     [ "POLICE_RAYCAST_SIDE_DISTANCE", "classGameConfig.html#a9d8dbe4c5809c94baca5d11039198d00", null ],
     [ "POLICE_REVERSE_DISTANCE", "classGameConfig.html#a9365f48351cb59bba3c9174c6874cc18", null ],
-    [ "COIN_RATE", "classGameConfig.html#aecb82db91e9098e26eb592efe084adfb", null ]
+    [ "COIN_RATE", "classGameConfig.html#aecb82db91e9098e26eb592efe084adfb", null ],
+    [ "TURBO_DURATION", "classGameConfig.html#a72acd18d4355d4e978281d7c89cd1ff7", null ],
+    [ "IMMUNITY_DURATION", "classGameConfig.html#a609977a6f4bf3b40ff292fd47b73a9fa", null ]
 ];
