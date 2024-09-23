@@ -82,5 +82,8 @@ namespace Config
         public const string PATH_FOR_SAVE_COINS = SERVERPATH + "/api/Game/AddCoin";
 
         public static string PATH_FOR_BUY_CAR(long id) => SERVERPATH + $"/api/Shop/Buy/{id}";
+
+        public const string PATH_FOR_BUY_TURBO = SERVERPATH + "/api/Game/PowerUp/Turbo";
+        public const string PATH_FOR_BUY_IMMUNITY = SERVERPATH + "/api/Game/PowerUp/Immunity";
     }
 }

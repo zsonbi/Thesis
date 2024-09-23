@@ -34,6 +34,9 @@ public class GameUI : MonoBehaviour
     private TMP_Text InfamyInGameText;
 
     [SerializeField]
+    private TMP_Text TaskScoreInGameText;
+
+    [SerializeField]
     private TMP_Text CoinInGameText;
 
     [SerializeField]
@@ -71,12 +74,41 @@ public class GameUI : MonoBehaviour
         StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATH_FOR_DOUBLE_COINS, new WWWForm(), DoubledCoins));
     }
 
+    public void BuyImmunity()
+    {
+        StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATH_FOR_BUY_IMMUNITY, new WWWForm(), BoughtImmunity));
+
+    }
+
+    public void BuyTurbo()
+    {
+        StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATH_FOR_BUY_TURBO, new WWWForm(),BoughtTurbo));
+
+    }
+
+    private void BoughtImmunity(Thesis_backend.Data_Structures.User user)
+    {
+        UserData.Instance.UpdateTaskScore(user.CurrentTaskScore);
+        gameController.Player.ApplyImmunity();
+        TaskScoreInGameText.text = UserData.Instance.CurrentTaskScore.ToString();
+
+    }
+
+    private void BoughtTurbo(Thesis_backend.Data_Structures.User user)
+    {
+        UserData.Instance.UpdateTaskScore(user.CurrentTaskScore);
+        gameController.Player.ApplyTurbo();
+        TaskScoreInGameText.text = UserData.Instance.CurrentTaskScore.ToString();
+
+    }
+
+
     private void DoubledCoins(Thesis_backend.Data_Structures.User user)
     {
         this.Doubled = true;
         this.DoubleCoinButon.interactable = false;
         CoinGameOverText.text = "Coins: " + gameController.Coins * 2;
-
+        TaskScoreInGameText.text = UserData.Instance.CurrentTaskScore.ToString();
         UserData.Instance.UpdateTaskScore(user.CurrentTaskScore);
     }
 
@@ -102,6 +134,7 @@ public class GameUI : MonoBehaviour
         HideGameOverScreen();
         ingameContainer.SetActive(true);
         mainMenuContainer.SetActive(false);
+        TaskScoreInGameText.text = UserData.Instance.CurrentTaskScore.ToString();
 
         gameController?.NewGame();
     }

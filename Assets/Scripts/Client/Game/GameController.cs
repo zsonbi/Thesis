@@ -33,9 +33,9 @@ namespace Game
 
         public int Score { get => Mathf.RoundToInt(ScoreCounter); private set => ScoreCounter = value; }
 
-        private PlayerCar player;
+        public PlayerCar Player{get; private set; }
 
-        public Vector3 PlayerPos => player.gameObject.transform.position;
+        public Vector3 PlayerPos => Player.gameObject.transform.position;
 
         public bool Running { get; private set; } = false;
 
@@ -108,14 +108,14 @@ namespace Game
 
         public async Task NewGame()
         {
-            player = Instantiate(playerVariants[UserData.Instance.Game.OwnedCars[gameUI.SelectedSkinIndex].ShopId], this.transform).GetComponent<PlayerCar>();
-            player.Init(this);
-            player.DestroyedEvent += PlayerDied;
+            Player = Instantiate(playerVariants[UserData.Instance.Game.OwnedCars[gameUI.SelectedSkinIndex].ShopId], this.transform).GetComponent<PlayerCar>();
+            Player.Init(this);
+            Player.DestroyedEvent += PlayerDied;
             this.carSpawner.Reset();
             this.Score = 0;
             await World.CreateNewGame();
             Vector3 baseChunkPos = (await World.GetChunk(GameConfig.CHUNK_COUNT / 2, GameConfig.CHUNK_COUNT / 2)).gameObject.transform.position;
-            player.gameObject.transform.position = new Vector3(baseChunkPos.x + GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL / 2 + 10, baseChunkPos.y + 2, baseChunkPos.z);
+            Player.gameObject.transform.position = new Vector3(baseChunkPos.x + GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL / 2 + 10, baseChunkPos.y + 2, baseChunkPos.z);
             this.gameUI.ChangeDifficulyDisplay(0);
             this.Running = true;
             this.Coins = 0;

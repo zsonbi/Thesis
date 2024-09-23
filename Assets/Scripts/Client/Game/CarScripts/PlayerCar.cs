@@ -6,13 +6,15 @@ using UnityStandardAssets.CrossPlatformInput;
 
 namespace Game
 {
-    internal class PlayerCar : Car
+    public class PlayerCar : Car
     {
         [SerializeField]
         private float coinMultiplier = 1;
 
         [SerializeField]
         public int SkinId = 1;
+
+
 
         private class PoliceContainer
         {
@@ -30,6 +32,13 @@ namespace Game
 
         private List<PoliceContainer> policeContacts = new List<PoliceContainer>();
 
+        public bool Immune {  get; private set; }  =false;
+        public bool Turbo {  get; private set; } =false;
+
+        private float turboTimer=0f;
+        private float immuneTimer=0f;
+
+
         public void PickedUpCoin()
         {
             this.gameController.IncreaseCoinCount(1 * coinMultiplier);
@@ -40,8 +49,43 @@ namespace Game
             await gameController.LoadAndDespawnChunks(newChunk.Row, newChunk.Col);
         }
 
+        public void ApplyTurbo()
+        {
+            this.turboTimer = 0f;
+            this.Turbo= true;
+        }
+
+        public void ApplyImmunity()
+        {
+            this.immuneTimer = 0f;
+            this.Immune=true;
+        }
+
         protected override void Update()
         {
+            if (!gameController.Running)
+            {
+                return;
+            }
+
+            if (Turbo)
+            {
+                turboTimer+=Time.deltaTime;
+                if (turboTimer > GameConfig.TURBO_DURATION)
+                {
+                    Turbo = false;
+                }
+            }
+
+            if (Immune)
+            {
+                immuneTimer += Time.deltaTime;
+                if (immuneTimer > GameConfig.TURBO_DURATION)
+                {
+                    Immune = false;
+                }
+            }
+
             base.Update();
 
             for (int i = 0; i < policeContacts.Count; i++)
@@ -97,17 +141,16 @@ namespace Game
                 }
             }
             if (accel == 0)
-                accel = Input.touchCount > 1 ? -20 : 10;
-            //   }
-            carController.Move(reverse ? 0 : turning, accel, 0f, 0f);
+                accel = Input.touchCount > 1 ? -1 : 1;
+            carController.Move(reverse ? 0 : turning,( Turbo ? accel*4 : accel), 0f, 0f);
 
-            //   Debug.Log(carController.CurrentSpeed);
         }
 
         protected override void OnCollisionEnter(Collision collision)
         {
+            if (!Immune) { 
             base.OnCollisionEnter(collision);
-
+            }
             if (collision.gameObject.tag == "Police")
             {
                 policeContacts.Add(new PoliceContainer(collision.gameObject));

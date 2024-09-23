@@ -23,4 +23,8 @@ public static class GameConfig
     public const float POLICE_REVERSE_DISTANCE = 30f;
 
     public const float COIN_RATE = 0.1f;
+
+    public const float TURBO_DURATION=5f;
+
+    public const float IMMUNITY_DURATION=3f;
 }
