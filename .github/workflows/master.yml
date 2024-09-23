@@ -212,10 +212,6 @@ jobs:
             targetPlatform:
               - WebGL
         steps:
-          - uses: actions/cache@v4.0.2
-            with:
-              path: Library
-              key: Library-${{ matrix.targetPlatform }}
           - name: Free Disk Space
             run: |
               sudo swapoff -a
@@ -226,6 +222,10 @@ jobs:
               # Before
               echo "Disk space before:"
               df -h
+          - uses: actions/cache@v4.0.2
+            with:
+              path: Library
+              key: Library-${{ matrix.targetPlatform }}
           - uses: actions/checkout@v4.1.2
             with:
               lfs: true
