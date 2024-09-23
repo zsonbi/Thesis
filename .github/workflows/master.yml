@@ -237,7 +237,7 @@ jobs:
             with:
               targetPlatform: ${{ matrix.targetPlatform }}
               buildMethod: BuildCommand.PerformBuild
-              # customImage: zsonbi/unityci_with_blender:ubuntu_webgl-3.1.0
+              customImage: zsonbi/unityci_with_blender:ubuntu_webgl-3.1.0
               buildName: WebGL
           - run: 
               sudo mkdir -p release;
