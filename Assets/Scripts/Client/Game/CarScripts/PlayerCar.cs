@@ -1,3 +1,4 @@
+using DataTypes;
 using Game.World;
 using System;
 using System.Collections.Generic;
@@ -13,8 +14,6 @@ namespace Game
 
         [SerializeField]
         public int SkinId = 1;
-
-
 
         private class PoliceContainer
         {
@@ -32,12 +31,11 @@ namespace Game
 
         private List<PoliceContainer> policeContacts = new List<PoliceContainer>();
 
-        public bool Immune {  get; private set; }  =false;
-        public bool Turbo {  get; private set; } =false;
+        public bool Immune { get; private set; } = false;
+        public bool Turbo { get; private set; } = false;
 
-        private float turboTimer=0f;
-        private float immuneTimer=0f;
-
+        private float turboTimer = 0f;
+        private float immuneTimer = 0f;
 
         public void PickedUpCoin()
         {
@@ -51,14 +49,22 @@ namespace Game
 
         public void ApplyTurbo()
         {
+            if (effects.ContainsKey(EffectType.Turbo))
+            {
+                effects[EffectType.Turbo].gameObject.SetActive(true);
+            }
             this.turboTimer = 0f;
-            this.Turbo= true;
+            this.Turbo = true;
         }
 
         public void ApplyImmunity()
         {
+            if (effects.ContainsKey(EffectType.Shield))
+            {
+                effects[EffectType.Shield].gameObject.SetActive(true);
+            }
             this.immuneTimer = 0f;
-            this.Immune=true;
+            this.Immune = true;
         }
 
         protected override void Update()
@@ -70,10 +76,14 @@ namespace Game
 
             if (Turbo)
             {
-                turboTimer+=Time.deltaTime;
+                turboTimer += Time.deltaTime;
                 if (turboTimer > GameConfig.TURBO_DURATION)
                 {
                     Turbo = false;
+                    if (effects.ContainsKey(EffectType.Turbo))
+                    {
+                        effects[EffectType.Turbo].gameObject.SetActive(false);
+                    }
                 }
             }
 
@@ -83,6 +93,10 @@ namespace Game
                 if (immuneTimer > GameConfig.TURBO_DURATION)
                 {
                     Immune = false;
+                    if (effects.ContainsKey(EffectType.Shield))
+                    {
+                        effects[EffectType.Shield].gameObject.SetActive(false);
+                    }
                 }
             }
 
@@ -95,6 +109,11 @@ namespace Game
                 {
                     this.DestroyedEvent?.Invoke(this, EventArgs.Empty);
                 }
+            }
+            //If the car fell of the world trigger game over
+            if (this.gameObject.transform.position.y < -5f)
+            {
+                this.DestroyedEvent?.Invoke(this, EventArgs.Empty);
             }
         }
 
@@ -142,14 +161,14 @@ namespace Game
             }
             if (accel == 0)
                 accel = Input.touchCount > 1 ? -1 : 1;
-            carController.Move(reverse ? 0 : turning,( Turbo ? accel*4 : accel), 0f, 0f);
-
+            carController.Move(reverse ? 0 : turning, (Turbo ? accel * 4 : accel), 0f, 0f);
         }
 
         protected override void OnCollisionEnter(Collision collision)
         {
-            if (!Immune) { 
-            base.OnCollisionEnter(collision);
+            if (!Immune)
+            {
+                base.OnCollisionEnter(collision);
             }
             if (collision.gameObject.tag == "Police")
             {

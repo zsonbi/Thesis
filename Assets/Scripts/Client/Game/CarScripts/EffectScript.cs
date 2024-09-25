@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(ParticleSystem))]
 public class EffectScript : MonoBehaviour
 {
     private ParticleSystem particleSystem;
@@ -14,10 +13,8 @@ public class EffectScript : MonoBehaviour
     public EffectType EffectType => effectType;
 
     // Runs when the sccript is loaded
-    void Awake()
+    private void Awake()
     {
-        this.particleSystem = GetComponent<ParticleSystem>();
+        TryGetComponent<ParticleSystem>(out particleSystem);
     }
-
-    
 }

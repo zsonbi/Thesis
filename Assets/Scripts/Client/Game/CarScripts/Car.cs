@@ -75,6 +75,12 @@ namespace Game
 
             if (effects.ContainsKey(EffectType.Fire))
                 effects[EffectType.Fire].gameObject.SetActive(false);
+
+            if (effects.ContainsKey(EffectType.Shield))
+                effects[EffectType.Shield].gameObject.SetActive(false);
+
+            if (effects.ContainsKey(EffectType.Turbo))
+                effects[EffectType.Turbo].gameObject.SetActive(false);
         }
 
         protected virtual void OnCollisionEnter(Collision collision)

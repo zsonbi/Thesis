@@ -41,7 +41,7 @@ namespace Game
                 {
                     if (hitForward.collider.gameObject.layer == 1 << 7)
                     {
-                        v = 1;
+                        v = 3;
                     }
                     else
                     {
