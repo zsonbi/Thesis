@@ -216,11 +216,13 @@ var NAVTREEINDEX0 =
 "User_8cs.html#a03c0a7d197c29929b4a9d0467e2a0943":[2,0,0,0,0,0,0,8,1],
 "User_8cs.html#a0a47e498b447bfade12a294e01757fec":[2,0,0,0,0,0,0,8,0],
 "User_8cs.html#a33bcc9cf08bba0bcbe12dd0eb5a1fd8b":[2,0,0,0,0,0,0,8,2],
+"User_8cs.html#a36b474055c1484b44f9627085a9435c8":[2,0,0,0,0,0,0,8,6],
 "User_8cs.html#a6a7946e16b9691332dffe63a41be6d8f":[2,0,0,0,0,0,0,8,5],
+"User_8cs.html#a7430243d5359e50e8aedf711b60394af":[2,0,0,0,0,0,0,8,7],
 "User_8cs.html#a88348bf6d36a46b767b886bd5005d08e":[2,0,0,0,0,0,0,8,4],
-"User_8cs.html#a9b941e9b1cabd32384dc5dd8803b6df8":[2,0,0,0,0,0,0,8,7],
+"User_8cs.html#a9b941e9b1cabd32384dc5dd8803b6df8":[2,0,0,0,0,0,0,8,9],
 "User_8cs.html#aae518baa5cf2ea5aa7ab44999037e244":[2,0,0,0,0,0,0,8,3],
-"User_8cs.html#ab65ae00cbe1b1602c72df38d32dff1df":[2,0,0,0,0,0,0,8,6],
+"User_8cs.html#ab65ae00cbe1b1602c72df38d32dff1df":[2,0,0,0,0,0,0,8,8],
 "User_8cs_source.html":[2,0,0,0,0,0,0,8],
 "VirtualInput_8cs.html":[2,0,0,0,0,1,1,0,9],
 "VirtualInput_8cs_source.html":[2,0,0,0,0,1,1,0,9],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "classCoin.html":[1,0,8],
 "classCoin.html#a140177a0b7be977ba19cb2b2e08873b0":[1,0,8,1],
 "classCoin.html#a1964d7ad9c017916fca129cb6dab8318":[1,0,8,0],
-"classConfig_1_1ServerConfig.html":[0,0,1,0],
-"classConfig_1_1ServerConfig.html":[1,0,1,0],
-"classConfig_1_1ServerConfig.html#a10be54228c36baeb2de629e8122d926f":[1,0,1,0,1]
+"classConfig_1_1ServerConfig.html":[0,0,1,0]
 };

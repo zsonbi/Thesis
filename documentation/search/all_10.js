@@ -25,6 +25,6 @@ var searchData=
   ['roadmatrix_22',['RoadMatrix',['../classGame_1_1World_1_1RoadGenerator.html#a7fca47366b7f100826237bbc011034ac',1,'Game::World::RoadGenerator']]],
   ['roads_23',['roads',['../classGame_1_1World_1_1Chunk.html#a5dd795d2a271645312c82470e4ef8b4d',1,'Game::World::Chunk']]],
   ['row_24',['Row',['../classGame_1_1World_1_1Chunk.html#adce4d80142d5a8146a23758358504814',1,'Game::World::Chunk']]],
-  ['rowcount_25',['rowcount',['../classBuilding.html#ae5d484df6ed27cc77d2c338bfda53435',1,'Building.RowCount'],['../classBuilding.html#aa80c140b3bdf134a2529c59e68b31c91',1,'Building.rowCount']]],
+  ['rowcount_25',['rowcount',['../classBuilding.html#aa80c140b3bdf134a2529c59e68b31c91',1,'Building.rowCount'],['../classBuilding.html#ae5d484df6ed27cc77d2c338bfda53435',1,'Building.RowCount']]],
   ['running_26',['Running',['../classGame_1_1GameController.html#a05d01ce3124c9d29e70cdee04539baeb',1,'Game::GameController']]]
 ];

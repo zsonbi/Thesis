@@ -31,7 +31,7 @@ var searchData=
   ['useridentificationinput_28',['userIdentificationInput',['../classFriendWindowHandler.html#ac72bb4d38dd708c83efaf789cc2304db',1,'FriendWindowHandler']]],
   ['userloginrequest_29',['UserLoginRequest',['../structThesis__backend_1_1Data__Structures_1_1UserLoginRequest.html',1,'Thesis_backend::Data_Structures']]],
   ['userloginrequest_2ecs_30',['UserLoginRequest.cs',['../UserLoginRequest_8cs.html',1,'']]],
-  ['username_31',['username',['../structThesis__backend_1_1Data__Structures_1_1UserRequest.html#ac32ca4d6291f2e301bd73a0fe1755a2c',1,'Thesis_backend.Data_Structures.UserRequest.UserName'],['../classUser_1_1UserData.html#a5c87b878e86cbc7c969d456431716c71',1,'User.UserData.Username']]],
+  ['username_31',['username',['../classUser_1_1UserData.html#a5c87b878e86cbc7c969d456431716c71',1,'User.UserData.Username'],['../structThesis__backend_1_1Data__Structures_1_1UserRequest.html#ac32ca4d6291f2e301bd73a0fe1755a2c',1,'Thesis_backend.Data_Structures.UserRequest.UserName']]],
   ['usernameinputtext_32',['UsernameInputText',['../classUIController.html#aa9f04610798bf39ac1e69edd964b0448',1,'UIController']]],
   ['userrequest_33',['UserRequest',['../structThesis__backend_1_1Data__Structures_1_1UserRequest.html',1,'Thesis_backend::Data_Structures']]],
   ['userrequest_2ecs_34',['UserRequest.cs',['../UserRequest_8cs.html',1,'']]],

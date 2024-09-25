@@ -14,7 +14,7 @@ var searchData=
   ['initvalues_11',['initvalues',['../classFriendHandler.html#a89b20a1b9aad9bb9eb0a69781ed1c7ba',1,'FriendHandler.InitValues()'],['../classTaskDisplayHandler.html#a7117784233eed8355580e522e683686e',1,'TaskDisplayHandler.InitValues()']]],
   ['inputaxisscrollbar_12',['InputAxisScrollbar',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1InputAxisScrollbar.html',1,'UnityStandardAssets::CrossPlatformInput']]],
   ['inputaxisscrollbar_2ecs_13',['InputAxisScrollbar.cs',['../InputAxisScrollbar_8cs.html',1,'']]],
-  ['instance_14',['instance',['../classUser_1_1UserData.html#a0e7511fcf06639282624b12e673442e3',1,'User.UserData.instance'],['../classUser_1_1UserData.html#aac822a62e0ef2a7d0dbe623643146faa',1,'User.UserData.Instance']]],
+  ['instance_14',['instance',['../classUser_1_1UserData.html#aac822a62e0ef2a7d0dbe623643146faa',1,'User.UserData.Instance'],['../classUser_1_1UserData.html#a0e7511fcf06639282624b12e673442e3',1,'User.UserData.instance']]],
   ['isnewtask_15',['isNewTask',['../classTaskOpenPanelController.html#ac0fa9db0872e1f4e4872117d5420ea42',1,'TaskOpenPanelController']]],
   ['isvalidemail_16',['IsValidEmail',['../classUserController.html#a4ddf4a375cad51a8784cb9be7ba11b23',1,'UserController']]]
 ];

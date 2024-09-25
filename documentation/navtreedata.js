@@ -57,12 +57,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AxisTouchButton_8cs.html",
-"classConfig_1_1ServerConfig.html#a10be54228c36baeb2de629e8122d926f",
-"classGame_1_1EnableWheelPhysicMaterial.html",
-"classGame_1_1World_1_1RoadGenerator.html#a891ca31f3771968672e5578077e4f336",
-"classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualAxis.html",
-"classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#ab4c68ac6f2b8a41c5029c105833ebfb6",
-"namespaceThesis__backend_1_1Data__Structures.html#a24320ef259be3b66e6deb7a608c32dcaaa2cc588f2ab07ad61b05400f593eeb0a"
+"classConfig_1_1ServerConfig.html",
+"classGame_1_1CopCar.html#ad1e664d118f85d0c8b21e92d519c1e0b",
+"classGame_1_1World_1_1RoadGenerator.html#a7fca47366b7f100826237bbc011034ac",
+"classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#adc185d28b9d06ee83035ef9b255682e1",
+"classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#a97d0cfd4e00c26253919746e84ebb7e5aad0df54cc6571aea4edb7176c3149ef9",
+"namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

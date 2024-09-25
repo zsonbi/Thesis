@@ -8,6 +8,8 @@ var classUIController =
     [ "LoadGoodTasks", "classUIController.html#a34bbd72f6e8d248243a9de9e5d8becdd", null ],
     [ "LoadBadHabits", "classUIController.html#abba1844b75e77c909f38f9d688ee68b0", null ],
     [ "CreateTask", "classUIController.html#adb941c060c4b3c2acdc916e9722a55d1", null ],
+    [ "SendLogout", "classUIController.html#ad64fb2910e5cbf894f581beab305b8b6", null ],
+    [ "LoggedOut", "classUIController.html#a187be56b6d8960a8f77d8febe6541065", null ],
     [ "MoveToLoginScene", "classUIController.html#aaed55bd192a151e06198240fb0a17e82", null ],
     [ "LoadTasks", "classUIController.html#a0dc545de64fb2603baf048d46c983e5c", null ],
     [ "LoadGameScene", "classUIController.html#a82af697550638ec112eef61c75105fb4", null ],

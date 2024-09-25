@@ -20,7 +20,7 @@ var searchData=
   ['loadtasks_17',['LoadTasks',['../classUIController.html#a0dc545de64fb2603baf048d46c983e5c',1,'UIController']]],
   ['lockandtrytoplacebuilding_18',['LockAndTryToPlaceBuilding',['../classGame_1_1World_1_1Chunk.html#af2946e1e1b9e325d6004d166b2b26193',1,'Game::World::Chunk']]],
   ['loggedin_19',['loggedin',['../classUserController.html#a7c361646155ff6adaf7f6b2f0fc44821',1,'UserController.LoggedIn()'],['../classUser_1_1UserData.html#acdd4d87ab2fd5a0a81895656a6853b71',1,'User.UserData.LoggedIn']]],
-  ['loggedout_20',['LoggedOut',['../classProfileHandler.html#a7c3f5f6c1313403adcf0f6293818e1cc',1,'ProfileHandler']]],
+  ['loggedout_20',['loggedout',['../classUIController.html#a187be56b6d8960a8f77d8febe6541065',1,'UIController.LoggedOut()'],['../classProfileHandler.html#a7c3f5f6c1313403adcf0f6293818e1cc',1,'ProfileHandler.LoggedOut()']]],
   ['loginpanel_21',['LoginPanel',['../classUserController.html#a98d6b3d688cc0a31fd46d7eb90309d85',1,'UserController']]],
   ['logout_22',['Logout',['../classUser_1_1UserData.html#a8c8911482003919ea4fbab040c755f8f',1,'User::UserData']]]
 ];

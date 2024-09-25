@@ -26,6 +26,7 @@ var searchData=
   ['getvalueraw_23',['GetValueRaw',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualAxis.html#a8a528d70054dedde487f12a2a8817bab',1,'UnityStandardAssets::CrossPlatformInput::CrossPlatformInputManager::VirtualAxis']]],
   ['goodtask_24',['GoodTask',['../TaskType_8cs.html#aa7f5c268cc89ed3067c26142ca3e16d7a4cbd49fac65e8fe8aa9953b5d44a8047',1,'TaskType.cs']]],
   ['goodtaskbutton_25',['goodTaskButton',['../classTaskOpenPanelController.html#ae473d6c892d798cb0e155e5a5935fe22',1,'TaskOpenPanelController']]],
-  ['grass_26',['Grass',['../ChunkCellType_8cs.html#a49876fbcd15399310f369ea380f29c6baaac9a63596f76a62bb9f61a5dd7c0d25',1,'ChunkCellType.cs']]],
-  ['grassprefab_27',['grassPrefab',['../classGame_1_1World_1_1Chunk.html#afcf6bf6be6ba7bdb0f870f6bb60af90d',1,'Game::World::Chunk']]]
+  ['goodtaskcount_26',['GoodTaskCount',['../classProfileHandler.html#a54c9a317b986a9030b2127e1bc5ac46a',1,'ProfileHandler']]],
+  ['grass_27',['Grass',['../ChunkCellType_8cs.html#a49876fbcd15399310f369ea380f29c6baaac9a63596f76a62bb9f61a5dd7c0d25',1,'ChunkCellType.cs']]],
+  ['grassprefab_28',['grassPrefab',['../classGame_1_1World_1_1Chunk.html#afcf6bf6be6ba7bdb0f870f6bb60af90d',1,'Game::World::Chunk']]]
 ];

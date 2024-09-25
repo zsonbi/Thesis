@@ -5,5 +5,6 @@ var searchData=
   ['gameovercontainer_2',['gameOverContainer',['../classGameUI.html#a109e5ae1d753b6fc016227d3b67c9bda',1,'GameUI']]],
   ['gameui_3',['gameUI',['../classGame_1_1GameController.html#aec4a7fe16d8f45bbba715971e3e51526',1,'Game::GameController']]],
   ['goodtaskbutton_4',['goodTaskButton',['../classTaskOpenPanelController.html#ae473d6c892d798cb0e155e5a5935fe22',1,'TaskOpenPanelController']]],
-  ['grassprefab_5',['grassPrefab',['../classGame_1_1World_1_1Chunk.html#afcf6bf6be6ba7bdb0f870f6bb60af90d',1,'Game::World::Chunk']]]
+  ['goodtaskcount_5',['GoodTaskCount',['../classProfileHandler.html#a54c9a317b986a9030b2127e1bc5ac46a',1,'ProfileHandler']]],
+  ['grassprefab_6',['grassPrefab',['../classGame_1_1World_1_1Chunk.html#afcf6bf6be6ba7bdb0f870f6bb60af90d',1,'Game::World::Chunk']]]
 ];

@@ -16,5 +16,7 @@ var classUser_1_1UserData =
     [ "Registered", "classUser_1_1UserData.html#adf1a00f3bd39a418cccf26f04a79c831", null ],
     [ "LoggedIn", "classUser_1_1UserData.html#acdd4d87ab2fd5a0a81895656a6853b71", null ],
     [ "TotalScore", "classUser_1_1UserData.html#af0e9fbaa735541a3cf36613d93d5af2b", null ],
-    [ "CurrentTaskScore", "classUser_1_1UserData.html#a44525484961835f1feaa4dbe715101c0", null ]
+    [ "CurrentTaskScore", "classUser_1_1UserData.html#a44525484961835f1feaa4dbe715101c0", null ],
+    [ "CompletedGoodTasks", "classUser_1_1UserData.html#aed8d5ea017894e12006a59eccd2f84de", null ],
+    [ "CompletedBadTasks", "classUser_1_1UserData.html#a73c189d8b7e876fdb46be5dc37ee6292", null ]
 ];

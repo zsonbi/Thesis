@@ -93,6 +93,7 @@ $(document).ready(function(){initNavTree('classProfileHandler.html',''); initRes
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classProfileHandler-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ProfileHandler Class Reference</div></div>
 </div><!--header-->
@@ -108,8 +109,6 @@ Inheritance diagram for ProfileHandler:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a232af33d4e143667273f1c175499e25b" id="r_a232af33d4e143667273f1c175499e25b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProfileHandler.html#a232af33d4e143667273f1c175499e25b">Show</a> ()</td></tr>
 <tr class="separator:a232af33d4e143667273f1c175499e25b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf6f609254a784a64525599716e24a9b" id="r_abf6f609254a784a64525599716e24a9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProfileHandler.html#abf6f609254a784a64525599716e24a9b">SendFriendRequest</a> ()</td></tr>
-<tr class="separator:abf6f609254a784a64525599716e24a9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36b13cdfdb3a1088bed77c89da2bc248" id="r_a36b13cdfdb3a1088bed77c89da2bc248"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProfileHandler.html#a36b13cdfdb3a1088bed77c89da2bc248">Hide</a> ()</td></tr>
 <tr class="separator:a36b13cdfdb3a1088bed77c89da2bc248"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dad5c8bdf3284f877da441203bfde69" id="r_a9dad5c8bdf3284f877da441203bfde69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProfileHandler.html#a9dad5c8bdf3284f877da441203bfde69">SendLogout</a> ()</td></tr>
@@ -125,6 +124,17 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a7c3f5f6c1313403adcf0f6293818e1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af413de96c084eb17db0dffa03f8dd969" id="r_af413de96c084eb17db0dffa03f8dd969"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProfileHandler.html#af413de96c084eb17db0dffa03f8dd969">MoveToLoginScene</a> ()</td></tr>
 <tr class="separator:af413de96c084eb17db0dffa03f8dd969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ad1532825edd16d5ee01964e31a0c5163" id="r_ad1532825edd16d5ee01964e31a0c5163"><td class="memItemLeft" align="right" valign="top">TMP_Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProfileHandler.html#ad1532825edd16d5ee01964e31a0c5163">TotalTaskCount</a></td></tr>
+<tr class="separator:ad1532825edd16d5ee01964e31a0c5163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54c9a317b986a9030b2127e1bc5ac46a" id="r_a54c9a317b986a9030b2127e1bc5ac46a"><td class="memItemLeft" align="right" valign="top">TMP_Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProfileHandler.html#a54c9a317b986a9030b2127e1bc5ac46a">GoodTaskCount</a></td></tr>
+<tr class="separator:a54c9a317b986a9030b2127e1bc5ac46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09789168652eefe9f864f993e218bc07" id="r_a09789168652eefe9f864f993e218bc07"><td class="memItemLeft" align="right" valign="top">TMP_Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProfileHandler.html#a09789168652eefe9f864f993e218bc07">BadTaskCount</a></td></tr>
+<tr class="separator:a09789168652eefe9f864f993e218bc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cdc112503a9d3c334211969dbfb6b70" id="r_a3cdc112503a9d3c334211969dbfb6b70"><td class="memItemLeft" align="right" valign="top">TMP_Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProfileHandler.html#a3cdc112503a9d3c334211969dbfb6b70">TotalScore</a></td></tr>
+<tr class="separator:a3cdc112503a9d3c334211969dbfb6b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -153,44 +163,24 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ProfileHandler_8cs_source.html#l00013">13</a> of file <a class="el" href="ProfileHandler_8cs_source.html">ProfileHandler.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   14</span>    {</div>
-<div class="line"><span class="lineno">   15</span>        this.gameObject.SetActive(<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">   16</span>        <a class="code hl_function" href="classProfileHandler.html#a8579d2564da385596538795cd2de2118">LoadFromApi</a>();</div>
-<div class="line"><span class="lineno">   17</span>    }</div>
-<div class="ttc" id="aclassProfileHandler_html_a8579d2564da385596538795cd2de2118"><div class="ttname"><a href="classProfileHandler.html#a8579d2564da385596538795cd2de2118">ProfileHandler.LoadFromApi</a></div><div class="ttdeci">void LoadFromApi()</div><div class="ttdef"><b>Definition</b> <a href="ProfileHandler_8cs_source.html#l00028">ProfileHandler.cs:28</a></div></div>
+<p class="definition">Definition at line <a class="el" href="ProfileHandler_8cs_source.html#l00025">25</a> of file <a class="el" href="ProfileHandler_8cs_source.html">ProfileHandler.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   26</span>    {</div>
+<div class="line"><span class="lineno">   27</span>        this.gameObject.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   28</span>        <a class="code hl_function" href="classProfileHandler.html#a8579d2564da385596538795cd2de2118">LoadFromApi</a>();</div>
+<div class="line"><span class="lineno">   29</span>        this.TotalTaskCount.text = (UserData.Instance.CompletedGoodTasks + <a class="code hl_class" href="classUser_1_1UserData.html">UserData</a>.<a class="code hl_property" href="classUser_1_1UserData.html#aac822a62e0ef2a7d0dbe623643146faa">Instance</a>.<a class="code hl_property" href="classUser_1_1UserData.html#a73c189d8b7e876fdb46be5dc37ee6292">CompletedBadTasks</a>).ToString();</div>
+<div class="line"><span class="lineno">   30</span>        this.BadTaskCount.text = <a class="code hl_class" href="classUser_1_1UserData.html">UserData</a>.<a class="code hl_property" href="classUser_1_1UserData.html#aac822a62e0ef2a7d0dbe623643146faa">Instance</a>.<a class="code hl_property" href="classUser_1_1UserData.html#a73c189d8b7e876fdb46be5dc37ee6292">CompletedBadTasks</a>.ToString();</div>
+<div class="line"><span class="lineno">   31</span>        this.GoodTaskCount.text = <a class="code hl_class" href="classUser_1_1UserData.html">UserData</a>.<a class="code hl_property" href="classUser_1_1UserData.html#aac822a62e0ef2a7d0dbe623643146faa">Instance</a>.<a class="code hl_property" href="classUser_1_1UserData.html#aed8d5ea017894e12006a59eccd2f84de">CompletedGoodTasks</a>.ToString();</div>
+<div class="line"><span class="lineno">   32</span>        this.TotalScore.text = <a class="code hl_class" href="classUser_1_1UserData.html">UserData</a>.<a class="code hl_property" href="classUser_1_1UserData.html#aac822a62e0ef2a7d0dbe623643146faa">Instance</a>.<a class="code hl_property" href="classUser_1_1UserData.html#af0e9fbaa735541a3cf36613d93d5af2b">TotalScore</a>.ToString();</div>
+<div class="line"><span class="lineno">   33</span>    }</div>
+<div class="ttc" id="aclassProfileHandler_html_a8579d2564da385596538795cd2de2118"><div class="ttname"><a href="classProfileHandler.html#a8579d2564da385596538795cd2de2118">ProfileHandler.LoadFromApi</a></div><div class="ttdeci">void LoadFromApi()</div><div class="ttdef"><b>Definition</b> <a href="ProfileHandler_8cs_source.html#l00040">ProfileHandler.cs:40</a></div></div>
+<div class="ttc" id="aclassUser_1_1UserData_html"><div class="ttname"><a href="classUser_1_1UserData.html">User.UserData</a></div><div class="ttdef"><b>Definition</b> <a href="UserData_8cs_source.html#l00009">UserData.cs:10</a></div></div>
+<div class="ttc" id="aclassUser_1_1UserData_html_a73c189d8b7e876fdb46be5dc37ee6292"><div class="ttname"><a href="classUser_1_1UserData.html#a73c189d8b7e876fdb46be5dc37ee6292">User.UserData.CompletedBadTasks</a></div><div class="ttdeci">int CompletedBadTasks</div><div class="ttdef"><b>Definition</b> <a href="UserData_8cs_source.html#l00025">UserData.cs:25</a></div></div>
+<div class="ttc" id="aclassUser_1_1UserData_html_aac822a62e0ef2a7d0dbe623643146faa"><div class="ttname"><a href="classUser_1_1UserData.html#aac822a62e0ef2a7d0dbe623643146faa">User.UserData.Instance</a></div><div class="ttdeci">static UserData Instance</div><div class="ttdef"><b>Definition</b> <a href="UserData_8cs_source.html#l00012">UserData.cs:12</a></div></div>
+<div class="ttc" id="aclassUser_1_1UserData_html_aed8d5ea017894e12006a59eccd2f84de"><div class="ttname"><a href="classUser_1_1UserData.html#aed8d5ea017894e12006a59eccd2f84de">User.UserData.CompletedGoodTasks</a></div><div class="ttdeci">int CompletedGoodTasks</div><div class="ttdef"><b>Definition</b> <a href="UserData_8cs_source.html#l00024">UserData.cs:24</a></div></div>
+<div class="ttc" id="aclassUser_1_1UserData_html_af0e9fbaa735541a3cf36613d93d5af2b"><div class="ttname"><a href="classUser_1_1UserData.html#af0e9fbaa735541a3cf36613d93d5af2b">User.UserData.TotalScore</a></div><div class="ttdeci">long TotalScore</div><div class="ttdef"><b>Definition</b> <a href="UserData_8cs_source.html#l00022">UserData.cs:22</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ProfileHandler_8cs_source.html#l00028">LoadFromApi()</a>.</p>
+<p class="reference">References <a class="el" href="UserData_8cs_source.html#l00025">User.UserData.CompletedBadTasks</a>, <a class="el" href="UserData_8cs_source.html#l00024">User.UserData.CompletedGoodTasks</a>, <a class="el" href="UserData_8cs_source.html#l00012">User.UserData.Instance</a>, <a class="el" href="ProfileHandler_8cs_source.html#l00040">LoadFromApi()</a>, and <a class="el" href="UserData_8cs_source.html#l00022">User.UserData.TotalScore</a>.</p>
 
-</div>
-</div>
-<a id="abf6f609254a784a64525599716e24a9b" name="abf6f609254a784a64525599716e24a9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf6f609254a784a64525599716e24a9b">&#9670;&#160;</a></span>SendFriendRequest()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ProfileHandler.SendFriendRequest </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ProfileHandler_8cs_source.html#l00019">19</a> of file <a class="el" href="ProfileHandler_8cs_source.html">ProfileHandler.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   20</span>    {</div>
-<div class="line"><span class="lineno">   21</span>    }</div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a36b13cdfdb3a1088bed77c89da2bc248" name="a36b13cdfdb3a1088bed77c89da2bc248"></a>
@@ -216,10 +206,10 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ProfileHandler_8cs_source.html#l00023">23</a> of file <a class="el" href="ProfileHandler_8cs_source.html">ProfileHandler.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   24</span>    {</div>
-<div class="line"><span class="lineno">   25</span>        this.gameObject.SetActive(<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">   26</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="ProfileHandler_8cs_source.html#l00035">35</a> of file <a class="el" href="ProfileHandler_8cs_source.html">ProfileHandler.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>    {</div>
+<div class="line"><span class="lineno">   37</span>        this.gameObject.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   38</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -246,11 +236,11 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ProfileHandler_8cs_source.html#l00028">28</a> of file <a class="el" href="ProfileHandler_8cs_source.html">ProfileHandler.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   29</span>    {</div>
-<div class="line"><span class="lineno">   30</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="ProfileHandler_8cs_source.html#l00040">40</a> of file <a class="el" href="ProfileHandler_8cs_source.html">ProfileHandler.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   41</span>    {</div>
+<div class="line"><span class="lineno">   42</span>    }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="ProfileHandler_8cs_source.html#l00013">Show()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ProfileHandler_8cs_source.html#l00025">Show()</a>.</p>
 
 </div>
 </div>
@@ -279,20 +269,20 @@ Private Member Functions</h2></td></tr>
 
 <p>Send a login request with the login panel's fields. </p>
 
-<p class="definition">Definition at line <a class="el" href="ProfileHandler_8cs_source.html#l00035">35</a> of file <a class="el" href="ProfileHandler_8cs_source.html">ProfileHandler.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   36</span>    {</div>
-<div class="line"><span class="lineno">   37</span>        StartCoroutine(<a class="code hl_class" href="classServer.html">Server</a>.SendDeleteRequest&lt;<span class="keywordtype">string</span>&gt;(<a class="code hl_class" href="classConfig_1_1ServerConfig.html">ServerConfig</a>.<a class="code hl_variable" href="classConfig_1_1ServerConfig.html#a7819f4ecc6ef2da4d578378a91f2de18">PATHFORLOGOUT</a>, <a class="code hl_function" href="classProfileHandler.html#a7c3f5f6c1313403adcf0f6293818e1cc">LoggedOut</a>));</div>
-<div class="line"><span class="lineno">   38</span> </div>
-<div class="line"><span class="lineno">   39</span>        <span class="comment">//UserData.Instance.Logout();</span></div>
-<div class="line"><span class="lineno">   40</span> </div>
-<div class="line"><span class="lineno">   41</span>        <span class="comment">//  StartCoroutine(MoveToLoginScene());</span></div>
-<div class="line"><span class="lineno">   42</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="ProfileHandler_8cs_source.html#l00047">47</a> of file <a class="el" href="ProfileHandler_8cs_source.html">ProfileHandler.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   48</span>    {</div>
+<div class="line"><span class="lineno">   49</span>        StartCoroutine(<a class="code hl_class" href="classServer.html">Server</a>.SendDeleteRequest&lt;<span class="keywordtype">string</span>&gt;(<a class="code hl_class" href="classConfig_1_1ServerConfig.html">ServerConfig</a>.<a class="code hl_variable" href="classConfig_1_1ServerConfig.html#a7819f4ecc6ef2da4d578378a91f2de18">PATHFORLOGOUT</a>, <a class="code hl_function" href="classProfileHandler.html#a7c3f5f6c1313403adcf0f6293818e1cc">LoggedOut</a>));</div>
+<div class="line"><span class="lineno">   50</span> </div>
+<div class="line"><span class="lineno">   51</span>        <span class="comment">//UserData.Instance.Logout();</span></div>
+<div class="line"><span class="lineno">   52</span> </div>
+<div class="line"><span class="lineno">   53</span>        <span class="comment">//  StartCoroutine(MoveToLoginScene());</span></div>
+<div class="line"><span class="lineno">   54</span>    }</div>
 <div class="ttc" id="aclassConfig_1_1ServerConfig_html"><div class="ttname"><a href="classConfig_1_1ServerConfig.html">Config.ServerConfig</a></div><div class="ttdef"><b>Definition</b> <a href="ServerConfig_8cs_source.html#l00003">ServerConfig.cs:4</a></div></div>
 <div class="ttc" id="aclassConfig_1_1ServerConfig_html_a7819f4ecc6ef2da4d578378a91f2de18"><div class="ttname"><a href="classConfig_1_1ServerConfig.html#a7819f4ecc6ef2da4d578378a91f2de18">Config.ServerConfig.PATHFORLOGOUT</a></div><div class="ttdeci">const string PATHFORLOGOUT</div><div class="ttdoc">Just need to be sent Cleares the users session (Still need to reset the userData)</div><div class="ttdef"><b>Definition</b> <a href="ServerConfig_8cs_source.html#l00033">ServerConfig.cs:33</a></div></div>
-<div class="ttc" id="aclassProfileHandler_html_a7c3f5f6c1313403adcf0f6293818e1cc"><div class="ttname"><a href="classProfileHandler.html#a7c3f5f6c1313403adcf0f6293818e1cc">ProfileHandler.LoggedOut</a></div><div class="ttdeci">void LoggedOut(string result)</div><div class="ttdoc">When the logout was a success.</div><div class="ttdef"><b>Definition</b> <a href="ProfileHandler_8cs_source.html#l00048">ProfileHandler.cs:48</a></div></div>
+<div class="ttc" id="aclassProfileHandler_html_a7c3f5f6c1313403adcf0f6293818e1cc"><div class="ttname"><a href="classProfileHandler.html#a7c3f5f6c1313403adcf0f6293818e1cc">ProfileHandler.LoggedOut</a></div><div class="ttdeci">void LoggedOut(string result)</div><div class="ttdoc">When the logout was a success.</div><div class="ttdef"><b>Definition</b> <a href="ProfileHandler_8cs_source.html#l00060">ProfileHandler.cs:60</a></div></div>
 <div class="ttc" id="aclassServer_html"><div class="ttname"><a href="classServer.html">Server</a></div><div class="ttdef"><b>Definition</b> <a href="Server_8cs_source.html#l00008">Server.cs:9</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ProfileHandler_8cs_source.html#l00048">LoggedOut()</a>, and <a class="el" href="ServerConfig_8cs_source.html#l00033">Config.ServerConfig.PATHFORLOGOUT</a>.</p>
+<p class="reference">References <a class="el" href="ProfileHandler_8cs_source.html#l00060">LoggedOut()</a>, and <a class="el" href="ServerConfig_8cs_source.html#l00033">Config.ServerConfig.PATHFORLOGOUT</a>.</p>
 
 </div>
 </div>
@@ -328,20 +318,18 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ProfileHandler_8cs_source.html#l00048">48</a> of file <a class="el" href="ProfileHandler_8cs_source.html">ProfileHandler.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   49</span>    {</div>
-<div class="line"><span class="lineno">   50</span>        <a class="code hl_class" href="classUser_1_1UserData.html">UserData</a>.<a class="code hl_property" href="classUser_1_1UserData.html#aac822a62e0ef2a7d0dbe623643146faa">Instance</a>.<a class="code hl_function" href="classUser_1_1UserData.html#a8c8911482003919ea4fbab040c755f8f">Logout</a>();</div>
-<div class="line"><span class="lineno">   51</span> </div>
-<div class="line"><span class="lineno">   52</span>        StartCoroutine(<a class="code hl_function" href="classProfileHandler.html#af413de96c084eb17db0dffa03f8dd969">MoveToLoginScene</a>());</div>
-<div class="line"><span class="lineno">   53</span>    }</div>
-<div class="ttc" id="aclassProfileHandler_html_af413de96c084eb17db0dffa03f8dd969"><div class="ttname"><a href="classProfileHandler.html#af413de96c084eb17db0dffa03f8dd969">ProfileHandler.MoveToLoginScene</a></div><div class="ttdeci">IEnumerator MoveToLoginScene()</div><div class="ttdef"><b>Definition</b> <a href="ProfileHandler_8cs_source.html#l00055">ProfileHandler.cs:55</a></div></div>
-<div class="ttc" id="aclassUser_1_1UserData_html"><div class="ttname"><a href="classUser_1_1UserData.html">User.UserData</a></div><div class="ttdef"><b>Definition</b> <a href="UserData_8cs_source.html#l00009">UserData.cs:10</a></div></div>
-<div class="ttc" id="aclassUser_1_1UserData_html_a8c8911482003919ea4fbab040c755f8f"><div class="ttname"><a href="classUser_1_1UserData.html#a8c8911482003919ea4fbab040c755f8f">User.UserData.Logout</a></div><div class="ttdeci">void Logout()</div><div class="ttdef"><b>Definition</b> <a href="UserData_8cs_source.html#l00058">UserData.cs:58</a></div></div>
-<div class="ttc" id="aclassUser_1_1UserData_html_aac822a62e0ef2a7d0dbe623643146faa"><div class="ttname"><a href="classUser_1_1UserData.html#aac822a62e0ef2a7d0dbe623643146faa">User.UserData.Instance</a></div><div class="ttdeci">static UserData Instance</div><div class="ttdef"><b>Definition</b> <a href="UserData_8cs_source.html#l00012">UserData.cs:12</a></div></div>
+<p class="definition">Definition at line <a class="el" href="ProfileHandler_8cs_source.html#l00060">60</a> of file <a class="el" href="ProfileHandler_8cs_source.html">ProfileHandler.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   61</span>    {</div>
+<div class="line"><span class="lineno">   62</span>        <a class="code hl_class" href="classUser_1_1UserData.html">UserData</a>.<a class="code hl_property" href="classUser_1_1UserData.html#aac822a62e0ef2a7d0dbe623643146faa">Instance</a>.<a class="code hl_function" href="classUser_1_1UserData.html#a8c8911482003919ea4fbab040c755f8f">Logout</a>();</div>
+<div class="line"><span class="lineno">   63</span> </div>
+<div class="line"><span class="lineno">   64</span>        StartCoroutine(<a class="code hl_function" href="classProfileHandler.html#af413de96c084eb17db0dffa03f8dd969">MoveToLoginScene</a>());</div>
+<div class="line"><span class="lineno">   65</span>    }</div>
+<div class="ttc" id="aclassProfileHandler_html_af413de96c084eb17db0dffa03f8dd969"><div class="ttname"><a href="classProfileHandler.html#af413de96c084eb17db0dffa03f8dd969">ProfileHandler.MoveToLoginScene</a></div><div class="ttdeci">IEnumerator MoveToLoginScene()</div><div class="ttdef"><b>Definition</b> <a href="ProfileHandler_8cs_source.html#l00067">ProfileHandler.cs:67</a></div></div>
+<div class="ttc" id="aclassUser_1_1UserData_html_a8c8911482003919ea4fbab040c755f8f"><div class="ttname"><a href="classUser_1_1UserData.html#a8c8911482003919ea4fbab040c755f8f">User.UserData.Logout</a></div><div class="ttdeci">void Logout()</div><div class="ttdef"><b>Definition</b> <a href="UserData_8cs_source.html#l00062">UserData.cs:62</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="UserData_8cs_source.html#l00012">User.UserData.Instance</a>, <a class="el" href="UserData_8cs_source.html#l00058">User.UserData.Logout()</a>, and <a class="el" href="ProfileHandler_8cs_source.html#l00055">MoveToLoginScene()</a>.</p>
+<p class="reference">References <a class="el" href="UserData_8cs_source.html#l00012">User.UserData.Instance</a>, <a class="el" href="UserData_8cs_source.html#l00062">User.UserData.Logout()</a>, and <a class="el" href="ProfileHandler_8cs_source.html#l00067">MoveToLoginScene()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ProfileHandler_8cs_source.html#l00035">SendLogout()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ProfileHandler_8cs_source.html#l00047">SendLogout()</a>.</p>
 
 </div>
 </div>
@@ -368,19 +356,116 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ProfileHandler_8cs_source.html#l00055">55</a> of file <a class="el" href="ProfileHandler_8cs_source.html">ProfileHandler.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   56</span>    {</div>
-<div class="line"><span class="lineno">   57</span>        AsyncOperation loading = SceneManager.LoadSceneAsync(<span class="stringliteral">&quot;LoginScene&quot;</span>, LoadSceneMode.Single);</div>
-<div class="line"><span class="lineno">   58</span> </div>
-<div class="line"><span class="lineno">   59</span>        <span class="keywordflow">while</span> (<span class="keyword">true</span>)</div>
-<div class="line"><span class="lineno">   60</span>        {</div>
-<div class="line"><span class="lineno">   61</span>            Debug.Log(loading.progress);</div>
-<div class="line"><span class="lineno">   62</span> </div>
-<div class="line"><span class="lineno">   63</span>            yield <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
-<div class="line"><span class="lineno">   64</span>        }</div>
-<div class="line"><span class="lineno">   65</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="ProfileHandler_8cs_source.html#l00067">67</a> of file <a class="el" href="ProfileHandler_8cs_source.html">ProfileHandler.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   68</span>    {</div>
+<div class="line"><span class="lineno">   69</span>        AsyncOperation loading = SceneManager.LoadSceneAsync(<span class="stringliteral">&quot;LoginScene&quot;</span>, LoadSceneMode.Single);</div>
+<div class="line"><span class="lineno">   70</span> </div>
+<div class="line"><span class="lineno">   71</span>        <span class="keywordflow">while</span> (<span class="keyword">true</span>)</div>
+<div class="line"><span class="lineno">   72</span>        {</div>
+<div class="line"><span class="lineno">   73</span>            Debug.Log(loading.progress);</div>
+<div class="line"><span class="lineno">   74</span> </div>
+<div class="line"><span class="lineno">   75</span>            yield <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><span class="lineno">   76</span>        }</div>
+<div class="line"><span class="lineno">   77</span>    }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="ProfileHandler_8cs_source.html#l00048">LoggedOut()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ProfileHandler_8cs_source.html#l00060">LoggedOut()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad1532825edd16d5ee01964e31a0c5163" name="ad1532825edd16d5ee01964e31a0c5163"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1532825edd16d5ee01964e31a0c5163">&#9670;&#160;</a></span>TotalTaskCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TMP_Text ProfileHandler.TotalTaskCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ProfileHandler_8cs_source.html#l00014">14</a> of file <a class="el" href="ProfileHandler_8cs_source.html">ProfileHandler.cs</a>.</p>
+
+</div>
+</div>
+<a id="a54c9a317b986a9030b2127e1bc5ac46a" name="a54c9a317b986a9030b2127e1bc5ac46a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54c9a317b986a9030b2127e1bc5ac46a">&#9670;&#160;</a></span>GoodTaskCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TMP_Text ProfileHandler.GoodTaskCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ProfileHandler_8cs_source.html#l00017">17</a> of file <a class="el" href="ProfileHandler_8cs_source.html">ProfileHandler.cs</a>.</p>
+
+</div>
+</div>
+<a id="a09789168652eefe9f864f993e218bc07" name="a09789168652eefe9f864f993e218bc07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09789168652eefe9f864f993e218bc07">&#9670;&#160;</a></span>BadTaskCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TMP_Text ProfileHandler.BadTaskCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ProfileHandler_8cs_source.html#l00020">20</a> of file <a class="el" href="ProfileHandler_8cs_source.html">ProfileHandler.cs</a>.</p>
+
+</div>
+</div>
+<a id="a3cdc112503a9d3c334211969dbfb6b70" name="a3cdc112503a9d3c334211969dbfb6b70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cdc112503a9d3c334211969dbfb6b70">&#9670;&#160;</a></span>TotalScore</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TMP_Text ProfileHandler.TotalScore</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ProfileHandler_8cs_source.html#l00023">23</a> of file <a class="el" href="ProfileHandler_8cs_source.html">ProfileHandler.cs</a>.</p>
 
 </div>
 </div>
