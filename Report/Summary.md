@@ -1,16 +1,16 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 09/24/2024 - 05:38:01 |
+| Generated on: | 09/25/2024 - 14:35:57 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 4 |
 | Classes: | 96 |
 | Files: | 94 |
 | Covered lines: | 268 |
-| Uncovered lines: | 4456 |
-| Coverable lines: | 4724 |
-| Total lines: | 9428 |
-| Line coverage: | 5.6% (268 of 4724) |
+| Uncovered lines: | 4481 |
+| Coverable lines: | 4749 |
+| Total lines: | 9450 |
+| Line coverage: | 5.6% (268 of 4749) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 132 |
@@ -58,7 +58,7 @@
 |Tests.GameTests.RoadGeneratorTests|26|0|26|55|100%|0|0||3|3|100%|
 |Tests.MainMenuTest|4|0|4|24|100%|0|0||1|1|100%|
 |Tests.UITests.UserControllerTests|25|1|26|65|96.1%|0|0||6|6|100%|
-|**ThesisScripts**|**213**|**2412**|**2625**|**5418**|**8.1%**|**0**|**0**|****|**122**|**568**|**21.4%**|
+|**ThesisScripts**|**213**|**2437**|**2650**|**5440**|**8%**|**0**|**0**|****|**122**|**568**|**21.4%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|0|6|6|15|0%|0|0||0|5|0%|
 |Building|0|9|9|33|0%|0|0||0|7|0%|
 |CameraScript|0|7|7|24|0%|0|0||0|2|0%|
@@ -66,16 +66,16 @@
 |Config.ServerConfig|0|6|6|89|0%|0|0||0|6|0%|
 |DirectionConverter|0|21|21|46|0%|0|0||0|2|0%|
 |EdgeRoadContainer|9|0|9|15|100%|0|0||7|7|100%|
-|EffectScript|0|4|4|23|0%|0|0||0|2|0%|
+|EffectScript|0|4|4|20|0%|0|0||0|2|0%|
 |FriendHandler|0|45|45|84|0%|0|0||0|8|0%|
 |FriendWindowHandler|1|49|50|89|2%|0|0||1|8|12.5%|
-|Game.Car|0|77|77|131|0%|0|0||0|12|0%|
+|Game.Car|0|81|81|137|0%|0|0||0|12|0%|
 |Game.CarController|0|129|129|249|0%|0|0||0|18|0%|
 |Game.CopCar|0|54|54|82|0%|0|0||0|1|0%|
 |Game.EnableWheelPhysicMaterial|0|16|16|37|0%|0|0||0|2|0%|
 |Game.GameController|0|120|120|192|0%|0|0||0|25|0%|
 |Game.NpcCar|0|6|6|19|0%|0|0||0|1|0%|
-|Game.PlayerCar|0|108|108|170|0%|0|0||0|16|0%|
+|Game.PlayerCar|0|129|129|189|0%|0|0||0|16|0%|
 |Game.World.BuildingCell|0|11|11|30|0%|0|0||0|7|0%|
 |Game.World.BuildingGenerator|0|43|43|64|0%|0|0||0|2|0%|
 |Game.World.CarSpawner|0|43|43|79|0%|0|0||0|5|0%|

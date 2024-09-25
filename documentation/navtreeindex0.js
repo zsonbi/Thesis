@@ -85,6 +85,8 @@ var NAVTREEINDEX0 =
 "EffectScript_8cs_source.html":[2,0,0,0,0,1,0,4],
 "EffectType_8cs.html":[2,0,0,0,0,0,1,4],
 "EffectType_8cs.html#adae12b2de9e5d022711b861d4c881578":[2,0,0,0,0,0,1,4,0],
+"EffectType_8cs.html#adae12b2de9e5d022711b861d4c881578a6f53bfe04e78da893ba0c4f35ba6847e":[2,0,0,0,0,0,1,4,0,2],
+"EffectType_8cs.html#adae12b2de9e5d022711b861d4c881578a970da5f1f2e32aeb9e488dd017160ab4":[2,0,0,0,0,0,1,4,0,3],
 "EffectType_8cs.html#adae12b2de9e5d022711b861d4c881578abc93fd0fa19ed26b6adf8293ada55404":[2,0,0,0,0,0,1,4,0,0],
 "EffectType_8cs.html#adae12b2de9e5d022711b861d4c881578abd2b7e5f85a6ea65065c4ebc6d7c95bb":[2,0,0,0,0,0,1,4,0,1],
 "EffectType_8cs_source.html":[2,0,0,0,0,0,1,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "classCoin.html#a1964d7ad9c017916fca129cb6dab8318":[1,0,8,0],
 "classConfig_1_1ServerConfig.html":[0,0,1,0],
 "classConfig_1_1ServerConfig.html":[1,0,1,0],
-"classConfig_1_1ServerConfig.html#a10be54228c36baeb2de629e8122d926f":[1,0,1,0,1],
-"classConfig_1_1ServerConfig.html#a10be54228c36baeb2de629e8122d926f":[0,0,1,0,1],
-"classConfig_1_1ServerConfig.html#a47231cfa790f15bbd226c2dc2202c448":[0,0,1,0,17]
+"classConfig_1_1ServerConfig.html#a10be54228c36baeb2de629e8122d926f":[1,0,1,0,1]
 };

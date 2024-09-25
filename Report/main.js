@@ -279,16 +279,16 @@ var assemblies = [
       { "name": "Config.ServerConfig", "rp": "ThesisScripts_ServerConfig.html", "cl": 0, "ucl": 6, "cal": 6, "tl": 89, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "DirectionConverter", "rp": "ThesisScripts_DirectionConverter.html", "cl": 0, "ucl": 21, "cal": 21, "tl": 46, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "EdgeRoadContainer", "rp": "ThesisScripts_EdgeRoadContainer.html", "cl": 9, "ucl": 0, "cal": 9, "tl": 15, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "EffectScript", "rp": "ThesisScripts_EffectScript.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 23, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "EffectScript", "rp": "ThesisScripts_EffectScript.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 20, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "FriendHandler", "rp": "ThesisScripts_FriendHandler.html", "cl": 0, "ucl": 45, "cal": 45, "tl": 84, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "FriendWindowHandler", "rp": "ThesisScripts_FriendWindowHandler.html", "cl": 1, "ucl": 49, "cal": 50, "tl": 89, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Game.Car", "rp": "ThesisScripts_Car.html", "cl": 0, "ucl": 77, "cal": 77, "tl": 131, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.Car", "rp": "ThesisScripts_Car.html", "cl": 0, "ucl": 81, "cal": 81, "tl": 137, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.CarController", "rp": "ThesisScripts_CarController.html", "cl": 0, "ucl": 129, "cal": 129, "tl": 249, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.CopCar", "rp": "ThesisScripts_CopCar.html", "cl": 0, "ucl": 54, "cal": 54, "tl": 82, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.EnableWheelPhysicMaterial", "rp": "ThesisScripts_EnableWheelPhysicMaterial.html", "cl": 0, "ucl": 16, "cal": 16, "tl": 37, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.GameController", "rp": "ThesisScripts_GameController.html", "cl": 0, "ucl": 120, "cal": 120, "tl": 192, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.NpcCar", "rp": "ThesisScripts_NpcCar.html", "cl": 0, "ucl": 6, "cal": 6, "tl": 19, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Game.PlayerCar", "rp": "ThesisScripts_PlayerCar.html", "cl": 0, "ucl": 108, "cal": 108, "tl": 170, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.PlayerCar", "rp": "ThesisScripts_PlayerCar.html", "cl": 0, "ucl": 129, "cal": 129, "tl": 189, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.World.BuildingCell", "rp": "ThesisScripts_BuildingCell.html", "cl": 0, "ucl": 11, "cal": 11, "tl": 30, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.World.BuildingGenerator", "rp": "ThesisScripts_BuildingGenerator.html", "cl": 0, "ucl": 43, "cal": 43, "tl": 64, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.World.CarSpawner", "rp": "ThesisScripts_CarSpawner.html", "cl": 0, "ucl": 43, "cal": 43, "tl": 79, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
@@ -380,7 +380,7 @@ var riskHotspots = [
       { "value": 272, "exceeded": true },
     ]},
   {
-    "assembly": "ThesisScripts", "class": "Game.PlayerCar", "reportPath": "ThesisScripts_PlayerCar.html", "methodName": "System.Void Game.PlayerCar::FixedUpdate()", "methodShortName": "FixedUpdate()", "fileIndex": 0, "line": 102,
+    "assembly": "ThesisScripts", "class": "Game.PlayerCar", "reportPath": "ThesisScripts_PlayerCar.html", "methodName": "System.Void Game.PlayerCar::FixedUpdate()", "methodShortName": "FixedUpdate()", "fileIndex": 0, "line": 121,
     "metrics": [
       { "value": 16, "exceeded": true },
       { "value": 0, "exceeded": false },
@@ -423,6 +423,13 @@ var riskHotspots = [
     ]},
   {
     "assembly": "Assembly-CSharp", "class": "UnityStandardAssets.Vehicles.Car.CarAudio", "reportPath": "Assembly_CSharp_CarAudio.html", "methodName": "System.Void UnityStandardAssets.Vehicles.Car.CarAudio::Update()", "methodShortName": "Update()", "fileIndex": 0, "line": 88,
+    "metrics": [
+      { "value": 13, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 182, "exceeded": true },
+    ]},
+  {
+    "assembly": "ThesisScripts", "class": "Game.PlayerCar", "reportPath": "ThesisScripts_PlayerCar.html", "methodName": "System.Void Game.PlayerCar::Update()", "methodShortName": "Update()", "fileIndex": 0, "line": 71,
     "metrics": [
       { "value": 13, "exceeded": false },
       { "value": 0, "exceeded": false },
@@ -485,7 +492,7 @@ var riskHotspots = [
       { "value": 90, "exceeded": true },
     ]},
   {
-    "assembly": "ThesisScripts", "class": "Game.Car", "reportPath": "ThesisScripts_Car.html", "methodName": "System.Void Game.Car::OnCollisionEnter(UnityEngine.Collision)", "methodShortName": "OnCollisionEnter(...)", "fileIndex": 0, "line": 81,
+    "assembly": "ThesisScripts", "class": "Game.Car", "reportPath": "ThesisScripts_Car.html", "methodName": "System.Void Game.Car::OnCollisionEnter(UnityEngine.Collision)", "methodShortName": "OnCollisionEnter(...)", "fileIndex": 0, "line": 87,
     "metrics": [
       { "value": 9, "exceeded": false },
       { "value": 0, "exceeded": false },
@@ -493,13 +500,6 @@ var riskHotspots = [
     ]},
   {
     "assembly": "ThesisScripts", "class": "Game.CarController", "reportPath": "ThesisScripts_CarController.html", "methodName": "System.Void Game.CarController::ApplyDrive(System.Single, System.Single)", "methodShortName": "ApplyDrive(...)", "fileIndex": 0, "line": 136,
-    "metrics": [
-      { "value": 9, "exceeded": false },
-      { "value": 0, "exceeded": false },
-      { "value": 90, "exceeded": true },
-    ]},
-  {
-    "assembly": "ThesisScripts", "class": "Game.PlayerCar", "reportPath": "ThesisScripts_PlayerCar.html", "methodName": "System.Void Game.PlayerCar::Update()", "methodShortName": "Update()", "fileIndex": 0, "line": 65,
     "metrics": [
       { "value": 9, "exceeded": false },
       { "value": 0, "exceeded": false },

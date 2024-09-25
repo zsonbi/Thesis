@@ -1,5 +1,9 @@
 var NAVTREEINDEX6 =
 {
+"namespaceThesis__backend_1_1Data__Structures.html#a24320ef259be3b66e6deb7a608c32dcaaa2cc588f2ab07ad61b05400f593eeb0a":[0,0,4,0,3,1],
+"namespaceThesis__backend_1_1Data__Structures.html#a24320ef259be3b66e6deb7a608c32dcaad13bc5b68b2bd9e18f29777db17cc563":[0,0,4,0,3,0],
+"namespaceThesis__backend_1_1Data__Structures.html#a24320ef259be3b66e6deb7a608c32dcaae3f530e977d74053c6d70eb84886e756":[0,0,4,0,3,2],
+"namespaceThesis__backend_1_1Data__Structures.html#a4c3393a9cb2a72b4d735daeff4d0ea1d":[0,0,4,0,4],
 "namespaceThesis__backend_1_1Data__Structures.html#a86066cb80bc43f93f3543295a9ea4970":[0,0,4,0,7],
 "namespaceThesis__backend_1_1Data__Structures.html#aa44d6a0f27adec065161aeeb258e68c1":[0,0,4,0,5],
 "namespaceThesis__backend_1_1Data__Structures.html#abc2193c437ce44d24dbc7324b916ebc8":[0,0,4,0,6],

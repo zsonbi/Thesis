@@ -103,32 +103,29 @@ $(document).ready(function(){initNavTree('EffectScript_8cs_source.html',''); ini
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>System.Collections.Generic;</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using </span>UnityEngine;</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>[RequireComponent(typeof(ParticleSystem))]</div>
-<div class="foldopen" id="foldopen00007" data-start="{" data-end="};">
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="classEffectScript.html">    7</a></span><span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="classEffectScript.html">EffectScript</a> : MonoBehaviour</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="classEffectScript.html#ac5f9f01ee64cb5063c52a937db4791e0">    9</a></span>    <span class="keyword">private</span> ParticleSystem <a class="code hl_variable" href="classEffectScript.html#ac5f9f01ee64cb5063c52a937db4791e0">particleSystem</a>;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    [SerializeField]</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classEffectScript.html#ac4319f7cf51016ea01df7d617c428771">   12</a></span>    <span class="keyword">private</span> <a class="code hl_enumeration" href="namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578">EffectType</a> <a class="code hl_variable" href="classEffectScript.html#ac4319f7cf51016ea01df7d617c428771">effectType</a>;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classEffectScript.html#af5ad6b27182277327ed9fb1715cf4ced">   14</a></span>    <span class="keyword">public</span> <a class="code hl_enumeration" href="namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578">EffectType</a> <a class="code hl_enumeration" href="namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578">EffectType</a> =&gt; <a class="code hl_variable" href="classEffectScript.html#ac4319f7cf51016ea01df7d617c428771">effectType</a>;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="comment">// Runs when the sccript is loaded</span></div>
-<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classEffectScript.html#a94043563935b7b1491ac32ffb2a7345c">   17</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classEffectScript.html#a94043563935b7b1491ac32ffb2a7345c">Awake</a>()</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        this.particleSystem = GetComponent&lt;ParticleSystem&gt;();</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="classEffectScript.html">    6</a></span><span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="classEffectScript.html">EffectScript</a> : MonoBehaviour</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="classEffectScript.html#ac5f9f01ee64cb5063c52a937db4791e0">    8</a></span>    <span class="keyword">private</span> ParticleSystem <a class="code hl_variable" href="classEffectScript.html#ac5f9f01ee64cb5063c52a937db4791e0">particleSystem</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    [SerializeField]</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classEffectScript.html#ac4319f7cf51016ea01df7d617c428771">   11</a></span>    <span class="keyword">private</span> <a class="code hl_enumeration" href="namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578">EffectType</a> <a class="code hl_variable" href="classEffectScript.html#ac4319f7cf51016ea01df7d617c428771">effectType</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classEffectScript.html#af5ad6b27182277327ed9fb1715cf4ced">   13</a></span>    <span class="keyword">public</span> <a class="code hl_enumeration" href="namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578">EffectType</a> <a class="code hl_enumeration" href="namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578">EffectType</a> =&gt; <a class="code hl_variable" href="classEffectScript.html#ac4319f7cf51016ea01df7d617c428771">effectType</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="comment">// Runs when the sccript is loaded</span></div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classEffectScript.html#a94043563935b7b1491ac32ffb2a7345c">   16</a></span>    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classEffectScript.html#a94043563935b7b1491ac32ffb2a7345c">Awake</a>()</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        TryGetComponent&lt;ParticleSystem&gt;(out <a class="code hl_variable" href="classEffectScript.html#ac5f9f01ee64cb5063c52a937db4791e0">particleSystem</a>);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    }</div>
 </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
 </div>
-<div class="ttc" id="aclassEffectScript_html"><div class="ttname"><a href="classEffectScript.html">EffectScript</a></div><div class="ttdef"><b>Definition</b> <a href="EffectScript_8cs_source.html#l00007">EffectScript.cs:8</a></div></div>
-<div class="ttc" id="aclassEffectScript_html_a94043563935b7b1491ac32ffb2a7345c"><div class="ttname"><a href="classEffectScript.html#a94043563935b7b1491ac32ffb2a7345c">EffectScript.Awake</a></div><div class="ttdeci">void Awake()</div><div class="ttdef"><b>Definition</b> <a href="EffectScript_8cs_source.html#l00017">EffectScript.cs:17</a></div></div>
-<div class="ttc" id="aclassEffectScript_html_ac4319f7cf51016ea01df7d617c428771"><div class="ttname"><a href="classEffectScript.html#ac4319f7cf51016ea01df7d617c428771">EffectScript.effectType</a></div><div class="ttdeci">EffectType effectType</div><div class="ttdef"><b>Definition</b> <a href="EffectScript_8cs_source.html#l00012">EffectScript.cs:12</a></div></div>
-<div class="ttc" id="aclassEffectScript_html_ac5f9f01ee64cb5063c52a937db4791e0"><div class="ttname"><a href="classEffectScript.html#ac5f9f01ee64cb5063c52a937db4791e0">EffectScript.particleSystem</a></div><div class="ttdeci">ParticleSystem particleSystem</div><div class="ttdef"><b>Definition</b> <a href="EffectScript_8cs_source.html#l00009">EffectScript.cs:9</a></div></div>
+<div class="ttc" id="aclassEffectScript_html"><div class="ttname"><a href="classEffectScript.html">EffectScript</a></div><div class="ttdef"><b>Definition</b> <a href="EffectScript_8cs_source.html#l00006">EffectScript.cs:7</a></div></div>
+<div class="ttc" id="aclassEffectScript_html_a94043563935b7b1491ac32ffb2a7345c"><div class="ttname"><a href="classEffectScript.html#a94043563935b7b1491ac32ffb2a7345c">EffectScript.Awake</a></div><div class="ttdeci">void Awake()</div><div class="ttdef"><b>Definition</b> <a href="EffectScript_8cs_source.html#l00016">EffectScript.cs:16</a></div></div>
+<div class="ttc" id="aclassEffectScript_html_ac4319f7cf51016ea01df7d617c428771"><div class="ttname"><a href="classEffectScript.html#ac4319f7cf51016ea01df7d617c428771">EffectScript.effectType</a></div><div class="ttdeci">EffectType effectType</div><div class="ttdef"><b>Definition</b> <a href="EffectScript_8cs_source.html#l00011">EffectScript.cs:11</a></div></div>
+<div class="ttc" id="aclassEffectScript_html_ac5f9f01ee64cb5063c52a937db4791e0"><div class="ttname"><a href="classEffectScript.html#ac5f9f01ee64cb5063c52a937db4791e0">EffectScript.particleSystem</a></div><div class="ttdeci">ParticleSystem particleSystem</div><div class="ttdef"><b>Definition</b> <a href="EffectScript_8cs_source.html#l00008">EffectScript.cs:8</a></div></div>
 <div class="ttc" id="anamespaceDataTypes_html"><div class="ttname"><a href="namespaceDataTypes.html">DataTypes</a></div><div class="ttdef"><b>Definition</b> <a href="BuildingDirection_8cs_source.html#l00001">BuildingDirection.cs:2</a></div></div>
 <div class="ttc" id="anamespaceDataTypes_html_adae12b2de9e5d022711b861d4c881578"><div class="ttname"><a href="namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578">DataTypes.EffectType</a></div><div class="ttdeci">EffectType</div><div class="ttdef"><b>Definition</b> <a href="EffectType_8cs_source.html#l00003">EffectType.cs:4</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
