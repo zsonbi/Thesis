@@ -120,6 +120,29 @@ public class UIController : MonoBehaviour
         return task;
     }
 
+    /// <summary>
+    /// Send a login request with the login panel's fields
+    /// </summary>
+    public void SendLogout()
+    {
+        StartCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORLOGOUT, LoggedOut));
+
+        //UserData.Instance.Logout();
+
+        //  StartCoroutine(MoveToLoginScene());
+    }
+
+    /// <summary>
+    /// When the logout was a success
+    /// </summary>
+    /// <param name="result">The server's response</param>
+    private void LoggedOut(string result)
+    {
+        UserData.Instance.Logout();
+
+        StartCoroutine(MoveToLoginScene());
+    }
+
     private IEnumerator MoveToLoginScene()
     {
         AsyncOperation loading = SceneManager.LoadSceneAsync("LoginScene", LoadSceneMode.Single);
