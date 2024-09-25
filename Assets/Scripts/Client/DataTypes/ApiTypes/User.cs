@@ -15,7 +15,8 @@ namespace Thesis_backend.Data_Structures
         public DateTime LastLoggedIn { get; set; }
         public DateTime Registered { get; set; }
         public List<PlayerTask>? UserTasks { get; set; }
-
+        public int CompletedGoodTasks { get; set; } = 0;
+        public int CompletedBadTasks { get; set; } = 0;
         public long TotalScore { get; set; }
         public long CurrentTaskScore { get; set; }
         [JsonIgnore]

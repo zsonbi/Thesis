@@ -21,6 +21,8 @@ namespace User
         public bool LoggedIn { get; private set; } = false;
         public long TotalScore { get; private set; } = 0;
         public long CurrentTaskScore { get; private set; } = 0;
+        public int CompletedGoodTasks { get; set; } = 0;
+        public int CompletedBadTasks { get; set; } = 0;
 
         public void Init(Thesis_backend.Data_Structures.User loggedInUser)
         {
@@ -34,6 +36,8 @@ namespace User
             TotalScore = loggedInUser.TotalScore;
             CurrentTaskScore = loggedInUser.CurrentTaskScore;
             LoggedIn = true;
+            this.CompletedGoodTasks = loggedInUser.CompletedGoodTasks;
+            this.CompletedBadTasks = loggedInUser.CompletedBadTasks;
         }
 
         private static UserData GetOrCreate()
