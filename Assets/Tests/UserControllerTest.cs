@@ -1,7 +1,11 @@
+using Assets.Tests;
+using Config;
 using Game.World;
 using NUnit.Framework;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.TestTools;
 using User;
@@ -18,7 +22,8 @@ namespace Tests
             [SetUp]
             public void Init()
             {
-                //GameObject temp = GameObject.Instantiate(userControllerPrefab);
+                CoroutineRunner.RunCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORLOGOUT));
+                //TestHandler.Instance.ServerConnection.StartCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORLOGOUT));
 
                 this.userController = GameObject.Instantiate(userControllerPrefab).transform.Find("UserController").GetComponent<UserController>();
             }
@@ -29,7 +34,10 @@ namespace Tests
                 User.UserData.Instance.Logout();
 
                 if (userController != null)
+                {
+                    userController.StartCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORLOGOUT));
                     GameObject.Destroy(this.userController.transform.parent.gameObject);
+                }
             }
 
             private void Login(string userName, string password)
@@ -42,23 +50,25 @@ namespace Tests
             }
 
             [UnityTest]
-            public IEnumerator LoginTestEmail()
-
+            public IEnumerator LoginTestUsername()
             {
-                Login("test2", "test");
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+
+                Login(TestConfig.UserName, TestConfig.Password);
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
                 Assert.IsTrue(User.UserData.Instance.LoggedIn);
-
-                //   Assert.AreEqual("test@gmail.com", User.UserData.Email);
+                Assert.AreEqual(TestConfig.UserName, User.UserData.Instance.Username);
             }
 
             [UnityTest]
-            public IEnumerator LoginTestUserName()
+            public IEnumerator LoginTestEmail()
             {
-                Login("test2", "test");
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+
+                Login(TestConfig.Email, TestConfig.Password);
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
                 Assert.IsTrue(User.UserData.Instance.LoggedIn);
-                Assert.AreEqual("test2", User.UserData.Instance.Username);
+                Assert.AreEqual(TestConfig.Email, User.UserData.Instance.Email);
             }
         }
     }
