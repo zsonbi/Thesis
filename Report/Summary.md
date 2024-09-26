@@ -1,21 +1,21 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 09/26/2024 - 15:27:01 |
+| Generated on: | 09/26/2024 - 15:44:57 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 4 |
-| Classes: | 101 |
-| Files: | 99 |
+| Classes: | 99 |
+| Files: | 97 |
 | Covered lines: | 311 |
-| Uncovered lines: | 4509 |
-| Coverable lines: | 4820 |
-| Total lines: | 9659 |
-| Line coverage: | 6.4% (311 of 4820) |
+| Uncovered lines: | 4490 |
+| Coverable lines: | 4801 |
+| Total lines: | 9605 |
+| Line coverage: | 6.4% (311 of 4801) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 153 |
-| Total methods: | 873 |
-| Method coverage: | 17.5% (153 of 873) |
+| Total methods: | 865 |
+| Method coverage: | 17.6% (153 of 865) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -54,11 +54,9 @@
 |UnityStandardAssets.Vehicles.Car.WheelEffects|0|53|53|94|0%|0|0||0|10|0%|
 |**Assembly-CSharp-Editor**|**0**|**201**|**201**|**315**|**0%**|**0**|**0**|****|**0**|**15**|**0%**|
 |BuildCommand|0|201|201|315|0%|0|0||0|15|0%|
-|**Tests**|**89**|**23**|**112**|**313**|**79.4%**|**0**|**0**|****|**17**|**25**|**68%**|
+|**Tests**|**89**|**4**|**93**|**259**|**95.6%**|**0**|**0**|****|**17**|**17**|**100%**|
 |Assets.Tests.CoroutineRunner|12|0|12|36|100%|0|0||2|2|100%|
-|Assets.Tests.TestHandler|0|15|15|36|0%|0|0||0|6|0%|
 |GlobalSetup|16|0|16|54|100%|0|0||4|4|100%|
-|ServerConnection|0|4|4|18|0%|0|0||0|2|0%|
 |Tests.GameTests.RoadGeneratorTests|26|0|26|55|100%|0|0||3|3|100%|
 |Tests.MainMenuTest|4|0|4|24|100%|0|0||1|1|100%|
 |Tests.TestConfig|2|0|2|15|100%|0|0||1|1|100%|

@@ -266,9 +266,7 @@ var assemblies = [
     "name": "Tests",
     "classes": [
       { "name": "Assets.Tests.CoroutineRunner", "rp": "Tests_CoroutineRunner.html", "cl": 12, "ucl": 0, "cal": 12, "tl": 36, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Assets.Tests.TestHandler", "rp": "Tests_TestHandler.html", "cl": 0, "ucl": 15, "cal": 15, "tl": 36, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "GlobalSetup", "rp": "Tests_GlobalSetup.html", "cl": 16, "ucl": 0, "cal": 16, "tl": 54, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "ServerConnection", "rp": "Tests_ServerConnection.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 18, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Tests.GameTests.RoadGeneratorTests", "rp": "Tests_RoadGeneratorTests.html", "cl": 26, "ucl": 0, "cal": 26, "tl": 55, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Tests.MainMenuTest", "rp": "Tests_MainMenuTest.html", "cl": 4, "ucl": 0, "cal": 4, "tl": 24, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Tests.TestConfig", "rp": "Tests_TestConfig.html", "cl": 2, "ucl": 0, "cal": 2, "tl": 15, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },

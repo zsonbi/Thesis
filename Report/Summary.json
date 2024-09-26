@@ -1,20 +1,20 @@
 {
   "summary": {
-    "generatedon": "2024-09-26T15:27:01Z",
+    "generatedon": "2024-09-26T15:44:57Z",
     "parser": "MultiReportParser (3x OpenCoverParser)",
     "assemblies": 4,
-    "classes": 101,
-    "files": 99,
+    "classes": 99,
+    "files": 97,
     "coveredlines": 311,
-    "uncoveredlines": 4509,
-    "coverablelines": 4820,
-    "totallines": 9659,
+    "uncoveredlines": 4490,
+    "coverablelines": 4801,
+    "totallines": 9605,
     "linecoverage": 6.4,
     "coveredbranches": 0,
     "totalbranches": 0,
     "coveredmethods": 153,
-    "totalmethods": 873,
-    "methodcoverage": 17.5
+    "totalmethods": 865,
+    "methodcoverage": 17.6
  },
   "coverage": {
     "assemblies": [
@@ -53,11 +53,9 @@
         { "name": "UnityStandardAssets.Vehicles.Car.WheelEffects", "coverage": 0, "coveredlines": 0, "coverablelines": 53, "totallines": 94, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 10 } ] },
       { "name": "Assembly-CSharp-Editor", "classes": 1, "coverage": 0, "coveredlines": 0, "coverablelines": 201, "totallines": 315, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 15, "classesinassembly": [
         { "name": "BuildCommand", "coverage": 0, "coveredlines": 0, "coverablelines": 201, "totallines": 315, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 15 } ] },
-      { "name": "Tests", "classes": 8, "coverage": 79.4, "coveredlines": 89, "coverablelines": 112, "totallines": 313, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 68, "coveredmethods": 17, "totalmethods": 25, "classesinassembly": [
+      { "name": "Tests", "classes": 6, "coverage": 95.6, "coveredlines": 89, "coverablelines": 93, "totallines": 259, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 17, "totalmethods": 17, "classesinassembly": [
         { "name": "Assets.Tests.CoroutineRunner", "coverage": 100, "coveredlines": 12, "coverablelines": 12, "totallines": 36, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 2, "totalmethods": 2 },
-        { "name": "Assets.Tests.TestHandler", "coverage": 0, "coveredlines": 0, "coverablelines": 15, "totallines": 36, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 6 },
         { "name": "GlobalSetup", "coverage": 100, "coveredlines": 16, "coverablelines": 16, "totallines": 54, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 4, "totalmethods": 4 },
-        { "name": "ServerConnection", "coverage": 0, "coveredlines": 0, "coverablelines": 4, "totallines": 18, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
         { "name": "Tests.GameTests.RoadGeneratorTests", "coverage": 100, "coveredlines": 26, "coverablelines": 26, "totallines": 55, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 3, "totalmethods": 3 },
         { "name": "Tests.MainMenuTest", "coverage": 100, "coveredlines": 4, "coverablelines": 4, "totallines": 24, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 1, "totalmethods": 1 },
         { "name": "Tests.TestConfig", "coverage": 100, "coveredlines": 2, "coverablelines": 2, "totallines": 15, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 1, "totalmethods": 1 },
