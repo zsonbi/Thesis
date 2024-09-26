@@ -19,6 +19,9 @@ public class ShopWindow : MonoBehaviour
     [SerializeField]
     private TMP_Text CoinText;
 
+    [SerializeField]
+    private ModalWindow ModalWindow;
+
     private List<Shop> shopItemsCache;
 
     public void Show()
@@ -33,11 +36,16 @@ public class ShopWindow : MonoBehaviour
         this.gameObject.SetActive(false);
     }
 
+    private void ShowRequestFail(string content)
+    {
+        ModalWindow.Show("Shop error", content);
+    }
+
     public void UpdateShop()
     {
         if (shopItemsCache is null)
         {
-            StartCoroutine(Server.SendGetRequest<List<Shop>>(ServerConfig.PATH_FOR_SHOP_GET_ALL, LoadedShopItems));
+            StartCoroutine(Server.SendGetRequest<List<Shop>>(ServerConfig.PATH_FOR_SHOP_GET_ALL, LoadedShopItems, onFailedAction: ShowRequestFail));
         }
         else
         {

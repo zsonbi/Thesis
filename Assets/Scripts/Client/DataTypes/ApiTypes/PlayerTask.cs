@@ -48,6 +48,11 @@ namespace Thesis_backend.Data_Structures
         }
         public void UpdateValues(PlayerTask playerTask)
         {
+            if (playerTask is null)
+            {
+                return;
+            }
+
             this.TaskName = playerTask.TaskName;
             this.TaskType = playerTask.TaskType;
             this.PeriodRate = playerTask.PeriodRate;

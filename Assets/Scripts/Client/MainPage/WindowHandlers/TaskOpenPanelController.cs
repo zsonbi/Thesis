@@ -14,7 +14,7 @@ using User;
 public class TaskOpenPanelController : MonoBehaviour
 {
     [HideInInspector]
-    public PlayerTask CurrentTask = new PlayerTask();
+    public PlayerTask CurrentTask = new PlayerTask() { ID = -1 };
 
     [HideInInspector]
     public EventHandler<TaskClosedEventArgs> TaskClosedEventHandler;
@@ -128,10 +128,13 @@ public class TaskOpenPanelController : MonoBehaviour
         tasksOpenPanel.SetActive(false);
         if (this.CurrentTask.ID != -1)
         {
-            CurrentTask.UpdateValues(playerTaskOnOpen);
-            UIController.LoadGoodTasks(playerTaskOnOpen.TaskType);
+            if (playerTaskOnOpen is not null)
+            {
+                CurrentTask.UpdateValues(playerTaskOnOpen);
+                UIController.LoadGoodTasks(playerTaskOnOpen.TaskType);
 
-            this.CurrentTask = playerTaskOnOpen;
+                this.CurrentTask = playerTaskOnOpen;
+            }
         }
         this.CurrentTask = new PlayerTask();
     }
@@ -150,11 +153,11 @@ public class TaskOpenPanelController : MonoBehaviour
 
         if (isNewTask)
         {
-            StartCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.PlayerTask>(ServerConfig.PATHFORTASKCREATE, taskRequest, SavedTask));
+            StartCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.PlayerTask>(ServerConfig.PATHFORTASKCREATE, taskRequest, SavedTask, onFailedAction: UIController.ShowTaskFail));
         }
         else
         {
-            StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.PlayerTask>(ServerConfig.PATHFORTASKUPDATE(CurrentTask.ID), taskRequest, SavedTask));
+            StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.PlayerTask>(ServerConfig.PATHFORTASKUPDATE(CurrentTask.ID), taskRequest, SavedTask, onFailedAction: UIController.ShowTaskFail));
         }
     }
 
@@ -179,7 +182,7 @@ public class TaskOpenPanelController : MonoBehaviour
 
     public void DeleteTask()
     {
-        StartCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORTASKDELETE(CurrentTask.ID)));
+        StartCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORTASKDELETE(CurrentTask.ID), onFailedAction: UIController.ShowTaskFail));
     }
 
     private void DeletedTask(Dictionary<string, string> result)

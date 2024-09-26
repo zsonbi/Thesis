@@ -157,7 +157,17 @@ public class UIController : MonoBehaviour
 
     private void LoadTasks()
     {
-        StartCoroutine(Server.SendGetRequest<List<Thesis_backend.Data_Structures.PlayerTask>>(ServerConfig.PATHFORTASKSQUERY, CreateTaskPrefabs));
+        StartCoroutine(Server.SendGetRequest<List<Thesis_backend.Data_Structures.PlayerTask>>(ServerConfig.PATHFORTASKSQUERY, CreateTaskPrefabs, onFailedAction: ShowRequestFail));
+    }
+
+    private void ShowRequestFail(string content)
+    {
+        ModalWindow.Show("Request fail", content);
+    }
+
+    public void ShowTaskFail(string content)
+    {
+        ModalWindow.Show("Task error", content);
     }
 
     public void LoadGameScene()

@@ -64,7 +64,7 @@ public class UserController : MonoBehaviour
             Password = fields[1].text,
         };
 
-        StartCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORLOGIN, userLoginRequest, LoggedIn));
+        StartCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORLOGIN, userLoginRequest, LoggedIn, onFailedAction: ShowLoginError));
     }
 
     /// <summary>
@@ -102,7 +102,17 @@ public class UserController : MonoBehaviour
             Password = fields[2].text,
         };
 
-        StartCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORREGISTER, userRequest, Registered));
+        StartCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORREGISTER, userRequest, Registered, onFailedAction: ShowRegisterError));
+    }
+
+    private void ShowRegisterError(string content)
+    {
+        ModalWindow.Show("Register error", content);
+    }
+
+    private void ShowLoginError(string content)
+    {
+        ModalWindow.Show("Login error", content);
     }
 
     /// <summary>
@@ -137,6 +147,11 @@ public class UserController : MonoBehaviour
     {
         try
         {
+            if (emailaddress == "")
+            {
+                return false;
+            }
+
             MailAddress m = new MailAddress(emailaddress);
 
             return true;
