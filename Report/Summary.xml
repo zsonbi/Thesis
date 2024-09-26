@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>09/25/2024 - 22:22:07</Generatedon>
+    <Generatedon>09/26/2024 - 15:27:01</Generatedon>
     <Parser>MultiReportParser (3x OpenCoverParser)</Parser>
     <Assemblies>4</Assemblies>
-    <Classes>96</Classes>
-    <Files>94</Files>
-    <Coveredlines>274</Coveredlines>
-    <Uncoveredlines>4490</Uncoveredlines>
-    <Coverablelines>4764</Coverablelines>
-    <Totallines>9490</Totallines>
-    <Linecoverage>5.7</Linecoverage>
+    <Classes>101</Classes>
+    <Files>99</Files>
+    <Coveredlines>311</Coveredlines>
+    <Uncoveredlines>4509</Uncoveredlines>
+    <Coverablelines>4820</Coverablelines>
+    <Totallines>9659</Totallines>
+    <Linecoverage>6.4</Linecoverage>
     <Coveredbranches>0</Coveredbranches>
     <Totalbranches>0</Totalbranches>
-    <Coveredmethods>140</Coveredmethods>
-    <Totalmethods>858</Totalmethods>
-    <Methodcoverage>16.3</Methodcoverage>
+    <Coveredmethods>153</Coveredmethods>
+    <Totalmethods>873</Totalmethods>
+    <Methodcoverage>17.5</Methodcoverage>
   </Summary>
   <Coverage>
     <Assembly name="Assembly-CSharp" classes="32" coverage="0" coveredlines="0" coverablelines="1842" totallines="3841" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="256" methodcoverage="0">
@@ -55,12 +55,17 @@
     <Assembly name="Assembly-CSharp-Editor" classes="1" coverage="0" coveredlines="0" coverablelines="201" totallines="315" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="15" methodcoverage="0">
       <Class name="BuildCommand" coverage="0" coveredlines="0" coverablelines="201" totallines="315" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="15" methodcoverage="0" />
     </Assembly>
-    <Assembly name="Tests" classes="3" coverage="98.2" coveredlines="55" coverablelines="56" totallines="144" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="10" totalmethods="10" methodcoverage="100">
+    <Assembly name="Tests" classes="8" coverage="79.4" coveredlines="89" coverablelines="112" totallines="313" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="17" totalmethods="25" methodcoverage="68">
+      <Class name="Assets.Tests.CoroutineRunner" coverage="100" coveredlines="12" coverablelines="12" totallines="36" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
+      <Class name="Assets.Tests.TestHandler" coverage="0" coveredlines="0" coverablelines="15" totallines="36" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="6" methodcoverage="0" />
+      <Class name="GlobalSetup" coverage="100" coveredlines="16" coverablelines="16" totallines="54" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="4" methodcoverage="100" />
+      <Class name="ServerConnection" coverage="0" coveredlines="0" coverablelines="4" totallines="18" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
       <Class name="Tests.GameTests.RoadGeneratorTests" coverage="100" coveredlines="26" coverablelines="26" totallines="55" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
       <Class name="Tests.MainMenuTest" coverage="100" coveredlines="4" coverablelines="4" totallines="24" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
-      <Class name="Tests.UITests.UserControllerTests" coverage="96.1" coveredlines="25" coverablelines="26" totallines="65" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="6" methodcoverage="100" />
+      <Class name="Tests.TestConfig" coverage="100" coveredlines="2" coverablelines="2" totallines="15" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
+      <Class name="Tests.UITests.UserControllerTests" coverage="87.8" coveredlines="29" coverablelines="33" totallines="75" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="6" methodcoverage="100" />
     </Assembly>
-    <Assembly name="ThesisScripts" classes="60" coverage="8.2" coveredlines="219" coverablelines="2665" totallines="5480" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="130" totalmethods="577" methodcoverage="22.5">
+    <Assembly name="ThesisScripts" classes="60" coverage="8.3" coveredlines="222" coverablelines="2665" totallines="5480" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="136" totalmethods="577" methodcoverage="23.5">
       <Class name="Assets.Scripts.Client.DataTypes.ChunkCellContainer" coverage="0" coveredlines="0" coverablelines="6" totallines="15" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
       <Class name="Building" coverage="0" coveredlines="0" coverablelines="9" totallines="33" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="7" methodcoverage="0" />
       <Class name="CameraScript" coverage="0" coveredlines="0" coverablelines="7" totallines="24" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
@@ -104,7 +109,7 @@
       <Class name="Thesis_backend.Data_Structures.TaskRequest" coverage="0" coveredlines="0" coverablelines="4" totallines="16" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="8" methodcoverage="0" />
       <Class name="Thesis_backend.Data_Structures.User" coverage="92.3" coveredlines="12" coverablelines="13" totallines="25" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="25" totalmethods="26" methodcoverage="96.1" />
       <Class name="Thesis_backend.Data_Structures.UserLoginRequest" coverage="100" coveredlines="2" coverablelines="2" totallines="14" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="4" methodcoverage="100" />
-      <Class name="Thesis_backend.Data_Structures.UserRequest" coverage="0" coveredlines="0" coverablelines="3" totallines="15" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="6" methodcoverage="0" />
+      <Class name="Thesis_backend.Data_Structures.UserRequest" coverage="100" coveredlines="3" coverablelines="3" totallines="15" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="6" methodcoverage="100" />
       <Class name="Thesis_backend.Data_Structures.UserSettings" coverage="75" coveredlines="3" coverablelines="4" totallines="15" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="8" methodcoverage="75" />
       <Class name="UIController" coverage="25" coveredlines="24" coverablelines="96" totallines="176" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="15" methodcoverage="40" />
       <Class name="UnityStandardAssets.CrossPlatformInput.AxisTouchButton" coverage="0" coveredlines="0" coverablelines="41" totallines="75" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="6" methodcoverage="0" />

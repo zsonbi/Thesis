@@ -1,4 +1,7 @@
 <linker>
+  <assembly fullname="Tests, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="ServerConnection" preserve="all" />
+  </assembly>
   <assembly fullname="ThesisScripts, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="Building" preserve="all" />
     <type fullname="EffectScript" preserve="all" />

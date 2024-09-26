@@ -265,9 +265,14 @@ var assemblies = [
   {
     "name": "Tests",
     "classes": [
+      { "name": "Assets.Tests.CoroutineRunner", "rp": "Tests_CoroutineRunner.html", "cl": 12, "ucl": 0, "cal": 12, "tl": 36, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Assets.Tests.TestHandler", "rp": "Tests_TestHandler.html", "cl": 0, "ucl": 15, "cal": 15, "tl": 36, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "GlobalSetup", "rp": "Tests_GlobalSetup.html", "cl": 16, "ucl": 0, "cal": 16, "tl": 54, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "ServerConnection", "rp": "Tests_ServerConnection.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 18, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Tests.GameTests.RoadGeneratorTests", "rp": "Tests_RoadGeneratorTests.html", "cl": 26, "ucl": 0, "cal": 26, "tl": 55, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Tests.MainMenuTest", "rp": "Tests_MainMenuTest.html", "cl": 4, "ucl": 0, "cal": 4, "tl": 24, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Tests.UITests.UserControllerTests", "rp": "Tests_UserControllerTests.html", "cl": 25, "ucl": 1, "cal": 26, "tl": 65, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Tests.TestConfig", "rp": "Tests_TestConfig.html", "cl": 2, "ucl": 0, "cal": 2, "tl": 15, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Tests.UITests.UserControllerTests", "rp": "Tests_UserControllerTests.html", "cl": 29, "ucl": 4, "cal": 33, "tl": 75, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
     ]},
   {
     "name": "ThesisScripts",
@@ -315,7 +320,7 @@ var assemblies = [
       { "name": "Thesis_backend.Data_Structures.TaskRequest", "rp": "ThesisScripts_TaskRequest.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 16, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Thesis_backend.Data_Structures.User", "rp": "ThesisScripts_User.html", "cl": 12, "ucl": 1, "cal": 13, "tl": 25, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Thesis_backend.Data_Structures.UserLoginRequest", "rp": "ThesisScripts_UserLoginRequest.html", "cl": 2, "ucl": 0, "cal": 2, "tl": 14, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Thesis_backend.Data_Structures.UserRequest", "rp": "ThesisScripts_UserRequest.html", "cl": 0, "ucl": 3, "cal": 3, "tl": 15, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Thesis_backend.Data_Structures.UserRequest", "rp": "ThesisScripts_UserRequest.html", "cl": 3, "ucl": 0, "cal": 3, "tl": 15, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Thesis_backend.Data_Structures.UserSettings", "rp": "ThesisScripts_UserSettings.html", "cl": 3, "ucl": 1, "cal": 4, "tl": 15, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "UIController", "rp": "ThesisScripts_UIController.html", "cl": 24, "ucl": 72, "cal": 96, "tl": 176, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "UnityStandardAssets.CrossPlatformInput.AxisTouchButton", "rp": "ThesisScripts_AxisTouchButton.html", "cl": 0, "ucl": 41, "cal": 41, "tl": 75, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },

@@ -1,21 +1,21 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 09/25/2024 - 22:22:07 |
+| Generated on: | 09/26/2024 - 15:27:01 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 4 |
-| Classes: | 96 |
-| Files: | 94 |
-| Covered lines: | 274 |
-| Uncovered lines: | 4490 |
-| Coverable lines: | 4764 |
-| Total lines: | 9490 |
-| Line coverage: | 5.7% (274 of 4764) |
+| Classes: | 101 |
+| Files: | 99 |
+| Covered lines: | 311 |
+| Uncovered lines: | 4509 |
+| Coverable lines: | 4820 |
+| Total lines: | 9659 |
+| Line coverage: | 6.4% (311 of 4820) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 140 |
-| Total methods: | 858 |
-| Method coverage: | 16.3% (140 of 858) |
+| Covered methods: | 153 |
+| Total methods: | 873 |
+| Method coverage: | 17.5% (153 of 873) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -54,11 +54,16 @@
 |UnityStandardAssets.Vehicles.Car.WheelEffects|0|53|53|94|0%|0|0||0|10|0%|
 |**Assembly-CSharp-Editor**|**0**|**201**|**201**|**315**|**0%**|**0**|**0**|****|**0**|**15**|**0%**|
 |BuildCommand|0|201|201|315|0%|0|0||0|15|0%|
-|**Tests**|**55**|**1**|**56**|**144**|**98.2%**|**0**|**0**|****|**10**|**10**|**100%**|
+|**Tests**|**89**|**23**|**112**|**313**|**79.4%**|**0**|**0**|****|**17**|**25**|**68%**|
+|Assets.Tests.CoroutineRunner|12|0|12|36|100%|0|0||2|2|100%|
+|Assets.Tests.TestHandler|0|15|15|36|0%|0|0||0|6|0%|
+|GlobalSetup|16|0|16|54|100%|0|0||4|4|100%|
+|ServerConnection|0|4|4|18|0%|0|0||0|2|0%|
 |Tests.GameTests.RoadGeneratorTests|26|0|26|55|100%|0|0||3|3|100%|
 |Tests.MainMenuTest|4|0|4|24|100%|0|0||1|1|100%|
-|Tests.UITests.UserControllerTests|25|1|26|65|96.1%|0|0||6|6|100%|
-|**ThesisScripts**|**219**|**2446**|**2665**|**5480**|**8.2%**|**0**|**0**|****|**130**|**577**|**22.5%**|
+|Tests.TestConfig|2|0|2|15|100%|0|0||1|1|100%|
+|Tests.UITests.UserControllerTests|29|4|33|75|87.8%|0|0||6|6|100%|
+|**ThesisScripts**|**222**|**2443**|**2665**|**5480**|**8.3%**|**0**|**0**|****|**136**|**577**|**23.5%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|0|6|6|15|0%|0|0||0|5|0%|
 |Building|0|9|9|33|0%|0|0||0|7|0%|
 |CameraScript|0|7|7|24|0%|0|0||0|2|0%|
@@ -102,7 +107,7 @@
 |Thesis_backend.Data_Structures.TaskRequest|0|4|4|16|0%|0|0||0|8|0%|
 |Thesis_backend.Data_Structures.User|12|1|13|25|92.3%|0|0||25|26|96.1%|
 |Thesis_backend.Data_Structures.UserLoginRequest|2|0|2|14|100%|0|0||4|4|100%|
-|Thesis_backend.Data_Structures.UserRequest|0|3|3|15|0%|0|0||0|6|0%|
+|Thesis_backend.Data_Structures.UserRequest|3|0|3|15|100%|0|0||6|6|100%|
 |Thesis_backend.Data_Structures.UserSettings|3|1|4|15|75%|0|0||6|8|75%|
 |UIController|24|72|96|176|25%|0|0||6|15|40%|
 |UnityStandardAssets.CrossPlatformInput.AxisTouchButton|0|41|41|75|0%|0|0||0|6|0%|
