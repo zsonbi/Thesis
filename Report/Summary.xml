@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>09/26/2024 - 15:44:57</Generatedon>
+    <Generatedon>09/26/2024 - 16:42:24</Generatedon>
     <Parser>MultiReportParser (3x OpenCoverParser)</Parser>
     <Assemblies>4</Assemblies>
-    <Classes>99</Classes>
-    <Files>97</Files>
-    <Coveredlines>311</Coveredlines>
-    <Uncoveredlines>4490</Uncoveredlines>
-    <Coverablelines>4801</Coverablelines>
-    <Totallines>9605</Totallines>
-    <Linecoverage>6.4</Linecoverage>
+    <Classes>98</Classes>
+    <Files>96</Files>
+    <Coveredlines>293</Coveredlines>
+    <Uncoveredlines>4467</Uncoveredlines>
+    <Coverablelines>4760</Coverablelines>
+    <Totallines>9552</Totallines>
+    <Linecoverage>6.1</Linecoverage>
     <Coveredbranches>0</Coveredbranches>
     <Totalbranches>0</Totalbranches>
-    <Coveredmethods>153</Coveredmethods>
-    <Totalmethods>865</Totalmethods>
-    <Methodcoverage>17.6</Methodcoverage>
+    <Coveredmethods>138</Coveredmethods>
+    <Totalmethods>846</Totalmethods>
+    <Methodcoverage>16.3</Methodcoverage>
   </Summary>
   <Coverage>
     <Assembly name="Assembly-CSharp" classes="32" coverage="0" coveredlines="0" coverablelines="1842" totallines="3841" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="256" methodcoverage="0">
@@ -63,7 +63,7 @@
       <Class name="Tests.TestConfig" coverage="100" coveredlines="2" coverablelines="2" totallines="15" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
       <Class name="Tests.UITests.UserControllerTests" coverage="87.8" coveredlines="29" coverablelines="33" totallines="75" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="6" methodcoverage="100" />
     </Assembly>
-    <Assembly name="ThesisScripts" classes="60" coverage="8.3" coveredlines="222" coverablelines="2665" totallines="5480" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="136" totalmethods="577" methodcoverage="23.5">
+    <Assembly name="ThesisScripts" classes="59" coverage="7.7" coveredlines="204" coverablelines="2624" totallines="5427" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="121" totalmethods="558" methodcoverage="21.6">
       <Class name="Assets.Scripts.Client.DataTypes.ChunkCellContainer" coverage="0" coveredlines="0" coverablelines="6" totallines="15" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
       <Class name="Building" coverage="0" coveredlines="0" coverablelines="9" totallines="33" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="7" methodcoverage="0" />
       <Class name="CameraScript" coverage="0" coveredlines="0" coverablelines="7" totallines="24" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
@@ -95,14 +95,13 @@
       <Class name="ShopWindow" coverage="0" coveredlines="0" coverablelines="39" totallines="74" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
       <Class name="StarHandler" coverage="0" coveredlines="0" coverablelines="10" totallines="28" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
       <Class name="TaskClosedEventArgs" coverage="0" coveredlines="0" coverablelines="4" totallines="14" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
-      <Class name="TaskContainer" coverage="32.3" coveredlines="22" coverablelines="68" totallines="91" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="18" totalmethods="23" methodcoverage="78.2" />
-      <Class name="TaskDisplayHandler" coverage="3.1" coveredlines="2" coverablelines="64" totallines="122" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="12" methodcoverage="8.3" />
+      <Class name="TaskDisplayHandler" coverage="3.1" coveredlines="2" coverablelines="64" totallines="123" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="12" methodcoverage="8.3" />
       <Class name="TaskOpenPanelController" coverage="13.5" coveredlines="15" coverablelines="111" totallines="211" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="15" methodcoverage="26.6" />
       <Class name="Thesis_backend.Data_Structures.DbElement" coverage="50" coveredlines="1" coverablelines="2" totallines="11" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="3" methodcoverage="66.6" />
       <Class name="Thesis_backend.Data_Structures.Friend" coverage="0" coveredlines="0" coverablelines="5" totallines="18" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="10" methodcoverage="0" />
       <Class name="Thesis_backend.Data_Structures.Game" coverage="75" coveredlines="6" coverablelines="8" totallines="18" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="12" totalmethods="15" methodcoverage="80" />
       <Class name="Thesis_backend.Data_Structures.OwnedCar" coverage="40" coveredlines="2" coverablelines="5" totallines="21" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="9" methodcoverage="44.4" />
-      <Class name="Thesis_backend.Data_Structures.PlayerTask" coverage="0" coveredlines="0" coverablelines="9" totallines="19" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="17" methodcoverage="0" />
+      <Class name="Thesis_backend.Data_Structures.PlayerTask" coverage="11.1" coveredlines="4" coverablelines="36" totallines="56" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="21" methodcoverage="14.2" />
       <Class name="Thesis_backend.Data_Structures.Shop" coverage="0" coveredlines="0" coverablelines="4" totallines="14" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="7" methodcoverage="0" />
       <Class name="Thesis_backend.Data_Structures.TaskRequest" coverage="0" coveredlines="0" coverablelines="4" totallines="16" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="8" methodcoverage="0" />
       <Class name="Thesis_backend.Data_Structures.User" coverage="92.3" coveredlines="12" coverablelines="13" totallines="25" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="25" totalmethods="26" methodcoverage="96.1" />

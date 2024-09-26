@@ -118,8 +118,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a34bbd72f6e8d248243a9de9e5d8becdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abba1844b75e77c909f38f9d688ee68b0" id="r_abba1844b75e77c909f38f9d688ee68b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUIController.html#abba1844b75e77c909f38f9d688ee68b0">LoadBadHabits</a> (bool updateDisplay=true)</td></tr>
 <tr class="separator:abba1844b75e77c909f38f9d688ee68b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb941c060c4b3c2acdc916e9722a55d1" id="r_adb941c060c4b3c2acdc916e9722a55d1"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUIController.html#adb941c060c4b3c2acdc916e9722a55d1">CreateTask</a> (<a class="el" href="classTaskContainer.html">TaskContainer</a> taskContainer)</td></tr>
-<tr class="separator:adb941c060c4b3c2acdc916e9722a55d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78264534c4929ed499de68376627f35c" id="r_a78264534c4929ed499de68376627f35c"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUIController.html#a78264534c4929ed499de68376627f35c">CreateTask</a> (<a class="el" href="namespaceThesis__backend_1_1Data__Structures.html#ae656f3c7a1335db8207ae56dcbd213a7">PlayerTask</a> taskContainer)</td></tr>
+<tr class="separator:a78264534c4929ed499de68376627f35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad64fb2910e5cbf894f581beab305b8b6" id="r_ad64fb2910e5cbf894f581beab305b8b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUIController.html#ad64fb2910e5cbf894f581beab305b8b6">SendLogout</a> ()</td></tr>
 <tr class="memdesc:ad64fb2910e5cbf894f581beab305b8b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a login request with the login panel's fields.  <br /></td></tr>
 <tr class="separator:ad64fb2910e5cbf894f581beab305b8b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -247,7 +247,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="UserData_8cs_source.html#l00023">User.UserData.CurrentTaskScore</a>, <a class="el" href="UserData_8cs_source.html#l00027">User.UserData.Init()</a>, and <a class="el" href="UserData_8cs_source.html#l00012">User.UserData.Instance</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TaskDisplayHandler_8cs_source.html#l00068">TaskDisplayHandler.TaskCompleted()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TaskDisplayHandler_8cs_source.html#l00069">TaskDisplayHandler.TaskCompleted()</a>.</p>
 
 </div>
 </div>
@@ -313,7 +313,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   64</span>            Destroy(TaskToRemove.gameObject);</div>
 <div class="line"><span class="lineno">   65</span>        }</div>
 <div class="line"><span class="lineno">   66</span>    }</div>
-<div class="ttc" id="aclassTaskDisplayHandler_html"><div class="ttname"><a href="classTaskDisplayHandler.html">TaskDisplayHandler</a></div><div class="ttdef"><b>Definition</b> <a href="TaskDisplayHandler_8cs_source.html#l00012">TaskDisplayHandler.cs:13</a></div></div>
+<div class="ttc" id="aclassTaskDisplayHandler_html"><div class="ttname"><a href="classTaskDisplayHandler.html">TaskDisplayHandler</a></div><div class="ttdef"><b>Definition</b> <a href="TaskDisplayHandler_8cs_source.html#l00013">TaskDisplayHandler.cs:14</a></div></div>
 <div class="ttc" id="aclassUIController_html_a0f6d191fc05b2463ae19052164b18030"><div class="ttname"><a href="classUIController.html#a0f6d191fc05b2463ae19052164b18030">UIController.tasks</a></div><div class="ttdeci">Dictionary&lt; long, TaskDisplayHandler &gt; tasks</div><div class="ttdef"><b>Definition</b> <a href="UIController_8cs_source.html#l00030">UIController.cs:30</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="UIController_8cs_source.html#l00030">tasks</a>.</p>
@@ -388,7 +388,7 @@ Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">   77</span>    {</div>
 <div class="line"><span class="lineno">   78</span>        <span class="keywordflow">foreach</span> (var task <span class="keywordflow">in</span> <a class="code hl_variable" href="classUIController.html#a0f6d191fc05b2463ae19052164b18030">tasks</a>)</div>
 <div class="line"><span class="lineno">   79</span>        {</div>
-<div class="line"><span class="lineno">   80</span>            <span class="keywordflow">if</span> (task.Value.TaskContainer.TaskType == <a class="code hl_enumeration" href="TaskType_8cs.html#aa7f5c268cc89ed3067c26142ca3e16d7">TaskType</a>.GoodTask)</div>
+<div class="line"><span class="lineno">   80</span>            <span class="keywordflow">if</span> (!task.Value.CurrentTask.TaskType)</div>
 <div class="line"><span class="lineno">   81</span>            {</div>
 <div class="line"><span class="lineno">   82</span>                task.Value.gameObject.SetActive(<span class="keyword">true</span>);</div>
 <div class="line"><span class="lineno">   83</span>            }</div>
@@ -401,7 +401,6 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   90</span>        <span class="keywordflow">if</span> (updateDisplay)</div>
 <div class="line"><span class="lineno">   91</span>            <a class="code hl_variable" href="classUIController.html#a2e224cab1100d1d235f2231375a8635c">taskOpenPanelController</a>.<a class="code hl_function" href="classTaskOpenPanelController.html#a51848899b40753a10e249992b6c82ea5">MakeItGoodTask</a>();</div>
 <div class="line"><span class="lineno">   92</span>    }</div>
-<div class="ttc" id="aTaskType_8cs_html_aa7f5c268cc89ed3067c26142ca3e16d7"><div class="ttname"><a href="TaskType_8cs.html#aa7f5c268cc89ed3067c26142ca3e16d7">TaskType</a></div><div class="ttdeci">TaskType</div><div class="ttdef"><b>Definition</b> <a href="TaskType_8cs_source.html#l00001">TaskType.cs:2</a></div></div>
 <div class="ttc" id="aclassTaskOpenPanelController_html_a51848899b40753a10e249992b6c82ea5"><div class="ttname"><a href="classTaskOpenPanelController.html#a51848899b40753a10e249992b6c82ea5">TaskOpenPanelController.MakeItGoodTask</a></div><div class="ttdeci">void MakeItGoodTask()</div><div class="ttdef"><b>Definition</b> <a href="TaskOpenPanelController_8cs_source.html#l00113">TaskOpenPanelController.cs:113</a></div></div>
 <div class="ttc" id="aclassUIController_html_a2e224cab1100d1d235f2231375a8635c"><div class="ttname"><a href="classUIController.html#a2e224cab1100d1d235f2231375a8635c">UIController.taskOpenPanelController</a></div><div class="ttdeci">TaskOpenPanelController taskOpenPanelController</div><div class="ttdef"><b>Definition</b> <a href="UIController_8cs_source.html#l00025">UIController.cs:25</a></div></div>
 <div class="ttc" id="aclassUIController_html_a9ab18b7625588d4afeaaa4b22f68828c"><div class="ttname"><a href="classUIController.html#a9ab18b7625588d4afeaaa4b22f68828c">UIController.TaskParent</a></div><div class="ttdeci">GameObject TaskParent</div><div class="ttdef"><b>Definition</b> <a href="UIController_8cs_source.html#l00019">UIController.cs:19</a></div></div>
@@ -440,7 +439,7 @@ Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">   95</span>    {</div>
 <div class="line"><span class="lineno">   96</span>        <span class="keywordflow">foreach</span> (var task <span class="keywordflow">in</span> <a class="code hl_variable" href="classUIController.html#a0f6d191fc05b2463ae19052164b18030">tasks</a>)</div>
 <div class="line"><span class="lineno">   97</span>        {</div>
-<div class="line"><span class="lineno">   98</span>            <span class="keywordflow">if</span> (task.Value.TaskContainer.TaskType == <a class="code hl_enumeration" href="TaskType_8cs.html#aa7f5c268cc89ed3067c26142ca3e16d7">TaskType</a>.BadHabit)</div>
+<div class="line"><span class="lineno">   98</span>            <span class="keywordflow">if</span> (task.Value.CurrentTask.TaskType)</div>
 <div class="line"><span class="lineno">   99</span>            {</div>
 <div class="line"><span class="lineno">  100</span>                task.Value.gameObject.SetActive(<span class="keyword">true</span>);</div>
 <div class="line"><span class="lineno">  101</span>            }</div>
@@ -461,8 +460,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="adb941c060c4b3c2acdc916e9722a55d1" name="adb941c060c4b3c2acdc916e9722a55d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb941c060c4b3c2acdc916e9722a55d1">&#9670;&#160;</a></span>CreateTask()</h2>
+<a id="a78264534c4929ed499de68376627f35c" name="a78264534c4929ed499de68376627f35c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78264534c4929ed499de68376627f35c">&#9670;&#160;</a></span>CreateTask()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -473,7 +472,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">GameObject UIController.CreateTask </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classTaskContainer.html">TaskContainer</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceThesis__backend_1_1Data__Structures.html#ae656f3c7a1335db8207ae56dcbd213a7">PlayerTask</a>&#160;</td>
           <td class="paramname"><em>taskContainer</em></td><td>)</td>
           <td></td>
         </tr>
@@ -490,16 +489,15 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  114</span>        GameObject task = Instantiate(<a class="code hl_variable" href="classUIController.html#ac90812040e8042eb7e79ab22e474f0e0">TaskPrefab</a>, <a class="code hl_variable" href="classUIController.html#a9ab18b7625588d4afeaaa4b22f68828c">TaskParent</a>.transform);</div>
 <div class="line"><span class="lineno">  115</span>        <a class="code hl_class" href="classTaskDisplayHandler.html">TaskDisplayHandler</a> taskComponent = task.GetComponent&lt;<a class="code hl_class" href="classTaskDisplayHandler.html">TaskDisplayHandler</a>&gt;();</div>
 <div class="line"><span class="lineno">  116</span> </div>
-<div class="line"><span class="lineno">  117</span>        taskComponent.<a class="code hl_function" href="classTaskDisplayHandler.html#a7117784233eed8355580e522e683686e">InitValues</a>(taskContainer, <a class="code hl_variable" href="classUIController.html#a2e224cab1100d1d235f2231375a8635c">taskOpenPanelController</a>, <span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">  117</span>        taskComponent.<a class="code hl_function" href="classTaskDisplayHandler.html#ab7672041af21692a0b4d35990a3b4557">InitValues</a>(taskContainer, <a class="code hl_variable" href="classUIController.html#a2e224cab1100d1d235f2231375a8635c">taskOpenPanelController</a>, <span class="keyword">this</span>);</div>
 <div class="line"><span class="lineno">  118</span> </div>
-<div class="line"><span class="lineno">  119</span>        <a class="code hl_variable" href="classUIController.html#a0f6d191fc05b2463ae19052164b18030">tasks</a>.Add(taskContainer.<a class="code hl_property" href="classTaskContainer.html#ad3f8a8a6c64547d6cccec4ae0376b3af">Id</a>, taskComponent);</div>
+<div class="line"><span class="lineno">  119</span>        <a class="code hl_variable" href="classUIController.html#a0f6d191fc05b2463ae19052164b18030">tasks</a>.Add(taskContainer.ID, taskComponent);</div>
 <div class="line"><span class="lineno">  120</span>        <span class="keywordflow">return</span> task;</div>
 <div class="line"><span class="lineno">  121</span>    }</div>
-<div class="ttc" id="aclassTaskContainer_html_ad3f8a8a6c64547d6cccec4ae0376b3af"><div class="ttname"><a href="classTaskContainer.html#ad3f8a8a6c64547d6cccec4ae0376b3af">TaskContainer.Id</a></div><div class="ttdeci">long Id</div><div class="ttdef"><b>Definition</b> <a href="TaskContainer_8cs_source.html#l00009">TaskContainer.cs:9</a></div></div>
-<div class="ttc" id="aclassTaskDisplayHandler_html_a7117784233eed8355580e522e683686e"><div class="ttname"><a href="classTaskDisplayHandler.html#a7117784233eed8355580e522e683686e">TaskDisplayHandler.InitValues</a></div><div class="ttdeci">void InitValues(TaskContainer taskContainer, TaskOpenPanelController taskOpenPanelController, UIController uIController)</div><div class="ttdef"><b>Definition</b> <a href="TaskDisplayHandler_8cs_source.html#l00043">TaskDisplayHandler.cs:43</a></div></div>
+<div class="ttc" id="aclassTaskDisplayHandler_html_ab7672041af21692a0b4d35990a3b4557"><div class="ttname"><a href="classTaskDisplayHandler.html#ab7672041af21692a0b4d35990a3b4557">TaskDisplayHandler.InitValues</a></div><div class="ttdeci">void InitValues(PlayerTask taskContainer, TaskOpenPanelController taskOpenPanelController, UIController uIController)</div><div class="ttdef"><b>Definition</b> <a href="TaskDisplayHandler_8cs_source.html#l00044">TaskDisplayHandler.cs:44</a></div></div>
 <div class="ttc" id="aclassUIController_html_ac90812040e8042eb7e79ab22e474f0e0"><div class="ttname"><a href="classUIController.html#ac90812040e8042eb7e79ab22e474f0e0">UIController.TaskPrefab</a></div><div class="ttdeci">GameObject TaskPrefab</div><div class="ttdef"><b>Definition</b> <a href="UIController_8cs_source.html#l00022">UIController.cs:22</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="TaskContainer_8cs_source.html#l00009">TaskContainer.Id</a>, <a class="el" href="TaskDisplayHandler_8cs_source.html#l00043">TaskDisplayHandler.InitValues()</a>, <a class="el" href="UIController_8cs_source.html#l00025">taskOpenPanelController</a>, <a class="el" href="UIController_8cs_source.html#l00019">TaskParent</a>, <a class="el" href="UIController_8cs_source.html#l00022">TaskPrefab</a>, and <a class="el" href="UIController_8cs_source.html#l00030">tasks</a>.</p>
+<p class="reference">References <a class="el" href="TaskDisplayHandler_8cs_source.html#l00044">TaskDisplayHandler.InitValues()</a>, <a class="el" href="UIController_8cs_source.html#l00025">taskOpenPanelController</a>, <a class="el" href="UIController_8cs_source.html#l00019">TaskParent</a>, <a class="el" href="UIController_8cs_source.html#l00022">TaskPrefab</a>, and <a class="el" href="UIController_8cs_source.html#l00030">tasks</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="UIController_8cs_source.html#l00168">CreateTaskPrefabs()</a>, and <a class="el" href="TaskOpenPanelController_8cs_source.html#l00150">TaskOpenPanelController.SavedTask()</a>.</p>
 
@@ -726,13 +724,12 @@ Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">  169</span>    {</div>
 <div class="line"><span class="lineno">  170</span>        <span class="keywordflow">foreach</span> (var item <span class="keywordflow">in</span> requestResult)</div>
 <div class="line"><span class="lineno">  171</span>        {</div>
-<div class="line"><span class="lineno">  172</span>            <a class="code hl_function" href="classUIController.html#adb941c060c4b3c2acdc916e9722a55d1">CreateTask</a>(<span class="keyword">new</span> <a class="code hl_class" href="classTaskContainer.html">TaskContainer</a>(item.ID, item.TaskName, System.Convert.ToInt32(item.TaskType), item.PeriodRate, item.Description, item.Updated, item.LastCompleted, item.Completed));</div>
+<div class="line"><span class="lineno">  172</span>            <a class="code hl_function" href="classUIController.html#a78264534c4929ed499de68376627f35c">CreateTask</a>(item);</div>
 <div class="line"><span class="lineno">  173</span>        }</div>
 <div class="line"><span class="lineno">  174</span>        <a class="code hl_function" href="classUIController.html#a34bbd72f6e8d248243a9de9e5d8becdd">LoadGoodTasks</a>();</div>
 <div class="line"><span class="lineno">  175</span>    }</div>
-<div class="ttc" id="aclassTaskContainer_html"><div class="ttname"><a href="classTaskContainer.html">TaskContainer</a></div><div class="ttdef"><b>Definition</b> <a href="TaskContainer_8cs_source.html#l00007">TaskContainer.cs:8</a></div></div>
 <div class="ttc" id="aclassUIController_html_a34bbd72f6e8d248243a9de9e5d8becdd"><div class="ttname"><a href="classUIController.html#a34bbd72f6e8d248243a9de9e5d8becdd">UIController.LoadGoodTasks</a></div><div class="ttdeci">void LoadGoodTasks(bool updateDisplay=true)</div><div class="ttdef"><b>Definition</b> <a href="UIController_8cs_source.html#l00076">UIController.cs:76</a></div></div>
-<div class="ttc" id="aclassUIController_html_adb941c060c4b3c2acdc916e9722a55d1"><div class="ttname"><a href="classUIController.html#adb941c060c4b3c2acdc916e9722a55d1">UIController.CreateTask</a></div><div class="ttdeci">GameObject CreateTask(TaskContainer taskContainer)</div><div class="ttdef"><b>Definition</b> <a href="UIController_8cs_source.html#l00112">UIController.cs:112</a></div></div>
+<div class="ttc" id="aclassUIController_html_a78264534c4929ed499de68376627f35c"><div class="ttname"><a href="classUIController.html#a78264534c4929ed499de68376627f35c">UIController.CreateTask</a></div><div class="ttdeci">GameObject CreateTask(PlayerTask taskContainer)</div><div class="ttdef"><b>Definition</b> <a href="UIController_8cs_source.html#l00112">UIController.cs:112</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="UIController_8cs_source.html#l00112">CreateTask()</a>, and <a class="el" href="UIController_8cs_source.html#l00076">LoadGoodTasks()</a>.</p>
 

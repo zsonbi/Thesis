@@ -11,7 +11,7 @@ var searchData=
   ['deletefriend_8',['DeleteFriend',['../classFriendHandler.html#a67169954526afe4bdb375c603a46fb6f',1,'FriendHandler']]],
   ['deletetask_9',['DeleteTask',['../classTaskOpenPanelController.html#a20a5400ef991e24a2832a97dceb6e82d',1,'TaskOpenPanelController']]],
   ['deletetaskbutton_10',['deleteTaskButton',['../classTaskOpenPanelController.html#a4f9d89c38e1248523d5084b0adf14f99',1,'TaskOpenPanelController']]],
-  ['description_11',['description',['../namespaceThesis__backend_1_1Data__Structures.html#a203ebb77bd1c026488e7e21b84f24262',1,'Thesis_backend.Data_Structures.Description'],['../classTaskContainer.html#af401dad3c30393c6aa3ac8189becbf98',1,'TaskContainer.Description'],['../structThesis__backend_1_1Data__Structures_1_1TaskRequest.html#ab04e81c25861b4c4cdb160cc6da17850',1,'Thesis_backend.Data_Structures.TaskRequest.Description']]],
+  ['description_11',['description',['../namespaceThesis__backend_1_1Data__Structures.html#a203ebb77bd1c026488e7e21b84f24262',1,'Thesis_backend.Data_Structures.Description'],['../structThesis__backend_1_1Data__Structures_1_1TaskRequest.html#ab04e81c25861b4c4cdb160cc6da17850',1,'Thesis_backend.Data_Structures.TaskRequest.Description']]],
   ['descriptioninput_12',['descriptionInput',['../classTaskOpenPanelController.html#ac26c1c06372467e95fc5b3a4f20dec0a',1,'TaskOpenPanelController']]],
   ['despawnfarawaychunks_13',['DespawnFarAwayChunks',['../classGame_1_1GameController.html#a9d697eb362c93e3208af1a5c2385742d',1,'Game::GameController']]],
   ['destroyedevent_14',['DestroyedEvent',['../classGame_1_1Car.html#a42b4de37fc1597ce39395c959bf2ddff',1,'Game::Car']]],

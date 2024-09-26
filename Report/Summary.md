@@ -1,21 +1,21 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 09/26/2024 - 15:44:57 |
+| Generated on: | 09/26/2024 - 16:42:24 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 4 |
-| Classes: | 99 |
-| Files: | 97 |
-| Covered lines: | 311 |
-| Uncovered lines: | 4490 |
-| Coverable lines: | 4801 |
-| Total lines: | 9605 |
-| Line coverage: | 6.4% (311 of 4801) |
+| Classes: | 98 |
+| Files: | 96 |
+| Covered lines: | 293 |
+| Uncovered lines: | 4467 |
+| Coverable lines: | 4760 |
+| Total lines: | 9552 |
+| Line coverage: | 6.1% (293 of 4760) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 153 |
-| Total methods: | 865 |
-| Method coverage: | 17.6% (153 of 865) |
+| Covered methods: | 138 |
+| Total methods: | 846 |
+| Method coverage: | 16.3% (138 of 846) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -61,7 +61,7 @@
 |Tests.MainMenuTest|4|0|4|24|100%|0|0||1|1|100%|
 |Tests.TestConfig|2|0|2|15|100%|0|0||1|1|100%|
 |Tests.UITests.UserControllerTests|29|4|33|75|87.8%|0|0||6|6|100%|
-|**ThesisScripts**|**222**|**2443**|**2665**|**5480**|**8.3%**|**0**|**0**|****|**136**|**577**|**23.5%**|
+|**ThesisScripts**|**204**|**2420**|**2624**|**5427**|**7.7%**|**0**|**0**|****|**121**|**558**|**21.6%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|0|6|6|15|0%|0|0||0|5|0%|
 |Building|0|9|9|33|0%|0|0||0|7|0%|
 |CameraScript|0|7|7|24|0%|0|0||0|2|0%|
@@ -93,14 +93,13 @@
 |ShopWindow|0|39|39|74|0%|0|0||0|5|0%|
 |StarHandler|0|10|10|28|0%|0|0||0|1|0%|
 |TaskClosedEventArgs|0|4|4|14|0%|0|0||0|1|0%|
-|TaskContainer|22|46|68|91|32.3%|0|0||18|23|78.2%|
-|TaskDisplayHandler|2|62|64|122|3.1%|0|0||1|12|8.3%|
+|TaskDisplayHandler|2|62|64|123|3.1%|0|0||1|12|8.3%|
 |TaskOpenPanelController|15|96|111|211|13.5%|0|0||4|15|26.6%|
 |Thesis_backend.Data_Structures.DbElement|1|1|2|11|50%|0|0||2|3|66.6%|
 |Thesis_backend.Data_Structures.Friend|0|5|5|18|0%|0|0||0|10|0%|
 |Thesis_backend.Data_Structures.Game|6|2|8|18|75%|0|0||12|15|80%|
 |Thesis_backend.Data_Structures.OwnedCar|2|3|5|21|40%|0|0||4|9|44.4%|
-|Thesis_backend.Data_Structures.PlayerTask|0|9|9|19|0%|0|0||0|17|0%|
+|Thesis_backend.Data_Structures.PlayerTask|4|32|36|56|11.1%|0|0||3|21|14.2%|
 |Thesis_backend.Data_Structures.Shop|0|4|4|14|0%|0|0||0|7|0%|
 |Thesis_backend.Data_Structures.TaskRequest|0|4|4|16|0%|0|0||0|8|0%|
 |Thesis_backend.Data_Structures.User|12|1|13|25|92.3%|0|0||25|26|96.1%|

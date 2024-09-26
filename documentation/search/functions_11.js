@@ -10,7 +10,7 @@ var searchData=
   ['updatetaskscore_7',['UpdateTaskScore',['../classUser_1_1UserData.html#a103846d4ce97a5d089423d4efd1a5ec0',1,'User::UserData']]],
   ['updatetimeremaining_8',['UpdateTimeRemaining',['../classTaskDisplayHandler.html#a335ebac706e9b91498a92ef53ca22787',1,'TaskDisplayHandler']]],
   ['updateuserdata_9',['UpdateUserData',['../classUIController.html#aa136c114c34d616dd76542083b6b2c7e',1,'UIController']]],
-  ['updatevalues_10',['UpdateValues',['../classTaskContainer.html#a69909e5c987547bb505b3e5b352034d6',1,'TaskContainer']]],
+  ['updatevalues_10',['UpdateValues',['../namespaceThesis__backend_1_1Data__Structures.html#a05c5b8303bf4f3a8a39bdb2caf45521f',1,'Thesis_backend::Data_Structures']]],
   ['updatevirtualaxes_11',['updatevirtualaxes',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1Joystick.html#aa19d00f5f5e09af5824e3fe2baaf3f8f',1,'UnityStandardAssets.CrossPlatformInput.Joystick.UpdateVirtualAxes()'],['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#a47c5385a2516cecf07b10883b351f84e',1,'UnityStandardAssets.CrossPlatformInput.TouchPad.UpdateVirtualAxes()']]],
   ['userdata_12',['UserData',['../classUser_1_1UserData.html#a17f4ef142f45e3e62d75c3f0a4ca751b',1,'User::UserData']]]
 ];

@@ -1,8 +1,8 @@
 var searchData=
 [
   ['taskclosedeventhandler_0',['TaskClosedEventHandler',['../classTaskOpenPanelController.html#abfd13ff61856b69cdf082d3b2f7a1aaf',1,'TaskOpenPanelController']]],
-  ['taskcontainer_1',['TaskContainer',['../classTaskOpenPanelController.html#a728b1ff0ed67d120ac2cfbbf996e077f',1,'TaskOpenPanelController']]],
-  ['taskintervals_2',['taskintervals',['../classTaskOpenPanelController.html#a022cf15c01615aab856791aa77b9bcab',1,'TaskOpenPanelController.taskIntervals'],['../classTaskOpenPanelController.html#a317d00246568f7c682c5d1c27032762b',1,'TaskOpenPanelController.TASKINTERVALS']]],
+  ['taskcontainer_1',['TaskContainer',['../classTaskOpenPanelController.html#adea21d29b81c0f5fd2932b201e2afc6c',1,'TaskOpenPanelController']]],
+  ['taskintervals_2',['taskintervals',['../classTaskOpenPanelController.html#a317d00246568f7c682c5d1c27032762b',1,'TaskOpenPanelController.TASKINTERVALS'],['../classTaskOpenPanelController.html#a022cf15c01615aab856791aa77b9bcab',1,'TaskOpenPanelController.taskIntervals']]],
   ['taskintervalslabel_3',['TaskIntervalsLabel',['../classTaskDisplayHandler.html#a76372ef801e0c0ff6dc206dbb3093476',1,'TaskDisplayHandler']]],
   ['tasknameinput_4',['taskNameInput',['../classTaskOpenPanelController.html#abc961ea4fb9a9820e28284f8503eb252',1,'TaskOpenPanelController']]],
   ['tasknamelabel_5',['TaskNameLabel',['../classTaskDisplayHandler.html#a5d15de430f131870e9206423f3875c61',1,'TaskDisplayHandler']]],

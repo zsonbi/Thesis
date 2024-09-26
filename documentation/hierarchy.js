@@ -65,7 +65,6 @@ var hierarchy =
     [ "Game.World.RoadGenerator", "classGame_1_1World_1_1RoadGenerator.html", null ],
     [ "Server", "classServer.html", null ],
     [ "Config.ServerConfig", "classConfig_1_1ServerConfig.html", null ],
-    [ "TaskContainer", "classTaskContainer.html", null ],
     [ "Thesis_backend.Data_Structures.TaskRequest", "structThesis__backend_1_1Data__Structures_1_1TaskRequest.html", null ],
     [ "User.UserData", "classUser_1_1UserData.html", null ],
     [ "Thesis_backend.Data_Structures.UserLoginRequest", "structThesis__backend_1_1Data__Structures_1_1UserLoginRequest.html", null ],

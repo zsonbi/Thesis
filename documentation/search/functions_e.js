@@ -7,7 +7,7 @@ var searchData=
   ['remove_4',['remove',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualAxis.html#af4dc5cd83e45dc874b7b659f03cdc926',1,'UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager.VirtualAxis.Remove()'],['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualButton.html#ac421e5de77f8384401a3e20d18101401',1,'UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager.VirtualButton.Remove()']]],
   ['removetask_5',['RemoveTask',['../classUIController.html#a08f677b5c4ffd71ca10ec2b3b428df4c',1,'UIController']]],
   ['reset_6',['Reset',['../classGame_1_1World_1_1CarSpawner.html#a9ca9f4dfd1b63d182f23c9f630b54463',1,'Game::World::CarSpawner']]],
-  ['resetcomplete_7',['ResetComplete',['../classTaskContainer.html#a13c5778d0867ec1015c47bcb61490fce',1,'TaskContainer']]],
+  ['resetcomplete_7',['ResetComplete',['../namespaceThesis__backend_1_1Data__Structures.html#a54dd97fce8fa7c46d900056b42b75a2a',1,'Thesis_backend::Data_Structures']]],
   ['rightrotateskin_8',['RightRotateSkin',['../classGameUI.html#af1d2e673a23d21920ab8388bdb2d3506',1,'GameUI']]],
   ['roadgenerator_9',['RoadGenerator',['../classGame_1_1World_1_1RoadGenerator.html#a1c1c38998e4fe4814684c6289c16343a',1,'Game::World::RoadGenerator']]]
 ];

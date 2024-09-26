@@ -29,6 +29,7 @@ var NAVTREE =
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ],
         [ "Variables", "namespacemembers_vars.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ]
       ] ]
@@ -57,12 +58,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AxisTouchButton_8cs.html",
-"classConfig_1_1ServerConfig.html",
-"classGame_1_1CopCar.html#ad1e664d118f85d0c8b21e92d519c1e0b",
-"classGame_1_1World_1_1RoadGenerator.html#a7fca47366b7f100826237bbc011034ac",
-"classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#adc185d28b9d06ee83035ef9b255682e1",
-"classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#a97d0cfd4e00c26253919746e84ebb7e5aad0df54cc6571aea4edb7176c3149ef9",
-"namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578"
+"classCoin.html#a1964d7ad9c017916fca129cb6dab8318",
+"classGame_1_1CopCar.html",
+"classGame_1_1World_1_1RoadGenerator.html#a3790c6d7db157b46eccff1e06fd8ca89",
+"classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualAxis.html#a4d1d1be133e80ab963a3ed6e3186971e",
+"classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#abb84b52075a036bba75ca37b5effbe8a",
+"namespaceThesis__backend_1_1Data__Structures.html#a24320ef259be3b66e6deb7a608c32dcaad13bc5b68b2bd9e18f29777db17cc563"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

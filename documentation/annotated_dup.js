@@ -73,7 +73,6 @@ var annotated_dup =
     [ "ShopWindow", "classShopWindow.html", "classShopWindow" ],
     [ "StarHandler", "classStarHandler.html", "classStarHandler" ],
     [ "TaskClosedEventArgs", "classTaskClosedEventArgs.html", "classTaskClosedEventArgs" ],
-    [ "TaskContainer", "classTaskContainer.html", "classTaskContainer" ],
     [ "TaskDisplayHandler", "classTaskDisplayHandler.html", "classTaskDisplayHandler" ],
     [ "TaskOpenPanelController", "classTaskOpenPanelController.html", "classTaskOpenPanelController" ],
     [ "UIController", "classUIController.html", "classUIController" ],
