@@ -18,11 +18,11 @@ public class StarHandler : MonoBehaviour
     {
         for (int i = 0; i < difficulty; i++)
         {
-            Stars[i].sprite = fullStarSprite;
+            Stars[i].sprite = emptyStarSprite;
         }
         for (int i = difficulty; i < Stars.Count; i++)
         {
-            Stars[i].sprite = emptyStarSprite;
+            Stars[i].sprite = fullStarSprite;
         }
     }
 }

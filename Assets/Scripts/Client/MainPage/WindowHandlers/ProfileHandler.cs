@@ -10,14 +10,26 @@ using User;
 
 public class ProfileHandler : MonoBehaviour
 {
+    [SerializeField]
+    private TMP_Text TotalTaskCount;
+
+    [SerializeField]
+    private TMP_Text GoodTaskCount;
+
+    [SerializeField]
+    private TMP_Text BadTaskCount;
+
+    [SerializeField]
+    private TMP_Text TotalScore;
+
     public void Show()
     {
         this.gameObject.SetActive(true);
         LoadFromApi();
-    }
-
-    public void SendFriendRequest()
-    {
+        this.TotalTaskCount.text = (UserData.Instance.CompletedGoodTasks + UserData.Instance.CompletedBadTasks).ToString();
+        this.BadTaskCount.text = UserData.Instance.CompletedBadTasks.ToString();
+        this.GoodTaskCount.text = UserData.Instance.CompletedGoodTasks.ToString();
+        this.TotalScore.text = UserData.Instance.TotalScore.ToString();
     }
 
     public void Hide()

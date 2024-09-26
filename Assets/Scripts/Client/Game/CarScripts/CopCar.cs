@@ -18,7 +18,7 @@ namespace Game
 
             base.Update();
             float steering = 0;
-            float v = 10;
+            float v = 1;
 
             int layerMask = (1 << 6) | (1 << 9);
             layerMask = ~layerMask;
@@ -41,13 +41,13 @@ namespace Game
                 {
                     if (hitForward.collider.gameObject.layer == 1 << 7)
                     {
-                        v = 20;
+                        v = 3;
                     }
                     else
                     {
                         if (hitForward.distance < GameConfig.POLICE_REVERSE_DISTANCE)
                         {
-                            v = -40;
+                            v = -2;
                         }
                         else if (Vector3.Distance(gameController.PlayerPos, this.gameObject.transform.position) > 4f)
                         {

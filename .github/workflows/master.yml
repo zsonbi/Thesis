@@ -66,6 +66,7 @@ jobs:
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
+          customImage: zsonbi/unityci_with_blender:ubuntu-2022.3.16f1
       - uses: actions/upload-artifact@v4.3.3
         with:
           name: Test results (all modes)
@@ -117,7 +118,7 @@ jobs:
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
           targetPlatform: ${{ matrix.targetPlatform }}
-          customImage: zsonbi/unityci_with_blender:ubuntu-3.1.0
+          customImage: zsonbi/unityci_with_blender:ubuntu-2022.3.16f1
 
       - uses: actions/upload-artifact@v4.3.3
         with:
@@ -159,7 +160,7 @@ jobs:
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
           targetPlatform: ${{ matrix.targetPlatform }}
-          customImage: zsonbi/unityci_with_blender:ubuntu_android-3.1.0
+          customImage: zsonbi/unityci_with_blender:ubuntu_android-2022.3.16f1
       - uses: actions/upload-artifact@v4.3.3
         with:
           name: Build-${{ matrix.targetPlatform }}
@@ -194,7 +195,7 @@ jobs:
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
           targetPlatform: ${{ matrix.targetPlatform }}
-          customImage: zsonbi/unityci_with_blender:windows-3.1.0
+          customImage: zsonbi/unityci_with_blender:ubuntu_windows-2022.3.16f1
       - uses: actions/upload-artifact@v4.3.3
         with:
           name: Build-${{ matrix.targetPlatform }}
@@ -203,7 +204,7 @@ jobs:
 
   buildForWebGL:
         needs: test
-        if: contains(github.ref, 'master') || contains(github.ref, 'dev') || contains(github.ref, 'shop')
+        if: contains(github.ref, 'master') || contains(github.ref, 'dev') || contains(github.ref, 'power-ups')
         name: Build for ${{ matrix.targetPlatform }}
         runs-on: my-pc
         strategy:
@@ -212,20 +213,20 @@ jobs:
             targetPlatform:
               - WebGL
         steps:
-          - uses: actions/cache@v4.0.2
-            with:
-              path: Library
-              key: Library-${{ matrix.targetPlatform }}
           - name: Free Disk Space
             run: |
-              sudo swapoff -a
-              sudo rm -f /swapfile
+              # sudo swapoff -a
+              # sudo rm -f /swapfile
               sudo apt clean
               docker rmi $(docker image ls -aq)  || true
               df -h
               # Before
               echo "Disk space before:"
               df -h
+          - uses: actions/cache@v4.0.2
+            with:
+              path: Library
+              key: Library-${{ matrix.targetPlatform }}
           - uses: actions/checkout@v4.1.2
             with:
               lfs: true
@@ -237,7 +238,7 @@ jobs:
             with:
               targetPlatform: ${{ matrix.targetPlatform }}
               buildMethod: BuildCommand.PerformBuild
-              customImage: zsonbi/unityci_with_blender:ubuntu_webgl-3.1.0
+              customImage: zsonbi/unityci_with_blender:ubuntu_webgl-2022.3.16f1
               buildName: WebGL
           - run: 
               sudo mkdir -p release;

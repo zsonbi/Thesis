@@ -1,28 +1,15 @@
-# Base image from Unity CI (Windows-based)
-FROM unityci/editor:windows-6000.0.17f1-base-3.1.0
+ARG GAMECI_IMAGE=unityci/editor:ubuntu-2022.3.16f1-windows-mono-3.1.0
+FROM $GAMECI_IMAGE
 
-# Blender version arguments
 ARG BLENDER_SHORT_VERSION=4.1
 ARG BLENDER_FULL_VERSION=4.1.1
 
-# Install Blender using PowerShell
-SHELL ["powershell", "-Command"]
+RUN echo "BLENDER_SHORT_VERSION: $BLENDER_SHORT_VERSION"
+RUN echo "BLENDER_FULL_VERSION: $BLENDER_FULL_VERSION"
+RUN apt-get update && \
+    apt-get install -y wget && \
+    wget https://download.blender.org/release/Blender$BLENDER_SHORT_VERSION/blender-$BLENDER_FULL_VERSION-linux-x64.tar.xz && \
+    tar -xf blender-$BLENDER_FULL_VERSION-linux-x64.tar.xz && \
+    rm blender-$BLENDER_FULL_VERSION-linux-x64.tar.xz
 
-# Install Visual Studio Build Tools with required components
-RUN Invoke-WebRequest -Uri https://aka.ms/vs/16/release/vs_community.exe -OutFile vs_community.exe; \
-    Start-Process -FilePath vs_community.exe -ArgumentList '--quiet', '--wait', '--norestart', '--add', 'Microsoft.VisualStudio.Component.VC.ATL', '--add', 'Microsoft.VisualStudio.Component.VC.2019.x86.x64' -NoNewWindow -Wait; \
-    Remove-Item -Force vs_community.exe
-
-# Download and install Blender
-RUN Invoke-WebRequest -Uri https://download.blender.org/release/Blender4.1/blender-4.1.1-windows-x64.msi -OutFile blender.msi; \
-    Start-Process -FilePath msiexec.exe -ArgumentList '/i', 'blender.msi', '/quiet', '/norestart' -NoNewWindow -Wait; \
-    Remove-Item -Force blender.msi
-
-# Check if Blender was installed and print the directory contents
-RUN Get-ChildItem 'C:\\Program Files\\Blender Foundation' -Recurse
-
-# Add Blender to the PATH environment variable
-ENV PATH="C:\\Program Files\\Blender Foundation\\Blender 4.1;${PATH}"
-
-# Verify Blender installation
-RUN "C:\\Program Files\\Blender Foundation\\Blender 4.1\\blender.exe" --version
+ENV PATH="$PATH:/blender-$BLENDER_FULL_VERSION-linux-x64"
