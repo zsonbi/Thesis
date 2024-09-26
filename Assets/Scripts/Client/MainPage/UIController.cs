@@ -77,7 +77,7 @@ public class UIController : MonoBehaviour
     {
         foreach (var task in tasks)
         {
-            if (task.Value.TaskContainer.TaskType == TaskType.GoodTask)
+            if (!task.Value.CurrentTask.TaskType)
             {
                 task.Value.gameObject.SetActive(true);
             }
@@ -95,7 +95,7 @@ public class UIController : MonoBehaviour
     {
         foreach (var task in tasks)
         {
-            if (task.Value.TaskContainer.TaskType == TaskType.BadHabit)
+            if (task.Value.CurrentTask.TaskType)
             {
                 task.Value.gameObject.SetActive(true);
             }
@@ -109,14 +109,14 @@ public class UIController : MonoBehaviour
             taskOpenPanelController.MakeItBadHabit();
     }
 
-    public GameObject CreateTask(TaskContainer taskContainer)
+    public GameObject CreateTask(PlayerTask taskContainer)
     {
         GameObject task = Instantiate(TaskPrefab, TaskParent.transform);
         TaskDisplayHandler taskComponent = task.GetComponent<TaskDisplayHandler>();
 
         taskComponent.InitValues(taskContainer, taskOpenPanelController, this);
 
-        tasks.Add(taskContainer.Id, taskComponent);
+        tasks.Add(taskContainer.ID, taskComponent);
         return task;
     }
 
@@ -169,7 +169,7 @@ public class UIController : MonoBehaviour
     {
         foreach (var item in requestResult)
         {
-            CreateTask(new TaskContainer(item.ID, item.TaskName, System.Convert.ToInt32(item.TaskType), item.PeriodRate, item.Description, item.Updated, item.LastCompleted, item.Completed));
+            CreateTask(item);
         }
         LoadGoodTasks();
     }

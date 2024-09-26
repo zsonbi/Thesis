@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Thesis_backend.Data_Structures;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -30,19 +31,19 @@ public class TaskDisplayHandler : MonoBehaviour
 
     private TaskOpenPanelController taskOpenPanelController;
 
-    public TaskContainer TaskContainer { get; private set; }
+    public PlayerTask CurrentTask { get; private set; }
 
     public void Update()
     {
-        if (TaskContainer.Completed)
+        if (CurrentTask.Completed)
         {
             UpdateTimeRemaining();
         }
     }
 
-    public void InitValues(TaskContainer taskContainer, TaskOpenPanelController taskOpenPanelController, UIController uIController)
+    public void InitValues(PlayerTask taskContainer, TaskOpenPanelController taskOpenPanelController, UIController uIController)
     {
-        this.TaskContainer = taskContainer;
+        this.CurrentTask = taskContainer;
 
         if (!CalculateIfCompleteable())
         {
@@ -57,12 +58,12 @@ public class TaskDisplayHandler : MonoBehaviour
     {
         WWWForm form = new WWWForm();
 
-        StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.PlayerTask>(ServerConfig.PATHFORTASKCOMPLETE(TaskContainer.Id), onComplete: TaskCompleted));
+        StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.PlayerTask>(ServerConfig.PATHFORTASKCOMPLETE(CurrentTask.ID), onComplete: TaskCompleted));
     }
 
     public void OpenEditor()
     {
-        taskOpenPanelController.OpenUp(this.TaskContainer);
+        taskOpenPanelController.OpenUp(this.CurrentTask);
     }
 
     private void TaskCompleted(Thesis_backend.Data_Structures.PlayerTask result)
@@ -73,8 +74,8 @@ public class TaskDisplayHandler : MonoBehaviour
 
     public void UpdateLabels()
     {
-        TaskNameLabel.text = TaskContainer.TaskName;
-        TaskIntervalsLabel.text = TaskContainer.TaskInterval.ToString();
+        TaskNameLabel.text = CurrentTask.TaskName;
+        TaskIntervalsLabel.text = ((TaskIntervals)CurrentTask.PeriodRate).ToString();
         UpdateTimeRemaining();
     }
 
@@ -83,13 +84,13 @@ public class TaskDisplayHandler : MonoBehaviour
         RemainingTimeLabel.gameObject.SetActive(state);
         if (state)
         {
-            this.TaskContainer.Complete();
+            this.CurrentTask.Complete();
             CompleteButton.GetComponent<Image>().color = DISABLED_FOR_COMPLETE_COLOR;
             UpdateTimeRemaining();
         }
         else
         {
-            this.TaskContainer.ResetComplete();
+            this.CurrentTask.ResetComplete();
             CompleteButton.GetComponent<Image>().color = AVAILIBLE_FOR_COMPLETE_COLOR;
             return;
         }
@@ -97,9 +98,9 @@ public class TaskDisplayHandler : MonoBehaviour
 
     private void UpdateTimeRemaining()
     {
-        if (TaskContainer.Completed)
+        if (CurrentTask.Completed)
         {
-            TimeSpan difference = TimeSpan.FromMinutes((int)TaskContainer.TaskInterval) - (DateTime.UtcNow - TaskContainer.LastCompleted);
+            TimeSpan difference = TimeSpan.FromMinutes(CurrentTask.PeriodRate) - (DateTime.UtcNow - CurrentTask.LastCompleted);
 
             if (difference.TotalMinutes <= 0)
             {
@@ -116,7 +117,7 @@ public class TaskDisplayHandler : MonoBehaviour
 
     private bool CalculateIfCompleteable()
     {
-        TimeSpan difference = TimeSpan.FromMinutes((int)TaskContainer.TaskInterval) - (DateTime.UtcNow - TaskContainer.LastCompleted);
+        TimeSpan difference = TimeSpan.FromMinutes(CurrentTask.PeriodRate) - (DateTime.UtcNow - CurrentTask.LastCompleted);
         return difference.TotalMinutes <= 0;
     }
 }
