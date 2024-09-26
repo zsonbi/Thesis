@@ -23,11 +23,6 @@ MonoBehaviour:
     m_SerializedLabels:
     - PlayerVariants
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 10715ef479e08a543a8f936be701ce9f
-    m_Address: Connection.prefabestPrefabs/TestConnection.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 8b5a45749b741ae44970f7692d798825, type: 2}
   m_SchemaSet:
