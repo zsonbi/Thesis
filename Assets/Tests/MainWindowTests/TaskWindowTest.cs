@@ -49,6 +49,7 @@ namespace Tests
                 yield return LoadScene();
 
                 taskOpenPanelController.OpenUp();
+                MainController.LoadGoodTasks();
 
                 LoadTaskComponents();
                 int initCount = TaskParent.transform.childCount;
@@ -61,7 +62,7 @@ namespace Tests
                     TaskDescription.text = "testGoodDescription" + i;
                     TaskIntervals.value = i;
                     taskOpenPanelController.Save();
-                    yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE / 5f);
+                    yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE / 3f);
                 }
                 MainController.LoadGoodTasks();
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
@@ -72,6 +73,7 @@ namespace Tests
             public IEnumerator CreateBadTasksTest()
             {
                 yield return LoadScene();
+                MainController.LoadBadHabits();
 
                 taskOpenPanelController.OpenUp();
 
@@ -86,7 +88,7 @@ namespace Tests
                     TaskDescription.text = "testBadDescription" + i;
                     TaskIntervals.value = i;
                     taskOpenPanelController.Save();
-                    yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE / 5f);
+                    yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE / 3f);
                 }
                 MainController.LoadBadHabits();
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
