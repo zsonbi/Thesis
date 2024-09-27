@@ -44,6 +44,7 @@ var hierarchy =
       [ "Game.World.Chunk", "classGame_1_1World_1_1Chunk.html", null ],
       [ "Game.World.GameWorld", "classGame_1_1World_1_1GameWorld.html", null ],
       [ "GameUI", "classGameUI.html", null ],
+      [ "LoggedIn", "classLoggedIn.html", null ],
       [ "ModalWindow", "classModalWindow.html", null ],
       [ "ProfileHandler", "classProfileHandler.html", null ],
       [ "ShopItem", "classShopItem.html", null ],

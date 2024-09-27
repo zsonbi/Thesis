@@ -13,7 +13,7 @@ var classTaskOpenPanelController =
     [ "DeletedTask", "classTaskOpenPanelController.html#a5cfa9ad8bb8f3783ffc7df689579b2ef", null ],
     [ "CollectFromFields", "classTaskOpenPanelController.html#a82a9ebc3acdf5014bfcb673bd6dcb5e7", null ],
     [ "UpdateButtons", "classTaskOpenPanelController.html#aeb6c1cf2f3da2be35bb515f455d3f0d8", null ],
-    [ "TaskContainer", "classTaskOpenPanelController.html#adea21d29b81c0f5fd2932b201e2afc6c", null ],
+    [ "CurrentTask", "classTaskOpenPanelController.html#a06b8aa3aec8e924f3043ea8bcb7ca49f", null ],
     [ "TaskClosedEventHandler", "classTaskOpenPanelController.html#abfd13ff61856b69cdf082d3b2f7a1aaf", null ],
     [ "tasksOpenPanel", "classTaskOpenPanelController.html#a5296f8a4492644b074eb63257d82ddec", null ],
     [ "taskNameInput", "classTaskOpenPanelController.html#abc961ea4fb9a9820e28284f8503eb252", null ],
@@ -24,5 +24,6 @@ var classTaskOpenPanelController =
     [ "UIController", "classTaskOpenPanelController.html#a34b191dcdd1e7ad7eb910a50592a66dc", null ],
     [ "deleteTaskButton", "classTaskOpenPanelController.html#a4f9d89c38e1248523d5084b0adf14f99", null ],
     [ "isNewTask", "classTaskOpenPanelController.html#ac0fa9db0872e1f4e4872117d5420ea42", null ],
-    [ "TASKINTERVALS", "classTaskOpenPanelController.html#a317d00246568f7c682c5d1c27032762b", null ]
+    [ "TASKINTERVALS", "classTaskOpenPanelController.html#a317d00246568f7c682c5d1c27032762b", null ],
+    [ "playerTaskOnOpen", "classTaskOpenPanelController.html#ad287e7de41bdfcff644e73bb7c1728fe", null ]
 ];

@@ -13,6 +13,7 @@ var classGameUI =
     [ "RightRotateSkin", "classGameUI.html#af1d2e673a23d21920ab8388bdb2d3506", null ],
     [ "Init", "classGameUI.html#a86e861e18879f93819ab1feac66f2f22", null ],
     [ "NewGame", "classGameUI.html#a88d56b428f2ea9ce739552a4a0bbec2f", null ],
+    [ "ShowRequestFail", "classGameUI.html#ab1286e2c8539b07a90922bed70786dd7", null ],
     [ "ChangeDifficulyDisplay", "classGameUI.html#a30b34140ea9e733d314e461ba9087d04", null ],
     [ "ShowEndGameScreen", "classGameUI.html#a83ab06ae8fd90932efe340c29537a4e5", null ],
     [ "HideGameOverScreen", "classGameUI.html#a10aedf7439a9bb7bae657b39b4182c8a", null ],
@@ -32,6 +33,7 @@ var classGameUI =
     [ "CoinInGameText", "classGameUI.html#a2a7e871b172d13cbfa52310a2d76d8b3", null ],
     [ "starHandler", "classGameUI.html#ac84a5b6b36b87b3be0a5ea1379a7431f", null ],
     [ "DoubleCoinButon", "classGameUI.html#ac5b78624d3c28247136b292e49c2c6bb", null ],
+    [ "ModalWindow", "classGameUI.html#aed6d780e8f4fa0d68dec75d22eff886e", null ],
     [ "gameController", "classGameUI.html#a932f4df2bb1e985095ca6ff0427d9cf7", null ],
     [ "Doubled", "classGameUI.html#a1ca68be9e261bb1e9b8811b50a9c8702", null ],
     [ "SelectedSkinIndex", "classGameUI.html#a0d33c13370e93af968ea9fde884597c9", null ]

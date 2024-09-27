@@ -65,6 +65,7 @@ var annotated_dup =
     [ "FriendWindowHandler", "classFriendWindowHandler.html", "classFriendWindowHandler" ],
     [ "GameConfig", "classGameConfig.html", "classGameConfig" ],
     [ "GameUI", "classGameUI.html", "classGameUI" ],
+    [ "LoggedIn", "classLoggedIn.html", "classLoggedIn" ],
     [ "MeshGenerator", "classMeshGenerator.html", "classMeshGenerator" ],
     [ "ModalWindow", "classModalWindow.html", "classModalWindow" ],
     [ "ProfileHandler", "classProfileHandler.html", "classProfileHandler" ],

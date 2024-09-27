@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['taskclosedeventargs_0',['TaskClosedEventArgs',['../classTaskClosedEventArgs.html',1,'']]],
-  ['taskdisplayhandler_1',['TaskDisplayHandler',['../classTaskDisplayHandler.html',1,'']]],
-  ['taskopenpanelcontroller_2',['TaskOpenPanelController',['../classTaskOpenPanelController.html',1,'']]],
-  ['taskrequest_3',['TaskRequest',['../structThesis__backend_1_1Data__Structures_1_1TaskRequest.html',1,'Thesis_backend::Data_Structures']]],
-  ['tiltinput_4',['TiltInput',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput.html',1,'UnityStandardAssets::CrossPlatformInput']]],
-  ['touchpad_5',['TouchPad',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html',1,'UnityStandardAssets::CrossPlatformInput']]]
+  ['server_0',['Server',['../classServer.html',1,'']]],
+  ['serverconfig_1',['ServerConfig',['../classConfig_1_1ServerConfig.html',1,'Config']]],
+  ['shopitem_2',['ShopItem',['../classShopItem.html',1,'']]],
+  ['shopwindow_3',['ShopWindow',['../classShopWindow.html',1,'']]],
+  ['standaloneinput_4',['StandaloneInput',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1PlatformSpecific_1_1StandaloneInput.html',1,'UnityStandardAssets::CrossPlatformInput::PlatformSpecific']]],
+  ['starhandler_5',['StarHandler',['../classStarHandler.html',1,'']]]
 ];

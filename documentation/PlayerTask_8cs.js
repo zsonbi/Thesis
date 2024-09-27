@@ -1,6 +1,8 @@
 var PlayerTask_8cs =
 [
+    [ "PlayerTask", "PlayerTask_8cs.html#aea691308b30574c00a00de66d11e8039", null ],
     [ "UpdateValues", "PlayerTask_8cs.html#a05c5b8303bf4f3a8a39bdb2caf45521f", null ],
+    [ "UpdateValues", "PlayerTask_8cs.html#abfcc80cd83a458407f07c32433bc8cdc", null ],
     [ "ChangeType", "PlayerTask_8cs.html#a85bbe0a98af5327858b41d94e7e7ba00", null ],
     [ "Complete", "PlayerTask_8cs.html#a0a6752f997f752441d824568af135f9d", null ],
     [ "ResetComplete", "PlayerTask_8cs.html#a54dd97fce8fa7c46d900056b42b75a2a", null ],

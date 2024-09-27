@@ -4,7 +4,7 @@ var searchData=
   ['lastchunk_1',['lastChunk',['../classGame_1_1Car.html#a80069a9b4dd05ae7aa0e8ac84c590800',1,'Game::Car']]],
   ['lastcompleted_2',['LastCompleted',['../namespaceThesis__backend_1_1Data__Structures.html#ab92e8b3bc177b79c0b7591b2f412ba76',1,'Thesis_backend::Data_Structures']]],
   ['lastloggedin_3',['lastloggedin',['../classUser_1_1UserData.html#a5d88a92697600df1a952dda76dd51a96',1,'User.UserData.LastLoggedIn'],['../namespaceThesis__backend_1_1Data__Structures.html#aae518baa5cf2ea5aa7ab44999037e244',1,'Thesis_backend.Data_Structures.LastLoggedIn']]],
-  ['left_4',['left',['../namespaceDataTypes.html#a3bc22b847fe90cda4414fc931bd61622a945d5e233cf7d6240f6b783b36a374ff',1,'DataTypes.Left'],['../namespaceDataTypes.html#a28b73b3b0b416b3b22c23aee2a226126a945d5e233cf7d6240f6b783b36a374ff',1,'DataTypes.Left']]],
+  ['left_4',['left',['../namespaceDataTypes.html#a28b73b3b0b416b3b22c23aee2a226126a945d5e233cf7d6240f6b783b36a374ff',1,'DataTypes.Left'],['../namespaceDataTypes.html#a3bc22b847fe90cda4414fc931bd61622a945d5e233cf7d6240f6b783b36a374ff',1,'DataTypes.Left']]],
   ['leftrotateskin_5',['LeftRotateSkin',['../classGameUI.html#a23a83d269644e375f14f536649ab8b6e',1,'GameUI']]],
   ['legendary_6',['Legendary',['../namespaceThesis__backend_1_1Data__Structures.html#a24320ef259be3b66e6deb7a608c32dcaa9461cd71b44420aa1d0e6487f1b7bb60',1,'Thesis_backend::Data_Structures']]],
   ['loadanddespawnchunks_7',['LoadAndDespawnChunks',['../classGame_1_1GameController.html#af623e7876622503e3d0f985ad9b08e47',1,'Game::GameController']]],
@@ -19,8 +19,9 @@ var searchData=
   ['loadgoodtasks_16',['LoadGoodTasks',['../classUIController.html#a34bbd72f6e8d248243a9de9e5d8becdd',1,'UIController']]],
   ['loadtasks_17',['LoadTasks',['../classUIController.html#a0dc545de64fb2603baf048d46c983e5c',1,'UIController']]],
   ['lockandtrytoplacebuilding_18',['LockAndTryToPlaceBuilding',['../classGame_1_1World_1_1Chunk.html#af2946e1e1b9e325d6004d166b2b26193',1,'Game::World::Chunk']]],
-  ['loggedin_19',['loggedin',['../classUserController.html#a7c361646155ff6adaf7f6b2f0fc44821',1,'UserController.LoggedIn()'],['../classUser_1_1UserData.html#acdd4d87ab2fd5a0a81895656a6853b71',1,'User.UserData.LoggedIn']]],
-  ['loggedout_20',['loggedout',['../classUIController.html#a187be56b6d8960a8f77d8febe6541065',1,'UIController.LoggedOut()'],['../classProfileHandler.html#a7c3f5f6c1313403adcf0f6293818e1cc',1,'ProfileHandler.LoggedOut()']]],
-  ['loginpanel_21',['LoginPanel',['../classUserController.html#a98d6b3d688cc0a31fd46d7eb90309d85',1,'UserController']]],
-  ['logout_22',['Logout',['../classUser_1_1UserData.html#a8c8911482003919ea4fbab040c755f8f',1,'User::UserData']]]
+  ['loggedin_19',['loggedin',['../classUserController.html#a7c361646155ff6adaf7f6b2f0fc44821',1,'UserController.LoggedIn()'],['../classUser_1_1UserData.html#acdd4d87ab2fd5a0a81895656a6853b71',1,'User.UserData.LoggedIn'],['../classLoggedIn.html',1,'LoggedIn']]],
+  ['loggedinchecker_2ecs_20',['LoggedInChecker.cs',['../LoggedInChecker_8cs.html',1,'']]],
+  ['loggedout_21',['loggedout',['../classProfileHandler.html#a7c3f5f6c1313403adcf0f6293818e1cc',1,'ProfileHandler.LoggedOut()'],['../classLoggedIn.html#ab1fe5a56fd717a59b945ebcfa16a5e24',1,'LoggedIn.LoggedOut()']]],
+  ['loginpanel_22',['LoginPanel',['../classUserController.html#a98d6b3d688cc0a31fd46d7eb90309d85',1,'UserController']]],
+  ['logout_23',['Logout',['../classUser_1_1UserData.html#a8c8911482003919ea4fbab040c755f8f',1,'User::UserData']]]
 ];

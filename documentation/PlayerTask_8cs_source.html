@@ -117,61 +117,93 @@ $(document).ready(function(){initNavTree('PlayerTask_8cs_source.html',''); initR
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">object</span> <a class="code hl_property" href="namespaceThesis__backend_1_1Data__Structures.html#ab053d5c9e55828439e10aff9bda6c051">Serialize</a> =&gt; <span class="keyword">new</span> { ID, <a class="code hl_property" href="namespaceThesis__backend_1_1Data__Structures.html#ac46ce5278ffa5998648bbb9fffa38676">TaskName</a>, <a class="code hl_property" href="namespaceThesis__backend_1_1Data__Structures.html#a203ebb77bd1c026488e7e21b84f24262">Description</a>, <a class="code hl_property" href="namespaceThesis__backend_1_1Data__Structures.html#a3a9f635c8310a391a3c2d8adeefc5189">TaskType</a>, <a class="code hl_property" href="namespaceThesis__backend_1_1Data__Structures.html#ae0dc25bac8b6715fddd0e1c2fae815c3">PeriodRate</a>, <a class="code hl_property" href="namespaceThesis__backend_1_1Data__Structures.html#a6781cae585a525026947d39725c2e17e">Updated</a>, <a class="code hl_property" href="namespaceThesis__backend_1_1Data__Structures.html#ab92e8b3bc177b79c0b7591b2f412ba76">LastCompleted</a>, <a class="code hl_property" href="namespaceThesis__backend_1_1Data__Structures.html#ab5cd780f775cf61c5a8e444691afedef">Completed</a> };</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="namespaceThesis__backend_1_1Data__Structures.html#a05c5b8303bf4f3a8a39bdb2caf45521f">   19</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceThesis__backend_1_1Data__Structures.html#a05c5b8303bf4f3a8a39bdb2caf45521f">UpdateValues</a>(<span class="keywordtype">string</span> taskName, <span class="keywordtype">bool</span> taskType, <a class="code hl_enumeration" href="TaskIntervals_8cs.html#a4ba022096603875ae402bb772ec906f9">TaskIntervals</a> taskInterval, <span class="keywordtype">string</span> description, DateTime? lastCompleted = <span class="keyword">null</span>, <span class="keywordtype">bool</span>? completed = <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="namespaceThesis__backend_1_1Data__Structures.html#aea691308b30574c00a00de66d11e8039">   19</a></span>        <span class="keyword">public</span> <a class="code hl_variable" href="namespaceThesis__backend_1_1Data__Structures.html#ae656f3c7a1335db8207ae56dcbd213a7">PlayerTask</a>(<a class="code hl_variable" href="namespaceThesis__backend_1_1Data__Structures.html#ae656f3c7a1335db8207ae56dcbd213a7">PlayerTask</a> playerTask) : base(playerTask)</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            this.TaskName = taskName;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            this.TaskType = taskType;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            this.PeriodRate = (int)taskInterval;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            this.Description = description;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="keywordflow">if</span> (lastCompleted is not <span class="keyword">null</span>)</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                this.LastCompleted = lastCompleted.Value;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            }</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="keywordflow">if</span> (completed is not <span class="keyword">null</span>)</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                this.Completed = completed.Value;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            }</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            this.ID = playerTask.ID;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            this.TaskOwner = playerTask.TaskOwner;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            this.TaskName = playerTask.TaskName;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            this.Description = playerTask.Description;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            this.TaskType = playerTask.TaskType;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            this.PeriodRate = playerTask.PeriodRate;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            this.Updated = playerTask.Updated;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            this.Updated = playerTask.Updated;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            this.LastCompleted = playerTask.LastCompleted;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            this.Completed = playerTask.Completed;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        }</div>
 </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="namespaceThesis__backend_1_1Data__Structures.html#a85bbe0a98af5327858b41d94e7e7ba00">   36</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceThesis__backend_1_1Data__Structures.html#a85bbe0a98af5327858b41d94e7e7ba00">ChangeType</a>(<a class="code hl_enumeration" href="TaskType_8cs.html#aa7f5c268cc89ed3067c26142ca3e16d7">TaskType</a> newType)</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            this.TaskType = newType == global::TaskType.BadHabit;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="namespaceThesis__backend_1_1Data__Structures.html#a05c5b8303bf4f3a8a39bdb2caf45521f">   33</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceThesis__backend_1_1Data__Structures.html#a05c5b8303bf4f3a8a39bdb2caf45521f">UpdateValues</a>(<span class="keywordtype">string</span> taskName, <span class="keywordtype">bool</span> taskType, <a class="code hl_enumeration" href="TaskIntervals_8cs.html#a4ba022096603875ae402bb772ec906f9">TaskIntervals</a> taskInterval, <span class="keywordtype">string</span> description, DateTime? lastCompleted = <span class="keyword">null</span>, <span class="keywordtype">bool</span>? completed = <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            this.TaskName = taskName;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            this.TaskType = taskType;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            this.PeriodRate = (int)taskInterval;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            this.Description = description;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keywordflow">if</span> (lastCompleted is not <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                this.LastCompleted = lastCompleted.Value;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <span class="keywordflow">if</span> (completed is not <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                this.Completed = completed.Value;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        }</div>
 </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="namespaceThesis__backend_1_1Data__Structures.html#a0a6752f997f752441d824568af135f9d">   41</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceThesis__backend_1_1Data__Structures.html#a0a6752f997f752441d824568af135f9d">Complete</a>()</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keywordflow">if</span> (this.<a class="code hl_property" href="namespaceThesis__backend_1_1Data__Structures.html#ab5cd780f775cf61c5a8e444691afedef">Completed</a>)</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            {</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            this.LastCompleted = DateTime.UtcNow;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            this.Completed = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        }</div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="namespaceThesis__backend_1_1Data__Structures.html#abfcc80cd83a458407f07c32433bc8cdc">   49</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceThesis__backend_1_1Data__Structures.html#a05c5b8303bf4f3a8a39bdb2caf45521f">UpdateValues</a>(<a class="code hl_variable" href="namespaceThesis__backend_1_1Data__Structures.html#ae656f3c7a1335db8207ae56dcbd213a7">PlayerTask</a> playerTask)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="keywordflow">if</span> (playerTask is <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            this.TaskName = playerTask.TaskName;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            this.TaskType = playerTask.TaskType;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            this.PeriodRate = playerTask.PeriodRate;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            this.Description = playerTask.Description;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            this.LastCompleted = playerTask.LastCompleted;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            this.Completed = playerTask.Completed;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        }</div>
 </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="foldopen" id="foldopen00051" data-start="{" data-end="}">
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="namespaceThesis__backend_1_1Data__Structures.html#a54dd97fce8fa7c46d900056b42b75a2a">   51</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceThesis__backend_1_1Data__Structures.html#a54dd97fce8fa7c46d900056b42b75a2a">ResetComplete</a>()</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        {</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            this.Completed = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="namespaceThesis__backend_1_1Data__Structures.html#a85bbe0a98af5327858b41d94e7e7ba00">   64</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceThesis__backend_1_1Data__Structures.html#a85bbe0a98af5327858b41d94e7e7ba00">ChangeType</a>(<a class="code hl_enumeration" href="TaskType_8cs.html#aa7f5c268cc89ed3067c26142ca3e16d7">TaskType</a> newType)</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            this.TaskType = newType == global::TaskType.BadHabit;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        }</div>
 </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="namespaceThesis__backend_1_1Data__Structures.html#a0a6752f997f752441d824568af135f9d">   69</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceThesis__backend_1_1Data__Structures.html#a0a6752f997f752441d824568af135f9d">Complete</a>()</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <span class="keywordflow">if</span> (this.<a class="code hl_property" href="namespaceThesis__backend_1_1Data__Structures.html#ab5cd780f775cf61c5a8e444691afedef">Completed</a>)</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            this.LastCompleted = DateTime.UtcNow;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            this.Completed = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        }</div>
+</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="foldopen" id="foldopen00079" data-start="{" data-end="}">
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="namespaceThesis__backend_1_1Data__Structures.html#a54dd97fce8fa7c46d900056b42b75a2a">   79</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceThesis__backend_1_1Data__Structures.html#a54dd97fce8fa7c46d900056b42b75a2a">ResetComplete</a>()</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            this.Completed = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        }</div>
+</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>}</div>
 <div class="ttc" id="aTaskIntervals_8cs_html_a4ba022096603875ae402bb772ec906f9"><div class="ttname"><a href="TaskIntervals_8cs.html#a4ba022096603875ae402bb772ec906f9">TaskIntervals</a></div><div class="ttdeci">TaskIntervals</div><div class="ttdef"><b>Definition</b> <a href="TaskIntervals_8cs_source.html#l00001">TaskIntervals.cs:2</a></div></div>
 <div class="ttc" id="aTaskType_8cs_html_aa7f5c268cc89ed3067c26142ca3e16d7"><div class="ttname"><a href="TaskType_8cs.html#aa7f5c268cc89ed3067c26142ca3e16d7">TaskType</a></div><div class="ttdeci">TaskType</div><div class="ttdef"><b>Definition</b> <a href="TaskType_8cs_source.html#l00001">TaskType.cs:2</a></div></div>
 <div class="ttc" id="anamespaceThesis__backend_1_1Data__Structures_html"><div class="ttname"><a href="namespaceThesis__backend_1_1Data__Structures.html">Thesis_backend.Data_Structures</a></div><div class="ttdef"><b>Definition</b> <a href="CarType_8cs_source.html#l00001">CarType.cs:2</a></div></div>
-<div class="ttc" id="anamespaceThesis__backend_1_1Data__Structures_html_a05c5b8303bf4f3a8a39bdb2caf45521f"><div class="ttname"><a href="namespaceThesis__backend_1_1Data__Structures.html#a05c5b8303bf4f3a8a39bdb2caf45521f">Thesis_backend.Data_Structures.UpdateValues</a></div><div class="ttdeci">void UpdateValues(string taskName, bool taskType, TaskIntervals taskInterval, string description, DateTime? lastCompleted=null, bool? completed=null)</div><div class="ttdef"><b>Definition</b> <a href="PlayerTask_8cs_source.html#l00019">PlayerTask.cs:19</a></div></div>
-<div class="ttc" id="anamespaceThesis__backend_1_1Data__Structures_html_a0a6752f997f752441d824568af135f9d"><div class="ttname"><a href="namespaceThesis__backend_1_1Data__Structures.html#a0a6752f997f752441d824568af135f9d">Thesis_backend.Data_Structures.Complete</a></div><div class="ttdeci">void Complete()</div><div class="ttdef"><b>Definition</b> <a href="PlayerTask_8cs_source.html#l00041">PlayerTask.cs:41</a></div></div>
+<div class="ttc" id="anamespaceThesis__backend_1_1Data__Structures_html_a05c5b8303bf4f3a8a39bdb2caf45521f"><div class="ttname"><a href="namespaceThesis__backend_1_1Data__Structures.html#a05c5b8303bf4f3a8a39bdb2caf45521f">Thesis_backend.Data_Structures.UpdateValues</a></div><div class="ttdeci">void UpdateValues(string taskName, bool taskType, TaskIntervals taskInterval, string description, DateTime? lastCompleted=null, bool? completed=null)</div><div class="ttdef"><b>Definition</b> <a href="PlayerTask_8cs_source.html#l00033">PlayerTask.cs:33</a></div></div>
+<div class="ttc" id="anamespaceThesis__backend_1_1Data__Structures_html_a0a6752f997f752441d824568af135f9d"><div class="ttname"><a href="namespaceThesis__backend_1_1Data__Structures.html#a0a6752f997f752441d824568af135f9d">Thesis_backend.Data_Structures.Complete</a></div><div class="ttdeci">void Complete()</div><div class="ttdef"><b>Definition</b> <a href="PlayerTask_8cs_source.html#l00069">PlayerTask.cs:69</a></div></div>
 <div class="ttc" id="anamespaceThesis__backend_1_1Data__Structures_html_a203ebb77bd1c026488e7e21b84f24262"><div class="ttname"><a href="namespaceThesis__backend_1_1Data__Structures.html#a203ebb77bd1c026488e7e21b84f24262">Thesis_backend.Data_Structures.Description</a></div><div class="ttdeci">string? Description</div><div class="ttdef"><b>Definition</b> <a href="PlayerTask_8cs_source.html#l00010">PlayerTask.cs:10</a></div></div>
 <div class="ttc" id="anamespaceThesis__backend_1_1Data__Structures_html_a3a9f635c8310a391a3c2d8adeefc5189"><div class="ttname"><a href="namespaceThesis__backend_1_1Data__Structures.html#a3a9f635c8310a391a3c2d8adeefc5189">Thesis_backend.Data_Structures.TaskType</a></div><div class="ttdeci">bool TaskType</div><div class="ttdef"><b>Definition</b> <a href="PlayerTask_8cs_source.html#l00011">PlayerTask.cs:11</a></div></div>
-<div class="ttc" id="anamespaceThesis__backend_1_1Data__Structures_html_a54dd97fce8fa7c46d900056b42b75a2a"><div class="ttname"><a href="namespaceThesis__backend_1_1Data__Structures.html#a54dd97fce8fa7c46d900056b42b75a2a">Thesis_backend.Data_Structures.ResetComplete</a></div><div class="ttdeci">void ResetComplete()</div><div class="ttdef"><b>Definition</b> <a href="PlayerTask_8cs_source.html#l00051">PlayerTask.cs:51</a></div></div>
+<div class="ttc" id="anamespaceThesis__backend_1_1Data__Structures_html_a54dd97fce8fa7c46d900056b42b75a2a"><div class="ttname"><a href="namespaceThesis__backend_1_1Data__Structures.html#a54dd97fce8fa7c46d900056b42b75a2a">Thesis_backend.Data_Structures.ResetComplete</a></div><div class="ttdeci">void ResetComplete()</div><div class="ttdef"><b>Definition</b> <a href="PlayerTask_8cs_source.html#l00079">PlayerTask.cs:79</a></div></div>
 <div class="ttc" id="anamespaceThesis__backend_1_1Data__Structures_html_a6781cae585a525026947d39725c2e17e"><div class="ttname"><a href="namespaceThesis__backend_1_1Data__Structures.html#a6781cae585a525026947d39725c2e17e">Thesis_backend.Data_Structures.Updated</a></div><div class="ttdeci">DateTime Updated</div><div class="ttdef"><b>Definition</b> <a href="PlayerTask_8cs_source.html#l00013">PlayerTask.cs:13</a></div></div>
-<div class="ttc" id="anamespaceThesis__backend_1_1Data__Structures_html_a85bbe0a98af5327858b41d94e7e7ba00"><div class="ttname"><a href="namespaceThesis__backend_1_1Data__Structures.html#a85bbe0a98af5327858b41d94e7e7ba00">Thesis_backend.Data_Structures.ChangeType</a></div><div class="ttdeci">void ChangeType(TaskType newType)</div><div class="ttdef"><b>Definition</b> <a href="PlayerTask_8cs_source.html#l00036">PlayerTask.cs:36</a></div></div>
+<div class="ttc" id="anamespaceThesis__backend_1_1Data__Structures_html_a85bbe0a98af5327858b41d94e7e7ba00"><div class="ttname"><a href="namespaceThesis__backend_1_1Data__Structures.html#a85bbe0a98af5327858b41d94e7e7ba00">Thesis_backend.Data_Structures.ChangeType</a></div><div class="ttdeci">void ChangeType(TaskType newType)</div><div class="ttdef"><b>Definition</b> <a href="PlayerTask_8cs_source.html#l00064">PlayerTask.cs:64</a></div></div>
 <div class="ttc" id="anamespaceThesis__backend_1_1Data__Structures_html_ab053d5c9e55828439e10aff9bda6c051"><div class="ttname"><a href="namespaceThesis__backend_1_1Data__Structures.html#ab053d5c9e55828439e10aff9bda6c051">Thesis_backend.Data_Structures.Serialize</a></div><div class="ttdeci">override object Serialize</div><div class="ttdef"><b>Definition</b> <a href="Friend_8cs_source.html#l00016">Friend.cs:16</a></div></div>
 <div class="ttc" id="anamespaceThesis__backend_1_1Data__Structures_html_ab5cd780f775cf61c5a8e444691afedef"><div class="ttname"><a href="namespaceThesis__backend_1_1Data__Structures.html#ab5cd780f775cf61c5a8e444691afedef">Thesis_backend.Data_Structures.Completed</a></div><div class="ttdeci">bool Completed</div><div class="ttdef"><b>Definition</b> <a href="PlayerTask_8cs_source.html#l00015">PlayerTask.cs:15</a></div></div>
 <div class="ttc" id="anamespaceThesis__backend_1_1Data__Structures_html_ab92e8b3bc177b79c0b7591b2f412ba76"><div class="ttname"><a href="namespaceThesis__backend_1_1Data__Structures.html#ab92e8b3bc177b79c0b7591b2f412ba76">Thesis_backend.Data_Structures.LastCompleted</a></div><div class="ttdeci">DateTime LastCompleted</div><div class="ttdef"><b>Definition</b> <a href="PlayerTask_8cs_source.html#l00014">PlayerTask.cs:14</a></div></div>

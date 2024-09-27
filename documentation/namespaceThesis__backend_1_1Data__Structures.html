@@ -119,8 +119,12 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:aea691308b30574c00a00de66d11e8039" id="r_aea691308b30574c00a00de66d11e8039"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceThesis__backend_1_1Data__Structures.html#aea691308b30574c00a00de66d11e8039">PlayerTask</a> (PlayerTask playerTask)</td></tr>
+<tr class="separator:aea691308b30574c00a00de66d11e8039"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05c5b8303bf4f3a8a39bdb2caf45521f" id="r_a05c5b8303bf4f3a8a39bdb2caf45521f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceThesis__backend_1_1Data__Structures.html#a05c5b8303bf4f3a8a39bdb2caf45521f">UpdateValues</a> (string taskName, bool taskType, <a class="el" href="TaskIntervals_8cs.html#a4ba022096603875ae402bb772ec906f9">TaskIntervals</a> taskInterval, string description, DateTime? lastCompleted=null, bool? completed=null)</td></tr>
 <tr class="separator:a05c5b8303bf4f3a8a39bdb2caf45521f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfcc80cd83a458407f07c32433bc8cdc" id="r_abfcc80cd83a458407f07c32433bc8cdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceThesis__backend_1_1Data__Structures.html#abfcc80cd83a458407f07c32433bc8cdc">UpdateValues</a> (<a class="el" href="namespaceThesis__backend_1_1Data__Structures.html#ae656f3c7a1335db8207ae56dcbd213a7">PlayerTask</a> playerTask)</td></tr>
+<tr class="separator:abfcc80cd83a458407f07c32433bc8cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85bbe0a98af5327858b41d94e7e7ba00" id="r_a85bbe0a98af5327858b41d94e7e7ba00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceThesis__backend_1_1Data__Structures.html#a85bbe0a98af5327858b41d94e7e7ba00">ChangeType</a> (<a class="el" href="TaskType_8cs.html#aa7f5c268cc89ed3067c26142ca3e16d7">TaskType</a> newType)</td></tr>
 <tr class="separator:a85bbe0a98af5327858b41d94e7e7ba00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a6752f997f752441d824568af135f9d" id="r_a0a6752f997f752441d824568af135f9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceThesis__backend_1_1Data__Structures.html#a0a6752f997f752441d824568af135f9d">Complete</a> ()</td></tr>
@@ -175,8 +179,41 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="aea691308b30574c00a00de66d11e8039" name="aea691308b30574c00a00de66d11e8039"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea691308b30574c00a00de66d11e8039">&#9670;&#160;</a></span>PlayerTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Thesis_backend.Data_Structures.PlayerTask </td>
+          <td>(</td>
+          <td class="paramtype">PlayerTask&#160;</td>
+          <td class="paramname"><em>playerTask</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="PlayerTask_8cs_source.html#l00019">19</a> of file <a class="el" href="PlayerTask_8cs_source.html">PlayerTask.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   19</span>                                                 : base(playerTask)</div>
+<div class="line"><span class="lineno">   20</span>        {</div>
+<div class="line"><span class="lineno">   21</span>            this.ID = playerTask.ID;</div>
+<div class="line"><span class="lineno">   22</span>            this.TaskOwner = playerTask.TaskOwner;</div>
+<div class="line"><span class="lineno">   23</span>            this.TaskName = playerTask.TaskName;</div>
+<div class="line"><span class="lineno">   24</span>            this.Description = playerTask.Description;</div>
+<div class="line"><span class="lineno">   25</span>            this.TaskType = playerTask.TaskType;</div>
+<div class="line"><span class="lineno">   26</span>            this.PeriodRate = playerTask.PeriodRate;</div>
+<div class="line"><span class="lineno">   27</span>            this.Updated = playerTask.Updated;</div>
+<div class="line"><span class="lineno">   28</span>            this.Updated = playerTask.Updated;</div>
+<div class="line"><span class="lineno">   29</span>            this.LastCompleted = playerTask.LastCompleted;</div>
+<div class="line"><span class="lineno">   30</span>            this.Completed = playerTask.Completed;</div>
+<div class="line"><span class="lineno">   31</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a05c5b8303bf4f3a8a39bdb2caf45521f" name="a05c5b8303bf4f3a8a39bdb2caf45521f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05c5b8303bf4f3a8a39bdb2caf45521f">&#9670;&#160;</a></span>UpdateValues()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a05c5b8303bf4f3a8a39bdb2caf45521f">&#9670;&#160;</a></span>UpdateValues() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -225,22 +262,55 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="PlayerTask_8cs_source.html#l00019">19</a> of file <a class="el" href="PlayerTask_8cs_source.html">PlayerTask.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   20</span>        {</div>
-<div class="line"><span class="lineno">   21</span>            this.TaskName = taskName;</div>
-<div class="line"><span class="lineno">   22</span>            this.TaskType = taskType;</div>
-<div class="line"><span class="lineno">   23</span>            this.PeriodRate = (int)taskInterval;</div>
-<div class="line"><span class="lineno">   24</span>            this.Description = description;</div>
-<div class="line"><span class="lineno">   25</span> </div>
-<div class="line"><span class="lineno">   26</span>            <span class="keywordflow">if</span> (lastCompleted is not <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   27</span>            {</div>
-<div class="line"><span class="lineno">   28</span>                this.LastCompleted = lastCompleted.Value;</div>
-<div class="line"><span class="lineno">   29</span>            }</div>
-<div class="line"><span class="lineno">   30</span>            <span class="keywordflow">if</span> (completed is not <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   31</span>            {</div>
-<div class="line"><span class="lineno">   32</span>                this.Completed = completed.Value;</div>
-<div class="line"><span class="lineno">   33</span>            }</div>
-<div class="line"><span class="lineno">   34</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="PlayerTask_8cs_source.html#l00033">33</a> of file <a class="el" href="PlayerTask_8cs_source.html">PlayerTask.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   34</span>        {</div>
+<div class="line"><span class="lineno">   35</span>            this.TaskName = taskName;</div>
+<div class="line"><span class="lineno">   36</span>            this.TaskType = taskType;</div>
+<div class="line"><span class="lineno">   37</span>            this.PeriodRate = (int)taskInterval;</div>
+<div class="line"><span class="lineno">   38</span>            this.Description = description;</div>
+<div class="line"><span class="lineno">   39</span> </div>
+<div class="line"><span class="lineno">   40</span>            <span class="keywordflow">if</span> (lastCompleted is not <span class="keyword">null</span>)</div>
+<div class="line"><span class="lineno">   41</span>            {</div>
+<div class="line"><span class="lineno">   42</span>                this.LastCompleted = lastCompleted.Value;</div>
+<div class="line"><span class="lineno">   43</span>            }</div>
+<div class="line"><span class="lineno">   44</span>            <span class="keywordflow">if</span> (completed is not <span class="keyword">null</span>)</div>
+<div class="line"><span class="lineno">   45</span>            {</div>
+<div class="line"><span class="lineno">   46</span>                this.Completed = completed.Value;</div>
+<div class="line"><span class="lineno">   47</span>            }</div>
+<div class="line"><span class="lineno">   48</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abfcc80cd83a458407f07c32433bc8cdc" name="abfcc80cd83a458407f07c32433bc8cdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfcc80cd83a458407f07c32433bc8cdc">&#9670;&#160;</a></span>UpdateValues() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Thesis_backend.Data_Structures.UpdateValues </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceThesis__backend_1_1Data__Structures.html#ae656f3c7a1335db8207ae56dcbd213a7">PlayerTask</a>&#160;</td>
+          <td class="paramname"><em>playerTask</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="PlayerTask_8cs_source.html#l00049">49</a> of file <a class="el" href="PlayerTask_8cs_source.html">PlayerTask.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   50</span>        {</div>
+<div class="line"><span class="lineno">   51</span>            <span class="keywordflow">if</span> (playerTask is <span class="keyword">null</span>)</div>
+<div class="line"><span class="lineno">   52</span>            {</div>
+<div class="line"><span class="lineno">   53</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   54</span>            }</div>
+<div class="line"><span class="lineno">   55</span> </div>
+<div class="line"><span class="lineno">   56</span>            this.TaskName = playerTask.TaskName;</div>
+<div class="line"><span class="lineno">   57</span>            this.TaskType = playerTask.TaskType;</div>
+<div class="line"><span class="lineno">   58</span>            this.PeriodRate = playerTask.PeriodRate;</div>
+<div class="line"><span class="lineno">   59</span>            this.Description = playerTask.Description;</div>
+<div class="line"><span class="lineno">   60</span>            this.LastCompleted = playerTask.LastCompleted;</div>
+<div class="line"><span class="lineno">   61</span>            this.Completed = playerTask.Completed;</div>
+<div class="line"><span class="lineno">   62</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -260,10 +330,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="PlayerTask_8cs_source.html#l00036">36</a> of file <a class="el" href="PlayerTask_8cs_source.html">PlayerTask.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   37</span>        {</div>
-<div class="line"><span class="lineno">   38</span>            this.TaskType = newType == global::TaskType.BadHabit;</div>
-<div class="line"><span class="lineno">   39</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="PlayerTask_8cs_source.html#l00064">64</a> of file <a class="el" href="PlayerTask_8cs_source.html">PlayerTask.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   65</span>        {</div>
+<div class="line"><span class="lineno">   66</span>            this.TaskType = newType == global::TaskType.BadHabit;</div>
+<div class="line"><span class="lineno">   67</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -282,15 +352,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="PlayerTask_8cs_source.html#l00041">41</a> of file <a class="el" href="PlayerTask_8cs_source.html">PlayerTask.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   42</span>        {</div>
-<div class="line"><span class="lineno">   43</span>            <span class="keywordflow">if</span> (this.Completed)</div>
-<div class="line"><span class="lineno">   44</span>            {</div>
-<div class="line"><span class="lineno">   45</span>                <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   46</span>            }</div>
-<div class="line"><span class="lineno">   47</span>            this.LastCompleted = DateTime.UtcNow;</div>
-<div class="line"><span class="lineno">   48</span>            this.Completed = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   49</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="PlayerTask_8cs_source.html#l00069">69</a> of file <a class="el" href="PlayerTask_8cs_source.html">PlayerTask.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   70</span>        {</div>
+<div class="line"><span class="lineno">   71</span>            <span class="keywordflow">if</span> (this.Completed)</div>
+<div class="line"><span class="lineno">   72</span>            {</div>
+<div class="line"><span class="lineno">   73</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   74</span>            }</div>
+<div class="line"><span class="lineno">   75</span>            this.LastCompleted = DateTime.UtcNow;</div>
+<div class="line"><span class="lineno">   76</span>            this.Completed = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   77</span>        }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="PlayerTask_8cs_source.html#l00015">Thesis_backend.Data_Structures.Completed</a>.</p>
 
@@ -311,10 +381,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="PlayerTask_8cs_source.html#l00051">51</a> of file <a class="el" href="PlayerTask_8cs_source.html">PlayerTask.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   52</span>        {</div>
-<div class="line"><span class="lineno">   53</span>            this.Completed = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   54</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="PlayerTask_8cs_source.html#l00079">79</a> of file <a class="el" href="PlayerTask_8cs_source.html">PlayerTask.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   80</span>        {</div>
+<div class="line"><span class="lineno">   81</span>            this.Completed = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   82</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -407,7 +477,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="PlayerTask_8cs_source.html#l00006">6</a> of file <a class="el" href="PlayerTask_8cs_source.html">PlayerTask.cs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TaskOpenPanelController_8cs_source.html#l00121">TaskOpenPanelController.Cancel()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00071">TaskOpenPanelController.OpenUp()</a>, and <a class="el" href="TaskOpenPanelController_8cs_source.html#l00150">TaskOpenPanelController.SavedTask()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TaskOpenPanelController_8cs_source.html#l00125">TaskOpenPanelController.Cancel()</a>, <a class="el" href="TaskOpenPanelController_8cs_source.html#l00073">TaskOpenPanelController.OpenUp()</a>, and <a class="el" href="TaskOpenPanelController_8cs_source.html#l00164">TaskOpenPanelController.SavedTask()</a>.</p>
 
 </div>
 </div>

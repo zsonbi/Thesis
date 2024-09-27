@@ -21,7 +21,7 @@ var searchData=
   ['buildinggenerator_2ecs_18',['BuildingGenerator.cs',['../BuildingGenerator_8cs.html',1,'']]],
   ['buildingloaded_19',['BuildingLoaded',['../classGame_1_1World_1_1Chunk.html#ad96b568d5f7a03b6b4ea194b387c0af1',1,'Game::World::Chunk']]],
   ['buildings_20',['buildings',['../classGame_1_1World_1_1Chunk.html#a383aef6b54e3e575c1865fa019cfaa07',1,'Game::World::Chunk']]],
-  ['buildingtype_21',['buildingtype',['../BuildingType_8cs.html#aba2b45f536f3c9719aea96bb472784a4',1,'BuildingType:&#160;BuildingType.cs'],['../classBuilding.html#a21e4d71e89fa9fd693d5fbe6a728cbcb',1,'Building.BuildingType'],['../classBuilding.html#ad8c8c988ab2bfe2675ae1403ce31fae6',1,'Building.buildingType']]],
+  ['buildingtype_21',['buildingtype',['../BuildingType_8cs.html#aba2b45f536f3c9719aea96bb472784a4',1,'BuildingType:&#160;BuildingType.cs'],['../classBuilding.html#ad8c8c988ab2bfe2675ae1403ce31fae6',1,'Building.buildingType'],['../classBuilding.html#a21e4d71e89fa9fd693d5fbe6a728cbcb',1,'Building.BuildingType']]],
   ['buildingtype_2ecs_22',['BuildingType.cs',['../BuildingType_8cs.html',1,'']]],
   ['buttonexists_23',['buttonexists',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#abaceaf9f4dfd3ddecf0ab364c84c3d2d',1,'UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager.ButtonExists()'],['../classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html#a5d70deed210f91fc144d9a62cab4c535',1,'UnityStandardAssets.CrossPlatformInput.VirtualInput.ButtonExists()']]],
   ['buttonhandler_24',['ButtonHandler',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1ButtonHandler.html',1,'UnityStandardAssets::CrossPlatformInput']]],

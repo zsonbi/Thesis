@@ -122,6 +122,8 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a740bd492506146554dcdfe94c0779716" id="r_a740bd492506146554dcdfe94c0779716"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classShopWindow.html#a740bd492506146554dcdfe94c0779716">ShowRequestFail</a> (string content)</td></tr>
+<tr class="separator:a740bd492506146554dcdfe94c0779716"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa78e3f75a8a81c304dc93a2bbbbe114b" id="r_aa78e3f75a8a81c304dc93a2bbbbe114b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classShopWindow.html#aa78e3f75a8a81c304dc93a2bbbbe114b">LoadedShopItems</a> (List&lt; <a class="el" href="namespaceThesis__backend_1_1Data__Structures.html#ac1512cf9ce765c70554afd83bb3f5f8c">Shop</a> &gt; shopItems)</td></tr>
 <tr class="separator:aa78e3f75a8a81c304dc93a2bbbbe114b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -133,6 +135,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a8f4a96eae979285b0c7e5db037923665"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a945b0fbfe08eb39ddb5c1a31af950595" id="r_a945b0fbfe08eb39ddb5c1a31af950595"><td class="memItemLeft" align="right" valign="top">TMP_Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classShopWindow.html#a945b0fbfe08eb39ddb5c1a31af950595">CoinText</a></td></tr>
 <tr class="separator:a945b0fbfe08eb39ddb5c1a31af950595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fc748b2393664af503a1938fb2092d5" id="r_a2fc748b2393664af503a1938fb2092d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModalWindow.html">ModalWindow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classShopWindow.html#a2fc748b2393664af503a1938fb2092d5">ModalWindow</a></td></tr>
+<tr class="separator:a2fc748b2393664af503a1938fb2092d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92bd226c2ce12df91fd1d8835a2f292a" id="r_a92bd226c2ce12df91fd1d8835a2f292a"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="namespaceThesis__backend_1_1Data__Structures.html#ac1512cf9ce765c70554afd83bb3f5f8c">Shop</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classShopWindow.html#a92bd226c2ce12df91fd1d8835a2f292a">shopItemsCache</a></td></tr>
 <tr class="separator:a92bd226c2ce12df91fd1d8835a2f292a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -163,17 +167,17 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ShopWindow_8cs_source.html#l00024">24</a> of file <a class="el" href="ShopWindow_8cs_source.html">ShopWindow.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   25</span>    {</div>
-<div class="line"><span class="lineno">   26</span>        this.gameObject.SetActive(<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">   27</span> </div>
-<div class="line"><span class="lineno">   28</span>        <a class="code hl_function" href="classShopWindow.html#a2242f5e64f32f512f0256136845f4b33">UpdateShop</a>();</div>
-<div class="line"><span class="lineno">   29</span>    }</div>
-<div class="ttc" id="aclassShopWindow_html_a2242f5e64f32f512f0256136845f4b33"><div class="ttname"><a href="classShopWindow.html#a2242f5e64f32f512f0256136845f4b33">ShopWindow.UpdateShop</a></div><div class="ttdeci">void UpdateShop()</div><div class="ttdef"><b>Definition</b> <a href="ShopWindow_8cs_source.html#l00036">ShopWindow.cs:36</a></div></div>
+<p class="definition">Definition at line <a class="el" href="ShopWindow_8cs_source.html#l00027">27</a> of file <a class="el" href="ShopWindow_8cs_source.html">ShopWindow.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   28</span>    {</div>
+<div class="line"><span class="lineno">   29</span>        this.gameObject.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   30</span> </div>
+<div class="line"><span class="lineno">   31</span>        <a class="code hl_function" href="classShopWindow.html#a2242f5e64f32f512f0256136845f4b33">UpdateShop</a>();</div>
+<div class="line"><span class="lineno">   32</span>    }</div>
+<div class="ttc" id="aclassShopWindow_html_a2242f5e64f32f512f0256136845f4b33"><div class="ttname"><a href="classShopWindow.html#a2242f5e64f32f512f0256136845f4b33">ShopWindow.UpdateShop</a></div><div class="ttdeci">void UpdateShop()</div><div class="ttdef"><b>Definition</b> <a href="ShopWindow_8cs_source.html#l00044">ShopWindow.cs:44</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ShopWindow_8cs_source.html#l00036">UpdateShop()</a>.</p>
+<p class="reference">References <a class="el" href="ShopWindow_8cs_source.html#l00044">UpdateShop()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameUI_8cs_source.html#l00164">GameUI.ShowShopWindow()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameUI_8cs_source.html#l00176">GameUI.ShowShopWindow()</a>.</p>
 
 </div>
 </div>
@@ -200,12 +204,49 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ShopWindow_8cs_source.html#l00031">31</a> of file <a class="el" href="ShopWindow_8cs_source.html">ShopWindow.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   32</span>    {</div>
-<div class="line"><span class="lineno">   33</span>        this.gameObject.SetActive(<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">   34</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="ShopWindow_8cs_source.html#l00034">34</a> of file <a class="el" href="ShopWindow_8cs_source.html">ShopWindow.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   35</span>    {</div>
+<div class="line"><span class="lineno">   36</span>        this.gameObject.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   37</span>    }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="GameUI_8cs_source.html#l00169">GameUI.HideShopWindow()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameUI_8cs_source.html#l00181">GameUI.HideShopWindow()</a>.</p>
+
+</div>
+</div>
+<a id="a740bd492506146554dcdfe94c0779716" name="a740bd492506146554dcdfe94c0779716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a740bd492506146554dcdfe94c0779716">&#9670;&#160;</a></span>ShowRequestFail()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ShopWindow.ShowRequestFail </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>content</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ShopWindow_8cs_source.html#l00039">39</a> of file <a class="el" href="ShopWindow_8cs_source.html">ShopWindow.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>    {</div>
+<div class="line"><span class="lineno">   41</span>        <a class="code hl_class" href="classModalWindow.html">ModalWindow</a>.<a class="code hl_function" href="classModalWindow.html#ac60b5a6f2ab5bee74053e90f99c9d475">Show</a>(<span class="stringliteral">&quot;Shop error&quot;</span>, content);</div>
+<div class="line"><span class="lineno">   42</span>    }</div>
+<div class="ttc" id="aclassModalWindow_html"><div class="ttname"><a href="classModalWindow.html">ModalWindow</a></div><div class="ttdef"><b>Definition</b> <a href="ModalWindowScript_8cs_source.html#l00007">ModalWindowScript.cs:8</a></div></div>
+<div class="ttc" id="aclassModalWindow_html_ac60b5a6f2ab5bee74053e90f99c9d475"><div class="ttname"><a href="classModalWindow.html#ac60b5a6f2ab5bee74053e90f99c9d475">ModalWindow.Show</a></div><div class="ttdeci">void Show()</div><div class="ttdef"><b>Definition</b> <a href="ModalWindowScript_8cs_source.html#l00017">ModalWindowScript.cs:17</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="ModalWindowScript_8cs_source.html#l00017">ModalWindow.Show()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ShopWindow_8cs_source.html#l00044">UpdateShop()</a>.</p>
 
 </div>
 </div>
@@ -232,30 +273,31 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ShopWindow_8cs_source.html#l00036">36</a> of file <a class="el" href="ShopWindow_8cs_source.html">ShopWindow.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   37</span>    {</div>
-<div class="line"><span class="lineno">   38</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classShopWindow.html#a92bd226c2ce12df91fd1d8835a2f292a">shopItemsCache</a> is <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   39</span>        {</div>
-<div class="line"><span class="lineno">   40</span>            StartCoroutine(<a class="code hl_class" href="classServer.html">Server</a>.SendGetRequest&lt;List&lt;Shop&gt;&gt;(<a class="code hl_class" href="classConfig_1_1ServerConfig.html">ServerConfig</a>.<a class="code hl_variable" href="classConfig_1_1ServerConfig.html#ad30c71b0f09c1eea223b115938e7d76f">PATH_FOR_SHOP_GET_ALL</a>, <a class="code hl_function" href="classShopWindow.html#aa78e3f75a8a81c304dc93a2bbbbe114b">LoadedShopItems</a>));</div>
-<div class="line"><span class="lineno">   41</span>        }</div>
-<div class="line"><span class="lineno">   42</span>        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   43</span>        {</div>
-<div class="line"><span class="lineno">   44</span>            <a class="code hl_function" href="classShopWindow.html#aa78e3f75a8a81c304dc93a2bbbbe114b">LoadedShopItems</a>(<a class="code hl_variable" href="classShopWindow.html#a92bd226c2ce12df91fd1d8835a2f292a">shopItemsCache</a>);</div>
-<div class="line"><span class="lineno">   45</span>        }</div>
-<div class="line"><span class="lineno">   46</span>        CoinText.text = <a class="code hl_class" href="classUser_1_1UserData.html">UserData</a>.<a class="code hl_property" href="classUser_1_1UserData.html#aac822a62e0ef2a7d0dbe623643146faa">Instance</a>.<a class="code hl_property" href="classUser_1_1UserData.html#aa87abc723cebf718fa5d5966acd2dc38">Game</a>.Currency.ToString();</div>
-<div class="line"><span class="lineno">   47</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="ShopWindow_8cs_source.html#l00044">44</a> of file <a class="el" href="ShopWindow_8cs_source.html">ShopWindow.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>    {</div>
+<div class="line"><span class="lineno">   46</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classShopWindow.html#a92bd226c2ce12df91fd1d8835a2f292a">shopItemsCache</a> is <span class="keyword">null</span>)</div>
+<div class="line"><span class="lineno">   47</span>        {</div>
+<div class="line"><span class="lineno">   48</span>            StartCoroutine(<a class="code hl_class" href="classServer.html">Server</a>.SendGetRequest&lt;List&lt;Shop&gt;&gt;(<a class="code hl_class" href="classConfig_1_1ServerConfig.html">ServerConfig</a>.<a class="code hl_variable" href="classConfig_1_1ServerConfig.html#ad30c71b0f09c1eea223b115938e7d76f">PATH_FOR_SHOP_GET_ALL</a>, <a class="code hl_function" href="classShopWindow.html#aa78e3f75a8a81c304dc93a2bbbbe114b">LoadedShopItems</a>, onFailedAction: <a class="code hl_function" href="classShopWindow.html#a740bd492506146554dcdfe94c0779716">ShowRequestFail</a>));</div>
+<div class="line"><span class="lineno">   49</span>        }</div>
+<div class="line"><span class="lineno">   50</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   51</span>        {</div>
+<div class="line"><span class="lineno">   52</span>            <a class="code hl_function" href="classShopWindow.html#aa78e3f75a8a81c304dc93a2bbbbe114b">LoadedShopItems</a>(<a class="code hl_variable" href="classShopWindow.html#a92bd226c2ce12df91fd1d8835a2f292a">shopItemsCache</a>);</div>
+<div class="line"><span class="lineno">   53</span>        }</div>
+<div class="line"><span class="lineno">   54</span>        CoinText.text = <a class="code hl_class" href="classUser_1_1UserData.html">UserData</a>.<a class="code hl_property" href="classUser_1_1UserData.html#aac822a62e0ef2a7d0dbe623643146faa">Instance</a>.<a class="code hl_property" href="classUser_1_1UserData.html#aa87abc723cebf718fa5d5966acd2dc38">Game</a>.Currency.ToString();</div>
+<div class="line"><span class="lineno">   55</span>    }</div>
 <div class="ttc" id="aclassConfig_1_1ServerConfig_html"><div class="ttname"><a href="classConfig_1_1ServerConfig.html">Config.ServerConfig</a></div><div class="ttdef"><b>Definition</b> <a href="ServerConfig_8cs_source.html#l00003">ServerConfig.cs:4</a></div></div>
 <div class="ttc" id="aclassConfig_1_1ServerConfig_html_ad30c71b0f09c1eea223b115938e7d76f"><div class="ttname"><a href="classConfig_1_1ServerConfig.html#ad30c71b0f09c1eea223b115938e7d76f">Config.ServerConfig.PATH_FOR_SHOP_GET_ALL</a></div><div class="ttdeci">const string PATH_FOR_SHOP_GET_ALL</div><div class="ttdef"><b>Definition</b> <a href="ServerConfig_8cs_source.html#l00078">ServerConfig.cs:78</a></div></div>
 <div class="ttc" id="aclassServer_html"><div class="ttname"><a href="classServer.html">Server</a></div><div class="ttdef"><b>Definition</b> <a href="Server_8cs_source.html#l00008">Server.cs:9</a></div></div>
-<div class="ttc" id="aclassShopWindow_html_a92bd226c2ce12df91fd1d8835a2f292a"><div class="ttname"><a href="classShopWindow.html#a92bd226c2ce12df91fd1d8835a2f292a">ShopWindow.shopItemsCache</a></div><div class="ttdeci">List&lt; Shop &gt; shopItemsCache</div><div class="ttdef"><b>Definition</b> <a href="ShopWindow_8cs_source.html#l00022">ShopWindow.cs:22</a></div></div>
-<div class="ttc" id="aclassShopWindow_html_aa78e3f75a8a81c304dc93a2bbbbe114b"><div class="ttname"><a href="classShopWindow.html#aa78e3f75a8a81c304dc93a2bbbbe114b">ShopWindow.LoadedShopItems</a></div><div class="ttdeci">void LoadedShopItems(List&lt; Shop &gt; shopItems)</div><div class="ttdef"><b>Definition</b> <a href="ShopWindow_8cs_source.html#l00049">ShopWindow.cs:49</a></div></div>
+<div class="ttc" id="aclassShopWindow_html_a740bd492506146554dcdfe94c0779716"><div class="ttname"><a href="classShopWindow.html#a740bd492506146554dcdfe94c0779716">ShopWindow.ShowRequestFail</a></div><div class="ttdeci">void ShowRequestFail(string content)</div><div class="ttdef"><b>Definition</b> <a href="ShopWindow_8cs_source.html#l00039">ShopWindow.cs:39</a></div></div>
+<div class="ttc" id="aclassShopWindow_html_a92bd226c2ce12df91fd1d8835a2f292a"><div class="ttname"><a href="classShopWindow.html#a92bd226c2ce12df91fd1d8835a2f292a">ShopWindow.shopItemsCache</a></div><div class="ttdeci">List&lt; Shop &gt; shopItemsCache</div><div class="ttdef"><b>Definition</b> <a href="ShopWindow_8cs_source.html#l00025">ShopWindow.cs:25</a></div></div>
+<div class="ttc" id="aclassShopWindow_html_aa78e3f75a8a81c304dc93a2bbbbe114b"><div class="ttname"><a href="classShopWindow.html#aa78e3f75a8a81c304dc93a2bbbbe114b">ShopWindow.LoadedShopItems</a></div><div class="ttdeci">void LoadedShopItems(List&lt; Shop &gt; shopItems)</div><div class="ttdef"><b>Definition</b> <a href="ShopWindow_8cs_source.html#l00057">ShopWindow.cs:57</a></div></div>
 <div class="ttc" id="aclassUser_1_1UserData_html"><div class="ttname"><a href="classUser_1_1UserData.html">User.UserData</a></div><div class="ttdef"><b>Definition</b> <a href="UserData_8cs_source.html#l00009">UserData.cs:10</a></div></div>
 <div class="ttc" id="aclassUser_1_1UserData_html_aa87abc723cebf718fa5d5966acd2dc38"><div class="ttname"><a href="classUser_1_1UserData.html#aa87abc723cebf718fa5d5966acd2dc38">User.UserData.Game</a></div><div class="ttdeci">Thesis_backend.Data_Structures.Game Game</div><div class="ttdef"><b>Definition</b> <a href="UserData_8cs_source.html#l00018">UserData.cs:18</a></div></div>
 <div class="ttc" id="aclassUser_1_1UserData_html_aac822a62e0ef2a7d0dbe623643146faa"><div class="ttname"><a href="classUser_1_1UserData.html#aac822a62e0ef2a7d0dbe623643146faa">User.UserData.Instance</a></div><div class="ttdeci">static UserData Instance</div><div class="ttdef"><b>Definition</b> <a href="UserData_8cs_source.html#l00012">UserData.cs:12</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="UserData_8cs_source.html#l00018">User.UserData.Game</a>, <a class="el" href="UserData_8cs_source.html#l00012">User.UserData.Instance</a>, <a class="el" href="ShopWindow_8cs_source.html#l00049">LoadedShopItems()</a>, <a class="el" href="ServerConfig_8cs_source.html#l00078">Config.ServerConfig.PATH_FOR_SHOP_GET_ALL</a>, and <a class="el" href="ShopWindow_8cs_source.html#l00022">shopItemsCache</a>.</p>
+<p class="reference">References <a class="el" href="UserData_8cs_source.html#l00018">User.UserData.Game</a>, <a class="el" href="UserData_8cs_source.html#l00012">User.UserData.Instance</a>, <a class="el" href="ShopWindow_8cs_source.html#l00057">LoadedShopItems()</a>, <a class="el" href="ServerConfig_8cs_source.html#l00078">Config.ServerConfig.PATH_FOR_SHOP_GET_ALL</a>, <a class="el" href="ShopWindow_8cs_source.html#l00025">shopItemsCache</a>, and <a class="el" href="ShopWindow_8cs_source.html#l00039">ShowRequestFail()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ShopItem_8cs_source.html#l00043">ShopItem.Bought()</a>, and <a class="el" href="ShopWindow_8cs_source.html#l00024">Show()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ShopItem_8cs_source.html#l00043">ShopItem.Bought()</a>, and <a class="el" href="ShopWindow_8cs_source.html#l00027">Show()</a>.</p>
 
 </div>
 </div>
@@ -283,31 +325,31 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ShopWindow_8cs_source.html#l00049">49</a> of file <a class="el" href="ShopWindow_8cs_source.html">ShopWindow.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   50</span>    {</div>
-<div class="line"><span class="lineno">   51</span>        <span class="comment">//Delete the previous ones</span></div>
-<div class="line"><span class="lineno">   52</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; this.<a class="code hl_variable" href="classShopWindow.html#a0e11e0f93f9994c22b89c335f227d9f9">ShopParent</a>.transform.childCount; i++)</div>
-<div class="line"><span class="lineno">   53</span>        {</div>
-<div class="line"><span class="lineno">   54</span>            Destroy(this.<a class="code hl_variable" href="classShopWindow.html#a0e11e0f93f9994c22b89c335f227d9f9">ShopParent</a>.transform.GetChild(i).gameObject);</div>
-<div class="line"><span class="lineno">   55</span>        }</div>
-<div class="line"><span class="lineno">   56</span>        this.<a class="code hl_variable" href="classShopWindow.html#a0e11e0f93f9994c22b89c335f227d9f9">ShopParent</a>.transform.DetachChildren();</div>
-<div class="line"><span class="lineno">   57</span> </div>
-<div class="line"><span class="lineno">   58</span>        this.shopItemsCache = shopItems;</div>
-<div class="line"><span class="lineno">   59</span>        <span class="keywordflow">foreach</span> (var item <span class="keywordflow">in</span> shopItems)</div>
-<div class="line"><span class="lineno">   60</span>        {</div>
-<div class="line"><span class="lineno">   61</span>            <a class="code hl_class" href="classShopItem.html">ShopItem</a> shopItem = Instantiate(<a class="code hl_variable" href="classShopWindow.html#a8f4a96eae979285b0c7e5db037923665">ShopItemPrefab</a>, <a class="code hl_variable" href="classShopWindow.html#a0e11e0f93f9994c22b89c335f227d9f9">ShopParent</a>.transform).GetComponent&lt;<a class="code hl_class" href="classShopItem.html">ShopItem</a>&gt;();</div>
-<div class="line"><span class="lineno">   62</span>            <span class="keywordtype">bool</span> owned = <a class="code hl_class" href="classUser_1_1UserData.html">UserData</a>.<a class="code hl_property" href="classUser_1_1UserData.html#aac822a62e0ef2a7d0dbe623643146faa">Instance</a>.<a class="code hl_property" href="classUser_1_1UserData.html#aa87abc723cebf718fa5d5966acd2dc38">Game</a>.OwnedCars.Find(x =&gt; x.ShopId == item.ID) != <span class="keyword">null</span>;</div>
-<div class="line"><span class="lineno">   63</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classShopWindow.html#a285846c6ebb3da82667203c2ee7fd1e0">ShopItemSprites</a>.Count &lt;= (item.ID - 1))</div>
-<div class="line"><span class="lineno">   64</span>            {</div>
-<div class="line"><span class="lineno">   65</span>                shopItem.<a class="code hl_function" href="classShopItem.html#a76f9342f9bf8a0c4a920c83271456e28">Init</a>(<span class="keyword">this</span>, item, <a class="code hl_variable" href="classShopWindow.html#a285846c6ebb3da82667203c2ee7fd1e0">ShopItemSprites</a>[0], owned);</div>
-<div class="line"><span class="lineno">   66</span>                Debug.LogError(<span class="stringliteral">&quot;No sprite for this shop item&quot;</span>);</div>
-<div class="line"><span class="lineno">   67</span>            }</div>
-<div class="line"><span class="lineno">   68</span>            <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   69</span>            {</div>
-<div class="line"><span class="lineno">   70</span>                shopItem.<a class="code hl_function" href="classShopItem.html#a76f9342f9bf8a0c4a920c83271456e28">Init</a>(<span class="keyword">this</span>, item, <a class="code hl_variable" href="classShopWindow.html#a285846c6ebb3da82667203c2ee7fd1e0">ShopItemSprites</a>[(<span class="keywordtype">int</span>)(item.ID - 1)], owned);</div>
-<div class="line"><span class="lineno">   71</span>            }</div>
-<div class="line"><span class="lineno">   72</span>        }</div>
-<div class="line"><span class="lineno">   73</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="ShopWindow_8cs_source.html#l00057">57</a> of file <a class="el" href="ShopWindow_8cs_source.html">ShopWindow.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>    {</div>
+<div class="line"><span class="lineno">   59</span>        <span class="comment">//Delete the previous ones</span></div>
+<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; this.<a class="code hl_variable" href="classShopWindow.html#a0e11e0f93f9994c22b89c335f227d9f9">ShopParent</a>.transform.childCount; i++)</div>
+<div class="line"><span class="lineno">   61</span>        {</div>
+<div class="line"><span class="lineno">   62</span>            Destroy(this.<a class="code hl_variable" href="classShopWindow.html#a0e11e0f93f9994c22b89c335f227d9f9">ShopParent</a>.transform.GetChild(i).gameObject);</div>
+<div class="line"><span class="lineno">   63</span>        }</div>
+<div class="line"><span class="lineno">   64</span>        this.<a class="code hl_variable" href="classShopWindow.html#a0e11e0f93f9994c22b89c335f227d9f9">ShopParent</a>.transform.DetachChildren();</div>
+<div class="line"><span class="lineno">   65</span> </div>
+<div class="line"><span class="lineno">   66</span>        this.shopItemsCache = shopItems;</div>
+<div class="line"><span class="lineno">   67</span>        <span class="keywordflow">foreach</span> (var item <span class="keywordflow">in</span> shopItems)</div>
+<div class="line"><span class="lineno">   68</span>        {</div>
+<div class="line"><span class="lineno">   69</span>            <a class="code hl_class" href="classShopItem.html">ShopItem</a> shopItem = Instantiate(<a class="code hl_variable" href="classShopWindow.html#a8f4a96eae979285b0c7e5db037923665">ShopItemPrefab</a>, <a class="code hl_variable" href="classShopWindow.html#a0e11e0f93f9994c22b89c335f227d9f9">ShopParent</a>.transform).GetComponent&lt;<a class="code hl_class" href="classShopItem.html">ShopItem</a>&gt;();</div>
+<div class="line"><span class="lineno">   70</span>            <span class="keywordtype">bool</span> owned = <a class="code hl_class" href="classUser_1_1UserData.html">UserData</a>.<a class="code hl_property" href="classUser_1_1UserData.html#aac822a62e0ef2a7d0dbe623643146faa">Instance</a>.<a class="code hl_property" href="classUser_1_1UserData.html#aa87abc723cebf718fa5d5966acd2dc38">Game</a>.OwnedCars.Find(x =&gt; x.ShopId == item.ID) != <span class="keyword">null</span>;</div>
+<div class="line"><span class="lineno">   71</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classShopWindow.html#a285846c6ebb3da82667203c2ee7fd1e0">ShopItemSprites</a>.Count &lt;= (item.ID - 1))</div>
+<div class="line"><span class="lineno">   72</span>            {</div>
+<div class="line"><span class="lineno">   73</span>                shopItem.<a class="code hl_function" href="classShopItem.html#a76f9342f9bf8a0c4a920c83271456e28">Init</a>(<span class="keyword">this</span>, item, <a class="code hl_variable" href="classShopWindow.html#a285846c6ebb3da82667203c2ee7fd1e0">ShopItemSprites</a>[0], owned);</div>
+<div class="line"><span class="lineno">   74</span>                Debug.LogError(<span class="stringliteral">&quot;No sprite for this shop item&quot;</span>);</div>
+<div class="line"><span class="lineno">   75</span>            }</div>
+<div class="line"><span class="lineno">   76</span>            <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   77</span>            {</div>
+<div class="line"><span class="lineno">   78</span>                shopItem.<a class="code hl_function" href="classShopItem.html#a76f9342f9bf8a0c4a920c83271456e28">Init</a>(<span class="keyword">this</span>, item, <a class="code hl_variable" href="classShopWindow.html#a285846c6ebb3da82667203c2ee7fd1e0">ShopItemSprites</a>[(<span class="keywordtype">int</span>)(item.ID - 1)], owned);</div>
+<div class="line"><span class="lineno">   79</span>            }</div>
+<div class="line"><span class="lineno">   80</span>        }</div>
+<div class="line"><span class="lineno">   81</span>    }</div>
 <div class="ttc" id="aclassShopItem_html"><div class="ttname"><a href="classShopItem.html">ShopItem</a></div><div class="ttdef"><b>Definition</b> <a href="ShopItem_8cs_source.html#l00010">ShopItem.cs:11</a></div></div>
 <div class="ttc" id="aclassShopItem_html_a76f9342f9bf8a0c4a920c83271456e28"><div class="ttname"><a href="classShopItem.html#a76f9342f9bf8a0c4a920c83271456e28">ShopItem.Init</a></div><div class="ttdeci">void Init(ShopWindow parentWindow, Shop item, Sprite image, bool owned)</div><div class="ttdef"><b>Definition</b> <a href="ShopItem_8cs_source.html#l00028">ShopItem.cs:28</a></div></div>
 <div class="ttc" id="aclassShopWindow_html_a0e11e0f93f9994c22b89c335f227d9f9"><div class="ttname"><a href="classShopWindow.html#a0e11e0f93f9994c22b89c335f227d9f9">ShopWindow.ShopParent</a></div><div class="ttdeci">GameObject ShopParent</div><div class="ttdef"><b>Definition</b> <a href="ShopWindow_8cs_source.html#l00011">ShopWindow.cs:11</a></div></div>
@@ -316,7 +358,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="UserData_8cs_source.html#l00018">User.UserData.Game</a>, <a class="el" href="ShopItem_8cs_source.html#l00028">ShopItem.Init()</a>, <a class="el" href="UserData_8cs_source.html#l00012">User.UserData.Instance</a>, <a class="el" href="ShopWindow_8cs_source.html#l00014">ShopItemPrefab</a>, <a class="el" href="ShopWindow_8cs_source.html#l00017">ShopItemSprites</a>, and <a class="el" href="ShopWindow_8cs_source.html#l00011">ShopParent</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ShopWindow_8cs_source.html#l00036">UpdateShop()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ShopWindow_8cs_source.html#l00044">UpdateShop()</a>.</p>
 
 </div>
 </div>
@@ -343,7 +385,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ShopWindow_8cs_source.html#l00011">11</a> of file <a class="el" href="ShopWindow_8cs_source.html">ShopWindow.cs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ShopWindow_8cs_source.html#l00049">LoadedShopItems()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ShopWindow_8cs_source.html#l00057">LoadedShopItems()</a>.</p>
 
 </div>
 </div>
@@ -369,7 +411,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ShopWindow_8cs_source.html#l00014">14</a> of file <a class="el" href="ShopWindow_8cs_source.html">ShopWindow.cs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ShopWindow_8cs_source.html#l00049">LoadedShopItems()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ShopWindow_8cs_source.html#l00057">LoadedShopItems()</a>.</p>
 
 </div>
 </div>
@@ -387,7 +429,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ShopWindow_8cs_source.html#l00017">17</a> of file <a class="el" href="ShopWindow_8cs_source.html">ShopWindow.cs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameUI_8cs_source.html#l00115">GameUI.LeftRotateSkin()</a>, <a class="el" href="ShopWindow_8cs_source.html#l00049">LoadedShopItems()</a>, and <a class="el" href="GameUI_8cs_source.html#l00121">GameUI.RightRotateSkin()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameUI_8cs_source.html#l00122">GameUI.LeftRotateSkin()</a>, <a class="el" href="ShopWindow_8cs_source.html#l00057">LoadedShopItems()</a>, and <a class="el" href="GameUI_8cs_source.html#l00128">GameUI.RightRotateSkin()</a>.</p>
 
 </div>
 </div>
@@ -415,6 +457,30 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a2fc748b2393664af503a1938fb2092d5" name="a2fc748b2393664af503a1938fb2092d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fc748b2393664af503a1938fb2092d5">&#9670;&#160;</a></span>ModalWindow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classModalWindow.html">ModalWindow</a> ShopWindow.ModalWindow</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ShopWindow_8cs_source.html#l00023">23</a> of file <a class="el" href="ShopWindow_8cs_source.html">ShopWindow.cs</a>.</p>
+
+</div>
+</div>
 <a id="a92bd226c2ce12df91fd1d8835a2f292a" name="a92bd226c2ce12df91fd1d8835a2f292a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a92bd226c2ce12df91fd1d8835a2f292a">&#9670;&#160;</a></span>shopItemsCache</h2>
 
@@ -435,9 +501,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ShopWindow_8cs_source.html#l00022">22</a> of file <a class="el" href="ShopWindow_8cs_source.html">ShopWindow.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ShopWindow_8cs_source.html#l00025">25</a> of file <a class="el" href="ShopWindow_8cs_source.html">ShopWindow.cs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ShopWindow_8cs_source.html#l00036">UpdateShop()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ShopWindow_8cs_source.html#l00044">UpdateShop()</a>.</p>
 
 </div>
 </div>

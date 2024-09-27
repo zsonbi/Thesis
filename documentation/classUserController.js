@@ -5,6 +5,8 @@ var classUserController =
     [ "SendLogin", "classUserController.html#a2681d488d4225f93d77bf63709497e76", null ],
     [ "LoggedIn", "classUserController.html#a7c361646155ff6adaf7f6b2f0fc44821", null ],
     [ "SendRegister", "classUserController.html#a4f7bb7be9ade9b2aa7805252cdb0990e", null ],
+    [ "ShowRegisterError", "classUserController.html#ad1e672d36ed0c0d247fd10cc468efcf6", null ],
+    [ "ShowLoginError", "classUserController.html#a78b7057ee8dbcf3cfad9fad67ad6123f", null ],
     [ "Registered", "classUserController.html#a7ea984403404863e3067bc44275d4858", null ],
     [ "MoveToMainScence", "classUserController.html#af5f6a515315a0fb42dea26a6e9887a3e", null ],
     [ "IsValidEmail", "classUserController.html#a4ddf4a375cad51a8784cb9be7ba11b23", null ],
