@@ -7,7 +7,7 @@ using TMPro;
 using Config;
 using Thesis_backend.Data_Structures;
 
-public class UIController : MonoBehaviour
+public class MainWindowController : MonoBehaviour
 {
     [SerializeField]
     private TMP_Text UsernameInputText;
@@ -27,7 +27,7 @@ public class UIController : MonoBehaviour
     [SerializeField]
     public ModalWindow ModalWindow;
 
-    private Dictionary<long, TaskDisplayHandler> tasks = new Dictionary<long, TaskDisplayHandler>();
+    public Dictionary<long, TaskDisplayHandler> Tasks { get; private set; } = new Dictionary<long, TaskDisplayHandler>();
 
     // Start is called before the first frame update
     private void Start()
@@ -50,25 +50,25 @@ public class UIController : MonoBehaviour
 
     public void RemoveTask(long taskId)
     {
-        if (tasks.ContainsKey(taskId))
+        if (Tasks.ContainsKey(taskId))
         {
-            TaskDisplayHandler TaskToRemove = tasks[taskId];
-            tasks.Remove(taskId);
+            TaskDisplayHandler TaskToRemove = Tasks[taskId];
+            Tasks.Remove(taskId);
             Destroy(TaskToRemove.gameObject);
         }
     }
 
     public void UpdateTask(long taskId)
     {
-        if (tasks.ContainsKey(taskId))
+        if (Tasks.ContainsKey(taskId))
         {
-            tasks[taskId].UpdateLabels();
+            Tasks[taskId].UpdateLabels();
         }
     }
 
     public void LoadGoodTasks(bool updateDisplay = true)
     {
-        foreach (var task in tasks)
+        foreach (var task in Tasks)
         {
             if (!task.Value.CurrentTask.TaskType)
             {
@@ -86,7 +86,7 @@ public class UIController : MonoBehaviour
 
     public void LoadBadHabits(bool updateDisplay = true)
     {
-        foreach (var task in tasks)
+        foreach (var task in Tasks)
         {
             if (task.Value.CurrentTask.TaskType)
             {
@@ -109,7 +109,7 @@ public class UIController : MonoBehaviour
 
         taskComponent.InitValues(taskContainer, taskOpenPanelController, this);
 
-        tasks.Add(taskContainer.ID, taskComponent);
+        Tasks.Add(taskContainer.ID, taskComponent);
         return task;
     }
 

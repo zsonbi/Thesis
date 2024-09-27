@@ -130,7 +130,7 @@ public class UserController : MonoBehaviour
     /// </summary>
     private IEnumerator MoveToMainScence()
     {
-        AsyncOperation loading = SceneManager.LoadSceneAsync("MainMobileFrame", LoadSceneMode.Single);
+        AsyncOperation loading = SceneManager.LoadSceneAsync("MainScene", LoadSceneMode.Single);
 
         while (!loading.isDone)
         {

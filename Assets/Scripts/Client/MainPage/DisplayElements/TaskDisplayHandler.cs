@@ -27,7 +27,7 @@ public class TaskDisplayHandler : MonoBehaviour
     [SerializeField]
     private Button CompleteButton;
 
-    private UIController UIController;
+    private MainWindowController UIController;
 
     private TaskOpenPanelController taskOpenPanelController;
 
@@ -41,7 +41,7 @@ public class TaskDisplayHandler : MonoBehaviour
         }
     }
 
-    public void InitValues(PlayerTask taskContainer, TaskOpenPanelController taskOpenPanelController, UIController uIController)
+    public void InitValues(PlayerTask taskContainer, TaskOpenPanelController taskOpenPanelController, MainWindowController uIController)
     {
         this.CurrentTask = taskContainer;
 

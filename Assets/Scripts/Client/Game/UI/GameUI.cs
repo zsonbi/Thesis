@@ -186,7 +186,7 @@ public class GameUI : MonoBehaviour
     public void BackToTasks()
     {
         HideGameOverScreen();
-        SceneManager.LoadScene("MainMobileFrame", LoadSceneMode.Single);
+        SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
     }
 
     public void BackToGameMenu()

@@ -1,10 +1,12 @@
 using Config;
 using System.Collections;
 using System.Collections.Generic;
+using Thesis_backend.Data_Structures;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using User;
 
-public class LoggedIn : MonoBehaviour
+public class LoggedInChecker : MonoBehaviour
 {
     // Start is called before the first frame update
     private void Awake()
@@ -17,7 +19,7 @@ public class LoggedIn : MonoBehaviour
         while (true)
         {
             // Send the API request
-            StartCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORLOGOUT, onFailedAction: LoggedOut));
+            StartCoroutine(Server.SendGetRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORCHECKLOGGEDIN, LoggedIn, onFailedAction: LoggedOut));
 
             // Wait for 60 seconds before sending the next request
             yield return new WaitForSeconds(120f);
@@ -39,5 +41,14 @@ public class LoggedIn : MonoBehaviour
 
             yield return null;
         }
+    }
+
+    /// <summary>
+    /// When the login request's was responded log the user in
+    /// </summary>
+    /// <param name="result">The server's response</param>
+    private void LoggedIn(Thesis_backend.Data_Structures.User result)
+    {
+        UserData.Instance.Init(result);
     }
 }
