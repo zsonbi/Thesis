@@ -1,21 +1,21 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 09/27/2024 - 08:55:17 |
+| Generated on: | 09/27/2024 - 19:06:57 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 4 |
-| Classes: | 99 |
-| Files: | 97 |
-| Covered lines: | 284 |
-| Uncovered lines: | 4540 |
-| Coverable lines: | 4824 |
-| Total lines: | 9609 |
-| Line coverage: | 5.8% (284 of 4824) |
+| Classes: | 104 |
+| Files: | 102 |
+| Covered lines: | 739 |
+| Uncovered lines: | 4307 |
+| Coverable lines: | 5046 |
+| Total lines: | 10051 |
+| Line coverage: | 14.6% (739 of 5046) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 136 |
-| Total methods: | 855 |
-| Method coverage: | 15.9% (136 of 855) |
+| Covered methods: | 200 |
+| Total methods: | 863 |
+| Method coverage: | 23.1% (200 of 863) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -54,19 +54,24 @@
 |UnityStandardAssets.Vehicles.Car.WheelEffects|0|53|53|94|0%|0|0||0|10|0%|
 |**Assembly-CSharp-Editor**|**0**|**201**|**201**|**315**|**0%**|**0**|**0**|****|**0**|**15**|**0%**|
 |BuildCommand|0|201|201|315|0%|0|0||0|15|0%|
-|**Tests**|**89**|**4**|**93**|**232**|**95.6%**|**0**|**0**|****|**17**|**17**|**100%**|
+|**Tests**|**303**|**14**|**317**|**674**|**95.5%**|**0**|**0**|****|**23**|**24**|**95.8%**|
 |Assets.Tests.CoroutineRunner|12|0|12|31|100%|0|0||2|2|100%|
+|Assets.Tests.LoginWindowTests.LoginWindow.LoginWindowTestsParent[T]|4|0|4|24|100%|0|0||1|1|100%|
+|Assets.Tests.MainWindowTests.MainWindowTests.MainWindowTestsParent[T]|11|9|20|39|55%|0|0||1|1|100%|
+|Assets.Tests.UnityTestParent[T]|26|3|29|67|89.6%|0|0||2|2|100%|
 |GlobalSetup|16|0|16|46|100%|0|0||4|4|100%|
 |Tests.GameTests.RoadGeneratorTests|26|0|26|54|100%|0|0||3|3|100%|
-|Tests.MainMenuTest|4|0|4|16|100%|0|0||1|1|100%|
-|Tests.TestConfig|2|0|2|15|100%|0|0||1|1|100%|
-|Tests.UITests.UserControllerTests|29|4|33|70|87.8%|0|0||6|6|100%|
-|**ThesisScripts**|**195**|**2493**|**2688**|**5511**|**7.2%**|**0**|**0**|****|**119**|**567**|**20.9%**|
+|Tests.LoginWindow.UserControllerTests|22|0|22|49|100%|0|0||3|3|100%|
+|Tests.MainWindowTests.FriendWindowTest|0|2|2|34|0%|0|0||0|1|0%|
+|Tests.MainWindowTests.ProfileWindowTest|8|0|8|30|100%|0|0||1|1|100%|
+|Tests.MainWindowTests.TaskWindowTest|176|0|176|262|100%|0|0||5|5|100%|
+|Tests.TestConfig|2|0|2|38|100%|0|0||1|1|100%|
+|**ThesisScripts**|**436**|**2250**|**2686**|**5511**|**16.2%**|**0**|**0**|****|**177**|**568**|**31.1%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|0|6|6|15|0%|0|0||0|5|0%|
 |Building|0|9|9|33|0%|0|0||0|7|0%|
 |CameraScript|0|7|7|24|0%|0|0||0|2|0%|
 |Coin|0|7|7|16|0%|0|0||0|2|0%|
-|Config.ServerConfig|0|6|6|89|0%|0|0||0|6|0%|
+|Config.ServerConfig|1|5|6|89|16.6%|0|0||1|6|16.6%|
 |DirectionConverter|0|21|21|46|0%|0|0||0|2|0%|
 |EdgeRoadContainer|9|0|9|15|100%|0|0||7|7|100%|
 |EffectScript|0|4|4|20|0%|0|0||0|2|0%|
@@ -86,28 +91,28 @@
 |Game.World.GameWorld|0|68|68|119|0%|0|0||0|6|0%|
 |Game.World.RoadGenerator|55|49|104|200|52.8%|0|0||6|9|66.6%|
 |GameUI|0|102|102|198|0%|0|0||0|26|0%|
-|LoggedIn|8|11|19|43|42.1%|0|0||2|4|50%|
+|LoggedInChecker|14|8|22|54|63.6%|0|0||4|5|80%|
+|MainWindowController|63|19|82|144|76.8%|0|0||11|16|68.7%|
 |MeshGenerator|0|27|27|96|0%|0|0||0|2|0%|
-|ModalWindow|9|10|19|43|47.3%|0|0||2|4|50%|
-|ProfileHandler|0|27|27|74|0%|0|0||0|6|0%|
+|ModalWindow|0|19|19|43|0%|0|0||0|4|0%|
+|ProfileHandler|24|3|27|74|88.8%|0|0||5|6|83.3%|
 |ShopItem|0|17|17|49|0%|0|0||0|5|0%|
 |ShopWindow|0|42|42|82|0%|0|0||0|6|0%|
 |StarHandler|0|10|10|28|0%|0|0||0|1|0%|
 |TaskClosedEventArgs|0|4|4|14|0%|0|0||0|1|0%|
-|TaskDisplayHandler|2|62|64|123|3.1%|0|0||1|12|8.3%|
-|TaskOpenPanelController|3|119|122|225|2.4%|0|0||2|15|13.3%|
+|TaskDisplayHandler|25|39|64|123|39%|0|0||8|12|66.6%|
+|TaskOpenPanelController|105|12|117|214|89.7%|0|0||13|13|100%|
 |Thesis_backend.Data_Structures.DbElement|1|1|2|11|50%|0|0||2|3|66.6%|
 |Thesis_backend.Data_Structures.Friend|0|5|5|18|0%|0|0||0|10|0%|
 |Thesis_backend.Data_Structures.Game|6|2|8|18|75%|0|0||12|15|80%|
 |Thesis_backend.Data_Structures.OwnedCar|2|3|5|21|40%|0|0||4|9|44.4%|
-|Thesis_backend.Data_Structures.PlayerTask|0|60|60|84|0%|0|0||0|23|0%|
+|Thesis_backend.Data_Structures.PlayerTask|41|19|60|84|68.3%|0|0||20|23|86.9%|
 |Thesis_backend.Data_Structures.Shop|0|4|4|14|0%|0|0||0|7|0%|
-|Thesis_backend.Data_Structures.TaskRequest|0|4|4|16|0%|0|0||0|8|0%|
+|Thesis_backend.Data_Structures.TaskRequest|4|0|4|16|100%|0|0||8|8|100%|
 |Thesis_backend.Data_Structures.User|12|1|13|25|92.3%|0|0||25|26|96.1%|
 |Thesis_backend.Data_Structures.UserLoginRequest|2|0|2|14|100%|0|0||4|4|100%|
 |Thesis_backend.Data_Structures.UserRequest|3|0|3|15|100%|0|0||6|6|100%|
 |Thesis_backend.Data_Structures.UserSettings|3|1|4|15|75%|0|0||6|8|75%|
-|UIController|14|68|82|144|17%|0|0||5|14|35.7%|
 |UnityStandardAssets.CrossPlatformInput.AxisTouchButton|0|41|41|75|0%|0|0||0|6|0%|
 |UnityStandardAssets.CrossPlatformInput.ButtonHandler|0|19|19|50|0%|0|0||0|7|0%|
 |UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager|0|133|133|318|0%|0|0||0|47|0%|

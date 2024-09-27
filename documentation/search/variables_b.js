@@ -48,6 +48,6 @@ var searchData=
   ['mapping_45',['mapping',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput.html#a825e259327ff4204d651876bb30d22f9',1,'UnityStandardAssets::CrossPlatformInput::TiltInput']]],
   ['modalcontenttext_46',['ModalContentText',['../classModalWindow.html#aeca4ae4bd865300df08b118e4b03ae9c',1,'ModalWindow']]],
   ['modaltitletext_47',['ModalTitleText',['../classModalWindow.html#aac919191f446c3687a66a0e8b4ecadcd',1,'ModalWindow']]],
-  ['modalwindow_48',['modalwindow',['../classGameUI.html#aed6d780e8f4fa0d68dec75d22eff886e',1,'GameUI.ModalWindow'],['../classShopWindow.html#a2fc748b2393664af503a1938fb2092d5',1,'ShopWindow.ModalWindow'],['../classUIController.html#ad4b65fcdc4f0ebbbc19c45b3af5e305b',1,'UIController.ModalWindow'],['../classUserController.html#a0fcf36dbe7a418f491ec58e566aa8c5b',1,'UserController.ModalWindow']]],
+  ['modalwindow_48',['modalwindow',['../classGameUI.html#aed6d780e8f4fa0d68dec75d22eff886e',1,'GameUI.ModalWindow'],['../classShopWindow.html#a2fc748b2393664af503a1938fb2092d5',1,'ShopWindow.ModalWindow'],['../classMainWindowController.html#aeb17896f881a53dd45e25c61f26bab3b',1,'MainWindowController.ModalWindow'],['../classUserController.html#a0fcf36dbe7a418f491ec58e566aa8c5b',1,'UserController.ModalWindow']]],
   ['movementrange_49',['MovementRange',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1Joystick.html#a7309ba63c7e16cfb230130b0ba1f8bd4',1,'UnityStandardAssets::CrossPlatformInput::Joystick']]]
 ];

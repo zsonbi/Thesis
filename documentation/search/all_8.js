@@ -11,7 +11,7 @@ var searchData=
   ['init_8',['init',['../classGame_1_1Car.html#a73919d2b4768ace830efe5e84cb3e0d5',1,'Game.Car.Init()'],['../classGameUI.html#a86e861e18879f93819ab1feac66f2f22',1,'GameUI.Init()'],['../classShopItem.html#a76f9342f9bf8a0c4a920c83271456e28',1,'ShopItem.Init()'],['../classUser_1_1UserData.html#abb372911b5e49023a977bd064f46bb6e',1,'User.UserData.Init()']]],
   ['initchunk_9',['InitChunk',['../classGame_1_1World_1_1Chunk.html#a16255274ddf726bfa6e345189459e07d',1,'Game::World::Chunk']]],
   ['initunitaskloop_10',['InitUniTaskLoop',['../classGame_1_1World_1_1Chunk.html#a40aa70982f2ae4ecb1cbf4ada9bf9e76',1,'Game::World::Chunk']]],
-  ['initvalues_11',['initvalues',['../classFriendHandler.html#a89b20a1b9aad9bb9eb0a69781ed1c7ba',1,'FriendHandler.InitValues()'],['../classTaskDisplayHandler.html#ab7672041af21692a0b4d35990a3b4557',1,'TaskDisplayHandler.InitValues()']]],
+  ['initvalues_11',['initvalues',['../classFriendHandler.html#a89b20a1b9aad9bb9eb0a69781ed1c7ba',1,'FriendHandler.InitValues()'],['../classTaskDisplayHandler.html#a4234bef95ed8e26bee9d674c7cd963e7',1,'TaskDisplayHandler.InitValues()']]],
   ['inputaxisscrollbar_12',['InputAxisScrollbar',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1InputAxisScrollbar.html',1,'UnityStandardAssets::CrossPlatformInput']]],
   ['inputaxisscrollbar_2ecs_13',['InputAxisScrollbar.cs',['../InputAxisScrollbar_8cs.html',1,'']]],
   ['instance_14',['instance',['../classUser_1_1UserData.html#a0e7511fcf06639282624b12e673442e3',1,'User.UserData.instance'],['../classUser_1_1UserData.html#aac822a62e0ef2a7d0dbe623643146faa',1,'User.UserData.Instance']]],

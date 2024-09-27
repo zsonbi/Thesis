@@ -1,6 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#a97d0cfd4e00c26253919746e84ebb7e5aad0df54cc6571aea4edb7176c3149ef9":[1,0,4,0,8,0,1],
 "classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#a97d0cfd4e00c26253919746e84ebb7e5ae9490dd647be2142274984691da814fb":[0,0,5,0,9,0,2],
 "classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#a97d0cfd4e00c26253919746e84ebb7e5ae9490dd647be2142274984691da814fb":[1,0,4,0,8,0,2],
 "classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#aae6c2d3a204b5d0407dad6cc768925d9":[0,0,5,0,9,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX5 =
 "namespaceDataTypes.html#a3bc22b847fe90cda4414fc931bd61622a08a38277b0309070706f6652eeae9a53":[0,0,2,1,3],
 "namespaceDataTypes.html#a3bc22b847fe90cda4414fc931bd61622a258f49887ef8d14ac268c92b02503aaa":[0,0,2,1,2],
 "namespaceDataTypes.html#a3bc22b847fe90cda4414fc931bd61622a6adf97f83acf6453d4a6a4b1070f3754":[0,0,2,1,4],
-"namespaceDataTypes.html#a3bc22b847fe90cda4414fc931bd61622a92b09c7c48c520c3c55e497875da437c":[0,0,2,1,1]
+"namespaceDataTypes.html#a3bc22b847fe90cda4414fc931bd61622a92b09c7c48c520c3c55e497875da437c":[0,0,2,1,1],
+"namespaceDataTypes.html#a3bc22b847fe90cda4414fc931bd61622a945d5e233cf7d6240f6b783b36a374ff":[0,0,2,1,0]
 };

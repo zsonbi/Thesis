@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['loggedin_0',['LoggedIn',['../classLoggedIn.html',1,'']]]
+  ['loggedinchecker_0',['LoggedInChecker',['../classLoggedInChecker.html',1,'']]]
 ];

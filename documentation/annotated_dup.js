@@ -65,7 +65,8 @@ var annotated_dup =
     [ "FriendWindowHandler", "classFriendWindowHandler.html", "classFriendWindowHandler" ],
     [ "GameConfig", "classGameConfig.html", "classGameConfig" ],
     [ "GameUI", "classGameUI.html", "classGameUI" ],
-    [ "LoggedIn", "classLoggedIn.html", "classLoggedIn" ],
+    [ "LoggedInChecker", "classLoggedInChecker.html", "classLoggedInChecker" ],
+    [ "MainWindowController", "classMainWindowController.html", "classMainWindowController" ],
     [ "MeshGenerator", "classMeshGenerator.html", "classMeshGenerator" ],
     [ "ModalWindow", "classModalWindow.html", "classModalWindow" ],
     [ "ProfileHandler", "classProfileHandler.html", "classProfileHandler" ],
@@ -76,6 +77,5 @@ var annotated_dup =
     [ "TaskClosedEventArgs", "classTaskClosedEventArgs.html", "classTaskClosedEventArgs" ],
     [ "TaskDisplayHandler", "classTaskDisplayHandler.html", "classTaskDisplayHandler" ],
     [ "TaskOpenPanelController", "classTaskOpenPanelController.html", "classTaskOpenPanelController" ],
-    [ "UIController", "classUIController.html", "classUIController" ],
     [ "UserController", "classUserController.html", "classUserController" ]
 ];

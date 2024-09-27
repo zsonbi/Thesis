@@ -1,7 +1,7 @@
 var classTaskDisplayHandler =
 [
     [ "Update", "classTaskDisplayHandler.html#a7d72b41ee47a91677ea39f73c8169d5b", null ],
-    [ "InitValues", "classTaskDisplayHandler.html#ab7672041af21692a0b4d35990a3b4557", null ],
+    [ "InitValues", "classTaskDisplayHandler.html#a4234bef95ed8e26bee9d674c7cd963e7", null ],
     [ "CompleteTask", "classTaskDisplayHandler.html#a174607a55d6c496a2b7a07255180f80a", null ],
     [ "OpenEditor", "classTaskDisplayHandler.html#a1fbc7e2afc634524025879b91b36db30", null ],
     [ "TaskCompleted", "classTaskDisplayHandler.html#aba2ced7534752d6a8d1069e2a6c459b4", null ],
@@ -15,7 +15,7 @@ var classTaskDisplayHandler =
     [ "TaskIntervalsLabel", "classTaskDisplayHandler.html#a76372ef801e0c0ff6dc206dbb3093476", null ],
     [ "RemainingTimeLabel", "classTaskDisplayHandler.html#aaf0263a6a67f0d0f1feedf13e686c56b", null ],
     [ "CompleteButton", "classTaskDisplayHandler.html#a2cfd7e61e0fc131acda2e8e6919f00dd", null ],
-    [ "UIController", "classTaskDisplayHandler.html#a46071696724e5a3f93be3ab6fd0d3de6", null ],
+    [ "UIController", "classTaskDisplayHandler.html#a8957ebb3ef3c9bd8bd94b5ae557b85b7", null ],
     [ "taskOpenPanelController", "classTaskDisplayHandler.html#ac368b92edad55d0082921dbbd38f4d1c", null ],
     [ "CurrentTask", "classTaskDisplayHandler.html#ab895a03634437faaeb04c5f9bb0aafd1", null ]
 ];

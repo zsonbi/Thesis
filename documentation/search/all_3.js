@@ -7,7 +7,7 @@ var searchData=
   ['default_5ftaskintervals_4',['DEFAULT_TASKINTERVALS',['../classConfig_1_1ServerConfig.html#a69bbf2a306d19fd24eba05a7ec58e501',1,'Config::ServerConfig']]],
   ['default_5ftasktype_5',['DEFAULT_TASKTYPE',['../classConfig_1_1ServerConfig.html#ae695ed1003d463a61dfa9383869c6155',1,'Config::ServerConfig']]],
   ['deleted_6',['Deleted',['../classFriendHandler.html#a3c0bc10876798e557dbb518a47f03867',1,'FriendHandler']]],
-  ['deletedtask_7',['DeletedTask',['../classTaskOpenPanelController.html#a5cfa9ad8bb8f3783ffc7df689579b2ef',1,'TaskOpenPanelController']]],
+  ['deletedtask_7',['DeletedTask',['../classTaskOpenPanelController.html#a65ddb1fcca85863bc426618ec538e958',1,'TaskOpenPanelController']]],
   ['deletefriend_8',['DeleteFriend',['../classFriendHandler.html#a67169954526afe4bdb375c603a46fb6f',1,'FriendHandler']]],
   ['deletetask_9',['DeleteTask',['../classTaskOpenPanelController.html#a20a5400ef991e24a2832a97dceb6e82d',1,'TaskOpenPanelController']]],
   ['deletetaskbutton_10',['deleteTaskButton',['../classTaskOpenPanelController.html#a4f9d89c38e1248523d5084b0adf14f99',1,'TaskOpenPanelController']]],

@@ -1,6 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"namespaceDataTypes.html#a3bc22b847fe90cda4414fc931bd61622a945d5e233cf7d6240f6b783b36a374ff":[0,0,2,1,0],
 "namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578":[0,0,2,2],
 "namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578a6f53bfe04e78da893ba0c4f35ba6847e":[0,0,2,2,2],
 "namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578a970da5f1f2e32aeb9e488dd017160ab4":[0,0,2,2,3],
