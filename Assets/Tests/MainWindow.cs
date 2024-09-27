@@ -4,8 +4,12 @@ using UnityEngine.TestTools;
 
 namespace Tests
 {
-    public class MainMenuTest
+    public class MainWindowTests
     {
+        private void InitScene()
+        {
+        }
+
         [UnityTest]
         public IEnumerator DummyTest()
         {

@@ -3,67 +3,82 @@ using Config;
 using NUnit.Framework;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
 
 namespace Tests
 {
     namespace UITests
     {
-        public class UserControllerTests
+        public class UserControllerTests : UnityTestParent<UserController>
         {
-            private GameObject userControllerPrefab = Resources.Load<GameObject>("Prefabs/UserControllerPrefab");
-            private UserController userController;
+            // Coroutine to load the scene asynchronously before tests
+            //private IEnumerator LoadScene()
+            //{
+            //    User.UserData.Instance.Logout();
 
-            [SetUp]
-            public void Init()
-            {
-                CoroutineRunner.RunCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORLOGOUT));
-                //TestHandler.Instance.ServerConnection.StartCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORLOGOUT));
+            //    yield return CoroutineRunner.RunCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORLOGOUT));
 
-                this.userController = GameObject.Instantiate(userControllerPrefab).transform.Find("UserController").GetComponent<UserController>();
-            }
+            //    // Load the scene asynchronously
+            //    AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(TestConfig.LOGIN_SCENE_NAME, LoadSceneMode.Single);
 
-            [TearDown]
-            public void Shutdown()
-            {
-                User.UserData.Instance.Logout();
+            //    // Wait for the scene to load
+            //    while (!asyncLoad.isDone)
+            //    {
+            //        yield return null;
+            //    }
 
-                if (userController != null)
-                {
-                    userController.StartCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORLOGOUT));
-                    GameObject.Destroy(this.userController.transform.parent.gameObject);
-                }
-            }
+            //    Scene loadedScene = SceneManager.GetSceneByName(TestConfig.LOGIN_SCENE_NAME);
+            //    while (!loadedScene.isLoaded || SceneManager.GetActiveScene().name != TestConfig.LOGIN_SCENE_NAME)
+            //    {
+            //        // Wait until the scene is both loaded and active
+            //        yield return null;
+            //    }
+
+            //    // Wait for the UserController to be available in the scene
+            //    GameObject userControllerObject = null;
+            //    while (userControllerObject == null)
+            //    {
+            //        userControllerObject = GameObject.Find(TestConfig.USER_CONTROLLER_OBJECT_NAME);
+
+            //        yield return null; // Wait for the next frame if not found
+            //    }
+            //    // Get the UserController component once it's found
+            //    this.userController = userControllerObject.GetComponent<UserController>();
+            //    yield return null; // Ensure one more frame before proceeding
+            //    yield return new WaitForSeconds(TestConfig.SCENE_TOLERANCE);
+            //}
 
             private void Login(string userName, string password)
             {
-                TMPro.TMP_InputField[] fields = this.userController.LoginPanel.GetComponentsInChildren<TMPro.TMP_InputField>();
+                TMPro.TMP_InputField[] fields = this.MainController.LoginPanel.GetComponentsInChildren<TMPro.TMP_InputField>();
                 fields[0].text = userName;
                 fields[1].text = password;
 
-                this.userController.SendLogin();
+                this.MainController.SendLogin();
             }
 
             [UnityTest]
             public IEnumerator LoginTestUsername()
             {
-                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
-
+                yield return LoadScene(TestConfig.LOGIN_SCENE_NAME, TestConfig.USER_CONTROLLER_OBJECT_NAME, true);
                 Login(TestConfig.UserName, TestConfig.Password);
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
                 Assert.IsTrue(User.UserData.Instance.LoggedIn);
                 Assert.AreEqual(TestConfig.UserName, User.UserData.Instance.Username);
+                Assert.AreEqual("MainScene", SceneManager.GetActiveScene().name);
             }
 
             [UnityTest]
             public IEnumerator LoginTestEmail()
             {
-                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                yield return LoadScene(TestConfig.LOGIN_SCENE_NAME, TestConfig.USER_CONTROLLER_OBJECT_NAME, true);
 
                 Login(TestConfig.Email, TestConfig.Password);
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
                 Assert.IsTrue(User.UserData.Instance.LoggedIn);
                 Assert.AreEqual(TestConfig.Email, User.UserData.Instance.Email);
+                Assert.AreEqual("MainScene", SceneManager.GetActiveScene().name);
             }
         }
     }
