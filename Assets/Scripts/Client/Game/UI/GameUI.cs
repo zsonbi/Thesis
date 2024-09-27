@@ -45,6 +45,9 @@ public class GameUI : MonoBehaviour
     [SerializeField]
     private Button DoubleCoinButon;
 
+    [SerializeField]
+    private ModalWindow ModalWindow;
+
     private GameController gameController;
     public bool Doubled { get; private set; } = false;
 
@@ -61,7 +64,7 @@ public class GameUI : MonoBehaviour
 
     private void SaveCoins()
     {
-        StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.Game>(ServerConfig.PATH_FOR_SAVE_COINS, (int)(Doubled ? gameController.Coins * 2 : gameController.Coins), SavedCoins));
+        StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.Game>(ServerConfig.PATH_FOR_SAVE_COINS, (int)(Doubled ? gameController.Coins * 2 : gameController.Coins), SavedCoins, onFailedAction: ShowRequestFail));
     }
 
     private void SavedCoins(Thesis_backend.Data_Structures.Game game)
@@ -71,19 +74,26 @@ public class GameUI : MonoBehaviour
 
     public void DoubleCoins()
     {
-        StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATH_FOR_DOUBLE_COINS, new WWWForm(), DoubledCoins));
+        if (UserData.Instance.CurrentTaskScore >= 1000)
+        {
+            StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATH_FOR_DOUBLE_COINS, new WWWForm(), DoubledCoins, onFailedAction: ShowRequestFail));
+        }
     }
 
     public void BuyImmunity()
     {
-        StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATH_FOR_BUY_IMMUNITY, new WWWForm(), BoughtImmunity));
-
+        if (UserData.Instance.CurrentTaskScore >= 500)
+        {
+            StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATH_FOR_BUY_IMMUNITY, new WWWForm(), BoughtImmunity, onFailedAction: ShowRequestFail));
+        }
     }
 
     public void BuyTurbo()
     {
-        StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATH_FOR_BUY_TURBO, new WWWForm(),BoughtTurbo));
-
+        if (UserData.Instance.CurrentTaskScore >= 250)
+        {
+            StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATH_FOR_BUY_TURBO, new WWWForm(), BoughtTurbo, onFailedAction: ShowRequestFail));
+        }
     }
 
     private void BoughtImmunity(Thesis_backend.Data_Structures.User user)
@@ -91,7 +101,6 @@ public class GameUI : MonoBehaviour
         UserData.Instance.UpdateTaskScore(user.CurrentTaskScore);
         gameController.Player.ApplyImmunity();
         TaskScoreInGameText.text = UserData.Instance.CurrentTaskScore.ToString();
-
     }
 
     private void BoughtTurbo(Thesis_backend.Data_Structures.User user)
@@ -99,9 +108,7 @@ public class GameUI : MonoBehaviour
         UserData.Instance.UpdateTaskScore(user.CurrentTaskScore);
         gameController.Player.ApplyTurbo();
         TaskScoreInGameText.text = UserData.Instance.CurrentTaskScore.ToString();
-
     }
-
 
     private void DoubledCoins(Thesis_backend.Data_Structures.User user)
     {
@@ -137,6 +144,11 @@ public class GameUI : MonoBehaviour
         TaskScoreInGameText.text = UserData.Instance.CurrentTaskScore.ToString();
 
         gameController?.NewGame();
+    }
+
+    private void ShowRequestFail(string content)
+    {
+        ModalWindow.Show("Request fail", content);
     }
 
     public void ChangeDifficulyDisplay(int difficulty)

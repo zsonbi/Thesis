@@ -3064,6 +3064,7 @@ GameObject:
   - component: {fileID: 1804413736}
   - component: {fileID: 1804413735}
   - component: {fileID: 1804413738}
+  - component: {fileID: 1804413739}
   m_Layer: 5
   m_Name: ConstantScreenSizeCanvas
   m_TagString: Untagged
@@ -3087,9 +3088,9 @@ RectTransform:
   - {fileID: 1662771313}
   - {fileID: 510515418}
   - {fileID: 360641608}
-  - {fileID: 1582693925}
   - {fileID: 1957104790}
   - {fileID: 1176892760}
+  - {fileID: 1582693925}
   m_Father: {fileID: 519420032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3178,6 +3179,18 @@ MonoBehaviour:
   TaskPrefab: {fileID: 7898560835448612094, guid: 1024664230947644899dfa59252c6ef3, type: 3}
   taskOpenPanelController: {fileID: 360641609}
   ModalWindow: {fileID: 749857442}
+--- !u!114 &1804413739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804413733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7639151a5fe3bc4e8e9ddec08698a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1842388139
 GameObject:
   m_ObjectHideFlags: 0

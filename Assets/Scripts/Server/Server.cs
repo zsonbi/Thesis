@@ -15,7 +15,7 @@ public static class Server
     /// <param name="form">The data to send for the server refer to the serverconfig what it needs</param>
     /// <param name="onComplete">When the response arrives what to do</param>
     /// <param name="beforeComplete">What to do before the completion so we can show it before that to the user and validate it later</param>
-    public static IEnumerator SendPostRequest<T>(string url, object dataToSend, Action<T> onComplete = null, Action beforeComplete = null)
+    public static IEnumerator SendPostRequest<T>(string url, object dataToSend, Action<T> onComplete = null, Action beforeComplete = null, Action<string> onFailedAction = null)
     {
         using (UnityWebRequest webRequest = UnityWebRequest.Post(url, JsonConvert.SerializeObject(dataToSend), "application/json"))
         {
@@ -30,6 +30,7 @@ public static class Server
                 if (webRequest.downloadHandler.text is not null)
                 {
                     Debug.Log(webRequest.downloadHandler.text);
+                    onFailedAction?.Invoke(webRequest.downloadHandler.text);
                 }
             }
             else
@@ -62,7 +63,7 @@ public static class Server
         }
     }
 
-    public static IEnumerator SendPatchRequest<T>(string url, object dataToSend = null, Action<T> onComplete = null, Action beforeComplete = null)
+    public static IEnumerator SendPatchRequest<T>(string url, object dataToSend = null, Action<T> onComplete = null, Action beforeComplete = null, Action<string> onFailedAction = null)
     {
         using (UnityWebRequest webRequest = UnityWebRequest.Put(url, JsonConvert.SerializeObject(dataToSend)))
         {
@@ -78,6 +79,8 @@ public static class Server
                 Debug.Log(webRequest.error);
                 if (webRequest.downloadHandler.text is not null)
                 {
+                    onFailedAction?.Invoke(webRequest.downloadHandler.text);
+
                     Debug.Log(webRequest.downloadHandler.text);
                 }
             }
@@ -111,7 +114,7 @@ public static class Server
         }
     }
 
-    public static IEnumerator SendGetRequest<T>(string url, Action<T> onComplete = null, Action beforeComplete = null, Action failAction = null)
+    public static IEnumerator SendGetRequest<T>(string url, Action<T> onComplete = null, Action beforeComplete = null, Action<string> onFailedAction = null)
     {
         using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
         {
@@ -126,6 +129,7 @@ public static class Server
                 if (webRequest.downloadHandler.text is not null)
                 {
                     Debug.Log(webRequest.downloadHandler.text);
+                    onFailedAction?.Invoke(webRequest.downloadHandler.text);
                 }
             }
             else
@@ -158,7 +162,7 @@ public static class Server
         }
     }
 
-    public static IEnumerator SendDeleteRequest<T>(string url, Action<T> onComplete = null, Action beforeComplete = null, Action failAction = null)
+    public static IEnumerator SendDeleteRequest<T>(string url, Action<T> onComplete = null, Action beforeComplete = null, Action<string> onFailedAction = null)
     {
         using (UnityWebRequest webRequest = UnityWebRequest.Put(url, new byte[0]))
         {
@@ -175,6 +179,7 @@ public static class Server
                 if (webRequest.downloadHandler.text is not null)
                 {
                     Debug.Log(webRequest.downloadHandler.text);
+                    onFailedAction?.Invoke(webRequest.downloadHandler.text);
                 }
             }
             else

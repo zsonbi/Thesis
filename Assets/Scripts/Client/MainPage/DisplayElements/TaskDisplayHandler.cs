@@ -58,7 +58,7 @@ public class TaskDisplayHandler : MonoBehaviour
     {
         WWWForm form = new WWWForm();
 
-        StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.PlayerTask>(ServerConfig.PATHFORTASKCOMPLETE(CurrentTask.ID), onComplete: TaskCompleted));
+        StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.PlayerTask>(ServerConfig.PATHFORTASKCOMPLETE(CurrentTask.ID), onComplete: TaskCompleted, onFailedAction: UIController.ShowTaskFail));
     }
 
     public void OpenEditor()
@@ -69,7 +69,7 @@ public class TaskDisplayHandler : MonoBehaviour
     private void TaskCompleted(Thesis_backend.Data_Structures.PlayerTask result)
     {
         CompleteStateChange(true);
-        StartCoroutine(Server.SendGetRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORCHECKLOGGEDIN, UIController.UpdateUserData));
+        StartCoroutine(Server.SendGetRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORCHECKLOGGEDIN, UIController.UpdateUserData, onFailedAction: UIController.ShowTaskFail));
     }
 
     public void UpdateLabels()

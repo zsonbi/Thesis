@@ -2,15 +2,9 @@
 using Config;
 using NUnit.Framework;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Tests;
 using Thesis_backend.Data_Structures;
 using UnityEngine;
-using UnityEngine.AddressableAssets;
-using UnityEngine.ResourceManagement.AsyncOperations;
 
 [SetUpFixture]
 public class GlobalSetup
@@ -20,8 +14,6 @@ public class GlobalSetup
     public void BeforeAllTestsAsync()
     {
         RegisterTestUser();
-   
-
     }
 
     private void RegisterTestUser()

@@ -16,6 +16,20 @@ namespace Thesis_backend.Data_Structures
         [JsonIgnore]
         public override object Serialize => new { ID, TaskName, Description, TaskType, PeriodRate, Updated, LastCompleted, Completed };
 
+        public PlayerTask(PlayerTask playerTask) : base(playerTask)
+        {
+            this.ID = playerTask.ID;
+            this.TaskOwner = playerTask.TaskOwner;
+            this.TaskName = playerTask.TaskName;
+            this.Description = playerTask.Description;
+            this.TaskType = playerTask.TaskType;
+            this.PeriodRate = playerTask.PeriodRate;
+            this.Updated = playerTask.Updated;
+            this.Updated = playerTask.Updated;
+            this.LastCompleted = playerTask.LastCompleted;
+            this.Completed = playerTask.Completed;
+        }
+
         public void UpdateValues(string taskName, bool taskType, TaskIntervals taskInterval, string description, DateTime? lastCompleted = null, bool? completed = null)
         {
             this.TaskName = taskName;
@@ -31,6 +45,20 @@ namespace Thesis_backend.Data_Structures
             {
                 this.Completed = completed.Value;
             }
+        }
+        public void UpdateValues(PlayerTask playerTask)
+        {
+            if (playerTask is null)
+            {
+                return;
+            }
+
+            this.TaskName = playerTask.TaskName;
+            this.TaskType = playerTask.TaskType;
+            this.PeriodRate = playerTask.PeriodRate;
+            this.Description = playerTask.Description;
+            this.LastCompleted = playerTask.LastCompleted;
+            this.Completed = playerTask.Completed;
         }
 
         public void ChangeType(TaskType newType)

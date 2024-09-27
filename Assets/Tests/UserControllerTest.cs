@@ -1,14 +1,9 @@
 using Assets.Tests;
 using Config;
-using Game.World;
 using NUnit.Framework;
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.TestTools;
-using User;
 
 namespace Tests
 {

@@ -47,10 +47,6 @@ public class ProfileHandler : MonoBehaviour
     public void SendLogout()
     {
         StartCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORLOGOUT, LoggedOut));
-
-        //UserData.Instance.Logout();
-
-        //  StartCoroutine(MoveToLoginScene());
     }
 
     /// <summary>

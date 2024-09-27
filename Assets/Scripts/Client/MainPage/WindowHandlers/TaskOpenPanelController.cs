@@ -14,7 +14,7 @@ using User;
 public class TaskOpenPanelController : MonoBehaviour
 {
     [HideInInspector]
-    public PlayerTask TaskContainer = new PlayerTask();
+    public PlayerTask CurrentTask = new PlayerTask() { ID = -1 };
 
     [HideInInspector]
     public EventHandler<TaskClosedEventArgs> TaskClosedEventHandler;
@@ -47,6 +47,8 @@ public class TaskOpenPanelController : MonoBehaviour
 
     private static readonly int[] TASKINTERVALS = { 60, 120, 240, 1440, 2880, 10080, 20160, 40320 };
 
+    private PlayerTask playerTaskOnOpen;
+
     private void Awake()
     {
     }
@@ -58,9 +60,9 @@ public class TaskOpenPanelController : MonoBehaviour
 
     public void OpenUp()
     {
-        if (this.TaskContainer is not null)
+        if (this.CurrentTask is not null)
         {
-            OpenUp(type: this.TaskContainer.TaskType ? TaskType.BadHabit : TaskType.GoodTask);
+            OpenUp(type: this.CurrentTask.TaskType ? TaskType.BadHabit : TaskType.GoodTask);
         }
         else
         {
@@ -72,23 +74,25 @@ public class TaskOpenPanelController : MonoBehaviour
     {
         if (taskContainer is not null)
         {
-            this.TaskContainer = taskContainer;
+            this.CurrentTask = taskContainer;
             this.isNewTask = false;
+            this.playerTaskOnOpen = new PlayerTask(taskContainer);
         }
         else
         {
-            this.TaskContainer = new PlayerTask();
-            this.TaskContainer.ChangeType(type);
+            this.CurrentTask = new PlayerTask() { ID = -1 };
+            this.CurrentTask.ChangeType(type);
             this.isNewTask = true;
+            this.playerTaskOnOpen = null;
         }
 
-        taskNameInput.text = this.TaskContainer.TaskName;
+        taskNameInput.text = this.CurrentTask.TaskName;
 
-        descriptionInput.text = this.TaskContainer.Description;
+        descriptionInput.text = this.CurrentTask.Description;
 
         for (int i = 0; i < TASKINTERVALS.Length; i++)
         {
-            if (TASKINTERVALS[i] == (int)this.TaskContainer.PeriodRate)
+            if (TASKINTERVALS[i] == (int)this.CurrentTask.PeriodRate)
             {
                 taskIntervals.SetValueWithoutNotify(i);
                 break;
@@ -104,7 +108,7 @@ public class TaskOpenPanelController : MonoBehaviour
 
     public void MakeItBadHabit()
     {
-        this.TaskContainer?.ChangeType(TaskType.BadHabit);
+        this.CurrentTask?.ChangeType(TaskType.BadHabit);
         UpdateButtons();
 
         UIController.LoadBadHabits(false);
@@ -112,7 +116,7 @@ public class TaskOpenPanelController : MonoBehaviour
 
     public void MakeItGoodTask()
     {
-        this.TaskContainer?.ChangeType(TaskType.GoodTask);
+        this.CurrentTask?.ChangeType(TaskType.GoodTask);
         UpdateButtons();
 
         UIController.LoadGoodTasks(false);
@@ -122,7 +126,17 @@ public class TaskOpenPanelController : MonoBehaviour
     {
         this.TaskClosedEventHandler?.Invoke(this, new TaskClosedEventArgs(false));
         tasksOpenPanel.SetActive(false);
-        this.TaskContainer = new PlayerTask();
+        if (this.CurrentTask.ID != -1)
+        {
+            if (playerTaskOnOpen is not null)
+            {
+                CurrentTask.UpdateValues(playerTaskOnOpen);
+                UIController.LoadGoodTasks(playerTaskOnOpen.TaskType);
+
+                this.CurrentTask = playerTaskOnOpen;
+            }
+        }
+        this.CurrentTask = new PlayerTask();
     }
 
     public void Save()
@@ -131,19 +145,19 @@ public class TaskOpenPanelController : MonoBehaviour
 
         TaskRequest taskRequest = new TaskRequest()
         {
-            TaskName = this.TaskContainer.TaskName,
-            Description = this.TaskContainer.Description,
-            PeriodRate = (int)TaskContainer.PeriodRate,
-            TaskType = Convert.ToBoolean(TaskContainer.TaskType)
+            TaskName = this.CurrentTask.TaskName,
+            Description = this.CurrentTask.Description,
+            PeriodRate = (int)CurrentTask.PeriodRate,
+            TaskType = Convert.ToBoolean(CurrentTask.TaskType)
         };
 
         if (isNewTask)
         {
-            StartCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.PlayerTask>(ServerConfig.PATHFORTASKCREATE, taskRequest, SavedTask));
+            StartCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.PlayerTask>(ServerConfig.PATHFORTASKCREATE, taskRequest, SavedTask, onFailedAction: UIController.ShowTaskFail));
         }
         else
         {
-            StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.PlayerTask>(ServerConfig.PATHFORTASKUPDATE(TaskContainer.ID), taskRequest, SavedTask));
+            StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.PlayerTask>(ServerConfig.PATHFORTASKUPDATE(CurrentTask.ID), taskRequest, SavedTask, onFailedAction: UIController.ShowTaskFail));
         }
     }
 
@@ -151,33 +165,33 @@ public class TaskOpenPanelController : MonoBehaviour
     {
         this.TaskClosedEventHandler?.Invoke(this, new TaskClosedEventArgs(true));
         tasksOpenPanel.SetActive(false);
-        bool isNewTask = TaskContainer.ID == -1;
+        bool isNewTask = CurrentTask.ID == -1;
 
-        this.TaskContainer = savedTask;
+        this.CurrentTask = savedTask;
 
         if (isNewTask)
         {
-            UIController.CreateTask(this.TaskContainer);
+            UIController.CreateTask(this.CurrentTask);
         }
         else
         {
-            UIController.UpdateTask(TaskContainer.ID);
+            UIController.UpdateTask(CurrentTask.ID);
         }
-        this.TaskContainer = new PlayerTask();
+        this.CurrentTask = new PlayerTask();
     }
 
     public void DeleteTask()
     {
-        StartCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORTASKDELETE(TaskContainer.ID)));
+        StartCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORTASKDELETE(CurrentTask.ID), onFailedAction: UIController.ShowTaskFail));
     }
 
     private void DeletedTask(Dictionary<string, string> result)
     {
         if (result.ContainsKey("res") && result["res"] == "success")
         {
-            Debug.Log($"Deleted the id:{TaskContainer.ID} task");
+            Debug.Log($"Deleted the id:{CurrentTask.ID} task");
 
-            UIController.RemoveTask(TaskContainer.ID);
+            UIController.RemoveTask(CurrentTask.ID);
         }
         else
         {
@@ -192,12 +206,12 @@ public class TaskOpenPanelController : MonoBehaviour
         string description = descriptionInput.text;
         TaskIntervals taskInterval = (TaskIntervals)TASKINTERVALS[taskIntervals.value];
 
-        TaskContainer.UpdateValues(taskName, TaskContainer.TaskType, taskInterval, description);
+        CurrentTask.UpdateValues(taskName, CurrentTask.TaskType, taskInterval, description);
     }
 
     private void UpdateButtons()
     {
-        if (!this.TaskContainer.TaskType)
+        if (!this.CurrentTask.TaskType)
         {
             goodTaskButton.image.color = new Color(134f / 255f, 1f, 90f / 255f, 1.0f);
             badHabitButton.image.color = new Color(185 / 255f, 185f / 255f, 185f / 255f, 1f);
