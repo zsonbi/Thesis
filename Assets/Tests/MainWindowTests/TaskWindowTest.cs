@@ -152,6 +152,111 @@ namespace Tests
                     counter++;
                 }
             }
+
+            [UnityTest]
+            public IEnumerator TaskCancelTest()
+            {
+                yield return LoadScene();
+                MainController.LoadGoodTasks();
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                taskOpenPanelController.OpenUp();
+                LoadTaskComponents();
+                long uniqueId = DateTime.Now.Ticks;
+                int prevTaskCount = MainController.Tasks.Count;
+                taskOpenPanelController.OpenUp();
+                taskOpenPanelController.MakeItBadHabit();
+                TaskName.text = "testCancel" + uniqueId;
+                TaskDescription.text = "testDescription" + uniqueId;
+                TaskIntervals.value = 0;
+                taskOpenPanelController.Save();
+
+                for (int j = 0; j < 300; j++)
+                {
+                    if (prevTaskCount != MainController.Tasks.Count)
+                    {
+                        break;
+                    }
+                    yield return new WaitForSeconds(0.1f);
+                }
+
+                MainController.LoadBadHabits();
+
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                Assert.AreEqual("testCancel" + uniqueId, MainController.Tasks.Last().Value.CurrentTask.TaskName);
+                Assert.AreEqual("testDescription" + uniqueId, MainController.Tasks.Last().Value.CurrentTask.Description);
+                Assert.AreEqual(TaskOpenPanelController.TASKINTERVALS[0], MainController.Tasks.Last().Value.CurrentTask.PeriodRate);
+                Assert.AreEqual(true, MainController.Tasks.Last().Value.CurrentTask.TaskType);
+                Assert.AreNotEqual(-1, MainController.Tasks.Last().Key);
+                Assert.True((MainController.Tasks.Last().Value.CurrentTask.LastCompleted.Ticks - DateTime.Now.Ticks) < 10000);
+
+                taskOpenPanelController.OpenUp(MainController.Tasks.Last().Value.CurrentTask, TaskType.BadHabit);
+                taskOpenPanelController.MakeItBadHabit();
+                TaskName.text = "testCancel2" + uniqueId;
+                TaskDescription.text = "testDescriptiondwaadw" + uniqueId;
+                TaskIntervals.value = 4;
+                taskOpenPanelController.Cancel();
+
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+
+                Assert.AreEqual("testCancel" + uniqueId, MainController.Tasks.Last().Value.CurrentTask.TaskName);
+                Assert.AreEqual("testDescription" + uniqueId, MainController.Tasks.Last().Value.CurrentTask.Description);
+                Assert.AreEqual(TaskOpenPanelController.TASKINTERVALS[0], MainController.Tasks.Last().Value.CurrentTask.PeriodRate);
+                Assert.AreEqual(true, MainController.Tasks.Last().Value.CurrentTask.TaskType);
+                Assert.AreNotEqual(-1, MainController.Tasks.Last().Key);
+                Assert.True((MainController.Tasks.Last().Value.CurrentTask.LastCompleted.Ticks - DateTime.Now.Ticks) < 10000);
+            }
+
+            [UnityTest]
+            public IEnumerator TaskDeleteTest()
+            {
+                yield return LoadScene();
+                MainController.LoadGoodTasks();
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                taskOpenPanelController.OpenUp();
+                LoadTaskComponents();
+
+                long uniqueId = DateTime.Now.Ticks;
+                int prevTaskCount = MainController.Tasks.Count;
+                taskOpenPanelController.OpenUp();
+                taskOpenPanelController.MakeItBadHabit();
+                TaskName.text = "testDelete" + uniqueId;
+                TaskDescription.text = "testDescription" + uniqueId;
+                TaskIntervals.value = 0;
+                taskOpenPanelController.Save();
+
+                for (int j = 0; j < 300; j++)
+                {
+                    if (prevTaskCount != MainController.Tasks.Count)
+                    {
+                        break;
+                    }
+                    yield return new WaitForSeconds(0.1f);
+                }
+
+                MainController.LoadBadHabits();
+
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                Assert.AreEqual("testDelete" + uniqueId, MainController.Tasks.Last().Value.CurrentTask.TaskName);
+                Assert.AreEqual("testDescription" + uniqueId, MainController.Tasks.Last().Value.CurrentTask.Description);
+                Assert.AreEqual(TaskOpenPanelController.TASKINTERVALS[0], MainController.Tasks.Last().Value.CurrentTask.PeriodRate);
+                Assert.AreEqual(true, MainController.Tasks.Last().Value.CurrentTask.TaskType);
+                Assert.AreNotEqual(-1, MainController.Tasks.Last().Key);
+                Assert.True((MainController.Tasks.Last().Value.CurrentTask.LastCompleted.Ticks - DateTime.Now.Ticks) < 10000);
+
+                taskOpenPanelController.OpenUp(MainController.Tasks.Last().Value.CurrentTask, TaskType.BadHabit);
+                taskOpenPanelController.DeleteTask();
+
+                for (int j = 0; j < 300; j++)
+                {
+                    if (prevTaskCount == MainController.Tasks.Count)
+                    {
+                        break;
+                    }
+                    yield return new WaitForSeconds(0.1f);
+                }
+
+                Assert.AreEqual(prevTaskCount, MainController.Tasks.Count);
+            }
         }
     }
 }

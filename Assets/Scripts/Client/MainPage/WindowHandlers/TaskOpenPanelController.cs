@@ -122,7 +122,14 @@ public class TaskOpenPanelController : MonoBehaviour
             if (playerTaskOnOpen is not null)
             {
                 CurrentTask.UpdateValues(playerTaskOnOpen);
-                UIController.LoadGoodTasks(playerTaskOnOpen.TaskType);
+                if (playerTaskOnOpen.TaskType)
+                {
+                    UIController.LoadBadHabits();
+                }
+                else
+                {
+                    UIController.LoadGoodTasks();
+                }
 
                 this.CurrentTask = playerTaskOnOpen;
             }
@@ -173,21 +180,12 @@ public class TaskOpenPanelController : MonoBehaviour
 
     public void DeleteTask()
     {
-        StartCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORTASKDELETE(CurrentTask.ID), onFailedAction: UIController.ShowTaskFail));
+        StartCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORTASKDELETE(CurrentTask.ID), onComplete: DeletedTask, onFailedAction: UIController.ShowTaskFail));
     }
 
-    private void DeletedTask(Dictionary<string, string> result)
+    private void DeletedTask(string result)
     {
-        if (result.ContainsKey("res") && result["res"] == "success")
-        {
-            Debug.Log($"Deleted the id:{CurrentTask.ID} task");
-
-            UIController.RemoveTask(CurrentTask.ID);
-        }
-        else
-        {
-            UIController.ModalWindow.Show("Error", "Failed to delete the given task");
-        }
+        UIController.RemoveTask(CurrentTask.ID);
         Cancel();
     }
 
