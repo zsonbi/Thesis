@@ -52,6 +52,7 @@ namespace Tests
 
                 taskOpenPanelController.OpenUp();
                 MainController.LoadGoodTasks();
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
 
                 LoadTaskComponents();
                 int initCount = TaskParent.transform.childCount;
@@ -69,13 +70,13 @@ namespace Tests
                     TaskIntervals.value = i;
                     taskOpenPanelController.Save();
 
-                    for (int j = 0; j < 100000; j++)
+                    for (int j = 0; j < 300; j++)
                     {
                         if (prevTaskCount != MainController.Tasks.Count)
                         {
                             break;
                         }
-                        yield return null;
+                        yield return new WaitForSeconds(0.1f);
                     }
 
                     //  yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
@@ -102,6 +103,7 @@ namespace Tests
             {
                 yield return LoadScene();
                 MainController.LoadBadHabits();
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
 
                 taskOpenPanelController.OpenUp();
 
@@ -122,13 +124,13 @@ namespace Tests
                     TaskIntervals.value = i;
                     taskOpenPanelController.Save();
 
-                    for (int j = 0; j < 100000; j++)
+                    for (int j = 0; j < 300; j++)
                     {
                         if (prevTaskCount != MainController.Tasks.Count)
                         {
                             break;
                         }
-                        yield return null;
+                        yield return new WaitForSeconds(0.1f);
                     }
 
                     //  yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
