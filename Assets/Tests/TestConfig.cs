@@ -16,5 +16,12 @@ namespace Tests
         public const string LOGIN_SCENE_NAME = "LoginScene";
 
         public const string USER_CONTROLLER_OBJECT_NAME = "UserController";
+
+        public const string MAIN_SCENE_NAME = "MainScene";
+
+        public const string MAIN_SCREEN_CONTROLLER_OBJECT_NAME = "MainWindow";
+        public const string FRIEND_PANEL_CONTROLLER_OBJECT_NAME = "FriendsPanel";
+        public const string PROFILE_PANEL_CONTROLLER_OBJECT_NAME = "ProfilePanel";
+        public const string TASK_PANEL_CONTROLLER_OBJECT_NAME = "TaskOpenPanel";
     }
 }

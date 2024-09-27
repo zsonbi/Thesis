@@ -38,7 +38,7 @@ public class TaskOpenPanelController : MonoBehaviour
     private Button badHabitButton;
 
     [SerializeField]
-    private UIController UIController;
+    private MainWindowController UIController;
 
     [SerializeField]
     private Button deleteTaskButton;

@@ -7,7 +7,7 @@ using TMPro;
 using Config;
 using Thesis_backend.Data_Structures;
 
-public class UIController : MonoBehaviour
+public class MainWindowController : MonoBehaviour
 {
     [SerializeField]
     private TMP_Text UsernameInputText;

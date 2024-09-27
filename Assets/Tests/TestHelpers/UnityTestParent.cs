@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using Tests;
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using User;
+using Thesis_backend.Data_Structures;
 
 namespace Assets.Tests
 {
@@ -15,7 +17,7 @@ namespace Assets.Tests
     {
         protected T MainController;
 
-        protected IEnumerator LoadScene(string sceneName, string controllerObjectName, bool logout = false)
+        protected virtual IEnumerator LoadSceneBase(string sceneName, string controllerObjectName, bool login = true, bool logout = false)
         {
             if (logout)
             {
@@ -24,6 +26,11 @@ namespace Assets.Tests
                 yield return CoroutineRunner.RunCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORLOGOUT));
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
             }
+            if (login && UserData.Instance.LoggedIn)
+            {
+                this.Login();
+            }
+
             // Load the scene asynchronously
             AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
 
@@ -42,6 +49,19 @@ namespace Assets.Tests
 
             // Get the UserController component once it's found
             this.MainController = GameObject.Find(controllerObjectName).GetComponent<T>();
+            yield return new WaitForEndOfFrame();
+        }
+
+        private IEnumerator Login()
+        {
+            UserLoginRequest userLoginRequest = new UserLoginRequest()
+            {
+                UserIdentification = TestConfig.UserName,
+                Password = TestConfig.Password,
+            };
+
+            yield return CoroutineRunner.RunCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORLOGIN, userLoginRequest));
+            yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
         }
     }
 }

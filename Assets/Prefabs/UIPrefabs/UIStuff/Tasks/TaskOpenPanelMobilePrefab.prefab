@@ -3224,7 +3224,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1676527386094464142}
         m_TargetAssemblyTypeName: TaskOpenPanelController, Assembly-CSharp
-        m_MethodName: MakeItGoodHabit
+        m_MethodName: MakeItGoodTask
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3341,7 +3341,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &979288537257103667
 RectTransform:
   m_ObjectHideFlags: 0
