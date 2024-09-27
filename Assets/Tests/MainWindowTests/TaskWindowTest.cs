@@ -11,6 +11,7 @@ using UnityEngine.UI;
 using System.Reflection;
 using System.Linq;
 using System;
+using static UnityEditor.Progress;
 
 namespace Tests
 {
@@ -93,7 +94,7 @@ namespace Tests
                     Assert.AreEqual(TaskOpenPanelController.TASKINTERVALS[counter], item.Value.CurrentTask.PeriodRate);
                     Assert.AreEqual(false, item.Value.CurrentTask.TaskType);
                     Assert.AreNotEqual(-1, item.Key);
-                    Assert.True((item.Value.CurrentTask.LastCompleted.Ticks - DateTime.Now.Ticks) < 10000);
+                    Assert.True((TimeSpan.FromMinutes(item.Value.CurrentTask.PeriodRate) - (DateTime.UtcNow - item.Value.CurrentTask.LastCompleted)).TotalSeconds <= 0);
                     counter++;
                 }
             }
@@ -147,7 +148,7 @@ namespace Tests
                     Assert.AreEqual(TaskOpenPanelController.TASKINTERVALS[counter], item.Value.CurrentTask.PeriodRate);
                     Assert.AreEqual(true, item.Value.CurrentTask.TaskType);
                     Assert.AreNotEqual(-1, item.Key);
-                    Assert.True((item.Value.CurrentTask.LastCompleted.Ticks - DateTime.Now.Ticks) < 10000);
+                    Assert.True((TimeSpan.FromMinutes(item.Value.CurrentTask.PeriodRate) - (DateTime.UtcNow - item.Value.CurrentTask.LastCompleted)).TotalSeconds <= 0);
 
                     counter++;
                 }
@@ -187,7 +188,7 @@ namespace Tests
                 Assert.AreEqual(TaskOpenPanelController.TASKINTERVALS[0], MainController.Tasks.Last().Value.CurrentTask.PeriodRate);
                 Assert.AreEqual(true, MainController.Tasks.Last().Value.CurrentTask.TaskType);
                 Assert.AreNotEqual(-1, MainController.Tasks.Last().Key);
-                Assert.True((MainController.Tasks.Last().Value.CurrentTask.LastCompleted.Ticks - DateTime.Now.Ticks) < 10000);
+                Assert.True((TimeSpan.FromMinutes(MainController.Tasks.Last().Value.CurrentTask.PeriodRate) - (DateTime.UtcNow - MainController.Tasks.Last().Value.CurrentTask.LastCompleted)).TotalSeconds <= 0);
 
                 taskOpenPanelController.OpenUp(MainController.Tasks.Last().Value.CurrentTask, TaskType.BadHabit);
                 taskOpenPanelController.MakeItBadHabit();
@@ -203,7 +204,7 @@ namespace Tests
                 Assert.AreEqual(TaskOpenPanelController.TASKINTERVALS[0], MainController.Tasks.Last().Value.CurrentTask.PeriodRate);
                 Assert.AreEqual(true, MainController.Tasks.Last().Value.CurrentTask.TaskType);
                 Assert.AreNotEqual(-1, MainController.Tasks.Last().Key);
-                Assert.True((MainController.Tasks.Last().Value.CurrentTask.LastCompleted.Ticks - DateTime.Now.Ticks) < 10000);
+                Assert.True((TimeSpan.FromMinutes(MainController.Tasks.Last().Value.CurrentTask.PeriodRate) - (DateTime.UtcNow - MainController.Tasks.Last().Value.CurrentTask.LastCompleted)).TotalSeconds <= 0);
             }
 
             [UnityTest]
@@ -241,7 +242,7 @@ namespace Tests
                 Assert.AreEqual(TaskOpenPanelController.TASKINTERVALS[0], MainController.Tasks.Last().Value.CurrentTask.PeriodRate);
                 Assert.AreEqual(true, MainController.Tasks.Last().Value.CurrentTask.TaskType);
                 Assert.AreNotEqual(-1, MainController.Tasks.Last().Key);
-                Assert.True((MainController.Tasks.Last().Value.CurrentTask.LastCompleted.Ticks - DateTime.Now.Ticks) < 10000);
+                Assert.True((TimeSpan.FromMinutes(MainController.Tasks.Last().Value.CurrentTask.PeriodRate) - (DateTime.UtcNow - MainController.Tasks.Last().Value.CurrentTask.LastCompleted)).TotalSeconds <= 0);
 
                 taskOpenPanelController.OpenUp(MainController.Tasks.Last().Value.CurrentTask, TaskType.BadHabit);
                 taskOpenPanelController.DeleteTask();
@@ -256,6 +257,152 @@ namespace Tests
                 }
 
                 Assert.AreEqual(prevTaskCount, MainController.Tasks.Count);
+            }
+
+            [UnityTest]
+            public IEnumerator TaskSaveTest1()
+            {
+                yield return LoadScene();
+                MainController.LoadGoodTasks();
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                taskOpenPanelController.OpenUp();
+                LoadTaskComponents();
+                long uniqueId = DateTime.Now.Ticks;
+                int prevTaskCount = MainController.Tasks.Count;
+                taskOpenPanelController.OpenUp();
+                taskOpenPanelController.MakeItBadHabit();
+                TaskName.text = "testSave1" + uniqueId;
+                TaskDescription.text = "testDescription" + uniqueId;
+                TaskIntervals.value = 0;
+                taskOpenPanelController.Save();
+
+                for (int j = 0; j < 300; j++)
+                {
+                    if (prevTaskCount != MainController.Tasks.Count)
+                    {
+                        break;
+                    }
+                    yield return new WaitForSeconds(0.1f);
+                }
+
+                MainController.LoadBadHabits();
+
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                Assert.AreEqual("testSave1" + uniqueId, MainController.Tasks.Last().Value.CurrentTask.TaskName);
+                Assert.AreEqual("testDescription" + uniqueId, MainController.Tasks.Last().Value.CurrentTask.Description);
+                Assert.AreEqual(TaskOpenPanelController.TASKINTERVALS[0], MainController.Tasks.Last().Value.CurrentTask.PeriodRate);
+                Assert.AreEqual(true, MainController.Tasks.Last().Value.CurrentTask.TaskType);
+                Assert.AreNotEqual(-1, MainController.Tasks.Last().Key);
+                Assert.True((TimeSpan.FromMinutes(MainController.Tasks.Last().Value.CurrentTask.PeriodRate) - (DateTime.UtcNow - MainController.Tasks.Last().Value.CurrentTask.LastCompleted)).TotalSeconds <= 0);
+
+                taskOpenPanelController.OpenUp(MainController.Tasks.Last().Value.CurrentTask, TaskType.BadHabit);
+                taskOpenPanelController.MakeItGoodTask();
+                TaskName.text = "testSaveMod1" + uniqueId;
+                TaskDescription.text = "testDescriptionMod" + uniqueId;
+                TaskIntervals.value = 4;
+                taskOpenPanelController.Save();
+
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+
+                Assert.AreEqual("testSaveMod1" + uniqueId, MainController.Tasks.Last().Value.CurrentTask.TaskName);
+                Assert.AreEqual("testDescriptionMod" + uniqueId, MainController.Tasks.Last().Value.CurrentTask.Description);
+                Assert.AreEqual(TaskOpenPanelController.TASKINTERVALS[4], MainController.Tasks.Last().Value.CurrentTask.PeriodRate);
+                Assert.AreEqual(false, MainController.Tasks.Last().Value.CurrentTask.TaskType);
+                Assert.AreNotEqual(-1, MainController.Tasks.Last().Key);
+                Assert.True((TimeSpan.FromMinutes(MainController.Tasks.Last().Value.CurrentTask.PeriodRate) - (DateTime.UtcNow - MainController.Tasks.Last().Value.CurrentTask.LastCompleted)).TotalSeconds <= 0);
+            }
+
+            [UnityTest]
+            public IEnumerator TaskSaveTest2()
+            {
+                yield return LoadScene();
+                MainController.LoadGoodTasks();
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                taskOpenPanelController.OpenUp();
+                LoadTaskComponents();
+                long uniqueId = DateTime.Now.Ticks;
+                int prevTaskCount = MainController.Tasks.Count;
+                taskOpenPanelController.OpenUp();
+                taskOpenPanelController.MakeItGoodTask();
+                TaskName.text = "testSave2" + uniqueId;
+                TaskDescription.text = "testDescription" + uniqueId;
+                TaskIntervals.value = 0;
+                taskOpenPanelController.Save();
+
+                for (int j = 0; j < 300; j++)
+                {
+                    if (prevTaskCount != MainController.Tasks.Count)
+                    {
+                        break;
+                    }
+                    yield return new WaitForSeconds(0.1f);
+                }
+
+                MainController.LoadBadHabits();
+
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                Assert.AreEqual("testSave2" + uniqueId, MainController.Tasks.Last().Value.CurrentTask.TaskName);
+                Assert.AreEqual("testDescription" + uniqueId, MainController.Tasks.Last().Value.CurrentTask.Description);
+                Assert.AreEqual(TaskOpenPanelController.TASKINTERVALS[0], MainController.Tasks.Last().Value.CurrentTask.PeriodRate);
+                Assert.AreEqual(false, MainController.Tasks.Last().Value.CurrentTask.TaskType);
+                Assert.AreNotEqual(-1, MainController.Tasks.Last().Key);
+                Assert.True((TimeSpan.FromMinutes(MainController.Tasks.Last().Value.CurrentTask.PeriodRate) - (DateTime.UtcNow - MainController.Tasks.Last().Value.CurrentTask.LastCompleted)).TotalSeconds <= 0);
+
+                taskOpenPanelController.OpenUp(MainController.Tasks.Last().Value.CurrentTask, TaskType.BadHabit);
+                taskOpenPanelController.MakeItBadHabit();
+                TaskName.text = "testSaveMod2" + uniqueId;
+                TaskDescription.text = "testDescriptionMod" + uniqueId;
+                TaskIntervals.value = 2;
+                taskOpenPanelController.Save();
+
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+
+                Assert.AreEqual("testSaveMod2" + uniqueId, MainController.Tasks.Last().Value.CurrentTask.TaskName);
+                Assert.AreEqual("testDescriptionMod" + uniqueId, MainController.Tasks.Last().Value.CurrentTask.Description);
+                Assert.AreEqual(TaskOpenPanelController.TASKINTERVALS[2], MainController.Tasks.Last().Value.CurrentTask.PeriodRate);
+                Assert.AreEqual(true, MainController.Tasks.Last().Value.CurrentTask.TaskType);
+                Assert.AreNotEqual(-1, MainController.Tasks.Last().Key);
+                Assert.True((TimeSpan.FromMinutes(MainController.Tasks.Last().Value.CurrentTask.PeriodRate) - (DateTime.UtcNow - MainController.Tasks.Last().Value.CurrentTask.LastCompleted)).TotalSeconds <= 0);
+            }
+
+            [UnityTest]
+            public IEnumerator TestTaskComplete()
+            {
+                yield return LoadScene();
+                MainController.LoadGoodTasks();
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                taskOpenPanelController.OpenUp();
+                LoadTaskComponents();
+                long uniqueId = DateTime.Now.Ticks;
+                int prevTaskCount = MainController.Tasks.Count;
+                taskOpenPanelController.OpenUp();
+                taskOpenPanelController.MakeItGoodTask();
+                TaskName.text = "testComplete" + uniqueId;
+                TaskDescription.text = "testDescription" + uniqueId;
+                TaskIntervals.value = 0;
+                taskOpenPanelController.Save();
+
+                for (int j = 0; j < 300; j++)
+                {
+                    if (prevTaskCount != MainController.Tasks.Count)
+                    {
+                        break;
+                    }
+                    yield return new WaitForSeconds(0.1f);
+                }
+
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                Assert.AreEqual("testComplete" + uniqueId, MainController.Tasks.Last().Value.CurrentTask.TaskName);
+                Assert.AreEqual("testDescription" + uniqueId, MainController.Tasks.Last().Value.CurrentTask.Description);
+                Assert.AreEqual(TaskOpenPanelController.TASKINTERVALS[0], MainController.Tasks.Last().Value.CurrentTask.PeriodRate);
+                Assert.AreEqual(false, MainController.Tasks.Last().Value.CurrentTask.TaskType);
+                Assert.AreNotEqual(-1, MainController.Tasks.Last().Key);
+                Assert.True((TimeSpan.FromMinutes(MainController.Tasks.Last().Value.CurrentTask.PeriodRate) - (DateTime.UtcNow - MainController.Tasks.Last().Value.CurrentTask.LastCompleted)).TotalSeconds <= 0);
+
+                MainController.Tasks.Last().Value.CompleteTask();
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+
+                Assert.True((TimeSpan.FromMinutes(MainController.Tasks.Last().Value.CurrentTask.PeriodRate) - (DateTime.UtcNow - MainController.Tasks.Last().Value.CurrentTask.LastCompleted)).TotalSeconds > 600);
             }
         }
     }
