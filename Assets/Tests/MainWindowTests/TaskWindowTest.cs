@@ -9,6 +9,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
 using UnityEngine.UI;
 using System.Reflection;
+using System.Linq;
+using System;
 
 namespace Tests
 {
@@ -53,20 +55,34 @@ namespace Tests
 
                 LoadTaskComponents();
                 int initCount = TaskParent.transform.childCount;
+                int taskOffset = MainController.Tasks.Count;
+                long uniqueId = DateTime.Now.Ticks;
                 //Make the good habits
                 for (int i = 0; i < TaskIntervals.options.Count; i++)
                 {
                     taskOpenPanelController.OpenUp();
                     taskOpenPanelController.MakeItGoodTask();
-                    TaskName.text = "testGood" + i;
-                    TaskDescription.text = "testGoodDescription" + i;
+                    TaskName.text = "test" + uniqueId + i;
+                    TaskDescription.text = "testDescription" + uniqueId + i;
                     TaskIntervals.value = i;
                     taskOpenPanelController.Save();
-                    yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE / 3f);
+                    yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE / 2f);
                 }
                 MainController.LoadGoodTasks();
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
                 Assert.AreEqual(TaskIntervals.options.Count + initCount, TaskParent.transform.childCount);
+
+                int counter = 0;
+                foreach (var item in MainController.Tasks.Skip(taskOffset))
+                {
+                    Assert.AreEqual("test" + uniqueId + counter, item.Value.CurrentTask.TaskName);
+                    Assert.AreEqual("testDescription" + uniqueId + counter, item.Value.CurrentTask.Description);
+                    Assert.AreEqual(TaskOpenPanelController.TASKINTERVALS[counter], item.Value.CurrentTask.PeriodRate);
+                    Assert.AreEqual(false, item.Value.CurrentTask.TaskType);
+                    Assert.AreNotEqual(-1, item.Key);
+                    Assert.True((item.Value.CurrentTask.LastCompleted.Ticks - DateTime.Now.Ticks) < 10000);
+                    counter++;
+                }
             }
 
             [UnityTest]
@@ -79,20 +95,36 @@ namespace Tests
 
                 LoadTaskComponents();
                 int initCount = TaskParent.transform.childCount;
+                long uniqueId = DateTime.Now.Ticks;
+                int taskOffset = MainController.Tasks.Count;
+
                 //Make the good habits
                 for (int i = 0; i < TaskIntervals.options.Count; i++)
                 {
                     taskOpenPanelController.OpenUp();
                     taskOpenPanelController.MakeItBadHabit();
-                    TaskName.text = "testBad" + i;
-                    TaskDescription.text = "testBadDescription" + i;
+                    TaskName.text = "test" + uniqueId + i;
+                    TaskDescription.text = "testDescription" + uniqueId + i;
                     TaskIntervals.value = i;
                     taskOpenPanelController.Save();
-                    yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE / 3f);
+                    yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE / 2f);
                 }
                 MainController.LoadBadHabits();
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
                 Assert.AreEqual(TaskIntervals.options.Count + initCount, TaskParent.transform.childCount);
+
+                int counter = 0;
+                foreach (var item in MainController.Tasks.Skip(taskOffset))
+                {
+                    Assert.AreEqual("test" + uniqueId + counter, item.Value.CurrentTask.TaskName);
+                    Assert.AreEqual("testDescription" + uniqueId + counter, item.Value.CurrentTask.Description);
+                    Assert.AreEqual(TaskOpenPanelController.TASKINTERVALS[counter], item.Value.CurrentTask.PeriodRate);
+                    Assert.AreEqual(true, item.Value.CurrentTask.TaskType);
+                    Assert.AreNotEqual(-1, item.Key);
+                    Assert.True((item.Value.CurrentTask.LastCompleted.Ticks - DateTime.Now.Ticks) < 10000);
+
+                    counter++;
+                }
             }
         }
     }

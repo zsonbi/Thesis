@@ -45,7 +45,7 @@ public class TaskOpenPanelController : MonoBehaviour
 
     private bool isNewTask = false;
 
-    private static readonly int[] TASKINTERVALS = { 60, 120, 240, 1440, 2880, 10080, 20160, 40320 };
+    public static readonly int[] TASKINTERVALS = { 60, 120, 240, 1440, 2880, 10080, 20160, 40320 };
 
     private PlayerTask playerTaskOnOpen;
 
