@@ -3857,6 +3857,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6470620811567988443}
   - component: {fileID: 4416725613737383521}
+  - component: {fileID: 8722372644976215120}
   m_Layer: 0
   m_Name: Game
   m_TagString: Untagged
@@ -3899,6 +3900,18 @@ MonoBehaviour:
   world: {fileID: 6264528156740965072}
   playerPrefab: {fileID: 161566, guid: 62b01479c7e329c4eb944efdc31296af, type: 3}
   probeSize: 1
+--- !u!114 &8722372644976215120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6183202918527860477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7639151a5fe3bc4e8e9ddec08698a4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6295656363982957043
 GameObject:
   m_ObjectHideFlags: 0

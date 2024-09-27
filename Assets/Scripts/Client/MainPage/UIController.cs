@@ -32,16 +32,9 @@ public class UIController : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        if (!UserData.Instance.LoggedIn)
-        {
-            StartCoroutine(MoveToLoginScene());
-        }
-        else
-        {
-            UsernameInputText.text = UserData.Instance.Username;
-            CurrencyText.text = UserData.Instance.CurrentTaskScore.ToString();
-            LoadTasks();
-        }
+        UsernameInputText.text = UserData.Instance.Username;
+        CurrencyText.text = UserData.Instance.CurrentTaskScore.ToString();
+        LoadTasks();
     }
 
     public void UpdateUserData(Thesis_backend.Data_Structures.User user)
@@ -118,41 +111,6 @@ public class UIController : MonoBehaviour
 
         tasks.Add(taskContainer.ID, taskComponent);
         return task;
-    }
-
-    /// <summary>
-    /// Send a login request with the login panel's fields
-    /// </summary>
-    public void SendLogout()
-    {
-        StartCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORLOGOUT, LoggedOut));
-
-        //UserData.Instance.Logout();
-
-        //  StartCoroutine(MoveToLoginScene());
-    }
-
-    /// <summary>
-    /// When the logout was a success
-    /// </summary>
-    /// <param name="result">The server's response</param>
-    private void LoggedOut(string result)
-    {
-        UserData.Instance.Logout();
-
-        StartCoroutine(MoveToLoginScene());
-    }
-
-    private IEnumerator MoveToLoginScene()
-    {
-        AsyncOperation loading = SceneManager.LoadSceneAsync("LoginScene", LoadSceneMode.Single);
-
-        while (true)
-        {
-            Debug.Log(loading.progress);
-
-            yield return null;
-        }
     }
 
     private void LoadTasks()
