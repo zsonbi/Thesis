@@ -10,12 +10,8 @@ namespace Tests
 {
     namespace MainWindowTests
     {
-        public class MainWindowTests : MainWindowTestsParent<MainWindowController>
+        public class TaskWindowTask : MainWindowTestsParent<MainWindowController>
         {
-            private void InitScene()
-            {
-            }
-
             [UnityTest]
             public IEnumerator LogoutTest()
             {
@@ -28,13 +24,6 @@ namespace Tests
 
                 Assert.False(User.UserData.Instance.LoggedIn);
                 Assert.AreEqual(TestConfig.LOGIN_SCENE_NAME, SceneManager.GetActiveScene().name);
-            }
-
-            [UnityTest]
-            public IEnumerator DummyTest()
-            {
-                yield return null;
-                Assert.IsTrue(true);
             }
         }
     }
