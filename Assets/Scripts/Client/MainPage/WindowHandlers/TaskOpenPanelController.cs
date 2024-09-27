@@ -49,15 +49,6 @@ public class TaskOpenPanelController : MonoBehaviour
 
     private PlayerTask playerTaskOnOpen;
 
-    private void Awake()
-    {
-    }
-
-    // Start is called before the first frame update
-    private void Start()
-    {
-    }
-
     public void OpenUp()
     {
         if (this.CurrentTask is not null)
