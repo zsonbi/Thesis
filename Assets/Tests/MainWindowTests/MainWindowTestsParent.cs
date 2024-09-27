@@ -32,7 +32,7 @@ namespace Assets.Tests.MainWindowTests
                 {
                     Debug.LogError("Task Open Panel Controller not found!");
                 }
-                yield return null;
+                yield return new WaitForEndOfFrame();
             }
         }
     }

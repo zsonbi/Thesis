@@ -4,7 +4,7 @@ namespace Tests
 {
     internal static class TestConfig
     {
-        public const float ANSWER_TOLERANCE = 1.5f;
+        public const float ANSWER_TOLERANCE = 3f;
         public const float SCENE_TOLERANCE = 1f;
 
         public static string UserName = "test";

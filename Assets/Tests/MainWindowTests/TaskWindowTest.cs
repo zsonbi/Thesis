@@ -10,7 +10,7 @@ namespace Tests
 {
     namespace MainWindowTests
     {
-        public class TaskWindowTask : MainWindowTestsParent<MainWindowController>
+        public class TaskWindowTest : MainWindowTestsParent<MainWindowController>
         {
             [UnityTest]
             public IEnumerator LogoutTest()

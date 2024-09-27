@@ -26,9 +26,9 @@ namespace Assets.Tests
                 yield return CoroutineRunner.RunCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORLOGOUT));
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
             }
-            if (login && UserData.Instance.LoggedIn)
+            if (login && !UserData.Instance.LoggedIn)
             {
-                this.Login();
+                yield return this.Login();
             }
 
             // Load the scene asynchronously
