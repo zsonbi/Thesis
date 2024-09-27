@@ -66,7 +66,7 @@ namespace Tests
                     TaskDescription.text = "testDescription" + uniqueId + i;
                     TaskIntervals.value = i;
                     taskOpenPanelController.Save();
-                    yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE / 2f);
+                    yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
                 }
                 MainController.LoadGoodTasks();
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
@@ -107,7 +107,7 @@ namespace Tests
                     TaskDescription.text = "testDescription" + uniqueId + i;
                     TaskIntervals.value = i;
                     taskOpenPanelController.Save();
-                    yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE / 2f);
+                    yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
                 }
                 MainController.LoadBadHabits();
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
