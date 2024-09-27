@@ -60,13 +60,25 @@ namespace Tests
                 //Make the good habits
                 for (int i = 0; i < TaskIntervals.options.Count; i++)
                 {
+                    int prevTaskCount = MainController.Tasks.Count;
+
                     taskOpenPanelController.OpenUp();
                     taskOpenPanelController.MakeItGoodTask();
                     TaskName.text = "test" + uniqueId + i;
                     TaskDescription.text = "testDescription" + uniqueId + i;
                     TaskIntervals.value = i;
                     taskOpenPanelController.Save();
-                    yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+
+                    for (int j = 0; j < 100000; j++)
+                    {
+                        if (prevTaskCount != MainController.Tasks.Count)
+                        {
+                            break;
+                        }
+                        yield return null;
+                    }
+
+                    //  yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
                 }
                 MainController.LoadGoodTasks();
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
@@ -101,13 +113,25 @@ namespace Tests
                 //Make the good habits
                 for (int i = 0; i < TaskIntervals.options.Count; i++)
                 {
+                    int prevTaskCount = MainController.Tasks.Count;
+
                     taskOpenPanelController.OpenUp();
                     taskOpenPanelController.MakeItBadHabit();
                     TaskName.text = "test" + uniqueId + i;
                     TaskDescription.text = "testDescription" + uniqueId + i;
                     TaskIntervals.value = i;
                     taskOpenPanelController.Save();
-                    yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+
+                    for (int j = 0; j < 100000; j++)
+                    {
+                        if (prevTaskCount != MainController.Tasks.Count)
+                        {
+                            break;
+                        }
+                        yield return null;
+                    }
+
+                    //  yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
                 }
                 MainController.LoadBadHabits();
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
