@@ -49,7 +49,7 @@ namespace Assets.Tests
 
             // Get the UserController component once it's found
             this.MainController = GameObject.Find(controllerObjectName).GetComponent<T>();
-            yield return new WaitForEndOfFrame();
+            yield return null;
         }
 
         private IEnumerator Login()

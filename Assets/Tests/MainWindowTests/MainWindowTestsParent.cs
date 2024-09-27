@@ -15,7 +15,7 @@ namespace Assets.Tests.MainWindowTests
             protected IEnumerator LoadScene(bool login = true, bool logout = false)
             {
                 yield return base.LoadSceneBase(TestConfig.MAIN_SCENE_NAME, TestConfig.MAIN_SCREEN_CONTROLLER_OBJECT_NAME, login, logout);
-                yield return new WaitForEndOfFrame();
+                yield return null;
                 this.friendHandler = GameObject.FindObjectOfType<FriendWindowHandler>(true);
                 if (this.friendHandler == null)
                 {
@@ -32,7 +32,7 @@ namespace Assets.Tests.MainWindowTests
                 {
                     Debug.LogError("Task Open Panel Controller not found!");
                 }
-                yield return new WaitForEndOfFrame();
+                yield return null;
             }
         }
     }
