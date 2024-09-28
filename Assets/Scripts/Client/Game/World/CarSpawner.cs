@@ -19,9 +19,9 @@ namespace Game
             [SerializeField]
             private List<GameObject> CitizenCars;
 
-            private Dictionary<int, float> spawnIntervalsTier1 = new Dictionary<int, float>() { { 0, 10 }, { 1, 9 }, { 2, 8 }, { 3, 7 }, { 4, 6 }, { 5, 4 } };
-            private Dictionary<int, float> spawnIntervalsTier2 = new Dictionary<int, float>() { { 0, float.PositiveInfinity }, { 1, float.PositiveInfinity }, { 2, float.PositiveInfinity }, { 3, 12 }, { 4, 10 }, { 5, 7 } };
-            private Dictionary<int, float> spawnIntervalsTier3 = new Dictionary<int, float>() { { 0, float.PositiveInfinity }, { 1, float.PositiveInfinity }, { 2, float.PositiveInfinity }, { 3, float.PositiveInfinity }, { 4, 20 }, { 5, 10 } };
+            private Dictionary<int, float> spawnIntervalsTier1 = new Dictionary<int, float>() { { 0, 6 }, { 1, 5}, { 2, 4 }, { 3, 3 }, { 4, 1 }, { 5, 1 } };
+            private Dictionary<int, float> spawnIntervalsTier2 = new Dictionary<int, float>() { { 0, float.PositiveInfinity }, { 1, float.PositiveInfinity }, { 2, float.PositiveInfinity }, { 3, 8 }, { 4, 6 }, { 5, 3 } };
+            private Dictionary<int, float> spawnIntervalsTier3 = new Dictionary<int, float>() { { 0, float.PositiveInfinity }, { 1, float.PositiveInfinity }, { 2, float.PositiveInfinity }, { 3, float.PositiveInfinity }, { 4, 10 }, { 5, 5 } };
 
             private float tier1SpawnerTimer = 0f;
             private float tier2SpawnerTimer = 0f;

@@ -18,9 +18,9 @@ public static class GameConfig
 
     public const float POLICE_GAME_OVER = 1.5f;
 
-    public const float POLICE_RAYCAST_FORWARD_DISTANCE = 20f;
-    public const float POLICE_RAYCAST_SIDE_DISTANCE = 30f;
-    public const float POLICE_REVERSE_DISTANCE = 15f;
+    public const float POLICE_RAYCAST_FORWARD_DISTANCE = 15f;
+    public const float POLICE_RAYCAST_SIDE_DISTANCE = 17f;
+    public const float POLICE_REVERSE_DISTANCE = 8f;
 
     public const float COIN_RATE = 0.1f;
 

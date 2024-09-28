@@ -26,8 +26,8 @@ namespace Game
 
             // Raycast distances and directions
             Vector3 forwardDirection = transform.TransformDirection(Vector3.forward);
-            Vector3 leftDirection = Quaternion.Euler(0, -30, 0) * forwardDirection;
-            Vector3 rightDirection = Quaternion.Euler(0, 30, 0) * forwardDirection;
+            Vector3 leftDirection = Quaternion.Euler(0, -10, 0) * forwardDirection;
+            Vector3 rightDirection = Quaternion.Euler(0, 10, 0) * forwardDirection;
 
             // Perform raycasts
             bool forwardHit = Physics.Raycast(transform.position, forwardDirection, out RaycastHit hitForward, GameConfig.POLICE_RAYCAST_FORWARD_DISTANCE, layerMask);
@@ -54,15 +54,15 @@ namespace Game
                         // Determine steering based on side raycasts
                         if (leftHit && rightHit)
                         {
-                            steering = hitRight.distance - hitLeft.distance; // Steer based on the relative distances
+                            steering = hitLeft.distance- hitRight.distance; // Steer based on the relative distances
                         }
                         else if (leftHit)
                         {
-                            steering = 1f;  // Obstacle on the left, steer right
+                            steering = -1f;  // Obstacle on the left, steer right
                         }
                         else if (rightHit)
                         {
-                            steering = -1f; // Obstacle on the right, steer left
+                            steering = 1f; // Obstacle on the right, steer left
                         }
                     }
                 }
