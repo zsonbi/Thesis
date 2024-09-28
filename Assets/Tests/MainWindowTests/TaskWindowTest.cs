@@ -11,9 +11,7 @@ using UnityEngine.UI;
 using System.Reflection;
 using System.Linq;
 using System;
-using static UnityEditor.Progress;
-using System.Xml;
-using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
+
 
 namespace Tests
 {
