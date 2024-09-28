@@ -37,17 +37,23 @@ namespace Game
             /// </summary>
             private int numberOfPlacedRoads = 0;
 
+            private Chunk[,] nearbyChunks;
+
+            private bool[,] lockRoad;
+
             /// <summary>
             /// Creates the road matrix
             /// </summary>
             /// <param name="numberOfEdgeRoads">How many roads should be on the matrix edges</param>
             /// <param name="size">How large is the chunk is to generate the road for</param>
             /// <param name="startPositions">The positions to start the generation from</param>
-            public RoadGenerator(int size, List<EdgeRoadContainer> startPositions)
+            public RoadGenerator(int size, List<EdgeRoadContainer> startPositions, Chunk[,] nearbyChunks)
             {
+                this.nearbyChunks = nearbyChunks;
                 this.RoadMatrix = new bool[size, size];
                 this.EdgeRoads = new List<EdgeRoadContainer>();
                 this.size = size;
+                this.lockRoad = new bool[size, size];
                 if (startPositions.Count == 0)
                 {
                     startPositions.Add(new EdgeRoadContainer(new Vector2Int(GameConfig.CHUNK_SIZE / 2, 0), 0, new Vector2Int(0, 1)));
@@ -63,8 +69,7 @@ namespace Game
                     RoadMatrix[newStart.y, newStart.x] = true;
                     numberOfPlacedRoads++;
                     EdgeRoads.Add(new EdgeRoadContainer(newStart, 1, generateStartPos.Direction));
-                    // CreateRoad(newStart + generateStartPos.Direction, generateStartPos.Direction, generateStartPos.roadCounter);
-                    CreateNewRoad(newStart.y + generateStartPos.Direction.y, newStart.x + generateStartPos.Direction.x, generateStartPos.Direction.y, generateStartPos.Direction.x, generateStartPos.roadCounter);
+                    CreateRoad(new Vector2Int(newStart.x + generateStartPos.Direction.x, newStart.y + generateStartPos.Direction.y), generateStartPos.Direction, 0);
                 }
             }
 
@@ -78,9 +83,9 @@ namespace Game
             {
                 if (RoadMatrix[roadPos.y, roadPos.x])
                 {
-                    //Debug.Log("Already set");
                     return;
                 }
+
                 this.RoadMatrix[roadPos.y, roadPos.x] = true;
                 numberOfPlacedRoads++;
                 if (roadPos.x == 0 || roadPos.x == size - 1 || roadPos.y == 0 || roadPos.y == size - 1)
@@ -90,15 +95,15 @@ namespace Game
                 }
 
                 //Make sure that the chunk doesn't get flooded
-                if (Random.Range(0.1f, 1f) < numberOfPlacedRoads / (size * size))
+                if (false && Random.Range(0.8f, 1f) < numberOfPlacedRoads / (size * size))
                 {
                     return;
                 }
-
+                // || Mathf.Pow(forwardCounter - 1, 5) / 2 > Random.Range(0f, 1f)
                 //Should the road change direction
-                if (Mathf.Pow(forwardCounter - 7, 3) / 300 > Random.Range(0f, 1f) && !CheckForward(roadPos + roadDir, roadDir, 0))
+                if ((forwardCounter > 2 && !lockRoad[roadPos.y, roadPos.x]) && !CheckForward(roadPos + roadDir, roadDir, 0) && !GoinTowardsEdge(roadPos, roadDir))
                 {
-                    int interSectionCount = Random.Range(2, 3);
+                    int interSectionCount = Random.Range(3, 4);
                     List<Vector2Int> possibleDirs = new List<Vector2Int>();
 
                     //The possible directions
@@ -111,7 +116,7 @@ namespace Game
                     {
                         int index = Random.Range(0, possibleDirs.Count);
 
-                        if (!CheckForward(possibleDirs[index], possibleDirs[index] - roadPos, 0))
+                        if (!CheckForward(possibleDirs[index], possibleDirs[index] - roadPos, 0) && !GoinTowardsEdge(roadPos, roadDir))
                         {
                             CreateRoad(possibleDirs[index], possibleDirs[index] - roadPos, 0);
                         }
@@ -120,9 +125,42 @@ namespace Game
                 }
                 else
                 {
+                    lockRoad[roadPos.y, roadPos.x] = true;
+
+                    if (roadDir.x == 0)
+                    {
+                        if (roadDir.x - 1 >= 0)
+                        {
+                            lockRoad[roadPos.y, roadPos.x - 1] = true;
+                        }
+
+                        if (roadDir.x + 1 < GameConfig.CHUNK_SIZE)
+                        {
+                            lockRoad[roadPos.y, roadPos.x + 1] = true;
+                        }
+                    }
+                    else
+                    {
+                        if (roadDir.y - 1 >= 0)
+                        {
+                            lockRoad[roadPos.y - 1, roadPos.x] = true;
+                        }
+                        if (roadDir.y + 1 < GameConfig.CHUNK_SIZE)
+                        {
+                            lockRoad[roadPos.y + 1, roadPos.x] = true;
+                        }
+                    }
                     //Make the road move forward
                     CreateRoad(roadPos + roadDir, roadDir, forwardCounter + 1);
                 }
+            }
+
+            private bool GoinTowardsEdge(Vector2Int position, Vector2Int dir)
+            {
+                int newXCoord = position.x + dir.x * 5;
+                int newYCoord = position.y + dir.y * 5;
+
+                return newXCoord < 0 || newYCoord < 0 || newXCoord >= GameConfig.CHUNK_SIZE || newYCoord >= GameConfig.CHUNK_SIZE;
             }
 
             /// <summary>
@@ -134,14 +172,55 @@ namespace Game
             /// <returns>true-if it ran into a road, false if it didn't run into a road</returns>
             private bool CheckForward(Vector2Int position, Vector2Int dir, int counter)
             {
-                if (position.x < 0 || position.y < 0 || position.y >= size || position.x >= size)
-                    return false;
-
-                if (RoadMatrix[position.y, position.x])
+                if (position.x < 0)
+                {
+                    if (nearbyChunks[1, 0] is null)
+                    {
+                        return false;
+                    }
+                    if (nearbyChunks[1, 0].Roads[position.y, position.x + GameConfig.CHUNK_SIZE])
+                    {
+                        return true;
+                    }
+                }
+                else if (position.y < 0)
+                {
+                    if (nearbyChunks[0, 1] is null)
+                    {
+                        return false;
+                    }
+                    if (nearbyChunks[0, 1].Roads[position.y + GameConfig.CHUNK_SIZE, position.x])
+                    {
+                        return true;
+                    }
+                }
+                else if (position.x >= size)
+                {
+                    if (nearbyChunks[1, 2] is null)
+                    {
+                        return false;
+                    }
+                    if (nearbyChunks[1, 2].Roads[position.y, position.x - GameConfig.CHUNK_SIZE])
+                    {
+                        return true;
+                    }
+                }
+                else if (position.y >= size)
+                {
+                    if (nearbyChunks[2, 1] is null)
+                    {
+                        return false;
+                    }
+                    if (nearbyChunks[2, 1].Roads[position.y - GameConfig.CHUNK_SIZE, position.x])
+                    {
+                        return true;
+                    }
+                }
+                else if (RoadMatrix[position.y, position.x])
                 {
                     return true;
                 }
-                else if (counter < 6)
+                if (counter < 5)
                 {
                     return CheckForward(position + dir, dir, counter + 1);
                 }
@@ -166,34 +245,8 @@ namespace Game
                     this.EdgeRoads.Add(new EdgeRoadContainer(new Vector2Int(col, row), counter, new Vector2Int(dirCol, dirRow)));
                     return;
                 }
-                if (counter % 4 == 0)
-                {
-                    int interSectionCount = Random.Range(2, 4);
-                    List<Vector2Int> possibleDirs = new List<Vector2Int>();
 
-                    //The possible directions
-                    possibleDirs.Add(new Vector2Int(-1, 0));
-                    possibleDirs.Add(new Vector2Int(1, 0));
-                    possibleDirs.Add(new Vector2Int(0, -1));
-                    possibleDirs.Add(new Vector2Int(0, 1));
-
-                    for (int i = 0; i < interSectionCount && possibleDirs.Count != 0; i++)
-                    {
-                        int index = Random.Range(0, possibleDirs.Count);
-
-                        //  if (!CheckForward(possibleDirs[index], possibleDirs[index] - roadPos, 0))
-                        //  {
-                        CreateNewRoad(row + possibleDirs[index].y, col + possibleDirs[index].x, possibleDirs[index].y, possibleDirs[index].x, 1);
-                        //  }
-                        possibleDirs.RemoveAt(index);
-                    }
-                }
-                else
-                {
-                    counter++;
-
-                    CreateNewRoad(row + dirRow, col + dirCol, dirRow, dirCol, counter);
-                }
+                CreateRoad(new Vector2Int(col + dirCol, row + dirRow), new Vector2Int(dirCol, dirRow), 0);
             }
         }
     }

@@ -104,6 +104,11 @@ namespace Game
                 }
             }
 
+            public  Chunk GetChunkWithoutLoad(int x, int z)
+            {
+                return Chunks[z, x];
+            }
+
             public async Task<Chunk> GetChunk(int x, int z)
             {
                 if (Chunks[z, x] is null)
