@@ -66,6 +66,8 @@ namespace Game
 
             public bool Loaded { get => this.gameObject.activeSelf; }
 
+            public bool[,] Roads => roadGenerator.RoadMatrix;
+
             public List<EdgeRoadContainer> EdgeRoads { get => roadGenerator.EdgeRoads; }
 
             private Dictionary<ChunkCellType, List<Vector3>> chunkCells = new Dictionary<ChunkCellType, List<Vector3>>();
@@ -126,9 +128,9 @@ namespace Game
                 while (objectsToCombine is null)
                 {
 #if UNITY_WEBGL
-                    await UniTask.Delay(System.TimeSpan.FromSeconds(0.1f), ignoreTimeScale: false);
+                    await UniTask.Delay(System.TimeSpan.FromSeconds(0.001f), ignoreTimeScale: false);
 #else
-                    await Task.Delay(10);
+                    await Task.Delay(1);
 #endif
                 }
                 Debug.Log("WORLD CREATED after" + buildings.Count);
@@ -141,8 +143,8 @@ namespace Game
                 }
                 if (edgeRoads.Count == 0)
                     Debug.Log($"Didn't get edges: ({zOffset},{xOffset})");
-
-                roadGenerator = new RoadGenerator(GameConfig.CHUNK_SIZE, edgeRoads);
+                Chunk[,] nearbyChunks = await GetNearbyChunks(Row, Col);
+                roadGenerator = new RoadGenerator(GameConfig.CHUNK_SIZE, edgeRoads, nearbyChunks);
 
                 //Create the tiles
                 CreateTiles();
@@ -602,6 +604,36 @@ namespace Game
                         }
                     }
                 }
+            }
+
+            private async Task<Chunk[,]> GetNearbyChunks(int row, int col)
+            {
+                Chunk[,] nearbyChunks = new Chunk[3, 3];
+
+                for (int i = -1; i < 2; i++)
+                {
+                    if (row + i < 0 || row + i >= GameConfig.CHUNK_COUNT || i == 0)
+                    {
+                        continue;
+                    }
+                    for (int j = -1; j < 2; j++)
+                    {
+                        if (col + j < 0 || col + j >= GameConfig.CHUNK_COUNT || j == 0)
+                        {
+                            continue;
+                        }
+
+                        nearbyChunks[i + 1, j + 1] = world.GetChunkWithoutLoad(col + j, row + i);
+                        if (nearbyChunks[i + 1, j + 1] is not null)
+                        {
+                            while (nearbyChunks[i + 1, j + 1].Roads is null)
+                            {
+                                await UniTask.Delay(System.TimeSpan.FromSeconds(0.001f), ignoreTimeScale: false);
+                            }
+                        }
+                    }
+                }
+                return nearbyChunks;
             }
         }
     }

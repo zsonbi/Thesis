@@ -24,7 +24,7 @@ public static class GameConfig
 
     public const float COIN_RATE = 0.1f;
 
-    public const float TURBO_DURATION=5f;
+    public const float TURBO_DURATION = 5f;
 
-    public const float IMMUNITY_DURATION=3f;
+    public const float IMMUNITY_DURATION = 3f;
 }
