@@ -19,10 +19,11 @@ var searchData=
   ['loadgoodtasks_16',['LoadGoodTasks',['../classMainWindowController.html#a97bc3e1edc8b02fe6876003c0705d9bb',1,'MainWindowController']]],
   ['loadtasks_17',['LoadTasks',['../classMainWindowController.html#aeffd5cd65578256e44cf9a4d26a96fc6',1,'MainWindowController']]],
   ['lockandtrytoplacebuilding_18',['LockAndTryToPlaceBuilding',['../classGame_1_1World_1_1Chunk.html#af2946e1e1b9e325d6004d166b2b26193',1,'Game::World::Chunk']]],
-  ['loggedin_19',['loggedin',['../classUserController.html#a7c361646155ff6adaf7f6b2f0fc44821',1,'UserController.LoggedIn()'],['../classLoggedInChecker.html#a5d30cd37699b04a6cf8b07a833221b5d',1,'LoggedInChecker.LoggedIn()'],['../classUser_1_1UserData.html#acdd4d87ab2fd5a0a81895656a6853b71',1,'User.UserData.LoggedIn']]],
-  ['loggedinchecker_20',['LoggedInChecker',['../classLoggedInChecker.html',1,'']]],
-  ['loggedinchecker_2ecs_21',['LoggedInChecker.cs',['../LoggedInChecker_8cs.html',1,'']]],
-  ['loggedout_22',['loggedout',['../classProfileHandler.html#a7c3f5f6c1313403adcf0f6293818e1cc',1,'ProfileHandler.LoggedOut()'],['../classLoggedInChecker.html#ae51623387d47466a2719ff967a8404ec',1,'LoggedInChecker.LoggedOut()']]],
-  ['loginpanel_23',['LoginPanel',['../classUserController.html#a98d6b3d688cc0a31fd46d7eb90309d85',1,'UserController']]],
-  ['logout_24',['Logout',['../classUser_1_1UserData.html#a8c8911482003919ea4fbab040c755f8f',1,'User::UserData']]]
+  ['lockroad_19',['lockRoad',['../classGame_1_1World_1_1RoadGenerator.html#aca23c5c7138a2eab20a79928704b4156',1,'Game::World::RoadGenerator']]],
+  ['loggedin_20',['loggedin',['../classUserController.html#a7c361646155ff6adaf7f6b2f0fc44821',1,'UserController.LoggedIn()'],['../classLoggedInChecker.html#a5d30cd37699b04a6cf8b07a833221b5d',1,'LoggedInChecker.LoggedIn()'],['../classUser_1_1UserData.html#acdd4d87ab2fd5a0a81895656a6853b71',1,'User.UserData.LoggedIn']]],
+  ['loggedinchecker_21',['LoggedInChecker',['../classLoggedInChecker.html',1,'']]],
+  ['loggedinchecker_2ecs_22',['LoggedInChecker.cs',['../LoggedInChecker_8cs.html',1,'']]],
+  ['loggedout_23',['loggedout',['../classProfileHandler.html#a7c3f5f6c1313403adcf0f6293818e1cc',1,'ProfileHandler.LoggedOut()'],['../classLoggedInChecker.html#ae51623387d47466a2719ff967a8404ec',1,'LoggedInChecker.LoggedOut()']]],
+  ['loginpanel_24',['LoginPanel',['../classUserController.html#a98d6b3d688cc0a31fd46d7eb90309d85',1,'UserController']]],
+  ['logout_25',['Logout',['../classUser_1_1UserData.html#a8c8911482003919ea4fbab040c755f8f',1,'User::UserData']]]
 ];

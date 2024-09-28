@@ -6,7 +6,7 @@ var searchData=
   ['taskcompleted_3',['TaskCompleted',['../classTaskDisplayHandler.html#aba2ced7534752d6a8d1069e2a6c459b4',1,'TaskDisplayHandler']]],
   ['taskdisplayhandler_4',['TaskDisplayHandler',['../classTaskDisplayHandler.html',1,'']]],
   ['taskdisplayhandler_2ecs_5',['TaskDisplayHandler.cs',['../TaskDisplayHandler_8cs.html',1,'']]],
-  ['taskintervals_6',['taskintervals',['../classTaskOpenPanelController.html#a022cf15c01615aab856791aa77b9bcab',1,'TaskOpenPanelController.taskIntervals'],['../classTaskOpenPanelController.html#a317d00246568f7c682c5d1c27032762b',1,'TaskOpenPanelController.TASKINTERVALS'],['../TaskIntervals_8cs.html#a4ba022096603875ae402bb772ec906f9',1,'TaskIntervals:&#160;TaskIntervals.cs']]],
+  ['taskintervals_6',['taskintervals',['../classTaskOpenPanelController.html#a317d00246568f7c682c5d1c27032762b',1,'TaskOpenPanelController.TASKINTERVALS'],['../classTaskOpenPanelController.html#a022cf15c01615aab856791aa77b9bcab',1,'TaskOpenPanelController.taskIntervals'],['../TaskIntervals_8cs.html#a4ba022096603875ae402bb772ec906f9',1,'TaskIntervals:&#160;TaskIntervals.cs']]],
   ['taskintervals_2ecs_7',['TaskIntervals.cs',['../TaskIntervals_8cs.html',1,'']]],
   ['taskintervalslabel_8',['TaskIntervalsLabel',['../classTaskDisplayHandler.html#a76372ef801e0c0ff6dc206dbb3093476',1,'TaskDisplayHandler']]],
   ['taskname_9',['taskname',['../structThesis__backend_1_1Data__Structures_1_1TaskRequest.html#a2395e5dc649c2efb0eb44f685e74bfcf',1,'Thesis_backend.Data_Structures.TaskRequest.TaskName'],['../namespaceThesis__backend_1_1Data__Structures.html#ac46ce5278ffa5998648bbb9fffa38676',1,'Thesis_backend.Data_Structures.TaskName']]],

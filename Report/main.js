@@ -292,7 +292,7 @@ var assemblies = [
       { "name": "FriendWindowHandler", "rp": "ThesisScripts_FriendWindowHandler.html", "cl": 1, "ucl": 49, "cal": 50, "tl": 89, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.Car", "rp": "ThesisScripts_Car.html", "cl": 0, "ucl": 81, "cal": 81, "tl": 137, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.CarController", "rp": "ThesisScripts_CarController.html", "cl": 0, "ucl": 129, "cal": 129, "tl": 249, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Game.CopCar", "rp": "ThesisScripts_CopCar.html", "cl": 0, "ucl": 54, "cal": 54, "tl": 82, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.CopCar", "rp": "ThesisScripts_CopCar.html", "cl": 0, "ucl": 48, "cal": 48, "tl": 156, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.EnableWheelPhysicMaterial", "rp": "ThesisScripts_EnableWheelPhysicMaterial.html", "cl": 0, "ucl": 16, "cal": 16, "tl": 37, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.GameController", "rp": "ThesisScripts_GameController.html", "cl": 0, "ucl": 120, "cal": 120, "tl": 192, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.NpcCar", "rp": "ThesisScripts_NpcCar.html", "cl": 0, "ucl": 6, "cal": 6, "tl": 19, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
@@ -300,9 +300,9 @@ var assemblies = [
       { "name": "Game.World.BuildingCell", "rp": "ThesisScripts_BuildingCell.html", "cl": 0, "ucl": 11, "cal": 11, "tl": 30, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.World.BuildingGenerator", "rp": "ThesisScripts_BuildingGenerator.html", "cl": 0, "ucl": 43, "cal": 43, "tl": 64, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.World.CarSpawner", "rp": "ThesisScripts_CarSpawner.html", "cl": 0, "ucl": 43, "cal": 43, "tl": 79, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Game.World.Chunk", "rp": "ThesisScripts_Chunk.html", "cl": 0, "ucl": 375, "cal": 375, "tl": 608, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Game.World.GameWorld", "rp": "ThesisScripts_GameWorld.html", "cl": 0, "ucl": 68, "cal": 68, "tl": 119, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Game.World.RoadGenerator", "rp": "ThesisScripts_RoadGenerator.html", "cl": 55, "ucl": 49, "cal": 104, "tl": 200, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.World.Chunk", "rp": "ThesisScripts_Chunk.html", "cl": 0, "ucl": 401, "cal": 401, "tl": 640, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.World.GameWorld", "rp": "ThesisScripts_GameWorld.html", "cl": 0, "ucl": 71, "cal": 71, "tl": 124, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.World.RoadGenerator", "rp": "ThesisScripts_RoadGenerator.html", "cl": 111, "ucl": 36, "cal": 147, "tl": 253, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "GameUI", "rp": "ThesisScripts_GameUI.html", "cl": 0, "ucl": 102, "cal": 102, "tl": 198, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "LoggedInChecker", "rp": "ThesisScripts_LoggedInChecker.html", "cl": 11, "ucl": 11, "cal": 22, "tl": 54, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "MainWindowController", "rp": "ThesisScripts_MainWindowController.html", "cl": 73, "ucl": 9, "cal": 82, "tl": 144, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
@@ -367,14 +367,14 @@ var riskHotspots = [
       { "value": 650, "exceeded": true },
     ]},
   {
-    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "Assets.Scripts.Client.DataTypes.ChunkCellContainer Game.World.Chunk::DetermineRoadType(System.Int32, System.Int32)", "methodShortName": "DetermineRoadType(...)", "fileIndex": 0, "line": 318,
+    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "Assets.Scripts.Client.DataTypes.ChunkCellContainer Game.World.Chunk::DetermineRoadType(System.Int32, System.Int32)", "methodShortName": "DetermineRoadType(...)", "fileIndex": 0, "line": 320,
     "metrics": [
       { "value": 23, "exceeded": true },
       { "value": 0, "exceeded": false },
       { "value": 552, "exceeded": true },
     ]},
   {
-    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "System.Void Game.World.Chunk::GenerateCellMatrix()", "methodShortName": "GenerateCellMatrix()", "fileIndex": 0, "line": 461,
+    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "System.Void Game.World.Chunk::GenerateCellMatrix()", "methodShortName": "GenerateCellMatrix()", "fileIndex": 0, "line": 463,
     "metrics": [
       { "value": 19, "exceeded": true },
       { "value": 0, "exceeded": false },
@@ -395,7 +395,7 @@ var riskHotspots = [
       { "value": 272, "exceeded": true },
     ]},
   {
-    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "CreateTiles()", "methodShortName": "CreateTiles()", "fileIndex": 0, "line": 255,
+    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "CreateTiles()", "methodShortName": "CreateTiles()", "fileIndex": 0, "line": 257,
     "metrics": [
       { "value": 16, "exceeded": true },
       { "value": 0, "exceeded": false },
@@ -416,7 +416,14 @@ var riskHotspots = [
       { "value": 240, "exceeded": true },
     ]},
   {
-    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "System.Void Game.World.Chunk::LockAndTryToPlaceBuilding(System.Int32, System.Int32, System.Int32)", "methodShortName": "LockAndTryToPlaceBuilding(...)", "fileIndex": 0, "line": 544,
+    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "System.Void Game.World.Chunk::LockAndTryToPlaceBuilding(System.Int32, System.Int32, System.Int32)", "methodShortName": "LockAndTryToPlaceBuilding(...)", "fileIndex": 0, "line": 546,
+    "metrics": [
+      { "value": 14, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 210, "exceeded": true },
+    ]},
+  {
+    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "InitChunk()", "methodShortName": "InitChunk()", "fileIndex": 0, "line": 127,
     "metrics": [
       { "value": 14, "exceeded": false },
       { "value": 0, "exceeded": false },
@@ -444,11 +451,11 @@ var riskHotspots = [
       { "value": 182, "exceeded": true },
     ]},
   {
-    "assembly": "ThesisScripts", "class": "Game.World.RoadGenerator", "reportPath": "ThesisScripts_RoadGenerator.html", "methodName": "System.Void Game.World.RoadGenerator::CreateRoad(UnityEngine.Vector2Int, UnityEngine.Vector2Int, System.Int32)", "methodShortName": "CreateRoad(...)", "fileIndex": 0, "line": 78,
+    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "GetNearbyChunks()", "methodShortName": "GetNearbyChunks()", "fileIndex": 0, "line": 610,
     "metrics": [
-      { "value": 12, "exceeded": false },
+      { "value": 13, "exceeded": false },
       { "value": 0, "exceeded": false },
-      { "value": 156, "exceeded": true },
+      { "value": 182, "exceeded": true },
     ]},
   {
     "assembly": "Assembly-CSharp", "class": "UnityStandardAssets.ImageEffects.VignetteAndChromaticAberration", "reportPath": "Assembly_CSharp_VignetteAndChromaticAberration.html", "methodName": "System.Void UnityStandardAssets.ImageEffects.VignetteAndChromaticAberration::OnRenderImage(UnityEngine.RenderTexture, UnityEngine.RenderTexture)", "methodShortName": "OnRenderImage(...)", "fileIndex": 0, "line": 51,
@@ -458,21 +465,14 @@ var riskHotspots = [
       { "value": 132, "exceeded": true },
     ]},
   {
-    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "InitChunk()", "methodShortName": "InitChunk()", "fileIndex": 0, "line": 125,
-    "metrics": [
-      { "value": 11, "exceeded": false },
-      { "value": 0, "exceeded": false },
-      { "value": 132, "exceeded": true },
-    ]},
-  {
-    "assembly": "ThesisScripts", "class": "Game.CopCar", "reportPath": "ThesisScripts_CopCar.html", "methodName": "System.Void Game.CopCar::Update()", "methodShortName": "Update()", "fileIndex": 0, "line": 12,
+    "assembly": "ThesisScripts", "class": "Game.GameController", "reportPath": "ThesisScripts_GameController.html", "methodName": "System.Void Game.GameController::DespawnFarAwayChunks(System.Int32, System.Int32)", "methodShortName": "DespawnFarAwayChunks(...)", "fileIndex": 0, "line": 132,
     "metrics": [
       { "value": 10, "exceeded": false },
       { "value": 0, "exceeded": false },
       { "value": 110, "exceeded": true },
     ]},
   {
-    "assembly": "ThesisScripts", "class": "Game.GameController", "reportPath": "ThesisScripts_GameController.html", "methodName": "System.Void Game.GameController::DespawnFarAwayChunks(System.Int32, System.Int32)", "methodShortName": "DespawnFarAwayChunks(...)", "fileIndex": 0, "line": 132,
+    "assembly": "ThesisScripts", "class": "Game.World.RoadGenerator", "reportPath": "ThesisScripts_RoadGenerator.html", "methodName": "System.Void Game.World.RoadGenerator::CreateNewRoad(System.Int32, System.Int32, System.Int32, System.Int32, System.Int32)", "methodShortName": "CreateNewRoad(...)", "fileIndex": 0, "line": 234,
     "metrics": [
       { "value": 10, "exceeded": false },
       { "value": 0, "exceeded": false },
@@ -508,6 +508,13 @@ var riskHotspots = [
     ]},
   {
     "assembly": "ThesisScripts", "class": "Game.CarController", "reportPath": "ThesisScripts_CarController.html", "methodName": "System.Void Game.CarController::ApplyDrive(System.Single, System.Single)", "methodShortName": "ApplyDrive(...)", "fileIndex": 0, "line": 136,
+    "metrics": [
+      { "value": 9, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 90, "exceeded": true },
+    ]},
+  {
+    "assembly": "ThesisScripts", "class": "Game.CopCar", "reportPath": "ThesisScripts_CopCar.html", "methodName": "System.Void Game.CopCar::Update()", "methodShortName": "Update()", "fileIndex": 0, "line": 12,
     "metrics": [
       { "value": 9, "exceeded": false },
       { "value": 0, "exceeded": false },
@@ -563,13 +570,6 @@ var riskHotspots = [
       { "value": 56, "exceeded": true },
     ]},
   {
-    "assembly": "ThesisScripts", "class": "Game.World.RoadGenerator", "reportPath": "ThesisScripts_RoadGenerator.html", "methodName": "System.Boolean Game.World.RoadGenerator::CheckForward(UnityEngine.Vector2Int, UnityEngine.Vector2Int, System.Int32)", "methodShortName": "CheckForward(...)", "fileIndex": 0, "line": 136,
-    "metrics": [
-      { "value": 7, "exceeded": false },
-      { "value": 0, "exceeded": false },
-      { "value": 56, "exceeded": true },
-    ]},
-  {
     "assembly": "Assembly-CSharp", "class": "brake_light", "reportPath": "Assembly_CSharp_brake_light.html", "methodName": "System.Void brake_light::Update()", "methodShortName": "Update()", "fileIndex": 0, "line": 13,
     "metrics": [
       { "value": 6, "exceeded": false },
@@ -612,11 +612,18 @@ var riskHotspots = [
       { "value": 42, "exceeded": true },
     ]},
   {
-    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "Assets.Scripts.Client.DataTypes.ChunkCellContainer Game.World.Chunk::DetermineTileType(System.Int32, System.Int32)", "methodShortName": "DetermineTileType(...)", "fileIndex": 0, "line": 425,
+    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "Assets.Scripts.Client.DataTypes.ChunkCellContainer Game.World.Chunk::DetermineTileType(System.Int32, System.Int32)", "methodShortName": "DetermineTileType(...)", "fileIndex": 0, "line": 427,
     "metrics": [
       { "value": 6, "exceeded": false },
       { "value": 0, "exceeded": false },
       { "value": 42, "exceeded": true },
+    ]},
+  {
+    "assembly": "ThesisScripts", "class": "Game.World.RoadGenerator", "reportPath": "ThesisScripts_RoadGenerator.html", "methodName": "System.Void Game.World.RoadGenerator::CreateRoad(UnityEngine.Vector2Int, UnityEngine.Vector2Int, System.Int32)", "methodShortName": "CreateRoad(...)", "fileIndex": 0, "line": 83,
+    "metrics": [
+      { "value": 19, "exceeded": true },
+      { "value": 0, "exceeded": false },
+      { "value": 19.42, "exceeded": false },
     ]},
 ];
 
