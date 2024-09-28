@@ -34,7 +34,7 @@ namespace Game
             bool leftHit = Physics.Raycast(transform.position, leftDirection, out RaycastHit hitLeft, GameConfig.POLICE_RAYCAST_SIDE_DISTANCE, layerMask);
             bool rightHit = Physics.Raycast(transform.position, rightDirection, out RaycastHit hitRight, GameConfig.POLICE_RAYCAST_SIDE_DISTANCE, layerMask);
 
-            if (forwardHit || leftHit || rightHit)
+            if (forwardHit)
             {
                 if (forwardHit && hitForward.distance < GameConfig.POLICE_REVERSE_DISTANCE)
                 {
@@ -43,7 +43,7 @@ namespace Game
                 }
                 else if (forwardHit)
                 {
-                    if (Vector3.Distance(gameController.PlayerPos, this.gameObject.transform.position) < 7f)
+                    if (Vector3.Distance(gameController.PlayerPos, this.gameObject.transform.position) < 4f)
                     {
                         // Close to player, increase speed and steer towards player
                         v = 3f;
