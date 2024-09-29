@@ -14,12 +14,11 @@ namespace Tests
             [UnityTest]
             public IEnumerator NewGameTest()
             {
+                yield return LoadScene();
+
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
-                yield return LoadScene(true, true);
 
                 GameUI.NewGame();
-
-                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
 
                 for (int j = 0; j < 300; j++)
                 {
