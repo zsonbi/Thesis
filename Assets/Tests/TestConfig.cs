@@ -1,3 +1,4 @@
+using Config;
 using System;
 
 namespace Tests
@@ -7,10 +8,11 @@ namespace Tests
         public const float ANSWER_TOLERANCE = 3f;
         public const float SCENE_TOLERANCE = 1f;
 
+        public const string TASK_SCORE_CHEAT_PATH = ServerConfig.SERVERPATH + "/api/Tasks/Cheat?amount=100000'";
+        public const string TASK_SCORE_CHEAT_PASSWORD = "O07gYNin2*8f3BxdC$gI";
+
         public static string UserName = "test";
-
         public static string Email = "test@gmail.com";
-
         public const string Password = "TestCase123456";
 
         public const string LOGIN_SCENE_NAME = "LoginScene";

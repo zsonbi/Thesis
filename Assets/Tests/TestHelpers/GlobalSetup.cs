@@ -1,4 +1,5 @@
 ﻿using Config;
+using Game;
 using NUnit.Framework;
 using System;
 using Tests;
@@ -19,7 +20,7 @@ namespace Tests
 
         private void RegisterTestUser()
         {
-            TestConfig.UserName = "test" + DateTime.Now.Ticks.ToString();
+            TestConfig.UserName = "testt7GuSu" + DateTime.Now.Ticks.ToString();
             TestConfig.Email = TestConfig.UserName + "@gmail.com";
             Register(TestConfig.UserName, TestConfig.Email, TestConfig.Password);
         }
