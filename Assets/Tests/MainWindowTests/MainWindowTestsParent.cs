@@ -2,7 +2,7 @@
 using Tests;
 using UnityEngine;
 
-namespace Assets.Tests.MainWindowTests
+namespace Tests
 {
     namespace MainWindowTests
     {

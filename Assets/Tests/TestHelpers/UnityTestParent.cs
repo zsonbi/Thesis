@@ -11,7 +11,7 @@ using UnityEngine;
 using User;
 using Thesis_backend.Data_Structures;
 
-namespace Assets.Tests
+namespace Tests
 {
     public abstract class UnityTestParent<T>
     {

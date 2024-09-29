@@ -1,5 +1,3 @@
-using Assets.Tests;
-using Assets.Tests.MainWindowTests.MainWindowTests;
 using NUnit.Framework;
 using System.Collections;
 using UnityEngine;

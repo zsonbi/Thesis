@@ -1,5 +1,3 @@
-using Assets.Tests;
-using Assets.Tests.MainWindowTests.MainWindowTests;
 using NUnit.Framework;
 using System.Collections;
 using System.Runtime.CompilerServices;
@@ -11,7 +9,6 @@ using UnityEngine.UI;
 using System.Reflection;
 using System.Linq;
 using System;
-
 
 namespace Tests
 {

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace Assets.Tests
+namespace Tests
 {
     public class CoroutineRunner : MonoBehaviour
     {

@@ -34,5 +34,8 @@ namespace Tests
         public const string TASK_PANEL_CLOSE_BUTTON_NAME = "CloseButton";
 
         public const string TASK_PARENT_NAME = "TaskParent";
+
+        public const string GAME_SCENE_NAME = "GameScene";
+        public const string GAME_CONTROLLER_OBJECT_NAME = "Game";
     }
 }
