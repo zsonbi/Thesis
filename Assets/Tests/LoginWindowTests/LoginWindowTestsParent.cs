@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Tests;
 using UnityEngine;
 
-namespace Assets.Tests.LoginWindowTests
+namespace Tests
 {
     namespace LoginWindow
     {

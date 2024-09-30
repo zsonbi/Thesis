@@ -25,6 +25,8 @@ public class ShopItem : MonoBehaviour
 
     public long Id { get; private set; }
 
+    public bool Owned { get; private set; }
+
     public void Init(ShopWindow parentWindow, Shop item, Sprite image, bool owned)
     {
         this.shopWindow = parentWindow;
@@ -33,6 +35,7 @@ public class ShopItem : MonoBehaviour
         this.Price.text = item.Cost.ToString();
         this.Id = item.ID;
         this.BuyButton.gameObject.SetActive(!owned);
+        this.Owned = owned;
     }
 
     public void Buy()
@@ -44,6 +47,16 @@ public class ShopItem : MonoBehaviour
     {
         UserData.Instance.Game.OwnedCars = game.OwnedCars;
         UserData.Instance.Game.Currency = game.Currency;
+        this.Owned = true;
         shopWindow.UpdateShop();
     }
+
+    #region TestGettters
+
+    public string GetDisplayedPrice()
+    {
+        return Price.text;
+    }
+
+    #endregion TestGettters
 }

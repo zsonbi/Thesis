@@ -1,5 +1,3 @@
-using Assets.Tests;
-using Assets.Tests.LoginWindowTests.LoginWindow;
 using Config;
 using NUnit.Framework;
 using System.Collections;

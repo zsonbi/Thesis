@@ -1,46 +1,49 @@
-﻿using Assets.Tests;
-using Config;
+﻿using Config;
+using Game;
 using NUnit.Framework;
 using System;
 using Tests;
 using Thesis_backend.Data_Structures;
 using UnityEngine;
 
-[SetUpFixture]
-public class GlobalSetup
+namespace Tests
 {
-    // This method will run once before any tests in the namespace or assembly
-    [OneTimeSetUp]
-    public void BeforeAllTestsAsync()
+    [SetUpFixture]
+    public class GlobalSetup
     {
-        RegisterTestUser();
-    }
-
-    private void RegisterTestUser()
-    {
-        TestConfig.UserName = "test" + DateTime.Now.Ticks.ToString();
-        TestConfig.Email = TestConfig.UserName + "@gmail.com";
-        Register(TestConfig.UserName, TestConfig.Email, TestConfig.Password);
-    }
-
-    private void Register(string userName, string email, string password)
-    {
-        UserRequest userRequest = new UserRequest()
+        // This method will run once before any tests in the namespace or assembly
+        [OneTimeSetUp]
+        public void BeforeAllTestsAsync()
         {
-            Email = email,
-            UserName = userName,
-            Password = password
-        };
+            RegisterTestUser();
+        }
 
-        CoroutineRunner.RunCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORREGISTER, userRequest));
-    }
+        private void RegisterTestUser()
+        {
+            TestConfig.UserName = "testt7GuSu" + DateTime.Now.Ticks.ToString();
+            TestConfig.Email = TestConfig.UserName + "@gmail.com";
+            Register(TestConfig.UserName, TestConfig.Email, TestConfig.Password);
+        }
 
-    // This method will run once after all tests in the namespace or assembly
-    [OneTimeTearDown]
-    public void AfterAllTests()
-    {
-        CoroutineRunner.RunCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORLOGOUT));
-        Debug.Log("This runs once after all tests in the namespace/assembly.");
-        // Add global teardown code here
+        private void Register(string userName, string email, string password)
+        {
+            UserRequest userRequest = new UserRequest()
+            {
+                Email = email,
+                UserName = userName,
+                Password = password
+            };
+
+            CoroutineRunner.RunCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORREGISTER, userRequest));
+        }
+
+        // This method will run once after all tests in the namespace or assembly
+        [OneTimeTearDown]
+        public void AfterAllTests()
+        {
+            CoroutineRunner.RunCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORLOGOUT));
+            Debug.Log("This runs once after all tests in the namespace/assembly.");
+            // Add global teardown code here
+        }
     }
 }

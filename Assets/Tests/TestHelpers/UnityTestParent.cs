@@ -11,7 +11,7 @@ using UnityEngine;
 using User;
 using Thesis_backend.Data_Structures;
 
-namespace Assets.Tests
+namespace Tests
 {
     public abstract class UnityTestParent<T>
     {
@@ -62,6 +62,19 @@ namespace Assets.Tests
 
             yield return CoroutineRunner.RunCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORLOGIN, userLoginRequest));
             yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+        }
+
+        protected IEnumerator WaitForCondition(Func<Boolean> condition)
+        {
+            for (int j = 0; j < 300; j++)
+            {
+                if (condition.Invoke())
+                {
+                    break;
+                }
+                yield return new WaitForSeconds(0.1f);
+            }
+            yield return null;
         }
     }
 }

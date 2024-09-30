@@ -1,5 +1,3 @@
-using Assets.Tests;
-using Assets.Tests.MainWindowTests.MainWindowTests;
 using NUnit.Framework;
 using System.Collections;
 using System.Runtime.CompilerServices;
@@ -11,7 +9,7 @@ using UnityEngine.UI;
 using System.Reflection;
 using System.Linq;
 using System;
-
+using Config;
 
 namespace Tests
 {
@@ -63,14 +61,8 @@ namespace Tests
                 TaskDescription.text = description;
                 TaskIntervals.value = periodIndex;
                 taskOpenPanelController.Save();
-                for (int j = 0; j < 300; j++)
-                {
-                    if (prevTaskCount != MainController.Tasks.Count)
-                    {
-                        break;
-                    }
-                    yield return new WaitForSeconds(0.1f);
-                }
+
+                yield return WaitForCondition(() => prevTaskCount != MainController.Tasks.Count);
 
                 TaskDisplayHandler created = MainController.Tasks.Last().Value;
 
@@ -88,6 +80,11 @@ namespace Tests
             public IEnumerator CreateGoodTasksTest()
             {
                 yield return LoadScene();
+
+                //Add money and task score
+                CoroutineRunner.RunCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.User>(TestConfig.TASK_SCORE_CHEAT_PATH, TestConfig.TASK_SCORE_CHEAT_PASSWORD));
+                CoroutineRunner.RunCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.Game>(ServerConfig.PATH_FOR_SAVE_COINS, 10000));
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
 
                 taskOpenPanelController.OpenUp();
                 MainController.LoadGoodTasks();
@@ -175,14 +172,7 @@ namespace Tests
                 taskOpenPanelController.OpenUp(MainController.Tasks.Last().Value.CurrentTask, TaskType.BadHabit);
                 taskOpenPanelController.DeleteTask();
 
-                for (int j = 0; j < 300; j++)
-                {
-                    if (prevTaskCount == MainController.Tasks.Count)
-                    {
-                        break;
-                    }
-                    yield return new WaitForSeconds(0.1f);
-                }
+                yield return WaitForCondition(() => prevTaskCount == MainController.Tasks.Count);
 
                 Assert.AreEqual(prevTaskCount, MainController.Tasks.Count);
             }
@@ -250,7 +240,7 @@ namespace Tests
             }
 
             [UnityTest]
-            public IEnumerator TestTaskComplete()
+            public IEnumerator TestGoodTaskComplete()
             {
                 yield return LoadScene();
                 MainController.LoadGoodTasks();
@@ -259,12 +249,40 @@ namespace Tests
                 LoadTaskComponents();
                 long uniqueId = DateTime.Now.Ticks;
 
-                yield return CreateTask("testComplete" + uniqueId, "testDescription" + uniqueId, false, 0);
+                long baseCurrentScore = User.UserData.Instance.CurrentTaskScore;
+                long baseTotalScore = User.UserData.Instance.TotalScore;
+
+                yield return CreateTask("testCompleteGood" + uniqueId, "testDescription" + uniqueId, false, 0);
 
                 MainController.Tasks.Last().Value.CompleteTask();
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
 
                 Assert.True((TimeSpan.FromMinutes(MainController.Tasks.Last().Value.CurrentTask.PeriodRate) - (DateTime.UtcNow - MainController.Tasks.Last().Value.CurrentTask.LastCompleted)).TotalSeconds > 600);
+                Assert.True(baseCurrentScore < User.UserData.Instance.CurrentTaskScore);
+                Assert.True(baseTotalScore < User.UserData.Instance.TotalScore);
+            }
+
+            [UnityTest]
+            public IEnumerator TestBadTaskComplete()
+            {
+                yield return LoadScene();
+                MainController.LoadGoodTasks();
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                taskOpenPanelController.OpenUp();
+                LoadTaskComponents();
+                long uniqueId = DateTime.Now.Ticks;
+
+                long baseCurrentScore = User.UserData.Instance.CurrentTaskScore;
+                long baseTotalScore = User.UserData.Instance.TotalScore;
+
+                yield return CreateTask("testCompleteBad" + uniqueId, "testDescription" + uniqueId, true, 0);
+
+                MainController.Tasks.Last().Value.CompleteTask();
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+
+                Assert.True((TimeSpan.FromMinutes(MainController.Tasks.Last().Value.CurrentTask.PeriodRate) - (DateTime.UtcNow - MainController.Tasks.Last().Value.CurrentTask.LastCompleted)).TotalSeconds > 600);
+                Assert.True(baseCurrentScore > User.UserData.Instance.CurrentTaskScore);
+                Assert.True(baseTotalScore > User.UserData.Instance.TotalScore);
             }
         }
     }

@@ -1,5 +1,3 @@
-using Assets.Tests;
-using Assets.Tests.MainWindowTests.MainWindowTests;
 using NUnit.Framework;
 using System.Collections;
 using UnityEngine;
@@ -10,7 +8,7 @@ namespace Tests
 {
     namespace MainWindowTests
     {
-        public class FriendWindowTest : MainWindowTestsParent<MainWindowController>
+        public class GameTests : MainWindowTestsParent<MainWindowController>
         {
             private void InitScene()
             {
