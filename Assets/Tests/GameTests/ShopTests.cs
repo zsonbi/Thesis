@@ -6,7 +6,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
 using User;
-using static UnityEditor.Progress;
 
 namespace Tests
 {
@@ -59,7 +58,7 @@ namespace Tests
                 int spent = 0;
                 for (int i = 0; i < shopItemCount; i++)
                 {
-                    ShopItem shopItem = GameObject.FindObjectsByType<ShopItem>(FindObjectsSortMode.None)[0];
+                    ShopItem shopItem = GameObject.FindObjectsByType<ShopItem>(FindObjectsSortMode.InstanceID)[i];
 
                     if (shopItem.Owned)
                     {
@@ -71,15 +70,17 @@ namespace Tests
 
                     shopItem.Buy();
 
-                    while (!shopItem.Owned)
+                    for (int j = 0; j < 300; j++)
                     {
+                        if (shopItem.Owned)
                         {
-                            yield return new WaitForSeconds(0.1f);
+                            break;
                         }
+                        yield return new WaitForSeconds(0.1f);
                     }
+
                     Assert.AreEqual(initialMoney - spent, UserData.Instance.Game.Currency);
                 }
-                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
 
                 Assert.AreEqual(shopItemCount, UserData.Instance.Game.OwnedCars.Count);
 
