@@ -67,8 +67,6 @@ jobs:
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           customImage: zsonbi/unityci_with_blender:ubuntu-2022.3.16f1
-          coverage: true  # Enables code coverage
-          coverageOptions: 'assemblyFilters:-*Assembly-CSharp;-*Assembly-CSharp-Editor'  # Exclude Assembly-CSharp and Assembly-CSharp-Editor
 
 
       - uses: actions/upload-artifact@v4.3.3

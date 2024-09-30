@@ -90,6 +90,41 @@ namespace Tests
                     Assert.True(item.Owned);
                 }
             }
+
+            [Order(2)]
+            [UnityTest]
+            public IEnumerator SkinRotateLeftTest()
+            {
+                yield return LoadScene();
+                for (int j = 0; j < 50; j++)
+                {
+                    int currIndex = GameUI.SelectedSkinIndex;
+                    for (int i = 0; i < 10; i++)
+                    {
+                        GameUI.LeftRotateSkin();
+                        yield return null;
+                    }
+                    Assert.AreEqual((currIndex + User.UserData.Instance.Game.OwnedCars.Count - (10 % User.UserData.Instance.Game.OwnedCars.Count)) % User.UserData.Instance.Game.OwnedCars.Count, GameUI.SelectedSkinIndex);
+                }
+            }
+
+            [Order(3)]
+            [UnityTest]
+            public IEnumerator SkinRotateRightTest()
+            {
+                yield return LoadScene();
+                for (int j = 0; j < 50; j++)
+                {
+                    int currIndex = GameUI.SelectedSkinIndex;
+
+                    for (int i = 0; i < 10; i++)
+                    {
+                        GameUI.RightRotateSkin();
+                        yield return null;
+                    }
+                    Assert.AreEqual((currIndex + (10 % User.UserData.Instance.Game.OwnedCars.Count)) % User.UserData.Instance.Game.OwnedCars.Count, GameUI.SelectedSkinIndex);
+                }
+            }
         }
     }
 }
