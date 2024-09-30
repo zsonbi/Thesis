@@ -222,11 +222,6 @@ for (i = 0, l = charts.length; i < l; i++) {
 
 var assemblies = [
   {
-    "name": "Assembly-CSharp-Editor",
-    "classes": [
-      { "name": "BuildCommand", "rp": "Assembly_CSharp_Editor_BuildCommand.html", "cl": 0, "ucl": 201, "cal": 201, "tl": 315, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-    ]},
-  {
     "name": "Tests",
     "classes": [
       { "name": "Tests.CoroutineRunner", "rp": "Tests_CoroutineRunner.html", "cl": 12, "ucl": 0, "cal": 12, "tl": 31, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
@@ -271,7 +266,7 @@ var assemblies = [
       { "name": "Game.World.GameWorld", "rp": "ThesisScripts_GameWorld.html", "cl": 49, "ucl": 22, "cal": 71, "tl": 124, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.World.RoadGenerator", "rp": "ThesisScripts_RoadGenerator.html", "cl": 111, "ucl": 36, "cal": 147, "tl": 253, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "GameUI", "rp": "ThesisScripts_GameUI.html", "cl": 48, "ucl": 55, "cal": 103, "tl": 199, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "LoggedInChecker", "rp": "ThesisScripts_LoggedInChecker.html", "cl": 14, "ucl": 8, "cal": 22, "tl": 54, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "LoggedInChecker", "rp": "ThesisScripts_LoggedInChecker.html", "cl": 11, "ucl": 11, "cal": 22, "tl": 54, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "MainWindowController", "rp": "ThesisScripts_MainWindowController.html", "cl": 73, "ucl": 9, "cal": 82, "tl": 144, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "MeshGenerator", "rp": "ThesisScripts_MeshGenerator.html", "cl": 0, "ucl": 27, "cal": 27, "tl": 96, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "ModalWindow", "rp": "ThesisScripts_ModalWindow.html", "cl": 0, "ucl": 19, "cal": 19, "tl": 43, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
@@ -306,7 +301,7 @@ var assemblies = [
       { "name": "UnityStandardAssets.CrossPlatformInput.TouchPad", "rp": "ThesisScripts_TouchPad.html", "cl": 0, "ucl": 64, "cal": 64, "tl": 156, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "UnityStandardAssets.CrossPlatformInput.VirtualInput", "rp": "ThesisScripts_VirtualInput.html", "cl": 3, "ucl": 57, "cal": 60, "tl": 134, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "User.UserData", "rp": "ThesisScripts_UserData.html", "cl": 40, "ucl": 3, "cal": 43, "tl": 68, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "UserController", "rp": "ThesisScripts_UserController.html", "cl": 25, "ucl": 46, "cal": 71, "tl": 182, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UserController", "rp": "ThesisScripts_UserController.html", "cl": 28, "ucl": 43, "cal": 71, "tl": 182, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
     ]},
 ];
 
@@ -367,13 +362,6 @@ var riskHotspots = [
       { "value": 8, "exceeded": false },
       { "value": 0, "exceeded": false },
       { "value": 72, "exceeded": true },
-    ]},
-  {
-    "assembly": "Assembly-CSharp-Editor", "class": "BuildCommand", "reportPath": "Assembly_CSharp_Editor_BuildCommand.html", "methodName": "static System.Void BuildCommand::PerformBuild()", "methodShortName": "PerformBuild()", "fileIndex": 0, "line": 182,
-    "metrics": [
-      { "value": 6, "exceeded": false },
-      { "value": 0, "exceeded": false },
-      { "value": 42, "exceeded": true },
     ]},
   {
     "assembly": "ThesisScripts", "class": "DirectionConverter", "reportPath": "ThesisScripts_DirectionConverter.html", "methodName": "static UnityEngine.Vector2Int DirectionConverter::VectorFromDirection(DataTypes.Direction)", "methodShortName": "VectorFromDirection(...)", "fileIndex": 0, "line": 27,
