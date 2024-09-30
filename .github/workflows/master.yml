@@ -172,7 +172,7 @@ jobs:
     if: contains(github.ref, 'dev')
     needs: test
     name: Build for ${{ matrix.targetPlatform }}
-    runs-on: my-pc
+    runs-on: windows-latest
     strategy:
       fail-fast: false
       matrix:
