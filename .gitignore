@@ -74,3 +74,4 @@ Assets/AddressableAssetsData/link.xml.meta
 Assets/AddressableAssetsData/link.xml
 InitTestScene*.unity
 Assets/InitTestScene*.unity.meta
+/CodeCoverage
