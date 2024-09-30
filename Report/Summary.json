@@ -1,56 +1,23 @@
 {
   "summary": {
-    "generatedon": "2024-09-30T15:27:53Z",
+    "generatedon": "2024-09-30T18:29:04Z",
     "parser": "MultiReportParser (3x OpenCoverParser)",
-    "assemblies": 4,
-    "classes": 107,
-    "files": 105,
+    "assemblies": 3,
+    "classes": 75,
+    "files": 74,
     "coveredlines": 1823,
-    "uncoveredlines": 3423,
-    "coverablelines": 5246,
-    "totallines": 10418,
-    "linecoverage": 34.7,
+    "uncoveredlines": 1581,
+    "coverablelines": 3404,
+    "totallines": 6722,
+    "linecoverage": 53.5,
     "coveredbranches": 0,
     "totalbranches": 0,
-    "coveredmethods": 378,
-    "totalmethods": 885,
-    "methodcoverage": 42.7
+    "coveredmethods": 379,
+    "totalmethods": 629,
+    "methodcoverage": 60.2
  },
   "coverage": {
     "assemblies": [
-      { "name": "Assembly-CSharp", "classes": 32, "coverage": 0, "coveredlines": 0, "coverablelines": 1842, "totallines": 3841, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 256, "classesinassembly": [
-        { "name": "brake_light", "coverage": 0, "coveredlines": 0, "coverablelines": 19, "totallines": 35, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
-        { "name": "CameraSwitch", "coverage": 0, "coveredlines": 0, "coverablelines": 12, "totallines": 31, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
-        { "name": "on_off_light", "coverage": 0, "coveredlines": 0, "coverablelines": 9, "totallines": 22, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
-        { "name": "OpenElement", "coverage": 0, "coveredlines": 0, "coverablelines": 12, "totallines": 27, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
-        { "name": "UnityStandardAssets.Cameras.AbstractTargetFollower", "coverage": 0, "coveredlines": 0, "coverablelines": 50, "totallines": 104, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 8 },
-        { "name": "UnityStandardAssets.Cameras.AutoCam", "coverage": 0, "coveredlines": 0, "coverablelines": 60, "totallines": 107, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
-        { "name": "UnityStandardAssets.Cameras.FreeLookCam", "coverage": 0, "coveredlines": 0, "coverablelines": 57, "totallines": 115, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 6 },
-        { "name": "UnityStandardAssets.Cameras.PivotBasedCameraRig", "coverage": 0, "coveredlines": 0, "coverablelines": 4, "totallines": 28, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
-        { "name": "UnityStandardAssets.Cameras.ProtectCameraFromWallClip", "coverage": 0, "coveredlines": 0, "coverablelines": 58, "totallines": 124, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 6 },
-        { "name": "UnityStandardAssets.CrossPlatformInput.AxisTouchButton", "coverage": 0, "coveredlines": 0, "coverablelines": 41, "totallines": 75, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 6 },
-        { "name": "UnityStandardAssets.CrossPlatformInput.ButtonHandler", "coverage": 0, "coveredlines": 0, "coverablelines": 19, "totallines": 50, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 7 },
-        { "name": "UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager", "coverage": 0, "coveredlines": 0, "coverablelines": 133, "totallines": 318, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 47 },
-        { "name": "UnityStandardAssets.CrossPlatformInput.InputAxisScrollbar", "coverage": 0, "coveredlines": 0, "coverablelines": 4, "totallines": 17, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
-        { "name": "UnityStandardAssets.CrossPlatformInput.Inspector.TiltInputAxisStylePropertyDrawer", "coverage": 0, "coveredlines": 0, "coverablelines": 24, "totallines": 145, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
-        { "name": "UnityStandardAssets.CrossPlatformInput.Joystick", "coverage": 0, "coveredlines": 0, "coverablelines": 69, "totallines": 118, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 9 },
-        { "name": "UnityStandardAssets.CrossPlatformInput.MobileControlRig", "coverage": 0, "coveredlines": 0, "coverablelines": 32, "totallines": 85, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 6 },
-        { "name": "UnityStandardAssets.CrossPlatformInput.PlatformSpecific.MobileInput", "coverage": 0, "coveredlines": 0, "coverablelines": 79, "totallines": 133, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 13 },
-        { "name": "UnityStandardAssets.CrossPlatformInput.PlatformSpecific.StandaloneInput", "coverage": 0, "coveredlines": 0, "coverablelines": 27, "totallines": 79, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 11 },
-        { "name": "UnityStandardAssets.CrossPlatformInput.TiltInput", "coverage": 0, "coveredlines": 0, "coverablelines": 34, "totallines": 145, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 },
-        { "name": "UnityStandardAssets.CrossPlatformInput.TouchPad", "coverage": 0, "coveredlines": 0, "coverablelines": 64, "totallines": 156, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 9 },
-        { "name": "UnityStandardAssets.CrossPlatformInput.VirtualInput", "coverage": 0, "coveredlines": 0, "coverablelines": 60, "totallines": 134, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 13 },
-        { "name": "UnityStandardAssets.ImageEffects.DepthOfField", "coverage": 0, "coveredlines": 0, "coverablelines": 234, "totallines": 387, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 9 },
-        { "name": "UnityStandardAssets.ImageEffects.PostEffectsBase", "coverage": 0, "coveredlines": 0, "coverablelines": 150, "totallines": 243, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 14 },
-        { "name": "UnityStandardAssets.ImageEffects.VignetteAndChromaticAberration", "coverage": 0, "coveredlines": 0, "coverablelines": 62, "totallines": 114, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 3 },
-        { "name": "UnityStandardAssets.Utility.PlatformSpecificContent", "coverage": 0, "coveredlines": 0, "coverablelines": 48, "totallines": 108, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 6 },
-        { "name": "UnityStandardAssets.Utility.SimpleActivatorMenu", "coverage": 0, "coveredlines": 0, "coverablelines": 11, "totallines": 35, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
-        { "name": "UnityStandardAssets.Vehicles.Car.CarAudio", "coverage": 0, "coveredlines": 0, "coverablelines": 76, "totallines": 174, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 6 },
-        { "name": "UnityStandardAssets.Vehicles.Car.CarController", "coverage": 0, "coveredlines": 0, "coverablelines": 137, "totallines": 244, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 18 },
-        { "name": "UnityStandardAssets.Vehicles.Car.CarControllerOG", "coverage": 0, "coveredlines": 0, "coverablelines": 186, "totallines": 336, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 28 },
-        { "name": "UnityStandardAssets.Vehicles.Car.CarUserControl", "coverage": 0, "coveredlines": 0, "coverablelines": 9, "totallines": 33, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
-        { "name": "UnityStandardAssets.Vehicles.Car.SkidTrail", "coverage": 0, "coveredlines": 0, "coverablelines": 9, "totallines": 25, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
-        { "name": "UnityStandardAssets.Vehicles.Car.WheelEffects", "coverage": 0, "coveredlines": 0, "coverablelines": 53, "totallines": 94, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 10 } ] },
       { "name": "Assembly-CSharp-Editor", "classes": 1, "coverage": 0, "coveredlines": 0, "coverablelines": 201, "totallines": 315, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 15, "classesinassembly": [
         { "name": "BuildCommand", "coverage": 0, "coveredlines": 0, "coverablelines": 201, "totallines": 315, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 15 } ] },
       { "name": "Tests", "classes": 14, "coverage": 94, "coveredlines": 412, "coverablelines": 438, "totallines": 920, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 97.2, "coveredmethods": 36, "totalmethods": 37, "classesinassembly": [
@@ -68,7 +35,7 @@
         { "name": "Tests.MainWindowTests.TaskWindowTest", "coverage": 100, "coveredlines": 184, "coverablelines": 184, "totallines": 289, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 10, "totalmethods": 10 },
         { "name": "Tests.TestConfig", "coverage": 100, "coveredlines": 2, "coverablelines": 2, "totallines": 43, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 1, "totalmethods": 1 },
         { "name": "Tests.UnityTestParent[T]", "coverage": 92.3, "coveredlines": 36, "coverablelines": 39, "totallines": 80, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 3, "totalmethods": 3 } ] },
-      { "name": "ThesisScripts", "classes": 60, "coverage": 51, "coveredlines": 1411, "coverablelines": 2765, "totallines": 5632, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 59.2, "coveredmethods": 342, "totalmethods": 577, "classesinassembly": [
+      { "name": "ThesisScripts", "classes": 60, "coverage": 51, "coveredlines": 1411, "coverablelines": 2765, "totallines": 5632, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 59.4, "coveredmethods": 343, "totalmethods": 577, "classesinassembly": [
         { "name": "Assets.Scripts.Client.DataTypes.ChunkCellContainer", "coverage": 100, "coveredlines": 6, "coverablelines": 6, "totallines": 15, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 5, "totalmethods": 5 },
         { "name": "Building", "coverage": 77.7, "coveredlines": 7, "coverablelines": 9, "totallines": 33, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 71.4, "coveredmethods": 5, "totalmethods": 7 },
         { "name": "CameraScript", "coverage": 100, "coveredlines": 7, "coverablelines": 7, "totallines": 24, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 2, "totalmethods": 2 },
@@ -93,7 +60,7 @@
         { "name": "Game.World.GameWorld", "coverage": 69, "coveredlines": 49, "coverablelines": 71, "totallines": 124, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 7, "totalmethods": 7 },
         { "name": "Game.World.RoadGenerator", "coverage": 75.5, "coveredlines": 111, "coverablelines": 147, "totallines": 253, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 80, "coveredmethods": 8, "totalmethods": 10 },
         { "name": "GameUI", "coverage": 46.6, "coveredlines": 48, "coverablelines": 103, "totallines": 199, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 61.5, "coveredmethods": 16, "totalmethods": 26 },
-        { "name": "LoggedInChecker", "coverage": 50, "coveredlines": 11, "coverablelines": 22, "totallines": 54, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 60, "coveredmethods": 3, "totalmethods": 5 },
+        { "name": "LoggedInChecker", "coverage": 63.6, "coveredlines": 14, "coverablelines": 22, "totallines": 54, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 80, "coveredmethods": 4, "totalmethods": 5 },
         { "name": "MainWindowController", "coverage": 89, "coveredlines": 73, "coverablelines": 82, "totallines": 144, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 81.2, "coveredmethods": 13, "totalmethods": 16 },
         { "name": "MeshGenerator", "coverage": 0, "coveredlines": 0, "coverablelines": 27, "totallines": 96, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
         { "name": "ModalWindow", "coverage": 0, "coveredlines": 0, "coverablelines": 19, "totallines": 43, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 },
@@ -128,6 +95,6 @@
         { "name": "UnityStandardAssets.CrossPlatformInput.TouchPad", "coverage": 0, "coveredlines": 0, "coverablelines": 64, "totallines": 156, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 9 },
         { "name": "UnityStandardAssets.CrossPlatformInput.VirtualInput", "coverage": 5, "coveredlines": 3, "coverablelines": 60, "totallines": 134, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 7.6, "coveredmethods": 1, "totalmethods": 13 },
         { "name": "User.UserData", "coverage": 93, "coveredlines": 40, "coverablelines": 43, "totallines": 68, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 96.6, "coveredmethods": 29, "totalmethods": 30 },
-        { "name": "UserController", "coverage": 39.4, "coveredlines": 28, "coverablelines": 71, "totallines": 182, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 41.6, "coveredmethods": 5, "totalmethods": 12 } ] } ]
+        { "name": "UserController", "coverage": 35.2, "coveredlines": 25, "coverablelines": 71, "totallines": 182, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 41.6, "coveredmethods": 5, "totalmethods": 12 } ] } ]
   }
 }
