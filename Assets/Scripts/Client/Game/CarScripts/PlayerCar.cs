@@ -3,7 +3,6 @@ using Game.World;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityStandardAssets.CrossPlatformInput;
 
 namespace Game
 {
@@ -129,8 +128,8 @@ namespace Game
 
             // pass the input to the car!
 
-            turning = CrossPlatformInputManager.GetAxis("Horizontal");
-            float accel = CrossPlatformInputManager.GetAxis("Vertical");
+            turning = Input.GetAxis("Horizontal");
+            float accel = Input.GetAxis("Vertical");
             bool reverse = false;
             //  if (Input.touchSupported)
             // {

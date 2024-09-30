@@ -229,25 +229,6 @@ namespace Game
                     return false;
                 }
             }
-
-            private void CreateNewRoad(int row, int col, int dirRow, int dirCol, int counter = 0)
-            {
-                if (row < 0 || col < 0 || row >= size || col >= size)
-                    return;
-
-                if (RoadMatrix[row, col])
-                {
-                    return;
-                }
-                RoadMatrix[row, col] = true;
-                if (col == 0 || col == size - 1 || row == 0 || row == size - 1)
-                {
-                    this.EdgeRoads.Add(new EdgeRoadContainer(new Vector2Int(col, row), counter, new Vector2Int(dirCol, dirRow)));
-                    return;
-                }
-
-                CreateRoad(new Vector2Int(col + dirCol, row + dirRow), new Vector2Int(dirCol, dirRow), 0);
-            }
         }
     }
 }

@@ -76,12 +76,18 @@ namespace Game
             private List<Vector3Int> roads = new List<Vector3Int>();
             private Dictionary<ChunkCellType, List<GameObject>> objectsToCombine;
             private BuildingCell[,] buildingCells;
+            private bool destroyed = false;
 
             [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterAssembliesLoaded)]
             public static void InitUniTaskLoop()
             {
                 var loop = PlayerLoop.GetCurrentPlayerLoop();
                 Cysharp.Threading.Tasks.PlayerLoopHelper.Initialize(ref loop);
+            }
+
+            private void OnDestroy()
+            {
+                destroyed = true;
             }
 
             // Start is called before the first frame update

@@ -27,6 +27,13 @@ namespace Game
             /// </summary>
             private Chunk[,] Chunks;
 
+            private bool destroyed = false;
+
+            private void OnDestroy()
+            {
+                destroyed = true;
+            }
+
             public Chunk GetChunk(Vector3 GameObjectPos)
             {
                 int row = (int)(GameObjectPos.z / (GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL));
@@ -104,7 +111,7 @@ namespace Game
                 }
             }
 
-            public  Chunk GetChunkWithoutLoad(int x, int z)
+            public Chunk GetChunkWithoutLoad(int x, int z)
             {
                 return Chunks[z, x];
             }
