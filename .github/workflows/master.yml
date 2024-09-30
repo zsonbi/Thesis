@@ -81,7 +81,7 @@ jobs:
 
   buildForLinux:
     needs: test
-    if: contains(github.ref, 'master') || contains(github.ref, 'dev')
+    if: contains(github.ref, 'none')
     name: Build for ${{ matrix.targetPlatform }}
     runs-on: my-pc
     strategy:
@@ -129,7 +129,7 @@ jobs:
 
   buildForAndroid:
     needs: test
-    if: contains(github.ref, 'master') || contains(github.ref, 'dev')
+    if: contains(github.ref, 'none') 
     name: Build for ${{ matrix.targetPlatform }}
     runs-on: my-pc
     strategy:
@@ -169,10 +169,10 @@ jobs:
           retention-days: 1
 
   buildForWindows:
-    if: contains(github.ref, 'master') || contains(github.ref, 'none')
+    if: contains(github.ref, 'dev')
     needs: test
     name: Build for ${{ matrix.targetPlatform }}
-    runs-on: windows-latest
+    runs-on: my-pc
     strategy:
       fail-fast: false
       matrix:
@@ -204,7 +204,7 @@ jobs:
 
   buildForWebGL:
         needs: test
-        if: contains(github.ref, 'master') || contains(github.ref, 'dev') || contains(github.ref, 'power-ups')
+        if: contains(github.ref, 'master') || contains(github.ref, 'dev')
         name: Build for ${{ matrix.targetPlatform }}
         runs-on: my-pc
         strategy:
