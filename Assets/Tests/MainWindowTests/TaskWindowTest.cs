@@ -61,14 +61,8 @@ namespace Tests
                 TaskDescription.text = description;
                 TaskIntervals.value = periodIndex;
                 taskOpenPanelController.Save();
-                for (int j = 0; j < 300; j++)
-                {
-                    if (prevTaskCount != MainController.Tasks.Count)
-                    {
-                        break;
-                    }
-                    yield return new WaitForSeconds(0.1f);
-                }
+
+                yield return WaitForCondition(() => prevTaskCount != MainController.Tasks.Count);
 
                 TaskDisplayHandler created = MainController.Tasks.Last().Value;
 
@@ -178,14 +172,7 @@ namespace Tests
                 taskOpenPanelController.OpenUp(MainController.Tasks.Last().Value.CurrentTask, TaskType.BadHabit);
                 taskOpenPanelController.DeleteTask();
 
-                for (int j = 0; j < 300; j++)
-                {
-                    if (prevTaskCount == MainController.Tasks.Count)
-                    {
-                        break;
-                    }
-                    yield return new WaitForSeconds(0.1f);
-                }
+                yield return WaitForCondition(() => prevTaskCount == MainController.Tasks.Count);
 
                 Assert.AreEqual(prevTaskCount, MainController.Tasks.Count);
             }

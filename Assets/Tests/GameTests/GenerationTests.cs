@@ -20,19 +20,12 @@ namespace Tests
 
                 GameUI.NewGame();
 
-                for (int j = 0; j < 300; j++)
-                {
-                    if (MainController.Running)
-                    {
-                        break;
-                    }
-                    yield return new WaitForSeconds(0.1f);
-                }
+                yield return WaitForCondition(() => MainController.Running);
 
                 Assert.NotNull(MainController.Player);
                 int currentScore = MainController.Score;
 
-                yield return new WaitForSecondsRealtime(5f);
+                yield return new WaitForSecondsRealtime(5);
 
                 Assert.AreEqual(currentScore + 5, MainController.Score);
             }

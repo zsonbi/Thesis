@@ -38,7 +38,7 @@ namespace Tests
                 Assert.AreEqual(UserData.Instance.Game.Currency.ToString(), ShopWindow.GetCoinText());
             }
 
-            [Order(0)]
+            [Order(1)]
             [UnityTest]
             public IEnumerator BuyTest()
             {
@@ -70,14 +70,7 @@ namespace Tests
 
                     shopItem.Buy();
 
-                    for (int j = 0; j < 300; j++)
-                    {
-                        if (shopItem.Owned)
-                        {
-                            break;
-                        }
-                        yield return new WaitForSeconds(0.1f);
-                    }
+                    yield return WaitForCondition(() => shopItem.Owned);
 
                     Assert.AreEqual(initialMoney - spent, UserData.Instance.Game.Currency);
                 }
