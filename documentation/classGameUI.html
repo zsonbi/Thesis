@@ -120,8 +120,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af1d2e673a23d21920ab8388bdb2d3506"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86e861e18879f93819ab1feac66f2f22" id="r_a86e861e18879f93819ab1feac66f2f22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameUI.html#a86e861e18879f93819ab1feac66f2f22">Init</a> (<a class="el" href="classGame_1_1GameController.html">GameController</a> <a class="el" href="classGameUI.html#a932f4df2bb1e985095ca6ff0427d9cf7">gameController</a>)</td></tr>
 <tr class="separator:a86e861e18879f93819ab1feac66f2f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88d56b428f2ea9ce739552a4a0bbec2f" id="r_a88d56b428f2ea9ce739552a4a0bbec2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameUI.html#a88d56b428f2ea9ce739552a4a0bbec2f">NewGame</a> ()</td></tr>
-<tr class="separator:a88d56b428f2ea9ce739552a4a0bbec2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3bbff87193c94698284895a7c8444fc" id="r_ad3bbff87193c94698284895a7c8444fc"><td class="memItemLeft" align="right" valign="top">async void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameUI.html#ad3bbff87193c94698284895a7c8444fc">NewGame</a> ()</td></tr>
+<tr class="separator:ad3bbff87193c94698284895a7c8444fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30b34140ea9e733d314e461ba9087d04" id="r_a30b34140ea9e733d314e461ba9087d04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameUI.html#a30b34140ea9e733d314e461ba9087d04">ChangeDifficulyDisplay</a> (int difficulty)</td></tr>
 <tr class="separator:a30b34140ea9e733d314e461ba9087d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83ab06ae8fd90932efe340c29537a4e5" id="r_a83ab06ae8fd90932efe340c29537a4e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameUI.html#a83ab06ae8fd90932efe340c29537a4e5">ShowEndGameScreen</a> ()</td></tr>
@@ -647,8 +647,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a88d56b428f2ea9ce739552a4a0bbec2f" name="a88d56b428f2ea9ce739552a4a0bbec2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88d56b428f2ea9ce739552a4a0bbec2f">&#9670;&#160;</a></span>NewGame()</h2>
+<a id="ad3bbff87193c94698284895a7c8444fc" name="ad3bbff87193c94698284895a7c8444fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3bbff87193c94698284895a7c8444fc">&#9670;&#160;</a></span>NewGame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -657,7 +657,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void GameUI.NewGame </td>
+          <td class="memname">async void GameUI.NewGame </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -677,7 +677,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  143</span>        <a class="code hl_variable" href="classGameUI.html#aa76f74d7c8679b04e74043f6e18474e9">mainMenuContainer</a>.SetActive(<span class="keyword">false</span>);</div>
 <div class="line"><span class="lineno">  144</span>        TaskScoreInGameText.text = <a class="code hl_class" href="classUser_1_1UserData.html">UserData</a>.<a class="code hl_property" href="classUser_1_1UserData.html#aac822a62e0ef2a7d0dbe623643146faa">Instance</a>.<a class="code hl_property" href="classUser_1_1UserData.html#a44525484961835f1feaa4dbe715101c0">CurrentTaskScore</a>.ToString();</div>
 <div class="line"><span class="lineno">  145</span> </div>
-<div class="line"><span class="lineno">  146</span>        <a class="code hl_variable" href="classGameUI.html#a932f4df2bb1e985095ca6ff0427d9cf7">gameController</a>?.<a class="code hl_function" href="classGame_1_1GameController.html#af5c50c52cffcab3018ca54be6a421d7f">NewGame</a>();</div>
+<div class="line"><span class="lineno">  146</span>        await <a class="code hl_variable" href="classGameUI.html#a932f4df2bb1e985095ca6ff0427d9cf7">gameController</a>?.<a class="code hl_function" href="classGame_1_1GameController.html#af5c50c52cffcab3018ca54be6a421d7f">NewGame</a>();</div>
 <div class="line"><span class="lineno">  147</span>    }</div>
 <div class="ttc" id="aclassGameUI_html_a10aedf7439a9bb7bae657b39b4182c8a"><div class="ttname"><a href="classGameUI.html#a10aedf7439a9bb7bae657b39b4182c8a">GameUI.HideGameOverScreen</a></div><div class="ttdeci">void HideGameOverScreen()</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00169">GameUI.cs:169</a></div></div>
 <div class="ttc" id="aclassGameUI_html_aa76f74d7c8679b04e74043f6e18474e9"><div class="ttname"><a href="classGameUI.html#aa76f74d7c8679b04e74043f6e18474e9">GameUI.mainMenuContainer</a></div><div class="ttdeci">GameObject mainMenuContainer</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00022">GameUI.cs:22</a></div></div>

@@ -61,9 +61,9 @@ var NAVTREEINDEX =
 "classCameraScript.html#a73f305dadb9b5b88d6efcc80a9073710",
 "classGame_1_1CarController.html#afadda4712607531e93172fcd43557f14",
 "classGame_1_1World_1_1GameWorld.html#a860bbea1d19413d639e7963e53e45d58",
-"classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#ab494bb21f494748f2036d20a05d496df",
-"classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#a8b4472a5a1e14f366343555bde2a0d5f",
-"namespaceDataTypes.html#a28b73b3b0b416b3b22c23aee2a226126"
+"classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#aaf138dbfc77d62b02679f3e156cc26b6",
+"classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#a7a8100793443f3133d7be118287b77e5",
+"namespaceAssets_1_1Scripts_1_1Client.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

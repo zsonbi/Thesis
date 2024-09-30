@@ -5,6 +5,8 @@ var classShopWindow =
     [ "ShowRequestFail", "classShopWindow.html#a740bd492506146554dcdfe94c0779716", null ],
     [ "UpdateShop", "classShopWindow.html#a2242f5e64f32f512f0256136845f4b33", null ],
     [ "LoadedShopItems", "classShopWindow.html#aa78e3f75a8a81c304dc93a2bbbbe114b", null ],
+    [ "GetCoinText", "classShopWindow.html#ae3e75dcb442c5eaadb100132be8ae7c7", null ],
+    [ "GetShopParent", "classShopWindow.html#a2a19282389a2e9e1148a42c9f0e60745", null ],
     [ "ShopParent", "classShopWindow.html#a0e11e0f93f9994c22b89c335f227d9f9", null ],
     [ "ShopItemPrefab", "classShopWindow.html#a8f4a96eae979285b0c7e5db037923665", null ],
     [ "ShopItemSprites", "classShopWindow.html#a285846c6ebb3da82667203c2ee7fd1e0", null ],

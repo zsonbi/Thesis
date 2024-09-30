@@ -265,62 +265,65 @@ var assemblies = [
   {
     "name": "Tests",
     "classes": [
-      { "name": "Assets.Tests.CoroutineRunner", "rp": "Tests_CoroutineRunner.html", "cl": 12, "ucl": 0, "cal": 12, "tl": 31, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Assets.Tests.LoginWindowTests.LoginWindow.LoginWindowTestsParent[T]", "rp": "Tests_LoginWindowTestsParent_T_.html", "cl": 4, "ucl": 0, "cal": 4, "tl": 24, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Assets.Tests.MainWindowTests.MainWindowTests.MainWindowTestsParent[T]", "rp": "Tests_MainWindowTestsParent_T_.html", "cl": 11, "ucl": 9, "cal": 20, "tl": 39, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Assets.Tests.UnityTestParent[T]", "rp": "Tests_UnityTestParent_T_.html", "cl": 26, "ucl": 3, "cal": 29, "tl": 67, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "GlobalSetup", "rp": "Tests_GlobalSetup.html", "cl": 16, "ucl": 0, "cal": 16, "tl": 46, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Tests.CoroutineRunner", "rp": "Tests_CoroutineRunner.html", "cl": 12, "ucl": 0, "cal": 12, "tl": 31, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Tests.GameTests.GameTestsParent[T]", "rp": "Tests_GameTestsParent_T_.html", "cl": 11, "ucl": 9, "cal": 20, "tl": 40, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Tests.GameTests.GenerationTests", "rp": "Tests_GenerationTests.html", "cl": 10, "ucl": 0, "cal": 10, "tl": 34, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Tests.GameTests.RoadGeneratorTests", "rp": "Tests_RoadGeneratorTests.html", "cl": 26, "ucl": 0, "cal": 26, "tl": 54, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Tests.LoginWindow.UserControllerTests", "rp": "Tests_UserControllerTests.html", "cl": 22, "ucl": 0, "cal": 22, "tl": 49, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Tests.MainWindowTests.FriendWindowTest", "rp": "Tests_FriendWindowTest.html", "cl": 0, "ucl": 2, "cal": 2, "tl": 34, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Tests.MainWindowTests.ProfileWindowTest", "rp": "Tests_ProfileWindowTest.html", "cl": 8, "ucl": 0, "cal": 8, "tl": 30, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Tests.MainWindowTests.TaskWindowTest", "rp": "Tests_TaskWindowTest.html", "cl": 173, "ucl": 0, "cal": 173, "tl": 271, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Tests.TestConfig", "rp": "Tests_TestConfig.html", "cl": 2, "ucl": 0, "cal": 2, "tl": 38, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Tests.GameTests.ShopTests", "rp": "Tests_ShopTests.html", "cl": 44, "ucl": 3, "cal": 47, "tl": 95, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Tests.GlobalSetup", "rp": "Tests_GlobalSetup.html", "cl": 16, "ucl": 0, "cal": 16, "tl": 49, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Tests.LoginWindow.LoginWindowTestsParent[T]", "rp": "Tests_LoginWindowTestsParent_T_.html", "cl": 4, "ucl": 0, "cal": 4, "tl": 24, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Tests.LoginWindow.UserControllerTests", "rp": "Tests_UserControllerTests.html", "cl": 22, "ucl": 0, "cal": 22, "tl": 47, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Tests.MainWindowTests.GameTests", "rp": "Tests_GameTests.html", "cl": 0, "ucl": 2, "cal": 2, "tl": 32, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Tests.MainWindowTests.MainWindowTestsParent[T]", "rp": "Tests_MainWindowTestsParent_T_.html", "cl": 11, "ucl": 9, "cal": 20, "tl": 39, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Tests.MainWindowTests.ProfileWindowTest", "rp": "Tests_ProfileWindowTest.html", "cl": 8, "ucl": 0, "cal": 8, "tl": 28, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Tests.MainWindowTests.TaskWindowTest", "rp": "Tests_TaskWindowTest.html", "cl": 184, "ucl": 0, "cal": 184, "tl": 289, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Tests.TestConfig", "rp": "Tests_TestConfig.html", "cl": 2, "ucl": 0, "cal": 2, "tl": 43, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Tests.UnityTestParent[T]", "rp": "Tests_UnityTestParent_T_.html", "cl": 36, "ucl": 3, "cal": 39, "tl": 80, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
     ]},
   {
     "name": "ThesisScripts",
     "classes": [
-      { "name": "Assets.Scripts.Client.DataTypes.ChunkCellContainer", "rp": "ThesisScripts_ChunkCellContainer.html", "cl": 0, "ucl": 6, "cal": 6, "tl": 15, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Building", "rp": "ThesisScripts_Building.html", "cl": 0, "ucl": 9, "cal": 9, "tl": 33, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "CameraScript", "rp": "ThesisScripts_CameraScript.html", "cl": 0, "ucl": 7, "cal": 7, "tl": 24, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Coin", "rp": "ThesisScripts_Coin.html", "cl": 0, "ucl": 7, "cal": 7, "tl": 16, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Config.ServerConfig", "rp": "ThesisScripts_ServerConfig.html", "cl": 3, "ucl": 3, "cal": 6, "tl": 89, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Assets.Scripts.Client.DataTypes.ChunkCellContainer", "rp": "ThesisScripts_ChunkCellContainer.html", "cl": 6, "ucl": 0, "cal": 6, "tl": 15, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Building", "rp": "ThesisScripts_Building.html", "cl": 7, "ucl": 2, "cal": 9, "tl": 33, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "CameraScript", "rp": "ThesisScripts_CameraScript.html", "cl": 7, "ucl": 0, "cal": 7, "tl": 24, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Coin", "rp": "ThesisScripts_Coin.html", "cl": 3, "ucl": 4, "cal": 7, "tl": 16, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Config.ServerConfig", "rp": "ThesisScripts_ServerConfig.html", "cl": 4, "ucl": 2, "cal": 6, "tl": 89, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "DirectionConverter", "rp": "ThesisScripts_DirectionConverter.html", "cl": 0, "ucl": 21, "cal": 21, "tl": 46, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "EdgeRoadContainer", "rp": "ThesisScripts_EdgeRoadContainer.html", "cl": 9, "ucl": 0, "cal": 9, "tl": 15, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "EffectScript", "rp": "ThesisScripts_EffectScript.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 20, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "EffectScript", "rp": "ThesisScripts_EffectScript.html", "cl": 1, "ucl": 3, "cal": 4, "tl": 20, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "FriendHandler", "rp": "ThesisScripts_FriendHandler.html", "cl": 0, "ucl": 45, "cal": 45, "tl": 84, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "FriendWindowHandler", "rp": "ThesisScripts_FriendWindowHandler.html", "cl": 1, "ucl": 49, "cal": 50, "tl": 89, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Game.Car", "rp": "ThesisScripts_Car.html", "cl": 0, "ucl": 81, "cal": 81, "tl": 137, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Game.CarController", "rp": "ThesisScripts_CarController.html", "cl": 0, "ucl": 129, "cal": 129, "tl": 249, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Game.CopCar", "rp": "ThesisScripts_CopCar.html", "cl": 0, "ucl": 48, "cal": 48, "tl": 156, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Game.EnableWheelPhysicMaterial", "rp": "ThesisScripts_EnableWheelPhysicMaterial.html", "cl": 0, "ucl": 16, "cal": 16, "tl": 37, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Game.GameController", "rp": "ThesisScripts_GameController.html", "cl": 0, "ucl": 120, "cal": 120, "tl": 192, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.Car", "rp": "ThesisScripts_Car.html", "cl": 46, "ucl": 35, "cal": 81, "tl": 137, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.CarController", "rp": "ThesisScripts_CarController.html", "cl": 93, "ucl": 36, "cal": 129, "tl": 249, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.CopCar", "rp": "ThesisScripts_CopCar.html", "cl": 0, "ucl": 48, "cal": 48, "tl": 85, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.EnableWheelPhysicMaterial", "rp": "ThesisScripts_EnableWheelPhysicMaterial.html", "cl": 16, "ucl": 0, "cal": 16, "tl": 37, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.GameController", "rp": "ThesisScripts_GameController.html", "cl": 105, "ucl": 15, "cal": 120, "tl": 192, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.NpcCar", "rp": "ThesisScripts_NpcCar.html", "cl": 0, "ucl": 6, "cal": 6, "tl": 19, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Game.PlayerCar", "rp": "ThesisScripts_PlayerCar.html", "cl": 0, "ucl": 129, "cal": 129, "tl": 189, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Game.World.BuildingCell", "rp": "ThesisScripts_BuildingCell.html", "cl": 0, "ucl": 11, "cal": 11, "tl": 30, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.PlayerCar", "rp": "ThesisScripts_PlayerCar.html", "cl": 32, "ucl": 97, "cal": 129, "tl": 189, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.World.BuildingCell", "rp": "ThesisScripts_BuildingCell.html", "cl": 11, "ucl": 0, "cal": 11, "tl": 30, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.World.BuildingGenerator", "rp": "ThesisScripts_BuildingGenerator.html", "cl": 0, "ucl": 43, "cal": 43, "tl": 64, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Game.World.CarSpawner", "rp": "ThesisScripts_CarSpawner.html", "cl": 0, "ucl": 43, "cal": 43, "tl": 79, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Game.World.Chunk", "rp": "ThesisScripts_Chunk.html", "cl": 0, "ucl": 401, "cal": 401, "tl": 640, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Game.World.GameWorld", "rp": "ThesisScripts_GameWorld.html", "cl": 0, "ucl": 71, "cal": 71, "tl": 124, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.World.CarSpawner", "rp": "ThesisScripts_CarSpawner.html", "cl": 22, "ucl": 21, "cal": 43, "tl": 79, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.World.Chunk", "rp": "ThesisScripts_Chunk.html", "cl": 330, "ucl": 71, "cal": 401, "tl": 640, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.World.GameWorld", "rp": "ThesisScripts_GameWorld.html", "cl": 49, "ucl": 22, "cal": 71, "tl": 124, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.World.RoadGenerator", "rp": "ThesisScripts_RoadGenerator.html", "cl": 111, "ucl": 36, "cal": 147, "tl": 253, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "GameUI", "rp": "ThesisScripts_GameUI.html", "cl": 0, "ucl": 102, "cal": 102, "tl": 198, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "GameUI", "rp": "ThesisScripts_GameUI.html", "cl": 39, "ucl": 63, "cal": 102, "tl": 198, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "LoggedInChecker", "rp": "ThesisScripts_LoggedInChecker.html", "cl": 11, "ucl": 11, "cal": 22, "tl": 54, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "MainWindowController", "rp": "ThesisScripts_MainWindowController.html", "cl": 73, "ucl": 9, "cal": 82, "tl": 144, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "MeshGenerator", "rp": "ThesisScripts_MeshGenerator.html", "cl": 0, "ucl": 27, "cal": 27, "tl": 96, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "ModalWindow", "rp": "ThesisScripts_ModalWindow.html", "cl": 0, "ucl": 19, "cal": 19, "tl": 43, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "ProfileHandler", "rp": "ThesisScripts_ProfileHandler.html", "cl": 24, "ucl": 3, "cal": 27, "tl": 74, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "ShopItem", "rp": "ThesisScripts_ShopItem.html", "cl": 0, "ucl": 17, "cal": 17, "tl": 49, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "ShopWindow", "rp": "ThesisScripts_ShopWindow.html", "cl": 0, "ucl": 42, "cal": 42, "tl": 82, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "StarHandler", "rp": "ThesisScripts_StarHandler.html", "cl": 0, "ucl": 10, "cal": 10, "tl": 28, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "ShopItem", "rp": "ThesisScripts_ShopItem.html", "cl": 23, "ucl": 0, "cal": 23, "tl": 62, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "ShopWindow", "rp": "ThesisScripts_ShopWindow.html", "cl": 38, "ucl": 10, "cal": 48, "tl": 96, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "StarHandler", "rp": "ThesisScripts_StarHandler.html", "cl": 7, "ucl": 3, "cal": 10, "tl": 28, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "TaskClosedEventArgs", "rp": "ThesisScripts_TaskClosedEventArgs.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 14, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "TaskDisplayHandler", "rp": "ThesisScripts_TaskDisplayHandler.html", "cl": 51, "ucl": 13, "cal": 64, "tl": 123, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "TaskDisplayHandler", "rp": "ThesisScripts_TaskDisplayHandler.html", "cl": 54, "ucl": 10, "cal": 64, "tl": 123, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "TaskOpenPanelController", "rp": "ThesisScripts_TaskOpenPanelController.html", "cl": 111, "ucl": 6, "cal": 117, "tl": 214, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Thesis_backend.Data_Structures.DbElement", "rp": "ThesisScripts_DbElement.html", "cl": 1, "ucl": 1, "cal": 2, "tl": 11, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Thesis_backend.Data_Structures.Friend", "rp": "ThesisScripts_Friend.html", "cl": 0, "ucl": 5, "cal": 5, "tl": 18, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Thesis_backend.Data_Structures.Game", "rp": "ThesisScripts_Game.html", "cl": 6, "ucl": 2, "cal": 8, "tl": 18, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Thesis_backend.Data_Structures.OwnedCar", "rp": "ThesisScripts_OwnedCar.html", "cl": 2, "ucl": 3, "cal": 5, "tl": 21, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Thesis_backend.Data_Structures.PlayerTask", "rp": "ThesisScripts_PlayerTask.html", "cl": 46, "ucl": 14, "cal": 60, "tl": 84, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Thesis_backend.Data_Structures.Shop", "rp": "ThesisScripts_Shop.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 14, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Thesis_backend.Data_Structures.PlayerTask", "rp": "ThesisScripts_PlayerTask.html", "cl": 48, "ucl": 12, "cal": 60, "tl": 84, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Thesis_backend.Data_Structures.Shop", "rp": "ThesisScripts_Shop.html", "cl": 3, "ucl": 1, "cal": 4, "tl": 14, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Thesis_backend.Data_Structures.TaskRequest", "rp": "ThesisScripts_TaskRequest.html", "cl": 4, "ucl": 0, "cal": 4, "tl": 16, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Thesis_backend.Data_Structures.User", "rp": "ThesisScripts_User.html", "cl": 12, "ucl": 1, "cal": 13, "tl": 25, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Thesis_backend.Data_Structures.UserLoginRequest", "rp": "ThesisScripts_UserLoginRequest.html", "cl": 2, "ucl": 0, "cal": 2, "tl": 14, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
@@ -328,18 +331,18 @@ var assemblies = [
       { "name": "Thesis_backend.Data_Structures.UserSettings", "rp": "ThesisScripts_UserSettings.html", "cl": 3, "ucl": 1, "cal": 4, "tl": 15, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "UnityStandardAssets.CrossPlatformInput.AxisTouchButton", "rp": "ThesisScripts_AxisTouchButton.html", "cl": 0, "ucl": 41, "cal": 41, "tl": 75, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "UnityStandardAssets.CrossPlatformInput.ButtonHandler", "rp": "ThesisScripts_ButtonHandler.html", "cl": 0, "ucl": 19, "cal": 19, "tl": 50, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager", "rp": "ThesisScripts_CrossPlatformInputManager.html", "cl": 0, "ucl": 133, "cal": 133, "tl": 318, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager", "rp": "ThesisScripts_CrossPlatformInputManager.html", "cl": 11, "ucl": 122, "cal": 133, "tl": 318, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "UnityStandardAssets.CrossPlatformInput.InputAxisScrollbar", "rp": "ThesisScripts_InputAxisScrollbar.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 17, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "UnityStandardAssets.CrossPlatformInput.Inspector.TiltInputAxisStylePropertyDrawer", "rp": "ThesisScripts_TiltInputAxisStylePropertyDrawer.html", "cl": 0, "ucl": 24, "cal": 24, "tl": 145, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "UnityStandardAssets.CrossPlatformInput.Joystick", "rp": "ThesisScripts_Joystick.html", "cl": 0, "ucl": 69, "cal": 69, "tl": 118, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "UnityStandardAssets.CrossPlatformInput.MobileControlRig", "rp": "ThesisScripts_MobileControlRig.html", "cl": 0, "ucl": 32, "cal": 32, "tl": 85, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "UnityStandardAssets.CrossPlatformInput.PlatformSpecific.MobileInput", "rp": "ThesisScripts_MobileInput.html", "cl": 0, "ucl": 79, "cal": 79, "tl": 133, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "UnityStandardAssets.CrossPlatformInput.PlatformSpecific.StandaloneInput", "rp": "ThesisScripts_StandaloneInput.html", "cl": 0, "ucl": 27, "cal": 27, "tl": 79, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.CrossPlatformInput.PlatformSpecific.StandaloneInput", "rp": "ThesisScripts_StandaloneInput.html", "cl": 3, "ucl": 24, "cal": 27, "tl": 79, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "UnityStandardAssets.CrossPlatformInput.TiltInput", "rp": "ThesisScripts_TiltInput.html", "cl": 0, "ucl": 34, "cal": 34, "tl": 145, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "UnityStandardAssets.CrossPlatformInput.TouchPad", "rp": "ThesisScripts_TouchPad.html", "cl": 0, "ucl": 64, "cal": 64, "tl": 156, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "UnityStandardAssets.CrossPlatformInput.VirtualInput", "rp": "ThesisScripts_VirtualInput.html", "cl": 0, "ucl": 60, "cal": 60, "tl": 134, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UnityStandardAssets.CrossPlatformInput.VirtualInput", "rp": "ThesisScripts_VirtualInput.html", "cl": 3, "ucl": 57, "cal": 60, "tl": 134, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "User.UserData", "rp": "ThesisScripts_UserData.html", "cl": 40, "ucl": 3, "cal": 43, "tl": 68, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "UserController", "rp": "ThesisScripts_UserController.html", "cl": 25, "ucl": 46, "cal": 71, "tl": 182, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "UserController", "rp": "ThesisScripts_UserController.html", "cl": 28, "ucl": 43, "cal": 71, "tl": 182, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
     ]},
 ];
 
@@ -360,49 +363,7 @@ var riskHotspots = [
       { "value": 756, "exceeded": true },
     ]},
   {
-    "assembly": "ThesisScripts", "class": "Game.GameController", "reportPath": "ThesisScripts_GameController.html", "methodName": "SpawnNearbyChunks()", "methodShortName": "SpawnNearbyChunks()", "fileIndex": 0, "line": 152,
-    "metrics": [
-      { "value": 25, "exceeded": true },
-      { "value": 0, "exceeded": false },
-      { "value": 650, "exceeded": true },
-    ]},
-  {
-    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "Assets.Scripts.Client.DataTypes.ChunkCellContainer Game.World.Chunk::DetermineRoadType(System.Int32, System.Int32)", "methodShortName": "DetermineRoadType(...)", "fileIndex": 0, "line": 320,
-    "metrics": [
-      { "value": 23, "exceeded": true },
-      { "value": 0, "exceeded": false },
-      { "value": 552, "exceeded": true },
-    ]},
-  {
-    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "System.Void Game.World.Chunk::GenerateCellMatrix()", "methodShortName": "GenerateCellMatrix()", "fileIndex": 0, "line": 463,
-    "metrics": [
-      { "value": 19, "exceeded": true },
-      { "value": 0, "exceeded": false },
-      { "value": 380, "exceeded": true },
-    ]},
-  {
     "assembly": "Assembly-CSharp", "class": "UnityStandardAssets.Cameras.ProtectCameraFromWallClip", "reportPath": "Assembly_CSharp_ProtectCameraFromWallClip.html", "methodName": "System.Void UnityStandardAssets.Cameras.ProtectCameraFromWallClip::LateUpdate()", "methodShortName": "LateUpdate()", "fileIndex": 0, "line": 41,
-    "metrics": [
-      { "value": 16, "exceeded": true },
-      { "value": 0, "exceeded": false },
-      { "value": 272, "exceeded": true },
-    ]},
-  {
-    "assembly": "ThesisScripts", "class": "Game.PlayerCar", "reportPath": "ThesisScripts_PlayerCar.html", "methodName": "System.Void Game.PlayerCar::FixedUpdate()", "methodShortName": "FixedUpdate()", "fileIndex": 0, "line": 121,
-    "metrics": [
-      { "value": 16, "exceeded": true },
-      { "value": 0, "exceeded": false },
-      { "value": 272, "exceeded": true },
-    ]},
-  {
-    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "CreateTiles()", "methodShortName": "CreateTiles()", "fileIndex": 0, "line": 257,
-    "metrics": [
-      { "value": 16, "exceeded": true },
-      { "value": 0, "exceeded": false },
-      { "value": 272, "exceeded": true },
-    ]},
-  {
-    "assembly": "ThesisScripts", "class": "Game.World.GameWorld", "reportPath": "ThesisScripts_GameWorld.html", "methodName": "LoadChunk()", "methodShortName": "LoadChunk()", "fileIndex": 0, "line": 69,
     "metrics": [
       { "value": 16, "exceeded": true },
       { "value": 0, "exceeded": false },
@@ -414,20 +375,6 @@ var riskHotspots = [
       { "value": 15, "exceeded": false },
       { "value": 0, "exceeded": false },
       { "value": 240, "exceeded": true },
-    ]},
-  {
-    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "System.Void Game.World.Chunk::LockAndTryToPlaceBuilding(System.Int32, System.Int32, System.Int32)", "methodShortName": "LockAndTryToPlaceBuilding(...)", "fileIndex": 0, "line": 546,
-    "metrics": [
-      { "value": 14, "exceeded": false },
-      { "value": 0, "exceeded": false },
-      { "value": 210, "exceeded": true },
-    ]},
-  {
-    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "InitChunk()", "methodShortName": "InitChunk()", "fileIndex": 0, "line": 127,
-    "metrics": [
-      { "value": 14, "exceeded": false },
-      { "value": 0, "exceeded": false },
-      { "value": 210, "exceeded": true },
     ]},
   {
     "assembly": "Assembly-CSharp", "class": "UnityStandardAssets.Cameras.AutoCam", "reportPath": "Assembly_CSharp_AutoCam.html", "methodName": "System.Void UnityStandardAssets.Cameras.AutoCam::FollowTarget(System.Single)", "methodShortName": "FollowTarget(...)", "fileIndex": 0, "line": 28,
@@ -444,20 +391,6 @@ var riskHotspots = [
       { "value": 182, "exceeded": true },
     ]},
   {
-    "assembly": "ThesisScripts", "class": "Game.PlayerCar", "reportPath": "ThesisScripts_PlayerCar.html", "methodName": "System.Void Game.PlayerCar::Update()", "methodShortName": "Update()", "fileIndex": 0, "line": 71,
-    "metrics": [
-      { "value": 13, "exceeded": false },
-      { "value": 0, "exceeded": false },
-      { "value": 182, "exceeded": true },
-    ]},
-  {
-    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "GetNearbyChunks()", "methodShortName": "GetNearbyChunks()", "fileIndex": 0, "line": 610,
-    "metrics": [
-      { "value": 13, "exceeded": false },
-      { "value": 0, "exceeded": false },
-      { "value": 182, "exceeded": true },
-    ]},
-  {
     "assembly": "Assembly-CSharp", "class": "UnityStandardAssets.ImageEffects.VignetteAndChromaticAberration", "reportPath": "Assembly_CSharp_VignetteAndChromaticAberration.html", "methodName": "System.Void UnityStandardAssets.ImageEffects.VignetteAndChromaticAberration::OnRenderImage(UnityEngine.RenderTexture, UnityEngine.RenderTexture)", "methodShortName": "OnRenderImage(...)", "fileIndex": 0, "line": 51,
     "metrics": [
       { "value": 11, "exceeded": false },
@@ -465,18 +398,18 @@ var riskHotspots = [
       { "value": 132, "exceeded": true },
     ]},
   {
-    "assembly": "ThesisScripts", "class": "Game.GameController", "reportPath": "ThesisScripts_GameController.html", "methodName": "System.Void Game.GameController::DespawnFarAwayChunks(System.Int32, System.Int32)", "methodShortName": "DespawnFarAwayChunks(...)", "fileIndex": 0, "line": 132,
+    "assembly": "ThesisScripts", "class": "Game.World.RoadGenerator", "reportPath": "ThesisScripts_RoadGenerator.html", "methodName": "System.Void Game.World.RoadGenerator::CreateNewRoad(System.Int32, System.Int32, System.Int32, System.Int32, System.Int32)", "methodShortName": "CreateNewRoad(...)", "fileIndex": 0, "line": 234,
     "metrics": [
       { "value": 10, "exceeded": false },
       { "value": 0, "exceeded": false },
       { "value": 110, "exceeded": true },
     ]},
   {
-    "assembly": "ThesisScripts", "class": "Game.World.RoadGenerator", "reportPath": "ThesisScripts_RoadGenerator.html", "methodName": "System.Void Game.World.RoadGenerator::CreateNewRoad(System.Int32, System.Int32, System.Int32, System.Int32, System.Int32)", "methodShortName": "CreateNewRoad(...)", "fileIndex": 0, "line": 234,
+    "assembly": "ThesisScripts", "class": "Game.PlayerCar", "reportPath": "ThesisScripts_PlayerCar.html", "methodName": "System.Void Game.PlayerCar::FixedUpdate()", "methodShortName": "FixedUpdate()", "fileIndex": 0, "line": 121,
     "metrics": [
-      { "value": 10, "exceeded": false },
+      { "value": 16, "exceeded": true },
       { "value": 0, "exceeded": false },
-      { "value": 110, "exceeded": true },
+      { "value": 104.83, "exceeded": true },
     ]},
   {
     "assembly": "Assembly-CSharp", "class": "UnityStandardAssets.Utility.PlatformSpecificContent", "reportPath": "Assembly_CSharp_PlatformSpecificContent.html", "methodName": "System.Void UnityStandardAssets.Utility.PlatformSpecificContent::EnableContent(System.Boolean)", "methodShortName": "EnableContent(...)", "fileIndex": 0, "line": 81,
@@ -507,13 +440,6 @@ var riskHotspots = [
       { "value": 90, "exceeded": true },
     ]},
   {
-    "assembly": "ThesisScripts", "class": "Game.CarController", "reportPath": "ThesisScripts_CarController.html", "methodName": "System.Void Game.CarController::ApplyDrive(System.Single, System.Single)", "methodShortName": "ApplyDrive(...)", "fileIndex": 0, "line": 136,
-    "metrics": [
-      { "value": 9, "exceeded": false },
-      { "value": 0, "exceeded": false },
-      { "value": 90, "exceeded": true },
-    ]},
-  {
     "assembly": "ThesisScripts", "class": "Game.CopCar", "reportPath": "ThesisScripts_CopCar.html", "methodName": "System.Void Game.CopCar::Update()", "methodShortName": "Update()", "fileIndex": 0, "line": 12,
     "metrics": [
       { "value": 9, "exceeded": false },
@@ -521,14 +447,14 @@ var riskHotspots = [
       { "value": 90, "exceeded": true },
     ]},
   {
-    "assembly": "Assembly-CSharp", "class": "UnityStandardAssets.CrossPlatformInput.TiltInput", "reportPath": "Assembly_CSharp_TiltInput.html", "methodName": "System.Void UnityStandardAssets.CrossPlatformInput.TiltInput::Update()", "methodShortName": "Update()", "fileIndex": 0, "line": 57,
+    "assembly": "ThesisScripts", "class": "Game.PlayerCar", "reportPath": "ThesisScripts_PlayerCar.html", "methodName": "System.Void Game.PlayerCar::Update()", "methodShortName": "Update()", "fileIndex": 0, "line": 71,
     "metrics": [
-      { "value": 8, "exceeded": false },
+      { "value": 13, "exceeded": false },
       { "value": 0, "exceeded": false },
-      { "value": 72, "exceeded": true },
+      { "value": 84.3, "exceeded": true },
     ]},
   {
-    "assembly": "ThesisScripts", "class": "Game.GameController", "reportPath": "ThesisScripts_GameController.html", "methodName": "ValidateAndLoadChunk()", "methodShortName": "ValidateAndLoadChunk()", "fileIndex": 0, "line": 183,
+    "assembly": "Assembly-CSharp", "class": "UnityStandardAssets.CrossPlatformInput.TiltInput", "reportPath": "Assembly_CSharp_TiltInput.html", "methodName": "System.Void UnityStandardAssets.CrossPlatformInput.TiltInput::Update()", "methodShortName": "Update()", "fileIndex": 0, "line": 57,
     "metrics": [
       { "value": 8, "exceeded": false },
       { "value": 0, "exceeded": false },
@@ -557,13 +483,6 @@ var riskHotspots = [
     ]},
   {
     "assembly": "Assembly-CSharp", "class": "UnityStandardAssets.ImageEffects.PostEffectsBase", "reportPath": "Assembly_CSharp_PostEffectsBase.html", "methodName": "System.Boolean UnityStandardAssets.ImageEffects.PostEffectsBase::CheckSupport(System.Boolean)", "methodShortName": "CheckSupport(...)", "fileIndex": 0, "line": 92,
-    "metrics": [
-      { "value": 7, "exceeded": false },
-      { "value": 0, "exceeded": false },
-      { "value": 56, "exceeded": true },
-    ]},
-  {
-    "assembly": "ThesisScripts", "class": "Game.World.GameWorld", "reportPath": "ThesisScripts_GameWorld.html", "methodName": "CreateNewGame()", "methodShortName": "CreateNewGame()", "fileIndex": 0, "line": 42,
     "metrics": [
       { "value": 7, "exceeded": false },
       { "value": 0, "exceeded": false },
@@ -612,11 +531,25 @@ var riskHotspots = [
       { "value": 42, "exceeded": true },
     ]},
   {
-    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "Assets.Scripts.Client.DataTypes.ChunkCellContainer Game.World.Chunk::DetermineTileType(System.Int32, System.Int32)", "methodShortName": "DetermineTileType(...)", "fileIndex": 0, "line": 427,
+    "assembly": "ThesisScripts", "class": "Game.GameController", "reportPath": "ThesisScripts_GameController.html", "methodName": "SpawnNearbyChunks()", "methodShortName": "SpawnNearbyChunks()", "fileIndex": 0, "line": 152,
     "metrics": [
-      { "value": 6, "exceeded": false },
+      { "value": 25, "exceeded": true },
       { "value": 0, "exceeded": false },
-      { "value": 42, "exceeded": true },
+      { "value": 25.86, "exceeded": false },
+    ]},
+  {
+    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "Assets.Scripts.Client.DataTypes.ChunkCellContainer Game.World.Chunk::DetermineRoadType(System.Int32, System.Int32)", "methodShortName": "DetermineRoadType(...)", "fileIndex": 0, "line": 320,
+    "metrics": [
+      { "value": 23, "exceeded": true },
+      { "value": 0, "exceeded": false },
+      { "value": 23, "exceeded": false },
+    ]},
+  {
+    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "System.Void Game.World.Chunk::GenerateCellMatrix()", "methodShortName": "GenerateCellMatrix()", "fileIndex": 0, "line": 463,
+    "metrics": [
+      { "value": 19, "exceeded": true },
+      { "value": 0, "exceeded": false },
+      { "value": 19, "exceeded": false },
     ]},
   {
     "assembly": "ThesisScripts", "class": "Game.World.RoadGenerator", "reportPath": "ThesisScripts_RoadGenerator.html", "methodName": "System.Void Game.World.RoadGenerator::CreateRoad(UnityEngine.Vector2Int, UnityEngine.Vector2Int, System.Int32)", "methodShortName": "CreateRoad(...)", "fileIndex": 0, "line": 83,
@@ -624,6 +557,20 @@ var riskHotspots = [
       { "value": 19, "exceeded": true },
       { "value": 0, "exceeded": false },
       { "value": 19.42, "exceeded": false },
+    ]},
+  {
+    "assembly": "ThesisScripts", "class": "Game.World.Chunk", "reportPath": "ThesisScripts_Chunk.html", "methodName": "CreateTiles()", "methodShortName": "CreateTiles()", "fileIndex": 0, "line": 257,
+    "metrics": [
+      { "value": 16, "exceeded": true },
+      { "value": 0, "exceeded": false },
+      { "value": 16.07, "exceeded": false },
+    ]},
+  {
+    "assembly": "ThesisScripts", "class": "Game.World.GameWorld", "reportPath": "ThesisScripts_GameWorld.html", "methodName": "LoadChunk()", "methodShortName": "LoadChunk()", "fileIndex": 0, "line": 69,
+    "metrics": [
+      { "value": 16, "exceeded": true },
+      { "value": 0, "exceeded": false },
+      { "value": 16, "exceeded": false },
     ]},
 ];
 

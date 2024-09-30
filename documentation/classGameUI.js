@@ -12,7 +12,7 @@ var classGameUI =
     [ "LeftRotateSkin", "classGameUI.html#a23a83d269644e375f14f536649ab8b6e", null ],
     [ "RightRotateSkin", "classGameUI.html#af1d2e673a23d21920ab8388bdb2d3506", null ],
     [ "Init", "classGameUI.html#a86e861e18879f93819ab1feac66f2f22", null ],
-    [ "NewGame", "classGameUI.html#a88d56b428f2ea9ce739552a4a0bbec2f", null ],
+    [ "NewGame", "classGameUI.html#ad3bbff87193c94698284895a7c8444fc", null ],
     [ "ShowRequestFail", "classGameUI.html#ab1286e2c8539b07a90922bed70786dd7", null ],
     [ "ChangeDifficulyDisplay", "classGameUI.html#a30b34140ea9e733d314e461ba9087d04", null ],
     [ "ShowEndGameScreen", "classGameUI.html#a83ab06ae8fd90932efe340c29537a4e5", null ],

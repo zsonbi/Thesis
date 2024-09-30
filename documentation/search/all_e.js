@@ -17,7 +17,8 @@ var searchData=
   ['orientation_14',['Orientation',['../structAssets_1_1Scripts_1_1Client_1_1DataTypes_1_1ChunkCellContainer.html#a0918e1d9d1b2e13a9b0c9c0e578939e9',1,'Assets::Scripts::Client::DataTypes::ChunkCellContainer']]],
   ['originalforwardstiffness_15',['originalForwardStiffness',['../classGame_1_1EnableWheelPhysicMaterial.html#a95a6b255895d8fdbecd883ce8dcc7887',1,'Game::EnableWheelPhysicMaterial']]],
   ['originalsidewaysstiffness_16',['originalSidewaysStiffness',['../classGame_1_1EnableWheelPhysicMaterial.html#ada97322b625b6571e6d3fcf0af8cf4cf',1,'Game::EnableWheelPhysicMaterial']]],
-  ['ownedcar_17',['OwnedCar',['../namespaceThesis__backend_1_1Data__Structures.html#a86066cb80bc43f93f3543295a9ea4970',1,'Thesis_backend::Data_Structures']]],
-  ['ownedcar_2ecs_18',['OwnedCar.cs',['../OwnedCar_8cs.html',1,'']]],
-  ['ownedcars_19',['OwnedCars',['../namespaceThesis__backend_1_1Data__Structures.html#a6406e7294c36a3ca692f02fcabf175b8',1,'Thesis_backend::Data_Structures']]]
+  ['owned_17',['Owned',['../classShopItem.html#a2fcdb14a28c8b7076b4d8d05834a4150',1,'ShopItem']]],
+  ['ownedcar_18',['OwnedCar',['../namespaceThesis__backend_1_1Data__Structures.html#a86066cb80bc43f93f3543295a9ea4970',1,'Thesis_backend::Data_Structures']]],
+  ['ownedcar_2ecs_19',['OwnedCar.cs',['../OwnedCar_8cs.html',1,'']]],
+  ['ownedcars_20',['OwnedCars',['../namespaceThesis__backend_1_1Data__Structures.html#a6406e7294c36a3ca692f02fcabf175b8',1,'Thesis_backend::Data_Structures']]]
 ];
