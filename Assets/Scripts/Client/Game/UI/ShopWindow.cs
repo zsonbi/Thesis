@@ -79,4 +79,18 @@ public class ShopWindow : MonoBehaviour
             }
         }
     }
+
+    #region TestGettters
+
+    public string GetCoinText()
+    {
+        return this.CoinText.text;
+    }
+
+    public GameObject GetShopParent()
+    {
+        return this.ShopParent;
+    }
+
+    #endregion TestGettters
 }

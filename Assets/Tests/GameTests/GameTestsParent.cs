@@ -20,17 +20,17 @@ namespace Tests
                 this.GameUI = GameObject.FindObjectOfType<GameUI>(true);
                 if (this.GameUI == null)
                 {
-                    Debug.LogError("Friend Window Handler not found!");
+                    Debug.LogError("Game ui was not found!");
                 }
                 this.CarSpawner = GameObject.FindObjectOfType<CarSpawner>(true);
                 if (this.CarSpawner == null)
                 {
-                    Debug.LogError("Profile Handler not found!");
+                    Debug.LogError("Car spawner was not found!");
                 }
                 this.ShopWindow = GameObject.FindObjectOfType<ShopWindow>(true);
                 if (this.ShopWindow == null)
                 {
-                    Debug.LogError("Profile Handler not found!");
+                    Debug.LogError("Shop window was not found!");
                 }
 
                 yield return null;
