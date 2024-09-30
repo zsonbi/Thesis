@@ -1,21 +1,21 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 09/30/2024 - 13:24:53 |
+| Generated on: | 09/30/2024 - 15:04:38 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 4 |
 | Classes: | 107 |
 | Files: | 105 |
-| Covered lines: | 1788 |
-| Uncovered lines: | 3431 |
-| Coverable lines: | 5219 |
-| Total lines: | 10382 |
-| Line coverage: | 34.2% (1788 of 5219) |
+| Covered lines: | 1823 |
+| Uncovered lines: | 3423 |
+| Coverable lines: | 5246 |
+| Total lines: | 10418 |
+| Line coverage: | 34.7% (1823 of 5246) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 374 |
-| Total methods: | 883 |
-| Method coverage: | 42.3% (374 of 883) |
+| Covered methods: | 378 |
+| Total methods: | 885 |
+| Method coverage: | 42.7% (378 of 885) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -54,12 +54,12 @@
 |UnityStandardAssets.Vehicles.Car.WheelEffects|0|53|53|94|0%|0|0||0|10|0%|
 |**Assembly-CSharp-Editor**|**0**|**201**|**201**|**315**|**0%**|**0**|**0**|****|**0**|**15**|**0%**|
 |BuildCommand|0|201|201|315|0%|0|0||0|15|0%|
-|**Tests**|**386**|**26**|**412**|**885**|**93.6%**|**0**|**0**|****|**34**|**35**|**97.1%**|
+|**Tests**|**412**|**26**|**438**|**920**|**94%**|**0**|**0**|****|**36**|**37**|**97.2%**|
 |Tests.CoroutineRunner|12|0|12|31|100%|0|0||2|2|100%|
 |Tests.GameTests.GameTestsParent[T]|11|9|20|40|55%|0|0||1|1|100%|
 |Tests.GameTests.GenerationTests|10|0|10|34|100%|0|0||1|1|100%|
 |Tests.GameTests.RoadGeneratorTests|26|0|26|54|100%|0|0||3|3|100%|
-|Tests.GameTests.ShopTests|44|3|47|95|93.6%|0|0||3|3|100%|
+|Tests.GameTests.ShopTests|70|3|73|130|95.8%|0|0||5|5|100%|
 |Tests.GlobalSetup|16|0|16|49|100%|0|0||4|4|100%|
 |Tests.LoginWindow.LoginWindowTestsParent[T]|4|0|4|24|100%|0|0||1|1|100%|
 |Tests.LoginWindow.UserControllerTests|22|0|22|47|100%|0|0||3|3|100%|
@@ -69,7 +69,7 @@
 |Tests.MainWindowTests.TaskWindowTest|184|0|184|289|100%|0|0||10|10|100%|
 |Tests.TestConfig|2|0|2|43|100%|0|0||1|1|100%|
 |Tests.UnityTestParent[T]|36|3|39|80|92.3%|0|0||3|3|100%|
-|**ThesisScripts**|**1402**|**1362**|**2764**|**5631**|**50.7%**|**0**|**0**|****|**340**|**577**|**58.9%**|
+|**ThesisScripts**|**1411**|**1354**|**2765**|**5632**|**51%**|**0**|**0**|****|**342**|**577**|**59.2%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|6|0|6|15|100%|0|0||5|5|100%|
 |Building|7|2|9|33|77.7%|0|0||5|7|71.4%|
 |CameraScript|7|0|7|24|100%|0|0||2|2|100%|
@@ -93,7 +93,7 @@
 |Game.World.Chunk|330|71|401|640|82.2%|0|0||25|31|80.6%|
 |Game.World.GameWorld|49|22|71|124|69%|0|0||7|7|100%|
 |Game.World.RoadGenerator|111|36|147|253|75.5%|0|0||8|10|80%|
-|GameUI|39|63|102|198|38.2%|0|0||14|26|53.8%|
+|GameUI|48|55|103|199|46.6%|0|0||16|26|61.5%|
 |LoggedInChecker|11|11|22|54|50%|0|0||3|5|60%|
 |MainWindowController|73|9|82|144|89%|0|0||13|16|81.2%|
 |MeshGenerator|0|27|27|96|0%|0|0||0|2|0%|
