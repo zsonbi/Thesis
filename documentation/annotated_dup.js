@@ -35,23 +35,6 @@ var annotated_dup =
         [ "UserRequest", "structThesis__backend_1_1Data__Structures_1_1UserRequest.html", "structThesis__backend_1_1Data__Structures_1_1UserRequest" ]
       ] ]
     ] ],
-    [ "UnityStandardAssets", "namespaceUnityStandardAssets.html", [
-      [ "CrossPlatformInput", "namespaceUnityStandardAssets_1_1CrossPlatformInput.html", [
-        [ "PlatformSpecific", "namespaceUnityStandardAssets_1_1CrossPlatformInput_1_1PlatformSpecific.html", [
-          [ "MobileInput", "classUnityStandardAssets_1_1CrossPlatformInput_1_1PlatformSpecific_1_1MobileInput.html", "classUnityStandardAssets_1_1CrossPlatformInput_1_1PlatformSpecific_1_1MobileInput" ],
-          [ "StandaloneInput", "classUnityStandardAssets_1_1CrossPlatformInput_1_1PlatformSpecific_1_1StandaloneInput.html", "classUnityStandardAssets_1_1CrossPlatformInput_1_1PlatformSpecific_1_1StandaloneInput" ]
-        ] ],
-        [ "AxisTouchButton", "classUnityStandardAssets_1_1CrossPlatformInput_1_1AxisTouchButton.html", "classUnityStandardAssets_1_1CrossPlatformInput_1_1AxisTouchButton" ],
-        [ "ButtonHandler", "classUnityStandardAssets_1_1CrossPlatformInput_1_1ButtonHandler.html", "classUnityStandardAssets_1_1CrossPlatformInput_1_1ButtonHandler" ],
-        [ "CrossPlatformInputManager", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html", "classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager" ],
-        [ "InputAxisScrollbar", "classUnityStandardAssets_1_1CrossPlatformInput_1_1InputAxisScrollbar.html", "classUnityStandardAssets_1_1CrossPlatformInput_1_1InputAxisScrollbar" ],
-        [ "Joystick", "classUnityStandardAssets_1_1CrossPlatformInput_1_1Joystick.html", "classUnityStandardAssets_1_1CrossPlatformInput_1_1Joystick" ],
-        [ "MobileControlRig", "classUnityStandardAssets_1_1CrossPlatformInput_1_1MobileControlRig.html", "classUnityStandardAssets_1_1CrossPlatformInput_1_1MobileControlRig" ],
-        [ "TiltInput", "classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput.html", "classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput" ],
-        [ "TouchPad", "classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html", "classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad" ],
-        [ "VirtualInput", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput.html", "classUnityStandardAssets_1_1CrossPlatformInput_1_1VirtualInput" ]
-      ] ]
-    ] ],
     [ "User", "namespaceUser.html", [
       [ "UserData", "classUser_1_1UserData.html", "classUser_1_1UserData" ]
     ] ],

@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['playercar_0',['PlayerCar',['../classGame_1_1PlayerCar.html',1,'Game']]],
-  ['policecontainer_1',['PoliceContainer',['../classGame_1_1PlayerCar_1_1PoliceContainer.html',1,'Game::PlayerCar']]],
-  ['profilehandler_2',['ProfileHandler',['../classProfileHandler.html',1,'']]]
+  ['taskclosedeventargs_0',['TaskClosedEventArgs',['../classTaskClosedEventArgs.html',1,'']]],
+  ['taskdisplayhandler_1',['TaskDisplayHandler',['../classTaskDisplayHandler.html',1,'']]],
+  ['taskopenpanelcontroller_2',['TaskOpenPanelController',['../classTaskOpenPanelController.html',1,'']]],
+  ['taskrequest_3',['TaskRequest',['../structThesis__backend_1_1Data__Structures_1_1TaskRequest.html',1,'Thesis_backend::Data_Structures']]]
 ];

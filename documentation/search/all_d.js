@@ -1,13 +1,18 @@
 var searchData=
 [
-  ['name_0',['name',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1ButtonHandler.html#a7f295fca8edd514c0b8999ce0c78c34b',1,'UnityStandardAssets.CrossPlatformInput.ButtonHandler.Name'],['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualAxis.html#a176a271ea7cb1d9b52194ac0894c1b7b',1,'UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager.VirtualAxis.name'],['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualButton.html#a2c32a0ba1321140c06327f467ed12071',1,'UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager.VirtualButton.name']]],
-  ['namedaxis_1',['NamedAxis',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput_1_1AxisMapping.html#a237892bdafa6578dcf66b355a470e58bab73b0008438fcc7880d4265328382684',1,'UnityStandardAssets::CrossPlatformInput::TiltInput::AxisMapping']]],
-  ['nearbychunks_2',['nearbyChunks',['../classGame_1_1World_1_1RoadGenerator.html#a1682bc622be0f6e5a30ff28d4d9d3291',1,'Game::World::RoadGenerator']]],
-  ['newgame_3',['newgame',['../classGame_1_1GameController.html#af5c50c52cffcab3018ca54be6a421d7f',1,'Game.GameController.NewGame()'],['../classGameUI.html#ad3bbff87193c94698284895a7c8444fc',1,'GameUI.NewGame()']]],
-  ['nextlvlxp_4',['NextLVLXP',['../namespaceThesis__backend_1_1Data__Structures.html#a6dcf96061eacdfb57f346624d03d787f',1,'Thesis_backend::Data_Structures']]],
-  ['none_5',['none',['../namespaceDataTypes.html#a28b73b3b0b416b3b22c23aee2a226126a6adf97f83acf6453d4a6a4b1070f3754',1,'DataTypes.None'],['../namespaceDataTypes.html#a3bc22b847fe90cda4414fc931bd61622a6adf97f83acf6453d4a6a4b1070f3754',1,'DataTypes.None']]],
-  ['npccar_6',['NpcCar',['../classGame_1_1NpcCar.html',1,'Game']]],
-  ['npccar_2ecs_7',['NpcCar.cs',['../NpcCar_8cs.html',1,'']]],
-  ['numberofedgeroads_8',['NumberOfEdgeRoads',['../classGame_1_1World_1_1RoadGenerator.html#ac93b64c4463f09f30fe8e892d43e8758',1,'Game::World::RoadGenerator']]],
-  ['numberofplacedroads_9',['numberOfPlacedRoads',['../classGame_1_1World_1_1RoadGenerator.html#a8fe39641e0201cc241dc19e833d74003',1,'Game::World::RoadGenerator']]]
+  ['objectstocombine_0',['objectsToCombine',['../classGame_1_1World_1_1Chunk.html#a23e6d6bcd332dd8e8c29b829a880e5e0',1,'Game::World::Chunk']]],
+  ['oncollisionenter_1',['oncollisionenter',['../classGame_1_1Car.html#accab07464e1d58ec37830dc0e7aee91f',1,'Game.Car.OnCollisionEnter()'],['../classGame_1_1PlayerCar.html#a4f53e5c9f220ed72b83160599e2df51b',1,'Game.PlayerCar.OnCollisionEnter(Collision collision)']]],
+  ['oncollisionexit_2',['OnCollisionExit',['../classGame_1_1PlayerCar.html#a1abfcbceee34f7de69ceb4210306fd82',1,'Game::PlayerCar']]],
+  ['ondestroy_3',['ondestroy',['../classGame_1_1World_1_1Chunk.html#acc417b7ca3d058f1ddf6ba1b512b65fd',1,'Game.World.Chunk.OnDestroy()'],['../classGame_1_1World_1_1GameWorld.html#aed51879413bd477cc2d700690785cf7a',1,'Game.World.GameWorld.OnDestroy()']]],
+  ['onokaction_4',['onOkAction',['../classModalWindow.html#a71dd3e1790029da28d45d0e19defd7da',1,'ModalWindow']]],
+  ['ontriggerenter_5',['OnTriggerEnter',['../classCoin.html#a140177a0b7be977ba19cb2b2e08873b0',1,'Coin']]],
+  ['openeditor_6',['OpenEditor',['../classTaskDisplayHandler.html#a1fbc7e2afc634524025879b91b36db30',1,'TaskDisplayHandler']]],
+  ['openup_7',['openup',['../classTaskOpenPanelController.html#a1147a8c395515fe25ff585e12095bd3d',1,'TaskOpenPanelController.OpenUp()'],['../classTaskOpenPanelController.html#a76148069efc1952abecde4dd0fda56cc',1,'TaskOpenPanelController.OpenUp(PlayerTask taskContainer=null, TaskType type=TaskType.GoodTask)']]],
+  ['orientation_8',['Orientation',['../structAssets_1_1Scripts_1_1Client_1_1DataTypes_1_1ChunkCellContainer.html#a0918e1d9d1b2e13a9b0c9c0e578939e9',1,'Assets::Scripts::Client::DataTypes::ChunkCellContainer']]],
+  ['originalforwardstiffness_9',['originalForwardStiffness',['../classGame_1_1EnableWheelPhysicMaterial.html#a95a6b255895d8fdbecd883ce8dcc7887',1,'Game::EnableWheelPhysicMaterial']]],
+  ['originalsidewaysstiffness_10',['originalSidewaysStiffness',['../classGame_1_1EnableWheelPhysicMaterial.html#ada97322b625b6571e6d3fcf0af8cf4cf',1,'Game::EnableWheelPhysicMaterial']]],
+  ['owned_11',['Owned',['../classShopItem.html#a2fcdb14a28c8b7076b4d8d05834a4150',1,'ShopItem']]],
+  ['ownedcar_12',['OwnedCar',['../namespaceThesis__backend_1_1Data__Structures.html#a86066cb80bc43f93f3543295a9ea4970',1,'Thesis_backend::Data_Structures']]],
+  ['ownedcar_2ecs_13',['OwnedCar.cs',['../OwnedCar_8cs.html',1,'']]],
+  ['ownedcars_14',['OwnedCars',['../namespaceThesis__backend_1_1Data__Structures.html#a6406e7294c36a3ca692f02fcabf175b8',1,'Thesis_backend::Data_Structures']]]
 ];

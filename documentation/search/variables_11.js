@@ -14,11 +14,9 @@ var searchData=
   ['tier1spawnertimer_11',['tier1SpawnerTimer',['../classGame_1_1World_1_1CarSpawner.html#a23d129767331ac8528e9a46c2d197c8a',1,'Game::World::CarSpawner']]],
   ['tier2spawnertimer_12',['tier2SpawnerTimer',['../classGame_1_1World_1_1CarSpawner.html#a1003d6d74287406eb601b6d9d0e360c7',1,'Game::World::CarSpawner']]],
   ['tier3spawnertimer_13',['tier3SpawnerTimer',['../classGame_1_1World_1_1CarSpawner.html#a93141b0627ec47b261909bcfa78b0291',1,'Game::World::CarSpawner']]],
-  ['tiltaroundaxis_14',['tiltAroundAxis',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput.html#ad83fbef4affa001aab207586dd91e2e7',1,'UnityStandardAssets::CrossPlatformInput::TiltInput']]],
-  ['timereamaining_15',['TimeReamaining',['../classGame_1_1PlayerCar_1_1PoliceContainer.html#a531bbac045cd1299035956978a10f63b',1,'Game::PlayerCar::PoliceContainer']]],
-  ['totalscore_16',['TotalScore',['../classProfileHandler.html#a3cdc112503a9d3c334211969dbfb6b70',1,'ProfileHandler']]],
-  ['totaltaskcount_17',['TotalTaskCount',['../classProfileHandler.html#ad1532825edd16d5ee01964e31a0c5163',1,'ProfileHandler']]],
-  ['turbo_5fduration_18',['TURBO_DURATION',['../classGameConfig.html#a72acd18d4355d4e978281d7c89cd1ff7',1,'GameConfig']]],
-  ['turbotimer_19',['turboTimer',['../classGame_1_1PlayerCar.html#af6f3c51a0bf524f9f006962da39e3198',1,'Game::PlayerCar']]],
-  ['type_20',['type',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput_1_1AxisMapping.html#aba5d982b878f8b4e15867b731782ed63',1,'UnityStandardAssets::CrossPlatformInput::TiltInput::AxisMapping']]]
+  ['timereamaining_14',['TimeReamaining',['../classGame_1_1PlayerCar_1_1PoliceContainer.html#a531bbac045cd1299035956978a10f63b',1,'Game::PlayerCar::PoliceContainer']]],
+  ['totalscore_15',['TotalScore',['../classProfileHandler.html#a3cdc112503a9d3c334211969dbfb6b70',1,'ProfileHandler']]],
+  ['totaltaskcount_16',['TotalTaskCount',['../classProfileHandler.html#ad1532825edd16d5ee01964e31a0c5163',1,'ProfileHandler']]],
+  ['turbo_5fduration_17',['TURBO_DURATION',['../classGameConfig.html#a72acd18d4355d4e978281d7c89cd1ff7',1,'GameConfig']]],
+  ['turbotimer_18',['turboTimer',['../classGame_1_1PlayerCar.html#af6f3c51a0bf524f9f006962da39e3198',1,'Game::PlayerCar']]]
 ];

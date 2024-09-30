@@ -26,6 +26,5 @@ var namespaces_dup =
     ] ],
     [ "Game", "namespaceGame.html", "namespaceGame" ],
     [ "Thesis_backend", "namespaceThesis__backend.html", "namespaceThesis__backend" ],
-    [ "UnityStandardAssets", "namespaceUnityStandardAssets.html", "namespaceUnityStandardAssets" ],
     [ "User", "namespaceUser.html", "namespaceUser" ]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['joystick_0',['Joystick',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1Joystick.html',1,'UnityStandardAssets::CrossPlatformInput']]],
-  ['joystick_2ecs_1',['Joystick.cs',['../Joystick_8cs.html',1,'']]]
+  ['k_5freversingthreshold_0',['k_ReversingThreshold',['../classGame_1_1CarController.html#a0ca069eb30e5ab0b6c626097bef79c9a',1,'Game::CarController']]]
 ];

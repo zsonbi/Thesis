@@ -1,40 +1,40 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 09/30/2024 - 19:31:35 |
+| Generated on: | 09/30/2024 - 22:13:39 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 2 |
-| Classes: | 74 |
-| Files: | 73 |
-| Covered lines: | 1823 |
-| Uncovered lines: | 1380 |
-| Coverable lines: | 3203 |
-| Total lines: | 6407 |
-| Line coverage: | 56.9% (1823 of 3203) |
+| Classes: | 61 |
+| Files: | 61 |
+| Covered lines: | 1833 |
+| Uncovered lines: | 755 |
+| Coverable lines: | 2588 |
+| Total lines: | 5053 |
+| Line coverage: | 70.8% (1833 of 2588) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 378 |
-| Total methods: | 614 |
-| Method coverage: | 61.5% (378 of 614) |
+| Covered methods: | 376 |
+| Total methods: | 486 |
+| Method coverage: | 77.3% (376 of 486) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**Tests**|**412**|**26**|**438**|**920**|**94%**|**0**|**0**|****|**36**|**37**|**97.2%**|
+|**Tests**|**432**|**26**|**458**|**953**|**94.3%**|**0**|**0**|****|**37**|**38**|**97.3%**|
 |Tests.CoroutineRunner|12|0|12|31|100%|0|0||2|2|100%|
 |Tests.GameTests.GameTestsParent[T]|11|9|20|40|55%|0|0||1|1|100%|
 |Tests.GameTests.GenerationTests|10|0|10|34|100%|0|0||1|1|100%|
 |Tests.GameTests.RoadGeneratorTests|26|0|26|54|100%|0|0||3|3|100%|
-|Tests.GameTests.ShopTests|70|3|73|130|95.8%|0|0||5|5|100%|
-|Tests.GlobalSetup|16|0|16|49|100%|0|0||4|4|100%|
+|Tests.GameTests.ShopTests|85|3|88|155|96.5%|0|0||6|6|100%|
+|Tests.GlobalSetup|19|0|19|53|100%|0|0||4|4|100%|
 |Tests.LoginWindow.LoginWindowTestsParent[T]|4|0|4|24|100%|0|0||1|1|100%|
 |Tests.LoginWindow.UserControllerTests|22|0|22|47|100%|0|0||3|3|100%|
 |Tests.MainWindowTests.GameTests|0|2|2|32|0%|0|0||0|1|0%|
 |Tests.MainWindowTests.MainWindowTestsParent[T]|11|9|20|39|55%|0|0||1|1|100%|
 |Tests.MainWindowTests.ProfileWindowTest|8|0|8|28|100%|0|0||1|1|100%|
 |Tests.MainWindowTests.TaskWindowTest|184|0|184|289|100%|0|0||10|10|100%|
-|Tests.TestConfig|2|0|2|43|100%|0|0||1|1|100%|
+|Tests.TestConfig|4|0|4|47|100%|0|0||1|1|100%|
 |Tests.UnityTestParent[T]|36|3|39|80|92.3%|0|0||3|3|100%|
-|**ThesisScripts**|**1411**|**1354**|**2765**|**5632**|**51%**|**0**|**0**|****|**342**|**577**|**59.2%**|
+|**ThesisScripts**|**1401**|**729**|**2130**|**4100**|**65.7%**|**0**|**0**|****|**339**|**448**|**75.6%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|6|0|6|15|100%|0|0||5|5|100%|
 |Building|7|2|9|33|77.7%|0|0||5|7|71.4%|
 |CameraScript|7|0|7|24|100%|0|0||2|2|100%|
@@ -47,18 +47,17 @@
 |FriendWindowHandler|1|49|50|89|2%|0|0||1|8|12.5%|
 |Game.Car|46|35|81|137|56.7%|0|0||10|12|83.3%|
 |Game.CarController|93|36|129|249|72%|0|0||14|18|77.7%|
-|Game.CopCar|0|48|48|85|0%|0|0||0|1|0%|
+|Game.CopCar|0|48|48|80|0%|0|0||0|1|0%|
 |Game.EnableWheelPhysicMaterial|16|0|16|37|100%|0|0||2|2|100%|
 |Game.GameController|105|15|120|192|87.5%|0|0||23|25|92%|
 |Game.NpcCar|0|6|6|19|0%|0|0||0|1|0%|
-|Game.PlayerCar|32|97|129|189|24.8%|0|0||8|16|50%|
+|Game.PlayerCar|32|97|129|188|24.8%|0|0||8|16|50%|
 |Game.World.BuildingCell|11|0|11|30|100%|0|0||7|7|100%|
-|Game.World.BuildingGenerator|0|43|43|64|0%|0|0||0|2|0%|
 |Game.World.CarSpawner|22|21|43|79|51.1%|0|0||3|5|60%|
-|Game.World.Chunk|330|71|401|640|82.2%|0|0||25|31|80.6%|
-|Game.World.GameWorld|49|22|71|124|69%|0|0||7|7|100%|
-|Game.World.RoadGenerator|111|36|147|253|75.5%|0|0||8|10|80%|
-|GameUI|48|55|103|199|46.6%|0|0||16|26|61.5%|
+|Game.World.Chunk|334|71|405|646|82.4%|0|0||26|32|81.2%|
+|Game.World.GameWorld|53|22|75|131|70.6%|0|0||8|8|100%|
+|Game.World.RoadGenerator|111|23|134|234|82.8%|0|0||8|9|88.8%|
+|GameUI|47|55|102|198|46%|0|0||16|26|61.5%|
 |LoggedInChecker|11|11|22|54|50%|0|0||3|5|60%|
 |MainWindowController|73|9|82|144|89%|0|0||13|16|81.2%|
 |MeshGenerator|0|27|27|96|0%|0|0||0|2|0%|
@@ -81,17 +80,5 @@
 |Thesis_backend.Data_Structures.UserLoginRequest|2|0|2|14|100%|0|0||4|4|100%|
 |Thesis_backend.Data_Structures.UserRequest|3|0|3|15|100%|0|0||6|6|100%|
 |Thesis_backend.Data_Structures.UserSettings|3|1|4|15|75%|0|0||6|8|75%|
-|UnityStandardAssets.CrossPlatformInput.AxisTouchButton|0|41|41|75|0%|0|0||0|6|0%|
-|UnityStandardAssets.CrossPlatformInput.ButtonHandler|0|19|19|50|0%|0|0||0|7|0%|
-|UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager|11|122|133|318|8.2%|0|0||3|47|6.3%|
-|UnityStandardAssets.CrossPlatformInput.InputAxisScrollbar|0|4|4|17|0%|0|0||0|2|0%|
-|UnityStandardAssets.CrossPlatformInput.Inspector.TiltInputAxisStylePropertyDrawer|0|24|24|145|0%|0|0||0|1|0%|
-|UnityStandardAssets.CrossPlatformInput.Joystick|0|69|69|118|0%|0|0||0|9|0%|
-|UnityStandardAssets.CrossPlatformInput.MobileControlRig|0|32|32|85|0%|0|0||0|6|0%|
-|UnityStandardAssets.CrossPlatformInput.PlatformSpecific.MobileInput|0|79|79|133|0%|0|0||0|13|0%|
-|UnityStandardAssets.CrossPlatformInput.PlatformSpecific.StandaloneInput|3|24|27|79|11.1%|0|0||1|11|9%|
-|UnityStandardAssets.CrossPlatformInput.TiltInput|0|34|34|145|0%|0|0||0|4|0%|
-|UnityStandardAssets.CrossPlatformInput.TouchPad|0|64|64|156|0%|0|0||0|9|0%|
-|UnityStandardAssets.CrossPlatformInput.VirtualInput|3|57|60|134|5%|0|0||1|13|7.6%|
 |User.UserData|40|3|43|68|93%|0|0||29|30|96.6%|
 |UserController|28|43|71|182|39.4%|0|0||5|12|41.6%|

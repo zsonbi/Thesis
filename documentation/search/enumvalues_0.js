@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['absolute_0',['Absolute',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#ab4c68ac6f2b8a41c5029c105833ebfb6ab51ca26c6c89cfc9bec338f7a0d3e0c8',1,'UnityStandardAssets::CrossPlatformInput::TouchPad']]]
+  ['badhabit_0',['BadHabit',['../TaskType_8cs.html#aa7f5c268cc89ed3067c26142ca3e16d7aff9248d34ba5f0ed4bc7e7d714773be2',1,'TaskType.cs']]]
 ];

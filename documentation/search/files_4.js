@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['edgeroadcontainer_2ecs_0',['EdgeRoadContainer.cs',['../EdgeRoadContainer_8cs.html',1,'']]],
-  ['effectscript_2ecs_1',['EffectScript.cs',['../EffectScript_8cs.html',1,'']]],
-  ['effecttype_2ecs_2',['EffectType.cs',['../EffectType_8cs.html',1,'']]],
-  ['enablewheelphysicsmaterial_2ecs_3',['enableWheelPhysicsMaterial.cs',['../enableWheelPhysicsMaterial_8cs.html',1,'']]]
+  ['friend_2ecs_0',['Friend.cs',['../Friend_8cs.html',1,'']]],
+  ['friendhandler_2ecs_1',['FriendHandler.cs',['../FriendHandler_8cs.html',1,'']]],
+  ['friendwindowhandler_2ecs_2',['FriendWindowHandler.cs',['../FriendWindowHandler_8cs.html',1,'']]]
 ];

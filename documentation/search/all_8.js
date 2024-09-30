@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['id_0',['id',['../classShopItem.html#af35c1b9c9fcf5308aaf9e07b20d35e7d',1,'ShopItem.Id'],['../classUser_1_1UserData.html#ac6c907f6c1f72fb15cef61427abf4a8d',1,'User.UserData.Id']]],
+  ['id_0',['id',['../classUser_1_1UserData.html#ac6c907f6c1f72fb15cef61427abf4a8d',1,'User.UserData.Id'],['../classShopItem.html#af35c1b9c9fcf5308aaf9e07b20d35e7d',1,'ShopItem.Id']]],
   ['immune_1',['Immune',['../classGame_1_1PlayerCar.html#aec160d9c49d7fe224aa115e3a45479d7',1,'Game::PlayerCar']]],
   ['immunetimer_2',['immuneTimer',['../classGame_1_1PlayerCar.html#a8ea82c0981aa2bbba3260ea08556410b',1,'Game::PlayerCar']]],
   ['immunity_5fduration_3',['IMMUNITY_DURATION',['../classGameConfig.html#a609977a6f4bf3b40ff292fd47b73a9fa',1,'GameConfig']]],
@@ -8,13 +8,11 @@ var searchData=
   ['infamygameovertext_5',['InfamyGameOverText',['../classGameUI.html#aa8e76e961829a93e64faeb9e5f65c6bb',1,'GameUI']]],
   ['infamyingametext_6',['InfamyInGameText',['../classGameUI.html#a98156491737508882846fa4f9b4ee2de',1,'GameUI']]],
   ['ingamecontainer_7',['ingameContainer',['../classGameUI.html#aa87d6d5f2504f45f0d15aa727e409995',1,'GameUI']]],
-  ['init_8',['init',['../classGame_1_1Car.html#a73919d2b4768ace830efe5e84cb3e0d5',1,'Game.Car.Init()'],['../classGameUI.html#a86e861e18879f93819ab1feac66f2f22',1,'GameUI.Init()'],['../classShopItem.html#a76f9342f9bf8a0c4a920c83271456e28',1,'ShopItem.Init()'],['../classUser_1_1UserData.html#abb372911b5e49023a977bd064f46bb6e',1,'User.UserData.Init()']]],
+  ['init_8',['init',['../classGameUI.html#a86e861e18879f93819ab1feac66f2f22',1,'GameUI.Init()'],['../classUser_1_1UserData.html#abb372911b5e49023a977bd064f46bb6e',1,'User.UserData.Init()'],['../classShopItem.html#a76f9342f9bf8a0c4a920c83271456e28',1,'ShopItem.Init()'],['../classGame_1_1Car.html#a73919d2b4768ace830efe5e84cb3e0d5',1,'Game.Car.Init()']]],
   ['initchunk_9',['InitChunk',['../classGame_1_1World_1_1Chunk.html#a16255274ddf726bfa6e345189459e07d',1,'Game::World::Chunk']]],
   ['initunitaskloop_10',['InitUniTaskLoop',['../classGame_1_1World_1_1Chunk.html#a40aa70982f2ae4ecb1cbf4ada9bf9e76',1,'Game::World::Chunk']]],
   ['initvalues_11',['initvalues',['../classFriendHandler.html#a89b20a1b9aad9bb9eb0a69781ed1c7ba',1,'FriendHandler.InitValues()'],['../classTaskDisplayHandler.html#a4234bef95ed8e26bee9d674c7cd963e7',1,'TaskDisplayHandler.InitValues()']]],
-  ['inputaxisscrollbar_12',['InputAxisScrollbar',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1InputAxisScrollbar.html',1,'UnityStandardAssets::CrossPlatformInput']]],
-  ['inputaxisscrollbar_2ecs_13',['InputAxisScrollbar.cs',['../InputAxisScrollbar_8cs.html',1,'']]],
-  ['instance_14',['instance',['../classUser_1_1UserData.html#aac822a62e0ef2a7d0dbe623643146faa',1,'User.UserData.Instance'],['../classUser_1_1UserData.html#a0e7511fcf06639282624b12e673442e3',1,'User.UserData.instance']]],
-  ['isnewtask_15',['isNewTask',['../classTaskOpenPanelController.html#ac0fa9db0872e1f4e4872117d5420ea42',1,'TaskOpenPanelController']]],
-  ['isvalidemail_16',['IsValidEmail',['../classUserController.html#a4ddf4a375cad51a8784cb9be7ba11b23',1,'UserController']]]
+  ['instance_12',['instance',['../classUser_1_1UserData.html#aac822a62e0ef2a7d0dbe623643146faa',1,'User.UserData.Instance'],['../classUser_1_1UserData.html#a0e7511fcf06639282624b12e673442e3',1,'User.UserData.instance']]],
+  ['isnewtask_13',['isNewTask',['../classTaskOpenPanelController.html#ac0fa9db0872e1f4e4872117d5420ea42',1,'TaskOpenPanelController']]],
+  ['isvalidemail_14',['IsValidEmail',['../classUserController.html#a4ddf4a375cad51a8784cb9be7ba11b23',1,'UserController']]]
 ];

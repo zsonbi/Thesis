@@ -10,6 +10,5 @@ var searchData=
   ['playerdied_7',['PlayerDied',['../classGame_1_1GameController.html#a4ee6ddd9c52134a0bb30c3c0a7bef350',1,'Game::GameController']]],
   ['playerskinsloaded_8',['PlayerSkinsLoaded',['../classGame_1_1GameController.html#ac1d8730413951a2e3f61985ebb2470cf',1,'Game::GameController']]],
   ['playertask_9',['PlayerTask',['../namespaceThesis__backend_1_1Data__Structures.html#aea691308b30574c00a00de66d11e8039',1,'Thesis_backend::Data_Structures']]],
-  ['policecontainer_10',['PoliceContainer',['../classGame_1_1PlayerCar_1_1PoliceContainer.html#a79442268fab7d4bf98066096e9babe84',1,'Game::PlayerCar::PoliceContainer']]],
-  ['pressed_11',['Pressed',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager_1_1VirtualButton.html#a286f1c4c3001579bf3268312620808e7',1,'UnityStandardAssets::CrossPlatformInput::CrossPlatformInputManager::VirtualButton']]]
+  ['policecontainer_10',['PoliceContainer',['../classGame_1_1PlayerCar_1_1PoliceContainer.html#a79442268fab7d4bf98066096e9babe84',1,'Game::PlayerCar::PoliceContainer']]]
 ];

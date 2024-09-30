@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['monthly_0',['Monthly',['../TaskIntervals_8cs.html#a4ba022096603875ae402bb772ec906f9a9030e39f00132d583da4122532e509e9',1,'TaskIntervals.cs']]],
-  ['mousepositionx_1',['MousePositionX',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput_1_1AxisMapping.html#a237892bdafa6578dcf66b355a470e58ba2e5d285ad44c4b5c60c19d821f837597',1,'UnityStandardAssets::CrossPlatformInput::TiltInput::AxisMapping']]],
-  ['mousepositiony_2',['MousePositionY',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput_1_1AxisMapping.html#a237892bdafa6578dcf66b355a470e58ba34a9ef3987b77e6cb421e0f99aa29500',1,'UnityStandardAssets::CrossPlatformInput::TiltInput::AxisMapping']]],
-  ['mousepositionz_3',['MousePositionZ',['../classUnityStandardAssets_1_1CrossPlatformInput_1_1TiltInput_1_1AxisMapping.html#a237892bdafa6578dcf66b355a470e58ba29cefbe721516636bf49ac7a3dd92516',1,'UnityStandardAssets::CrossPlatformInput::TiltInput::AxisMapping']]]
+  ['none_0',['none',['../namespaceDataTypes.html#a28b73b3b0b416b3b22c23aee2a226126a6adf97f83acf6453d4a6a4b1070f3754',1,'DataTypes.None'],['../namespaceDataTypes.html#a3bc22b847fe90cda4414fc931bd61622a6adf97f83acf6453d4a6a4b1070f3754',1,'DataTypes.None']]]
 ];

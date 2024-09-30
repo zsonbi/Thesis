@@ -1,6 +1,7 @@
 var classGame_1_1World_1_1Chunk =
 [
     [ "InitUniTaskLoop", "classGame_1_1World_1_1Chunk.html#a40aa70982f2ae4ecb1cbf4ada9bf9e76", null ],
+    [ "OnDestroy", "classGame_1_1World_1_1Chunk.html#acc417b7ca3d058f1ddf6ba1b512b65fd", null ],
     [ "Awake", "classGame_1_1World_1_1Chunk.html#a697c68dad0a2d0dcad6d09d96f614b04", null ],
     [ "BuildingLoaded", "classGame_1_1World_1_1Chunk.html#ad96b568d5f7a03b6b4ea194b387c0af1", null ],
     [ "GetAbsolutePosition", "classGame_1_1World_1_1Chunk.html#af37779d40ed9cd07b577d5bca61627b7", null ],
@@ -35,6 +36,7 @@ var classGame_1_1World_1_1Chunk =
     [ "roads", "classGame_1_1World_1_1Chunk.html#a5dd795d2a271645312c82470e4ef8b4d", null ],
     [ "objectsToCombine", "classGame_1_1World_1_1Chunk.html#a23e6d6bcd332dd8e8c29b829a880e5e0", null ],
     [ "buildingCells", "classGame_1_1World_1_1Chunk.html#af9c46c3cc5804204df7dadf83f30fc32", null ],
+    [ "destroyed", "classGame_1_1World_1_1Chunk.html#a2685b8ce6822c14c342f63eba0409dd4", null ],
     [ "float", "classGame_1_1World_1_1Chunk.html#a0e6a5ff281afb8fd6116903dbcf40a2d", null ],
     [ "zSize", "classGame_1_1World_1_1Chunk.html#a042af1aae72efc1399c9f41f99f2b2bb", null ],
     [ "xSize", "classGame_1_1World_1_1Chunk.html#a31082bb2cb30e5fed18e51b5c3f8d352", null ],

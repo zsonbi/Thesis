@@ -40,8 +40,7 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", "functions_vars" ],
-        [ "Enumerations", "functions_enum.html", null ],
+        [ "Variables", "functions_vars.html", null ],
         [ "Properties", "functions_prop.html", null ]
       ] ]
     ] ],
@@ -57,13 +56,11 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"AxisTouchButton_8cs.html",
-"classCameraScript.html#a73f305dadb9b5b88d6efcc80a9073710",
-"classGame_1_1CarController.html#afadda4712607531e93172fcd43557f14",
-"classGame_1_1World_1_1GameWorld.html#a860bbea1d19413d639e7963e53e45d58",
-"classUnityStandardAssets_1_1CrossPlatformInput_1_1CrossPlatformInputManager.html#aaf138dbfc77d62b02679f3e156cc26b6",
-"classUnityStandardAssets_1_1CrossPlatformInput_1_1TouchPad.html#a7a8100793443f3133d7be118287b77e5",
-"namespaceAssets_1_1Scripts_1_1Client.html"
+"BuildingCell_8cs.html",
+"classConfig_1_1ServerConfig.html#a7819f4ecc6ef2da4d578378a91f2de18",
+"classGame_1_1GameController.html#a05d01ce3124c9d29e70cdee04539baeb",
+"classGame_1_1World_1_1RoadGenerator.html#a7fca47366b7f100826237bbc011034ac",
+"functions_i.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
