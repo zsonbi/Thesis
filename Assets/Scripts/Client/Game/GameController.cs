@@ -33,7 +33,7 @@ namespace Game
 
         public int Score { get => Mathf.RoundToInt(ScoreCounter); private set => ScoreCounter = value; }
 
-        public PlayerCar Player{get; private set; }
+        public PlayerCar Player { get; private set; }
 
         public Vector3 PlayerPos => Player.gameObject.transform.position;
 
