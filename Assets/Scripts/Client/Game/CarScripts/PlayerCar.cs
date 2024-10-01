@@ -3,6 +3,8 @@ using Game.World;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using TouchPhase = UnityEngine.TouchPhase;
 
 namespace Game
 {
@@ -13,6 +15,8 @@ namespace Game
 
         [SerializeField]
         public int SkinId = 1;
+
+        private Keyboard keyboard;
 
         private class PoliceContainer
         {
@@ -35,6 +39,20 @@ namespace Game
 
         private float turboTimer = 0f;
         private float immuneTimer = 0f;
+
+        protected new void Awake()
+        {
+            base.Awake();
+
+
+            this.keyboard = InputSystem.GetDevice<Keyboard>();
+
+        }
+
+        public void SetKeyboard(Keyboard newKeyboard)
+        {
+            this.keyboard = newKeyboard;
+        }
 
         public void PickedUpCoin()
         {
@@ -125,11 +143,31 @@ namespace Game
             }
 
             float turning = 0;
-
+            float accel = 0;
             // pass the input to the car!
+            if (this.keyboard is not null)
+            {
+                if (this.keyboard.aKey.isPressed || this.keyboard.leftArrowKey.isPressed)
+                {
+                    turning = -1;
+                }
+                else if (this.keyboard.dKey.isPressed || this.keyboard.rightArrowKey.isPressed)
+                {
+                    turning = 1;
+                }
+                //turning = Input.GetAxis("Horizontal");
 
-            turning = Input.GetAxis("Horizontal");
-            float accel = Input.GetAxis("Vertical");
+                if (this.keyboard.wKey.isPressed || this.keyboard.upArrowKey.isPressed)
+                {
+                    accel = 1;
+                }
+                else if (this.keyboard.sKey.isPressed || this.keyboard.downArrowKey.isPressed)
+                {
+                    accel = -1;
+                }
+            }
+
+            //float accel = Input.GetAxis("Vertical");
             bool reverse = false;
             //  if (Input.touchSupported)
             // {
@@ -139,7 +177,7 @@ namespace Game
                 {
                     Touch touch = Input.GetTouch(i);
 
-                    if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Stationary)
+                    if (touch.phase == UnityEngine.TouchPhase.Began || touch.phase == UnityEngine.TouchPhase.Stationary)
                     {
                         if (turning != 0)
                         {

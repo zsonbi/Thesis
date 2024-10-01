@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
 using UnityEngine.UIElements;
@@ -13,7 +14,7 @@ namespace Tests
 {
     namespace GameTests
     {
-        public class GenerationTests : GameTestsParent<GameController>
+        public class GameTests : GameTestsParent<GameController>
         {
             private List<Building> buildings = new List<Building>();
 
@@ -27,8 +28,8 @@ namespace Tests
                 GameUI.NewGame();
 
                 yield return WaitForCondition(() => MainController.Running);
-
                 Assert.NotNull(MainController.Player);
+
                 int currentScore = MainController.Score;
 
                 yield return new WaitForSecondsRealtime(5);
@@ -55,9 +56,29 @@ namespace Tests
             }
 
             [UnityTest]
+            public IEnumerator LeftRotateTest()
+            {
+                yield return LoadScene();
+
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+
+                GameUI.NewGame();
+                yield return WaitForCondition(() => MainController.Running);
+                MainController.Player.SetKeyboard(Keyboard);
+                
+                Press(Keyboard.aKey,5f);
+                InputSystem.Update();
+                yield return null;
+                yield return new WaitForSeconds(5f);
+                Release(Keyboard.aKey);
+                InputSystem.Update();
+                Assert.Less(MainController.Player.gameObject.transform.rotation.y, -10);
+            }
+
+            [UnityTest]
             public IEnumerator BuildingCollisionTest()
             {
-                var handle = Addressables.LoadAssetsAsync<GameObject>("Buildings", SpawnBuilding);
+                var handle = Addressables.LoadAssetsAsync<GameObject>("Buildings", GetBuilding);
                 yield return handle.Task;
                 yield return new WaitForSeconds(1f);
 
@@ -78,7 +99,7 @@ namespace Tests
                 }
             }
 
-            private void SpawnBuilding(GameObject building)
+            private void GetBuilding(GameObject building)
             {
                 buildings.Add(building.GetComponent<Building>());
                 buildings.Last().SetAddressableKey($"Buildings/{building.name}.prefab");

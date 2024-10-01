@@ -116,7 +116,7 @@ namespace Game
         }
 
         // Start is called before the first frame update
-        private void Awake()
+        protected void Awake()
         {
             this.carController = this.gameObject.GetComponent<CarController>();
             this.MAX_HEALTH = health;
