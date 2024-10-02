@@ -1,5 +1,6 @@
 using Game;
 using NUnit.Framework;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
 using UnityEngine.UIElements;
+using User;
 
 namespace Tests
 {
@@ -169,6 +171,67 @@ namespace Tests
                 Release(Keyboard.rightArrowKey);
                 InputSystem.Update();
                 Assert.Greater(MainController.Player.gameObject.transform.rotation.y, 0.1f);
+            }
+
+            [UnityTest]
+            public IEnumerator CoinPickUpTest()
+            {
+                yield return LoadScene();
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                GameUI.NewGame();
+                long originalCoinCount = UserData.Instance.Game.Currency;
+
+                yield return WaitForCondition(() => MainController.Running);
+                //Spawn coins
+                GameObject coinPrefab = MainController.World.GetChunk(MainController.PlayerPos).coinPrefab;
+                for (int i = 0; i < 10; i++)
+                {
+                    GameObject coin = GameObject.Instantiate(coinPrefab, MainController.World.GetChunk(MainController.PlayerPos).transform);
+                    coin.transform.position = MainController.PlayerPos;
+                }
+
+                Assert.GreaterOrEqual(10, MainController.Coins);
+                MainController.Player.DestroyedEvent.Invoke(MainController.Player, EventArgs.Empty);
+
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+
+                GameUI.BackToGameMenu();
+
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+
+                Assert.AreEqual(originalCoinCount + MainController.Coins, UserData.Instance.Game.Currency);
+            }
+
+            [UnityTest]
+            public IEnumerator CoinPickUpAndDoubleTest()
+            {
+                yield return LoadScene();
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                GameUI.NewGame();
+                long originalTaskScore = User.UserData.Instance.CurrentTaskScore;
+                long originalCoinCount = UserData.Instance.Game.Currency;
+
+                yield return WaitForCondition(() => MainController.Running);
+                //Spawn the coins
+                GameObject coinPrefab = MainController.World.GetChunk(MainController.PlayerPos).coinPrefab;
+                for (int i = 0; i < 10; i++)
+                {
+                    GameObject coin = GameObject.Instantiate(coinPrefab, MainController.World.GetChunk(MainController.PlayerPos).transform);
+                    coin.transform.position = MainController.PlayerPos;
+                }
+
+                Assert.GreaterOrEqual(10, MainController.Coins);
+                MainController.Player.DestroyedEvent.Invoke(MainController.Player, EventArgs.Empty);
+
+                GameUI.DoubleCoins();
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+
+                GameUI.BackToGameMenu();
+
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                Assert.AreEqual(originalTaskScore - GameConfig.DOUBLE_COIN_COST, User.UserData.Instance.CurrentTaskScore);
+
+                Assert.AreEqual(originalCoinCount + MainController.Coins * 2, UserData.Instance.Game.Currency);
             }
 
             [UnityTest]
