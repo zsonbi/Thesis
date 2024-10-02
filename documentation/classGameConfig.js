@@ -14,5 +14,8 @@ var classGameConfig =
     [ "POLICE_REVERSE_DISTANCE", "classGameConfig.html#a9365f48351cb59bba3c9174c6874cc18", null ],
     [ "COIN_RATE", "classGameConfig.html#aecb82db91e9098e26eb592efe084adfb", null ],
     [ "TURBO_DURATION", "classGameConfig.html#a72acd18d4355d4e978281d7c89cd1ff7", null ],
-    [ "IMMUNITY_DURATION", "classGameConfig.html#a609977a6f4bf3b40ff292fd47b73a9fa", null ]
+    [ "IMMUNITY_DURATION", "classGameConfig.html#a609977a6f4bf3b40ff292fd47b73a9fa", null ],
+    [ "TURBO_COST", "classGameConfig.html#a82923a004caf0dae6749854434d475fe", null ],
+    [ "IMMUNITY_COST", "classGameConfig.html#a24f1e892aace12d87047354901323ec3", null ],
+    [ "DOUBLE_COIN_COST", "classGameConfig.html#a711313e0ee70a29457292b8bbe081acd", null ]
 ];

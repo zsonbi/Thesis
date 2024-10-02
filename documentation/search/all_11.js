@@ -6,7 +6,7 @@ var searchData=
   ['taskcompleted_3',['TaskCompleted',['../classTaskDisplayHandler.html#aba2ced7534752d6a8d1069e2a6c459b4',1,'TaskDisplayHandler']]],
   ['taskdisplayhandler_4',['TaskDisplayHandler',['../classTaskDisplayHandler.html',1,'']]],
   ['taskdisplayhandler_2ecs_5',['TaskDisplayHandler.cs',['../TaskDisplayHandler_8cs.html',1,'']]],
-  ['taskintervals_6',['taskintervals',['../TaskIntervals_8cs.html#a4ba022096603875ae402bb772ec906f9',1,'TaskIntervals:&#160;TaskIntervals.cs'],['../classTaskOpenPanelController.html#a022cf15c01615aab856791aa77b9bcab',1,'TaskOpenPanelController.taskIntervals'],['../classTaskOpenPanelController.html#a317d00246568f7c682c5d1c27032762b',1,'TaskOpenPanelController.TASKINTERVALS']]],
+  ['taskintervals_6',['taskintervals',['../TaskIntervals_8cs.html#a4ba022096603875ae402bb772ec906f9',1,'TaskIntervals:&#160;TaskIntervals.cs'],['../classTaskOpenPanelController.html#a317d00246568f7c682c5d1c27032762b',1,'TaskOpenPanelController.TASKINTERVALS'],['../classTaskOpenPanelController.html#a022cf15c01615aab856791aa77b9bcab',1,'TaskOpenPanelController.taskIntervals']]],
   ['taskintervals_2ecs_7',['TaskIntervals.cs',['../TaskIntervals_8cs.html',1,'']]],
   ['taskintervalslabel_8',['TaskIntervalsLabel',['../classTaskDisplayHandler.html#a76372ef801e0c0ff6dc206dbb3093476',1,'TaskDisplayHandler']]],
   ['taskname_9',['taskname',['../namespaceThesis__backend_1_1Data__Structures.html#ac46ce5278ffa5998648bbb9fffa38676',1,'Thesis_backend.Data_Structures.TaskName'],['../structThesis__backend_1_1Data__Structures_1_1TaskRequest.html#a2395e5dc649c2efb0eb44f685e74bfcf',1,'Thesis_backend.Data_Structures.TaskRequest.TaskName']]],
@@ -35,8 +35,9 @@ var searchData=
   ['totaltaskcount_32',['TotalTaskCount',['../classProfileHandler.html#ad1532825edd16d5ee01964e31a0c5163',1,'ProfileHandler']]],
   ['touchphase_33',['TouchPhase',['../PlayerCar_8cs.html#a2b5d34cf3c30a1ab4ea66a8cac490349',1,'PlayerCar.cs']]],
   ['tractioncontrol_34',['TractionControl',['../classGame_1_1CarController.html#a298e55b1a36b51f9c4e4aa7883056a00',1,'Game::CarController']]],
-  ['turbo_35',['turbo',['../classGame_1_1PlayerCar.html#ad2603dab8f49dc15f05e0b265adc8c84',1,'Game.PlayerCar.Turbo'],['../namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578a6f53bfe04e78da893ba0c4f35ba6847e',1,'DataTypes.Turbo']]],
-  ['turbo_5fduration_36',['TURBO_DURATION',['../classGameConfig.html#a72acd18d4355d4e978281d7c89cd1ff7',1,'GameConfig']]],
-  ['turbotimer_37',['turboTimer',['../classGame_1_1PlayerCar.html#af6f3c51a0bf524f9f006962da39e3198',1,'Game::PlayerCar']]],
-  ['type_38',['Type',['../structAssets_1_1Scripts_1_1Client_1_1DataTypes_1_1ChunkCellContainer.html#ab94400b8d16cc62c34eb3b6be776d486',1,'Assets::Scripts::Client::DataTypes::ChunkCellContainer']]]
+  ['turbo_35',['turbo',['../namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578a6f53bfe04e78da893ba0c4f35ba6847e',1,'DataTypes.Turbo'],['../classGame_1_1PlayerCar.html#ad2603dab8f49dc15f05e0b265adc8c84',1,'Game.PlayerCar.Turbo']]],
+  ['turbo_5fcost_36',['TURBO_COST',['../classGameConfig.html#a82923a004caf0dae6749854434d475fe',1,'GameConfig']]],
+  ['turbo_5fduration_37',['TURBO_DURATION',['../classGameConfig.html#a72acd18d4355d4e978281d7c89cd1ff7',1,'GameConfig']]],
+  ['turbotimer_38',['turboTimer',['../classGame_1_1PlayerCar.html#af6f3c51a0bf524f9f006962da39e3198',1,'Game::PlayerCar']]],
+  ['type_39',['Type',['../structAssets_1_1Scripts_1_1Client_1_1DataTypes_1_1ChunkCellContainer.html#ab94400b8d16cc62c34eb3b6be776d486',1,'Assets::Scripts::Client::DataTypes::ChunkCellContainer']]]
 ];

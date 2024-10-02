@@ -9,5 +9,6 @@ var searchData=
   ['direction_6',['direction',['../classBuilding.html#a75b55df58b2b6d4575fc172df885cc2c',1,'Building']]],
   ['disabled_5ffor_5fcomplete_5fcolor_7',['DISABLED_FOR_COMPLETE_COLOR',['../classTaskDisplayHandler.html#a6113afa3c7779b0d5a4dca2434c32949',1,'TaskDisplayHandler']]],
   ['doesitneedupdating_8',['DoesItNeedUpdating',['../classTaskClosedEventArgs.html#acafb152ed30977f169e272682461d6cf',1,'TaskClosedEventArgs']]],
-  ['doublecoinbuton_9',['DoubleCoinButon',['../classGameUI.html#ac5b78624d3c28247136b292e49c2c6bb',1,'GameUI']]]
+  ['double_5fcoin_5fcost_9',['DOUBLE_COIN_COST',['../classGameConfig.html#a711313e0ee70a29457292b8bbe081acd',1,'GameConfig']]],
+  ['doublecoinbuton_10',['DoubleCoinButon',['../classGameUI.html#ac5b78624d3c28247136b292e49c2c6bb',1,'GameUI']]]
 ];

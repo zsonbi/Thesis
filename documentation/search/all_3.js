@@ -29,9 +29,10 @@ var searchData=
   ['display_26',['Display',['../classGame_1_1World_1_1Chunk.html#a475512064d145228ca7084735b7e2f2f',1,'Game::World::Chunk']]],
   ['displayfriends_27',['DisplayFriends',['../classFriendWindowHandler.html#a9d6df7fb5f416899e8e19670effc27db',1,'FriendWindowHandler']]],
   ['doesitneedupdating_28',['DoesItNeedUpdating',['../classTaskClosedEventArgs.html#acafb152ed30977f169e272682461d6cf',1,'TaskClosedEventArgs']]],
-  ['doublecoinbuton_29',['DoubleCoinButon',['../classGameUI.html#ac5b78624d3c28247136b292e49c2c6bb',1,'GameUI']]],
-  ['doublecoins_30',['DoubleCoins',['../classGameUI.html#a71107d9148809b9914a86c2eea8f8f87',1,'GameUI']]],
-  ['doubled_31',['Doubled',['../classGameUI.html#a1ca68be9e261bb1e9b8811b50a9c8702',1,'GameUI']]],
-  ['doubledcoins_32',['DoubledCoins',['../classGameUI.html#acdda2628aeead0a63621bfec327cb05c',1,'GameUI']]],
-  ['down_33',['down',['../namespaceDataTypes.html#a28b73b3b0b416b3b22c23aee2a226126a08a38277b0309070706f6652eeae9a53',1,'DataTypes.Down'],['../namespaceDataTypes.html#a3bc22b847fe90cda4414fc931bd61622a08a38277b0309070706f6652eeae9a53',1,'DataTypes.Down']]]
+  ['double_5fcoin_5fcost_29',['DOUBLE_COIN_COST',['../classGameConfig.html#a711313e0ee70a29457292b8bbe081acd',1,'GameConfig']]],
+  ['doublecoinbuton_30',['DoubleCoinButon',['../classGameUI.html#ac5b78624d3c28247136b292e49c2c6bb',1,'GameUI']]],
+  ['doublecoins_31',['DoubleCoins',['../classGameUI.html#a71107d9148809b9914a86c2eea8f8f87',1,'GameUI']]],
+  ['doubled_32',['Doubled',['../classGameUI.html#a1ca68be9e261bb1e9b8811b50a9c8702',1,'GameUI']]],
+  ['doubledcoins_33',['DoubledCoins',['../classGameUI.html#acdda2628aeead0a63621bfec327cb05c',1,'GameUI']]],
+  ['down_34',['down',['../namespaceDataTypes.html#a28b73b3b0b416b3b22c23aee2a226126a08a38277b0309070706f6652eeae9a53',1,'DataTypes.Down'],['../namespaceDataTypes.html#a3bc22b847fe90cda4414fc931bd61622a08a38277b0309070706f6652eeae9a53',1,'DataTypes.Down']]]
 ];
