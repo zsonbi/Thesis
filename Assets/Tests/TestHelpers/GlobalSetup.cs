@@ -24,17 +24,17 @@ namespace Tests
             TestConfig.Email = TestConfig.UserName + "@gmail.com";
             Register(TestConfig.UserName, TestConfig.Email, TestConfig.Password);
 
-            TestConfig.Username2 = "testt7GuSu" + DateTime.Now.Ticks.ToString();
+            TestConfig.Username2 = "testt7GuSu" + (DateTime.Now.Ticks+1).ToString();
             TestConfig.Email2 = TestConfig.Username2 + "@gmail.com";
             Register(TestConfig.Username2, TestConfig.Email2, TestConfig.Password);
         }
 
-        private void Register(string userName, string email, string password)
+        private void Register(string username, string email, string password)
         {
             UserRequest userRequest = new UserRequest()
             {
                 Email = email,
-                UserName = userName,
+                UserName = username,
                 Password = password
             };
 
