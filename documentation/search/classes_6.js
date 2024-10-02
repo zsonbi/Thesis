@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['loggedinchecker_0',['LoggedInChecker',['../classLoggedInChecker.html',1,'']]]
+  ['mainwindowcontroller_0',['MainWindowController',['../classMainWindowController.html',1,'']]],
+  ['modalwindow_1',['ModalWindow',['../classModalWindow.html',1,'']]]
 ];

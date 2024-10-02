@@ -1,13 +1,11 @@
 var hierarchy =
 [
     [ "Assets.Scripts.Client.DataTypes.ChunkCellContainer", "structAssets_1_1Scripts_1_1Client_1_1DataTypes_1_1ChunkCellContainer.html", null ],
-    [ "DirectionConverter", "classDirectionConverter.html", null ],
     [ "EdgeRoadContainer", "classEdgeRoadContainer.html", null ],
     [ "EventArgs", null, [
       [ "TaskClosedEventArgs", "classTaskClosedEventArgs.html", null ]
     ] ],
     [ "GameConfig", "classGameConfig.html", null ],
-    [ "MeshGenerator", "classMeshGenerator.html", null ],
     [ "MonoBehaviour", null, [
       [ "Building", "classBuilding.html", null ],
       [ "CameraScript", "classCameraScript.html", null ],

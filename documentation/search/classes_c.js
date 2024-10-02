@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['taskclosedeventargs_0',['TaskClosedEventArgs',['../classTaskClosedEventArgs.html',1,'']]],
-  ['taskdisplayhandler_1',['TaskDisplayHandler',['../classTaskDisplayHandler.html',1,'']]],
-  ['taskopenpanelcontroller_2',['TaskOpenPanelController',['../classTaskOpenPanelController.html',1,'']]],
-  ['taskrequest_3',['TaskRequest',['../structThesis__backend_1_1Data__Structures_1_1TaskRequest.html',1,'Thesis_backend::Data_Structures']]]
+  ['usercontroller_0',['UserController',['../classUserController.html',1,'']]],
+  ['userdata_1',['UserData',['../classUser_1_1UserData.html',1,'User']]],
+  ['userloginrequest_2',['UserLoginRequest',['../structThesis__backend_1_1Data__Structures_1_1UserLoginRequest.html',1,'Thesis_backend::Data_Structures']]],
+  ['userrequest_3',['UserRequest',['../structThesis__backend_1_1Data__Structures_1_1UserRequest.html',1,'Thesis_backend::Data_Structures']]]
 ];

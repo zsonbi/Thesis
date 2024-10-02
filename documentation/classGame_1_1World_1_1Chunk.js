@@ -9,8 +9,6 @@ var classGame_1_1World_1_1Chunk =
     [ "InitChunk", "classGame_1_1World_1_1Chunk.html#a16255274ddf726bfa6e345189459e07d", null ],
     [ "HideChunk", "classGame_1_1World_1_1Chunk.html#a118e0c25d254444e6663404fd61749d9", null ],
     [ "GetARandomRoad", "classGame_1_1World_1_1Chunk.html#aa082f46d92a6ade2f934fc8f2ff3093e", null ],
-    [ "CombineMeshes", "classGame_1_1World_1_1Chunk.html#ab8d1fcf68f66bd49f3ebc592075f493f", null ],
-    [ "CreateMeshes", "classGame_1_1World_1_1Chunk.html#a62cdce00483394aaa5fec7f8af5e56b6", null ],
     [ "LoadFromSettings", "classGame_1_1World_1_1Chunk.html#adc0bbcb5890b573408d5f323ce40f1d5", null ],
     [ "CreateTiles", "classGame_1_1World_1_1Chunk.html#a3d135ae49318d52c647b679b44d427b0", null ],
     [ "DetermineRoadType", "classGame_1_1World_1_1Chunk.html#a1555876e070101d46bd238aeaa2b8980", null ],

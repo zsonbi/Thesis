@@ -8,9 +8,8 @@ var searchData=
   ['determineroadtype_5',['DetermineRoadType',['../classGame_1_1World_1_1Chunk.html#a1555876e070101d46bd238aeaa2b8980',1,'Game::World::Chunk']]],
   ['determinesteeringdirectiontowardsplayer_6',['DetermineSteeringDirectionTowardsPlayer',['../classGame_1_1NpcCar.html#ac7bf4d022d0601c6262c6ffcfcf80a59',1,'Game::NpcCar']]],
   ['determinetiletype_7',['DetermineTileType',['../classGame_1_1World_1_1Chunk.html#ac4b762352bb5f90952fe57e5c0ee208f',1,'Game::World::Chunk']]],
-  ['directionfromvector_8',['DirectionFromVector',['../classDirectionConverter.html#a94df088e51f8eb199cc02c4600daad67',1,'DirectionConverter']]],
-  ['display_9',['Display',['../classGame_1_1World_1_1Chunk.html#a475512064d145228ca7084735b7e2f2f',1,'Game::World::Chunk']]],
-  ['displayfriends_10',['DisplayFriends',['../classFriendWindowHandler.html#a9d6df7fb5f416899e8e19670effc27db',1,'FriendWindowHandler']]],
-  ['doublecoins_11',['DoubleCoins',['../classGameUI.html#a71107d9148809b9914a86c2eea8f8f87',1,'GameUI']]],
-  ['doubledcoins_12',['DoubledCoins',['../classGameUI.html#acdda2628aeead0a63621bfec327cb05c',1,'GameUI']]]
+  ['display_8',['Display',['../classGame_1_1World_1_1Chunk.html#a475512064d145228ca7084735b7e2f2f',1,'Game::World::Chunk']]],
+  ['displayfriends_9',['DisplayFriends',['../classFriendWindowHandler.html#a9d6df7fb5f416899e8e19670effc27db',1,'FriendWindowHandler']]],
+  ['doublecoins_10',['DoubleCoins',['../classGameUI.html#a71107d9148809b9914a86c2eea8f8f87',1,'GameUI']]],
+  ['doubledcoins_11',['DoubledCoins',['../classGameUI.html#acdda2628aeead0a63621bfec327cb05c',1,'GameUI']]]
 ];

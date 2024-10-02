@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['server_0',['Server',['../classServer.html',1,'']]],
-  ['serverconfig_1',['ServerConfig',['../classConfig_1_1ServerConfig.html',1,'Config']]],
-  ['shopitem_2',['ShopItem',['../classShopItem.html',1,'']]],
-  ['shopwindow_3',['ShopWindow',['../classShopWindow.html',1,'']]],
-  ['starhandler_4',['StarHandler',['../classStarHandler.html',1,'']]]
+  ['taskclosedeventargs_0',['TaskClosedEventArgs',['../classTaskClosedEventArgs.html',1,'']]],
+  ['taskdisplayhandler_1',['TaskDisplayHandler',['../classTaskDisplayHandler.html',1,'']]],
+  ['taskopenpanelcontroller_2',['TaskOpenPanelController',['../classTaskOpenPanelController.html',1,'']]],
+  ['taskrequest_3',['TaskRequest',['../structThesis__backend_1_1Data__Structures_1_1TaskRequest.html',1,'Thesis_backend::Data_Structures']]]
 ];
