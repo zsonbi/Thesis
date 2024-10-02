@@ -19,6 +19,12 @@ namespace Tests
                 friendHandler.SendFriendRequest();
 
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                FriendHandler friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).First();
+
+                Assert.AreEqual(1, GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).Length);
+                Assert.True(friend.Friend.Pending);
+                Assert.AreEqual(User.UserData.Instance.Id, friend.Friend.Sender.ID);
+                Assert.AreEqual(User.UserData.Instance.TotalScore, friend.Friend.Sender.TotalScore);
             }
 
             [UnityTest]
@@ -31,11 +37,6 @@ namespace Tests
                 yield return SendFriendRequest(TestConfig.Username2);
 
                 FriendHandler friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).First();
-
-                Assert.AreEqual(1, GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).Length);
-                Assert.True(friend.Friend.Pending);
-                Assert.AreEqual(User.UserData.Instance.Id, friend.Friend.Sender.ID);
-                Assert.AreEqual(User.UserData.Instance.TotalScore, friend.Friend.Sender.TotalScore);
 
                 //Unfriend him
                 friend.DeleteFriend();
@@ -54,11 +55,6 @@ namespace Tests
                 yield return SendFriendRequest(TestConfig.Username2);
 
                 FriendHandler friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).First();
-
-                Assert.AreEqual(1, GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).Length);
-                Assert.True(friend.Friend.Pending);
-                Assert.AreEqual(User.UserData.Instance.Id, friend.Friend.Sender.ID);
-                Assert.AreEqual(User.UserData.Instance.TotalScore, friend.Friend.Sender.TotalScore);
 
                 //Hide the window
                 friendHandler.Hide();
@@ -91,11 +87,7 @@ namespace Tests
 
                 FriendHandler friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).First();
 
-                Assert.AreEqual(1, GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).Length);
-                Assert.True(friend.Friend.Pending);
-                Assert.AreEqual(User.UserData.Instance.Id, friend.Friend.Sender.ID);
-                Assert.AreEqual(User.UserData.Instance.TotalScore, friend.Friend.Sender.TotalScore);
-
+                //Login to the other user
                 yield return Login(TestConfig.Username2, TestConfig.Password2);
                 yield return LoadScene(true, false);
                 friendHandler.Show();
