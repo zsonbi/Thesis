@@ -189,6 +189,7 @@ namespace Tests
                     GameObject coin = GameObject.Instantiate(coinPrefab, MainController.World.GetChunk(MainController.PlayerPos).transform);
                     coin.transform.position = MainController.PlayerPos;
                 }
+                yield return new WaitForFixedUpdate();
 
                 Assert.GreaterOrEqual(10, MainController.Coins);
                 MainController.Player.DestroyedEvent.Invoke(MainController.Player, EventArgs.Empty);
@@ -219,6 +220,7 @@ namespace Tests
                     GameObject coin = GameObject.Instantiate(coinPrefab, MainController.World.GetChunk(MainController.PlayerPos).transform);
                     coin.transform.position = MainController.PlayerPos;
                 }
+                yield return new WaitForFixedUpdate();
 
                 Assert.GreaterOrEqual(10, MainController.Coins);
                 MainController.Player.DestroyedEvent.Invoke(MainController.Player, EventArgs.Empty);
@@ -232,6 +234,42 @@ namespace Tests
                 Assert.AreEqual(originalTaskScore - GameConfig.DOUBLE_COIN_COST, User.UserData.Instance.CurrentTaskScore);
 
                 Assert.AreEqual(originalCoinCount + MainController.Coins * 2, UserData.Instance.Game.Currency);
+            }
+
+            [UnityTest]
+            public IEnumerator GameRetryTest()
+            {
+                yield return LoadScene();
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                GameUI.NewGame();
+                long originalCoinCount = UserData.Instance.Game.Currency;
+
+                yield return WaitForCondition(() => MainController.Running);
+                //Spawn coins
+                GameObject coinPrefab = MainController.World.GetChunk(MainController.PlayerPos).coinPrefab;
+                for (int i = 0; i < 10; i++)
+                {
+                    GameObject coin = GameObject.Instantiate(coinPrefab, MainController.World.GetChunk(MainController.PlayerPos).transform);
+                    coin.transform.position = MainController.PlayerPos;
+                }
+                yield return new WaitForFixedUpdate();
+                Assert.GreaterOrEqual(10, MainController.Coins);
+                MainController.Player.DestroyedEvent.Invoke(MainController.Player, EventArgs.Empty);
+                float pickedUpCoins = MainController.Coins;
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                GameUI.NewGame();
+
+                yield return WaitForCondition(() => MainController.Running);
+                Assert.AreEqual(originalCoinCount + pickedUpCoins, UserData.Instance.Game.Currency);
+
+                Assert.NotNull(MainController.Player);
+
+                int currentScore = MainController.Score;
+
+                Assert.AreEqual(0, MainController.Coins);
+                Assert.Less(MainController.Score, 3);
+
+                yield return new WaitForSeconds(1f);
             }
 
             [UnityTest]
