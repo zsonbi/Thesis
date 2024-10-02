@@ -74,7 +74,7 @@ public class GameUI : MonoBehaviour
 
     public void DoubleCoins()
     {
-        if (UserData.Instance.CurrentTaskScore >= 1000)
+        if (UserData.Instance.CurrentTaskScore >= GameConfig.DOUBLE_COIN_COST)
         {
             StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATH_FOR_DOUBLE_COINS, new WWWForm(), DoubledCoins, onFailedAction: ShowRequestFail));
         }
@@ -82,7 +82,7 @@ public class GameUI : MonoBehaviour
 
     public void BuyImmunity()
     {
-        if (UserData.Instance.CurrentTaskScore >= 500)
+        if (UserData.Instance.CurrentTaskScore >= GameConfig.IMMUNITY_COST)
         {
             StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATH_FOR_BUY_IMMUNITY, new WWWForm(), BoughtImmunity, onFailedAction: ShowRequestFail));
         }
@@ -90,7 +90,7 @@ public class GameUI : MonoBehaviour
 
     public void BuyTurbo()
     {
-        if (UserData.Instance.CurrentTaskScore >= 250)
+        if (UserData.Instance.CurrentTaskScore >= GameConfig.TURBO_COST)
         {
             StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATH_FOR_BUY_TURBO, new WWWForm(), BoughtTurbo, onFailedAction: ShowRequestFail));
         }

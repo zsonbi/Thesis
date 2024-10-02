@@ -65,7 +65,7 @@ namespace Tests
                 GameUI.NewGame();
                 yield return WaitForCondition(() => MainController.Running);
                 MainController.Player.SetKeyboard(Keyboard);
-                
+
                 Press(Keyboard.aKey);
                 InputSystem.Update();
                 yield return new WaitForSeconds(1f);
@@ -112,7 +112,6 @@ namespace Tests
                 InputSystem.Update();
                 Assert.Less(MainController.PlayerPos.z, initPos);
             }
-
 
             [UnityTest]
             public IEnumerator CarBackwardsMovingTestArrows()
@@ -170,6 +169,48 @@ namespace Tests
                 Release(Keyboard.rightArrowKey);
                 InputSystem.Update();
                 Assert.Greater(MainController.Player.gameObject.transform.rotation.y, 0.1f);
+            }
+
+            [UnityTest]
+            public IEnumerator TurboTest()
+            {
+                yield return LoadScene();
+
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+
+                GameUI.NewGame();
+                yield return WaitForCondition(() => MainController.Running);
+                long originalTaskScore = User.UserData.Instance.CurrentTaskScore;
+                GameUI.BuyTurbo();
+
+                yield return new WaitForSeconds(1f);
+                Assert.True(MainController.Player.Turbo);
+
+                //Check if it decays
+                yield return WaitForCondition(() => !MainController.Player.Turbo);
+                Assert.AreEqual(originalTaskScore - GameConfig.TURBO_COST, User.UserData.Instance.CurrentTaskScore);
+                Assert.False(MainController.Player.Turbo);
+            }
+
+            [UnityTest]
+            public IEnumerator ImmunityTest()
+            {
+                yield return LoadScene();
+
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+
+                GameUI.NewGame();
+                yield return WaitForCondition(() => MainController.Running);
+                long originalTaskScore = User.UserData.Instance.CurrentTaskScore;
+                GameUI.BuyImmunity();
+
+                yield return new WaitForSeconds(1f);
+                Assert.True(MainController.Player.Immune);
+
+                //Check if it decays
+                yield return WaitForCondition(() => !MainController.Player.Immune);
+                Assert.AreEqual(originalTaskScore - GameConfig.IMMUNITY_COST, User.UserData.Instance.CurrentTaskScore);
+                Assert.False(MainController.Player.Turbo);
             }
 
             [UnityTest]
