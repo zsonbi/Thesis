@@ -162,7 +162,9 @@ namespace Tests
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
 
                 GameUI.NewGame();
+
                 yield return WaitForCondition(() => MainController.Running);
+
                 MainController.Player.SetKeyboard(Keyboard);
 
                 Press(Keyboard.rightArrowKey);
@@ -191,7 +193,7 @@ namespace Tests
                 }
                 yield return new WaitForFixedUpdate();
 
-                Assert.GreaterOrEqual(10, MainController.Coins);
+                Assert.AreEqual(10, MainController.Coins);
                 MainController.Player.DestroyedEvent.Invoke(MainController.Player, EventArgs.Empty);
 
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
@@ -222,7 +224,7 @@ namespace Tests
                 }
                 yield return new WaitForFixedUpdate();
 
-                Assert.GreaterOrEqual(10, MainController.Coins);
+                Assert.AreEqual(10, MainController.Coins);
                 MainController.Player.DestroyedEvent.Invoke(MainController.Player, EventArgs.Empty);
 
                 GameUI.DoubleCoins();
@@ -253,7 +255,7 @@ namespace Tests
                     coin.transform.position = MainController.PlayerPos;
                 }
                 yield return new WaitForFixedUpdate();
-                Assert.GreaterOrEqual(10, MainController.Coins);
+                Assert.AreEqual(10, MainController.Coins);
                 MainController.Player.DestroyedEvent.Invoke(MainController.Player, EventArgs.Empty);
                 float pickedUpCoins = MainController.Coins;
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);

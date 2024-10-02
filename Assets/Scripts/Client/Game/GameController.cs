@@ -43,6 +43,13 @@ namespace Game
 
         public float Coins { get; private set; } = 0;
 
+        private bool destroyed = false;
+
+        private void OnDestroy()
+        {
+            destroyed = true;
+        }
+
         private async void Awake()
         {
             var handle = Addressables.LoadAssetsAsync<GameObject>("PlayerVariants", PlayerSkinsLoaded);

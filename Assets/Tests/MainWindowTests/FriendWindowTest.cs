@@ -8,25 +8,9 @@ namespace Tests
 {
     namespace MainWindowTests
     {
-        public class GameTests : MainWindowTestsParent<MainWindowController>
+        public class FriendWindowTests : MainWindowTestsParent<MainWindowController>
         {
-            private void InitScene()
-            {
-            }
-
-            //[UnityTest]
-            //public IEnumerator LogoutTest()
-            //{
-            //    yield return LoadScene();
-
-            //    profileHandler.Show();
-            //    profileHandler.SendLogout();
-
-            //    yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
-
-            //    Assert.False(User.UserData.Instance.LoggedIn);
-            //    Assert.AreEqual(TestConfig.LOGIN_SCENE_NAME, SceneManager.GetActiveScene().name);
-            //}
+  
         }
     }
 }
