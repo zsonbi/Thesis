@@ -79,6 +79,44 @@ namespace Tests
                 friend.DeleteFriend();
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
             }
+
+            [UnityTest]
+            public IEnumerator FriendPanelSendAcceptAndDeleteTest()
+            {
+                yield return LoadScene(true, true);
+
+                friendHandler.Show();
+
+                yield return SendFriendRequest(TestConfig.Username2);
+
+                FriendHandler friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).First();
+
+                Assert.AreEqual(1, GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).Length);
+                Assert.True(friend.Friend.Pending);
+                Assert.AreEqual(User.UserData.Instance.Id, friend.Friend.Sender.ID);
+                Assert.AreEqual(User.UserData.Instance.TotalScore, friend.Friend.Sender.TotalScore);
+
+                yield return Login(TestConfig.Username2, TestConfig.Password2);
+                yield return LoadScene(true, false);
+                friendHandler.Show();
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+
+                friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).First();
+                Assert.True(friend.Friend.Pending);
+                Assert.AreEqual(User.UserData.Instance.Id, friend.Friend.Receiver.ID);
+                Assert.AreEqual(User.UserData.Instance.TotalScore, friend.Friend.Receiver.TotalScore);
+                //Accept it
+                friend.AcceptFriendRequest();
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+
+                Assert.False(friend.Friend.Pending);
+
+                //Unfriend him
+                friend.DeleteFriend();
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+
+                Assert.AreEqual(0, GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).Length);
+            }
         }
     }
 }

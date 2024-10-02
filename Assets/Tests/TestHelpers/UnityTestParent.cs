@@ -55,12 +55,21 @@ namespace Tests
             yield return null;
         }
 
-        private IEnumerator Login()
+        protected IEnumerator Login(string username = null, string password = null)
         {
+            if (username == null)
+            {
+                username = TestConfig.UserName;
+            }
+            if (password == null)
+            {
+                password = TestConfig.Password;
+            }
+
             UserLoginRequest userLoginRequest = new UserLoginRequest()
             {
-                UserIdentification = TestConfig.UserName,
-                Password = TestConfig.Password,
+                UserIdentification = username,
+                Password = password,
             };
 
             yield return CoroutineRunner.RunCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORLOGIN, userLoginRequest));
