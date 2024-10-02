@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 10/02/2024 - 17:21:13 |
+| Generated on: | 10/02/2024 - 18:24:05 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 2 |
-| Classes: | 60 |
-| Files: | 60 |
-| Covered lines: | 2308 |
-| Uncovered lines: | 533 |
-| Coverable lines: | 2841 |
-| Total lines: | 5416 |
-| Line coverage: | 81.2% (2308 of 2841) |
+| Classes: | 61 |
+| Files: | 61 |
+| Covered lines: | 2413 |
+| Uncovered lines: | 468 |
+| Coverable lines: | 2881 |
+| Total lines: | 5500 |
+| Line coverage: | 83.7% (2413 of 2881) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 424 |
-| Total methods: | 505 |
-| Method coverage: | 83.9% (424 of 505) |
+| Covered methods: | 449 |
+| Total methods: | 508 |
+| Method coverage: | 88.3% (449 of 508) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**Tests**|**643**|**24**|**667**|**1245**|**96.4%**|**0**|**0**|****|**52**|**52**|**100%**|
+|**Tests**|**683**|**24**|**707**|**1329**|**96.6%**|**0**|**0**|****|**55**|**55**|**100%**|
 |Tests.CoroutineRunner|12|0|12|31|100%|0|0||2|2|100%|
 |Tests.GameTests.GameTests|219|0|219|350|100%|0|0||16|16|100%|
 |Tests.GameTests.GameTestsParent[T]|13|9|22|45|59%|0|0||1|1|100%|
@@ -28,25 +28,26 @@
 |Tests.GlobalSetup|19|0|19|53|100%|0|0||4|4|100%|
 |Tests.LoginWindow.LoginWindowTestsParent[T]|4|0|4|24|100%|0|0||1|1|100%|
 |Tests.LoginWindow.UserControllerTests|22|0|22|47|100%|0|0||3|3|100%|
+|Tests.MainWindowTests.FriendWindowTests|40|0|40|84|100%|0|0||3|3|100%|
 |Tests.MainWindowTests.MainWindowTestsParent[T]|11|9|20|39|55%|0|0||1|1|100%|
 |Tests.MainWindowTests.ProfileWindowTest|8|0|8|28|100%|0|0||1|1|100%|
 |Tests.MainWindowTests.TaskWindowTest|184|0|184|289|100%|0|0||10|10|100%|
 |Tests.TestConfig|4|0|4|47|100%|0|0||1|1|100%|
 |Tests.UnityTestParent[T]|36|3|39|83|92.3%|0|0||3|3|100%|
-|**ThesisScripts**|**1665**|**509**|**2174**|**4171**|**76.5%**|**0**|**0**|****|**372**|**453**|**82.1%**|
+|**ThesisScripts**|**1730**|**444**|**2174**|**4171**|**79.5%**|**0**|**0**|****|**394**|**453**|**86.9%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|6|0|6|15|100%|0|0||5|5|100%|
 |Building|7|2|9|33|77.7%|0|0||5|7|71.4%|
 |CameraScript|7|0|7|24|100%|0|0||2|2|100%|
 |Coin|7|0|7|16|100%|0|0||2|2|100%|
-|Config.ServerConfig|4|2|6|89|66.6%|0|0||4|6|66.6%|
+|Config.ServerConfig|5|1|6|89|83.3%|0|0||5|6|83.3%|
 |DirectionConverter|0|21|21|46|0%|0|0||0|2|0%|
 |EdgeRoadContainer|9|0|9|15|100%|0|0||7|7|100%|
 |EffectScript|4|0|4|20|100%|0|0||2|2|100%|
-|FriendHandler|0|45|45|84|0%|0|0||0|8|0%|
-|FriendWindowHandler|1|49|50|89|2%|0|0||1|8|12.5%|
+|FriendHandler|28|17|45|84|62.2%|0|0||6|8|75%|
+|FriendWindowHandler|37|13|50|89|74%|0|0||7|8|87.5%|
 |Game.Car|59|22|81|137|72.8%|0|0||12|12|100%|
 |Game.CarController|87|32|119|238|73.1%|0|0||14|18|77.7%|
-|Game.CopCar|45|3|48|80|93.7%|0|0||1|1|100%|
+|Game.CopCar|41|7|48|80|85.4%|0|0||1|1|100%|
 |Game.EnableWheelPhysicMaterial|16|0|16|37|100%|0|0||2|2|100%|
 |Game.GameController|117|7|124|199|94.3%|0|0||26|26|100%|
 |Game.NpcCar|6|0|6|19|100%|0|0||1|1|100%|
@@ -69,7 +70,7 @@
 |TaskDisplayHandler|54|10|64|123|84.3%|0|0||11|12|91.6%|
 |TaskOpenPanelController|111|6|117|214|94.8%|0|0||13|13|100%|
 |Thesis_backend.Data_Structures.DbElement|1|1|2|11|50%|0|0||2|3|66.6%|
-|Thesis_backend.Data_Structures.Friend|0|5|5|18|0%|0|0||0|10|0%|
+|Thesis_backend.Data_Structures.Friend|4|1|5|18|80%|0|0||9|10|90%|
 |Thesis_backend.Data_Structures.Game|6|2|8|18|75%|0|0||12|15|80%|
 |Thesis_backend.Data_Structures.OwnedCar|2|3|5|21|40%|0|0||4|9|44.4%|
 |Thesis_backend.Data_Structures.PlayerTask|48|12|60|84|80%|0|0||21|23|91.3%|
