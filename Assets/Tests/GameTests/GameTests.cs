@@ -56,7 +56,7 @@ namespace Tests
             }
 
             [UnityTest]
-            public IEnumerator LeftRotateTest()
+            public IEnumerator LeftCarRotateTest()
             {
                 yield return LoadScene();
 
@@ -66,13 +66,110 @@ namespace Tests
                 yield return WaitForCondition(() => MainController.Running);
                 MainController.Player.SetKeyboard(Keyboard);
                 
-                Press(Keyboard.aKey,5f);
+                Press(Keyboard.aKey);
                 InputSystem.Update();
-                yield return null;
-                yield return new WaitForSeconds(5f);
+                yield return new WaitForSeconds(1f);
                 Release(Keyboard.aKey);
                 InputSystem.Update();
-                Assert.Less(MainController.Player.gameObject.transform.rotation.y, -10);
+                Assert.Less(MainController.Player.gameObject.transform.rotation.y, -0.1f);
+            }
+
+            [UnityTest]
+            public IEnumerator LeftCarRotateTestArrows()
+            {
+                yield return LoadScene();
+
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+
+                GameUI.NewGame();
+                yield return WaitForCondition(() => MainController.Running);
+                MainController.Player.SetKeyboard(Keyboard);
+
+                Press(Keyboard.leftArrowKey);
+                InputSystem.Update();
+                yield return new WaitForSeconds(1f);
+                Release(Keyboard.leftArrowKey);
+                InputSystem.Update();
+                Assert.Less(MainController.Player.gameObject.transform.rotation.y, -0.1f);
+            }
+
+            [UnityTest]
+            public IEnumerator CarBackwardsMovingTest()
+            {
+                yield return LoadScene();
+
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+
+                GameUI.NewGame();
+                yield return WaitForCondition(() => MainController.Running);
+                MainController.Player.SetKeyboard(Keyboard);
+                float initPos = MainController.PlayerPos.z;
+
+                Press(Keyboard.sKey);
+                InputSystem.Update();
+                yield return new WaitForSeconds(2f);
+                Release(Keyboard.sKey);
+                InputSystem.Update();
+                Assert.Less(MainController.PlayerPos.z, initPos);
+            }
+
+
+            [UnityTest]
+            public IEnumerator CarBackwardsMovingTestArrows()
+            {
+                yield return LoadScene();
+
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+
+                GameUI.NewGame();
+                yield return WaitForCondition(() => MainController.Running);
+                MainController.Player.SetKeyboard(Keyboard);
+                float initPos = MainController.PlayerPos.z;
+
+                Press(Keyboard.downArrowKey);
+                InputSystem.Update();
+                yield return new WaitForSeconds(2f);
+                Release(Keyboard.downArrowKey);
+                InputSystem.Update();
+                Assert.Less(MainController.PlayerPos.z, initPos);
+            }
+
+            [UnityTest]
+            public IEnumerator RightCarRotateTest()
+            {
+                yield return LoadScene();
+
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+
+                GameUI.NewGame();
+                yield return WaitForCondition(() => MainController.Running);
+                MainController.Player.SetKeyboard(Keyboard);
+
+                Press(Keyboard.dKey);
+                InputSystem.Update();
+                yield return new WaitForSeconds(1f);
+                Release(Keyboard.dKey);
+                InputSystem.Update();
+                Assert.Greater(MainController.Player.gameObject.transform.rotation.y, 0.1f);
+            }
+
+            [UnityTest]
+            public IEnumerator RightCarRotateTestArrows()
+            {
+                yield return LoadScene();
+
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+
+                GameUI.NewGame();
+                yield return WaitForCondition(() => MainController.Running);
+                MainController.Player.SetKeyboard(Keyboard);
+
+                Press(Keyboard.rightArrowKey);
+                InputSystem.Update();
+                yield return new WaitForSeconds(1f);
+                Release(Keyboard.rightArrowKey);
+                InputSystem.Update();
+                Assert.Greater(MainController.Player.gameObject.transform.rotation.y, 0.1f);
             }
 
             [UnityTest]

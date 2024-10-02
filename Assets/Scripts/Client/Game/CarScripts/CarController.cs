@@ -232,18 +232,7 @@ namespace Game
 
         private void AdjustTorque(float forwardSlip)
         {
-            if (forwardSlip >= m_SlipLimit && m_CurrentTorque >= 0)
-            {
-                m_CurrentTorque -= 10 * m_TractionControl;
-            }
-            else
-            {
-                m_CurrentTorque += 10 * m_TractionControl;
-                if (m_CurrentTorque > m_FullTorqueOverAllWheels)
-                {
-                    m_CurrentTorque = m_FullTorqueOverAllWheels;
-                }
-            }
+            m_CurrentTorque = m_FullTorqueOverAllWheels;
         }
     }
 }

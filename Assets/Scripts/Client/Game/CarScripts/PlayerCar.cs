@@ -43,14 +43,11 @@ namespace Game
         protected new void Awake()
         {
             base.Awake();
-
-
-            this.keyboard = InputSystem.GetDevice<Keyboard>();
-
         }
 
         public void SetKeyboard(Keyboard newKeyboard)
         {
+            return;
             this.keyboard = newKeyboard;
         }
 
@@ -144,9 +141,11 @@ namespace Game
 
             float turning = 0;
             float accel = 0;
+            this.keyboard = Keyboard.current;
             // pass the input to the car!
             if (this.keyboard is not null)
             {
+                InputSystem.Update();
                 if (this.keyboard.aKey.isPressed || this.keyboard.leftArrowKey.isPressed)
                 {
                     turning = -1;
