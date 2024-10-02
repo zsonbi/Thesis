@@ -354,23 +354,12 @@ $(document).ready(function(){initNavTree('CarController_8cs_source.html',''); in
 <div class="foldopen" id="foldopen00233" data-start="{" data-end="}">
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno"><a class="line" href="classGame_1_1CarController.html#a7589f8f5b951a0d3283790774bf97493">  233</a></span>        <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGame_1_1CarController.html#a7589f8f5b951a0d3283790774bf97493">AdjustTorque</a>(<span class="keywordtype">float</span> forwardSlip)</div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        {</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>            <span class="keywordflow">if</span> (forwardSlip &gt;= <a class="code hl_variable" href="classGame_1_1CarController.html#a5099670066b9a4d06b6b2eda1c514b25">m_SlipLimit</a> &amp;&amp; <a class="code hl_variable" href="classGame_1_1CarController.html#a819fbcd27757585411b18de4cca1f5bb">m_CurrentTorque</a> &gt;= 0)</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>            {</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>                <a class="code hl_variable" href="classGame_1_1CarController.html#a819fbcd27757585411b18de4cca1f5bb">m_CurrentTorque</a> -= 10 * <a class="code hl_variable" href="classGame_1_1CarController.html#aab3325923b9a3f88bebe6db97df30cfb">m_TractionControl</a>;</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            }</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>            <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>            {</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>                <a class="code hl_variable" href="classGame_1_1CarController.html#a819fbcd27757585411b18de4cca1f5bb">m_CurrentTorque</a> += 10 * <a class="code hl_variable" href="classGame_1_1CarController.html#aab3325923b9a3f88bebe6db97df30cfb">m_TractionControl</a>;</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1CarController.html#a819fbcd27757585411b18de4cca1f5bb">m_CurrentTorque</a> &gt; <a class="code hl_variable" href="classGame_1_1CarController.html#a59d077b5936bb7ca98e482f0efd47a34">m_FullTorqueOverAllWheels</a>)</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>                {</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>                    <a class="code hl_variable" href="classGame_1_1CarController.html#a819fbcd27757585411b18de4cca1f5bb">m_CurrentTorque</a> = <a class="code hl_variable" href="classGame_1_1CarController.html#a59d077b5936bb7ca98e482f0efd47a34">m_FullTorqueOverAllWheels</a>;</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>                }</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>            }</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        }</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>            <a class="code hl_variable" href="classGame_1_1CarController.html#a819fbcd27757585411b18de4cca1f5bb">m_CurrentTorque</a> = <a class="code hl_variable" href="classGame_1_1CarController.html#a59d077b5936bb7ca98e482f0efd47a34">m_FullTorqueOverAllWheels</a>;</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        }</div>
 </div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    }</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    }</div>
 </div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>}</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>}</div>
 <div class="ttc" id="aclassGame_1_1CarController_html"><div class="ttname"><a href="classGame_1_1CarController.html">Game.CarController</a></div><div class="ttdef"><b>Definition</b> <a href="CarController_8cs_source.html#l00019">CarController.cs:20</a></div></div>
 <div class="ttc" id="aclassGame_1_1CarController_html_a00e924a0fb1f86bc8171e6568bf87e91"><div class="ttname"><a href="classGame_1_1CarController.html#a00e924a0fb1f86bc8171e6568bf87e91">Game.CarController.m_Pos</a></div><div class="ttdeci">Vector3 m_Pos</div><div class="ttdef"><b>Definition</b> <a href="CarController_8cs_source.html#l00037">CarController.cs:37</a></div></div>
 <div class="ttc" id="aclassGame_1_1CarController_html_a07fb63472d069aec4c77984c99b7a37b"><div class="ttname"><a href="classGame_1_1CarController.html#a07fb63472d069aec4c77984c99b7a37b">Game.CarController.BrakeInput</a></div><div class="ttdeci">float BrakeInput</div><div class="ttdef"><b>Definition</b> <a href="CarController_8cs_source.html#l00046">CarController.cs:46</a></div></div>

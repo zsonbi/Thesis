@@ -13,10 +13,10 @@ var searchData=
   ['right_10',['right',['../namespaceDataTypes.html#a28b73b3b0b416b3b22c23aee2a226126a92b09c7c48c520c3c55e497875da437c',1,'DataTypes.Right'],['../namespaceDataTypes.html#a3bc22b847fe90cda4414fc931bd61622a92b09c7c48c520c3c55e497875da437c',1,'DataTypes.Right']]],
   ['rightrotateskin_11',['RightRotateSkin',['../classGameUI.html#af1d2e673a23d21920ab8388bdb2d3506',1,'GameUI']]],
   ['roadcounter_12',['roadCounter',['../classEdgeRoadContainer.html#a6e168394bc99da132d3038d61888583d',1,'EdgeRoadContainer']]],
-  ['roadgenerator_13',['roadgenerator',['../classGame_1_1World_1_1Chunk.html#a6177a02fdbf5c1b5f31085368ec44c88',1,'Game.World.Chunk.roadGenerator'],['../classGame_1_1World_1_1RoadGenerator.html',1,'Game.World.RoadGenerator'],['../classGame_1_1World_1_1RoadGenerator.html#aedcb774ed36687d05b41b26378207e53',1,'Game.World.RoadGenerator.RoadGenerator()']]],
+  ['roadgenerator_13',['roadgenerator',['../classGame_1_1World_1_1RoadGenerator.html#aedcb774ed36687d05b41b26378207e53',1,'Game.World.RoadGenerator.RoadGenerator()'],['../classGame_1_1World_1_1RoadGenerator.html',1,'Game.World.RoadGenerator'],['../classGame_1_1World_1_1Chunk.html#a6177a02fdbf5c1b5f31085368ec44c88',1,'Game.World.Chunk.roadGenerator']]],
   ['roadgenerator_2ecs_14',['RoadGenerator.cs',['../RoadGenerator_8cs.html',1,'']]],
   ['roadmatrix_15',['RoadMatrix',['../classGame_1_1World_1_1RoadGenerator.html#a7fca47366b7f100826237bbc011034ac',1,'Game::World::RoadGenerator']]],
-  ['roads_16',['roads',['../classGame_1_1World_1_1Chunk.html#a5dd795d2a271645312c82470e4ef8b4d',1,'Game.World.Chunk.roads'],['../classGame_1_1World_1_1Chunk.html#ac21c65b1dc3fbfe5de7b2a99b325098e',1,'Game.World.Chunk.Roads']]],
+  ['roads_16',['roads',['../classGame_1_1World_1_1Chunk.html#ac21c65b1dc3fbfe5de7b2a99b325098e',1,'Game.World.Chunk.Roads'],['../classGame_1_1World_1_1Chunk.html#a5dd795d2a271645312c82470e4ef8b4d',1,'Game.World.Chunk.roads']]],
   ['row_17',['Row',['../classGame_1_1World_1_1Chunk.html#adce4d80142d5a8146a23758358504814',1,'Game::World::Chunk']]],
   ['rowcount_18',['rowcount',['../classBuilding.html#ae5d484df6ed27cc77d2c338bfda53435',1,'Building.RowCount'],['../classBuilding.html#aa80c140b3bdf134a2529c59e68b31c91',1,'Building.rowCount']]],
   ['running_19',['Running',['../classGame_1_1GameController.html#a05d01ce3124c9d29e70cdee04539baeb',1,'Game::GameController']]]

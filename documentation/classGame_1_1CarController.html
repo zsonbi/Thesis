@@ -340,7 +340,7 @@ Static Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="CarController_8cs_source.html#l00058">Game.CarController.AccelInput</a>, <a class="el" href="CarController_8cs_source.html#l00194">Game.CarController.AddDownForce()</a>, <a class="el" href="CarController_8cs_source.html#l00135">Game.CarController.ApplyDrive()</a>, <a class="el" href="CarController_8cs_source.html#l00046">Game.CarController.BrakeInput</a>, <a class="el" href="CarController_8cs_source.html#l00115">Game.CarController.CapSpeed()</a>, <a class="el" href="CarController_8cs_source.html#l00030">Game.CarController.m_MaxHandbrakeTorque</a>, <a class="el" href="CarController_8cs_source.html#l00025">Game.CarController.m_MaximumSteerAngle</a>, <a class="el" href="CarController_8cs_source.html#l00038">Game.CarController.m_SteerAngle</a>, <a class="el" href="CarController_8cs_source.html#l00022">Game.CarController.m_WheelColliders</a>, <a class="el" href="CarController_8cs_source.html#l00173">Game.CarController.SteerHelper()</a>, and <a class="el" href="CarController_8cs_source.html#l00200">Game.CarController.TractionControl()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="PlayerCar_8cs_source.html#l00119">Game.PlayerCar.FixedUpdate()</a>, and <a class="el" href="CopCar_8cs_source.html#l00010">Game.CopCar.Update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="PlayerCar_8cs_source.html#l00134">Game.PlayerCar.FixedUpdate()</a>, and <a class="el" href="CopCar_8cs_source.html#l00010">Game.CopCar.Update()</a>.</p>
 
 </div>
 </div>
@@ -652,22 +652,10 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="CarController_8cs_source.html#l00233">233</a> of file <a class="el" href="CarController_8cs_source.html">CarController.cs</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  234</span>        {</div>
-<div class="line"><span class="lineno">  235</span>            <span class="keywordflow">if</span> (forwardSlip &gt;= <a class="code hl_variable" href="classGame_1_1CarController.html#a5099670066b9a4d06b6b2eda1c514b25">m_SlipLimit</a> &amp;&amp; <a class="code hl_variable" href="classGame_1_1CarController.html#a819fbcd27757585411b18de4cca1f5bb">m_CurrentTorque</a> &gt;= 0)</div>
-<div class="line"><span class="lineno">  236</span>            {</div>
-<div class="line"><span class="lineno">  237</span>                <a class="code hl_variable" href="classGame_1_1CarController.html#a819fbcd27757585411b18de4cca1f5bb">m_CurrentTorque</a> -= 10 * <a class="code hl_variable" href="classGame_1_1CarController.html#aab3325923b9a3f88bebe6db97df30cfb">m_TractionControl</a>;</div>
-<div class="line"><span class="lineno">  238</span>            }</div>
-<div class="line"><span class="lineno">  239</span>            <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  240</span>            {</div>
-<div class="line"><span class="lineno">  241</span>                <a class="code hl_variable" href="classGame_1_1CarController.html#a819fbcd27757585411b18de4cca1f5bb">m_CurrentTorque</a> += 10 * <a class="code hl_variable" href="classGame_1_1CarController.html#aab3325923b9a3f88bebe6db97df30cfb">m_TractionControl</a>;</div>
-<div class="line"><span class="lineno">  242</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1CarController.html#a819fbcd27757585411b18de4cca1f5bb">m_CurrentTorque</a> &gt; <a class="code hl_variable" href="classGame_1_1CarController.html#a59d077b5936bb7ca98e482f0efd47a34">m_FullTorqueOverAllWheels</a>)</div>
-<div class="line"><span class="lineno">  243</span>                {</div>
-<div class="line"><span class="lineno">  244</span>                    <a class="code hl_variable" href="classGame_1_1CarController.html#a819fbcd27757585411b18de4cca1f5bb">m_CurrentTorque</a> = <a class="code hl_variable" href="classGame_1_1CarController.html#a59d077b5936bb7ca98e482f0efd47a34">m_FullTorqueOverAllWheels</a>;</div>
-<div class="line"><span class="lineno">  245</span>                }</div>
-<div class="line"><span class="lineno">  246</span>            }</div>
-<div class="line"><span class="lineno">  247</span>        }</div>
-<div class="ttc" id="aclassGame_1_1CarController_html_a5099670066b9a4d06b6b2eda1c514b25"><div class="ttname"><a href="classGame_1_1CarController.html#a5099670066b9a4d06b6b2eda1c514b25">Game.CarController.m_SlipLimit</a></div><div class="ttdeci">float m_SlipLimit</div><div class="ttdef"><b>Definition</b> <a href="CarController_8cs_source.html#l00034">CarController.cs:34</a></div></div>
+<div class="line"><span class="lineno">  235</span>            <a class="code hl_variable" href="classGame_1_1CarController.html#a819fbcd27757585411b18de4cca1f5bb">m_CurrentTorque</a> = <a class="code hl_variable" href="classGame_1_1CarController.html#a59d077b5936bb7ca98e482f0efd47a34">m_FullTorqueOverAllWheels</a>;</div>
+<div class="line"><span class="lineno">  236</span>        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="CarController_8cs_source.html#l00042">Game.CarController.m_CurrentTorque</a>, <a class="el" href="CarController_8cs_source.html#l00028">Game.CarController.m_FullTorqueOverAllWheels</a>, <a class="el" href="CarController_8cs_source.html#l00034">Game.CarController.m_SlipLimit</a>, and <a class="el" href="CarController_8cs_source.html#l00027">Game.CarController.m_TractionControl</a>.</p>
+<p class="reference">References <a class="el" href="CarController_8cs_source.html#l00042">Game.CarController.m_CurrentTorque</a>, and <a class="el" href="CarController_8cs_source.html#l00028">Game.CarController.m_FullTorqueOverAllWheels</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="CarController_8cs_source.html#l00200">Game.CarController.TractionControl()</a>.</p>
 
@@ -826,7 +814,7 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="CarController_8cs_source.html#l00027">27</a> of file <a class="el" href="CarController_8cs_source.html">CarController.cs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CarController_8cs_source.html#l00233">Game.CarController.AdjustTorque()</a>, and <a class="el" href="CarController_8cs_source.html#l00066">Game.CarController.Start()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CarController_8cs_source.html#l00066">Game.CarController.Start()</a>.</p>
 
 </div>
 </div>
@@ -1007,8 +995,6 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="CarController_8cs_source.html#l00034">34</a> of file <a class="el" href="CarController_8cs_source.html">CarController.cs</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="CarController_8cs_source.html#l00233">Game.CarController.AdjustTorque()</a>.</p>
 
 </div>
 </div>

@@ -1,6 +1,8 @@
 var classGame_1_1PlayerCar =
 [
     [ "PoliceContainer", "classGame_1_1PlayerCar_1_1PoliceContainer.html", "classGame_1_1PlayerCar_1_1PoliceContainer" ],
+    [ "Awake", "classGame_1_1PlayerCar.html#acb2140de42b16ce6bd1c8743ea44cace", null ],
+    [ "SetKeyboard", "classGame_1_1PlayerCar.html#a334b646fd49e1a8f77f7e551821b959f", null ],
     [ "PickedUpCoin", "classGame_1_1PlayerCar.html#ab309bb81f5cd0e6cb9c97620729fc134", null ],
     [ "ChunkChanged", "classGame_1_1PlayerCar.html#a18f30f1f6873f043457ce9f81ac47ed4", null ],
     [ "ApplyTurbo", "classGame_1_1PlayerCar.html#aaa57e11cd8cc243d3b3964818c102053", null ],
@@ -11,6 +13,7 @@ var classGame_1_1PlayerCar =
     [ "OnCollisionExit", "classGame_1_1PlayerCar.html#a1abfcbceee34f7de69ceb4210306fd82", null ],
     [ "coinMultiplier", "classGame_1_1PlayerCar.html#a6fe61f8c0a6dc387471f0ca92e0f8f49", null ],
     [ "SkinId", "classGame_1_1PlayerCar.html#afc6d5f893ae228c8a4a411284df9c7c7", null ],
+    [ "keyboard", "classGame_1_1PlayerCar.html#aca5a380d0603c99b0bebb1d60cb9139f", null ],
     [ "probeSize", "classGame_1_1PlayerCar.html#aa27a1ab0eae600158b89741558c08dcc", null ],
     [ "policeContacts", "classGame_1_1PlayerCar.html#a8161295ca0eec631499bc0272c2dd00f", null ],
     [ "turboTimer", "classGame_1_1PlayerCar.html#af6f3c51a0bf524f9f006962da39e3198", null ],
