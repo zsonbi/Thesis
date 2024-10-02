@@ -262,7 +262,6 @@ namespace Tests
                 GameUI.NewGame();
 
                 yield return WaitForCondition(() => MainController.Running);
-                Assert.AreEqual(originalCoinCount + pickedUpCoins, UserData.Instance.Game.Currency);
 
                 Assert.NotNull(MainController.Player);
 
@@ -272,6 +271,7 @@ namespace Tests
                 Assert.Less(MainController.Score, 3);
 
                 yield return new WaitForSeconds(1f);
+                Assert.AreEqual(originalCoinCount + pickedUpCoins, UserData.Instance.Game.Currency);
             }
 
             [UnityTest]

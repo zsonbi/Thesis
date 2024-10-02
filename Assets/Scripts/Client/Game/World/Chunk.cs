@@ -643,6 +643,10 @@ namespace Game
                         nearbyChunks[i + 1, j + 1] = world.GetChunkWithoutLoad(col + j, row + i);
                         if (nearbyChunks[i + 1, j + 1] is not null)
                         {
+                            if (nearbyChunks[i + 1, j + 1].roadGenerator is null)
+                            {
+                                return nearbyChunks;
+                            }
                             while (nearbyChunks[i + 1, j + 1].Roads is null)
                             {
                                 await UniTask.Delay(System.TimeSpan.FromSeconds(0.001f), ignoreTimeScale: false);
