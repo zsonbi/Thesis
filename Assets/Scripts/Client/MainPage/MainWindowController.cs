@@ -6,10 +6,8 @@ using User;
 using TMPro;
 using Config;
 using Thesis_backend.Data_Structures;
-using UnityEngine.InputSystem.XR;
 using DataTypes;
 using System.Linq;
-using Codice.CM.Common;
 
 public class MainWindowController : MonoBehaviour
 {
@@ -75,11 +73,12 @@ public class MainWindowController : MonoBehaviour
 
     public void SortingChanged()
     {
+
         Dictionary<long, TaskDisplayHandler> newTasks = new Dictionary<long, TaskDisplayHandler>();
         switch ((TaskSortType)TaskSortDropdown.value)
         {
             case TaskSortType.Added:
-                foreach(var item in Tasks.OrderBy(x => x.Key))
+                foreach (var item in Tasks.OrderBy(x => x.Key))
                 {
                     newTasks.Add(item.Key, item.Value);
                 }
@@ -109,7 +108,6 @@ public class MainWindowController : MonoBehaviour
             default:
                 Debug.LogError("No such sorting way is configured");
                 break;
-                
         }
 
         Tasks = newTasks;
@@ -151,7 +149,6 @@ public class MainWindowController : MonoBehaviour
             {
                 task.Value.gameObject.SetActive(true);
                 task.Value.gameObject.transform.SetAsLastSibling();
-
             }
             else
             {

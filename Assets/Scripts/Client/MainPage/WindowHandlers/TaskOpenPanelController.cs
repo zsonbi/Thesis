@@ -175,8 +175,9 @@ public class TaskOpenPanelController : MonoBehaviour
         {
             UIController.UpdateTask(CurrentTask.ID);
         }
-        this.CurrentTask = new PlayerTask();
         UIController.SortingChanged();
+
+        this.CurrentTask = new PlayerTask();
     }
 
     public void DeleteTask()
