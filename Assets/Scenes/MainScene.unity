@@ -3066,7 +3066,7 @@ MonoBehaviour:
   TaskPrefab: {fileID: 7898560835448612094, guid: 1024664230947644899dfa59252c6ef3, type: 3}
   taskOpenPanelController: {fileID: 215387557}
   ModalWindow: {fileID: 208505798}
-  TaskSortDropdown: {fileID: 0}
+  TaskSortDropdown: {fileID: 1763565926}
 --- !u!114 &3631147711524054535
 MonoBehaviour:
   m_ObjectHideFlags: 0
