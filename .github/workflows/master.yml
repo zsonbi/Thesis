@@ -172,7 +172,7 @@ jobs:
           retention-days: 1
 
   buildForWindows:
-    if: contains(github.ref, 'dev')
+    if: contains(github.ref, 'none')
     needs: test
     name: Build for ${{ matrix.targetPlatform }}
     runs-on: windows-latest
