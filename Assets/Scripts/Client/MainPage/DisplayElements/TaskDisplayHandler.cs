@@ -69,6 +69,7 @@ public class TaskDisplayHandler : MonoBehaviour
     private void TaskCompleted(Thesis_backend.Data_Structures.PlayerTask result)
     {
         CompleteStateChange(true);
+        UIController.SortingChanged();
         StartCoroutine(Server.SendGetRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORCHECKLOGGEDIN, UIController.UpdateUserData, onFailedAction: UIController.ShowTaskFail));
     }
 
@@ -90,6 +91,8 @@ public class TaskDisplayHandler : MonoBehaviour
         }
         else
         {
+            UIController.SortingChanged();
+
             this.CurrentTask.ResetComplete();
             CompleteButton.GetComponent<Image>().color = AVAILIBLE_FOR_COMPLETE_COLOR;
             return;
