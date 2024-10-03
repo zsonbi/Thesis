@@ -286,7 +286,8 @@ namespace Tests
                 long originalTaskScore = User.UserData.Instance.CurrentTaskScore;
                 GameUI.BuyTurbo();
 
-                yield return new WaitForSeconds(1f);
+                yield return WaitForCondition(() => MainController.Player.Turbo);
+
                 Assert.True(MainController.Player.Turbo);
 
                 //Check if it decays
@@ -306,8 +307,8 @@ namespace Tests
                 yield return WaitForCondition(() => MainController.Running);
                 long originalTaskScore = User.UserData.Instance.CurrentTaskScore;
                 GameUI.BuyImmunity();
+                yield return WaitForCondition(() => MainController.Player.Immune);
 
-                yield return new WaitForSeconds(1f);
                 Assert.True(MainController.Player.Immune);
 
                 //Check if it decays
