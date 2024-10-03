@@ -27,4 +27,8 @@ public static class GameConfig
     public const float TURBO_DURATION = 5f;
 
     public const float IMMUNITY_DURATION = 3f;
+
+    public const int TURBO_COST=250;
+    public const int IMMUNITY_COST=500;
+    public const int DOUBLE_COIN_COST=1000;
 }

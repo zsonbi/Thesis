@@ -2,7 +2,6 @@ using Game.World;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityStandardAssets.CrossPlatformInput;
 
 namespace Game
 {
@@ -40,24 +39,22 @@ namespace Game
                 {
                     // Reverse if too close to an obstacle
                     v = -2f;
-            
                 }
 
-                    // Determine steering based on side raycasts
-                    if (leftHit && rightHit)
-                    {
-                        steering = hitRight.distance - hitLeft.distance; // Steer based on the relative distances
-                    }
-                    else if (leftHit)
-                    {
-                        steering = 1f;  // Obstacle on the left, steer right
-                    }
-                    else if (rightHit)
-                    {
-                        steering = -1f; // Obstacle on the right, steer left
-                    }
-                
-         
+                // Determine steering based on side raycasts
+                if (leftHit && rightHit)
+                {
+                    steering = hitRight.distance - hitLeft.distance; // Steer based on the relative distances
+                }
+                else if (leftHit)
+                {
+                    steering = 1f;  // Obstacle on the left, steer right
+                }
+                else if (rightHit)
+                {
+                    steering = -1f; // Obstacle on the right, steer left
+                }
+
                 if (Vector3.Distance(gameController.PlayerPos, this.gameObject.transform.position) < 4f)
                 {
                     // Close to player, increase speed and steer towards player
@@ -79,7 +76,5 @@ namespace Game
             Debug.DrawRay(transform.position, leftDirection * GameConfig.POLICE_RAYCAST_SIDE_DISTANCE, Color.yellow);
             Debug.DrawRay(transform.position, rightDirection * GameConfig.POLICE_RAYCAST_SIDE_DISTANCE, Color.green);
         }
-
-
     }
 }

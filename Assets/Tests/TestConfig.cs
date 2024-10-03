@@ -15,6 +15,10 @@ namespace Tests
         public static string Email = "test@gmail.com";
         public const string Password = "TestCase123456";
 
+        public static string Username2 = "test";
+        public static string Email2 = "test@gmail.com";
+        public const string Password2 = "TestCase123456";
+
         public const string LOGIN_SCENE_NAME = "LoginScene";
 
         public const string USER_CONTROLLER_OBJECT_NAME = "UserController";

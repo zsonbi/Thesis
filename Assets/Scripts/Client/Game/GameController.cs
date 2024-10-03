@@ -33,7 +33,7 @@ namespace Game
 
         public int Score { get => Mathf.RoundToInt(ScoreCounter); private set => ScoreCounter = value; }
 
-        public PlayerCar Player{get; private set; }
+        public PlayerCar Player { get; private set; }
 
         public Vector3 PlayerPos => Player.gameObject.transform.position;
 
@@ -42,6 +42,13 @@ namespace Game
         public int Difficulty { get; private set; } = 0;
 
         public float Coins { get; private set; } = 0;
+
+        private bool destroyed = false;
+
+        private void OnDestroy()
+        {
+            destroyed = true;
+        }
 
         private async void Awake()
         {

@@ -1,4 +1,6 @@
-﻿using Config;
+﻿#define TESTING
+
+using Config;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,10 +12,11 @@ using UnityEngine.SceneManagement;
 using UnityEngine;
 using User;
 using Thesis_backend.Data_Structures;
+using UnityEngine.InputSystem;
 
 namespace Tests
 {
-    public abstract class UnityTestParent<T>
+    public abstract class UnityTestParent<T> : InputTestFixture
     {
         protected T MainController;
 
@@ -52,12 +55,21 @@ namespace Tests
             yield return null;
         }
 
-        private IEnumerator Login()
+        protected IEnumerator Login(string username = null, string password = null)
         {
+            if (username == null)
+            {
+                username = TestConfig.UserName;
+            }
+            if (password == null)
+            {
+                password = TestConfig.Password;
+            }
+
             UserLoginRequest userLoginRequest = new UserLoginRequest()
             {
-                UserIdentification = TestConfig.UserName,
-                Password = TestConfig.Password,
+                UserIdentification = username,
+                Password = password,
             };
 
             yield return CoroutineRunner.RunCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORLOGIN, userLoginRequest));

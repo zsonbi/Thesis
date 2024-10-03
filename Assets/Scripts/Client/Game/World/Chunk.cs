@@ -67,8 +67,9 @@ namespace Game
             public bool Loaded { get => this.gameObject.activeSelf; }
 
             public bool[,] Roads => roadGenerator.RoadMatrix;
+            public bool Destroyed { get; private set; } = false;
 
-            public List<EdgeRoadContainer> EdgeRoads { get => roadGenerator.EdgeRoads; }
+            public List<EdgeRoadContainer> EdgeRoads { get => roadGenerator?.EdgeRoads; }
 
             private Dictionary<ChunkCellType, List<Vector3>> chunkCells = new Dictionary<ChunkCellType, List<Vector3>>();
             private RoadGenerator roadGenerator;
@@ -82,6 +83,11 @@ namespace Game
             {
                 var loop = PlayerLoop.GetCurrentPlayerLoop();
                 Cysharp.Threading.Tasks.PlayerLoopHelper.Initialize(ref loop);
+            }
+
+            private void OnDestroy()
+            {
+                Destroyed = true;
             }
 
             // Start is called before the first frame update
@@ -133,7 +139,6 @@ namespace Game
                     await Task.Delay(1);
 #endif
                 }
-                Debug.Log("WORLD CREATED after" + buildings.Count);
                 this.world = world;
                 this.Row = zOffset;
                 this.Col = xOffset;
@@ -141,8 +146,12 @@ namespace Game
                 {
                     chunkCells.Add(i, new List<Vector3>());
                 }
-                if (edgeRoads.Count == 0)
-                    Debug.Log($"Didn't get edges: ({zOffset},{xOffset})");
+
+                if (Destroyed)
+                {
+                    return;
+                }
+
                 Chunk[,] nearbyChunks = await GetNearbyChunks(Row, Col);
                 roadGenerator = new RoadGenerator(GameConfig.CHUNK_SIZE, edgeRoads, nearbyChunks);
 
@@ -161,7 +170,10 @@ namespace Game
                 }
 
                 //CreateMeshes();
-
+                if (Destroyed)
+                {
+                    return;
+                }
                 this.gameObject.transform.localPosition = new Vector3(xOffset * GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL, 0, zOffset * GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL);
 
                 this.gameObject.transform.localScale = new Vector3(GameConfig.CHUNK_SCALE, 1, GameConfig.CHUNK_SCALE);
@@ -182,66 +194,6 @@ namespace Game
                 return roads[Random.Range(0, roads.Count)];
             }
 
-            //--------------------------------------------------------------
-            /// <summary>
-            /// Combines the gameobjects into meshes and cleares out that index of the objectsToCombine
-            /// </summary>
-            /// <param name="cellType">the index of the objectsToCombine we want to combine</param>
-            private void CombineMeshes(ChunkCellType cellType)
-            {
-                MeshRenderer[] filters = objectsToCombine[cellType][0].GetComponentsInChildren<MeshRenderer>();
-                int itr = 0;
-                foreach (MeshRenderer filter in filters)
-                {
-                    //Creates the parent which will have the combined mesh
-                    GameObject parent = new GameObject(objectsToCombine[cellType][0].name.Replace("(Clone)", "") + "Mesh", typeof(MeshFilter), typeof(MeshRenderer), typeof(MeshCollider));
-                    MeshFilter meshFilter = parent.GetComponent<MeshFilter>();
-                    //Assign the material of the first gameobject in the list to the parent
-                    parent.GetComponent<MeshRenderer>().material = filter.material;
-                    parent.transform.parent = this.transform;
-
-                    meshFilter.mesh = new Mesh();
-                    //Makes so that really big meshes are supported also
-                    meshFilter.mesh.indexFormat = UnityEngine.Rendering.IndexFormat.UInt32;
-                    CombineInstance[] combine = new CombineInstance[objectsToCombine[cellType].Count];
-                    for (int i = 0; i < objectsToCombine[cellType].Count; i++)
-                    {
-                        MeshFilter[] objectMeshFilters = objectsToCombine[cellType][i].GetComponentsInChildren<MeshFilter>();
-                        combine[i].mesh = objectMeshFilters[itr].sharedMesh;
-                        combine[i].transform = objectMeshFilters[itr].transform.localToWorldMatrix;
-                    }
-                    meshFilter.mesh.CombineMeshes(combine, true, true);
-                    meshFilter.gameObject.SetActive(true);
-
-                    MeshCollider collider = parent.GetComponent<MeshCollider>();
-                    collider.sharedMesh = meshFilter.sharedMesh;
-                    parent.isStatic = true;
-
-                    itr++;
-                }
-
-                //Empties the list and deletes the no longer used gameobjects
-                do
-                {
-                    Destroy(objectsToCombine[cellType][0]);
-                    objectsToCombine[cellType].RemoveAt(0);
-                } while (objectsToCombine[cellType].Count > 0);
-            }
-
-            private void CreateMeshes()
-            {
-                foreach (var item in chunkCells)
-                {
-                    GameObject parent = new GameObject(item.Key.ToString() + "Mesh", typeof(MeshFilter), typeof(MeshRenderer), typeof(MeshCollider));
-                    parent.transform.parent = this.transform;
-                    MeshFilter meshFilter = parent.GetComponent<MeshFilter>();
-                    //parent.GetComponent<MeshRenderer>().material = TileMaterials[(int)item.Key];
-                    //parent.GetComponent<MeshCollider>().sharedMaterial = PhysicsMaterials[(int)(item.Key)];
-                    meshFilter.mesh = MeshGenerator.CreateMultiShape(item.Value);
-                    parent.GetComponent<MeshCollider>().sharedMesh = meshFilter.mesh;
-                }
-            }
-
             //------------------------------------------------------------------------
             //Load the sizes from the settings
             private void LoadFromSettings()
@@ -259,6 +211,11 @@ namespace Game
                 {
                     for (int z = 0; z < zSize; z++)
                     {
+                        if (Destroyed)
+                        {
+                            return;
+                        }
+
                         ChunkCellContainer tileType = DetermineTileType(x, z);
                         GameObject created = null;
                         switch (tileType.Type)
@@ -626,6 +583,10 @@ namespace Game
                         nearbyChunks[i + 1, j + 1] = world.GetChunkWithoutLoad(col + j, row + i);
                         if (nearbyChunks[i + 1, j + 1] is not null)
                         {
+                            if (nearbyChunks[i + 1, j + 1].roadGenerator is null)
+                            {
+                                return nearbyChunks;
+                            }
                             while (nearbyChunks[i + 1, j + 1].Roads is null)
                             {
                                 await UniTask.Delay(System.TimeSpan.FromSeconds(0.001f), ignoreTimeScale: false);

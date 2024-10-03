@@ -2,6 +2,7 @@
 using System.Collections;
 using Tests;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Tests
 {
@@ -12,9 +13,13 @@ namespace Tests
             protected GameUI GameUI;
             protected CarSpawner CarSpawner;
             protected ShopWindow ShopWindow;
+            protected Keyboard Keyboard;
 
             protected IEnumerator LoadScene(bool login = true, bool logout = false)
             {
+                Keyboard = InputSystem.AddDevice<Keyboard>("testKeyboard");
+                InputSystem.Update();
+
                 yield return base.LoadSceneBase(TestConfig.GAME_SCENE_NAME, TestConfig.GAME_CONTROLLER_OBJECT_NAME, login, logout);
                 yield return null;
                 this.GameUI = GameObject.FindObjectOfType<GameUI>(true);
