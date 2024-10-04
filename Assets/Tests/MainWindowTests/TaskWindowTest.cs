@@ -189,8 +189,6 @@ namespace Tests
 
                 yield return CreateTask("testSave1" + uniqueId, "testDescription" + uniqueId, true, 0);
 
-                MainController.LoadBadHabits();
-
                 taskOpenPanelController.OpenUp(MainController.Tasks.Last().Value.CurrentTask, TaskType.BadHabit);
                 taskOpenPanelController.MakeItGoodTask();
                 TaskName.text = "testSaveMod1" + uniqueId;
@@ -219,8 +217,6 @@ namespace Tests
                 long uniqueId = DateTime.Now.Ticks;
 
                 yield return CreateTask("testSave2" + uniqueId, "testDescription" + uniqueId, false, 0);
-
-                MainController.LoadBadHabits();
 
                 taskOpenPanelController.OpenUp(MainController.Tasks.Last().Value.CurrentTask, TaskType.BadHabit);
                 taskOpenPanelController.MakeItBadHabit();
