@@ -66,7 +66,6 @@ namespace Tests
 
                 GameUI.NewGame();
                 yield return WaitForCondition(() => MainController.Running);
-                MainController.Player.SetKeyboard(Keyboard);
 
                 Press(Keyboard.aKey);
                 InputSystem.Update();
@@ -85,7 +84,6 @@ namespace Tests
 
                 GameUI.NewGame();
                 yield return WaitForCondition(() => MainController.Running);
-                MainController.Player.SetKeyboard(Keyboard);
 
                 Press(Keyboard.leftArrowKey);
                 InputSystem.Update();
@@ -104,7 +102,6 @@ namespace Tests
 
                 GameUI.NewGame();
                 yield return WaitForCondition(() => MainController.Running);
-                MainController.Player.SetKeyboard(Keyboard);
                 float initPos = MainController.PlayerPos.z;
 
                 Press(Keyboard.sKey);
@@ -124,7 +121,6 @@ namespace Tests
 
                 GameUI.NewGame();
                 yield return WaitForCondition(() => MainController.Running);
-                MainController.Player.SetKeyboard(Keyboard);
                 float initPos = MainController.PlayerPos.z;
 
                 Press(Keyboard.downArrowKey);
@@ -144,7 +140,6 @@ namespace Tests
 
                 GameUI.NewGame();
                 yield return WaitForCondition(() => MainController.Running);
-                MainController.Player.SetKeyboard(Keyboard);
 
                 Press(Keyboard.dKey);
                 InputSystem.Update();
@@ -164,8 +159,6 @@ namespace Tests
                 GameUI.NewGame();
 
                 yield return WaitForCondition(() => MainController.Running);
-
-                MainController.Player.SetKeyboard(Keyboard);
 
                 Press(Keyboard.rightArrowKey);
                 InputSystem.Update();
@@ -194,7 +187,7 @@ namespace Tests
                 yield return new WaitForFixedUpdate();
 
                 Assert.AreEqual(10, MainController.Coins);
-                MainController.Player.DestroyedEvent.Invoke(MainController.Player, EventArgs.Empty);
+                MainController.Player.Kill();
 
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
 

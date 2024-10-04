@@ -62,7 +62,7 @@ public class GameUI : MonoBehaviour
         }
     }
 
-    private void SaveCoins()
+    private void SaveGameResult()
     {
         StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.Game>(ServerConfig.PATH_FOR_SAVE_COINS, (int)(Doubled ? gameController.Coins * 2 : gameController.Coins), SavedCoins, onFailedAction: ShowRequestFail));
     }
@@ -166,11 +166,14 @@ public class GameUI : MonoBehaviour
         this.DoubleCoinButon.interactable = UserData.Instance.CurrentTaskScore >= 1000;
     }
 
-    public void HideGameOverScreen()
+    public void HideGameOverScreen(bool saveGameResults = true)
     {
         gameOverContainer.SetActive(false);
         ingameContainer.SetActive(true);
-        SaveCoins();
+        if (saveGameResults)
+        {
+            SaveGameResult();
+        }
     }
 
     public void ShowShopWindow()
@@ -187,6 +190,14 @@ public class GameUI : MonoBehaviour
     {
         HideGameOverScreen();
         SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
+    }
+
+    public void BackToGameMenuWithoutSave()
+    {
+        gameController.Player.Kill();
+        HideGameOverScreen(false);
+        ingameContainer.SetActive(false);
+        mainMenuContainer.SetActive(true);
     }
 
     public void BackToGameMenu()

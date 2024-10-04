@@ -12,9 +12,6 @@ using UnityEngine.UI;
 
 public class TaskDisplayHandler : MonoBehaviour
 {
-    private static Color AVAILIBLE_FOR_COMPLETE_COLOR = new Color(70 / 255f, 1f, 0, 1f);
-    private static Color DISABLED_FOR_COMPLETE_COLOR = new Color(73 / 255f, 59 / 255f, 71 / 255f, 1f);
-
     [SerializeField]
     private TMP_Text TaskNameLabel;
 
@@ -85,7 +82,7 @@ public class TaskDisplayHandler : MonoBehaviour
         if (state)
         {
             this.CurrentTask.Complete();
-            CompleteButton.GetComponent<Image>().color = DISABLED_FOR_COMPLETE_COLOR;
+            CompleteButton.gameObject.SetActive(false);
             UpdateTimeRemaining();
         }
         else
@@ -93,7 +90,7 @@ public class TaskDisplayHandler : MonoBehaviour
             UIController.SortingChanged();
 
             this.CurrentTask.ResetComplete();
-            CompleteButton.GetComponent<Image>().color = AVAILIBLE_FOR_COMPLETE_COLOR;
+            CompleteButton.gameObject.SetActive(true);
             return;
         }
     }
@@ -109,9 +106,15 @@ public class TaskDisplayHandler : MonoBehaviour
                 CompleteStateChange(false);
                 return;
             }
-
-            string formatted = string.Format("{0} days {1:D2}:{2:D2}:{3:D2}",
-            (int)difference.TotalDays, difference.Hours, difference.Minutes, difference.Seconds);
+            string formatted = "";
+            if ((int)difference.TotalDays > 0)
+            {
+                formatted = string.Format("{0} days {1:D2}:{2:D2}:{3:D2}", (int)difference.TotalDays, difference.Hours, difference.Minutes, difference.Seconds);
+            }
+            else
+            {
+                formatted = string.Format("{0:D2}:{1:D2}:{2:D2}", difference.Hours, difference.Minutes, difference.Seconds);
+            }
 
             RemainingTimeLabel.text = formatted;
         }
