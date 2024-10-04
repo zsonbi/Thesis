@@ -1,13 +1,6 @@
 var searchData=
 [
-  ['update_0',['update',['../classGame_1_1Car.html#a1efffc1014c81e16512eee6c311dbb97',1,'Game.Car.Update()'],['../classMainWindowController.html#a7c33479bd33e26832c7e6a27db8bb6eb',1,'MainWindowController.Update()'],['../classTaskDisplayHandler.html#a7d72b41ee47a91677ea39f73c8169d5b',1,'TaskDisplayHandler.Update()'],['../classFriendHandler.html#a6a7bbb58fa75ab4d2cfc1248e5f326e8',1,'FriendHandler.Update()'],['../classCoin.html#a1964d7ad9c017916fca129cb6dab8318',1,'Coin.Update()'],['../classGame_1_1World_1_1CarSpawner.html#aa3644b0af8d08fa431229eececa0c444',1,'Game.World.CarSpawner.Update()'],['../classGameUI.html#ae1af03e7079adfabff38492498ea0980',1,'GameUI.Update()'],['../classGame_1_1GameController.html#ac7bf604631786f89b01d5313ad796b8b',1,'Game.GameController.Update()'],['../classGame_1_1PlayerCar.html#a3c11ab5b2bdc057896e172f59b22e03a',1,'Game.PlayerCar.Update()'],['../classGame_1_1CopCar.html#ad1e664d118f85d0c8b21e92d519c1e0b',1,'Game.CopCar.Update()'],['../classCameraScript.html#a292a7b3c52fd201f42e5b0f25c7b4d2d',1,'CameraScript.Update()']]],
-  ['updatebuttons_1',['UpdateButtons',['../classTaskOpenPanelController.html#aeb6c1cf2f3da2be35bb515f455d3f0d8',1,'TaskOpenPanelController']]],
-  ['updatelabels_2',['UpdateLabels',['../classTaskDisplayHandler.html#a7bc4508d1645e9748e673374d9a050b2',1,'TaskDisplayHandler']]],
-  ['updateshop_3',['UpdateShop',['../classShopWindow.html#a2242f5e64f32f512f0256136845f4b33',1,'ShopWindow']]],
-  ['updatetask_4',['UpdateTask',['../classMainWindowController.html#aa560024a4c177f54f6b6237102ac752b',1,'MainWindowController']]],
-  ['updatetaskscore_5',['UpdateTaskScore',['../classUser_1_1UserData.html#a103846d4ce97a5d089423d4efd1a5ec0',1,'User::UserData']]],
-  ['updatetimeremaining_6',['UpdateTimeRemaining',['../classTaskDisplayHandler.html#a335ebac706e9b91498a92ef53ca22787',1,'TaskDisplayHandler']]],
-  ['updateuserdata_7',['UpdateUserData',['../classMainWindowController.html#ac0bed1e5326824072039d2f58518b563',1,'MainWindowController']]],
-  ['updatevalues_8',['updatevalues',['../namespaceThesis__backend_1_1Data__Structures.html#a05c5b8303bf4f3a8a39bdb2caf45521f',1,'Thesis_backend.Data_Structures.UpdateValues(string taskName, bool taskType, TaskIntervals taskInterval, string description, DateTime? lastCompleted=null, bool? completed=null)'],['../namespaceThesis__backend_1_1Data__Structures.html#abfcc80cd83a458407f07c32433bc8cdc',1,'Thesis_backend.Data_Structures.UpdateValues(PlayerTask playerTask)']]],
-  ['userdata_9',['UserData',['../classUser_1_1UserData.html#a17f4ef142f45e3e62d75c3f0a4ca751b',1,'User::UserData']]]
+  ['taskclosedeventargs_0',['TaskClosedEventArgs',['../classTaskClosedEventArgs.html#a57230d0ae37abc4ee1d589b212363ca3',1,'TaskClosedEventArgs']]],
+  ['taskcompleted_1',['TaskCompleted',['../classTaskDisplayHandler.html#aba2ced7534752d6a8d1069e2a6c459b4',1,'TaskDisplayHandler']]],
+  ['tractioncontrol_2',['TractionControl',['../classGame_1_1CarController.html#a298e55b1a36b51f9c4e4aa7883056a00',1,'Game::CarController']]]
 ];

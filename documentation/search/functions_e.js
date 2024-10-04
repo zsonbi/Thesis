@@ -1,9 +1,14 @@
 var searchData=
 [
-  ['registered_0',['Registered',['../classUserController.html#a7ea984403404863e3067bc44275d4858',1,'UserController']]],
-  ['removetask_1',['RemoveTask',['../classMainWindowController.html#a28e02a527de35b080036838eccd1caa9',1,'MainWindowController']]],
-  ['reset_2',['Reset',['../classGame_1_1World_1_1CarSpawner.html#a9ca9f4dfd1b63d182f23c9f630b54463',1,'Game::World::CarSpawner']]],
-  ['resetcomplete_3',['ResetComplete',['../namespaceThesis__backend_1_1Data__Structures.html#a54dd97fce8fa7c46d900056b42b75a2a',1,'Thesis_backend::Data_Structures']]],
-  ['rightrotateskin_4',['RightRotateSkin',['../classGameUI.html#af1d2e673a23d21920ab8388bdb2d3506',1,'GameUI']]],
-  ['roadgenerator_5',['RoadGenerator',['../classGame_1_1World_1_1RoadGenerator.html#aedcb774ed36687d05b41b26378207e53',1,'Game::World::RoadGenerator']]]
+  ['path_5ffor_5fbuy_5fcar_0',['PATH_FOR_BUY_CAR',['../classConfig_1_1ServerConfig.html#a7ac624a23651b77f05fe3dfabbd950fc',1,'Config::ServerConfig']]],
+  ['path_5ffor_5ffriend_5faccept_1',['PATH_FOR_FRIEND_ACCEPT',['../classConfig_1_1ServerConfig.html#a7e8a6c00e86ee263e4e91d76e91865d8',1,'Config::ServerConfig']]],
+  ['path_5ffor_5ffriend_5fdelete_2',['PATH_FOR_FRIEND_DELETE',['../classConfig_1_1ServerConfig.html#a10be54228c36baeb2de629e8122d926f',1,'Config::ServerConfig']]],
+  ['pathfortaskcomplete_3',['PATHFORTASKCOMPLETE',['../classConfig_1_1ServerConfig.html#a955b28390e3951d761ba63dd0ed10843',1,'Config::ServerConfig']]],
+  ['pathfortaskdelete_4',['PATHFORTASKDELETE',['../classConfig_1_1ServerConfig.html#a9112c3cf42da18b1222b5324f98ee40c',1,'Config::ServerConfig']]],
+  ['pathfortaskupdate_5',['PATHFORTASKUPDATE',['../classConfig_1_1ServerConfig.html#a69cfac1052256f93e049889a0594911d',1,'Config::ServerConfig']]],
+  ['pickedupcoin_6',['PickedUpCoin',['../classGame_1_1PlayerCar.html#ab309bb81f5cd0e6cb9c97620729fc134',1,'Game::PlayerCar']]],
+  ['playerdied_7',['PlayerDied',['../classGame_1_1GameController.html#a4ee6ddd9c52134a0bb30c3c0a7bef350',1,'Game::GameController']]],
+  ['playerskinsloaded_8',['PlayerSkinsLoaded',['../classGame_1_1GameController.html#ac1d8730413951a2e3f61985ebb2470cf',1,'Game::GameController']]],
+  ['playertask_9',['PlayerTask',['../namespaceThesis__backend_1_1Data__Structures.html#aea691308b30574c00a00de66d11e8039',1,'Thesis_backend::Data_Structures']]],
+  ['policecontainer_10',['PoliceContainer',['../classGame_1_1PlayerCar_1_1PoliceContainer.html#a79442268fab7d4bf98066096e9babe84',1,'Game::PlayerCar::PoliceContainer']]]
 ];

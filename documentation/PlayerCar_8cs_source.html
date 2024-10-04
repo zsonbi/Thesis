@@ -153,202 +153,194 @@ $(document).ready(function(){initNavTree('PlayerCar_8cs_source.html',''); initRe
 </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classGame_1_1PlayerCar.html#a334b646fd49e1a8f77f7e551821b959f">   48</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGame_1_1PlayerCar.html#a334b646fd49e1a8f77f7e551821b959f">SetKeyboard</a>(Keyboard newKeyboard)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classGame_1_1PlayerCar.html#ab309bb81f5cd0e6cb9c97620729fc134">   48</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGame_1_1PlayerCar.html#ab309bb81f5cd0e6cb9c97620729fc134">PickedUpCoin</a>()</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        {</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            this.keyboard = newKeyboard;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            this.<a class="code hl_variable" href="classGame_1_1Car.html#a98cca5b2f769481e4ac7408a0a742fd9">gameController</a>.<a class="code hl_function" href="classGame_1_1GameController.html#ae085aab3a6eb97e1ed92c1fc0f1adc7f">IncreaseCoinCount</a>(1 * coinMultiplier);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        }</div>
 </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classGame_1_1PlayerCar.html#ab309bb81f5cd0e6cb9c97620729fc134">   54</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGame_1_1PlayerCar.html#ab309bb81f5cd0e6cb9c97620729fc134">PickedUpCoin</a>()</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            this.<a class="code hl_variable" href="classGame_1_1Car.html#a98cca5b2f769481e4ac7408a0a742fd9">gameController</a>.<a class="code hl_function" href="classGame_1_1GameController.html#ae085aab3a6eb97e1ed92c1fc0f1adc7f">IncreaseCoinCount</a>(1 * coinMultiplier);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classGame_1_1PlayerCar.html#a18f30f1f6873f043457ce9f81ac47ed4">   53</a></span>        <span class="keyword">protected</span> <span class="keyword">override</span> async <span class="keywordtype">void</span> <a class="code hl_function" href="classGame_1_1PlayerCar.html#a18f30f1f6873f043457ce9f81ac47ed4">ChunkChanged</a>(<a class="code hl_class" href="classGame_1_1World_1_1Chunk.html">Chunk</a> newChunk)</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            await <a class="code hl_variable" href="classGame_1_1Car.html#a98cca5b2f769481e4ac7408a0a742fd9">gameController</a>.<a class="code hl_function" href="classGame_1_1GameController.html#af623e7876622503e3d0f985ad9b08e47">LoadAndDespawnChunks</a>(newChunk.<a class="code hl_property" href="classGame_1_1World_1_1Chunk.html#adce4d80142d5a8146a23758358504814">Row</a>, newChunk.<a class="code hl_property" href="classGame_1_1World_1_1Chunk.html#ad6574f4e35ae5e51f25bec7e1a47d2bc">Col</a>);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        }</div>
 </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classGame_1_1PlayerCar.html#a18f30f1f6873f043457ce9f81ac47ed4">   59</a></span>        <span class="keyword">protected</span> <span class="keyword">override</span> async <span class="keywordtype">void</span> <a class="code hl_function" href="classGame_1_1PlayerCar.html#a18f30f1f6873f043457ce9f81ac47ed4">ChunkChanged</a>(<a class="code hl_class" href="classGame_1_1World_1_1Chunk.html">Chunk</a> newChunk)</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        {</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            await <a class="code hl_variable" href="classGame_1_1Car.html#a98cca5b2f769481e4ac7408a0a742fd9">gameController</a>.<a class="code hl_function" href="classGame_1_1GameController.html#af623e7876622503e3d0f985ad9b08e47">LoadAndDespawnChunks</a>(newChunk.<a class="code hl_property" href="classGame_1_1World_1_1Chunk.html#adce4d80142d5a8146a23758358504814">Row</a>, newChunk.<a class="code hl_property" href="classGame_1_1World_1_1Chunk.html#ad6574f4e35ae5e51f25bec7e1a47d2bc">Col</a>);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classGame_1_1PlayerCar.html#aaa57e11cd8cc243d3b3964818c102053">   58</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGame_1_1PlayerCar.html#aaa57e11cd8cc243d3b3964818c102053">ApplyTurbo</a>()</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1Car.html#ac67b86743a162f5ad38583ff62a1624c">effects</a>.ContainsKey(<a class="code hl_enumeration" href="namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578">EffectType</a>.Turbo))</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                <a class="code hl_variable" href="classGame_1_1Car.html#ac67b86743a162f5ad38583ff62a1624c">effects</a>[<a class="code hl_enumeration" href="namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578">EffectType</a>.Turbo].gameObject.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            this.turboTimer = 0f;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            this.Turbo = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        }</div>
 </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classGame_1_1PlayerCar.html#aaa57e11cd8cc243d3b3964818c102053">   64</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGame_1_1PlayerCar.html#aaa57e11cd8cc243d3b3964818c102053">ApplyTurbo</a>()</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        {</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1Car.html#ac67b86743a162f5ad38583ff62a1624c">effects</a>.ContainsKey(<a class="code hl_enumeration" href="namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578">EffectType</a>.Turbo))</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            {</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                <a class="code hl_variable" href="classGame_1_1Car.html#ac67b86743a162f5ad38583ff62a1624c">effects</a>[<a class="code hl_enumeration" href="namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578">EffectType</a>.Turbo].gameObject.SetActive(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            }</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            this.turboTimer = 0f;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            this.Turbo = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classGame_1_1PlayerCar.html#a17bdd48255bfc4b1f00c106451981bc3">   68</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGame_1_1PlayerCar.html#a17bdd48255bfc4b1f00c106451981bc3">ApplyImmunity</a>()</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1Car.html#ac67b86743a162f5ad38583ff62a1624c">effects</a>.ContainsKey(<a class="code hl_enumeration" href="namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578">EffectType</a>.Shield))</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                <a class="code hl_variable" href="classGame_1_1Car.html#ac67b86743a162f5ad38583ff62a1624c">effects</a>[<a class="code hl_enumeration" href="namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578">EffectType</a>.Shield].gameObject.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            this.immuneTimer = 0f;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            this.Immune = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        }</div>
 </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classGame_1_1PlayerCar.html#a17bdd48255bfc4b1f00c106451981bc3">   74</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGame_1_1PlayerCar.html#a17bdd48255bfc4b1f00c106451981bc3">ApplyImmunity</a>()</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        {</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1Car.html#ac67b86743a162f5ad38583ff62a1624c">effects</a>.ContainsKey(<a class="code hl_enumeration" href="namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578">EffectType</a>.Shield))</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            {</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                <a class="code hl_variable" href="classGame_1_1Car.html#ac67b86743a162f5ad38583ff62a1624c">effects</a>[<a class="code hl_enumeration" href="namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578">EffectType</a>.Shield].gameObject.SetActive(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            }</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            this.immuneTimer = 0f;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            this.Immune = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="foldopen" id="foldopen00078" data-start="{" data-end="}">
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classGame_1_1PlayerCar.html#a3c11ab5b2bdc057896e172f59b22e03a">   78</a></span>        <span class="keyword">protected</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGame_1_1PlayerCar.html#a3c11ab5b2bdc057896e172f59b22e03a">Update</a>()</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classGame_1_1Car.html#a98cca5b2f769481e4ac7408a0a742fd9">gameController</a>.<a class="code hl_property" href="classGame_1_1GameController.html#a05d01ce3124c9d29e70cdee04539baeb">Running</a>)</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            }</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <span class="keywordflow">if</span> (<a class="code hl_property" href="classGame_1_1PlayerCar.html#ad2603dab8f49dc15f05e0b265adc8c84">Turbo</a>)</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                <a class="code hl_variable" href="classGame_1_1PlayerCar.html#af6f3c51a0bf524f9f006962da39e3198">turboTimer</a> += Time.deltaTime;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1PlayerCar.html#af6f3c51a0bf524f9f006962da39e3198">turboTimer</a> &gt; <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#a72acd18d4355d4e978281d7c89cd1ff7">TURBO_DURATION</a>)</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                    <a class="code hl_property" href="classGame_1_1PlayerCar.html#ad2603dab8f49dc15f05e0b265adc8c84">Turbo</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1Car.html#ac67b86743a162f5ad38583ff62a1624c">effects</a>.ContainsKey(<a class="code hl_enumeration" href="namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578">EffectType</a>.Turbo))</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                    {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                        <a class="code hl_variable" href="classGame_1_1Car.html#ac67b86743a162f5ad38583ff62a1624c">effects</a>[<a class="code hl_enumeration" href="namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578">EffectType</a>.Turbo].gameObject.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                    }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <span class="keywordflow">if</span> (<a class="code hl_property" href="classGame_1_1PlayerCar.html#aec160d9c49d7fe224aa115e3a45479d7">Immune</a>)</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                <a class="code hl_variable" href="classGame_1_1PlayerCar.html#a8ea82c0981aa2bbba3260ea08556410b">immuneTimer</a> += Time.deltaTime;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1PlayerCar.html#a8ea82c0981aa2bbba3260ea08556410b">immuneTimer</a> &gt; <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#a72acd18d4355d4e978281d7c89cd1ff7">TURBO_DURATION</a>)</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                    <a class="code hl_property" href="classGame_1_1PlayerCar.html#aec160d9c49d7fe224aa115e3a45479d7">Immune</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1Car.html#ac67b86743a162f5ad38583ff62a1624c">effects</a>.ContainsKey(<a class="code hl_enumeration" href="namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578">EffectType</a>.Shield))</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                    {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                        <a class="code hl_variable" href="classGame_1_1Car.html#ac67b86743a162f5ad38583ff62a1624c">effects</a>[<a class="code hl_enumeration" href="namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578">EffectType</a>.Shield].gameObject.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                    }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                }</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            base.Update();</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="classGame_1_1PlayerCar.html#a8161295ca0eec631499bc0272c2dd00f">policeContacts</a>.Count; i++)</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                <a class="code hl_variable" href="classGame_1_1PlayerCar.html#a8161295ca0eec631499bc0272c2dd00f">policeContacts</a>[i].TimeReamaining -= Time.deltaTime;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1PlayerCar.html#a8161295ca0eec631499bc0272c2dd00f">policeContacts</a>[i].TimeReamaining &lt;= 0f)</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                {</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                    this.<a class="code hl_variable" href="classGame_1_1Car.html#a42b4de37fc1597ce39395c959bf2ddff">DestroyedEvent</a>?.Invoke(<span class="keyword">this</span>, EventArgs.Empty);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                }</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            }</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            <span class="comment">//If the car fell of the world trigger game over</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            <span class="keywordflow">if</span> (this.gameObject.transform.position.y &lt; -5f)</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            {</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                this.<a class="code hl_variable" href="classGame_1_1Car.html#a42b4de37fc1597ce39395c959bf2ddff">DestroyedEvent</a>?.Invoke(<span class="keyword">this</span>, EventArgs.Empty);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            }</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        }</div>
 </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="foldopen" id="foldopen00084" data-start="{" data-end="}">
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="classGame_1_1PlayerCar.html#a3c11ab5b2bdc057896e172f59b22e03a">   84</a></span>        <span class="keyword">protected</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGame_1_1PlayerCar.html#a3c11ab5b2bdc057896e172f59b22e03a">Update</a>()</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        {</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classGame_1_1Car.html#a98cca5b2f769481e4ac7408a0a742fd9">gameController</a>.<a class="code hl_property" href="classGame_1_1GameController.html#a05d01ce3124c9d29e70cdee04539baeb">Running</a>)</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            {</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            }</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            <span class="keywordflow">if</span> (<a class="code hl_property" href="classGame_1_1PlayerCar.html#ad2603dab8f49dc15f05e0b265adc8c84">Turbo</a>)</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            {</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                <a class="code hl_variable" href="classGame_1_1PlayerCar.html#af6f3c51a0bf524f9f006962da39e3198">turboTimer</a> += Time.deltaTime;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1PlayerCar.html#af6f3c51a0bf524f9f006962da39e3198">turboTimer</a> &gt; <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#a72acd18d4355d4e978281d7c89cd1ff7">TURBO_DURATION</a>)</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                {</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                    <a class="code hl_property" href="classGame_1_1PlayerCar.html#ad2603dab8f49dc15f05e0b265adc8c84">Turbo</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1Car.html#ac67b86743a162f5ad38583ff62a1624c">effects</a>.ContainsKey(<a class="code hl_enumeration" href="namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578">EffectType</a>.Turbo))</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                    {</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                        <a class="code hl_variable" href="classGame_1_1Car.html#ac67b86743a162f5ad38583ff62a1624c">effects</a>[<a class="code hl_enumeration" href="namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578">EffectType</a>.Turbo].gameObject.SetActive(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                    }</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                }</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            }</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keywordflow">if</span> (<a class="code hl_property" href="classGame_1_1PlayerCar.html#aec160d9c49d7fe224aa115e3a45479d7">Immune</a>)</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            {</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                <a class="code hl_variable" href="classGame_1_1PlayerCar.html#a8ea82c0981aa2bbba3260ea08556410b">immuneTimer</a> += Time.deltaTime;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1PlayerCar.html#a8ea82c0981aa2bbba3260ea08556410b">immuneTimer</a> &gt; <a class="code hl_class" href="classGameConfig.html">GameConfig</a>.<a class="code hl_variable" href="classGameConfig.html#a72acd18d4355d4e978281d7c89cd1ff7">TURBO_DURATION</a>)</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                {</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                    <a class="code hl_property" href="classGame_1_1PlayerCar.html#aec160d9c49d7fe224aa115e3a45479d7">Immune</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1Car.html#ac67b86743a162f5ad38583ff62a1624c">effects</a>.ContainsKey(<a class="code hl_enumeration" href="namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578">EffectType</a>.Shield))</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                    {</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                        <a class="code hl_variable" href="classGame_1_1Car.html#ac67b86743a162f5ad38583ff62a1624c">effects</a>[<a class="code hl_enumeration" href="namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578">EffectType</a>.Shield].gameObject.SetActive(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                    }</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                }</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            }</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            base.Update();</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="classGame_1_1PlayerCar.html#a8161295ca0eec631499bc0272c2dd00f">policeContacts</a>.Count; i++)</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            {</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                <a class="code hl_variable" href="classGame_1_1PlayerCar.html#a8161295ca0eec631499bc0272c2dd00f">policeContacts</a>[i].TimeReamaining -= Time.deltaTime;</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1PlayerCar.html#a8161295ca0eec631499bc0272c2dd00f">policeContacts</a>[i].TimeReamaining &lt;= 0f)</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                {</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                    this.<a class="code hl_variable" href="classGame_1_1Car.html#a42b4de37fc1597ce39395c959bf2ddff">DestroyedEvent</a>?.Invoke(<span class="keyword">this</span>, EventArgs.Empty);</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                }</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            }</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            <span class="comment">//If the car fell of the world trigger game over</span></div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            <span class="keywordflow">if</span> (this.gameObject.transform.position.y &lt; -5f)</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            {</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                this.<a class="code hl_variable" href="classGame_1_1Car.html#a42b4de37fc1597ce39395c959bf2ddff">DestroyedEvent</a>?.Invoke(<span class="keyword">this</span>, EventArgs.Empty);</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            }</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        }</div>
-</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
-<div class="foldopen" id="foldopen00134" data-start="{" data-end="}">
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="classGame_1_1PlayerCar.html#a35789ca2a7fb0aedfa7f7d81d0ff639d">  134</a></span>        <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGame_1_1PlayerCar.html#a35789ca2a7fb0aedfa7f7d81d0ff639d">FixedUpdate</a>()</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        {</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            <span class="keywordflow">if</span> (!<a class="code hl_property" href="classGame_1_1Car.html#ab398cf652e4c7037ca2839241a3d6c63">Alive</a>)</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            {</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                <a class="code hl_variable" href="classGame_1_1Car.html#a7909ccf394182ee69fe4d374cb393602">carController</a>.<a class="code hl_function" href="classGame_1_1CarController.html#ae3eb6260519b20b09bc1226be3919be2">Move</a>(0f, 0f, 0f, 0f);</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            }</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            <span class="keywordtype">float</span> turning = 0;</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            <span class="keywordtype">float</span> accel = 0;</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            this.keyboard = Keyboard.current;</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            <span class="comment">// pass the input to the car!</span></div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            <span class="keywordflow">if</span> (this.keyboard is not <span class="keyword">null</span>)</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            {</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                InputSystem.Update();</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                <span class="keywordflow">if</span> (this.keyboard.aKey.isPressed || <span class="keyword">this</span>.keyboard.leftArrowKey.isPressed)</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                {</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                    turning = -1;</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                }</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (this.keyboard.dKey.isPressed || <span class="keyword">this</span>.keyboard.rightArrowKey.isPressed)</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="foldopen" id="foldopen00128" data-start="{" data-end="}">
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="classGame_1_1PlayerCar.html#a35789ca2a7fb0aedfa7f7d81d0ff639d">  128</a></span>        <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGame_1_1PlayerCar.html#a35789ca2a7fb0aedfa7f7d81d0ff639d">FixedUpdate</a>()</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            <span class="keywordflow">if</span> (!<a class="code hl_property" href="classGame_1_1Car.html#ab398cf652e4c7037ca2839241a3d6c63">Alive</a>)</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                <a class="code hl_variable" href="classGame_1_1Car.html#a7909ccf394182ee69fe4d374cb393602">carController</a>.<a class="code hl_function" href="classGame_1_1CarController.html#ae3eb6260519b20b09bc1226be3919be2">Move</a>(0f, 0f, 0f, 0f);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            }</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            <span class="keywordtype">float</span> turning = 0;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            <span class="keywordtype">float</span> accel = 0;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            this.keyboard = Keyboard.current;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            <span class="comment">// pass the input to the car!</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            <span class="keywordflow">if</span> (this.keyboard is not <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            {</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                InputSystem.Update();</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                <span class="keywordflow">if</span> (this.keyboard.aKey.isPressed || <span class="keyword">this</span>.keyboard.leftArrowKey.isPressed)</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                {</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                    turning = -1;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                }</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (this.keyboard.dKey.isPressed || <span class="keyword">this</span>.keyboard.rightArrowKey.isPressed)</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                {</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                    turning = 1;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                }</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                <span class="comment">//turning = Input.GetAxis(&quot;Horizontal&quot;);</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                <span class="keywordflow">if</span> (this.keyboard.wKey.isPressed || <span class="keyword">this</span>.keyboard.upArrowKey.isPressed)</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                {</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                    turning = 1;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                    accel = 1;</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>                }</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                <span class="comment">//turning = Input.GetAxis(&quot;Horizontal&quot;);</span></div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>                <span class="keywordflow">if</span> (this.keyboard.wKey.isPressed || <span class="keyword">this</span>.keyboard.upArrowKey.isPressed)</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                {</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>                    accel = 1;</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                }</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (this.keyboard.sKey.isPressed || <span class="keyword">this</span>.keyboard.downArrowKey.isPressed)</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                {</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                    accel = -1;</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                }</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            }</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            <span class="comment">//float accel = Input.GetAxis(&quot;Vertical&quot;);</span></div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            <span class="keywordtype">bool</span> reverse = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            <span class="comment">//  if (Input.touchSupported)</span></div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            <span class="comment">// {</span></div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            <span class="keywordflow">if</span> (Input.touchCount &gt; 0)</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>            {</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; Input.touchCount; i++)</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                {</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                    Touch touch = Input.GetTouch(i);</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                    <span class="keywordflow">if</span> (touch.phase == UnityEngine.TouchPhase.Began || touch.phase == UnityEngine.TouchPhase.Stationary)</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                    {</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                        <span class="keywordflow">if</span> (turning != 0)</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (this.keyboard.sKey.isPressed || <span class="keyword">this</span>.keyboard.downArrowKey.isPressed)</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                {</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>                    accel = -1;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                }</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            }</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            <span class="comment">//float accel = Input.GetAxis(&quot;Vertical&quot;);</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            <span class="keywordtype">bool</span> reverse = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            <span class="comment">//  if (Input.touchSupported)</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            <span class="comment">// {</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            <span class="keywordflow">if</span> (Input.touchCount &gt; 0)</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>            {</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; Input.touchCount; i++)</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                {</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                    Touch touch = Input.GetTouch(i);</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>                    <span class="keywordflow">if</span> (touch.phase == UnityEngine.TouchPhase.Began || touch.phase == UnityEngine.TouchPhase.Stationary)</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                    {</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                        <span class="keywordflow">if</span> (turning != 0)</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                        {</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                            reverse = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                        }</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                        <span class="comment">//Check if the touch is on the right or left side of the screen</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                        <span class="keywordflow">if</span> (touch.position.x &gt; Screen.width / 2)</div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                        {</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                            reverse = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                            turning = 1;</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                        }</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                        <span class="comment">//Check if the touch is on the right or left side of the screen</span></div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                        <span class="keywordflow">if</span> (touch.position.x &gt; Screen.width / 2)</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                        {</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                            turning = 1;</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                        }</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>                        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (touch.position.x &lt; Screen.width / 2)</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>                        {</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>                            turning = -1;</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>                        }</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>                    }</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>                }</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>            }</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>            <span class="keywordflow">if</span> (accel == 0)</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>                accel = Input.touchCount &gt; 1 ? -1 : 1;</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>            <a class="code hl_variable" href="classGame_1_1Car.html#a7909ccf394182ee69fe4d374cb393602">carController</a>.<a class="code hl_function" href="classGame_1_1CarController.html#ae3eb6260519b20b09bc1226be3919be2">Move</a>(reverse ? 0 : turning, (<a class="code hl_property" href="classGame_1_1PlayerCar.html#ad2603dab8f49dc15f05e0b265adc8c84">Turbo</a> ? accel * 4 : accel), 0f, 0f);</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        }</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (touch.position.x &lt; Screen.width / 2)</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                        {</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                            turning = -1;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                        }</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                    }</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                }</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>            }</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            <span class="keywordflow">if</span> (accel == 0)</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>                accel = Input.touchCount &gt; 1 ? -1 : 1;</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            <a class="code hl_variable" href="classGame_1_1Car.html#a7909ccf394182ee69fe4d374cb393602">carController</a>.<a class="code hl_function" href="classGame_1_1CarController.html#ae3eb6260519b20b09bc1226be3919be2">Move</a>(reverse ? 0 : turning, (<a class="code hl_property" href="classGame_1_1PlayerCar.html#ad2603dab8f49dc15f05e0b265adc8c84">Turbo</a> ? accel * 4 : accel), 0f, 0f);</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        }</div>
 </div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
-<div class="foldopen" id="foldopen00203" data-start="{" data-end="}">
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="classGame_1_1PlayerCar.html#a4f53e5c9f220ed72b83160599e2df51b">  203</a></span>        <span class="keyword">protected</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGame_1_1PlayerCar.html#a4f53e5c9f220ed72b83160599e2df51b">OnCollisionEnter</a>(Collision collision)</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        {</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>            <span class="keywordflow">if</span> (!<a class="code hl_property" href="classGame_1_1PlayerCar.html#aec160d9c49d7fe224aa115e3a45479d7">Immune</a>)</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>            {</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                base.OnCollisionEnter(collision);</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            }</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            <span class="keywordflow">if</span> (collision.gameObject.tag == <span class="stringliteral">&quot;Police&quot;</span>)</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            {</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>                <a class="code hl_variable" href="classGame_1_1PlayerCar.html#a8161295ca0eec631499bc0272c2dd00f">policeContacts</a>.Add(<span class="keyword">new</span> <a class="code hl_class" href="classGame_1_1PlayerCar_1_1PoliceContainer.html">PoliceContainer</a>(collision.gameObject));</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>            }</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        }</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="foldopen" id="foldopen00197" data-start="{" data-end="}">
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="classGame_1_1PlayerCar.html#a4f53e5c9f220ed72b83160599e2df51b">  197</a></span>        <span class="keyword">protected</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGame_1_1PlayerCar.html#a4f53e5c9f220ed72b83160599e2df51b">OnCollisionEnter</a>(Collision collision)</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        {</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            <span class="keywordflow">if</span> (!<a class="code hl_property" href="classGame_1_1PlayerCar.html#aec160d9c49d7fe224aa115e3a45479d7">Immune</a>)</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>            {</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>                base.OnCollisionEnter(collision);</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            }</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            <span class="keywordflow">if</span> (collision.gameObject.tag == <span class="stringliteral">&quot;Police&quot;</span>)</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            {</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                <a class="code hl_variable" href="classGame_1_1PlayerCar.html#a8161295ca0eec631499bc0272c2dd00f">policeContacts</a>.Add(<span class="keyword">new</span> <a class="code hl_class" href="classGame_1_1PlayerCar_1_1PoliceContainer.html">PoliceContainer</a>(collision.gameObject));</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>            }</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        }</div>
 </div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="foldopen" id="foldopen00209" data-start="{" data-end="}">
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="classGame_1_1PlayerCar.html#a1abfcbceee34f7de69ceb4210306fd82">  209</a></span>        <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGame_1_1PlayerCar.html#a1abfcbceee34f7de69ceb4210306fd82">OnCollisionExit</a>(Collision collision)</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        {</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>            <span class="keywordflow">if</span> (collision.gameObject.tag == <span class="stringliteral">&quot;Police&quot;</span>)</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>            {</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>                <a class="code hl_variable" href="classGame_1_1PlayerCar.html#a8161295ca0eec631499bc0272c2dd00f">policeContacts</a>.RemoveAll(x =&gt; x.PoliceCar == collision.gameObject);</div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
-<div class="foldopen" id="foldopen00215" data-start="{" data-end="}">
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="classGame_1_1PlayerCar.html#a1abfcbceee34f7de69ceb4210306fd82">  215</a></span>        <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classGame_1_1PlayerCar.html#a1abfcbceee34f7de69ceb4210306fd82">OnCollisionExit</a>(Collision collision)</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        {</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>            <span class="keywordflow">if</span> (collision.gameObject.tag == <span class="stringliteral">&quot;Police&quot;</span>)</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>            {</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>                <a class="code hl_variable" href="classGame_1_1PlayerCar.html#a8161295ca0eec631499bc0272c2dd00f">policeContacts</a>.RemoveAll(x =&gt; x.PoliceCar == collision.gameObject);</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>                <span class="comment">// Debug.Log(&quot;Removed&quot; + collision.gameObject);</span></div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>            }</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        }</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>                <span class="comment">// Debug.Log(&quot;Removed&quot; + collision.gameObject);</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>            }</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        }</div>
 </div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    }</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    }</div>
 </div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>}</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>}</div>
 <div class="ttc" id="aPlayerCar_8cs_html_a2b5d34cf3c30a1ab4ea66a8cac490349"><div class="ttname"><a href="PlayerCar_8cs.html#a2b5d34cf3c30a1ab4ea66a8cac490349">TouchPhase</a></div><div class="ttdeci">UnityEngine.TouchPhase TouchPhase</div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00007">PlayerCar.cs:7</a></div></div>
 <div class="ttc" id="aclassGameConfig_html"><div class="ttname"><a href="classGameConfig.html">GameConfig</a></div><div class="ttdef"><b>Definition</b> <a href="GameConfig_8cs_source.html#l00001">GameConfig.cs:2</a></div></div>
 <div class="ttc" id="aclassGameConfig_html_a72acd18d4355d4e978281d7c89cd1ff7"><div class="ttname"><a href="classGameConfig.html#a72acd18d4355d4e978281d7c89cd1ff7">GameConfig.TURBO_DURATION</a></div><div class="ttdeci">const float TURBO_DURATION</div><div class="ttdef"><b>Definition</b> <a href="GameConfig_8cs_source.html#l00027">GameConfig.cs:27</a></div></div>
@@ -368,19 +360,18 @@ $(document).ready(function(){initNavTree('PlayerCar_8cs_source.html',''); initRe
 <div class="ttc" id="aclassGame_1_1PlayerCar_1_1PoliceContainer_html_a79442268fab7d4bf98066096e9babe84"><div class="ttname"><a href="classGame_1_1PlayerCar_1_1PoliceContainer.html#a79442268fab7d4bf98066096e9babe84">Game.PlayerCar.PoliceContainer.PoliceContainer</a></div><div class="ttdeci">PoliceContainer(GameObject policeCar)</div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00026">PlayerCar.cs:26</a></div></div>
 <div class="ttc" id="aclassGame_1_1PlayerCar_1_1PoliceContainer_html_aac2693dd8c3d43d842deb9546ad0bb91"><div class="ttname"><a href="classGame_1_1PlayerCar_1_1PoliceContainer.html#aac2693dd8c3d43d842deb9546ad0bb91">Game.PlayerCar.PoliceContainer.PoliceCar</a></div><div class="ttdeci">GameObject PoliceCar</div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00024">PlayerCar.cs:24</a></div></div>
 <div class="ttc" id="aclassGame_1_1PlayerCar_html"><div class="ttname"><a href="classGame_1_1PlayerCar.html">Game.PlayerCar</a></div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00011">PlayerCar.cs:12</a></div></div>
-<div class="ttc" id="aclassGame_1_1PlayerCar_html_a17bdd48255bfc4b1f00c106451981bc3"><div class="ttname"><a href="classGame_1_1PlayerCar.html#a17bdd48255bfc4b1f00c106451981bc3">Game.PlayerCar.ApplyImmunity</a></div><div class="ttdeci">void ApplyImmunity()</div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00074">PlayerCar.cs:74</a></div></div>
-<div class="ttc" id="aclassGame_1_1PlayerCar_html_a18f30f1f6873f043457ce9f81ac47ed4"><div class="ttname"><a href="classGame_1_1PlayerCar.html#a18f30f1f6873f043457ce9f81ac47ed4">Game.PlayerCar.ChunkChanged</a></div><div class="ttdeci">override async void ChunkChanged(Chunk newChunk)</div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00059">PlayerCar.cs:59</a></div></div>
-<div class="ttc" id="aclassGame_1_1PlayerCar_html_a1abfcbceee34f7de69ceb4210306fd82"><div class="ttname"><a href="classGame_1_1PlayerCar.html#a1abfcbceee34f7de69ceb4210306fd82">Game.PlayerCar.OnCollisionExit</a></div><div class="ttdeci">void OnCollisionExit(Collision collision)</div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00215">PlayerCar.cs:215</a></div></div>
-<div class="ttc" id="aclassGame_1_1PlayerCar_html_a334b646fd49e1a8f77f7e551821b959f"><div class="ttname"><a href="classGame_1_1PlayerCar.html#a334b646fd49e1a8f77f7e551821b959f">Game.PlayerCar.SetKeyboard</a></div><div class="ttdeci">void SetKeyboard(Keyboard newKeyboard)</div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00048">PlayerCar.cs:48</a></div></div>
-<div class="ttc" id="aclassGame_1_1PlayerCar_html_a35789ca2a7fb0aedfa7f7d81d0ff639d"><div class="ttname"><a href="classGame_1_1PlayerCar.html#a35789ca2a7fb0aedfa7f7d81d0ff639d">Game.PlayerCar.FixedUpdate</a></div><div class="ttdeci">void FixedUpdate()</div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00134">PlayerCar.cs:134</a></div></div>
-<div class="ttc" id="aclassGame_1_1PlayerCar_html_a3c11ab5b2bdc057896e172f59b22e03a"><div class="ttname"><a href="classGame_1_1PlayerCar.html#a3c11ab5b2bdc057896e172f59b22e03a">Game.PlayerCar.Update</a></div><div class="ttdeci">override void Update()</div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00084">PlayerCar.cs:84</a></div></div>
-<div class="ttc" id="aclassGame_1_1PlayerCar_html_a4f53e5c9f220ed72b83160599e2df51b"><div class="ttname"><a href="classGame_1_1PlayerCar.html#a4f53e5c9f220ed72b83160599e2df51b">Game.PlayerCar.OnCollisionEnter</a></div><div class="ttdeci">override void OnCollisionEnter(Collision collision)</div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00203">PlayerCar.cs:203</a></div></div>
+<div class="ttc" id="aclassGame_1_1PlayerCar_html_a17bdd48255bfc4b1f00c106451981bc3"><div class="ttname"><a href="classGame_1_1PlayerCar.html#a17bdd48255bfc4b1f00c106451981bc3">Game.PlayerCar.ApplyImmunity</a></div><div class="ttdeci">void ApplyImmunity()</div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00068">PlayerCar.cs:68</a></div></div>
+<div class="ttc" id="aclassGame_1_1PlayerCar_html_a18f30f1f6873f043457ce9f81ac47ed4"><div class="ttname"><a href="classGame_1_1PlayerCar.html#a18f30f1f6873f043457ce9f81ac47ed4">Game.PlayerCar.ChunkChanged</a></div><div class="ttdeci">override async void ChunkChanged(Chunk newChunk)</div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00053">PlayerCar.cs:53</a></div></div>
+<div class="ttc" id="aclassGame_1_1PlayerCar_html_a1abfcbceee34f7de69ceb4210306fd82"><div class="ttname"><a href="classGame_1_1PlayerCar.html#a1abfcbceee34f7de69ceb4210306fd82">Game.PlayerCar.OnCollisionExit</a></div><div class="ttdeci">void OnCollisionExit(Collision collision)</div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00209">PlayerCar.cs:209</a></div></div>
+<div class="ttc" id="aclassGame_1_1PlayerCar_html_a35789ca2a7fb0aedfa7f7d81d0ff639d"><div class="ttname"><a href="classGame_1_1PlayerCar.html#a35789ca2a7fb0aedfa7f7d81d0ff639d">Game.PlayerCar.FixedUpdate</a></div><div class="ttdeci">void FixedUpdate()</div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00128">PlayerCar.cs:128</a></div></div>
+<div class="ttc" id="aclassGame_1_1PlayerCar_html_a3c11ab5b2bdc057896e172f59b22e03a"><div class="ttname"><a href="classGame_1_1PlayerCar.html#a3c11ab5b2bdc057896e172f59b22e03a">Game.PlayerCar.Update</a></div><div class="ttdeci">override void Update()</div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00078">PlayerCar.cs:78</a></div></div>
+<div class="ttc" id="aclassGame_1_1PlayerCar_html_a4f53e5c9f220ed72b83160599e2df51b"><div class="ttname"><a href="classGame_1_1PlayerCar.html#a4f53e5c9f220ed72b83160599e2df51b">Game.PlayerCar.OnCollisionEnter</a></div><div class="ttdeci">override void OnCollisionEnter(Collision collision)</div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00197">PlayerCar.cs:197</a></div></div>
 <div class="ttc" id="aclassGame_1_1PlayerCar_html_a6fe61f8c0a6dc387471f0ca92e0f8f49"><div class="ttname"><a href="classGame_1_1PlayerCar.html#a6fe61f8c0a6dc387471f0ca92e0f8f49">Game.PlayerCar.coinMultiplier</a></div><div class="ttdeci">float coinMultiplier</div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00014">PlayerCar.cs:14</a></div></div>
 <div class="ttc" id="aclassGame_1_1PlayerCar_html_a8161295ca0eec631499bc0272c2dd00f"><div class="ttname"><a href="classGame_1_1PlayerCar.html#a8161295ca0eec631499bc0272c2dd00f">Game.PlayerCar.policeContacts</a></div><div class="ttdeci">List&lt; PoliceContainer &gt; policeContacts</div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00035">PlayerCar.cs:35</a></div></div>
 <div class="ttc" id="aclassGame_1_1PlayerCar_html_a8ea82c0981aa2bbba3260ea08556410b"><div class="ttname"><a href="classGame_1_1PlayerCar.html#a8ea82c0981aa2bbba3260ea08556410b">Game.PlayerCar.immuneTimer</a></div><div class="ttdeci">float immuneTimer</div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00041">PlayerCar.cs:41</a></div></div>
 <div class="ttc" id="aclassGame_1_1PlayerCar_html_aa27a1ab0eae600158b89741558c08dcc"><div class="ttname"><a href="classGame_1_1PlayerCar.html#aa27a1ab0eae600158b89741558c08dcc">Game.PlayerCar.probeSize</a></div><div class="ttdeci">int probeSize</div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00033">PlayerCar.cs:33</a></div></div>
-<div class="ttc" id="aclassGame_1_1PlayerCar_html_aaa57e11cd8cc243d3b3964818c102053"><div class="ttname"><a href="classGame_1_1PlayerCar.html#aaa57e11cd8cc243d3b3964818c102053">Game.PlayerCar.ApplyTurbo</a></div><div class="ttdeci">void ApplyTurbo()</div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00064">PlayerCar.cs:64</a></div></div>
-<div class="ttc" id="aclassGame_1_1PlayerCar_html_ab309bb81f5cd0e6cb9c97620729fc134"><div class="ttname"><a href="classGame_1_1PlayerCar.html#ab309bb81f5cd0e6cb9c97620729fc134">Game.PlayerCar.PickedUpCoin</a></div><div class="ttdeci">void PickedUpCoin()</div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00054">PlayerCar.cs:54</a></div></div>
+<div class="ttc" id="aclassGame_1_1PlayerCar_html_aaa57e11cd8cc243d3b3964818c102053"><div class="ttname"><a href="classGame_1_1PlayerCar.html#aaa57e11cd8cc243d3b3964818c102053">Game.PlayerCar.ApplyTurbo</a></div><div class="ttdeci">void ApplyTurbo()</div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00058">PlayerCar.cs:58</a></div></div>
+<div class="ttc" id="aclassGame_1_1PlayerCar_html_ab309bb81f5cd0e6cb9c97620729fc134"><div class="ttname"><a href="classGame_1_1PlayerCar.html#ab309bb81f5cd0e6cb9c97620729fc134">Game.PlayerCar.PickedUpCoin</a></div><div class="ttdeci">void PickedUpCoin()</div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00048">PlayerCar.cs:48</a></div></div>
 <div class="ttc" id="aclassGame_1_1PlayerCar_html_aca5a380d0603c99b0bebb1d60cb9139f"><div class="ttname"><a href="classGame_1_1PlayerCar.html#aca5a380d0603c99b0bebb1d60cb9139f">Game.PlayerCar.keyboard</a></div><div class="ttdeci">Keyboard keyboard</div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00019">PlayerCar.cs:19</a></div></div>
 <div class="ttc" id="aclassGame_1_1PlayerCar_html_acb2140de42b16ce6bd1c8743ea44cace"><div class="ttname"><a href="classGame_1_1PlayerCar.html#acb2140de42b16ce6bd1c8743ea44cace">Game.PlayerCar.Awake</a></div><div class="ttdeci">new void Awake()</div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00043">PlayerCar.cs:43</a></div></div>
 <div class="ttc" id="aclassGame_1_1PlayerCar_html_ad2603dab8f49dc15f05e0b265adc8c84"><div class="ttname"><a href="classGame_1_1PlayerCar.html#ad2603dab8f49dc15f05e0b265adc8c84">Game.PlayerCar.Turbo</a></div><div class="ttdeci">bool Turbo</div><div class="ttdef"><b>Definition</b> <a href="PlayerCar_8cs_source.html#l00038">PlayerCar.cs:38</a></div></div>

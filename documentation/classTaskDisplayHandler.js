@@ -9,8 +9,6 @@ var classTaskDisplayHandler =
     [ "CompleteStateChange", "classTaskDisplayHandler.html#ad3f365a96a845077fa3377056ead8763", null ],
     [ "UpdateTimeRemaining", "classTaskDisplayHandler.html#a335ebac706e9b91498a92ef53ca22787", null ],
     [ "CalculateIfCompleteable", "classTaskDisplayHandler.html#a2ba5a310ac34962ad22c0924672344a9", null ],
-    [ "AVAILIBLE_FOR_COMPLETE_COLOR", "classTaskDisplayHandler.html#a8dca52f4d1d854184d9fdf7247c6c36f", null ],
-    [ "DISABLED_FOR_COMPLETE_COLOR", "classTaskDisplayHandler.html#a6113afa3c7779b0d5a4dca2434c32949", null ],
     [ "TaskNameLabel", "classTaskDisplayHandler.html#a5d15de430f131870e9206423f3875c61", null ],
     [ "TaskIntervalsLabel", "classTaskDisplayHandler.html#a76372ef801e0c0ff6dc206dbb3093476", null ],
     [ "RemainingTimeLabel", "classTaskDisplayHandler.html#aaf0263a6a67f0d0f1feedf13e686c56b", null ],

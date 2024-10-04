@@ -1,6 +1,7 @@
 var classGame_1_1Car =
 [
     [ "Update", "classGame_1_1Car.html#a1efffc1014c81e16512eee6c311dbb97", null ],
+    [ "Kill", "classGame_1_1Car.html#accc4c99441964b1f8d69d08871f5a478", null ],
     [ "ChangeChunkIfNeeded", "classGame_1_1Car.html#aee18ec29b76c64797a649d50a6f83eed", null ],
     [ "ChunkChanged", "classGame_1_1Car.html#aafa1ed6c6d66625c4e9dd1c18fb67fd3", null ],
     [ "Init", "classGame_1_1Car.html#a73919d2b4768ace830efe5e84cb3e0d5", null ],

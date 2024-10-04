@@ -1,7 +1,7 @@
 var classGameUI =
 [
     [ "Update", "classGameUI.html#ae1af03e7079adfabff38492498ea0980", null ],
-    [ "SaveCoins", "classGameUI.html#a593325f7885cc453f98ca8157f93c33d", null ],
+    [ "SaveGameResult", "classGameUI.html#acefc41c703d4c841b5c1d4a01f05c43d", null ],
     [ "SavedCoins", "classGameUI.html#afb6677d4b507caf5288f656d12857c37", null ],
     [ "DoubleCoins", "classGameUI.html#a71107d9148809b9914a86c2eea8f8f87", null ],
     [ "BuyImmunity", "classGameUI.html#ab9e9f55dd19ade1f5797d1aa184eb5a9", null ],
@@ -16,10 +16,11 @@ var classGameUI =
     [ "ShowRequestFail", "classGameUI.html#ab1286e2c8539b07a90922bed70786dd7", null ],
     [ "ChangeDifficulyDisplay", "classGameUI.html#a30b34140ea9e733d314e461ba9087d04", null ],
     [ "ShowEndGameScreen", "classGameUI.html#a83ab06ae8fd90932efe340c29537a4e5", null ],
-    [ "HideGameOverScreen", "classGameUI.html#a10aedf7439a9bb7bae657b39b4182c8a", null ],
+    [ "HideGameOverScreen", "classGameUI.html#a671890c1f7adf6b3aea9563222efdf41", null ],
     [ "ShowShopWindow", "classGameUI.html#a08a0b704c39ac67b1932e728da8ebcd7", null ],
     [ "HideShopWindow", "classGameUI.html#a33340be133aebff13046c80eb640db13", null ],
     [ "BackToTasks", "classGameUI.html#a9ac2450560ee9da6b280b3927f4af5fa", null ],
+    [ "BackToGameMenuWithoutSave", "classGameUI.html#adfb31fececb69712fe4e9c0c6862235b", null ],
     [ "BackToGameMenu", "classGameUI.html#aa50f29934747a338c85efb6e06c84b09", null ],
     [ "gameOverContainer", "classGameUI.html#a109e5ae1d753b6fc016227d3b67c9bda", null ],
     [ "ingameContainer", "classGameUI.html#aa87d6d5f2504f45f0d15aa727e409995", null ],
