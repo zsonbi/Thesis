@@ -21,6 +21,11 @@ public class ModalWindow : MonoBehaviour
 
     public void Show(string title, string content, Action onOkAction = null)
     {
+        if (this.gameObject is null)
+        {
+            return;
+        }
+
         this.ModalTitleText.text = title;
         this.ModalContentText.text = content;
         this.onOkAction = onOkAction;
@@ -29,6 +34,10 @@ public class ModalWindow : MonoBehaviour
 
     public void Hide()
     {
+        if (this.gameObject is null)
+        {
+            return;
+        }
         this.gameObject.SetActive(false);
     }
 

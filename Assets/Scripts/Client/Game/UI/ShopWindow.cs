@@ -56,6 +56,13 @@ public class ShopWindow : MonoBehaviour
 
     private void LoadedShopItems(List<Shop> shopItems)
     {
+        if (this.ShopParent == null || this.ShopParent.transform == null)
+        {
+            // Exit or handle the case when the ShopParent is destroyed
+            Debug.LogWarning("ShopParent has been destroyed or is missing.");
+            return;
+        }
+
         //Delete the previous ones
         for (int i = 0; i < this.ShopParent.transform.childCount; i++)
         {
