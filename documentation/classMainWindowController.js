@@ -5,6 +5,7 @@ var classMainWindowController =
     [ "Update", "classMainWindowController.html#a7c33479bd33e26832c7e6a27db8bb6eb", null ],
     [ "RemoveTask", "classMainWindowController.html#a28e02a527de35b080036838eccd1caa9", null ],
     [ "UpdateTask", "classMainWindowController.html#aa560024a4c177f54f6b6237102ac752b", null ],
+    [ "SortingChanged", "classMainWindowController.html#a7493c7cf48406da98feff2552f3f217a", null ],
     [ "LoadGoodTasks", "classMainWindowController.html#a97bc3e1edc8b02fe6876003c0705d9bb", null ],
     [ "LoadBadHabits", "classMainWindowController.html#ad7eb4bb006eff017de71fda656e0caac", null ],
     [ "CreateTask", "classMainWindowController.html#ac5891636504e2d8aca05a84e62768b64", null ],
@@ -19,5 +20,6 @@ var classMainWindowController =
     [ "TaskPrefab", "classMainWindowController.html#a4d6aca2fea0b8edefea03fe49dfa1229", null ],
     [ "taskOpenPanelController", "classMainWindowController.html#a08355bb509be095b45cc8fd2619a1dc0", null ],
     [ "ModalWindow", "classMainWindowController.html#aeb17896f881a53dd45e25c61f26bab3b", null ],
+    [ "TaskSortDropdown", "classMainWindowController.html#a6b8aece05b416b6a2aad1b90733bcb4e", null ],
     [ "Tasks", "classMainWindowController.html#ac21a60fa64613697bc7d0e332592fc7b", null ]
 ];
