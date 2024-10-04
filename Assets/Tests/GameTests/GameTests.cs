@@ -263,7 +263,7 @@ namespace Tests
                 Assert.AreEqual(0, MainController.Coins);
                 Assert.Less(MainController.Score, 3);
 
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
                 Assert.AreEqual(originalCoinCount + pickedUpCoins, UserData.Instance.Game.Currency);
             }
 
