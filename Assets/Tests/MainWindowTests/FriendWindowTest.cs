@@ -14,17 +14,20 @@ namespace Tests
         {
             private IEnumerator SendFriendRequest(string friendIdentifiaction)
             {
+                int initFriendCount = GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).Length;
                 TMP_InputField userIdentification = GameObject.Find("FriendIdentifierInput").GetComponent<TMP_InputField>();
                 userIdentification.text = friendIdentifiaction;
                 friendHandler.SendFriendRequest();
 
-                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                yield return WaitForCondition(() => initFriendCount != GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).Length);
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE / 10f);
                 FriendHandler friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).First();
 
                 Assert.AreEqual(1, GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).Length);
                 Assert.True(friend.Friend.Pending);
                 Assert.AreEqual(User.UserData.Instance.Id, friend.Friend.Sender.ID);
                 Assert.AreEqual(User.UserData.Instance.TotalScore, friend.Friend.Sender.TotalScore);
+                yield return null;
             }
 
             [UnityTest]
