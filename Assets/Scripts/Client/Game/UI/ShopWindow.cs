@@ -45,7 +45,7 @@ public class ShopWindow : MonoBehaviour
     {
         if (shopItemsCache is null)
         {
-            StartCoroutine(Server.SendGetRequest<List<Shop>>(ServerConfig.PATH_FOR_SHOP_GET_ALL, LoadedShopItems, onFailedAction: ShowRequestFail));
+            CoroutineRunner.RunCoroutine(Server.SendGetRequest<List<Shop>>(ServerConfig.PATH_FOR_SHOP_GET_ALL, LoadedShopItems, onFailedAction: ShowRequestFail));
         }
         else
         {

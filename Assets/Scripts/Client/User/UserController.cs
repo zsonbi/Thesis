@@ -48,7 +48,7 @@ public class UserController : MonoBehaviour
         }
 
         WWWForm form = new WWWForm();
-        StartCoroutine(Server.SendGetRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORCHECKLOGGEDIN, LoggedIn));
+        CoroutineRunner.RunCoroutine(Server.SendGetRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORCHECKLOGGEDIN, LoggedIn));
     }
 
     /// <summary>
@@ -64,7 +64,7 @@ public class UserController : MonoBehaviour
             Password = fields[1].text,
         };
 
-        StartCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORLOGIN, userLoginRequest, LoggedIn, onFailedAction: ShowLoginError));
+        CoroutineRunner.RunCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORLOGIN, userLoginRequest, LoggedIn, onFailedAction: ShowLoginError));
     }
 
     /// <summary>
@@ -74,7 +74,7 @@ public class UserController : MonoBehaviour
     private void LoggedIn(Thesis_backend.Data_Structures.User result)
     {
         UserData.Instance.Init(result);
-        StartCoroutine(MoveToMainScence());
+        CoroutineRunner.RunCoroutine(MoveToMainScence());
     }
 
     /// <summary>
@@ -102,7 +102,7 @@ public class UserController : MonoBehaviour
             Password = fields[2].text,
         };
 
-        StartCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORREGISTER, userRequest, Registered, onFailedAction: ShowRegisterError));
+        CoroutineRunner.RunCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORREGISTER, userRequest, Registered, onFailedAction: ShowRegisterError));
     }
 
     private void ShowRegisterError(string content)
@@ -122,7 +122,7 @@ public class UserController : MonoBehaviour
     private void Registered(Thesis_backend.Data_Structures.User loggedInUser)
     {
         UserData.Instance.Init(loggedInUser);
-        StartCoroutine(MoveToMainScence());
+        CoroutineRunner.RunCoroutine(MoveToMainScence());
     }
 
     /// <summary>

@@ -41,7 +41,7 @@ public class FriendWindowHandler : MonoBehaviour
             return;
         }
 
-        StartCoroutine(Server.SendPostRequest<Friend>(ServerConfig.PATH_FOR_FRIEND_REQUEST_SEND, userIdentificationInput.text, onComplete: SentFriendRequest, onFailedAction: ShowRequestFail));
+        CoroutineRunner.RunCoroutine(Server.SendPostRequest<Friend>(ServerConfig.PATH_FOR_FRIEND_REQUEST_SEND, userIdentificationInput.text, onComplete: SentFriendRequest, onFailedAction: ShowRequestFail));
     }
 
     private void ShowRequestFail(string content)
@@ -65,7 +65,7 @@ public class FriendWindowHandler : MonoBehaviour
 
     private void LoadFriends()
     {
-        StartCoroutine(Server.SendGetRequest<List<Friend>>(ServerConfig.PATH_FOR_FRIEND_GETALL, onComplete: DisplayFriends));
+        CoroutineRunner.RunCoroutine(Server.SendGetRequest<List<Friend>>(ServerConfig.PATH_FOR_FRIEND_GETALL, onComplete: DisplayFriends));
     }
 
     private void DisplayFriends(List<Friend> friends)
