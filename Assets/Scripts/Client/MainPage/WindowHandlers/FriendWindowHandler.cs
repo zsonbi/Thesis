@@ -17,6 +17,9 @@ public class FriendWindowHandler : MonoBehaviour
     [SerializeField]
     private GameObject friendPrefab;
 
+    [SerializeField]
+    private ModalWindow ModalWindow;
+
     private bool showPending = true;
 
     public void ShowPendingChanged(bool newValue)
@@ -38,7 +41,12 @@ public class FriendWindowHandler : MonoBehaviour
             return;
         }
 
-        StartCoroutine(Server.SendPostRequest<Friend>(ServerConfig.PATH_FOR_FRIEND_REQUEST_SEND, userIdentificationInput.text, onComplete: SentFriendRequest));
+        StartCoroutine(Server.SendPostRequest<Friend>(ServerConfig.PATH_FOR_FRIEND_REQUEST_SEND, userIdentificationInput.text, onComplete: SentFriendRequest, onFailedAction: ShowRequestFail));
+    }
+
+    private void ShowRequestFail(string content)
+    {
+        ModalWindow.Show("Request fail", content);
     }
 
     private void SentFriendRequest(Friend friend)

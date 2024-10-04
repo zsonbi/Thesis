@@ -3748,6 +3748,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8237261850169842984}
     m_Modifications:
+    - target: {fileID: 481518582554757896, guid: eabec96549fb5f842a9f769a41591d1a, type: 3}
+      propertyPath: ModalWindow
+      value: 
+      objectReference: {fileID: 208505798}
     - target: {fileID: 5083670472075008867, guid: eabec96549fb5f842a9f769a41591d1a, type: 3}
       propertyPath: m_Name
       value: FriendsPanel
