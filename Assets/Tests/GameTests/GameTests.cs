@@ -218,7 +218,7 @@ namespace Tests
                 yield return new WaitForFixedUpdate();
 
                 Assert.AreEqual(10, MainController.Coins);
-                MainController.Player.DestroyedEvent.Invoke(MainController.Player, EventArgs.Empty);
+                MainController.Player.Kill();
 
                 GameUI.DoubleCoins();
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
@@ -249,7 +249,7 @@ namespace Tests
                 }
                 yield return new WaitForFixedUpdate();
                 Assert.AreEqual(10, MainController.Coins);
-                MainController.Player.DestroyedEvent.Invoke(MainController.Player, EventArgs.Empty);
+                MainController.Player.Kill();
                 float pickedUpCoins = MainController.Coins;
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
                 GameUI.NewGame();

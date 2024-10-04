@@ -14,17 +14,20 @@ namespace Tests
         {
             private IEnumerator SendFriendRequest(string friendIdentifiaction)
             {
+                int initFriendCount = GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).Length;
                 TMP_InputField userIdentification = GameObject.Find("FriendIdentifierInput").GetComponent<TMP_InputField>();
                 userIdentification.text = friendIdentifiaction;
                 friendHandler.SendFriendRequest();
 
-                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
-                FriendHandler friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).First();
+                yield return WaitForCondition(() => initFriendCount < GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).Length);
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE / 10f);
+                FriendHandler friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).First();
 
-                Assert.AreEqual(1, GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).Length);
+                Assert.AreEqual(1, GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).Length);
                 Assert.True(friend.Friend.Pending);
                 Assert.AreEqual(User.UserData.Instance.Id, friend.Friend.Sender.ID);
                 Assert.AreEqual(User.UserData.Instance.TotalScore, friend.Friend.Sender.TotalScore);
+                yield return null;
             }
 
             [UnityTest]
@@ -36,13 +39,13 @@ namespace Tests
 
                 yield return SendFriendRequest(TestConfig.Username2);
 
-                FriendHandler friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).First();
+                FriendHandler friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).First();
 
                 //Unfriend him
                 friend.DeleteFriend();
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
 
-                Assert.AreEqual(0, GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).Length);
+                Assert.AreEqual(0, GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).Length);
             }
 
             [UnityTest]
@@ -54,7 +57,7 @@ namespace Tests
 
                 yield return SendFriendRequest(TestConfig.Username2);
 
-                FriendHandler friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).First();
+                FriendHandler friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).First();
 
                 //Hide the window
                 friendHandler.Hide();
@@ -62,7 +65,7 @@ namespace Tests
                 //Show the window
                 friendHandler.Show();
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
-                Assert.AreEqual(1, GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).Length);
+                Assert.AreEqual(1, GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).Length);
 
                 //Reload the scene
                 yield return LoadScene(true, true);
@@ -70,8 +73,8 @@ namespace Tests
                 friendHandler.Show();
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
 
-                Assert.AreEqual(1, GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).Length);
-                friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).First();
+                Assert.AreEqual(1, GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).Length);
+                friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).First();
                 friend.DeleteFriend();
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
             }
@@ -85,7 +88,7 @@ namespace Tests
 
                 yield return SendFriendRequest(TestConfig.Username2);
 
-                FriendHandler friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).First();
+                FriendHandler friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).First();
 
                 //Login to the other user
                 yield return Login(TestConfig.Username2, TestConfig.Password2);
@@ -93,7 +96,7 @@ namespace Tests
                 friendHandler.Show();
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
 
-                friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).First();
+                friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).First();
                 Assert.True(friend.Friend.Pending);
                 Assert.AreEqual(User.UserData.Instance.Id, friend.Friend.Receiver.ID);
                 Assert.AreEqual(User.UserData.Instance.TotalScore, friend.Friend.Receiver.TotalScore);
@@ -107,7 +110,7 @@ namespace Tests
                 friend.DeleteFriend();
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
 
-                Assert.AreEqual(0, GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).Length);
+                Assert.AreEqual(0, GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).Length);
             }
         }
     }
