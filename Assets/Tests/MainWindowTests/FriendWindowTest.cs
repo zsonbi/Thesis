@@ -19,7 +19,7 @@ namespace Tests
                 userIdentification.text = friendIdentifiaction;
                 friendHandler.SendFriendRequest();
 
-                yield return WaitForCondition(() => initFriendCount != GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).Length);
+                yield return WaitForCondition(() => initFriendCount < GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).Length);
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE / 10f);
                 FriendHandler friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsSortMode.InstanceID).First();
 
