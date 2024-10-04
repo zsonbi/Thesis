@@ -42,6 +42,12 @@ namespace Game
             }
         }
 
+        public void Kill()
+        {
+            this.health = 0;
+            this.DestroyedEvent?.Invoke(this, EventArgs.Empty);
+        }
+
         protected bool ChangeChunkIfNeeded()
         {
             Chunk newChunk = this.gameController.World.GetChunk(this.gameObject.transform.position);

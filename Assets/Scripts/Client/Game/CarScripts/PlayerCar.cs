@@ -45,12 +45,6 @@ namespace Game
             base.Awake();
         }
 
-        public void SetKeyboard(Keyboard newKeyboard)
-        {
-            return;
-            this.keyboard = newKeyboard;
-        }
-
         public void PickedUpCoin()
         {
             this.gameController.IncreaseCoinCount(1 * coinMultiplier);
