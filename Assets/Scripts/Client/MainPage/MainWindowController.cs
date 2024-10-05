@@ -8,6 +8,7 @@ using Config;
 using Thesis_backend.Data_Structures;
 using DataTypes;
 using System.Linq;
+using System.Threading.Tasks;
 
 public class MainWindowController : MonoBehaviour
 {
@@ -35,8 +36,12 @@ public class MainWindowController : MonoBehaviour
     public Dictionary<long, TaskDisplayHandler> Tasks { get; private set; } = new Dictionary<long, TaskDisplayHandler>();
 
     // Start is called before the first frame update
-    private void Start()
+    private async void Start()
     {
+        while (!UserData.Instance.LoggedIn)
+        {
+            await Task.Delay(100);
+        }
         UsernameInputText.text = UserData.Instance.Username;
         CurrencyText.text = UserData.Instance.CurrentTaskScore.ToString();
         LoadTasks();

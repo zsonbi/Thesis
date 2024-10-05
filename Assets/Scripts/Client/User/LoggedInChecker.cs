@@ -19,10 +19,10 @@ public class LoggedInChecker : MonoBehaviour
         while (true)
         {
             // Send the API request
-            StartCoroutine(Server.SendGetRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORCHECKLOGGEDIN, LoggedIn, onFailedAction: LoggedOut));
+            yield return CoroutineRunner.RunCoroutine(Server.SendGetRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORCHECKLOGGEDIN, LoggedIn, onFailedAction: LoggedOut));
 
             // Wait for 60 seconds before sending the next request
-            yield return new WaitForSeconds(120f);
+            yield return new WaitForSeconds(60f);
         }
     }
 

@@ -66,7 +66,7 @@ public class LeaderboardWindow : MonoBehaviour
 
     private void ShowRequestFail(string content)
     {
-        ModalWindow.Show("Shop error", content);
+        ModalWindow.Show("Leaderboard error", content);
     }
 
     private void LoadedScores(List<GameScore> gameScores)
