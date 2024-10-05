@@ -58,12 +58,12 @@ public class FriendHandler : MonoBehaviour
 
     public void AcceptFriendRequest()
     {
-        StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.Friend>(ServerConfig.PATH_FOR_FRIEND_ACCEPT(this.Friend.ID), onComplete: Accepted));
+        CoroutineRunner.RunCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.Friend>(ServerConfig.PATH_FOR_FRIEND_ACCEPT(this.Friend.ID), onComplete: Accepted));
     }
 
     public void DeleteFriend()
     {
-        StartCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATH_FOR_FRIEND_DELETE(this.Friend.ID), onComplete: Deleted));
+        CoroutineRunner.RunCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATH_FOR_FRIEND_DELETE(this.Friend.ID), onComplete: Deleted));
     }
 
     private void Accepted(Thesis_backend.Data_Structures.Friend result)

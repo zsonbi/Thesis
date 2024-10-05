@@ -25,6 +25,9 @@ public class GameUI : MonoBehaviour
     private Image SkinDisplay;
 
     [SerializeField]
+    private LeaderboardWindow leaderboardWindow;
+
+    [SerializeField]
     private TMP_Text InfamyGameOverText;
 
     [SerializeField]
@@ -62,9 +65,10 @@ public class GameUI : MonoBehaviour
         }
     }
 
-    private void SaveGameResult()
+    public void SaveGameResult()
     {
-        StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.Game>(ServerConfig.PATH_FOR_SAVE_COINS, (int)(Doubled ? gameController.Coins * 2 : gameController.Coins), SavedCoins, onFailedAction: ShowRequestFail));
+        CoroutineRunner.RunCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.Game>(ServerConfig.PATH_FOR_SAVE_COINS, (int)(Doubled ? gameController.Coins * 2 : gameController.Coins), SavedCoins, onFailedAction: ShowRequestFail));
+        CoroutineRunner.RunCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.GameScore>(ServerConfig.PATH_FOR_STORE_GAME_SCORE, gameController.Score, onFailedAction: ShowRequestFail));
     }
 
     private void SavedCoins(Thesis_backend.Data_Structures.Game game)
@@ -76,7 +80,7 @@ public class GameUI : MonoBehaviour
     {
         if (UserData.Instance.CurrentTaskScore >= GameConfig.DOUBLE_COIN_COST)
         {
-            StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATH_FOR_DOUBLE_COINS, new WWWForm(), DoubledCoins, onFailedAction: ShowRequestFail));
+            CoroutineRunner.RunCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATH_FOR_DOUBLE_COINS, new WWWForm(), DoubledCoins, onFailedAction: ShowRequestFail));
         }
     }
 
@@ -84,7 +88,7 @@ public class GameUI : MonoBehaviour
     {
         if (UserData.Instance.CurrentTaskScore >= GameConfig.IMMUNITY_COST)
         {
-            StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATH_FOR_BUY_IMMUNITY, new WWWForm(), BoughtImmunity, onFailedAction: ShowRequestFail));
+            CoroutineRunner.RunCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATH_FOR_BUY_IMMUNITY, new WWWForm(), BoughtImmunity, onFailedAction: ShowRequestFail));
         }
     }
 
@@ -92,7 +96,7 @@ public class GameUI : MonoBehaviour
     {
         if (UserData.Instance.CurrentTaskScore >= GameConfig.TURBO_COST)
         {
-            StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATH_FOR_BUY_TURBO, new WWWForm(), BoughtTurbo, onFailedAction: ShowRequestFail));
+            CoroutineRunner.RunCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATH_FOR_BUY_TURBO, new WWWForm(), BoughtTurbo, onFailedAction: ShowRequestFail));
         }
     }
 
@@ -119,6 +123,11 @@ public class GameUI : MonoBehaviour
         UserData.Instance.UpdateTaskScore(user.CurrentTaskScore);
     }
 
+    public void ShowLeaderboard()
+    {
+        leaderboardWindow.Show();
+    }
+
     public void LeftRotateSkin()
     {
         SelectedSkinIndex = (SelectedSkinIndex + UserData.Instance.Game.OwnedCars.Count - 1) % UserData.Instance.Game.OwnedCars.Count;
@@ -136,9 +145,9 @@ public class GameUI : MonoBehaviour
         this.gameController = gameController;
     }
 
-    public async void NewGame()
+    public async void NewGame(bool save = true)
     {
-        HideGameOverScreen();
+        HideGameOverScreen(save);
         ingameContainer.SetActive(true);
         mainMenuContainer.SetActive(false);
         TaskScoreInGameText.text = UserData.Instance.CurrentTaskScore.ToString();
@@ -188,7 +197,7 @@ public class GameUI : MonoBehaviour
 
     public void BackToTasks()
     {
-        HideGameOverScreen();
+        HideGameOverScreen(false);
         SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
     }
 

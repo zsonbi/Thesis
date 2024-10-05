@@ -46,7 +46,7 @@ public class ProfileHandler : MonoBehaviour
     /// </summary>
     public void SendLogout()
     {
-        StartCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORLOGOUT, LoggedOut));
+        CoroutineRunner.RunCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORLOGOUT, LoggedOut));
     }
 
     /// <summary>
@@ -57,7 +57,7 @@ public class ProfileHandler : MonoBehaviour
     {
         UserData.Instance.Logout();
 
-        StartCoroutine(MoveToLoginScene());
+        CoroutineRunner.RunCoroutine(MoveToLoginScene());
     }
 
     private IEnumerator MoveToLoginScene()

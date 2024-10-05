@@ -1,3 +1,6 @@
+using Newtonsoft.Json;
+using System;
+
 namespace Config
 {
     public static class ServerConfig
@@ -85,5 +88,11 @@ namespace Config
 
         public const string PATH_FOR_BUY_TURBO = SERVERPATH + "/api/Game/PowerUp/Turbo";
         public const string PATH_FOR_BUY_IMMUNITY = SERVERPATH + "/api/Game/PowerUp/Immunity";
+
+        public const string PATH_FOR_STORE_GAME_SCORE = SERVERPATH + "/api/Game/Scores/Store";
+
+        public static string PATH_FOR_GET_GAME_SCORES(DateTime filterTime) => SERVERPATH + $"/api/Game/Scores/Get?since={filterTime.ToString("yyyy-MM-ddTHH:mm:ss")}";
+
+        public const string PATH_FOR_GET_TASK_HISTORIES = SERVERPATH + "/api/Tasks/History";
     }
 }

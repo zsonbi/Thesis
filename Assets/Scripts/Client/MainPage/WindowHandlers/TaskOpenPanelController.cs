@@ -151,11 +151,11 @@ public class TaskOpenPanelController : MonoBehaviour
 
         if (isNewTask)
         {
-            StartCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.PlayerTask>(ServerConfig.PATHFORTASKCREATE, taskRequest, SavedTask, onFailedAction: UIController.ShowTaskFail));
+            CoroutineRunner.RunCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.PlayerTask>(ServerConfig.PATHFORTASKCREATE, taskRequest, SavedTask, onFailedAction: UIController.ShowTaskFail));
         }
         else
         {
-            StartCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.PlayerTask>(ServerConfig.PATHFORTASKUPDATE(CurrentTask.ID), taskRequest, SavedTask, onFailedAction: UIController.ShowTaskFail));
+            CoroutineRunner.RunCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.PlayerTask>(ServerConfig.PATHFORTASKUPDATE(CurrentTask.ID), taskRequest, SavedTask, onFailedAction: UIController.ShowTaskFail));
         }
     }
 
@@ -182,7 +182,7 @@ public class TaskOpenPanelController : MonoBehaviour
 
     public void DeleteTask()
     {
-        StartCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORTASKDELETE(CurrentTask.ID), onComplete: DeletedTask, onFailedAction: UIController.ShowTaskFail));
+        CoroutineRunner.RunCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORTASKDELETE(CurrentTask.ID), onComplete: DeletedTask, onFailedAction: UIController.ShowTaskFail));
     }
 
     private void DeletedTask(string result)

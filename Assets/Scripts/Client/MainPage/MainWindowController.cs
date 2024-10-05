@@ -73,7 +73,6 @@ public class MainWindowController : MonoBehaviour
 
     public void SortingChanged()
     {
-
         Dictionary<long, TaskDisplayHandler> newTasks = new Dictionary<long, TaskDisplayHandler>();
         switch ((TaskSortType)TaskSortDropdown.value)
         {
@@ -173,7 +172,7 @@ public class MainWindowController : MonoBehaviour
 
     private void LoadTasks()
     {
-        StartCoroutine(Server.SendGetRequest<List<Thesis_backend.Data_Structures.PlayerTask>>(ServerConfig.PATHFORTASKSQUERY, CreateTaskPrefabs, onFailedAction: ShowRequestFail));
+        CoroutineRunner.RunCoroutine(Server.SendGetRequest<List<Thesis_backend.Data_Structures.PlayerTask>>(ServerConfig.PATHFORTASKSQUERY, CreateTaskPrefabs, onFailedAction: ShowRequestFail));
     }
 
     private void ShowRequestFail(string content)
