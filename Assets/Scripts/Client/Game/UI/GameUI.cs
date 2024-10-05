@@ -145,9 +145,9 @@ public class GameUI : MonoBehaviour
         this.gameController = gameController;
     }
 
-    public async void NewGame()
+    public async void NewGame(bool save = true)
     {
-        HideGameOverScreen(false);
+        HideGameOverScreen(save);
         ingameContainer.SetActive(true);
         mainMenuContainer.SetActive(false);
         TaskScoreInGameText.text = UserData.Instance.CurrentTaskScore.ToString();
