@@ -18,6 +18,8 @@ var namespaceThesis__backend_1_1Data__Structures =
     [ "Friend", "namespaceThesis__backend_1_1Data__Structures.html#a4c3393a9cb2a72b4d735daeff4d0ea1d", null ],
     [ "set", "namespaceThesis__backend_1_1Data__Structures.html#aa44d6a0f27adec065161aeeb258e68c1", null ],
     [ "Game", "namespaceThesis__backend_1_1Data__Structures.html#abc2193c437ce44d24dbc7324b916ebc8", null ],
+    [ "GameScore", "namespaceThesis__backend_1_1Data__Structures.html#acf89e0b324eb22b08b78eccf7fa5c2e3", null ],
     [ "OwnedCar", "namespaceThesis__backend_1_1Data__Structures.html#a86066cb80bc43f93f3543295a9ea4970", null ],
-    [ "PlayerTask", "namespaceThesis__backend_1_1Data__Structures.html#ae656f3c7a1335db8207ae56dcbd213a7", null ]
+    [ "PlayerTask", "namespaceThesis__backend_1_1Data__Structures.html#ae656f3c7a1335db8207ae56dcbd213a7", null ],
+    [ "TaskHistory", "namespaceThesis__backend_1_1Data__Structures.html#a7b2e6bc0f0c4b62352bea799aab2bbaa", null ]
 ];

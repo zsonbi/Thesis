@@ -6,6 +6,7 @@ var classConfig_1_1ServerConfig =
     [ "PATHFORTASKCOMPLETE", "classConfig_1_1ServerConfig.html#a955b28390e3951d761ba63dd0ed10843", null ],
     [ "PATHFORTASKDELETE", "classConfig_1_1ServerConfig.html#a9112c3cf42da18b1222b5324f98ee40c", null ],
     [ "PATH_FOR_BUY_CAR", "classConfig_1_1ServerConfig.html#a7ac624a23651b77f05fe3dfabbd950fc", null ],
+    [ "PATH_FOR_GET_GAME_SCORES", "classConfig_1_1ServerConfig.html#ae1592f2810947e426b77b35e99934e4b", null ],
     [ "DEFAULT_TASKTYPE", "classConfig_1_1ServerConfig.html#ae695ed1003d463a61dfa9383869c6155", null ],
     [ "DEFAULT_TASKINTERVALS", "classConfig_1_1ServerConfig.html#a69bbf2a306d19fd24eba05a7ec58e501", null ],
     [ "SERVERPATH", "classConfig_1_1ServerConfig.html#aa9e50cfff68e59c43984d969588bf7e6", null ],
@@ -22,5 +23,7 @@ var classConfig_1_1ServerConfig =
     [ "PATH_FOR_DOUBLE_COINS", "classConfig_1_1ServerConfig.html#a62005209131131044f0e7cb3a153c98f", null ],
     [ "PATH_FOR_SAVE_COINS", "classConfig_1_1ServerConfig.html#aa28b72d3a2edcffeb7d4396211f0ade6", null ],
     [ "PATH_FOR_BUY_TURBO", "classConfig_1_1ServerConfig.html#ae50f59dbc4b3e7888891499ecf170f27", null ],
-    [ "PATH_FOR_BUY_IMMUNITY", "classConfig_1_1ServerConfig.html#acd7e5646d9bc5c5ff141b912271c6adc", null ]
+    [ "PATH_FOR_BUY_IMMUNITY", "classConfig_1_1ServerConfig.html#acd7e5646d9bc5c5ff141b912271c6adc", null ],
+    [ "PATH_FOR_STORE_GAME_SCORE", "classConfig_1_1ServerConfig.html#ad52c309e939c3624a944086780c0b843", null ],
+    [ "PATH_FOR_GET_TASK_HISTORIES", "classConfig_1_1ServerConfig.html#afc0ca934f99e8dc6ec51af12f74a35e0", null ]
 ];

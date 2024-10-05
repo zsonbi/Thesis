@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['game_0',['Game',['../namespaceThesis__backend_1_1Data__Structures.html#abc2193c437ce44d24dbc7324b916ebc8',1,'Thesis_backend::Data_Structures']]],
-  ['gamecontroller_1',['gamecontroller',['../classCameraScript.html#ae780df9deed7c254a17221c0dc2f198b',1,'CameraScript.gameController'],['../classGame_1_1Car.html#a98cca5b2f769481e4ac7408a0a742fd9',1,'Game.Car.gameController'],['../classGameUI.html#a932f4df2bb1e985095ca6ff0427d9cf7',1,'GameUI.gameController'],['../classGame_1_1World_1_1CarSpawner.html#a16e0ea05148bf5a83e445863abf78549',1,'Game.World.CarSpawner.gameController']]],
-  ['gameovercontainer_2',['gameOverContainer',['../classGameUI.html#a109e5ae1d753b6fc016227d3b67c9bda',1,'GameUI']]],
-  ['gameui_3',['gameUI',['../classGame_1_1GameController.html#aec4a7fe16d8f45bbba715971e3e51526',1,'Game::GameController']]],
-  ['goodtaskbutton_4',['goodTaskButton',['../classTaskOpenPanelController.html#ae473d6c892d798cb0e155e5a5935fe22',1,'TaskOpenPanelController']]],
-  ['goodtaskcount_5',['GoodTaskCount',['../classProfileHandler.html#a54c9a317b986a9030b2127e1bc5ac46a',1,'ProfileHandler']]],
-  ['grassprefab_6',['grassPrefab',['../classGame_1_1World_1_1Chunk.html#afcf6bf6be6ba7bdb0f870f6bb60af90d',1,'Game::World::Chunk']]]
+  ['filtertypedropdown_0',['filterTypeDropdown',['../classLeaderboardWindow.html#a65e698b6a6cea7f14442c2fb9022cc38',1,'LeaderboardWindow']]],
+  ['fire_5fthreshold_1',['FIRE_THRESHOLD',['../classGameConfig.html#ae7461f7cd2d9980ffbadbe707dbe3330',1,'GameConfig']]],
+  ['float_2',['float',['../classGame_1_1World_1_1Chunk.html#a0e6a5ff281afb8fd6116903dbcf40a2d',1,'Game::World::Chunk']]],
+  ['friend_3',['Friend',['../namespaceThesis__backend_1_1Data__Structures.html#a4c3393a9cb2a72b4d735daeff4d0ea1d',1,'Thesis_backend::Data_Structures']]],
+  ['friendnamelabel_4',['FriendNameLabel',['../classFriendHandler.html#a4a577fc0b09f48dce3fb23c6b202466a',1,'FriendHandler']]],
+  ['friendprefab_5',['friendPrefab',['../classFriendWindowHandler.html#acbe50994b86f49303f273b7a936a3756',1,'FriendWindowHandler']]],
+  ['friendscontainer_6',['FriendsContainer',['../classFriendWindowHandler.html#a7427725cbd2e3d3561a799f3dfd9f5d5',1,'FriendWindowHandler']]],
+  ['fullstarsprite_7',['fullStarSprite',['../classStarHandler.html#afa5b6a434226e09ea3893bd39e9c68ac',1,'StarHandler']]]
 ];

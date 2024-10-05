@@ -1,6 +1,25 @@
 var searchData=
 [
-  ['uicontroller_0',['uicontroller',['../classTaskDisplayHandler.html#a8957ebb3ef3c9bd8bd94b5ae557b85b7',1,'TaskDisplayHandler.UIController'],['../classTaskOpenPanelController.html#a345147b780c1194ca33c70c13a71df4b',1,'TaskOpenPanelController.UIController']]],
-  ['useridentificationinput_1',['userIdentificationInput',['../classFriendWindowHandler.html#ac72bb4d38dd708c83efaf789cc2304db',1,'FriendWindowHandler']]],
-  ['usernameinputtext_2',['UsernameInputText',['../classMainWindowController.html#a1d6259641a45cdad8a4ecfd78120969e',1,'MainWindowController']]]
+  ['taskclosedeventhandler_0',['TaskClosedEventHandler',['../classTaskOpenPanelController.html#abfd13ff61856b69cdf082d3b2f7a1aaf',1,'TaskOpenPanelController']]],
+  ['taskhistory_1',['TaskHistory',['../namespaceThesis__backend_1_1Data__Structures.html#a7b2e6bc0f0c4b62352bea799aab2bbaa',1,'Thesis_backend::Data_Structures']]],
+  ['taskintervals_2',['taskintervals',['../classTaskOpenPanelController.html#a022cf15c01615aab856791aa77b9bcab',1,'TaskOpenPanelController.taskIntervals'],['../classTaskOpenPanelController.html#a317d00246568f7c682c5d1c27032762b',1,'TaskOpenPanelController.TASKINTERVALS']]],
+  ['taskintervalslabel_3',['TaskIntervalsLabel',['../classTaskDisplayHandler.html#a76372ef801e0c0ff6dc206dbb3093476',1,'TaskDisplayHandler']]],
+  ['tasknameinput_4',['taskNameInput',['../classTaskOpenPanelController.html#abc961ea4fb9a9820e28284f8503eb252',1,'TaskOpenPanelController']]],
+  ['tasknamelabel_5',['TaskNameLabel',['../classTaskDisplayHandler.html#a5d15de430f131870e9206423f3875c61',1,'TaskDisplayHandler']]],
+  ['taskopenpanelcontroller_6',['taskopenpanelcontroller',['../classMainWindowController.html#a08355bb509be095b45cc8fd2619a1dc0',1,'MainWindowController.taskOpenPanelController'],['../classTaskDisplayHandler.html#ac368b92edad55d0082921dbbd38f4d1c',1,'TaskDisplayHandler.taskOpenPanelController']]],
+  ['taskparent_7',['TaskParent',['../classMainWindowController.html#a43cb702016e340c7dce96a83f9d837b7',1,'MainWindowController']]],
+  ['taskprefab_8',['TaskPrefab',['../classMainWindowController.html#a4d6aca2fea0b8edefea03fe49dfa1229',1,'MainWindowController']]],
+  ['taskscoreingametext_9',['TaskScoreInGameText',['../classGameUI.html#a7cff21c0601d48f4d83277d637748063',1,'GameUI']]],
+  ['tasksopenpanel_10',['tasksOpenPanel',['../classTaskOpenPanelController.html#a5296f8a4492644b074eb63257d82ddec',1,'TaskOpenPanelController']]],
+  ['tasksortdropdown_11',['TaskSortDropdown',['../classMainWindowController.html#a6b8aece05b416b6a2aad1b90733bcb4e',1,'MainWindowController']]],
+  ['threewayroadprefab_12',['threeWayRoadPrefab',['../classGame_1_1World_1_1Chunk.html#a50fb8bf02e6fe0f1aed259fd03e25c29',1,'Game::World::Chunk']]],
+  ['tier1spawnertimer_13',['tier1SpawnerTimer',['../classGame_1_1World_1_1CarSpawner.html#a23d129767331ac8528e9a46c2d197c8a',1,'Game::World::CarSpawner']]],
+  ['tier2spawnertimer_14',['tier2SpawnerTimer',['../classGame_1_1World_1_1CarSpawner.html#a1003d6d74287406eb601b6d9d0e360c7',1,'Game::World::CarSpawner']]],
+  ['tier3spawnertimer_15',['tier3SpawnerTimer',['../classGame_1_1World_1_1CarSpawner.html#a93141b0627ec47b261909bcfa78b0291',1,'Game::World::CarSpawner']]],
+  ['timereamaining_16',['TimeReamaining',['../classGame_1_1PlayerCar_1_1PoliceContainer.html#a531bbac045cd1299035956978a10f63b',1,'Game::PlayerCar::PoliceContainer']]],
+  ['totalscore_17',['TotalScore',['../classProfileHandler.html#a3cdc112503a9d3c334211969dbfb6b70',1,'ProfileHandler']]],
+  ['totaltaskcount_18',['TotalTaskCount',['../classProfileHandler.html#ad1532825edd16d5ee01964e31a0c5163',1,'ProfileHandler']]],
+  ['turbo_5fcost_19',['TURBO_COST',['../classGameConfig.html#a82923a004caf0dae6749854434d475fe',1,'GameConfig']]],
+  ['turbo_5fduration_20',['TURBO_DURATION',['../classGameConfig.html#a72acd18d4355d4e978281d7c89cd1ff7',1,'GameConfig']]],
+  ['turbotimer_21',['turboTimer',['../classGame_1_1PlayerCar.html#af6f3c51a0bf524f9f006962da39e3198',1,'Game::PlayerCar']]]
 ];

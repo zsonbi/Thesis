@@ -1,5 +1,29 @@
 var searchData=
 [
-  ['nearbychunks_0',['nearbyChunks',['../classGame_1_1World_1_1RoadGenerator.html#a1682bc622be0f6e5a30ff28d4d9d3291',1,'Game::World::RoadGenerator']]],
-  ['numberofplacedroads_1',['numberOfPlacedRoads',['../classGame_1_1World_1_1RoadGenerator.html#a8fe39641e0201cc241dc19e833d74003',1,'Game::World::RoadGenerator']]]
+  ['m_5fbraketorque_0',['m_BrakeTorque',['../classGame_1_1CarController.html#af92d677251871a31cdbd92e7d70f5de7',1,'Game::CarController']]],
+  ['m_5fcardrivetype_1',['m_CarDriveType',['../classGame_1_1CarController.html#a78c4889d55407451822ab79321661819',1,'Game::CarController']]],
+  ['m_5fcentreofmassoffset_2',['m_CentreOfMassOffset',['../classGame_1_1CarController.html#a5e66e9d82bcfb76540fa189cf783a754',1,'Game::CarController']]],
+  ['m_5fcurrenttorque_3',['m_CurrentTorque',['../classGame_1_1CarController.html#a819fbcd27757585411b18de4cca1f5bb',1,'Game::CarController']]],
+  ['m_5fdownforce_4',['m_Downforce',['../classGame_1_1CarController.html#adea0b7bcc811f4af108cf855d6e38d5e',1,'Game::CarController']]],
+  ['m_5ffulltorqueoverallwheels_5',['m_FullTorqueOverAllWheels',['../classGame_1_1CarController.html#a59d077b5936bb7ca98e482f0efd47a34',1,'Game::CarController']]],
+  ['m_5fgearfactor_6',['m_GearFactor',['../classGame_1_1CarController.html#a951fa331267a042dd7bd339f80c051b0',1,'Game::CarController']]],
+  ['m_5fgearnum_7',['m_GearNum',['../classGame_1_1CarController.html#a9ca62f4d44210303c1fa2d47ed6cc371',1,'Game::CarController']]],
+  ['m_5fmaxhandbraketorque_8',['m_MaxHandbrakeTorque',['../classGame_1_1CarController.html#a3e5943f599f5e3c901eb3fa341b4d9da',1,'Game::CarController']]],
+  ['m_5fmaximumsteerangle_9',['m_MaximumSteerAngle',['../classGame_1_1CarController.html#adf268773b4505a96339c3018976adaa0',1,'Game::CarController']]],
+  ['m_5foldrotation_10',['m_OldRotation',['../classGame_1_1CarController.html#a47d26242a6852ad49d94ac9a5e26d4fe',1,'Game::CarController']]],
+  ['m_5fpos_11',['m_Pos',['../classGame_1_1CarController.html#a00e924a0fb1f86bc8171e6568bf87e91',1,'Game::CarController']]],
+  ['m_5fprevpos_12',['m_Prevpos',['../classGame_1_1CarController.html#a6ab5cea29e522609c3b4043f495ba0a5',1,'Game::CarController']]],
+  ['m_5freversetorque_13',['m_ReverseTorque',['../classGame_1_1CarController.html#abc04383e322011e4a34dc2c3a01ba214',1,'Game::CarController']]],
+  ['m_5frigidbody_14',['m_Rigidbody',['../classGame_1_1CarController.html#afd8d5310fca110cdc5b4291c176af212',1,'Game::CarController']]],
+  ['m_5fsliplimit_15',['m_SlipLimit',['../classGame_1_1CarController.html#a5099670066b9a4d06b6b2eda1c514b25',1,'Game::CarController']]],
+  ['m_5fspeedtype_16',['m_SpeedType',['../classGame_1_1CarController.html#ab861b9c6fa5a725460e398a510ec35d3',1,'Game::CarController']]],
+  ['m_5fsteerangle_17',['m_SteerAngle',['../classGame_1_1CarController.html#a668b8439a2b56186422d5423dac7c0f5',1,'Game::CarController']]],
+  ['m_5fsteerhelper_18',['m_SteerHelper',['../classGame_1_1CarController.html#a5465b2e8b7b0929cbd26a18bd5667705',1,'Game::CarController']]],
+  ['m_5ftopspeed_19',['m_Topspeed',['../classGame_1_1CarController.html#a33cf51f656f11cc15435dd6f80e1b850',1,'Game::CarController']]],
+  ['m_5ftractioncontrol_20',['m_TractionControl',['../classGame_1_1CarController.html#aab3325923b9a3f88bebe6db97df30cfb',1,'Game::CarController']]],
+  ['m_5fwheelcolliders_21',['m_WheelColliders',['../classGame_1_1CarController.html#ae129117a898e6445c1284efadf482067',1,'Game::CarController']]],
+  ['mainmenucontainer_22',['mainMenuContainer',['../classGameUI.html#aa76f74d7c8679b04e74043f6e18474e9',1,'GameUI']]],
+  ['modalcontenttext_23',['ModalContentText',['../classModalWindow.html#aeca4ae4bd865300df08b118e4b03ae9c',1,'ModalWindow']]],
+  ['modaltitletext_24',['ModalTitleText',['../classModalWindow.html#aac919191f446c3687a66a0e8b4ecadcd',1,'ModalWindow']]],
+  ['modalwindow_25',['modalwindow',['../classGameUI.html#aed6d780e8f4fa0d68dec75d22eff886e',1,'GameUI.ModalWindow'],['../classLeaderboardWindow.html#ae21adde255986c9832b73add0ff98c72',1,'LeaderboardWindow.ModalWindow'],['../classShopWindow.html#a2fc748b2393664af503a1938fb2092d5',1,'ShopWindow.ModalWindow'],['../classMainWindowController.html#aeb17896f881a53dd45e25c61f26bab3b',1,'MainWindowController.ModalWindow'],['../classFriendWindowHandler.html#a6de3cd3d9c3836afc91f609b26e444f1',1,'FriendWindowHandler.ModalWindow'],['../classUserController.html#a0fcf36dbe7a418f491ec58e566aa8c5b',1,'UserController.ModalWindow']]]
 ];

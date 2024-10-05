@@ -1,19 +1,12 @@
 var searchData=
 [
-  ['id_0',['id',['../classUser_1_1UserData.html#ac6c907f6c1f72fb15cef61427abf4a8d',1,'User.UserData.Id'],['../classShopItem.html#af35c1b9c9fcf5308aaf9e07b20d35e7d',1,'ShopItem.Id']]],
-  ['immune_1',['Immune',['../classGame_1_1PlayerCar.html#aec160d9c49d7fe224aa115e3a45479d7',1,'Game::PlayerCar']]],
-  ['immunetimer_2',['immuneTimer',['../classGame_1_1PlayerCar.html#a8ea82c0981aa2bbba3260ea08556410b',1,'Game::PlayerCar']]],
-  ['immunity_5fcost_3',['IMMUNITY_COST',['../classGameConfig.html#a24f1e892aace12d87047354901323ec3',1,'GameConfig']]],
-  ['immunity_5fduration_4',['IMMUNITY_DURATION',['../classGameConfig.html#a609977a6f4bf3b40ff292fd47b73a9fa',1,'GameConfig']]],
-  ['increasecoincount_5',['IncreaseCoinCount',['../classGame_1_1GameController.html#ae085aab3a6eb97e1ed92c1fc0f1adc7f',1,'Game::GameController']]],
-  ['infamygameovertext_6',['InfamyGameOverText',['../classGameUI.html#aa8e76e961829a93e64faeb9e5f65c6bb',1,'GameUI']]],
-  ['infamyingametext_7',['InfamyInGameText',['../classGameUI.html#a98156491737508882846fa4f9b4ee2de',1,'GameUI']]],
-  ['ingamecontainer_8',['ingameContainer',['../classGameUI.html#aa87d6d5f2504f45f0d15aa727e409995',1,'GameUI']]],
-  ['init_9',['init',['../classGameUI.html#a86e861e18879f93819ab1feac66f2f22',1,'GameUI.Init()'],['../classUser_1_1UserData.html#abb372911b5e49023a977bd064f46bb6e',1,'User.UserData.Init()'],['../classShopItem.html#a76f9342f9bf8a0c4a920c83271456e28',1,'ShopItem.Init()'],['../classGame_1_1Car.html#a73919d2b4768ace830efe5e84cb3e0d5',1,'Game.Car.Init()']]],
-  ['initchunk_10',['InitChunk',['../classGame_1_1World_1_1Chunk.html#a16255274ddf726bfa6e345189459e07d',1,'Game::World::Chunk']]],
-  ['initunitaskloop_11',['InitUniTaskLoop',['../classGame_1_1World_1_1Chunk.html#a40aa70982f2ae4ecb1cbf4ada9bf9e76',1,'Game::World::Chunk']]],
-  ['initvalues_12',['initvalues',['../classFriendHandler.html#a89b20a1b9aad9bb9eb0a69781ed1c7ba',1,'FriendHandler.InitValues()'],['../classTaskDisplayHandler.html#a4234bef95ed8e26bee9d674c7cd963e7',1,'TaskDisplayHandler.InitValues()']]],
-  ['instance_13',['instance',['../classUser_1_1UserData.html#aac822a62e0ef2a7d0dbe623643146faa',1,'User.UserData.Instance'],['../classUser_1_1UserData.html#a0e7511fcf06639282624b12e673442e3',1,'User.UserData.instance']]],
-  ['isnewtask_14',['isNewTask',['../classTaskOpenPanelController.html#ac0fa9db0872e1f4e4872117d5420ea42',1,'TaskOpenPanelController']]],
-  ['isvalidemail_15',['IsValidEmail',['../classUserController.html#a4ddf4a375cad51a8784cb9be7ba11b23',1,'UserController']]]
+  ['health_0',['health',['../classGame_1_1Car.html#a2efe71ea0ced2d5a3620311ba0c9108d',1,'Game.Car.Health'],['../classGame_1_1Car.html#afea6ecea0560b222f38ce488a2115453',1,'Game.Car.health']]],
+  ['hide_1',['hide',['../classLeaderboardWindow.html#a98b1484eccc4867cfdcb435027f3607b',1,'LeaderboardWindow.Hide()'],['../classShopWindow.html#a527efca5ca70960efef5b5928525a992',1,'ShopWindow.Hide()'],['../classFriendWindowHandler.html#a290cf54e8b7ecd1ae2d37c5c4d18623d',1,'FriendWindowHandler.Hide()'],['../classModalWindow.html#a34671e7d80905810cf4f7d6657a125f3',1,'ModalWindow.Hide()'],['../classProfileHandler.html#a36b13cdfdb3a1088bed77c89da2bc248',1,'ProfileHandler.Hide()']]],
+  ['hidechunk_2',['hidechunk',['../classGame_1_1World_1_1Chunk.html#a118e0c25d254444e6663404fd61749d9',1,'Game.World.Chunk.HideChunk()'],['../classGame_1_1World_1_1GameWorld.html#ae827c1689140d8e00bfbd0845822793f',1,'Game.World.GameWorld.HideChunk()']]],
+  ['hidegameoverscreen_3',['HideGameOverScreen',['../classGameUI.html#a671890c1f7adf6b3aea9563222efdf41',1,'GameUI']]],
+  ['hideshopwindow_4',['HideShopWindow',['../classGameUI.html#a33340be133aebff13046c80eb640db13',1,'GameUI']]],
+  ['hospital_5',['Hospital',['../BuildingType_8cs.html#aba2b45f536f3c9719aea96bb472784a4acc2ab63fd3eb564be64b4f21bd083bc7',1,'BuildingType.cs']]],
+  ['hourly_6',['Hourly',['../TaskIntervals_8cs.html#a4ba022096603875ae402bb772ec906f9a769cb50c95fd3a43c659aa73aba99e5b',1,'TaskIntervals.cs']]],
+  ['house_7',['House',['../BuildingType_8cs.html#aba2b45f536f3c9719aea96bb472784a4aaebfe46795575772b7cf413e25caeab9',1,'BuildingType.cs']]],
+  ['house2_8',['House2',['../BuildingType_8cs.html#aba2b45f536f3c9719aea96bb472784a4add99512caa8b7a68249e8b1296980a6d',1,'BuildingType.cs']]]
 ];

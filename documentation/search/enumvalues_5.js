@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['goodtask_0',['GoodTask',['../TaskType_8cs.html#aa7f5c268cc89ed3067c26142ca3e16d7a4cbd49fac65e8fe8aa9953b5d44a8047',1,'TaskType.cs']]],
-  ['grass_1',['Grass',['../ChunkCellType_8cs.html#a49876fbcd15399310f369ea380f29c6baaac9a63596f76a62bb9f61a5dd7c0d25',1,'ChunkCellType.cs']]]
+  ['fire_0',['Fire',['../namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578abd2b7e5f85a6ea65065c4ebc6d7c95bb',1,'DataTypes']]]
 ];

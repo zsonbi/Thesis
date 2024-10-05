@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zoffset_0',['ZOffset',['../classGame_1_1World_1_1Chunk.html#aea865eea078579088f52d2b98413b69b',1,'Game::World::Chunk']]]
+  ['xoffset_0',['XOffset',['../classGame_1_1World_1_1Chunk.html#af8b1726b0f705ddfaca6df2a0b27682c',1,'Game::World::Chunk']]]
 ];

@@ -156,7 +156,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   19</span>        this.gameObject.SetActive(<span class="keyword">true</span>);</div>
 <div class="line"><span class="lineno">   20</span>    }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="UserController_8cs_source.html#l00083">UserController.SendRegister()</a>, <a class="el" href="ModalWindowScript_8cs_source.html#l00022">Show()</a>, <a class="el" href="UserController_8cs_source.html#l00113">UserController.ShowLoginError()</a>, <a class="el" href="UserController_8cs_source.html#l00108">UserController.ShowRegisterError()</a>, <a class="el" href="GameUI_8cs_source.html#l00149">GameUI.ShowRequestFail()</a>, <a class="el" href="ShopWindow_8cs_source.html#l00039">ShopWindow.ShowRequestFail()</a>, <a class="el" href="MainWindowController_8cs_source.html#l00179">MainWindowController.ShowRequestFail()</a>, <a class="el" href="FriendWindowHandler_8cs_source.html#l00047">FriendWindowHandler.ShowRequestFail()</a>, and <a class="el" href="MainWindowController_8cs_source.html#l00184">MainWindowController.ShowTaskFail()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="UserController_8cs_source.html#l00083">UserController.SendRegister()</a>, <a class="el" href="ModalWindowScript_8cs_source.html#l00022">Show()</a>, <a class="el" href="UserController_8cs_source.html#l00113">UserController.ShowLoginError()</a>, <a class="el" href="UserController_8cs_source.html#l00108">UserController.ShowRegisterError()</a>, <a class="el" href="GameUI_8cs_source.html#l00158">GameUI.ShowRequestFail()</a>, <a class="el" href="LeaderboardWindow_8cs_source.html#l00067">LeaderboardWindow.ShowRequestFail()</a>, <a class="el" href="ShopWindow_8cs_source.html#l00039">ShopWindow.ShowRequestFail()</a>, <a class="el" href="MainWindowController_8cs_source.html#l00178">MainWindowController.ShowRequestFail()</a>, <a class="el" href="FriendWindowHandler_8cs_source.html#l00047">FriendWindowHandler.ShowRequestFail()</a>, and <a class="el" href="MainWindowController_8cs_source.html#l00183">MainWindowController.ShowTaskFail()</a>.</p>
 
 </div>
 </div>
@@ -202,11 +202,16 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ModalWindowScript_8cs_source.html#l00022">22</a> of file <a class="el" href="ModalWindowScript_8cs_source.html">ModalWindowScript.cs</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   23</span>    {</div>
-<div class="line"><span class="lineno">   24</span>        this.ModalTitleText.text = title;</div>
-<div class="line"><span class="lineno">   25</span>        this.ModalContentText.text = content;</div>
-<div class="line"><span class="lineno">   26</span>        this.onOkAction = <a class="code hl_variable" href="classModalWindow.html#a71dd3e1790029da28d45d0e19defd7da">onOkAction</a>;</div>
-<div class="line"><span class="lineno">   27</span>        <a class="code hl_function" href="classModalWindow.html#ac60b5a6f2ab5bee74053e90f99c9d475">Show</a>();</div>
-<div class="line"><span class="lineno">   28</span>    }</div>
+<div class="line"><span class="lineno">   24</span>        <span class="keywordflow">if</span> (this.gameObject is <span class="keyword">null</span>)</div>
+<div class="line"><span class="lineno">   25</span>        {</div>
+<div class="line"><span class="lineno">   26</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   27</span>        }</div>
+<div class="line"><span class="lineno">   28</span> </div>
+<div class="line"><span class="lineno">   29</span>        this.ModalTitleText.text = title;</div>
+<div class="line"><span class="lineno">   30</span>        this.ModalContentText.text = content;</div>
+<div class="line"><span class="lineno">   31</span>        this.onOkAction = <a class="code hl_variable" href="classModalWindow.html#a71dd3e1790029da28d45d0e19defd7da">onOkAction</a>;</div>
+<div class="line"><span class="lineno">   32</span>        <a class="code hl_function" href="classModalWindow.html#ac60b5a6f2ab5bee74053e90f99c9d475">Show</a>();</div>
+<div class="line"><span class="lineno">   33</span>    }</div>
 <div class="ttc" id="aclassModalWindow_html_a71dd3e1790029da28d45d0e19defd7da"><div class="ttname"><a href="classModalWindow.html#a71dd3e1790029da28d45d0e19defd7da">ModalWindow.onOkAction</a></div><div class="ttdeci">Action onOkAction</div><div class="ttdef"><b>Definition</b> <a href="ModalWindowScript_8cs_source.html#l00015">ModalWindowScript.cs:15</a></div></div>
 <div class="ttc" id="aclassModalWindow_html_ac60b5a6f2ab5bee74053e90f99c9d475"><div class="ttname"><a href="classModalWindow.html#ac60b5a6f2ab5bee74053e90f99c9d475">ModalWindow.Show</a></div><div class="ttdeci">void Show()</div><div class="ttdef"><b>Definition</b> <a href="ModalWindowScript_8cs_source.html#l00017">ModalWindowScript.cs:17</a></div></div>
 </div><!-- fragment -->
@@ -237,12 +242,16 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ModalWindowScript_8cs_source.html#l00030">30</a> of file <a class="el" href="ModalWindowScript_8cs_source.html">ModalWindowScript.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   31</span>    {</div>
-<div class="line"><span class="lineno">   32</span>        this.gameObject.SetActive(<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">   33</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="ModalWindowScript_8cs_source.html#l00035">35</a> of file <a class="el" href="ModalWindowScript_8cs_source.html">ModalWindowScript.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>    {</div>
+<div class="line"><span class="lineno">   37</span>        <span class="keywordflow">if</span> (this.gameObject is <span class="keyword">null</span>)</div>
+<div class="line"><span class="lineno">   38</span>        {</div>
+<div class="line"><span class="lineno">   39</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   40</span>        }</div>
+<div class="line"><span class="lineno">   41</span>        this.gameObject.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   42</span>    }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="ModalWindowScript_8cs_source.html#l00035">ConfirmButtonClick()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ModalWindowScript_8cs_source.html#l00044">ConfirmButtonClick()</a>.</p>
 
 </div>
 </div>
@@ -269,17 +278,17 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ModalWindowScript_8cs_source.html#l00035">35</a> of file <a class="el" href="ModalWindowScript_8cs_source.html">ModalWindowScript.cs</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   36</span>    {</div>
-<div class="line"><span class="lineno">   37</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classModalWindow.html#a71dd3e1790029da28d45d0e19defd7da">onOkAction</a> is not <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   38</span>        {</div>
-<div class="line"><span class="lineno">   39</span>            <a class="code hl_variable" href="classModalWindow.html#a71dd3e1790029da28d45d0e19defd7da">onOkAction</a>();</div>
-<div class="line"><span class="lineno">   40</span>        }</div>
-<div class="line"><span class="lineno">   41</span>        <a class="code hl_function" href="classModalWindow.html#a34671e7d80905810cf4f7d6657a125f3">Hide</a>();</div>
-<div class="line"><span class="lineno">   42</span>    }</div>
-<div class="ttc" id="aclassModalWindow_html_a34671e7d80905810cf4f7d6657a125f3"><div class="ttname"><a href="classModalWindow.html#a34671e7d80905810cf4f7d6657a125f3">ModalWindow.Hide</a></div><div class="ttdeci">void Hide()</div><div class="ttdef"><b>Definition</b> <a href="ModalWindowScript_8cs_source.html#l00030">ModalWindowScript.cs:30</a></div></div>
+<p class="definition">Definition at line <a class="el" href="ModalWindowScript_8cs_source.html#l00044">44</a> of file <a class="el" href="ModalWindowScript_8cs_source.html">ModalWindowScript.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>    {</div>
+<div class="line"><span class="lineno">   46</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classModalWindow.html#a71dd3e1790029da28d45d0e19defd7da">onOkAction</a> is not <span class="keyword">null</span>)</div>
+<div class="line"><span class="lineno">   47</span>        {</div>
+<div class="line"><span class="lineno">   48</span>            <a class="code hl_variable" href="classModalWindow.html#a71dd3e1790029da28d45d0e19defd7da">onOkAction</a>();</div>
+<div class="line"><span class="lineno">   49</span>        }</div>
+<div class="line"><span class="lineno">   50</span>        <a class="code hl_function" href="classModalWindow.html#a34671e7d80905810cf4f7d6657a125f3">Hide</a>();</div>
+<div class="line"><span class="lineno">   51</span>    }</div>
+<div class="ttc" id="aclassModalWindow_html_a34671e7d80905810cf4f7d6657a125f3"><div class="ttname"><a href="classModalWindow.html#a34671e7d80905810cf4f7d6657a125f3">ModalWindow.Hide</a></div><div class="ttdeci">void Hide()</div><div class="ttdef"><b>Definition</b> <a href="ModalWindowScript_8cs_source.html#l00035">ModalWindowScript.cs:35</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ModalWindowScript_8cs_source.html#l00030">Hide()</a>, and <a class="el" href="ModalWindowScript_8cs_source.html#l00015">onOkAction</a>.</p>
+<p class="reference">References <a class="el" href="ModalWindowScript_8cs_source.html#l00035">Hide()</a>, and <a class="el" href="ModalWindowScript_8cs_source.html#l00015">onOkAction</a>.</p>
 
 </div>
 </div>
@@ -354,7 +363,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ModalWindowScript_8cs_source.html#l00015">15</a> of file <a class="el" href="ModalWindowScript_8cs_source.html">ModalWindowScript.cs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ModalWindowScript_8cs_source.html#l00035">ConfirmButtonClick()</a>, and <a class="el" href="ModalWindowScript_8cs_source.html#l00022">Show()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ModalWindowScript_8cs_source.html#l00044">ConfirmButtonClick()</a>, and <a class="el" href="ModalWindowScript_8cs_source.html#l00022">Show()</a>.</p>
 
 </div>
 </div>

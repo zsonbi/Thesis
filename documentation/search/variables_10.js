@@ -1,25 +1,9 @@
 var searchData=
 [
-  ['scaleamount_0',['ScaleAmount',['../classGame_1_1World_1_1GameWorld.html#ae1a35f705f296cf00c5a12044b8f4f9b',1,'Game::World::GameWorld']]],
-  ['scorecounter_1',['ScoreCounter',['../classGame_1_1GameController.html#aefe69ae4f272fa03c90f236f5e9f472e',1,'Game::GameController']]],
-  ['scorelabeltext_2',['ScoreLabelText',['../classFriendHandler.html#ac64f979c137a9c135a627a3cb285d034',1,'FriendHandler']]],
-  ['scoretext_3',['ScoreText',['../classFriendHandler.html#a610bd1786d38bfeec8dc82639eb7a10f',1,'FriendHandler']]],
-  ['serverpath_4',['SERVERPATH',['../classConfig_1_1ServerConfig.html#aa9e50cfff68e59c43984d969588bf7e6',1,'Config::ServerConfig']]],
-  ['set_5',['set',['../namespaceThesis__backend_1_1Data__Structures.html#aa44d6a0f27adec065161aeeb258e68c1',1,'Thesis_backend::Data_Structures']]],
-  ['shopitemprefab_6',['ShopItemPrefab',['../classShopWindow.html#a8f4a96eae979285b0c7e5db037923665',1,'ShopWindow']]],
-  ['shopitemscache_7',['shopItemsCache',['../classShopWindow.html#a92bd226c2ce12df91fd1d8835a2f292a',1,'ShopWindow']]],
-  ['shopitemsprites_8',['ShopItemSprites',['../classShopWindow.html#a285846c6ebb3da82667203c2ee7fd1e0',1,'ShopWindow']]],
-  ['shopparent_9',['ShopParent',['../classShopWindow.html#a0e11e0f93f9994c22b89c335f227d9f9',1,'ShopWindow']]],
-  ['shopwindow_10',['shopwindow',['../classGameUI.html#a06be0f7dedf5cd6d65829d8c81b46467',1,'GameUI.ShopWindow'],['../classShopItem.html#a20b400f4db0c3188465a5788796cf084',1,'ShopItem.shopWindow']]],
-  ['showpending_11',['showPending',['../classFriendWindowHandler.html#a995816a4d5c11cca060a0c34688a0b43',1,'FriendWindowHandler']]],
-  ['size_12',['size',['../classGame_1_1World_1_1RoadGenerator.html#a3790c6d7db157b46eccff1e06fd8ca89',1,'Game::World::RoadGenerator']]],
-  ['skindisplay_13',['SkinDisplay',['../classGameUI.html#a414f810ba5e6b4a81a14c8e125a7f28f',1,'GameUI']]],
-  ['skinid_14',['SkinId',['../classGame_1_1PlayerCar.html#afc6d5f893ae228c8a4a411284df9c7c7',1,'Game::PlayerCar']]],
-  ['smoke_5fthreshold_15',['SMOKE_THRESHOLD',['../classGameConfig.html#aaa4c6f88644eeb0a06821ca198931d12',1,'GameConfig']]],
-  ['spawnintervalstier1_16',['spawnIntervalsTier1',['../classGame_1_1World_1_1CarSpawner.html#a5bef35ae7b6ec689a427e1a82a56a568',1,'Game::World::CarSpawner']]],
-  ['spawnintervalstier2_17',['spawnIntervalsTier2',['../classGame_1_1World_1_1CarSpawner.html#ae30100f5c4e5a3a209fac6fa01664846',1,'Game::World::CarSpawner']]],
-  ['spawnintervalstier3_18',['spawnIntervalsTier3',['../classGame_1_1World_1_1CarSpawner.html#aa4b605aa319424b2d4a33b565a64b1c6',1,'Game::World::CarSpawner']]],
-  ['starhandler_19',['starHandler',['../classGameUI.html#ac84a5b6b36b87b3be0a5ea1379a7431f',1,'GameUI']]],
-  ['stars_20',['Stars',['../classStarHandler.html#ad7b3412a5e6b5859621cc32652e4a6ff',1,'StarHandler']]],
-  ['straightroadprefab_21',['straightRoadPrefab',['../classGame_1_1World_1_1Chunk.html#add690b20dc02d37c97bd78c4a257d065',1,'Game::World::Chunk']]]
+  ['randomizeoffset_0',['RandomizeOffset',['../classGame_1_1World_1_1Chunk.html#a1fde640c5dab35b0c3cd62e2baa19745',1,'Game::World::Chunk']]],
+  ['registerpanel_1',['RegisterPanel',['../classUserController.html#a692c4e9c9007889fbab83b5b2567b847',1,'UserController']]],
+  ['remainingtimelabel_2',['RemainingTimeLabel',['../classTaskDisplayHandler.html#aaf0263a6a67f0d0f1feedf13e686c56b',1,'TaskDisplayHandler']]],
+  ['roadgenerator_3',['roadGenerator',['../classGame_1_1World_1_1Chunk.html#a6177a02fdbf5c1b5f31085368ec44c88',1,'Game::World::Chunk']]],
+  ['roads_4',['roads',['../classGame_1_1World_1_1Chunk.html#a5dd795d2a271645312c82470e4ef8b4d',1,'Game::World::Chunk']]],
+  ['rowcount_5',['rowCount',['../classBuilding.html#aa80c140b3bdf134a2529c59e68b31c91',1,'Building']]]
 ];
