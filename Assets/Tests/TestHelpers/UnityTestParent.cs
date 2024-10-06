@@ -92,22 +92,18 @@ namespace Tests
         }
 
         [UnitySetUp]
-        public IEnumerator Setup()
+        public new IEnumerator Setup()
         {
+            base.Setup();
             yield return new WaitForSeconds(1f);
         }
 
         [UnityTearDown]
-        public IEnumerator TearDown()
+        public new IEnumerator TearDown()
         {
-            CoroutineRunner.StopAllCoroutines();
-            AsyncOperation asyncUnload = SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().name);
-            while (!asyncUnload.isDone)
-            {
-                yield return null; // Wait for the scene to fully unload
-            }
+            base.TearDown();
+            CoroutineRunner.StopAllCoroutinesGlobal();
 
-            Debug.Log("Scene unloaded successfully in Teardown");
             yield return new WaitForSeconds(1f);
         }
     }
