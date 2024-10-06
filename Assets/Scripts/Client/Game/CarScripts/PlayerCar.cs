@@ -136,7 +136,7 @@ namespace Game
             float turning = 0;
             float accel = 0;
             this.keyboard = Keyboard.current;
-            // pass the input to the car!
+            // pass the input to the car
             if (this.keyboard is not null)
             {
                 InputSystem.Update();

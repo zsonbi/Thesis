@@ -1418,7 +1418,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreParent: {fileID: 2018991255362602224}
   filterTypeDropdown: {fileID: 6089979384810119385}
-  ModalWindow: {fileID: 1968555213568195257}
+  ModalWindow: {fileID: 0}
   LeaderboardItemPrefab: {fileID: 7898560835448612094, guid: 4f03f7e3a264da248a49bfdb11b677d8, type: 3}
 --- !u!1 &1284424801503490361
 GameObject:
@@ -3515,7 +3515,7 @@ MonoBehaviour:
   CoinInGameText: {fileID: 6262603162695825714}
   starHandler: {fileID: 7303517824130499590}
   DoubleCoinButon: {fileID: 5336231056034358317}
-  ModalWindow: {fileID: 1968555213568195257}
+  ModalWindow: {fileID: 3610211448257252965}
 --- !u!114 &270419809076800361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5988,7 +5988,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7457f9a830705a74196eaf6a6810dcea, type: 3}
   - {fileID: 21300000, guid: cfbbf8ec0809da640b03ebc760d11507, type: 3}
   CoinText: {fileID: 1880803990328481455}
-  ModalWindow: {fileID: 1968555213568195257}
+  ModalWindow: {fileID: 3610211448257252965}
 --- !u!1 &6323611913736927514
 GameObject:
   m_ObjectHideFlags: 0
@@ -6113,7 +6113,7 @@ MonoBehaviour:
       - m_Target: {fileID: 9028877370878348287}
         m_TargetAssemblyTypeName: GameUI, ThesisScripts
         m_MethodName: NewGame
-        m_Mode: 1
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6514,26 +6514,14 @@ MonoBehaviour:
       - m_Target: {fileID: 9028877370878348287}
         m_TargetAssemblyTypeName: GameUI, ThesisScripts
         m_MethodName: NewGame
-        m_Mode: 1
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 9028877370878348287}
-        m_TargetAssemblyTypeName: GameUI, ThesisScripts
-        m_MethodName: SaveGameResult
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &6509666487992067703
 GameObject:
@@ -8900,15 +8888,15 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e29da96c463b21d41bd832be152c90e6, type: 3}
---- !u!114 &1968555213568195257 stripped
+--- !u!114 &3610211448257252965 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3783703360366904846, guid: e29da96c463b21d41bd832be152c90e6, type: 3}
+  m_CorrespondingSourceObject: {fileID: 2146476007904424658, guid: e29da96c463b21d41bd832be152c90e6, type: 3}
   m_PrefabInstance: {fileID: 3446340727060479159}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ee2fe740d6a28e4a8b595d9aea4f251, type: 3}
+  m_Script: {fileID: 11500000, guid: 36e56eb51d09e1a4e932fdf1f40a157a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!224 &6813959677047701523 stripped
