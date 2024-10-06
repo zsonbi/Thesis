@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-public class LeaderboardItem : MonoBehaviour
+public class LeaderboardItem : ThreadSafeMonoBehaviour
 {
     [SerializeField]
     private TMP_Text playerNameText;

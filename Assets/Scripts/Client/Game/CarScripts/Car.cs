@@ -10,7 +10,7 @@ using UnityEngine;
 namespace Game
 {
     [RequireComponent(typeof(CarController))]
-    public class Car : MonoBehaviour
+    public class Car : ThreadSafeMonoBehaviour
     {
         protected GameController gameController;
         protected CarController carController;
@@ -51,7 +51,7 @@ namespace Game
         protected bool ChangeChunkIfNeeded()
         {
             Chunk newChunk = this.gameController.World.GetChunk(this.gameObject.transform.position);
-            if (lastChunk != newChunk)
+            if (lastChunk != newChunk && newChunk != null)
             {
                 ChunkChanged(newChunk);
 

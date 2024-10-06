@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class ModalWindow : MonoBehaviour
+public class ModalWindow : ThreadSafeMonoBehaviour
 {
     [SerializeField]
     private TMP_Text ModalTitleText;

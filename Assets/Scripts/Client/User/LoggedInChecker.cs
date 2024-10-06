@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using User;
 
-public class LoggedInChecker : MonoBehaviour
+public class LoggedInChecker : ThreadSafeMonoBehaviour
 {
     // Start is called before the first frame update
     private void Awake()

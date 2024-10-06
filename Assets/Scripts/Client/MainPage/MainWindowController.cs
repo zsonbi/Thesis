@@ -9,8 +9,9 @@ using Thesis_backend.Data_Structures;
 using DataTypes;
 using System.Linq;
 using System.Threading.Tasks;
+using System;
 
-public class MainWindowController : MonoBehaviour
+public class MainWindowController : ThreadSafeMonoBehaviour
 {
     [SerializeField]
     private TMP_Text UsernameInputText;
@@ -166,13 +167,20 @@ public class MainWindowController : MonoBehaviour
 
     public GameObject CreateTask(PlayerTask taskContainer)
     {
-        GameObject task = Instantiate(TaskPrefab, TaskParent.transform);
-        TaskDisplayHandler taskComponent = task.GetComponent<TaskDisplayHandler>();
+        try
+        {
+            GameObject task = Instantiate(TaskPrefab, TaskParent.transform);
+            TaskDisplayHandler taskComponent = task.GetComponent<TaskDisplayHandler>();
 
-        taskComponent.InitValues(taskContainer, taskOpenPanelController, this);
+            taskComponent.InitValues(taskContainer, taskOpenPanelController, this);
 
-        Tasks.Add(taskContainer.ID, taskComponent);
-        return task;
+            Tasks.Add(taskContainer.ID, taskComponent);
+            return task;
+        }
+        catch (MissingReferenceException e)
+        {
+            return null;
+        }
     }
 
     private void LoadTasks()

@@ -8,7 +8,7 @@ using User;
 
 namespace Game
 {
-    public class GameController : MonoBehaviour
+    public class GameController : ThreadSafeMonoBehaviour
     {
         [SerializeField]
         private World.GameWorld world;
@@ -42,13 +42,6 @@ namespace Game
         public int Difficulty { get; private set; } = 0;
 
         public float Coins { get; private set; } = 0;
-
-        private bool destroyed = false;
-
-        private void OnDestroy()
-        {
-            destroyed = true;
-        }
 
         private async void Awake()
         {

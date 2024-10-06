@@ -16,7 +16,7 @@ namespace Game
         KPH
     }
 
-    public class CarController : MonoBehaviour
+    public class CarController : ThreadSafeMonoBehaviour
     {
         [SerializeField] private CarDriveType m_CarDriveType = CarDriveType.FourWheelDrive;
         [SerializeField] private WheelCollider[] m_WheelColliders = new WheelCollider[4];

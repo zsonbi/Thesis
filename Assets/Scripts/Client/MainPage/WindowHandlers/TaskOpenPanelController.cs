@@ -11,7 +11,7 @@ using UnityEngine.Networking;
 using UnityEngine.UI;
 using User;
 
-public class TaskOpenPanelController : MonoBehaviour
+public class TaskOpenPanelController : ThreadSafeMonoBehaviour
 {
     [HideInInspector]
     public PlayerTask CurrentTask = new PlayerTask() { ID = -1 };

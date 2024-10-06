@@ -91,13 +91,6 @@ namespace Tests
             yield return null;
         }
 
-        [UnitySetUp]
-        public new IEnumerator Setup()
-        {
-            base.Setup();
-            yield return new WaitForSeconds(1f);
-        }
-
         [UnityTearDown]
         public new IEnumerator TearDown()
         {

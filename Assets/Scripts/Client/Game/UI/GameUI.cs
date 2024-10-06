@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using User;
 
-public class GameUI : MonoBehaviour
+public class GameUI : ThreadSafeMonoBehaviour
 {
     [SerializeField]
     private GameObject gameOverContainer;

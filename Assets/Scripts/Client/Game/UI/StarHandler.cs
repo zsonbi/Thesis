@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class StarHandler : MonoBehaviour
+public class StarHandler : ThreadSafeMonoBehaviour
 {
     [SerializeField]
     private List<Image> Stars;

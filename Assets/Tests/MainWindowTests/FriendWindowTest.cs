@@ -36,6 +36,7 @@ namespace Tests
                 yield return LoadScene(true, true);
 
                 friendHandler.Show();
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
 
                 yield return SendFriendRequest(TestConfig.Username2);
 
@@ -54,6 +55,7 @@ namespace Tests
                 yield return LoadScene(true, true);
 
                 friendHandler.Show();
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
 
                 yield return SendFriendRequest(TestConfig.Username2);
 
@@ -77,6 +79,7 @@ namespace Tests
                 friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).First();
                 friend.DeleteFriend();
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                Assert.AreEqual(0, GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).Length);
             }
 
             [UnityTest]
@@ -85,6 +88,7 @@ namespace Tests
                 yield return LoadScene(true, true);
 
                 friendHandler.Show();
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
 
                 yield return SendFriendRequest(TestConfig.Username2);
 
