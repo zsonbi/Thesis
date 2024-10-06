@@ -1,16 +1,16 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 10/06/2024 - 18:19:02 |
+| Generated on: | 10/06/2024 - 19:19:40 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 2 |
 | Classes: | 66 |
 | Files: | 66 |
-| Covered lines: | 2509 |
-| Uncovered lines: | 503 |
-| Coverable lines: | 3012 |
-| Total lines: | 5736 |
-| Line coverage: | 83.3% (2509 of 3012) |
+| Covered lines: | 2498 |
+| Uncovered lines: | 524 |
+| Coverable lines: | 3022 |
+| Total lines: | 5750 |
+| Line coverage: | 82.6% (2498 of 3022) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 461 |
@@ -33,7 +33,7 @@
 |Tests.MainWindowTests.TaskWindowTest|183|0|183|285|100%|0|0||10|10|100%|
 |Tests.TestConfig|4|0|4|47|100%|0|0||1|1|100%|
 |Tests.UnityTestParent[T]|49|3|52|103|94.2%|0|0||4|4|100%|
-|**ThesisScripts**|**1808**|**479**|**2287**|**4391**|**79%**|**0**|**0**|****|**406**|**486**|**83.5%**|
+|**ThesisScripts**|**1797**|**500**|**2297**|**4405**|**78.2%**|**0**|**0**|****|**406**|**486**|**83.5%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|6|0|6|15|100%|0|0||5|5|100%|
 |Building|7|2|9|33|77.7%|0|0||5|7|71.4%|
 |CameraScript|7|0|7|24|100%|0|0||2|2|100%|
@@ -44,28 +44,28 @@
 |EffectScript|4|0|4|20|100%|0|0||2|2|100%|
 |FriendHandler|45|0|45|84|100%|0|0||8|8|100%|
 |FriendWindowHandler|37|16|53|97|69.8%|0|0||7|9|77.7%|
-|Game.Car|67|18|85|143|78.8%|0|0||13|13|100%|
+|Game.Car|63|22|85|143|74.1%|0|0||13|13|100%|
 |Game.CarController|87|32|119|238|73.1%|0|0||14|18|77.7%|
-|Game.CopCar|45|3|48|80|93.7%|0|0||1|1|100%|
+|Game.CopCar|42|6|48|80|87.5%|0|0||1|1|100%|
 |Game.EnableWheelPhysicMaterial|16|0|16|37|100%|0|0||2|2|100%|
 |Game.GameController|113|7|120|192|94.1%|0|0||25|25|100%|
 |Game.NpcCar|6|0|6|19|100%|0|0||1|1|100%|
 |Game.PlayerCar|125|27|152|219|82.2%|0|0||17|17|100%|
 |Game.World.BuildingCell|11|0|11|30|100%|0|0||7|7|100%|
-|Game.World.CarSpawner|37|6|43|79|86%|0|0||4|5|80%|
+|Game.World.CarSpawner|33|10|43|79|76.7%|0|0||4|5|80%|
 |Game.World.Chunk|338|32|370|595|91.3%|0|0||27|29|93.1%|
 |Game.World.GameWorld|70|16|86|147|81.3%|0|0||7|7|100%|
 |Game.World.RoadGenerator|111|23|134|234|82.8%|0|0||8|9|88.8%|
 |GameUI|99|16|115|218|86%|0|0||24|28|85.7%|
 |LeaderboardItem|0|4|4|17|0%|0|0||0|1|0%|
 |LeaderboardWindow|0|43|43|94|0%|0|0||0|5|0%|
-|LoggedInChecker|12|10|22|54|54.5%|0|0||3|5|60%|
-|MainWindowController|97|29|126|214|76.9%|0|0||14|17|82.3%|
+|LoggedInChecker|11|11|22|54|50%|0|0||3|5|60%|
+|MainWindowController|101|35|136|228|74.2%|0|0||14|17|82.3%|
 |ModalWindow|0|38|38|69|0%|0|0||0|4|0%|
 |ProfileHandler|25|3|28|74|89.2%|0|0||5|6|83.3%|
 |ShopItem|23|0|23|62|100%|0|0||8|8|100%|
 |ShopWindow|39|13|52|103|75%|0|0||6|8|75%|
-|StarHandler|10|0|10|28|100%|0|0||1|1|100%|
+|StarHandler|7|3|10|28|70%|0|0||1|1|100%|
 |TaskClosedEventArgs|0|4|4|14|0%|0|0||0|1|0%|
 |TaskDisplayHandler|56|14|70|128|80%|0|0||10|11|90.9%|
 |TaskHistoryHandler|0|12|12|37|0%|0|0||0|1|0%|

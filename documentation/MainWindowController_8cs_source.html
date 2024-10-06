@@ -243,104 +243,118 @@ $(document).ready(function(){initNavTree('MainWindowController_8cs_source.html',
 <div class="foldopen" id="foldopen00130" data-start="{" data-end="}">
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="classMainWindowController.html#a97bc3e1edc8b02fe6876003c0705d9bb">  130</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classMainWindowController.html#a97bc3e1edc8b02fe6876003c0705d9bb">LoadGoodTasks</a>(<span class="keywordtype">bool</span> updateDisplay = <span class="keyword">true</span>)</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    {</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="keywordflow">foreach</span> (var task <span class="keywordflow">in</span> <a class="code hl_property" href="classMainWindowController.html#ac21a60fa64613697bc7d0e332592fc7b">Tasks</a>)</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="keywordflow">try</span></div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        {</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            <span class="keywordflow">if</span> (!task.Value.CurrentTask.TaskType)</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            <span class="keywordflow">foreach</span> (var task <span class="keywordflow">in</span> <a class="code hl_property" href="classMainWindowController.html#ac21a60fa64613697bc7d0e332592fc7b">Tasks</a>)</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            {</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                task.Value.gameObject.SetActive(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                task.Value.gameObject.transform.SetAsLastSibling();</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            }</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            {</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                task.Value.gameObject.SetActive(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            }</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        }</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        <a class="code hl_variable" href="classMainWindowController.html#a43cb702016e340c7dce96a83f9d837b7">TaskParent</a>.GetComponentInChildren&lt;TMP_Text&gt;().text = <span class="stringliteral">&quot;Good tasks&quot;</span>;</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <span class="keywordflow">if</span> (updateDisplay)</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            <a class="code hl_variable" href="classMainWindowController.html#a08355bb509be095b45cc8fd2619a1dc0">taskOpenPanelController</a>.<a class="code hl_function" href="classTaskOpenPanelController.html#a51848899b40753a10e249992b6c82ea5">MakeItGoodTask</a>();</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    }</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                <span class="keywordflow">if</span> (!task.Value.CurrentTask.TaskType)</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                {</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                    task.Value.gameObject.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                    task.Value.gameObject.transform.SetAsLastSibling();</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                }</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                {</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                    task.Value.gameObject.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                }</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            }</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            <a class="code hl_variable" href="classMainWindowController.html#a43cb702016e340c7dce96a83f9d837b7">TaskParent</a>.GetComponentInChildren&lt;TMP_Text&gt;().text = <span class="stringliteral">&quot;Good tasks&quot;</span>;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            <span class="keywordflow">if</span> (updateDisplay)</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                <a class="code hl_variable" href="classMainWindowController.html#a08355bb509be095b45cc8fd2619a1dc0">taskOpenPanelController</a>.<a class="code hl_function" href="classTaskOpenPanelController.html#a51848899b40753a10e249992b6c82ea5">MakeItGoodTask</a>();</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        }</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        <span class="keywordflow">catch</span> (MissingReferenceException)</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        {</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        }</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    }</div>
 </div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
-<div class="foldopen" id="foldopen00149" data-start="{" data-end="}">
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="classMainWindowController.html#ad7eb4bb006eff017de71fda656e0caac">  149</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classMainWindowController.html#ad7eb4bb006eff017de71fda656e0caac">LoadBadHabits</a>(<span class="keywordtype">bool</span> updateDisplay = <span class="keyword">true</span>)</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    {</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        <span class="keywordflow">foreach</span> (var task <span class="keywordflow">in</span> <a class="code hl_property" href="classMainWindowController.html#ac21a60fa64613697bc7d0e332592fc7b">Tasks</a>)</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        {</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            <span class="keywordflow">if</span> (task.Value.CurrentTask.TaskType)</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            {</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                task.Value.gameObject.SetActive(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>                task.Value.gameObject.transform.SetAsLastSibling();</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            }</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            {</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                task.Value.gameObject.SetActive(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            }</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        }</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <a class="code hl_variable" href="classMainWindowController.html#a43cb702016e340c7dce96a83f9d837b7">TaskParent</a>.GetComponentInChildren&lt;TMP_Text&gt;().text = <span class="stringliteral">&quot;Bad habits&quot;</span>;</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <span class="keywordflow">if</span> (updateDisplay)</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            <a class="code hl_variable" href="classMainWindowController.html#a08355bb509be095b45cc8fd2619a1dc0">taskOpenPanelController</a>.<a class="code hl_function" href="classTaskOpenPanelController.html#a060a72263cf32b7c54928306df58adc9">MakeItBadHabit</a>();</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    }</div>
-</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
-<div class="foldopen" id="foldopen00168" data-start="{" data-end="}">
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="classMainWindowController.html#ac5891636504e2d8aca05a84e62768b64">  168</a></span>    <span class="keyword">public</span> GameObject <a class="code hl_function" href="classMainWindowController.html#ac5891636504e2d8aca05a84e62768b64">CreateTask</a>(<a class="code hl_variable" href="namespaceThesis__backend_1_1Data__Structures.html#ae656f3c7a1335db8207ae56dcbd213a7">PlayerTask</a> taskContainer)</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    {</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        <span class="keywordflow">try</span></div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        {</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            GameObject task = Instantiate(<a class="code hl_variable" href="classMainWindowController.html#a4d6aca2fea0b8edefea03fe49dfa1229">TaskPrefab</a>, <a class="code hl_variable" href="classMainWindowController.html#a43cb702016e340c7dce96a83f9d837b7">TaskParent</a>.transform);</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            <a class="code hl_class" href="classTaskDisplayHandler.html">TaskDisplayHandler</a> taskComponent = task.GetComponent&lt;<a class="code hl_class" href="classTaskDisplayHandler.html">TaskDisplayHandler</a>&gt;();</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>            taskComponent.<a class="code hl_function" href="classTaskDisplayHandler.html#a4234bef95ed8e26bee9d674c7cd963e7">InitValues</a>(taskContainer, <a class="code hl_variable" href="classMainWindowController.html#a08355bb509be095b45cc8fd2619a1dc0">taskOpenPanelController</a>, <span class="keyword">this</span>);</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>            <a class="code hl_property" href="classMainWindowController.html#ac21a60fa64613697bc7d0e332592fc7b">Tasks</a>.Add(taskContainer.ID, taskComponent);</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>            <span class="keywordflow">return</span> task;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="foldopen" id="foldopen00156" data-start="{" data-end="}">
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="classMainWindowController.html#ad7eb4bb006eff017de71fda656e0caac">  156</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classMainWindowController.html#ad7eb4bb006eff017de71fda656e0caac">LoadBadHabits</a>(<span class="keywordtype">bool</span> updateDisplay = <span class="keyword">true</span>)</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    {</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        {</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>            <span class="keywordflow">foreach</span> (var task <span class="keywordflow">in</span> <a class="code hl_property" href="classMainWindowController.html#ac21a60fa64613697bc7d0e332592fc7b">Tasks</a>)</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            {</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                <span class="keywordflow">if</span> (task.Value.CurrentTask.TaskType)</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>                {</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                    task.Value.gameObject.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                    task.Value.gameObject.transform.SetAsLastSibling();</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                }</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                {</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>                    task.Value.gameObject.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                }</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            }</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            <a class="code hl_variable" href="classMainWindowController.html#a43cb702016e340c7dce96a83f9d837b7">TaskParent</a>.GetComponentInChildren&lt;TMP_Text&gt;().text = <span class="stringliteral">&quot;Bad habits&quot;</span>;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            <span class="keywordflow">if</span> (updateDisplay)</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                <a class="code hl_variable" href="classMainWindowController.html#a08355bb509be095b45cc8fd2619a1dc0">taskOpenPanelController</a>.<a class="code hl_function" href="classTaskOpenPanelController.html#a060a72263cf32b7c54928306df58adc9">MakeItBadHabit</a>();</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        }</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        <span class="keywordflow">catch</span> (MissingReferenceException)</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        {</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>            <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        }</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        <span class="keywordflow">catch</span> (MissingReferenceException e)</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        {</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        }</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    }</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    }</div>
 </div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
-<div class="foldopen" id="foldopen00186" data-start="{" data-end="}">
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="classMainWindowController.html#aeffd5cd65578256e44cf9a4d26a96fc6">  186</a></span>    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classMainWindowController.html#aeffd5cd65578256e44cf9a4d26a96fc6">LoadTasks</a>()</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    {</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        <a class="code hl_class" href="classCoroutineRunner.html">CoroutineRunner</a>.<a class="code hl_function" href="classCoroutineRunner.html#a396e5b38aeab87d98b549c1957378b35">RunCoroutine</a>(<a class="code hl_class" href="classServer.html">Server</a>.SendGetRequest&lt;List&lt;Thesis_backend.Data_Structures.PlayerTask&gt;&gt;(<a class="code hl_class" href="classConfig_1_1ServerConfig.html">ServerConfig</a>.<a class="code hl_variable" href="classConfig_1_1ServerConfig.html#a47231cfa790f15bbd226c2dc2202c448">PATHFORTASKSQUERY</a>, <a class="code hl_function" href="classMainWindowController.html#ab24b597eaf4d61649b7f9c65f90669c7">CreateTaskPrefabs</a>, onFailedAction: <a class="code hl_function" href="classMainWindowController.html#aa5107a5dd803beafeffa8e09e6d6bdb9">ShowRequestFail</a>));</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    }</div>
-</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="foldopen" id="foldopen00182" data-start="{" data-end="}">
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="classMainWindowController.html#ac5891636504e2d8aca05a84e62768b64">  182</a></span>    <span class="keyword">public</span> GameObject <a class="code hl_function" href="classMainWindowController.html#ac5891636504e2d8aca05a84e62768b64">CreateTask</a>(<a class="code hl_variable" href="namespaceThesis__backend_1_1Data__Structures.html#ae656f3c7a1335db8207ae56dcbd213a7">PlayerTask</a> taskContainer)</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    {</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        {</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>            GameObject task = Instantiate(<a class="code hl_variable" href="classMainWindowController.html#a4d6aca2fea0b8edefea03fe49dfa1229">TaskPrefab</a>, <a class="code hl_variable" href="classMainWindowController.html#a43cb702016e340c7dce96a83f9d837b7">TaskParent</a>.transform);</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>            <a class="code hl_class" href="classTaskDisplayHandler.html">TaskDisplayHandler</a> taskComponent = task.GetComponent&lt;<a class="code hl_class" href="classTaskDisplayHandler.html">TaskDisplayHandler</a>&gt;();</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>            taskComponent.<a class="code hl_function" href="classTaskDisplayHandler.html#a4234bef95ed8e26bee9d674c7cd963e7">InitValues</a>(taskContainer, <a class="code hl_variable" href="classMainWindowController.html#a08355bb509be095b45cc8fd2619a1dc0">taskOpenPanelController</a>, <span class="keyword">this</span>);</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
-<div class="foldopen" id="foldopen00191" data-start="{" data-end="}">
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="classMainWindowController.html#aa5107a5dd803beafeffa8e09e6d6bdb9">  191</a></span>    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classMainWindowController.html#aa5107a5dd803beafeffa8e09e6d6bdb9">ShowRequestFail</a>(<span class="keywordtype">string</span> content)</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    {</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        <a class="code hl_class" href="classModalWindow.html">ModalWindow</a>.<a class="code hl_function" href="classModalWindow.html#ac60b5a6f2ab5bee74053e90f99c9d475">Show</a>(<span class="stringliteral">&quot;Request fail&quot;</span>, content);</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    }</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>            <a class="code hl_property" href="classMainWindowController.html#ac21a60fa64613697bc7d0e332592fc7b">Tasks</a>.Add(taskContainer.ID, taskComponent);</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            <span class="keywordflow">return</span> task;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        }</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        <span class="keywordflow">catch</span> (MissingReferenceException e)</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        {</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        }</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    }</div>
 </div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
-<div class="foldopen" id="foldopen00196" data-start="{" data-end="}">
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="classMainWindowController.html#a26e80445d50c33dad4175b3ee45d8745">  196</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classMainWindowController.html#a26e80445d50c33dad4175b3ee45d8745">ShowTaskFail</a>(<span class="keywordtype">string</span> content)</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    {</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        <a class="code hl_class" href="classModalWindow.html">ModalWindow</a>.<a class="code hl_function" href="classModalWindow.html#ac60b5a6f2ab5bee74053e90f99c9d475">Show</a>(<span class="stringliteral">&quot;Task error&quot;</span>, content);</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    }</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="foldopen" id="foldopen00200" data-start="{" data-end="}">
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="classMainWindowController.html#aeffd5cd65578256e44cf9a4d26a96fc6">  200</a></span>    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classMainWindowController.html#aeffd5cd65578256e44cf9a4d26a96fc6">LoadTasks</a>()</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    {</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        <a class="code hl_class" href="classCoroutineRunner.html">CoroutineRunner</a>.<a class="code hl_function" href="classCoroutineRunner.html#a396e5b38aeab87d98b549c1957378b35">RunCoroutine</a>(<a class="code hl_class" href="classServer.html">Server</a>.SendGetRequest&lt;List&lt;Thesis_backend.Data_Structures.PlayerTask&gt;&gt;(<a class="code hl_class" href="classConfig_1_1ServerConfig.html">ServerConfig</a>.<a class="code hl_variable" href="classConfig_1_1ServerConfig.html#a47231cfa790f15bbd226c2dc2202c448">PATHFORTASKSQUERY</a>, <a class="code hl_function" href="classMainWindowController.html#ab24b597eaf4d61649b7f9c65f90669c7">CreateTaskPrefabs</a>, onFailedAction: <a class="code hl_function" href="classMainWindowController.html#aa5107a5dd803beafeffa8e09e6d6bdb9">ShowRequestFail</a>));</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    }</div>
 </div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
-<div class="foldopen" id="foldopen00201" data-start="{" data-end="}">
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="classMainWindowController.html#ac8df9c8511d429b669560bafc043b90f">  201</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classMainWindowController.html#ac8df9c8511d429b669560bafc043b90f">LoadGameScene</a>()</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    {</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        SceneManager.LoadScene(<span class="stringliteral">&quot;GameScene&quot;</span>, LoadSceneMode.Single);</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    }</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="foldopen" id="foldopen00205" data-start="{" data-end="}">
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="classMainWindowController.html#aa5107a5dd803beafeffa8e09e6d6bdb9">  205</a></span>    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classMainWindowController.html#aa5107a5dd803beafeffa8e09e6d6bdb9">ShowRequestFail</a>(<span class="keywordtype">string</span> content)</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    {</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        <a class="code hl_class" href="classModalWindow.html">ModalWindow</a>.<a class="code hl_function" href="classModalWindow.html#ac60b5a6f2ab5bee74053e90f99c9d475">Show</a>(<span class="stringliteral">&quot;Request fail&quot;</span>, content);</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    }</div>
 </div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
-<div class="foldopen" id="foldopen00206" data-start="{" data-end="}">
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="classMainWindowController.html#ab24b597eaf4d61649b7f9c65f90669c7">  206</a></span>    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classMainWindowController.html#ab24b597eaf4d61649b7f9c65f90669c7">CreateTaskPrefabs</a>(List&lt;Thesis_backend.Data_Structures.PlayerTask&gt; requestResult)</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    {</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        <span class="keywordflow">foreach</span> (var item <span class="keywordflow">in</span> requestResult)</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        {</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            <a class="code hl_function" href="classMainWindowController.html#ac5891636504e2d8aca05a84e62768b64">CreateTask</a>(item);</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        }</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        <a class="code hl_function" href="classMainWindowController.html#a97bc3e1edc8b02fe6876003c0705d9bb">LoadGoodTasks</a>();</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="foldopen" id="foldopen00210" data-start="{" data-end="}">
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno"><a class="line" href="classMainWindowController.html#a26e80445d50c33dad4175b3ee45d8745">  210</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classMainWindowController.html#a26e80445d50c33dad4175b3ee45d8745">ShowTaskFail</a>(<span class="keywordtype">string</span> content)</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    {</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        <a class="code hl_class" href="classModalWindow.html">ModalWindow</a>.<a class="code hl_function" href="classModalWindow.html#ac60b5a6f2ab5bee74053e90f99c9d475">Show</a>(<span class="stringliteral">&quot;Task error&quot;</span>, content);</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    }</div>
 </div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>}</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="foldopen" id="foldopen00215" data-start="{" data-end="}">
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="classMainWindowController.html#ac8df9c8511d429b669560bafc043b90f">  215</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classMainWindowController.html#ac8df9c8511d429b669560bafc043b90f">LoadGameScene</a>()</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    {</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        SceneManager.LoadScene(<span class="stringliteral">&quot;GameScene&quot;</span>, LoadSceneMode.Single);</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    }</div>
+</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="foldopen" id="foldopen00220" data-start="{" data-end="}">
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="classMainWindowController.html#ab24b597eaf4d61649b7f9c65f90669c7">  220</a></span>    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classMainWindowController.html#ab24b597eaf4d61649b7f9c65f90669c7">CreateTaskPrefabs</a>(List&lt;Thesis_backend.Data_Structures.PlayerTask&gt; requestResult)</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    {</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        <span class="keywordflow">foreach</span> (var item <span class="keywordflow">in</span> requestResult)</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        {</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>            <a class="code hl_function" href="classMainWindowController.html#ac5891636504e2d8aca05a84e62768b64">CreateTask</a>(item);</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        }</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>        <a class="code hl_function" href="classMainWindowController.html#a97bc3e1edc8b02fe6876003c0705d9bb">LoadGoodTasks</a>();</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    }</div>
+</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>}</div>
 </div>
 <div class="ttc" id="aclassConfig_1_1ServerConfig_html"><div class="ttname"><a href="classConfig_1_1ServerConfig.html">Config.ServerConfig</a></div><div class="ttdef"><b>Definition</b> <a href="ServerConfig_8cs_source.html#l00006">ServerConfig.cs:7</a></div></div>
 <div class="ttc" id="aclassConfig_1_1ServerConfig_html_a47231cfa790f15bbd226c2dc2202c448"><div class="ttname"><a href="classConfig_1_1ServerConfig.html#a47231cfa790f15bbd226c2dc2202c448">Config.ServerConfig.PATHFORTASKSQUERY</a></div><div class="ttdeci">const string PATHFORTASKSQUERY</div><div class="ttdoc">Gets all the tasks Needs to be already logged in.</div><div class="ttdef"><b>Definition</b> <a href="ServerConfig_8cs_source.html#l00067">ServerConfig.cs:67</a></div></div>
@@ -350,7 +364,7 @@ $(document).ready(function(){initNavTree('MainWindowController_8cs_source.html',
 <div class="ttc" id="aclassMainWindowController_html_a08355bb509be095b45cc8fd2619a1dc0"><div class="ttname"><a href="classMainWindowController.html#a08355bb509be095b45cc8fd2619a1dc0">MainWindowController.taskOpenPanelController</a></div><div class="ttdeci">TaskOpenPanelController taskOpenPanelController</div><div class="ttdef"><b>Definition</b> <a href="MainWindowController_8cs_source.html#l00029">MainWindowController.cs:29</a></div></div>
 <div class="ttc" id="aclassMainWindowController_html_a1243947e3524bee2c82611a469e1d48e"><div class="ttname"><a href="classMainWindowController.html#a1243947e3524bee2c82611a469e1d48e">MainWindowController.CurrencyText</a></div><div class="ttdeci">TMP_Text CurrencyText</div><div class="ttdef"><b>Definition</b> <a href="MainWindowController_8cs_source.html#l00020">MainWindowController.cs:20</a></div></div>
 <div class="ttc" id="aclassMainWindowController_html_a1d6259641a45cdad8a4ecfd78120969e"><div class="ttname"><a href="classMainWindowController.html#a1d6259641a45cdad8a4ecfd78120969e">MainWindowController.UsernameInputText</a></div><div class="ttdeci">TMP_Text UsernameInputText</div><div class="ttdef"><b>Definition</b> <a href="MainWindowController_8cs_source.html#l00017">MainWindowController.cs:17</a></div></div>
-<div class="ttc" id="aclassMainWindowController_html_a26e80445d50c33dad4175b3ee45d8745"><div class="ttname"><a href="classMainWindowController.html#a26e80445d50c33dad4175b3ee45d8745">MainWindowController.ShowTaskFail</a></div><div class="ttdeci">void ShowTaskFail(string content)</div><div class="ttdef"><b>Definition</b> <a href="MainWindowController_8cs_source.html#l00196">MainWindowController.cs:196</a></div></div>
+<div class="ttc" id="aclassMainWindowController_html_a26e80445d50c33dad4175b3ee45d8745"><div class="ttname"><a href="classMainWindowController.html#a26e80445d50c33dad4175b3ee45d8745">MainWindowController.ShowTaskFail</a></div><div class="ttdeci">void ShowTaskFail(string content)</div><div class="ttdef"><b>Definition</b> <a href="MainWindowController_8cs_source.html#l00210">MainWindowController.cs:210</a></div></div>
 <div class="ttc" id="aclassMainWindowController_html_a28e02a527de35b080036838eccd1caa9"><div class="ttname"><a href="classMainWindowController.html#a28e02a527de35b080036838eccd1caa9">MainWindowController.RemoveTask</a></div><div class="ttdeci">void RemoveTask(long taskId)</div><div class="ttdef"><b>Definition</b> <a href="MainWindowController_8cs_source.html#l00062">MainWindowController.cs:62</a></div></div>
 <div class="ttc" id="aclassMainWindowController_html_a3796b45928f33a9a120d0ef7a20021c3"><div class="ttname"><a href="classMainWindowController.html#a3796b45928f33a9a120d0ef7a20021c3">MainWindowController.Start</a></div><div class="ttdeci">async void Start()</div><div class="ttdef"><b>Definition</b> <a href="MainWindowController_8cs_source.html#l00040">MainWindowController.cs:40</a></div></div>
 <div class="ttc" id="aclassMainWindowController_html_a43cb702016e340c7dce96a83f9d837b7"><div class="ttname"><a href="classMainWindowController.html#a43cb702016e340c7dce96a83f9d837b7">MainWindowController.TaskParent</a></div><div class="ttdeci">GameObject TaskParent</div><div class="ttdef"><b>Definition</b> <a href="MainWindowController_8cs_source.html#l00023">MainWindowController.cs:23</a></div></div>
@@ -359,16 +373,16 @@ $(document).ready(function(){initNavTree('MainWindowController_8cs_source.html',
 <div class="ttc" id="aclassMainWindowController_html_a7493c7cf48406da98feff2552f3f217a"><div class="ttname"><a href="classMainWindowController.html#a7493c7cf48406da98feff2552f3f217a">MainWindowController.SortingChanged</a></div><div class="ttdeci">void SortingChanged()</div><div class="ttdef"><b>Definition</b> <a href="MainWindowController_8cs_source.html#l00080">MainWindowController.cs:80</a></div></div>
 <div class="ttc" id="aclassMainWindowController_html_a7c33479bd33e26832c7e6a27db8bb6eb"><div class="ttname"><a href="classMainWindowController.html#a7c33479bd33e26832c7e6a27db8bb6eb">MainWindowController.Update</a></div><div class="ttdeci">void Update()</div><div class="ttdef"><b>Definition</b> <a href="MainWindowController_8cs_source.html#l00058">MainWindowController.cs:58</a></div></div>
 <div class="ttc" id="aclassMainWindowController_html_a97bc3e1edc8b02fe6876003c0705d9bb"><div class="ttname"><a href="classMainWindowController.html#a97bc3e1edc8b02fe6876003c0705d9bb">MainWindowController.LoadGoodTasks</a></div><div class="ttdeci">void LoadGoodTasks(bool updateDisplay=true)</div><div class="ttdef"><b>Definition</b> <a href="MainWindowController_8cs_source.html#l00130">MainWindowController.cs:130</a></div></div>
-<div class="ttc" id="aclassMainWindowController_html_aa5107a5dd803beafeffa8e09e6d6bdb9"><div class="ttname"><a href="classMainWindowController.html#aa5107a5dd803beafeffa8e09e6d6bdb9">MainWindowController.ShowRequestFail</a></div><div class="ttdeci">void ShowRequestFail(string content)</div><div class="ttdef"><b>Definition</b> <a href="MainWindowController_8cs_source.html#l00191">MainWindowController.cs:191</a></div></div>
+<div class="ttc" id="aclassMainWindowController_html_aa5107a5dd803beafeffa8e09e6d6bdb9"><div class="ttname"><a href="classMainWindowController.html#aa5107a5dd803beafeffa8e09e6d6bdb9">MainWindowController.ShowRequestFail</a></div><div class="ttdeci">void ShowRequestFail(string content)</div><div class="ttdef"><b>Definition</b> <a href="MainWindowController_8cs_source.html#l00205">MainWindowController.cs:205</a></div></div>
 <div class="ttc" id="aclassMainWindowController_html_aa560024a4c177f54f6b6237102ac752b"><div class="ttname"><a href="classMainWindowController.html#aa560024a4c177f54f6b6237102ac752b">MainWindowController.UpdateTask</a></div><div class="ttdeci">void UpdateTask(long taskId)</div><div class="ttdef"><b>Definition</b> <a href="MainWindowController_8cs_source.html#l00072">MainWindowController.cs:72</a></div></div>
-<div class="ttc" id="aclassMainWindowController_html_ab24b597eaf4d61649b7f9c65f90669c7"><div class="ttname"><a href="classMainWindowController.html#ab24b597eaf4d61649b7f9c65f90669c7">MainWindowController.CreateTaskPrefabs</a></div><div class="ttdeci">void CreateTaskPrefabs(List&lt; Thesis_backend.Data_Structures.PlayerTask &gt; requestResult)</div><div class="ttdef"><b>Definition</b> <a href="MainWindowController_8cs_source.html#l00206">MainWindowController.cs:206</a></div></div>
+<div class="ttc" id="aclassMainWindowController_html_ab24b597eaf4d61649b7f9c65f90669c7"><div class="ttname"><a href="classMainWindowController.html#ab24b597eaf4d61649b7f9c65f90669c7">MainWindowController.CreateTaskPrefabs</a></div><div class="ttdeci">void CreateTaskPrefabs(List&lt; Thesis_backend.Data_Structures.PlayerTask &gt; requestResult)</div><div class="ttdef"><b>Definition</b> <a href="MainWindowController_8cs_source.html#l00220">MainWindowController.cs:220</a></div></div>
 <div class="ttc" id="aclassMainWindowController_html_ac0bed1e5326824072039d2f58518b563"><div class="ttname"><a href="classMainWindowController.html#ac0bed1e5326824072039d2f58518b563">MainWindowController.UpdateUserData</a></div><div class="ttdeci">void UpdateUserData(Thesis_backend.Data_Structures.User user)</div><div class="ttdef"><b>Definition</b> <a href="MainWindowController_8cs_source.html#l00051">MainWindowController.cs:51</a></div></div>
 <div class="ttc" id="aclassMainWindowController_html_ac21a60fa64613697bc7d0e332592fc7b"><div class="ttname"><a href="classMainWindowController.html#ac21a60fa64613697bc7d0e332592fc7b">MainWindowController.Tasks</a></div><div class="ttdeci">Dictionary&lt; long, TaskDisplayHandler &gt; Tasks</div><div class="ttdef"><b>Definition</b> <a href="MainWindowController_8cs_source.html#l00037">MainWindowController.cs:37</a></div></div>
-<div class="ttc" id="aclassMainWindowController_html_ac5891636504e2d8aca05a84e62768b64"><div class="ttname"><a href="classMainWindowController.html#ac5891636504e2d8aca05a84e62768b64">MainWindowController.CreateTask</a></div><div class="ttdeci">GameObject CreateTask(PlayerTask taskContainer)</div><div class="ttdef"><b>Definition</b> <a href="MainWindowController_8cs_source.html#l00168">MainWindowController.cs:168</a></div></div>
-<div class="ttc" id="aclassMainWindowController_html_ac8df9c8511d429b669560bafc043b90f"><div class="ttname"><a href="classMainWindowController.html#ac8df9c8511d429b669560bafc043b90f">MainWindowController.LoadGameScene</a></div><div class="ttdeci">void LoadGameScene()</div><div class="ttdef"><b>Definition</b> <a href="MainWindowController_8cs_source.html#l00201">MainWindowController.cs:201</a></div></div>
-<div class="ttc" id="aclassMainWindowController_html_ad7eb4bb006eff017de71fda656e0caac"><div class="ttname"><a href="classMainWindowController.html#ad7eb4bb006eff017de71fda656e0caac">MainWindowController.LoadBadHabits</a></div><div class="ttdeci">void LoadBadHabits(bool updateDisplay=true)</div><div class="ttdef"><b>Definition</b> <a href="MainWindowController_8cs_source.html#l00149">MainWindowController.cs:149</a></div></div>
+<div class="ttc" id="aclassMainWindowController_html_ac5891636504e2d8aca05a84e62768b64"><div class="ttname"><a href="classMainWindowController.html#ac5891636504e2d8aca05a84e62768b64">MainWindowController.CreateTask</a></div><div class="ttdeci">GameObject CreateTask(PlayerTask taskContainer)</div><div class="ttdef"><b>Definition</b> <a href="MainWindowController_8cs_source.html#l00182">MainWindowController.cs:182</a></div></div>
+<div class="ttc" id="aclassMainWindowController_html_ac8df9c8511d429b669560bafc043b90f"><div class="ttname"><a href="classMainWindowController.html#ac8df9c8511d429b669560bafc043b90f">MainWindowController.LoadGameScene</a></div><div class="ttdeci">void LoadGameScene()</div><div class="ttdef"><b>Definition</b> <a href="MainWindowController_8cs_source.html#l00215">MainWindowController.cs:215</a></div></div>
+<div class="ttc" id="aclassMainWindowController_html_ad7eb4bb006eff017de71fda656e0caac"><div class="ttname"><a href="classMainWindowController.html#ad7eb4bb006eff017de71fda656e0caac">MainWindowController.LoadBadHabits</a></div><div class="ttdeci">void LoadBadHabits(bool updateDisplay=true)</div><div class="ttdef"><b>Definition</b> <a href="MainWindowController_8cs_source.html#l00156">MainWindowController.cs:156</a></div></div>
 <div class="ttc" id="aclassMainWindowController_html_aeb17896f881a53dd45e25c61f26bab3b"><div class="ttname"><a href="classMainWindowController.html#aeb17896f881a53dd45e25c61f26bab3b">MainWindowController.ModalWindow</a></div><div class="ttdeci">ModalWindow ModalWindow</div><div class="ttdef"><b>Definition</b> <a href="MainWindowController_8cs_source.html#l00032">MainWindowController.cs:32</a></div></div>
-<div class="ttc" id="aclassMainWindowController_html_aeffd5cd65578256e44cf9a4d26a96fc6"><div class="ttname"><a href="classMainWindowController.html#aeffd5cd65578256e44cf9a4d26a96fc6">MainWindowController.LoadTasks</a></div><div class="ttdeci">void LoadTasks()</div><div class="ttdef"><b>Definition</b> <a href="MainWindowController_8cs_source.html#l00186">MainWindowController.cs:186</a></div></div>
+<div class="ttc" id="aclassMainWindowController_html_aeffd5cd65578256e44cf9a4d26a96fc6"><div class="ttname"><a href="classMainWindowController.html#aeffd5cd65578256e44cf9a4d26a96fc6">MainWindowController.LoadTasks</a></div><div class="ttdeci">void LoadTasks()</div><div class="ttdef"><b>Definition</b> <a href="MainWindowController_8cs_source.html#l00200">MainWindowController.cs:200</a></div></div>
 <div class="ttc" id="aclassModalWindow_html"><div class="ttname"><a href="classModalWindow.html">ModalWindow</a></div><div class="ttdef"><b>Definition</b> <a href="ModalWindowScript_8cs_source.html#l00007">ModalWindowScript.cs:8</a></div></div>
 <div class="ttc" id="aclassModalWindow_html_ac60b5a6f2ab5bee74053e90f99c9d475"><div class="ttname"><a href="classModalWindow.html#ac60b5a6f2ab5bee74053e90f99c9d475">ModalWindow.Show</a></div><div class="ttdeci">void Show()</div><div class="ttdef"><b>Definition</b> <a href="ModalWindowScript_8cs_source.html#l00017">ModalWindowScript.cs:17</a></div></div>
 <div class="ttc" id="aclassServer_html"><div class="ttname"><a href="classServer.html">Server</a></div><div class="ttdef"><b>Definition</b> <a href="Server_8cs_source.html#l00008">Server.cs:9</a></div></div>
