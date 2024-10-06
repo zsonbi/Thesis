@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using User;
 
-public class FriendHandler : MonoBehaviour
+public class FriendHandler : ThreadSafeMonoBehaviour
 {
     [SerializeField]
     private TMP_Text FriendNameLabel;

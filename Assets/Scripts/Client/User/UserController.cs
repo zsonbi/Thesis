@@ -8,7 +8,7 @@ using System.Net.Mail;
 using User;
 using Thesis_backend.Data_Structures;
 
-public class UserController : MonoBehaviour
+public class UserController : ThreadSafeMonoBehaviour
 {
     /// <summary>
     /// The login controls

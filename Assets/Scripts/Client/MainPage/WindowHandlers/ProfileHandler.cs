@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using User;
 
-public class ProfileHandler : MonoBehaviour
+public class ProfileHandler : ThreadSafeMonoBehaviour
 {
     [SerializeField]
     private TMP_Text TotalTaskCount;

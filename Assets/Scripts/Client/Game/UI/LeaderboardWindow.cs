@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine;
 using User;
 
-public class LeaderboardWindow : MonoBehaviour
+public class LeaderboardWindow : ThreadSafeMonoBehaviour
 {
     [SerializeField]
     private GameObject scoreParent;

@@ -6,7 +6,7 @@ using Thesis_backend.Data_Structures;
 using TMPro;
 using UnityEngine;
 
-public class FriendWindowHandler : MonoBehaviour
+public class FriendWindowHandler : ThreadSafeMonoBehaviour
 {
     [SerializeField]
     private GameObject FriendsContainer;

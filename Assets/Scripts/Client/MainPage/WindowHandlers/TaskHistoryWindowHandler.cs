@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine;
 using User;
 
-public class TaskHistoryWindowHandler : MonoBehaviour
+public class TaskHistoryWindowHandler : ThreadSafeMonoBehaviour
 {
     [SerializeField]
     private GameObject taskHistoriesParent;

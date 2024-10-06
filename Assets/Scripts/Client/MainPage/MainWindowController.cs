@@ -9,8 +9,9 @@ using Thesis_backend.Data_Structures;
 using DataTypes;
 using System.Linq;
 using System.Threading.Tasks;
+using System;
 
-public class MainWindowController : MonoBehaviour
+public class MainWindowController : ThreadSafeMonoBehaviour
 {
     [SerializeField]
     private TMP_Text UsernameInputText;
@@ -35,8 +36,6 @@ public class MainWindowController : MonoBehaviour
 
     public Dictionary<long, TaskDisplayHandler> Tasks { get; private set; } = new Dictionary<long, TaskDisplayHandler>();
 
-    public bool Destroyed { get; private set; }
-
     // Start is called before the first frame update
     private async void Start()
     {
@@ -47,11 +46,6 @@ public class MainWindowController : MonoBehaviour
         UsernameInputText.text = UserData.Instance.Username;
         CurrencyText.text = UserData.Instance.CurrentTaskScore.ToString();
         LoadTasks();
-    }
-
-    private void OnDestroy()
-    {
-        this.Destroyed = true;
     }
 
     public void UpdateUserData(Thesis_backend.Data_Structures.User user)
@@ -173,19 +167,20 @@ public class MainWindowController : MonoBehaviour
 
     public GameObject CreateTask(PlayerTask taskContainer)
     {
-        if (Destroyed)
+        try
         {
-            Debug.Log("task parent is null!");
+            GameObject task = Instantiate(TaskPrefab, TaskParent.transform);
+            TaskDisplayHandler taskComponent = task.GetComponent<TaskDisplayHandler>();
+
+            taskComponent.InitValues(taskContainer, taskOpenPanelController, this);
+
+            Tasks.Add(taskContainer.ID, taskComponent);
+            return task;
+        }
+        catch (MissingReferenceException e)
+        {
             return null;
         }
-
-        GameObject task = Instantiate(TaskPrefab, TaskParent.transform);
-        TaskDisplayHandler taskComponent = task.GetComponent<TaskDisplayHandler>();
-
-        taskComponent.InitValues(taskContainer, taskOpenPanelController, this);
-
-        Tasks.Add(taskContainer.ID, taskComponent);
-        return task;
     }
 
     private void LoadTasks()

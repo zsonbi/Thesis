@@ -1,7 +1,7 @@
 using Game;
 using UnityEngine;
 
-public class Coin : MonoBehaviour
+public class Coin : ThreadSafeMonoBehaviour
 {
     private void Update()
     {

@@ -11,7 +11,7 @@ namespace Game
         /// <summary>
         /// A class for handling chunk loading and unloading
         /// </summary>
-        public class GameWorld : MonoBehaviour
+        public class GameWorld : ThreadSafeMonoBehaviour
         {
             /// <summary>
             /// Chunk prefab for the chunk creation
@@ -26,13 +26,6 @@ namespace Game
             /// The chunks of the world
             /// </summary>
             private Chunk[,] Chunks;
-
-            private bool destroyed = false;
-
-            private void OnDestroy()
-            {
-                destroyed = true;
-            }
 
             public Chunk GetChunk(Vector3 GameObjectPos)
             {
@@ -76,7 +69,7 @@ namespace Game
             {
                 if (Chunks[z, x] == null)
                 {
-                    if (destroyed)
+                    if (Destroyed)
                     {
                         return;
                     }

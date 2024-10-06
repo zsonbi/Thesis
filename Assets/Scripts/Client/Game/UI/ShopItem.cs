@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using User;
 
-public class ShopItem : MonoBehaviour
+public class ShopItem : ThreadSafeMonoBehaviour
 {
     [SerializeField]
     private TMP_Text ProductName;

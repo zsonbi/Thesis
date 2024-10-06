@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Image))]
-public class TaskHistoryHandler : MonoBehaviour
+public class TaskHistoryHandler : ThreadSafeMonoBehaviour
 {
     [SerializeField]
     private TMP_Text taskNameText;

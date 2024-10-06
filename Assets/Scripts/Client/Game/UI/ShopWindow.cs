@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 using User;
 
-public class ShopWindow : MonoBehaviour
+public class ShopWindow : ThreadSafeMonoBehaviour
 {
     [SerializeField]
     private GameObject ShopParent;

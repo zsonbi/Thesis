@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EffectScript : MonoBehaviour
+public class EffectScript : ThreadSafeMonoBehaviour
 {
     private ParticleSystem particleSystem;
 

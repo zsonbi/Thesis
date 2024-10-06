@@ -3,7 +3,7 @@ using System.Collections;
 
 namespace Game
 {
-    public class EnableWheelPhysicMaterial : MonoBehaviour
+    public class EnableWheelPhysicMaterial : ThreadSafeMonoBehaviour
     {
         private WheelCollider wheel;
 

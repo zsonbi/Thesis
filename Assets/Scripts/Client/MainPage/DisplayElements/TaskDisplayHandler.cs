@@ -10,7 +10,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 
-public class TaskDisplayHandler : MonoBehaviour
+public class TaskDisplayHandler : ThreadSafeMonoBehaviour
 {
     [SerializeField]
     private TMP_Text TaskNameLabel;

@@ -20,7 +20,7 @@ namespace Game
         /// <summary>
         /// Used for generating a new world
         /// </summary>
-        public class Chunk : MonoBehaviour
+        public class Chunk : ThreadSafeMonoBehaviour
         {
             [Header("Offset of perlin noise on X axis")]
             public float XOffset = 0f;
@@ -67,7 +67,6 @@ namespace Game
             public bool Loaded { get => this.gameObject.activeSelf; }
 
             public bool[,] Roads => roadGenerator.RoadMatrix;
-            public bool Destroyed { get; private set; } = false;
 
             public List<EdgeRoadContainer> EdgeRoads { get => roadGenerator?.EdgeRoads; }
 
@@ -83,11 +82,6 @@ namespace Game
             {
                 var loop = PlayerLoop.GetCurrentPlayerLoop();
                 Cysharp.Threading.Tasks.PlayerLoopHelper.Initialize(ref loop);
-            }
-
-            private void OnDestroy()
-            {
-                Destroyed = true;
             }
 
             // Start is called before the first frame update
