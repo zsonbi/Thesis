@@ -1,16 +1,16 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 10/06/2024 - 22:39:55 |
+| Generated on: | 10/06/2024 - 23:04:33 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 2 |
 | Classes: | 66 |
 | Files: | 66 |
-| Covered lines: | 2529 |
-| Uncovered lines: | 503 |
+| Covered lines: | 2521 |
+| Uncovered lines: | 511 |
 | Coverable lines: | 3032 |
 | Total lines: | 6208 |
-| Line coverage: | 83.4% (2529 of 3032) |
+| Line coverage: | 83.1% (2521 of 3032) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 463 |
@@ -33,7 +33,7 @@
 |Tests.UnityTestParent[T]|55|3|58|111|94.8%|0|0||5|5|100%|
 |Tests.UserTests.UserControllerTests|22|0|22|48|100%|0|0||3|3|100%|
 |Tests.UserTests.UserTestsParent[T]|4|0|4|24|100%|0|0||1|1|100%|
-|**ThesisScripts**|**1820**|**479**|**2299**|**4844**|**79.1%**|**0**|**0**|****|**407**|**487**|**83.5%**|
+|**ThesisScripts**|**1812**|**487**|**2299**|**4844**|**78.8%**|**0**|**0**|****|**407**|**487**|**83.5%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|6|0|6|15|100%|0|0||5|5|100%|
 |Building|7|2|9|33|77.7%|0|0||5|7|71.4%|
 |CameraScript|7|0|7|24|100%|0|0||2|2|100%|
@@ -42,15 +42,15 @@
 |CoroutineRunner|15|0|15|33|100%|0|0||3|3|100%|
 |EdgeRoadContainer|9|0|9|15|100%|0|0||7|7|100%|
 |EffectScript|4|0|4|20|100%|0|0||2|2|100%|
-|Game.Car|74|11|85|143|87%|0|0||13|13|100%|
+|Game.Car|71|14|85|143|83.5%|0|0||13|13|100%|
 |Game.CarController|87|32|119|238|73.1%|0|0||14|18|77.7%|
-|Game.CopCar|48|0|48|80|100%|0|0||1|1|100%|
+|Game.CopCar|45|3|48|80|93.7%|0|0||1|1|100%|
 |Game.EnableWheelPhysicMaterial|16|0|16|37|100%|0|0||2|2|100%|
-|Game.GameController|113|7|120|189|94.1%|0|0||25|25|100%|
+|Game.GameController|115|5|120|189|95.8%|0|0||25|25|100%|
 |Game.NpcCar|6|0|6|19|100%|0|0||1|1|100%|
 |Game.PlayerCar|125|27|152|219|82.2%|0|0||17|17|100%|
 |Game.World.BuildingCell|11|0|11|30|100%|0|0||7|7|100%|
-|Game.World.CarSpawner|41|2|43|79|95.3%|0|0||4|5|80%|
+|Game.World.CarSpawner|37|6|43|79|86%|0|0||4|5|80%|
 |Game.World.Chunk|338|32|370|595|91.3%|0|0||27|29|93.1%|
 |Game.World.GameWorld|70|16|86|147|81.3%|0|0||7|7|100%|
 |Game.World.RoadGenerator|111|23|134|234|82.8%|0|0||8|9|88.8%|
