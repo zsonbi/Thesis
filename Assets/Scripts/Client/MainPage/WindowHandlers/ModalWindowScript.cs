@@ -16,25 +16,42 @@ public class ModalWindow : ThreadSafeMonoBehaviour
 
     public void Show()
     {
-        this.gameObject.SetActive(true);
+        if (this.Destroyed)
+        {
+            return;
+        }
+        try
+        {
+            this.gameObject.SetActive(true);
+        }
+        catch (MissingReferenceException)
+        {
+            return;
+        }
     }
 
     public void Show(string title, string content, Action onOkAction = null)
     {
-        if (this.gameObject is null)
+        if (this.Destroyed)
         {
             return;
         }
-
-        this.ModalTitleText.text = title;
-        this.ModalContentText.text = content;
-        this.onOkAction = onOkAction;
-        Show();
+        try
+        {
+            this.ModalTitleText.text = title;
+            this.ModalContentText.text = content;
+            this.onOkAction = onOkAction;
+            Show();
+        }
+        catch (MissingReferenceException)
+        {
+            return;
+        }
     }
 
     public void Hide()
     {
-        if (this.gameObject is null)
+        if (this.Destroyed)
         {
             return;
         }
