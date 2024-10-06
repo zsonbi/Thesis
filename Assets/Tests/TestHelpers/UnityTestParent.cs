@@ -91,6 +91,14 @@ namespace Tests
             yield return null;
         }
 
+        protected IEnumerator WaitForFewFrames(int frameCount = 60)
+        {
+            for (int i = 0; i < frameCount; i++)
+            {
+                yield return new WaitForFixedUpdate();
+            }
+        }
+
         [UnityTearDown]
         public new IEnumerator TearDown()
         {

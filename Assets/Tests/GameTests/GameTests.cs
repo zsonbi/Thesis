@@ -188,7 +188,7 @@ namespace Tests
                     GameObject coin = GameObject.Instantiate(coinPrefab, MainController.World.GetChunk(MainController.PlayerPos).transform);
                     coin.transform.position = MainController.PlayerPos;
                 }
-                yield return new WaitForFixedUpdate();
+                yield return WaitForFewFrames();
 
                 Assert.AreEqual(10, MainController.Coins);
                 MainController.Player.Kill();
@@ -219,7 +219,8 @@ namespace Tests
                     GameObject coin = GameObject.Instantiate(coinPrefab, MainController.World.GetChunk(MainController.PlayerPos).transform);
                     coin.transform.position = MainController.PlayerPos;
                 }
-                yield return new WaitForFixedUpdate();
+
+                yield return WaitForFewFrames();
 
                 Assert.AreEqual(10, MainController.Coins);
                 MainController.Player.Kill();
@@ -251,7 +252,8 @@ namespace Tests
                     GameObject coin = GameObject.Instantiate(coinPrefab, MainController.World.GetChunk(MainController.PlayerPos).transform);
                     coin.transform.position = MainController.PlayerPos;
                 }
-                yield return new WaitForFixedUpdate();
+                yield return WaitForFewFrames();
+
                 Assert.AreEqual(10, MainController.Coins);
                 MainController.Player.Kill();
                 float pickedUpCoins = MainController.Coins;

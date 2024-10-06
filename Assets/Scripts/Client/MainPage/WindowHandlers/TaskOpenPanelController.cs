@@ -164,8 +164,6 @@ namespace MainPage
         /// </summary>
         public void Cancel()
         {
-            this.TaskClosedEventHandler?.Invoke(this, new TaskClosedEventArgs(false));
-            this.gameObject.SetActive(false);
             //If it wasn't a new task revert it to the previous state
             if (this.CurrentTask.ID != -1)
             {
