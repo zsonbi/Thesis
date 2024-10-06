@@ -82,11 +82,6 @@ namespace Tests
             {
                 yield return LoadScene();
 
-                //Add money and task score
-                CoroutineRunner.RunCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.User>(TestConfig.TASK_SCORE_CHEAT_PATH, TestConfig.TASK_SCORE_CHEAT_PASSWORD));
-                CoroutineRunner.RunCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.Game>(ServerConfig.PATH_FOR_SAVE_COINS, 10000));
-                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
-
                 taskOpenPanelController.OpenUp();
                 MainController.LoadGoodTasks();
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);

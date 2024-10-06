@@ -41,6 +41,8 @@ public class ModalWindow : ThreadSafeMonoBehaviour
             this.ModalTitleText.text = title;
             this.ModalContentText.text = content;
             this.onOkAction = onOkAction;
+       
+
             Show();
         }
         catch (MissingReferenceException)

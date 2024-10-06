@@ -121,8 +121,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Modal, Assembly-CSharp
+      - m_Target: {fileID: 2146476007904424658}
+        m_TargetAssemblyTypeName: ModalWindow, ThesisScripts
         m_MethodName: ConfirmButtonClick
         m_Mode: 1
         m_Arguments:
