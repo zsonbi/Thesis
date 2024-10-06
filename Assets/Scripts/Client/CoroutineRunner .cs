@@ -25,4 +25,14 @@ public class CoroutineRunner : MonoBehaviour
     {
         return Instance.StartCoroutine(coroutine);
     }
+
+    public static void StopAllCoroutines()
+    {
+        Instance.StopAll();
+    }
+
+    private void StopAll()
+    {
+        StopAllCoroutines();
+    }
 }

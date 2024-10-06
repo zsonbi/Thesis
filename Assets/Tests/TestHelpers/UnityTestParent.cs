@@ -14,6 +14,7 @@ using User;
 using Thesis_backend.Data_Structures;
 using UnityEngine.InputSystem;
 using NUnit.Framework;
+using UnityEngine.TestTools;
 
 namespace Tests
 {
@@ -90,15 +91,23 @@ namespace Tests
             yield return null;
         }
 
-        [SetUp]
+        [UnitySetUp]
         public IEnumerator Setup()
         {
             yield return new WaitForSeconds(1f);
         }
 
-        [TearDown]
+        [UnityTearDown]
         public IEnumerator TearDown()
         {
+            CoroutineRunner.StopAllCoroutines();
+            AsyncOperation asyncUnload = SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().name);
+            while (!asyncUnload.isDone)
+            {
+                yield return null; // Wait for the scene to fully unload
+            }
+
+            Debug.Log("Scene unloaded successfully in Teardown");
             yield return new WaitForSeconds(1f);
         }
     }
