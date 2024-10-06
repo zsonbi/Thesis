@@ -1,11 +1,10 @@
-﻿
-namespace DataTypes
+﻿namespace DataTypes
 {
-    internal enum TaskSortType
+    public enum TaskSortType
     {
-        Added=0,
-        Name=1,
-        Type=2,
-        Available=3,
+        Added = 0,
+        Name = 1,
+        Type = 2,
+        Available = 3,
     }
 }

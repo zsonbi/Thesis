@@ -64,6 +64,11 @@ namespace MainPage
         public Dictionary<long, TaskDisplayHandler> Tasks { get; private set; } = new Dictionary<long, TaskDisplayHandler>();
 
         /// <summary>
+        /// Currently what are the task being sorted by
+        /// </summary>
+        public TaskSortType TaskSortType => (TaskSortType)taskSortDropdown.value;
+
+        /// <summary>
         /// Start is called before the first frame update
         /// </summary>
         private async void Start()
