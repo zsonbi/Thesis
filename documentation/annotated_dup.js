@@ -60,6 +60,8 @@ var annotated_dup =
     [ "StarHandler", "classStarHandler.html", "classStarHandler" ],
     [ "TaskClosedEventArgs", "classTaskClosedEventArgs.html", "classTaskClosedEventArgs" ],
     [ "TaskDisplayHandler", "classTaskDisplayHandler.html", "classTaskDisplayHandler" ],
+    [ "TaskHistoryHandler", "classTaskHistoryHandler.html", "classTaskHistoryHandler" ],
+    [ "TaskHistoryWindowHandler", "classTaskHistoryWindowHandler.html", "classTaskHistoryWindowHandler" ],
     [ "TaskOpenPanelController", "classTaskOpenPanelController.html", "classTaskOpenPanelController" ],
     [ "UserController", "classUserController.html", "classUserController" ]
 ];

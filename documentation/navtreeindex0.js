@@ -182,6 +182,10 @@ var NAVTREEINDEX0 =
 "TaskClosedEventArgs_8cs_source.html":[2,0,0,0,0,0,1,6],
 "TaskDisplayHandler_8cs.html":[2,0,0,0,0,2,0,1],
 "TaskDisplayHandler_8cs_source.html":[2,0,0,0,0,2,0,1],
+"TaskHistoryHandler_8cs.html":[2,0,0,0,0,2,0,2],
+"TaskHistoryHandler_8cs_source.html":[2,0,0,0,0,2,0,2],
+"TaskHistoryWindowHandler_8cs.html":[2,0,0,0,0,2,1,3],
+"TaskHistoryWindowHandler_8cs_source.html":[2,0,0,0,0,2,1,3],
 "TaskHistory_8cs.html":[2,0,0,0,0,0,0,8],
 "TaskHistory_8cs.html#a00cedb91ee7373f05d08f5da5b43baba":[2,0,0,0,0,0,0,8,1],
 "TaskHistory_8cs.html#a7b2e6bc0f0c4b62352bea799aab2bbaa":[2,0,0,0,0,0,0,8,0],
@@ -198,8 +202,8 @@ var NAVTREEINDEX0 =
 "TaskIntervals_8cs.html#a4ba022096603875ae402bb772ec906f9ac512b685438f41daa7386329a3b8f8d3":[2,0,0,0,0,0,1,7,0,3],
 "TaskIntervals_8cs.html#a4ba022096603875ae402bb772ec906f9affe09c441a907306d9878f402089f5a2":[2,0,0,0,0,0,1,7,0,2],
 "TaskIntervals_8cs_source.html":[2,0,0,0,0,0,1,7],
-"TaskOpenPanelController_8cs.html":[2,0,0,0,0,2,1,3],
-"TaskOpenPanelController_8cs_source.html":[2,0,0,0,0,2,1,3],
+"TaskOpenPanelController_8cs.html":[2,0,0,0,0,2,1,4],
+"TaskOpenPanelController_8cs_source.html":[2,0,0,0,0,2,1,4],
 "TaskRequest_8cs.html":[2,0,0,0,0,0,0,9],
 "TaskRequest_8cs_source.html":[2,0,0,0,0,0,0,9],
 "TaskSortType_8cs.html":[2,0,0,0,0,0,1,8],
@@ -245,9 +249,5 @@ var NAVTREEINDEX0 =
 "classBuilding.html#a75b55df58b2b6d4575fc172df885cc2c":[1,0,5,4],
 "classBuilding.html#aa80c140b3bdf134a2529c59e68b31c91":[1,0,5,2],
 "classBuilding.html#ab2b2da6f5ddc018316124c5f2df6386d":[1,0,5,0],
-"classBuilding.html#ad7f95a519e6049143c18e683b4843020":[1,0,5,10],
-"classBuilding.html#ad8c8c988ab2bfe2675ae1403ce31fae6":[1,0,5,1],
-"classBuilding.html#ae5d484df6ed27cc77d2c338bfda53435":[1,0,5,7],
-"classCameraScript.html":[1,0,6],
-"classCameraScript.html#a049ad504d2cdce8a82e8972312c881b3":[1,0,6,3]
+"classBuilding.html#ad7f95a519e6049143c18e683b4843020":[1,0,5,10]
 };

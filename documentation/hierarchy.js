@@ -38,6 +38,8 @@ var hierarchy =
       [ "ShopWindow", "classShopWindow.html", null ],
       [ "StarHandler", "classStarHandler.html", null ],
       [ "TaskDisplayHandler", "classTaskDisplayHandler.html", null ],
+      [ "TaskHistoryHandler", "classTaskHistoryHandler.html", null ],
+      [ "TaskHistoryWindowHandler", "classTaskHistoryWindowHandler.html", null ],
       [ "TaskOpenPanelController", "classTaskOpenPanelController.html", null ],
       [ "UserController", "classUserController.html", null ]
     ] ],

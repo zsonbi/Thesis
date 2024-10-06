@@ -21,9 +21,10 @@ var searchData=
   ['cointext_18',['CoinText',['../classShopWindow.html#a945b0fbfe08eb39ddb5c1a31af950595',1,'ShopWindow']]],
   ['columncount_19',['columnCount',['../classBuilding.html#a0b7c04d7ece54fe0199e640fe475d787',1,'Building']]],
   ['completebutton_20',['CompleteButton',['../classTaskDisplayHandler.html#a2cfd7e61e0fc131acda2e8e6919f00dd',1,'TaskDisplayHandler']]],
-  ['copcars_21',['CopCars',['../classGame_1_1World_1_1CarSpawner.html#aae87e13674ea01abc1a7f7b11afe30a2',1,'Game::World::CarSpawner']]],
-  ['crossroadsprefab_22',['crossRoadsPrefab',['../classGame_1_1World_1_1Chunk.html#a7abecf4e7c8c6ef8a164e24731f843ac',1,'Game::World::Chunk']]],
-  ['currencytext_23',['CurrencyText',['../classMainWindowController.html#a1243947e3524bee2c82611a469e1d48e',1,'MainWindowController']]],
-  ['currenttask_24',['CurrentTask',['../classTaskOpenPanelController.html#a06b8aa3aec8e924f3043ea8bcb7ca49f',1,'TaskOpenPanelController']]],
-  ['curvedroadprefab_25',['curvedRoadPrefab',['../classGame_1_1World_1_1Chunk.html#a032731bad732a8acc8a81495eb2446a6',1,'Game::World::Chunk']]]
+  ['completedatetext_21',['completeDateText',['../classTaskHistoryHandler.html#abbc77c3cd3c7cdadc37c3f3c483235f4',1,'TaskHistoryHandler']]],
+  ['copcars_22',['CopCars',['../classGame_1_1World_1_1CarSpawner.html#aae87e13674ea01abc1a7f7b11afe30a2',1,'Game::World::CarSpawner']]],
+  ['crossroadsprefab_23',['crossRoadsPrefab',['../classGame_1_1World_1_1Chunk.html#a7abecf4e7c8c6ef8a164e24731f843ac',1,'Game::World::Chunk']]],
+  ['currencytext_24',['CurrencyText',['../classMainWindowController.html#a1243947e3524bee2c82611a469e1d48e',1,'MainWindowController']]],
+  ['currenttask_25',['CurrentTask',['../classTaskOpenPanelController.html#a06b8aa3aec8e924f3043ea8bcb7ca49f',1,'TaskOpenPanelController']]],
+  ['curvedroadprefab_26',['curvedRoadPrefab',['../classGame_1_1World_1_1Chunk.html#a032731bad732a8acc8a81495eb2446a6',1,'Game::World::Chunk']]]
 ];

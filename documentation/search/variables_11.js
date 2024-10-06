@@ -4,7 +4,7 @@ var searchData=
   ['scorecounter_1',['ScoreCounter',['../classGame_1_1GameController.html#aefe69ae4f272fa03c90f236f5e9f472e',1,'Game::GameController']]],
   ['scorelabeltext_2',['ScoreLabelText',['../classFriendHandler.html#ac64f979c137a9c135a627a3cb285d034',1,'FriendHandler']]],
   ['scoreparent_3',['scoreParent',['../classLeaderboardWindow.html#aaca2142880ff0bb12f38e96717968595',1,'LeaderboardWindow']]],
-  ['scoretext_4',['scoretext',['../classFriendHandler.html#a610bd1786d38bfeec8dc82639eb7a10f',1,'FriendHandler.ScoreText'],['../classLeaderboardItem.html#ae46db43f8b6a7ae12aaedf69f9802a2b',1,'LeaderboardItem.scoreText']]],
+  ['scoretext_4',['scoretext',['../classLeaderboardItem.html#ae46db43f8b6a7ae12aaedf69f9802a2b',1,'LeaderboardItem.scoreText'],['../classFriendHandler.html#a610bd1786d38bfeec8dc82639eb7a10f',1,'FriendHandler.ScoreText']]],
   ['serverpath_5',['SERVERPATH',['../classConfig_1_1ServerConfig.html#aa9e50cfff68e59c43984d969588bf7e6',1,'Config::ServerConfig']]],
   ['set_6',['set',['../namespaceThesis__backend_1_1Data__Structures.html#aa44d6a0f27adec065161aeeb258e68c1',1,'Thesis_backend::Data_Structures']]],
   ['shopitemprefab_7',['ShopItemPrefab',['../classShopWindow.html#a8f4a96eae979285b0c7e5db037923665',1,'ShopWindow']]],
