@@ -63,7 +63,7 @@ namespace Tests
                 taskOpenPanelController.Save();
 
                 yield return WaitForCondition(() => prevTaskCount != MainController.Tasks.Count);
-
+                yield return WaitForCondition(() => taskOpenPanelController.CurrentTask.ID == -1);
                 TaskDisplayHandler created = MainController.Tasks.Last().Value;
 
                 Assert.AreEqual(taskName, created.CurrentTask.TaskName);
