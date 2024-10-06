@@ -13,6 +13,8 @@ using UnityEngine;
 using User;
 using Thesis_backend.Data_Structures;
 using UnityEngine.InputSystem;
+using NUnit.Framework;
+using UnityEngine.TestTools;
 
 namespace Tests
 {
@@ -87,6 +89,22 @@ namespace Tests
                 yield return new WaitForSeconds(0.1f);
             }
             yield return null;
+        }
+
+        [UnitySetUp]
+        public new IEnumerator Setup()
+        {
+            base.Setup();
+            yield return new WaitForSeconds(1f);
+        }
+
+        [UnityTearDown]
+        public new IEnumerator TearDown()
+        {
+            base.TearDown();
+            CoroutineRunner.StopAllCoroutinesGlobal();
+
+            yield return new WaitForSeconds(1f);
         }
     }
 }

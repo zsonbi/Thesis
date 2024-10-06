@@ -25,4 +25,9 @@ public class CoroutineRunner : MonoBehaviour
     {
         return Instance.StartCoroutine(coroutine);
     }
+
+    public static void StopAllCoroutinesGlobal()
+    {
+        Instance.StopAllCoroutines(); // Directly stop coroutines without recursion
+    }
 }
