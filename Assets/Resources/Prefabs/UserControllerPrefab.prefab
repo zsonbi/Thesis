@@ -459,8 +459,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LoginPanel: {fileID: 4091310060957614868}
-  RegisterPanel: {fileID: 3601191658324697731}
-  ModalWindow: {fileID: 1311106554940877766}
+  registerPanel: {fileID: 3601191658324697731}
+  modalWindow: {fileID: 1311106554940877766}
 --- !u!1 &4091310060957614868
 GameObject:
   m_ObjectHideFlags: 0
