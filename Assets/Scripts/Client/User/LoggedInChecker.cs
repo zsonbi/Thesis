@@ -41,6 +41,7 @@ namespace User
         /// <param name="reason">Why the api request failed</param>
         private void LoggedOut(string reason)
         {
+            UserData.Instance.Logout();
             AsyncOperation loading = SceneManager.LoadSceneAsync("LoginScene", LoadSceneMode.Single);
         }
 
@@ -65,6 +66,11 @@ namespace User
         /// <param name="result">The server's response</param>
         private void LoggedIn(Thesis_backend.Data_Structures.User result)
         {
+            if (UserData.Instance.LoggedIn)
+            {
+                return;
+            }
+
             UserData.Instance.Init(result);
         }
     }
