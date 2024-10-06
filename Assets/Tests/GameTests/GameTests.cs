@@ -102,13 +102,13 @@ namespace Tests
 
                 GameUI.NewGame();
                 yield return WaitForCondition(() => MainController.Running);
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(0.5f);
 
                 float initPos = MainController.PlayerPos.z;
 
                 Press(Keyboard.sKey);
                 InputSystem.Update();
-                yield return new WaitForSeconds(2f);
+                yield return new WaitForSeconds(3f);
                 Release(Keyboard.sKey);
                 InputSystem.Update();
                 Assert.Less(MainController.PlayerPos.z, initPos);
@@ -123,13 +123,13 @@ namespace Tests
 
                 GameUI.NewGame();
                 yield return WaitForCondition(() => MainController.Running);
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(0.5f);
 
                 float initPos = MainController.PlayerPos.z;
 
                 Press(Keyboard.downArrowKey);
                 InputSystem.Update();
-                yield return new WaitForSeconds(2f);
+                yield return new WaitForSeconds(3f);
                 Release(Keyboard.downArrowKey);
                 InputSystem.Update();
                 Assert.Less(MainController.PlayerPos.z, initPos);
