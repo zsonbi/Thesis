@@ -14,6 +14,11 @@ public class LoggedInChecker : MonoBehaviour
         StartCoroutine(CheckLoggedInPeriodically());
     }
 
+    private void OnDestroy()
+    {
+        StopCoroutine(CheckLoggedInPeriodically());
+    }
+
     private IEnumerator CheckLoggedInPeriodically()
     {
         while (true)

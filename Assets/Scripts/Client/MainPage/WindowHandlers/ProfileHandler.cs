@@ -64,7 +64,7 @@ public class ProfileHandler : MonoBehaviour
     {
         AsyncOperation loading = SceneManager.LoadSceneAsync("LoginScene", LoadSceneMode.Single);
 
-        while (true)
+        while (!loading.isDone)
         {
             Debug.Log(loading.progress);
 

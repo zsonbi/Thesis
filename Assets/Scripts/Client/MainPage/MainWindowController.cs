@@ -35,6 +35,8 @@ public class MainWindowController : MonoBehaviour
 
     public Dictionary<long, TaskDisplayHandler> Tasks { get; private set; } = new Dictionary<long, TaskDisplayHandler>();
 
+    public bool Destroyed { get; private set; }
+
     // Start is called before the first frame update
     private async void Start()
     {
@@ -45,6 +47,11 @@ public class MainWindowController : MonoBehaviour
         UsernameInputText.text = UserData.Instance.Username;
         CurrencyText.text = UserData.Instance.CurrentTaskScore.ToString();
         LoadTasks();
+    }
+
+    private void OnDestroy()
+    {
+        this.Destroyed = true;
     }
 
     public void UpdateUserData(Thesis_backend.Data_Structures.User user)
@@ -166,6 +173,12 @@ public class MainWindowController : MonoBehaviour
 
     public GameObject CreateTask(PlayerTask taskContainer)
     {
+        if (Destroyed)
+        {
+            Debug.Log("task parent is null!");
+            return null;
+        }
+
         GameObject task = Instantiate(TaskPrefab, TaskParent.transform);
         TaskDisplayHandler taskComponent = task.GetComponent<TaskDisplayHandler>();
 
