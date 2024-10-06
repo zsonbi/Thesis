@@ -134,7 +134,7 @@ public class TaskOpenPanelController : ThreadSafeMonoBehaviour
                 this.CurrentTask = playerTaskOnOpen;
             }
         }
-        this.CurrentTask = new PlayerTask();
+        this.CurrentTask = new PlayerTask() { ID = -1 };
     }
 
     public void Save()
@@ -177,7 +177,7 @@ public class TaskOpenPanelController : ThreadSafeMonoBehaviour
         }
         UIController.SortingChanged();
 
-        this.CurrentTask = new PlayerTask();
+        this.CurrentTask = new PlayerTask() { ID = -1 };
     }
 
     public void DeleteTask()
