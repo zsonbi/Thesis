@@ -63,5 +63,6 @@ var annotated_dup =
     [ "TaskHistoryHandler", "classTaskHistoryHandler.html", "classTaskHistoryHandler" ],
     [ "TaskHistoryWindowHandler", "classTaskHistoryWindowHandler.html", "classTaskHistoryWindowHandler" ],
     [ "TaskOpenPanelController", "classTaskOpenPanelController.html", "classTaskOpenPanelController" ],
+    [ "ThreadSafeMonoBehaviour", "classThreadSafeMonoBehaviour.html", "classThreadSafeMonoBehaviour" ],
     [ "UserController", "classUserController.html", "classUserController" ]
 ];

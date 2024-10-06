@@ -51,7 +51,7 @@ var searchData=
   ['cointext_48',['CoinText',['../classShopWindow.html#a945b0fbfe08eb39ddb5c1a31af950595',1,'ShopWindow']]],
   ['col_49',['Col',['../classGame_1_1World_1_1Chunk.html#ad6574f4e35ae5e51f25bec7e1a47d2bc',1,'Game::World::Chunk']]],
   ['collectfromfields_50',['CollectFromFields',['../classTaskOpenPanelController.html#a82a9ebc3acdf5014bfcb673bd6dcb5e7',1,'TaskOpenPanelController']]],
-  ['columncount_51',['columncount',['../classBuilding.html#a0b7c04d7ece54fe0199e640fe475d787',1,'Building.columnCount'],['../classBuilding.html#a26613e83e44aef9ccbfed8ee5cc0d9c4',1,'Building.ColumnCount']]],
+  ['columncount_51',['columncount',['../classBuilding.html#a26613e83e44aef9ccbfed8ee5cc0d9c4',1,'Building.ColumnCount'],['../classBuilding.html#a0b7c04d7ece54fe0199e640fe475d787',1,'Building.columnCount']]],
   ['common_52',['Common',['../namespaceThesis__backend_1_1Data__Structures.html#a24320ef259be3b66e6deb7a608c32dcaad13bc5b68b2bd9e18f29777db17cc563',1,'Thesis_backend::Data_Structures']]],
   ['complete_53',['Complete',['../namespaceThesis__backend_1_1Data__Structures.html#a0a6752f997f752441d824568af135f9d',1,'Thesis_backend::Data_Structures']]],
   ['completebutton_54',['CompleteButton',['../classTaskDisplayHandler.html#a2cfd7e61e0fc131acda2e8e6919f00dd',1,'TaskDisplayHandler']]],

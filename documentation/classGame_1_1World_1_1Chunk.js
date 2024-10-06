@@ -1,7 +1,6 @@
 var classGame_1_1World_1_1Chunk =
 [
     [ "InitUniTaskLoop", "classGame_1_1World_1_1Chunk.html#a40aa70982f2ae4ecb1cbf4ada9bf9e76", null ],
-    [ "OnDestroy", "classGame_1_1World_1_1Chunk.html#acc417b7ca3d058f1ddf6ba1b512b65fd", null ],
     [ "Awake", "classGame_1_1World_1_1Chunk.html#a697c68dad0a2d0dcad6d09d96f614b04", null ],
     [ "BuildingLoaded", "classGame_1_1World_1_1Chunk.html#ad96b568d5f7a03b6b4ea194b387c0af1", null ],
     [ "GetAbsolutePosition", "classGame_1_1World_1_1Chunk.html#af37779d40ed9cd07b577d5bca61627b7", null ],
@@ -41,6 +40,5 @@ var classGame_1_1World_1_1Chunk =
     [ "Col", "classGame_1_1World_1_1Chunk.html#ad6574f4e35ae5e51f25bec7e1a47d2bc", null ],
     [ "Loaded", "classGame_1_1World_1_1Chunk.html#a879b48e73c901d1ae0a712a78074021a", null ],
     [ "Roads", "classGame_1_1World_1_1Chunk.html#ac21c65b1dc3fbfe5de7b2a99b325098e", null ],
-    [ "Destroyed", "classGame_1_1World_1_1Chunk.html#a7fbeccb26b34861acb099ec3ee18bde1", null ],
     [ "EdgeRoads", "classGame_1_1World_1_1Chunk.html#a30022bdfe0132074a9d591c6eb326441", null ]
 ];

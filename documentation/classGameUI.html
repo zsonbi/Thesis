@@ -103,8 +103,11 @@ $(document).ready(function(){initNavTree('classGameUI.html',''); initResizable()
 Inheritance diagram for GameUI:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="classGameUI.png" alt=""/>
- </div></div>
+  <img src="classGameUI.png" usemap="#GameUI_map" alt=""/>
+  <map id="GameUI_map" name="GameUI_map">
+<area href="classThreadSafeMonoBehaviour.html" alt="ThreadSafeMonoBehaviour" shape="rect" coords="0,56,168,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -149,6 +152,9 @@ Properties</h2></td></tr>
 <tr class="separator:a1ca68be9e261bb1e9b8811b50a9c8702"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d33c13370e93af968ea9fde884597c9" id="r_a0d33c13370e93af968ea9fde884597c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameUI.html#a0d33c13370e93af968ea9fde884597c9">SelectedSkinIndex</a> = 0<code> [get, private set]</code></td></tr>
 <tr class="separator:a0d33c13370e93af968ea9fde884597c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_classThreadSafeMonoBehaviour"><td colspan="2" onclick="javascript:toggleInherit('properties_classThreadSafeMonoBehaviour')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="classThreadSafeMonoBehaviour.html">ThreadSafeMonoBehaviour</a></td></tr>
+<tr class="memitem:a342d21b8392b596a4e989792026d4cc7 inherit properties_classThreadSafeMonoBehaviour" id="r_a342d21b8392b596a4e989792026d4cc7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadSafeMonoBehaviour.html#a342d21b8392b596a4e989792026d4cc7">Destroyed</a><code> [get, private set]</code></td></tr>
+<tr class="separator:a342d21b8392b596a4e989792026d4cc7 inherit properties_classThreadSafeMonoBehaviour"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -197,6 +203,12 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aed6d780e8f4fa0d68dec75d22eff886e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a932f4df2bb1e985095ca6ff0427d9cf7" id="r_a932f4df2bb1e985095ca6ff0427d9cf7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGame_1_1GameController.html">GameController</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameUI.html#a932f4df2bb1e985095ca6ff0427d9cf7">gameController</a></td></tr>
 <tr class="separator:a932f4df2bb1e985095ca6ff0427d9cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_classThreadSafeMonoBehaviour"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classThreadSafeMonoBehaviour')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classThreadSafeMonoBehaviour.html">ThreadSafeMonoBehaviour</a></td></tr>
+<tr class="memitem:a1c939f659c16e798aaa372781976c7b1 inherit pro_methods_classThreadSafeMonoBehaviour" id="r_a1c939f659c16e798aaa372781976c7b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadSafeMonoBehaviour.html#a1c939f659c16e798aaa372781976c7b1">OnDestroy</a> ()</td></tr>
+<tr class="separator:a1c939f659c16e798aaa372781976c7b1 inherit pro_methods_classThreadSafeMonoBehaviour"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -691,7 +703,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="GameUI_8cs_source.html#l00054">gameController</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00053">Game.GameController.Awake()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00046">Game.GameController.Awake()</a>.</p>
 
 </div>
 </div>
@@ -731,9 +743,9 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="aclassGameUI_html_a671890c1f7adf6b3aea9563222efdf41"><div class="ttname"><a href="classGameUI.html#a671890c1f7adf6b3aea9563222efdf41">GameUI.HideGameOverScreen</a></div><div class="ttdeci">void HideGameOverScreen(bool saveGameResults=true)</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00178">GameUI.cs:178</a></div></div>
 <div class="ttc" id="aclassGameUI_html_aa76f74d7c8679b04e74043f6e18474e9"><div class="ttname"><a href="classGameUI.html#aa76f74d7c8679b04e74043f6e18474e9">GameUI.mainMenuContainer</a></div><div class="ttdeci">GameObject mainMenuContainer</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00022">GameUI.cs:22</a></div></div>
 <div class="ttc" id="aclassGameUI_html_aa87d6d5f2504f45f0d15aa727e409995"><div class="ttname"><a href="classGameUI.html#aa87d6d5f2504f45f0d15aa727e409995">GameUI.ingameContainer</a></div><div class="ttdeci">GameObject ingameContainer</div><div class="ttdef"><b>Definition</b> <a href="GameUI_8cs_source.html#l00016">GameUI.cs:16</a></div></div>
-<div class="ttc" id="aclassGame_1_1GameController_html_af5c50c52cffcab3018ca54be6a421d7f"><div class="ttname"><a href="classGame_1_1GameController.html#af5c50c52cffcab3018ca54be6a421d7f">Game.GameController.NewGame</a></div><div class="ttdeci">async Task NewGame()</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00116">GameController.cs:116</a></div></div>
+<div class="ttc" id="aclassGame_1_1GameController_html_af5c50c52cffcab3018ca54be6a421d7f"><div class="ttname"><a href="classGame_1_1GameController.html#af5c50c52cffcab3018ca54be6a421d7f">Game.GameController.NewGame</a></div><div class="ttdeci">async Task NewGame()</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00109">GameController.cs:109</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="UserData_8cs_source.html#l00023">User.UserData.CurrentTaskScore</a>, <a class="el" href="GameUI_8cs_source.html#l00054">gameController</a>, <a class="el" href="GameUI_8cs_source.html#l00178">HideGameOverScreen()</a>, <a class="el" href="GameUI_8cs_source.html#l00016">ingameContainer</a>, <a class="el" href="UserData_8cs_source.html#l00012">User.UserData.Instance</a>, <a class="el" href="GameUI_8cs_source.html#l00022">mainMenuContainer</a>, and <a class="el" href="GameController_8cs_source.html#l00116">Game.GameController.NewGame()</a>.</p>
+<p class="reference">References <a class="el" href="UserData_8cs_source.html#l00023">User.UserData.CurrentTaskScore</a>, <a class="el" href="GameUI_8cs_source.html#l00054">gameController</a>, <a class="el" href="GameUI_8cs_source.html#l00178">HideGameOverScreen()</a>, <a class="el" href="GameUI_8cs_source.html#l00016">ingameContainer</a>, <a class="el" href="UserData_8cs_source.html#l00012">User.UserData.Instance</a>, <a class="el" href="GameUI_8cs_source.html#l00022">mainMenuContainer</a>, and <a class="el" href="GameController_8cs_source.html#l00109">Game.GameController.NewGame()</a>.</p>
 
 </div>
 </div>
@@ -807,7 +819,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="StarHandler_8cs_source.html#l00017">StarHandler.ChangeDifficulty()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00116">Game.GameController.NewGame()</a>, and <a class="el" href="GameController_8cs_source.html#l00077">Game.GameController.Update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00109">Game.GameController.NewGame()</a>, and <a class="el" href="GameController_8cs_source.html#l00070">Game.GameController.Update()</a>.</p>
 
 </div>
 </div>
@@ -847,7 +859,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="GameController_8cs_source.html#l00044">Game.GameController.Coins</a>, <a class="el" href="GameUI_8cs_source.html#l00055">Doubled</a>, <a class="el" href="GameUI_8cs_source.html#l00054">gameController</a>, <a class="el" href="GameUI_8cs_source.html#l00013">gameOverContainer</a>, <a class="el" href="GameUI_8cs_source.html#l00016">ingameContainer</a>, and <a class="el" href="GameController_8cs_source.html#l00034">Game.GameController.Score</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00105">Game.GameController.PlayerDied()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00098">Game.GameController.PlayerDied()</a>.</p>
 
 </div>
 </div>
@@ -1483,7 +1495,7 @@ Private Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="GameUI_8cs_source.html#l00057">57</a> of file <a class="el" href="GameUI_8cs_source.html">GameUI.cs</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   57</span>{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; } = 0;</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="GameUI_8cs_source.html#l00131">LeftRotateSkin()</a>, <a class="el" href="GameController_8cs_source.html#l00116">Game.GameController.NewGame()</a>, and <a class="el" href="GameUI_8cs_source.html#l00137">RightRotateSkin()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameUI_8cs_source.html#l00131">LeftRotateSkin()</a>, <a class="el" href="GameController_8cs_source.html#l00109">Game.GameController.NewGame()</a>, and <a class="el" href="GameUI_8cs_source.html#l00137">RightRotateSkin()</a>.</p>
 
 </div>
 </div>

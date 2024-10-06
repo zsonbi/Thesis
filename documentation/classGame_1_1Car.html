@@ -107,9 +107,10 @@ Inheritance diagram for Game.Car:</div>
  <div class="center">
   <img src="classGame_1_1Car.png" usemap="#Game.Car_map" alt=""/>
   <map id="Game.Car_map" name="Game.Car_map">
-<area href="classGame_1_1NpcCar.html" alt="Game.NpcCar" shape="rect" coords="0,112,106,136"/>
-<area href="classGame_1_1PlayerCar.html" alt="Game.PlayerCar" shape="rect" coords="116,112,222,136"/>
-<area href="classGame_1_1CopCar.html" alt="Game.CopCar" shape="rect" coords="0,168,106,192"/>
+<area href="classThreadSafeMonoBehaviour.html" alt="ThreadSafeMonoBehaviour" shape="rect" coords="89,56,257,80"/>
+<area href="classGame_1_1NpcCar.html" alt="Game.NpcCar" shape="rect" coords="0,168,168,192"/>
+<area href="classGame_1_1PlayerCar.html" alt="Game.PlayerCar" shape="rect" coords="178,168,346,192"/>
+<area href="classGame_1_1CopCar.html" alt="Game.CopCar" shape="rect" coords="0,224,168,248"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -137,6 +138,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:accab07464e1d58ec37830dc0e7aee91f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade2a1c7e53ce6cfdd9b1e8cf014ca699" id="r_ade2a1c7e53ce6cfdd9b1e8cf014ca699"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1Car.html#ade2a1c7e53ce6cfdd9b1e8cf014ca699">Awake</a> ()</td></tr>
 <tr class="separator:ade2a1c7e53ce6cfdd9b1e8cf014ca699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classThreadSafeMonoBehaviour"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classThreadSafeMonoBehaviour')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classThreadSafeMonoBehaviour.html">ThreadSafeMonoBehaviour</a></td></tr>
+<tr class="memitem:a1c939f659c16e798aaa372781976c7b1 inherit pro_methods_classThreadSafeMonoBehaviour" id="r_a1c939f659c16e798aaa372781976c7b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadSafeMonoBehaviour.html#a1c939f659c16e798aaa372781976c7b1">OnDestroy</a> ()</td></tr>
+<tr class="separator:a1c939f659c16e798aaa372781976c7b1 inherit pro_methods_classThreadSafeMonoBehaviour"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -157,6 +161,9 @@ Properties</h2></td></tr>
 <tr class="separator:abcefa127828f456b077536044dc24b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab398cf652e4c7037ca2839241a3d6c63" id="r_ab398cf652e4c7037ca2839241a3d6c63"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1Car.html#ab398cf652e4c7037ca2839241a3d6c63">Alive</a><code> [get]</code></td></tr>
 <tr class="separator:ab398cf652e4c7037ca2839241a3d6c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_classThreadSafeMonoBehaviour"><td colspan="2" onclick="javascript:toggleInherit('properties_classThreadSafeMonoBehaviour')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="classThreadSafeMonoBehaviour.html">ThreadSafeMonoBehaviour</a></td></tr>
+<tr class="memitem:a342d21b8392b596a4e989792026d4cc7 inherit properties_classThreadSafeMonoBehaviour" id="r_a342d21b8392b596a4e989792026d4cc7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadSafeMonoBehaviour.html#a342d21b8392b596a4e989792026d4cc7">Destroyed</a><code> [get, private set]</code></td></tr>
+<tr class="separator:a342d21b8392b596a4e989792026d4cc7 inherit properties_classThreadSafeMonoBehaviour"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -270,7 +277,7 @@ Private Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="Car_8cs_source.html#l00051">51</a> of file <a class="el" href="Car_8cs_source.html">Car.cs</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   52</span>        {</div>
 <div class="line"><span class="lineno">   53</span>            <a class="code hl_class" href="classGame_1_1World_1_1Chunk.html">Chunk</a> newChunk = this.<a class="code hl_variable" href="classGame_1_1Car.html#a98cca5b2f769481e4ac7408a0a742fd9">gameController</a>.<a class="code hl_property" href="classGame_1_1GameController.html#ae490910e1402d5777d9aa387023a433b">World</a>.<a class="code hl_function" href="classGame_1_1World_1_1GameWorld.html#a78654137c458c1b1917285e28d3d270b">GetChunk</a>(this.gameObject.transform.position);</div>
-<div class="line"><span class="lineno">   54</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1Car.html#a80069a9b4dd05ae7aa0e8ac84c590800">lastChunk</a> != newChunk)</div>
+<div class="line"><span class="lineno">   54</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classGame_1_1Car.html#a80069a9b4dd05ae7aa0e8ac84c590800">lastChunk</a> != newChunk &amp;&amp; newChunk != <span class="keyword">null</span>)</div>
 <div class="line"><span class="lineno">   55</span>            {</div>
 <div class="line"><span class="lineno">   56</span>                <a class="code hl_function" href="classGame_1_1Car.html#aafa1ed6c6d66625c4e9dd1c18fb67fd3">ChunkChanged</a>(newChunk);</div>
 <div class="line"><span class="lineno">   57</span> </div>
@@ -289,9 +296,9 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="aclassGame_1_1Car_html_aafa1ed6c6d66625c4e9dd1c18fb67fd3"><div class="ttname"><a href="classGame_1_1Car.html#aafa1ed6c6d66625c4e9dd1c18fb67fd3">Game.Car.ChunkChanged</a></div><div class="ttdeci">virtual async void ChunkChanged(Chunk newChunk)</div><div class="ttdef"><b>Definition</b> <a href="Car_8cs_source.html#l00070">Car.cs:70</a></div></div>
 <div class="ttc" id="aclassGame_1_1GameController_html_ae490910e1402d5777d9aa387023a433b"><div class="ttname"><a href="classGame_1_1GameController.html#ae490910e1402d5777d9aa387023a433b">Game.GameController.World</a></div><div class="ttdeci">World.GameWorld World</div><div class="ttdef"><b>Definition</b> <a href="GameController_8cs_source.html#l00027">GameController.cs:28</a></div></div>
 <div class="ttc" id="aclassGame_1_1World_1_1Chunk_html"><div class="ttname"><a href="classGame_1_1World_1_1Chunk.html">Game.World.Chunk</a></div><div class="ttdoc">Used for generating a new world.</div><div class="ttdef"><b>Definition</b> <a href="Chunk_8cs_source.html#l00023">Chunk.cs:24</a></div></div>
-<div class="ttc" id="aclassGame_1_1World_1_1GameWorld_html_a78654137c458c1b1917285e28d3d270b"><div class="ttname"><a href="classGame_1_1World_1_1GameWorld.html#a78654137c458c1b1917285e28d3d270b">Game.World.GameWorld.GetChunk</a></div><div class="ttdeci">Chunk GetChunk(Vector3 GameObjectPos)</div><div class="ttdef"><b>Definition</b> <a href="World_8cs_source.html#l00037">World.cs:37</a></div></div>
+<div class="ttc" id="aclassGame_1_1World_1_1GameWorld_html_a78654137c458c1b1917285e28d3d270b"><div class="ttname"><a href="classGame_1_1World_1_1GameWorld.html#a78654137c458c1b1917285e28d3d270b">Game.World.GameWorld.GetChunk</a></div><div class="ttdeci">Chunk GetChunk(Vector3 GameObjectPos)</div><div class="ttdef"><b>Definition</b> <a href="World_8cs_source.html#l00030">World.cs:30</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="Car_8cs_source.html#l00070">Game.Car.ChunkChanged()</a>, <a class="el" href="World_8cs_source.html#l00037">Game.World.GameWorld.GetChunk()</a>, <a class="el" href="Car_8cs_source.html#l00017">Game.Car.lastChunk</a>, and <a class="el" href="GameController_8cs_source.html#l00028">Game.GameController.World</a>.</p>
+<p class="reference">References <a class="el" href="Car_8cs_source.html#l00070">Game.Car.ChunkChanged()</a>, <a class="el" href="World_8cs_source.html#l00030">Game.World.GameWorld.GetChunk()</a>, <a class="el" href="Car_8cs_source.html#l00017">Game.Car.lastChunk</a>, and <a class="el" href="GameController_8cs_source.html#l00028">Game.GameController.World</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="Car_8cs_source.html#l00034">Game.Car.Update()</a>.</p>
 
@@ -378,7 +385,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Car_8cs_source.html#l00026">Game.Car.effects</a>, and <a class="el" href="Car_8cs_source.html#l00030">Game.Car.MAX_HEALTH</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00116">Game.GameController.NewGame()</a>, and <a class="el" href="CarSpawner_8cs_source.html#l00058">Game.World.CarSpawner.SpawnPolice()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameController_8cs_source.html#l00109">Game.GameController.NewGame()</a>, and <a class="el" href="CarSpawner_8cs_source.html#l00058">Game.World.CarSpawner.SpawnPolice()</a>.</p>
 
 </div>
 </div>

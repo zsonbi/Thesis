@@ -1,6 +1,5 @@
 var classGame_1_1GameController =
 [
-    [ "OnDestroy", "classGame_1_1GameController.html#a45b0f9f6372d88ea05c5c3fd05161f0e", null ],
     [ "Awake", "classGame_1_1GameController.html#a72ac9aa223ee085e0bd2d660466a494a", null ],
     [ "Start", "classGame_1_1GameController.html#a1d3159c95407370de0809d00266a6a20", null ],
     [ "Update", "classGame_1_1GameController.html#ac7bf604631786f89b01d5313ad796b8b", null ],
@@ -19,7 +18,6 @@ var classGame_1_1GameController =
     [ "playerVariants", "classGame_1_1GameController.html#acb9ffaeaae347c476646e0b74f089632", null ],
     [ "ScoreCounter", "classGame_1_1GameController.html#aefe69ae4f272fa03c90f236f5e9f472e", null ],
     [ "carSpawner", "classGame_1_1GameController.html#a0de72291f83213c5c510b414eb9d6375", null ],
-    [ "destroyed", "classGame_1_1GameController.html#ad7161a0dccb16db1d0dd97c38dbad891", null ],
     [ "World", "classGame_1_1GameController.html#ae490910e1402d5777d9aa387023a433b", null ],
     [ "Score", "classGame_1_1GameController.html#a110137fc8dd59568f1df0e13951e7940", null ],
     [ "Player", "classGame_1_1GameController.html#a976073941c6d8179bc3db17f1cccc56d", null ],

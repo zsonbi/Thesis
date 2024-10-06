@@ -101,8 +101,11 @@ $(document).ready(function(){initNavTree('classModalWindow.html',''); initResiza
 Inheritance diagram for ModalWindow:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="classModalWindow.png" alt=""/>
- </div></div>
+  <img src="classModalWindow.png" usemap="#ModalWindow_map" alt=""/>
+  <map id="ModalWindow_map" name="ModalWindow_map">
+<area href="classThreadSafeMonoBehaviour.html" alt="ThreadSafeMonoBehaviour" shape="rect" coords="0,56,168,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -123,6 +126,15 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aeca4ae4bd865300df08b118e4b03ae9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71dd3e1790029da28d45d0e19defd7da" id="r_a71dd3e1790029da28d45d0e19defd7da"><td class="memItemLeft" align="right" valign="top">Action&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModalWindow.html#a71dd3e1790029da28d45d0e19defd7da">onOkAction</a></td></tr>
 <tr class="separator:a71dd3e1790029da28d45d0e19defd7da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_classThreadSafeMonoBehaviour"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classThreadSafeMonoBehaviour')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classThreadSafeMonoBehaviour.html">ThreadSafeMonoBehaviour</a></td></tr>
+<tr class="memitem:a1c939f659c16e798aaa372781976c7b1 inherit pro_methods_classThreadSafeMonoBehaviour" id="r_a1c939f659c16e798aaa372781976c7b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadSafeMonoBehaviour.html#a1c939f659c16e798aaa372781976c7b1">OnDestroy</a> ()</td></tr>
+<tr class="separator:a1c939f659c16e798aaa372781976c7b1 inherit pro_methods_classThreadSafeMonoBehaviour"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_classThreadSafeMonoBehaviour"><td colspan="2" onclick="javascript:toggleInherit('properties_classThreadSafeMonoBehaviour')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="classThreadSafeMonoBehaviour.html">ThreadSafeMonoBehaviour</a></td></tr>
+<tr class="memitem:a342d21b8392b596a4e989792026d4cc7 inherit properties_classThreadSafeMonoBehaviour" id="r_a342d21b8392b596a4e989792026d4cc7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadSafeMonoBehaviour.html#a342d21b8392b596a4e989792026d4cc7">Destroyed</a><code> [get, private set]</code></td></tr>
+<tr class="separator:a342d21b8392b596a4e989792026d4cc7 inherit properties_classThreadSafeMonoBehaviour"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -156,7 +168,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   19</span>        this.gameObject.SetActive(<span class="keyword">true</span>);</div>
 <div class="line"><span class="lineno">   20</span>    }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="UserController_8cs_source.html#l00083">UserController.SendRegister()</a>, <a class="el" href="ModalWindowScript_8cs_source.html#l00022">Show()</a>, <a class="el" href="UserController_8cs_source.html#l00113">UserController.ShowLoginError()</a>, <a class="el" href="UserController_8cs_source.html#l00108">UserController.ShowRegisterError()</a>, <a class="el" href="GameUI_8cs_source.html#l00158">GameUI.ShowRequestFail()</a>, <a class="el" href="LeaderboardWindow_8cs_source.html#l00067">LeaderboardWindow.ShowRequestFail()</a>, <a class="el" href="ShopWindow_8cs_source.html#l00039">ShopWindow.ShowRequestFail()</a>, <a class="el" href="MainWindowController_8cs_source.html#l00183">MainWindowController.ShowRequestFail()</a>, <a class="el" href="FriendWindowHandler_8cs_source.html#l00047">FriendWindowHandler.ShowRequestFail()</a>, <a class="el" href="TaskHistoryWindowHandler_8cs_source.html#l00036">TaskHistoryWindowHandler.ShowRequestFail()</a>, and <a class="el" href="MainWindowController_8cs_source.html#l00188">MainWindowController.ShowTaskFail()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="UserController_8cs_source.html#l00083">UserController.SendRegister()</a>, <a class="el" href="ModalWindowScript_8cs_source.html#l00022">Show()</a>, <a class="el" href="UserController_8cs_source.html#l00113">UserController.ShowLoginError()</a>, <a class="el" href="UserController_8cs_source.html#l00108">UserController.ShowRegisterError()</a>, <a class="el" href="GameUI_8cs_source.html#l00158">GameUI.ShowRequestFail()</a>, <a class="el" href="LeaderboardWindow_8cs_source.html#l00067">LeaderboardWindow.ShowRequestFail()</a>, <a class="el" href="ShopWindow_8cs_source.html#l00039">ShopWindow.ShowRequestFail()</a>, <a class="el" href="MainWindowController_8cs_source.html#l00191">MainWindowController.ShowRequestFail()</a>, <a class="el" href="FriendWindowHandler_8cs_source.html#l00047">FriendWindowHandler.ShowRequestFail()</a>, <a class="el" href="TaskHistoryWindowHandler_8cs_source.html#l00036">TaskHistoryWindowHandler.ShowRequestFail()</a>, and <a class="el" href="MainWindowController_8cs_source.html#l00196">MainWindowController.ShowTaskFail()</a>.</p>
 
 </div>
 </div>

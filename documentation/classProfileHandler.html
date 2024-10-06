@@ -102,8 +102,11 @@ $(document).ready(function(){initNavTree('classProfileHandler.html',''); initRes
 Inheritance diagram for ProfileHandler:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="classProfileHandler.png" alt=""/>
- </div></div>
+  <img src="classProfileHandler.png" usemap="#ProfileHandler_map" alt=""/>
+  <map id="ProfileHandler_map" name="ProfileHandler_map">
+<area href="classThreadSafeMonoBehaviour.html" alt="ThreadSafeMonoBehaviour" shape="rect" coords="0,56,168,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -135,6 +138,15 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a09789168652eefe9f864f993e218bc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cdc112503a9d3c334211969dbfb6b70" id="r_a3cdc112503a9d3c334211969dbfb6b70"><td class="memItemLeft" align="right" valign="top">TMP_Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProfileHandler.html#a3cdc112503a9d3c334211969dbfb6b70">TotalScore</a></td></tr>
 <tr class="separator:a3cdc112503a9d3c334211969dbfb6b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_classThreadSafeMonoBehaviour"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classThreadSafeMonoBehaviour')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classThreadSafeMonoBehaviour.html">ThreadSafeMonoBehaviour</a></td></tr>
+<tr class="memitem:a1c939f659c16e798aaa372781976c7b1 inherit pro_methods_classThreadSafeMonoBehaviour" id="r_a1c939f659c16e798aaa372781976c7b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadSafeMonoBehaviour.html#a1c939f659c16e798aaa372781976c7b1">OnDestroy</a> ()</td></tr>
+<tr class="separator:a1c939f659c16e798aaa372781976c7b1 inherit pro_methods_classThreadSafeMonoBehaviour"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_classThreadSafeMonoBehaviour"><td colspan="2" onclick="javascript:toggleInherit('properties_classThreadSafeMonoBehaviour')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="classThreadSafeMonoBehaviour.html">ThreadSafeMonoBehaviour</a></td></tr>
+<tr class="memitem:a342d21b8392b596a4e989792026d4cc7 inherit properties_classThreadSafeMonoBehaviour" id="r_a342d21b8392b596a4e989792026d4cc7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadSafeMonoBehaviour.html#a342d21b8392b596a4e989792026d4cc7">Destroyed</a><code> [get, private set]</code></td></tr>
+<tr class="separator:a342d21b8392b596a4e989792026d4cc7 inherit properties_classThreadSafeMonoBehaviour"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -358,7 +370,7 @@ Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">   64</span>    {</div>
 <div class="line"><span class="lineno">   65</span>        AsyncOperation loading = SceneManager.LoadSceneAsync(<span class="stringliteral">&quot;LoginScene&quot;</span>, LoadSceneMode.Single);</div>
 <div class="line"><span class="lineno">   66</span> </div>
-<div class="line"><span class="lineno">   67</span>        <span class="keywordflow">while</span> (<span class="keyword">true</span>)</div>
+<div class="line"><span class="lineno">   67</span>        <span class="keywordflow">while</span> (!loading.isDone)</div>
 <div class="line"><span class="lineno">   68</span>        {</div>
 <div class="line"><span class="lineno">   69</span>            Debug.Log(loading.progress);</div>
 <div class="line"><span class="lineno">   70</span> </div>

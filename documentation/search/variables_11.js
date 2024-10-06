@@ -11,7 +11,7 @@ var searchData=
   ['shopitemscache_8',['shopItemsCache',['../classShopWindow.html#a92bd226c2ce12df91fd1d8835a2f292a',1,'ShopWindow']]],
   ['shopitemsprites_9',['ShopItemSprites',['../classShopWindow.html#a285846c6ebb3da82667203c2ee7fd1e0',1,'ShopWindow']]],
   ['shopparent_10',['ShopParent',['../classShopWindow.html#a0e11e0f93f9994c22b89c335f227d9f9',1,'ShopWindow']]],
-  ['shopwindow_11',['shopwindow',['../classShopItem.html#a20b400f4db0c3188465a5788796cf084',1,'ShopItem.shopWindow'],['../classGameUI.html#a06be0f7dedf5cd6d65829d8c81b46467',1,'GameUI.ShopWindow']]],
+  ['shopwindow_11',['shopwindow',['../classGameUI.html#a06be0f7dedf5cd6d65829d8c81b46467',1,'GameUI.ShopWindow'],['../classShopItem.html#a20b400f4db0c3188465a5788796cf084',1,'ShopItem.shopWindow']]],
   ['showpending_12',['showPending',['../classFriendWindowHandler.html#a995816a4d5c11cca060a0c34688a0b43',1,'FriendWindowHandler']]],
   ['size_13',['size',['../classGame_1_1World_1_1RoadGenerator.html#a3790c6d7db157b46eccff1e06fd8ca89',1,'Game::World::RoadGenerator']]],
   ['skindisplay_14',['SkinDisplay',['../classGameUI.html#a414f810ba5e6b4a81a14c8e125a7f28f',1,'GameUI']]],
