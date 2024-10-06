@@ -11,7 +11,7 @@ namespace MainPage
     public class FriendWindowHandler : ThreadSafeMonoBehaviour
     {
         [SerializeField]
-        private GameObject FriendsContainer;
+        private GameObject friendsContainer;
 
         [SerializeField]
         private TMP_InputField userIdentificationInput;
@@ -20,7 +20,7 @@ namespace MainPage
         private GameObject friendPrefab;
 
         [SerializeField]
-        private ModalWindow ModalWindow;
+        private ModalWindow modalWindow;
 
         private bool showPending = true;
 
@@ -48,14 +48,14 @@ namespace MainPage
 
         private void ShowRequestFail(string content)
         {
-            ModalWindow.Show("Request fail", content);
+            modalWindow.Show("Request fail", content);
         }
 
         private void SentFriendRequest(Friend friend)
         {
             if (showPending)
             {
-                FriendHandler friendDisplay = Instantiate(friendPrefab, this.FriendsContainer.transform).GetComponent<FriendHandler>();
+                FriendHandler friendDisplay = Instantiate(friendPrefab, this.friendsContainer.transform).GetComponent<FriendHandler>();
                 friendDisplay.InitValues(friend);
             }
         }
@@ -73,24 +73,24 @@ namespace MainPage
         private void DisplayFriends(List<Friend> friends)
         {
             //Delete the previous ones
-            for (int i = 0; i < this.FriendsContainer.transform.childCount; i++)
+            for (int i = 0; i < this.friendsContainer.transform.childCount; i++)
             {
-                Destroy(this.FriendsContainer.transform.GetChild(i).gameObject);
+                Destroy(this.friendsContainer.transform.GetChild(i).gameObject);
             }
-            this.FriendsContainer.transform.DetachChildren();
+            this.friendsContainer.transform.DetachChildren();
 
             foreach (var item in friends)
             {
                 if (showPending)
                 {
-                    FriendHandler friendDisplay = Instantiate(friendPrefab, this.FriendsContainer.transform).GetComponent<FriendHandler>();
+                    FriendHandler friendDisplay = Instantiate(friendPrefab, this.friendsContainer.transform).GetComponent<FriendHandler>();
                     friendDisplay.InitValues(item);
                 }
                 else
                 {
                     if (!item.Pending)
                     {
-                        FriendHandler friendDisplay = Instantiate(friendPrefab, this.FriendsContainer.transform).GetComponent<FriendHandler>();
+                        FriendHandler friendDisplay = Instantiate(friendPrefab, this.friendsContainer.transform).GetComponent<FriendHandler>();
                         friendDisplay.InitValues(item);
                     }
                 }

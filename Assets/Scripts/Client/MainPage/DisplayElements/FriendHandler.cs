@@ -10,19 +10,19 @@ namespace MainPage
     public class FriendHandler : ThreadSafeMonoBehaviour
     {
         [SerializeField]
-        private TMP_Text FriendNameLabel;
+        private TMP_Text friendNameLabel;
 
         [SerializeField]
-        private TMP_Text ScoreText;
+        private TMP_Text scoreText;
 
         [SerializeField]
-        private TMP_Text ScoreLabelText;
+        private TMP_Text scoreLabelText;
 
         [SerializeField]
-        private Button AcceptButton;
+        private Button acceptButton;
 
         [SerializeField]
-        private TMP_Text Pendingtext;
+        private TMP_Text pendingtext;
 
         public Friend Friend { get; private set; }
 
@@ -33,29 +33,29 @@ namespace MainPage
         public void InitValues(Friend friend)
         {
             this.Friend = friend;
-            this.AcceptButton.gameObject.SetActive(Friend.Pending);
+            this.acceptButton.gameObject.SetActive(Friend.Pending);
             if (UserData.Instance.Id != this.Friend.Sender.ID)
             {
-                FriendNameLabel.text = this.Friend.Sender.Username;
-                ScoreText.text = this.Friend.Sender.TotalScore.ToString();
+                friendNameLabel.text = this.Friend.Sender.Username;
+                scoreText.text = this.Friend.Sender.TotalScore.ToString();
                 if (Friend.Pending)
                 {
-                    AcceptButton.gameObject.SetActive(true);
+                    acceptButton.gameObject.SetActive(true);
                 }
             }
             else
             {
-                FriendNameLabel.text = this.Friend.Receiver.Username;
-                ScoreText.text = this.Friend.Receiver.TotalScore.ToString();
+                friendNameLabel.text = this.Friend.Receiver.Username;
+                scoreText.text = this.Friend.Receiver.TotalScore.ToString();
 
                 if (friend.Pending)
                 {
-                    AcceptButton.gameObject.SetActive(false);
-                    Pendingtext.gameObject.SetActive(true);
+                    acceptButton.gameObject.SetActive(false);
+                    pendingtext.gameObject.SetActive(true);
                 }
             }
-            this.ScoreText.gameObject.SetActive(!friend.Pending);
-            this.ScoreLabelText.gameObject.SetActive(!friend.Pending);
+            this.scoreText.gameObject.SetActive(!friend.Pending);
+            this.scoreLabelText.gameObject.SetActive(!friend.Pending);
         }
 
         public void AcceptFriendRequest()
@@ -71,9 +71,9 @@ namespace MainPage
         private void Accepted(Thesis_backend.Data_Structures.Friend result)
         {
             this.Friend.Pending = false;
-            this.AcceptButton.gameObject.SetActive(false);
-            this.ScoreText.gameObject.SetActive(true);
-            this.ScoreLabelText.gameObject.SetActive(true);
+            this.acceptButton.gameObject.SetActive(false);
+            this.scoreText.gameObject.SetActive(true);
+            this.scoreLabelText.gameObject.SetActive(true);
         }
 
         private void Deleted(string result)

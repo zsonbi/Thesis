@@ -16,16 +16,16 @@ namespace MainPage
     public class TaskDisplayHandler : ThreadSafeMonoBehaviour
     {
         [SerializeField]
-        private TMP_Text TaskNameLabel;
+        private TMP_Text taskNameLabel;
 
         [SerializeField]
-        private TMP_Text TaskIntervalsLabel;
+        private TMP_Text taskIntervalsLabel;
 
         [SerializeField]
-        private TMP_Text RemainingTimeLabel;
+        private TMP_Text remainingTimeLabel;
 
         [SerializeField]
-        private Button CompleteButton;
+        private Button completeButton;
 
         private MainWindowController UIController;
 
@@ -74,18 +74,18 @@ namespace MainPage
 
         public void UpdateLabels()
         {
-            TaskNameLabel.text = CurrentTask.TaskName;
-            TaskIntervalsLabel.text = ((TaskIntervals)CurrentTask.PeriodRate).ToString();
+            taskNameLabel.text = CurrentTask.TaskName;
+            taskIntervalsLabel.text = ((TaskIntervals)CurrentTask.PeriodRate).ToString();
             UpdateTimeRemaining();
         }
 
         private void CompleteStateChange(bool state)
         {
-            RemainingTimeLabel.gameObject.SetActive(state);
+            remainingTimeLabel.gameObject.SetActive(state);
             if (state)
             {
                 this.CurrentTask.Complete();
-                CompleteButton.gameObject.SetActive(false);
+                completeButton.gameObject.SetActive(false);
                 UpdateTimeRemaining();
             }
             else
@@ -93,7 +93,7 @@ namespace MainPage
                 UIController.SortingChanged();
 
                 this.CurrentTask.ResetComplete();
-                CompleteButton.gameObject.SetActive(true);
+                completeButton.gameObject.SetActive(true);
                 return;
             }
         }
@@ -119,7 +119,7 @@ namespace MainPage
                     formatted = string.Format("{0:D2}:{1:D2}:{2:D2}", difference.Hours, difference.Minutes, difference.Seconds);
                 }
 
-                RemainingTimeLabel.text = formatted;
+                remainingTimeLabel.text = formatted;
             }
         }
 

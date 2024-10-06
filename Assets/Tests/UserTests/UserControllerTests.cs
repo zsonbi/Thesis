@@ -8,11 +8,11 @@ using User;
 
 namespace Tests
 {
-    namespace LoginWindow
+    namespace UserTests
     {
-        public class UserControllerTests : LoginWindowTestsParent<UserController>
+        public class UserControllerTests : UserTestsParent<UserController>
         {
-            private void Login(string userName, string password)
+            private new void Login(string userName, string password)
             {
                 TMPro.TMP_InputField[] fields = this.MainController.LoginPanel.GetComponentsInChildren<TMPro.TMP_InputField>();
                 fields[0].text = userName;

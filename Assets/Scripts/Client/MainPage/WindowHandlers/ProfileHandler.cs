@@ -13,25 +13,25 @@ namespace MainPage
     public class ProfileHandler : ThreadSafeMonoBehaviour
     {
         [SerializeField]
-        private TMP_Text TotalTaskCount;
+        private TMP_Text totalTaskCount;
 
         [SerializeField]
-        private TMP_Text GoodTaskCount;
+        private TMP_Text goodTaskCount;
 
         [SerializeField]
-        private TMP_Text BadTaskCount;
+        private TMP_Text badTaskCount;
 
         [SerializeField]
-        private TMP_Text TotalScore;
+        private TMP_Text totalScore;
 
         public void Show()
         {
             this.gameObject.SetActive(true);
             LoadFromApi();
-            this.TotalTaskCount.text = (UserData.Instance.CompletedGoodTasks + UserData.Instance.CompletedBadTasks).ToString();
-            this.BadTaskCount.text = UserData.Instance.CompletedBadTasks.ToString();
-            this.GoodTaskCount.text = UserData.Instance.CompletedGoodTasks.ToString();
-            this.TotalScore.text = UserData.Instance.TotalScore.ToString();
+            this.totalTaskCount.text = (UserData.Instance.CompletedGoodTasks + UserData.Instance.CompletedBadTasks).ToString();
+            this.badTaskCount.text = UserData.Instance.CompletedBadTasks.ToString();
+            this.goodTaskCount.text = UserData.Instance.CompletedGoodTasks.ToString();
+            this.totalScore.text = UserData.Instance.TotalScore.ToString();
         }
 
         public void Hide()

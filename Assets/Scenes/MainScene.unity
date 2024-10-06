@@ -572,17 +572,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8161596304387292324, guid: e29da96c463b21d41bd832be152c90e6, type: 3}
   m_PrefabInstance: {fileID: 2187495082416212379}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &208505798 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3783703360366904846, guid: e29da96c463b21d41bd832be152c90e6, type: 3}
-  m_PrefabInstance: {fileID: 2187495082416212379}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ee2fe740d6a28e4a8b595d9aea4f251, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &215387556 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 979288537257103667, guid: 429009c731a222048b5eac56b5c61c4e, type: 3}
@@ -2230,7 +2219,7 @@ PrefabInstance:
     - target: {fileID: 6111305144045418341, guid: c3efb31a490056f49b04de64ab67d45e, type: 3}
       propertyPath: modalWindow
       value: 
-      objectReference: {fileID: 208505798}
+      objectReference: {fileID: 0}
     - target: {fileID: 6272890544566101812, guid: c3efb31a490056f49b04de64ab67d45e, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -3003,6 +2992,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e29da96c463b21d41bd832be152c90e6, type: 3}
+--- !u!114 &2187495082416212380 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2146476007904424658, guid: e29da96c463b21d41bd832be152c90e6, type: 3}
+  m_PrefabInstance: {fileID: 2187495082416212379}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36e56eb51d09e1a4e932fdf1f40a157a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2365988811753837595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3469,13 +3469,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2d80840e23959b46ae4beedc245530d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UsernameInputText: {fileID: 6600072064188308082}
-  CurrencyText: {fileID: 1592087963219657829}
-  TaskParent: {fileID: 4356898266357003850}
-  TaskPrefab: {fileID: 7898560835448612094, guid: 1024664230947644899dfa59252c6ef3, type: 3}
+  usernameText: {fileID: 6600072064188308082}
+  currentTaskScoreText: {fileID: 1592087963219657829}
+  taskParent: {fileID: 4356898266357003850}
+  taskPrefab: {fileID: 7898560835448612094, guid: 1024664230947644899dfa59252c6ef3, type: 3}
   taskOpenPanelController: {fileID: 215387557}
-  ModalWindow: {fileID: 208505798}
-  TaskSortDropdown: {fileID: 1763565926}
+  modalWindow: {fileID: 2187495082416212380}
+  taskSortDropdown: {fileID: 1763565926}
 --- !u!114 &3631147711524054535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3901,7 +3901,7 @@ GameObject:
   - component: {fileID: 4555135826763077599}
   - component: {fileID: 1592087963219657829}
   m_Layer: 5
-  m_Name: CurrencyText
+  m_Name: CurrentTaskScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4158,9 +4158,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 8237261850169842984}
     m_Modifications:
     - target: {fileID: 481518582554757896, guid: eabec96549fb5f842a9f769a41591d1a, type: 3}
-      propertyPath: ModalWindow
+      propertyPath: modalWindow
       value: 
-      objectReference: {fileID: 208505798}
+      objectReference: {fileID: 2187495082416212380}
     - target: {fileID: 5083670472075008867, guid: eabec96549fb5f842a9f769a41591d1a, type: 3}
       propertyPath: m_Name
       value: FriendsPanel
@@ -4526,16 +4526,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1676527386094464142, guid: 429009c731a222048b5eac56b5c61c4e, type: 3}
-      propertyPath: UIController
+      propertyPath: uIController
       value: 
       objectReference: {fileID: 3625930382732460907}
     - target: {fileID: 7898560835448612094, guid: 429009c731a222048b5eac56b5c61c4e, type: 3}
       propertyPath: m_Name
       value: TaskOpenPanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 7898560835448612094, guid: 429009c731a222048b5eac56b5c61c4e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4938,7 +4934,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5033859297682825883}
   m_HandleRect: {fileID: 8450858964760567643}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:

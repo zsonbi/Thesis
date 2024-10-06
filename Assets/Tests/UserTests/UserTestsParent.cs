@@ -9,9 +9,9 @@ using UnityEngine;
 
 namespace Tests
 {
-    namespace LoginWindow
+    namespace UserTests
     {
-        public abstract class LoginWindowTestsParent<T> : UnityTestParent<T>
+        public abstract class UserTestsParent<T> : UnityTestParent<T>
         {
             protected IEnumerator LoadScene(bool login = true, bool logout = false)
             {

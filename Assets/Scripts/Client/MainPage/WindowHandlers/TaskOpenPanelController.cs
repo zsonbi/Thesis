@@ -1,22 +1,16 @@
 using Config;
-using Newtonsoft.Json;
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Xml.Linq;
 using Thesis_backend.Data_Structures;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Networking;
 using UnityEngine.UI;
-using User;
 
 namespace MainPage
 {
     public class TaskOpenPanelController : ThreadSafeMonoBehaviour
     {
         [HideInInspector]
-        public PlayerTask CurrentTask = new PlayerTask() { ID = -1 };
+        public PlayerTask CurrentTask { get; private set; } = new PlayerTask() { ID = -1 };
 
         [HideInInspector]
         public EventHandler<TaskClosedEventArgs> TaskClosedEventHandler;
@@ -40,7 +34,7 @@ namespace MainPage
         private Button badHabitButton;
 
         [SerializeField]
-        private MainWindowController UIController;
+        private MainWindowController uIController;
 
         [SerializeField]
         private Button deleteTaskButton;
@@ -104,7 +98,7 @@ namespace MainPage
             this.CurrentTask?.ChangeType(TaskType.BadHabit);
             UpdateButtons();
 
-            UIController.LoadBadHabits(false);
+            uIController.LoadBadHabits(false);
         }
 
         public void MakeItGoodTask()
@@ -112,7 +106,7 @@ namespace MainPage
             this.CurrentTask?.ChangeType(TaskType.GoodTask);
             UpdateButtons();
 
-            UIController.LoadGoodTasks(false);
+            uIController.LoadGoodTasks(false);
         }
 
         public void Cancel()
@@ -126,11 +120,11 @@ namespace MainPage
                     CurrentTask.UpdateValues(playerTaskOnOpen);
                     if (playerTaskOnOpen.TaskType)
                     {
-                        UIController.LoadBadHabits();
+                        uIController.LoadBadHabits();
                     }
                     else
                     {
-                        UIController.LoadGoodTasks();
+                        uIController.LoadGoodTasks();
                     }
 
                     this.CurrentTask = playerTaskOnOpen;
@@ -153,11 +147,11 @@ namespace MainPage
 
             if (isNewTask)
             {
-                CoroutineRunner.RunCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.PlayerTask>(ServerConfig.PATHFORTASKCREATE, taskRequest, SavedTask, onFailedAction: UIController.ShowTaskFail));
+                CoroutineRunner.RunCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.PlayerTask>(ServerConfig.PATHFORTASKCREATE, taskRequest, SavedTask, onFailedAction: uIController.ShowTaskFail));
             }
             else
             {
-                CoroutineRunner.RunCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.PlayerTask>(ServerConfig.PATHFORTASKUPDATE(CurrentTask.ID), taskRequest, SavedTask, onFailedAction: UIController.ShowTaskFail));
+                CoroutineRunner.RunCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.PlayerTask>(ServerConfig.PATHFORTASKUPDATE(CurrentTask.ID), taskRequest, SavedTask, onFailedAction: uIController.ShowTaskFail));
             }
         }
 
@@ -171,25 +165,25 @@ namespace MainPage
 
             if (isNewTask)
             {
-                UIController.CreateTask(this.CurrentTask);
+                uIController.CreateTask(this.CurrentTask);
             }
             else
             {
-                UIController.UpdateTask(CurrentTask.ID);
+                uIController.UpdateTaskLabel(CurrentTask.ID);
             }
-            UIController.SortingChanged();
+            uIController.SortingChanged();
 
             this.CurrentTask = new PlayerTask() { ID = -1 };
         }
 
         public void DeleteTask()
         {
-            CoroutineRunner.RunCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORTASKDELETE(CurrentTask.ID), onComplete: DeletedTask, onFailedAction: UIController.ShowTaskFail));
+            CoroutineRunner.RunCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORTASKDELETE(CurrentTask.ID), onComplete: DeletedTask, onFailedAction: uIController.ShowTaskFail));
         }
 
         private void DeletedTask(string result)
         {
-            UIController.RemoveTask(CurrentTask.ID);
+            uIController.RemoveTask(CurrentTask.ID);
             Cancel();
         }
 

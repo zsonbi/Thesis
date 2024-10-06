@@ -951,8 +951,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8752439e1505a644b928f85934e1064d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FriendNameLabel: {fileID: 3029070666312694096}
-  ScoreText: {fileID: 7207177859084031032}
-  ScoreLabelText: {fileID: 5988076033766278067}
-  AcceptButton: {fileID: 4945600828910948573}
-  Pendingtext: {fileID: 5753097405090366034}
+  friendNameLabel: {fileID: 3029070666312694096}
+  scoreText: {fileID: 7207177859084031032}
+  scoreLabelText: {fileID: 5988076033766278067}
+  acceptButton: {fileID: 4945600828910948573}
+  pendingtext: {fileID: 5753097405090366034}

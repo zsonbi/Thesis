@@ -1406,10 +1406,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219de12cd3691764da5e7fa9e4f12a9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FriendsContainer: {fileID: 1088765530544601321}
+  friendsContainer: {fileID: 4036022034727168954}
   userIdentificationInput: {fileID: 5302134688948251140}
   friendPrefab: {fileID: 7898560835448612094, guid: 47e8701c27fe30044a3dbdea4549c47d, type: 3}
-  ModalWindow: {fileID: 0}
+  modalWindow: {fileID: 0}
 --- !u!1 &5115627893419664977
 GameObject:
   m_ObjectHideFlags: 0

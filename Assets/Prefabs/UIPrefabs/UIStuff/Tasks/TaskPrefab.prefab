@@ -627,10 +627,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e110e3804e3a4e49be5a7af199205d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TaskNameLabel: {fileID: 3029070666312694096}
-  TaskIntervalsLabel: {fileID: 5988076033766278067}
-  RemainingTimeLabel: {fileID: 1768171611570364225}
-  CompleteButton: {fileID: 4945600828910948573}
+  taskNameLabel: {fileID: 3029070666312694096}
+  taskIntervalsLabel: {fileID: 5988076033766278067}
+  remainingTimeLabel: {fileID: 1768171611570364225}
+  completeButton: {fileID: 4945600828910948573}
 --- !u!114 &5317725180065984655
 MonoBehaviour:
   m_ObjectHideFlags: 0

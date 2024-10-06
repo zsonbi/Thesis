@@ -892,10 +892,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78594f67e2013794c89475e1276964dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TotalTaskCount: {fileID: 8141407193775214192}
-  GoodTaskCount: {fileID: 6199276279385973709}
-  BadTaskCount: {fileID: 1506730894738237240}
-  TotalScore: {fileID: 1509632182655972260}
+  totalTaskCount: {fileID: 8141407193775214192}
+  goodTaskCount: {fileID: 6199276279385973709}
+  badTaskCount: {fileID: 1506730894738237240}
+  totalScore: {fileID: 1509632182655972260}
 --- !u!1 &5254034430910539152
 GameObject:
   m_ObjectHideFlags: 0
