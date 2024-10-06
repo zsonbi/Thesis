@@ -1,0 +1,26 @@
+var classMainPage_1_1TaskOpenPanelController =
+[
+    [ "OpenUp", "classMainPage_1_1TaskOpenPanelController.html#ad9d6b86b74a5c782171f20791437c636", null ],
+    [ "OpenUp", "classMainPage_1_1TaskOpenPanelController.html#a13659849ee225fadbba37d11680d3be2", null ],
+    [ "MakeItBadHabit", "classMainPage_1_1TaskOpenPanelController.html#a5513399c20f650915ca10f54805f416e", null ],
+    [ "MakeItGoodTask", "classMainPage_1_1TaskOpenPanelController.html#a069a63e2b7e70cc4cb4c7e487b655700", null ],
+    [ "Cancel", "classMainPage_1_1TaskOpenPanelController.html#af1b5c03c4cfe46084a34093435f79fee", null ],
+    [ "Save", "classMainPage_1_1TaskOpenPanelController.html#ab8def75cd4cdbdaf3033022ea114a8a6", null ],
+    [ "SavedTask", "classMainPage_1_1TaskOpenPanelController.html#a750d1acc6fd173296467fb9aca366a3d", null ],
+    [ "DeleteTask", "classMainPage_1_1TaskOpenPanelController.html#a3107b94793886f6af28ac9415fb44370", null ],
+    [ "DeletedTask", "classMainPage_1_1TaskOpenPanelController.html#a254ff7d6e427208a7f9ae3bec5ae7ba7", null ],
+    [ "CollectFromFields", "classMainPage_1_1TaskOpenPanelController.html#ac66bfe4cec26cf62dd22db230ab9c5f1", null ],
+    [ "UpdateButtons", "classMainPage_1_1TaskOpenPanelController.html#aa0b6757dbad141375c50282278b23b1a", null ],
+    [ "TaskClosedEventHandler", "classMainPage_1_1TaskOpenPanelController.html#aa5ca59c0a669f4537fc5287fb5a305ef", null ],
+    [ "taskNameInput", "classMainPage_1_1TaskOpenPanelController.html#a7564f25cf39888725d8fe14a5edf5158", null ],
+    [ "taskIntervals", "classMainPage_1_1TaskOpenPanelController.html#ac2f13bde643ef36b9ae617bc1554d0ee", null ],
+    [ "descriptionInput", "classMainPage_1_1TaskOpenPanelController.html#a75edba7b8f084e048ff805d7cd1619d4", null ],
+    [ "goodTaskButton", "classMainPage_1_1TaskOpenPanelController.html#a9d0de4987941726478bfc9bc7ba81867", null ],
+    [ "badHabitButton", "classMainPage_1_1TaskOpenPanelController.html#af13230cc2f261189cfbc1c2cc1377b1d", null ],
+    [ "uIController", "classMainPage_1_1TaskOpenPanelController.html#a261d29c5b38a4dd08328a815e43d56d0", null ],
+    [ "deleteTaskButton", "classMainPage_1_1TaskOpenPanelController.html#acfbd4741ec29919bbfbc1a7d8cf47019", null ],
+    [ "isNewTask", "classMainPage_1_1TaskOpenPanelController.html#ab0fe6f88e121426a6ebe416ca4364dc8", null ],
+    [ "TASKINTERVALS", "classMainPage_1_1TaskOpenPanelController.html#aaea47bf0d8deb205308a269f45ec5674", null ],
+    [ "playerTaskOnOpen", "classMainPage_1_1TaskOpenPanelController.html#a160cda434073c08c9dc925ceb9713ee8", null ],
+    [ "CurrentTask", "classMainPage_1_1TaskOpenPanelController.html#ac38fa9fba981758d348c49c33be902da", null ]
+];

@@ -58,10 +58,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "BuildingCell_8cs.html",
-"classBuilding.html#ab2b2da6f5ddc018316124c5f2df6386d",
-"classGame_1_1CarController.html#aa6c3800c56fb0d4470a5ca5daaa5df6c",
-"classGame_1_1World_1_1Chunk.html#af2946e1e1b9e325d6004d166b2b26193",
-"classUser_1_1UserData.html#aac822a62e0ef2a7d0dbe623643146faa"
+"classBuilding.html#a26613e83e44aef9ccbfed8ee5cc0d9c4",
+"classGame_1_1CarController.html#af92d677251871a31cdbd92e7d70f5de7",
+"classGame_1_1World_1_1GameWorld.html#a825606b239700be248fcfc834c43aed2",
+"classMainPage_1_1TaskOpenPanelController.html#a9d0de4987941726478bfc9bc7ba81867",
+"functions_z.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

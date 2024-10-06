@@ -10,7 +10,7 @@ var classUser_1_1UserData =
     [ "Username", "classUser_1_1UserData.html#a5c87b878e86cbc7c969d456431716c71", null ],
     [ "Email", "classUser_1_1UserData.html#ada9b925ce41df1de09d9f197d45d2c7c", null ],
     [ "Id", "classUser_1_1UserData.html#ac6c907f6c1f72fb15cef61427abf4a8d", null ],
-    [ "SettingsId", "classUser_1_1UserData.html#aeea15cd80d260139dbd6799de081e818", null ],
+    [ "UserSettings", "classUser_1_1UserData.html#a1afa3a2508a22256bbc2a2c948cc866a", null ],
     [ "Game", "classUser_1_1UserData.html#aa87abc723cebf718fa5d5966acd2dc38", null ],
     [ "LastLoggedIn", "classUser_1_1UserData.html#a5d88a92697600df1a952dda76dd51a96", null ],
     [ "Registered", "classUser_1_1UserData.html#adf1a00f3bd39a418cccf26f04a79c831", null ],

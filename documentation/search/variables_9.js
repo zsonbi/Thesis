@@ -7,5 +7,5 @@ var searchData=
   ['infamyingametext_4',['InfamyInGameText',['../classGameUI.html#a98156491737508882846fa4f9b4ee2de',1,'GameUI']]],
   ['ingamecontainer_5',['ingameContainer',['../classGameUI.html#aa87d6d5f2504f45f0d15aa727e409995',1,'GameUI']]],
   ['instance_6',['instance',['../classUser_1_1UserData.html#a0e7511fcf06639282624b12e673442e3',1,'User::UserData']]],
-  ['isnewtask_7',['isNewTask',['../classTaskOpenPanelController.html#ac0fa9db0872e1f4e4872117d5420ea42',1,'TaskOpenPanelController']]]
+  ['isnewtask_7',['isNewTask',['../classMainPage_1_1TaskOpenPanelController.html#ab0fe6f88e121426a6ebe416ca4364dc8',1,'MainPage::TaskOpenPanelController']]]
 ];

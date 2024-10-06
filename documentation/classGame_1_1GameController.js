@@ -1,6 +1,6 @@
 var classGame_1_1GameController =
 [
-    [ "Awake", "classGame_1_1GameController.html#a72ac9aa223ee085e0bd2d660466a494a", null ],
+    [ "Awake", "classGame_1_1GameController.html#afb68886afaa05f935ab512dce0eb1dff", null ],
     [ "Start", "classGame_1_1GameController.html#a1d3159c95407370de0809d00266a6a20", null ],
     [ "Update", "classGame_1_1GameController.html#ac7bf604631786f89b01d5313ad796b8b", null ],
     [ "PlayerSkinsLoaded", "classGame_1_1GameController.html#ac1d8730413951a2e3f61985ebb2470cf", null ],

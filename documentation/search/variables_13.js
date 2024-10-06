@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['uicontroller_0',['uicontroller',['../classTaskDisplayHandler.html#a8957ebb3ef3c9bd8bd94b5ae557b85b7',1,'TaskDisplayHandler.UIController'],['../classTaskOpenPanelController.html#a345147b780c1194ca33c70c13a71df4b',1,'TaskOpenPanelController.UIController']]],
-  ['useridentificationinput_1',['userIdentificationInput',['../classFriendWindowHandler.html#ac72bb4d38dd708c83efaf789cc2304db',1,'FriendWindowHandler']]],
-  ['usernameinputtext_2',['UsernameInputText',['../classMainWindowController.html#a1d6259641a45cdad8a4ecfd78120969e',1,'MainWindowController']]]
+  ['uicontroller_0',['uIController',['../classMainPage_1_1TaskOpenPanelController.html#a261d29c5b38a4dd08328a815e43d56d0',1,'MainPage::TaskOpenPanelController']]],
+  ['useridentificationinput_1',['userIdentificationInput',['../classMainPage_1_1FriendWindowHandler.html#a7350dfeb8bc7f3d5e6b6d1d78f18b866',1,'MainPage::FriendWindowHandler']]],
+  ['usernametext_2',['usernameText',['../classMainPage_1_1MainWindowController.html#a2c05fd8c96d1b48be6f18b9756220e13',1,'MainPage::MainWindowController']]]
 ];

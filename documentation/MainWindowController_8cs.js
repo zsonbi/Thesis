@@ -1,4 +1,4 @@
 var MainWindowController_8cs =
 [
-    [ "MainWindowController", "classMainWindowController.html", "classMainWindowController" ]
+    [ "MainPage.MainWindowController", "classMainPage_1_1MainWindowController.html", "classMainPage_1_1MainWindowController" ]
 ];

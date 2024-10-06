@@ -1,0 +1,25 @@
+var classMainPage_1_1MainWindowController =
+[
+    [ "Start", "classMainPage_1_1MainWindowController.html#acea2170099ea435298139c6c7fdce719", null ],
+    [ "UpdateUserData", "classMainPage_1_1MainWindowController.html#a330729fb97065041f29f7ad9eb63def3", null ],
+    [ "RemoveTask", "classMainPage_1_1MainWindowController.html#ab6e865f33e604878bb40346d5f6657c9", null ],
+    [ "UpdateTaskLabel", "classMainPage_1_1MainWindowController.html#aee6fc5b4f9a2dfbfc32567557a745241", null ],
+    [ "SortingChanged", "classMainPage_1_1MainWindowController.html#a85072f5d92f4145d6213209a13936639", null ],
+    [ "LoadGoodTasks", "classMainPage_1_1MainWindowController.html#ab5b80370512cd4273e86927fe696462d", null ],
+    [ "LoadBadHabits", "classMainPage_1_1MainWindowController.html#a241b480aeebdab1bc34320cad8de7712", null ],
+    [ "CreateTask", "classMainPage_1_1MainWindowController.html#a827f62c47eb691eadd994bd51bf7cb74", null ],
+    [ "LoadTasks", "classMainPage_1_1MainWindowController.html#a47c21c97b7ba52af405119044e1434d0", null ],
+    [ "ShowRequestFail", "classMainPage_1_1MainWindowController.html#aca9938481cb1ebf9d9b46ca9779e48f4", null ],
+    [ "ShowTaskFail", "classMainPage_1_1MainWindowController.html#afea342e3985134e17406ed61958ecc6f", null ],
+    [ "LoadGameScene", "classMainPage_1_1MainWindowController.html#a964e8e35d321a313b82318d057e1c034", null ],
+    [ "CreateTaskPrefabs", "classMainPage_1_1MainWindowController.html#ab40b51689d2d8ca0497b0e53128f4992", null ],
+    [ "usernameText", "classMainPage_1_1MainWindowController.html#a2c05fd8c96d1b48be6f18b9756220e13", null ],
+    [ "currentTaskScoreText", "classMainPage_1_1MainWindowController.html#a9466df0c0c456c95d7ad924a985b1d9d", null ],
+    [ "taskParent", "classMainPage_1_1MainWindowController.html#a3c228fec6b253327a47efce8fa3aead5", null ],
+    [ "taskPrefab", "classMainPage_1_1MainWindowController.html#ac6bf72ad9b0b9e4486f55c5c777cc5a7", null ],
+    [ "taskOpenPanelController", "classMainPage_1_1MainWindowController.html#a53b8a0d7c54b7a4c59575620b4bdecc4", null ],
+    [ "modalWindow", "classMainPage_1_1MainWindowController.html#afa3b5f3540131ee53c307199106a80a3", null ],
+    [ "taskSortDropdown", "classMainPage_1_1MainWindowController.html#a0cd45678ad811e956d45daf96396102e", null ],
+    [ "Tasks", "classMainPage_1_1MainWindowController.html#a15badd58ff58482153b8ac84a9be5693", null ],
+    [ "TaskSortType", "classMainPage_1_1MainWindowController.html#a508b6cff80cdc2b115b3d62686f5a3d4", null ]
+];

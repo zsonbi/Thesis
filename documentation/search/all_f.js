@@ -27,7 +27,7 @@ var searchData=
   ['pathfortasksquery_24',['PATHFORTASKSQUERY',['../classConfig_1_1ServerConfig.html#a47231cfa790f15bbd226c2dc2202c448',1,'Config::ServerConfig']]],
   ['pathfortaskupdate_25',['PATHFORTASKUPDATE',['../classConfig_1_1ServerConfig.html#a69cfac1052256f93e049889a0594911d',1,'Config::ServerConfig']]],
   ['pending_26',['Pending',['../namespaceThesis__backend_1_1Data__Structures.html#a955e55f5e0196c97e00d592def7e4a84',1,'Thesis_backend::Data_Structures']]],
-  ['pendingtext_27',['Pendingtext',['../classFriendHandler.html#a9629a048122afa33aec6cc7d2eef839b',1,'FriendHandler']]],
+  ['pendingtext_27',['pendingtext',['../classMainPage_1_1FriendHandler.html#aa69aac078202f65f4b61e2c8caca3d2a',1,'MainPage::FriendHandler']]],
   ['periodrate_28',['periodrate',['../namespaceThesis__backend_1_1Data__Structures.html#ae0dc25bac8b6715fddd0e1c2fae815c3',1,'Thesis_backend.Data_Structures.PeriodRate'],['../structThesis__backend_1_1Data__Structures_1_1TaskRequest.html#adc3f7466d608725775c675a78aee51d5',1,'Thesis_backend.Data_Structures.TaskRequest.PeriodRate']]],
   ['pickedupcoin_29',['PickedUpCoin',['../classGame_1_1PlayerCar.html#ab309bb81f5cd0e6cb9c97620729fc134',1,'Game::PlayerCar']]],
   ['player_30',['Player',['../classGame_1_1GameController.html#a976073941c6d8179bc3db17f1cccc56d',1,'Game::GameController']]],
@@ -40,7 +40,7 @@ var searchData=
   ['playerskinsloaded_37',['PlayerSkinsLoaded',['../classGame_1_1GameController.html#ac1d8730413951a2e3f61985ebb2470cf',1,'Game::GameController']]],
   ['playertask_38',['playertask',['../namespaceThesis__backend_1_1Data__Structures.html#ae656f3c7a1335db8207ae56dcbd213a7',1,'Thesis_backend.Data_Structures.PlayerTask'],['../namespaceThesis__backend_1_1Data__Structures.html#aea691308b30574c00a00de66d11e8039',1,'Thesis_backend.Data_Structures.PlayerTask(PlayerTask playerTask)']]],
   ['playertask_2ecs_39',['PlayerTask.cs',['../PlayerTask_8cs.html',1,'']]],
-  ['playertaskonopen_40',['playerTaskOnOpen',['../classTaskOpenPanelController.html#ad287e7de41bdfcff644e73bb7c1728fe',1,'TaskOpenPanelController']]],
+  ['playertaskonopen_40',['playerTaskOnOpen',['../classMainPage_1_1TaskOpenPanelController.html#a160cda434073c08c9dc925ceb9713ee8',1,'MainPage::TaskOpenPanelController']]],
   ['playervariants_41',['playerVariants',['../classGame_1_1GameController.html#acb9ffaeaae347c476646e0b74f089632',1,'Game::GameController']]],
   ['police_5fgame_5fover_42',['POLICE_GAME_OVER',['../classGameConfig.html#af9951f79cdc3576ae67b6f0f4cf3e6dc',1,'GameConfig']]],
   ['police_5fraycast_5fforward_5fdistance_43',['POLICE_RAYCAST_FORWARD_DISTANCE',['../classGameConfig.html#ae325d8c437c8eaf798fa3fda571cd263',1,'GameConfig']]],
@@ -54,7 +54,7 @@ var searchData=
   ['probesize_51',['probesize',['../classGame_1_1GameController.html#aaeff5e958583d17489b7ab80d45ba19d',1,'Game.GameController.probeSize'],['../classGame_1_1PlayerCar.html#aa27a1ab0eae600158b89741558c08dcc',1,'Game.PlayerCar.probeSize']]],
   ['productimage_52',['ProductImage',['../classShopItem.html#accc5e95e28c2a814cddc271e841d0a86',1,'ShopItem']]],
   ['productname_53',['ProductName',['../classShopItem.html#a6c43b32f3bcc1bab29330f14a8afa5f2',1,'ShopItem']]],
-  ['profilehandler_54',['ProfileHandler',['../classProfileHandler.html',1,'']]],
+  ['profilehandler_54',['ProfileHandler',['../classMainPage_1_1ProfileHandler.html',1,'MainPage']]],
   ['profilehandler_2ecs_55',['ProfileHandler.cs',['../ProfileHandler_8cs.html',1,'']]],
   ['profilepic_56',['ProfilePic',['../namespaceThesis__backend_1_1Data__Structures.html#a55aa045d3f254cfa52b2ef4678309ec0',1,'Thesis_backend::Data_Structures']]]
 ];

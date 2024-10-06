@@ -5,5 +5,6 @@ var searchData=
   ['thisyear_2',['ThisYear',['../LeaderboardFilterType_8cs.html#acdbe16e786280d2186e29aa17a2621edada3ba6f4272ff2fe3e263cb755a694e4',1,'LeaderboardFilterType.cs']]],
   ['threeway_3',['ThreeWay',['../ChunkCellType_8cs.html#a49876fbcd15399310f369ea380f29c6ba5f380049ffed24d2bec83eac4a1b5f1d',1,'ChunkCellType.cs']]],
   ['today_4',['Today',['../LeaderboardFilterType_8cs.html#acdbe16e786280d2186e29aa17a2621eda1dd1c5fb7f25cd41b291d43a89e3aefd',1,'LeaderboardFilterType.cs']]],
-  ['turbo_5',['Turbo',['../namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578a6f53bfe04e78da893ba0c4f35ba6847e',1,'DataTypes']]]
+  ['turbo_5',['Turbo',['../namespaceDataTypes.html#adae12b2de9e5d022711b861d4c881578a6f53bfe04e78da893ba0c4f35ba6847e',1,'DataTypes']]],
+  ['type_6',['Type',['../namespaceDataTypes.html#ace56a8749b83ef6d05f7b1be32b047ebaa1fa27779242b4902f7ae3bdd5c6d508',1,'DataTypes']]]
 ];

@@ -28,6 +28,16 @@ var annotated_dup =
       [ "NpcCar", "classGame_1_1NpcCar.html", "classGame_1_1NpcCar" ],
       [ "PlayerCar", "classGame_1_1PlayerCar.html", "classGame_1_1PlayerCar" ]
     ] ],
+    [ "MainPage", "namespaceMainPage.html", [
+      [ "FriendHandler", "classMainPage_1_1FriendHandler.html", "classMainPage_1_1FriendHandler" ],
+      [ "FriendWindowHandler", "classMainPage_1_1FriendWindowHandler.html", "classMainPage_1_1FriendWindowHandler" ],
+      [ "MainWindowController", "classMainPage_1_1MainWindowController.html", "classMainPage_1_1MainWindowController" ],
+      [ "ProfileHandler", "classMainPage_1_1ProfileHandler.html", "classMainPage_1_1ProfileHandler" ],
+      [ "TaskDisplayHandler", "classMainPage_1_1TaskDisplayHandler.html", "classMainPage_1_1TaskDisplayHandler" ],
+      [ "TaskHistoryHandler", "classMainPage_1_1TaskHistoryHandler.html", "classMainPage_1_1TaskHistoryHandler" ],
+      [ "TaskHistoryWindowHandler", "classMainPage_1_1TaskHistoryWindowHandler.html", "classMainPage_1_1TaskHistoryWindowHandler" ],
+      [ "TaskOpenPanelController", "classMainPage_1_1TaskOpenPanelController.html", "classMainPage_1_1TaskOpenPanelController" ]
+    ] ],
     [ "Thesis_backend", "namespaceThesis__backend.html", [
       [ "Data_Structures", "namespaceThesis__backend_1_1Data__Structures.html", [
         [ "TaskRequest", "structThesis__backend_1_1Data__Structures_1_1TaskRequest.html", "structThesis__backend_1_1Data__Structures_1_1TaskRequest" ],
@@ -36,6 +46,8 @@ var annotated_dup =
       ] ]
     ] ],
     [ "User", "namespaceUser.html", [
+      [ "LoggedInChecker", "classUser_1_1LoggedInChecker.html", "classUser_1_1LoggedInChecker" ],
+      [ "UserController", "classUser_1_1UserController.html", "classUser_1_1UserController" ],
       [ "UserData", "classUser_1_1UserData.html", "classUser_1_1UserData" ]
     ] ],
     [ "Building", "classBuilding.html", "classBuilding" ],
@@ -44,25 +56,15 @@ var annotated_dup =
     [ "CoroutineRunner", "classCoroutineRunner.html", "classCoroutineRunner" ],
     [ "EdgeRoadContainer", "classEdgeRoadContainer.html", "classEdgeRoadContainer" ],
     [ "EffectScript", "classEffectScript.html", "classEffectScript" ],
-    [ "FriendHandler", "classFriendHandler.html", "classFriendHandler" ],
-    [ "FriendWindowHandler", "classFriendWindowHandler.html", "classFriendWindowHandler" ],
     [ "GameConfig", "classGameConfig.html", "classGameConfig" ],
     [ "GameUI", "classGameUI.html", "classGameUI" ],
     [ "LeaderboardItem", "classLeaderboardItem.html", "classLeaderboardItem" ],
     [ "LeaderboardWindow", "classLeaderboardWindow.html", "classLeaderboardWindow" ],
-    [ "LoggedInChecker", "classLoggedInChecker.html", "classLoggedInChecker" ],
-    [ "MainWindowController", "classMainWindowController.html", "classMainWindowController" ],
     [ "ModalWindow", "classModalWindow.html", "classModalWindow" ],
-    [ "ProfileHandler", "classProfileHandler.html", "classProfileHandler" ],
     [ "Server", "classServer.html", "classServer" ],
     [ "ShopItem", "classShopItem.html", "classShopItem" ],
     [ "ShopWindow", "classShopWindow.html", "classShopWindow" ],
     [ "StarHandler", "classStarHandler.html", "classStarHandler" ],
     [ "TaskClosedEventArgs", "classTaskClosedEventArgs.html", "classTaskClosedEventArgs" ],
-    [ "TaskDisplayHandler", "classTaskDisplayHandler.html", "classTaskDisplayHandler" ],
-    [ "TaskHistoryHandler", "classTaskHistoryHandler.html", "classTaskHistoryHandler" ],
-    [ "TaskHistoryWindowHandler", "classTaskHistoryWindowHandler.html", "classTaskHistoryWindowHandler" ],
-    [ "TaskOpenPanelController", "classTaskOpenPanelController.html", "classTaskOpenPanelController" ],
-    [ "ThreadSafeMonoBehaviour", "classThreadSafeMonoBehaviour.html", "classThreadSafeMonoBehaviour" ],
-    [ "UserController", "classUserController.html", "classUserController" ]
+    [ "ThreadSafeMonoBehaviour", "classThreadSafeMonoBehaviour.html", "classThreadSafeMonoBehaviour" ]
 ];

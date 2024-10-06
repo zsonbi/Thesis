@@ -26,8 +26,8 @@ var searchData=
   ['getshopparent_23',['GetShopParent',['../classShopWindow.html#a2a19282389a2e9e1148a42c9f0e60745',1,'ShopWindow']]],
   ['gointowardsedge_24',['GoinTowardsEdge',['../classGame_1_1World_1_1RoadGenerator.html#a1d562d3e89d833e15f2b2ce3eba249ac',1,'Game::World::RoadGenerator']]],
   ['goodtask_25',['GoodTask',['../TaskType_8cs.html#aa7f5c268cc89ed3067c26142ca3e16d7a4cbd49fac65e8fe8aa9953b5d44a8047',1,'TaskType.cs']]],
-  ['goodtaskbutton_26',['goodTaskButton',['../classTaskOpenPanelController.html#ae473d6c892d798cb0e155e5a5935fe22',1,'TaskOpenPanelController']]],
-  ['goodtaskcount_27',['GoodTaskCount',['../classProfileHandler.html#a54c9a317b986a9030b2127e1bc5ac46a',1,'ProfileHandler']]],
+  ['goodtaskbutton_26',['goodTaskButton',['../classMainPage_1_1TaskOpenPanelController.html#a9d0de4987941726478bfc9bc7ba81867',1,'MainPage::TaskOpenPanelController']]],
+  ['goodtaskcount_27',['goodTaskCount',['../classMainPage_1_1ProfileHandler.html#a11793a0532acb23e176386eeea03a4ee',1,'MainPage::ProfileHandler']]],
   ['grass_28',['Grass',['../ChunkCellType_8cs.html#a49876fbcd15399310f369ea380f29c6baaac9a63596f76a62bb9f61a5dd7c0d25',1,'ChunkCellType.cs']]],
   ['grassprefab_29',['grassPrefab',['../classGame_1_1World_1_1Chunk.html#afcf6bf6be6ba7bdb0f870f6bb60af90d',1,'Game::World::Chunk']]]
 ];

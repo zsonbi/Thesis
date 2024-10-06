@@ -1,4 +1,4 @@
 var LoggedInChecker_8cs =
 [
-    [ "LoggedInChecker", "classLoggedInChecker.html", "classLoggedInChecker" ]
+    [ "User.LoggedInChecker", "classUser_1_1LoggedInChecker.html", "classUser_1_1LoggedInChecker" ]
 ];

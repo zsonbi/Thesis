@@ -1,4 +1,4 @@
 var UserController_8cs =
 [
-    [ "UserController", "classUserController.html", "classUserController" ]
+    [ "User.UserController", "classUser_1_1UserController.html", "classUser_1_1UserController" ]
 ];

@@ -1,4 +1,4 @@
 var TaskOpenPanelController_8cs =
 [
-    [ "TaskOpenPanelController", "classTaskOpenPanelController.html", "classTaskOpenPanelController" ]
+    [ "MainPage.TaskOpenPanelController", "classMainPage_1_1TaskOpenPanelController.html", "classMainPage_1_1TaskOpenPanelController" ]
 ];

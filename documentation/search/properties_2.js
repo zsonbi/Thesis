@@ -7,6 +7,6 @@ var searchData=
   ['completedgoodtasks_4',['CompletedGoodTasks',['../classUser_1_1UserData.html#aed8d5ea017894e12006a59eccd2f84de',1,'User::UserData']]],
   ['currentspeed_5',['CurrentSpeed',['../classGame_1_1CarController.html#aa6c3800c56fb0d4470a5ca5daaa5df6c',1,'Game::CarController']]],
   ['currentsteerangle_6',['CurrentSteerAngle',['../classGame_1_1CarController.html#ae5ea7186f580506940ae849884eda3eb',1,'Game::CarController']]],
-  ['currenttask_7',['CurrentTask',['../classTaskDisplayHandler.html#ab895a03634437faaeb04c5f9bb0aafd1',1,'TaskDisplayHandler']]],
+  ['currenttask_7',['currenttask',['../classMainPage_1_1TaskDisplayHandler.html#a1174d4a4a345e37c9a07e7a1af4d3fb9',1,'MainPage.TaskDisplayHandler.CurrentTask'],['../classMainPage_1_1TaskOpenPanelController.html#ac38fa9fba981758d348c49c33be902da',1,'MainPage.TaskOpenPanelController.CurrentTask']]],
   ['currenttaskscore_8',['CurrentTaskScore',['../classUser_1_1UserData.html#a44525484961835f1feaa4dbe715101c0',1,'User::UserData']]]
 ];

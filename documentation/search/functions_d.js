@@ -4,6 +4,6 @@ var searchData=
   ['oncollisionexit_1',['OnCollisionExit',['../classGame_1_1PlayerCar.html#a1abfcbceee34f7de69ceb4210306fd82',1,'Game::PlayerCar']]],
   ['ondestroy_2',['OnDestroy',['../classThreadSafeMonoBehaviour.html#a1c939f659c16e798aaa372781976c7b1',1,'ThreadSafeMonoBehaviour']]],
   ['ontriggerenter_3',['OnTriggerEnter',['../classCoin.html#a140177a0b7be977ba19cb2b2e08873b0',1,'Coin']]],
-  ['openeditor_4',['OpenEditor',['../classTaskDisplayHandler.html#a1fbc7e2afc634524025879b91b36db30',1,'TaskDisplayHandler']]],
-  ['openup_5',['openup',['../classTaskOpenPanelController.html#a1147a8c395515fe25ff585e12095bd3d',1,'TaskOpenPanelController.OpenUp()'],['../classTaskOpenPanelController.html#a76148069efc1952abecde4dd0fda56cc',1,'TaskOpenPanelController.OpenUp(PlayerTask taskContainer=null, TaskType type=TaskType.GoodTask)']]]
+  ['openeditor_4',['OpenEditor',['../classMainPage_1_1TaskDisplayHandler.html#a3a1617363fbdce6fc2c78f79d87f76e6',1,'MainPage::TaskDisplayHandler']]],
+  ['openup_5',['openup',['../classMainPage_1_1TaskOpenPanelController.html#ad9d6b86b74a5c782171f20791437c636',1,'MainPage.TaskOpenPanelController.OpenUp()'],['../classMainPage_1_1TaskOpenPanelController.html#a13659849ee225fadbba37d11680d3be2',1,'MainPage.TaskOpenPanelController.OpenUp(PlayerTask taskContainer=null, TaskType type=TaskType.GoodTask)']]]
 ];

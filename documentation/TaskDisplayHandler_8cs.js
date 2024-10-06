@@ -1,4 +1,4 @@
 var TaskDisplayHandler_8cs =
 [
-    [ "TaskDisplayHandler", "classTaskDisplayHandler.html", "classTaskDisplayHandler" ]
+    [ "MainPage.TaskDisplayHandler", "classMainPage_1_1TaskDisplayHandler.html", "classMainPage_1_1TaskDisplayHandler" ]
 ];

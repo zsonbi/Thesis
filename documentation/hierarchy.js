@@ -14,8 +14,6 @@ var hierarchy =
         [ "CameraScript", "classCameraScript.html", null ],
         [ "Coin", "classCoin.html", null ],
         [ "EffectScript", "classEffectScript.html", null ],
-        [ "FriendHandler", "classFriendHandler.html", null ],
-        [ "FriendWindowHandler", "classFriendWindowHandler.html", null ],
         [ "Game.Car", "classGame_1_1Car.html", [
           [ "Game.NpcCar", "classGame_1_1NpcCar.html", [
             [ "Game.CopCar", "classGame_1_1CopCar.html", null ]
@@ -31,18 +29,20 @@ var hierarchy =
         [ "GameUI", "classGameUI.html", null ],
         [ "LeaderboardItem", "classLeaderboardItem.html", null ],
         [ "LeaderboardWindow", "classLeaderboardWindow.html", null ],
-        [ "LoggedInChecker", "classLoggedInChecker.html", null ],
-        [ "MainWindowController", "classMainWindowController.html", null ],
+        [ "MainPage.FriendHandler", "classMainPage_1_1FriendHandler.html", null ],
+        [ "MainPage.FriendWindowHandler", "classMainPage_1_1FriendWindowHandler.html", null ],
+        [ "MainPage.MainWindowController", "classMainPage_1_1MainWindowController.html", null ],
+        [ "MainPage.ProfileHandler", "classMainPage_1_1ProfileHandler.html", null ],
+        [ "MainPage.TaskDisplayHandler", "classMainPage_1_1TaskDisplayHandler.html", null ],
+        [ "MainPage.TaskHistoryHandler", "classMainPage_1_1TaskHistoryHandler.html", null ],
+        [ "MainPage.TaskHistoryWindowHandler", "classMainPage_1_1TaskHistoryWindowHandler.html", null ],
+        [ "MainPage.TaskOpenPanelController", "classMainPage_1_1TaskOpenPanelController.html", null ],
         [ "ModalWindow", "classModalWindow.html", null ],
-        [ "ProfileHandler", "classProfileHandler.html", null ],
         [ "ShopItem", "classShopItem.html", null ],
         [ "ShopWindow", "classShopWindow.html", null ],
         [ "StarHandler", "classStarHandler.html", null ],
-        [ "TaskDisplayHandler", "classTaskDisplayHandler.html", null ],
-        [ "TaskHistoryHandler", "classTaskHistoryHandler.html", null ],
-        [ "TaskHistoryWindowHandler", "classTaskHistoryWindowHandler.html", null ],
-        [ "TaskOpenPanelController", "classTaskOpenPanelController.html", null ],
-        [ "UserController", "classUserController.html", null ]
+        [ "User.LoggedInChecker", "classUser_1_1LoggedInChecker.html", null ],
+        [ "User.UserController", "classUser_1_1UserController.html", null ]
       ] ]
     ] ],
     [ "Game.PlayerCar.PoliceContainer", "classGame_1_1PlayerCar_1_1PoliceContainer.html", null ],

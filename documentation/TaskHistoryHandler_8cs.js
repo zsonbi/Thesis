@@ -1,4 +1,4 @@
 var TaskHistoryHandler_8cs =
 [
-    [ "TaskHistoryHandler", "classTaskHistoryHandler.html", "classTaskHistoryHandler" ]
+    [ "MainPage.TaskHistoryHandler", "classMainPage_1_1TaskHistoryHandler.html", "classMainPage_1_1TaskHistoryHandler" ]
 ];

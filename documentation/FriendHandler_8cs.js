@@ -1,4 +1,4 @@
 var FriendHandler_8cs =
 [
-    [ "FriendHandler", "classFriendHandler.html", "classFriendHandler" ]
+    [ "MainPage.FriendHandler", "classMainPage_1_1FriendHandler.html", "classMainPage_1_1FriendHandler" ]
 ];
