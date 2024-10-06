@@ -43,7 +43,7 @@ namespace Game
 
         public float Coins { get; private set; } = 0;
 
-        private async void Awake()
+        private void Awake()
         {
             var handle = Addressables.LoadAssetsAsync<GameObject>("PlayerVariants", PlayerSkinsLoaded);
             this.carSpawner = this.GetComponentInChildren<CarSpawner>();
@@ -56,13 +56,10 @@ namespace Game
             {
                 gameUI.Init(this);
             }
-            //   await NewGame();
         }
 
         private void Start()
         {
-            //player = Instantiate(playerPrefab).GetComponent<PlayerCar>();
-
             Application.targetFrameRate = 60;
             QualitySettings.vSyncCount = 0;
         }

@@ -49,7 +49,7 @@ namespace Tests
                 GameUI.NewGame();
                 yield return WaitForCondition(() => MainController.Running);
 
-                for (int i = 0; i < 10; i++)
+                for (int i = 0; i < 20; i++)
                 {
                     yield return WaitForCondition(() => !MainController.Running);
                 }
@@ -102,6 +102,8 @@ namespace Tests
 
                 GameUI.NewGame();
                 yield return WaitForCondition(() => MainController.Running);
+                yield return new WaitForSeconds(1f);
+
                 float initPos = MainController.PlayerPos.z;
 
                 Press(Keyboard.sKey);
@@ -121,6 +123,8 @@ namespace Tests
 
                 GameUI.NewGame();
                 yield return WaitForCondition(() => MainController.Running);
+                yield return new WaitForSeconds(1f);
+
                 float initPos = MainController.PlayerPos.z;
 
                 Press(Keyboard.downArrowKey);
