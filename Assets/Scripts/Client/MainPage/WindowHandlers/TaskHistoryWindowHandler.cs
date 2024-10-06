@@ -6,58 +6,61 @@ using TMPro;
 using UnityEngine;
 using User;
 
-public class TaskHistoryWindowHandler : ThreadSafeMonoBehaviour
+namespace MainPage
 {
-    [SerializeField]
-    private GameObject taskHistoriesParent;
-
-    [SerializeField]
-    private ModalWindow modalWindow;
-
-    [SerializeField]
-    private GameObject taskHistoryItemPrefab;
-
-    public void Show()
+    public class TaskHistoryWindowHandler : ThreadSafeMonoBehaviour
     {
-        this.gameObject.SetActive(true);
-        LoadTaskHistories();
-    }
+        [SerializeField]
+        private GameObject taskHistoriesParent;
 
-    public void Hide()
-    {
-        this.gameObject.SetActive(false);
-    }
+        [SerializeField]
+        private ModalWindow modalWindow;
 
-    public void LoadTaskHistories()
-    {
-        CoroutineRunner.RunCoroutine(Server.SendGetRequest<List<TaskHistory>>(ServerConfig.PATH_FOR_GET_TASK_HISTORIES, LoadedHistories, onFailedAction: ShowRequestFail));
-    }
+        [SerializeField]
+        private GameObject taskHistoryItemPrefab;
 
-    private void ShowRequestFail(string content)
-    {
-        modalWindow.Show("Task history error", content);
-    }
-
-    private void LoadedHistories(List<TaskHistory> taskHistories)
-    {
-        if (taskHistoriesParent == null || this.taskHistoriesParent.transform == null)
+        public void Show()
         {
-            // Exit or handle the case when the Score parent is destroyed
-            Debug.LogWarning("Score parent has been destroyed or is missing.");
-            return;
+            this.gameObject.SetActive(true);
+            LoadTaskHistories();
         }
 
-        //Delete the previous ones
-        for (int i = 0; i < this.taskHistoriesParent.transform.childCount; i++)
+        public void Hide()
         {
-            Destroy(this.taskHistoriesParent.transform.GetChild(i).gameObject);
+            this.gameObject.SetActive(false);
         }
-        this.taskHistoriesParent.transform.DetachChildren();
 
-        foreach (var item in taskHistories)
+        public void LoadTaskHistories()
         {
-            TaskHistoryHandler leaderboardItem = Instantiate(taskHistoryItemPrefab, taskHistoriesParent.transform).GetComponent<TaskHistoryHandler>();
-            leaderboardItem.Init(item);
+            CoroutineRunner.RunCoroutine(Server.SendGetRequest<List<TaskHistory>>(ServerConfig.PATH_FOR_GET_TASK_HISTORIES, LoadedHistories, onFailedAction: ShowRequestFail));
+        }
+
+        private void ShowRequestFail(string content)
+        {
+            modalWindow.Show("Task history error", content);
+        }
+
+        private void LoadedHistories(List<TaskHistory> taskHistories)
+        {
+            if (taskHistoriesParent == null || this.taskHistoriesParent.transform == null)
+            {
+                // Exit or handle the case when the Score parent is destroyed
+                Debug.LogWarning("Score parent has been destroyed or is missing.");
+                return;
+            }
+
+            //Delete the previous ones
+            for (int i = 0; i < this.taskHistoriesParent.transform.childCount; i++)
+            {
+                Destroy(this.taskHistoriesParent.transform.GetChild(i).gameObject);
+            }
+            this.taskHistoriesParent.transform.DetachChildren();
+
+            foreach (var item in taskHistories)
+            {
+                TaskHistoryHandler leaderboardItem = Instantiate(taskHistoryItemPrefab, taskHistoriesParent.transform).GetComponent<TaskHistoryHandler>();
+                leaderboardItem.Init(item);
+            }
         }
     }
 }

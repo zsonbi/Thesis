@@ -10,6 +10,7 @@ using System.Reflection;
 using System.Linq;
 using System;
 using Config;
+using MainPage;
 
 namespace Tests
 {

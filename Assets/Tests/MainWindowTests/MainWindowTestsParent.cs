@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using Tests;
 using UnityEngine;
+using MainPage;
 
 namespace Tests
 {

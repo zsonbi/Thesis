@@ -8,67 +8,70 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using User;
 
-public class ProfileHandler : ThreadSafeMonoBehaviour
+namespace MainPage
 {
-    [SerializeField]
-    private TMP_Text TotalTaskCount;
-
-    [SerializeField]
-    private TMP_Text GoodTaskCount;
-
-    [SerializeField]
-    private TMP_Text BadTaskCount;
-
-    [SerializeField]
-    private TMP_Text TotalScore;
-
-    public void Show()
+    public class ProfileHandler : ThreadSafeMonoBehaviour
     {
-        this.gameObject.SetActive(true);
-        LoadFromApi();
-        this.TotalTaskCount.text = (UserData.Instance.CompletedGoodTasks + UserData.Instance.CompletedBadTasks).ToString();
-        this.BadTaskCount.text = UserData.Instance.CompletedBadTasks.ToString();
-        this.GoodTaskCount.text = UserData.Instance.CompletedGoodTasks.ToString();
-        this.TotalScore.text = UserData.Instance.TotalScore.ToString();
-    }
+        [SerializeField]
+        private TMP_Text TotalTaskCount;
 
-    public void Hide()
-    {
-        this.gameObject.SetActive(false);
-    }
+        [SerializeField]
+        private TMP_Text GoodTaskCount;
 
-    private void LoadFromApi()
-    {
-    }
+        [SerializeField]
+        private TMP_Text BadTaskCount;
 
-    /// <summary>
-    /// Send a login request with the login panel's fields
-    /// </summary>
-    public void SendLogout()
-    {
-        CoroutineRunner.RunCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORLOGOUT, LoggedOut));
-    }
+        [SerializeField]
+        private TMP_Text TotalScore;
 
-    /// <summary>
-    /// When the logout was a success
-    /// </summary>
-    /// <param name="result">The server's response</param>
-    private void LoggedOut(string result)
-    {
-        UserData.Instance.Logout();
-
-        CoroutineRunner.RunCoroutine(MoveToLoginScene());
-    }
-
-    private IEnumerator MoveToLoginScene()
-    {
-        AsyncOperation loading = SceneManager.LoadSceneAsync("LoginScene", LoadSceneMode.Single);
-
-        while (!loading.isDone)
+        public void Show()
         {
-            Debug.Log(loading.progress);
+            this.gameObject.SetActive(true);
+            LoadFromApi();
+            this.TotalTaskCount.text = (UserData.Instance.CompletedGoodTasks + UserData.Instance.CompletedBadTasks).ToString();
+            this.BadTaskCount.text = UserData.Instance.CompletedBadTasks.ToString();
+            this.GoodTaskCount.text = UserData.Instance.CompletedGoodTasks.ToString();
+            this.TotalScore.text = UserData.Instance.TotalScore.ToString();
+        }
 
-            yield return null;
+        public void Hide()
+        {
+            this.gameObject.SetActive(false);
+        }
+
+        private void LoadFromApi()
+        {
+        }
+
+        /// <summary>
+        /// Send a login request with the login panel's fields
+        /// </summary>
+        public void SendLogout()
+        {
+            CoroutineRunner.RunCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORLOGOUT, LoggedOut));
+        }
+
+        /// <summary>
+        /// When the logout was a success
+        /// </summary>
+        /// <param name="result">The server's response</param>
+        private void LoggedOut(string result)
+        {
+            UserData.Instance.Logout();
+
+            CoroutineRunner.RunCoroutine(MoveToLoginScene());
+        }
+
+        private IEnumerator MoveToLoginScene()
+        {
+            AsyncOperation loading = SceneManager.LoadSceneAsync("LoginScene", LoadSceneMode.Single);
+
+            while (!loading.isDone)
+            {
+                Debug.Log(loading.progress);
+
+                yield return null;
+            }
         }
     }
 }

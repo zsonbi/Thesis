@@ -5,80 +5,83 @@ using UnityEngine;
 using UnityEngine.UI;
 using User;
 
-public class FriendHandler : ThreadSafeMonoBehaviour
+namespace MainPage
 {
-    [SerializeField]
-    private TMP_Text FriendNameLabel;
-
-    [SerializeField]
-    private TMP_Text ScoreText;
-
-    [SerializeField]
-    private TMP_Text ScoreLabelText;
-
-    [SerializeField]
-    private Button AcceptButton;
-
-    [SerializeField]
-    private TMP_Text Pendingtext;
-
-    public Friend Friend { get; private set; }
-
-    public void Update()
+    public class FriendHandler : ThreadSafeMonoBehaviour
     {
-    }
+        [SerializeField]
+        private TMP_Text FriendNameLabel;
 
-    public void InitValues(Friend friend)
-    {
-        this.Friend = friend;
-        this.AcceptButton.gameObject.SetActive(Friend.Pending);
-        if (UserData.Instance.Id != this.Friend.Sender.ID)
+        [SerializeField]
+        private TMP_Text ScoreText;
+
+        [SerializeField]
+        private TMP_Text ScoreLabelText;
+
+        [SerializeField]
+        private Button AcceptButton;
+
+        [SerializeField]
+        private TMP_Text Pendingtext;
+
+        public Friend Friend { get; private set; }
+
+        public void Update()
         {
-            FriendNameLabel.text = this.Friend.Sender.Username;
-            ScoreText.text = this.Friend.Sender.TotalScore.ToString();
-            if (Friend.Pending)
-            {
-                AcceptButton.gameObject.SetActive(true);
-            }
         }
-        else
-        {
-            FriendNameLabel.text = this.Friend.Receiver.Username;
-            ScoreText.text = this.Friend.Receiver.TotalScore.ToString();
 
-            if (friend.Pending)
+        public void InitValues(Friend friend)
+        {
+            this.Friend = friend;
+            this.AcceptButton.gameObject.SetActive(Friend.Pending);
+            if (UserData.Instance.Id != this.Friend.Sender.ID)
             {
-                AcceptButton.gameObject.SetActive(false);
-                Pendingtext.gameObject.SetActive(true);
+                FriendNameLabel.text = this.Friend.Sender.Username;
+                ScoreText.text = this.Friend.Sender.TotalScore.ToString();
+                if (Friend.Pending)
+                {
+                    AcceptButton.gameObject.SetActive(true);
+                }
             }
+            else
+            {
+                FriendNameLabel.text = this.Friend.Receiver.Username;
+                ScoreText.text = this.Friend.Receiver.TotalScore.ToString();
+
+                if (friend.Pending)
+                {
+                    AcceptButton.gameObject.SetActive(false);
+                    Pendingtext.gameObject.SetActive(true);
+                }
+            }
+            this.ScoreText.gameObject.SetActive(!friend.Pending);
+            this.ScoreLabelText.gameObject.SetActive(!friend.Pending);
         }
-        this.ScoreText.gameObject.SetActive(!friend.Pending);
-        this.ScoreLabelText.gameObject.SetActive(!friend.Pending);
-    }
 
-    public void AcceptFriendRequest()
-    {
-        CoroutineRunner.RunCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.Friend>(ServerConfig.PATH_FOR_FRIEND_ACCEPT(this.Friend.ID), onComplete: Accepted));
-    }
-
-    public void DeleteFriend()
-    {
-        CoroutineRunner.RunCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATH_FOR_FRIEND_DELETE(this.Friend.ID), onComplete: Deleted));
-    }
-
-    private void Accepted(Thesis_backend.Data_Structures.Friend result)
-    {
-        this.Friend.Pending = false;
-        this.AcceptButton.gameObject.SetActive(false);
-        this.ScoreText.gameObject.SetActive(true);
-        this.ScoreLabelText.gameObject.SetActive(true);
-    }
-
-    private void Deleted(string result)
-    {
-        if (result == "Deleted")
+        public void AcceptFriendRequest()
         {
-            Destroy(this.gameObject);
+            CoroutineRunner.RunCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.Friend>(ServerConfig.PATH_FOR_FRIEND_ACCEPT(this.Friend.ID), onComplete: Accepted));
+        }
+
+        public void DeleteFriend()
+        {
+            CoroutineRunner.RunCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATH_FOR_FRIEND_DELETE(this.Friend.ID), onComplete: Deleted));
+        }
+
+        private void Accepted(Thesis_backend.Data_Structures.Friend result)
+        {
+            this.Friend.Pending = false;
+            this.AcceptButton.gameObject.SetActive(false);
+            this.ScoreText.gameObject.SetActive(true);
+            this.ScoreLabelText.gameObject.SetActive(true);
+        }
+
+        private void Deleted(string result)
+        {
+            if (result == "Deleted")
+            {
+                Destroy(this.gameObject);
+            }
         }
     }
 }
