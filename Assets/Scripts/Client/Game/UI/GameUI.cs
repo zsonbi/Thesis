@@ -1,7 +1,5 @@
 using Config;
 using Game;
-using PlasticPipe.PlasticProtocol.Messages;
-using Thesis_backend.Data_Structures;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
