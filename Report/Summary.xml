@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>10/06/2024 - 23:04:34</Generatedon>
+    <Generatedon>10/06/2024 - 23:40:22</Generatedon>
     <Parser>MultiReportParser (3x OpenCoverParser)</Parser>
     <Assemblies>2</Assemblies>
     <Classes>66</Classes>
     <Files>66</Files>
-    <Coveredlines>2521</Coveredlines>
-    <Uncoveredlines>511</Uncoveredlines>
-    <Coverablelines>3032</Coverablelines>
-    <Totallines>6208</Totallines>
-    <Linecoverage>83.1</Linecoverage>
+    <Coveredlines>2530</Coveredlines>
+    <Uncoveredlines>499</Uncoveredlines>
+    <Coverablelines>3029</Coverablelines>
+    <Totallines>6205</Totallines>
+    <Linecoverage>83.5</Linecoverage>
     <Coveredbranches>0</Coveredbranches>
     <Totalbranches>0</Totalbranches>
-    <Coveredmethods>463</Coveredmethods>
+    <Coveredmethods>467</Coveredmethods>
     <Totalmethods>543</Totalmethods>
-    <Methodcoverage>85.2</Methodcoverage>
+    <Methodcoverage>86</Methodcoverage>
   </Summary>
   <Coverage>
-    <Assembly name="Tests" classes="13" coverage="96.7" coveredlines="709" coverablelines="733" totallines="1364" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="56" totalmethods="56" methodcoverage="100">
+    <Assembly name="Tests" classes="13" coverage="96.7" coveredlines="706" coverablelines="730" totallines="1359" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="56" totalmethods="56" methodcoverage="100">
       <Class name="Tests.GameTests.GameTests" coverage="100" coveredlines="215" coverablelines="215" totallines="350" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="16" totalmethods="16" methodcoverage="100" />
       <Class name="Tests.GameTests.GameTestsParent[T]" coverage="59" coveredlines="13" coverablelines="22" totallines="45" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
       <Class name="Tests.GameTests.RoadGeneratorTests" coverage="100" coveredlines="26" coverablelines="26" totallines="54" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
@@ -27,13 +27,13 @@
       <Class name="Tests.MainWindowTests.FriendWindowTests" coverage="100" coveredlines="64" coverablelines="64" totallines="122" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="4" methodcoverage="100" />
       <Class name="Tests.MainWindowTests.MainWindowTestsParent[T]" coverage="55" coveredlines="11" coverablelines="20" totallines="40" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
       <Class name="Tests.MainWindowTests.ProfileWindowTest" coverage="100" coveredlines="8" coverablelines="8" totallines="29" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
-      <Class name="Tests.MainWindowTests.TaskWindowTest" coverage="100" coveredlines="183" coverablelines="183" totallines="286" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="10" totalmethods="10" methodcoverage="100" />
+      <Class name="Tests.MainWindowTests.TaskWindowTest" coverage="100" coveredlines="180" coverablelines="180" totallines="281" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="10" totalmethods="10" methodcoverage="100" />
       <Class name="Tests.TestConfig" coverage="100" coveredlines="4" coverablelines="4" totallines="47" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
       <Class name="Tests.UnityTestParent[T]" coverage="94.8" coveredlines="55" coverablelines="58" totallines="111" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="5" methodcoverage="100" />
       <Class name="Tests.UserTests.UserControllerTests" coverage="100" coveredlines="22" coverablelines="22" totallines="48" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
       <Class name="Tests.UserTests.UserTestsParent[T]" coverage="100" coveredlines="4" coverablelines="4" totallines="24" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
     </Assembly>
-    <Assembly name="ThesisScripts" classes="53" coverage="78.8" coveredlines="1812" coverablelines="2299" totallines="4844" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="407" totalmethods="487" methodcoverage="83.5">
+    <Assembly name="ThesisScripts" classes="53" coverage="79.3" coveredlines="1824" coverablelines="2299" totallines="4846" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="411" totalmethods="487" methodcoverage="84.3">
       <Class name="Assets.Scripts.Client.DataTypes.ChunkCellContainer" coverage="100" coveredlines="6" coverablelines="6" totallines="15" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="5" methodcoverage="100" />
       <Class name="Building" coverage="77.7" coveredlines="7" coverablelines="9" totallines="33" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="7" methodcoverage="71.4" />
       <Class name="CameraScript" coverage="100" coveredlines="7" coverablelines="7" totallines="24" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
@@ -42,15 +42,15 @@
       <Class name="CoroutineRunner" coverage="100" coveredlines="15" coverablelines="15" totallines="33" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
       <Class name="EdgeRoadContainer" coverage="100" coveredlines="9" coverablelines="9" totallines="15" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="7" totalmethods="7" methodcoverage="100" />
       <Class name="EffectScript" coverage="100" coveredlines="4" coverablelines="4" totallines="20" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
-      <Class name="Game.Car" coverage="83.5" coveredlines="71" coverablelines="85" totallines="143" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="13" totalmethods="13" methodcoverage="100" />
+      <Class name="Game.Car" coverage="78.8" coveredlines="67" coverablelines="85" totallines="143" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="13" totalmethods="13" methodcoverage="100" />
       <Class name="Game.CarController" coverage="73.1" coveredlines="87" coverablelines="119" totallines="238" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="14" totalmethods="18" methodcoverage="77.7" />
       <Class name="Game.CopCar" coverage="93.7" coveredlines="45" coverablelines="48" totallines="80" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
       <Class name="Game.EnableWheelPhysicMaterial" coverage="100" coveredlines="16" coverablelines="16" totallines="37" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
-      <Class name="Game.GameController" coverage="95.8" coveredlines="115" coverablelines="120" totallines="189" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="25" totalmethods="25" methodcoverage="100" />
+      <Class name="Game.GameController" coverage="94.1" coveredlines="113" coverablelines="120" totallines="189" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="25" totalmethods="25" methodcoverage="100" />
       <Class name="Game.NpcCar" coverage="100" coveredlines="6" coverablelines="6" totallines="19" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
       <Class name="Game.PlayerCar" coverage="82.2" coveredlines="125" coverablelines="152" totallines="219" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="17" totalmethods="17" methodcoverage="100" />
       <Class name="Game.World.BuildingCell" coverage="100" coveredlines="11" coverablelines="11" totallines="30" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="7" totalmethods="7" methodcoverage="100" />
-      <Class name="Game.World.CarSpawner" coverage="86" coveredlines="37" coverablelines="43" totallines="79" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="5" methodcoverage="80" />
+      <Class name="Game.World.CarSpawner" coverage="76.7" coveredlines="33" coverablelines="43" totallines="79" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="5" methodcoverage="80" />
       <Class name="Game.World.Chunk" coverage="91.3" coveredlines="338" coverablelines="370" totallines="595" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="27" totalmethods="29" methodcoverage="93.1" />
       <Class name="Game.World.GameWorld" coverage="81.3" coveredlines="70" coverablelines="86" totallines="147" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="7" totalmethods="7" methodcoverage="100" />
       <Class name="Game.World.RoadGenerator" coverage="82.8" coveredlines="111" coverablelines="134" totallines="234" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="8" totalmethods="9" methodcoverage="88.8" />
@@ -59,13 +59,13 @@
       <Class name="LeaderboardWindow" coverage="0" coveredlines="0" coverablelines="43" totallines="94" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
       <Class name="MainPage.FriendHandler" coverage="100" coveredlines="45" coverablelines="45" totallines="87" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="8" totalmethods="8" methodcoverage="100" />
       <Class name="MainPage.FriendWindowHandler" coverage="66.1" coveredlines="39" coverablelines="59" totallines="153" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="7" totalmethods="9" methodcoverage="77.7" />
-      <Class name="MainPage.MainWindowController" coverage="74" coveredlines="100" coverablelines="135" totallines="311" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="14" totalmethods="17" methodcoverage="82.3" />
+      <Class name="MainPage.MainWindowController" coverage="76.2" coveredlines="103" coverablelines="135" totallines="311" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="15" totalmethods="17" methodcoverage="88.2" />
       <Class name="MainPage.ProfileHandler" coverage="88" coveredlines="22" coverablelines="25" totallines="93" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="5" methodcoverage="80" />
       <Class name="MainPage.TaskDisplayHandler" coverage="76.7" coveredlines="56" coverablelines="73" totallines="191" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="10" totalmethods="11" methodcoverage="90.9" />
       <Class name="MainPage.TaskHistoryHandler" coverage="0" coveredlines="0" coverablelines="12" totallines="53" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
       <Class name="MainPage.TaskHistoryWindowHandler" coverage="0" coveredlines="0" coverablelines="30" totallines="93" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
       <Class name="MainPage.TaskOpenPanelController" coverage="94.7" coveredlines="109" coverablelines="115" totallines="282" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="15" totalmethods="15" methodcoverage="100" />
-      <Class name="ModalWindow" coverage="0" coveredlines="0" coverablelines="38" totallines="69" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
+      <Class name="ModalWindow" coverage="44.7" coveredlines="17" coverablelines="38" totallines="71" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="4" methodcoverage="50" />
       <Class name="ShopItem" coverage="100" coveredlines="23" coverablelines="23" totallines="62" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="8" totalmethods="8" methodcoverage="100" />
       <Class name="ShopWindow" coverage="75" coveredlines="39" coverablelines="52" totallines="103" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="8" methodcoverage="75" />
       <Class name="StarHandler" coverage="100" coveredlines="10" coverablelines="10" totallines="28" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
@@ -84,7 +84,7 @@
       <Class name="Thesis_backend.Data_Structures.UserRequest" coverage="100" coveredlines="3" coverablelines="3" totallines="15" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="6" methodcoverage="100" />
       <Class name="Thesis_backend.Data_Structures.UserSettings" coverage="75" coveredlines="3" coverablelines="4" totallines="15" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="8" methodcoverage="75" />
       <Class name="ThreadSafeMonoBehaviour" coverage="100" coveredlines="5" coverablelines="5" totallines="12" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
-      <Class name="User.LoggedInChecker" coverage="54.5" coveredlines="12" coverablelines="22" totallines="71" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="5" methodcoverage="60" />
+      <Class name="User.LoggedInChecker" coverage="63.6" coveredlines="14" coverablelines="22" totallines="71" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="5" methodcoverage="80" />
       <Class name="User.UserController" coverage="35.7" coveredlines="25" coverablelines="70" totallines="200" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="12" methodcoverage="41.6" />
       <Class name="User.UserData" coverage="100" coveredlines="43" coverablelines="43" totallines="139" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="30" totalmethods="30" methodcoverage="100" />
     </Assembly>
