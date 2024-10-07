@@ -8,7 +8,7 @@ var classMainPage_1_1FriendWindowHandler =
     [ "Hide", "classMainPage_1_1FriendWindowHandler.html#a3b108bf886406b52ae4cd923dfb8ab58", null ],
     [ "LoadFriends", "classMainPage_1_1FriendWindowHandler.html#a6ebf0f7c70458f53c427517bf84bef7d", null ],
     [ "DisplayFriends", "classMainPage_1_1FriendWindowHandler.html#abce9cb8e608691cfbc50bf47c17a1b34", null ],
-    [ "friendsContainer", "classMainPage_1_1FriendWindowHandler.html#a52de2b5c830299fa3a93fd57033374c7", null ],
+    [ "friendsParent", "classMainPage_1_1FriendWindowHandler.html#abcda4ac9a0d06b5865ce65be8b2f8f06", null ],
     [ "userIdentificationInput", "classMainPage_1_1FriendWindowHandler.html#a7350dfeb8bc7f3d5e6b6d1d78f18b866", null ],
     [ "friendPrefab", "classMainPage_1_1FriendWindowHandler.html#a2095a404dd869961be53e3730261dafc", null ],
     [ "modalWindow", "classMainPage_1_1FriendWindowHandler.html#a0808d5379e42fba640aa92ecd2e76d88", null ],

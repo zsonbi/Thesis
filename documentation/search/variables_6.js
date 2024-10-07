@@ -6,6 +6,6 @@ var searchData=
   ['friend_3',['Friend',['../namespaceThesis__backend_1_1Data__Structures.html#a4c3393a9cb2a72b4d735daeff4d0ea1d',1,'Thesis_backend::Data_Structures']]],
   ['friendnamelabel_4',['friendNameLabel',['../classMainPage_1_1FriendHandler.html#a58c24f06d77aba4ff0437ca3bfb9daa1',1,'MainPage::FriendHandler']]],
   ['friendprefab_5',['friendPrefab',['../classMainPage_1_1FriendWindowHandler.html#a2095a404dd869961be53e3730261dafc',1,'MainPage::FriendWindowHandler']]],
-  ['friendscontainer_6',['friendsContainer',['../classMainPage_1_1FriendWindowHandler.html#a52de2b5c830299fa3a93fd57033374c7',1,'MainPage::FriendWindowHandler']]],
+  ['friendsparent_6',['friendsParent',['../classMainPage_1_1FriendWindowHandler.html#abcda4ac9a0d06b5865ce65be8b2f8f06',1,'MainPage::FriendWindowHandler']]],
   ['fullstarsprite_7',['fullStarSprite',['../classStarHandler.html#afa5b6a434226e09ea3893bd39e9c68ac',1,'StarHandler']]]
 ];

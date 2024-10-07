@@ -161,9 +161,9 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a52de2b5c830299fa3a93fd57033374c7" id="r_a52de2b5c830299fa3a93fd57033374c7"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainPage_1_1FriendWindowHandler.html#a52de2b5c830299fa3a93fd57033374c7">friendsContainer</a></td></tr>
-<tr class="memdesc:a52de2b5c830299fa3a93fd57033374c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parent for the friend prefabs.  <br /></td></tr>
-<tr class="separator:a52de2b5c830299fa3a93fd57033374c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcda4ac9a0d06b5865ce65be8b2f8f06" id="r_abcda4ac9a0d06b5865ce65be8b2f8f06"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainPage_1_1FriendWindowHandler.html#abcda4ac9a0d06b5865ce65be8b2f8f06">friendsParent</a></td></tr>
+<tr class="memdesc:abcda4ac9a0d06b5865ce65be8b2f8f06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parent for the friend prefabs.  <br /></td></tr>
+<tr class="separator:abcda4ac9a0d06b5865ce65be8b2f8f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7350dfeb8bc7f3d5e6b6d1d78f18b866" id="r_a7350dfeb8bc7f3d5e6b6d1d78f18b866"><td class="memItemLeft" align="right" valign="top">TMP_InputField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainPage_1_1FriendWindowHandler.html#a7350dfeb8bc7f3d5e6b6d1d78f18b866">userIdentificationInput</a></td></tr>
 <tr class="memdesc:a7350dfeb8bc7f3d5e6b6d1d78f18b866"><td class="mdescLeft">&#160;</td><td class="mdescRight">What is the user identification for the user.  <br /></td></tr>
 <tr class="separator:a7350dfeb8bc7f3d5e6b6d1d78f18b866"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -398,13 +398,13 @@ Additional Inherited Members</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">   90</span>        {</div>
 <div class="line"><span class="lineno">   91</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classMainPage_1_1FriendWindowHandler.html#a2ab8b5a492eaf860d47ec53dc4ce04d8">showPending</a>)</div>
 <div class="line"><span class="lineno">   92</span>            {</div>
-<div class="line"><span class="lineno">   93</span>                FriendHandler friendDisplay = Instantiate(<a class="code hl_variable" href="classMainPage_1_1FriendWindowHandler.html#a2095a404dd869961be53e3730261dafc">friendPrefab</a>, this.<a class="code hl_variable" href="classMainPage_1_1FriendWindowHandler.html#a52de2b5c830299fa3a93fd57033374c7">friendsContainer</a>.transform).GetComponent&lt;FriendHandler&gt;();</div>
+<div class="line"><span class="lineno">   93</span>                FriendHandler friendDisplay = Instantiate(<a class="code hl_variable" href="classMainPage_1_1FriendWindowHandler.html#a2095a404dd869961be53e3730261dafc">friendPrefab</a>, this.<a class="code hl_variable" href="classMainPage_1_1FriendWindowHandler.html#abcda4ac9a0d06b5865ce65be8b2f8f06">friendsParent</a>.transform).GetComponent&lt;FriendHandler&gt;();</div>
 <div class="line"><span class="lineno">   94</span>                friendDisplay.InitValues(<span class="keyword">friend</span>);</div>
 <div class="line"><span class="lineno">   95</span>            }</div>
 <div class="line"><span class="lineno">   96</span>        }</div>
 <div class="ttc" id="aclassMainPage_1_1FriendWindowHandler_html_a2095a404dd869961be53e3730261dafc"><div class="ttname"><a href="classMainPage_1_1FriendWindowHandler.html#a2095a404dd869961be53e3730261dafc">MainPage.FriendWindowHandler.friendPrefab</a></div><div class="ttdeci">GameObject friendPrefab</div><div class="ttdoc">The friend prefab.</div><div class="ttdef"><b>Definition</b> <a href="FriendWindowHandler_8cs_source.html#l00030">FriendWindowHandler.cs:30</a></div></div>
 <div class="ttc" id="aclassMainPage_1_1FriendWindowHandler_html_a2ab8b5a492eaf860d47ec53dc4ce04d8"><div class="ttname"><a href="classMainPage_1_1FriendWindowHandler.html#a2ab8b5a492eaf860d47ec53dc4ce04d8">MainPage.FriendWindowHandler.showPending</a></div><div class="ttdeci">bool showPending</div><div class="ttdoc">Should we display the pending friends.</div><div class="ttdef"><b>Definition</b> <a href="FriendWindowHandler_8cs_source.html#l00041">FriendWindowHandler.cs:41</a></div></div>
-<div class="ttc" id="aclassMainPage_1_1FriendWindowHandler_html_a52de2b5c830299fa3a93fd57033374c7"><div class="ttname"><a href="classMainPage_1_1FriendWindowHandler.html#a52de2b5c830299fa3a93fd57033374c7">MainPage.FriendWindowHandler.friendsContainer</a></div><div class="ttdeci">GameObject friendsContainer</div><div class="ttdoc">Parent for the friend prefabs.</div><div class="ttdef"><b>Definition</b> <a href="FriendWindowHandler_8cs_source.html#l00018">FriendWindowHandler.cs:18</a></div></div>
+<div class="ttc" id="aclassMainPage_1_1FriendWindowHandler_html_abcda4ac9a0d06b5865ce65be8b2f8f06"><div class="ttname"><a href="classMainPage_1_1FriendWindowHandler.html#abcda4ac9a0d06b5865ce65be8b2f8f06">MainPage.FriendWindowHandler.friendsParent</a></div><div class="ttdeci">GameObject friendsParent</div><div class="ttdoc">Parent for the friend prefabs.</div><div class="ttdef"><b>Definition</b> <a href="FriendWindowHandler_8cs_source.html#l00018">FriendWindowHandler.cs:18</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="FriendWindowHandler_8cs_source.html#l00030">MainPage.FriendWindowHandler.friendPrefab</a>, <a class="el" href="FriendHandler_8cs_source.html#l00054">MainPage.FriendHandler.InitValues()</a>, and <a class="el" href="FriendWindowHandler_8cs_source.html#l00041">MainPage.FriendWindowHandler.showPending</a>.</p>
 
@@ -519,24 +519,24 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  120</span>            <span class="keywordflow">try</span></div>
 <div class="line"><span class="lineno">  121</span>            {</div>
 <div class="line"><span class="lineno">  122</span>                <span class="comment">//Delete the previous ones</span></div>
-<div class="line"><span class="lineno">  123</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; this.<a class="code hl_variable" href="classMainPage_1_1FriendWindowHandler.html#a52de2b5c830299fa3a93fd57033374c7">friendsContainer</a>.transform.childCount; i++)</div>
+<div class="line"><span class="lineno">  123</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; this.<a class="code hl_variable" href="classMainPage_1_1FriendWindowHandler.html#abcda4ac9a0d06b5865ce65be8b2f8f06">friendsParent</a>.transform.childCount; i++)</div>
 <div class="line"><span class="lineno">  124</span>                {</div>
-<div class="line"><span class="lineno">  125</span>                    Destroy(this.<a class="code hl_variable" href="classMainPage_1_1FriendWindowHandler.html#a52de2b5c830299fa3a93fd57033374c7">friendsContainer</a>.transform.GetChild(i).gameObject);</div>
+<div class="line"><span class="lineno">  125</span>                    Destroy(this.<a class="code hl_variable" href="classMainPage_1_1FriendWindowHandler.html#abcda4ac9a0d06b5865ce65be8b2f8f06">friendsParent</a>.transform.GetChild(i).gameObject);</div>
 <div class="line"><span class="lineno">  126</span>                }</div>
-<div class="line"><span class="lineno">  127</span>                this.<a class="code hl_variable" href="classMainPage_1_1FriendWindowHandler.html#a52de2b5c830299fa3a93fd57033374c7">friendsContainer</a>.transform.DetachChildren();</div>
+<div class="line"><span class="lineno">  127</span>                this.<a class="code hl_variable" href="classMainPage_1_1FriendWindowHandler.html#abcda4ac9a0d06b5865ce65be8b2f8f06">friendsParent</a>.transform.DetachChildren();</div>
 <div class="line"><span class="lineno">  128</span>                <span class="comment">//Create the prefabs</span></div>
 <div class="line"><span class="lineno">  129</span>                <span class="keywordflow">foreach</span> (var item <span class="keywordflow">in</span> friends)</div>
 <div class="line"><span class="lineno">  130</span>                {</div>
 <div class="line"><span class="lineno">  131</span>                    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classMainPage_1_1FriendWindowHandler.html#a2ab8b5a492eaf860d47ec53dc4ce04d8">showPending</a>)</div>
 <div class="line"><span class="lineno">  132</span>                    {</div>
-<div class="line"><span class="lineno">  133</span>                        FriendHandler friendDisplay = Instantiate(<a class="code hl_variable" href="classMainPage_1_1FriendWindowHandler.html#a2095a404dd869961be53e3730261dafc">friendPrefab</a>, this.<a class="code hl_variable" href="classMainPage_1_1FriendWindowHandler.html#a52de2b5c830299fa3a93fd57033374c7">friendsContainer</a>.transform).GetComponent&lt;FriendHandler&gt;();</div>
+<div class="line"><span class="lineno">  133</span>                        FriendHandler friendDisplay = Instantiate(<a class="code hl_variable" href="classMainPage_1_1FriendWindowHandler.html#a2095a404dd869961be53e3730261dafc">friendPrefab</a>, this.<a class="code hl_variable" href="classMainPage_1_1FriendWindowHandler.html#abcda4ac9a0d06b5865ce65be8b2f8f06">friendsParent</a>.transform).GetComponent&lt;FriendHandler&gt;();</div>
 <div class="line"><span class="lineno">  134</span>                        friendDisplay.InitValues(item);</div>
 <div class="line"><span class="lineno">  135</span>                    }</div>
 <div class="line"><span class="lineno">  136</span>                    <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  137</span>                    {</div>
 <div class="line"><span class="lineno">  138</span>                        <span class="keywordflow">if</span> (!item.Pending)</div>
 <div class="line"><span class="lineno">  139</span>                        {</div>
-<div class="line"><span class="lineno">  140</span>                            FriendHandler friendDisplay = Instantiate(<a class="code hl_variable" href="classMainPage_1_1FriendWindowHandler.html#a2095a404dd869961be53e3730261dafc">friendPrefab</a>, this.<a class="code hl_variable" href="classMainPage_1_1FriendWindowHandler.html#a52de2b5c830299fa3a93fd57033374c7">friendsContainer</a>.transform).GetComponent&lt;FriendHandler&gt;();</div>
+<div class="line"><span class="lineno">  140</span>                            FriendHandler friendDisplay = Instantiate(<a class="code hl_variable" href="classMainPage_1_1FriendWindowHandler.html#a2095a404dd869961be53e3730261dafc">friendPrefab</a>, this.<a class="code hl_variable" href="classMainPage_1_1FriendWindowHandler.html#abcda4ac9a0d06b5865ce65be8b2f8f06">friendsParent</a>.transform).GetComponent&lt;FriendHandler&gt;();</div>
 <div class="line"><span class="lineno">  141</span>                            friendDisplay.InitValues(item);</div>
 <div class="line"><span class="lineno">  142</span>                        }</div>
 <div class="line"><span class="lineno">  143</span>                    }</div>
@@ -556,8 +556,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a52de2b5c830299fa3a93fd57033374c7" name="a52de2b5c830299fa3a93fd57033374c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52de2b5c830299fa3a93fd57033374c7">&#9670;&#160;</a></span>friendsContainer</h2>
+<a id="abcda4ac9a0d06b5865ce65be8b2f8f06" name="abcda4ac9a0d06b5865ce65be8b2f8f06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcda4ac9a0d06b5865ce65be8b2f8f06">&#9670;&#160;</a></span>friendsParent</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -566,7 +566,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">GameObject MainPage.FriendWindowHandler.friendsContainer</td>
+          <td class="memname">GameObject MainPage.FriendWindowHandler.friendsParent</td>
         </tr>
       </table>
   </td>
