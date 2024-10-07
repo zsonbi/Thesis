@@ -1,8 +1,10 @@
 using Config;
 using Game;
+using PlasticPipe.PlasticProtocol.Messages;
 using Thesis_backend.Data_Structures;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using User;
@@ -62,6 +64,21 @@ public class GameUI : ThreadSafeMonoBehaviour
         {
             this.InfamyInGameText.text = "Infamy: " + gameController.Score;
             this.CoinInGameText.text = Mathf.RoundToInt(gameController.Coins).ToString();
+
+            Keyboard keyboard = Keyboard.current;
+            // Make the powerups useable with keyboard
+            if (keyboard is not null)
+            {
+                InputSystem.Update();
+                if (keyboard.qKey.isPressed && !gameController.Player.Turbo)
+                {
+                    BuyTurbo();
+                }
+                if (keyboard.eKey.isPressed && !gameController.Player.Immune)
+                {
+                    BuyImmunity();
+                }
+            }
         }
     }
 
@@ -88,7 +105,8 @@ public class GameUI : ThreadSafeMonoBehaviour
     {
         if (UserData.Instance.CurrentTaskScore >= GameConfig.IMMUNITY_COST)
         {
-            CoroutineRunner.RunCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATH_FOR_BUY_IMMUNITY, new WWWForm(), BoughtImmunity, onFailedAction: ShowRequestFail));
+            CoroutineRunner.RunCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATH_FOR_BUY_IMMUNITY, new WWWForm(), BoughtImmunity, onFailedAction: (string res) => { ShowRequestFail(res); gameController.Player.CancelImmunity(); }));
+            gameController.Player.ApplyImmunity();
         }
     }
 
@@ -96,21 +114,22 @@ public class GameUI : ThreadSafeMonoBehaviour
     {
         if (UserData.Instance.CurrentTaskScore >= GameConfig.TURBO_COST)
         {
-            CoroutineRunner.RunCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATH_FOR_BUY_TURBO, new WWWForm(), BoughtTurbo, onFailedAction: ShowRequestFail));
+            CoroutineRunner.RunCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATH_FOR_BUY_TURBO, new WWWForm(), BoughtTurbo, onFailedAction: (string res) => { ShowRequestFail(res); gameController.Player.CancelTurbo(); }));
+            gameController.Player.ApplyTurbo();
         }
     }
 
     private void BoughtImmunity(Thesis_backend.Data_Structures.User user)
     {
         UserData.Instance.UpdateTaskScore(user.CurrentTaskScore);
-        gameController.Player.ApplyImmunity();
+        //gameController.Player.ApplyImmunity();
         TaskScoreInGameText.text = UserData.Instance.CurrentTaskScore.ToString();
     }
 
     private void BoughtTurbo(Thesis_backend.Data_Structures.User user)
     {
         UserData.Instance.UpdateTaskScore(user.CurrentTaskScore);
-        gameController.Player.ApplyTurbo();
+        // gameController.Player.ApplyTurbo();
         TaskScoreInGameText.text = UserData.Instance.CurrentTaskScore.ToString();
     }
 
