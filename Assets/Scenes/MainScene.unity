@@ -231,6 +231,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3891521}
   m_CullTransparentMesh: 1
+--- !u!1 &12085414 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1088765530544601321, guid: eabec96549fb5f842a9f769a41591d1a, type: 3}
+  m_PrefabInstance: {fileID: 5708197138982424656}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &74683620
 GameObject:
   m_ObjectHideFlags: 0
@@ -4161,6 +4166,14 @@ PrefabInstance:
       propertyPath: modalWindow
       value: 
       objectReference: {fileID: 2187495082416212380}
+    - target: {fileID: 481518582554757896, guid: eabec96549fb5f842a9f769a41591d1a, type: 3}
+      propertyPath: friendsParent
+      value: 
+      objectReference: {fileID: 12085414}
+    - target: {fileID: 481518582554757896, guid: eabec96549fb5f842a9f769a41591d1a, type: 3}
+      propertyPath: friendsContainer
+      value: 
+      objectReference: {fileID: 12085414}
     - target: {fileID: 5083670472075008867, guid: eabec96549fb5f842a9f769a41591d1a, type: 3}
       propertyPath: m_Name
       value: FriendsPanel
@@ -4934,7 +4947,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5033859297682825883}
   m_HandleRect: {fileID: 8450858964760567643}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:

@@ -15,7 +15,7 @@ namespace MainPage
         /// Parent for the friend prefabs
         /// </summary>
         [SerializeField]
-        private GameObject friendsContainer;
+        private GameObject friendsParent;
 
         /// <summary>
         /// What is the user identification for the user
@@ -90,7 +90,7 @@ namespace MainPage
         {
             if (showPending)
             {
-                FriendHandler friendDisplay = Instantiate(friendPrefab, this.friendsContainer.transform).GetComponent<FriendHandler>();
+                FriendHandler friendDisplay = Instantiate(friendPrefab, this.friendsParent.transform).GetComponent<FriendHandler>();
                 friendDisplay.InitValues(friend);
             }
         }
@@ -120,24 +120,24 @@ namespace MainPage
             try
             {
                 //Delete the previous ones
-                for (int i = 0; i < this.friendsContainer.transform.childCount; i++)
+                for (int i = 0; i < this.friendsParent.transform.childCount; i++)
                 {
-                    Destroy(this.friendsContainer.transform.GetChild(i).gameObject);
+                    Destroy(this.friendsParent.transform.GetChild(i).gameObject);
                 }
-                this.friendsContainer.transform.DetachChildren();
+                this.friendsParent.transform.DetachChildren();
                 //Create the prefabs
                 foreach (var item in friends)
                 {
                     if (showPending)
                     {
-                        FriendHandler friendDisplay = Instantiate(friendPrefab, this.friendsContainer.transform).GetComponent<FriendHandler>();
+                        FriendHandler friendDisplay = Instantiate(friendPrefab, this.friendsParent.transform).GetComponent<FriendHandler>();
                         friendDisplay.InitValues(item);
                     }
                     else
                     {
                         if (!item.Pending)
                         {
-                            FriendHandler friendDisplay = Instantiate(friendPrefab, this.friendsContainer.transform).GetComponent<FriendHandler>();
+                            FriendHandler friendDisplay = Instantiate(friendPrefab, this.friendsParent.transform).GetComponent<FriendHandler>();
                             friendDisplay.InitValues(item);
                         }
                     }

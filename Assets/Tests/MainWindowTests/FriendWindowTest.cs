@@ -101,6 +101,7 @@ namespace Tests
 
                 //Login to the other user
                 yield return Login(TestConfig.Username2, TestConfig.Password2);
+
                 yield return LoadScene(true, false);
                 friendHandler.Show();
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
