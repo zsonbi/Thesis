@@ -31,7 +31,7 @@ namespace Tests
                 yield return CoroutineRunner.RunCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORLOGOUT));
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
             }
-            if (login)
+            if (login && !UserData.Instance.LoggedIn)
             {
                 yield return this.Login();
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
@@ -46,8 +46,6 @@ namespace Tests
                 // Wait until the scene is both loaded and active
                 yield return null;
             }
-
-            //yield return WaitForFewFrames(120);
 
             // Get the UserController component once it's found
             this.MainController = GameObject.Find(controllerObjectName).GetComponent<T>();
