@@ -9,7 +9,10 @@ namespace Game
     {
         protected override void Update()
         {
-            if (!Alive)
+            //For the  testing unload doesn't cause error
+            try
+            {
+                if (!Alive)
             {
                 carController.Move(0f, 0f, 0f, 0f);
                 return;
@@ -67,14 +70,24 @@ namespace Game
                 // No obstacle detected, steer towards player
                 steering = DetermineSteeringDirectionTowardsPlayer();
             }
-
+    
             // Move the car
             carController.Move(steering, v, 0f, 0f);
-
+          
             // Optional: Debugging ray visualization
             Debug.DrawRay(transform.position, forwardDirection * GameConfig.POLICE_RAYCAST_FORWARD_DISTANCE, Color.red);
             Debug.DrawRay(transform.position, leftDirection * GameConfig.POLICE_RAYCAST_SIDE_DISTANCE, Color.yellow);
             Debug.DrawRay(transform.position, rightDirection * GameConfig.POLICE_RAYCAST_SIDE_DISTANCE, Color.green);
+            }
+            catch (System.NullReferenceException)
+            {
+                return;
+
+            }
+            catch (MissingReferenceException)
+            {
+                return;
+            }
         }
     }
 }

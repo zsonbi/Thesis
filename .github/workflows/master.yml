@@ -207,7 +207,7 @@ jobs:
 
   buildForWebGL:
         needs: test
-        if: contains(github.ref, 'master') || contains(github.ref, 'dev') || contains(github.ref, 'none') 
+        if: contains(github.ref, 'master') || contains(github.ref, 'dev') || contains(github.ref, 'documentation-help') 
         name: Build for ${{ matrix.targetPlatform }}
         runs-on: my-pc
         strategy:
