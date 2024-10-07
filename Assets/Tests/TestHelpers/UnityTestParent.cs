@@ -31,7 +31,7 @@ namespace Tests
                 yield return CoroutineRunner.RunCoroutine(Server.SendDeleteRequest<string>(ServerConfig.PATHFORLOGOUT));
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
             }
-            if (login && !UserData.Instance.LoggedIn)
+            if (login)
             {
                 yield return this.Login();
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
