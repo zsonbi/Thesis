@@ -47,6 +47,8 @@ namespace Tests
                 yield return null;
             }
 
+            //yield return WaitForFewFrames(120);
+
             // Get the UserController component once it's found
             this.MainController = GameObject.Find(controllerObjectName).GetComponent<T>();
             yield return null;
@@ -102,6 +104,13 @@ namespace Tests
 
             CoroutineRunner.StopAllCoroutinesGlobal();
 
+            SceneManager.LoadScene(TestConfig.EMPTY_SCENE_NAME, LoadSceneMode.Single);
+
+            //AsyncOperation unloading = SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().name);
+            //while (!unloading.isDone)
+            //{
+            //    yield return null;
+            //}
             yield return new WaitForSeconds(1f);
         }
     }

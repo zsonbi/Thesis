@@ -77,7 +77,6 @@ namespace Game
 
         protected override void Update()
         {
-
             if (!gameController.Running)
             {
                 return;
@@ -127,7 +126,7 @@ namespace Game
         }
 
         private void FixedUpdate()
-        {    
+        {
             //For the  testing unload doesn't cause error
             try
             {
@@ -199,11 +198,14 @@ namespace Game
             }
             catch (System.NullReferenceException)
             {
-                return;
+                Debug.LogWarning("Player car null reference exception");
 
+                return;
             }
             catch (MissingReferenceException)
             {
+                Debug.LogWarning("Player car missing reference");
+
                 return;
             }
         }

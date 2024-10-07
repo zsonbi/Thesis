@@ -43,5 +43,6 @@ namespace Tests
 
         public const string GAME_SCENE_NAME = "GameScene";
         public const string GAME_CONTROLLER_OBJECT_NAME = "Game";
+        public const string EMPTY_SCENE_NAME = "Empty";
     }
 }
