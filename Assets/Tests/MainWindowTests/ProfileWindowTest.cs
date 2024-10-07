@@ -15,6 +15,7 @@ namespace Tests
             public IEnumerator LogoutTest()
             {
                 yield return LoadScene();
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
 
                 profileHandler.Show();
                 profileHandler.SendLogout();

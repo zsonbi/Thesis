@@ -104,37 +104,46 @@ namespace MainPage
         /// <param name="type">The type of the task</param>
         public void OpenUp(PlayerTask taskContainer = null, TaskType type = TaskType.GoodTask)
         {
-            //If the task is null create a dummy otherwise load it
-            if (taskContainer is not null)
+            try
             {
-                this.CurrentTask = taskContainer;
-                this.isNewTask = false;
-                //Create a deep copy
-                this.playerTaskOnOpen = new PlayerTask(taskContainer);
-            }
-            else
-            {
-                this.CurrentTask = new PlayerTask() { ID = -1 };
-                this.CurrentTask.ChangeType(type);
-                this.isNewTask = true;
-                this.playerTaskOnOpen = null;
-            }
 
-            taskNameInput.text = this.CurrentTask.TaskName;
-            descriptionInput.text = this.CurrentTask.Description;
 
-            for (int i = 0; i < TASKINTERVALS.Length; i++)
-            {
-                if (TASKINTERVALS[i] == (int)this.CurrentTask.PeriodRate)
+                //If the task is null create a dummy otherwise load it
+                if (taskContainer is not null)
                 {
-                    taskIntervals.SetValueWithoutNotify(i);
-                    break;
+                    this.CurrentTask = taskContainer;
+                    this.isNewTask = false;
+                    //Create a deep copy
+                    this.playerTaskOnOpen = new PlayerTask(taskContainer);
                 }
+                else
+                {
+                    this.CurrentTask = new PlayerTask() { ID = -1 };
+                    this.CurrentTask.ChangeType(type);
+                    this.isNewTask = true;
+                    this.playerTaskOnOpen = null;
+                }
+
+                taskNameInput.text = this.CurrentTask.TaskName;
+                descriptionInput.text = this.CurrentTask.Description;
+
+                for (int i = 0; i < TASKINTERVALS.Length; i++)
+                {
+                    if (TASKINTERVALS[i] == (int)this.CurrentTask.PeriodRate)
+                    {
+                        taskIntervals.SetValueWithoutNotify(i);
+                        break;
+                    }
+                }
+                //Show/Hide the delete button
+                deleteTaskButton.gameObject.SetActive(!isNewTask);
+                this.gameObject.SetActive(true);
+                UpdateButtons();
             }
-            //Show/Hide the delete button
-            deleteTaskButton.gameObject.SetActive(!isNewTask);
-            this.gameObject.SetActive(true);
-            UpdateButtons();
+            catch (MissingReferenceException)
+            {
+                Debug.LogWarning("Task open panel had a destroyed game object");
+            }
         }
 
         /// <summary>
