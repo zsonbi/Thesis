@@ -24,6 +24,8 @@ namespace Tests
 
         protected virtual IEnumerator LoadSceneBase(string sceneName, string controllerObjectName, bool login = true, bool logout = false)
         {
+            SceneManager.LoadScene(TestConfig.EMPTY_SCENE_NAME, LoadSceneMode.Single);
+            yield return WaitForCondition(() => SceneManager.GetActiveScene().name == TestConfig.EMPTY_SCENE_NAME);
             if (logout)
             {
                 User.UserData.Instance.Logout();
