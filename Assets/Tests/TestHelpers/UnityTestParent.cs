@@ -74,7 +74,8 @@ namespace Tests
                 Password = password,
             };
 
-            yield return CoroutineRunner.RunCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORLOGIN, userLoginRequest));
+            yield return CoroutineRunner.RunCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORLOGIN, userLoginRequest, onComplete: UserData.Instance.Init));
+
             yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
         }
 
