@@ -2,6 +2,7 @@
 using Game;
 using NUnit.Framework;
 using System;
+using System.Threading.Tasks;
 using Tests;
 using Thesis_backend.Data_Structures;
 using UnityEngine;
@@ -16,7 +17,9 @@ namespace Tests
         public void BeforeAllTestsAsync()
         {
             RegisterTestUsers();
+            System.Threading.Thread.Sleep((int)(TestConfig.ANSWER_TOLERANCE * 1000));
         }
+    
 
         private void RegisterTestUsers()
         {

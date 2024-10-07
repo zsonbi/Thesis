@@ -34,6 +34,7 @@ namespace Tests
             if (login && !UserData.Instance.LoggedIn)
             {
                 yield return this.Login();
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
             }
 
             // Load the scene asynchronously
@@ -104,6 +105,7 @@ namespace Tests
         public new IEnumerator TearDown()
         {
             base.TearDown();
+
             CoroutineRunner.StopAllCoroutinesGlobal();
 
             yield return new WaitForSeconds(1f);

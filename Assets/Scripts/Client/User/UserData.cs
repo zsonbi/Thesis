@@ -11,7 +11,7 @@ namespace User
         /// <summary>
         /// Singleton private instance
         /// </summary>
-        private static UserData instance = null;
+        private static UserData instance = new UserData();
 
         /// <summary>
         /// Instance getter
