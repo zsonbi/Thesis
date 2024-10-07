@@ -173,25 +173,35 @@ namespace MainPage
         /// </summary>
         public void Cancel()
         {
-            //If it wasn't a new task revert it to the previous state
-            if (this.CurrentTask.ID != -1)
+            try
             {
-                if (playerTaskOnOpen is not null)
-                {
-                    CurrentTask.UpdateValues(playerTaskOnOpen);
-                    if (playerTaskOnOpen.TaskType)
-                    {
-                        uIController.LoadBadHabits();
-                    }
-                    else
-                    {
-                        uIController.LoadGoodTasks();
-                    }
 
-                    this.CurrentTask = playerTaskOnOpen;
+
+                //If it wasn't a new task revert it to the previous state
+                if (this.CurrentTask.ID != -1)
+                {
+                    if (playerTaskOnOpen is not null)
+                    {
+                        CurrentTask.UpdateValues(playerTaskOnOpen);
+                        if (playerTaskOnOpen.TaskType)
+                        {
+                            uIController.LoadBadHabits();
+                        }
+                        else
+                        {
+                            uIController.LoadGoodTasks();
+                        }
+
+                        this.CurrentTask = playerTaskOnOpen;
+                    }
                 }
+                this.CurrentTask = new PlayerTask() { ID = -1 };
+                this.gameObject.SetActive(false);
             }
-            this.CurrentTask = new PlayerTask() { ID = -1 };
+            catch (MissingReferenceException)
+            {
+                Debug.LogWarning("Missing reference task open panel in cancel");
+            }
         }
 
         /// <summary>
