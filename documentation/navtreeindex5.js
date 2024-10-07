@@ -1,7 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"functions_z.html":[1,2,0,23],
-"globals.html":[2,1,0],
 "globals_enum.html":[2,1,2],
 "globals_type.html":[2,1,1],
 "hierarchy.html":[1,1],

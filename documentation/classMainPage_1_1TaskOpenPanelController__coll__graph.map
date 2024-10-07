@@ -1,0 +1,17 @@
+<map id="MainPage.TaskOpenPanelController" name="MainPage.TaskOpenPanelController">
+<area shape="rect" id="Node000001" title="Controller for displaying, editing and creating tasks." alt="" coords="5,951,248,1416"/>
+<area shape="rect" id="Node000002" href="$classThreadSafeMonoBehaviour.html" title=" " alt="" coords="249,120,439,185"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,184,199,205,169,236,144,276,123,318,89,407,68,499,56,594,52,689,55,781,64,869,75,950,70,951,58,869,50,781,47,689,51,594,63,498,84,405,118,316,139,274,165,233,196,201,235,179"/>
+<area shape="rect" id="Node000004" href="$classMainPage_1_1MainWindowController.html" title="Handles the main window&#39;s controls." alt="" coords="167,463,396,888"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="356,198,371,308,373,374,367,439,362,463,357,462,361,438,367,374,366,309,351,199"/>
+<area shape="rect" id="Node000005" href="$classMainPage_1_1TaskOpenPanelController.html" title="Controller for displaying, editing and creating tasks." alt="" coords="276,951,519,1416"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="370,197,376,208,385,234,444,421,487,568,521,718,549,912,550,944,545,976,535,1007,521,1037,516,1035,530,1006,540,975,545,944,544,912,516,719,482,570,439,423,380,236,371,210,366,199"/>
+<area shape="rect" id="Node000006" href="$classModalWindow.html" title=" " alt="" coords="179,235,344,400"/>
+<area shape="poly" id="edge9_Node000006_Node000002" title=" " alt="" coords="324,199,305,236,301,233,319,197"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="286,5,402,71"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="347,85,347,120,341,120,341,85"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="196,889,188,913,181,935,176,934,183,911,190,888"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="274,888,280,926,282,934,277,935,275,927,268,889"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="373,951,365,913,363,905,369,903,371,911,379,950"/>
+<area shape="poly" id="edge8_Node000004_Node000006" title=" " alt="" coords="263,400,264,439,264,446,259,446,259,439,258,400"/>
+</map>

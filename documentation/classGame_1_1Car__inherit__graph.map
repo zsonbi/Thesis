@@ -1,0 +1,13 @@
+<map id="Game.Car" name="Game.Car">
+<area shape="rect" id="Node000001" title=" " alt="" coords="118,232,306,577"/>
+<area shape="rect" id="Node000004" href="$classGame_1_1NpcCar.html" title=" " alt="" coords="5,778,216,858"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="169,591,123,779,118,777,164,590"/>
+<area shape="rect" id="Node000006" href="$classGame_1_1PlayerCar.html" title=" " alt="" coords="240,625,387,1011"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="260,590,269,624,263,626,255,592"/>
+<area shape="rect" id="Node000002" href="$classThreadSafeMonoBehaviour.html" title=" " alt="" coords="117,119,307,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,198,215,232,209,232,209,198"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="154,5,270,71"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="215,84,215,119,209,119,209,84"/>
+<area shape="rect" id="Node000005" href="$classGame_1_1CopCar.html" title=" " alt="" coords="59,1059,163,1124"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="113,871,113,1058,108,1058,108,871"/>
+</map>

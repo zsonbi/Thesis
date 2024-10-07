@@ -1,6 +1,5 @@
 var classMainPage_1_1FriendHandler =
 [
-    [ "Update", "classMainPage_1_1FriendHandler.html#ae37fa4dea8149939fc6c42d979effc27", null ],
     [ "InitValues", "classMainPage_1_1FriendHandler.html#ab894b96203019d08e341bbb6090af8b8", null ],
     [ "AcceptFriendRequest", "classMainPage_1_1FriendHandler.html#a92be1ed6b9e41df4bad2004fb8913d4e", null ],
     [ "DeleteFriend", "classMainPage_1_1FriendHandler.html#a118aed89960ec6338411e4130e3fe87c", null ],

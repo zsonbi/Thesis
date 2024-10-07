@@ -1,0 +1,11 @@
+<map id="Game.NpcCar" name="Game.NpcCar">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,625,216,705"/>
+<area shape="rect" id="Node000005" href="$classGame_1_1CopCar.html" title=" " alt="" coords="59,753,163,819"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="113,720,113,753,108,753,108,720"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1Car.html" title=" " alt="" coords="17,232,205,577"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,591,113,625,108,625,108,591"/>
+<area shape="rect" id="Node000003" href="$classThreadSafeMonoBehaviour.html" title=" " alt="" coords="15,119,206,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="113,198,113,232,108,232,108,198"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="53,5,169,71"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="113,84,113,119,108,119,108,84"/>
+</map>

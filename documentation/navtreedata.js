@@ -61,8 +61,8 @@ var NAVTREEINDEX =
 "classBuilding.html#a26613e83e44aef9ccbfed8ee5cc0d9c4",
 "classGame_1_1CarController.html#af92d677251871a31cdbd92e7d70f5de7",
 "classGame_1_1World_1_1GameWorld.html#a825606b239700be248fcfc834c43aed2",
-"classMainPage_1_1TaskOpenPanelController.html#a9d0de4987941726478bfc9bc7ba81867",
-"functions_z.html"
+"classMainPage_1_1TaskOpenPanelController.html#aa0b6757dbad141375c50282278b23b1a",
+"globals_enum.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
