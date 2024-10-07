@@ -23,6 +23,7 @@ namespace Tests
 
                 yield return WaitForCondition(() => initFriendCount < GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).Length);
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE / 10f);
+
                 FriendHandler friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).First();
 
                 Assert.AreEqual(1, GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).Length);
@@ -41,7 +42,7 @@ namespace Tests
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
 
                 yield return SendFriendRequest(TestConfig.Username2);
-                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                yield return WaitForCondition(() => GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).Length > 0);
 
                 FriendHandler friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).First();
 
@@ -61,7 +62,7 @@ namespace Tests
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
 
                 yield return SendFriendRequest(TestConfig.Username2);
-                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                yield return WaitForCondition(() => GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).Length > 0);
 
                 FriendHandler friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).First();
 
@@ -95,8 +96,7 @@ namespace Tests
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
 
                 yield return SendFriendRequest(TestConfig.Username2);
-                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
-
+                yield return WaitForCondition(() => GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).Length > 0);
                 FriendHandler friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).First();
 
                 //Login to the other user
@@ -105,7 +105,7 @@ namespace Tests
                 yield return LoadScene(true, false);
                 friendHandler.Show();
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
-
+                yield return WaitForCondition(() => GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).Length > 0);
                 friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).First();
                 Assert.True(friend.Friend.Pending);
                 Assert.AreEqual(User.UserData.Instance.Id, friend.Friend.Receiver.ID);

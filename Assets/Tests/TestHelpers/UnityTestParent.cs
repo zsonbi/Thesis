@@ -38,13 +38,7 @@ namespace Tests
             }
 
             // Load the scene asynchronously
-            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
-
-            // Wait for the scene to load
-            while (!asyncLoad.isDone)
-            {
-                yield return null;
-            }
+            SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
 
             Scene loadedScene = SceneManager.GetSceneByName(sceneName);
             while (!loadedScene.isLoaded || SceneManager.GetActiveScene().name != sceneName)

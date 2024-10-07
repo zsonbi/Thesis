@@ -65,7 +65,8 @@ namespace Tests
 
                 yield return WaitForCondition(() => prevTaskCount != MainController.Tasks.Count);
                 yield return WaitForCondition(() => taskOpenPanelController.CurrentTask.ID == -1);
-                TaskDisplayHandler created = MainController.Tasks.Values.FirstOrDefault(x=>x.CurrentTask.TaskName==taskName && x.CurrentTask.TaskType==taskType);
+                yield return WaitForCondition(() => MainController.Tasks.Values.FirstOrDefault(x => x.CurrentTask.TaskName == taskName && x.CurrentTask.TaskType == taskType) is not null);
+                TaskDisplayHandler created = MainController.Tasks.Values.FirstOrDefault(x => x.CurrentTask.TaskName == taskName && x.CurrentTask.TaskType == taskType);
                 Assert.NotNull(created);
                 Assert.AreEqual(taskName, created.CurrentTask.TaskName);
                 Assert.AreEqual(description, created.CurrentTask.Description);
