@@ -19,6 +19,7 @@ namespace Tests
                 TMP_InputField userIdentification = GameObject.Find("FriendIdentifierInput").GetComponent<TMP_InputField>();
                 userIdentification.text = friendIdentifiaction;
                 friendHandler.SendFriendRequest();
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
 
                 yield return WaitForCondition(() => initFriendCount < GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).Length);
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE / 10f);
@@ -40,6 +41,7 @@ namespace Tests
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
 
                 yield return SendFriendRequest(TestConfig.Username2);
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
 
                 FriendHandler friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).First();
 
@@ -59,6 +61,7 @@ namespace Tests
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
 
                 yield return SendFriendRequest(TestConfig.Username2);
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
 
                 FriendHandler friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).First();
 
@@ -92,6 +95,7 @@ namespace Tests
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
 
                 yield return SendFriendRequest(TestConfig.Username2);
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
 
                 FriendHandler friend = GameObject.FindObjectsByType<FriendHandler>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID).First();
 
