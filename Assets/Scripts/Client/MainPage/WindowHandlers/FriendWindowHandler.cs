@@ -1,96 +1,152 @@
 using Config;
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using Thesis_backend.Data_Structures;
 using TMPro;
 using UnityEngine;
 
-public class FriendWindowHandler : ThreadSafeMonoBehaviour
+namespace MainPage
 {
-    [SerializeField]
-    private GameObject FriendsContainer;
-
-    [SerializeField]
-    private TMP_InputField userIdentificationInput;
-
-    [SerializeField]
-    private GameObject friendPrefab;
-
-    [SerializeField]
-    private ModalWindow ModalWindow;
-
-    private bool showPending = true;
-
-    public void ShowPendingChanged(bool newValue)
+    /// <summary>
+    /// Handles the friend window display
+    /// </summary>
+    public class FriendWindowHandler : ThreadSafeMonoBehaviour
     {
-        this.showPending = newValue;
-        LoadFriends();
-    }
+        /// <summary>
+        /// Parent for the friend prefabs
+        /// </summary>
+        [SerializeField]
+        private GameObject friendsParent;
 
-    public void Show()
-    {
-        this.gameObject.SetActive(true);
-        LoadFriends();
-    }
+        /// <summary>
+        /// What is the user identification for the user
+        /// </summary>
+        [SerializeField]
+        private TMP_InputField userIdentificationInput;
 
-    public void SendFriendRequest()
-    {
-        if (userIdentificationInput.text == "")
+        /// <summary>
+        /// The friend prefab
+        /// </summary>
+        [SerializeField]
+        private GameObject friendPrefab;
+
+        /// <summary>
+        /// Modal window reference
+        /// </summary>
+        [SerializeField]
+        private ModalWindow modalWindow;
+
+        /// <summary>
+        /// Should we display the pending friends
+        /// </summary>
+        private bool showPending = true;
+
+        /// <summary>
+        /// Changed event for pending checkbox
+        /// Loads/Unloads the pending friend requests
+        /// </summary>
+        /// <param name="newValue">State of the checkbox</param>
+        public void ShowPendingChanged(bool newValue)
         {
-            return;
+            this.showPending = newValue;
+            LoadFriends();
         }
 
-        CoroutineRunner.RunCoroutine(Server.SendPostRequest<Friend>(ServerConfig.PATH_FOR_FRIEND_REQUEST_SEND, userIdentificationInput.text, onComplete: SentFriendRequest, onFailedAction: ShowRequestFail));
-    }
-
-    private void ShowRequestFail(string content)
-    {
-        ModalWindow.Show("Request fail", content);
-    }
-
-    private void SentFriendRequest(Friend friend)
-    {
-        if (showPending)
+        /// <summary>
+        /// Shows the profile window
+        /// </summary>
+        public void Show()
         {
-            FriendHandler friendDisplay = Instantiate(friendPrefab, this.FriendsContainer.transform).GetComponent<FriendHandler>();
-            friendDisplay.InitValues(friend);
+            this.gameObject.SetActive(true);
+            LoadFriends();
         }
-    }
 
-    public void Hide()
-    {
-        this.gameObject.SetActive(false);
-    }
-
-    private void LoadFriends()
-    {
-        CoroutineRunner.RunCoroutine(Server.SendGetRequest<List<Friend>>(ServerConfig.PATH_FOR_FRIEND_GETALL, onComplete: DisplayFriends));
-    }
-
-    private void DisplayFriends(List<Friend> friends)
-    {
-        //Delete the previous ones
-        for (int i = 0; i < this.FriendsContainer.transform.childCount; i++)
+        /// <summary>
+        /// Sends a friend request to the user which was specified in the useridentification input
+        /// </summary>
+        public void SendFriendRequest()
         {
-            Destroy(this.FriendsContainer.transform.GetChild(i).gameObject);
+            if (userIdentificationInput.text == "")
+            {
+                return;
+            }
+            //Send request to server
+            CoroutineRunner.RunCoroutine(Server.SendPostRequest<Friend>(ServerConfig.PATH_FOR_FRIEND_REQUEST_SEND, userIdentificationInput.text, onComplete: SentFriendRequest, onFailedAction: ShowRequestFail));
         }
-        this.FriendsContainer.transform.DetachChildren();
 
-        foreach (var item in friends)
+        /// <summary>
+        /// Show api request failure
+        /// </summary>
+        /// <param name="content">Server response</param>
+        private void ShowRequestFail(string content)
+        {
+            modalWindow.Show("Request fail", content);
+        }
+
+        /// <summary>
+        /// After the friend request was sent load the friend prefab if it can show pending
+        /// </summary>
+        /// <param name="friend">The friend to display</param>
+        private void SentFriendRequest(Friend friend)
         {
             if (showPending)
             {
-                FriendHandler friendDisplay = Instantiate(friendPrefab, this.FriendsContainer.transform).GetComponent<FriendHandler>();
-                friendDisplay.InitValues(item);
+                FriendHandler friendDisplay = Instantiate(friendPrefab, this.friendsParent.transform).GetComponent<FriendHandler>();
+                friendDisplay.InitValues(friend);
             }
-            else
+        }
+
+        /// <summary>
+        /// Hides the friend window
+        /// </summary>
+        public void Hide()
+        {
+            this.gameObject.SetActive(false);
+        }
+
+        /// <summary>
+        /// Loads the friends from the server
+        /// </summary>
+        private void LoadFriends()
+        {
+            CoroutineRunner.RunCoroutine(Server.SendGetRequest<List<Friend>>(ServerConfig.PATH_FOR_FRIEND_GETALL, onComplete: DisplayFriends));
+        }
+
+        /// <summary>
+        /// Display the friends which was recieved from the server
+        /// </summary>
+        /// <param name="friends">The friend list recieved from the server</param>
+        private void DisplayFriends(List<Friend> friends)
+        {
+            try
             {
-                if (!item.Pending)
+                //Delete the previous ones
+                for (int i = 0; i < this.friendsParent.transform.childCount; i++)
                 {
-                    FriendHandler friendDisplay = Instantiate(friendPrefab, this.FriendsContainer.transform).GetComponent<FriendHandler>();
-                    friendDisplay.InitValues(item);
+                    Destroy(this.friendsParent.transform.GetChild(i).gameObject);
                 }
+                this.friendsParent.transform.DetachChildren();
+                //Create the prefabs
+                foreach (var item in friends)
+                {
+                    if (showPending)
+                    {
+                        FriendHandler friendDisplay = Instantiate(friendPrefab, this.friendsParent.transform).GetComponent<FriendHandler>();
+                        friendDisplay.InitValues(item);
+                    }
+                    else
+                    {
+                        if (!item.Pending)
+                        {
+                            FriendHandler friendDisplay = Instantiate(friendPrefab, this.friendsParent.transform).GetComponent<FriendHandler>();
+                            friendDisplay.InitValues(item);
+                        }
+                    }
+                }
+            }
+            catch (MissingReferenceException)
+            {
+                Debug.LogWarning("Friend window tried to reference destroyed object");
+                return;
             }
         }
     }

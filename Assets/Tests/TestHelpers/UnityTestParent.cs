@@ -24,6 +24,8 @@ namespace Tests
 
         protected virtual IEnumerator LoadSceneBase(string sceneName, string controllerObjectName, bool login = true, bool logout = false)
         {
+            SceneManager.LoadScene(TestConfig.EMPTY_SCENE_NAME, LoadSceneMode.Single);
+            yield return WaitForCondition(() => SceneManager.GetActiveScene().name == TestConfig.EMPTY_SCENE_NAME);
             if (logout)
             {
                 User.UserData.Instance.Logout();
@@ -34,16 +36,11 @@ namespace Tests
             if (login && !UserData.Instance.LoggedIn)
             {
                 yield return this.Login();
+                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
             }
 
             // Load the scene asynchronously
-            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
-
-            // Wait for the scene to load
-            while (!asyncLoad.isDone)
-            {
-                yield return null;
-            }
+            SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
 
             Scene loadedScene = SceneManager.GetSceneByName(sceneName);
             while (!loadedScene.isLoaded || SceneManager.GetActiveScene().name != sceneName)
@@ -74,8 +71,9 @@ namespace Tests
                 Password = password,
             };
 
-            yield return CoroutineRunner.RunCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORLOGIN, userLoginRequest));
-            yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+            yield return CoroutineRunner.RunCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORLOGIN, userLoginRequest, onComplete: UserData.Instance.Init));
+            yield return WaitForCondition(() => UserData.Instance.LoggedIn);
+            yield return WaitForCondition(() => UserData.Instance.Username == username || UserData.Instance.Email == username);
         }
 
         protected IEnumerator WaitForCondition(Func<Boolean> condition)
@@ -91,13 +89,24 @@ namespace Tests
             yield return null;
         }
 
+        protected IEnumerator WaitForFewFrames(int frameCount = 60)
+        {
+            for (int i = 0; i < frameCount; i++)
+            {
+                yield return new WaitForFixedUpdate();
+            }
+        }
+
         [UnityTearDown]
         public new IEnumerator TearDown()
         {
             base.TearDown();
+
             CoroutineRunner.StopAllCoroutinesGlobal();
 
-            yield return new WaitForSeconds(1f);
+            SceneManager.LoadScene(TestConfig.EMPTY_SCENE_NAME, LoadSceneMode.Single);
+
+            yield return WaitForCondition(() => SceneManager.GetActiveScene().name == TestConfig.EMPTY_SCENE_NAME);
         }
     }
 }

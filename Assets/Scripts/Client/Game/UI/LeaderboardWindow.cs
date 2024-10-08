@@ -1,4 +1,5 @@
 using Config;
+using DataTypes;
 using System;
 using System.Collections.Generic;
 using Thesis_backend.Data_Structures;
@@ -6,89 +7,95 @@ using TMPro;
 using UnityEngine;
 using User;
 
-public class LeaderboardWindow : ThreadSafeMonoBehaviour
+namespace Game
 {
-    [SerializeField]
-    private GameObject scoreParent;
-
-    [SerializeField]
-    private TMP_Dropdown filterTypeDropdown;
-
-    [SerializeField]
-    private ModalWindow ModalWindow;
-
-    [SerializeField]
-    private GameObject LeaderboardItemPrefab;
-
-    public void Show()
+    namespace UI
     {
-        this.gameObject.SetActive(true);
-        LoadScores();
-    }
-
-    public void Hide()
-    {
-        this.gameObject.SetActive(false);
-    }
-
-    public void LoadScores()
-    {
-        DateTime filterSince = DateTime.Now;
-        switch ((LeaderboardFilterType)filterTypeDropdown.value)
+        public class LeaderboardWindow : ThreadSafeMonoBehaviour
         {
-            case LeaderboardFilterType.AllTime:
-                filterSince = DateTime.MinValue;
-                break;
+            [SerializeField]
+            private GameObject scoreParent;
 
-            case LeaderboardFilterType.ThisYear:
-                filterSince = DateTime.UtcNow.AddYears(-1);
-                break;
+            [SerializeField]
+            private TMP_Dropdown filterTypeDropdown;
 
-            case LeaderboardFilterType.ThisMonth:
-                filterSince = DateTime.UtcNow.AddMonths(-1);
-                break;
+            [SerializeField]
+            private ModalWindow ModalWindow;
 
-            case LeaderboardFilterType.ThisWeek:
-                filterSince = DateTime.UtcNow.AddDays(-7);
-                break;
+            [SerializeField]
+            private GameObject LeaderboardItemPrefab;
 
-            case LeaderboardFilterType.Today:
-                filterSince = DateTime.UtcNow.AddDays(-1);
-                break;
+            public void Show()
+            {
+                this.gameObject.SetActive(true);
+                LoadScores();
+            }
 
-            default:
-                Debug.LogError("No such leaderboard filter type is known");
-                break;
-        }
+            public void Hide()
+            {
+                this.gameObject.SetActive(false);
+            }
 
-        CoroutineRunner.RunCoroutine(Server.SendGetRequest<List<GameScore>>(ServerConfig.PATH_FOR_GET_GAME_SCORES(filterSince), LoadedScores, onFailedAction: ShowRequestFail));
-    }
+            public void LoadScores()
+            {
+                DateTime filterSince = DateTime.Now;
+                switch ((LeaderboardFilterType)filterTypeDropdown.value)
+                {
+                    case LeaderboardFilterType.AllTime:
+                        filterSince = DateTime.MinValue;
+                        break;
 
-    private void ShowRequestFail(string content)
-    {
-        ModalWindow.Show("Leaderboard error", content);
-    }
+                    case LeaderboardFilterType.ThisYear:
+                        filterSince = DateTime.UtcNow.AddYears(-1);
+                        break;
 
-    private void LoadedScores(List<GameScore> gameScores)
-    {
-        if (scoreParent == null || this.scoreParent.transform == null)
-        {
-            // Exit or handle the case when the Score parent is destroyed
-            Debug.LogWarning("Score parent has been destroyed or is missing.");
-            return;
-        }
+                    case LeaderboardFilterType.ThisMonth:
+                        filterSince = DateTime.UtcNow.AddMonths(-1);
+                        break;
 
-        //Delete the previous ones
-        for (int i = 0; i < this.scoreParent.transform.childCount; i++)
-        {
-            Destroy(this.scoreParent.transform.GetChild(i).gameObject);
-        }
-        this.scoreParent.transform.DetachChildren();
+                    case LeaderboardFilterType.ThisWeek:
+                        filterSince = DateTime.UtcNow.AddDays(-7);
+                        break;
 
-        foreach (var item in gameScores)
-        {
-            LeaderboardItem leaderboardItem = Instantiate(LeaderboardItemPrefab, scoreParent.transform).GetComponent<LeaderboardItem>();
-            leaderboardItem.Init(item.OwnerName, item.Score);
+                    case LeaderboardFilterType.Today:
+                        filterSince = DateTime.UtcNow.AddDays(-1);
+                        break;
+
+                    default:
+                        Debug.LogError("No such leaderboard filter type is known");
+                        break;
+                }
+
+                CoroutineRunner.RunCoroutine(Server.SendGetRequest<List<GameScore>>(ServerConfig.PATH_FOR_GET_GAME_SCORES(filterSince), LoadedScores, onFailedAction: ShowRequestFail));
+            }
+
+            private void ShowRequestFail(string content)
+            {
+                ModalWindow.Show("Leaderboard error", content);
+            }
+
+            private void LoadedScores(List<GameScore> gameScores)
+            {
+                if (scoreParent == null || this.scoreParent.transform == null)
+                {
+                    // Exit or handle the case when the Score parent is destroyed
+                    Debug.LogWarning("Score parent has been destroyed or is missing.");
+                    return;
+                }
+
+                //Delete the previous ones
+                for (int i = 0; i < this.scoreParent.transform.childCount; i++)
+                {
+                    Destroy(this.scoreParent.transform.GetChild(i).gameObject);
+                }
+                this.scoreParent.transform.DetachChildren();
+
+                foreach (var item in gameScores)
+                {
+                    LeaderboardItem leaderboardItem = Instantiate(LeaderboardItemPrefab, scoreParent.transform).GetComponent<LeaderboardItem>();
+                    leaderboardItem.Init(item.OwnerName, item.Score);
+                }
+            }
         }
     }
 }

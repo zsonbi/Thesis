@@ -1,20 +1,13 @@
 using DataTypes;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class EffectScript : ThreadSafeMonoBehaviour
+namespace Game
 {
-    private ParticleSystem particleSystem;
-
-    [SerializeField]
-    private EffectType effectType;
-
-    public EffectType EffectType => effectType;
-
-    // Runs when the sccript is loaded
-    private void Awake()
+    public class EffectScript : ThreadSafeMonoBehaviour
     {
-        TryGetComponent<ParticleSystem>(out particleSystem);
+        [SerializeField]
+        private EffectType effectType;
+
+        public EffectType EffectType => effectType;
     }
 }

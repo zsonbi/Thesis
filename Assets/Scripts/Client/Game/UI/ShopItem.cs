@@ -7,56 +7,62 @@ using UnityEngine;
 using UnityEngine.UI;
 using User;
 
-public class ShopItem : ThreadSafeMonoBehaviour
+namespace Game
 {
-    [SerializeField]
-    private TMP_Text ProductName;
-
-    [SerializeField]
-    private Image ProductImage;
-
-    [SerializeField]
-    private TMP_Text Price;
-
-    [SerializeField]
-    private Button BuyButton;
-
-    private ShopWindow shopWindow;
-
-    public long Id { get; private set; }
-
-    public bool Owned { get; private set; }
-
-    public void Init(ShopWindow parentWindow, Shop item, Sprite image, bool owned)
+    namespace UI
     {
-        this.shopWindow = parentWindow;
-        this.ProductName.text = item.ProductName;
-        this.ProductImage.sprite = image;
-        this.Price.text = item.Cost.ToString();
-        this.Id = item.ID;
-        this.BuyButton.gameObject.SetActive(!owned);
-        this.Owned = owned;
+        public class ShopItem : ThreadSafeMonoBehaviour
+        {
+            [SerializeField]
+            private TMP_Text ProductName;
+
+            [SerializeField]
+            private Image ProductImage;
+
+            [SerializeField]
+            private TMP_Text Price;
+
+            [SerializeField]
+            private Button BuyButton;
+
+            private ShopWindow shopWindow;
+
+            public long Id { get; private set; }
+
+            public bool Owned { get; private set; }
+
+            public void Init(ShopWindow parentWindow, Shop item, Sprite image, bool owned)
+            {
+                this.shopWindow = parentWindow;
+                this.ProductName.text = item.ProductName;
+                this.ProductImage.sprite = image;
+                this.Price.text = item.Cost.ToString();
+                this.Id = item.ID;
+                this.BuyButton.gameObject.SetActive(!owned);
+                this.Owned = owned;
+            }
+
+            public void Buy()
+            {
+                CoroutineRunner.RunCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.Game>(ServerConfig.PATH_FOR_BUY_CAR(Id), new WWWForm(), Bought));
+            }
+
+            private void Bought(Thesis_backend.Data_Structures.Game game)
+            {
+                UserData.Instance.Game.OwnedCars = game.OwnedCars;
+                UserData.Instance.Game.Currency = game.Currency;
+                this.Owned = true;
+                shopWindow.UpdateShop();
+            }
+
+            #region TestGettters
+
+            public string GetDisplayedPrice()
+            {
+                return Price.text;
+            }
+
+            #endregion TestGettters
+        }
     }
-
-    public void Buy()
-    {
-        CoroutineRunner.RunCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.Game>(ServerConfig.PATH_FOR_BUY_CAR(Id), new WWWForm(), Bought));
-    }
-
-    private void Bought(Thesis_backend.Data_Structures.Game game)
-    {
-        UserData.Instance.Game.OwnedCars = game.OwnedCars;
-        UserData.Instance.Game.Currency = game.Currency;
-        this.Owned = true;
-        shopWindow.UpdateShop();
-    }
-
-    #region TestGettters
-
-    public string GetDisplayedPrice()
-    {
-        return Price.text;
-    }
-
-    #endregion TestGettters
 }

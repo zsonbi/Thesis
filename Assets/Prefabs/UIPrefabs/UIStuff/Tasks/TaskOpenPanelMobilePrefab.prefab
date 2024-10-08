@@ -3341,7 +3341,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &979288537257103667
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3423,7 +3423,7 @@ MonoBehaviour:
   descriptionInput: {fileID: 932839189181840404}
   goodTaskButton: {fileID: 4698150166043719436}
   badHabitButton: {fileID: 6943014467851523814}
-  UIController: {fileID: 0}
+  uIController: {fileID: 0}
   deleteTaskButton: {fileID: 4681686164942060224}
 --- !u!1 &8114302615121223154
 GameObject:

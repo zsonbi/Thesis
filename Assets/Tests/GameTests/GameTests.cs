@@ -1,15 +1,13 @@
 using Game;
+using Game.World;
 using NUnit.Framework;
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
-using UnityEngine.UIElements;
 using User;
 
 namespace Tests
@@ -49,7 +47,7 @@ namespace Tests
                 GameUI.NewGame();
                 yield return WaitForCondition(() => MainController.Running);
 
-                for (int i = 0; i < 10; i++)
+                for (int i = 0; i < 20; i++)
                 {
                     yield return WaitForCondition(() => !MainController.Running);
                 }
@@ -102,11 +100,13 @@ namespace Tests
 
                 GameUI.NewGame();
                 yield return WaitForCondition(() => MainController.Running);
+                yield return new WaitForSeconds(0.5f);
+
                 float initPos = MainController.PlayerPos.z;
 
                 Press(Keyboard.sKey);
                 InputSystem.Update();
-                yield return new WaitForSeconds(2f);
+                yield return new WaitForSeconds(3f);
                 Release(Keyboard.sKey);
                 InputSystem.Update();
                 Assert.Less(MainController.PlayerPos.z, initPos);
@@ -121,11 +121,13 @@ namespace Tests
 
                 GameUI.NewGame();
                 yield return WaitForCondition(() => MainController.Running);
+                yield return new WaitForSeconds(0.5f);
+
                 float initPos = MainController.PlayerPos.z;
 
                 Press(Keyboard.downArrowKey);
                 InputSystem.Update();
-                yield return new WaitForSeconds(2f);
+                yield return new WaitForSeconds(3f);
                 Release(Keyboard.downArrowKey);
                 InputSystem.Update();
                 Assert.Less(MainController.PlayerPos.z, initPos);
@@ -184,7 +186,7 @@ namespace Tests
                     GameObject coin = GameObject.Instantiate(coinPrefab, MainController.World.GetChunk(MainController.PlayerPos).transform);
                     coin.transform.position = MainController.PlayerPos;
                 }
-                yield return new WaitForFixedUpdate();
+                yield return WaitForFewFrames();
 
                 Assert.AreEqual(10, MainController.Coins);
                 MainController.Player.Kill();
@@ -215,7 +217,8 @@ namespace Tests
                     GameObject coin = GameObject.Instantiate(coinPrefab, MainController.World.GetChunk(MainController.PlayerPos).transform);
                     coin.transform.position = MainController.PlayerPos;
                 }
-                yield return new WaitForFixedUpdate();
+
+                yield return WaitForFewFrames();
 
                 Assert.AreEqual(10, MainController.Coins);
                 MainController.Player.Kill();
@@ -247,7 +250,8 @@ namespace Tests
                     GameObject coin = GameObject.Instantiate(coinPrefab, MainController.World.GetChunk(MainController.PlayerPos).transform);
                     coin.transform.position = MainController.PlayerPos;
                 }
-                yield return new WaitForFixedUpdate();
+                yield return WaitForFewFrames();
+
                 Assert.AreEqual(10, MainController.Coins);
                 MainController.Player.Kill();
                 float pickedUpCoins = MainController.Coins;

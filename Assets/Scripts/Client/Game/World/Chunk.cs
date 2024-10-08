@@ -54,17 +54,17 @@ namespace Game
             /// <summary>
             /// The size of the world on the z axis
             /// </summary>
-            public int zSize { get; private set; }
+            public int? zSize { get; private set; }
 
             /// <summary>
             /// The size of the world on the x axis
             /// </summary>
-            public int xSize { get; private set; }
+            public int? xSize { get; private set; }
 
             public int Row { get; private set; }
             public int Col { get; private set; }
 
-            public bool Loaded { get => this.gameObject.activeSelf; }
+            public bool? Loaded { get => this.gameObject.activeSelf; }
 
             public bool[,] Roads => roadGenerator.RoadMatrix;
 
@@ -199,7 +199,7 @@ namespace Game
             //---------------------------------------------------------------------------
             // <summary>
             // Creates the tiles for the world
-            private async void CreateTiles()
+            private void CreateTiles()
             {
                 for (int x = 0; x < xSize; x++)
                 {
@@ -407,7 +407,7 @@ namespace Game
 #else
                 await Task.Run(() => GenerateCellMatrix());
 #endif
-                await AddLargeRoadBuildings();
+                AddLargeRoadBuildings();
             }
 
             private void GenerateCellMatrix()
@@ -482,7 +482,7 @@ namespace Game
                 }
             }
 
-            private async Task AddLargeRoadBuildings()
+            private void AddLargeRoadBuildings()
             {
                 for (int i = 1; i < GameConfig.CHUNK_SIZE - 1; i++)
                 {

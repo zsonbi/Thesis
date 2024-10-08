@@ -10,6 +10,10 @@ using System.Reflection;
 using System.Linq;
 using System;
 using Config;
+using MainPage;
+using UnityEngine.Rendering;
+using Thesis_backend.Data_Structures;
+using DataTypes;
 
 namespace Tests
 {
@@ -35,12 +39,9 @@ namespace Tests
                 CancelTaskPanelButton = GameObject.Find(TestConfig.TASK_PANEL_CANCEL_TASK_BUTTON_NAME).GetComponent<Button>();
                 SaveTaskPanelButton = GameObject.Find(TestConfig.TASK_PANEL_SAVE_TASK_BUTTON_NAME).GetComponent<Button>();
                 CloseTaskPanelButton = GameObject.Find(TestConfig.TASK_PANEL_CLOSE_BUTTON_NAME).GetComponent<Button>();
-
                 TaskName = GameObject.Find(TestConfig.TASK_PANEL_TASK_NAME_INPUT_NAME).GetComponent<TMP_InputField>();
                 TaskDescription = GameObject.Find(TestConfig.TASK_PANEL_TASK_NAME_DESCRIPTION_NAME).GetComponent<TMP_InputField>();
-
                 TaskIntervals = GameObject.Find(TestConfig.TASK_PANEL_TASK_PERIOD_DROPDOWN_NAME).GetComponent<TMP_Dropdown>();
-
                 TaskParent = GameObject.Find(TestConfig.TASK_PARENT_NAME);
             }
 
@@ -64,8 +65,9 @@ namespace Tests
 
                 yield return WaitForCondition(() => prevTaskCount != MainController.Tasks.Count);
                 yield return WaitForCondition(() => taskOpenPanelController.CurrentTask.ID == -1);
-                TaskDisplayHandler created = MainController.Tasks.Last().Value;
-
+                yield return WaitForCondition(() => MainController.Tasks.Values.FirstOrDefault(x => x.CurrentTask.TaskName == taskName && x.CurrentTask.TaskType == taskType) is not null);
+                TaskDisplayHandler created = MainController.Tasks.Values.FirstOrDefault(x => x.CurrentTask.TaskName == taskName && x.CurrentTask.TaskType == taskType);
+                Assert.NotNull(created);
                 Assert.AreEqual(taskName, created.CurrentTask.TaskName);
                 Assert.AreEqual(description, created.CurrentTask.Description);
                 Assert.AreEqual(TaskOpenPanelController.TASKINTERVALS[periodIndex], created.CurrentTask.PeriodRate);
@@ -81,11 +83,6 @@ namespace Tests
             {
                 yield return LoadScene();
 
-                //Add money and task score
-                CoroutineRunner.RunCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.User>(TestConfig.TASK_SCORE_CHEAT_PATH, TestConfig.TASK_SCORE_CHEAT_PASSWORD));
-                CoroutineRunner.RunCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.Game>(ServerConfig.PATH_FOR_SAVE_COINS, 10000));
-                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
-
                 taskOpenPanelController.OpenUp();
                 MainController.LoadGoodTasks();
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
@@ -99,7 +96,6 @@ namespace Tests
                     yield return CreateTask("test" + uniqueId + i, "testDescription" + uniqueId + i, false, i);
                 }
                 MainController.LoadGoodTasks();
-                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
                 Assert.AreEqual(TaskIntervals.options.Count + initCount, TaskParent.transform.childCount);
             }
 
@@ -122,7 +118,6 @@ namespace Tests
                 }
 
                 MainController.LoadBadHabits();
-                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
                 Assert.AreEqual(TaskIntervals.options.Count + initCount, TaskParent.transform.childCount);
             }
 
@@ -138,21 +133,26 @@ namespace Tests
 
                 yield return CreateTask("testCancel" + uniqueId, "testDescription" + uniqueId, true, 0);
 
-                taskOpenPanelController.OpenUp(MainController.Tasks.Last().Value.CurrentTask, TaskType.BadHabit);
+                TaskDisplayHandler task = MainController.Tasks.Values.FirstOrDefault(x => x.CurrentTask.TaskName == "testCancel" + uniqueId && x.CurrentTask.TaskType == true);
+
+                taskOpenPanelController.OpenUp(task.CurrentTask, TaskType.BadHabit);
                 taskOpenPanelController.MakeItBadHabit();
                 TaskName.text = "testCancel2" + uniqueId;
                 TaskDescription.text = "testDescriptiondwaadw" + uniqueId;
                 TaskIntervals.value = 4;
                 taskOpenPanelController.Cancel();
 
-                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                yield return WaitForCondition(() => taskOpenPanelController.CurrentTask.ID == -1);
+                yield return WaitForCondition(() => MainController.Tasks.Values.FirstOrDefault(x => x.CurrentTask.TaskName == "testCancel" + uniqueId && x.CurrentTask.TaskType == true) is not null);
 
-                Assert.AreEqual("testCancel" + uniqueId, MainController.Tasks.Last().Value.CurrentTask.TaskName);
-                Assert.AreEqual("testDescription" + uniqueId, MainController.Tasks.Last().Value.CurrentTask.Description);
-                Assert.AreEqual(TaskOpenPanelController.TASKINTERVALS[0], MainController.Tasks.Last().Value.CurrentTask.PeriodRate);
-                Assert.AreEqual(true, MainController.Tasks.Last().Value.CurrentTask.TaskType);
+                PlayerTask canceledTask = MainController.Tasks.Values.FirstOrDefault(x => x.CurrentTask.TaskName == "testCancel" + uniqueId && x.CurrentTask.TaskType == true).CurrentTask;
+
+                Assert.AreEqual("testCancel" + uniqueId, canceledTask.TaskName);
+                Assert.AreEqual("testDescription" + uniqueId, canceledTask.Description);
+                Assert.AreEqual(TaskOpenPanelController.TASKINTERVALS[0], canceledTask.PeriodRate);
+                Assert.AreEqual(true, canceledTask.TaskType);
                 Assert.AreNotEqual(-1, MainController.Tasks.Last().Key);
-                Assert.True((TimeSpan.FromMinutes(MainController.Tasks.Last().Value.CurrentTask.PeriodRate) - (DateTime.UtcNow - MainController.Tasks.Last().Value.CurrentTask.LastCompleted)).TotalSeconds <= 0);
+                Assert.True((TimeSpan.FromMinutes(canceledTask.PeriodRate) - (DateTime.UtcNow - canceledTask.LastCompleted)).TotalSeconds <= 0);
             }
 
             [UnityTest]
@@ -168,11 +168,13 @@ namespace Tests
                 int prevTaskCount = MainController.Tasks.Count;
 
                 yield return CreateTask("testDelete" + uniqueId, "testDescription" + uniqueId, true, 0);
+                TaskDisplayHandler task = MainController.Tasks.Values.FirstOrDefault(x => x.CurrentTask.TaskName == "testDelete" + uniqueId && x.CurrentTask.TaskType == true);
 
-                taskOpenPanelController.OpenUp(MainController.Tasks.Last().Value.CurrentTask, TaskType.BadHabit);
+                taskOpenPanelController.OpenUp(task.CurrentTask, TaskType.BadHabit);
                 taskOpenPanelController.DeleteTask();
 
                 yield return WaitForCondition(() => prevTaskCount == MainController.Tasks.Count);
+                yield return WaitForCondition(() => MainController.Tasks.Values.FirstOrDefault(x => x.CurrentTask.TaskName == "testCancel" + uniqueId && x.CurrentTask.TaskType == true) is null);
 
                 Assert.AreEqual(prevTaskCount, MainController.Tasks.Count);
             }
@@ -188,22 +190,24 @@ namespace Tests
                 long uniqueId = DateTime.Now.Ticks;
 
                 yield return CreateTask("testSave1" + uniqueId, "testDescription" + uniqueId, true, 0);
+                TaskDisplayHandler task = MainController.Tasks.Values.FirstOrDefault(x => x.CurrentTask.TaskName == "testSave1" + uniqueId && x.CurrentTask.TaskType == true);
 
-                taskOpenPanelController.OpenUp(MainController.Tasks.Last().Value.CurrentTask, TaskType.BadHabit);
+                taskOpenPanelController.OpenUp(task.CurrentTask, TaskType.BadHabit);
                 taskOpenPanelController.MakeItGoodTask();
                 TaskName.text = "testSaveMod1" + uniqueId;
                 TaskDescription.text = "testDescriptionMod" + uniqueId;
                 TaskIntervals.value = 4;
                 taskOpenPanelController.Save();
+                yield return WaitForCondition(() => taskOpenPanelController.CurrentTask.ID == -1);
+                yield return WaitForCondition(() => MainController.Tasks.Values.FirstOrDefault(x => x.CurrentTask.TaskName == "testSaveMod1" + uniqueId && x.CurrentTask.TaskType == false) is not null);
+                PlayerTask savedTask = MainController.Tasks.Values.FirstOrDefault(x => x.CurrentTask.TaskName == "testSaveMod1" + uniqueId && x.CurrentTask.TaskType == false).CurrentTask;
 
-                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
-
-                Assert.AreEqual("testSaveMod1" + uniqueId, MainController.Tasks.Last().Value.CurrentTask.TaskName);
-                Assert.AreEqual("testDescriptionMod" + uniqueId, MainController.Tasks.Last().Value.CurrentTask.Description);
-                Assert.AreEqual(TaskOpenPanelController.TASKINTERVALS[4], MainController.Tasks.Last().Value.CurrentTask.PeriodRate);
-                Assert.AreEqual(false, MainController.Tasks.Last().Value.CurrentTask.TaskType);
+                Assert.AreEqual("testSaveMod1" + uniqueId, savedTask.TaskName);
+                Assert.AreEqual("testDescriptionMod" + uniqueId, savedTask.Description);
+                Assert.AreEqual(TaskOpenPanelController.TASKINTERVALS[4], savedTask.PeriodRate);
+                Assert.AreEqual(false, savedTask.TaskType);
                 Assert.AreNotEqual(-1, MainController.Tasks.Last().Key);
-                Assert.True((TimeSpan.FromMinutes(MainController.Tasks.Last().Value.CurrentTask.PeriodRate) - (DateTime.UtcNow - MainController.Tasks.Last().Value.CurrentTask.LastCompleted)).TotalSeconds <= 0);
+                Assert.True((TimeSpan.FromMinutes(savedTask.PeriodRate) - (DateTime.UtcNow - savedTask.LastCompleted)).TotalSeconds <= 0);
             }
 
             [UnityTest]
@@ -217,22 +221,25 @@ namespace Tests
                 long uniqueId = DateTime.Now.Ticks;
 
                 yield return CreateTask("testSave2" + uniqueId, "testDescription" + uniqueId, false, 0);
+                TaskDisplayHandler task = MainController.Tasks.Values.FirstOrDefault(x => x.CurrentTask.TaskName == "testSave2" + uniqueId && x.CurrentTask.TaskType == false);
 
-                taskOpenPanelController.OpenUp(MainController.Tasks.Last().Value.CurrentTask, TaskType.BadHabit);
+                taskOpenPanelController.OpenUp(task.CurrentTask, TaskType.BadHabit);
                 taskOpenPanelController.MakeItBadHabit();
                 TaskName.text = "testSaveMod2" + uniqueId;
                 TaskDescription.text = "testDescriptionMod" + uniqueId;
                 TaskIntervals.value = 2;
                 taskOpenPanelController.Save();
 
-                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                yield return WaitForCondition(() => taskOpenPanelController.CurrentTask.ID == -1);
+                yield return WaitForCondition(() => MainController.Tasks.Values.FirstOrDefault(x => x.CurrentTask.TaskName == "testSaveMod2" + uniqueId && x.CurrentTask.TaskType == true) is not null);
+                PlayerTask savedTask = MainController.Tasks.Values.FirstOrDefault(x => x.CurrentTask.TaskName == "testSaveMod2" + uniqueId && x.CurrentTask.TaskType == true).CurrentTask;
 
-                Assert.AreEqual("testSaveMod2" + uniqueId, MainController.Tasks.Last().Value.CurrentTask.TaskName);
-                Assert.AreEqual("testDescriptionMod" + uniqueId, MainController.Tasks.Last().Value.CurrentTask.Description);
-                Assert.AreEqual(TaskOpenPanelController.TASKINTERVALS[2], MainController.Tasks.Last().Value.CurrentTask.PeriodRate);
-                Assert.AreEqual(true, MainController.Tasks.Last().Value.CurrentTask.TaskType);
+                Assert.AreEqual("testSaveMod2" + uniqueId, savedTask.TaskName);
+                Assert.AreEqual("testDescriptionMod" + uniqueId, savedTask.Description);
+                Assert.AreEqual(TaskOpenPanelController.TASKINTERVALS[2], savedTask.PeriodRate);
+                Assert.AreEqual(true, savedTask.TaskType);
                 Assert.AreNotEqual(-1, MainController.Tasks.Last().Key);
-                Assert.True((TimeSpan.FromMinutes(MainController.Tasks.Last().Value.CurrentTask.PeriodRate) - (DateTime.UtcNow - MainController.Tasks.Last().Value.CurrentTask.LastCompleted)).TotalSeconds <= 0);
+                Assert.True((TimeSpan.FromMinutes(savedTask.PeriodRate) - (DateTime.UtcNow - savedTask.LastCompleted)).TotalSeconds <= 0);
             }
 
             [UnityTest]
@@ -249,11 +256,12 @@ namespace Tests
                 long baseTotalScore = User.UserData.Instance.TotalScore;
 
                 yield return CreateTask("testCompleteGood" + uniqueId, "testDescription" + uniqueId, false, 0);
+                TaskDisplayHandler task = MainController.Tasks.Values.FirstOrDefault(x => x.CurrentTask.TaskName == "testCompleteGood" + uniqueId && x.CurrentTask.TaskType == false);
 
-                MainController.Tasks.Last().Value.CompleteTask();
-                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
-
-                Assert.Greater((TimeSpan.FromMinutes(MainController.Tasks.Last().Value.CurrentTask.PeriodRate) - (DateTime.UtcNow - MainController.Tasks.Last().Value.CurrentTask.LastCompleted)).TotalSeconds, 600);
+                task.CompleteTask();
+                yield return WaitForCondition(() => task.CurrentTask.Completed);
+                yield return WaitForCondition(() => baseCurrentScore < User.UserData.Instance.CurrentTaskScore);
+                Assert.Greater((TimeSpan.FromMinutes(task.CurrentTask.PeriodRate) - (DateTime.UtcNow - task.CurrentTask.LastCompleted)).TotalSeconds, 600);
                 Assert.Less(baseCurrentScore, User.UserData.Instance.CurrentTaskScore);
                 Assert.Less(baseTotalScore, User.UserData.Instance.TotalScore);
             }
@@ -272,9 +280,11 @@ namespace Tests
                 long baseTotalScore = User.UserData.Instance.TotalScore;
 
                 yield return CreateTask("testCompleteBad" + uniqueId, "testDescription" + uniqueId, true, 0);
+                TaskDisplayHandler task = MainController.Tasks.Values.FirstOrDefault(x => x.CurrentTask.TaskName == "testCompleteBad" + uniqueId && x.CurrentTask.TaskType == true);
 
-                MainController.Tasks.Last().Value.CompleteTask();
-                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                task.CompleteTask();
+                yield return WaitForCondition(() => task.CurrentTask.Completed);
+                yield return WaitForCondition(() => baseCurrentScore > User.UserData.Instance.CurrentTaskScore);
 
                 Assert.Greater((TimeSpan.FromMinutes(MainController.Tasks.Last().Value.CurrentTask.PeriodRate) - (DateTime.UtcNow - MainController.Tasks.Last().Value.CurrentTask.LastCompleted)).TotalSeconds, 600);
                 Assert.Greater(baseCurrentScore, User.UserData.Instance.CurrentTaskScore);

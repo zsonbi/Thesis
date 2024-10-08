@@ -1,63 +1,93 @@
 using Config;
-using System;
 using System.Collections.Generic;
 using Thesis_backend.Data_Structures;
-using TMPro;
 using UnityEngine;
-using User;
 
-public class TaskHistoryWindowHandler : ThreadSafeMonoBehaviour
+namespace MainPage
 {
-    [SerializeField]
-    private GameObject taskHistoriesParent;
-
-    [SerializeField]
-    private ModalWindow modalWindow;
-
-    [SerializeField]
-    private GameObject taskHistoryItemPrefab;
-
-    public void Show()
+    /// <summary>
+    /// Task histories window controller
+    /// </summary>
+    public class TaskHistoryWindowHandler : ThreadSafeMonoBehaviour
     {
-        this.gameObject.SetActive(true);
-        LoadTaskHistories();
-    }
+        /// <summary>
+        /// The container where to put the task histories
+        /// </summary>
+        [SerializeField]
+        private GameObject taskHistoriesParent;
 
-    public void Hide()
-    {
-        this.gameObject.SetActive(false);
-    }
+        /// <summary>
+        /// Reference to the modal window to alert the user for api fails
+        /// </summary>
+        [SerializeField]
+        private ModalWindow modalWindow;
 
-    public void LoadTaskHistories()
-    {
-        CoroutineRunner.RunCoroutine(Server.SendGetRequest<List<TaskHistory>>(ServerConfig.PATH_FOR_GET_TASK_HISTORIES, LoadedHistories, onFailedAction: ShowRequestFail));
-    }
+        /// <summary>
+        /// Task history prefab
+        /// </summary>
+        [SerializeField]
+        private GameObject taskHistoryItemPrefab;
 
-    private void ShowRequestFail(string content)
-    {
-        modalWindow.Show("Task history error", content);
-    }
-
-    private void LoadedHistories(List<TaskHistory> taskHistories)
-    {
-        if (taskHistoriesParent == null || this.taskHistoriesParent.transform == null)
+        /// <summary>
+        /// Shows the task history window
+        /// </summary>
+        public void Show()
         {
-            // Exit or handle the case when the Score parent is destroyed
-            Debug.LogWarning("Score parent has been destroyed or is missing.");
-            return;
+            this.gameObject.SetActive(true);
+            LoadTaskHistories();
         }
 
-        //Delete the previous ones
-        for (int i = 0; i < this.taskHistoriesParent.transform.childCount; i++)
+        /// <summary>
+        /// Hides the task history window
+        /// </summary>
+        public void Hide()
         {
-            Destroy(this.taskHistoriesParent.transform.GetChild(i).gameObject);
+            this.gameObject.SetActive(false);
         }
-        this.taskHistoriesParent.transform.DetachChildren();
 
-        foreach (var item in taskHistories)
+        /// <summary>
+        /// Loads the task histories from the server
+        /// </summary>
+        public void LoadTaskHistories()
         {
-            TaskHistoryHandler leaderboardItem = Instantiate(taskHistoryItemPrefab, taskHistoriesParent.transform).GetComponent<TaskHistoryHandler>();
-            leaderboardItem.Init(item);
+            CoroutineRunner.RunCoroutine(Server.SendGetRequest<List<TaskHistory>>(ServerConfig.PATH_FOR_GET_TASK_HISTORIES, LoadedHistories, onFailedAction: ShowRequestFail));
+        }
+
+        /// <summary>
+        /// Show the server response errors
+        /// </summary>
+        /// <param name="content">The server response</param>
+        private void ShowRequestFail(string content)
+        {
+            modalWindow.Show("Task history error", content);
+        }
+
+        /// <summary>
+        /// When the server response is recieved load the histories
+        /// </summary>
+        /// <param name="taskHistories"></param>
+        private void LoadedHistories(List<TaskHistory> taskHistories)
+        {
+            //Protect from errors during testing
+            try
+            {
+                //Delete the previous ones
+                for (int i = 0; i < this.taskHistoriesParent.transform.childCount; i++)
+                {
+                    Destroy(this.taskHistoriesParent.transform.GetChild(i).gameObject);
+                }
+                this.taskHistoriesParent.transform.DetachChildren();
+
+                foreach (var item in taskHistories)
+                {
+                    TaskHistoryHandler leaderboardItem = Instantiate(taskHistoryItemPrefab, taskHistoriesParent.transform).GetComponent<TaskHistoryHandler>();
+                    leaderboardItem.Init(item);
+                }
+            }
+            catch (MissingReferenceException)
+            {
+                throw;
+            }
         }
     }
 }

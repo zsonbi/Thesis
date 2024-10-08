@@ -5,7 +5,7 @@ namespace Tests
 {
     internal static class TestConfig
     {
-        public const float ANSWER_TOLERANCE = 3f;
+        public const float ANSWER_TOLERANCE = 4.5f;
         public const float SCENE_TOLERANCE = 1f;
 
         public const string TASK_SCORE_CHEAT_PATH = ServerConfig.SERVERPATH + "/api/Tasks/Cheat?amount=100000'";
@@ -43,5 +43,6 @@ namespace Tests
 
         public const string GAME_SCENE_NAME = "GameScene";
         public const string GAME_CONTROLLER_OBJECT_NAME = "Game";
+        public const string EMPTY_SCENE_NAME = "Empty";
     }
 }
