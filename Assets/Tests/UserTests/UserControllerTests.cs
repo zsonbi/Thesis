@@ -26,7 +26,7 @@ namespace Tests
             {
                 yield return LoadScene(false, true);
                 Login(TestConfig.UserName, TestConfig.Password);
-                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                yield return WaitForCondition(() => SceneManager.GetActiveScene().name == TestConfig.MAIN_SCENE_NAME);
                 Assert.IsTrue(User.UserData.Instance.LoggedIn);
                 Assert.AreEqual(TestConfig.UserName, User.UserData.Instance.Username);
                 Assert.AreEqual(TestConfig.MAIN_SCENE_NAME, SceneManager.GetActiveScene().name);
@@ -36,9 +36,8 @@ namespace Tests
             public IEnumerator LoginTestEmail()
             {
                 yield return LoadScene(false, true);
-
                 Login(TestConfig.Email, TestConfig.Password);
-                yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                yield return WaitForCondition(()=> SceneManager.GetActiveScene().name== TestConfig.MAIN_SCENE_NAME);
                 Assert.IsTrue(User.UserData.Instance.LoggedIn);
                 Assert.AreEqual(TestConfig.Email, User.UserData.Instance.Email);
                 Assert.AreEqual(TestConfig.MAIN_SCENE_NAME, SceneManager.GetActiveScene().name);
