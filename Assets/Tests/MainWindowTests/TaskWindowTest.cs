@@ -249,7 +249,7 @@ namespace Tests
 
                 MainController.Tasks.Last().Value.CompleteTask();
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
-
+                yield return WaitForCondition(() => baseCurrentScore < User.UserData.Instance.CurrentTaskScore);
                 Assert.Greater((TimeSpan.FromMinutes(MainController.Tasks.Last().Value.CurrentTask.PeriodRate) - (DateTime.UtcNow - MainController.Tasks.Last().Value.CurrentTask.LastCompleted)).TotalSeconds, 600);
                 Assert.Less(baseCurrentScore, User.UserData.Instance.CurrentTaskScore);
                 Assert.Less(baseTotalScore, User.UserData.Instance.TotalScore);
@@ -272,6 +272,7 @@ namespace Tests
 
                 MainController.Tasks.Last().Value.CompleteTask();
                 yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+                yield return WaitForCondition(() => baseCurrentScore > User.UserData.Instance.CurrentTaskScore);
 
                 Assert.Greater((TimeSpan.FromMinutes(MainController.Tasks.Last().Value.CurrentTask.PeriodRate) - (DateTime.UtcNow - MainController.Tasks.Last().Value.CurrentTask.LastCompleted)).TotalSeconds, 600);
                 Assert.Greater(baseCurrentScore, User.UserData.Instance.CurrentTaskScore);

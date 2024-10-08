@@ -199,7 +199,7 @@ namespace Game
             //---------------------------------------------------------------------------
             // <summary>
             // Creates the tiles for the world
-            private async void CreateTiles()
+            private void CreateTiles()
             {
                 for (int x = 0; x < xSize; x++)
                 {
@@ -407,7 +407,7 @@ namespace Game
 #else
                 await Task.Run(() => GenerateCellMatrix());
 #endif
-                await AddLargeRoadBuildings();
+                AddLargeRoadBuildings();
             }
 
             private void GenerateCellMatrix()
@@ -482,7 +482,7 @@ namespace Game
                 }
             }
 
-            private async Task AddLargeRoadBuildings()
+            private void AddLargeRoadBuildings()
             {
                 for (int i = 1; i < GameConfig.CHUNK_SIZE - 1; i++)
                 {
