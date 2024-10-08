@@ -9,7 +9,7 @@ on:
 jobs:
   checklicense:
     name: Check for UNITY_LICENSE in GitHub Secrets
-    runs-on: my-pc
+    runs-on: ubuntu-latest
     outputs:
       is_unity_license_set: ${{ steps.checklicense_job.outputs.is_unity_license_set }}
     steps:
@@ -28,7 +28,7 @@ jobs:
     needs: checklicense
     if: needs.checklicense.outputs.is_unity_license_set == 'false'
     name: Request manual activation file 🔑
-    runs-on: my-pc
+    runs-on: ubuntu-latest
     steps:
       # Request manual activation file
       - name: Request manual activation file
@@ -47,7 +47,7 @@ jobs:
     needs: checklicense
     if: needs.checklicense.outputs.is_unity_license_set == 'true' 
     name: Run all tests ✨
-    runs-on: my-pc
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4.1.2
         with:
@@ -86,7 +86,7 @@ jobs:
     needs: test
     if: contains(github.ref, 'none')
     name: Build for ${{ matrix.targetPlatform }}
-    runs-on: my-pc
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
@@ -134,7 +134,7 @@ jobs:
     needs: test
     if: contains(github.ref, 'none') 
     name: Build for ${{ matrix.targetPlatform }}
-    runs-on: my-pc
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
@@ -209,7 +209,7 @@ jobs:
         needs: test
         if: contains(github.ref, 'master') || contains(github.ref, 'dev') || contains(github.ref, 'none') 
         name: Build for ${{ matrix.targetPlatform }}
-        runs-on: my-pc
+        runs-on: ubuntu-latest
         strategy:
           fail-fast: false
           matrix:
