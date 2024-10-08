@@ -1,4 +1,5 @@
 using Game;
+using Game.UI;
 using NUnit.Framework;
 using System;
 using System.Collections;

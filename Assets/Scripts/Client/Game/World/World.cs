@@ -19,14 +19,16 @@ namespace Game
             [SerializeField]
             private GameObject ChunkPrefab;
 
-            [SerializeField]
-            private int ScaleAmount = 1;
-
             /// <summary>
             /// The chunks of the world
             /// </summary>
             private Chunk[,] Chunks;
 
+            /// <summary>
+            /// Gets the chunk based on the absolute position which chunk it would fall into
+            /// </summary>
+            /// <param name="GameObjectPos">The postion we're looking up</param>
+            /// <returns>The chunk or null if not found</returns>
             public Chunk GetChunk(Vector3 GameObjectPos)
             {
                 int row = (int)(GameObjectPos.z / (GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL));
@@ -38,8 +40,12 @@ namespace Game
                 return Chunks[row, col];
             }
 
+            /// <summary>
+            /// Creates a new game and create the chunks
+            /// </summary>
             public async Task CreateNewGame()
             {
+                //Delete the previous chunks
                 if (Chunks is not null)
                 {
                     for (int i = 0; i < Chunks.GetLength(0); i++)
@@ -54,9 +60,9 @@ namespace Game
                         }
                     }
                 }
-
+                //Create the chunks
                 Chunks = new Chunk[GameConfig.CHUNK_COUNT, GameConfig.CHUNK_COUNT];
-
+                //Load the initial chunk
                 await LoadChunk(GameConfig.CHUNK_COUNT / 2, GameConfig.CHUNK_COUNT / 2);
             }
 
@@ -69,14 +75,15 @@ namespace Game
             {
                 if (Chunks[z, x] == null)
                 {
+                    //Destroyed check
                     if (Destroyed)
                     {
                         return;
                     }
-
+                    //Instantiate the prefab
                     Chunks[z, x] = Instantiate(ChunkPrefab, this.transform, true).GetComponent<Chunk>();
+                    //Get the road edges for the road generation
                     List<EdgeRoadContainer> edges = new List<EdgeRoadContainer>();
-
                     if (z - 1 >= 0 && Chunks[z - 1, x] != null)
                     {
                         if (Chunks[z - 1, x].EdgeRoads is null)
@@ -110,37 +117,55 @@ namespace Game
                         }
                         edges.AddRange(Chunks[z, x + 1].EdgeRoads.Where(x => x?.EdgeRoad.x == 0));
                     }
-
+                    //Create the chunk
                     await Chunks[z, x].InitChunk(x, z, edges, this);
                 }
                 else
                 {
+                    //If the chunk is already loaded display it
                     Chunks[z, x].Display();
                 }
             }
 
-            public void HideChunk(int x, int z)
+            /// <summary>
+            /// Hide the given chunk
+            /// </summary>
+            /// <param name="col">The chunk's column index</param>
+            /// <param name="row">The row chunk's index</param>
+            public void HideChunk(int col, int row)
             {
-                if (Chunks[z, x] is not null)
+                if (Chunks[row, col] is not null)
                 {
-                    Chunks[z, x].HideChunk();
+                    Chunks[row, col].HideChunk();
                 }
             }
 
-            public Chunk GetChunkWithoutLoad(int x, int z)
+            /// <summary>
+            /// Get the chunk without trying it to load
+            /// </summary>
+            /// <param name="col">The chunk's column index</param>
+            /// <param name="row">The row chunk's index</param>
+            /// <returns>The chunk or null if it wasn't loaded yet</returns>
+            public Chunk GetChunkWithoutLoad(int col, int row)
             {
-                return Chunks[z, x];
+                return Chunks[row, col];
             }
 
-            public async Task<Chunk> GetChunk(int x, int z)
+            /// <summary>
+            /// Gets the chunk it will load it if it hasn't been and hide it then otherwise just return it
+            /// </summary>
+            /// <param name="col">The chunk's column index</param>
+            /// <param name="row">The row chunk's index</param>
+            /// <returns>The chunk</returns>
+            public async Task<Chunk> GetChunk(int col, int row)
             {
-                if (Chunks[z, x] is null)
+                if (Chunks[row, col] is null)
                 {
-                    await LoadChunk(x, z);
-                    HideChunk(x, z);
+                    await LoadChunk(col, row);
+                    HideChunk(col, row);
                 }
 
-                return Chunks[z, x];
+                return Chunks[row, col];
             }
         }
     }

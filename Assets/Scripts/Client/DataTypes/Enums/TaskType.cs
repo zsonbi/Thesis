@@ -1,5 +1,8 @@
-public enum TaskType : byte
+namespace DataTypes
 {
-    GoodTask = 0,
-    BadHabit = 1,
+    public enum TaskType : byte
+    {
+        GoodTask = 0,
+        BadHabit = 1,
+    }
 }

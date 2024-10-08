@@ -1,12 +1,13 @@
-public enum ChunkCellType
+namespace DataTypes
 {
-   
-    Grass = 0,
-    Sand = 1,
-    Water = 2,
-    StraightRoad = 3,
-    CurvedRoad = 4, 
-    ThreeWay=5,
-    CrossRoads = 6,
-    
+    public enum ChunkCellType
+    {
+        Grass = 0,
+        Sand = 1,
+        Water = 2,
+        StraightRoad = 3,
+        CurvedRoad = 4,
+        ThreeWay = 5,
+        CrossRoads = 6,
+    }
 }

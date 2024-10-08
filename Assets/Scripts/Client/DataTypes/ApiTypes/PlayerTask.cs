@@ -2,6 +2,7 @@
 
 using Newtonsoft.Json;
 using System;
+using DataTypes;
 
 namespace Thesis_backend.Data_Structures
 {
@@ -65,7 +66,7 @@ namespace Thesis_backend.Data_Structures
 
         public void ChangeType(TaskType newType)
         {
-            this.TaskType = newType == global::TaskType.BadHabit;
+            this.TaskType = newType == DataTypes.TaskType.BadHabit;
         }
 
         public void Complete()

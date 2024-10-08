@@ -1,4 +1,5 @@
 using Config;
+using DataTypes;
 using System;
 using Thesis_backend.Data_Structures;
 using TMPro;
@@ -106,8 +107,6 @@ namespace MainPage
         {
             try
             {
-
-
                 //If the task is null create a dummy otherwise load it
                 if (taskContainer is not null)
                 {
@@ -175,8 +174,6 @@ namespace MainPage
         {
             try
             {
-
-
                 //If it wasn't a new task revert it to the previous state
                 if (this.CurrentTask.ID != -1)
                 {

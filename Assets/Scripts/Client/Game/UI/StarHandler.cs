@@ -3,26 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class StarHandler : ThreadSafeMonoBehaviour
+namespace Game
 {
-    [SerializeField]
-    private List<Image> Stars;
-
-    [SerializeField]
-    private Sprite fullStarSprite;
-
-    [SerializeField]
-    private Sprite emptyStarSprite;
-
-    public void ChangeDifficulty(int difficulty)
+    namespace UI
     {
-        for (int i = 0; i < difficulty; i++)
+        public class StarHandler : ThreadSafeMonoBehaviour
         {
-            Stars[i].sprite = emptyStarSprite;
-        }
-        for (int i = difficulty; i < Stars.Count; i++)
-        {
-            Stars[i].sprite = fullStarSprite;
+            [SerializeField]
+            private List<Image> Stars;
+
+            [SerializeField]
+            private Sprite fullStarSprite;
+
+            [SerializeField]
+            private Sprite emptyStarSprite;
+
+            public void ChangeDifficulty(int difficulty)
+            {
+                for (int i = 0; i < difficulty; i++)
+                {
+                    Stars[i].sprite = emptyStarSprite;
+                }
+                for (int i = difficulty; i < Stars.Count; i++)
+                {
+                    Stars[i].sprite = fullStarSprite;
+                }
+            }
         }
     }
 }

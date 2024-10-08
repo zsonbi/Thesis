@@ -1,14 +1,14 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
-public class TaskClosedEventArgs : EventArgs
+namespace DataTypes
 {
-    public bool DoesItNeedUpdating;
-
-    public TaskClosedEventArgs(bool doesItNeedUpdating)
+    public class TaskClosedEventArgs : EventArgs
     {
-        this.DoesItNeedUpdating = doesItNeedUpdating;
+        public bool DoesItNeedUpdating;
+
+        public TaskClosedEventArgs(bool doesItNeedUpdating)
+        {
+            this.DoesItNeedUpdating = doesItNeedUpdating;
+        }
     }
 }
