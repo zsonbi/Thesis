@@ -19,7 +19,31 @@ RUN alias blender='/opt/blender-$BLENDER_FULL_VERSION-linux-x64/blender'
 
 # Add Blender to the PATH
 ENV PATH="$PATH:/opt/blender-$BLENDER_FULL_VERSION-linux-x64"
+ENV ANDROID_SDK_ROOT=/opt/android-sdk
+ENV PATH=$PATH:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$ANDROID_SDK_ROOT/platform-tools
 
 RUN cp -r /opt/blender-$BLENDER_FULL_VERSION-linux-x64/* /bin/
 # # Verify Blender installation
 RUN blender --version
+
+RUN apt-get update && apt-get install -y wget unzip openjdk-11-jdk
+
+# Set JAVA_HOME environment variable
+ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+ENV PATH=$JAVA_HOME/bin:$PATH
+
+# Install Android SDK command-line tools
+RUN mkdir -p $ANDROID_SDK_ROOT/cmdline-tools && \
+    wget https://dl.google.com/android/repository/commandlinetools-linux-9477386_latest.zip -O sdk-tools.zip && \
+    unzip sdk-tools.zip -d $ANDROID_SDK_ROOT/cmdline-tools && \
+    mv $ANDROID_SDK_ROOT/cmdline-tools/cmdline-tools $ANDROID_SDK_ROOT/cmdline-tools/latest && \
+    rm sdk-tools.zip
+
+# Make sure sdkmanager is executable
+RUN chmod +x $ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager
+
+# Accept licenses
+RUN yes | sdkmanager --licenses
+
+# Install Android platforms and build tools
+RUN sdkmanager "platforms;android-33" "build-tools;33.0.2"
