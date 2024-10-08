@@ -10,30 +10,48 @@ using User;
 
 namespace Game
 {
+    /// <summary>
+    /// Handles the main flow of the game scene
+    /// </summary>
     public class GameController : ThreadSafeMonoBehaviour
     {
+        /// <summary>
+        /// Reference to the generated world
+        /// </summary>
         [SerializeField]
         private World.GameWorld world;
 
+        /// <summary>
+        /// How far should the chunks be loaded
+        /// </summary>
         [SerializeField]
-        private GameObject playerPrefab;
+        private int chunkLoadDistance = 1;
 
-        [SerializeField]
-        private int probeSize = 1;
-
+        /// <summary>
+        /// Reference to the game ui controller
+        /// </summary>
         private GameUI gameUI;
 
+        /// <summary>
+        /// The possible skins that can be used
+        /// </summary>
         private Dictionary<long, GameObject> playerVariants = new Dictionary<long, GameObject>();
 
-        [SerializeField]
+        /// <summary>
+        /// Gets the world
+        /// </summary>
         public World.GameWorld World
+
         { get => world; private set => world = value; }
 
-        private float ScoreCounter = 0;
+        /// <summary>
+        /// Stores how long the game had been in progress (score is rounded from this)
+        /// </summary>
+        private float elapsedTime = 0;
 
         private CarSpawner? carSpawner;
 
-        public int Score { get => Mathf.RoundToInt(ScoreCounter); private set => ScoreCounter = value; }
+        public int Score { get => Mathf.RoundToInt(elapsedTime); private set => elapsedTime = value; }
 
         public PlayerCar? Player { get; private set; }
 
@@ -74,14 +92,14 @@ namespace Game
             }
             if (this.Difficulty < 5)
             {
-                if (Difficulty < this.ScoreCounter / 20)
+                if (Difficulty < this.elapsedTime / 20)
                 {
-                    this.Difficulty = (int)this.ScoreCounter / 20;
+                    this.Difficulty = (int)this.elapsedTime / 20;
                     this.gameUI.ChangeDifficulyDisplay(Difficulty);
                 }
             }
 
-            this.ScoreCounter += Time.deltaTime;
+            this.elapsedTime += Time.deltaTime;
         }
 
         private void PlayerSkinsLoaded(GameObject playerSkin)
@@ -129,11 +147,11 @@ namespace Game
 
         private void DespawnFarAwayChunks(int row, int col)
         {
-            for (int i = -(probeSize + 1); i <= probeSize + 1; i++)
+            for (int i = -(chunkLoadDistance + 1); i <= chunkLoadDistance + 1; i++)
             {
-                for (int j = -(probeSize + 1); j <= probeSize + 1; j++)
+                for (int j = -(chunkLoadDistance + 1); j <= chunkLoadDistance + 1; j++)
                 {
-                    if (Mathf.Abs(i) <= probeSize && Mathf.Abs(j) <= probeSize)
+                    if (Mathf.Abs(i) <= chunkLoadDistance && Mathf.Abs(j) <= chunkLoadDistance)
                     {
                         continue;
                     }
@@ -151,7 +169,7 @@ namespace Game
         {
             await ValidateAndLoadChunk(row, col);
 
-            for (int currSize = 1; currSize <= probeSize; currSize++)
+            for (int currSize = 1; currSize <= chunkLoadDistance; currSize++)
             {
                 for (int x = 0 - currSize; x <= 0 + currSize; x += currSize * 2)
                 {

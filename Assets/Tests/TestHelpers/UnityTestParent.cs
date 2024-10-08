@@ -72,8 +72,8 @@ namespace Tests
             };
 
             yield return CoroutineRunner.RunCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.User>(ServerConfig.PATHFORLOGIN, userLoginRequest, onComplete: UserData.Instance.Init));
-
-            yield return new WaitForSeconds(TestConfig.ANSWER_TOLERANCE);
+            yield return WaitForCondition(() => UserData.Instance.LoggedIn);
+            yield return WaitForCondition(() => UserData.Instance.Username == username || UserData.Instance.Email == username);
         }
 
         protected IEnumerator WaitForCondition(Func<Boolean> condition)
@@ -106,12 +106,7 @@ namespace Tests
 
             SceneManager.LoadScene(TestConfig.EMPTY_SCENE_NAME, LoadSceneMode.Single);
 
-            //AsyncOperation unloading = SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().name);
-            //while (!unloading.isDone)
-            //{
-            //    yield return null;
-            //}
-            yield return new WaitForSeconds(1f);
+            yield return WaitForCondition(() => SceneManager.GetActiveScene().name == TestConfig.EMPTY_SCENE_NAME);
         }
     }
 }
