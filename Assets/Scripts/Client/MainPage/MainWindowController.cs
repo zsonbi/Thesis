@@ -255,8 +255,9 @@ namespace MainPage
                 Tasks.Add(taskContainer.ID, taskComponent);
                 return task;
             }
-            catch (MissingReferenceException e)
+            catch (MissingReferenceException)
             {
+                Debug.LogWarning("Task create missing reference");
                 return null;
             }
         }

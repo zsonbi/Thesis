@@ -2069,9 +2069,57 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8237261850169842984}
     m_Modifications:
+    - target: {fileID: 967484686448679457, guid: 97dba550c73a4a84aa561b59b6fc47d0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723057068600309498, guid: 97dba550c73a4a84aa561b59b6fc47d0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -150
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723057068600309498, guid: 97dba550c73a4a84aa561b59b6fc47d0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -5
+      objectReference: {fileID: 0}
     - target: {fileID: 5083670472075008867, guid: 97dba550c73a4a84aa561b59b6fc47d0, type: 3}
       propertyPath: m_Name
       value: MainMenuHelpWindow
+      objectReference: {fileID: 0}
+    - target: {fileID: 5083670472075008867, guid: 97dba550c73a4a84aa561b59b6fc47d0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5375252631433669126, guid: 97dba550c73a4a84aa561b59b6fc47d0, type: 3}
+      propertyPath: m_text
+      value: 'On this window you can list your ''good tasks'' and ''bad habits''
+        and when you complete them you can earn ''task score'' which can be spent
+        on bonuses in game such as: turbo, immunity, double coins
+
+        You can
+        navigate between the task types by pressing the green or red button.
+
+        You
+        can add a new task by pressing the ''+'' button
+
+        You can see your
+        friends and send friend request by clicking on the friend button in the upper
+        right corner
+
+        You can move to the game by clicking on the controller
+        icon
+
+        By pressing the history button you can check what tasks have
+        you completed before
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5375252631433669126, guid: 97dba550c73a4a84aa561b59b6fc47d0, type: 3}
+      propertyPath: m_fontSize
+      value: 32.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7881401208419206388, guid: 97dba550c73a4a84aa561b59b6fc47d0, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8161596304387292324, guid: 97dba550c73a4a84aa561b59b6fc47d0, type: 3}
       propertyPath: m_Pivot.x

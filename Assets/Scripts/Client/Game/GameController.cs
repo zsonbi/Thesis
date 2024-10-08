@@ -1,3 +1,5 @@
+#nullable enable
+
 using Game.World;
 using System;
 using System.Collections.Generic;
@@ -29,13 +31,13 @@ namespace Game
 
         private float ScoreCounter = 0;
 
-        private CarSpawner carSpawner;
+        private CarSpawner? carSpawner;
 
         public int Score { get => Mathf.RoundToInt(ScoreCounter); private set => ScoreCounter = value; }
 
-        public PlayerCar Player { get; private set; }
+        public PlayerCar? Player { get; private set; }
 
-        public Vector3 PlayerPos => Player.gameObject.transform.position;
+        public Vector3 PlayerPos => Player!.gameObject.transform.position;
 
         public bool Running { get; private set; } = false;
 
@@ -105,10 +107,10 @@ namespace Game
 
         public async Task NewGame()
         {
-            Player = Instantiate(playerVariants[UserData.Instance.Game.OwnedCars[gameUI.SelectedSkinIndex].ShopId], this.transform).GetComponent<PlayerCar>();
+            Player = Instantiate(playerVariants[UserData.Instance.Game.OwnedCars![gameUI.SelectedSkinIndex].ShopId], this.transform).GetComponent<PlayerCar>();
             Player.Init(this);
             Player.DestroyedEvent += PlayerDied;
-            this.carSpawner.Reset();
+            this.carSpawner?.Reset();
             this.Score = 0;
             await World.CreateNewGame();
             Vector3 baseChunkPos = (await World.GetChunk(GameConfig.CHUNK_COUNT / 2, GameConfig.CHUNK_COUNT / 2)).gameObject.transform.position;

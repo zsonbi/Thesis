@@ -5,16 +5,8 @@ using UnityEngine;
 
 public class EffectScript : ThreadSafeMonoBehaviour
 {
-    private ParticleSystem particleSystem;
-
     [SerializeField]
     private EffectType effectType;
 
     public EffectType EffectType => effectType;
-
-    // Runs when the sccript is loaded
-    private void Awake()
-    {
-        TryGetComponent<ParticleSystem>(out particleSystem);
-    }
 }

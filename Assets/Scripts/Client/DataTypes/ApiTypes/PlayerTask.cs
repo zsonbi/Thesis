@@ -1,12 +1,14 @@
-﻿using Newtonsoft.Json;
+﻿#nullable enable
+
+using Newtonsoft.Json;
 using System;
 
 namespace Thesis_backend.Data_Structures
 {
     public record PlayerTask : DbElement
     {
-        public User TaskOwner { get; set; }
-        public string TaskName { get; set; }
+        public User? TaskOwner { get; set; }
+        public string? TaskName { get; set; }
         public string? Description { get; set; }
         public bool TaskType { get; set; }
         public int PeriodRate { get; set; }

@@ -54,17 +54,17 @@ namespace Game
             /// <summary>
             /// The size of the world on the z axis
             /// </summary>
-            public int zSize { get; private set; }
+            public int? zSize { get; private set; }
 
             /// <summary>
             /// The size of the world on the x axis
             /// </summary>
-            public int xSize { get; private set; }
+            public int? xSize { get; private set; }
 
             public int Row { get; private set; }
             public int Col { get; private set; }
 
-            public bool Loaded { get => this.gameObject.activeSelf; }
+            public bool? Loaded { get => this.gameObject.activeSelf; }
 
             public bool[,] Roads => roadGenerator.RoadMatrix;
 

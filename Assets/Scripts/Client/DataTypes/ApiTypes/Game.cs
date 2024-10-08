@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿#nullable enable
+
+using System.Collections.Generic;
 
 namespace Thesis_backend.Data_Structures
 {
@@ -7,7 +9,7 @@ namespace Thesis_backend.Data_Structures
         public int Lvl { get; set; }
         public long UserId { get; set; }
 
-        public User User { get; set; }
+        public User? User { get; set; }
         public long CurrentXP { get; set; }
         public int NextLVLXP { get; set; }
         public int Currency { get; set; }
