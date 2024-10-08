@@ -6,6 +6,8 @@ var classGame_1_1PlayerCar =
     [ "ChunkChanged", "classGame_1_1PlayerCar.html#a18f30f1f6873f043457ce9f81ac47ed4", null ],
     [ "ApplyTurbo", "classGame_1_1PlayerCar.html#aaa57e11cd8cc243d3b3964818c102053", null ],
     [ "ApplyImmunity", "classGame_1_1PlayerCar.html#a17bdd48255bfc4b1f00c106451981bc3", null ],
+    [ "CancelTurbo", "classGame_1_1PlayerCar.html#ab82df1aeb3c64c5129ecc1aae08df1f7", null ],
+    [ "CancelImmunity", "classGame_1_1PlayerCar.html#a1c74b2e5f747bf336b29e1ebc7be878a", null ],
     [ "Update", "classGame_1_1PlayerCar.html#a3c11ab5b2bdc057896e172f59b22e03a", null ],
     [ "FixedUpdate", "classGame_1_1PlayerCar.html#a35789ca2a7fb0aedfa7f7d81d0ff639d", null ],
     [ "OnCollisionEnter", "classGame_1_1PlayerCar.html#a4f53e5c9f220ed72b83160599e2df51b", null ],

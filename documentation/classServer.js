@@ -1,7 +1,7 @@
 var classServer =
 [
-    [ "SendPostRequest< T >", "classServer.html#a573c0df795998c3b573b7384227d0460", null ],
-    [ "SendPatchRequest< T >", "classServer.html#a2fb985fbf9370a783a91d01e7362d055", null ],
-    [ "SendGetRequest< T >", "classServer.html#a4bcec1e6b24c109e09082d7ce3fe0dd5", null ],
-    [ "SendDeleteRequest< T >", "classServer.html#a65d024e149f5015152e5233db50b4261", null ]
+    [ "SendPostRequest< T >", "classServer.html#ac8ad0d60aa51c59d5c5ec295257b796d", null ],
+    [ "SendPatchRequest< T >", "classServer.html#a28996a38560cb6ddaa1cc6cf5b3be8f6", null ],
+    [ "SendGetRequest< T >", "classServer.html#a218f06388276d4d8248ef5ff56a5a0b5", null ],
+    [ "SendDeleteRequest< T >", "classServer.html#a603f8bca69d5ac5d1f33bcdfc2783884", null ]
 ];

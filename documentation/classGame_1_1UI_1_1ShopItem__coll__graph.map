@@ -1,0 +1,7 @@
+<map id="Game.UI.ShopItem" name="Game.UI.ShopItem">
+<area shape="rect" id="node1" title=" " alt="" coords="5,759,172,953"/>
+<area shape="rect" id="node2" href="$classThreadSafeMonoBehaviour.html" title=" " alt="" coords="19,132,217,209"/>
+<area shape="rect" id="node4" href="$classGame_1_1UI_1_1ShopWindow.html" title=" " alt="" coords="105,472,272,696"/>
+<area shape="rect" id="node5" href="$classModalWindow.html" title=" " alt="" coords="155,259,329,409"/>
+<area shape="rect" id="node3" title=" " alt="" coords="56,5,180,83"/>
+</map>

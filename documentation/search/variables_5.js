@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['effects_0',['effects',['../classGame_1_1Car.html#ac67b86743a162f5ad38583ff62a1624c',1,'Game::Car']]],
-  ['effecttype_1',['effectType',['../classEffectScript.html#ac4319f7cf51016ea01df7d617c428771',1,'EffectScript']]],
-  ['emptystarsprite_2',['emptyStarSprite',['../classStarHandler.html#ac137652e43d08defc76a3dc0ebe68557',1,'StarHandler']]]
+  ['effects_979',['effects',['../classGame_1_1Car.html#ac67b86743a162f5ad38583ff62a1624c',1,'Game::Car']]],
+  ['effecttype_980',['effectType',['../classGame_1_1EffectScript.html#a4ee30ec710f9e50d52fa10629c9e3ebc',1,'Game::EffectScript']]],
+  ['elapsedtime_981',['elapsedTime',['../classGame_1_1GameController.html#a7767c8c32e429071260d1bddc8547660',1,'Game::GameController']]],
+  ['emptystarsprite_982',['emptyStarSprite',['../classGame_1_1UI_1_1StarHandler.html#aef5b0407d214f3763d093725c407e985',1,'Game::UI::StarHandler']]]
 ];

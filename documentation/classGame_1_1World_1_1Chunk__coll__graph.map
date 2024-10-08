@@ -1,21 +1,8 @@
 <map id="Game.World.Chunk" name="Game.World.Chunk">
-<area shape="rect" id="Node000001" title="Used for generating a new world." alt="" coords="254,1444,469,2229"/>
-<area shape="rect" id="Node000002" href="$classThreadSafeMonoBehaviour.html" title=" " alt="" coords="454,150,645,215"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="565,228,572,269,613,582,628,709,637,828,639,947,630,1073,611,1216,577,1382,558,1453,532,1524,471,1655,467,1653,527,1522,553,1452,572,1381,605,1215,625,1073,633,947,632,829,623,710,607,583,567,270,559,229"/>
-<area shape="rect" id="Node000005" href="$classGame_1_1World_1_1Chunk.html" title="Used for generating a new world." alt="" coords="221,308,436,1093"/>
-<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="533,229,438,450,433,448,528,227"/>
-<area shape="rect" id="Node000006" href="$classGame_1_1World_1_1GameWorld.html" title="A class for handling chunk loading and unloading." alt="" coords="377,1176,562,1361"/>
-<area shape="poly" id="edge8_Node000006_Node000002" title=" " alt="" coords="554,229,556,379,554,603,540,865,527,1000,509,1132,500,1176,495,1175,504,1132,522,1000,535,865,548,602,551,379,548,229"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="492,5,608,71"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="552,84,552,150,547,150,547,84"/>
-<area shape="rect" id="Node000004" href="$classGame_1_1World_1_1RoadGenerator.html" title="Generates a new road structure." alt="" coords="157,1156,353,1381"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="279,1381,287,1427,282,1428,273,1382"/>
-<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="257,1156,260,1117,261,1109,266,1110,266,1118,262,1156"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="223,883,171,997,149,1057,132,1118,130,1135,133,1152,149,1183,144,1186,128,1153,125,1135,127,1117,144,1055,166,995,218,881"/>
-<area shape="poly" id="edge9_Node000006_Node000005" title=" " alt="" coords="438,1085,445,1117,454,1159,449,1160,440,1118,433,1086"/>
-<area shape="poly" id="edge11_Node000001_Node000006" title=" " alt="" coords="455,1362,442,1428,437,1427,449,1361"/>
-<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="413,1177,395,1133,388,1110,393,1109,400,1131,418,1175"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="48,120,224,245"/>
-<area shape="poly" id="edge12_Node000001_Node000007" title=" " alt="" coords="118,246,74,403,51,507,30,623,15,747,8,876,13,1005,21,1069,32,1131,50,1201,72,1272,126,1409,187,1537,248,1650,244,1652,182,1539,121,1411,67,1273,45,1203,27,1133,15,1070,8,1006,3,876,10,747,25,622,46,506,69,401,113,245"/>
-<area shape="poly" id="edge10_Node000005_Node000007" title=" " alt="" coords="162,245,218,395,213,396,157,247"/>
+<area shape="rect" id="node1" title="Used for generating a new world" alt="" coords="173,316,391,921"/>
+<area shape="rect" id="node5" href="$classGame_1_1World_1_1GameWorld.html" title="A class for handling chunk loading and unloading" alt="" coords="52,1006,245,1157"/>
+<area shape="rect" id="node6" href="$classGame_1_1World_1_1RoadGenerator.html" title="Generates a new road structure" alt="" coords="307,984,511,1179"/>
+<area shape="rect" id="node2" href="$classThreadSafeMonoBehaviour.html" title=" " alt="" coords="5,154,204,231"/>
+<area shape="rect" id="node3" title=" " alt="" coords="43,5,167,83"/>
+<area shape="rect" id="node4" title=" " alt="" coords="229,132,413,253"/>
 </map>

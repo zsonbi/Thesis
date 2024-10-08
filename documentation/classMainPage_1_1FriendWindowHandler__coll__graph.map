@@ -1,10 +1,6 @@
 <map id="MainPage.FriendWindowHandler" name="MainPage.FriendWindowHandler">
-<area shape="rect" id="Node000001" title="Handles the friend window display." alt="" coords="5,463,229,728"/>
-<area shape="rect" id="Node000002" href="$classThreadSafeMonoBehaviour.html" title=" " alt="" coords="17,120,207,185"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,199,118,462,113,463,110,199"/>
-<area shape="rect" id="Node000004" href="$classModalWindow.html" title=" " alt="" coords="133,235,299,400"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="142,196,166,233,161,236,137,199"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="54,5,170,71"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="115,85,115,120,109,120,109,85"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="189,401,172,448,167,446,184,399"/>
+<area shape="rect" id="node1" title="Handles the friend window display" alt="" coords="5,472,237,696"/>
+<area shape="rect" id="node2" href="$classThreadSafeMonoBehaviour.html" title=" " alt="" coords="17,132,215,209"/>
+<area shape="rect" id="node4" href="$classModalWindow.html" title=" " alt="" coords="137,259,311,409"/>
+<area shape="rect" id="node3" title=" " alt="" coords="54,5,178,83"/>
 </map>

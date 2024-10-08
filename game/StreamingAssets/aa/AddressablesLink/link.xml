@@ -1,10 +1,10 @@
 <linker>
   <assembly fullname="ThesisScripts, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="Building" preserve="all" />
-    <type fullname="EffectScript" preserve="all" />
     <type fullname="Game.CarController" preserve="all" />
+    <type fullname="Game.EffectScript" preserve="all" />
     <type fullname="Game.EnableWheelPhysicMaterial" preserve="all" />
     <type fullname="Game.PlayerCar" preserve="all" />
+    <type fullname="Game.World.Building" preserve="all" />
   </assembly>
   <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
     <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />

@@ -1,7 +1,5 @@
 <map id="MainPage.TaskHistoryHandler" name="MainPage.TaskHistoryHandler">
-<area shape="rect" id="Node000001" title="Handles the task history display." alt="" coords="5,232,213,337"/>
-<area shape="rect" id="Node000002" href="$classThreadSafeMonoBehaviour.html" title=" " alt="" coords="14,119,205,184"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,198,112,232,107,232,107,198"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="51,5,167,71"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="112,84,112,119,107,119,107,84"/>
+<area shape="rect" id="node1" title="Handles the task history display" alt="" coords="5,256,221,363"/>
+<area shape="rect" id="node2" href="$classThreadSafeMonoBehaviour.html" title=" " alt="" coords="14,131,213,208"/>
+<area shape="rect" id="node3" title=" " alt="" coords="51,5,175,83"/>
 </map>

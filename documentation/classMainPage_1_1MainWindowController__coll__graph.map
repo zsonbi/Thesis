@@ -1,18 +1,7 @@
 <map id="MainPage.MainWindowController" name="MainPage.MainWindowController">
-<area shape="rect" id="Node000001" title="Handles the main window&#39;s controls." alt="" coords="5,763,235,1188"/>
-<area shape="rect" id="Node000002" href="$classThreadSafeMonoBehaviour.html" title=" " alt="" coords="330,120,521,185"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="317,162,275,171,232,185,193,207,161,236,122,294,94,357,74,423,63,492,58,562,59,632,72,762,67,763,53,632,53,562,57,492,69,422,89,355,117,291,157,233,190,202,230,180,273,165,316,156"/>
-<area shape="rect" id="Node000004" href="$classMainPage_1_1TaskOpenPanelController.html" title="Controller for displaying, editing and creating tasks." alt="" coords="413,235,656,700"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="443,197,456,233,451,235,438,199"/>
-<area shape="rect" id="Node000005" href="$classMainPage_1_1MainWindowController.html" title="Handles the main window&#39;s controls." alt="" coords="573,763,803,1188"/>
-<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="536,167,606,191,640,209,670,233,725,291,764,345,792,399,811,453,824,511,834,573,857,724,858,765,848,804,829,841,805,875,801,872,825,838,843,802,853,764,852,724,829,574,819,512,806,455,787,401,760,348,721,294,666,237,637,214,604,196,534,172"/>
-<area shape="rect" id="Node000006" href="$classModalWindow.html" title=" " alt="" coords="171,385,336,550"/>
-<area shape="poly" id="edge9_Node000006_Node000002" title=" " alt="" coords="404,199,301,385,296,383,399,197"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="367,5,483,71"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="428,85,428,120,423,120,423,85"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="415,666,359,740,305,802,248,860,244,856,301,798,355,737,411,663"/>
-<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="576,699,587,738,589,746,584,748,581,739,571,701"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="766,763,757,725,740,687,718,651,665,585,669,582,722,648,745,684,763,723,771,762"/>
-<area shape="poly" id="edge10_Node000001_Node000006" title=" " alt="" coords="201,552,157,633,138,679,124,725,119,747,114,746,119,723,133,677,152,631,196,549"/>
-<area shape="poly" id="edge8_Node000005_Node000006" title=" " alt="" coords="233,550,227,596,226,644,233,693,252,737,279,776,313,811,350,841,391,868,476,911,558,941,557,946,474,916,388,873,347,846,309,815,275,780,247,740,228,694,221,645,222,595,228,550"/>
+<area shape="rect" id="node1" title="Handles the main window&#39;s controls" alt="" coords="5,472,243,813"/>
+<area shape="rect" id="node4" href="$classMainPage_1_1TaskOpenPanelController.html" title="Controller for displaying, editing and creating tasks" alt="" coords="96,876,347,1247"/>
+<area shape="rect" id="node2" href="$classThreadSafeMonoBehaviour.html" title=" " alt="" coords="103,132,302,209"/>
+<area shape="rect" id="node5" href="$classModalWindow.html" title=" " alt="" coords="116,259,289,409"/>
+<area shape="rect" id="node3" title=" " alt="" coords="141,5,265,83"/>
 </map>

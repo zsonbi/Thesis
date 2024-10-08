@@ -12,29 +12,43 @@ var annotated_dup =
     [ "Config", "namespaceConfig.html", [
       [ "ServerConfig", "classConfig_1_1ServerConfig.html", "classConfig_1_1ServerConfig" ]
     ] ],
+    [ "DataTypes", "namespaceDataTypes.html", [
+      [ "TaskClosedEventArgs", "classDataTypes_1_1TaskClosedEventArgs.html", "classDataTypes_1_1TaskClosedEventArgs" ]
+    ] ],
     [ "Game", "namespaceGame.html", [
+      [ "UI", "namespaceGame_1_1UI.html", [
+        [ "GameUI", "classGame_1_1UI_1_1GameUI.html", "classGame_1_1UI_1_1GameUI" ],
+        [ "LeaderboardItem", "classGame_1_1UI_1_1LeaderboardItem.html", "classGame_1_1UI_1_1LeaderboardItem" ],
+        [ "LeaderboardWindow", "classGame_1_1UI_1_1LeaderboardWindow.html", "classGame_1_1UI_1_1LeaderboardWindow" ],
+        [ "ShopItem", "classGame_1_1UI_1_1ShopItem.html", "classGame_1_1UI_1_1ShopItem" ],
+        [ "ShopWindow", "classGame_1_1UI_1_1ShopWindow.html", "classGame_1_1UI_1_1ShopWindow" ],
+        [ "StarHandler", "classGame_1_1UI_1_1StarHandler.html", "classGame_1_1UI_1_1StarHandler" ]
+      ] ],
       [ "World", "namespaceGame_1_1World.html", [
+        [ "Building", "classGame_1_1World_1_1Building.html", "classGame_1_1World_1_1Building" ],
         [ "CarSpawner", "classGame_1_1World_1_1CarSpawner.html", "classGame_1_1World_1_1CarSpawner" ],
         [ "Chunk", "classGame_1_1World_1_1Chunk.html", "classGame_1_1World_1_1Chunk" ],
-        [ "GameWorld", "classGame_1_1World_1_1GameWorld.html", "classGame_1_1World_1_1GameWorld" ],
-        [ "RoadGenerator", "classGame_1_1World_1_1RoadGenerator.html", "classGame_1_1World_1_1RoadGenerator" ]
+        [ "Coin", "classGame_1_1World_1_1Coin.html", "classGame_1_1World_1_1Coin" ],
+        [ "RoadGenerator", "classGame_1_1World_1_1RoadGenerator.html", "classGame_1_1World_1_1RoadGenerator" ],
+        [ "GameWorld", "classGame_1_1World_1_1GameWorld.html", "classGame_1_1World_1_1GameWorld" ]
       ] ],
       [ "Car", "classGame_1_1Car.html", "classGame_1_1Car" ],
       [ "CarController", "classGame_1_1CarController.html", "classGame_1_1CarController" ],
-      [ "CarProbeScript", "classGame_1_1CarProbeScript.html", null ],
       [ "CopCar", "classGame_1_1CopCar.html", "classGame_1_1CopCar" ],
+      [ "EffectScript", "classGame_1_1EffectScript.html", "classGame_1_1EffectScript" ],
       [ "EnableWheelPhysicMaterial", "classGame_1_1EnableWheelPhysicMaterial.html", "classGame_1_1EnableWheelPhysicMaterial" ],
-      [ "GameController", "classGame_1_1GameController.html", "classGame_1_1GameController" ],
       [ "NpcCar", "classGame_1_1NpcCar.html", "classGame_1_1NpcCar" ],
-      [ "PlayerCar", "classGame_1_1PlayerCar.html", "classGame_1_1PlayerCar" ]
+      [ "PlayerCar", "classGame_1_1PlayerCar.html", "classGame_1_1PlayerCar" ],
+      [ "GameConfig", "classGame_1_1GameConfig.html", "classGame_1_1GameConfig" ],
+      [ "GameController", "classGame_1_1GameController.html", "classGame_1_1GameController" ]
     ] ],
     [ "MainPage", "namespaceMainPage.html", [
       [ "FriendHandler", "classMainPage_1_1FriendHandler.html", "classMainPage_1_1FriendHandler" ],
-      [ "FriendWindowHandler", "classMainPage_1_1FriendWindowHandler.html", "classMainPage_1_1FriendWindowHandler" ],
-      [ "MainWindowController", "classMainPage_1_1MainWindowController.html", "classMainPage_1_1MainWindowController" ],
-      [ "ProfileHandler", "classMainPage_1_1ProfileHandler.html", "classMainPage_1_1ProfileHandler" ],
       [ "TaskDisplayHandler", "classMainPage_1_1TaskDisplayHandler.html", "classMainPage_1_1TaskDisplayHandler" ],
       [ "TaskHistoryHandler", "classMainPage_1_1TaskHistoryHandler.html", "classMainPage_1_1TaskHistoryHandler" ],
+      [ "MainWindowController", "classMainPage_1_1MainWindowController.html", "classMainPage_1_1MainWindowController" ],
+      [ "FriendWindowHandler", "classMainPage_1_1FriendWindowHandler.html", "classMainPage_1_1FriendWindowHandler" ],
+      [ "ProfileHandler", "classMainPage_1_1ProfileHandler.html", "classMainPage_1_1ProfileHandler" ],
       [ "TaskHistoryWindowHandler", "classMainPage_1_1TaskHistoryWindowHandler.html", "classMainPage_1_1TaskHistoryWindowHandler" ],
       [ "TaskOpenPanelController", "classMainPage_1_1TaskOpenPanelController.html", "classMainPage_1_1TaskOpenPanelController" ]
     ] ],
@@ -50,21 +64,10 @@ var annotated_dup =
       [ "UserController", "classUser_1_1UserController.html", "classUser_1_1UserController" ],
       [ "UserData", "classUser_1_1UserData.html", "classUser_1_1UserData" ]
     ] ],
-    [ "Building", "classBuilding.html", "classBuilding" ],
     [ "CameraScript", "classCameraScript.html", "classCameraScript" ],
-    [ "Coin", "classCoin.html", "classCoin" ],
     [ "CoroutineRunner", "classCoroutineRunner.html", "classCoroutineRunner" ],
     [ "EdgeRoadContainer", "classEdgeRoadContainer.html", "classEdgeRoadContainer" ],
-    [ "EffectScript", "classEffectScript.html", "classEffectScript" ],
-    [ "GameConfig", "classGameConfig.html", "classGameConfig" ],
-    [ "GameUI", "classGameUI.html", "classGameUI" ],
-    [ "LeaderboardItem", "classLeaderboardItem.html", "classLeaderboardItem" ],
-    [ "LeaderboardWindow", "classLeaderboardWindow.html", "classLeaderboardWindow" ],
     [ "ModalWindow", "classModalWindow.html", "classModalWindow" ],
     [ "Server", "classServer.html", "classServer" ],
-    [ "ShopItem", "classShopItem.html", "classShopItem" ],
-    [ "ShopWindow", "classShopWindow.html", "classShopWindow" ],
-    [ "StarHandler", "classStarHandler.html", "classStarHandler" ],
-    [ "TaskClosedEventArgs", "classTaskClosedEventArgs.html", "classTaskClosedEventArgs" ],
     [ "ThreadSafeMonoBehaviour", "classThreadSafeMonoBehaviour.html", "classThreadSafeMonoBehaviour" ]
 ];

@@ -1,6 +1,4 @@
 <map id="CoroutineRunner" name="CoroutineRunner">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,120,203,205"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="204,149,222,153,229,163,221,172,217,168,224,163,219,158,203,154"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="46,5,162,71"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,84,107,120,101,120,101,84"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,132,211,224"/>
+<area shape="rect" id="node2" title=" " alt="" coords="46,5,170,83"/>
 </map>
