@@ -8,8 +8,6 @@ using UnityEngine.ResourceManagement;
 using System.Threading.Tasks;
 using System.Collections;
 using UnityEngine.ResourceManagement.AsyncOperations;
-using UnityEditor;
-using System.Threading;
 using Cysharp.Threading.Tasks;
 using UnityEngine.LowLevel;
 
