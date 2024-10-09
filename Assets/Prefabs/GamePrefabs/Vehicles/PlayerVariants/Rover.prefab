@@ -229,7 +229,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 161566}
   serializedVersion: 4
-  m_Mass: 4000
+  m_Mass: 7000
   m_Drag: 0.1
   m_AngularDrag: 5
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -267,15 +267,15 @@ MonoBehaviour:
   - {fileID: 14677570}
   - {fileID: 14689242}
   m_CentreOfMassOffset: {x: 0, y: 0, z: 0}
-  m_MaximumSteerAngle: 50
+  m_MaximumSteerAngle: 25
   m_SteerHelper: 1
   m_TractionControl: 0.8
-  m_FullTorqueOverAllWheels: 10000
+  m_FullTorqueOverAllWheels: 17000
   m_ReverseTorque: 4000
   m_MaxHandbrakeTorque: 1e+16
-  m_Downforce: 300
+  m_Downforce: 400
   m_SpeedType: 1
-  m_Topspeed: 300
+  m_Topspeed: 250
   m_SlipLimit: 0.9
   m_BrakeTorque: 20000
 --- !u!114 &11473480
@@ -290,7 +290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96468c245ae8e0d4f8f1c7a7b8b0542e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 125
+  health: 200
   coinMultiplier: 1
   SkinId: 6
 --- !u!1 &162528

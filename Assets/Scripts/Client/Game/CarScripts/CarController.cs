@@ -34,14 +34,10 @@ namespace Game
         [SerializeField] private float m_SlipLimit;
         [SerializeField] private float m_BrakeTorque;
 
-        private Vector3 m_Prevpos, m_Pos;
         private float m_SteerAngle;
-        private int m_GearNum;
-        private float m_GearFactor;
         private float m_OldRotation;
         private float m_CurrentTorque;
         private Rigidbody m_Rigidbody;
-        private const float k_ReversingThreshold = 0.01f;
 
         public float BrakeInput { get; private set; }
 
@@ -56,11 +52,6 @@ namespace Game
 
         public float Revs { get; private set; }
         public float AccelInput { get; private set; }
-
-        //private void OnCollisionEnter(Collision collision)
-        //{
-        //    Debug.Log(collision.gameObject.name);
-        //}
 
         // Use this for initialization
         private void Start()

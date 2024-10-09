@@ -1,7 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using DataTypes;
-using System.Linq;
 
 namespace Game
 {
@@ -37,8 +35,14 @@ namespace Game
             /// </summary>
             private int numberOfPlacedRoads = 0;
 
+            /// <summary>
+            /// The nearby chunks for checking the roads forward
+            /// </summary>
             private Chunk[,] nearbyChunks;
 
+            /// <summary>
+            /// Load the road and nearby cells, so we don't have to roads parallel next to each other
+            /// </summary>
             private bool[,] lockRoad;
 
             /// <summary>
@@ -155,6 +159,12 @@ namespace Game
                 }
             }
 
+            /// <summary>
+            /// Check if the road is going towards the edge
+            /// </summary>
+            /// <param name="position">The staring position</param>
+            /// <param name="dir">Move direction</param>
+            /// <returns>true-going towards the edge, false-still inside</returns>
             private bool GoinTowardsEdge(Vector2Int position, Vector2Int dir)
             {
                 int newXCoord = position.x + dir.x * 5;
