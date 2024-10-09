@@ -260,7 +260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ea65b38d485c374caa584a03f1de571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_CarDriveType: 2
+  m_CarDriveType: 1
   m_WheelColliders:
   - {fileID: 14600250}
   - {fileID: 14686064}
