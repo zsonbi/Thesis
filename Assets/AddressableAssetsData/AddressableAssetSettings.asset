@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: 14f354c66b69bd24fb77602fa45ddbac
   m_currentHash:
     serializedVersion: 2
-    Hash: a1ba352065b0aed0ca075239b3ea40e5
+    Hash: 00000000000000000000000000000000
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_BundleLocalCatalog: 0
@@ -47,6 +47,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0d59d1c8a71b94647ae82ed069ba7b91, type: 2}
   - {fileID: 11400000, guid: a01f76d4c834aa64888680e8c79e8b3f, type: 2}
   - {fileID: 11400000, guid: 9c036422e55e8ad4292dbf3ce62ca0a5, type: 2}
+  - {fileID: 11400000, guid: 177b8fedc0ca34449a2bb7fb7431703c, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1
@@ -90,6 +91,7 @@ MonoBehaviour:
     - default
     - Buildings
     - PlayerVariants
+    - Props
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: ca9338b05b1ae0b4b9c857ef775a8844, type: 2}

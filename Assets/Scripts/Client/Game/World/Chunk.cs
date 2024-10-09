@@ -49,6 +49,8 @@ namespace Game
 
             private List<Building> buildings;
 
+            private List<Prop> props;
+
             /// <summary>
             /// The size of the world on the z axis
             /// </summary>
@@ -87,9 +89,13 @@ namespace Game
             {
                 buildings = new List<Building>();
                 //PlayerLoopHelper.Initialize();
-                var handle = Addressables.LoadAssetsAsync<GameObject>("Buildings", BuildingLoaded);
+                var buildingsLoadHandle = Addressables.LoadAssetsAsync<GameObject>("Buildings", BuildingLoaded);
 
-                await handle.Task;
+                await buildingsLoadHandle.Task;
+                props = new List<Prop>();
+                var propsLoadHandle = Addressables.LoadAssetsAsync<GameObject>("Props", PropLoaded);
+
+                await propsLoadHandle.Task;
 
                 //Load the values from the settings
                 LoadFromSettings();
@@ -109,6 +115,13 @@ namespace Game
             {
                 buildings.Add(building.GetComponent<Building>());
                 buildings.Last().SetAddressableKey($"Buildings/{building.name}.prefab");
+            }
+
+            // Callback for when each asset is loaded
+            private void PropLoaded(GameObject prop)
+            {
+                props.Add(prop.GetComponent<Prop>());
+                props.Last().SetAddressableKey($"Props/{prop.name}.prefab");
             }
 
             private (float, float) GetAbsolutePosition()
@@ -405,7 +418,8 @@ namespace Game
 #else
                 await Task.Run(() => GenerateCellMatrix());
 #endif
-                AddLargeRoadBuildings();
+                CoroutineRunner.RunCoroutine(AddRoadBuildings());
+                CoroutineRunner.RunCoroutine(AddEnvironmentProps());
             }
 
             private void GenerateCellMatrix()
@@ -480,15 +494,62 @@ namespace Game
                 }
             }
 
-            private void AddLargeRoadBuildings()
+            private IEnumerator AddRoadBuildings()
             {
                 for (int i = 1; i < GameConfig.CHUNK_SIZE - 1; i++)
                 {
                     for (int j = 1; j < GameConfig.CHUNK_SIZE - 1; j++)
                     {
-                        LockAndTryToPlaceBuilding(Random.Range(0, this.buildings.Count), i, j);
+                        //If the scene is destroyed
+                        try
+                        {
+                            LockAndTryToPlaceBuilding(UnityEngine.Random.Range(0, this.buildings.Count), i, j);
+                        }
+                        catch (MissingReferenceException)
+                        {
+                        }
+                        catch (System.NullReferenceException)
+                        {
+                        }
                     }
+                    yield return null;
                 }
+                yield return null;
+            }
+
+            private IEnumerator AddEnvironmentProps()
+            {
+                for (int i = 1; i < GameConfig.CHUNK_SIZE - 1; i++)
+                {
+                    for (int j = 1; j < GameConfig.CHUNK_SIZE - 1; j++)
+                    {
+                        //If the scene is destroyed
+                        try
+                        {
+                            if (buildingCells[i, j].GotRoadNext || !buildingCells[i, j].Buildable || Random.Range(0, 10) == 0)
+                            {
+                                continue;
+                            }
+
+                            if (Random.Range(0, 2) == 0)
+                            {
+                                Prop prop = props[Random.Range(0, props.Count)];
+                                var absolutePosition = GetAbsolutePosition();
+                                Vector3 postition = new Vector3(absolutePosition.Item1 + j * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL, 0, absolutePosition.Item2 + i * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL);
+
+                                Addressables.InstantiateAsync(prop.AddressableKey, postition, Quaternion.Euler(0, Random.Range(0, 4) * 90f, 0), this.gameObject.transform);
+                            }
+                        }
+                        catch (MissingReferenceException)
+                        {
+                        }
+                        catch (System.NullReferenceException)
+                        {
+                        }
+                    }
+                    yield return null;
+                }
+                yield return null;
             }
 
             private void LockAndTryToPlaceBuilding(int index, int row, int col)
@@ -539,7 +600,7 @@ namespace Game
                         }
                     }
 
-                    if (Random.Range(0, 3) == 0)
+                    if (Random.Range(0, 2) == 0)
                     {
                         float rotation = ((int)buildingCells[row, col].RoadDirection) % 4 * 90f;
                         var absolutePosition = GetAbsolutePosition();
