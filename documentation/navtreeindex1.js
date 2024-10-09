@@ -1,6 +1,9 @@
 var NAVTREEINDEX1 =
 {
-"World_8cs_source.html":[2,0,0,0,0,1,2,5],
+"User_8cs.html#ab65ae00cbe1b1602c72df38d32dff1df":[2,0,0,0,0,0,0,10,8],
+"User_8cs_source.html":[2,0,0,0,0,0,0,10],
+"World_8cs.html":[2,0,0,0,0,1,2,6],
+"World_8cs_source.html":[2,0,0,0,0,1,2,6],
 "annotated.html":[1,0],
 "classCameraScript.html":[1,0,7],
 "classCameraScript.html#a049ad504d2cdce8a82e8972312c881b3":[1,0,7,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX1 =
 "classGame_1_1UI_1_1ShopItem.html#aba8c6371c3eeaecb2bb7ab1f07311869":[1,0,3,0,3,2],
 "classGame_1_1UI_1_1ShopItem.html#ae577ed205446b2f0b81520e1ad8c76b0":[1,0,3,0,3,5],
 "classGame_1_1UI_1_1ShopItem.html#affd8bbaf5cf831bc60c3a49a1678cbf7":[1,0,3,0,3,7],
-"classGame_1_1UI_1_1ShopWindow.html":[1,0,3,0,4],
-"classGame_1_1UI_1_1ShopWindow.html#a02bc31c0703c44f76f8585f2de4502cb":[1,0,3,0,4,7],
-"classGame_1_1UI_1_1ShopWindow.html#a1f43b9a8b47dd2daee8dac10307ddd85":[1,0,3,0,4,9],
-"classGame_1_1UI_1_1ShopWindow.html#a24917a20758384a70895bad82cc01787":[1,0,3,0,4,6]
+"classGame_1_1UI_1_1ShopWindow.html":[1,0,3,0,4]
 };

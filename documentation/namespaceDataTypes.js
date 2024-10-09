@@ -16,7 +16,8 @@ var namespaceDataTypes =
       [ "Small_Panel3", "namespaceDataTypes.html#af3baf8ec1237493b66f55dc98343d47aae8b7559ad28190819a312e6d5b18cdfb", null ],
       [ "House", "namespaceDataTypes.html#af3baf8ec1237493b66f55dc98343d47aaaebfe46795575772b7cf413e25caeab9", null ],
       [ "House2", "namespaceDataTypes.html#af3baf8ec1237493b66f55dc98343d47aadd99512caa8b7a68249e8b1296980a6d", null ],
-      [ "Skyscraper", "namespaceDataTypes.html#af3baf8ec1237493b66f55dc98343d47aae19c6cac12e9770657dc27142413bddd", null ]
+      [ "Skyscraper", "namespaceDataTypes.html#af3baf8ec1237493b66f55dc98343d47aae19c6cac12e9770657dc27142413bddd", null ],
+      [ "Bank", "namespaceDataTypes.html#af3baf8ec1237493b66f55dc98343d47aaeb45bd2725cb8ac50d0795432a918f86", null ]
     ] ],
     [ "ChunkCellType", "namespaceDataTypes.html#a729a6c08de6ef9b7b230841c2fcf6ea6", [
       [ "Grass", "namespaceDataTypes.html#a729a6c08de6ef9b7b230841c2fcf6ea6aaac9a63596f76a62bb9f61a5dd7c0d25", null ],

@@ -19,6 +19,7 @@ var NAVTREEINDEX0 =
 "BuildingType_8cs.html#af3baf8ec1237493b66f55dc98343d47aadd99512caa8b7a68249e8b1296980a6d":[2,0,0,0,0,0,1,1,0,6],
 "BuildingType_8cs.html#af3baf8ec1237493b66f55dc98343d47aae19c6cac12e9770657dc27142413bddd":[2,0,0,0,0,0,1,1,0,7],
 "BuildingType_8cs.html#af3baf8ec1237493b66f55dc98343d47aae8b7559ad28190819a312e6d5b18cdfb":[2,0,0,0,0,0,1,1,0,4],
+"BuildingType_8cs.html#af3baf8ec1237493b66f55dc98343d47aaeb45bd2725cb8ac50d0795432a918f86":[2,0,0,0,0,0,1,1,0,8],
 "BuildingType_8cs.html#af3baf8ec1237493b66f55dc98343d47aafcf8ec41c7c0c548ebee8ffeeec292e7":[2,0,0,0,0,0,1,1,0,3],
 "BuildingType_8cs_source.html":[2,0,0,0,0,0,1,1],
 "Building_8cs.html":[2,0,0,0,0,1,2,0],
@@ -167,8 +168,10 @@ var NAVTREEINDEX0 =
 "PlayerTask_8cs_source.html":[2,0,0,0,0,0,0,6],
 "ProfileHandler_8cs.html":[2,0,0,0,0,2,1,1],
 "ProfileHandler_8cs_source.html":[2,0,0,0,0,2,1,1],
-"RoadGenerator_8cs.html":[2,0,0,0,0,1,2,4],
-"RoadGenerator_8cs_source.html":[2,0,0,0,0,1,2,4],
+"Prop_8cs.html":[2,0,0,0,0,1,2,4],
+"Prop_8cs_source.html":[2,0,0,0,0,1,2,4],
+"RoadGenerator_8cs.html":[2,0,0,0,0,1,2,5],
+"RoadGenerator_8cs_source.html":[2,0,0,0,0,1,2,5],
 "ServerConfig_8cs.html":[2,0,0,0,1,1],
 "ServerConfig_8cs_source.html":[2,0,0,0,1,1],
 "Server_8cs.html":[2,0,0,0,1,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX0 =
 "User_8cs.html#a7430243d5359e50e8aedf711b60394af":[2,0,0,0,0,0,0,10,7],
 "User_8cs.html#a88348bf6d36a46b767b886bd5005d08e":[2,0,0,0,0,0,0,10,4],
 "User_8cs.html#a9b941e9b1cabd32384dc5dd8803b6df8":[2,0,0,0,0,0,0,10,9],
-"User_8cs.html#aae518baa5cf2ea5aa7ab44999037e244":[2,0,0,0,0,0,0,10,3],
-"User_8cs.html#ab65ae00cbe1b1602c72df38d32dff1df":[2,0,0,0,0,0,0,10,8],
-"User_8cs_source.html":[2,0,0,0,0,0,0,10],
-"World_8cs.html":[2,0,0,0,0,1,2,5]
+"User_8cs.html#aae518baa5cf2ea5aa7ab44999037e244":[2,0,0,0,0,0,0,10,3]
 };

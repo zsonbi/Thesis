@@ -8,6 +8,7 @@ var BuildingType_8cs =
       [ "Small_Panel3", "BuildingType_8cs.html#af3baf8ec1237493b66f55dc98343d47aae8b7559ad28190819a312e6d5b18cdfb", null ],
       [ "House", "BuildingType_8cs.html#af3baf8ec1237493b66f55dc98343d47aaaebfe46795575772b7cf413e25caeab9", null ],
       [ "House2", "BuildingType_8cs.html#af3baf8ec1237493b66f55dc98343d47aadd99512caa8b7a68249e8b1296980a6d", null ],
-      [ "Skyscraper", "BuildingType_8cs.html#af3baf8ec1237493b66f55dc98343d47aae19c6cac12e9770657dc27142413bddd", null ]
+      [ "Skyscraper", "BuildingType_8cs.html#af3baf8ec1237493b66f55dc98343d47aae19c6cac12e9770657dc27142413bddd", null ],
+      [ "Bank", "BuildingType_8cs.html#af3baf8ec1237493b66f55dc98343d47aaeb45bd2725cb8ac50d0795432a918f86", null ]
     ] ]
 ];

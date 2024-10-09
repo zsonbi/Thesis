@@ -5,6 +5,7 @@
     <type fullname="Game.EnableWheelPhysicMaterial" preserve="all" />
     <type fullname="Game.PlayerCar" preserve="all" />
     <type fullname="Game.World.Building" preserve="all" />
+    <type fullname="Game.World.Prop" preserve="all" />
   </assembly>
   <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
     <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />
@@ -25,6 +26,7 @@
     <type fullname="UnityEngine.MeshRenderer" preserve="all" />
     <type fullname="UnityEngine.Object" preserve="all" />
     <type fullname="UnityEngine.Shader" preserve="all" />
+    <type fullname="UnityEngine.SkinnedMeshRenderer" preserve="all" />
     <type fullname="UnityEngine.Texture2D" preserve="all" />
     <type fullname="UnityEngine.Transform" preserve="all" />
   </assembly>
