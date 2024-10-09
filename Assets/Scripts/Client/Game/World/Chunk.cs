@@ -500,7 +500,17 @@ namespace Game
                 {
                     for (int j = 1; j < GameConfig.CHUNK_SIZE - 1; j++)
                     {
-                        LockAndTryToPlaceBuilding(Random.Range(0, this.buildings.Count), i, j);
+                        //If the scene is destroyed
+                        try
+                        {
+                            LockAndTryToPlaceBuilding(UnityEngine.Random.Range(0, this.buildings.Count), i, j);
+                        }
+                        catch (MissingReferenceException)
+                        {
+                        }
+                        catch (System.NullReferenceException)
+                        {
+                        }
                     }
                     yield return null;
                 }
@@ -513,18 +523,28 @@ namespace Game
                 {
                     for (int j = 1; j < GameConfig.CHUNK_SIZE - 1; j++)
                     {
-                        if (buildingCells[i, j].GotRoadNext || !buildingCells[i, j].Buildable || Random.Range(0, 10) == 0)
+                        //If the scene is destroyed
+                        try
                         {
-                            continue;
+                            if (buildingCells[i, j].GotRoadNext || !buildingCells[i, j].Buildable || Random.Range(0, 10) == 0)
+                            {
+                                continue;
+                            }
+
+                            if (Random.Range(0, 2) == 0)
+                            {
+                                Prop prop = props[Random.Range(0, props.Count)];
+                                var absolutePosition = GetAbsolutePosition();
+                                Vector3 postition = new Vector3(absolutePosition.Item1 + j * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL, 0, absolutePosition.Item2 + i * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL);
+
+                                Addressables.InstantiateAsync(prop.AddressableKey, postition, new Quaternion(), this.gameObject.transform);
+                            }
                         }
-
-                        if (Random.Range(0, 2) == 0)
+                        catch (MissingReferenceException)
                         {
-                            Prop prop = props[Random.Range(0, props.Count)];
-                            var absolutePosition = GetAbsolutePosition();
-                            Vector3 postition = new Vector3(absolutePosition.Item1 + j * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL, 0, absolutePosition.Item2 + i * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL);
-
-                            Addressables.InstantiateAsync(prop.AddressableKey, postition, new Quaternion(), this.gameObject.transform);
+                        }
+                        catch (System.NullReferenceException)
+                        {
                         }
                     }
                     yield return null;
