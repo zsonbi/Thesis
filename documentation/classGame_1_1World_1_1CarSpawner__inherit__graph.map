@@ -1,5 +1,5 @@
 <map id="Game.World.CarSpawner" name="Game.World.CarSpawner">
-<area shape="rect" id="node1" title=" " alt="" coords="13,256,197,495"/>
+<area shape="rect" id="node1" title="Car spawner" alt="" coords="13,256,197,495"/>
 <area shape="rect" id="node2" href="$classThreadSafeMonoBehaviour.html" title=" " alt="" coords="5,131,204,208"/>
 <area shape="rect" id="node3" title=" " alt="" coords="43,5,167,83"/>
 </map>

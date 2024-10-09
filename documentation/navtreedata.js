@@ -58,8 +58,8 @@ var NAVTREEINDEX =
 [
 "BuildingCell_8cs.html",
 "World_8cs_source.html",
-"classGame_1_1UI_1_1ShopItem.html#affd8bbaf5cf831bc60c3a49a1678cbf7",
-"classUser_1_1UserController.html#a07a456882c4f5619e468f30cc0cdf76c"
+"classGame_1_1UI_1_1ShopWindow.html#a2bef3de319f4e3e85fe4e26bdf237dc9",
+"classUser_1_1UserController.html#a1ee460095513422a536daa1b5d0b3419"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

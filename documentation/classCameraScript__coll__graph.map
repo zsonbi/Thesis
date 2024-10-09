@@ -6,8 +6,8 @@
 <area shape="rect" id="node6" href="$classGame_1_1UI_1_1ShopWindow.html" title=" " alt="" coords="983,783,1150,1007"/>
 <area shape="rect" id="node7" href="$classModalWindow.html" title=" " alt="" coords="963,375,1136,525"/>
 <area shape="rect" id="node8" href="$classGame_1_1UI_1_1LeaderboardWindow.html" title=" " alt="" coords="743,812,959,977"/>
-<area shape="rect" id="node9" href="$classGame_1_1UI_1_1StarHandler.html" title=" " alt="" coords="1244,652,1404,759"/>
-<area shape="rect" id="node11" href="$classGame_1_1World_1_1CarSpawner.html" title=" " alt="" coords="52,783,236,1007"/>
+<area shape="rect" id="node9" href="$classGame_1_1UI_1_1StarHandler.html" title="Star handler" alt="" coords="1244,652,1404,759"/>
+<area shape="rect" id="node11" href="$classGame_1_1World_1_1CarSpawner.html" title="Car spawner" alt="" coords="52,783,236,1007"/>
 <area shape="rect" id="node3" title=" " alt="" coords="811,5,935,83"/>
 <area shape="rect" id="node10" title=" " alt="" coords="5,132,64,209"/>
 </map>

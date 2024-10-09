@@ -1,12 +1,12 @@
 <map id="Game.World.CarSpawner" name="Game.World.CarSpawner">
-<area shape="rect" id="node1" title=" " alt="" coords="67,259,251,483"/>
+<area shape="rect" id="node1" title="Car spawner" alt="" coords="67,259,251,483"/>
 <area shape="rect" id="node4" href="$classGame_1_1GameController.html" title="Handles the main flow of the game scene" alt="" coords="118,637,328,993"/>
 <area shape="rect" id="node2" href="$classThreadSafeMonoBehaviour.html" title=" " alt="" coords="322,132,521,209"/>
 <area shape="rect" id="node5" href="$classGame_1_1UI_1_1GameUI.html" title=" " alt="" coords="356,1056,554,1529"/>
 <area shape="rect" id="node6" href="$classGame_1_1UI_1_1ShopWindow.html" title=" " alt="" coords="353,703,520,927"/>
 <area shape="rect" id="node7" href="$classModalWindow.html" title=" " alt="" coords="479,295,652,446"/>
 <area shape="rect" id="node8" href="$classGame_1_1UI_1_1LeaderboardWindow.html" title=" " alt="" coords="694,733,910,898"/>
-<area shape="rect" id="node9" href="$classGame_1_1UI_1_1StarHandler.html" title=" " alt="" coords="834,507,994,613"/>
+<area shape="rect" id="node9" href="$classGame_1_1UI_1_1StarHandler.html" title="Star handler" alt="" coords="834,507,994,613"/>
 <area shape="rect" id="node3" title=" " alt="" coords="360,5,484,83"/>
 <area shape="rect" id="node10" title=" " alt="" coords="326,332,384,409"/>
 </map>

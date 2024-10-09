@@ -1,10 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"classGame_1_1UI_1_1ShopItem.html#affd8bbaf5cf831bc60c3a49a1678cbf7":[1,0,3,0,3,7],
-"classGame_1_1UI_1_1ShopWindow.html":[1,0,3,0,4],
-"classGame_1_1UI_1_1ShopWindow.html#a02bc31c0703c44f76f8585f2de4502cb":[1,0,3,0,4,7],
-"classGame_1_1UI_1_1ShopWindow.html#a1f43b9a8b47dd2daee8dac10307ddd85":[1,0,3,0,4,9],
-"classGame_1_1UI_1_1ShopWindow.html#a24917a20758384a70895bad82cc01787":[1,0,3,0,4,6],
 "classGame_1_1UI_1_1ShopWindow.html#a2bef3de319f4e3e85fe4e26bdf237dc9":[1,0,3,0,4,11],
 "classGame_1_1UI_1_1ShopWindow.html#a3b5edb9b2ce8f2fc819be3b0ae0d346d":[1,0,3,0,4,10],
 "classGame_1_1UI_1_1ShopWindow.html#a6a703aeb6610fe526d65a9b89ad4c78e":[1,0,3,0,4,4],
@@ -249,5 +244,10 @@ var NAVTREEINDEX2 =
 "classUser_1_1LoggedInChecker.html#a306ce5521a6109ae00667a32fd0a442c":[1,0,6,0,1],
 "classUser_1_1LoggedInChecker.html#aa0be140ec2e3efb96d0a9c306e6d811a":[1,0,6,0,2],
 "classUser_1_1UserController.html":[1,0,6,1],
-"classUser_1_1UserController.html#a02fa4701a3a181ec2228737a5f2c57e9":[1,0,6,1,3]
+"classUser_1_1UserController.html#a02fa4701a3a181ec2228737a5f2c57e9":[1,0,6,1,3],
+"classUser_1_1UserController.html#a07a456882c4f5619e468f30cc0cdf76c":[1,0,6,1,5],
+"classUser_1_1UserController.html#a0e115007266961c890001eb18f11bd1f":[1,0,6,1,1],
+"classUser_1_1UserController.html#a1300529ad3a9631379b8ca49200e315e":[1,0,6,1,10],
+"classUser_1_1UserController.html#a156a37eabac915f5d287201599b3a0b1":[1,0,6,1,6],
+"classUser_1_1UserController.html#a17e85e80e7b55a5c9c0b01bc0ed5735e":[1,0,6,1,9]
 };

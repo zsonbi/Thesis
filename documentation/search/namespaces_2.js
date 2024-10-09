@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['datatypes_686',['DataTypes',['../namespaceDataTypes.html',1,'']]]
+  ['datatypes_681',['DataTypes',['../namespaceDataTypes.html',1,'']]]
 ];
