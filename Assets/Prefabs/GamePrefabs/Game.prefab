@@ -5990,7 +5990,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6150506464051928802
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6632,6 +6632,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 08ef0b637b7a8ba4e8cc114a7b7afb87, type: 3}
   - {fileID: 21300000, guid: 7457f9a830705a74196eaf6a6810dcea, type: 3}
   - {fileID: 21300000, guid: cfbbf8ec0809da640b03ebc760d11507, type: 3}
+  - {fileID: 21300000, guid: 6e36a2c6fcbd3a646a0597d7519599f8, type: 3}
+  - {fileID: 21300000, guid: f03c8fee29d65e44099b68369034b527, type: 3}
+  - {fileID: 21300000, guid: 5a07e77c53673db4398f8b03608eddc4, type: 3}
+  - {fileID: 21300000, guid: 0d7462fbc5c66a74289a11ebf9c65f3f, type: 3}
   CoinText: {fileID: 1880803990328481455}
   ModalWindow: {fileID: 3610211448257252965}
 --- !u!1 &6323611913736927514

@@ -537,7 +537,7 @@ namespace Game
                                 var absolutePosition = GetAbsolutePosition();
                                 Vector3 postition = new Vector3(absolutePosition.Item1 + j * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL, 0, absolutePosition.Item2 + i * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL);
 
-                                Addressables.InstantiateAsync(prop.AddressableKey, postition, new Quaternion(), this.gameObject.transform);
+                                Addressables.InstantiateAsync(prop.AddressableKey, postition, Quaternion.Euler(0, Random.Range(0, 4) * 90f, 0), this.gameObject.transform);
                             }
                         }
                         catch (MissingReferenceException)

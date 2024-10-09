@@ -10,5 +10,6 @@ namespace DataTypes
         House,
         House2,
         Skyscraper,
+        Bank,
     }
 }
