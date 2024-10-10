@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5718276037007248143}
   - component: {fileID: -5908891998184616198}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: GeneralProps3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,6 +62,10 @@ PrefabInstance:
     - target: {fileID: 1589775395106624, guid: 1f455f69eb277d242a11221188d47091, type: 3}
       propertyPath: m_Name
       value: tent
+      objectReference: {fileID: 0}
+    - target: {fileID: 1589775395106624, guid: 1f455f69eb277d242a11221188d47091, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1589775395106624, guid: 1f455f69eb277d242a11221188d47091, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -138,8 +142,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 5718276037007248143}
     m_Modifications:
     - target: {fileID: 1338100199599674, guid: 2fe7a9ef6e9f71845a2043158d302b34, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1338100199599674, guid: 2fe7a9ef6e9f71845a2043158d302b34, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643847357440074, guid: 2fe7a9ef6e9f71845a2043158d302b34, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1643847357440074, guid: 2fe7a9ef6e9f71845a2043158d302b34, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -150,12 +162,24 @@ PrefabInstance:
       value: fireplace
       objectReference: {fileID: 0}
     - target: {fileID: 1661447213762934, guid: 2fe7a9ef6e9f71845a2043158d302b34, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661447213762934, guid: 2fe7a9ef6e9f71845a2043158d302b34, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1711917331786228, guid: 2fe7a9ef6e9f71845a2043158d302b34, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711917331786228, guid: 2fe7a9ef6e9f71845a2043158d302b34, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1841492571396452, guid: 2fe7a9ef6e9f71845a2043158d302b34, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1841492571396452, guid: 2fe7a9ef6e9f71845a2043158d302b34, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -246,6 +270,10 @@ PrefabInstance:
     - target: {fileID: 2028636461803998243, guid: 538b0959ff351ca45bffcd2f52341792, type: 3}
       propertyPath: m_Name
       value: moving_platform_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2028636461803998243, guid: 538b0959ff351ca45bffcd2f52341792, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2028636461804032003, guid: 538b0959ff351ca45bffcd2f52341792, type: 3}
       propertyPath: m_LocalScale.x

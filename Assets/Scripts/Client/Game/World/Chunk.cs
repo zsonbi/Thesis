@@ -526,7 +526,7 @@ namespace Game
                         //If the scene is destroyed
                         try
                         {
-                            if (buildingCells[i, j].GotRoadNext || !buildingCells[i, j].Buildable || Random.Range(0, 10) == 0)
+                            if (buildingCells[i, j].GotRoadNext || !buildingCells[i, j].Buildable || Random.Range(0, 25) == 0)
                             {
                                 continue;
                             }
@@ -536,7 +536,6 @@ namespace Game
                                 Prop prop = props[Random.Range(0, props.Count)];
                                 var absolutePosition = GetAbsolutePosition();
                                 Vector3 postition = new Vector3(absolutePosition.Item1 + j * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL, 0, absolutePosition.Item2 + i * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL);
-
                                 Addressables.InstantiateAsync(prop.AddressableKey, postition, Quaternion.Euler(0, Random.Range(0, 4) * 90f, 0), this.gameObject.transform);
                             }
                         }

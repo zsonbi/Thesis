@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5718276037007248143}
   - component: {fileID: 7936119556644101826}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: GeneralProps2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,6 +73,10 @@ PrefabInstance:
     - target: {fileID: 1622617385532050, guid: 286912f5c629f1d41801e4534cc52f03, type: 3}
       propertyPath: m_Name
       value: terrain_green_hill_part
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622617385532050, guid: 286912f5c629f1d41801e4534cc52f03, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1622617385532050, guid: 286912f5c629f1d41801e4534cc52f03, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -153,6 +157,10 @@ PrefabInstance:
       value: Stone2
       objectReference: {fileID: 0}
     - target: {fileID: 1077694047748150, guid: eb547c7bd52294e4fb653d5fb68c9675, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077694047748150, guid: eb547c7bd52294e4fb653d5fb68c9675, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -223,6 +231,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 5718276037007248143}
     m_Modifications:
     - target: {fileID: 1126345529874848, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1126345529874848, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -231,20 +243,40 @@ PrefabInstance:
       value: mushrooms_plants (3)
       objectReference: {fileID: 0}
     - target: {fileID: 1239940148641564, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239940148641564, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419509788743108, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1419509788743108, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1532367299002992, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1532367299002992, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1672249122490454, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1672249122490454, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748514784608486, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1748514784608486, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -313,6 +345,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 5718276037007248143}
     m_Modifications:
     - target: {fileID: 1126345529874848, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1126345529874848, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -321,20 +357,40 @@ PrefabInstance:
       value: mushrooms_plants (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1239940148641564, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239940148641564, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419509788743108, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1419509788743108, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1532367299002992, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1532367299002992, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1672249122490454, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1672249122490454, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748514784608486, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1748514784608486, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -405,6 +461,10 @@ PrefabInstance:
     - target: {fileID: 1666043497762092, guid: d19d09978a950894ea0710187968f43f, type: 3}
       propertyPath: m_Name
       value: park_bench (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1666043497762092, guid: d19d09978a950894ea0710187968f43f, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1666043497762092, guid: d19d09978a950894ea0710187968f43f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -485,6 +545,10 @@ PrefabInstance:
       value: big_tree (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1761978807388762, guid: 01f585040a083ec458caf38381c29bc9, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761978807388762, guid: 01f585040a083ec458caf38381c29bc9, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -561,6 +625,10 @@ PrefabInstance:
     - target: {fileID: 1761978807388762, guid: 01f585040a083ec458caf38381c29bc9, type: 3}
       propertyPath: m_Name
       value: big_tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761978807388762, guid: 01f585040a083ec458caf38381c29bc9, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1761978807388762, guid: 01f585040a083ec458caf38381c29bc9, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -641,6 +709,10 @@ PrefabInstance:
       value: Rock_hole_1
       objectReference: {fileID: 0}
     - target: {fileID: 1612966283087480, guid: 643bc461c37256d4abfca7ccc3d50dc4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1612966283087480, guid: 643bc461c37256d4abfca7ccc3d50dc4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -717,6 +789,10 @@ PrefabInstance:
     - target: {fileID: 1824383779642422, guid: 5d84219bd41020641b740c1d7f5ee465, type: 3}
       propertyPath: m_Name
       value: Block2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824383779642422, guid: 5d84219bd41020641b740c1d7f5ee465, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1824383779642422, guid: 5d84219bd41020641b740c1d7f5ee465, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -797,6 +873,10 @@ PrefabInstance:
       value: Stone1
       objectReference: {fileID: 0}
     - target: {fileID: 1712469483851906, guid: 1772e0a2d49ec3c4bb9d9828da985b60, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1712469483851906, guid: 1772e0a2d49ec3c4bb9d9828da985b60, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -865,6 +945,10 @@ PrefabInstance:
     - target: {fileID: 1666043497762092, guid: d19d09978a950894ea0710187968f43f, type: 3}
       propertyPath: m_Name
       value: park_bench (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1666043497762092, guid: d19d09978a950894ea0710187968f43f, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1666043497762092, guid: d19d09978a950894ea0710187968f43f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -941,6 +1025,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 5718276037007248143}
     m_Modifications:
     - target: {fileID: 1126345529874848, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1126345529874848, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -949,20 +1037,40 @@ PrefabInstance:
       value: mushrooms_plants
       objectReference: {fileID: 0}
     - target: {fileID: 1239940148641564, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239940148641564, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419509788743108, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1419509788743108, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1532367299002992, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1532367299002992, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1672249122490454, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1672249122490454, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748514784608486, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1748514784608486, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1031,6 +1139,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 5718276037007248143}
     m_Modifications:
     - target: {fileID: 1126345529874848, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1126345529874848, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -1039,20 +1151,40 @@ PrefabInstance:
       value: mushrooms_plants (2)
       objectReference: {fileID: 0}
     - target: {fileID: 1239940148641564, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239940148641564, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419509788743108, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1419509788743108, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1532367299002992, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1532367299002992, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1672249122490454, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1672249122490454, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748514784608486, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1748514784608486, guid: 975cff1267180ca43b65f176a31aa119, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1123,6 +1255,10 @@ PrefabInstance:
     - target: {fileID: 1905985311839994, guid: f3a01fe51ab57f74595cdeee80d56ca1, type: 3}
       propertyPath: m_Name
       value: marker
+      objectReference: {fileID: 0}
+    - target: {fileID: 1905985311839994, guid: f3a01fe51ab57f74595cdeee80d56ca1, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1905985311839994, guid: f3a01fe51ab57f74595cdeee80d56ca1, type: 3}
       propertyPath: m_StaticEditorFlags
