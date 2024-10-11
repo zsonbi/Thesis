@@ -1,16 +1,16 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 10/11/2024 - 14:26:50 |
+| Generated on: | 10/11/2024 - 14:31:58 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 2 |
 | Classes: | 67 |
 | Files: | 67 |
-| Covered lines: | 2590 |
-| Uncovered lines: | 584 |
+| Covered lines: | 2592 |
+| Uncovered lines: | 582 |
 | Coverable lines: | 3174 |
 | Total lines: | 6781 |
-| Line coverage: | 81.6% (2590 of 3174) |
+| Line coverage: | 81.6% (2592 of 3174) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 466 |
@@ -33,15 +33,15 @@
 |Tests.UnityTestParent[T]|59|0|59|112|100%|0|0||5|5|100%|
 |Tests.UserTests.UserControllerTests|22|0|22|47|100%|0|0||3|3|100%|
 |Tests.UserTests.UserTestsParent[T]|4|0|4|24|100%|0|0||1|1|100%|
-|**ThesisScripts**|**1857**|**563**|**2420**|**5396**|**76.7%**|**0**|**0**|****|**410**|**495**|**82.8%**|
+|**ThesisScripts**|**1859**|**561**|**2420**|**5396**|**76.8%**|**0**|**0**|****|**410**|**495**|**82.8%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|6|0|6|17|100%|0|0||5|5|100%|
 |CameraScript|7|0|7|34|100%|0|0||2|2|100%|
 |Config.ServerConfig|6|1|7|99|85.7%|0|0||6|7|85.7%|
 |CoroutineRunner|15|0|15|33|100%|0|0||3|3|100%|
 |DataTypes.TaskClosedEventArgs|0|4|4|14|0%|0|0||0|1|0%|
 |EdgeRoadContainer|9|0|9|15|100%|0|0||7|7|100%|
-|Game.Car|63|22|85|143|74.1%|0|0||13|13|100%|
-|Game.CarController|94|25|119|229|78.9%|0|0||14|18|77.7%|
+|Game.Car|67|18|85|143|78.8%|0|0||13|13|100%|
+|Game.CarController|95|24|119|229|79.8%|0|0||14|18|77.7%|
 |Game.CopCar|47|11|58|95|81%|0|0||1|1|100%|
 |Game.EffectScript|1|0|1|13|100%|0|0||1|1|100%|
 |Game.EnableWheelPhysicMaterial|16|0|16|37|100%|0|0||2|2|100%|
@@ -57,7 +57,7 @@
 |Game.World.Building|7|2|9|76|77.7%|0|0||5|7|71.4%|
 |Game.World.BuildingCell|11|0|11|30|100%|0|0||7|7|100%|
 |Game.World.CarSpawner|33|10|43|128|76.7%|0|0||4|5|80%|
-|Game.World.Chunk|375|41|416|653|90.1%|0|0||29|31|93.5%|
+|Game.World.Chunk|372|44|416|653|89.4%|0|0||29|31|93.5%|
 |Game.World.Coin|7|0|7|33|100%|0|0||2|2|100%|
 |Game.World.GameWorld|69|16|85|172|81.1%|0|0||6|6|100%|
 |Game.World.Prop|7|3|10|65|70%|0|0||3|6|50%|
