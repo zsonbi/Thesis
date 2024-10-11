@@ -545,8 +545,8 @@ namespace Game
                         catch (System.NullReferenceException)
                         {
                         }
+                        yield return null;
                     }
-                    yield return null;
                 }
                 yield return null;
             }
