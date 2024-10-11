@@ -526,7 +526,7 @@ namespace Game
                         //If the scene is destroyed
                         try
                         {
-                            if (buildingCells[i, j].GotRoadNext || !buildingCells[i, j].Buildable || Random.Range(0, 25) == 0)
+                            if (buildingCells[i, j].GotRoadNext || !buildingCells[i, j].Buildable || Random.Range(0, 5) != 0)
                             {
                                 continue;
                             }
