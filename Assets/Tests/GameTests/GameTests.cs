@@ -289,6 +289,7 @@ namespace Tests
 
                 //Check if it decays
                 yield return WaitForCondition(() => !MainController.Player.Turbo);
+                yield return WaitForCondition(() => User.UserData.Instance.CurrentTaskScore == originalTaskScore - GameConfig.TURBO_COST);
                 Assert.AreEqual(originalTaskScore - GameConfig.TURBO_COST, User.UserData.Instance.CurrentTaskScore);
                 Assert.False(MainController.Player.Turbo);
             }
@@ -310,6 +311,8 @@ namespace Tests
 
                 //Check if it decays
                 yield return WaitForCondition(() => !MainController.Player.Immune);
+                yield return WaitForCondition(() => User.UserData.Instance.CurrentTaskScore == originalTaskScore - GameConfig.IMMUNITY_COST);
+
                 Assert.AreEqual(originalTaskScore - GameConfig.IMMUNITY_COST, User.UserData.Instance.CurrentTaskScore);
                 Assert.False(MainController.Player.Turbo);
             }
