@@ -1,7 +1,7 @@
 <map id="Game.World.RoadGenerator" name="Game.World.RoadGenerator">
 <area shape="rect" id="node1" title="Generates a new road structure" alt="" coords="5,132,209,327"/>
-<area shape="rect" id="node2" href="$classGame_1_1World_1_1Chunk.html" title="Used for generating a new world" alt="" coords="243,389,460,1039"/>
-<area shape="rect" id="node6" href="$classGame_1_1World_1_1GameWorld.html" title="A class for handling chunk loading and unloading" alt="" coords="331,1101,524,1252"/>
+<area shape="rect" id="node2" href="$classGame_1_1World_1_1Chunk.html" title="Stores a single chunk of the world" alt="" coords="243,389,460,1024"/>
+<area shape="rect" id="node6" href="$classGame_1_1World_1_1GameWorld.html" title="A class for handling chunk loading and unloading" alt="" coords="331,1087,524,1237"/>
 <area shape="rect" id="node3" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="455,191,653,268"/>
 <area shape="rect" id="node4" title=" " alt="" coords="492,5,616,83"/>
 <area shape="rect" id="node5" title=" " alt="" coords="246,169,430,290"/>

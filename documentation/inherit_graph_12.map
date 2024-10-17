@@ -8,15 +8,15 @@
 <area shape="rect" id="node10" href="$classGame_1_1EffectScript.html" title=" " alt="" coords="521,157,660,184"/>
 <area shape="rect" id="node11" href="$classGame_1_1EnableWheelPhysicMaterial.html" title=" " alt="" coords="467,208,714,235"/>
 <area shape="rect" id="node12" href="$classGame_1_1GameController.html" title="Handles the main flow of the game scene" alt="" coords="507,259,675,285"/>
-<area shape="rect" id="node13" href="$classGame_1_1UI_1_1GameUI.html" title=" " alt="" coords="523,309,659,336"/>
-<area shape="rect" id="node14" href="$classGame_1_1UI_1_1LeaderboardItem.html" title=" " alt="" coords="493,360,688,387"/>
-<area shape="rect" id="node15" href="$classGame_1_1UI_1_1LeaderboardWindow.html" title=" " alt="" coords="483,411,699,437"/>
-<area shape="rect" id="node16" href="$classGame_1_1UI_1_1ShopItem.html" title=" " alt="" coords="518,461,663,488"/>
-<area shape="rect" id="node17" href="$classGame_1_1UI_1_1ShopWindow.html" title=" " alt="" coords="507,512,674,539"/>
+<area shape="rect" id="node13" href="$classGame_1_1UI_1_1GameUI.html" title="Controller for the game&#39;s UI" alt="" coords="523,309,659,336"/>
+<area shape="rect" id="node14" href="$classGame_1_1UI_1_1LeaderboardItem.html" title="A single leaderboard item" alt="" coords="493,360,688,387"/>
+<area shape="rect" id="node15" href="$classGame_1_1UI_1_1LeaderboardWindow.html" title="Handles the leaderboard display window" alt="" coords="483,411,699,437"/>
+<area shape="rect" id="node16" href="$classGame_1_1UI_1_1ShopItem.html" title="A single shop item" alt="" coords="518,461,663,488"/>
+<area shape="rect" id="node17" href="$classGame_1_1UI_1_1ShopWindow.html" title="Handles the shop window&#39;s content display" alt="" coords="507,512,674,539"/>
 <area shape="rect" id="node18" href="$classGame_1_1UI_1_1StarHandler.html" title="Star handler" alt="" coords="511,563,671,589"/>
 <area shape="rect" id="node19" href="$classGame_1_1World_1_1Building.html" title="Building handler" alt="" coords="511,613,670,640"/>
 <area shape="rect" id="node20" href="$classGame_1_1World_1_1CarSpawner.html" title="Car spawner" alt="" coords="499,664,683,691"/>
-<area shape="rect" id="node21" href="$classGame_1_1World_1_1Chunk.html" title="Used for generating a new world" alt="" coords="517,715,664,741"/>
+<area shape="rect" id="node21" href="$classGame_1_1World_1_1Chunk.html" title="Stores a single chunk of the world" alt="" coords="517,715,664,741"/>
 <area shape="rect" id="node22" href="$classGame_1_1World_1_1Coin.html" title="Coin gameobject" alt="" coords="523,765,658,792"/>
 <area shape="rect" id="node23" href="$classGame_1_1World_1_1GameWorld.html" title="A class for handling chunk loading and unloading" alt="" coords="499,816,682,843"/>
 <area shape="rect" id="node24" href="$classGame_1_1World_1_1Prop.html" title="Prop handler" alt="" coords="523,867,658,893"/>

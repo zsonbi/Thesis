@@ -1,5 +1,5 @@
 <map id="Game.UI.ShopWindow" name="Game.UI.ShopWindow">
-<area shape="rect" id="node1" title=" " alt="" coords="21,256,188,495"/>
+<area shape="rect" id="node1" title="Handles the shop window&#39;s content display" alt="" coords="21,256,188,495"/>
 <area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="5,131,204,208"/>
 <area shape="rect" id="node3" title=" " alt="" coords="43,5,167,83"/>
 </map>

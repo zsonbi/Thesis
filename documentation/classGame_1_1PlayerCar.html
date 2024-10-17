@@ -111,23 +111,23 @@ Collaboration diagram for Game.PlayerCar:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGame_1_1PlayerCar__coll__graph.png" border="0" usemap="#aGame_8PlayerCar_coll__map" alt="Collaboration graph"/></div>
 <map name="aGame_8PlayerCar_coll__map" id="aGame_8PlayerCar_coll__map">
-<area shape="rect" title=" " alt="" coords="1357,1487,1512,1829"/>
-<area shape="rect" href="classGame_1_1Car.html" title=" " alt="" coords="1336,1120,1532,1359"/>
-<area shape="rect" href="classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="850,154,1048,231"/>
-<area shape="rect" href="classGame_1_1World_1_1Chunk.html" title="Used for generating a new world" alt="" coords="1019,316,1236,965"/>
-<area shape="rect" href="classGame_1_1World_1_1GameWorld.html" title="A class for handling chunk loading and unloading" alt="" coords="1119,1164,1312,1315"/>
-<area shape="rect" href="classGame_1_1GameController.html" title="Handles the main flow of the game scene" alt="" coords="1634,463,1845,819"/>
-<area shape="rect" href="classGame_1_1UI_1_1GameUI.html" title=" " alt="" coords="443,1421,642,1895"/>
-<area shape="rect" href="classGame_1_1UI_1_1ShopWindow.html" title=" " alt="" coords="459,1127,626,1351"/>
-<area shape="rect" href="classUtility_1_1ModalWindow.html" title="Modal window for alerting the user" alt="" coords="508,565,681,716"/>
-<area shape="rect" href="classGame_1_1UI_1_1LeaderboardWindow.html" title=" " alt="" coords="650,1157,866,1322"/>
-<area shape="rect" href="classGame_1_1UI_1_1StarHandler.html" title="Star handler" alt="" coords="158,989,318,1096"/>
-<area shape="rect" href="classGame_1_1World_1_1CarSpawner.html" title="Car spawner" alt="" coords="1825,1127,2009,1351"/>
-<area shape="rect" href="classGame_1_1CarController.html" title=" " alt="" coords="1364,433,1577,848"/>
-<area shape="rect" title=" " alt="" coords="887,5,1011,83"/>
-<area shape="rect" href="classGame_1_1World_1_1RoadGenerator.html" title="Generates a new road structure" alt="" coords="891,1142,1095,1337"/>
-<area shape="rect" title=" " alt="" coords="1345,132,1529,253"/>
-<area shape="rect" title=" " alt="" coords="2045,154,2104,231"/>
+<area shape="rect" title=" " alt="" coords="1353,1473,1507,1814"/>
+<area shape="rect" href="classGame_1_1Car.html" title=" " alt="" coords="1332,1105,1528,1344"/>
+<area shape="rect" href="classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="845,154,1044,231"/>
+<area shape="rect" href="classGame_1_1World_1_1Chunk.html" title="Stores a single chunk of the world" alt="" coords="1015,316,1232,951"/>
+<area shape="rect" href="classGame_1_1World_1_1GameWorld.html" title="A class for handling chunk loading and unloading" alt="" coords="1115,1149,1308,1300"/>
+<area shape="rect" href="classGame_1_1GameController.html" title="Handles the main flow of the game scene" alt="" coords="1630,455,1841,811"/>
+<area shape="rect" href="classGame_1_1UI_1_1GameUI.html" title="Controller for the game&#39;s UI" alt="" coords="439,1407,637,1880"/>
+<area shape="rect" href="classGame_1_1UI_1_1ShopWindow.html" title="Handles the shop window&#39;s content display" alt="" coords="455,1113,621,1337"/>
+<area shape="rect" href="classUtility_1_1ModalWindow.html" title="Modal window for alerting the user" alt="" coords="503,558,677,709"/>
+<area shape="rect" href="classGame_1_1UI_1_1LeaderboardWindow.html" title="Handles the leaderboard display window" alt="" coords="646,1142,862,1307"/>
+<area shape="rect" href="classGame_1_1UI_1_1StarHandler.html" title="Star handler" alt="" coords="154,975,314,1081"/>
+<area shape="rect" href="classGame_1_1World_1_1CarSpawner.html" title="Car spawner" alt="" coords="1821,1113,2005,1337"/>
+<area shape="rect" href="classGame_1_1CarController.html" title=" " alt="" coords="1359,426,1573,841"/>
+<area shape="rect" title=" " alt="" coords="883,5,1007,83"/>
+<area shape="rect" href="classGame_1_1World_1_1RoadGenerator.html" title="Generates a new road structure" alt="" coords="887,1127,1091,1322"/>
+<area shape="rect" title=" " alt="" coords="1341,132,1525,253"/>
+<area shape="rect" title=" " alt="" coords="2041,154,2099,231"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -334,10 +334,10 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            await <a class="code" href="classGame_1_1Car.html#a98cca5b2f769481e4ac7408a0a742fd9">gameController</a>.<a class="code" href="classGame_1_1GameController.html#af623e7876622503e3d0f985ad9b08e47">LoadAndDespawnChunks</a>(newChunk.<a class="code" href="classGame_1_1World_1_1Chunk.html#adce4d80142d5a8146a23758358504814">Row</a>, newChunk.<a class="code" href="classGame_1_1World_1_1Chunk.html#ad6574f4e35ae5e51f25bec7e1a47d2bc">Col</a>);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
 <div class="ttc" id="aclassGame_1_1GameController_html_af623e7876622503e3d0f985ad9b08e47"><div class="ttname"><a href="classGame_1_1GameController.html#af623e7876622503e3d0f985ad9b08e47">Game.GameController.LoadAndDespawnChunks</a></div><div class="ttdeci">async Task LoadAndDespawnChunks(int centerRow, int centerColumn)</div><div class="ttdoc">Handle the load and despawning of the chunks relative to the given indices</div><div class="ttdef"><b>Definition:</b> <a href="GameController_8cs_source.html#l00207">GameController.cs:207</a></div></div>
-<div class="ttc" id="aclassGame_1_1World_1_1Chunk_html_ad6574f4e35ae5e51f25bec7e1a47d2bc"><div class="ttname"><a href="classGame_1_1World_1_1Chunk.html#ad6574f4e35ae5e51f25bec7e1a47d2bc">Game.World.Chunk.Col</a></div><div class="ttdeci">int Col</div><div class="ttdef"><b>Definition:</b> <a href="Chunk_8cs_source.html#l00066">Chunk.cs:66</a></div></div>
-<div class="ttc" id="aclassGame_1_1World_1_1Chunk_html_adce4d80142d5a8146a23758358504814"><div class="ttname"><a href="classGame_1_1World_1_1Chunk.html#adce4d80142d5a8146a23758358504814">Game.World.Chunk.Row</a></div><div class="ttdeci">int Row</div><div class="ttdef"><b>Definition:</b> <a href="Chunk_8cs_source.html#l00065">Chunk.cs:65</a></div></div>
+<div class="ttc" id="aclassGame_1_1World_1_1Chunk_html_ad6574f4e35ae5e51f25bec7e1a47d2bc"><div class="ttname"><a href="classGame_1_1World_1_1Chunk.html#ad6574f4e35ae5e51f25bec7e1a47d2bc">Game.World.Chunk.Col</a></div><div class="ttdeci">int Col</div><div class="ttdoc">Col index of the chunk in the chunk matrix</div><div class="ttdef"><b>Definition:</b> <a href="Chunk_8cs_source.html#l00100">Chunk.cs:100</a></div></div>
+<div class="ttc" id="aclassGame_1_1World_1_1Chunk_html_adce4d80142d5a8146a23758358504814"><div class="ttname"><a href="classGame_1_1World_1_1Chunk.html#adce4d80142d5a8146a23758358504814">Game.World.Chunk.Row</a></div><div class="ttdeci">int Row</div><div class="ttdoc">Row index of the chunk in the chunk matrix</div><div class="ttdef"><b>Definition:</b> <a href="Chunk_8cs_source.html#l00095">Chunk.cs:95</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="Chunk_8cs_source.html#l00066">Game.World.Chunk.Col</a>, <a class="el" href="Car_8cs_source.html#l00016">Game.Car.gameController</a>, <a class="el" href="GameController_8cs_source.html#l00207">Game.GameController.LoadAndDespawnChunks()</a>, and <a class="el" href="Chunk_8cs_source.html#l00065">Game.World.Chunk.Row</a>.</p>
+<p class="reference">References <a class="el" href="Chunk_8cs_source.html#l00100">Game.World.Chunk.Col</a>, <a class="el" href="Car_8cs_source.html#l00016">Game.Car.gameController</a>, <a class="el" href="GameController_8cs_source.html#l00207">Game.GameController.LoadAndDespawnChunks()</a>, and <a class="el" href="Chunk_8cs_source.html#l00095">Game.World.Chunk.Row</a>.</p>
 
 </div>
 </div>
@@ -380,7 +380,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Car_8cs_source.html#l00027">Game.Car.effects</a>, and <a class="el" href="PlayerCar_8cs_source.html#l00039">Game.PlayerCar.Turbo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameUI_8cs_source.html#l00116">Game.UI.GameUI.BuyTurbo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameUI_8cs_source.html#l00145">Game.UI.GameUI.BuyTurbo()</a>.</p>
 
 </div>
 </div>
@@ -421,7 +421,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Car_8cs_source.html#l00027">Game.Car.effects</a>, and <a class="el" href="PlayerCar_8cs_source.html#l00038">Game.PlayerCar.Immune</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameUI_8cs_source.html#l00107">Game.UI.GameUI.BuyImmunity()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameUI_8cs_source.html#l00133">Game.UI.GameUI.BuyImmunity()</a>.</p>
 
 </div>
 </div>
@@ -459,7 +459,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Car_8cs_source.html#l00027">Game.Car.effects</a>, and <a class="el" href="PlayerCar_8cs_source.html#l00039">Game.PlayerCar.Turbo</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameUI_8cs_source.html#l00116">Game.UI.GameUI.BuyTurbo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameUI_8cs_source.html#l00145">Game.UI.GameUI.BuyTurbo()</a>.</p>
 
 </div>
 </div>
@@ -497,7 +497,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Car_8cs_source.html#l00027">Game.Car.effects</a>, and <a class="el" href="PlayerCar_8cs_source.html#l00038">Game.PlayerCar.Immune</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GameUI_8cs_source.html#l00107">Game.UI.GameUI.BuyImmunity()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GameUI_8cs_source.html#l00133">Game.UI.GameUI.BuyImmunity()</a>.</p>
 
 </div>
 </div>
@@ -972,7 +972,7 @@ Additional Inherited Members</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="PlayerCar_8cs_source.html#l00038">38</a> of file <a class="el" href="PlayerCar_8cs_source.html">PlayerCar.cs</a>.</p>
 <div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; } = <span class="keyword">false</span>;</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="PlayerCar_8cs_source.html#l00069">Game.PlayerCar.ApplyImmunity()</a>, <a class="el" href="PlayerCar_8cs_source.html#l00088">Game.PlayerCar.CancelImmunity()</a>, <a class="el" href="PlayerCar_8cs_source.html#l00232">Game.PlayerCar.OnCollisionEnter()</a>, <a class="el" href="PlayerCar_8cs_source.html#l00097">Game.PlayerCar.Update()</a>, and <a class="el" href="GameUI_8cs_source.html#l00064">Game.UI.GameUI.Update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="PlayerCar_8cs_source.html#l00069">Game.PlayerCar.ApplyImmunity()</a>, <a class="el" href="PlayerCar_8cs_source.html#l00088">Game.PlayerCar.CancelImmunity()</a>, <a class="el" href="PlayerCar_8cs_source.html#l00232">Game.PlayerCar.OnCollisionEnter()</a>, <a class="el" href="PlayerCar_8cs_source.html#l00097">Game.PlayerCar.Update()</a>, and <a class="el" href="GameUI_8cs_source.html#l00077">Game.UI.GameUI.Update()</a>.</p>
 
 </div>
 </div>
@@ -999,7 +999,7 @@ Additional Inherited Members</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="PlayerCar_8cs_source.html#l00039">39</a> of file <a class="el" href="PlayerCar_8cs_source.html">PlayerCar.cs</a>.</p>
 <div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; } = <span class="keyword">false</span>;</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="PlayerCar_8cs_source.html#l00059">Game.PlayerCar.ApplyTurbo()</a>, <a class="el" href="PlayerCar_8cs_source.html#l00079">Game.PlayerCar.CancelTurbo()</a>, <a class="el" href="PlayerCar_8cs_source.html#l00147">Game.PlayerCar.FixedUpdate()</a>, <a class="el" href="PlayerCar_8cs_source.html#l00097">Game.PlayerCar.Update()</a>, and <a class="el" href="GameUI_8cs_source.html#l00064">Game.UI.GameUI.Update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="PlayerCar_8cs_source.html#l00059">Game.PlayerCar.ApplyTurbo()</a>, <a class="el" href="PlayerCar_8cs_source.html#l00079">Game.PlayerCar.CancelTurbo()</a>, <a class="el" href="PlayerCar_8cs_source.html#l00147">Game.PlayerCar.FixedUpdate()</a>, <a class="el" href="PlayerCar_8cs_source.html#l00097">Game.PlayerCar.Update()</a>, and <a class="el" href="GameUI_8cs_source.html#l00077">Game.UI.GameUI.Update()</a>.</p>
 
 </div>
 </div>

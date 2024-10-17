@@ -1,5 +1,5 @@
 <map id="Game.World.Chunk" name="Game.World.Chunk">
-<area shape="rect" id="node1" title="Used for generating a new world" alt="" coords="5,256,223,949"/>
+<area shape="rect" id="node1" title="Stores a single chunk of the world" alt="" coords="5,256,223,935"/>
 <area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="15,131,213,208"/>
 <area shape="rect" id="node3" title=" " alt="" coords="52,5,176,83"/>
 </map>
