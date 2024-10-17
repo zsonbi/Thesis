@@ -86,7 +86,7 @@ namespace Game
 
             public void SaveGameResult()
             {
-                CoroutineRunner.RunCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.Game>(ServerConfig.PATH_FOR_SAVE_COINS, (int)(Doubled ? gameController.Coins * 2 : gameController.Coins), SavedCoins, onFailedAction: ShowRequestFail));
+                CoroutineRunner.RunCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.Game>(ServerConfig.PATH_TO_ADD_COINS, (int)(Doubled ? gameController.Coins * 2 : gameController.Coins), SavedCoins, onFailedAction: ShowRequestFail));
                 CoroutineRunner.RunCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.GameScore>(ServerConfig.PATH_FOR_STORE_GAME_SCORE, gameController.Score, onFailedAction: ShowRequestFail));
             }
 
