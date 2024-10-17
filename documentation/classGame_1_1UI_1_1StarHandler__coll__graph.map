@@ -1,5 +1,5 @@
 <map id="Game.UI.StarHandler" name="Game.UI.StarHandler">
 <area shape="rect" id="node1" title="Star handler" alt="" coords="25,256,185,363"/>
-<area shape="rect" id="node2" href="$classThreadSafeMonoBehaviour.html" title=" " alt="" coords="5,131,204,208"/>
+<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="5,131,204,208"/>
 <area shape="rect" id="node3" title=" " alt="" coords="43,5,167,83"/>
 </map>

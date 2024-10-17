@@ -2,6 +2,6 @@
 <area shape="rect" id="node1" title=" " alt="" coords="5,587,224,679"/>
 <area shape="rect" id="node5" href="$classGame_1_1CopCar.html" title=" " alt="" coords="59,727,171,804"/>
 <area shape="rect" id="node2" href="$classGame_1_1Car.html" title=" " alt="" coords="17,256,213,539"/>
-<area shape="rect" id="node3" href="$classThreadSafeMonoBehaviour.html" title=" " alt="" coords="15,131,214,208"/>
+<area shape="rect" id="node3" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="15,131,214,208"/>
 <area shape="rect" id="node4" title=" " alt="" coords="53,5,177,83"/>
 </map>

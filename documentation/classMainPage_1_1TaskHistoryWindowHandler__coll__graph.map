@@ -1,6 +1,6 @@
 <map id="MainPage.TaskHistoryWindowHandler" name="MainPage.TaskHistoryWindowHandler">
 <area shape="rect" id="node1" title="Task histories window controller" alt="" coords="5,472,223,637"/>
-<area shape="rect" id="node2" href="$classThreadSafeMonoBehaviour.html" title=" " alt="" coords="9,132,208,209"/>
-<area shape="rect" id="node4" href="$classModalWindow.html" title=" " alt="" coords="130,259,303,409"/>
+<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="9,132,208,209"/>
+<area shape="rect" id="node4" href="$classUtility_1_1ModalWindow.html" title="Modal window for alerting the user" alt="" coords="130,259,303,409"/>
 <area shape="rect" id="node3" title=" " alt="" coords="47,5,171,83"/>
 </map>

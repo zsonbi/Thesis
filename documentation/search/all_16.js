@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['xoffset_637',['XOffset',['../classGame_1_1World_1_1Chunk.html#af8b1726b0f705ddfaca6df2a0b27682c',1,'Game::World::Chunk']]],
-  ['xsize_638',['xSize',['../classGame_1_1World_1_1Chunk.html#a4e2e052d8bd99ca0d2f273cb8b92cbba',1,'Game::World::Chunk']]]
+  ['xoffset_638',['XOffset',['../classGame_1_1World_1_1Chunk.html#af8b1726b0f705ddfaca6df2a0b27682c',1,'Game::World::Chunk']]],
+  ['xsize_639',['xSize',['../classGame_1_1World_1_1Chunk.html#a4e2e052d8bd99ca0d2f273cb8b92cbba',1,'Game::World::Chunk']]]
 ];

@@ -88,33 +88,35 @@ $(document).ready(function(){initNavTree('Coin_8cs_source.html',''); initResizab
 <div class="contents">
 <a href="Coin_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> <a class="code" href="namespaceThesis__backend_1_1Data__Structures.html#abc2193c437ce44d24dbc7324b916ebc8">Game</a>;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGame.html">Game</a></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="keyword">namespace </span>World</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    {</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classGame_1_1World_1_1Coin.html">   11</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classGame_1_1World_1_1Coin.html">Coin</a> : <a class="code" href="classThreadSafeMonoBehaviour.html">ThreadSafeMonoBehaviour</a></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        {</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classGame_1_1World_1_1Coin.html#ac88a3c9c3cf6f16e5a048b7e69f1a7a2">   17</a></span>&#160;            <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code" href="classGame_1_1World_1_1Coin.html#ac88a3c9c3cf6f16e5a048b7e69f1a7a2">Update</a>()</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                this.gameObject.transform.Rotate(0, 0, Time.deltaTime * 45);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            }</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classGame_1_1World_1_1Coin.html#abf803d2c6dc4220584db3d199ce6f2f8">   26</a></span>&#160;            <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code" href="classGame_1_1World_1_1Coin.html#abf803d2c6dc4220584db3d199ce6f2f8">OnTriggerEnter</a>(Collider other)</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                this.gameObject.SetActive(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                other.gameObject.GetComponentInParent&lt;<a class="code" href="classGame_1_1PlayerCar.html">PlayerCar</a>&gt;().PickedUpCoin();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            }</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
-<div class="ttc" id="aclassGame_1_1PlayerCar_html"><div class="ttname"><a href="classGame_1_1PlayerCar.html">Game.PlayerCar</a></div><div class="ttdef"><b>Definition:</b> <a href="PlayerCar_8cs_source.html#l00011">PlayerCar.cs:12</a></div></div>
-<div class="ttc" id="aclassGame_1_1World_1_1Coin_html"><div class="ttname"><a href="classGame_1_1World_1_1Coin.html">Game.World.Coin</a></div><div class="ttdoc">Coin gameobject</div><div class="ttdef"><b>Definition:</b> <a href="Coin_8cs_source.html#l00011">Coin.cs:12</a></div></div>
-<div class="ttc" id="aclassGame_1_1World_1_1Coin_html_abf803d2c6dc4220584db3d199ce6f2f8"><div class="ttname"><a href="classGame_1_1World_1_1Coin.html#abf803d2c6dc4220584db3d199ce6f2f8">Game.World.Coin.OnTriggerEnter</a></div><div class="ttdeci">void OnTriggerEnter(Collider other)</div><div class="ttdoc">Trigger for coin pick up</div><div class="ttdef"><b>Definition:</b> <a href="Coin_8cs_source.html#l00026">Coin.cs:26</a></div></div>
-<div class="ttc" id="aclassGame_1_1World_1_1Coin_html_ac88a3c9c3cf6f16e5a048b7e69f1a7a2"><div class="ttname"><a href="classGame_1_1World_1_1Coin.html#ac88a3c9c3cf6f16e5a048b7e69f1a7a2">Game.World.Coin.Update</a></div><div class="ttdeci">void Update()</div><div class="ttdoc">Called every frame Handles the coin rotation</div><div class="ttdef"><b>Definition:</b> <a href="Coin_8cs_source.html#l00017">Coin.cs:17</a></div></div>
-<div class="ttc" id="aclassThreadSafeMonoBehaviour_html"><div class="ttname"><a href="classThreadSafeMonoBehaviour.html">ThreadSafeMonoBehaviour</a></div><div class="ttdef"><b>Definition:</b> <a href="ThreadSafeMonoBehaviour_8cs_source.html#l00003">ThreadSafeMonoBehaviour.cs:4</a></div></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> <a class="code" href="namespaceUtility.html">Utility</a>;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGame.html">Game</a></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keyword">namespace </span>World</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    {</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classGame_1_1World_1_1Coin.html">   12</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classGame_1_1World_1_1Coin.html">Coin</a> : <a class="code" href="classUtility_1_1ThreadSafeMonoBehaviour.html">ThreadSafeMonoBehaviour</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        {</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classGame_1_1World_1_1Coin.html#ac88a3c9c3cf6f16e5a048b7e69f1a7a2">   18</a></span>&#160;            <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code" href="classGame_1_1World_1_1Coin.html#ac88a3c9c3cf6f16e5a048b7e69f1a7a2">Update</a>()</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                this.gameObject.transform.Rotate(0, 0, Time.deltaTime * 45);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classGame_1_1World_1_1Coin.html#abf803d2c6dc4220584db3d199ce6f2f8">   27</a></span>&#160;            <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code" href="classGame_1_1World_1_1Coin.html#abf803d2c6dc4220584db3d199ce6f2f8">OnTriggerEnter</a>(Collider other)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                this.gameObject.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                other.gameObject.GetComponentInParent&lt;<a class="code" href="classGame_1_1PlayerCar.html">PlayerCar</a>&gt;().PickedUpCoin();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="ttc" id="aclassGame_1_1PlayerCar_html"><div class="ttname"><a href="classGame_1_1PlayerCar.html">Game.PlayerCar</a></div><div class="ttdef"><b>Definition:</b> <a href="PlayerCar_8cs_source.html#l00012">PlayerCar.cs:13</a></div></div>
+<div class="ttc" id="aclassGame_1_1World_1_1Coin_html"><div class="ttname"><a href="classGame_1_1World_1_1Coin.html">Game.World.Coin</a></div><div class="ttdoc">Coin gameobject</div><div class="ttdef"><b>Definition:</b> <a href="Coin_8cs_source.html#l00012">Coin.cs:13</a></div></div>
+<div class="ttc" id="aclassGame_1_1World_1_1Coin_html_abf803d2c6dc4220584db3d199ce6f2f8"><div class="ttname"><a href="classGame_1_1World_1_1Coin.html#abf803d2c6dc4220584db3d199ce6f2f8">Game.World.Coin.OnTriggerEnter</a></div><div class="ttdeci">void OnTriggerEnter(Collider other)</div><div class="ttdoc">Trigger for coin pick up</div><div class="ttdef"><b>Definition:</b> <a href="Coin_8cs_source.html#l00027">Coin.cs:27</a></div></div>
+<div class="ttc" id="aclassGame_1_1World_1_1Coin_html_ac88a3c9c3cf6f16e5a048b7e69f1a7a2"><div class="ttname"><a href="classGame_1_1World_1_1Coin.html#ac88a3c9c3cf6f16e5a048b7e69f1a7a2">Game.World.Coin.Update</a></div><div class="ttdeci">void Update()</div><div class="ttdoc">Called every frame Handles the coin rotation</div><div class="ttdef"><b>Definition:</b> <a href="Coin_8cs_source.html#l00018">Coin.cs:18</a></div></div>
+<div class="ttc" id="aclassUtility_1_1ThreadSafeMonoBehaviour_html"><div class="ttname"><a href="classUtility_1_1ThreadSafeMonoBehaviour.html">Utility.ThreadSafeMonoBehaviour</a></div><div class="ttdoc">Safely stores if the gameobject been destroyed in a bool</div><div class="ttdef"><b>Definition:</b> <a href="ThreadSafeMonoBehaviour_8cs_source.html#l00008">ThreadSafeMonoBehaviour.cs:9</a></div></div>
 <div class="ttc" id="anamespaceGame_html"><div class="ttname"><a href="namespaceGame.html">Game</a></div><div class="ttdef"><b>Definition:</b> <a href="BuildingCell_8cs_source.html#l00008">BuildingCell.cs:9</a></div></div>
 <div class="ttc" id="anamespaceThesis__backend_1_1Data__Structures_html_abc2193c437ce44d24dbc7324b916ebc8"><div class="ttname"><a href="namespaceThesis__backend_1_1Data__Structures.html#abc2193c437ce44d24dbc7324b916ebc8">Thesis_backend.Data_Structures.Game</a></div><div class="ttdeci">record Game</div><div class="ttdef"><b>Definition:</b> <a href="Game_8cs_source.html#l00007">Game.cs:9</a></div></div>
+<div class="ttc" id="anamespaceUtility_html"><div class="ttname"><a href="namespaceUtility.html">Utility</a></div><div class="ttdef"><b>Definition:</b> <a href="CoroutineRunner_01_8cs_source.html#l00004">CoroutineRunner .cs:5</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

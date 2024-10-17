@@ -88,33 +88,35 @@ $(document).ready(function(){initNavTree('LeaderboardItem_8cs_source.html',''); 
 <div class="contents">
 <a href="LeaderboardItem_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> TMPro;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGame.html">Game</a></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="keyword">namespace </span>UI</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    {</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classGame_1_1UI_1_1LeaderboardItem.html">    8</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classGame_1_1UI_1_1LeaderboardItem.html">LeaderboardItem</a> : <a class="code" href="classThreadSafeMonoBehaviour.html">ThreadSafeMonoBehaviour</a></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;            [SerializeField]</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classGame_1_1UI_1_1LeaderboardItem.html#ace0840f615c738f5a29d3b76691568a5">   11</a></span>&#160;            <span class="keyword">private</span> TMP_Text <a class="code" href="classGame_1_1UI_1_1LeaderboardItem.html#ace0840f615c738f5a29d3b76691568a5">playerNameText</a>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;            [SerializeField]</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classGame_1_1UI_1_1LeaderboardItem.html#a4cc5d66d50a51c1adc979f4b3cfaac83">   14</a></span>&#160;            <span class="keyword">private</span> TMP_Text <a class="code" href="classGame_1_1UI_1_1LeaderboardItem.html#a4cc5d66d50a51c1adc979f4b3cfaac83">scoreText</a>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classGame_1_1UI_1_1LeaderboardItem.html#a3d41fb9a51ff51b9e249c0831f4d788a">   16</a></span>&#160;            <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classGame_1_1UI_1_1LeaderboardItem.html#a3d41fb9a51ff51b9e249c0831f4d788a">Init</a>(<span class="keywordtype">string</span> playerName, <span class="keywordtype">int</span> score)</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                this.playerNameText.text = playerName;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                this.scoreText.text = score.ToString();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            }</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        }</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
-<div class="ttc" id="aclassGame_1_1UI_1_1LeaderboardItem_html"><div class="ttname"><a href="classGame_1_1UI_1_1LeaderboardItem.html">Game.UI.LeaderboardItem</a></div><div class="ttdef"><b>Definition:</b> <a href="LeaderboardItem_8cs_source.html#l00008">LeaderboardItem.cs:9</a></div></div>
-<div class="ttc" id="aclassGame_1_1UI_1_1LeaderboardItem_html_a3d41fb9a51ff51b9e249c0831f4d788a"><div class="ttname"><a href="classGame_1_1UI_1_1LeaderboardItem.html#a3d41fb9a51ff51b9e249c0831f4d788a">Game.UI.LeaderboardItem.Init</a></div><div class="ttdeci">void Init(string playerName, int score)</div><div class="ttdef"><b>Definition:</b> <a href="LeaderboardItem_8cs_source.html#l00016">LeaderboardItem.cs:16</a></div></div>
-<div class="ttc" id="aclassGame_1_1UI_1_1LeaderboardItem_html_a4cc5d66d50a51c1adc979f4b3cfaac83"><div class="ttname"><a href="classGame_1_1UI_1_1LeaderboardItem.html#a4cc5d66d50a51c1adc979f4b3cfaac83">Game.UI.LeaderboardItem.scoreText</a></div><div class="ttdeci">TMP_Text scoreText</div><div class="ttdef"><b>Definition:</b> <a href="LeaderboardItem_8cs_source.html#l00014">LeaderboardItem.cs:14</a></div></div>
-<div class="ttc" id="aclassGame_1_1UI_1_1LeaderboardItem_html_ace0840f615c738f5a29d3b76691568a5"><div class="ttname"><a href="classGame_1_1UI_1_1LeaderboardItem.html#ace0840f615c738f5a29d3b76691568a5">Game.UI.LeaderboardItem.playerNameText</a></div><div class="ttdeci">TMP_Text playerNameText</div><div class="ttdef"><b>Definition:</b> <a href="LeaderboardItem_8cs_source.html#l00011">LeaderboardItem.cs:11</a></div></div>
-<div class="ttc" id="aclassThreadSafeMonoBehaviour_html"><div class="ttname"><a href="classThreadSafeMonoBehaviour.html">ThreadSafeMonoBehaviour</a></div><div class="ttdef"><b>Definition:</b> <a href="ThreadSafeMonoBehaviour_8cs_source.html#l00003">ThreadSafeMonoBehaviour.cs:4</a></div></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> <a class="code" href="namespaceUtility.html">Utility</a>;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGame.html">Game</a></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keyword">namespace </span>UI</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    {</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classGame_1_1UI_1_1LeaderboardItem.html">    9</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classGame_1_1UI_1_1LeaderboardItem.html">LeaderboardItem</a> : <a class="code" href="classUtility_1_1ThreadSafeMonoBehaviour.html">ThreadSafeMonoBehaviour</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;            [SerializeField]</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classGame_1_1UI_1_1LeaderboardItem.html#ace0840f615c738f5a29d3b76691568a5">   12</a></span>&#160;            <span class="keyword">private</span> TMP_Text <a class="code" href="classGame_1_1UI_1_1LeaderboardItem.html#ace0840f615c738f5a29d3b76691568a5">playerNameText</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            [SerializeField]</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classGame_1_1UI_1_1LeaderboardItem.html#a4cc5d66d50a51c1adc979f4b3cfaac83">   15</a></span>&#160;            <span class="keyword">private</span> TMP_Text <a class="code" href="classGame_1_1UI_1_1LeaderboardItem.html#a4cc5d66d50a51c1adc979f4b3cfaac83">scoreText</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classGame_1_1UI_1_1LeaderboardItem.html#a3d41fb9a51ff51b9e249c0831f4d788a">   17</a></span>&#160;            <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classGame_1_1UI_1_1LeaderboardItem.html#a3d41fb9a51ff51b9e249c0831f4d788a">Init</a>(<span class="keywordtype">string</span> playerName, <span class="keywordtype">int</span> score)</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                this.playerNameText.text = playerName;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                this.scoreText.text = score.ToString();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="ttc" id="aclassGame_1_1UI_1_1LeaderboardItem_html"><div class="ttname"><a href="classGame_1_1UI_1_1LeaderboardItem.html">Game.UI.LeaderboardItem</a></div><div class="ttdef"><b>Definition:</b> <a href="LeaderboardItem_8cs_source.html#l00009">LeaderboardItem.cs:10</a></div></div>
+<div class="ttc" id="aclassGame_1_1UI_1_1LeaderboardItem_html_a3d41fb9a51ff51b9e249c0831f4d788a"><div class="ttname"><a href="classGame_1_1UI_1_1LeaderboardItem.html#a3d41fb9a51ff51b9e249c0831f4d788a">Game.UI.LeaderboardItem.Init</a></div><div class="ttdeci">void Init(string playerName, int score)</div><div class="ttdef"><b>Definition:</b> <a href="LeaderboardItem_8cs_source.html#l00017">LeaderboardItem.cs:17</a></div></div>
+<div class="ttc" id="aclassGame_1_1UI_1_1LeaderboardItem_html_a4cc5d66d50a51c1adc979f4b3cfaac83"><div class="ttname"><a href="classGame_1_1UI_1_1LeaderboardItem.html#a4cc5d66d50a51c1adc979f4b3cfaac83">Game.UI.LeaderboardItem.scoreText</a></div><div class="ttdeci">TMP_Text scoreText</div><div class="ttdef"><b>Definition:</b> <a href="LeaderboardItem_8cs_source.html#l00015">LeaderboardItem.cs:15</a></div></div>
+<div class="ttc" id="aclassGame_1_1UI_1_1LeaderboardItem_html_ace0840f615c738f5a29d3b76691568a5"><div class="ttname"><a href="classGame_1_1UI_1_1LeaderboardItem.html#ace0840f615c738f5a29d3b76691568a5">Game.UI.LeaderboardItem.playerNameText</a></div><div class="ttdeci">TMP_Text playerNameText</div><div class="ttdef"><b>Definition:</b> <a href="LeaderboardItem_8cs_source.html#l00012">LeaderboardItem.cs:12</a></div></div>
+<div class="ttc" id="aclassUtility_1_1ThreadSafeMonoBehaviour_html"><div class="ttname"><a href="classUtility_1_1ThreadSafeMonoBehaviour.html">Utility.ThreadSafeMonoBehaviour</a></div><div class="ttdoc">Safely stores if the gameobject been destroyed in a bool</div><div class="ttdef"><b>Definition:</b> <a href="ThreadSafeMonoBehaviour_8cs_source.html#l00008">ThreadSafeMonoBehaviour.cs:9</a></div></div>
 <div class="ttc" id="anamespaceGame_html"><div class="ttname"><a href="namespaceGame.html">Game</a></div><div class="ttdef"><b>Definition:</b> <a href="BuildingCell_8cs_source.html#l00008">BuildingCell.cs:9</a></div></div>
+<div class="ttc" id="anamespaceUtility_html"><div class="ttname"><a href="namespaceUtility.html">Utility</a></div><div class="ttdef"><b>Definition:</b> <a href="CoroutineRunner_01_8cs_source.html#l00004">CoroutineRunner .cs:5</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

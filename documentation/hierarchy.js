@@ -7,8 +7,8 @@ var hierarchy =
     ] ],
     [ "Game.GameConfig", "classGame_1_1GameConfig.html", null ],
     [ "MonoBehaviour", null, [
-      [ "CoroutineRunner", "classCoroutineRunner.html", null ],
-      [ "ThreadSafeMonoBehaviour", "classThreadSafeMonoBehaviour.html", [
+      [ "Utility.CoroutineRunner", "classUtility_1_1CoroutineRunner.html", null ],
+      [ "Utility.ThreadSafeMonoBehaviour", "classUtility_1_1ThreadSafeMonoBehaviour.html", [
         [ "CameraScript", "classCameraScript.html", null ],
         [ "Game.Car", "classGame_1_1Car.html", [
           [ "Game.NpcCar", "classGame_1_1NpcCar.html", [
@@ -40,9 +40,9 @@ var hierarchy =
         [ "MainPage.TaskHistoryHandler", "classMainPage_1_1TaskHistoryHandler.html", null ],
         [ "MainPage.TaskHistoryWindowHandler", "classMainPage_1_1TaskHistoryWindowHandler.html", null ],
         [ "MainPage.TaskOpenPanelController", "classMainPage_1_1TaskOpenPanelController.html", null ],
-        [ "ModalWindow", "classModalWindow.html", null ],
         [ "User.LoggedInChecker", "classUser_1_1LoggedInChecker.html", null ],
-        [ "User.UserController", "classUser_1_1UserController.html", null ]
+        [ "User.UserController", "classUser_1_1UserController.html", null ],
+        [ "Utility.ModalWindow", "classUtility_1_1ModalWindow.html", null ]
       ] ]
     ] ],
     [ "Game.PlayerCar.PoliceContainer", "classGame_1_1PlayerCar_1_1PoliceContainer.html", null ],

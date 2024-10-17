@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['leaderboardfiltertype_1153',['LeaderboardFilterType',['../namespaceDataTypes.html#adcf81f9231d209c182c67fb1dcf8c4ed',1,'DataTypes']]]
+  ['leaderboardfiltertype_1155',['LeaderboardFilterType',['../namespaceDataTypes.html#adcf81f9231d209c182c67fb1dcf8c4ed',1,'DataTypes']]]
 ];

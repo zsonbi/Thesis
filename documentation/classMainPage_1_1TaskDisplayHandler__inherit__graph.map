@@ -1,5 +1,5 @@
 <map id="MainPage.TaskDisplayHandler" name="MainPage.TaskDisplayHandler">
 <area shape="rect" id="node1" title="Task prefab display handler" alt="" coords="5,256,224,539"/>
-<area shape="rect" id="node2" href="$classThreadSafeMonoBehaviour.html" title=" " alt="" coords="15,131,214,208"/>
+<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="15,131,214,208"/>
 <area shape="rect" id="node3" title=" " alt="" coords="53,5,177,83"/>
 </map>

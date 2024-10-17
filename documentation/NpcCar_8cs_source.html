@@ -86,32 +86,30 @@ $(document).ready(function(){initNavTree('NpcCar_8cs_source.html',''); initResiz
 <div class="title">NpcCar.cs</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="NpcCar_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> <a class="code" href="namespaceGame.html">Game</a>.<a class="code" href="namespaceGame_1_1World.html">World</a>;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System.Collections;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGame.html">Game</a></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classGame_1_1NpcCar.html">    8</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classGame_1_1NpcCar.html">NpcCar</a> : <a class="code" href="classGame_1_1Car.html">Car</a></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    {</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classGame_1_1NpcCar.html#ac7bf4d022d0601c6262c6ffcfcf80a59">   10</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="classGame_1_1NpcCar.html#ac7bf4d022d0601c6262c6ffcfcf80a59">DetermineSteeringDirectionTowardsPlayer</a>()</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;            Vector3 difference = this.<a class="code" href="classGame_1_1Car.html#a98cca5b2f769481e4ac7408a0a742fd9">gameController</a>.<a class="code" href="classGame_1_1GameController.html#aeb425ec760007866c0ea8882d64a3171">PlayerPos</a> - this.gameObject.transform.position;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;            Quaternion.RotateTowards(Quaternion.LookRotation(difference), <span class="keyword">this</span>.gameObject.transform.rotation, Time.deltaTime);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            Vector3 crossProduct = Vector3.Cross(this.transform.forward, difference);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <span class="comment">//Debug.Log(crossProduct.y);</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            <span class="keywordflow">return</span> (crossProduct.y * 0.75f);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        }</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    }</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
-<div class="ttc" id="aclassGame_1_1Car_html"><div class="ttname"><a href="classGame_1_1Car.html">Game.Car</a></div><div class="ttdef"><b>Definition:</b> <a href="Car_8cs_source.html#l00013">Car.cs:14</a></div></div>
-<div class="ttc" id="aclassGame_1_1Car_html_a98cca5b2f769481e4ac7408a0a742fd9"><div class="ttname"><a href="classGame_1_1Car.html#a98cca5b2f769481e4ac7408a0a742fd9">Game.Car.gameController</a></div><div class="ttdeci">GameController gameController</div><div class="ttdef"><b>Definition:</b> <a href="Car_8cs_source.html#l00015">Car.cs:15</a></div></div>
-<div class="ttc" id="aclassGame_1_1GameController_html_aeb425ec760007866c0ea8882d64a3171"><div class="ttname"><a href="classGame_1_1GameController.html#aeb425ec760007866c0ea8882d64a3171">Game.GameController.PlayerPos</a></div><div class="ttdeci">Vector3 PlayerPos</div><div class="ttdoc">Getter to the player's current absolute position in the world</div><div class="ttdef"><b>Definition:</b> <a href="GameController_8cs_source.html#l00071">GameController.cs:71</a></div></div>
-<div class="ttc" id="aclassGame_1_1NpcCar_html"><div class="ttname"><a href="classGame_1_1NpcCar.html">Game.NpcCar</a></div><div class="ttdef"><b>Definition:</b> <a href="NpcCar_8cs_source.html#l00008">NpcCar.cs:9</a></div></div>
-<div class="ttc" id="aclassGame_1_1NpcCar_html_ac7bf4d022d0601c6262c6ffcfcf80a59"><div class="ttname"><a href="classGame_1_1NpcCar.html#ac7bf4d022d0601c6262c6ffcfcf80a59">Game.NpcCar.DetermineSteeringDirectionTowardsPlayer</a></div><div class="ttdeci">float DetermineSteeringDirectionTowardsPlayer()</div><div class="ttdef"><b>Definition:</b> <a href="NpcCar_8cs_source.html#l00010">NpcCar.cs:10</a></div></div>
-<div class="ttc" id="anamespaceGame_1_1World_html"><div class="ttname"><a href="namespaceGame_1_1World.html">Game.World</a></div><div class="ttdef"><b>Definition:</b> <a href="BuildingCell_8cs_source.html#l00010">BuildingCell.cs:11</a></div></div>
+<a href="NpcCar_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> <a class="code" href="namespaceUtility.html">Utility</a>;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGame.html">Game</a></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="classGame_1_1NpcCar.html">    6</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classGame_1_1NpcCar.html">NpcCar</a> : <a class="code" href="classGame_1_1Car.html">Car</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    {</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classGame_1_1NpcCar.html#ac7bf4d022d0601c6262c6ffcfcf80a59">    8</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="classGame_1_1NpcCar.html#ac7bf4d022d0601c6262c6ffcfcf80a59">DetermineSteeringDirectionTowardsPlayer</a>()</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;            Vector3 difference = this.<a class="code" href="classGame_1_1Car.html#a98cca5b2f769481e4ac7408a0a742fd9">gameController</a>.<a class="code" href="classGame_1_1GameController.html#aeb425ec760007866c0ea8882d64a3171">PlayerPos</a> - this.gameObject.transform.position;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;            Quaternion.RotateTowards(Quaternion.LookRotation(difference), <span class="keyword">this</span>.gameObject.transform.rotation, Time.deltaTime);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;            Vector3 crossProduct = Vector3.Cross(this.transform.forward, difference);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;            <span class="comment">//Debug.Log(crossProduct.y);</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            <span class="keywordflow">return</span> (crossProduct.y * 0.75f);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        }</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    }</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
+<div class="ttc" id="aclassGame_1_1Car_html"><div class="ttname"><a href="classGame_1_1Car.html">Game.Car</a></div><div class="ttdef"><b>Definition:</b> <a href="Car_8cs_source.html#l00014">Car.cs:15</a></div></div>
+<div class="ttc" id="aclassGame_1_1Car_html_a98cca5b2f769481e4ac7408a0a742fd9"><div class="ttname"><a href="classGame_1_1Car.html#a98cca5b2f769481e4ac7408a0a742fd9">Game.Car.gameController</a></div><div class="ttdeci">GameController gameController</div><div class="ttdef"><b>Definition:</b> <a href="Car_8cs_source.html#l00016">Car.cs:16</a></div></div>
+<div class="ttc" id="aclassGame_1_1GameController_html_aeb425ec760007866c0ea8882d64a3171"><div class="ttname"><a href="classGame_1_1GameController.html#aeb425ec760007866c0ea8882d64a3171">Game.GameController.PlayerPos</a></div><div class="ttdeci">Vector3 PlayerPos</div><div class="ttdoc">Getter to the player's current absolute position in the world</div><div class="ttdef"><b>Definition:</b> <a href="GameController_8cs_source.html#l00072">GameController.cs:72</a></div></div>
+<div class="ttc" id="aclassGame_1_1NpcCar_html"><div class="ttname"><a href="classGame_1_1NpcCar.html">Game.NpcCar</a></div><div class="ttdef"><b>Definition:</b> <a href="NpcCar_8cs_source.html#l00006">NpcCar.cs:7</a></div></div>
+<div class="ttc" id="aclassGame_1_1NpcCar_html_ac7bf4d022d0601c6262c6ffcfcf80a59"><div class="ttname"><a href="classGame_1_1NpcCar.html#ac7bf4d022d0601c6262c6ffcfcf80a59">Game.NpcCar.DetermineSteeringDirectionTowardsPlayer</a></div><div class="ttdeci">float DetermineSteeringDirectionTowardsPlayer()</div><div class="ttdef"><b>Definition:</b> <a href="NpcCar_8cs_source.html#l00008">NpcCar.cs:8</a></div></div>
 <div class="ttc" id="anamespaceGame_html"><div class="ttname"><a href="namespaceGame.html">Game</a></div><div class="ttdef"><b>Definition:</b> <a href="BuildingCell_8cs_source.html#l00008">BuildingCell.cs:9</a></div></div>
+<div class="ttc" id="anamespaceUtility_html"><div class="ttname"><a href="namespaceUtility.html">Utility</a></div><div class="ttdef"><b>Definition:</b> <a href="CoroutineRunner_01_8cs_source.html#l00004">CoroutineRunner .cs:5</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

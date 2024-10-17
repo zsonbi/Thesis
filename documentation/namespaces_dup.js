@@ -6,5 +6,6 @@ var namespaces_dup =
     [ "Game", "namespaceGame.html", "namespaceGame" ],
     [ "MainPage", "namespaceMainPage.html", "namespaceMainPage" ],
     [ "Thesis_backend", "namespaceThesis__backend.html", "namespaceThesis__backend" ],
-    [ "User", "namespaceUser.html", "namespaceUser" ]
+    [ "User", "namespaceUser.html", "namespaceUser" ],
+    [ "Utility", "namespaceUtility.html", "namespaceUtility" ]
 ];

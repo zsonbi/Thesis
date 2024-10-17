@@ -1,5 +1,5 @@
 <map id="Game.World.Prop" name="Game.World.Prop">
 <area shape="rect" id="node1" title="Prop handler" alt="" coords="19,256,191,436"/>
-<area shape="rect" id="node2" href="$classThreadSafeMonoBehaviour.html" title=" " alt="" coords="5,131,204,208"/>
+<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="5,131,204,208"/>
 <area shape="rect" id="node3" title=" " alt="" coords="43,5,167,83"/>
 </map>

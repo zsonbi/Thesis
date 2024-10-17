@@ -1,0 +1,5 @@
+<map id="Utility.ModalWindow" name="Utility.ModalWindow">
+<area shape="rect" id="node1" title="Modal window for alerting the user" alt="" coords="18,256,191,407"/>
+<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="5,131,204,208"/>
+<area shape="rect" id="node3" title=" " alt="" coords="43,5,167,83"/>
+</map>

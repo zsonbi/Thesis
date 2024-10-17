@@ -1,6 +1,6 @@
 <map id="Game.PlayerCar" name="Game.PlayerCar">
 <area shape="rect" id="node1" title=" " alt="" coords="27,587,182,928"/>
 <area shape="rect" id="node2" href="$classGame_1_1Car.html" title=" " alt="" coords="7,256,203,539"/>
-<area shape="rect" id="node3" href="$classThreadSafeMonoBehaviour.html" title=" " alt="" coords="5,131,204,208"/>
+<area shape="rect" id="node3" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="5,131,204,208"/>
 <area shape="rect" id="node4" title=" " alt="" coords="43,5,167,83"/>
 </map>

@@ -1,5 +1,5 @@
-<map id="ThreadSafeMonoBehaviour" name="ThreadSafeMonoBehaviour">
-<area shape="rect" id="node1" title=" " alt="" coords="2951,131,3149,208"/>
+<map id="Utility.ThreadSafeMonoBehaviour" name="Utility.ThreadSafeMonoBehaviour">
+<area shape="rect" id="node1" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="2930,131,3170,208"/>
 <area shape="rect" id="node3" href="$classCameraScript.html" title="Script which follows the player&#39;s car" alt="" coords="5,549,137,656"/>
 <area shape="rect" id="node4" href="$classGame_1_1Car.html" title=" " alt="" coords="161,461,357,744"/>
 <area shape="rect" id="node8" href="$classGame_1_1CarController.html" title=" " alt="" coords="382,395,595,810"/>
@@ -26,9 +26,9 @@
 <area shape="rect" id="node29" href="$classMainPage_1_1TaskHistoryHandler.html" title="Handles the task history display" alt="" coords="4931,549,5147,656"/>
 <area shape="rect" id="node30" href="$classMainPage_1_1TaskHistoryWindowHandler.html" title="Task histories window controller" alt="" coords="5172,513,5389,693"/>
 <area shape="rect" id="node31" href="$classMainPage_1_1TaskOpenPanelController.html" title="Controller for displaying, editing and creating tasks" alt="" coords="5414,410,5665,795"/>
-<area shape="rect" id="node32" href="$classModalWindow.html" title=" " alt="" coords="5689,527,5862,678"/>
-<area shape="rect" id="node33" href="$classUser_1_1LoggedInChecker.html" title="Checks if the user has a session stored in the backend" alt="" coords="5886,535,6102,671"/>
-<area shape="rect" id="node34" href="$classUser_1_1UserController.html" title="Handles the user actions such as registering and login" alt="" coords="6126,469,6329,737"/>
+<area shape="rect" id="node32" href="$classUser_1_1LoggedInChecker.html" title="Checks if the user has a session stored in the backend" alt="" coords="5689,535,5905,671"/>
+<area shape="rect" id="node33" href="$classUser_1_1UserController.html" title="Handles the user actions such as registering and login" alt="" coords="5929,469,6131,737"/>
+<area shape="rect" id="node34" href="$classUtility_1_1ModalWindow.html" title="Modal window for alerting the user" alt="" coords="6155,527,6329,678"/>
 <area shape="rect" id="node2" title=" " alt="" coords="2988,5,3112,83"/>
 <area shape="rect" id="node5" href="$classGame_1_1NpcCar.html" title=" " alt="" coords="45,1122,263,1214"/>
 <area shape="rect" id="node7" href="$classGame_1_1PlayerCar.html" title=" " alt="" coords="287,997,442,1339"/>

@@ -65,10 +65,12 @@ var annotated_dup =
       [ "UserController", "classUser_1_1UserController.html", "classUser_1_1UserController" ],
       [ "UserData", "classUser_1_1UserData.html", "classUser_1_1UserData" ]
     ] ],
+    [ "Utility", "namespaceUtility.html", [
+      [ "CoroutineRunner", "classUtility_1_1CoroutineRunner.html", "classUtility_1_1CoroutineRunner" ],
+      [ "ModalWindow", "classUtility_1_1ModalWindow.html", "classUtility_1_1ModalWindow" ],
+      [ "ThreadSafeMonoBehaviour", "classUtility_1_1ThreadSafeMonoBehaviour.html", "classUtility_1_1ThreadSafeMonoBehaviour" ]
+    ] ],
     [ "CameraScript", "classCameraScript.html", "classCameraScript" ],
-    [ "CoroutineRunner", "classCoroutineRunner.html", "classCoroutineRunner" ],
     [ "EdgeRoadContainer", "classEdgeRoadContainer.html", "classEdgeRoadContainer" ],
-    [ "ModalWindow", "classModalWindow.html", "classModalWindow" ],
-    [ "Server", "classServer.html", "classServer" ],
-    [ "ThreadSafeMonoBehaviour", "classThreadSafeMonoBehaviour.html", "classThreadSafeMonoBehaviour" ]
+    [ "Server", "classServer.html", "classServer" ]
 ];
