@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Tests;
 using Thesis_backend.Data_Structures;
 using UnityEngine;
+using Utility;
 
 namespace Tests
 {
@@ -19,7 +20,6 @@ namespace Tests
             RegisterTestUsers();
             System.Threading.Thread.Sleep((int)(TestConfig.ANSWER_TOLERANCE * 1000));
         }
-    
 
         private void RegisterTestUsers()
         {
@@ -27,7 +27,7 @@ namespace Tests
             TestConfig.Email = TestConfig.UserName + "@gmail.com";
             Register(TestConfig.UserName, TestConfig.Email, TestConfig.Password);
 
-            TestConfig.Username2 = "testt7GuSu" + (DateTime.Now.Ticks+1).ToString();
+            TestConfig.Username2 = "testt7GuSu" + (DateTime.Now.Ticks + 1).ToString();
             TestConfig.Email2 = TestConfig.Username2 + "@gmail.com";
             Register(TestConfig.Username2, TestConfig.Email2, TestConfig.Password);
         }

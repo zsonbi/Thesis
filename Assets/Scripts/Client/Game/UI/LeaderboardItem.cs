@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using Utility;
 
 namespace Game
 {

@@ -1,5 +1,6 @@
 using Game;
 using UnityEngine;
+using Utility;
 
 namespace Game
 {

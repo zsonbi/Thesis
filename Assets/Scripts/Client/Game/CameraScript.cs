@@ -1,5 +1,6 @@
 using Game;
 using UnityEngine;
+using Utility;
 
 /// <summary>
 /// Script which follows the player's car

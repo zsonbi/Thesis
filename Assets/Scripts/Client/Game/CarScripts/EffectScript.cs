@@ -1,5 +1,6 @@
 using DataTypes;
 using UnityEngine;
+using Utility;
 
 namespace Game
 {

@@ -2,6 +2,7 @@
 using Tests;
 using UnityEngine;
 using MainPage;
+using Utility;
 
 namespace Tests
 {

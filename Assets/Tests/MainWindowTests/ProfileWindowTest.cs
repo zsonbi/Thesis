@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
 using MainPage;
 using User;
+using Utility;
 
 namespace Tests
 {

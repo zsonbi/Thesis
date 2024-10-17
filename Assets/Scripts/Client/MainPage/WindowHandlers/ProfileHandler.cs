@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using User;
+using Utility;
 
 namespace MainPage
 {
