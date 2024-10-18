@@ -1,16 +1,16 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 10/17/2024 - 12:48:30 |
+| Generated on: | 10/18/2024 - 13:45:28 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 2 |
 | Classes: | 68 |
 | Files: | 68 |
-| Covered lines: | 2620 |
-| Uncovered lines: | 588 |
+| Covered lines: | 2616 |
+| Uncovered lines: | 592 |
 | Coverable lines: | 3208 |
-| Total lines: | 7423 |
-| Line coverage: | 81.6% (2620 of 3208) |
+| Total lines: | 7425 |
+| Line coverage: | 81.5% (2616 of 3208) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 467 |
@@ -19,10 +19,10 @@
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**Tests**|**735**|**21**|**756**|**1390**|**97.2%**|**0**|**0**|****|**56**|**56**|**100%**|
+|**Tests**|**735**|**21**|**756**|**1392**|**97.2%**|**0**|**0**|****|**56**|**56**|**100%**|
 |Tests.GameTests.GameTests|217|0|217|352|100%|0|0||16|16|100%|
-|Tests.GameTests.GameTestsParent[T]|13|9|22|46|59%|0|0||1|1|100%|
-|Tests.GameTests.RoadGeneratorTests|26|0|26|55|100%|0|0||3|3|100%|
+|Tests.GameTests.GameTestsParent[T]|13|9|22|47|59%|0|0||1|1|100%|
+|Tests.GameTests.RoadGeneratorTests|26|0|26|56|100%|0|0||3|3|100%|
 |Tests.GameTests.ShopTests|85|3|88|157|96.5%|0|0||6|6|100%|
 |Tests.GlobalSetup|20|0|20|56|100%|0|0||4|4|100%|
 |Tests.MainWindowTests.FriendWindowTests|69|0|69|128|100%|0|0||4|4|100%|
@@ -33,7 +33,7 @@
 |Tests.UnityTestParent[T]|59|0|59|108|100%|0|0||5|5|100%|
 |Tests.UserTests.UserControllerTests|22|0|22|47|100%|0|0||3|3|100%|
 |Tests.UserTests.UserTestsParent[T]|4|0|4|24|100%|0|0||1|1|100%|
-|**ThesisScripts**|**1885**|**567**|**2452**|**6033**|**76.8%**|**0**|**0**|****|**411**|**495**|**83%**|
+|**ThesisScripts**|**1881**|**571**|**2452**|**6033**|**76.7%**|**0**|**0**|****|**411**|**495**|**83%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|6|0|6|17|100%|0|0||5|5|100%|
 |CameraScript|7|0|7|35|100%|0|0||2|2|100%|
 |Config.ServerConfig|6|1|7|151|85.7%|0|0||6|7|85.7%|
@@ -41,7 +41,7 @@
 |EdgeRoadContainer|9|0|9|15|100%|0|0||7|7|100%|
 |Game.Car|67|18|85|144|78.8%|0|0||13|13|100%|
 |Game.CarController|95|24|119|230|79.8%|0|0||14|18|77.7%|
-|Game.CopCar|47|11|58|93|81%|0|0||1|1|100%|
+|Game.CopCar|43|15|58|93|74.1%|0|0||1|1|100%|
 |Game.EffectScript|1|0|1|14|100%|0|0||1|1|100%|
 |Game.EnableWheelPhysicMaterial|16|0|16|38|100%|0|0||2|2|100%|
 |Game.GameController|115|10|125|290|92%|0|0||25|25|100%|

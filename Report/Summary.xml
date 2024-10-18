@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>10/17/2024 - 12:48:30</Generatedon>
+    <Generatedon>10/18/2024 - 13:45:28</Generatedon>
     <Parser>MultiReportParser (3x OpenCoverParser)</Parser>
     <Assemblies>2</Assemblies>
     <Classes>68</Classes>
     <Files>68</Files>
-    <Coveredlines>2620</Coveredlines>
-    <Uncoveredlines>588</Uncoveredlines>
+    <Coveredlines>2616</Coveredlines>
+    <Uncoveredlines>592</Uncoveredlines>
     <Coverablelines>3208</Coverablelines>
-    <Totallines>7423</Totallines>
-    <Linecoverage>81.6</Linecoverage>
+    <Totallines>7425</Totallines>
+    <Linecoverage>81.5</Linecoverage>
     <Coveredbranches>0</Coveredbranches>
     <Totalbranches>0</Totalbranches>
     <Coveredmethods>467</Coveredmethods>
@@ -18,10 +18,10 @@
     <Methodcoverage>84.7</Methodcoverage>
   </Summary>
   <Coverage>
-    <Assembly name="Tests" classes="13" coverage="97.2" coveredlines="735" coverablelines="756" totallines="1390" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="56" totalmethods="56" methodcoverage="100">
+    <Assembly name="Tests" classes="13" coverage="97.2" coveredlines="735" coverablelines="756" totallines="1392" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="56" totalmethods="56" methodcoverage="100">
       <Class name="Tests.GameTests.GameTests" coverage="100" coveredlines="217" coverablelines="217" totallines="352" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="16" totalmethods="16" methodcoverage="100" />
-      <Class name="Tests.GameTests.GameTestsParent[T]" coverage="59" coveredlines="13" coverablelines="22" totallines="46" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
-      <Class name="Tests.GameTests.RoadGeneratorTests" coverage="100" coveredlines="26" coverablelines="26" totallines="55" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
+      <Class name="Tests.GameTests.GameTestsParent[T]" coverage="59" coveredlines="13" coverablelines="22" totallines="47" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
+      <Class name="Tests.GameTests.RoadGeneratorTests" coverage="100" coveredlines="26" coverablelines="26" totallines="56" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
       <Class name="Tests.GameTests.ShopTests" coverage="96.5" coveredlines="85" coverablelines="88" totallines="157" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="6" methodcoverage="100" />
       <Class name="Tests.GlobalSetup" coverage="100" coveredlines="20" coverablelines="20" totallines="56" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="4" methodcoverage="100" />
       <Class name="Tests.MainWindowTests.FriendWindowTests" coverage="100" coveredlines="69" coverablelines="69" totallines="128" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="4" methodcoverage="100" />
@@ -33,7 +33,7 @@
       <Class name="Tests.UserTests.UserControllerTests" coverage="100" coveredlines="22" coverablelines="22" totallines="47" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
       <Class name="Tests.UserTests.UserTestsParent[T]" coverage="100" coveredlines="4" coverablelines="4" totallines="24" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
     </Assembly>
-    <Assembly name="ThesisScripts" classes="55" coverage="76.8" coveredlines="1885" coverablelines="2452" totallines="6033" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="411" totalmethods="495" methodcoverage="83">
+    <Assembly name="ThesisScripts" classes="55" coverage="76.7" coveredlines="1881" coverablelines="2452" totallines="6033" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="411" totalmethods="495" methodcoverage="83">
       <Class name="Assets.Scripts.Client.DataTypes.ChunkCellContainer" coverage="100" coveredlines="6" coverablelines="6" totallines="17" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="5" methodcoverage="100" />
       <Class name="CameraScript" coverage="100" coveredlines="7" coverablelines="7" totallines="35" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
       <Class name="Config.ServerConfig" coverage="85.7" coveredlines="6" coverablelines="7" totallines="151" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="7" methodcoverage="85.7" />
@@ -41,7 +41,7 @@
       <Class name="EdgeRoadContainer" coverage="100" coveredlines="9" coverablelines="9" totallines="15" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="7" totalmethods="7" methodcoverage="100" />
       <Class name="Game.Car" coverage="78.8" coveredlines="67" coverablelines="85" totallines="144" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="13" totalmethods="13" methodcoverage="100" />
       <Class name="Game.CarController" coverage="79.8" coveredlines="95" coverablelines="119" totallines="230" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="14" totalmethods="18" methodcoverage="77.7" />
-      <Class name="Game.CopCar" coverage="81" coveredlines="47" coverablelines="58" totallines="93" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
+      <Class name="Game.CopCar" coverage="74.1" coveredlines="43" coverablelines="58" totallines="93" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
       <Class name="Game.EffectScript" coverage="100" coveredlines="1" coverablelines="1" totallines="14" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
       <Class name="Game.EnableWheelPhysicMaterial" coverage="100" coveredlines="16" coverablelines="16" totallines="38" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
       <Class name="Game.GameController" coverage="92" coveredlines="115" coverablelines="125" totallines="290" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="25" totalmethods="25" methodcoverage="100" />
