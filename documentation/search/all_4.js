@@ -6,7 +6,7 @@ var searchData=
   ['dbelement_2ecs_145',['DbElement.cs',['../DbElement_8cs.html',1,'']]],
   ['default_5ftaskintervals_146',['DEFAULT_TASKINTERVALS',['../classConfig_1_1ServerConfig.html#a69bbf2a306d19fd24eba05a7ec58e501',1,'Config::ServerConfig']]],
   ['default_5ftasktype_147',['DEFAULT_TASKTYPE',['../classConfig_1_1ServerConfig.html#ae695ed1003d463a61dfa9383869c6155',1,'Config::ServerConfig']]],
-  ['deleted_148',['Deleted',['../classMainPage_1_1FriendHandler.html#ad4c7d3a3693bfc7ae9ae4e730077e297',1,'MainPage::FriendHandler']]],
+  ['deleted_148',['Deleted',['../classMainPage_1_1FriendHandler.html#ad4c7d3a3693bfc7ae9ae4e730077e297',1,'MainPage.FriendHandler.Deleted()'],['../namespaceThesis__backend_1_1Data__Structures.html#a3ee619fe24d5e1e4f39c35a6625dd082',1,'Thesis_backend.Data_Structures.Deleted()']]],
   ['deletedtask_149',['DeletedTask',['../classMainPage_1_1TaskOpenPanelController.html#a254ff7d6e427208a7f9ae3bec5ae7ba7',1,'MainPage::TaskOpenPanelController']]],
   ['deletefriend_150',['DeleteFriend',['../classMainPage_1_1FriendHandler.html#a118aed89960ec6338411e4130e3fe87c',1,'MainPage::FriendHandler']]],
   ['deletetask_151',['DeleteTask',['../classMainPage_1_1TaskOpenPanelController.html#a3107b94793886f6af28ac9415fb44370',1,'MainPage::TaskOpenPanelController']]],

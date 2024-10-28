@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"User_8cs.html#aae518baa5cf2ea5aa7ab44999037e244":[2,0,0,0,0,0,0,10,3],
 "User_8cs.html#ab65ae00cbe1b1602c72df38d32dff1df":[2,0,0,0,0,0,0,10,8],
 "User_8cs_source.html":[2,0,0,0,0,0,0,10],
 "World_8cs.html":[2,0,0,0,0,1,2,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "classGame_1_1UI_1_1ShopWindow.html#a1f43b9a8b47dd2daee8dac10307ddd85":[1,0,3,0,4,9],
 "classGame_1_1UI_1_1ShopWindow.html#a24917a20758384a70895bad82cc01787":[1,0,3,0,4,6],
 "classGame_1_1UI_1_1ShopWindow.html#a2bef3de319f4e3e85fe4e26bdf237dc9":[1,0,3,0,4,11],
-"classGame_1_1UI_1_1ShopWindow.html#a3b5edb9b2ce8f2fc819be3b0ae0d346d":[1,0,3,0,4,10],
-"classGame_1_1UI_1_1ShopWindow.html#a6a703aeb6610fe526d65a9b89ad4c78e":[1,0,3,0,4,4]
+"classGame_1_1UI_1_1ShopWindow.html#a3b5edb9b2ce8f2fc819be3b0ae0d346d":[1,0,3,0,4,10]
 };

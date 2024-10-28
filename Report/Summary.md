@@ -1,21 +1,21 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 10/18/2024 - 13:45:28 |
+| Generated on: | 10/28/2024 - 16:47:36 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 2 |
 | Classes: | 68 |
 | Files: | 68 |
 | Covered lines: | 2616 |
-| Uncovered lines: | 592 |
-| Coverable lines: | 3208 |
-| Total lines: | 7425 |
-| Line coverage: | 81.5% (2616 of 3208) |
+| Uncovered lines: | 593 |
+| Coverable lines: | 3209 |
+| Total lines: | 7427 |
+| Line coverage: | 81.5% (2616 of 3209) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 467 |
-| Total methods: | 551 |
-| Method coverage: | 84.7% (467 of 551) |
+| Covered methods: | 470 |
+| Total methods: | 554 |
+| Method coverage: | 84.8% (470 of 554) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -33,15 +33,15 @@
 |Tests.UnityTestParent[T]|59|0|59|108|100%|0|0||5|5|100%|
 |Tests.UserTests.UserControllerTests|22|0|22|47|100%|0|0||3|3|100%|
 |Tests.UserTests.UserTestsParent[T]|4|0|4|24|100%|0|0||1|1|100%|
-|**ThesisScripts**|**1881**|**571**|**2452**|**6033**|**76.7%**|**0**|**0**|****|**411**|**495**|**83%**|
+|**ThesisScripts**|**1881**|**572**|**2453**|**6035**|**76.6%**|**0**|**0**|****|**414**|**498**|**83.1%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|6|0|6|17|100%|0|0||5|5|100%|
 |CameraScript|7|0|7|35|100%|0|0||2|2|100%|
 |Config.ServerConfig|6|1|7|151|85.7%|0|0||6|7|85.7%|
 |DataTypes.TaskClosedEventArgs|0|4|4|14|0%|0|0||0|1|0%|
 |EdgeRoadContainer|9|0|9|15|100%|0|0||7|7|100%|
-|Game.Car|67|18|85|144|78.8%|0|0||13|13|100%|
-|Game.CarController|95|24|119|230|79.8%|0|0||14|18|77.7%|
-|Game.CopCar|43|15|58|93|74.1%|0|0||1|1|100%|
+|Game.Car|63|22|85|144|74.1%|0|0||13|13|100%|
+|Game.CarController|94|25|119|230|78.9%|0|0||14|18|77.7%|
+|Game.CopCar|47|11|58|93|81%|0|0||1|1|100%|
 |Game.EffectScript|1|0|1|14|100%|0|0||1|1|100%|
 |Game.EnableWheelPhysicMaterial|16|0|16|38|100%|0|0||2|2|100%|
 |Game.GameController|115|10|125|290|92%|0|0||25|25|100%|
@@ -75,7 +75,7 @@
 |Thesis_backend.Data_Structures.Game|6|2|8|20|75%|0|0||12|15|80%|
 |Thesis_backend.Data_Structures.GameScore|4|2|6|19|66.6%|0|0||8|11|72.7%|
 |Thesis_backend.Data_Structures.OwnedCar|2|3|5|21|40%|0|0||4|9|44.4%|
-|Thesis_backend.Data_Structures.PlayerTask|48|12|60|87|80%|0|0||21|23|91.3%|
+|Thesis_backend.Data_Structures.PlayerTask|49|12|61|89|80.3%|0|0||24|26|92.3%|
 |Thesis_backend.Data_Structures.Shop|3|1|4|15|75%|0|0||6|7|85.7%|
 |Thesis_backend.Data_Structures.TaskHistory|0|6|6|20|0%|0|0||0|11|0%|
 |Thesis_backend.Data_Structures.TaskRequest|4|0|4|16|100%|0|0||8|8|100%|

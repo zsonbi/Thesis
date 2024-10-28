@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"classGame_1_1UI_1_1ShopWindow.html#a6a703aeb6610fe526d65a9b89ad4c78e":[1,0,3,0,4,4],
 "classGame_1_1UI_1_1ShopWindow.html#a9297b39a0fa7a77e8cf3022bc28c0b35":[1,0,3,0,4,3],
 "classGame_1_1UI_1_1ShopWindow.html#a961c4381bc83af0f3cb7fe648c2bde41":[1,0,3,0,4,1],
 "classGame_1_1UI_1_1ShopWindow.html#ab11a75acddb1467e29d7624a4d12b8b9":[1,0,3,0,4,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "classUser_1_1UserController.html#a0e115007266961c890001eb18f11bd1f":[1,0,6,1,1],
 "classUser_1_1UserController.html#a1300529ad3a9631379b8ca49200e315e":[1,0,6,1,10],
 "classUser_1_1UserController.html#a156a37eabac915f5d287201599b3a0b1":[1,0,6,1,6],
-"classUser_1_1UserController.html#a17e85e80e7b55a5c9c0b01bc0ed5735e":[1,0,6,1,9],
-"classUser_1_1UserController.html#a1ee460095513422a536daa1b5d0b3419":[1,0,6,1,13]
+"classUser_1_1UserController.html#a17e85e80e7b55a5c9c0b01bc0ed5735e":[1,0,6,1,9]
 };
