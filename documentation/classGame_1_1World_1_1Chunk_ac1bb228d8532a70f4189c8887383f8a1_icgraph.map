@@ -1,0 +1,4 @@
+<map id="Game.World.Chunk.PropLoaded" name="Game.World.Chunk.PropLoaded">
+<area shape="rect" id="node1" title="Callback for when each prop asset is loaded" alt="" coords="248,5,475,32"/>
+<area shape="rect" id="node2" href="$classGame_1_1World_1_1Chunk.html#a697c68dad0a2d0dcad6d09d96f614b04" title="Start when the script is loaded" alt="" coords="5,5,200,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Game.World.RoadGenerator.CheckForward" name="Game.World.RoadGenerator.CheckForward">
+<area shape="rect" id="node1" title="Checks if the road moving in that direction will run into an another road" alt="" coords="689,5,988,32"/>
+<area shape="rect" id="node2" href="$classGame_1_1World_1_1RoadGenerator.html#ab3b7fa7ff101a87611b4be39e1777d51" title="Creates the roads recursively" alt="" coords="359,5,641,32"/>
+<area shape="rect" id="node3" href="$classGame_1_1World_1_1RoadGenerator.html#aedcb774ed36687d05b41b26378207e53" title="Creates the road matrix" alt="" coords="5,5,311,32"/>
+</map>

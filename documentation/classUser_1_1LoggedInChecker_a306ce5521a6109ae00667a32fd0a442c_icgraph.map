@@ -1,0 +1,4 @@
+<map id="User.LoggedInChecker.CheckLoggedInPeriodically" name="User.LoggedInChecker.CheckLoggedInPeriodically">
+<area shape="rect" id="node1" title="Coroutine which calls the api endpoint to check if the user is still logged in" alt="" coords="265,5,609,32"/>
+<area shape="rect" id="node2" href="$classUser_1_1LoggedInChecker.html#a0f9199eb996ba1309b9bb6bad5d6268e" title="Called when the script is loaded" alt="" coords="5,5,217,32"/>
+</map>

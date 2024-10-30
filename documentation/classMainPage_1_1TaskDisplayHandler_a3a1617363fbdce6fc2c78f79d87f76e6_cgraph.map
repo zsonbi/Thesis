@@ -1,0 +1,4 @@
+<map id="MainPage.TaskDisplayHandler.OpenEditor" name="MainPage.TaskDisplayHandler.OpenEditor">
+<area shape="rect" id="node1" title="Open the task editor" alt="" coords="5,5,299,32"/>
+<area shape="rect" id="node2" href="$classMainPage_1_1TaskOpenPanelController.html#ad9d6b86b74a5c782171f20791437c636" title="Open up the panel" alt="" coords="347,5,653,32"/>
+</map>

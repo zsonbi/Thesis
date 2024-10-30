@@ -1,0 +1,4 @@
+<map id="User.LoggedInChecker.LoggedIn" name="User.LoggedInChecker.LoggedIn">
+<area shape="rect" id="node1" title="Update the user data from the server data" alt="" coords="5,5,233,32"/>
+<area shape="rect" id="node2" href="$classUser_1_1UserData.html#abb372911b5e49023a977bd064f46bb6e" title="Initialises the user instance with proper data" alt="" coords="281,5,423,32"/>
+</map>

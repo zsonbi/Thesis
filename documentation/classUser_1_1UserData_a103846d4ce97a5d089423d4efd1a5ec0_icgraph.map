@@ -1,0 +1,10 @@
+<map id="User.UserData.UpdateTaskScore" name="User.UserData.UpdateTaskScore">
+<area shape="rect" id="node1" title="Update the user&#39;s task score" alt="" coords="813,56,1045,83"/>
+<area shape="rect" id="node2" href="$classGame_1_1UI_1_1GameUI.html#a5917dd3ff591dc192c83474a0db6b79d" title="Callback after the player bought the immunity" alt="" coords="516,5,765,32"/>
+<area shape="rect" id="node5" href="$classGame_1_1UI_1_1GameUI.html#a1b43083f2e18b3389e4f654cc2d73bed" title="Callback after the player bought the turbo" alt="" coords="530,56,751,83"/>
+<area shape="rect" id="node7" href="$classGame_1_1UI_1_1GameUI.html#a3c2c26f77375693436ab41d77452948f" title="Callback after the coins were doubled" alt="" coords="525,107,756,133"/>
+<area shape="rect" id="node3" href="$classGame_1_1UI_1_1GameUI.html#acd930ff070019fc74a3795a8b1452923" title="Buy the immunity power up" alt="" coords="240,5,468,32"/>
+<area shape="rect" id="node4" href="$classGame_1_1UI_1_1GameUI.html#a77f6894867ecdecc2f7ca4bea695849f" title="Called every frame" alt="" coords="5,31,192,57"/>
+<area shape="rect" id="node6" href="$classGame_1_1UI_1_1GameUI.html#a97a84e72b5ac1d245d1bfd3eb802fdfd" title="Buy the turbo power up" alt="" coords="254,56,454,83"/>
+<area shape="rect" id="node8" href="$classGame_1_1UI_1_1GameUI.html#aaed9ba7f6e28b2260d488f01c803e60a" title="Buy the double coins bonus" alt="" coords="243,107,465,133"/>
+</map>

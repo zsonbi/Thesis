@@ -1,0 +1,7 @@
+<map id="Game.UI.ShopWindow.UpdateShop" name="Game.UI.ShopWindow.UpdateShop">
+<area shape="rect" id="node1" title="Update the shop items" alt="" coords="565,31,815,57"/>
+<area shape="rect" id="node2" href="$classGame_1_1UI_1_1ShopItem.html#aba8c6371c3eeaecb2bb7ab1f07311869" title="Callback when it is bought" alt="" coords="317,5,512,32"/>
+<area shape="rect" id="node4" href="$classGame_1_1UI_1_1ShopWindow.html#ad9204f9c12eb8520523232c340f477b0" title="Show the shop window" alt="" coords="312,56,517,83"/>
+<area shape="rect" id="node3" href="$classGame_1_1UI_1_1ShopItem.html#a08030b9b33414329032136c2db442bef" title="Buy this shop item" alt="" coords="47,5,222,32"/>
+<area shape="rect" id="node5" href="$classGame_1_1UI_1_1GameUI.html#a443a0569c632ba816be0bd1511b62bca" title="Display the shop window" alt="" coords="5,56,264,83"/>
+</map>

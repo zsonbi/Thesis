@@ -1,0 +1,5 @@
+<map id="MainPage.MainWindowController.UpdateTaskLabel" name="MainPage.MainWindowController.UpdateTaskLabel">
+<area shape="rect" id="node1" title="Update the task prebab&#39;s label" alt="" coords="711,5,1061,32"/>
+<area shape="rect" id="node2" href="$classMainPage_1_1TaskOpenPanelController.html#a750d1acc6fd173296467fb9aca366a3d" title="When the task was stored on the server show it also visually and close the panel" alt="" coords="340,5,663,32"/>
+<area shape="rect" id="node3" href="$classMainPage_1_1TaskOpenPanelController.html#ab8def75cd4cdbdaf3033022ea114a8a6" title="Save the task to the server" alt="" coords="5,5,292,32"/>
+</map>

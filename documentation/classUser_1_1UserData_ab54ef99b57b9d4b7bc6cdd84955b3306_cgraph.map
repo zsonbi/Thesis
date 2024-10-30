@@ -1,0 +1,4 @@
+<map id="User.UserData.GetOrCreate" name="User.UserData.GetOrCreate">
+<area shape="rect" id="node1" title="Get&#39;s the instance or create it if it doesn&#39;t exist yet" alt="" coords="5,5,207,32"/>
+<area shape="rect" id="node2" href="$classUser_1_1UserData.html#a17f4ef142f45e3e62d75c3f0a4ca751b" title="Creates the user data" alt="" coords="255,5,436,32"/>
+</map>

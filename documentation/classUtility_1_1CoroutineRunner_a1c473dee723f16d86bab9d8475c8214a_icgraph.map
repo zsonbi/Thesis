@@ -1,0 +1,55 @@
+<map id="Utility.CoroutineRunner.RunCoroutine" name="Utility.CoroutineRunner.RunCoroutine">
+<area shape="rect" id="node1" title="A helper method to start coroutines" alt="" coords="2619,651,2883,677"/>
+<area shape="rect" id="node2" href="$classMainPage_1_1FriendHandler.html#a92be1ed6b9e41df4bad2004fb8913d4e" title="Send a request to the server that the user accepted the friend request" alt="" coords="2231,5,2551,32"/>
+<area shape="rect" id="node3" href="$classGame_1_1UI_1_1ShopItem.html#a08030b9b33414329032136c2db442bef" title="Buy this shop item" alt="" coords="1477,984,1651,1011"/>
+<area shape="rect" id="node4" href="$classGame_1_1UI_1_1GameUI.html#acd930ff070019fc74a3795a8b1452923" title="Buy the immunity power up" alt="" coords="2277,107,2505,133"/>
+<area shape="rect" id="node6" href="$classGame_1_1UI_1_1GameUI.html#a97a84e72b5ac1d245d1bfd3eb802fdfd" title="Buy the turbo power up" alt="" coords="2291,56,2491,83"/>
+<area shape="rect" id="node7" href="$classUser_1_1UserController.html#a0e115007266961c890001eb18f11bd1f" title="Send a request to check if the user has logged in already" alt="" coords="1848,411,2099,437"/>
+<area shape="rect" id="node9" href="$classUser_1_1LoggedInChecker.html#a306ce5521a6109ae00667a32fd0a442c" title="Coroutine which calls the api endpoint to check if the user is still logged in" alt="" coords="2219,157,2563,184"/>
+<area shape="rect" id="node11" href="$classMainPage_1_1TaskDisplayHandler.html#ab553f8eb77d9d038521af3813275a43d" title="Complete the task and send this to the server" alt="" coords="1817,756,2130,783"/>
+<area shape="rect" id="node12" href="$classMainPage_1_1FriendHandler.html#a118aed89960ec6338411e4130e3fe87c" title="Send a request to the server that the user deleted this friend" alt="" coords="2257,360,2524,387"/>
+<area shape="rect" id="node13" href="$classMainPage_1_1TaskOpenPanelController.html#a3107b94793886f6af28ac9415fb44370" title="Send a delete task request to the server" alt="" coords="2227,411,2554,437"/>
+<area shape="rect" id="node14" href="$classGame_1_1UI_1_1GameUI.html#aaed9ba7f6e28b2260d488f01c803e60a" title="Buy the double coins bonus" alt="" coords="2279,461,2502,488"/>
+<area shape="rect" id="node15" href="$classMainPage_1_1FriendWindowHandler.html#a6ebf0f7c70458f53c427517bf84bef7d" title="Loads the friends from the server" alt="" coords="2234,259,2547,285"/>
+<area shape="rect" id="node18" href="$classGame_1_1UI_1_1LeaderboardWindow.html#a6d7212efa2c2627d119bac3318ea0d00" title="Load the scores" alt="" coords="2244,208,2537,235"/>
+<area shape="rect" id="node21" href="$classMainPage_1_1TaskHistoryWindowHandler.html#ada3a664597d8e1b1b9a261c3c34badba" title="Loads the task histories from the server" alt="" coords="2225,614,2556,655"/>
+<area shape="rect" id="node23" href="$classMainPage_1_1MainWindowController.html#a47c21c97b7ba52af405119044e1434d0" title="Load the tasks from the server" alt="" coords="2237,680,2544,707"/>
+<area shape="rect" id="node25" href="$classUser_1_1UserController.html#a02fa4701a3a181ec2228737a5f2c57e9" title="When the login request&#39;s was responded log the user in" alt="" coords="2285,512,2496,539"/>
+<area shape="rect" id="node26" href="$classUser_1_1UserController.html#a7d9a8e16cdb6bc3702ab7987cc141b09" title="Send a login request with the login panel&#39;s fields" alt="" coords="1864,537,2083,564"/>
+<area shape="rect" id="node27" href="$classMainPage_1_1ProfileHandler.html#ad54f411a26e9a3dd6d0efa9ad5f58914" title="When the logout was a success" alt="" coords="2263,883,2518,909"/>
+<area shape="rect" id="node28" href="$classMainPage_1_1ProfileHandler.html#a19e78cd452fa87ca5a0bbb36a35882d4" title="Send a login request with the login panel&#39;s fields" alt="" coords="1843,933,2103,960"/>
+<area shape="rect" id="node29" href="$classUser_1_1UserController.html#aa173cb240990e358e98ff052c30a93e9" title="When the register request was responded successfully register the user and log him in" alt="" coords="2279,984,2502,1011"/>
+<area shape="rect" id="node30" href="$classUser_1_1UserController.html#ae7159709fe17c18b3f9e3a15617c1db1" title="Send a register request with the register panel&#39;s fields" alt="" coords="1854,1035,2093,1061"/>
+<area shape="rect" id="node31" href="$classMainPage_1_1TaskOpenPanelController.html#ab8def75cd4cdbdaf3033022ea114a8a6" title="Save the task to the server" alt="" coords="2247,1035,2534,1061"/>
+<area shape="rect" id="node32" href="$classGame_1_1UI_1_1GameUI.html#a4f9c8b23e2a0e5d86c53377ece2c9bac" title="Save the game&#39;s result" alt="" coords="2265,1237,2517,1264"/>
+<area shape="rect" id="node38" href="$classMainPage_1_1FriendWindowHandler.html#ad0c4b894708ceb9acc635e9a87b306ae" title="Sends a friend request to the user which was specified in the useridentification input" alt="" coords="2211,1136,2571,1163"/>
+<area shape="rect" id="node39" href="$classGame_1_1World_1_1Chunk.html#a08f4b5e8b362b98f4b3f01225d12b4af" title="Spawns the buildings and the props on a seperate thread" alt="" coords="2251,1313,2531,1340"/>
+<area shape="rect" id="node49" href="$classMainPage_1_1TaskDisplayHandler.html#a98b63052d0efc73233a32b69a06bf68e" title="When the complete acknowledge were recieved from the server update the display" alt="" coords="2230,731,2551,757"/>
+<area shape="rect" id="node50" href="$classGame_1_1UI_1_1ShopWindow.html#a9297b39a0fa7a77e8cf3022bc28c0b35" title="Update the shop items" alt="" coords="2266,832,2515,859"/>
+<area shape="rect" id="node5" href="$classGame_1_1UI_1_1GameUI.html#a77f6894867ecdecc2f7ca4bea695849f" title="Called every frame" alt="" coords="1880,81,2067,108"/>
+<area shape="rect" id="node8" href="$classUser_1_1UserController.html#a8d7a7b7d698dd47d420cc52ca90def5d" title="Start is called before the first frame update" alt="" coords="1473,411,1655,437"/>
+<area shape="rect" id="node10" href="$classUser_1_1LoggedInChecker.html#a0f9199eb996ba1309b9bb6bad5d6268e" title="Called when the script is loaded" alt="" coords="1867,157,2079,184"/>
+<area shape="rect" id="node16" href="$classMainPage_1_1FriendWindowHandler.html#aa9e14952826cc8ae861f67015c1156e1" title="Shows the profile window" alt="" coords="1838,309,2109,336"/>
+<area shape="rect" id="node17" href="$classMainPage_1_1FriendWindowHandler.html#af27eee4e5b363a39878fe5f94c03f9cd" title="Changed event for pending checkbox Loads/Unloads the pending friend requests" alt="" coords="1784,259,2163,285"/>
+<area shape="rect" id="node19" href="$classGame_1_1UI_1_1LeaderboardWindow.html#a8404b4a49a1f74f3b634ec77eb4b1d87" title="Show the window" alt="" coords="1846,208,2101,235"/>
+<area shape="rect" id="node20" href="$classGame_1_1UI_1_1GameUI.html#a4258f849b2e7d8cdb72dd01c26de3a71" title="Show the leaderboard window" alt="" coords="1436,208,1692,235"/>
+<area shape="rect" id="node22" href="$classMainPage_1_1TaskHistoryWindowHandler.html#aa726ff0b77b9245e98854bbd827ae9dd" title="Shows the task history window" alt="" coords="1820,621,2127,648"/>
+<area shape="rect" id="node24" href="$classMainPage_1_1MainWindowController.html#acea2170099ea435298139c6c7fdce719" title="Start is called before the first frame update" alt="" coords="1838,680,2109,707"/>
+<area shape="rect" id="node33" href="$classGame_1_1UI_1_1GameUI.html#a87baf7b6bd70298f817e2c8e5e52a33a" title="Hide the game over screen" alt="" coords="1831,1237,2115,1264"/>
+<area shape="rect" id="node34" href="$classGame_1_1UI_1_1GameUI.html#ae468c173078a10af94f671a2f8db940b" title="Show the main menu" alt="" coords="1433,1187,1695,1213"/>
+<area shape="rect" id="node35" href="$classGame_1_1UI_1_1GameUI.html#aaec0b0e9165ba1d2dc25f1c562f5478a" title="Show the main menu, but don&#39;t save the scores" alt="" coords="1392,1237,1736,1264"/>
+<area shape="rect" id="node36" href="$classGame_1_1UI_1_1GameUI.html#a4248468e8aaa0b1f7bb24162e9bef6c7" title="Move back to the tasks" alt="" coords="1453,1288,1675,1315"/>
+<area shape="rect" id="node37" href="$classGame_1_1UI_1_1GameUI.html#ad581ee67e01ac3bcdec06cf2538f06e4" title="Start a new game" alt="" coords="346,1225,554,1252"/>
+<area shape="rect" id="node40" href="$classGame_1_1World_1_1Chunk.html#a0616c2f9600a4bcc1dbe97a93a947e7a" title="Initialize the chunk" alt="" coords="1867,1327,2080,1353"/>
+<area shape="rect" id="node41" href="$classGame_1_1World_1_1GameWorld.html#a730e116826e3519544de155b667042ba" title="Loads a chunk" alt="" coords="1435,1339,1693,1365"/>
+<area shape="rect" id="node42" href="$classGame_1_1World_1_1GameWorld.html#a5bc9140bbdf4b45f229d4e900db98d9b" title="Creates a new game and create the chunks" alt="" coords="1035,1244,1332,1271"/>
+<area shape="rect" id="node44" href="$classGame_1_1World_1_1GameWorld.html#a0b0f22446c2d6c9fad57efd6c6e29581" title="Gets the chunk it will load it if it hasn&#39;t been and hide it then otherwise just return it" alt="" coords="1058,1364,1309,1391"/>
+<area shape="rect" id="node45" href="$classGame_1_1GameController.html#a9818f49a9c0638be6cc6449e5e5000f7" title="Checks if the selected chunk is in range and loads it if the world exists" alt="" coords="1023,1313,1344,1340"/>
+<area shape="rect" id="node43" href="$classGame_1_1GameController.html#af5c50c52cffcab3018ca54be6a421d7f" title="Create a new game" alt="" coords="701,1225,939,1252"/>
+<area shape="rect" id="node46" href="$classGame_1_1GameController.html#a2003e53e493cca6ace00e260e7161a03" title="Spawns and loads the nearby chunks" alt="" coords="665,1313,975,1340"/>
+<area shape="rect" id="node47" href="$classGame_1_1GameController.html#af623e7876622503e3d0f985ad9b08e47" title="Handle the load and despawning of the chunks relative to the given indices" alt="" coords="283,1313,617,1340"/>
+<area shape="rect" id="node48" href="$classGame_1_1PlayerCar.html#a18f30f1f6873f043457ce9f81ac47ed4" title=" " alt="" coords="5,1313,235,1340"/>
+<area shape="rect" id="node51" href="$classGame_1_1UI_1_1ShopItem.html#aba8c6371c3eeaecb2bb7ab1f07311869" title="Callback when it is bought" alt="" coords="1876,883,2071,909"/>
+<area shape="rect" id="node52" href="$classGame_1_1UI_1_1ShopWindow.html#ad9204f9c12eb8520523232c340f477b0" title="Show the shop window" alt="" coords="1871,832,2076,859"/>
+<area shape="rect" id="node53" href="$classGame_1_1UI_1_1GameUI.html#a443a0569c632ba816be0bd1511b62bca" title="Display the shop window" alt="" coords="1435,832,1693,859"/>
+</map>

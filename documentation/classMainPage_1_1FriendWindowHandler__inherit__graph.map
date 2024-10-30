@@ -1,5 +1,5 @@
 <map id="MainPage.FriendWindowHandler" name="MainPage.FriendWindowHandler">
-<area shape="rect" id="node1" title="Handles the friend window display" alt="" coords="5,256,237,495"/>
-<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="22,131,221,208"/>
-<area shape="rect" id="node3" title=" " alt="" coords="59,5,183,83"/>
+<area shape="rect" id="node1" title="Handles the friend window display" alt="" coords="5,256,324,509"/>
+<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="65,131,264,208"/>
+<area shape="rect" id="node3" title=" " alt="" coords="103,5,227,83"/>
 </map>

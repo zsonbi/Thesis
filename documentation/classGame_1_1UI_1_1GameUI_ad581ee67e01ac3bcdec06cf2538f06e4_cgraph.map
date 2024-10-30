@@ -1,0 +1,32 @@
+<map id="Game.UI.GameUI.NewGame" name="Game.UI.GameUI.NewGame">
+<area shape="rect" id="node1" title="Start a new game" alt="" coords="5,183,213,209"/>
+<area shape="rect" id="node2" href="$classGame_1_1UI_1_1GameUI.html#a87baf7b6bd70298f817e2c8e5e52a33a" title="Hide the game over screen" alt="" coords="261,107,545,133"/>
+<area shape="rect" id="node8" href="$classGame_1_1GameController.html#af5c50c52cffcab3018ca54be6a421d7f" title="Create a new game" alt="" coords="284,208,523,235"/>
+<area shape="rect" id="node3" href="$classGame_1_1UI_1_1GameUI.html#a4f9c8b23e2a0e5d86c53377ece2c9bac" title="Save the game&#39;s result" alt="" coords="616,56,868,83"/>
+<area shape="rect" id="node4" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="1893,5,2157,32"/>
+<area shape="rect" id="node5" href="$classGame_1_1UI_1_1GameUI.html#a984a1e174ca8249e0433de8d2d8a462c" title="Callback after the coins amount were saved" alt="" coords="972,56,1188,83"/>
+<area shape="rect" id="node6" href="$classGame_1_1UI_1_1GameUI.html#ac464d5a547acb44085748e2ee265272f" title="Show if the request failed on the modal window" alt="" coords="955,107,1205,133"/>
+<area shape="rect" id="node7" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window" alt="" coords="1279,107,1473,133"/>
+<area shape="rect" id="node9" href="$classGame_1_1UI_1_1GameUI.html#a1f9659e1d86a8bcfdf115b631f89ce3e" title="Change the difficulty and update its display" alt="" coords="596,157,888,184"/>
+<area shape="rect" id="node11" href="$classGame_1_1World_1_1GameWorld.html#a5bc9140bbdf4b45f229d4e900db98d9b" title="Creates a new game and create the chunks" alt="" coords="593,208,891,235"/>
+<area shape="rect" id="node26" href="$classGame_1_1World_1_1GameWorld.html#a78654137c458c1b1917285e28d3d270b" title="Gets the chunk based on the absolute position which chunk it would fall into" alt="" coords="617,259,867,285"/>
+<area shape="rect" id="node27" href="$classGame_1_1Car.html#a73919d2b4768ace830efe5e84cb3e0d5" title=" " alt="" coords="687,309,797,336"/>
+<area shape="rect" id="node28" href="$classGame_1_1GameController.html#a4ee6ddd9c52134a0bb30c3c0a7bef350" title="Event for when the player is killed" alt="" coords="621,360,863,387"/>
+<area shape="rect" id="node30" href="$classGame_1_1World_1_1CarSpawner.html#a9ca9f4dfd1b63d182f23c9f630b54463" title="Reset the timers" alt="" coords="630,107,854,133"/>
+<area shape="rect" id="node10" href="$classGame_1_1UI_1_1StarHandler.html#a710bc2e71e1f1217f86fe1d7be4dc9c4" title="Update the display based on the difficulty" alt="" coords="945,157,1215,184"/>
+<area shape="rect" id="node12" href="$classGame_1_1World_1_1GameWorld.html#a730e116826e3519544de155b667042ba" title="Loads a chunk" alt="" coords="951,208,1209,235"/>
+<area shape="rect" id="node13" href="$classGame_1_1World_1_1Chunk.html#a475512064d145228ca7084735b7e2f2f" title="Show the chunk" alt="" coords="1276,157,1476,184"/>
+<area shape="rect" id="node14" href="$classGame_1_1World_1_1Chunk.html#a0616c2f9600a4bcc1dbe97a93a947e7a" title="Initialize the chunk" alt="" coords="1269,208,1483,235"/>
+<area shape="rect" id="node15" href="$classGame_1_1World_1_1Chunk.html#aac3343253a33a36a09318ebc76bd9f08" title="Creates the tiles for the chunk" alt="" coords="1558,208,1783,235"/>
+<area shape="rect" id="node18" href="$classGame_1_1World_1_1Chunk.html#af8d6134551597f12a028155b1466c0ff" title="Gets tthe nearby chunks" alt="" coords="1536,259,1805,285"/>
+<area shape="rect" id="node20" href="$classGame_1_1World_1_1Chunk.html#a08f4b5e8b362b98f4b3f01225d12b4af" title="Spawns the buildings and the props on a seperate thread" alt="" coords="1531,107,1811,133"/>
+<area shape="rect" id="node16" href="$classGame_1_1World_1_1Chunk.html#ac4b762352bb5f90952fe57e5c0ee208f" title="Determines the type of the tile at the coord" alt="" coords="1887,208,2162,235"/>
+<area shape="rect" id="node17" href="$classGame_1_1World_1_1Chunk.html#a2d39efc9f5c0f3c302dd7e9d007096c7" title="Determine what type of road it is" alt="" coords="2261,208,2543,235"/>
+<area shape="rect" id="node19" href="$classGame_1_1World_1_1GameWorld.html#a6188226b54eb7e38659cbe8d9d76b620" title="Get the chunk without trying it to load" alt="" coords="1859,259,2191,285"/>
+<area shape="rect" id="node21" href="$classGame_1_1World_1_1Chunk.html#a12ff4b268fb99d10493398cfe555b46c" title=" " alt="" coords="2255,56,2549,83"/>
+<area shape="rect" id="node23" href="$classGame_1_1World_1_1Chunk.html#a00a9cd484ae1ddffec928a75f6b2db15" title="Add the buildings which are next to the roads" alt="" coords="1890,107,2159,133"/>
+<area shape="rect" id="node25" href="$classGame_1_1World_1_1Chunk.html#a443ede65d8aeb566a385cb3bcad9d8f7" title="Generate the building cells matrix so we know which way the roads are" alt="" coords="1885,157,2164,184"/>
+<area shape="rect" id="node22" href="$classGame_1_1World_1_1Chunk.html#af37779d40ed9cd07b577d5bca61627b7" title=" " alt="" coords="2613,81,2896,108"/>
+<area shape="rect" id="node24" href="$classGame_1_1World_1_1Chunk.html#af2946e1e1b9e325d6004d166b2b26193" title="Lock the cell and try to place it" alt="" coords="2239,107,2565,133"/>
+<area shape="rect" id="node29" href="$classGame_1_1UI_1_1GameUI.html#a4711cf98c85b51e143bb5e5a33157b81" title="Show the game over screen" alt="" coords="939,360,1221,387"/>
+</map>

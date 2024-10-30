@@ -1,0 +1,8 @@
+<map id="Game.UI.GameUI.DoubleCoins" name="Game.UI.GameUI.DoubleCoins">
+<area shape="rect" id="node1" title="Buy the double coins bonus" alt="" coords="5,56,228,83"/>
+<area shape="rect" id="node2" href="$classGame_1_1UI_1_1GameUI.html#a3c2c26f77375693436ab41d77452948f" title="Callback after the coins were doubled" alt="" coords="293,5,523,32"/>
+<area shape="rect" id="node4" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="276,56,540,83"/>
+<area shape="rect" id="node5" href="$classGame_1_1UI_1_1GameUI.html#ac464d5a547acb44085748e2ee265272f" title="Show if the request failed on the modal window" alt="" coords="283,107,533,133"/>
+<area shape="rect" id="node3" href="$classUser_1_1UserData.html#a103846d4ce97a5d089423d4efd1a5ec0" title="Update the user&#39;s task score" alt="" coords="588,5,820,32"/>
+<area shape="rect" id="node6" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window" alt="" coords="607,107,801,133"/>
+</map>

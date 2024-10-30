@@ -1,0 +1,7 @@
+<map id="Game.World.GameWorld.HideChunk" name="Game.World.GameWorld.HideChunk">
+<area shape="rect" id="node1" title="Hide the given chunk" alt="" coords="1048,31,1305,57"/>
+<area shape="rect" id="node2" href="$classGame_1_1GameController.html#a9d697eb362c93e3208af1a5c2385742d" title="Despawn the chunks which are too far away from the player" alt="" coords="665,5,1000,32"/>
+<area shape="rect" id="node5" href="$classGame_1_1World_1_1GameWorld.html#a0b0f22446c2d6c9fad57efd6c6e29581" title="Gets the chunk it will load it if it hasn&#39;t been and hide it then otherwise just return it" alt="" coords="707,56,958,83"/>
+<area shape="rect" id="node3" href="$classGame_1_1GameController.html#af623e7876622503e3d0f985ad9b08e47" title="Handle the load and despawning of the chunks relative to the given indices" alt="" coords="283,5,617,32"/>
+<area shape="rect" id="node4" href="$classGame_1_1PlayerCar.html#a18f30f1f6873f043457ce9f81ac47ed4" title=" " alt="" coords="5,5,235,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Game.UI.GameUI.ChangeDifficulyDisplay" name="Game.UI.GameUI.ChangeDifficulyDisplay">
+<area shape="rect" id="node1" title="Change the difficulty and update its display" alt="" coords="548,31,840,57"/>
+<area shape="rect" id="node2" href="$classGame_1_1GameController.html#af5c50c52cffcab3018ca54be6a421d7f" title="Create a new game" alt="" coords="261,5,500,32"/>
+<area shape="rect" id="node4" href="$classGame_1_1GameController.html#ac7bf604631786f89b01d5313ad796b8b" title="Called every frame" alt="" coords="271,56,490,83"/>
+<area shape="rect" id="node3" href="$classGame_1_1UI_1_1GameUI.html#ad581ee67e01ac3bcdec06cf2538f06e4" title="Start a new game" alt="" coords="5,5,213,32"/>
+</map>

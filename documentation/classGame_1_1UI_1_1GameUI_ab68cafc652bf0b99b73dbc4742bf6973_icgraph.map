@@ -1,0 +1,4 @@
+<map id="Game.UI.GameUI.Init" name="Game.UI.GameUI.Init">
+<area shape="rect" id="node1" title="Initializes the game use" alt="" coords="268,5,429,32"/>
+<area shape="rect" id="node2" href="$classGame_1_1GameController.html#afb68886afaa05f935ab512dce0eb1dff" title="Called when script is loaded" alt="" coords="5,5,220,32"/>
+</map>

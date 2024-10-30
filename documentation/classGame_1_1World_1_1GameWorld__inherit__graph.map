@@ -1,5 +1,5 @@
 <map id="Game.World.GameWorld" name="Game.World.GameWorld">
-<area shape="rect" id="node1" title="A class for handling chunk loading and unloading" alt="" coords="8,256,201,421"/>
-<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="5,131,204,208"/>
-<area shape="rect" id="node3" title=" " alt="" coords="43,5,167,83"/>
+<area shape="rect" id="node1" title="A class for handling chunk loading and unloading" alt="" coords="5,256,336,436"/>
+<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="71,131,270,208"/>
+<area shape="rect" id="node3" title=" " alt="" coords="109,5,233,83"/>
 </map>

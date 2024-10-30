@@ -1,7 +1,7 @@
 <map id="Game.CopCar" name="Game.CopCar">
-<area shape="rect" id="node1" title=" " alt="" coords="59,727,171,804"/>
-<area shape="rect" id="node2" href="$classGame_1_1NpcCar.html" title=" " alt="" coords="5,587,224,679"/>
-<area shape="rect" id="node3" href="$classGame_1_1Car.html" title=" " alt="" coords="17,256,213,539"/>
-<area shape="rect" id="node4" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="15,131,214,208"/>
-<area shape="rect" id="node5" title=" " alt="" coords="53,5,177,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="91,741,275,819"/>
+<area shape="rect" id="node2" href="$classGame_1_1NpcCar.html" title=" " alt="" coords="5,616,361,693"/>
+<area shape="rect" id="node3" href="$classGame_1_1Car.html" title=" " alt="" coords="18,256,349,568"/>
+<area shape="rect" id="node4" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="84,131,283,208"/>
+<area shape="rect" id="node5" title=" " alt="" coords="121,5,245,83"/>
 </map>

@@ -1,0 +1,9 @@
+<map id="MainPage.FriendHandler.InitValues" name="MainPage.FriendHandler.InitValues">
+<area shape="rect" id="node1" title="Inititializes a new display with the given friend to display" alt="" coords="1245,56,1492,83"/>
+<area shape="rect" id="node2" href="$classMainPage_1_1FriendWindowHandler.html#abce9cb8e608691cfbc50bf47c17a1b34" title="Display the friends which was recieved from the server" alt="" coords="853,31,1184,57"/>
+<area shape="rect" id="node6" href="$classMainPage_1_1FriendWindowHandler.html#a61d9cd37518259d360474dd5fe55ae24" title="After the friend request was sent load the friend prefab if it can show pending" alt="" coords="840,81,1197,108"/>
+<area shape="rect" id="node3" href="$classMainPage_1_1FriendWindowHandler.html#a6ebf0f7c70458f53c427517bf84bef7d" title="Loads the friends from the server" alt="" coords="455,31,769,57"/>
+<area shape="rect" id="node4" href="$classMainPage_1_1FriendWindowHandler.html#aa9e14952826cc8ae861f67015c1156e1" title="Shows the profile window" alt="" coords="59,5,330,32"/>
+<area shape="rect" id="node5" href="$classMainPage_1_1FriendWindowHandler.html#af27eee4e5b363a39878fe5f94c03f9cd" title="Changed event for pending checkbox Loads/Unloads the pending friend requests" alt="" coords="5,56,384,83"/>
+<area shape="rect" id="node7" href="$classMainPage_1_1FriendWindowHandler.html#ad0c4b894708ceb9acc635e9a87b306ae" title="Sends a friend request to the user which was specified in the useridentification input" alt="" coords="432,81,792,108"/>
+</map>

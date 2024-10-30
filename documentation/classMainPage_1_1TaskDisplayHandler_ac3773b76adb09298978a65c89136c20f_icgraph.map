@@ -1,0 +1,10 @@
+<map id="MainPage.TaskDisplayHandler.UpdateLabels" name="MainPage.TaskDisplayHandler.UpdateLabels">
+<area shape="rect" id="node1" title="Update the task&#39;s labels" alt="" coords="1781,31,2092,57"/>
+<area shape="rect" id="node2" href="$classMainPage_1_1TaskDisplayHandler.html#a8aedc4afb32d220352cf04cc77fdedf6" title="Init it with the task to display and references to the controls" alt="" coords="1448,31,1733,57"/>
+<area shape="rect" id="node3" href="$classMainPage_1_1MainWindowController.html#a827f62c47eb691eadd994bd51bf7cb74" title="Creates a new task prefab to display" alt="" coords="1088,31,1400,57"/>
+<area shape="rect" id="node4" href="$classMainPage_1_1MainWindowController.html#ab40b51689d2d8ca0497b0e53128f4992" title="Create the task prefabs" alt="" coords="679,5,1040,32"/>
+<area shape="rect" id="node7" href="$classMainPage_1_1TaskOpenPanelController.html#a750d1acc6fd173296467fb9aca366a3d" title="When the task was stored on the server show it also visually and close the panel" alt="" coords="698,56,1021,83"/>
+<area shape="rect" id="node5" href="$classMainPage_1_1MainWindowController.html#a47c21c97b7ba52af405119044e1434d0" title="Load the tasks from the server" alt="" coords="324,5,631,32"/>
+<area shape="rect" id="node6" href="$classMainPage_1_1MainWindowController.html#acea2170099ea435298139c6c7fdce719" title="Start is called before the first frame update" alt="" coords="5,5,276,32"/>
+<area shape="rect" id="node8" href="$classMainPage_1_1TaskOpenPanelController.html#ab8def75cd4cdbdaf3033022ea114a8a6" title="Save the task to the server" alt="" coords="334,56,621,83"/>
+</map>

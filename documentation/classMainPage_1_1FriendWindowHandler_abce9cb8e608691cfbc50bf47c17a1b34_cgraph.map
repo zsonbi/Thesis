@@ -1,0 +1,4 @@
+<map id="MainPage.FriendWindowHandler.DisplayFriends" name="MainPage.FriendWindowHandler.DisplayFriends">
+<area shape="rect" id="node1" title="Display the friends which was recieved from the server" alt="" coords="5,5,336,32"/>
+<area shape="rect" id="node2" href="$classMainPage_1_1FriendHandler.html#ab894b96203019d08e341bbb6090af8b8" title="Inititializes a new display with the given friend to display" alt="" coords="384,5,631,32"/>
+</map>

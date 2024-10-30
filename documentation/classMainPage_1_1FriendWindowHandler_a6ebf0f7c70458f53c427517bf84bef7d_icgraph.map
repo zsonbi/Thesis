@@ -1,0 +1,5 @@
+<map id="MainPage.FriendWindowHandler.LoadFriends" name="MainPage.FriendWindowHandler.LoadFriends">
+<area shape="rect" id="node1" title="Loads the friends from the server" alt="" coords="432,31,745,57"/>
+<area shape="rect" id="node2" href="$classMainPage_1_1FriendWindowHandler.html#aa9e14952826cc8ae861f67015c1156e1" title="Shows the profile window" alt="" coords="59,5,330,32"/>
+<area shape="rect" id="node3" href="$classMainPage_1_1FriendWindowHandler.html#af27eee4e5b363a39878fe5f94c03f9cd" title="Changed event for pending checkbox Loads/Unloads the pending friend requests" alt="" coords="5,56,384,83"/>
+</map>

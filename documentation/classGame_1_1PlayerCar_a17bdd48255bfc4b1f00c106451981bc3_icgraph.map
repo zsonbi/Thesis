@@ -1,0 +1,5 @@
+<map id="Game.PlayerCar.ApplyImmunity" name="Game.PlayerCar.ApplyImmunity">
+<area shape="rect" id="node1" title=" " alt="" coords="516,5,747,32"/>
+<area shape="rect" id="node2" href="$classGame_1_1UI_1_1GameUI.html#acd930ff070019fc74a3795a8b1452923" title="Buy the immunity power up" alt="" coords="240,5,468,32"/>
+<area shape="rect" id="node3" href="$classGame_1_1UI_1_1GameUI.html#a77f6894867ecdecc2f7ca4bea695849f" title="Called every frame" alt="" coords="5,5,192,32"/>
+</map>

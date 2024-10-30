@@ -1,0 +1,4 @@
+<map id="Game.UI.GameUI.BuyTurbo" name="Game.UI.GameUI.BuyTurbo">
+<area shape="rect" id="node1" title="Buy the turbo power up" alt="" coords="240,5,440,32"/>
+<area shape="rect" id="node2" href="$classGame_1_1UI_1_1GameUI.html#a77f6894867ecdecc2f7ca4bea695849f" title="Called every frame" alt="" coords="5,5,192,32"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Game.NpcCar.DetermineSteeringDirectionTowardsPlayer" name="Game.NpcCar.DetermineSteeringDirectionTowardsPlayer">
+<area shape="rect" id="node1" title=" " alt="" coords="216,5,607,32"/>
+<area shape="rect" id="node2" href="$classGame_1_1CopCar.html#ad1e664d118f85d0c8b21e92d519c1e0b" title=" " alt="" coords="5,5,168,32"/>
+</map>

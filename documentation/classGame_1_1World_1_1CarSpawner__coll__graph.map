@@ -1,12 +1,12 @@
 <map id="Game.World.CarSpawner" name="Game.World.CarSpawner">
-<area shape="rect" id="node1" title="Car spawner" alt="" coords="67,259,251,483"/>
-<area shape="rect" id="node4" href="$classGame_1_1GameController.html" title="Handles the main flow of the game scene" alt="" coords="118,637,328,993"/>
-<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="322,132,521,209"/>
-<area shape="rect" id="node5" href="$classGame_1_1UI_1_1GameUI.html" title="Controller for the game&#39;s UI" alt="" coords="356,1056,554,1529"/>
-<area shape="rect" id="node6" href="$classGame_1_1UI_1_1ShopWindow.html" title="Handles the shop window&#39;s content display" alt="" coords="353,703,520,927"/>
-<area shape="rect" id="node7" href="$classUtility_1_1ModalWindow.html" title="Modal window for alerting the user" alt="" coords="479,295,652,446"/>
-<area shape="rect" id="node8" href="$classGame_1_1UI_1_1LeaderboardWindow.html" title="Handles the leaderboard display window" alt="" coords="694,733,910,898"/>
-<area shape="rect" id="node9" href="$classGame_1_1UI_1_1StarHandler.html" title="Star handler" alt="" coords="834,507,994,613"/>
-<area shape="rect" id="node3" title=" " alt="" coords="360,5,484,83"/>
-<area shape="rect" id="node10" title=" " alt="" coords="326,332,384,409"/>
+<area shape="rect" id="node1" title="Car spawner" alt="" coords="34,259,353,483"/>
+<area shape="rect" id="node4" href="$classGame_1_1GameController.html" title="Handles the main flow of the game scene" alt="" coords="26,637,369,1067"/>
+<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="433,132,631,209"/>
+<area shape="rect" id="node5" href="$classGame_1_1UI_1_1GameUI.html" title="Controller for the game&#39;s UI" alt="" coords="327,1129,737,1764"/>
+<area shape="rect" id="node6" href="$classGame_1_1UI_1_1ShopWindow.html" title="Handles the shop window&#39;s content display" alt="" coords="393,733,671,971"/>
+<area shape="rect" id="node7" href="$classUtility_1_1ModalWindow.html" title="Modal window for alerting the user" alt="" coords="575,288,854,453"/>
+<area shape="rect" id="node8" href="$classGame_1_1UI_1_1LeaderboardWindow.html" title="Handles the leaderboard display window" alt="" coords="846,762,1119,942"/>
+<area shape="rect" id="node9" href="$classGame_1_1UI_1_1StarHandler.html" title="Star handler" alt="" coords="997,507,1262,613"/>
+<area shape="rect" id="node3" title=" " alt="" coords="470,5,594,83"/>
+<area shape="rect" id="node10" title=" " alt="" coords="428,332,487,409"/>
 </map>

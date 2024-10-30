@@ -1,0 +1,4 @@
+<map id="MainPage.FriendWindowHandler.SentFriendRequest" name="MainPage.FriendWindowHandler.SentFriendRequest">
+<area shape="rect" id="node1" title="After the friend request was sent load the friend prefab if it can show pending" alt="" coords="5,5,363,32"/>
+<area shape="rect" id="node2" href="$classMainPage_1_1FriendHandler.html#ab894b96203019d08e341bbb6090af8b8" title="Inititializes a new display with the given friend to display" alt="" coords="411,5,657,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Game.GameController.DespawnFarAwayChunks" name="Game.GameController.DespawnFarAwayChunks">
+<area shape="rect" id="node1" title="Despawn the chunks which are too far away from the player" alt="" coords="5,5,340,32"/>
+<area shape="rect" id="node2" href="$classGame_1_1World_1_1GameWorld.html#a6e38b875a4ad69b6a285701336e9e29c" title="Hide the given chunk" alt="" coords="388,5,645,32"/>
+<area shape="rect" id="node3" href="$classGame_1_1World_1_1Chunk.html#a118e0c25d254444e6663404fd61749d9" title="Hide the chunk" alt="" coords="693,5,916,32"/>
+</map>

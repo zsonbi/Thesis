@@ -1,0 +1,4 @@
+<map id="User.UserController.Registered" name="User.UserController.Registered">
+<area shape="rect" id="node1" title="When the register request was responded successfully register the user and log him in" alt="" coords="292,5,515,32"/>
+<area shape="rect" id="node2" href="$classUser_1_1UserController.html#ae7159709fe17c18b3f9e3a15617c1db1" title="Send a register request with the register panel&#39;s fields" alt="" coords="5,5,244,32"/>
+</map>

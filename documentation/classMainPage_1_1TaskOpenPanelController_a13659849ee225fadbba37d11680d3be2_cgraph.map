@@ -1,0 +1,4 @@
+<map id="MainPage.TaskOpenPanelController.OpenUp" name="MainPage.TaskOpenPanelController.OpenUp">
+<area shape="rect" id="node1" title="Open&#39;s the panel with the task&#39;s values added also" alt="" coords="5,5,312,32"/>
+<area shape="rect" id="node2" href="$classMainPage_1_1TaskOpenPanelController.html#aa0b6757dbad141375c50282278b23b1a" title="Update the buttons with the appropriate color based on the current task" alt="" coords="360,5,711,32"/>
+</map>

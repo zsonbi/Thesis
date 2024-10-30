@@ -1,0 +1,4 @@
+<map id="Config.ServerConfig.PATHFORTASKUPDATE" name="Config.ServerConfig.PATHFORTASKUPDATE">
+<area shape="rect" id="node1" title="Pah to api endpoin to update a task" alt="" coords="340,5,637,32"/>
+<area shape="rect" id="node2" href="$classMainPage_1_1TaskOpenPanelController.html#ab8def75cd4cdbdaf3033022ea114a8a6" title="Save the task to the server" alt="" coords="5,5,292,32"/>
+</map>

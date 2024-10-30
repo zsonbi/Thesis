@@ -1,0 +1,5 @@
+<map id="MainPage.TaskOpenPanelController.MakeItGoodTask" name="MainPage.TaskOpenPanelController.MakeItGoodTask">
+<area shape="rect" id="node1" title="Make it a good task" alt="" coords="5,5,367,32"/>
+<area shape="rect" id="node2" href="$classMainPage_1_1MainWindowController.html#ab5b80370512cd4273e86927fe696462d" title="Load the good tasks" alt="" coords="419,5,761,32"/>
+<area shape="rect" id="node3" href="$classMainPage_1_1TaskOpenPanelController.html#aa0b6757dbad141375c50282278b23b1a" title="Update the buttons with the appropriate color based on the current task" alt="" coords="415,56,765,83"/>
+</map>

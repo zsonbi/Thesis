@@ -1,0 +1,6 @@
+<map id="User.UserController.Registered" name="User.UserController.Registered">
+<area shape="rect" id="node1" title="When the register request was responded successfully register the user and log him in" alt="" coords="5,56,228,83"/>
+<area shape="rect" id="node2" href="$classUser_1_1UserData.html#abb372911b5e49023a977bd064f46bb6e" title="Initialises the user instance with proper data" alt="" coords="345,5,487,32"/>
+<area shape="rect" id="node3" href="$classUser_1_1UserController.html#a3ba5f73e6358fff37d2ec5e255659756" title="Move from the user creation and login scene" alt="" coords="276,56,556,83"/>
+<area shape="rect" id="node4" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="284,107,548,133"/>
+</map>

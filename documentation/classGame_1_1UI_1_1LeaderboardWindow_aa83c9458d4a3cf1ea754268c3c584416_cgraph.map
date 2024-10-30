@@ -1,0 +1,4 @@
+<map id="Game.UI.LeaderboardWindow.LoadedScores" name="Game.UI.LeaderboardWindow.LoadedScores">
+<area shape="rect" id="node1" title="Callback after the scores were loaded" alt="" coords="5,5,315,32"/>
+<area shape="rect" id="node2" href="$classGame_1_1UI_1_1LeaderboardItem.html#a3d41fb9a51ff51b9e249c0831f4d788a" title="Initializes the item" alt="" coords="363,5,581,32"/>
+</map>

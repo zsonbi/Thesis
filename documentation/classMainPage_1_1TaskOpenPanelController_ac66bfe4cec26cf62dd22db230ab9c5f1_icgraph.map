@@ -1,0 +1,4 @@
+<map id="MainPage.TaskOpenPanelController.CollectFromFields" name="MainPage.TaskOpenPanelController.CollectFromFields">
+<area shape="rect" id="node1" title="Collect the values from the inputs" alt="" coords="340,5,711,32"/>
+<area shape="rect" id="node2" href="$classMainPage_1_1TaskOpenPanelController.html#ab8def75cd4cdbdaf3033022ea114a8a6" title="Save the task to the server" alt="" coords="5,5,292,32"/>
+</map>

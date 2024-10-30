@@ -1,0 +1,4 @@
+<map id="Utility.ModalWindow.ConfirmButtonClick" name="Utility.ModalWindow.ConfirmButtonClick">
+<area shape="rect" id="node1" title="Action for ok buttton" alt="" coords="5,5,291,32"/>
+<area shape="rect" id="node2" href="$classUtility_1_1ModalWindow.html#a2b7515b5ef75a2735139abfe2afd555d" title="Hides the modal window" alt="" coords="339,5,528,32"/>
+</map>

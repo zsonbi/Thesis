@@ -1,0 +1,6 @@
+<map id="Game.UI.GameUI.ShowEndGameScreen" name="Game.UI.GameUI.ShowEndGameScreen">
+<area shape="rect" id="node1" title="Show the game over screen" alt="" coords="839,5,1121,32"/>
+<area shape="rect" id="node2" href="$classGame_1_1GameController.html#a4ee6ddd9c52134a0bb30c3c0a7bef350" title="Event for when the player is killed" alt="" coords="548,5,791,32"/>
+<area shape="rect" id="node3" href="$classGame_1_1GameController.html#af5c50c52cffcab3018ca54be6a421d7f" title="Create a new game" alt="" coords="261,5,500,32"/>
+<area shape="rect" id="node4" href="$classGame_1_1UI_1_1GameUI.html#ad581ee67e01ac3bcdec06cf2538f06e4" title="Start a new game" alt="" coords="5,5,213,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="MainPage.MainWindowController.ShowRequestFail" name="MainPage.MainWindowController.ShowRequestFail">
+<area shape="rect" id="node1" title="Show the server request fail in the modal window" alt="" coords="679,5,1029,32"/>
+<area shape="rect" id="node2" href="$classMainPage_1_1MainWindowController.html#a47c21c97b7ba52af405119044e1434d0" title="Load the tasks from the server" alt="" coords="324,5,631,32"/>
+<area shape="rect" id="node3" href="$classMainPage_1_1MainWindowController.html#acea2170099ea435298139c6c7fdce719" title="Start is called before the first frame update" alt="" coords="5,5,276,32"/>
+</map>

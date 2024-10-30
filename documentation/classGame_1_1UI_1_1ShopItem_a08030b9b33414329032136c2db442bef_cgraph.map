@@ -1,0 +1,11 @@
+<map id="Game.UI.ShopItem.Buy" name="Game.UI.ShopItem.Buy">
+<area shape="rect" id="node1" title="Buy this shop item" alt="" coords="5,81,180,108"/>
+<area shape="rect" id="node2" href="$classGame_1_1UI_1_1ShopItem.html#aba8c6371c3eeaecb2bb7ab1f07311869" title="Callback when it is bought" alt="" coords="275,56,470,83"/>
+<area shape="rect" id="node6" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="874,5,1138,32"/>
+<area shape="rect" id="node7" href="$classGame_1_1UI_1_1ShopWindow.html#ab11a75acddb1467e29d7624a4d12b8b9" title="Show if the request failed on the modal window" alt="" coords="866,107,1146,133"/>
+<area shape="rect" id="node9" href="$classConfig_1_1ServerConfig.html#a7ac624a23651b77f05fe3dfabbd950fc" title="Path to api endpoint to buy a given car" alt="" coords="228,157,517,184"/>
+<area shape="rect" id="node3" href="$classGame_1_1UI_1_1ShopWindow.html#a9297b39a0fa7a77e8cf3022bc28c0b35" title="Update the shop items" alt="" coords="565,56,815,83"/>
+<area shape="rect" id="node4" href="$classGame_1_1UI_1_1ShopWindow.html#a6a703aeb6610fe526d65a9b89ad4c78e" title="Display the loaded shop items" alt="" coords="863,56,1149,83"/>
+<area shape="rect" id="node5" href="$classGame_1_1UI_1_1ShopItem.html#a8f8263dc4d8a04ebbd12545537c98879" title="Initializes this shop item" alt="" coords="1209,56,1380,83"/>
+<area shape="rect" id="node8" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window" alt="" coords="1197,107,1392,133"/>
+</map>

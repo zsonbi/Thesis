@@ -1,0 +1,4 @@
+<map id="Game.World.GameWorld.HideChunk" name="Game.World.GameWorld.HideChunk">
+<area shape="rect" id="node1" title="Hide the given chunk" alt="" coords="5,5,263,32"/>
+<area shape="rect" id="node2" href="$classGame_1_1World_1_1Chunk.html#a118e0c25d254444e6663404fd61749d9" title="Hide the chunk" alt="" coords="311,5,533,32"/>
+</map>

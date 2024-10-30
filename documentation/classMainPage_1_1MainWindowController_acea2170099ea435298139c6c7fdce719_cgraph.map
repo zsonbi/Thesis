@@ -1,0 +1,20 @@
+<map id="MainPage.MainWindowController.Start" name="MainPage.MainWindowController.Start">
+<area shape="rect" id="node1" title="Start is called before the first frame update" alt="" coords="5,183,276,209"/>
+<area shape="rect" id="node2" href="$classMainPage_1_1MainWindowController.html#a47c21c97b7ba52af405119044e1434d0" title="Load the tasks from the server" alt="" coords="324,183,631,209"/>
+<area shape="rect" id="node3" href="$classMainPage_1_1MainWindowController.html#ab40b51689d2d8ca0497b0e53128f4992" title="Create the task prefabs" alt="" coords="679,132,1040,159"/>
+<area shape="rect" id="node16" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="727,183,991,209"/>
+<area shape="rect" id="node17" href="$classMainPage_1_1MainWindowController.html#aca9938481cb1ebf9d9b46ca9779e48f4" title="Show the server request fail in the modal window" alt="" coords="684,233,1035,260"/>
+<area shape="rect" id="node4" href="$classMainPage_1_1MainWindowController.html#a827f62c47eb691eadd994bd51bf7cb74" title="Creates a new task prefab to display" alt="" coords="1088,81,1400,108"/>
+<area shape="rect" id="node12" href="$classMainPage_1_1MainWindowController.html#ab5b80370512cd4273e86927fe696462d" title="Load the good tasks" alt="" coords="2631,107,2972,133"/>
+<area shape="rect" id="node5" href="$classMainPage_1_1TaskDisplayHandler.html#a8aedc4afb32d220352cf04cc77fdedf6" title="Init it with the task to display and references to the controls" alt="" coords="1448,81,1733,108"/>
+<area shape="rect" id="node6" href="$classMainPage_1_1TaskDisplayHandler.html#aa49063eb8db092920d512f9869df6e98" title="Calculate if the task can be completed again" alt="" coords="1781,5,2164,32"/>
+<area shape="rect" id="node7" href="$classMainPage_1_1TaskDisplayHandler.html#a754a230e53cedd3209a29d4d6a743719" title="When the complete state is changed update the display to match it" alt="" coords="1789,56,2156,83"/>
+<area shape="rect" id="node15" href="$classMainPage_1_1TaskDisplayHandler.html#ac3773b76adb09298978a65c89136c20f" title="Update the task&#39;s labels" alt="" coords="1817,107,2128,133"/>
+<area shape="rect" id="node8" href="$classMainPage_1_1MainWindowController.html#a85072f5d92f4145d6213209a13936639" title="Refreshes the tasks with the proper sorting order" alt="" coords="2226,56,2569,83"/>
+<area shape="rect" id="node14" href="$classMainPage_1_1TaskDisplayHandler.html#aa63f1bc894519b9d5872c2bb50b84415" title="Update the time remaining until the task can be completed again" alt="" coords="2212,107,2583,133"/>
+<area shape="rect" id="node9" href="$classMainPage_1_1MainWindowController.html#a241b480aeebdab1bc34320cad8de7712" title="Load the good habits" alt="" coords="2632,56,2971,83"/>
+<area shape="rect" id="node10" href="$classMainPage_1_1TaskOpenPanelController.html#a5513399c20f650915ca10f54805f416e" title="Make this task a bad habit" alt="" coords="3021,56,3380,83"/>
+<area shape="rect" id="node11" href="$classMainPage_1_1TaskOpenPanelController.html#aa0b6757dbad141375c50282278b23b1a" title="Update the buttons with the appropriate color based on the current task" alt="" coords="3429,81,3780,108"/>
+<area shape="rect" id="node13" href="$classMainPage_1_1TaskOpenPanelController.html#a069a63e2b7e70cc4cb4c7e487b655700" title="Make it a good task" alt="" coords="3020,107,3381,133"/>
+<area shape="rect" id="node18" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window" alt="" coords="1147,233,1341,260"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="MainPage.ProfileHandler.LoggedOut" name="MainPage.ProfileHandler.LoggedOut">
+<area shape="rect" id="node1" title="When the logout was a success" alt="" coords="313,5,568,32"/>
+<area shape="rect" id="node2" href="$classMainPage_1_1ProfileHandler.html#a19e78cd452fa87ca5a0bbb36a35882d4" title="Send a login request with the login panel&#39;s fields" alt="" coords="5,5,265,32"/>
+</map>

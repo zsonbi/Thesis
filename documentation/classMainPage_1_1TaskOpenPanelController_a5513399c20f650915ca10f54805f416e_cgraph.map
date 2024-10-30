@@ -1,0 +1,5 @@
+<map id="MainPage.TaskOpenPanelController.MakeItBadHabit" name="MainPage.TaskOpenPanelController.MakeItBadHabit">
+<area shape="rect" id="node1" title="Make this task a bad habit" alt="" coords="5,5,364,32"/>
+<area shape="rect" id="node2" href="$classMainPage_1_1MainWindowController.html#a241b480aeebdab1bc34320cad8de7712" title="Load the good habits" alt="" coords="418,5,757,32"/>
+<area shape="rect" id="node3" href="$classMainPage_1_1TaskOpenPanelController.html#aa0b6757dbad141375c50282278b23b1a" title="Update the buttons with the appropriate color based on the current task" alt="" coords="412,56,763,83"/>
+</map>

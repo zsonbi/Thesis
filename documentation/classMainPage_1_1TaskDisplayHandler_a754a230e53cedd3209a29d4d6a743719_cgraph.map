@@ -1,0 +1,10 @@
+<map id="MainPage.TaskDisplayHandler.CompleteStateChange" name="MainPage.TaskDisplayHandler.CompleteStateChange">
+<area shape="rect" id="node1" title="When the complete state is changed update the display to match it" alt="" coords="5,81,372,108"/>
+<area shape="rect" id="node2" href="$classMainPage_1_1MainWindowController.html#a85072f5d92f4145d6213209a13936639" title="Refreshes the tasks with the proper sorting order" alt="" coords="434,31,777,57"/>
+<area shape="rect" id="node8" href="$classMainPage_1_1TaskDisplayHandler.html#aa63f1bc894519b9d5872c2bb50b84415" title="Update the time remaining until the task can be completed again" alt="" coords="420,81,791,108"/>
+<area shape="rect" id="node3" href="$classMainPage_1_1MainWindowController.html#a241b480aeebdab1bc34320cad8de7712" title="Load the good habits" alt="" coords="840,5,1179,32"/>
+<area shape="rect" id="node6" href="$classMainPage_1_1MainWindowController.html#ab5b80370512cd4273e86927fe696462d" title="Load the good tasks" alt="" coords="839,56,1180,83"/>
+<area shape="rect" id="node4" href="$classMainPage_1_1TaskOpenPanelController.html#a5513399c20f650915ca10f54805f416e" title="Make this task a bad habit" alt="" coords="1229,5,1588,32"/>
+<area shape="rect" id="node5" href="$classMainPage_1_1TaskOpenPanelController.html#aa0b6757dbad141375c50282278b23b1a" title="Update the buttons with the appropriate color based on the current task" alt="" coords="1637,31,1988,57"/>
+<area shape="rect" id="node7" href="$classMainPage_1_1TaskOpenPanelController.html#a069a63e2b7e70cc4cb4c7e487b655700" title="Make it a good task" alt="" coords="1228,56,1589,83"/>
+</map>

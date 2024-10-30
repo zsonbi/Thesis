@@ -1,0 +1,6 @@
+<map id="MainPage.FriendHandler.AcceptFriendRequest" name="MainPage.FriendHandler.AcceptFriendRequest">
+<area shape="rect" id="node1" title="Send a request to the server that the user accepted the friend request" alt="" coords="5,56,325,83"/>
+<area shape="rect" id="node2" href="$classMainPage_1_1FriendHandler.html#afedea0dd2e647f77ec7968750395b004" title="After the server responded successfully to the friend accept" alt="" coords="419,5,662,32"/>
+<area shape="rect" id="node3" href="$classConfig_1_1ServerConfig.html#a7e8a6c00e86ee263e4e91d76e91865d8" title="Path for the friend accept api endpoint" alt="" coords="373,56,708,83"/>
+<area shape="rect" id="node4" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="409,107,673,133"/>
+</map>

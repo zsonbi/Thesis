@@ -1,0 +1,5 @@
+<map id="Game.GameController.Update" name="Game.GameController.Update">
+<area shape="rect" id="node1" title="Called every frame" alt="" coords="5,5,224,32"/>
+<area shape="rect" id="node2" href="$classGame_1_1UI_1_1GameUI.html#a1f9659e1d86a8bcfdf115b631f89ce3e" title="Change the difficulty and update its display" alt="" coords="272,5,564,32"/>
+<area shape="rect" id="node3" href="$classGame_1_1UI_1_1StarHandler.html#a710bc2e71e1f1217f86fe1d7be4dc9c4" title="Update the display based on the difficulty" alt="" coords="612,5,883,32"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="MainPage.TaskOpenPanelController.DeletedTask" name="MainPage.TaskOpenPanelController.DeletedTask">
+<area shape="rect" id="node1" title="After the task were deleted from the server delete it also from the client" alt="" coords="5,56,340,83"/>
+<area shape="rect" id="node2" href="$classMainPage_1_1TaskOpenPanelController.html#af1b5c03c4cfe46084a34093435f79fee" title="Cancel this edit/task creation" alt="" coords="400,31,699,57"/>
+<area shape="rect" id="node8" href="$classMainPage_1_1MainWindowController.html#ab6e865f33e604878bb40346d5f6657c9" title="Remove the task with the given id" alt="" coords="388,81,711,108"/>
+<area shape="rect" id="node3" href="$classMainPage_1_1MainWindowController.html#a241b480aeebdab1bc34320cad8de7712" title="Load the good habits" alt="" coords="760,5,1099,32"/>
+<area shape="rect" id="node6" href="$classMainPage_1_1MainWindowController.html#ab5b80370512cd4273e86927fe696462d" title="Load the good tasks" alt="" coords="759,56,1100,83"/>
+<area shape="rect" id="node4" href="$classMainPage_1_1TaskOpenPanelController.html#a5513399c20f650915ca10f54805f416e" title="Make this task a bad habit" alt="" coords="1149,5,1508,32"/>
+<area shape="rect" id="node5" href="$classMainPage_1_1TaskOpenPanelController.html#aa0b6757dbad141375c50282278b23b1a" title="Update the buttons with the appropriate color based on the current task" alt="" coords="1557,31,1908,57"/>
+<area shape="rect" id="node7" href="$classMainPage_1_1TaskOpenPanelController.html#a069a63e2b7e70cc4cb4c7e487b655700" title="Make it a good task" alt="" coords="1148,56,1509,83"/>
+</map>

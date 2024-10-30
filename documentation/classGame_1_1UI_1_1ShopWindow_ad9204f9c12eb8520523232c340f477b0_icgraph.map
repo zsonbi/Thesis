@@ -1,0 +1,4 @@
+<map id="Game.UI.ShopWindow.Show" name="Game.UI.ShopWindow.Show">
+<area shape="rect" id="node1" title="Show the shop window" alt="" coords="312,5,517,32"/>
+<area shape="rect" id="node2" href="$classGame_1_1UI_1_1GameUI.html#a443a0569c632ba816be0bd1511b62bca" title="Display the shop window" alt="" coords="5,5,264,32"/>
+</map>

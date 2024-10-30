@@ -1,0 +1,9 @@
+<map id="Game.UI.ShopWindow.Show" name="Game.UI.ShopWindow.Show">
+<area shape="rect" id="node1" title="Show the shop window" alt="" coords="5,56,211,83"/>
+<area shape="rect" id="node2" href="$classGame_1_1UI_1_1ShopWindow.html#a9297b39a0fa7a77e8cf3022bc28c0b35" title="Update the shop items" alt="" coords="259,56,508,83"/>
+<area shape="rect" id="node3" href="$classGame_1_1UI_1_1ShopWindow.html#a6a703aeb6610fe526d65a9b89ad4c78e" title="Display the loaded shop items" alt="" coords="556,5,843,32"/>
+<area shape="rect" id="node5" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="567,56,831,83"/>
+<area shape="rect" id="node6" href="$classGame_1_1UI_1_1ShopWindow.html#ab11a75acddb1467e29d7624a4d12b8b9" title="Show if the request failed on the modal window" alt="" coords="559,107,839,133"/>
+<area shape="rect" id="node4" href="$classGame_1_1UI_1_1ShopItem.html#a8f8263dc4d8a04ebbd12545537c98879" title="Initializes this shop item" alt="" coords="903,5,1073,32"/>
+<area shape="rect" id="node7" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window" alt="" coords="891,107,1085,133"/>
+</map>

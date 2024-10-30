@@ -1,0 +1,7 @@
+<map id="MainPage.FriendWindowHandler.Show" name="MainPage.FriendWindowHandler.Show">
+<area shape="rect" id="node1" title="Shows the profile window" alt="" coords="5,31,276,57"/>
+<area shape="rect" id="node2" href="$classMainPage_1_1FriendWindowHandler.html#a6ebf0f7c70458f53c427517bf84bef7d" title="Loads the friends from the server" alt="" coords="324,31,637,57"/>
+<area shape="rect" id="node3" href="$classMainPage_1_1FriendWindowHandler.html#abce9cb8e608691cfbc50bf47c17a1b34" title="Display the friends which was recieved from the server" alt="" coords="685,5,1016,32"/>
+<area shape="rect" id="node5" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="719,56,983,83"/>
+<area shape="rect" id="node4" href="$classMainPage_1_1FriendHandler.html#ab894b96203019d08e341bbb6090af8b8" title="Inititializes a new display with the given friend to display" alt="" coords="1064,5,1311,32"/>
+</map>

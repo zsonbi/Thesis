@@ -1,0 +1,5 @@
+<map id="Game.World.Chunk.AddRoadBuildings" name="Game.World.Chunk.AddRoadBuildings">
+<area shape="rect" id="node1" title="Add the buildings which are next to the roads" alt="" coords="5,5,275,32"/>
+<area shape="rect" id="node2" href="$classGame_1_1World_1_1Chunk.html#af2946e1e1b9e325d6004d166b2b26193" title="Lock the cell and try to place it" alt="" coords="323,5,649,32"/>
+<area shape="rect" id="node3" href="$classGame_1_1World_1_1Chunk.html#af37779d40ed9cd07b577d5bca61627b7" title=" " alt="" coords="697,5,980,32"/>
+</map>

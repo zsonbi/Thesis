@@ -1,0 +1,21 @@
+<map id="MainPage.MainWindowController.LoadBadHabits" name="MainPage.MainWindowController.LoadBadHabits">
+<area shape="rect" id="node1" title="Load the good habits" alt="" coords="3383,79,3721,105"/>
+<area shape="rect" id="node2" href="$classMainPage_1_1TaskOpenPanelController.html#af1b5c03c4cfe46084a34093435f79fee" title="Cancel this edit/task creation" alt="" coords="3006,16,3305,43"/>
+<area shape="rect" id="node5" href="$classMainPage_1_1TaskOpenPanelController.html#a5513399c20f650915ca10f54805f416e" title="Make this task a bad habit" alt="" coords="2976,79,3335,105"/>
+<area shape="rect" id="node6" href="$classMainPage_1_1MainWindowController.html#a85072f5d92f4145d6213209a13936639" title="Refreshes the tasks with the proper sorting order" alt="" coords="2984,155,3327,181"/>
+<area shape="rect" id="node3" href="$classMainPage_1_1TaskOpenPanelController.html#a254ff7d6e427208a7f9ae3bec5ae7ba7" title="After the task were deleted from the server delete it also from the client" alt="" coords="2577,9,2912,36"/>
+<area shape="rect" id="node4" href="$classMainPage_1_1TaskOpenPanelController.html#a3107b94793886f6af28ac9415fb44370" title="Send a delete task request to the server" alt="" coords="2165,5,2491,32"/>
+<area shape="rect" id="node7" href="$classMainPage_1_1TaskDisplayHandler.html#a754a230e53cedd3209a29d4d6a743719" title="When the complete state is changed update the display to match it" alt="" coords="2561,155,2928,181"/>
+<area shape="rect" id="node13" href="$classMainPage_1_1TaskOpenPanelController.html#a750d1acc6fd173296467fb9aca366a3d" title="When the task was stored on the server show it also visually and close the panel" alt="" coords="698,259,1021,285"/>
+<area shape="rect" id="node8" href="$classMainPage_1_1TaskDisplayHandler.html#a8aedc4afb32d220352cf04cc77fdedf6" title="Init it with the task to display and references to the controls" alt="" coords="1448,208,1733,235"/>
+<area shape="rect" id="node15" href="$classMainPage_1_1TaskDisplayHandler.html#a98b63052d0efc73233a32b69a06bf68e" title="When the complete acknowledge were recieved from the server update the display" alt="" coords="2167,107,2489,133"/>
+<area shape="rect" id="node17" href="$classMainPage_1_1TaskDisplayHandler.html#aa63f1bc894519b9d5872c2bb50b84415" title="Update the time remaining until the task can be completed again" alt="" coords="2143,157,2513,184"/>
+<area shape="rect" id="node9" href="$classMainPage_1_1MainWindowController.html#a827f62c47eb691eadd994bd51bf7cb74" title="Creates a new task prefab to display" alt="" coords="1088,208,1400,235"/>
+<area shape="rect" id="node10" href="$classMainPage_1_1MainWindowController.html#ab40b51689d2d8ca0497b0e53128f4992" title="Create the task prefabs" alt="" coords="679,208,1040,235"/>
+<area shape="rect" id="node11" href="$classMainPage_1_1MainWindowController.html#a47c21c97b7ba52af405119044e1434d0" title="Load the tasks from the server" alt="" coords="324,208,631,235"/>
+<area shape="rect" id="node12" href="$classMainPage_1_1MainWindowController.html#acea2170099ea435298139c6c7fdce719" title="Start is called before the first frame update" alt="" coords="5,208,276,235"/>
+<area shape="rect" id="node14" href="$classMainPage_1_1TaskOpenPanelController.html#ab8def75cd4cdbdaf3033022ea114a8a6" title="Save the task to the server" alt="" coords="334,259,621,285"/>
+<area shape="rect" id="node16" href="$classMainPage_1_1TaskDisplayHandler.html#ab553f8eb77d9d038521af3813275a43d" title="Complete the task and send this to the server" alt="" coords="1781,107,2095,133"/>
+<area shape="rect" id="node18" href="$classMainPage_1_1TaskDisplayHandler.html#a19067f6c6b504e4947d9473721e6877f" title="Called every frame if it has been completed update the remaining time" alt="" coords="1804,157,2072,184"/>
+<area shape="rect" id="node19" href="$classMainPage_1_1TaskDisplayHandler.html#ac3773b76adb09298978a65c89136c20f" title="Update the task&#39;s labels" alt="" coords="1783,208,2093,235"/>
+</map>

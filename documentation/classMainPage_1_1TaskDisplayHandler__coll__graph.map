@@ -1,8 +1,8 @@
 <map id="MainPage.TaskDisplayHandler" name="MainPage.TaskDisplayHandler">
-<area shape="rect" id="node1" title="Task prefab display handler" alt="" coords="9,1096,228,1349"/>
-<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="310,132,508,209"/>
-<area shape="rect" id="node4" href="$classMainPage_1_1TaskOpenPanelController.html" title="Controller for displaying, editing and creating tasks" alt="" coords="138,259,389,629"/>
-<area shape="rect" id="node5" href="$classMainPage_1_1MainWindowController.html" title="Handles the main window&#39;s controls" alt="" coords="313,692,550,1033"/>
-<area shape="rect" id="node6" href="$classUtility_1_1ModalWindow.html" title="Modal window for alerting the user" alt="" coords="506,369,680,519"/>
-<area shape="rect" id="node3" title=" " alt="" coords="347,5,471,83"/>
+<area shape="rect" id="node1" title="Task prefab display handler" alt="" coords="5,1199,363,1496"/>
+<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="390,132,589,209"/>
+<area shape="rect" id="node4" href="$classMainPage_1_1TaskOpenPanelController.html" title="Controller for displaying, editing and creating tasks" alt="" coords="184,259,483,673"/>
+<area shape="rect" id="node5" href="$classMainPage_1_1MainWindowController.html" title="Handles the main window&#39;s controls" alt="" coords="379,736,722,1136"/>
+<area shape="rect" id="node6" href="$classUtility_1_1ModalWindow.html" title="Modal window for alerting the user" alt="" coords="581,383,859,549"/>
+<area shape="rect" id="node3" title=" " alt="" coords="427,5,551,83"/>
 </map>

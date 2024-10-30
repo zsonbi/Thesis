@@ -1,0 +1,4 @@
+<map id="Game.UI.GameUI.DoubledCoins" name="Game.UI.GameUI.DoubledCoins">
+<area shape="rect" id="node1" title="Callback after the coins were doubled" alt="" coords="276,5,507,32"/>
+<area shape="rect" id="node2" href="$classGame_1_1UI_1_1GameUI.html#aaed9ba7f6e28b2260d488f01c803e60a" title="Buy the double coins bonus" alt="" coords="5,5,228,32"/>
+</map>

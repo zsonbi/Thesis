@@ -1,0 +1,4 @@
+<map id="MainPage.MainWindowController.ShowRequestFail" name="MainPage.MainWindowController.ShowRequestFail">
+<area shape="rect" id="node1" title="Show the server request fail in the modal window" alt="" coords="5,5,356,32"/>
+<area shape="rect" id="node2" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window" alt="" coords="404,5,599,32"/>
+</map>

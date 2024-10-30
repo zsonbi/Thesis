@@ -1,0 +1,5 @@
+<map id="Game.Car.ChangeChunkIfNeeded" name="Game.Car.ChangeChunkIfNeeded">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,244,57"/>
+<area shape="rect" id="node2" href="$classGame_1_1Car.html#aafa1ed6c6d66625c4e9dd1c18fb67fd3" title=" " alt="" coords="323,5,511,32"/>
+<area shape="rect" id="node3" href="$classGame_1_1World_1_1GameWorld.html#a78654137c458c1b1917285e28d3d270b" title="Gets the chunk based on the absolute position which chunk it would fall into" alt="" coords="292,56,543,83"/>
+</map>

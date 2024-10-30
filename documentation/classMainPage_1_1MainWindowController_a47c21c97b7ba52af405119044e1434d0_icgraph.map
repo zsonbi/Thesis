@@ -1,0 +1,4 @@
+<map id="MainPage.MainWindowController.LoadTasks" name="MainPage.MainWindowController.LoadTasks">
+<area shape="rect" id="node1" title="Load the tasks from the server" alt="" coords="324,5,631,32"/>
+<area shape="rect" id="node2" href="$classMainPage_1_1MainWindowController.html#acea2170099ea435298139c6c7fdce719" title="Start is called before the first frame update" alt="" coords="5,5,276,32"/>
+</map>

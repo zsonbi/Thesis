@@ -1,13 +1,13 @@
 <map id="CameraScript" name="CameraScript">
-<area shape="rect" id="node1" title="Script which follows the player&#39;s car" alt="" coords="597,849,718,941"/>
-<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="774,132,973,209"/>
-<area shape="rect" id="node4" href="$classGame_1_1GameController.html" title="Handles the main flow of the game scene" alt="" coords="285,272,496,628"/>
-<area shape="rect" id="node5" href="$classGame_1_1UI_1_1GameUI.html" title="Controller for the game&#39;s UI" alt="" coords="967,1069,1166,1543"/>
-<area shape="rect" id="node6" href="$classGame_1_1UI_1_1ShopWindow.html" title="Handles the shop window&#39;s content display" alt="" coords="983,783,1150,1007"/>
-<area shape="rect" id="node7" href="$classUtility_1_1ModalWindow.html" title="Modal window for alerting the user" alt="" coords="963,375,1136,525"/>
-<area shape="rect" id="node8" href="$classGame_1_1UI_1_1LeaderboardWindow.html" title="Handles the leaderboard display window" alt="" coords="743,812,959,977"/>
-<area shape="rect" id="node9" href="$classGame_1_1UI_1_1StarHandler.html" title="Star handler" alt="" coords="1244,652,1404,759"/>
-<area shape="rect" id="node11" href="$classGame_1_1World_1_1CarSpawner.html" title="Car spawner" alt="" coords="52,783,236,1007"/>
-<area shape="rect" id="node3" title=" " alt="" coords="811,5,935,83"/>
-<area shape="rect" id="node10" title=" " alt="" coords="5,132,64,209"/>
+<area shape="rect" id="node1" title="Script which follows the player&#39;s car" alt="" coords="636,929,811,1021"/>
+<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="905,132,1104,209"/>
+<area shape="rect" id="node4" href="$classGame_1_1GameController.html" title="Handles the main flow of the game scene" alt="" coords="240,272,583,701"/>
+<area shape="rect" id="node5" href="$classGame_1_1UI_1_1GameUI.html" title="Controller for the game&#39;s UI" alt="" coords="1066,1157,1477,1792"/>
+<area shape="rect" id="node6" href="$classGame_1_1UI_1_1ShopWindow.html" title="Handles the shop window&#39;s content display" alt="" coords="1132,856,1411,1095"/>
+<area shape="rect" id="node7" href="$classUtility_1_1ModalWindow.html" title="Modal window for alerting the user" alt="" coords="1079,404,1357,569"/>
+<area shape="rect" id="node8" href="$classGame_1_1UI_1_1LeaderboardWindow.html" title="Handles the leaderboard display window" alt="" coords="835,885,1108,1065"/>
+<area shape="rect" id="node9" href="$classGame_1_1UI_1_1StarHandler.html" title="Star handler" alt="" coords="1476,725,1741,832"/>
+<area shape="rect" id="node11" href="$classGame_1_1World_1_1CarSpawner.html" title="Car spawner" alt="" coords="5,863,324,1087"/>
+<area shape="rect" id="node3" title=" " alt="" coords="943,5,1067,83"/>
+<area shape="rect" id="node10" title=" " alt="" coords="26,132,85,209"/>
 </map>

@@ -1,0 +1,8 @@
+<map id="MainPage.TaskOpenPanelController.Cancel" name="MainPage.TaskOpenPanelController.Cancel">
+<area shape="rect" id="node1" title="Cancel this edit/task creation" alt="" coords="5,31,304,57"/>
+<area shape="rect" id="node2" href="$classMainPage_1_1MainWindowController.html#a241b480aeebdab1bc34320cad8de7712" title="Load the good habits" alt="" coords="353,5,692,32"/>
+<area shape="rect" id="node5" href="$classMainPage_1_1MainWindowController.html#ab5b80370512cd4273e86927fe696462d" title="Load the good tasks" alt="" coords="352,56,693,83"/>
+<area shape="rect" id="node3" href="$classMainPage_1_1TaskOpenPanelController.html#a5513399c20f650915ca10f54805f416e" title="Make this task a bad habit" alt="" coords="743,5,1101,32"/>
+<area shape="rect" id="node4" href="$classMainPage_1_1TaskOpenPanelController.html#aa0b6757dbad141375c50282278b23b1a" title="Update the buttons with the appropriate color based on the current task" alt="" coords="1151,31,1501,57"/>
+<area shape="rect" id="node6" href="$classMainPage_1_1TaskOpenPanelController.html#a069a63e2b7e70cc4cb4c7e487b655700" title="Make it a good task" alt="" coords="741,56,1103,83"/>
+</map>

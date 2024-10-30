@@ -1,0 +1,8 @@
+<map id="MainPage.FriendWindowHandler.SendFriendRequest" name="MainPage.FriendWindowHandler.SendFriendRequest">
+<area shape="rect" id="node1" title="Sends a friend request to the user which was specified in the useridentification input" alt="" coords="5,56,365,83"/>
+<area shape="rect" id="node2" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="460,5,724,32"/>
+<area shape="rect" id="node3" href="$classMainPage_1_1FriendWindowHandler.html#a61d9cd37518259d360474dd5fe55ae24" title="After the friend request was sent load the friend prefab if it can show pending" alt="" coords="413,56,771,83"/>
+<area shape="rect" id="node5" href="$classMainPage_1_1FriendWindowHandler.html#a426fe4fa5825088784861d79cf48048d" title="Show api request failure" alt="" coords="419,107,765,133"/>
+<area shape="rect" id="node4" href="$classMainPage_1_1FriendHandler.html#ab894b96203019d08e341bbb6090af8b8" title="Inititializes a new display with the given friend to display" alt="" coords="819,56,1065,83"/>
+<area shape="rect" id="node6" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window" alt="" coords="845,107,1039,133"/>
+</map>

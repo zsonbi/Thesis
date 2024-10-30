@@ -1,0 +1,4 @@
+<map id="Game.UI.GameUI.ShowRequestFail" name="Game.UI.GameUI.ShowRequestFail">
+<area shape="rect" id="node1" title="Show if the request failed on the modal window" alt="" coords="5,5,256,32"/>
+<area shape="rect" id="node2" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window" alt="" coords="304,5,499,32"/>
+</map>

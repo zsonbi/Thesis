@@ -1,0 +1,4 @@
+<map id="Game.UI.GameUI.BoughtTurbo" name="Game.UI.GameUI.BoughtTurbo">
+<area shape="rect" id="node1" title="Callback after the player bought the turbo" alt="" coords="5,5,227,32"/>
+<area shape="rect" id="node2" href="$classUser_1_1UserData.html#a103846d4ce97a5d089423d4efd1a5ec0" title="Update the user&#39;s task score" alt="" coords="275,5,507,32"/>
+</map>

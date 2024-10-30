@@ -1,0 +1,4 @@
+<map id="Game.GameController.PlayerSkinsLoaded" name="Game.GameController.PlayerSkinsLoaded">
+<area shape="rect" id="node1" title="Add the loaded skin to the player variants list" alt="" coords="268,5,563,32"/>
+<area shape="rect" id="node2" href="$classGame_1_1GameController.html#afb68886afaa05f935ab512dce0eb1dff" title="Called when script is loaded" alt="" coords="5,5,220,32"/>
+</map>

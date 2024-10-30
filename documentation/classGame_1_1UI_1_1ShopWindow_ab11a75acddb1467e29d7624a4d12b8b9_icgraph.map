@@ -1,0 +1,8 @@
+<map id="Game.UI.ShopWindow.ShowRequestFail" name="Game.UI.ShopWindow.ShowRequestFail">
+<area shape="rect" id="node1" title="Show if the request failed on the modal window" alt="" coords="863,5,1143,32"/>
+<area shape="rect" id="node2" href="$classGame_1_1UI_1_1ShopItem.html#a08030b9b33414329032136c2db442bef" title="Buy this shop item" alt="" coords="47,5,222,32"/>
+<area shape="rect" id="node3" href="$classGame_1_1UI_1_1ShopWindow.html#a9297b39a0fa7a77e8cf3022bc28c0b35" title="Update the shop items" alt="" coords="565,31,815,57"/>
+<area shape="rect" id="node4" href="$classGame_1_1UI_1_1ShopItem.html#aba8c6371c3eeaecb2bb7ab1f07311869" title="Callback when it is bought" alt="" coords="317,31,512,57"/>
+<area shape="rect" id="node5" href="$classGame_1_1UI_1_1ShopWindow.html#ad9204f9c12eb8520523232c340f477b0" title="Show the shop window" alt="" coords="312,81,517,108"/>
+<area shape="rect" id="node6" href="$classGame_1_1UI_1_1GameUI.html#a443a0569c632ba816be0bd1511b62bca" title="Display the shop window" alt="" coords="5,81,264,108"/>
+</map>

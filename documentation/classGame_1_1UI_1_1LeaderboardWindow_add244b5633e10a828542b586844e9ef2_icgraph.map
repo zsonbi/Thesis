@@ -1,0 +1,6 @@
+<map id="Game.UI.LeaderboardWindow.ShowRequestFail" name="Game.UI.LeaderboardWindow.ShowRequestFail">
+<area shape="rect" id="node1" title="Show if the request failed in the modal" alt="" coords="953,5,1283,32"/>
+<area shape="rect" id="node2" href="$classGame_1_1UI_1_1LeaderboardWindow.html#a6d7212efa2c2627d119bac3318ea0d00" title="Load the scores" alt="" coords="612,5,905,32"/>
+<area shape="rect" id="node3" href="$classGame_1_1UI_1_1LeaderboardWindow.html#a8404b4a49a1f74f3b634ec77eb4b1d87" title="Show the window" alt="" coords="309,5,564,32"/>
+<area shape="rect" id="node4" href="$classGame_1_1UI_1_1GameUI.html#a4258f849b2e7d8cdb72dd01c26de3a71" title="Show the leaderboard window" alt="" coords="5,5,261,32"/>
+</map>

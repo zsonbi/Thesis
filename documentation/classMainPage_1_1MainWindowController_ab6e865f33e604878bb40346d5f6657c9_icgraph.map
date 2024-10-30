@@ -1,0 +1,5 @@
+<map id="MainPage.MainWindowController.RemoveTask" name="MainPage.MainWindowController.RemoveTask">
+<area shape="rect" id="node1" title="Remove the task with the given id" alt="" coords="763,5,1085,32"/>
+<area shape="rect" id="node2" href="$classMainPage_1_1TaskOpenPanelController.html#a254ff7d6e427208a7f9ae3bec5ae7ba7" title="After the task were deleted from the server delete it also from the client" alt="" coords="380,5,715,32"/>
+<area shape="rect" id="node3" href="$classMainPage_1_1TaskOpenPanelController.html#a3107b94793886f6af28ac9415fb44370" title="Send a delete task request to the server" alt="" coords="5,5,332,32"/>
+</map>

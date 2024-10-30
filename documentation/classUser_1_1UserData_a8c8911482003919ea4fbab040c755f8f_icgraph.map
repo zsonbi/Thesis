@@ -1,0 +1,8 @@
+<map id="User.UserData.Logout" name="User.UserData.Logout">
+<area shape="rect" id="node1" title="Signal&#39;s that the user is logged out" alt="" coords="960,31,1124,57"/>
+<area shape="rect" id="node2" href="$classUser_1_1LoggedInChecker.html#aa0be140ec2e3efb96d0a9c306e6d811a" title="Handles if the user is not logged in" alt="" coords="665,5,904,32"/>
+<area shape="rect" id="node5" href="$classMainPage_1_1ProfileHandler.html#ad54f411a26e9a3dd6d0efa9ad5f58914" title="When the logout was a success" alt="" coords="657,56,912,83"/>
+<area shape="rect" id="node3" href="$classUser_1_1LoggedInChecker.html#a306ce5521a6109ae00667a32fd0a442c" title="Coroutine which calls the api endpoint to check if the user is still logged in" alt="" coords="265,5,609,32"/>
+<area shape="rect" id="node4" href="$classUser_1_1LoggedInChecker.html#a0f9199eb996ba1309b9bb6bad5d6268e" title="Called when the script is loaded" alt="" coords="5,5,217,32"/>
+<area shape="rect" id="node6" href="$classMainPage_1_1ProfileHandler.html#a19e78cd452fa87ca5a0bbb36a35882d4" title="Send a login request with the login panel&#39;s fields" alt="" coords="307,56,567,83"/>
+</map>

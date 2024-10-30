@@ -1,0 +1,4 @@
+<map id="Config.ServerConfig.PATHFORTASKDELETE" name="Config.ServerConfig.PATHFORTASKDELETE">
+<area shape="rect" id="node1" title="Path to the api endpoint to delete the given task" alt="" coords="380,5,675,32"/>
+<area shape="rect" id="node2" href="$classMainPage_1_1TaskOpenPanelController.html#a3107b94793886f6af28ac9415fb44370" title="Send a delete task request to the server" alt="" coords="5,5,332,32"/>
+</map>

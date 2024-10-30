@@ -1,0 +1,19 @@
+<map id="Game.GameController.SpawnNearbyChunks" name="Game.GameController.SpawnNearbyChunks">
+<area shape="rect" id="node1" title="Spawns and loads the nearby chunks" alt="" coords="5,31,315,57"/>
+<area shape="rect" id="node2" href="$classGame_1_1GameController.html#a9818f49a9c0638be6cc6449e5e5000f7" title="Checks if the selected chunk is in range and loads it if the world exists" alt="" coords="363,31,684,57"/>
+<area shape="rect" id="node3" href="$classGame_1_1World_1_1GameWorld.html#a730e116826e3519544de155b667042ba" title="Loads a chunk" alt="" coords="732,31,991,57"/>
+<area shape="rect" id="node4" href="$classGame_1_1World_1_1Chunk.html#a475512064d145228ca7084735b7e2f2f" title="Show the chunk" alt="" coords="1045,5,1245,32"/>
+<area shape="rect" id="node5" href="$classGame_1_1World_1_1Chunk.html#a0616c2f9600a4bcc1dbe97a93a947e7a" title="Initialize the chunk" alt="" coords="1039,56,1252,83"/>
+<area shape="rect" id="node6" href="$classGame_1_1World_1_1Chunk.html#aac3343253a33a36a09318ebc76bd9f08" title="Creates the tiles for the chunk" alt="" coords="1327,5,1553,32"/>
+<area shape="rect" id="node9" href="$classGame_1_1World_1_1Chunk.html#af8d6134551597f12a028155b1466c0ff" title="Gets tthe nearby chunks" alt="" coords="1305,56,1575,83"/>
+<area shape="rect" id="node11" href="$classGame_1_1World_1_1Chunk.html#a08f4b5e8b362b98f4b3f01225d12b4af" title="Spawns the buildings and the props on a seperate thread" alt="" coords="1300,157,1580,184"/>
+<area shape="rect" id="node7" href="$classGame_1_1World_1_1Chunk.html#ac4b762352bb5f90952fe57e5c0ee208f" title="Determines the type of the tile at the coord" alt="" coords="1657,5,1931,32"/>
+<area shape="rect" id="node8" href="$classGame_1_1World_1_1Chunk.html#a2d39efc9f5c0f3c302dd7e9d007096c7" title="Determine what type of road it is" alt="" coords="2030,5,2313,32"/>
+<area shape="rect" id="node10" href="$classGame_1_1World_1_1GameWorld.html#a6188226b54eb7e38659cbe8d9d76b620" title="Get the chunk without trying it to load" alt="" coords="1628,56,1960,83"/>
+<area shape="rect" id="node12" href="$classGame_1_1World_1_1Chunk.html#a12ff4b268fb99d10493398cfe555b46c" title=" " alt="" coords="2024,107,2319,133"/>
+<area shape="rect" id="node14" href="$classGame_1_1World_1_1Chunk.html#a00a9cd484ae1ddffec928a75f6b2db15" title="Add the buildings which are next to the roads" alt="" coords="1659,157,1929,184"/>
+<area shape="rect" id="node16" href="$classGame_1_1World_1_1Chunk.html#a443ede65d8aeb566a385cb3bcad9d8f7" title="Generate the building cells matrix so we know which way the roads are" alt="" coords="1655,208,1933,235"/>
+<area shape="rect" id="node17" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="1662,259,1926,285"/>
+<area shape="rect" id="node13" href="$classGame_1_1World_1_1Chunk.html#af37779d40ed9cd07b577d5bca61627b7" title=" " alt="" coords="2383,132,2665,159"/>
+<area shape="rect" id="node15" href="$classGame_1_1World_1_1Chunk.html#af2946e1e1b9e325d6004d166b2b26193" title="Lock the cell and try to place it" alt="" coords="2008,157,2335,184"/>
+</map>
