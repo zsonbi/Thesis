@@ -77,7 +77,7 @@ namespace Game
             /// </summary>
             public void Buy()
             {
-                CoroutineRunner.RunCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.Game>(ServerConfig.PATH_FOR_BUY_CAR(Id), new WWWForm(), Bought));
+                CoroutineRunner.RunCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.Game>(ServerConfig.PATH_FOR_BUY_CAR(Id), new WWWForm(), Bought, onFailedAction: shopWindow.ShowRequestFail));
             }
 
             /// <summary>

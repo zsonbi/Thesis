@@ -72,7 +72,7 @@ namespace Game
             /// Show if the request failed on the modal window
             /// </summary>
             /// <param name="content">The content to show</param>
-            private void ShowRequestFail(string content)
+            public void ShowRequestFail(string content)
             {
                 ModalWindow.Show("Shop error", content);
             }
