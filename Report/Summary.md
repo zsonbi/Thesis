@@ -1,16 +1,16 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 10/29/2024 - 00:01:45 |
+| Generated on: | 10/30/2024 - 12:30:31 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 2 |
 | Classes: | 68 |
 | Files: | 68 |
-| Covered lines: | 2612 |
-| Uncovered lines: | 597 |
+| Covered lines: | 2626 |
+| Uncovered lines: | 583 |
 | Coverable lines: | 3209 |
 | Total lines: | 7427 |
-| Line coverage: | 81.3% (2612 of 3209) |
+| Line coverage: | 81.8% (2626 of 3209) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 470 |
@@ -33,15 +33,15 @@
 |Tests.UnityTestParent[T]|59|0|59|108|100%|0|0||5|5|100%|
 |Tests.UserTests.UserControllerTests|22|0|22|47|100%|0|0||3|3|100%|
 |Tests.UserTests.UserTestsParent[T]|4|0|4|24|100%|0|0||1|1|100%|
-|**ThesisScripts**|**1877**|**576**|**2453**|**6035**|**76.5%**|**0**|**0**|****|**414**|**498**|**83.1%**|
+|**ThesisScripts**|**1891**|**562**|**2453**|**6035**|**77%**|**0**|**0**|****|**414**|**498**|**83.1%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|6|0|6|17|100%|0|0||5|5|100%|
 |CameraScript|7|0|7|35|100%|0|0||2|2|100%|
 |Config.ServerConfig|6|1|7|151|85.7%|0|0||6|7|85.7%|
 |DataTypes.TaskClosedEventArgs|0|4|4|14|0%|0|0||0|1|0%|
 |EdgeRoadContainer|9|0|9|15|100%|0|0||7|7|100%|
-|Game.Car|63|22|85|144|74.1%|0|0||13|13|100%|
-|Game.CarController|94|25|119|230|78.9%|0|0||14|18|77.7%|
-|Game.CopCar|43|15|58|93|74.1%|0|0||1|1|100%|
+|Game.Car|67|18|85|144|78.8%|0|0||13|13|100%|
+|Game.CarController|95|24|119|230|79.8%|0|0||14|18|77.7%|
+|Game.CopCar|47|11|58|93|81%|0|0||1|1|100%|
 |Game.EffectScript|1|0|1|14|100%|0|0||1|1|100%|
 |Game.EnableWheelPhysicMaterial|16|0|16|38|100%|0|0||2|2|100%|
 |Game.GameController|115|10|125|290|92%|0|0||25|25|100%|
@@ -55,7 +55,7 @@
 |Game.UI.StarHandler|10|0|10|50|100%|0|0||1|1|100%|
 |Game.World.Building|7|2|9|77|77.7%|0|0||5|7|71.4%|
 |Game.World.BuildingCell|11|0|11|30|100%|0|0||7|7|100%|
-|Game.World.CarSpawner|33|10|43|129|76.7%|0|0||4|5|80%|
+|Game.World.CarSpawner|37|6|43|129|86%|0|0||4|5|80%|
 |Game.World.Chunk|371|43|414|778|89.6%|0|0||29|30|96.6%|
 |Game.World.Coin|7|0|7|34|100%|0|0||2|2|100%|
 |Game.World.GameWorld|69|16|85|173|81.1%|0|0||6|6|100%|
@@ -83,7 +83,7 @@
 |Thesis_backend.Data_Structures.UserLoginRequest|2|0|2|14|100%|0|0||4|4|100%|
 |Thesis_backend.Data_Structures.UserRequest|3|0|3|15|100%|0|0||6|6|100%|
 |Thesis_backend.Data_Structures.UserSettings|3|1|4|15|75%|0|0||6|8|75%|
-|User.LoggedInChecker|13|13|26|78|50%|0|0||3|5|60%|
+|User.LoggedInChecker|14|12|26|78|53.8%|0|0||3|5|60%|
 |User.UserController|25|45|70|201|35.7%|0|0||5|12|41.6%|
 |User.UserData|41|3|44|140|93.1%|0|0||31|31|100%|
 |Utility.CoroutineRunner|15|0|15|50|100%|0|0||3|3|100%|
