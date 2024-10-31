@@ -1,5 +1,5 @@
 <map id="User.UserController" name="User.UserController">
-<area shape="rect" id="node1" title="Handles the user actions such as registering and login" alt="" coords="5,256,293,553"/>
-<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="50,131,249,208"/>
-<area shape="rect" id="node3" title=" " alt="" coords="87,5,211,83"/>
+<area shape="rect" id="node1" title="Handles the user actions such as registering and login" alt="" coords="5,256,484,524"/>
+<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="145,131,344,208"/>
+<area shape="rect" id="node3" title=" " alt="" coords="183,5,307,83"/>
 </map>

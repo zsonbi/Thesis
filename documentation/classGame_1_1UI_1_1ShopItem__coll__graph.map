@@ -1,7 +1,7 @@
 <map id="Game.UI.ShopItem" name="Game.UI.ShopItem">
-<area shape="rect" id="node1" title="A single shop item" alt="" coords="5,788,287,1012"/>
-<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="76,132,275,209"/>
-<area shape="rect" id="node4" href="$classGame_1_1UI_1_1ShopWindow.html" title="Handles the shop window&#39;s content display" alt="" coords="163,487,441,725"/>
-<area shape="rect" id="node5" href="$classUtility_1_1ModalWindow.html" title="Modal window for alerting the user" alt="" coords="213,259,492,424"/>
-<area shape="rect" id="node3" title=" " alt="" coords="113,5,237,83"/>
+<area shape="rect" id="node1" title="A single shop item" alt="" coords="5,773,420,983"/>
+<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="143,132,341,209"/>
+<area shape="rect" id="node4" href="$classGame_1_1UI_1_1ShopWindow.html" title="Handles the shop window&#39;s content display" alt="" coords="229,487,575,711"/>
+<area shape="rect" id="node5" href="$classUtility_1_1ModalWindow.html" title="Modal window for alerting the user" alt="" coords="279,259,602,424"/>
+<area shape="rect" id="node3" title=" " alt="" coords="180,5,304,83"/>
 </map>

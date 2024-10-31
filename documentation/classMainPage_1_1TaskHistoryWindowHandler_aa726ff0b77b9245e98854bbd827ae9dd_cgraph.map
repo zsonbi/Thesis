@@ -1,9 +1,9 @@
 <map id="MainPage.TaskHistoryWindowHandler.Show" name="MainPage.TaskHistoryWindowHandler.Show">
 <area shape="rect" id="node1" title="Shows the task history window" alt="" coords="5,56,312,83"/>
-<area shape="rect" id="node2" href="$classMainPage_1_1TaskHistoryWindowHandler.html#ada3a664597d8e1b1b9a261c3c34badba" title="Loads the task histories from the server" alt="" coords="360,49,691,90"/>
-<area shape="rect" id="node3" href="$classMainPage_1_1TaskHistoryWindowHandler.html#a270045b1192940fa409807d0624e0ba7" title="When the server response is recieved load the histories" alt="" coords="741,5,1117,32"/>
-<area shape="rect" id="node5" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="797,56,1061,83"/>
-<area shape="rect" id="node6" href="$classMainPage_1_1TaskHistoryWindowHandler.html#a74232871cc96faede9c1b89314bc7ce6" title="Show the server response errors" alt="" coords="739,107,1120,133"/>
-<area shape="rect" id="node4" href="$classMainPage_1_1TaskHistoryHandler.html#aa0125cc571c13b416fb8c3b1ffe469af" title="Init the task history&#39;s with the data from the server" alt="" coords="1168,5,1408,32"/>
-<area shape="rect" id="node7" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window" alt="" coords="1191,107,1385,133"/>
+<area shape="rect" id="node2" href="$classMainPage_1_1TaskHistoryWindowHandler.html#ada3a664597d8e1b1b9a261c3c34badba" title="Loads the task histories from the server" alt="" coords="360,56,749,83"/>
+<area shape="rect" id="node3" href="$classMainPage_1_1TaskHistoryWindowHandler.html#a270045b1192940fa409807d0624e0ba7" title="When the server response is recieved load the histories" alt="" coords="800,5,1176,32"/>
+<area shape="rect" id="node5" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="856,56,1120,83"/>
+<area shape="rect" id="node6" href="$classMainPage_1_1TaskHistoryWindowHandler.html#a74232871cc96faede9c1b89314bc7ce6" title="Show the server response errors" alt="" coords="797,107,1179,133"/>
+<area shape="rect" id="node4" href="$classMainPage_1_1TaskHistoryHandler.html#aa0125cc571c13b416fb8c3b1ffe469af" title="Init the task history&#39;s with the data from the server" alt="" coords="1227,5,1467,32"/>
+<area shape="rect" id="node7" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window" alt="" coords="1249,107,1444,133"/>
 </map>

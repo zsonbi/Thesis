@@ -1,42 +1,42 @@
 <map id="Utility.ModalWindow.Show" name="Utility.ModalWindow.Show">
-<area shape="rect" id="node1" title="Show the modal window" alt="" coords="1596,327,1791,353"/>
-<area shape="rect" id="node2" href="$classUser_1_1UserController.html#ae7159709fe17c18b3f9e3a15617c1db1" title="Send a register request with the register panel&#39;s fields" alt="" coords="819,23,1058,49"/>
-<area shape="rect" id="node3" href="$classUtility_1_1ModalWindow.html#aefa109efe486b5a93c22bef9105bf2ee" title="Show the modal window with custom content" alt="" coords="1260,99,1455,125"/>
-<area shape="rect" id="node4" href="$classUser_1_1UserController.html#a156a37eabac915f5d287201599b3a0b1" title="Show the login error on the modal window" alt="" coords="1231,200,1484,227"/>
-<area shape="rect" id="node6" href="$classUser_1_1UserController.html#a07a456882c4f5619e468f30cc0cdf76c" title="Show the register error on the modal window" alt="" coords="1221,149,1493,176"/>
-<area shape="rect" id="node7" href="$classGame_1_1UI_1_1GameUI.html#ac464d5a547acb44085748e2ee265272f" title="Show if the request failed on the modal window" alt="" coords="1232,251,1483,277"/>
-<area shape="rect" id="node18" href="$classGame_1_1UI_1_1LeaderboardWindow.html#add244b5633e10a828542b586844e9ef2" title="Show if the request failed in the modal" alt="" coords="1193,327,1522,353"/>
-<area shape="rect" id="node22" href="$classGame_1_1UI_1_1ShopWindow.html#ab11a75acddb1467e29d7624a4d12b8b9" title="Show if the request failed on the modal window" alt="" coords="1217,377,1497,404"/>
-<area shape="rect" id="node28" href="$classMainPage_1_1MainWindowController.html#aca9938481cb1ebf9d9b46ca9779e48f4" title="Show the server request fail in the modal window" alt="" coords="1182,435,1533,461"/>
-<area shape="rect" id="node31" href="$classMainPage_1_1FriendWindowHandler.html#a426fe4fa5825088784861d79cf48048d" title="Show api request failure" alt="" coords="1185,500,1530,527"/>
-<area shape="rect" id="node33" href="$classMainPage_1_1TaskHistoryWindowHandler.html#a74232871cc96faede9c1b89314bc7ce6" title="Show the server response errors" alt="" coords="1167,580,1548,607"/>
-<area shape="rect" id="node36" href="$classMainPage_1_1MainWindowController.html#afea342e3985134e17406ed61958ecc6f" title="Show the task request fail in the modal window" alt="" coords="1194,697,1521,724"/>
-<area shape="rect" id="node5" href="$classUser_1_1UserController.html#a7d9a8e16cdb6bc3702ab7987cc141b09" title="Send a login request with the login panel&#39;s fields" alt="" coords="829,73,1048,100"/>
-<area shape="rect" id="node8" href="$classGame_1_1UI_1_1GameUI.html#acd930ff070019fc74a3795a8b1452923" title="Buy the immunity power up" alt="" coords="825,124,1053,151"/>
-<area shape="rect" id="node10" href="$classGame_1_1UI_1_1GameUI.html#a97a84e72b5ac1d245d1bfd3eb802fdfd" title="Buy the turbo power up" alt="" coords="839,175,1039,201"/>
-<area shape="rect" id="node11" href="$classGame_1_1UI_1_1GameUI.html#aaed9ba7f6e28b2260d488f01c803e60a" title="Buy the double coins bonus" alt="" coords="827,225,1050,252"/>
-<area shape="rect" id="node12" href="$classGame_1_1UI_1_1GameUI.html#a4f9c8b23e2a0e5d86c53377ece2c9bac" title="Save the game&#39;s result" alt="" coords="813,276,1065,303"/>
-<area shape="rect" id="node9" href="$classGame_1_1UI_1_1GameUI.html#a77f6894867ecdecc2f7ca4bea695849f" title="Called every frame" alt="" coords="461,149,647,176"/>
-<area shape="rect" id="node13" href="$classGame_1_1UI_1_1GameUI.html#a87baf7b6bd70298f817e2c8e5e52a33a" title="Hide the game over screen" alt="" coords="412,251,696,277"/>
-<area shape="rect" id="node14" href="$classGame_1_1UI_1_1GameUI.html#ae468c173078a10af94f671a2f8db940b" title="Show the main menu" alt="" coords="47,149,308,176"/>
-<area shape="rect" id="node15" href="$classGame_1_1UI_1_1GameUI.html#aaec0b0e9165ba1d2dc25f1c562f5478a" title="Show the main menu, but don&#39;t save the scores" alt="" coords="5,200,349,227"/>
-<area shape="rect" id="node16" href="$classGame_1_1UI_1_1GameUI.html#a4248468e8aaa0b1f7bb24162e9bef6c7" title="Move back to the tasks" alt="" coords="66,251,289,277"/>
-<area shape="rect" id="node17" href="$classGame_1_1UI_1_1GameUI.html#ad581ee67e01ac3bcdec06cf2538f06e4" title="Start a new game" alt="" coords="73,301,281,328"/>
-<area shape="rect" id="node19" href="$classGame_1_1UI_1_1LeaderboardWindow.html#a6d7212efa2c2627d119bac3318ea0d00" title="Load the scores" alt="" coords="792,327,1085,353"/>
-<area shape="rect" id="node20" href="$classGame_1_1UI_1_1LeaderboardWindow.html#a8404b4a49a1f74f3b634ec77eb4b1d87" title="Show the window" alt="" coords="427,327,681,353"/>
-<area shape="rect" id="node21" href="$classGame_1_1UI_1_1GameUI.html#a4258f849b2e7d8cdb72dd01c26de3a71" title="Show the leaderboard window" alt="" coords="49,352,305,379"/>
+<area shape="rect" id="node1" title="Show the modal window" alt="" coords="1625,328,1820,355"/>
+<area shape="rect" id="node2" href="$classUser_1_1UserController.html#ae7159709fe17c18b3f9e3a15617c1db1" title="Send a register request with the register panel&#39;s fields" alt="" coords="834,24,1073,51"/>
+<area shape="rect" id="node3" href="$classUtility_1_1ModalWindow.html#aefa109efe486b5a93c22bef9105bf2ee" title="Show the modal window with custom content" alt="" coords="1289,100,1484,127"/>
+<area shape="rect" id="node4" href="$classUser_1_1UserController.html#a156a37eabac915f5d287201599b3a0b1" title="Show the login error on the modal window" alt="" coords="1260,202,1513,228"/>
+<area shape="rect" id="node6" href="$classUser_1_1UserController.html#a07a456882c4f5619e468f30cc0cdf76c" title="Show the register error on the modal window" alt="" coords="1251,151,1523,178"/>
+<area shape="rect" id="node7" href="$classGame_1_1UI_1_1GameUI.html#ac464d5a547acb44085748e2ee265272f" title="Show if the request failed on the modal window" alt="" coords="1261,252,1512,279"/>
+<area shape="rect" id="node18" href="$classGame_1_1UI_1_1LeaderboardWindow.html#add244b5633e10a828542b586844e9ef2" title="Show if the request failed in the modal" alt="" coords="1222,328,1551,355"/>
+<area shape="rect" id="node22" href="$classGame_1_1UI_1_1ShopWindow.html#ab11a75acddb1467e29d7624a4d12b8b9" title="Show if the request failed on the modal window" alt="" coords="1247,379,1527,406"/>
+<area shape="rect" id="node28" href="$classMainPage_1_1MainWindowController.html#aca9938481cb1ebf9d9b46ca9779e48f4" title="Show the server request fail in the modal window" alt="" coords="1211,436,1562,463"/>
+<area shape="rect" id="node31" href="$classMainPage_1_1FriendWindowHandler.html#a426fe4fa5825088784861d79cf48048d" title="Show api request failure" alt="" coords="1214,499,1559,526"/>
+<area shape="rect" id="node33" href="$classMainPage_1_1TaskHistoryWindowHandler.html#a74232871cc96faede9c1b89314bc7ce6" title="Show the server response errors" alt="" coords="1196,575,1577,602"/>
+<area shape="rect" id="node36" href="$classMainPage_1_1MainWindowController.html#afea342e3985134e17406ed61958ecc6f" title="Show the task request fail in the modal window" alt="" coords="1223,683,1550,710"/>
+<area shape="rect" id="node5" href="$classUser_1_1UserController.html#a7d9a8e16cdb6bc3702ab7987cc141b09" title="Send a login request with the login panel&#39;s fields" alt="" coords="844,75,1063,102"/>
+<area shape="rect" id="node8" href="$classGame_1_1UI_1_1GameUI.html#acd930ff070019fc74a3795a8b1452923" title="Buy the immunity power up" alt="" coords="839,126,1067,152"/>
+<area shape="rect" id="node10" href="$classGame_1_1UI_1_1GameUI.html#a97a84e72b5ac1d245d1bfd3eb802fdfd" title="Buy the turbo power up" alt="" coords="853,176,1053,203"/>
+<area shape="rect" id="node11" href="$classGame_1_1UI_1_1GameUI.html#aaed9ba7f6e28b2260d488f01c803e60a" title="Buy the double coins bonus" alt="" coords="842,227,1065,254"/>
+<area shape="rect" id="node12" href="$classGame_1_1UI_1_1GameUI.html#a4f9c8b23e2a0e5d86c53377ece2c9bac" title="Save the game&#39;s result" alt="" coords="827,278,1079,304"/>
+<area shape="rect" id="node9" href="$classGame_1_1UI_1_1GameUI.html#a77f6894867ecdecc2f7ca4bea695849f" title="Called every frame" alt="" coords="461,151,647,178"/>
+<area shape="rect" id="node13" href="$classGame_1_1UI_1_1GameUI.html#a87baf7b6bd70298f817e2c8e5e52a33a" title="Hide the game over screen" alt="" coords="412,252,696,279"/>
+<area shape="rect" id="node14" href="$classGame_1_1UI_1_1GameUI.html#ae468c173078a10af94f671a2f8db940b" title="Show the main menu" alt="" coords="47,151,308,178"/>
+<area shape="rect" id="node15" href="$classGame_1_1UI_1_1GameUI.html#aaec0b0e9165ba1d2dc25f1c562f5478a" title="Show the main menu, but don&#39;t save the scores" alt="" coords="5,202,349,228"/>
+<area shape="rect" id="node16" href="$classGame_1_1UI_1_1GameUI.html#a4248468e8aaa0b1f7bb24162e9bef6c7" title="Move back to the tasks" alt="" coords="66,252,289,279"/>
+<area shape="rect" id="node17" href="$classGame_1_1UI_1_1GameUI.html#ad581ee67e01ac3bcdec06cf2538f06e4" title="Start a new game" alt="" coords="73,303,281,330"/>
+<area shape="rect" id="node19" href="$classGame_1_1UI_1_1LeaderboardWindow.html#a6d7212efa2c2627d119bac3318ea0d00" title="Load the scores" alt="" coords="807,328,1100,355"/>
+<area shape="rect" id="node20" href="$classGame_1_1UI_1_1LeaderboardWindow.html#a8404b4a49a1f74f3b634ec77eb4b1d87" title="Show the window" alt="" coords="427,328,681,355"/>
+<area shape="rect" id="node21" href="$classGame_1_1UI_1_1GameUI.html#a4258f849b2e7d8cdb72dd01c26de3a71" title="Show the leaderboard window" alt="" coords="49,354,305,380"/>
 <area shape="rect" id="node23" href="$classGame_1_1UI_1_1ShopItem.html#a08030b9b33414329032136c2db442bef" title="Buy this shop item" alt="" coords="90,416,265,443"/>
-<area shape="rect" id="node24" href="$classGame_1_1UI_1_1ShopWindow.html#a9297b39a0fa7a77e8cf3022bc28c0b35" title="Update the shop items" alt="" coords="814,428,1063,455"/>
-<area shape="rect" id="node25" href="$classGame_1_1UI_1_1ShopItem.html#aba8c6371c3eeaecb2bb7ab1f07311869" title="Callback when it is bought" alt="" coords="457,428,651,455"/>
-<area shape="rect" id="node26" href="$classGame_1_1UI_1_1ShopWindow.html#ad9204f9c12eb8520523232c340f477b0" title="Show the shop window" alt="" coords="451,479,657,505"/>
-<area shape="rect" id="node27" href="$classGame_1_1UI_1_1GameUI.html#a443a0569c632ba816be0bd1511b62bca" title="Display the shop window" alt="" coords="48,479,307,505"/>
-<area shape="rect" id="node29" href="$classMainPage_1_1MainWindowController.html#a47c21c97b7ba52af405119044e1434d0" title="Load the tasks from the server" alt="" coords="785,479,1092,505"/>
-<area shape="rect" id="node30" href="$classMainPage_1_1MainWindowController.html#acea2170099ea435298139c6c7fdce719" title="Start is called before the first frame update" alt="" coords="419,529,689,556"/>
-<area shape="rect" id="node32" href="$classMainPage_1_1FriendWindowHandler.html#ad0c4b894708ceb9acc635e9a87b306ae" title="Sends a friend request to the user which was specified in the useridentification input" alt="" coords="759,529,1119,556"/>
-<area shape="rect" id="node34" href="$classMainPage_1_1TaskHistoryWindowHandler.html#ada3a664597d8e1b1b9a261c3c34badba" title="Loads the task histories from the server" alt="" coords="773,581,1104,622"/>
-<area shape="rect" id="node35" href="$classMainPage_1_1TaskHistoryWindowHandler.html#aa726ff0b77b9245e98854bbd827ae9dd" title="Shows the task history window" alt="" coords="401,588,707,615"/>
-<area shape="rect" id="node37" href="$classMainPage_1_1TaskDisplayHandler.html#ab553f8eb77d9d038521af3813275a43d" title="Complete the task and send this to the server" alt="" coords="397,723,711,749"/>
-<area shape="rect" id="node38" href="$classMainPage_1_1TaskOpenPanelController.html#a3107b94793886f6af28ac9415fb44370" title="Send a delete task request to the server" alt="" coords="775,697,1102,724"/>
-<area shape="rect" id="node39" href="$classMainPage_1_1TaskOpenPanelController.html#ab8def75cd4cdbdaf3033022ea114a8a6" title="Save the task to the server" alt="" coords="795,748,1082,775"/>
-<area shape="rect" id="node40" href="$classMainPage_1_1TaskDisplayHandler.html#a98b63052d0efc73233a32b69a06bf68e" title="When the complete acknowledge were recieved from the server update the display" alt="" coords="778,799,1099,825"/>
+<area shape="rect" id="node24" href="$classGame_1_1UI_1_1ShopWindow.html#a9297b39a0fa7a77e8cf3022bc28c0b35" title="Update the shop items" alt="" coords="829,430,1078,456"/>
+<area shape="rect" id="node25" href="$classGame_1_1UI_1_1ShopItem.html#aba8c6371c3eeaecb2bb7ab1f07311869" title="Callback when it is bought" alt="" coords="457,430,651,456"/>
+<area shape="rect" id="node26" href="$classGame_1_1UI_1_1ShopWindow.html#ad9204f9c12eb8520523232c340f477b0" title="Show the shop window" alt="" coords="451,480,657,507"/>
+<area shape="rect" id="node27" href="$classGame_1_1UI_1_1GameUI.html#a443a0569c632ba816be0bd1511b62bca" title="Display the shop window" alt="" coords="48,480,307,507"/>
+<area shape="rect" id="node29" href="$classMainPage_1_1MainWindowController.html#a47c21c97b7ba52af405119044e1434d0" title="Load the tasks from the server" alt="" coords="800,480,1107,507"/>
+<area shape="rect" id="node30" href="$classMainPage_1_1MainWindowController.html#acea2170099ea435298139c6c7fdce719" title="Start is called before the first frame update" alt="" coords="419,531,689,558"/>
+<area shape="rect" id="node32" href="$classMainPage_1_1FriendWindowHandler.html#ad0c4b894708ceb9acc635e9a87b306ae" title="Sends a friend request to the user which was specified in the useridentification input" alt="" coords="773,531,1133,558"/>
+<area shape="rect" id="node34" href="$classMainPage_1_1TaskHistoryWindowHandler.html#ada3a664597d8e1b1b9a261c3c34badba" title="Loads the task histories from the server" alt="" coords="759,582,1148,608"/>
+<area shape="rect" id="node35" href="$classMainPage_1_1TaskHistoryWindowHandler.html#aa726ff0b77b9245e98854bbd827ae9dd" title="Shows the task history window" alt="" coords="401,582,707,608"/>
+<area shape="rect" id="node37" href="$classMainPage_1_1TaskDisplayHandler.html#ab553f8eb77d9d038521af3813275a43d" title="Complete the task and send this to the server" alt="" coords="397,708,711,735"/>
+<area shape="rect" id="node38" href="$classMainPage_1_1TaskOpenPanelController.html#a3107b94793886f6af28ac9415fb44370" title="Send a delete task request to the server" alt="" coords="790,683,1117,710"/>
+<area shape="rect" id="node39" href="$classMainPage_1_1TaskOpenPanelController.html#ab8def75cd4cdbdaf3033022ea114a8a6" title="Save the task to the server" alt="" coords="810,734,1097,760"/>
+<area shape="rect" id="node40" href="$classMainPage_1_1TaskDisplayHandler.html#a98b63052d0efc73233a32b69a06bf68e" title="When the complete acknowledge were recieved from the server update the display" alt="" coords="793,784,1114,811"/>
 </map>

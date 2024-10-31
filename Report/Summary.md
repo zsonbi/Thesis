@@ -1,16 +1,16 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 10/30/2024 - 15:13:59 |
+| Generated on: | 10/31/2024 - 12:59:12 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 2 |
 | Classes: | 68 |
 | Files: | 68 |
-| Covered lines: | 2621 |
-| Uncovered lines: | 588 |
+| Covered lines: | 2616 |
+| Uncovered lines: | 593 |
 | Coverable lines: | 3209 |
 | Total lines: | 7427 |
-| Line coverage: | 81.6% (2621 of 3209) |
+| Line coverage: | 81.5% (2616 of 3209) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 470 |
@@ -33,7 +33,7 @@
 |Tests.UnityTestParent[T]|59|0|59|108|100%|0|0||5|5|100%|
 |Tests.UserTests.UserControllerTests|22|0|22|47|100%|0|0||3|3|100%|
 |Tests.UserTests.UserTestsParent[T]|4|0|4|24|100%|0|0||1|1|100%|
-|**ThesisScripts**|**1886**|**567**|**2453**|**6035**|**76.8%**|**0**|**0**|****|**414**|**498**|**83.1%**|
+|**ThesisScripts**|**1881**|**572**|**2453**|**6035**|**76.6%**|**0**|**0**|****|**414**|**498**|**83.1%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|6|0|6|17|100%|0|0||5|5|100%|
 |CameraScript|7|0|7|35|100%|0|0||2|2|100%|
 |Config.ServerConfig|6|1|7|151|85.7%|0|0||6|7|85.7%|
@@ -55,7 +55,7 @@
 |Game.UI.StarHandler|10|0|10|50|100%|0|0||1|1|100%|
 |Game.World.Building|7|2|9|77|77.7%|0|0||5|7|71.4%|
 |Game.World.BuildingCell|11|0|11|30|100%|0|0||7|7|100%|
-|Game.World.CarSpawner|37|6|43|129|86%|0|0||4|5|80%|
+|Game.World.CarSpawner|33|10|43|129|76.7%|0|0||4|5|80%|
 |Game.World.Chunk|371|43|414|778|89.6%|0|0||29|30|96.6%|
 |Game.World.Coin|7|0|7|34|100%|0|0||2|2|100%|
 |Game.World.GameWorld|69|16|85|173|81.1%|0|0||6|6|100%|
@@ -83,7 +83,7 @@
 |Thesis_backend.Data_Structures.UserLoginRequest|2|0|2|14|100%|0|0||4|4|100%|
 |Thesis_backend.Data_Structures.UserRequest|3|0|3|15|100%|0|0||6|6|100%|
 |Thesis_backend.Data_Structures.UserSettings|3|1|4|15|75%|0|0||6|8|75%|
-|User.LoggedInChecker|14|12|26|78|53.8%|0|0||3|5|60%|
+|User.LoggedInChecker|13|13|26|78|50%|0|0||3|5|60%|
 |User.UserController|25|45|70|201|35.7%|0|0||5|12|41.6%|
 |User.UserData|41|3|44|140|93.1%|0|0||31|31|100%|
 |Utility.CoroutineRunner|15|0|15|50|100%|0|0||3|3|100%|

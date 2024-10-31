@@ -1,5 +1,5 @@
 <map id="MainPage.TaskOpenPanelController" name="MainPage.TaskOpenPanelController">
-<area shape="rect" id="node1" title="Controller for displaying, editing and creating tasks" alt="" coords="5,256,304,685"/>
-<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="55,131,254,208"/>
-<area shape="rect" id="node3" title=" " alt="" coords="93,5,217,83"/>
+<area shape="rect" id="node1" title="Controller for displaying, editing and creating tasks" alt="" coords="5,256,504,656"/>
+<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="155,131,354,208"/>
+<area shape="rect" id="node3" title=" " alt="" coords="193,5,317,83"/>
 </map>

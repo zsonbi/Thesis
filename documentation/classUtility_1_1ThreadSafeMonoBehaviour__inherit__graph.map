@@ -1,36 +1,36 @@
 <map id="Utility.ThreadSafeMonoBehaviour" name="Utility.ThreadSafeMonoBehaviour">
-<area shape="rect" id="node1" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="4403,131,4643,208"/>
-<area shape="rect" id="node3" href="$classCameraScript.html" title="Script which follows the player&#39;s car" alt="" coords="5,601,244,707"/>
-<area shape="rect" id="node4" href="$classGame_1_1Car.html" title=" " alt="" coords="269,498,599,810"/>
-<area shape="rect" id="node8" href="$classGame_1_1CarController.html" title=" " alt="" coords="623,381,901,927"/>
-<area shape="rect" id="node9" href="$classGame_1_1EffectScript.html" title=" " alt="" coords="925,608,1100,700"/>
-<area shape="rect" id="node10" href="$classGame_1_1EnableWheelPhysicMaterial.html" title=" " alt="" coords="1124,593,1371,715"/>
-<area shape="rect" id="node11" href="$classGame_1_1GameController.html" title="Handles the main flow of the game scene" alt="" coords="1395,417,1737,891"/>
-<area shape="rect" id="node12" href="$classGame_1_1UI_1_1GameUI.html" title="Controller for the game&#39;s UI" alt="" coords="1762,300,2173,1008"/>
-<area shape="rect" id="node13" href="$classGame_1_1UI_1_1LeaderboardItem.html" title="A single leaderboard item" alt="" coords="2197,608,2482,700"/>
-<area shape="rect" id="node14" href="$classGame_1_1UI_1_1LeaderboardWindow.html" title="Handles the leaderboard display window" alt="" coords="2505,557,2779,751"/>
-<area shape="rect" id="node15" href="$classGame_1_1UI_1_1ShopItem.html" title="A single shop item" alt="" coords="2803,535,3084,773"/>
-<area shape="rect" id="node16" href="$classGame_1_1UI_1_1ShopWindow.html" title="Handles the shop window&#39;s content display" alt="" coords="3108,527,3387,781"/>
-<area shape="rect" id="node17" href="$classGame_1_1UI_1_1StarHandler.html" title="Star handler" alt="" coords="3411,601,3676,707"/>
-<area shape="rect" id="node18" href="$classGame_1_1World_1_1Building.html" title="Building handler" alt="" coords="3701,549,3997,759"/>
-<area shape="rect" id="node19" href="$classGame_1_1World_1_1CarSpawner.html" title="Car spawner" alt="" coords="4021,535,4340,773"/>
-<area shape="rect" id="node20" href="$classGame_1_1World_1_1Chunk.html" title="Stores a single chunk of the world" alt="" coords="4364,256,4683,1052"/>
-<area shape="rect" id="node21" href="$classGame_1_1World_1_1Coin.html" title="Coin gameobject" alt="" coords="4707,608,4964,700"/>
-<area shape="rect" id="node22" href="$classGame_1_1World_1_1GameWorld.html" title="A class for handling chunk loading and unloading" alt="" coords="4989,564,5319,744"/>
-<area shape="rect" id="node23" href="$classGame_1_1World_1_1Prop.html" title="Prop handler" alt="" coords="5343,564,5639,744"/>
-<area shape="rect" id="node24" href="$classMainPage_1_1FriendHandler.html" title="Handles a single friend entry display" alt="" coords="5663,542,5930,766"/>
-<area shape="rect" id="node25" href="$classMainPage_1_1FriendWindowHandler.html" title="Handles the friend window display" alt="" coords="5955,527,6273,781"/>
-<area shape="rect" id="node26" href="$classMainPage_1_1MainWindowController.html" title="Handles the main window&#39;s controls" alt="" coords="6297,439,6656,869"/>
-<area shape="rect" id="node27" href="$classMainPage_1_1ProfileHandler.html" title="Handles the user&#39;s profile such as statistics and logout button" alt="" coords="6680,564,6929,744"/>
-<area shape="rect" id="node28" href="$classMainPage_1_1TaskDisplayHandler.html" title="Task prefab display handler" alt="" coords="6953,491,7312,817"/>
-<area shape="rect" id="node29" href="$classMainPage_1_1TaskHistoryHandler.html" title="Handles the task history display" alt="" coords="7336,601,7591,707"/>
-<area shape="rect" id="node30" href="$classMainPage_1_1TaskHistoryWindowHandler.html" title="Task histories window controller" alt="" coords="7615,564,7901,744"/>
-<area shape="rect" id="node31" href="$classMainPage_1_1TaskOpenPanelController.html" title="Controller for displaying, editing and creating tasks" alt="" coords="7926,439,8225,869"/>
-<area shape="rect" id="node32" href="$classUser_1_1LoggedInChecker.html" title="Checks if the user has a session stored in the backend" alt="" coords="8249,579,8549,729"/>
-<area shape="rect" id="node33" href="$classUser_1_1UserController.html" title="Handles the user actions such as registering and login" alt="" coords="8574,505,8862,803"/>
-<area shape="rect" id="node34" href="$classUtility_1_1ModalWindow.html" title="Modal window for alerting the user" alt="" coords="8887,571,9165,737"/>
-<area shape="rect" id="node2" title=" " alt="" coords="4461,5,4585,83"/>
-<area shape="rect" id="node5" href="$classGame_1_1NpcCar.html" title=" " alt="" coords="80,1247,436,1324"/>
-<area shape="rect" id="node7" href="$classGame_1_1PlayerCar.html" title=" " alt="" coords="461,1100,757,1471"/>
-<area shape="rect" id="node6" href="$classGame_1_1CopCar.html" title=" " alt="" coords="166,1519,350,1596"/>
+<area shape="rect" id="node1" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="5002,131,5242,208"/>
+<area shape="rect" id="node3" href="$classCameraScript.html" title="Script which follows the player&#39;s car" alt="" coords="5,557,244,663"/>
+<area shape="rect" id="node4" href="$classGame_1_1Car.html" title=" " alt="" coords="269,469,647,751"/>
+<area shape="rect" id="node8" href="$classGame_1_1CarController.html" title=" " alt="" coords="671,344,1050,876"/>
+<area shape="rect" id="node9" href="$classGame_1_1EffectScript.html" title=" " alt="" coords="1075,564,1249,656"/>
+<area shape="rect" id="node10" href="$classGame_1_1EnableWheelPhysicMaterial.html" title=" " alt="" coords="1273,549,1520,671"/>
+<area shape="rect" id="node11" href="$classGame_1_1GameController.html" title="Handles the main flow of the game scene" alt="" coords="1544,403,1919,817"/>
+<area shape="rect" id="node12" href="$classGame_1_1UI_1_1GameUI.html" title="Controller for the game&#39;s UI" alt="" coords="1943,293,2402,927"/>
+<area shape="rect" id="node13" href="$classGame_1_1UI_1_1LeaderboardItem.html" title="A single leaderboard item" alt="" coords="2426,564,2711,656"/>
+<area shape="rect" id="node14" href="$classGame_1_1UI_1_1LeaderboardWindow.html" title="Handles the leaderboard display window" alt="" coords="2736,520,3111,700"/>
+<area shape="rect" id="node15" href="$classGame_1_1UI_1_1ShopItem.html" title="A single shop item" alt="" coords="3135,498,3549,722"/>
+<area shape="rect" id="node16" href="$classGame_1_1UI_1_1ShopWindow.html" title="Handles the shop window&#39;s content display" alt="" coords="3574,491,3921,729"/>
+<area shape="rect" id="node17" href="$classGame_1_1UI_1_1StarHandler.html" title="Star handler" alt="" coords="3945,557,4211,663"/>
+<area shape="rect" id="node18" href="$classGame_1_1World_1_1Building.html" title="Building handler" alt="" coords="4235,505,4531,715"/>
+<area shape="rect" id="node19" href="$classGame_1_1World_1_1CarSpawner.html" title="Car spawner" alt="" coords="4556,491,4875,729"/>
+<area shape="rect" id="node20" href="$classGame_1_1World_1_1Chunk.html" title="Stores a single chunk of the world" alt="" coords="4899,256,5345,964"/>
+<area shape="rect" id="node21" href="$classGame_1_1World_1_1Coin.html" title="Coin gameobject" alt="" coords="5369,564,5627,656"/>
+<area shape="rect" id="node22" href="$classGame_1_1World_1_1GameWorld.html" title="A class for handling chunk loading and unloading" alt="" coords="5651,527,6001,693"/>
+<area shape="rect" id="node23" href="$classGame_1_1World_1_1Prop.html" title="Prop handler" alt="" coords="6026,520,6322,700"/>
+<area shape="rect" id="node24" href="$classMainPage_1_1FriendHandler.html" title="Handles a single friend entry display" alt="" coords="6346,505,6775,715"/>
+<area shape="rect" id="node25" href="$classMainPage_1_1FriendWindowHandler.html" title="Handles the friend window display" alt="" coords="6800,491,7119,729"/>
+<area shape="rect" id="node26" href="$classMainPage_1_1MainWindowController.html" title="Handles the main window&#39;s controls" alt="" coords="7143,417,7607,803"/>
+<area shape="rect" id="node27" href="$classMainPage_1_1ProfileHandler.html" title="Handles the user&#39;s profile such as statistics and logout button" alt="" coords="7632,520,7881,700"/>
+<area shape="rect" id="node28" href="$classMainPage_1_1TaskDisplayHandler.html" title="Task prefab display handler" alt="" coords="7905,461,8403,759"/>
+<area shape="rect" id="node29" href="$classMainPage_1_1TaskHistoryHandler.html" title="Handles the task history display" alt="" coords="8428,557,8683,663"/>
+<area shape="rect" id="node30" href="$classMainPage_1_1TaskHistoryWindowHandler.html" title="Task histories window controller" alt="" coords="8707,527,9105,693"/>
+<area shape="rect" id="node31" href="$classMainPage_1_1TaskOpenPanelController.html" title="Controller for displaying, editing and creating tasks" alt="" coords="9129,410,9627,810"/>
+<area shape="rect" id="node32" href="$classUser_1_1LoggedInChecker.html" title="Checks if the user has a session stored in the backend" alt="" coords="9651,542,10070,678"/>
+<area shape="rect" id="node33" href="$classUser_1_1UserController.html" title="Handles the user actions such as registering and login" alt="" coords="10095,476,10573,744"/>
+<area shape="rect" id="node34" href="$classUtility_1_1ModalWindow.html" title="Modal window for alerting the user" alt="" coords="10598,527,10921,693"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5060,5,5184,83"/>
+<area shape="rect" id="node5" href="$classGame_1_1NpcCar.html" title=" " alt="" coords="81,1144,437,1221"/>
+<area shape="rect" id="node7" href="$classGame_1_1PlayerCar.html" title=" " alt="" coords="461,1012,852,1353"/>
+<area shape="rect" id="node6" href="$classGame_1_1CopCar.html" title=" " alt="" coords="167,1401,351,1479"/>
 </map>

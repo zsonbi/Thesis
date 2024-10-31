@@ -1,7 +1,7 @@
 <map id="MainPage.MainWindowController" name="MainPage.MainWindowController">
-<area shape="rect" id="node1" title="Handles the main window&#39;s controls" alt="" coords="5,487,348,887"/>
-<area shape="rect" id="node4" href="$classMainPage_1_1TaskOpenPanelController.html" title="Controller for displaying, editing and creating tasks" alt="" coords="181,949,479,1364"/>
-<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="159,132,357,209"/>
-<area shape="rect" id="node5" href="$classUtility_1_1ModalWindow.html" title="Modal window for alerting the user" alt="" coords="119,259,397,424"/>
-<area shape="rect" id="node3" title=" " alt="" coords="196,5,320,83"/>
+<area shape="rect" id="node1" title="Handles the main window&#39;s controls" alt="" coords="5,487,469,843"/>
+<area shape="rect" id="node4" href="$classMainPage_1_1TaskOpenPanelController.html" title="Controller for displaying, editing and creating tasks" alt="" coords="171,905,669,1291"/>
+<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="227,132,426,209"/>
+<area shape="rect" id="node5" href="$classUtility_1_1ModalWindow.html" title="Modal window for alerting the user" alt="" coords="165,259,488,424"/>
+<area shape="rect" id="node3" title=" " alt="" coords="265,5,389,83"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="Game.UI.LeaderboardWindow" name="Game.UI.LeaderboardWindow">
-<area shape="rect" id="node1" title="Handles the leaderboard display window" alt="" coords="5,256,279,451"/>
-<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="43,131,241,208"/>
-<area shape="rect" id="node3" title=" " alt="" coords="80,5,204,83"/>
+<area shape="rect" id="node1" title="Handles the leaderboard display window" alt="" coords="5,256,380,436"/>
+<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="93,131,292,208"/>
+<area shape="rect" id="node3" title=" " alt="" coords="131,5,255,83"/>
 </map>

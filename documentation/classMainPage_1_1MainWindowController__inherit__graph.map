@@ -1,5 +1,5 @@
 <map id="MainPage.MainWindowController" name="MainPage.MainWindowController">
-<area shape="rect" id="node1" title="Handles the main window&#39;s controls" alt="" coords="5,256,364,685"/>
-<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="85,131,284,208"/>
-<area shape="rect" id="node3" title=" " alt="" coords="123,5,247,83"/>
+<area shape="rect" id="node1" title="Handles the main window&#39;s controls" alt="" coords="5,256,469,641"/>
+<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="138,131,337,208"/>
+<area shape="rect" id="node3" title=" " alt="" coords="175,5,299,83"/>
 </map>
