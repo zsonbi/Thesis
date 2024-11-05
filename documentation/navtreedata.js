@@ -57,7 +57,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "BuildingCell_8cs.html",
-"User_8cs.html#aae518baa5cf2ea5aa7ab44999037e244",
+"User_8cs.html#a88348bf6d36a46b767b886bd5005d08e",
 "classGame_1_1UI_1_1ShopWindow.html#a6a703aeb6610fe526d65a9b89ad4c78e",
 "classUser_1_1UserController.html#a1ee460095513422a536daa1b5d0b3419",
 "structThesis__backend_1_1Data__Structures_1_1TaskRequest.html#ac007e8f0cf2ae376dde9708f93407985"

@@ -10,7 +10,7 @@
 <area shape="rect" id="node9" href="$classGame_1_1UI_1_1GameUI.html#a1f9659e1d86a8bcfdf115b631f89ce3e" title="Change the difficulty and update its display" alt="" coords="596,157,888,184"/>
 <area shape="rect" id="node11" href="$classGame_1_1World_1_1GameWorld.html#a5bc9140bbdf4b45f229d4e900db98d9b" title="Creates a new game and create the chunks" alt="" coords="593,208,891,235"/>
 <area shape="rect" id="node26" href="$classGame_1_1World_1_1GameWorld.html#a78654137c458c1b1917285e28d3d270b" title="Gets the chunk based on the absolute position which chunk it would fall into" alt="" coords="617,259,867,285"/>
-<area shape="rect" id="node27" href="$classGame_1_1Car.html#a73919d2b4768ace830efe5e84cb3e0d5" title=" " alt="" coords="687,309,797,336"/>
+<area shape="rect" id="node27" href="$classGame_1_1Car.html#adea5c0fa34888fc8d58fa434b205b365" title=" " alt="" coords="687,309,797,336"/>
 <area shape="rect" id="node28" href="$classGame_1_1GameController.html#a4ee6ddd9c52134a0bb30c3c0a7bef350" title="Event for when the player is killed" alt="" coords="621,360,863,387"/>
 <area shape="rect" id="node30" href="$classGame_1_1World_1_1CarSpawner.html#a9ca9f4dfd1b63d182f23c9f630b54463" title="Reset the timers" alt="" coords="630,107,854,133"/>
 <area shape="rect" id="node10" href="$classGame_1_1UI_1_1StarHandler.html#a710bc2e71e1f1217f86fe1d7be4dc9c4" title="Update the display based on the difficulty" alt="" coords="945,157,1215,184"/>

@@ -27,7 +27,7 @@
 <text text-anchor="start" x="148.5" y="-478.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; float health</text>
 <polyline fill="none" stroke="black" points="140.5,-471.5 424.5,-471.5 "/>
 <text text-anchor="start" x="148.5" y="-459.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void Kill()</text>
-<text text-anchor="start" x="148.5" y="-448.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void Init(GameController world)</text>
+<text text-anchor="start" x="148.5" y="-448.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void Init(GameController gameController)</text>
 <text text-anchor="start" x="148.5" y="-437.5" font-family="Helvetica,sans-Serif" font-size="10.00"># virtual void Update()</text>
 <text text-anchor="start" x="148.5" y="-426.5" font-family="Helvetica,sans-Serif" font-size="10.00"># bool ChangeChunkIfNeeded()</text>
 <text text-anchor="start" x="148.5" y="-415.5" font-family="Helvetica,sans-Serif" font-size="10.00"># virtual async void ChunkChanged(Chunk newChunk)</text>
