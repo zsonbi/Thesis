@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generatedon": "2024-11-05T22:47:20Z",
+    "generatedon": "2024-11-14T10:20:10Z",
     "parser": "MultiReportParser (3x OpenCoverParser)",
     "assemblies": 2,
     "classes": 68,
     "files": 68,
-    "coveredlines": 2620,
-    "uncoveredlines": 589,
+    "coveredlines": 2621,
+    "uncoveredlines": 588,
     "coverablelines": 3209,
     "totallines": 7428,
     "linecoverage": 81.6,
@@ -32,14 +32,14 @@
         { "name": "Tests.UnityTestParent[T]", "coverage": 100, "coveredlines": 59, "coverablelines": 59, "totallines": 108, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 5, "totalmethods": 5 },
         { "name": "Tests.UserTests.UserControllerTests", "coverage": 100, "coveredlines": 22, "coverablelines": 22, "totallines": 47, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 3, "totalmethods": 3 },
         { "name": "Tests.UserTests.UserTestsParent[T]", "coverage": 100, "coveredlines": 4, "coverablelines": 4, "totallines": 24, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 1, "totalmethods": 1 } ] },
-      { "name": "ThesisScripts", "classes": 55, "coverage": 76.8, "coveredlines": 1885, "coverablelines": 2453, "totallines": 6036, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 83.1, "coveredmethods": 414, "totalmethods": 498, "classesinassembly": [
+      { "name": "ThesisScripts", "classes": 55, "coverage": 76.8, "coveredlines": 1886, "coverablelines": 2453, "totallines": 6036, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 83.1, "coveredmethods": 414, "totalmethods": 498, "classesinassembly": [
         { "name": "Assets.Scripts.Client.DataTypes.ChunkCellContainer", "coverage": 100, "coveredlines": 6, "coverablelines": 6, "totallines": 17, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 5, "totalmethods": 5 },
         { "name": "CameraScript", "coverage": 100, "coveredlines": 7, "coverablelines": 7, "totallines": 35, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 2, "totalmethods": 2 },
         { "name": "Config.ServerConfig", "coverage": 85.7, "coveredlines": 6, "coverablelines": 7, "totallines": 151, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 85.7, "coveredmethods": 6, "totalmethods": 7 },
         { "name": "DataTypes.TaskClosedEventArgs", "coverage": 0, "coveredlines": 0, "coverablelines": 4, "totallines": 14, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
         { "name": "EdgeRoadContainer", "coverage": 100, "coveredlines": 9, "coverablelines": 9, "totallines": 15, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 7, "totalmethods": 7 },
         { "name": "Game.Car", "coverage": 78.8, "coveredlines": 67, "coverablelines": 85, "totallines": 144, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 13, "totalmethods": 13 },
-        { "name": "Game.CarController", "coverage": 78.9, "coveredlines": 94, "coverablelines": 119, "totallines": 230, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 77.7, "coveredmethods": 14, "totalmethods": 18 },
+        { "name": "Game.CarController", "coverage": 79.8, "coveredlines": 95, "coverablelines": 119, "totallines": 230, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 77.7, "coveredmethods": 14, "totalmethods": 18 },
         { "name": "Game.CopCar", "coverage": 81, "coveredlines": 47, "coverablelines": 58, "totallines": 93, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 1, "totalmethods": 1 },
         { "name": "Game.EffectScript", "coverage": 100, "coveredlines": 1, "coverablelines": 1, "totallines": 14, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 1, "totalmethods": 1 },
         { "name": "Game.EnableWheelPhysicMaterial", "coverage": 100, "coveredlines": 16, "coverablelines": 16, "totallines": 38, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 2, "totalmethods": 2 },
