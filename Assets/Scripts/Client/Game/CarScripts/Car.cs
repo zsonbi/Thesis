@@ -6,6 +6,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Utility;
 
 namespace Game
 {
@@ -71,10 +72,10 @@ namespace Game
         {
         }
 
-        public void Init(GameController world)
+        public void Init(GameController gameController)
         {
             this.health = MAX_HEALTH;
-            this.gameController = world;
+            this.gameController = gameController;
 
             if (effects.ContainsKey(EffectType.Smoke))
                 effects[EffectType.Smoke].gameObject.SetActive(false);

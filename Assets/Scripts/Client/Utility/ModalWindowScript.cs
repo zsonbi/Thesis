@@ -1,71 +1,100 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class ModalWindow : ThreadSafeMonoBehaviour
+namespace Utility
 {
-    [SerializeField]
-    private TMP_Text ModalTitleText;
-
-    [SerializeField]
-    private TMP_Text ModalContentText;
-
-    private Action onOkAction;
-
-    public void Show()
+    /// <summary>
+    /// Modal window for alerting the user
+    /// </summary>
+    public class ModalWindow : ThreadSafeMonoBehaviour
     {
-        if (this.Destroyed)
-        {
-            return;
-        }
-        try
-        {
-            this.gameObject.SetActive(true);
-        }
-        catch (MissingReferenceException)
-        {
-            return;
-        }
-    }
+        /// <summary>
+        /// Reference to the modal title's text object
+        /// </summary>
+        [SerializeField]
+        private TMP_Text ModalTitleText;
 
-    public void Show(string title, string content, Action onOkAction = null)
-    {
-        if (this.Destroyed)
-        {
-            return;
-        }
-        try
-        {
-            this.ModalTitleText.text = title;
-            this.ModalContentText.text = content;
-            this.onOkAction = onOkAction;
-       
+        /// <summary>
+        /// Reference to the modal content's text object
+        /// </summary>
+        [SerializeField]
+        private TMP_Text ModalContentText;
 
-            Show();
-        }
-        catch (MissingReferenceException)
-        {
-            return;
-        }
-    }
+        /// <summary>
+        /// What to do when the user presses the ok button
+        /// </summary>
+        private Action onOkAction;
 
-    public void Hide()
-    {
-        if (this.Destroyed)
+        /// <summary>
+        /// Show the modal window
+        /// </summary>
+        public void Show()
         {
-            return;
+            if (this.Destroyed)
+            {
+                return;
+            }
+            //Error detection if it been destroyed somehow... can only happen in testing...
+            try
+            {
+                this.gameObject.SetActive(true);
+            }
+            catch (MissingReferenceException)
+            {
+                return;
+            }
         }
-        this.gameObject.SetActive(false);
-    }
 
-    public void ConfirmButtonClick()
-    {
-        if (onOkAction is not null)
+        /// <summary>
+        /// Show the modal window with custom content
+        /// </summary>
+        /// <param name="title">The modal window's title</param>
+        /// <param name="content">What should the content be</param>
+        /// <param name="onOkAction">What to do when the ok buttton is pressed</param>
+        public void Show(string title, string content, Action onOkAction = null)
         {
-            onOkAction();
+            if (this.Destroyed)
+            {
+                return;
+            }
+            //Error detection if it been destroyed somehow... can only happen in testing...
+            try
+            {
+                this.ModalTitleText.text = title;
+                this.ModalContentText.text = content;
+                this.onOkAction = onOkAction;
+
+                Show();
+            }
+            catch (MissingReferenceException)
+            {
+                return;
+            }
         }
-        Hide();
+
+        /// <summary>
+        /// Hides the modal window
+        /// </summary>
+        public void Hide()
+        {
+            if (this.Destroyed)
+            {
+                return;
+            }
+            this.gameObject.SetActive(false);
+        }
+
+        /// <summary>
+        /// Action for ok buttton
+        /// </summary>
+        public void ConfirmButtonClick()
+        {
+            if (onOkAction is not null)
+            {
+                onOkAction();
+            }
+            Hide();
+        }
     }
 }

@@ -4,6 +4,7 @@ using System.Collections;
 using Tests;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Utility;
 
 namespace Tests
 {

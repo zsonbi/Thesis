@@ -9,6 +9,7 @@ using UnityEngine.AddressableAssets;
 using UnityEngine.InputSystem;
 using UnityEngine.TestTools;
 using User;
+using Utility;
 
 namespace Tests
 {

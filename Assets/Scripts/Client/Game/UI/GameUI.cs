@@ -6,11 +6,15 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using User;
+using Utility;
 
 namespace Game
 {
     namespace UI
     {
+        /// <summary>
+        /// Controller for the game's UI
+        /// </summary>
         public class GameUI : ThreadSafeMonoBehaviour
         {
             [SerializeField]
@@ -56,10 +60,20 @@ namespace Game
             private ModalWindow ModalWindow;
 
             private GameController gameController;
+
+            /// <summary>
+            /// Is the coins doubled now
+            /// </summary>
             public bool Doubled { get; private set; } = false;
 
+            /// <summary>
+            /// The currently selected skin's index
+            /// </summary>
             public int SelectedSkinIndex { get; private set; } = 0;
 
+            /// <summary>
+            /// Called every frame
+            /// </summary>
             private void Update()
             {
                 if (gameController.Running)
@@ -84,17 +98,27 @@ namespace Game
                 }
             }
 
+            /// <summary>
+            /// Save the game's result
+            /// </summary>
             public void SaveGameResult()
             {
-                CoroutineRunner.RunCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.Game>(ServerConfig.PATH_FOR_SAVE_COINS, (int)(Doubled ? gameController.Coins * 2 : gameController.Coins), SavedCoins, onFailedAction: ShowRequestFail));
+                CoroutineRunner.RunCoroutine(Server.SendPatchRequest<Thesis_backend.Data_Structures.Game>(ServerConfig.PATH_TO_ADD_COINS, (int)(Doubled ? gameController.Coins * 2 : gameController.Coins), SavedCoins, onFailedAction: ShowRequestFail));
                 CoroutineRunner.RunCoroutine(Server.SendPostRequest<Thesis_backend.Data_Structures.GameScore>(ServerConfig.PATH_FOR_STORE_GAME_SCORE, gameController.Score, onFailedAction: ShowRequestFail));
             }
 
+            /// <summary>
+            /// Callback after the coins amount were saved
+            /// </summary>
+            /// <param name="game">The responded game with the updated coin amount</param>
             private void SavedCoins(Thesis_backend.Data_Structures.Game game)
             {
                 UserData.Instance.Game.Currency = game.Currency;
             }
 
+            /// <summary>
+            /// Buy the double coins bonus
+            /// </summary>
             public void DoubleCoins()
             {
                 if (UserData.Instance.CurrentTaskScore >= GameConfig.DOUBLE_COIN_COST)
@@ -103,6 +127,9 @@ namespace Game
                 }
             }
 
+            /// <summary>
+            /// Buy the immunity power up
+            /// </summary>
             public void BuyImmunity()
             {
                 if (UserData.Instance.CurrentTaskScore >= GameConfig.IMMUNITY_COST)
@@ -112,6 +139,9 @@ namespace Game
                 }
             }
 
+            /// <summary>
+            /// Buy the turbo power up
+            /// </summary>
             public void BuyTurbo()
             {
                 if (UserData.Instance.CurrentTaskScore >= GameConfig.TURBO_COST)
@@ -121,20 +151,30 @@ namespace Game
                 }
             }
 
+            /// <summary>
+            /// Callback after the player bought the immunity
+            /// </summary>
+            /// <param name="user">The user with the updated task score amount</param>
             private void BoughtImmunity(Thesis_backend.Data_Structures.User user)
             {
                 UserData.Instance.UpdateTaskScore(user.CurrentTaskScore);
-                //gameController.Player.ApplyImmunity();
                 TaskScoreInGameText.text = UserData.Instance.CurrentTaskScore.ToString();
             }
 
+            /// <summary>
+            /// Callback after the player bought the turbo
+            /// </summary>
+            /// <param name="user">The user with the updated task score amount</param>
             private void BoughtTurbo(Thesis_backend.Data_Structures.User user)
             {
                 UserData.Instance.UpdateTaskScore(user.CurrentTaskScore);
-                // gameController.Player.ApplyTurbo();
                 TaskScoreInGameText.text = UserData.Instance.CurrentTaskScore.ToString();
             }
 
+            /// <summary>
+            /// Callback after the coins were doubled
+            /// </summary>
+            /// <param name="user">The user with the updated task score amount</param>
             private void DoubledCoins(Thesis_backend.Data_Structures.User user)
             {
                 this.Doubled = true;
@@ -144,48 +184,75 @@ namespace Game
                 UserData.Instance.UpdateTaskScore(user.CurrentTaskScore);
             }
 
+            /// <summary>
+            /// Show the leaderboard window
+            /// </summary>
             public void ShowLeaderboard()
             {
                 leaderboardWindow.Show();
             }
 
+            /// <summary>
+            /// Rotate the skin display to the left
+            /// </summary>
             public void LeftRotateSkin()
             {
                 SelectedSkinIndex = (SelectedSkinIndex + UserData.Instance.Game.OwnedCars.Count - 1) % UserData.Instance.Game.OwnedCars.Count;
                 SkinDisplay.sprite = ShopWindow.ShopItemSprites[(int)UserData.Instance.Game.OwnedCars[SelectedSkinIndex].ShopId - 1];
             }
 
+            /// <summary>
+            /// Rotate the skin display to the right
+            /// </summary>
             public void RightRotateSkin()
             {
                 SelectedSkinIndex = (SelectedSkinIndex + 1) % UserData.Instance.Game.OwnedCars.Count;
                 SkinDisplay.sprite = ShopWindow.ShopItemSprites[(int)UserData.Instance.Game.OwnedCars[SelectedSkinIndex].ShopId - 1];
             }
 
+            /// <summary>
+            /// Initializes the game use
+            /// </summary>
+            /// <param name="gameController">Reference to the game controller</param>
             public void Init(GameController gameController)
             {
                 this.gameController = gameController;
             }
 
+            /// <summary>
+            /// Start a new game
+            /// </summary>
+            /// <param name="save">Should it save the gamecontroller's values</param>
             public async void NewGame(bool save = true)
             {
                 HideGameOverScreen(save);
                 ingameContainer.SetActive(true);
                 mainMenuContainer.SetActive(false);
                 TaskScoreInGameText.text = UserData.Instance.CurrentTaskScore.ToString();
-
                 await gameController?.NewGame();
             }
 
+            /// <summary>
+            /// Show if the request failed on the modal window
+            /// </summary>
+            /// <param name="content">The content to display</param>
             private void ShowRequestFail(string content)
             {
                 ModalWindow.Show("Request fail", content);
             }
 
+            /// <summary>
+            /// Change the difficulty and update its display
+            /// </summary>
+            /// <param name="difficulty">The new difficulty</param>
             public void ChangeDifficulyDisplay(int difficulty)
             {
                 this.starHandler.ChangeDifficulty(difficulty);
             }
 
+            /// <summary>
+            /// Show the game over screen
+            /// </summary>
             public void ShowEndGameScreen()
             {
                 InfamyGameOverText.text = "Infamy: " + gameController.Score;
@@ -196,6 +263,10 @@ namespace Game
                 this.DoubleCoinButon.interactable = UserData.Instance.CurrentTaskScore >= 1000;
             }
 
+            /// <summary>
+            /// Hide the game over screen
+            /// </summary>
+            /// <param name="saveGameResults">Should it save the score and the currencies</param>
             public void HideGameOverScreen(bool saveGameResults = true)
             {
                 gameOverContainer.SetActive(false);
@@ -206,22 +277,34 @@ namespace Game
                 }
             }
 
+            /// <summary>
+            /// Display the shop window
+            /// </summary>
             public void ShowShopWindow()
             {
                 this.ShopWindow.Show();
             }
 
+            /// <summary>
+            /// Hides the shop window
+            /// </summary>
             public void HideShopWindow()
             {
                 this.ShopWindow.Hide();
             }
 
+            /// <summary>
+            /// Move back to the tasks
+            /// </summary>
             public void BackToTasks()
             {
                 HideGameOverScreen(false);
                 SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
             }
 
+            /// <summary>
+            /// Show the main menu, but don't save the scores
+            /// </summary>
             public void BackToGameMenuWithoutSave()
             {
                 gameController.Player.Kill();
@@ -230,6 +313,9 @@ namespace Game
                 mainMenuContainer.SetActive(true);
             }
 
+            /// <summary>
+            /// Show the main menu
+            /// </summary>
             public void BackToGameMenu()
             {
                 HideGameOverScreen();

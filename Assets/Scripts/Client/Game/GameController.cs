@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using User;
+using Utility;
 
 namespace Game
 {
@@ -191,11 +192,12 @@ namespace Game
             this.Score = 0;
             await World.CreateNewGame();
             Vector3 baseChunkPos = (await World.GetChunk(GameConfig.CHUNK_COUNT / 2, GameConfig.CHUNK_COUNT / 2)).gameObject.transform.position;
+            //Set the player's starting position
             Player.gameObject.transform.position = new Vector3(baseChunkPos.x + GameConfig.CHUNK_SIZE * GameConfig.CHUNK_SCALE * GameConfig.CHUNK_CELL / 2 + 10, baseChunkPos.y + 2, baseChunkPos.z);
             this.gameUI.ChangeDifficulyDisplay(0);
-            this.Running = true;
             this.Coins = 0;
             this.Difficulty = 0;
+            this.Running = true;
         }
 
         /// <summary>

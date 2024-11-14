@@ -6,39 +6,65 @@ using Thesis_backend.Data_Structures;
 using TMPro;
 using UnityEngine;
 using User;
+using Utility;
 
 namespace Game
 {
     namespace UI
     {
+        /// <summary>
+        /// Handles the leaderboard display window
+        /// </summary>
         public class LeaderboardWindow : ThreadSafeMonoBehaviour
         {
+            /// <summary>
+            /// Reference to where to put the items
+            /// </summary>
             [SerializeField]
             private GameObject scoreParent;
 
+            /// <summary>
+            /// Drop down of how recent scores should be shown
+            /// </summary>
             [SerializeField]
             private TMP_Dropdown filterTypeDropdown;
 
+            /// <summary>
+            /// Reference to the scene's modal window
+            /// </summary>
             [SerializeField]
             private ModalWindow ModalWindow;
 
+            /// <summary>
+            /// The prefab of a single leaderboard item
+            /// </summary>
             [SerializeField]
             private GameObject LeaderboardItemPrefab;
 
+            /// <summary>
+            /// Show the window
+            /// </summary>
             public void Show()
             {
                 this.gameObject.SetActive(true);
                 LoadScores();
             }
 
+            /// <summary>
+            /// Hide the window
+            /// </summary>
             public void Hide()
             {
                 this.gameObject.SetActive(false);
             }
 
+            /// <summary>
+            /// Load the scores
+            /// </summary>
             public void LoadScores()
             {
                 DateTime filterSince = DateTime.Now;
+                //Determine what date was selected
                 switch ((LeaderboardFilterType)filterTypeDropdown.value)
                 {
                     case LeaderboardFilterType.AllTime:
@@ -69,11 +95,19 @@ namespace Game
                 CoroutineRunner.RunCoroutine(Server.SendGetRequest<List<GameScore>>(ServerConfig.PATH_FOR_GET_GAME_SCORES(filterSince), LoadedScores, onFailedAction: ShowRequestFail));
             }
 
+            /// <summary>
+            /// Show if the request failed in the modal
+            /// </summary>
+            /// <param name="content">The content to display</param>
             private void ShowRequestFail(string content)
             {
                 ModalWindow.Show("Leaderboard error", content);
             }
 
+            /// <summary>
+            /// Callback after the scores were loaded
+            /// </summary>
+            /// <param name="gameScores">The game scores</param>
             private void LoadedScores(List<GameScore> gameScores)
             {
                 if (scoreParent == null || this.scoreParent.transform == null)
