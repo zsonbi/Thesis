@@ -2,6 +2,9 @@
 
 namespace Thesis_backend.Data_Structures
 {
+    /// <summary>
+    /// An abstarct database element
+    /// </summary>
     public abstract record DbElement
     {
         public long ID { get; set; }

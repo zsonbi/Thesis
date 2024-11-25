@@ -1,5 +1,8 @@
 namespace DataTypes
 {
+    /// <summary>
+    /// Direction enum
+    /// </summary>
     public enum Direction : byte
     {
         Left = 0,

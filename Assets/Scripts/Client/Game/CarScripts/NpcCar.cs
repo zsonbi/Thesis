@@ -3,8 +3,16 @@ using Utility;
 
 namespace Game
 {
+    /// <summary>
+    /// Object for the npc cars
+    /// It is not yet used
+    /// </summary>
     public class NpcCar : Car
     {
+        /// <summary>
+        /// Determine the way the player is
+        /// </summary>
+        /// <returns>The dir towards the player [-1,1]</returns>
         public float DetermineSteeringDirectionTowardsPlayer()
         {
             Vector3 difference = this.gameController.PlayerPos - this.gameObject.transform.position;

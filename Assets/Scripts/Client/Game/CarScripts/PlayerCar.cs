@@ -4,26 +4,48 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using TouchPhase = UnityEngine.TouchPhase;
-using Utility;
 
 namespace Game
 {
+    /// <summary>
+    /// Handles the player's car
+    /// </summary>
     public class PlayerCar : Car
     {
+        /// <summary>
+        /// The multiplier for the coins if we later want a car which gives more coins
+        /// </summary>
         [SerializeField]
         private float coinMultiplier = 1;
 
+        /// <summary>
+        /// The skin's id logically in the database
+        /// </summary>
         [SerializeField]
         public int SkinId = 1;
 
+        /// <summary>
+        /// Reference to the keyboard
+        /// </summary>
         private Keyboard keyboard;
 
+        /// <summary>
+        /// A container to store the police to track how long they have been touching the player for game over detection
+        /// </summary>
         private class PoliceContainer
         {
+            /// <summary>
+            /// How long till game over
+            /// </summary>
             public float TimeReamaining;
+            /// <summary>
+            /// Reference to the police car
+            /// </summary>
             public GameObject PoliceCar { get; private set; }
-
+            /// <summary>
+            /// Creates a new PoliceCar object
+            /// </summary>
+            /// <param name="policeCar">Reference to the police car</param>
             public PoliceContainer(GameObject policeCar)
             {
                 this.PoliceCar = policeCar;
@@ -31,31 +53,49 @@ namespace Game
             }
         }
 
+        /// <summary>
+        /// How big radius should the chunk load be
+        /// </summary>
         private int probeSize = 1;
-
+        /// <summary>
+        /// Keeping track of the police cars which touched the player
+        /// </summary>
         private List<PoliceContainer> policeContacts = new List<PoliceContainer>();
-
+        /// <summary>
+        /// Is the player currently immune
+        /// </summary>
         public bool Immune { get; private set; } = false;
+        /// <summary>
+        /// Does the player has turbo active
+        /// </summary>
         public bool Turbo { get; private set; } = false;
-
+        /// <summary>
+        /// How long till the turbo is over
+        /// </summary>
         private float turboTimer = 0f;
+        /// <summary>
+        /// How long till the immunity is over
+        /// </summary>
         private float immuneTimer = 0f;
 
-        protected new void Awake()
-        {
-            base.Awake();
-        }
-
+        /// <summary>
+        /// When the player picks up a coin
+        /// </summary>
         public void PickedUpCoin()
         {
             this.gameController.IncreaseCoinCount(1 * coinMultiplier);
         }
-
+        /// <summary>
+        /// Override the chunk changed method to make it load and despawn the chunks
+        /// </summary>
+        /// <param name="newChunk">The new chunk of the player</param>
         protected override async void ChunkChanged(Chunk newChunk)
         {
             await gameController.LoadAndDespawnChunks(newChunk.Row, newChunk.Col);
         }
-
+        /// <summary>
+        /// Apply the turbo bonus to the player
+        /// </summary>
         public void ApplyTurbo()
         {
             if (effects.ContainsKey(EffectType.Turbo))
@@ -66,6 +106,9 @@ namespace Game
             this.Turbo = true;
         }
 
+        /// <summary>
+        /// Apply the immunity bonus to the player
+        /// </summary>
         public void ApplyImmunity()
         {
             if (effects.ContainsKey(EffectType.Shield))
@@ -76,6 +119,9 @@ namespace Game
             this.Immune = true;
         }
 
+        /// <summary>
+        /// Cancel the turbo bonus
+        /// </summary>
         public void CancelTurbo()
         {
             Turbo = false;
@@ -85,6 +131,9 @@ namespace Game
             }
         }
 
+        /// <summary>
+        /// Cancel the immunity bonus
+        /// </summary>
         public void CancelImmunity()
         {
             Immune = false;
@@ -93,7 +142,10 @@ namespace Game
                 effects[EffectType.Shield].gameObject.SetActive(false);
             }
         }
-
+        /// <summary>
+        /// Called every frame
+        /// Check the game over state and timers
+        /// </summary>
         protected override void Update()
         {
             if (!gameController.Running)
@@ -143,7 +195,9 @@ namespace Game
                 this.DestroyedEvent?.Invoke(this, EventArgs.Empty);
             }
         }
-
+        /// <summary>
+        /// Handle the user inputs
+        /// </summary>
         private void FixedUpdate()
         {
             //For the  testing unload doesn't cause error
@@ -229,6 +283,10 @@ namespace Game
             }
         }
 
+        /// <summary>
+        /// Handle the collisions
+        /// </summary>
+        /// <param name="collision">The entity it collided with</param>
         protected override void OnCollisionEnter(Collision collision)
         {
             if (!Immune)
@@ -241,13 +299,16 @@ namespace Game
             }
         }
 
+        /// <summary>
+        /// When the collided entity leaves collision
+        /// </summary>
+        /// <param name="collision">The entity which left</param>
         private void OnCollisionExit(Collision collision)
         {
             if (collision.gameObject.tag == "Police")
             {
                 policeContacts.RemoveAll(x => x.PoliceCar == collision.gameObject);
 
-                // Debug.Log("Removed" + collision.gameObject);
             }
         }
     }

@@ -1,5 +1,8 @@
 namespace DataTypes
 {
+    /// <summary>
+    /// The possible task intervals
+    /// </summary>
     public enum TaskIntervals
     {
         Hourly = 60,

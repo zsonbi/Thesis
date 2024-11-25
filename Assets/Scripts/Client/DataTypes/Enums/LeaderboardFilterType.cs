@@ -1,5 +1,8 @@
 namespace DataTypes
 {
+    /// <summary>
+    /// The possible leaderboard filters
+    /// </summary>
     public enum LeaderboardFilterType
     {
         AllTime = 0,
