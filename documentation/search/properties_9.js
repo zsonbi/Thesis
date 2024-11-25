@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['lastloggedin_1235',['LastLoggedIn',['../classUser_1_1UserData.html#a5d88a92697600df1a952dda76dd51a96',1,'User::UserData']]],
-  ['loggedin_1236',['LoggedIn',['../classUser_1_1UserData.html#acdd4d87ab2fd5a0a81895656a6853b71',1,'User::UserData']]]
+  ['lastloggedin_1233',['LastLoggedIn',['../classUser_1_1UserData.html#a5d88a92697600df1a952dda76dd51a96',1,'User::UserData']]],
+  ['loggedin_1234',['LoggedIn',['../classUser_1_1UserData.html#acdd4d87ab2fd5a0a81895656a6853b71',1,'User::UserData']]]
 ];

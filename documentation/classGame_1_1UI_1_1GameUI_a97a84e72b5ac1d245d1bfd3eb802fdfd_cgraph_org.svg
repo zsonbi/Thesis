@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classGame_1_1PlayerCar.html#aaa57e11cd8cc243d3b3964818c102053" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classGame_1_1PlayerCar.html#aaa57e11cd8cc243d3b3964818c102053" target="_top" xlink:title="Apply the turbo bonus to the player">
 <polygon fill="white" stroke="black" points="209,-152.5 209,-171.5 361,-171.5 361,-152.5 209,-152.5"/>
 <text text-anchor="middle" x="285" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.PlayerCar.ApplyTurbo</text>
 </a>
@@ -51,7 +51,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="classGame_1_1PlayerCar.html#ab82df1aeb3c64c5129ecc1aae08df1f7" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="classGame_1_1PlayerCar.html#ab82df1aeb3c64c5129ecc1aae08df1f7" target="_top" xlink:title="Cancel the turbo bonus">
 <polygon fill="white" stroke="black" points="206,-76.5 206,-95.5 364,-95.5 364,-76.5 206,-76.5"/>
 <text text-anchor="middle" x="285" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.PlayerCar.CancelTurbo</text>
 </a>

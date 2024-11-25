@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Handles the police car">
 <polygon fill="#bfbfbf" stroke="black" points="73,-0.5 73,-57.5 211,-57.5 211,-0.5 73,-0.5"/>
 <text text-anchor="middle" x="142" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.CopCar</text>
 <polyline fill="none" stroke="black" points="73,-38.5 211,-38.5 "/>
@@ -25,7 +25,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classGame_1_1NpcCar.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classGame_1_1NpcCar.html" target="_top" xlink:title="Object for the npc cars It is not yet used">
 <polygon fill="white" stroke="black" points="8.5,-94.5 8.5,-151.5 275.5,-151.5 275.5,-94.5 8.5,-94.5"/>
 <text text-anchor="middle" x="142" y="-139.5" font-family="Helvetica,sans-Serif" font-size="10.00">NpcCar</text>
 <polyline fill="none" stroke="black" points="8.5,-132.5 275.5,-132.5 "/>
@@ -44,7 +44,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classGame_1_1Car.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="classGame_1_1Car.html" target="_top" xlink:title="Handles the basic Car functionalities">
 <polygon fill="white" stroke="black" points="0,-188.5 0,-399.5 284,-399.5 284,-188.5 0,-188.5"/>
 <text text-anchor="middle" x="142" y="-387.5" font-family="Helvetica,sans-Serif" font-size="10.00">Car</text>
 <polyline fill="none" stroke="black" points="0,-380.5 284,-380.5 "/>

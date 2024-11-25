@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classGame_1_1PlayerCar.html#a17bdd48255bfc4b1f00c106451981bc3" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classGame_1_1PlayerCar.html#a17bdd48255bfc4b1f00c106451981bc3" target="_top" xlink:title="Apply the immunity bonus to the player">
 <polygon fill="white" stroke="black" points="219.5,-152.5 219.5,-171.5 392.5,-171.5 392.5,-152.5 219.5,-152.5"/>
 <text text-anchor="middle" x="306" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.PlayerCar.ApplyImmunity</text>
 </a>
@@ -51,7 +51,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="classGame_1_1PlayerCar.html#a1c74b2e5f747bf336b29e1ebc7be878a" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="classGame_1_1PlayerCar.html#a1c74b2e5f747bf336b29e1ebc7be878a" target="_top" xlink:title="Cancel the immunity bonus">
 <polygon fill="white" stroke="black" points="216.5,-76.5 216.5,-95.5 395.5,-95.5 395.5,-76.5 216.5,-76.5"/>
 <text text-anchor="middle" x="306" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.PlayerCar.CancelImmunity</text>
 </a>

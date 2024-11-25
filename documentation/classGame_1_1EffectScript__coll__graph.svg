@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Handles the car&#39;s effects">
 <polygon fill="#bfbfbf" stroke="black" points="9,-0.5 9,-68.5 140,-68.5 140,-0.5 9,-0.5"/>
 <text text-anchor="middle" x="74.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.EffectScript</text>
 <polyline fill="none" stroke="black" points="9,-49.5 140,-49.5 "/>

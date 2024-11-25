@@ -3,10 +3,10 @@
 <area shape="rect" id="node2" href="$classUtility_1_1CoroutineRunner.html" title="Singleton class to run the coroutines so they are easier to track" alt="" coords="211,664,384,691"/>
 <area shape="rect" id="node3" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="177,715,417,741"/>
 <area shape="rect" id="node4" href="$classCameraScript.html" title="Script which follows the player&#39;s car" alt="" coords="544,5,655,32"/>
-<area shape="rect" id="node5" href="$classGame_1_1Car.html" title=" " alt="" coords="556,56,643,83"/>
+<area shape="rect" id="node5" href="$classGame_1_1Car.html" title="Handles the basic Car functionalities" alt="" coords="556,56,643,83"/>
 <area shape="rect" id="node9" href="$classGame_1_1CarController.html" title=" " alt="" coords="524,107,675,133"/>
-<area shape="rect" id="node10" href="$classGame_1_1EffectScript.html" title=" " alt="" coords="530,157,669,184"/>
-<area shape="rect" id="node11" href="$classGame_1_1EnableWheelPhysicMaterial.html" title=" " alt="" coords="476,208,723,235"/>
+<area shape="rect" id="node10" href="$classGame_1_1EffectScript.html" title="Handles the car&#39;s effects" alt="" coords="530,157,669,184"/>
+<area shape="rect" id="node11" href="$classGame_1_1EnableWheelPhysicMaterial.html" title="Script to enable the physics materials for the wheel colliders" alt="" coords="476,208,723,235"/>
 <area shape="rect" id="node12" href="$classGame_1_1GameController.html" title="Handles the main flow of the game scene" alt="" coords="515,259,683,285"/>
 <area shape="rect" id="node13" href="$classGame_1_1UI_1_1GameUI.html" title="Controller for the game&#39;s UI" alt="" coords="531,309,667,336"/>
 <area shape="rect" id="node14" href="$classGame_1_1UI_1_1LeaderboardItem.html" title="A single leaderboard item" alt="" coords="502,360,697,387"/>
@@ -31,7 +31,7 @@
 <area shape="rect" id="node33" href="$classUser_1_1LoggedInChecker.html" title="Checks if the user has a session stored in the backend" alt="" coords="516,1323,683,1349"/>
 <area shape="rect" id="node34" href="$classUser_1_1UserController.html" title="Handles the user actions such as registering and login" alt="" coords="525,1373,674,1400"/>
 <area shape="rect" id="node35" href="$classUtility_1_1ModalWindow.html" title="Modal window for alerting the user" alt="" coords="521,1424,677,1451"/>
-<area shape="rect" id="node6" href="$classGame_1_1NpcCar.html" title=" " alt="" coords="789,31,901,57"/>
-<area shape="rect" id="node8" href="$classGame_1_1PlayerCar.html" title=" " alt="" coords="781,81,909,108"/>
-<area shape="rect" id="node7" href="$classGame_1_1CopCar.html" title=" " alt="" coords="957,31,1069,57"/>
+<area shape="rect" id="node6" href="$classGame_1_1NpcCar.html" title="Object for the npc cars It is not yet used" alt="" coords="789,31,901,57"/>
+<area shape="rect" id="node8" href="$classGame_1_1PlayerCar.html" title="Handles the player&#39;s car" alt="" coords="781,81,909,108"/>
+<area shape="rect" id="node7" href="$classGame_1_1CopCar.html" title="Handles the police car" alt="" coords="957,31,1069,57"/>
 </map>

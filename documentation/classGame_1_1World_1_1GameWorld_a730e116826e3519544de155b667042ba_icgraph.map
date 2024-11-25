@@ -7,5 +7,5 @@
 <area shape="rect" id="node4" href="$classGame_1_1UI_1_1GameUI.html#ad581ee67e01ac3bcdec06cf2538f06e4" title="Start a new game" alt="" coords="346,5,554,32"/>
 <area shape="rect" id="node7" href="$classGame_1_1GameController.html#a2003e53e493cca6ace00e260e7161a03" title="Spawns and loads the nearby chunks" alt="" coords="665,107,975,133"/>
 <area shape="rect" id="node8" href="$classGame_1_1GameController.html#af623e7876622503e3d0f985ad9b08e47" title="Handle the load and despawning of the chunks relative to the given indices" alt="" coords="283,107,617,133"/>
-<area shape="rect" id="node9" href="$classGame_1_1PlayerCar.html#a18f30f1f6873f043457ce9f81ac47ed4" title=" " alt="" coords="5,107,235,133"/>
+<area shape="rect" id="node9" href="$classGame_1_1PlayerCar.html#a18f30f1f6873f043457ce9f81ac47ed4" title="Override the chunk changed method to make it load and despawn the chunks" alt="" coords="5,107,235,133"/>
 </map>

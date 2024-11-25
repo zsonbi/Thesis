@@ -82,7 +82,7 @@ var sectionId = 'dynsection-9';
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classGame_1_1PlayerCar.html#a35789ca2a7fb0aedfa7f7d81d0ff639d" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="classGame_1_1PlayerCar.html#a35789ca2a7fb0aedfa7f7d81d0ff639d" target="_top" xlink:title="Handle the user inputs">
 <polygon fill="white" stroke="black" points="0,-38.5 0,-57.5 159,-57.5 159,-38.5 0,-38.5"/>
 <text text-anchor="middle" x="79.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.PlayerCar.FixedUpdate</text>
 </a>
@@ -97,7 +97,7 @@ var sectionId = 'dynsection-9';
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="classGame_1_1CopCar.html#ad1e664d118f85d0c8b21e92d519c1e0b" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="classGame_1_1CopCar.html#ad1e664d118f85d0c8b21e92d519c1e0b" target="_top" xlink:title="Called every frame">
 <polygon fill="white" stroke="black" points="18.5,-0.5 18.5,-19.5 140.5,-19.5 140.5,-0.5 18.5,-0.5"/>
 <text text-anchor="middle" x="79.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.CopCar.Update</text>
 </a>

@@ -171,7 +171,7 @@
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
-<g id="a_node12"><a xlink:href="classGame_1_1PlayerCar.html#a18f30f1f6873f043457ce9f81ac47ed4" target="_top" xlink:title=" ">
+<g id="a_node12"><a xlink:href="classGame_1_1PlayerCar.html#a18f30f1f6873f043457ce9f81ac47ed4" target="_top" xlink:title="Override the chunk changed method to make it load and despawn the chunks">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-19.5 172,-19.5 172,-0.5 0,-0.5"/>
 <text text-anchor="middle" x="86" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.PlayerCar.ChunkChanged</text>
 </a>

@@ -58,38 +58,37 @@ var sectionId = 'dynsection-1';
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="black" points="1507.09,-83 1507.09,-338 1800.09,-338 1800.09,-83 1507.09,-83"/>
-<text text-anchor="middle" x="1653.59" y="-326" font-family="Helvetica,sans-Serif" font-size="10.00">Game.PlayerCar</text>
-<polyline fill="none" stroke="black" points="1507.09,-319 1800.09,-319 "/>
-<text text-anchor="start" x="1515.09" y="-307" font-family="Helvetica,sans-Serif" font-size="10.00">+ int SkinId</text>
-<text text-anchor="start" x="1515.09" y="-296" font-family="Helvetica,sans-Serif" font-size="10.00">+ bool Immune</text>
-<text text-anchor="start" x="1515.09" y="-285" font-family="Helvetica,sans-Serif" font-size="10.00">+ bool Turbo</text>
-<text text-anchor="start" x="1515.09" y="-274" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; float coinMultiplier</text>
-<text text-anchor="start" x="1515.09" y="-263" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Keyboard keyboard</text>
-<text text-anchor="start" x="1515.09" y="-252" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; int probeSize</text>
-<text text-anchor="start" x="1515.09" y="-241" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; List&lt; PoliceContainer &gt; policeContacts</text>
-<text text-anchor="start" x="1515.09" y="-230" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; float turboTimer</text>
-<text text-anchor="start" x="1515.09" y="-219" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; float immuneTimer</text>
-<polyline fill="none" stroke="black" points="1507.09,-212 1800.09,-212 "/>
-<text text-anchor="start" x="1515.09" y="-200" font-family="Helvetica,sans-Serif" font-size="10.00">+ void PickedUpCoin()</text>
-<text text-anchor="start" x="1515.09" y="-189" font-family="Helvetica,sans-Serif" font-size="10.00">+ void ApplyTurbo()</text>
-<text text-anchor="start" x="1515.09" y="-178" font-family="Helvetica,sans-Serif" font-size="10.00">+ void ApplyImmunity()</text>
-<text text-anchor="start" x="1515.09" y="-167" font-family="Helvetica,sans-Serif" font-size="10.00">+ void CancelTurbo()</text>
-<text text-anchor="start" x="1515.09" y="-156" font-family="Helvetica,sans-Serif" font-size="10.00">+ void CancelImmunity()</text>
-<text text-anchor="start" x="1515.09" y="-145" font-family="Helvetica,sans-Serif" font-size="10.00"># new void Awake()</text>
-<text text-anchor="start" x="1515.09" y="-134" font-family="Helvetica,sans-Serif" font-size="10.00"># override async void ChunkChanged(Chunk newChunk)</text>
-<text text-anchor="start" x="1515.09" y="-123" font-family="Helvetica,sans-Serif" font-size="10.00"># override void Update()</text>
-<text text-anchor="start" x="1515.09" y="-112" font-family="Helvetica,sans-Serif" font-size="10.00"># override void OnCollisionEnter(Collision collision)</text>
-<text text-anchor="start" x="1515.09" y="-101" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; void FixedUpdate()</text>
-<text text-anchor="start" x="1515.09" y="-90" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; void OnCollisionExit(Collision collision)</text>
+<g id="a_node1"><a xlink:title="Handles the player&#39;s car">
+<polygon fill="#bfbfbf" stroke="black" points="1507.09,-88.5 1507.09,-332.5 1800.09,-332.5 1800.09,-88.5 1507.09,-88.5"/>
+<text text-anchor="middle" x="1653.59" y="-320.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.PlayerCar</text>
+<polyline fill="none" stroke="black" points="1507.09,-313.5 1800.09,-313.5 "/>
+<text text-anchor="start" x="1515.09" y="-301.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ int SkinId</text>
+<text text-anchor="start" x="1515.09" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bool Immune</text>
+<text text-anchor="start" x="1515.09" y="-279.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ bool Turbo</text>
+<text text-anchor="start" x="1515.09" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; float coinMultiplier</text>
+<text text-anchor="start" x="1515.09" y="-257.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Keyboard keyboard</text>
+<text text-anchor="start" x="1515.09" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; int probeSize</text>
+<text text-anchor="start" x="1515.09" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; List&lt; PoliceContainer &gt; policeContacts</text>
+<text text-anchor="start" x="1515.09" y="-224.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; float turboTimer</text>
+<text text-anchor="start" x="1515.09" y="-213.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; float immuneTimer</text>
+<polyline fill="none" stroke="black" points="1507.09,-206.5 1800.09,-206.5 "/>
+<text text-anchor="start" x="1515.09" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void PickedUpCoin()</text>
+<text text-anchor="start" x="1515.09" y="-183.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void ApplyTurbo()</text>
+<text text-anchor="start" x="1515.09" y="-172.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void ApplyImmunity()</text>
+<text text-anchor="start" x="1515.09" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void CancelTurbo()</text>
+<text text-anchor="start" x="1515.09" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ void CancelImmunity()</text>
+<text text-anchor="start" x="1515.09" y="-139.5" font-family="Helvetica,sans-Serif" font-size="10.00"># override async void ChunkChanged(Chunk newChunk)</text>
+<text text-anchor="start" x="1515.09" y="-128.5" font-family="Helvetica,sans-Serif" font-size="10.00"># override void Update()</text>
+<text text-anchor="start" x="1515.09" y="-117.5" font-family="Helvetica,sans-Serif" font-size="10.00"># override void OnCollisionEnter(Collision collision)</text>
+<text text-anchor="start" x="1515.09" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; void FixedUpdate()</text>
+<text text-anchor="start" x="1515.09" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; void OnCollisionExit(Collision collision)</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classGame_1_1Car.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classGame_1_1Car.html" target="_top" xlink:title="Handles the basic Car functionalities">
 <polygon fill="white" stroke="black" points="1511.59,-468.5 1511.59,-646.5 1795.59,-646.5 1795.59,-468.5 1511.59,-468.5"/>
 <text text-anchor="middle" x="1653.59" y="-634.5" font-family="Helvetica,sans-Serif" font-size="10.00">Car</text>
 <polyline fill="none" stroke="black" points="1511.59,-627.5 1795.59,-627.5 "/>
@@ -113,7 +112,7 @@ var sectionId = 'dynsection-1';
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge">
 <title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M1653.59,-457.75C1653.59,-420.47 1653.59,-377.53 1653.59,-338.05"/>
+<path fill="none" stroke="midnightblue" d="M1653.59,-457.79C1653.59,-418.75 1653.59,-373.5 1653.59,-332.52"/>
 <polygon fill="none" stroke="midnightblue" points="1650.09,-458.1 1653.59,-468.1 1657.09,-458.1 1650.09,-458.1"/>
 </g>
 <!-- Node3 -->

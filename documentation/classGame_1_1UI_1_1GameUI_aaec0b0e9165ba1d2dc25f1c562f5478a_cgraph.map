@@ -1,7 +1,7 @@
 <map id="Game.UI.GameUI.BackToGameMenuWithoutSave" name="Game.UI.GameUI.BackToGameMenuWithoutSave">
 <area shape="rect" id="node1" title="Show the main menu, but don&#39;t save the scores" alt="" coords="5,81,349,108"/>
 <area shape="rect" id="node2" href="$classGame_1_1UI_1_1GameUI.html#a87baf7b6bd70298f817e2c8e5e52a33a" title="Hide the game over screen" alt="" coords="397,56,681,83"/>
-<area shape="rect" id="node8" href="$classGame_1_1Car.html#accc4c99441964b1f8d69d08871f5a478" title=" " alt="" coords="484,107,595,133"/>
+<area shape="rect" id="node8" href="$classGame_1_1Car.html#accc4c99441964b1f8d69d08871f5a478" title="Kills the car from the outside" alt="" coords="484,107,595,133"/>
 <area shape="rect" id="node3" href="$classGame_1_1UI_1_1GameUI.html#a4f9c8b23e2a0e5d86c53377ece2c9bac" title="Save the game&#39;s result" alt="" coords="729,56,981,83"/>
 <area shape="rect" id="node4" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="1029,5,1293,32"/>
 <area shape="rect" id="node5" href="$classGame_1_1UI_1_1GameUI.html#a984a1e174ca8249e0433de8d2d8a462c" title="Callback after the coins amount were saved" alt="" coords="1053,56,1269,83"/>

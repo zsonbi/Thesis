@@ -91,6 +91,9 @@ $(document).ready(function(){initNavTree('classGame_1_1PlayerCar_1_1PoliceContai
 <div class="title">Game.PlayerCar.PoliceContainer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A container to store the police to track how long they have been touching the player for game over detection  
+ <a href="classGame_1_1PlayerCar_1_1PoliceContainer.html#details">More...</a></p>
 <div class="dynheader">
 Collaboration diagram for Game.PlayerCar.PoliceContainer:</div>
 <div class="dyncontent">
@@ -101,21 +104,25 @@ Collaboration diagram for Game.PlayerCar.PoliceContainer:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a79442268fab7d4bf98066096e9babe84"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1PlayerCar_1_1PoliceContainer.html#a79442268fab7d4bf98066096e9babe84">PoliceContainer</a> (GameObject policeCar)</td></tr>
+<tr class="memdesc:a79442268fab7d4bf98066096e9babe84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new PoliceCar object  <a href="classGame_1_1PlayerCar_1_1PoliceContainer.html#a79442268fab7d4bf98066096e9babe84">More...</a><br /></td></tr>
 <tr class="separator:a79442268fab7d4bf98066096e9babe84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a531bbac045cd1299035956978a10f63b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1PlayerCar_1_1PoliceContainer.html#a531bbac045cd1299035956978a10f63b">TimeReamaining</a></td></tr>
+<tr class="memdesc:a531bbac045cd1299035956978a10f63b"><td class="mdescLeft">&#160;</td><td class="mdescRight">How long till game over  <a href="classGame_1_1PlayerCar_1_1PoliceContainer.html#a531bbac045cd1299035956978a10f63b">More...</a><br /></td></tr>
 <tr class="separator:a531bbac045cd1299035956978a10f63b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:aac2693dd8c3d43d842deb9546ad0bb91"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame_1_1PlayerCar_1_1PoliceContainer.html#aac2693dd8c3d43d842deb9546ad0bb91">PoliceCar</a><code> [get, private set]</code></td></tr>
+<tr class="memdesc:aac2693dd8c3d43d842deb9546ad0bb91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the police car  <a href="classGame_1_1PlayerCar_1_1PoliceContainer.html#aac2693dd8c3d43d842deb9546ad0bb91">More...</a><br /></td></tr>
 <tr class="separator:aac2693dd8c3d43d842deb9546ad0bb91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="PlayerCar_8cs_source.html#l00022">22</a> of file <a class="el" href="PlayerCar_8cs_source.html">PlayerCar.cs</a>.</p>
+<div class="textblock"><p>A container to store the police to track how long they have been touching the player for game over detection </p>
+
+<p class="definition">Definition at line <a class="el" href="PlayerCar_8cs_source.html#l00035">35</a> of file <a class="el" href="PlayerCar_8cs_source.html">PlayerCar.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a79442268fab7d4bf98066096e9babe84"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a79442268fab7d4bf98066096e9babe84">&#9670;&nbsp;</a></span>PoliceContainer()</h2>
@@ -141,15 +148,23 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="PlayerCar_8cs_source.html#l00027">27</a> of file <a class="el" href="PlayerCar_8cs_source.html">PlayerCar.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                this.<a class="code" href="classGame_1_1PlayerCar_1_1PoliceContainer.html#aac2693dd8c3d43d842deb9546ad0bb91">PoliceCar</a> = policeCar;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                this.<a class="code" href="classGame_1_1PlayerCar_1_1PoliceContainer.html#a531bbac045cd1299035956978a10f63b">TimeReamaining</a> = GameConfig.POLICE_GAME_OVER;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            }</div>
-<div class="ttc" id="aclassGame_1_1PlayerCar_1_1PoliceContainer_html_a531bbac045cd1299035956978a10f63b"><div class="ttname"><a href="classGame_1_1PlayerCar_1_1PoliceContainer.html#a531bbac045cd1299035956978a10f63b">Game.PlayerCar.PoliceContainer.TimeReamaining</a></div><div class="ttdeci">float TimeReamaining</div><div class="ttdef"><b>Definition:</b> <a href="PlayerCar_8cs_source.html#l00024">PlayerCar.cs:24</a></div></div>
-<div class="ttc" id="aclassGame_1_1PlayerCar_1_1PoliceContainer_html_aac2693dd8c3d43d842deb9546ad0bb91"><div class="ttname"><a href="classGame_1_1PlayerCar_1_1PoliceContainer.html#aac2693dd8c3d43d842deb9546ad0bb91">Game.PlayerCar.PoliceContainer.PoliceCar</a></div><div class="ttdeci">GameObject PoliceCar</div><div class="ttdef"><b>Definition:</b> <a href="PlayerCar_8cs_source.html#l00025">PlayerCar.cs:25</a></div></div>
+<p>Creates a new PoliceCar object </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">policeCar</td><td>Reference to the police car</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="PlayerCar_8cs_source.html#l00049">49</a> of file <a class="el" href="PlayerCar_8cs_source.html">PlayerCar.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                this.<a class="code" href="classGame_1_1PlayerCar_1_1PoliceContainer.html#aac2693dd8c3d43d842deb9546ad0bb91">PoliceCar</a> = policeCar;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                this.<a class="code" href="classGame_1_1PlayerCar_1_1PoliceContainer.html#a531bbac045cd1299035956978a10f63b">TimeReamaining</a> = GameConfig.POLICE_GAME_OVER;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            }</div>
+<div class="ttc" id="aclassGame_1_1PlayerCar_1_1PoliceContainer_html_a531bbac045cd1299035956978a10f63b"><div class="ttname"><a href="classGame_1_1PlayerCar_1_1PoliceContainer.html#a531bbac045cd1299035956978a10f63b">Game.PlayerCar.PoliceContainer.TimeReamaining</a></div><div class="ttdeci">float TimeReamaining</div><div class="ttdoc">How long till game over</div><div class="ttdef"><b>Definition:</b> <a href="PlayerCar_8cs_source.html#l00040">PlayerCar.cs:40</a></div></div>
+<div class="ttc" id="aclassGame_1_1PlayerCar_1_1PoliceContainer_html_aac2693dd8c3d43d842deb9546ad0bb91"><div class="ttname"><a href="classGame_1_1PlayerCar_1_1PoliceContainer.html#aac2693dd8c3d43d842deb9546ad0bb91">Game.PlayerCar.PoliceContainer.PoliceCar</a></div><div class="ttdeci">GameObject PoliceCar</div><div class="ttdoc">Reference to the police car</div><div class="ttdef"><b>Definition:</b> <a href="PlayerCar_8cs_source.html#l00044">PlayerCar.cs:44</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="GameConfig_8cs_source.html#l00051">Game.GameConfig.POLICE_GAME_OVER</a>, and <a class="el" href="PlayerCar_8cs_source.html#l00025">Game.PlayerCar.PoliceContainer.PoliceCar</a>.</p>
+<p class="reference">References <a class="el" href="GameConfig_8cs_source.html#l00051">Game.GameConfig.POLICE_GAME_OVER</a>, and <a class="el" href="PlayerCar_8cs_source.html#l00044">Game.PlayerCar.PoliceContainer.PoliceCar</a>.</p>
 
 </div>
 </div>
@@ -166,7 +181,9 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="PlayerCar_8cs_source.html#l00024">24</a> of file <a class="el" href="PlayerCar_8cs_source.html">PlayerCar.cs</a>.</p>
+<p>How long till game over </p>
+
+<p class="definition">Definition at line <a class="el" href="PlayerCar_8cs_source.html#l00040">40</a> of file <a class="el" href="PlayerCar_8cs_source.html">PlayerCar.cs</a>.</p>
 
 </div>
 </div>
@@ -191,10 +208,12 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="PlayerCar_8cs_source.html#l00025">25</a> of file <a class="el" href="PlayerCar_8cs_source.html">PlayerCar.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
+<p>Reference to the police car </p>
+
+<p class="definition">Definition at line <a class="el" href="PlayerCar_8cs_source.html#l00044">44</a> of file <a class="el" href="PlayerCar_8cs_source.html">PlayerCar.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="PlayerCar_8cs_source.html#l00027">Game.PlayerCar.PoliceContainer.PoliceContainer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="PlayerCar_8cs_source.html#l00049">Game.PlayerCar.PoliceContainer.PoliceContainer()</a>.</p>
 
 </div>
 </div>

@@ -1,5 +1,5 @@
 <map id="Game.PlayerCar.FixedUpdate" name="Game.PlayerCar.FixedUpdate">
-<area shape="rect" id="node1" title=" " alt="" coords="5,107,217,133"/>
+<area shape="rect" id="node1" title="Handle the user inputs" alt="" coords="5,107,217,133"/>
 <area shape="rect" id="node2" href="$classGame_1_1CarController.html#ae3eb6260519b20b09bc1226be3919be2" title=" " alt="" coords="265,107,456,133"/>
 <area shape="rect" id="node3" href="$classGame_1_1CarController.html#afadda4712607531e93172fcd43557f14" title=" " alt="" coords="505,5,755,32"/>
 <area shape="rect" id="node4" href="$classGame_1_1CarController.html#aebd7dfca747e22622550ce42076052af" title=" " alt="" coords="517,56,743,83"/>

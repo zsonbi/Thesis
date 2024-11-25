@@ -143,7 +143,4 @@ var menudata={children:[
 {text:"x",url:"functions_prop.html#index_x"},
 {text:"z",url:"functions_prop.html#index_z"}]}]}]},
 {text:"Files",url:"files.html",children:[
-{text:"File List",url:"files.html"},
-{text:"File Members",url:"globals.html",children:[
-{text:"All",url:"globals.html"},
-{text:"Typedefs",url:"globals_type.html"}]}]}]}
+{text:"File List",url:"files.html"}]}]}

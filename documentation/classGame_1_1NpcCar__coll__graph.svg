@@ -58,7 +58,7 @@ var sectionId = 'dynsection-1';
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Object for the npc cars It is not yet used">
 <polygon fill="#bfbfbf" stroke="black" points="1520.09,-182 1520.09,-239 1787.09,-239 1787.09,-182 1520.09,-182"/>
 <text text-anchor="middle" x="1653.59" y="-227" font-family="Helvetica,sans-Serif" font-size="10.00">Game.NpcCar</text>
 <polyline fill="none" stroke="black" points="1520.09,-220 1787.09,-220 "/>
@@ -71,7 +71,7 @@ var sectionId = 'dynsection-1';
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classGame_1_1Car.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classGame_1_1Car.html" target="_top" xlink:title="Handles the basic Car functionalities">
 <polygon fill="white" stroke="black" points="1511.59,-468.5 1511.59,-646.5 1795.59,-646.5 1795.59,-468.5 1511.59,-468.5"/>
 <text text-anchor="middle" x="1653.59" y="-634.5" font-family="Helvetica,sans-Serif" font-size="10.00">Car</text>
 <polyline fill="none" stroke="black" points="1511.59,-627.5 1795.59,-627.5 "/>

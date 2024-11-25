@@ -1,6 +1,6 @@
 <map id="Game.NpcCar" name="Game.NpcCar">
-<area shape="rect" id="node1" title=" " alt="" coords="2032,1693,2388,1770"/>
-<area shape="rect" id="node2" href="$classGame_1_1Car.html" title=" " alt="" coords="2021,1149,2399,1388"/>
+<area shape="rect" id="node1" title="Object for the npc cars It is not yet used" alt="" coords="2032,1693,2388,1770"/>
+<area shape="rect" id="node2" href="$classGame_1_1Car.html" title="Handles the basic Car functionalities" alt="" coords="2021,1149,2399,1388"/>
 <area shape="rect" id="node3" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="1372,161,1571,239"/>
 <area shape="rect" id="node5" href="$classGame_1_1World_1_1Chunk.html" title="Stores a single chunk of the world" alt="" coords="1509,331,1956,995"/>
 <area shape="rect" id="node7" href="$classGame_1_1World_1_1GameWorld.html" title="A class for handling chunk loading and unloading" alt="" coords="1645,1193,1996,1344"/>

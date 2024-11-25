@@ -1,6 +1,6 @@
 <map id="Game.CarController.SteerHelper" name="Game.CarController.SteerHelper">
 <area shape="rect" id="node1" title=" " alt="" coords="504,31,735,57"/>
 <area shape="rect" id="node2" href="$classGame_1_1CarController.html#ae3eb6260519b20b09bc1226be3919be2" title=" " alt="" coords="265,31,456,57"/>
-<area shape="rect" id="node3" href="$classGame_1_1PlayerCar.html#a35789ca2a7fb0aedfa7f7d81d0ff639d" title=" " alt="" coords="5,5,217,32"/>
-<area shape="rect" id="node4" href="$classGame_1_1CopCar.html#ad1e664d118f85d0c8b21e92d519c1e0b" title=" " alt="" coords="30,56,193,83"/>
+<area shape="rect" id="node3" href="$classGame_1_1PlayerCar.html#a35789ca2a7fb0aedfa7f7d81d0ff639d" title="Handle the user inputs" alt="" coords="5,5,217,32"/>
+<area shape="rect" id="node4" href="$classGame_1_1CopCar.html#ad1e664d118f85d0c8b21e92d519c1e0b" title="Called every frame" alt="" coords="30,56,193,83"/>
 </map>

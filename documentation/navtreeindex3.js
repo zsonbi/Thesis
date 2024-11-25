@@ -1,7 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"classUser_1_1UserController.html#a1ee460095513422a536daa1b5d0b3419":[1,0,6,1,13],
-"classUser_1_1UserController.html#a293ee2fb76b9593945e5e21cc6370a88":[1,0,6,1,14],
 "classUser_1_1UserController.html#a2fb35773c2b8e027ba6f6bd938c2201b":[1,0,6,1,12],
 "classUser_1_1UserController.html#a3ba5f73e6358fff37d2ec5e255659756":[1,0,6,1,8],
 "classUser_1_1UserController.html#a7d9a8e16cdb6bc3702ab7987cc141b09":[1,0,6,1,2],
@@ -109,8 +107,8 @@ var NAVTREEINDEX3 =
 "functions_t.html":[1,2,0,18],
 "functions_u.html":[1,2,0,19],
 "functions_v.html":[1,2,0,20],
-"functions_vars.html":[1,2,2,0],
 "functions_vars.html":[1,2,2],
+"functions_vars.html":[1,2,2,0],
 "functions_vars_a.html":[1,2,2,1],
 "functions_vars_b.html":[1,2,2,2],
 "functions_vars_c.html":[1,2,2,3],
@@ -136,8 +134,6 @@ var NAVTREEINDEX3 =
 "functions_w.html":[1,2,0,21],
 "functions_x.html":[1,2,0,22],
 "functions_z.html":[1,2,0,23],
-"globals.html":[2,1,0],
-"globals_type.html":[2,1,1],
 "hierarchy.html":[1,1],
 "index.html":[],
 "namespaceAssets.html":[0,0,0],
@@ -249,5 +245,9 @@ var NAVTREEINDEX3 =
 "structAssets_1_1Scripts_1_1Client_1_1DataTypes_1_1ChunkCellContainer.html#ab94400b8d16cc62c34eb3b6be776d486":[1,0,0,0,0,0,0,1],
 "structThesis__backend_1_1Data__Structures_1_1TaskRequest.html":[1,0,5,0,0],
 "structThesis__backend_1_1Data__Structures_1_1TaskRequest.html#a2395e5dc649c2efb0eb44f685e74bfcf":[1,0,5,0,0,0],
-"structThesis__backend_1_1Data__Structures_1_1TaskRequest.html#ab04e81c25861b4c4cdb160cc6da17850":[1,0,5,0,0,1]
+"structThesis__backend_1_1Data__Structures_1_1TaskRequest.html#ab04e81c25861b4c4cdb160cc6da17850":[1,0,5,0,0,1],
+"structThesis__backend_1_1Data__Structures_1_1TaskRequest.html#ac007e8f0cf2ae376dde9708f93407985":[1,0,5,0,0,3],
+"structThesis__backend_1_1Data__Structures_1_1TaskRequest.html#adc3f7466d608725775c675a78aee51d5":[1,0,5,0,0,2],
+"structThesis__backend_1_1Data__Structures_1_1UserLoginRequest.html":[1,0,5,0,1],
+"structThesis__backend_1_1Data__Structures_1_1UserLoginRequest.html#a07ca93307f8ebf442dfda4727fd95e1a":[1,0,5,0,1,1]
 };

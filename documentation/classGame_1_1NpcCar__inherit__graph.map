@@ -1,7 +1,7 @@
 <map id="Game.NpcCar" name="Game.NpcCar">
-<area shape="rect" id="node1" title=" " alt="" coords="17,587,373,664"/>
-<area shape="rect" id="node5" href="$classGame_1_1CopCar.html" title=" " alt="" coords="103,712,287,789"/>
-<area shape="rect" id="node2" href="$classGame_1_1Car.html" title=" " alt="" coords="5,256,384,539"/>
+<area shape="rect" id="node1" title="Object for the npc cars It is not yet used" alt="" coords="17,587,373,664"/>
+<area shape="rect" id="node5" href="$classGame_1_1CopCar.html" title="Handles the police car" alt="" coords="103,712,287,789"/>
+<area shape="rect" id="node2" href="$classGame_1_1Car.html" title="Handles the basic Car functionalities" alt="" coords="5,256,384,539"/>
 <area shape="rect" id="node3" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="95,131,294,208"/>
 <area shape="rect" id="node4" title=" " alt="" coords="133,5,257,83"/>
 </map>

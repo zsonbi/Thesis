@@ -66,7 +66,7 @@
 <!-- Node10 -->
 <g id="node5" class="node">
 <title>Node10</title>
-<g id="a_node5"><a xlink:href="classGame_1_1Car.html" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="classGame_1_1Car.html" target="_top" xlink:title="Handles the basic Car functionalities">
 <polygon fill="white" stroke="black" points="413,-1026.5 413,-1045.5 478,-1045.5 478,-1026.5 413,-1026.5"/>
 <text text-anchor="middle" x="445.5" y="-1033.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.Car</text>
 </a>
@@ -96,7 +96,7 @@
 <!-- Node15 -->
 <g id="node10" class="node">
 <title>Node15</title>
-<g id="a_node10"><a xlink:href="classGame_1_1EffectScript.html" target="_top" xlink:title=" ">
+<g id="a_node10"><a xlink:href="classGame_1_1EffectScript.html" target="_top" xlink:title="Handles the car&#39;s effects">
 <polygon fill="white" stroke="black" points="393.5,-950.5 393.5,-969.5 497.5,-969.5 497.5,-950.5 393.5,-950.5"/>
 <text text-anchor="middle" x="445.5" y="-957.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.EffectScript</text>
 </a>
@@ -111,7 +111,7 @@
 <!-- Node16 -->
 <g id="node11" class="node">
 <title>Node16</title>
-<g id="a_node11"><a xlink:href="classGame_1_1EnableWheelPhysicMaterial.html" target="_top" xlink:title=" ">
+<g id="a_node11"><a xlink:href="classGame_1_1EnableWheelPhysicMaterial.html" target="_top" xlink:title="Script to enable the physics materials for the wheel colliders">
 <polygon fill="white" stroke="black" points="353,-912.5 353,-931.5 538,-931.5 538,-912.5 353,-912.5"/>
 <text text-anchor="middle" x="445.5" y="-919.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.EnableWheelPhysicMaterial</text>
 </a>
@@ -486,7 +486,7 @@
 <!-- Node11 -->
 <g id="node6" class="node">
 <title>Node11</title>
-<g id="a_node6"><a xlink:href="classGame_1_1NpcCar.html" target="_top" xlink:title=" ">
+<g id="a_node6"><a xlink:href="classGame_1_1NpcCar.html" target="_top" xlink:title="Object for the npc cars It is not yet used">
 <polygon fill="white" stroke="black" points="588,-1045.5 588,-1064.5 672,-1064.5 672,-1045.5 588,-1045.5"/>
 <text text-anchor="middle" x="630" y="-1052.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.NpcCar</text>
 </a>
@@ -501,7 +501,7 @@
 <!-- Node13 -->
 <g id="node8" class="node">
 <title>Node13</title>
-<g id="a_node8"><a xlink:href="classGame_1_1PlayerCar.html" target="_top" xlink:title=" ">
+<g id="a_node8"><a xlink:href="classGame_1_1PlayerCar.html" target="_top" xlink:title="Handles the player&#39;s car">
 <polygon fill="white" stroke="black" points="582,-1007.5 582,-1026.5 678,-1026.5 678,-1007.5 582,-1007.5"/>
 <text text-anchor="middle" x="630" y="-1014.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.PlayerCar</text>
 </a>
@@ -516,7 +516,7 @@
 <!-- Node12 -->
 <g id="node7" class="node">
 <title>Node12</title>
-<g id="a_node7"><a xlink:href="classGame_1_1CopCar.html" target="_top" xlink:title=" ">
+<g id="a_node7"><a xlink:href="classGame_1_1CopCar.html" target="_top" xlink:title="Handles the police car">
 <polygon fill="white" stroke="black" points="714,-1045.5 714,-1064.5 798,-1064.5 798,-1045.5 714,-1045.5"/>
 <text text-anchor="middle" x="756" y="-1052.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.CopCar</text>
 </a>

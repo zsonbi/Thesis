@@ -1,5 +1,5 @@
 <map id="Game.Car.Init" name="Game.Car.Init">
-<area shape="rect" id="node1" title=" " alt="" coords="605,31,716,57"/>
+<area shape="rect" id="node1" title="Initializes the car" alt="" coords="605,31,716,57"/>
 <area shape="rect" id="node2" href="$classGame_1_1GameController.html#af5c50c52cffcab3018ca54be6a421d7f" title="Create a new game" alt="" coords="303,5,542,32"/>
 <area shape="rect" id="node4" href="$classGame_1_1World_1_1CarSpawner.html#a68b1710c3c5c6ab1ea0d64b13da93e49" title="Spawn the given cop car" alt="" coords="288,56,557,83"/>
 <area shape="rect" id="node3" href="$classGame_1_1UI_1_1GameUI.html#ad581ee67e01ac3bcdec06cf2538f06e4" title="Start a new game" alt="" coords="19,5,227,32"/>

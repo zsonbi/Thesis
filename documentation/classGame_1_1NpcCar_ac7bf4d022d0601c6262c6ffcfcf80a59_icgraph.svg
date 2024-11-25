@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Determine the way the player is">
 <polygon fill="#bfbfbf" stroke="black" points="158,-0.5 158,-19.5 451,-19.5 451,-0.5 158,-0.5"/>
 <text text-anchor="middle" x="304.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.NpcCar.DetermineSteeringDirectionTowardsPlayer</text>
 </a>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classGame_1_1CopCar.html#ad1e664d118f85d0c8b21e92d519c1e0b" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classGame_1_1CopCar.html#ad1e664d118f85d0c8b21e92d519c1e0b" target="_top" xlink:title="Called every frame">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-19.5 122,-19.5 122,-0.5 0,-0.5"/>
 <text text-anchor="middle" x="61" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.CopCar.Update</text>
 </a>

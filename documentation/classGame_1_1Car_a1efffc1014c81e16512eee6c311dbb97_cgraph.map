@@ -1,6 +1,6 @@
 <map id="Game.Car.Update" name="Game.Car.Update">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,143,57"/>
-<area shape="rect" id="node2" href="$classGame_1_1Car.html#aee18ec29b76c64797a649d50a6f83eed" title=" " alt="" coords="191,31,429,57"/>
-<area shape="rect" id="node3" href="$classGame_1_1Car.html#aafa1ed6c6d66625c4e9dd1c18fb67fd3" title=" " alt="" coords="509,5,697,32"/>
+<area shape="rect" id="node1" title="Called every frame" alt="" coords="5,31,143,57"/>
+<area shape="rect" id="node2" href="$classGame_1_1Car.html#aee18ec29b76c64797a649d50a6f83eed" title="Change the chunk if it went over the chunk border" alt="" coords="191,31,429,57"/>
+<area shape="rect" id="node3" href="$classGame_1_1Car.html#aafa1ed6c6d66625c4e9dd1c18fb67fd3" title="Virtual method for chunk changed" alt="" coords="509,5,697,32"/>
 <area shape="rect" id="node4" href="$classGame_1_1World_1_1GameWorld.html#a78654137c458c1b1917285e28d3d270b" title="Gets the chunk based on the absolute position which chunk it would fall into" alt="" coords="477,56,728,83"/>
 </map>

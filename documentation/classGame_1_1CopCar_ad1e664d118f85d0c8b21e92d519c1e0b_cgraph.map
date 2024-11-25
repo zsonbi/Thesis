@@ -1,6 +1,6 @@
 <map id="Game.CopCar.Update" name="Game.CopCar.Update">
-<area shape="rect" id="node1" title=" " alt="" coords="5,81,168,108"/>
-<area shape="rect" id="node2" href="$classGame_1_1NpcCar.html#ac7bf4d022d0601c6262c6ffcfcf80a59" title=" " alt="" coords="216,56,607,83"/>
+<area shape="rect" id="node1" title="Called every frame" alt="" coords="5,81,168,108"/>
+<area shape="rect" id="node2" href="$classGame_1_1NpcCar.html#ac7bf4d022d0601c6262c6ffcfcf80a59" title="Determine the way the player is" alt="" coords="216,56,607,83"/>
 <area shape="rect" id="node3" href="$classGame_1_1CarController.html#ae3eb6260519b20b09bc1226be3919be2" title=" " alt="" coords="316,107,507,133"/>
 <area shape="rect" id="node4" href="$classGame_1_1CarController.html#afadda4712607531e93172fcd43557f14" title=" " alt="" coords="655,5,906,32"/>
 <area shape="rect" id="node5" href="$classGame_1_1CarController.html#aebd7dfca747e22622550ce42076052af" title=" " alt="" coords="667,56,894,83"/>

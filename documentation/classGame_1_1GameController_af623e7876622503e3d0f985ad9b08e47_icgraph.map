@@ -1,4 +1,4 @@
 <map id="Game.GameController.LoadAndDespawnChunks" name="Game.GameController.LoadAndDespawnChunks">
 <area shape="rect" id="node1" title="Handle the load and despawning of the chunks relative to the given indices" alt="" coords="283,5,617,32"/>
-<area shape="rect" id="node2" href="$classGame_1_1PlayerCar.html#a18f30f1f6873f043457ce9f81ac47ed4" title=" " alt="" coords="5,5,235,32"/>
+<area shape="rect" id="node2" href="$classGame_1_1PlayerCar.html#a18f30f1f6873f043457ce9f81ac47ed4" title="Override the chunk changed method to make it load and despawn the chunks" alt="" coords="5,5,235,32"/>
 </map>

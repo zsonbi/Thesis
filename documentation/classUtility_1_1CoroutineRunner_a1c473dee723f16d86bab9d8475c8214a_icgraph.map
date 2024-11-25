@@ -48,7 +48,7 @@
 <area shape="rect" id="node43" href="$classGame_1_1GameController.html#af5c50c52cffcab3018ca54be6a421d7f" title="Create a new game" alt="" coords="701,1189,939,1216"/>
 <area shape="rect" id="node46" href="$classGame_1_1GameController.html#a2003e53e493cca6ace00e260e7161a03" title="Spawns and loads the nearby chunks" alt="" coords="665,1297,975,1324"/>
 <area shape="rect" id="node47" href="$classGame_1_1GameController.html#af623e7876622503e3d0f985ad9b08e47" title="Handle the load and despawning of the chunks relative to the given indices" alt="" coords="283,1297,617,1324"/>
-<area shape="rect" id="node48" href="$classGame_1_1PlayerCar.html#a18f30f1f6873f043457ce9f81ac47ed4" title=" " alt="" coords="5,1297,235,1324"/>
+<area shape="rect" id="node48" href="$classGame_1_1PlayerCar.html#a18f30f1f6873f043457ce9f81ac47ed4" title="Override the chunk changed method to make it load and despawn the chunks" alt="" coords="5,1297,235,1324"/>
 <area shape="rect" id="node51" href="$classGame_1_1UI_1_1ShopItem.html#aba8c6371c3eeaecb2bb7ab1f07311869" title="Callback when it is bought" alt="" coords="1876,867,2071,893"/>
 <area shape="rect" id="node52" href="$classGame_1_1UI_1_1ShopWindow.html#ad9204f9c12eb8520523232c340f477b0" title="Show the shop window" alt="" coords="1871,816,2076,843"/>
 <area shape="rect" id="node53" href="$classGame_1_1UI_1_1GameUI.html#a443a0569c632ba816be0bd1511b62bca" title="Display the shop window" alt="" coords="1435,816,1693,843"/>

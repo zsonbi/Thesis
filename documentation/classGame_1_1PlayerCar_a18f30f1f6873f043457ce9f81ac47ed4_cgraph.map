@@ -1,5 +1,5 @@
 <map id="Game.PlayerCar.ChunkChanged" name="Game.PlayerCar.ChunkChanged">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,235,57"/>
+<area shape="rect" id="node1" title="Override the chunk changed method to make it load and despawn the chunks" alt="" coords="5,31,235,57"/>
 <area shape="rect" id="node2" href="$classGame_1_1GameController.html#af623e7876622503e3d0f985ad9b08e47" title="Handle the load and despawning of the chunks relative to the given indices" alt="" coords="283,31,617,57"/>
 <area shape="rect" id="node3" href="$classGame_1_1GameController.html#a9d697eb362c93e3208af1a5c2385742d" title="Despawn the chunks which are too far away from the player" alt="" coords="665,5,1000,32"/>
 <area shape="rect" id="node6" href="$classGame_1_1GameController.html#a2003e53e493cca6ace00e260e7161a03" title="Spawns and loads the nearby chunks" alt="" coords="678,56,987,83"/>

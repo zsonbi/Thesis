@@ -16,5 +16,8 @@ var dir_02daac45f3276bf7726dfe0aac208fe9 =
     [ "NpcCar.cs", "NpcCar_8cs.html", [
       [ "NpcCar", "classGame_1_1NpcCar.html", "classGame_1_1NpcCar" ]
     ] ],
-    [ "PlayerCar.cs", "PlayerCar_8cs.html", "PlayerCar_8cs" ]
+    [ "PlayerCar.cs", "PlayerCar_8cs.html", [
+      [ "PlayerCar", "classGame_1_1PlayerCar.html", "classGame_1_1PlayerCar" ],
+      [ "PoliceContainer", "classGame_1_1PlayerCar_1_1PoliceContainer.html", "classGame_1_1PlayerCar_1_1PoliceContainer" ]
+    ] ]
 ];

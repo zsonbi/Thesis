@@ -150,7 +150,6 @@ var NAVTREEINDEX0 =
 "OwnedCar_8cs.html#ac1512cf9ce765c70554afd83bb3f5f8c":[2,0,0,0,0,0,0,5,2],
 "OwnedCar_8cs_source.html":[2,0,0,0,0,0,0,5],
 "PlayerCar_8cs.html":[2,0,0,0,0,1,0,6],
-"PlayerCar_8cs.html#a2b5d34cf3c30a1ab4ea66a8cac490349":[2,0,0,0,0,1,0,6,2],
 "PlayerCar_8cs_source.html":[2,0,0,0,0,1,0,6],
 "PlayerTask_8cs.html":[2,0,0,0,0,0,0,6],
 "PlayerTask_8cs.html#a05c5b8303bf4f3a8a39bdb2caf45521f":[2,0,0,0,0,0,0,6,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "User_8cs.html#a33bcc9cf08bba0bcbe12dd0eb5a1fd8b":[2,0,0,0,0,0,0,10,2],
 "User_8cs.html#a36b474055c1484b44f9627085a9435c8":[2,0,0,0,0,0,0,10,6],
 "User_8cs.html#a6a7946e16b9691332dffe63a41be6d8f":[2,0,0,0,0,0,0,10,5],
-"User_8cs.html#a7430243d5359e50e8aedf711b60394af":[2,0,0,0,0,0,0,10,7]
+"User_8cs.html#a7430243d5359e50e8aedf711b60394af":[2,0,0,0,0,0,0,10,7],
+"User_8cs.html#a88348bf6d36a46b767b886bd5005d08e":[2,0,0,0,0,0,0,10,4]
 };

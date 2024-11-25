@@ -67,7 +67,7 @@ var sectionId = 'dynsection-2';
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classGame_1_1Car.html#aee18ec29b76c64797a649d50a6f83eed" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classGame_1_1Car.html#aee18ec29b76c64797a649d50a6f83eed" target="_top" xlink:title="Change the chunk if it went over the chunk border">
 <polygon fill="white" stroke="black" points="192,-38.5 192,-57.5 371,-57.5 371,-38.5 192,-38.5"/>
 <text text-anchor="middle" x="281.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.Car.ChangeChunkIfNeeded</text>
 </a>
@@ -97,7 +97,7 @@ var sectionId = 'dynsection-2';
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classGame_1_1Car.html#a1efffc1014c81e16512eee6c311dbb97" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="classGame_1_1Car.html#a1efffc1014c81e16512eee6c311dbb97" target="_top" xlink:title="Called every frame">
 <polygon fill="white" stroke="black" points="26.5,-38.5 26.5,-57.5 129.5,-57.5 129.5,-38.5 26.5,-38.5"/>
 <text text-anchor="middle" x="78" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.Car.Update</text>
 </a>

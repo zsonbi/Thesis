@@ -1,7 +1,6 @@
 var classGame_1_1PlayerCar =
 [
     [ "PoliceContainer", "classGame_1_1PlayerCar_1_1PoliceContainer.html", "classGame_1_1PlayerCar_1_1PoliceContainer" ],
-    [ "Awake", "classGame_1_1PlayerCar.html#acb2140de42b16ce6bd1c8743ea44cace", null ],
     [ "PickedUpCoin", "classGame_1_1PlayerCar.html#ab309bb81f5cd0e6cb9c97620729fc134", null ],
     [ "ChunkChanged", "classGame_1_1PlayerCar.html#a18f30f1f6873f043457ce9f81ac47ed4", null ],
     [ "ApplyTurbo", "classGame_1_1PlayerCar.html#aaa57e11cd8cc243d3b3964818c102053", null ],

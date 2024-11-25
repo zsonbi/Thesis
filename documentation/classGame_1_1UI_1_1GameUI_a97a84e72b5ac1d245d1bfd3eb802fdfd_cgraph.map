@@ -1,8 +1,8 @@
 <map id="Game.UI.GameUI.BuyTurbo" name="Game.UI.GameUI.BuyTurbo">
 <area shape="rect" id="node1" title="Buy the turbo power up" alt="" coords="5,107,205,133"/>
-<area shape="rect" id="node2" href="$classGame_1_1PlayerCar.html#aaa57e11cd8cc243d3b3964818c102053" title=" " alt="" coords="284,5,487,32"/>
+<area shape="rect" id="node2" href="$classGame_1_1PlayerCar.html#aaa57e11cd8cc243d3b3964818c102053" title="Apply the turbo bonus to the player" alt="" coords="284,5,487,32"/>
 <area shape="rect" id="node3" href="$classGame_1_1UI_1_1GameUI.html#a1b43083f2e18b3389e4f654cc2d73bed" title="Callback after the player bought the turbo" alt="" coords="275,56,496,83"/>
-<area shape="rect" id="node5" href="$classGame_1_1PlayerCar.html#ab82df1aeb3c64c5129ecc1aae08df1f7" title=" " alt="" coords="280,107,491,133"/>
+<area shape="rect" id="node5" href="$classGame_1_1PlayerCar.html#ab82df1aeb3c64c5129ecc1aae08df1f7" title="Cancel the turbo bonus" alt="" coords="280,107,491,133"/>
 <area shape="rect" id="node6" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="253,157,517,184"/>
 <area shape="rect" id="node7" href="$classGame_1_1UI_1_1GameUI.html#ac464d5a547acb44085748e2ee265272f" title="Show if the request failed on the modal window" alt="" coords="260,208,511,235"/>
 <area shape="rect" id="node4" href="$classUser_1_1UserData.html#a103846d4ce97a5d089423d4efd1a5ec0" title="Update the user&#39;s task score" alt="" coords="565,56,797,83"/>
