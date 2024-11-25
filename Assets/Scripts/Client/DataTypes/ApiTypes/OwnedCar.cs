@@ -4,11 +4,22 @@ namespace Thesis_backend.Data_Structures
 {
     public record OwnedCar : DbElement
     {
-        public long GameId { get; set; } // Foreign key to Game
-        public Game Game { get; set; } // Navigation property to Game
-
-        public long ShopId { get; set; } // Foreign key to Shop
-        public Shop Shop { get; set; } // Navigation property to Shop
+        /// <summary>
+        /// Foreign key to Game
+        /// </summary>
+        public long GameId { get; set; } 
+        /// <summary>
+        /// Navigation property to Game
+        /// </summary>
+        public Game Game { get; set; }
+        /// <summary>
+        /// Foreign key to Shop
+        /// </summary>
+        public long ShopId { get; set; }  
+        /// <summary>
+        /// Navigation property to Shop
+        /// </summary>
+        public Shop Shop { get; set; }  
 
         [JsonIgnore]
         public override object Serialize => new
