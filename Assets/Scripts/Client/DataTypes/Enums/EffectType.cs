@@ -1,5 +1,8 @@
 namespace DataTypes
 {
+    /// <summary>
+    /// The type of the effect of the car
+    /// </summary>
     public enum EffectType : byte
     {
         Smoke = 0,

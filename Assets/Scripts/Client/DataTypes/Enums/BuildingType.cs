@@ -1,5 +1,8 @@
 namespace DataTypes
 {
+    /// <summary>
+    /// The type of the building
+    /// </summary>
     public enum BuildingType
     {
         Hospital,

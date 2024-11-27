@@ -1,5 +1,8 @@
 ﻿namespace DataTypes
 {
+    /// <summary>
+    /// The possible task sort types
+    /// </summary>
     public enum TaskSortType
     {
         Added = 0,

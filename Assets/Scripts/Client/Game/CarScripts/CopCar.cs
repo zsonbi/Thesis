@@ -3,13 +3,20 @@ using Utility;
 
 namespace Game
 {
+    /// <summary>
+    /// Handles the police car
+    /// </summary>
     public class CopCar : NpcCar
     {
+        /// <summary>
+        /// Called every frame
+        /// </summary>
         protected override void Update()
         {
             //For the  testing unload doesn't cause error
             try
             {
+                //If it isn't alive return
                 if (!Alive)
                 {
                     carController.Move(0f, 0f, 0f, 0f);
@@ -21,9 +28,9 @@ namespace Game
                 float steering = 0f;
                 float v = 1f;
 
+                //Calculate the move direction
                 int layerMask = (1 << 6) | (1 << 9);
                 layerMask = ~layerMask;
-
                 // Raycast distances and directions
                 Vector3 forwardDirection = transform.TransformDirection(Vector3.forward);
                 Vector3 leftDirection = Quaternion.Euler(0, -30, 0) * forwardDirection;

@@ -4,6 +4,9 @@ using Utility;
 
 namespace Game
 {
+    /// <summary>
+    /// Handles the car's effects
+    /// </summary>
     public class EffectScript : ThreadSafeMonoBehaviour
     {
         [SerializeField]
