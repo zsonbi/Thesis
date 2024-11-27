@@ -87,104 +87,105 @@ $(document).ready(function(){initNavTree('CopCar_8cs_source.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 <a href="CopCar_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGame.html">Game</a></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classGame_1_1CopCar.html">    8</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classGame_1_1CopCar.html">CopCar</a> : <a class="code" href="classGame_1_1NpcCar.html">NpcCar</a></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    {</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classGame_1_1CopCar.html#ad1e664d118f85d0c8b21e92d519c1e0b">   13</a></span>&#160;        <span class="keyword">protected</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code" href="classGame_1_1CopCar.html#ad1e664d118f85d0c8b21e92d519c1e0b">Update</a>()</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <span class="comment">//For the  testing unload doesn&#39;t cause error</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                <span class="comment">//If it isn&#39;t alive return</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                <span class="keywordflow">if</span> (!<a class="code" href="classGame_1_1Car.html#ab398cf652e4c7037ca2839241a3d6c63">Alive</a>)</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                    <a class="code" href="classGame_1_1Car.html#a7909ccf394182ee69fe4d374cb393602">carController</a>.<a class="code" href="classGame_1_1CarController.html#ae3eb6260519b20b09bc1226be3919be2">Move</a>(0f, 0f, 0f, 0f);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                base.Update();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                <span class="keywordtype">float</span> steering = 0f;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keywordtype">float</span> v = 1f;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                <span class="comment">//Calculate the move direction</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <span class="keywordtype">int</span> layerMask = (1 &lt;&lt; 6) | (1 &lt;&lt; 9);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                layerMask = ~layerMask;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <span class="comment">// Raycast distances and directions</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                Vector3 forwardDirection = transform.TransformDirection(Vector3.forward);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                Vector3 leftDirection = Quaternion.Euler(0, -30, 0) * forwardDirection;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                Vector3 rightDirection = Quaternion.Euler(0, 30, 0) * forwardDirection;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                <span class="comment">// Perform raycasts</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                <span class="keywordtype">bool</span> forwardHit = Physics.Raycast(transform.position, forwardDirection, out RaycastHit hitForward, <a class="code" href="classGame_1_1GameConfig.html">GameConfig</a>.<a class="code" href="classGame_1_1GameConfig.html#a4c05db8e4aa3ddea24f9f6433d473fff">POLICE_RAYCAST_FORWARD_DISTANCE</a>, layerMask);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <span class="keywordtype">bool</span> leftHit = Physics.Raycast(transform.position, leftDirection, out RaycastHit hitLeft, <a class="code" href="classGame_1_1GameConfig.html">GameConfig</a>.<a class="code" href="classGame_1_1GameConfig.html#a4b87b2001678d3f8dfba4c4d1798d6f6">POLICE_RAYCAST_SIDE_DISTANCE</a>, layerMask);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <span class="keywordtype">bool</span> rightHit = Physics.Raycast(transform.position, rightDirection, out RaycastHit hitRight, <a class="code" href="classGame_1_1GameConfig.html">GameConfig</a>.<a class="code" href="classGame_1_1GameConfig.html#a4b87b2001678d3f8dfba4c4d1798d6f6">POLICE_RAYCAST_SIDE_DISTANCE</a>, layerMask);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <span class="keywordflow">if</span> (forwardHit)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                    <span class="keywordflow">if</span> (forwardHit &amp;&amp; hitForward.distance &lt; <a class="code" href="classGame_1_1GameConfig.html">GameConfig</a>.<a class="code" href="classGame_1_1GameConfig.html#a4c992047effc2b7da438fbd798bc11bf">POLICE_REVERSE_DISTANCE</a>)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                    {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                        <span class="comment">// Reverse if too close to an obstacle</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                        v = -2f;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                    }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                    <span class="comment">// Determine steering based on side raycasts</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    <span class="keywordflow">if</span> (leftHit &amp;&amp; rightHit)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                        steering = hitRight.distance - hitLeft.distance; <span class="comment">// Steer based on the relative distances</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (leftHit)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                    {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                        steering = 1f;  <span class="comment">// Obstacle on the left, steer right</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                    }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (rightHit)</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                    {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                        steering = -1f; <span class="comment">// Obstacle on the right, steer left</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                    }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                    <span class="keywordflow">if</span> (Vector3.Distance(<a class="code" href="classGame_1_1Car.html#a98cca5b2f769481e4ac7408a0a742fd9">gameController</a>.<a class="code" href="classGame_1_1GameController.html#aeb425ec760007866c0ea8882d64a3171">PlayerPos</a>, <span class="keyword">this</span>.gameObject.transform.position) &lt; 4f)</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                    {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                        <span class="comment">// Close to player, increase speed and steer towards player</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                        v = 3f;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                        steering = <a class="code" href="classGame_1_1NpcCar.html#ac7bf4d022d0601c6262c6ffcfcf80a59">DetermineSteeringDirectionTowardsPlayer</a>();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                    }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                    <span class="comment">// No obstacle detected, steer towards player</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                    steering = <a class="code" href="classGame_1_1NpcCar.html#ac7bf4d022d0601c6262c6ffcfcf80a59">DetermineSteeringDirectionTowardsPlayer</a>();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                <span class="comment">// Move the car</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <a class="code" href="classGame_1_1Car.html#a7909ccf394182ee69fe4d374cb393602">carController</a>.<a class="code" href="classGame_1_1CarController.html#ae3eb6260519b20b09bc1226be3919be2">Move</a>(steering, v, 0f, 0f);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                <span class="comment">// Optional: Debugging ray visualization</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                Debug.DrawRay(transform.position, forwardDirection * <a class="code" href="classGame_1_1GameConfig.html">GameConfig</a>.<a class="code" href="classGame_1_1GameConfig.html#a4c05db8e4aa3ddea24f9f6433d473fff">POLICE_RAYCAST_FORWARD_DISTANCE</a>, Color.red);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                Debug.DrawRay(transform.position, leftDirection * <a class="code" href="classGame_1_1GameConfig.html">GameConfig</a>.<a class="code" href="classGame_1_1GameConfig.html#a4b87b2001678d3f8dfba4c4d1798d6f6">POLICE_RAYCAST_SIDE_DISTANCE</a>, Color.yellow);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                Debug.DrawRay(transform.position, rightDirection * <a class="code" href="classGame_1_1GameConfig.html">GameConfig</a>.<a class="code" href="classGame_1_1GameConfig.html#a4b87b2001678d3f8dfba4c4d1798d6f6">POLICE_RAYCAST_SIDE_DISTANCE</a>, Color.green);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">catch</span> (System.NullReferenceException)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                Debug.LogWarning(<span class="stringliteral">&quot;Cop car null reference exception&quot;</span>);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordflow">catch</span> (MissingReferenceException)</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                Debug.LogWarning(<span class="stringliteral">&quot;Cop car missing reference&quot;</span>);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> <a class="code" href="namespaceUtility.html">Utility</a>;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGame.html">Game</a></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classGame_1_1CopCar.html">    9</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classGame_1_1CopCar.html">CopCar</a> : <a class="code" href="classGame_1_1NpcCar.html">NpcCar</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    {</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classGame_1_1CopCar.html#ad1e664d118f85d0c8b21e92d519c1e0b">   14</a></span>&#160;        <span class="keyword">protected</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code" href="classGame_1_1CopCar.html#ad1e664d118f85d0c8b21e92d519c1e0b">Update</a>()</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            <span class="comment">//For the  testing unload doesn&#39;t cause error</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                <span class="comment">//If it isn&#39;t alive return</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                <span class="keywordflow">if</span> (!<a class="code" href="classGame_1_1Car.html#ab398cf652e4c7037ca2839241a3d6c63">Alive</a>)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                    <a class="code" href="classGame_1_1Car.html#a7909ccf394182ee69fe4d374cb393602">carController</a>.<a class="code" href="classGame_1_1CarController.html#ae3eb6260519b20b09bc1226be3919be2">Move</a>(0f, 0f, 0f, 0f);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                base.Update();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keywordtype">float</span> steering = 0f;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <span class="keywordtype">float</span> v = 1f;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <span class="comment">//Calculate the move direction</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <span class="keywordtype">int</span> layerMask = (1 &lt;&lt; 6) | (1 &lt;&lt; 9);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                layerMask = ~layerMask;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                <span class="comment">// Raycast distances and directions</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                Vector3 forwardDirection = transform.TransformDirection(Vector3.forward);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                Vector3 leftDirection = Quaternion.Euler(0, -30, 0) * forwardDirection;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                Vector3 rightDirection = Quaternion.Euler(0, 30, 0) * forwardDirection;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                <span class="comment">// Perform raycasts</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <span class="keywordtype">bool</span> forwardHit = Physics.Raycast(transform.position, forwardDirection, out RaycastHit hitForward, <a class="code" href="classGame_1_1GameConfig.html">GameConfig</a>.<a class="code" href="classGame_1_1GameConfig.html#a4c05db8e4aa3ddea24f9f6433d473fff">POLICE_RAYCAST_FORWARD_DISTANCE</a>, layerMask);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <span class="keywordtype">bool</span> leftHit = Physics.Raycast(transform.position, leftDirection, out RaycastHit hitLeft, <a class="code" href="classGame_1_1GameConfig.html">GameConfig</a>.<a class="code" href="classGame_1_1GameConfig.html#a4b87b2001678d3f8dfba4c4d1798d6f6">POLICE_RAYCAST_SIDE_DISTANCE</a>, layerMask);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <span class="keywordtype">bool</span> rightHit = Physics.Raycast(transform.position, rightDirection, out RaycastHit hitRight, <a class="code" href="classGame_1_1GameConfig.html">GameConfig</a>.<a class="code" href="classGame_1_1GameConfig.html#a4b87b2001678d3f8dfba4c4d1798d6f6">POLICE_RAYCAST_SIDE_DISTANCE</a>, layerMask);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <span class="keywordflow">if</span> (forwardHit)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                    <span class="keywordflow">if</span> (forwardHit &amp;&amp; hitForward.distance &lt; <a class="code" href="classGame_1_1GameConfig.html">GameConfig</a>.<a class="code" href="classGame_1_1GameConfig.html#a4c992047effc2b7da438fbd798bc11bf">POLICE_REVERSE_DISTANCE</a>)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                    {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                        <span class="comment">// Reverse if too close to an obstacle</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                        v = -2f;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    <span class="comment">// Determine steering based on side raycasts</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    <span class="keywordflow">if</span> (leftHit &amp;&amp; rightHit)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                    {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                        steering = hitRight.distance - hitLeft.distance; <span class="comment">// Steer based on the relative distances</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (leftHit)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                    {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                        steering = 1f;  <span class="comment">// Obstacle on the left, steer right</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (rightHit)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                    {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                        steering = -1f; <span class="comment">// Obstacle on the right, steer left</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                    <span class="keywordflow">if</span> (Vector3.Distance(<a class="code" href="classGame_1_1Car.html#a98cca5b2f769481e4ac7408a0a742fd9">gameController</a>.<a class="code" href="classGame_1_1GameController.html#aeb425ec760007866c0ea8882d64a3171">PlayerPos</a>, <span class="keyword">this</span>.gameObject.transform.position) &lt; 4f)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                    {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                        <span class="comment">// Close to player, increase speed and steer towards player</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                        v = 3f;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                        steering = <a class="code" href="classGame_1_1NpcCar.html#ac7bf4d022d0601c6262c6ffcfcf80a59">DetermineSteeringDirectionTowardsPlayer</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                    }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                    <span class="comment">// No obstacle detected, steer towards player</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                    steering = <a class="code" href="classGame_1_1NpcCar.html#ac7bf4d022d0601c6262c6ffcfcf80a59">DetermineSteeringDirectionTowardsPlayer</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <span class="comment">// Move the car</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                <a class="code" href="classGame_1_1Car.html#a7909ccf394182ee69fe4d374cb393602">carController</a>.<a class="code" href="classGame_1_1CarController.html#ae3eb6260519b20b09bc1226be3919be2">Move</a>(steering, v, 0f, 0f);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                <span class="comment">// Optional: Debugging ray visualization</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                Debug.DrawRay(transform.position, forwardDirection * <a class="code" href="classGame_1_1GameConfig.html">GameConfig</a>.<a class="code" href="classGame_1_1GameConfig.html#a4c05db8e4aa3ddea24f9f6433d473fff">POLICE_RAYCAST_FORWARD_DISTANCE</a>, Color.red);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                Debug.DrawRay(transform.position, leftDirection * <a class="code" href="classGame_1_1GameConfig.html">GameConfig</a>.<a class="code" href="classGame_1_1GameConfig.html#a4b87b2001678d3f8dfba4c4d1798d6f6">POLICE_RAYCAST_SIDE_DISTANCE</a>, Color.yellow);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                Debug.DrawRay(transform.position, rightDirection * <a class="code" href="classGame_1_1GameConfig.html">GameConfig</a>.<a class="code" href="classGame_1_1GameConfig.html#a4b87b2001678d3f8dfba4c4d1798d6f6">POLICE_RAYCAST_SIDE_DISTANCE</a>, Color.green);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">catch</span> (System.NullReferenceException)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                Debug.LogWarning(<span class="stringliteral">&quot;Cop car null reference exception&quot;</span>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordflow">catch</span> (MissingReferenceException)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                Debug.LogWarning(<span class="stringliteral">&quot;Cop car missing reference&quot;</span>);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
 <div class="ttc" id="aclassGame_1_1CarController_html_ae3eb6260519b20b09bc1226be3919be2"><div class="ttname"><a href="classGame_1_1CarController.html#ae3eb6260519b20b09bc1226be3919be2">Game.CarController.Move</a></div><div class="ttdeci">void Move(float steering, float accel, float footbrake, float handbrake)</div><div class="ttdef"><b>Definition:</b> <a href="CarController_8cs_source.html#l00068">CarController.cs:68</a></div></div>
 <div class="ttc" id="aclassGame_1_1Car_html_a7909ccf394182ee69fe4d374cb393602"><div class="ttname"><a href="classGame_1_1Car.html#a7909ccf394182ee69fe4d374cb393602">Game.Car.carController</a></div><div class="ttdeci">CarController carController</div><div class="ttdef"><b>Definition:</b> <a href="Car_8cs_source.html#l00020">Car.cs:20</a></div></div>
 <div class="ttc" id="aclassGame_1_1Car_html_a98cca5b2f769481e4ac7408a0a742fd9"><div class="ttname"><a href="classGame_1_1Car.html#a98cca5b2f769481e4ac7408a0a742fd9">Game.Car.gameController</a></div><div class="ttdeci">GameController gameController</div><div class="ttdef"><b>Definition:</b> <a href="Car_8cs_source.html#l00019">Car.cs:19</a></div></div>
 <div class="ttc" id="aclassGame_1_1Car_html_ab398cf652e4c7037ca2839241a3d6c63"><div class="ttname"><a href="classGame_1_1Car.html#ab398cf652e4c7037ca2839241a3d6c63">Game.Car.Alive</a></div><div class="ttdeci">bool Alive</div><div class="ttdoc">Is the car still alive</div><div class="ttdef"><b>Definition:</b> <a href="Car_8cs_source.html#l00045">Car.cs:45</a></div></div>
-<div class="ttc" id="aclassGame_1_1CopCar_html"><div class="ttname"><a href="classGame_1_1CopCar.html">Game.CopCar</a></div><div class="ttdoc">Handles the police car</div><div class="ttdef"><b>Definition:</b> <a href="CopCar_8cs_source.html#l00008">CopCar.cs:9</a></div></div>
-<div class="ttc" id="aclassGame_1_1CopCar_html_ad1e664d118f85d0c8b21e92d519c1e0b"><div class="ttname"><a href="classGame_1_1CopCar.html#ad1e664d118f85d0c8b21e92d519c1e0b">Game.CopCar.Update</a></div><div class="ttdeci">override void Update()</div><div class="ttdoc">Called every frame</div><div class="ttdef"><b>Definition:</b> <a href="CopCar_8cs_source.html#l00013">CopCar.cs:13</a></div></div>
+<div class="ttc" id="aclassGame_1_1CopCar_html"><div class="ttname"><a href="classGame_1_1CopCar.html">Game.CopCar</a></div><div class="ttdoc">Handles the police car</div><div class="ttdef"><b>Definition:</b> <a href="CopCar_8cs_source.html#l00009">CopCar.cs:10</a></div></div>
+<div class="ttc" id="aclassGame_1_1CopCar_html_ad1e664d118f85d0c8b21e92d519c1e0b"><div class="ttname"><a href="classGame_1_1CopCar.html#ad1e664d118f85d0c8b21e92d519c1e0b">Game.CopCar.Update</a></div><div class="ttdeci">override void Update()</div><div class="ttdoc">Called every frame</div><div class="ttdef"><b>Definition:</b> <a href="CopCar_8cs_source.html#l00014">CopCar.cs:14</a></div></div>
 <div class="ttc" id="aclassGame_1_1GameConfig_html"><div class="ttname"><a href="classGame_1_1GameConfig.html">Game.GameConfig</a></div><div class="ttdoc">Configs for the game</div><div class="ttdef"><b>Definition:</b> <a href="GameConfig_8cs_source.html#l00006">GameConfig.cs:7</a></div></div>
 <div class="ttc" id="aclassGame_1_1GameConfig_html_a4b87b2001678d3f8dfba4c4d1798d6f6"><div class="ttname"><a href="classGame_1_1GameConfig.html#a4b87b2001678d3f8dfba4c4d1798d6f6">Game.GameConfig.POLICE_RAYCAST_SIDE_DISTANCE</a></div><div class="ttdeci">const float POLICE_RAYCAST_SIDE_DISTANCE</div><div class="ttdoc">The side raycast's distance</div><div class="ttdef"><b>Definition:</b> <a href="GameConfig_8cs_source.html#l00061">GameConfig.cs:61</a></div></div>
 <div class="ttc" id="aclassGame_1_1GameConfig_html_a4c05db8e4aa3ddea24f9f6433d473fff"><div class="ttname"><a href="classGame_1_1GameConfig.html#a4c05db8e4aa3ddea24f9f6433d473fff">Game.GameConfig.POLICE_RAYCAST_FORWARD_DISTANCE</a></div><div class="ttdeci">const float POLICE_RAYCAST_FORWARD_DISTANCE</div><div class="ttdoc">The forward raycast's distance</div><div class="ttdef"><b>Definition:</b> <a href="GameConfig_8cs_source.html#l00056">GameConfig.cs:56</a></div></div>
@@ -193,6 +194,7 @@ $(document).ready(function(){initNavTree('CopCar_8cs_source.html',''); initResiz
 <div class="ttc" id="aclassGame_1_1NpcCar_html"><div class="ttname"><a href="classGame_1_1NpcCar.html">Game.NpcCar</a></div><div class="ttdoc">Object for the npc cars It is not yet used</div><div class="ttdef"><b>Definition:</b> <a href="NpcCar_8cs_source.html#l00010">NpcCar.cs:11</a></div></div>
 <div class="ttc" id="aclassGame_1_1NpcCar_html_ac7bf4d022d0601c6262c6ffcfcf80a59"><div class="ttname"><a href="classGame_1_1NpcCar.html#ac7bf4d022d0601c6262c6ffcfcf80a59">Game.NpcCar.DetermineSteeringDirectionTowardsPlayer</a></div><div class="ttdeci">float DetermineSteeringDirectionTowardsPlayer()</div><div class="ttdoc">Determine the way the player is</div><div class="ttdef"><b>Definition:</b> <a href="NpcCar_8cs_source.html#l00016">NpcCar.cs:16</a></div></div>
 <div class="ttc" id="anamespaceGame_html"><div class="ttname"><a href="namespaceGame.html">Game</a></div><div class="ttdef"><b>Definition:</b> <a href="BuildingCell_8cs_source.html#l00004">BuildingCell.cs:5</a></div></div>
+<div class="ttc" id="anamespaceUtility_html"><div class="ttname"><a href="namespaceUtility.html">Utility</a></div><div class="ttdef"><b>Definition:</b> <a href="CoroutineRunner_01_8cs_source.html#l00004">CoroutineRunner .cs:5</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
