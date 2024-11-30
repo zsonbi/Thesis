@@ -1,5 +1,8 @@
 namespace DataTypes
 {
+    /// <summary>
+    /// The type of the generated cell
+    /// </summary>
     public enum ChunkCellType
     {
         Grass = 0,

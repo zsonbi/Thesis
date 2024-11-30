@@ -4,6 +4,10 @@ using Utility;
 
 namespace Game
 {
+
+    /// <summary>
+    /// Script to enable the physics materials for the wheel colliders
+    /// </summary>
     public class EnableWheelPhysicMaterial : ThreadSafeMonoBehaviour
     {
         private WheelCollider wheel;
@@ -11,6 +15,9 @@ namespace Game
         private float originalSidewaysStiffness;
         private float originalForwardStiffness;
 
+        /// <summary>
+        /// Called on first frame
+        /// </summary>
         private void Start()
         {
             wheel = GetComponent<WheelCollider>();

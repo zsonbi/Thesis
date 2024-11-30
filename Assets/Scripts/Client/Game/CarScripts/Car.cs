@@ -10,6 +10,9 @@ using Utility;
 
 namespace Game
 {
+    /// <summary>
+    /// Handles the basic Car functionalities
+    /// </summary>
     [RequireComponent(typeof(CarController))]
     public class Car : ThreadSafeMonoBehaviour
     {
@@ -21,17 +24,29 @@ namespace Game
         [SerializeField]
         private float health = 10f;
 
-        //[SerializeField]
-        //private GameObject colliders = null;
-
+        /// <summary>
+        /// The possible effects of the car
+        /// </summary>
         protected Dictionary<EffectType, EffectScript> effects = new Dictionary<EffectType, EffectScript>();
 
+        /// <summary>
+        /// The current health of the car
+        /// </summary>
         public float Health { get => health; protected set => health = value; }
 
+        /// <summary>
+        /// The health of the car on spawn
+        /// </summary>
         public float MAX_HEALTH { get; private set; }
 
+        /// <summary>
+        /// Is the car still alive
+        /// </summary>
         public bool Alive => Health > 0;
 
+        /// <summary>
+        /// Called every frame
+        /// </summary>
         protected virtual void Update()
         {
             if (gameController is null || !Alive)
@@ -43,12 +58,19 @@ namespace Game
             }
         }
 
+        /// <summary>
+        /// Kills the car from the outside
+        /// </summary>
         public void Kill()
         {
             this.health = 0;
             this.DestroyedEvent?.Invoke(this, EventArgs.Empty);
         }
 
+        /// <summary>
+        /// Change the chunk if it went over the chunk border
+        /// </summary>
+        /// <returns>true-changed chunk, false-didn't change chunk</returns>
         protected bool ChangeChunkIfNeeded()
         {
             Chunk newChunk = this.gameController.World.GetChunk(this.gameObject.transform.position);
@@ -68,15 +90,23 @@ namespace Game
             return false;
         }
 
+        /// <summary>
+        /// Virtual method for chunk changed
+        /// </summary>
+        /// <param name="newChunk">The new chunk to change to</param>
         protected virtual async void ChunkChanged(Chunk newChunk)
         {
         }
 
-        public void Init(GameController world)
+        /// <summary>
+        /// Initializes the car
+        /// </summary>
+        /// <param name="gameController">Reference to the game's controller</param>
+        public void Init(GameController gameController)
         {
             this.health = MAX_HEALTH;
-            this.gameController = world;
-
+            this.gameController = gameController;
+            //Init the effects
             if (effects.ContainsKey(EffectType.Smoke))
                 effects[EffectType.Smoke].gameObject.SetActive(false);
 
@@ -90,9 +120,12 @@ namespace Game
                 effects[EffectType.Turbo].gameObject.SetActive(false);
         }
 
+        /// <summary>
+        /// Car damage control
+        /// </summary>
+        /// <param name="collision">What it collided with</param>
         protected virtual void OnCollisionEnter(Collision collision)
         {
-            //Debug.Log("Collided " + gameObject.name + "with " + collision.gameObject.name + "at " + collision.relativeVelocity.sqrMagnitude);
             float dmgAmount = collision.relativeVelocity.sqrMagnitude / 500f;
 
             if (dmgAmount > GameConfig.CAR_DAMAGE_LOWER_LIMIT)
@@ -122,7 +155,9 @@ namespace Game
             }
         }
 
-        // Start is called before the first frame update
+        /// <summary>
+        /// Awake called when script is loaded
+        /// </summary>
         protected void Awake()
         {
             this.carController = this.gameObject.GetComponent<CarController>();
