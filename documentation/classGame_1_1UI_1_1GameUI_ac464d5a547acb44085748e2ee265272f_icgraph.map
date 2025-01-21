@@ -1,13 +1,24 @@
 <map id="Game.UI.GameUI.ShowRequestFail" name="Game.UI.GameUI.ShowRequestFail">
-<area shape="rect" id="node1" title="Show if the request failed on the modal window" alt="" coords="1029,81,1280,108"/>
-<area shape="rect" id="node2" href="$classGame_1_1UI_1_1GameUI.html#acd930ff070019fc74a3795a8b1452923" title="Buy the immunity power up" alt="" coords="741,5,969,32"/>
-<area shape="rect" id="node4" href="$classGame_1_1UI_1_1GameUI.html#a97a84e72b5ac1d245d1bfd3eb802fdfd" title="Buy the turbo power up" alt="" coords="755,56,955,83"/>
-<area shape="rect" id="node5" href="$classGame_1_1UI_1_1GameUI.html#aaed9ba7f6e28b2260d488f01c803e60a" title="Buy the double coins bonus" alt="" coords="744,107,967,133"/>
-<area shape="rect" id="node6" href="$classGame_1_1UI_1_1GameUI.html#a4f9c8b23e2a0e5d86c53377ece2c9bac" title="Save the game&#39;s result" alt="" coords="729,157,981,184"/>
-<area shape="rect" id="node3" href="$classGame_1_1UI_1_1GameUI.html#a77f6894867ecdecc2f7ca4bea695849f" title="Called every frame" alt="" coords="446,31,633,57"/>
-<area shape="rect" id="node7" href="$classGame_1_1UI_1_1GameUI.html#a87baf7b6bd70298f817e2c8e5e52a33a" title="Hide the game over screen" alt="" coords="397,157,681,184"/>
-<area shape="rect" id="node8" href="$classGame_1_1UI_1_1GameUI.html#ae468c173078a10af94f671a2f8db940b" title="Show the main menu" alt="" coords="47,81,308,108"/>
-<area shape="rect" id="node9" href="$classGame_1_1UI_1_1GameUI.html#aaec0b0e9165ba1d2dc25f1c562f5478a" title="Show the main menu, but don&#39;t save the scores" alt="" coords="5,132,349,159"/>
-<area shape="rect" id="node10" href="$classGame_1_1UI_1_1GameUI.html#a4248468e8aaa0b1f7bb24162e9bef6c7" title="Move back to the tasks" alt="" coords="66,183,289,209"/>
-<area shape="rect" id="node11" href="$classGame_1_1UI_1_1GameUI.html#ad581ee67e01ac3bcdec06cf2538f06e4" title="Start a new game" alt="" coords="73,233,281,260"/>
+<area shape="rect" id="Node000001" title="Show if the request failed on the modal window." alt="" coords="1029,80,1280,105"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1UI_1_1GameUI.html#acd930ff070019fc74a3795a8b1452923" title="Buy the immunity power up." alt="" coords="741,5,969,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1100,78,981,45,929,33,930,28,982,39,1102,73"/>
+<area shape="rect" id="Node000004" href="$classGame_1_1UI_1_1GameUI.html#a97a84e72b5ac1d245d1bfd3eb802fdfd" title="Buy the turbo power up." alt="" coords="755,55,955,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1016,84,955,78,956,73,1016,78"/>
+<area shape="rect" id="Node000005" href="$classGame_1_1UI_1_1GameUI.html#aaed9ba7f6e28b2260d488f01c803e60a" title="Buy the double coins bonus." alt="" coords="744,104,967,129"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="1016,106,967,110,967,105,1015,101"/>
+<area shape="rect" id="Node000006" href="$classGame_1_1UI_1_1GameUI.html#a4f9c8b23e2a0e5d86c53377ece2c9bac" title="Save the game&#39;s result." alt="" coords="729,153,981,179"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="1099,112,982,143,925,156,924,151,981,138,1098,107"/>
+<area shape="rect" id="Node000003" href="$classGame_1_1UI_1_1GameUI.html#a77f6894867ecdecc2f7ca4bea695849f" title="Called every frame." alt="" coords="446,31,633,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="728,31,633,39,633,33,728,26"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="742,61,633,53,633,48,742,56"/>
+<area shape="rect" id="Node000007" href="$classGame_1_1UI_1_1GameUI.html#a87baf7b6bd70298f817e2c8e5e52a33a" title="Hide the game over screen." alt="" coords="397,153,681,179"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="716,169,681,169,681,163,716,163"/>
+<area shape="rect" id="Node000008" href="$classGame_1_1UI_1_1GameUI.html#ae468c173078a10af94f671a2f8db940b" title="Show the main menu." alt="" coords="47,79,308,104"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="483,152,349,118,283,107,284,101,350,113,484,147"/>
+<area shape="rect" id="Node000009" href="$classGame_1_1UI_1_1GameUI.html#aaec0b0e9165ba1d2dc25f1c562f5478a" title="Show the main menu, but don&#39;t save the scores." alt="" coords="5,128,349,153"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="383,158,350,155,350,150,384,152"/>
+<area shape="rect" id="Node000010" href="$classGame_1_1UI_1_1GameUI.html#a4248468e8aaa0b1f7bb24162e9bef6c7" title="Move back to the tasks." alt="" coords="66,177,289,203"/>
+<area shape="poly" id="edge10_Node000007_Node000010" title=" " alt="" coords="384,179,289,185,289,180,383,174"/>
+<area shape="rect" id="Node000011" href="$classGame_1_1UI_1_1GameUI.html#ad581ee67e01ac3bcdec06cf2538f06e4" title="Start a new game." alt="" coords="73,227,281,252"/>
+<area shape="poly" id="edge11_Node000007_Node000011" title=" " alt="" coords="481,185,350,217,276,229,276,224,349,211,480,180"/>
 </map>

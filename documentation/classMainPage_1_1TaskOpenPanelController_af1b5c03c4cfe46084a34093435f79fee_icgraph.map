@@ -1,5 +1,7 @@
 <map id="MainPage.TaskOpenPanelController.Cancel" name="MainPage.TaskOpenPanelController.Cancel">
-<area shape="rect" id="node1" title="Cancel this edit/task creation" alt="" coords="763,5,1061,32"/>
-<area shape="rect" id="node2" href="$classMainPage_1_1TaskOpenPanelController.html#a254ff7d6e427208a7f9ae3bec5ae7ba7" title="After the task were deleted from the server delete it also from the client" alt="" coords="380,5,715,32"/>
-<area shape="rect" id="node3" href="$classMainPage_1_1TaskOpenPanelController.html#a3107b94793886f6af28ac9415fb44370" title="Send a delete task request to the server" alt="" coords="5,5,332,32"/>
+<area shape="rect" id="Node000001" title="Cancel this edit/task creation." alt="" coords="763,5,1061,31"/>
+<area shape="rect" id="Node000002" href="$classMainPage_1_1TaskOpenPanelController.html#a254ff7d6e427208a7f9ae3bec5ae7ba7" title="After the task were deleted from the server delete it also from the client." alt="" coords="380,5,715,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="749,21,715,21,715,15,749,15"/>
+<area shape="rect" id="Node000003" href="$classMainPage_1_1TaskOpenPanelController.html#a3107b94793886f6af28ac9415fb44370" title="Send a delete task request to the server." alt="" coords="5,5,332,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="367,21,332,21,332,15,367,15"/>
 </map>

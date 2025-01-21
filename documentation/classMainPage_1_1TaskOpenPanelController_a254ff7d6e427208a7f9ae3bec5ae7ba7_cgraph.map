@@ -1,10 +1,20 @@
 <map id="MainPage.TaskOpenPanelController.DeletedTask" name="MainPage.TaskOpenPanelController.DeletedTask">
-<area shape="rect" id="node1" title="After the task were deleted from the server delete it also from the client" alt="" coords="5,56,340,83"/>
-<area shape="rect" id="node2" href="$classMainPage_1_1TaskOpenPanelController.html#af1b5c03c4cfe46084a34093435f79fee" title="Cancel this edit/task creation" alt="" coords="400,31,699,57"/>
-<area shape="rect" id="node8" href="$classMainPage_1_1MainWindowController.html#ab6e865f33e604878bb40346d5f6657c9" title="Remove the task with the given id" alt="" coords="388,81,711,108"/>
-<area shape="rect" id="node3" href="$classMainPage_1_1MainWindowController.html#a241b480aeebdab1bc34320cad8de7712" title="Load the good habits" alt="" coords="760,5,1099,32"/>
-<area shape="rect" id="node6" href="$classMainPage_1_1MainWindowController.html#ab5b80370512cd4273e86927fe696462d" title="Load the good tasks" alt="" coords="759,56,1100,83"/>
-<area shape="rect" id="node4" href="$classMainPage_1_1TaskOpenPanelController.html#a5513399c20f650915ca10f54805f416e" title="Make this task a bad habit" alt="" coords="1149,5,1508,32"/>
-<area shape="rect" id="node5" href="$classMainPage_1_1TaskOpenPanelController.html#aa0b6757dbad141375c50282278b23b1a" title="Update the buttons with the appropriate color based on the current task" alt="" coords="1557,31,1908,57"/>
-<area shape="rect" id="node7" href="$classMainPage_1_1TaskOpenPanelController.html#a069a63e2b7e70cc4cb4c7e487b655700" title="Make it a good task" alt="" coords="1148,56,1509,83"/>
+<area shape="rect" id="Node000001" title="After the task were deleted from the server delete it also from the client." alt="" coords="5,55,340,80"/>
+<area shape="rect" id="Node000002" href="$classMainPage_1_1TaskOpenPanelController.html#af1b5c03c4cfe46084a34093435f79fee" title="Cancel this edit/task creation." alt="" coords="400,29,699,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="340,53,386,50,387,56,340,59"/>
+<area shape="rect" id="Node000008" href="$classMainPage_1_1MainWindowController.html#ab6e865f33e604878bb40346d5f6657c9" title="Remove the task with the given id." alt="" coords="388,79,711,104"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="340,75,375,78,374,83,340,81"/>
+<area shape="rect" id="Node000003" href="$classMainPage_1_1MainWindowController.html#a241b480aeebdab1bc34320cad8de7712" title="Load the good habits." alt="" coords="760,5,1099,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="699,30,746,27,747,32,699,35"/>
+<area shape="rect" id="Node000006" href="$classMainPage_1_1MainWindowController.html#ab5b80370512cd4273e86927fe696462d" title="Load the good tasks." alt="" coords="759,55,1100,80"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="699,49,745,52,745,58,699,55"/>
+<area shape="rect" id="Node000004" href="$classMainPage_1_1TaskOpenPanelController.html#a5513399c20f650915ca10f54805f416e" title="Make this task a bad habit." alt="" coords="1149,5,1508,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1099,24,1136,24,1136,30,1099,30"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="1149,12,1112,12,1112,6,1149,6"/>
+<area shape="rect" id="Node000005" href="$classMainPage_1_1TaskOpenPanelController.html#aa0b6757dbad141375c50282278b23b1a" title="Update the buttons with the appropriate color based on the current task." alt="" coords="1557,31,1908,56"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="1509,27,1543,29,1543,34,1508,32"/>
+<area shape="rect" id="Node000007" href="$classMainPage_1_1TaskOpenPanelController.html#a069a63e2b7e70cc4cb4c7e487b655700" title="Make it a good task." alt="" coords="1148,55,1509,80"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="1100,74,1134,74,1134,79,1100,79"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="1509,54,1544,52,1544,57,1510,59"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="1148,61,1113,61,1113,56,1148,56"/>
 </map>

@@ -1,6 +1,9 @@
 <map id="Game.World.Chunk.Awake" name="Game.World.Chunk.Awake">
-<area shape="rect" id="node1" title="Start when the script is loaded" alt="" coords="5,56,200,83"/>
-<area shape="rect" id="node2" href="$classGame_1_1World_1_1Chunk.html#ad96b568d5f7a03b6b4ea194b387c0af1" title="Callback for when each building asset is loaded" alt="" coords="257,5,507,32"/>
-<area shape="rect" id="node3" href="$classGame_1_1World_1_1Chunk.html#adc0bbcb5890b573408d5f323ce40f1d5" title="Load the chunk&#39;s sizes" alt="" coords="248,56,516,83"/>
-<area shape="rect" id="node4" href="$classGame_1_1World_1_1Chunk.html#ac1bb228d8532a70f4189c8887383f8a1" title="Callback for when each prop asset is loaded" alt="" coords="269,107,495,133"/>
+<area shape="rect" id="Node000001" title="Start when the script is loaded." alt="" coords="5,55,200,80"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1World_1_1Chunk.html#ad96b568d5f7a03b6b4ea194b387c0af1" title="Callback for when each building asset is loaded." alt="" coords="257,5,507,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,52,295,31,296,36,176,57"/>
+<area shape="rect" id="Node000003" href="$classGame_1_1World_1_1Chunk.html#adc0bbcb5890b573408d5f323ce40f1d5" title="Load the chunk&#39;s sizes." alt="" coords="248,55,516,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="200,65,234,65,234,70,200,70"/>
+<area shape="rect" id="Node000004" href="$classGame_1_1World_1_1Chunk.html#ac1bb228d8532a70f4189c8887383f8a1" title="Callback for when each prop asset is loaded." alt="" coords="269,104,495,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="176,77,296,99,295,104,175,83"/>
 </map>

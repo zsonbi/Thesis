@@ -1,4 +1,5 @@
 <map id="Game.GameController.IncreaseCoinCount" name="Game.GameController.IncreaseCoinCount">
-<area shape="rect" id="node1" title="Increases the game&#39;s collected coin count" alt="" coords="273,5,567,32"/>
-<area shape="rect" id="node2" href="$classGame_1_1PlayerCar.html#ab309bb81f5cd0e6cb9c97620729fc134" title="When the player picks up a coin" alt="" coords="5,5,225,32"/>
+<area shape="rect" id="Node000001" title="Increases the game&#39;s collected coin count." alt="" coords="273,5,567,31"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1PlayerCar.html#ab309bb81f5cd0e6cb9c97620729fc134" title="When the player picks up a coin." alt="" coords="5,5,225,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="259,21,225,21,225,15,259,15"/>
 </map>

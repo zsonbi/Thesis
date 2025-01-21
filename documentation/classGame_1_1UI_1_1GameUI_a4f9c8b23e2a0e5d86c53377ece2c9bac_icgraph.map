@@ -1,8 +1,13 @@
 <map id="Game.UI.GameUI.SaveGameResult" name="Game.UI.GameUI.SaveGameResult">
-<area shape="rect" id="node1" title="Save the game&#39;s result" alt="" coords="729,81,981,108"/>
-<area shape="rect" id="node2" href="$classGame_1_1UI_1_1GameUI.html#a87baf7b6bd70298f817e2c8e5e52a33a" title="Hide the game over screen" alt="" coords="397,81,681,108"/>
-<area shape="rect" id="node3" href="$classGame_1_1UI_1_1GameUI.html#ae468c173078a10af94f671a2f8db940b" title="Show the main menu" alt="" coords="47,5,308,32"/>
-<area shape="rect" id="node4" href="$classGame_1_1UI_1_1GameUI.html#aaec0b0e9165ba1d2dc25f1c562f5478a" title="Show the main menu, but don&#39;t save the scores" alt="" coords="5,56,349,83"/>
-<area shape="rect" id="node5" href="$classGame_1_1UI_1_1GameUI.html#a4248468e8aaa0b1f7bb24162e9bef6c7" title="Move back to the tasks" alt="" coords="66,107,289,133"/>
-<area shape="rect" id="node6" href="$classGame_1_1UI_1_1GameUI.html#ad581ee67e01ac3bcdec06cf2538f06e4" title="Start a new game" alt="" coords="73,157,281,184"/>
+<area shape="rect" id="Node000001" title="Save the game&#39;s result." alt="" coords="729,80,981,105"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1UI_1_1GameUI.html#a87baf7b6bd70298f817e2c8e5e52a33a" title="Hide the game over screen." alt="" coords="397,80,681,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="716,95,681,95,681,90,716,90"/>
+<area shape="rect" id="Node000003" href="$classGame_1_1UI_1_1GameUI.html#ae468c173078a10af94f671a2f8db940b" title="Show the main menu." alt="" coords="47,5,308,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="483,79,349,45,283,33,284,28,350,39,484,73"/>
+<area shape="rect" id="Node000004" href="$classGame_1_1UI_1_1GameUI.html#aaec0b0e9165ba1d2dc25f1c562f5478a" title="Show the main menu, but don&#39;t save the scores." alt="" coords="5,55,349,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="383,84,350,82,350,77,384,79"/>
+<area shape="rect" id="Node000005" href="$classGame_1_1UI_1_1GameUI.html#a4248468e8aaa0b1f7bb24162e9bef6c7" title="Move back to the tasks." alt="" coords="66,104,289,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="384,106,289,112,289,107,383,100"/>
+<area shape="rect" id="Node000006" href="$classGame_1_1UI_1_1GameUI.html#ad581ee67e01ac3bcdec06cf2538f06e4" title="Start a new game." alt="" coords="73,153,281,179"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="481,112,350,143,276,156,276,151,349,138,480,106"/>
 </map>

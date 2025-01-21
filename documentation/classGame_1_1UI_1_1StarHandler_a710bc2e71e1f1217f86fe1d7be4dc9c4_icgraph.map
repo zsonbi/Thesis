@@ -1,7 +1,11 @@
 <map id="Game.UI.StarHandler.ChangeDifficulty" name="Game.UI.StarHandler.ChangeDifficulty">
-<area shape="rect" id="node1" title="Update the display based on the difficulty" alt="" coords="888,31,1159,57"/>
-<area shape="rect" id="node2" href="$classGame_1_1UI_1_1GameUI.html#a1f9659e1d86a8bcfdf115b631f89ce3e" title="Change the difficulty and update its display" alt="" coords="548,31,840,57"/>
-<area shape="rect" id="node3" href="$classGame_1_1GameController.html#af5c50c52cffcab3018ca54be6a421d7f" title="Create a new game" alt="" coords="261,5,500,32"/>
-<area shape="rect" id="node5" href="$classGame_1_1GameController.html#ac7bf604631786f89b01d5313ad796b8b" title="Called every frame" alt="" coords="271,56,490,83"/>
-<area shape="rect" id="node4" href="$classGame_1_1UI_1_1GameUI.html#ad581ee67e01ac3bcdec06cf2538f06e4" title="Start a new game" alt="" coords="5,5,213,32"/>
+<area shape="rect" id="Node000001" title="Update the display based on the difficulty." alt="" coords="888,31,1159,56"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1UI_1_1GameUI.html#a1f9659e1d86a8bcfdf115b631f89ce3e" title="Change the difficulty and update its display." alt="" coords="548,31,840,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="874,46,840,46,840,41,874,41"/>
+<area shape="rect" id="Node000003" href="$classGame_1_1GameController.html#af5c50c52cffcab3018ca54be6a421d7f" title="Create a new game." alt="" coords="261,5,500,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="534,33,500,30,500,25,535,28"/>
+<area shape="rect" id="Node000005" href="$classGame_1_1GameController.html#ac7bf604631786f89b01d5313ad796b8b" title="Called every frame." alt="" coords="271,55,490,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="534,58,491,62,490,56,534,53"/>
+<area shape="rect" id="Node000004" href="$classGame_1_1UI_1_1GameUI.html#ad581ee67e01ac3bcdec06cf2538f06e4" title="Start a new game." alt="" coords="5,5,213,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="248,21,213,21,213,15,248,15"/>
 </map>

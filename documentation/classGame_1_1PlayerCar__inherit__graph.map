@@ -1,6 +1,9 @@
 <map id="Game.PlayerCar" name="Game.PlayerCar">
-<area shape="rect" id="node1" title="Handles the player&#39;s car" alt="" coords="5,587,396,913"/>
-<area shape="rect" id="node2" href="$classGame_1_1Car.html" title="Handles the basic Car functionalities" alt="" coords="11,256,390,539"/>
-<area shape="rect" id="node3" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="101,131,300,208"/>
-<area shape="rect" id="node4" title=" " alt="" coords="139,5,263,83"/>
+<area shape="rect" id="Node000001" title="Handles the player&#39;s car." alt="" coords="5,625,387,1031"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1Car.html" title="Handles the basic Car functionalities." alt="" coords="11,232,381,577"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,591,199,625,193,625,193,591"/>
+<area shape="rect" id="Node000003" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool." alt="" coords="101,119,291,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="199,198,199,232,193,232,193,198"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="138,5,254,71"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="199,84,199,119,193,119,193,84"/>
 </map>

@@ -38,18 +38,18 @@ var annotated_dup =
       [ "CopCar", "classGame_1_1CopCar.html", "classGame_1_1CopCar" ],
       [ "EffectScript", "classGame_1_1EffectScript.html", "classGame_1_1EffectScript" ],
       [ "EnableWheelPhysicMaterial", "classGame_1_1EnableWheelPhysicMaterial.html", "classGame_1_1EnableWheelPhysicMaterial" ],
-      [ "NpcCar", "classGame_1_1NpcCar.html", "classGame_1_1NpcCar" ],
-      [ "PlayerCar", "classGame_1_1PlayerCar.html", "classGame_1_1PlayerCar" ],
       [ "GameConfig", "classGame_1_1GameConfig.html", "classGame_1_1GameConfig" ],
-      [ "GameController", "classGame_1_1GameController.html", "classGame_1_1GameController" ]
+      [ "GameController", "classGame_1_1GameController.html", "classGame_1_1GameController" ],
+      [ "NpcCar", "classGame_1_1NpcCar.html", "classGame_1_1NpcCar" ],
+      [ "PlayerCar", "classGame_1_1PlayerCar.html", "classGame_1_1PlayerCar" ]
     ] ],
     [ "MainPage", "namespaceMainPage.html", [
       [ "FriendHandler", "classMainPage_1_1FriendHandler.html", "classMainPage_1_1FriendHandler" ],
+      [ "FriendWindowHandler", "classMainPage_1_1FriendWindowHandler.html", "classMainPage_1_1FriendWindowHandler" ],
+      [ "MainWindowController", "classMainPage_1_1MainWindowController.html", "classMainPage_1_1MainWindowController" ],
+      [ "ProfileHandler", "classMainPage_1_1ProfileHandler.html", "classMainPage_1_1ProfileHandler" ],
       [ "TaskDisplayHandler", "classMainPage_1_1TaskDisplayHandler.html", "classMainPage_1_1TaskDisplayHandler" ],
       [ "TaskHistoryHandler", "classMainPage_1_1TaskHistoryHandler.html", "classMainPage_1_1TaskHistoryHandler" ],
-      [ "MainWindowController", "classMainPage_1_1MainWindowController.html", "classMainPage_1_1MainWindowController" ],
-      [ "FriendWindowHandler", "classMainPage_1_1FriendWindowHandler.html", "classMainPage_1_1FriendWindowHandler" ],
-      [ "ProfileHandler", "classMainPage_1_1ProfileHandler.html", "classMainPage_1_1ProfileHandler" ],
       [ "TaskHistoryWindowHandler", "classMainPage_1_1TaskHistoryWindowHandler.html", "classMainPage_1_1TaskHistoryWindowHandler" ],
       [ "TaskOpenPanelController", "classMainPage_1_1TaskOpenPanelController.html", "classMainPage_1_1TaskOpenPanelController" ]
     ] ],

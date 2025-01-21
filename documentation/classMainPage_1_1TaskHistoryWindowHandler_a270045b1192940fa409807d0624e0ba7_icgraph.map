@@ -1,5 +1,7 @@
 <map id="MainPage.TaskHistoryWindowHandler.LoadedHistories" name="MainPage.TaskHistoryWindowHandler.LoadedHistories">
-<area shape="rect" id="node1" title="When the server response is recieved load the histories" alt="" coords="797,5,1173,32"/>
-<area shape="rect" id="node2" href="$classMainPage_1_1TaskHistoryWindowHandler.html#ada3a664597d8e1b1b9a261c3c34badba" title="Loads the task histories from the server" alt="" coords="360,5,749,32"/>
-<area shape="rect" id="node3" href="$classMainPage_1_1TaskHistoryWindowHandler.html#aa726ff0b77b9245e98854bbd827ae9dd" title="Shows the task history window" alt="" coords="5,5,312,32"/>
+<area shape="rect" id="Node000001" title="When the server response is recieved load the histories." alt="" coords="797,5,1173,31"/>
+<area shape="rect" id="Node000002" href="$classMainPage_1_1TaskHistoryWindowHandler.html#ada3a664597d8e1b1b9a261c3c34badba" title="Loads the task histories from the server." alt="" coords="360,5,749,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="783,21,749,21,749,15,783,15"/>
+<area shape="rect" id="Node000003" href="$classMainPage_1_1TaskHistoryWindowHandler.html#aa726ff0b77b9245e98854bbd827ae9dd" title="Shows the task history window." alt="" coords="5,5,312,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="346,21,312,21,312,15,346,15"/>
 </map>

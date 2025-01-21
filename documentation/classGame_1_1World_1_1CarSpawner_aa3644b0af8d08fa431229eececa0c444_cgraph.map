@@ -1,6 +1,9 @@
 <map id="Game.World.CarSpawner.Update" name="Game.World.CarSpawner.Update">
-<area shape="rect" id="node1" title="Called every frame and increase the timers and spawn if they reached the threshold" alt="" coords="5,31,240,57"/>
-<area shape="rect" id="node2" href="$classGame_1_1World_1_1CarSpawner.html#a68b1710c3c5c6ab1ea0d64b13da93e49" title="Spawn the given cop car" alt="" coords="288,31,557,57"/>
-<area shape="rect" id="node3" href="$classGame_1_1World_1_1Chunk.html#aa082f46d92a6ade2f934fc8f2ff3093e" title="Gets a random road&#39;s position" alt="" coords="605,5,876,32"/>
-<area shape="rect" id="node4" href="$classGame_1_1Car.html#adea5c0fa34888fc8d58fa434b205b365" title="Initializes the car" alt="" coords="685,56,796,83"/>
+<area shape="rect" id="Node000001" title="Called every frame and increase the timers and spawn if they reached the threshold." alt="" coords="5,31,240,56"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1World_1_1CarSpawner.html#a68b1710c3c5c6ab1ea0d64b13da93e49" title="Spawn the given cop car." alt="" coords="288,31,557,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,41,274,41,274,46,240,46"/>
+<area shape="rect" id="Node000003" href="$classGame_1_1World_1_1Chunk.html#aa082f46d92a6ade2f934fc8f2ff3093e" title="Gets a random road&#39;s position." alt="" coords="605,5,876,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="558,30,591,27,591,33,558,35"/>
+<area shape="rect" id="Node000004" href="$classGame_1_1Car.html#adea5c0fa34888fc8d58fa434b205b365" title="Initializes the car." alt="" coords="685,55,796,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="558,51,672,60,671,65,558,56"/>
 </map>

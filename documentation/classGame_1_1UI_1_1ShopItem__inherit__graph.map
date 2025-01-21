@@ -1,5 +1,7 @@
 <map id="Game.UI.ShopItem" name="Game.UI.ShopItem">
-<area shape="rect" id="node1" title="A single shop item" alt="" coords="5,256,420,480"/>
-<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="113,131,312,208"/>
-<area shape="rect" id="node3" title=" " alt="" coords="151,5,275,83"/>
+<area shape="rect" id="Node000001" title="A single shop item." alt="" coords="5,232,417,492"/>
+<area shape="rect" id="Node000002" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool." alt="" coords="116,119,307,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,198,214,232,209,232,209,198"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="153,5,269,71"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="214,84,214,119,209,119,209,84"/>
 </map>

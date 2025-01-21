@@ -1,6 +1,9 @@
 <map id="MainPage.ProfileHandler.LoggedOut" name="MainPage.ProfileHandler.LoggedOut">
-<area shape="rect" id="node1" title="When the logout was a success" alt="" coords="5,56,260,83"/>
-<area shape="rect" id="node2" href="$classUser_1_1UserData.html#a8c8911482003919ea4fbab040c755f8f" title="Signal&#39;s that the user is logged out" alt="" coords="380,5,544,32"/>
-<area shape="rect" id="node3" href="$classMainPage_1_1ProfileHandler.html#a1417a9eaae8fd0fd5c3e658562e4e65c" title="Move to the login screen after the user has logged out" alt="" coords="308,56,616,83"/>
-<area shape="rect" id="node4" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="330,107,594,133"/>
+<area shape="rect" id="Node000001" title="When the logout was a success." alt="" coords="5,55,260,80"/>
+<area shape="rect" id="Node000002" href="$classUser_1_1UserData.html#a8c8911482003919ea4fbab040c755f8f" title="Signal&#39;s that the user is logged out." alt="" coords="380,5,544,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,52,366,30,366,35,219,57"/>
+<area shape="rect" id="Node000003" href="$classMainPage_1_1ProfileHandler.html#a1417a9eaae8fd0fd5c3e658562e4e65c" title="Move to the login screen after the user has logged out." alt="" coords="308,55,616,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="260,65,294,65,294,70,260,70"/>
+<area shape="rect" id="Node000004" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines." alt="" coords="330,104,594,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="219,77,363,99,362,105,218,83"/>
 </map>

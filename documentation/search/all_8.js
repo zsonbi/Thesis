@@ -1,14 +1,13 @@
 var searchData=
 [
-  ['handlerequestresult_3c_20t_20_3e_243',['HandleRequestResult&lt; T &gt;',['../classServer.html#a0ae93264ee9e532c8305671b44c88370',1,'Server']]],
-  ['health_244',['Health',['../classGame_1_1Car.html#a2efe71ea0ced2d5a3620311ba0c9108d',1,'Game::Car']]],
-  ['health_245',['health',['../classGame_1_1Car.html#afea6ecea0560b222f38ce488a2115453',1,'Game::Car']]],
-  ['hide_246',['Hide',['../classUtility_1_1ModalWindow.html#a2b7515b5ef75a2735139abfe2afd555d',1,'Utility.ModalWindow.Hide()'],['../classMainPage_1_1TaskHistoryWindowHandler.html#a78bfd854854d4f4bc562daf67b291546',1,'MainPage.TaskHistoryWindowHandler.Hide()'],['../classMainPage_1_1ProfileHandler.html#a156469f3a1b308866dc6414b505cc20e',1,'MainPage.ProfileHandler.Hide()'],['../classMainPage_1_1FriendWindowHandler.html#a3b108bf886406b52ae4cd923dfb8ab58',1,'MainPage.FriendWindowHandler.Hide()'],['../classGame_1_1UI_1_1ShopWindow.html#a961c4381bc83af0f3cb7fe648c2bde41',1,'Game.UI.ShopWindow.Hide()'],['../classGame_1_1UI_1_1LeaderboardWindow.html#a0cded6f369684e4e86700327c6cf59e1',1,'Game.UI.LeaderboardWindow.Hide()']]],
-  ['hidechunk_247',['HideChunk',['../classGame_1_1World_1_1Chunk.html#a118e0c25d254444e6663404fd61749d9',1,'Game.World.Chunk.HideChunk()'],['../classGame_1_1World_1_1GameWorld.html#a6e38b875a4ad69b6a285701336e9e29c',1,'Game.World.GameWorld.HideChunk()']]],
-  ['hidegameoverscreen_248',['HideGameOverScreen',['../classGame_1_1UI_1_1GameUI.html#a87baf7b6bd70298f817e2c8e5e52a33a',1,'Game::UI::GameUI']]],
-  ['hideshopwindow_249',['HideShopWindow',['../classGame_1_1UI_1_1GameUI.html#a4a789f1b49233fa234a85b856cd5f64f',1,'Game::UI::GameUI']]],
-  ['hospital_250',['Hospital',['../namespaceDataTypes.html#af3baf8ec1237493b66f55dc98343d47aacc2ab63fd3eb564be64b4f21bd083bc7',1,'DataTypes']]],
-  ['hourly_251',['Hourly',['../namespaceDataTypes.html#aba82292ad6be9fc42aaf08684915d4bca769cb50c95fd3a43c659aa73aba99e5b',1,'DataTypes']]],
-  ['house_252',['House',['../namespaceDataTypes.html#af3baf8ec1237493b66f55dc98343d47aaaebfe46795575772b7cf413e25caeab9',1,'DataTypes']]],
-  ['house2_253',['House2',['../namespaceDataTypes.html#af3baf8ec1237493b66f55dc98343d47aadd99512caa8b7a68249e8b1296980a6d',1,'DataTypes']]]
+  ['handlerequestresult_3c_20t_20_3e_0',['HandleRequestResult&lt; T &gt;',['../classServer.html#a0ae93264ee9e532c8305671b44c88370',1,'Server']]],
+  ['health_1',['health',['../classGame_1_1Car.html#a2efe71ea0ced2d5a3620311ba0c9108d',1,'Game.Car.Health'],['../classGame_1_1Car.html#afea6ecea0560b222f38ce488a2115453',1,'Game.Car.health']]],
+  ['hide_2',['hide',['../classUtility_1_1ModalWindow.html#a2b7515b5ef75a2735139abfe2afd555d',1,'Utility.ModalWindow.Hide()'],['../classMainPage_1_1TaskHistoryWindowHandler.html#a78bfd854854d4f4bc562daf67b291546',1,'MainPage.TaskHistoryWindowHandler.Hide()'],['../classMainPage_1_1ProfileHandler.html#a156469f3a1b308866dc6414b505cc20e',1,'MainPage.ProfileHandler.Hide()'],['../classMainPage_1_1FriendWindowHandler.html#a3b108bf886406b52ae4cd923dfb8ab58',1,'MainPage.FriendWindowHandler.Hide()'],['../classGame_1_1UI_1_1ShopWindow.html#a961c4381bc83af0f3cb7fe648c2bde41',1,'Game.UI.ShopWindow.Hide()'],['../classGame_1_1UI_1_1LeaderboardWindow.html#a0cded6f369684e4e86700327c6cf59e1',1,'Game.UI.LeaderboardWindow.Hide()']]],
+  ['hidechunk_3',['hidechunk',['../classGame_1_1World_1_1Chunk.html#a118e0c25d254444e6663404fd61749d9',1,'Game.World.Chunk.HideChunk()'],['../classGame_1_1World_1_1GameWorld.html#a6e38b875a4ad69b6a285701336e9e29c',1,'Game.World.GameWorld.HideChunk()']]],
+  ['hidegameoverscreen_4',['HideGameOverScreen',['../classGame_1_1UI_1_1GameUI.html#a87baf7b6bd70298f817e2c8e5e52a33a',1,'Game::UI::GameUI']]],
+  ['hideshopwindow_5',['HideShopWindow',['../classGame_1_1UI_1_1GameUI.html#a4a789f1b49233fa234a85b856cd5f64f',1,'Game::UI::GameUI']]],
+  ['hospital_6',['Hospital',['../namespaceDataTypes.html#af3baf8ec1237493b66f55dc98343d47aacc2ab63fd3eb564be64b4f21bd083bc7',1,'DataTypes']]],
+  ['hourly_7',['Hourly',['../namespaceDataTypes.html#aba82292ad6be9fc42aaf08684915d4bca769cb50c95fd3a43c659aa73aba99e5b',1,'DataTypes']]],
+  ['house_8',['House',['../namespaceDataTypes.html#af3baf8ec1237493b66f55dc98343d47aaaebfe46795575772b7cf413e25caeab9',1,'DataTypes']]],
+  ['house2_9',['House2',['../namespaceDataTypes.html#af3baf8ec1237493b66f55dc98343d47aadd99512caa8b7a68249e8b1296980a6d',1,'DataTypes']]]
 ];

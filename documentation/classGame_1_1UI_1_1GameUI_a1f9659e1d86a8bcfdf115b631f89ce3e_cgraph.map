@@ -1,4 +1,5 @@
 <map id="Game.UI.GameUI.ChangeDifficulyDisplay" name="Game.UI.GameUI.ChangeDifficulyDisplay">
-<area shape="rect" id="node1" title="Change the difficulty and update its display" alt="" coords="5,5,297,32"/>
-<area shape="rect" id="node2" href="$classGame_1_1UI_1_1StarHandler.html#a710bc2e71e1f1217f86fe1d7be4dc9c4" title="Update the display based on the difficulty" alt="" coords="345,5,616,32"/>
+<area shape="rect" id="Node000001" title="Change the difficulty and update its display." alt="" coords="5,5,297,31"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1UI_1_1StarHandler.html#a710bc2e71e1f1217f86fe1d7be4dc9c4" title="Update the display based on the difficulty." alt="" coords="345,5,616,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="297,15,332,15,332,21,297,21"/>
 </map>

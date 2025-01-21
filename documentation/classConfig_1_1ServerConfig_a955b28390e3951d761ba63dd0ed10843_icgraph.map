@@ -1,4 +1,5 @@
 <map id="Config.ServerConfig.PATHFORTASKCOMPLETE" name="Config.ServerConfig.PATHFORTASKCOMPLETE">
-<area shape="rect" id="node1" title="Path to api endpoint to complete the selected task" alt="" coords="367,5,681,32"/>
-<area shape="rect" id="node2" href="$classMainPage_1_1TaskDisplayHandler.html#ab553f8eb77d9d038521af3813275a43d" title="Complete the task and send this to the server" alt="" coords="5,5,319,32"/>
+<area shape="rect" id="Node000001" title="Path to api endpoint to complete the selected task." alt="" coords="367,5,681,31"/>
+<area shape="rect" id="Node000002" href="$classMainPage_1_1TaskDisplayHandler.html#ab553f8eb77d9d038521af3813275a43d" title="Complete the task and send this to the server." alt="" coords="5,5,319,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="353,21,319,21,319,15,353,15"/>
 </map>

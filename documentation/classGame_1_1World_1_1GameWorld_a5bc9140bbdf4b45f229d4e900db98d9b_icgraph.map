@@ -1,5 +1,7 @@
 <map id="Game.World.GameWorld.CreateNewGame" name="Game.World.GameWorld.CreateNewGame">
-<area shape="rect" id="node1" title="Creates a new game and create the chunks" alt="" coords="548,5,845,32"/>
-<area shape="rect" id="node2" href="$classGame_1_1GameController.html#af5c50c52cffcab3018ca54be6a421d7f" title="Create a new game" alt="" coords="261,5,500,32"/>
-<area shape="rect" id="node3" href="$classGame_1_1UI_1_1GameUI.html#ad581ee67e01ac3bcdec06cf2538f06e4" title="Start a new game" alt="" coords="5,5,213,32"/>
+<area shape="rect" id="Node000001" title="Creates a new game and create the chunks." alt="" coords="548,5,845,31"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1GameController.html#af5c50c52cffcab3018ca54be6a421d7f" title="Create a new game." alt="" coords="261,5,500,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="534,21,500,21,500,15,534,15"/>
+<area shape="rect" id="Node000003" href="$classGame_1_1UI_1_1GameUI.html#ad581ee67e01ac3bcdec06cf2538f06e4" title="Start a new game." alt="" coords="5,5,213,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="248,21,213,21,213,15,248,15"/>
 </map>

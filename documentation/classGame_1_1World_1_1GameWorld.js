@@ -5,7 +5,7 @@ var classGame_1_1World_1_1GameWorld =
     [ "LoadChunk", "classGame_1_1World_1_1GameWorld.html#a730e116826e3519544de155b667042ba", null ],
     [ "HideChunk", "classGame_1_1World_1_1GameWorld.html#a6e38b875a4ad69b6a285701336e9e29c", null ],
     [ "GetChunkWithoutLoad", "classGame_1_1World_1_1GameWorld.html#a6188226b54eb7e38659cbe8d9d76b620", null ],
-    [ "GetChunk", "classGame_1_1World_1_1GameWorld.html#a0b0f22446c2d6c9fad57efd6c6e29581", null ],
+    [ "GetChunk", "classGame_1_1World_1_1GameWorld.html#a34489f9fa15c207fce7c280ab1aeb08c", null ],
     [ "ChunkPrefab", "classGame_1_1World_1_1GameWorld.html#a860bbea1d19413d639e7963e53e45d58", null ],
     [ "Chunks", "classGame_1_1World_1_1GameWorld.html#a206bf3980c7611f2981797081c2ac1ff", null ]
 ];

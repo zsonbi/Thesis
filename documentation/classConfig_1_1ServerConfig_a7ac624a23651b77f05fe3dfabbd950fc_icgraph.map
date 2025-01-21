@@ -1,4 +1,5 @@
 <map id="Config.ServerConfig.PATH_FOR_BUY_CAR" name="Config.ServerConfig.PATH_FOR_BUY_CAR">
-<area shape="rect" id="node1" title="Path to api endpoint to buy a given car" alt="" coords="228,5,517,32"/>
-<area shape="rect" id="node2" href="$classGame_1_1UI_1_1ShopItem.html#a08030b9b33414329032136c2db442bef" title="Buy this shop item" alt="" coords="5,5,180,32"/>
+<area shape="rect" id="Node000001" title="Path to api endpoint to buy a given car." alt="" coords="228,5,517,31"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1UI_1_1ShopItem.html#a08030b9b33414329032136c2db442bef" title="Buy this shop item." alt="" coords="5,5,180,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,21,180,21,180,15,214,15"/>
 </map>

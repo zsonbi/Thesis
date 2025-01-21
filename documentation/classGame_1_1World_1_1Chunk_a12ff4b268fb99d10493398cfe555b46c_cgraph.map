@@ -1,4 +1,5 @@
 <map id="Game.World.Chunk.AddEnvironmentProps" name="Game.World.Chunk.AddEnvironmentProps">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,300,32"/>
-<area shape="rect" id="node2" href="$classGame_1_1World_1_1Chunk.html#af37779d40ed9cd07b577d5bca61627b7" title=" " alt="" coords="348,5,631,32"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,300,31"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1World_1_1Chunk.html#af37779d40ed9cd07b577d5bca61627b7" title=" " alt="" coords="348,5,631,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="300,15,334,15,334,21,300,21"/>
 </map>

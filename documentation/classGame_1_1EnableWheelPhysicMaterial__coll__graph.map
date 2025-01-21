@@ -1,5 +1,7 @@
 <map id="Game.EnableWheelPhysicMaterial" name="Game.EnableWheelPhysicMaterial">
-<area shape="rect" id="node1" title="Script to enable the physics materials for the wheel colliders" alt="" coords="5,256,252,377"/>
-<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="29,131,228,208"/>
-<area shape="rect" id="node3" title=" " alt="" coords="67,5,191,83"/>
+<area shape="rect" id="Node000001" title="Script to enable the physics materials for the wheel colliders." alt="" coords="5,232,244,357"/>
+<area shape="rect" id="Node000002" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool." alt="" coords="29,119,220,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,198,127,232,122,232,122,198"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="67,5,183,71"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="127,84,127,119,122,119,122,84"/>
 </map>

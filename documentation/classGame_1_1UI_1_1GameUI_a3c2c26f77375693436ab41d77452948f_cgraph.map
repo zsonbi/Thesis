@@ -1,4 +1,5 @@
 <map id="Game.UI.GameUI.DoubledCoins" name="Game.UI.GameUI.DoubledCoins">
-<area shape="rect" id="node1" title="Callback after the coins were doubled" alt="" coords="5,5,236,32"/>
-<area shape="rect" id="node2" href="$classUser_1_1UserData.html#a103846d4ce97a5d089423d4efd1a5ec0" title="Update the user&#39;s task score" alt="" coords="284,5,516,32"/>
+<area shape="rect" id="Node000001" title="Callback after the coins were doubled." alt="" coords="5,5,236,31"/>
+<area shape="rect" id="Node000002" href="$classUser_1_1UserData.html#a103846d4ce97a5d089423d4efd1a5ec0" title="Update the user&#39;s task score." alt="" coords="284,5,516,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,15,271,15,271,21,236,21"/>
 </map>

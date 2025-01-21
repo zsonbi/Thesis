@@ -1,5 +1,8 @@
 <map id="MainPage.TaskOpenPanelController.MakeItBadHabit" name="MainPage.TaskOpenPanelController.MakeItBadHabit">
-<area shape="rect" id="node1" title="Make this task a bad habit" alt="" coords="5,5,364,32"/>
-<area shape="rect" id="node2" href="$classMainPage_1_1MainWindowController.html#a241b480aeebdab1bc34320cad8de7712" title="Load the good habits" alt="" coords="418,5,757,32"/>
-<area shape="rect" id="node3" href="$classMainPage_1_1TaskOpenPanelController.html#aa0b6757dbad141375c50282278b23b1a" title="Update the buttons with the appropriate color based on the current task" alt="" coords="412,56,763,83"/>
+<area shape="rect" id="Node000001" title="Make this task a bad habit." alt="" coords="5,5,364,31"/>
+<area shape="rect" id="Node000002" href="$classMainPage_1_1MainWindowController.html#a241b480aeebdab1bc34320cad8de7712" title="Load the good habits." alt="" coords="418,5,757,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="364,24,404,24,404,30,364,30"/>
+<area shape="rect" id="Node000003" href="$classMainPage_1_1TaskOpenPanelController.html#aa0b6757dbad141375c50282278b23b1a" title="Update the buttons with the appropriate color based on the current task." alt="" coords="412,55,763,80"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="289,28,470,50,469,56,289,33"/>
+<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="418,12,378,12,378,6,418,6"/>
 </map>

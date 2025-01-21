@@ -1,5 +1,7 @@
 <map id="Game.World.CarSpawner" name="Game.World.CarSpawner">
-<area shape="rect" id="node1" title="Car spawner" alt="" coords="5,256,324,495"/>
-<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="65,131,264,208"/>
-<area shape="rect" id="node3" title=" " alt="" coords="103,5,227,83"/>
+<area shape="rect" id="Node000001" title="Car spawner." alt="" coords="5,232,321,517"/>
+<area shape="rect" id="Node000002" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool." alt="" coords="68,119,259,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,198,166,232,161,232,161,198"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="105,5,221,71"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="166,84,166,119,161,119,161,84"/>
 </map>

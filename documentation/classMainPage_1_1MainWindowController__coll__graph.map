@@ -1,7 +1,18 @@
 <map id="MainPage.MainWindowController" name="MainPage.MainWindowController">
-<area shape="rect" id="node1" title="Handles the main window&#39;s controls" alt="" coords="5,487,469,843"/>
-<area shape="rect" id="node4" href="$classMainPage_1_1TaskOpenPanelController.html" title="Controller for displaying, editing and creating tasks" alt="" coords="171,905,669,1291"/>
-<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="227,132,426,209"/>
-<area shape="rect" id="node5" href="$classUtility_1_1ModalWindow.html" title="Modal window for alerting the user" alt="" coords="165,259,488,424"/>
-<area shape="rect" id="node3" title=" " alt="" coords="265,5,389,83"/>
+<area shape="rect" id="Node000001" title="Handles the main window&#39;s controls." alt="" coords="5,777,461,1217"/>
+<area shape="rect" id="Node000002" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool." alt="" coords="369,120,559,185"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="355,168,285,178,216,193,159,212,138,224,123,236,103,265,86,296,64,361,53,430,53,501,62,572,78,643,99,712,123,776,118,778,94,713,73,645,57,573,48,501,48,429,58,360,82,294,98,263,119,233,134,219,156,208,215,188,284,173,354,162"/>
+<area shape="rect" id="Node000004" href="$classMainPage_1_1TaskOpenPanelController.html" title="Controller for displaying, editing and creating tasks." alt="" coords="473,235,970,715"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="500,195,531,233,527,236,496,198"/>
+<area shape="rect" id="Node000005" href="$classMainPage_1_1MainWindowController.html" title="Handles the main window&#39;s controls." alt="" coords="580,777,1036,1217"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="574,152,688,158,810,171,867,181,917,195,957,212,985,233,1032,298,1061,360,1075,422,1074,483,1061,546,1038,612,1007,681,969,755,956,778,951,776,964,752,1002,679,1033,610,1056,545,1069,483,1069,422,1056,362,1027,300,981,237,955,216,915,200,866,187,810,176,688,163,573,158"/>
+<area shape="rect" id="Node000006" href="$classUtility_1_1ModalWindow.html" title="Modal window for alerting the user." alt="" coords="133,385,448,565"/>
+<area shape="poly" id="edge9_Node000006_Node000002" title=" " alt="" coords="443,199,341,386,337,383,438,197"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="406,5,522,71"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="467,85,467,120,461,120,461,85"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="509,717,473,755,462,767,458,763,469,752,505,713"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="694,714,700,753,702,761,697,762,695,754,689,715"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="877,778,871,739,868,731,874,730,876,738,882,777"/>
+<area shape="poly" id="edge10_Node000001_Node000006" title=" " alt="" coords="269,566,251,649,237,739,235,761,230,761,232,738,246,648,264,565"/>
+<area shape="poly" id="edge8_Node000005_Node000006" title=" " alt="" coords="293,565,299,613,312,663,333,711,365,751,377,761,389,766,414,768,442,768,474,775,567,821,564,825,472,780,441,773,414,774,388,772,375,766,361,755,329,713,307,665,294,614,288,565"/>
 </map>

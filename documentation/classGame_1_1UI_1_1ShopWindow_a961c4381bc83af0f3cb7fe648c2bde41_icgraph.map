@@ -1,4 +1,5 @@
 <map id="Game.UI.ShopWindow.Hide" name="Game.UI.ShopWindow.Hide">
-<area shape="rect" id="node1" title="Hide the shop window" alt="" coords="308,5,508,32"/>
-<area shape="rect" id="node2" href="$classGame_1_1UI_1_1GameUI.html#a4a789f1b49233fa234a85b856cd5f64f" title="Hides the shop window" alt="" coords="5,5,260,32"/>
+<area shape="rect" id="Node000001" title="Hide the shop window." alt="" coords="308,5,508,31"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1UI_1_1GameUI.html#a4a789f1b49233fa234a85b856cd5f64f" title="Hides the shop window." alt="" coords="5,5,260,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="294,21,260,21,260,15,294,15"/>
 </map>

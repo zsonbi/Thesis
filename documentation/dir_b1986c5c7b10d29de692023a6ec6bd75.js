@@ -9,15 +9,9 @@ var dir_b1986c5c7b10d29de692023a6ec6bd75 =
     [ "PlayerTask.cs", "PlayerTask_8cs.html", "PlayerTask_8cs" ],
     [ "Shop.cs", "Shop_8cs.html", "Shop_8cs" ],
     [ "TaskHistory.cs", "TaskHistory_8cs.html", "TaskHistory_8cs" ],
-    [ "TaskRequest.cs", "TaskRequest_8cs.html", [
-      [ "TaskRequest", "structThesis__backend_1_1Data__Structures_1_1TaskRequest.html", "structThesis__backend_1_1Data__Structures_1_1TaskRequest" ]
-    ] ],
+    [ "TaskRequest.cs", "TaskRequest_8cs.html", "TaskRequest_8cs" ],
     [ "User.cs", "User_8cs.html", "User_8cs" ],
-    [ "UserLoginRequest.cs", "UserLoginRequest_8cs.html", [
-      [ "UserLoginRequest", "structThesis__backend_1_1Data__Structures_1_1UserLoginRequest.html", "structThesis__backend_1_1Data__Structures_1_1UserLoginRequest" ]
-    ] ],
-    [ "UserRequest.cs", "UserRequest_8cs.html", [
-      [ "UserRequest", "structThesis__backend_1_1Data__Structures_1_1UserRequest.html", "structThesis__backend_1_1Data__Structures_1_1UserRequest" ]
-    ] ],
+    [ "UserLoginRequest.cs", "UserLoginRequest_8cs.html", "UserLoginRequest_8cs" ],
+    [ "UserRequest.cs", "UserRequest_8cs.html", "UserRequest_8cs" ],
     [ "UserSettings.cs", "UserSettings_8cs.html", "UserSettings_8cs" ]
 ];

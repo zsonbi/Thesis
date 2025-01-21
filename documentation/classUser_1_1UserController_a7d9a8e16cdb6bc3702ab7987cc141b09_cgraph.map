@@ -1,9 +1,16 @@
 <map id="User.UserController.SendLogin" name="User.UserController.SendLogin">
-<area shape="rect" id="node1" title="Send a login request with the login panel&#39;s fields" alt="" coords="5,107,224,133"/>
-<area shape="rect" id="node2" href="$classUser_1_1UserController.html#a02fa4701a3a181ec2228737a5f2c57e9" title="When the login request&#39;s was responded log the user in" alt="" coords="293,56,504,83"/>
-<area shape="rect" id="node5" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="581,107,845,133"/>
-<area shape="rect" id="node6" href="$classUser_1_1UserController.html#a156a37eabac915f5d287201599b3a0b1" title="Show the login error on the modal window" alt="" coords="272,157,525,184"/>
-<area shape="rect" id="node3" href="$classUser_1_1UserData.html#abb372911b5e49023a977bd064f46bb6e" title="Initialises the user instance with proper data" alt="" coords="643,5,784,32"/>
-<area shape="rect" id="node4" href="$classUser_1_1UserController.html#a3ba5f73e6358fff37d2ec5e255659756" title="Move from the user creation and login scene" alt="" coords="573,56,853,83"/>
-<area shape="rect" id="node7" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window" alt="" coords="616,157,811,184"/>
+<area shape="rect" id="Node000001" title="Send a login request with the login panel&#39;s fields." alt="" coords="5,104,224,129"/>
+<area shape="rect" id="Node000002" href="$classUser_1_1UserController.html#a02fa4701a3a181ec2228737a5f2c57e9" title="When the login request&#39;s was responded log the user in." alt="" coords="293,53,504,79"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,101,313,79,314,84,187,107"/>
+<area shape="rect" id="Node000005" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines." alt="" coords="581,104,845,129"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="224,114,568,114,568,119,224,119"/>
+<area shape="rect" id="Node000006" href="$classUser_1_1UserController.html#a156a37eabac915f5d287201599b3a0b1" title="Show the login error on the modal window." alt="" coords="272,155,525,180"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="187,127,314,150,313,155,186,132"/>
+<area shape="rect" id="Node000003" href="$classUser_1_1UserData.html#abb372911b5e49023a977bd064f46bb6e" title="Initialises the user instance with proper data." alt="" coords="643,5,784,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="482,51,628,28,629,33,483,56"/>
+<area shape="rect" id="Node000004" href="$classUser_1_1UserController.html#a3ba5f73e6358fff37d2ec5e255659756" title="Move from the user creation and login scene." alt="" coords="573,55,853,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="504,64,559,64,559,69,504,69"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="479,76,620,99,620,104,478,81"/>
+<area shape="rect" id="Node000007" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window." alt="" coords="616,155,811,180"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="526,165,602,165,602,170,526,170"/>
 </map>

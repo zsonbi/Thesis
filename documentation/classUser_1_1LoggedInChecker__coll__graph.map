@@ -1,5 +1,7 @@
 <map id="User.LoggedInChecker" name="User.LoggedInChecker">
-<area shape="rect" id="node1" title="Checks if the user has a session stored in the backend" alt="" coords="5,256,424,392"/>
-<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="115,131,314,208"/>
-<area shape="rect" id="node3" title=" " alt="" coords="153,5,277,83"/>
+<area shape="rect" id="Node000001" title="Checks if the user has a session stored in the backend." alt="" coords="5,232,415,377"/>
+<area shape="rect" id="Node000002" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool." alt="" coords="115,119,305,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,198,213,231,207,231,207,198"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="152,5,268,71"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="213,84,213,119,207,119,207,84"/>
 </map>

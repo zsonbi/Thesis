@@ -1,7 +1,11 @@
 <map id="Game.UI.GameUI.SaveGameResult" name="Game.UI.GameUI.SaveGameResult">
-<area shape="rect" id="node1" title="Save the game&#39;s result" alt="" coords="5,56,257,83"/>
-<area shape="rect" id="node2" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="305,5,569,32"/>
-<area shape="rect" id="node3" href="$classGame_1_1UI_1_1GameUI.html#a984a1e174ca8249e0433de8d2d8a462c" title="Callback after the coins amount were saved" alt="" coords="329,56,545,83"/>
-<area shape="rect" id="node4" href="$classGame_1_1UI_1_1GameUI.html#ac464d5a547acb44085748e2ee265272f" title="Show if the request failed on the modal window" alt="" coords="312,107,563,133"/>
-<area shape="rect" id="node5" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window" alt="" coords="617,107,812,133"/>
+<area shape="rect" id="Node000001" title="Save the game&#39;s result." alt="" coords="5,55,257,80"/>
+<area shape="rect" id="Node000002" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines." alt="" coords="305,5,569,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,52,344,30,345,36,211,57"/>
+<area shape="rect" id="Node000003" href="$classGame_1_1UI_1_1GameUI.html#a984a1e174ca8249e0433de8d2d8a462c" title="Callback after the coins amount were saved." alt="" coords="329,55,545,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="257,65,315,65,315,70,257,70"/>
+<area shape="rect" id="Node000004" href="$classGame_1_1UI_1_1GameUI.html#ac464d5a547acb44085748e2ee265272f" title="Show if the request failed on the modal window." alt="" coords="312,104,563,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="211,77,345,99,344,104,210,83"/>
+<area shape="rect" id="Node000005" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window." alt="" coords="617,104,812,129"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="563,114,603,114,603,119,563,119"/>
 </map>

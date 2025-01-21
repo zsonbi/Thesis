@@ -1,4 +1,5 @@
 <map id="Game.World.Chunk.BuildingLoaded" name="Game.World.Chunk.BuildingLoaded">
-<area shape="rect" id="node1" title="Callback for when each building asset is loaded" alt="" coords="248,5,499,32"/>
-<area shape="rect" id="node2" href="$classGame_1_1World_1_1Chunk.html#a697c68dad0a2d0dcad6d09d96f614b04" title="Start when the script is loaded" alt="" coords="5,5,200,32"/>
+<area shape="rect" id="Node000001" title="Callback for when each building asset is loaded." alt="" coords="248,5,499,31"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1World_1_1Chunk.html#a697c68dad0a2d0dcad6d09d96f614b04" title="Start when the script is loaded." alt="" coords="5,5,200,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,21,200,21,200,15,234,15"/>
 </map>

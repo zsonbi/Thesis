@@ -1,6 +1,10 @@
 <map id="User.UserController" name="User.UserController">
-<area shape="rect" id="node1" title="Handles the user actions such as registering and login" alt="" coords="5,487,484,740"/>
-<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="140,132,339,209"/>
-<area shape="rect" id="node4" href="$classUtility_1_1ModalWindow.html" title="Modal window for alerting the user" alt="" coords="261,259,583,424"/>
-<area shape="rect" id="node3" title=" " alt="" coords="177,5,301,83"/>
+<area shape="rect" id="Node000001" title="Handles the user actions such as registering and login." alt="" coords="5,477,481,783"/>
+<area shape="rect" id="Node000002" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool." alt="" coords="143,120,333,185"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,199,244,477,239,477,236,199"/>
+<area shape="rect" id="Node000004" href="$classUtility_1_1ModalWindow.html" title="Modal window for alerting the user." alt="" coords="259,235,574,415"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="283,193,325,233,321,236,279,197"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="180,5,296,71"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="241,85,241,120,235,120,235,85"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="368,416,341,464,336,462,364,413"/>
 </map>

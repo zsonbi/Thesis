@@ -1,4 +1,9 @@
 <map id="Utility.CoroutineRunner" name="Utility.CoroutineRunner">
-<area shape="rect" id="node1" title="Singleton class to run the coroutines so they are easier to track" alt="" coords="5,132,392,224"/>
-<area shape="rect" id="node2" title=" " alt="" coords="137,5,261,83"/>
+<area shape="rect" id="Node000001" title="Singleton class to run the coroutines so they are easier to track." alt="" coords="5,268,384,353"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="131,5,247,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,84,197,268,191,268,188,84"/>
+<area shape="rect" id="Node000003" href="$classUtility_1_1CoroutineRunner.html" title="Singleton class to run the coroutines so they are easier to track." alt="" coords="211,120,589,205"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="257,75,330,118,327,122,254,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="343,208,268,261,265,256,340,203"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="590,151,608,155,616,163,607,171,604,167,611,163,606,160,589,156"/>
 </map>

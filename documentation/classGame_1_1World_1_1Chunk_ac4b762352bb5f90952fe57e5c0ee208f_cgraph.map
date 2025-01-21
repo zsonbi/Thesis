@@ -1,4 +1,5 @@
 <map id="Game.World.Chunk.DetermineTileType" name="Game.World.Chunk.DetermineTileType">
-<area shape="rect" id="node1" title="Determines the type of the tile at the coord" alt="" coords="5,5,280,32"/>
-<area shape="rect" id="node2" href="$classGame_1_1World_1_1Chunk.html#a2d39efc9f5c0f3c302dd7e9d007096c7" title="Determine what type of road it is" alt="" coords="328,5,611,32"/>
+<area shape="rect" id="Node000001" title="Determines the type of the tile at the coord." alt="" coords="5,5,280,31"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1World_1_1Chunk.html#a2d39efc9f5c0f3c302dd7e9d007096c7" title="Determine what type of road it is." alt="" coords="328,5,611,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="280,15,314,15,314,21,280,21"/>
 </map>

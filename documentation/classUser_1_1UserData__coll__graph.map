@@ -1,3 +1,6 @@
 <map id="User.UserData" name="User.UserData">
-<area shape="rect" id="node1" title="Singleton class for storing the user&#39;s data" alt="" coords="5,5,440,317"/>
+<area shape="rect" id="Node000001" title="Singleton class for storing the user&#39;s data." alt="" coords="5,453,432,839"/>
+<area shape="rect" id="Node000002" href="$classUser_1_1UserData.html" title="Singleton class for storing the user&#39;s data." alt="" coords="5,5,432,391"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,391,221,437,216,437,216,391"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="434,166,452,179,459,198,456,211,448,221,444,218,451,209,453,198,448,182,431,170"/>
 </map>

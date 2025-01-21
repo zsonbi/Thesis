@@ -1,0 +1,38 @@
+<map id="Game.World.GameWorld.GetChunk" name="Game.World.GameWorld.GetChunk">
+<area shape="rect" id="Node000001" title="Gets the chunk it will load it if it hasn&#39;t been and hide it then otherwise just return it." alt="" coords="5,31,256,56"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1World_1_1GameWorld.html#a6e38b875a4ad69b6a285701336e9e29c" title="Hide the given chunk." alt="" coords="305,5,562,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="256,30,291,27,291,33,256,36"/>
+<area shape="rect" id="Node000004" href="$classGame_1_1World_1_1GameWorld.html#a730e116826e3519544de155b667042ba" title="Loads a chunk." alt="" coords="304,55,563,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="256,51,290,53,290,59,256,56"/>
+<area shape="rect" id="Node000003" href="$classGame_1_1World_1_1Chunk.html#a118e0c25d254444e6663404fd61749d9" title="Hide the chunk." alt="" coords="611,5,833,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="562,15,597,15,597,21,562,21"/>
+<area shape="rect" id="Node000005" href="$classGame_1_1World_1_1Chunk.html#a475512064d145228ca7084735b7e2f2f" title="Show the chunk." alt="" coords="622,55,822,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="563,65,608,65,608,70,563,70"/>
+<area shape="rect" id="Node000006" href="$classGame_1_1World_1_1Chunk.html#a0616c2f9600a4bcc1dbe97a93a947e7a" title="Initialize the chunk." alt="" coords="615,104,829,129"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="509,77,634,99,633,104,508,83"/>
+<area shape="rect" id="Node000007" href="$classGame_1_1World_1_1Chunk.html#aac3343253a33a36a09318ebc76bd9f08" title="Creates the tiles for the chunk." alt="" coords="909,55,1134,80"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="799,101,930,80,931,85,800,107"/>
+<area shape="rect" id="Node000010" href="$classGame_1_1World_1_1Chunk.html#a1fb214fa85481a42c651b9d6b0d45cb9" title="Gets tthe nearby chunks." alt="" coords="887,104,1156,129"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="829,114,873,114,873,119,829,119"/>
+<area shape="rect" id="Node000012" href="$classGame_1_1World_1_1Chunk.html#a08f4b5e8b362b98f4b3f01225d12b4af" title="Spawns the buildings and the props on a seperate thread." alt="" coords="881,205,1161,231"/>
+<area shape="poly" id="edge11_Node000006_Node000012" title=" " alt="" coords="762,127,971,198,969,203,760,132"/>
+<area shape="rect" id="Node000008" href="$classGame_1_1World_1_1Chunk.html#ac4b762352bb5f90952fe57e5c0ee208f" title="Determines the type of the tile at the coord." alt="" coords="1238,55,1513,80"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1134,65,1224,65,1224,70,1134,70"/>
+<area shape="rect" id="Node000009" href="$classGame_1_1World_1_1Chunk.html#a2d39efc9f5c0f3c302dd7e9d007096c7" title="Determine what type of road it is." alt="" coords="1611,55,1894,80"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1513,65,1597,65,1597,70,1513,70"/>
+<area shape="rect" id="Node000011" href="$classGame_1_1World_1_1GameWorld.html#a6188226b54eb7e38659cbe8d9d76b620" title="Get the chunk without trying it to load." alt="" coords="1209,104,1541,129"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1156,114,1196,114,1196,119,1156,119"/>
+<area shape="rect" id="Node000013" href="$classGame_1_1World_1_1Chunk.html#a12ff4b268fb99d10493398cfe555b46c" title=" " alt="" coords="1605,155,1900,180"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="1110,203,1209,191,1408,177,1591,169,1592,175,1408,183,1210,197,1111,208"/>
+<area shape="rect" id="Node000015" href="$classGame_1_1World_1_1Chunk.html#a00a9cd484ae1ddffec928a75f6b2db15" title="Add the buildings which are next to the roads." alt="" coords="1241,205,1510,231"/>
+<area shape="poly" id="edge14_Node000012_Node000015" title=" " alt="" coords="1162,215,1227,215,1227,221,1162,221"/>
+<area shape="rect" id="Node000017" href="$classGame_1_1World_1_1Chunk.html#a443ede65d8aeb566a385cb3bcad9d8f7" title="Generate the building cells matrix so we know which way the roads are." alt="" coords="1236,255,1515,280"/>
+<area shape="poly" id="edge17_Node000012_Node000017" title=" " alt="" coords="1114,228,1270,250,1269,255,1113,233"/>
+<area shape="rect" id="Node000018" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines." alt="" coords="1243,304,1507,329"/>
+<area shape="poly" id="edge18_Node000012_Node000018" title=" " alt="" coords="1050,228,1121,260,1210,290,1249,299,1248,304,1209,295,1120,265,1048,233"/>
+<area shape="rect" id="Node000014" href="$classGame_1_1World_1_1Chunk.html#af37779d40ed9cd07b577d5bca61627b7" title=" " alt="" coords="1964,180,2247,205"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="1901,175,1950,179,1950,184,1900,181"/>
+<area shape="rect" id="Node000016" href="$classGame_1_1World_1_1Chunk.html#af2946e1e1b9e325d6004d166b2b26193" title="Lock the cell and try to place it." alt="" coords="1589,204,1916,229"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="1510,215,1575,215,1575,220,1510,220"/>
+<area shape="poly" id="edge16_Node000016_Node000014" title=" " alt="" coords="1916,203,1950,201,1950,206,1916,208"/>
+</map>

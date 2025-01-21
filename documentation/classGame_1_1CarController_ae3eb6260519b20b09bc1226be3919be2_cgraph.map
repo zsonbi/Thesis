@@ -1,9 +1,15 @@
 <map id="Game.CarController.Move" name="Game.CarController.Move">
-<area shape="rect" id="node1" title=" " alt="" coords="5,107,196,133"/>
-<area shape="rect" id="node2" href="$classGame_1_1CarController.html#afadda4712607531e93172fcd43557f14" title=" " alt="" coords="245,5,495,32"/>
-<area shape="rect" id="node3" href="$classGame_1_1CarController.html#aebd7dfca747e22622550ce42076052af" title=" " alt="" coords="257,56,483,83"/>
-<area shape="rect" id="node4" href="$classGame_1_1CarController.html#a906b060eb3177f7706893b9e0e098dc8" title=" " alt="" coords="261,107,479,133"/>
-<area shape="rect" id="node5" href="$classGame_1_1CarController.html#a764c5ed47cd5bb83923e9fa443935af7" title=" " alt="" coords="255,157,485,184"/>
-<area shape="rect" id="node6" href="$classGame_1_1CarController.html#a298e55b1a36b51f9c4e4aa7883056a00" title=" " alt="" coords="244,208,496,235"/>
-<area shape="rect" id="node7" href="$classGame_1_1CarController.html#a7589f8f5b951a0d3283790774bf97493" title=" " alt="" coords="544,208,783,235"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,104,196,129"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1CarController.html#afadda4712607531e93172fcd43557f14" title=" " alt="" coords="245,5,495,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,102,174,70,243,40,270,31,272,36,245,44,177,75,123,106"/>
+<area shape="rect" id="Node000003" href="$classGame_1_1CarController.html#aebd7dfca747e22622550ce42076052af" title=" " alt="" coords="257,55,483,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,101,286,80,287,85,171,107"/>
+<area shape="rect" id="Node000004" href="$classGame_1_1CarController.html#a906b060eb3177f7706893b9e0e098dc8" title=" " alt="" coords="261,104,479,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="196,114,247,114,247,119,196,119"/>
+<area shape="rect" id="Node000005" href="$classGame_1_1CarController.html#a764c5ed47cd5bb83923e9fa443935af7" title=" " alt="" coords="255,153,485,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="171,127,287,148,286,153,170,132"/>
+<area shape="rect" id="Node000006" href="$classGame_1_1CarController.html#a298e55b1a36b51f9c4e4aa7883056a00" title=" " alt="" coords="244,203,496,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="124,127,177,157,245,187,277,197,275,202,243,193,175,162,121,132"/>
+<area shape="rect" id="Node000007" href="$classGame_1_1CarController.html#a7589f8f5b951a0d3283790774bf97493" title=" " alt="" coords="544,203,783,228"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="496,213,530,213,530,218,496,218"/>
 </map>

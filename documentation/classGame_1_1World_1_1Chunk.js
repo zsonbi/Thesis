@@ -18,7 +18,7 @@ var classGame_1_1World_1_1Chunk =
     [ "AddRoadBuildings", "classGame_1_1World_1_1Chunk.html#a00a9cd484ae1ddffec928a75f6b2db15", null ],
     [ "AddEnvironmentProps", "classGame_1_1World_1_1Chunk.html#a12ff4b268fb99d10493398cfe555b46c", null ],
     [ "LockAndTryToPlaceBuilding", "classGame_1_1World_1_1Chunk.html#af2946e1e1b9e325d6004d166b2b26193", null ],
-    [ "GetNearbyChunks", "classGame_1_1World_1_1Chunk.html#af8d6134551597f12a028155b1466c0ff", null ],
+    [ "GetNearbyChunks", "classGame_1_1World_1_1Chunk.html#a1fb214fa85481a42c651b9d6b0d45cb9", null ],
     [ "XOffset", "classGame_1_1World_1_1Chunk.html#af8b1726b0f705ddfaca6df2a0b27682c", null ],
     [ "ZOffset", "classGame_1_1World_1_1Chunk.html#aea865eea078579088f52d2b98413b69b", null ],
     [ "RandomizeOffset", "classGame_1_1World_1_1Chunk.html#a1fde640c5dab35b0c3cd62e2baa19745", null ],
@@ -42,5 +42,5 @@ var classGame_1_1World_1_1Chunk =
     [ "Row", "classGame_1_1World_1_1Chunk.html#adce4d80142d5a8146a23758358504814", null ],
     [ "Col", "classGame_1_1World_1_1Chunk.html#ad6574f4e35ae5e51f25bec7e1a47d2bc", null ],
     [ "Roads", "classGame_1_1World_1_1Chunk.html#ac21c65b1dc3fbfe5de7b2a99b325098e", null ],
-    [ "EdgeRoads", "classGame_1_1World_1_1Chunk.html#a3e3f14449d672f48cac27b262e687d1c", null ]
+    [ "EdgeRoads", "classGame_1_1World_1_1Chunk.html#a30022bdfe0132074a9d591c6eb326441", null ]
 ];

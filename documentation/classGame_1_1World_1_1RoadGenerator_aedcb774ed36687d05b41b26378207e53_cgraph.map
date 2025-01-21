@@ -1,6 +1,11 @@
 <map id="Game.World.RoadGenerator.RoadGenerator" name="Game.World.RoadGenerator.RoadGenerator">
-<area shape="rect" id="node1" title="Creates the road matrix" alt="" coords="5,31,311,57"/>
-<area shape="rect" id="node2" href="$classGame_1_1World_1_1RoadGenerator.html#ab3b7fa7ff101a87611b4be39e1777d51" title="Creates the roads recursively" alt="" coords="359,31,641,57"/>
-<area shape="rect" id="node3" href="$classGame_1_1World_1_1RoadGenerator.html#aff41fff01a6f7955370796e82d542b5c" title="Checks if the road moving in that direction will run into an another road" alt="" coords="701,5,1000,32"/>
-<area shape="rect" id="node4" href="$classGame_1_1World_1_1RoadGenerator.html#a1d562d3e89d833e15f2b2ce3eba249ac" title="Check if the road is going towards the edge" alt="" coords="689,56,1012,83"/>
+<area shape="rect" id="Node000001" title="Creates the road matrix." alt="" coords="5,55,311,80"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1World_1_1RoadGenerator.html#ab3b7fa7ff101a87611b4be39e1777d51" title="Creates the roads recursively." alt="" coords="359,55,641,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="311,65,345,65,345,70,311,70"/>
+<area shape="poly" id="edge4_Node000002_Node000002" title=" " alt="" coords="446,57,434,46,440,36,462,30,500,28,551,33,564,39,566,46,561,47,560,42,550,38,500,33,463,35,443,40,439,46,449,52"/>
+<area shape="rect" id="Node000003" href="$classGame_1_1World_1_1RoadGenerator.html#aff41fff01a6f7955370796e82d542b5c" title="Checks if the road moving in that direction will run into an another road." alt="" coords="701,29,1000,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="641,54,687,51,688,56,642,60"/>
+<area shape="rect" id="Node000004" href="$classGame_1_1World_1_1RoadGenerator.html#a1d562d3e89d833e15f2b2ce3eba249ac" title="Check if the road is going towards the edge." alt="" coords="689,79,1012,104"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="642,74,676,77,675,82,641,80"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="795,31,783,21,789,11,812,5,851,3,903,7,916,13,918,20,913,22,912,17,902,13,851,8,813,10,792,15,788,20,798,27"/>
 </map>

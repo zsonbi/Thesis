@@ -1,7 +1,11 @@
 <map id="MainPage.FriendWindowHandler.Show" name="MainPage.FriendWindowHandler.Show">
-<area shape="rect" id="node1" title="Shows the profile window" alt="" coords="5,31,276,57"/>
-<area shape="rect" id="node2" href="$classMainPage_1_1FriendWindowHandler.html#a6ebf0f7c70458f53c427517bf84bef7d" title="Loads the friends from the server" alt="" coords="324,31,637,57"/>
-<area shape="rect" id="node3" href="$classMainPage_1_1FriendWindowHandler.html#abce9cb8e608691cfbc50bf47c17a1b34" title="Display the friends which was recieved from the server" alt="" coords="685,5,1016,32"/>
-<area shape="rect" id="node5" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="719,56,983,83"/>
-<area shape="rect" id="node4" href="$classMainPage_1_1FriendHandler.html#ab894b96203019d08e341bbb6090af8b8" title="Inititializes a new display with the given friend to display" alt="" coords="1064,5,1311,32"/>
+<area shape="rect" id="Node000001" title="Shows the profile window." alt="" coords="5,31,276,56"/>
+<area shape="rect" id="Node000002" href="$classMainPage_1_1FriendWindowHandler.html#a6ebf0f7c70458f53c427517bf84bef7d" title="Loads the friends from the server." alt="" coords="324,31,637,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="276,41,310,41,310,46,276,46"/>
+<area shape="rect" id="Node000003" href="$classMainPage_1_1FriendWindowHandler.html#abce9cb8e608691cfbc50bf47c17a1b34" title="Display the friends which was recieved from the server." alt="" coords="685,5,1016,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="638,30,672,28,672,33,638,35"/>
+<area shape="rect" id="Node000005" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines." alt="" coords="719,55,983,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="638,51,705,55,704,61,638,56"/>
+<area shape="rect" id="Node000004" href="$classMainPage_1_1FriendHandler.html#ab894b96203019d08e341bbb6090af8b8" title="Inititializes a new display with the given friend to display." alt="" coords="1064,5,1311,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1016,15,1050,15,1050,21,1016,21"/>
 </map>

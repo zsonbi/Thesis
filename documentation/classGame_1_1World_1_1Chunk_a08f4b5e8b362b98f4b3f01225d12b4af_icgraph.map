@@ -1,13 +1,23 @@
 <map id="Game.World.Chunk.SpawnWorldObjects" name="Game.World.Chunk.SpawnWorldObjects">
-<area shape="rect" id="node1" title="Spawns the buildings and the props on a seperate thread" alt="" coords="1960,56,2240,83"/>
-<area shape="rect" id="node2" href="$classGame_1_1World_1_1Chunk.html#a0616c2f9600a4bcc1dbe97a93a947e7a" title="Initialize the chunk" alt="" coords="1699,56,1912,83"/>
-<area shape="rect" id="node3" href="$classGame_1_1World_1_1GameWorld.html#a730e116826e3519544de155b667042ba" title="Loads a chunk" alt="" coords="1392,56,1651,83"/>
-<area shape="rect" id="node4" href="$classGame_1_1World_1_1GameWorld.html#a5bc9140bbdf4b45f229d4e900db98d9b" title="Creates a new game and create the chunks" alt="" coords="1035,5,1332,32"/>
-<area shape="rect" id="node7" href="$classGame_1_1World_1_1GameWorld.html#a0b0f22446c2d6c9fad57efd6c6e29581" title="Gets the chunk it will load it if it hasn&#39;t been and hide it then otherwise just return it" alt="" coords="1058,56,1309,83"/>
-<area shape="rect" id="node8" href="$classGame_1_1GameController.html#a9818f49a9c0638be6cc6449e5e5000f7" title="Checks if the selected chunk is in range and loads it if the world exists" alt="" coords="1023,107,1344,133"/>
-<area shape="rect" id="node5" href="$classGame_1_1GameController.html#af5c50c52cffcab3018ca54be6a421d7f" title="Create a new game" alt="" coords="701,5,939,32"/>
-<area shape="rect" id="node6" href="$classGame_1_1UI_1_1GameUI.html#ad581ee67e01ac3bcdec06cf2538f06e4" title="Start a new game" alt="" coords="346,5,554,32"/>
-<area shape="rect" id="node9" href="$classGame_1_1GameController.html#a2003e53e493cca6ace00e260e7161a03" title="Spawns and loads the nearby chunks" alt="" coords="665,107,975,133"/>
-<area shape="rect" id="node10" href="$classGame_1_1GameController.html#af623e7876622503e3d0f985ad9b08e47" title="Handle the load and despawning of the chunks relative to the given indices" alt="" coords="283,107,617,133"/>
-<area shape="rect" id="node11" href="$classGame_1_1PlayerCar.html#a18f30f1f6873f043457ce9f81ac47ed4" title="Override the chunk changed method to make it load and despawn the chunks" alt="" coords="5,107,235,133"/>
+<area shape="rect" id="Node000001" title="Spawns the buildings and the props on a seperate thread." alt="" coords="1960,55,2240,80"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1World_1_1Chunk.html#a0616c2f9600a4bcc1dbe97a93a947e7a" title="Initialize the chunk." alt="" coords="1699,55,1912,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1946,70,1912,70,1912,65,1946,65"/>
+<area shape="rect" id="Node000003" href="$classGame_1_1World_1_1GameWorld.html#a730e116826e3519544de155b667042ba" title="Loads a chunk." alt="" coords="1392,55,1651,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1685,70,1651,70,1651,65,1685,65"/>
+<area shape="rect" id="Node000004" href="$classGame_1_1World_1_1GameWorld.html#a5bc9140bbdf4b45f229d4e900db98d9b" title="Creates a new game and create the chunks." alt="" coords="1035,5,1332,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1420,55,1271,33,1272,28,1420,50"/>
+<area shape="rect" id="Node000007" href="$classGame_1_1World_1_1GameWorld.html#a34489f9fa15c207fce7c280ab1aeb08c" title="Gets the chunk it will load it if it hasn&#39;t been and hide it then otherwise just return it." alt="" coords="1058,55,1309,80"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="1378,70,1309,70,1309,65,1378,65"/>
+<area shape="rect" id="Node000008" href="$classGame_1_1GameController.html#a9818f49a9c0638be6cc6449e5e5000f7" title="Checks if the selected chunk is in range and loads it if the world exists." alt="" coords="1023,104,1344,129"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="1420,85,1272,107,1271,101,1420,79"/>
+<area shape="rect" id="Node000005" href="$classGame_1_1GameController.html#af5c50c52cffcab3018ca54be6a421d7f" title="Create a new game." alt="" coords="701,5,939,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1021,21,940,21,940,15,1021,15"/>
+<area shape="rect" id="Node000006" href="$classGame_1_1UI_1_1GameUI.html#ad581ee67e01ac3bcdec06cf2538f06e4" title="Start a new game." alt="" coords="346,5,554,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="687,21,555,21,555,15,687,15"/>
+<area shape="rect" id="Node000009" href="$classGame_1_1GameController.html#a2003e53e493cca6ace00e260e7161a03" title="Spawns and loads the nearby chunks." alt="" coords="665,104,975,129"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1009,119,975,119,975,114,1009,114"/>
+<area shape="rect" id="Node000010" href="$classGame_1_1GameController.html#af623e7876622503e3d0f985ad9b08e47" title="Handle the load and despawning of the chunks relative to the given indices." alt="" coords="283,104,617,129"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="651,119,617,119,617,114,651,114"/>
+<area shape="rect" id="Node000011" href="$classGame_1_1PlayerCar.html#a18f30f1f6873f043457ce9f81ac47ed4" title="Override the chunk changed method to make it load and despawn the chunks." alt="" coords="5,104,235,129"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="269,119,235,119,235,114,269,114"/>
 </map>

@@ -1,8 +1,13 @@
 <map id="User.LoggedInChecker.CheckLoggedInPeriodically" name="User.LoggedInChecker.CheckLoggedInPeriodically">
-<area shape="rect" id="node1" title="Coroutine which calls the api endpoint to check if the user is still logged in" alt="" coords="5,56,349,83"/>
-<area shape="rect" id="node2" href="$classUser_1_1LoggedInChecker.html#a142873ff5324726072d218102f0bee8b" title="Update the user data from the server data" alt="" coords="415,5,643,32"/>
-<area shape="rect" id="node4" href="$classUser_1_1LoggedInChecker.html#aa0be140ec2e3efb96d0a9c306e6d811a" title="Handles if the user is not logged in" alt="" coords="410,56,649,83"/>
-<area shape="rect" id="node6" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="397,107,661,133"/>
-<area shape="rect" id="node3" href="$classUser_1_1UserData.html#abb372911b5e49023a977bd064f46bb6e" title="Initialises the user instance with proper data" alt="" coords="721,5,862,32"/>
-<area shape="rect" id="node5" href="$classUser_1_1UserData.html#a8c8911482003919ea4fbab040c755f8f" title="Signal&#39;s that the user is logged out" alt="" coords="709,56,873,83"/>
+<area shape="rect" id="Node000001" title="Coroutine which calls the api endpoint to check if the user is still logged in." alt="" coords="5,55,349,80"/>
+<area shape="rect" id="Node000002" href="$classUser_1_1LoggedInChecker.html#a142873ff5324726072d218102f0bee8b" title="Update the user data from the server data." alt="" coords="415,5,643,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="268,52,424,30,424,35,269,57"/>
+<area shape="rect" id="Node000004" href="$classUser_1_1LoggedInChecker.html#aa0be140ec2e3efb96d0a9c306e6d811a" title="Handles if the user is not logged in." alt="" coords="410,55,649,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="350,65,396,65,396,70,350,70"/>
+<area shape="rect" id="Node000006" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines." alt="" coords="397,104,661,129"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="269,77,424,99,424,105,268,83"/>
+<area shape="rect" id="Node000003" href="$classUser_1_1UserData.html#abb372911b5e49023a977bd064f46bb6e" title="Initialises the user instance with proper data." alt="" coords="721,5,862,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="644,15,707,15,707,21,644,21"/>
+<area shape="rect" id="Node000005" href="$classUser_1_1UserData.html#a8c8911482003919ea4fbab040c755f8f" title="Signal&#39;s that the user is logged out." alt="" coords="709,55,873,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="649,65,695,65,695,70,649,70"/>
 </map>

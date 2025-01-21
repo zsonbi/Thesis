@@ -1,4 +1,5 @@
 <map id="Game.Car.ChangeChunkIfNeeded" name="Game.Car.ChangeChunkIfNeeded">
-<area shape="rect" id="node1" title="Change the chunk if it went over the chunk border" alt="" coords="191,5,429,32"/>
-<area shape="rect" id="node2" href="$classGame_1_1Car.html#a1efffc1014c81e16512eee6c311dbb97" title="Called every frame" alt="" coords="5,5,143,32"/>
+<area shape="rect" id="Node000001" title="Change the chunk if it went over the chunk border." alt="" coords="191,5,429,31"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1Car.html#a1efffc1014c81e16512eee6c311dbb97" title="Called every frame." alt="" coords="5,5,143,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,21,143,21,143,15,177,15"/>
 </map>

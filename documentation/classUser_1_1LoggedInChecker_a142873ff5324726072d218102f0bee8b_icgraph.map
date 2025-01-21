@@ -1,5 +1,7 @@
 <map id="User.LoggedInChecker.LoggedIn" name="User.LoggedInChecker.LoggedIn">
-<area shape="rect" id="node1" title="Update the user data from the server data" alt="" coords="657,5,885,32"/>
-<area shape="rect" id="node2" href="$classUser_1_1LoggedInChecker.html#a306ce5521a6109ae00667a32fd0a442c" title="Coroutine which calls the api endpoint to check if the user is still logged in" alt="" coords="265,5,609,32"/>
-<area shape="rect" id="node3" href="$classUser_1_1LoggedInChecker.html#a0f9199eb996ba1309b9bb6bad5d6268e" title="Called when the script is loaded" alt="" coords="5,5,217,32"/>
+<area shape="rect" id="Node000001" title="Update the user data from the server data." alt="" coords="657,5,885,31"/>
+<area shape="rect" id="Node000002" href="$classUser_1_1LoggedInChecker.html#a306ce5521a6109ae00667a32fd0a442c" title="Coroutine which calls the api endpoint to check if the user is still logged in." alt="" coords="265,5,609,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="643,21,609,21,609,15,643,15"/>
+<area shape="rect" id="Node000003" href="$classUser_1_1LoggedInChecker.html#a0f9199eb996ba1309b9bb6bad5d6268e" title="Called when the script is loaded." alt="" coords="5,5,217,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="251,21,218,21,218,15,251,15"/>
 </map>

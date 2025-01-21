@@ -1,5 +1,9 @@
 <map id="Game.World.RoadGenerator.CheckForward" name="Game.World.RoadGenerator.CheckForward">
-<area shape="rect" id="node1" title="Checks if the road moving in that direction will run into an another road" alt="" coords="689,5,988,32"/>
-<area shape="rect" id="node2" href="$classGame_1_1World_1_1RoadGenerator.html#ab3b7fa7ff101a87611b4be39e1777d51" title="Creates the roads recursively" alt="" coords="359,5,641,32"/>
-<area shape="rect" id="node3" href="$classGame_1_1World_1_1RoadGenerator.html#aedcb774ed36687d05b41b26378207e53" title="Creates the road matrix" alt="" coords="5,5,311,32"/>
+<area shape="rect" id="Node000001" title="Checks if the road moving in that direction will run into an another road." alt="" coords="689,29,988,55"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="899,22,898,17,888,13,839,8,802,10,782,15,778,20,788,27,785,31,773,21,779,11,801,5,839,3,890,7,902,13,904,20"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1World_1_1RoadGenerator.html#ab3b7fa7ff101a87611b4be39e1777d51" title="Creates the roads recursively." alt="" coords="359,29,641,55"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="676,45,641,45,641,39,676,39"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="560,22,559,17,550,13,500,8,463,10,443,15,439,20,449,27,446,31,434,21,440,11,462,5,500,3,551,7,563,13,566,20"/>
+<area shape="rect" id="Node000003" href="$classGame_1_1World_1_1RoadGenerator.html#aedcb774ed36687d05b41b26378207e53" title="Creates the road matrix." alt="" coords="5,29,311,55"/>
+<area shape="poly" id="edge4_Node000002_Node000003" title=" " alt="" coords="345,45,311,45,311,39,345,39"/>
 </map>

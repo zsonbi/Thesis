@@ -1,6 +1,10 @@
 <map id="MainPage.FriendWindowHandler" name="MainPage.FriendWindowHandler">
-<area shape="rect" id="node1" title="Handles the friend window display" alt="" coords="5,487,324,711"/>
-<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="60,132,259,209"/>
-<area shape="rect" id="node4" href="$classUtility_1_1ModalWindow.html" title="Modal window for alerting the user" alt="" coords="181,259,503,424"/>
-<area shape="rect" id="node3" title=" " alt="" coords="97,5,221,83"/>
+<area shape="rect" id="Node000001" title="Handles the friend window display." alt="" coords="5,477,315,743"/>
+<area shape="rect" id="Node000002" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool." alt="" coords="59,120,250,185"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,199,161,477,156,477,153,199"/>
+<area shape="rect" id="Node000004" href="$classUtility_1_1ModalWindow.html" title="Modal window for alerting the user." alt="" coords="176,235,491,415"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="200,193,241,233,238,236,196,197"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="97,5,213,71"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="157,85,157,120,152,120,152,85"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="281,416,251,465,247,462,276,414"/>
 </map>

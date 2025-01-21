@@ -1,6 +1,9 @@
 <map id="Game.GameController.ValidateAndLoadChunk" name="Game.GameController.ValidateAndLoadChunk">
-<area shape="rect" id="node1" title="Checks if the selected chunk is in range and loads it if the world exists" alt="" coords="1023,5,1344,32"/>
-<area shape="rect" id="node2" href="$classGame_1_1GameController.html#a2003e53e493cca6ace00e260e7161a03" title="Spawns and loads the nearby chunks" alt="" coords="665,5,975,32"/>
-<area shape="rect" id="node3" href="$classGame_1_1GameController.html#af623e7876622503e3d0f985ad9b08e47" title="Handle the load and despawning of the chunks relative to the given indices" alt="" coords="283,5,617,32"/>
-<area shape="rect" id="node4" href="$classGame_1_1PlayerCar.html#a18f30f1f6873f043457ce9f81ac47ed4" title="Override the chunk changed method to make it load and despawn the chunks" alt="" coords="5,5,235,32"/>
+<area shape="rect" id="Node000001" title="Checks if the selected chunk is in range and loads it if the world exists." alt="" coords="1023,5,1344,31"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1GameController.html#a2003e53e493cca6ace00e260e7161a03" title="Spawns and loads the nearby chunks." alt="" coords="665,5,975,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1009,21,975,21,975,15,1009,15"/>
+<area shape="rect" id="Node000003" href="$classGame_1_1GameController.html#af623e7876622503e3d0f985ad9b08e47" title="Handle the load and despawning of the chunks relative to the given indices." alt="" coords="283,5,617,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="651,21,617,21,617,15,651,15"/>
+<area shape="rect" id="Node000004" href="$classGame_1_1PlayerCar.html#a18f30f1f6873f043457ce9f81ac47ed4" title="Override the chunk changed method to make it load and despawn the chunks." alt="" coords="5,5,235,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="269,21,235,21,235,15,269,15"/>
 </map>

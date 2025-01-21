@@ -1,8 +1,13 @@
 <map id="Game.UI.GameUI.HideGameOverScreen" name="Game.UI.GameUI.HideGameOverScreen">
-<area shape="rect" id="node1" title="Hide the game over screen" alt="" coords="5,56,289,83"/>
-<area shape="rect" id="node2" href="$classGame_1_1UI_1_1GameUI.html#a4f9c8b23e2a0e5d86c53377ece2c9bac" title="Save the game&#39;s result" alt="" coords="337,56,589,83"/>
-<area shape="rect" id="node3" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="637,5,901,32"/>
-<area shape="rect" id="node4" href="$classGame_1_1UI_1_1GameUI.html#a984a1e174ca8249e0433de8d2d8a462c" title="Callback after the coins amount were saved" alt="" coords="661,56,877,83"/>
-<area shape="rect" id="node5" href="$classGame_1_1UI_1_1GameUI.html#ac464d5a547acb44085748e2ee265272f" title="Show if the request failed on the modal window" alt="" coords="644,107,895,133"/>
-<area shape="rect" id="node6" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window" alt="" coords="949,107,1144,133"/>
+<area shape="rect" id="Node000001" title="Hide the game over screen." alt="" coords="5,55,289,80"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1UI_1_1GameUI.html#a4f9c8b23e2a0e5d86c53377ece2c9bac" title="Save the game&#39;s result." alt="" coords="337,55,589,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="290,65,323,65,323,70,290,70"/>
+<area shape="rect" id="Node000003" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines." alt="" coords="637,5,901,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="542,52,676,30,677,36,543,57"/>
+<area shape="rect" id="Node000004" href="$classGame_1_1UI_1_1GameUI.html#a984a1e174ca8249e0433de8d2d8a462c" title="Callback after the coins amount were saved." alt="" coords="661,55,877,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="589,65,647,65,647,70,589,70"/>
+<area shape="rect" id="Node000005" href="$classGame_1_1UI_1_1GameUI.html#ac464d5a547acb44085748e2ee265272f" title="Show if the request failed on the modal window." alt="" coords="644,104,895,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="543,77,677,99,676,104,542,83"/>
+<area shape="rect" id="Node000006" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window." alt="" coords="949,104,1144,129"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="895,114,935,114,935,119,895,119"/>
 </map>

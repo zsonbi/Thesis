@@ -1,4 +1,5 @@
 <map id="Config.ServerConfig.PATH_FOR_FRIEND_DELETE" name="Config.ServerConfig.PATH_FOR_FRIEND_DELETE">
-<area shape="rect" id="node1" title="Path for the friend delete api endpoint" alt="" coords="320,5,653,32"/>
-<area shape="rect" id="node2" href="$classMainPage_1_1FriendHandler.html#a118aed89960ec6338411e4130e3fe87c" title="Send a request to the server that the user deleted this friend" alt="" coords="5,5,272,32"/>
+<area shape="rect" id="Node000001" title="Path for the friend delete api endpoint." alt="" coords="320,5,653,31"/>
+<area shape="rect" id="Node000002" href="$classMainPage_1_1FriendHandler.html#a118aed89960ec6338411e4130e3fe87c" title="Send a request to the server that the user deleted this friend." alt="" coords="5,5,272,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="306,21,272,21,272,15,306,15"/>
 </map>

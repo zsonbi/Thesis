@@ -1,9 +1,15 @@
 <map id="User.LoggedInChecker.Awake" name="User.LoggedInChecker.Awake">
-<area shape="rect" id="node1" title="Called when the script is loaded" alt="" coords="5,56,217,83"/>
-<area shape="rect" id="node2" href="$classUser_1_1LoggedInChecker.html#a306ce5521a6109ae00667a32fd0a442c" title="Coroutine which calls the api endpoint to check if the user is still logged in" alt="" coords="265,56,609,83"/>
-<area shape="rect" id="node3" href="$classUser_1_1LoggedInChecker.html#a142873ff5324726072d218102f0bee8b" title="Update the user data from the server data" alt="" coords="675,5,903,32"/>
-<area shape="rect" id="node5" href="$classUser_1_1LoggedInChecker.html#aa0be140ec2e3efb96d0a9c306e6d811a" title="Handles if the user is not logged in" alt="" coords="670,56,909,83"/>
-<area shape="rect" id="node7" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="657,107,921,133"/>
-<area shape="rect" id="node4" href="$classUser_1_1UserData.html#abb372911b5e49023a977bd064f46bb6e" title="Initialises the user instance with proper data" alt="" coords="981,5,1122,32"/>
-<area shape="rect" id="node6" href="$classUser_1_1UserData.html#a8c8911482003919ea4fbab040c755f8f" title="Signal&#39;s that the user is logged out" alt="" coords="969,56,1133,83"/>
+<area shape="rect" id="Node000001" title="Called when the script is loaded." alt="" coords="5,55,217,80"/>
+<area shape="rect" id="Node000002" href="$classUser_1_1LoggedInChecker.html#a306ce5521a6109ae00667a32fd0a442c" title="Coroutine which calls the api endpoint to check if the user is still logged in." alt="" coords="265,55,609,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,65,252,65,252,70,218,70"/>
+<area shape="rect" id="Node000003" href="$classUser_1_1LoggedInChecker.html#a142873ff5324726072d218102f0bee8b" title="Update the user data from the server data." alt="" coords="675,5,903,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="528,52,684,30,684,35,529,57"/>
+<area shape="rect" id="Node000005" href="$classUser_1_1LoggedInChecker.html#aa0be140ec2e3efb96d0a9c306e6d811a" title="Handles if the user is not logged in." alt="" coords="670,55,909,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="610,65,656,65,656,70,610,70"/>
+<area shape="rect" id="Node000007" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines." alt="" coords="657,104,921,129"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="529,77,684,99,684,105,528,83"/>
+<area shape="rect" id="Node000004" href="$classUser_1_1UserData.html#abb372911b5e49023a977bd064f46bb6e" title="Initialises the user instance with proper data." alt="" coords="981,5,1122,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="904,15,967,15,967,21,904,21"/>
+<area shape="rect" id="Node000006" href="$classUser_1_1UserData.html#a8c8911482003919ea4fbab040c755f8f" title="Signal&#39;s that the user is logged out." alt="" coords="969,55,1133,80"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="909,65,955,65,955,70,909,70"/>
 </map>

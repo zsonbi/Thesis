@@ -1,5 +1,7 @@
 <map id="Game.World.Chunk.CreateTiles" name="Game.World.Chunk.CreateTiles">
-<area shape="rect" id="node1" title="Creates the tiles for the chunk" alt="" coords="5,5,231,32"/>
-<area shape="rect" id="node2" href="$classGame_1_1World_1_1Chunk.html#ac4b762352bb5f90952fe57e5c0ee208f" title="Determines the type of the tile at the coord" alt="" coords="279,5,553,32"/>
-<area shape="rect" id="node3" href="$classGame_1_1World_1_1Chunk.html#a2d39efc9f5c0f3c302dd7e9d007096c7" title="Determine what type of road it is" alt="" coords="601,5,884,32"/>
+<area shape="rect" id="Node000001" title="Creates the tiles for the chunk." alt="" coords="5,5,231,31"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1World_1_1Chunk.html#ac4b762352bb5f90952fe57e5c0ee208f" title="Determines the type of the tile at the coord." alt="" coords="279,5,553,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,15,265,15,265,21,231,21"/>
+<area shape="rect" id="Node000003" href="$classGame_1_1World_1_1Chunk.html#a2d39efc9f5c0f3c302dd7e9d007096c7" title="Determine what type of road it is." alt="" coords="601,5,884,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="554,15,587,15,587,21,554,21"/>
 </map>

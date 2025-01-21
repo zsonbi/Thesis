@@ -1,11 +1,19 @@
 <map id="Game.CopCar.Update" name="Game.CopCar.Update">
-<area shape="rect" id="node1" title="Called every frame" alt="" coords="5,81,168,108"/>
-<area shape="rect" id="node2" href="$classGame_1_1NpcCar.html#ac7bf4d022d0601c6262c6ffcfcf80a59" title="Determine the way the player is" alt="" coords="216,56,607,83"/>
-<area shape="rect" id="node3" href="$classGame_1_1CarController.html#ae3eb6260519b20b09bc1226be3919be2" title=" " alt="" coords="316,107,507,133"/>
-<area shape="rect" id="node4" href="$classGame_1_1CarController.html#afadda4712607531e93172fcd43557f14" title=" " alt="" coords="655,5,906,32"/>
-<area shape="rect" id="node5" href="$classGame_1_1CarController.html#aebd7dfca747e22622550ce42076052af" title=" " alt="" coords="667,56,894,83"/>
-<area shape="rect" id="node6" href="$classGame_1_1CarController.html#a906b060eb3177f7706893b9e0e098dc8" title=" " alt="" coords="671,107,890,133"/>
-<area shape="rect" id="node7" href="$classGame_1_1CarController.html#a764c5ed47cd5bb83923e9fa443935af7" title=" " alt="" coords="665,157,896,184"/>
-<area shape="rect" id="node8" href="$classGame_1_1CarController.html#a298e55b1a36b51f9c4e4aa7883056a00" title=" " alt="" coords="655,208,907,235"/>
-<area shape="rect" id="node9" href="$classGame_1_1CarController.html#a7589f8f5b951a0d3283790774bf97493" title=" " alt="" coords="955,208,1193,235"/>
+<area shape="rect" id="Node000001" title="Called every frame." alt="" coords="5,80,168,105"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1NpcCar.html#ac7bf4d022d0601c6262c6ffcfcf80a59" title="Determine the way the player is." alt="" coords="216,55,607,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,84,235,78,235,84,168,89"/>
+<area shape="rect" id="Node000003" href="$classGame_1_1CarController.html#ae3eb6260519b20b09bc1226be3919be2" title=" " alt="" coords="316,104,507,129"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="168,96,302,106,302,111,168,101"/>
+<area shape="rect" id="Node000004" href="$classGame_1_1CarController.html#afadda4712607531e93172fcd43557f14" title=" " alt="" coords="655,5,906,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="507,114,557,106,605,89,620,78,629,65,638,52,653,40,667,33,670,38,656,44,642,56,633,68,624,82,608,94,559,111,508,119"/>
+<area shape="rect" id="Node000005" href="$classGame_1_1CarController.html#aebd7dfca747e22622550ce42076052af" title=" " alt="" coords="667,55,894,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="507,102,606,89,675,79,676,85,607,94,507,107"/>
+<area shape="rect" id="Node000006" href="$classGame_1_1CarController.html#a906b060eb3177f7706893b9e0e098dc8" title=" " alt="" coords="671,104,890,129"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="507,114,657,114,657,119,507,119"/>
+<area shape="rect" id="Node000007" href="$classGame_1_1CarController.html#a764c5ed47cd5bb83923e9fa443935af7" title=" " alt="" coords="665,153,896,179"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="507,127,671,149,671,154,507,132"/>
+<area shape="rect" id="Node000008" href="$classGame_1_1CarController.html#a298e55b1a36b51f9c4e4aa7883056a00" title=" " alt="" coords="655,203,907,228"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="451,127,544,156,655,187,698,197,696,202,654,193,542,161,450,132"/>
+<area shape="rect" id="Node000009" href="$classGame_1_1CarController.html#a7589f8f5b951a0d3283790774bf97493" title=" " alt="" coords="955,203,1193,228"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="907,213,941,213,941,218,907,218"/>
 </map>

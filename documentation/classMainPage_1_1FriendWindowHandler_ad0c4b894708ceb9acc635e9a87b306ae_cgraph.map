@@ -1,8 +1,13 @@
 <map id="MainPage.FriendWindowHandler.SendFriendRequest" name="MainPage.FriendWindowHandler.SendFriendRequest">
-<area shape="rect" id="node1" title="Sends a friend request to the user which was specified in the useridentification input" alt="" coords="5,56,365,83"/>
-<area shape="rect" id="node2" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="460,5,724,32"/>
-<area shape="rect" id="node3" href="$classMainPage_1_1FriendWindowHandler.html#a61d9cd37518259d360474dd5fe55ae24" title="After the friend request was sent load the friend prefab if it can show pending" alt="" coords="413,56,771,83"/>
-<area shape="rect" id="node5" href="$classMainPage_1_1FriendWindowHandler.html#a426fe4fa5825088784861d79cf48048d" title="Show api request failure" alt="" coords="419,107,765,133"/>
-<area shape="rect" id="node4" href="$classMainPage_1_1FriendHandler.html#ab894b96203019d08e341bbb6090af8b8" title="Inititializes a new display with the given friend to display" alt="" coords="819,56,1065,83"/>
-<area shape="rect" id="node6" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window" alt="" coords="845,107,1039,133"/>
+<area shape="rect" id="Node000001" title="Sends a friend request to the user which was specified in the useridentification input." alt="" coords="5,55,365,80"/>
+<area shape="rect" id="Node000002" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines." alt="" coords="460,5,724,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="290,52,473,30,474,35,291,57"/>
+<area shape="rect" id="Node000003" href="$classMainPage_1_1FriendWindowHandler.html#a61d9cd37518259d360474dd5fe55ae24" title="After the friend request was sent load the friend prefab if it can show pending." alt="" coords="413,55,771,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="366,65,400,65,400,70,366,70"/>
+<area shape="rect" id="Node000005" href="$classMainPage_1_1FriendWindowHandler.html#a426fe4fa5825088784861d79cf48048d" title="Show api request failure." alt="" coords="419,104,765,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="291,77,474,100,473,105,290,83"/>
+<area shape="rect" id="Node000004" href="$classMainPage_1_1FriendHandler.html#ab894b96203019d08e341bbb6090af8b8" title="Inititializes a new display with the given friend to display." alt="" coords="819,55,1065,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="771,65,805,65,805,70,771,70"/>
+<area shape="rect" id="Node000006" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window." alt="" coords="845,104,1039,129"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="765,114,831,114,831,119,765,119"/>
 </map>

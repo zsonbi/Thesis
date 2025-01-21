@@ -1,36 +1,69 @@
 <map id="Utility.ThreadSafeMonoBehaviour" name="Utility.ThreadSafeMonoBehaviour">
-<area shape="rect" id="node1" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="5002,131,5242,208"/>
-<area shape="rect" id="node3" href="$classCameraScript.html" title="Script which follows the player&#39;s car" alt="" coords="5,557,244,663"/>
-<area shape="rect" id="node4" href="$classGame_1_1Car.html" title="Handles the basic Car functionalities" alt="" coords="269,469,647,751"/>
-<area shape="rect" id="node8" href="$classGame_1_1CarController.html" title=" " alt="" coords="671,344,1050,876"/>
-<area shape="rect" id="node9" href="$classGame_1_1EffectScript.html" title="Handles the car&#39;s effects" alt="" coords="1075,564,1249,656"/>
-<area shape="rect" id="node10" href="$classGame_1_1EnableWheelPhysicMaterial.html" title="Script to enable the physics materials for the wheel colliders" alt="" coords="1273,549,1520,671"/>
-<area shape="rect" id="node11" href="$classGame_1_1GameController.html" title="Handles the main flow of the game scene" alt="" coords="1544,403,1919,817"/>
-<area shape="rect" id="node12" href="$classGame_1_1UI_1_1GameUI.html" title="Controller for the game&#39;s UI" alt="" coords="1943,293,2402,927"/>
-<area shape="rect" id="node13" href="$classGame_1_1UI_1_1LeaderboardItem.html" title="A single leaderboard item" alt="" coords="2426,564,2711,656"/>
-<area shape="rect" id="node14" href="$classGame_1_1UI_1_1LeaderboardWindow.html" title="Handles the leaderboard display window" alt="" coords="2736,520,3111,700"/>
-<area shape="rect" id="node15" href="$classGame_1_1UI_1_1ShopItem.html" title="A single shop item" alt="" coords="3135,498,3549,722"/>
-<area shape="rect" id="node16" href="$classGame_1_1UI_1_1ShopWindow.html" title="Handles the shop window&#39;s content display" alt="" coords="3574,491,3921,729"/>
-<area shape="rect" id="node17" href="$classGame_1_1UI_1_1StarHandler.html" title="Star handler" alt="" coords="3945,557,4211,663"/>
-<area shape="rect" id="node18" href="$classGame_1_1World_1_1Building.html" title="Building handler" alt="" coords="4235,505,4531,715"/>
-<area shape="rect" id="node19" href="$classGame_1_1World_1_1CarSpawner.html" title="Car spawner" alt="" coords="4556,491,4875,729"/>
-<area shape="rect" id="node20" href="$classGame_1_1World_1_1Chunk.html" title="Stores a single chunk of the world" alt="" coords="4899,256,5345,964"/>
-<area shape="rect" id="node21" href="$classGame_1_1World_1_1Coin.html" title="Coin gameobject" alt="" coords="5369,564,5627,656"/>
-<area shape="rect" id="node22" href="$classGame_1_1World_1_1GameWorld.html" title="A class for handling chunk loading and unloading" alt="" coords="5651,527,6001,693"/>
-<area shape="rect" id="node23" href="$classGame_1_1World_1_1Prop.html" title="Prop handler" alt="" coords="6026,520,6322,700"/>
-<area shape="rect" id="node24" href="$classMainPage_1_1FriendHandler.html" title="Handles a single friend entry display" alt="" coords="6346,505,6775,715"/>
-<area shape="rect" id="node25" href="$classMainPage_1_1FriendWindowHandler.html" title="Handles the friend window display" alt="" coords="6800,491,7119,729"/>
-<area shape="rect" id="node26" href="$classMainPage_1_1MainWindowController.html" title="Handles the main window&#39;s controls" alt="" coords="7143,417,7607,803"/>
-<area shape="rect" id="node27" href="$classMainPage_1_1ProfileHandler.html" title="Handles the user&#39;s profile such as statistics and logout button" alt="" coords="7632,520,7881,700"/>
-<area shape="rect" id="node28" href="$classMainPage_1_1TaskDisplayHandler.html" title="Task prefab display handler" alt="" coords="7905,461,8403,759"/>
-<area shape="rect" id="node29" href="$classMainPage_1_1TaskHistoryHandler.html" title="Handles the task history display" alt="" coords="8428,557,8683,663"/>
-<area shape="rect" id="node30" href="$classMainPage_1_1TaskHistoryWindowHandler.html" title="Task histories window controller" alt="" coords="8707,527,9105,693"/>
-<area shape="rect" id="node31" href="$classMainPage_1_1TaskOpenPanelController.html" title="Controller for displaying, editing and creating tasks" alt="" coords="9129,410,9627,810"/>
-<area shape="rect" id="node32" href="$classUser_1_1LoggedInChecker.html" title="Checks if the user has a session stored in the backend" alt="" coords="9651,542,10070,678"/>
-<area shape="rect" id="node33" href="$classUser_1_1UserController.html" title="Handles the user actions such as registering and login" alt="" coords="10095,476,10573,744"/>
-<area shape="rect" id="node34" href="$classUtility_1_1ModalWindow.html" title="Modal window for alerting the user" alt="" coords="10598,527,10921,693"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5060,5,5184,83"/>
-<area shape="rect" id="node5" href="$classGame_1_1NpcCar.html" title="Object for the npc cars It is not yet used" alt="" coords="81,1137,437,1214"/>
-<area shape="rect" id="node7" href="$classGame_1_1PlayerCar.html" title="Handles the player&#39;s car" alt="" coords="461,1012,852,1339"/>
-<area shape="rect" id="node6" href="$classGame_1_1CopCar.html" title="Handles the police car" alt="" coords="167,1387,351,1464"/>
+<area shape="rect" id="Node000001" title="Safely stores if the gameobject been destroyed in a bool." alt="" coords="4915,119,5147,184"/>
+<area shape="rect" id="Node000003" href="$classCameraScript.html" title="Script which follows the player&#39;s car." alt="" coords="5,637,236,742"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="4901,155,3869,158,2326,168,1562,178,908,191,444,210,307,222,268,228,249,234,208,275,176,324,153,378,136,435,126,492,121,546,120,636,114,636,116,546,121,491,131,433,148,376,171,321,204,272,246,230,266,223,307,216,443,205,908,186,1562,172,2326,162,3869,152,4901,150"/>
+<area shape="rect" id="Node000004" href="$classGame_1_1Car.html" title="Handles the basic Car functionalities." alt="" coords="260,517,629,862"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="4901,156,3946,161,2536,173,1839,184,1244,197,821,214,696,224,642,234,609,260,580,291,554,325,532,362,498,439,474,517,469,516,493,437,528,359,550,322,576,287,605,256,640,230,695,218,820,209,1244,192,1839,178,2536,168,3946,155,4901,150"/>
+<area shape="rect" id="Node000008" href="$classGame_1_1CarController.html" title=" " alt="" coords="653,349,1023,1029"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="4901,156,4022,162,2744,176,2115,186,1578,200,1196,216,1084,225,1035,234,1005,258,977,286,953,317,932,350,927,348,949,314,973,283,1001,254,1033,230,1083,219,1196,210,1577,194,2115,181,2744,171,4022,157,4901,151"/>
+<area shape="rect" id="Node000009" href="$classGame_1_1EffectScript.html" title="Handles the car&#39;s effects." alt="" coords="1047,647,1213,732"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="4901,156,4059,161,2843,174,2246,184,1737,197,1377,214,1271,224,1226,234,1186,277,1157,329,1138,385,1126,444,1121,503,1120,558,1126,646,1121,647,1115,558,1115,502,1121,443,1133,384,1152,326,1182,274,1223,230,1270,219,1376,209,1737,192,2246,179,2843,168,4059,156,4901,151"/>
+<area shape="rect" id="Node000010" href="$classGame_1_1EnableWheelPhysicMaterial.html" title="Script to enable the physics materials for the wheel colliders." alt="" coords="1237,627,1476,752"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="4901,156,4111,163,2984,177,2432,188,1961,201,1628,216,1531,225,1489,234,1449,273,1417,320,1394,372,1377,427,1366,482,1359,536,1356,627,1351,626,1354,535,1360,482,1372,426,1389,371,1412,318,1445,270,1486,230,1530,220,1628,211,1961,195,2431,182,2984,172,4111,157,4901,151"/>
+<area shape="rect" id="Node000011" href="$classGame_1_1GameController.html" title="Handles the main flow of the game scene." alt="" coords="1500,429,1867,949"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="4902,157,4191,166,3194,182,2295,205,2002,219,1916,227,1879,234,1833,273,1795,321,1764,374,1739,430,1735,428,1759,371,1791,318,1829,270,1877,230,1916,221,2002,214,2295,200,3194,177,4191,160,4902,151"/>
+<area shape="rect" id="Node000012" href="$classGame_1_1UI_1_1GameUI.html" title="Controller for the game&#39;s UI." alt="" coords="1891,277,2348,1102"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="4902,156,4300,159,3477,170,3075,180,2731,194,2480,212,2402,223,2362,234,2306,278,2303,274,2359,230,2401,217,2479,207,2730,189,3075,175,3477,165,4300,154,4902,150"/>
+<area shape="rect" id="Node000013" href="$classGame_1_1UI_1_1LeaderboardItem.html" title="A single leaderboard item." alt="" coords="2373,647,2650,732"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="4902,156,4361,159,3635,170,3283,180,2982,194,2765,212,2697,223,2663,234,2619,276,2584,327,2558,384,2539,443,2526,502,2519,557,2513,647,2508,646,2513,556,2521,501,2534,441,2553,382,2580,325,2615,273,2661,230,2696,217,2764,207,2982,189,3283,175,3635,165,4361,154,4902,150"/>
+<area shape="rect" id="Node000014" href="$classGame_1_1UI_1_1LeaderboardWindow.html" title="Handles the leaderboard display window." alt="" coords="2674,587,3047,792"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="4902,157,4444,164,3849,178,3563,189,3319,201,3143,217,3088,225,3061,234,3020,268,2986,308,2956,352,2932,400,2912,449,2897,498,2876,587,2871,586,2892,496,2907,447,2927,398,2952,350,2981,305,3017,264,3058,230,3087,220,3142,211,3319,196,3563,183,3849,173,4444,159,4901,151"/>
+<area shape="rect" id="Node000015" href="$classGame_1_1UI_1_1ShopItem.html" title="A single shop item." alt="" coords="3072,559,3484,819"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="4901,155,4551,156,4111,165,3900,175,3716,190,3576,209,3528,221,3498,234,3459,265,3425,301,3396,341,3371,384,3331,474,3305,560,3300,558,3326,472,3366,382,3392,338,3421,297,3456,261,3495,230,3527,216,3575,204,3715,184,3899,170,4111,160,4550,150,4901,149"/>
+<area shape="rect" id="Node000016" href="$classGame_1_1UI_1_1ShopWindow.html" title="Handles the shop window&#39;s content display." alt="" coords="3509,547,3853,832"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="4902,156,4631,162,4307,175,4154,185,4022,198,3922,214,3888,224,3866,234,3831,264,3801,299,3776,337,3754,378,3721,464,3701,547,3695,546,3716,462,3749,376,3771,334,3797,295,3828,260,3863,230,3886,219,3921,209,4021,192,4153,179,4307,169,4631,156,4902,151"/>
+<area shape="rect" id="Node000017" href="$classGame_1_1UI_1_1StarHandler.html" title="Star handler." alt="" coords="3877,637,4135,742"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="4902,159,4694,168,4459,182,4257,204,4187,218,4149,234,4108,276,4075,325,4050,380,4032,436,4020,493,4013,547,4008,637,4002,636,4007,547,4015,492,4027,435,4045,378,4070,323,4104,273,4146,230,4186,213,4256,199,4459,177,4694,162,4901,154"/>
+<area shape="rect" id="Node000018" href="$classGame_1_1World_1_1Building.html" title="Building handler." alt="" coords="4159,567,4447,812"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="4901,158,4779,165,4650,178,4590,188,4536,201,4492,216,4461,234,4427,267,4398,305,4375,347,4355,391,4328,482,4313,567,4308,566,4323,481,4350,390,4370,345,4394,302,4423,264,4458,230,4490,211,4534,195,4588,183,4649,173,4779,159,4901,153"/>
+<area shape="rect" id="Node000019" href="$classGame_1_1World_1_1CarSpawner.html" title="Car spawner." alt="" coords="4472,547,4788,832"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="4903,178,4849,200,4825,216,4803,234,4773,267,4746,304,4704,384,4673,468,4653,547,4648,546,4668,466,4699,382,4742,301,4768,264,4799,230,4822,211,4847,196,4901,173"/>
+<area shape="rect" id="Node000020" href="$classGame_1_1World_1_1Chunk.html" title="Stores a single chunk of the world." alt="" coords="4813,232,5250,1147"/>
+<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="5034,198,5034,232,5029,232,5029,198"/>
+<area shape="rect" id="Node000021" href="$classGame_1_1World_1_1Coin.html" title="Coin gameobject." alt="" coords="5274,647,5522,732"/>
+<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="5162,172,5216,194,5242,211,5264,230,5302,279,5333,333,5356,391,5374,450,5394,561,5400,646,5395,647,5388,561,5369,451,5351,393,5328,335,5298,282,5260,234,5238,215,5214,199,5160,176"/>
+<area shape="rect" id="Node000022" href="$classGame_1_1World_1_1GameWorld.html" title="A class for handling chunk loading and unloading." alt="" coords="5546,597,5887,782"/>
+<area shape="poly" id="edge21_Node000001_Node000022" title=" " alt="" coords="5161,156,5266,165,5375,179,5471,200,5508,214,5536,230,5575,267,5608,311,5636,358,5659,407,5691,507,5709,596,5704,597,5686,508,5654,409,5631,360,5604,314,5571,271,5532,234,5506,219,5470,205,5375,184,5266,170,5161,161"/>
+<area shape="rect" id="Node000023" href="$classGame_1_1World_1_1Prop.html" title="Prop handler." alt="" coords="5911,587,6199,792"/>
+<area shape="poly" id="edge22_Node000001_Node000023" title=" " alt="" coords="5161,154,5365,163,5595,178,5792,200,5861,214,5901,230,5938,265,5969,307,5994,352,6014,400,6030,449,6041,498,6054,586,6049,587,6036,499,6024,451,6009,402,5990,355,5965,310,5934,269,5898,234,5860,219,5792,205,5594,184,5364,169,5161,159"/>
+<area shape="rect" id="Node000024" href="$classMainPage_1_1FriendHandler.html" title="Handles a single friend entry display." alt="" coords="6223,567,6650,812"/>
+<area shape="poly" id="edge23_Node000001_Node000024" title=" " alt="" coords="5161,151,5435,157,5762,171,5918,181,6052,194,6154,210,6189,219,6213,230,6253,262,6289,300,6320,342,6346,386,6387,479,6415,566,6410,567,6382,481,6341,389,6315,344,6285,303,6250,266,6210,234,6188,224,6153,215,6051,199,5917,186,5762,176,5434,163,5161,157"/>
+<area shape="rect" id="Node000025" href="$classMainPage_1_1FriendWindowHandler.html" title="Handles the friend window display." alt="" coords="6674,547,6983,832"/>
+<area shape="poly" id="edge24_Node000001_Node000025" title=" " alt="" coords="5161,152,5546,161,6030,177,6455,200,6596,214,6640,221,6663,230,6698,260,6728,295,6752,334,6773,376,6803,463,6820,546,6815,547,6797,464,6768,378,6748,337,6723,299,6694,264,6661,234,6639,227,6595,219,6455,205,6030,182,5546,167,5161,158"/>
+<area shape="rect" id="Node000026" href="$classMainPage_1_1MainWindowController.html" title="Handles the main window&#39;s controls." alt="" coords="7007,449,7463,929"/>
+<area shape="poly" id="edge25_Node000001_Node000026" title=" " alt="" coords="5161,152,5617,159,6209,174,6493,185,6736,197,6912,212,6967,221,6997,230,7052,273,7098,327,7136,386,7168,448,7163,450,7132,389,7094,330,7048,277,6994,234,6966,226,6911,218,6736,203,6493,190,6209,180,5616,165,5161,157"/>
+<area shape="rect" id="Node000027" href="$classMainPage_1_1ProfileHandler.html" title="Handles the user&#39;s profile such as statistics and logout button." alt="" coords="7488,587,7735,792"/>
+<area shape="poly" id="edge26_Node000001_Node000027" title=" " alt="" coords="5161,150,5717,153,6468,163,6832,173,7144,187,7370,206,7440,217,7477,230,7514,265,7544,306,7567,351,7585,399,7598,448,7607,497,7616,586,7610,586,7602,498,7593,449,7580,401,7562,353,7539,309,7510,268,7474,234,7439,222,7369,211,7144,192,6832,179,6468,169,5717,158,5161,155"/>
+<area shape="rect" id="Node000028" href="$classMainPage_1_1TaskDisplayHandler.html" title="Task prefab display handler." alt="" coords="7759,509,8256,869"/>
+<area shape="poly" id="edge27_Node000001_Node000028" title=" " alt="" coords="5161,150,5771,154,6609,165,7018,175,7370,189,7626,207,7706,217,7748,230,7785,255,7819,285,7849,318,7876,354,7921,431,7956,508,7952,510,7917,433,7871,357,7845,322,7815,289,7782,259,7746,234,7705,223,7625,212,7370,194,7018,181,6609,171,5771,159,5161,156"/>
+<area shape="rect" id="Node000029" href="$classMainPage_1_1TaskHistoryHandler.html" title="Handles the task history display." alt="" coords="8280,637,8527,742"/>
+<area shape="poly" id="edge28_Node000001_Node000029" title=" " alt="" coords="5161,151,5889,159,6915,174,7415,185,7841,198,8142,212,8230,221,8270,230,8313,272,8346,321,8371,376,8388,433,8399,491,8406,545,8409,636,8403,636,8400,546,8394,492,8383,435,8366,378,8341,324,8309,275,8267,234,8230,226,8141,218,7840,203,7415,190,6915,180,5889,164,5161,156"/>
+<area shape="rect" id="Node000030" href="$classMainPage_1_1TaskHistoryWindowHandler.html" title="Task histories window controller." alt="" coords="8551,597,8946,782"/>
+<area shape="poly" id="edge29_Node000001_Node000030" title=" " alt="" coords="5161,151,5943,159,7058,174,7604,185,8069,198,8399,213,8497,221,8540,230,8584,265,8621,306,8653,353,8679,403,8700,454,8716,504,8738,596,8733,597,8711,506,8695,456,8674,405,8648,356,8617,310,8581,269,8538,234,8496,226,8399,218,8069,203,7604,191,7058,180,5943,164,5161,156"/>
+<area shape="rect" id="Node000031" href="$classMainPage_1_1TaskOpenPanelController.html" title="Controller for displaying, editing and creating tasks." alt="" coords="8971,439,9468,939"/>
+<area shape="poly" id="edge30_Node000001_Node000031" title=" " alt="" coords="5161,151,6026,158,7280,173,7897,184,8424,197,8799,212,8909,220,8959,230,9015,271,9063,321,9103,378,9137,438,9132,440,9098,381,9058,325,9011,275,8957,234,8909,226,8798,217,8424,202,7897,189,7280,179,6026,164,5161,156"/>
+<area shape="rect" id="Node000032" href="$classUser_1_1LoggedInChecker.html" title="Checks if the user has a session stored in the backend." alt="" coords="9492,617,9901,762"/>
+<area shape="poly" id="edge31_Node000001_Node000032" title=" " alt="" coords="5161,150,6128,155,7557,168,8264,179,8868,192,9298,209,9425,219,9482,230,9529,267,9569,312,9602,362,9629,416,9651,470,9667,524,9689,616,9684,617,9662,525,9645,472,9624,418,9597,365,9564,315,9525,271,9480,234,9424,224,9298,214,8868,197,8264,184,7557,174,6128,161,5161,156"/>
+<area shape="rect" id="Node000033" href="$classUser_1_1UserController.html" title="Handles the user actions such as registering and login." alt="" coords="9925,527,10401,852"/>
+<area shape="poly" id="edge32_Node000001_Node000033" title=" " alt="" coords="5161,150,6212,155,7785,167,8566,177,9235,191,9711,208,9852,218,9894,224,9915,230,9954,257,9988,289,10019,324,10046,363,10090,445,10123,526,10118,528,10086,447,10041,366,10014,328,9984,292,9950,261,9913,234,9893,229,9852,223,9711,213,9235,196,8566,182,7785,172,6212,160,5161,156"/>
+<area shape="rect" id="Node000034" href="$classUtility_1_1ModalWindow.html" title="Modal window for alerting the user." alt="" coords="10426,599,10741,779"/>
+<area shape="poly" id="edge33_Node000001_Node000034" title=" " alt="" coords="5161,150,6307,151,8049,160,8917,170,9660,184,9958,193,10190,203,10346,216,10392,222,10415,230,10457,266,10490,308,10518,355,10539,406,10556,457,10568,508,10581,599,10576,599,10563,509,10551,459,10534,408,10513,358,10486,311,10453,269,10413,234,10391,227,10345,221,10190,209,9957,198,9660,189,8917,175,8049,165,6307,156,5161,155"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="4973,5,5089,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="5034,84,5034,119,5029,119,5029,84"/>
+<area shape="rect" id="Node000005" href="$classGame_1_1NpcCar.html" title="Object for the npc cars It is not yet used." alt="" coords="76,1365,424,1430"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="396,876,261,1365,256,1364,391,875"/>
+<area shape="rect" id="Node000007" href="$classGame_1_1PlayerCar.html" title="Handles the player&#39;s car." alt="" coords="449,1195,830,1600"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="498,875,586,1193,581,1195,493,876"/>
+<area shape="rect" id="Node000006" href="$classGame_1_1CopCar.html" title="Handles the police car." alt="" coords="162,1648,338,1713"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="253,1444,253,1648,247,1648,247,1444"/>
 </map>

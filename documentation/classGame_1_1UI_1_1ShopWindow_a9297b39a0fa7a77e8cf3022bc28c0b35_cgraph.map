@@ -1,8 +1,13 @@
 <map id="Game.UI.ShopWindow.UpdateShop" name="Game.UI.ShopWindow.UpdateShop">
-<area shape="rect" id="node1" title="Update the shop items" alt="" coords="5,56,255,83"/>
-<area shape="rect" id="node2" href="$classGame_1_1UI_1_1ShopWindow.html#a6a703aeb6610fe526d65a9b89ad4c78e" title="Display the loaded shop items" alt="" coords="303,5,589,32"/>
-<area shape="rect" id="node4" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="314,56,578,83"/>
-<area shape="rect" id="node5" href="$classGame_1_1UI_1_1ShopWindow.html#ab11a75acddb1467e29d7624a4d12b8b9" title="Show if the request failed on the modal window" alt="" coords="306,107,586,133"/>
-<area shape="rect" id="node3" href="$classGame_1_1UI_1_1ShopItem.html#a8f8263dc4d8a04ebbd12545537c98879" title="Initializes this shop item" alt="" coords="649,5,820,32"/>
-<area shape="rect" id="node6" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window" alt="" coords="637,107,832,133"/>
+<area shape="rect" id="Node000001" title="Update the shop items." alt="" coords="5,55,255,80"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1UI_1_1ShopWindow.html#a6a703aeb6610fe526d65a9b89ad4c78e" title="Display the loaded shop items." alt="" coords="303,5,589,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,52,350,30,351,35,212,57"/>
+<area shape="rect" id="Node000004" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines." alt="" coords="314,55,578,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="255,65,300,65,300,70,255,70"/>
+<area shape="rect" id="Node000005" href="$classGame_1_1UI_1_1ShopWindow.html#ab11a75acddb1467e29d7624a4d12b8b9" title="Show if the request failed on the modal window." alt="" coords="306,104,586,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="212,77,351,99,350,104,212,83"/>
+<area shape="rect" id="Node000003" href="$classGame_1_1UI_1_1ShopItem.html#a8f8263dc4d8a04ebbd12545537c98879" title="Initializes this shop item." alt="" coords="649,5,820,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="589,15,636,15,636,21,589,21"/>
+<area shape="rect" id="Node000006" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window." alt="" coords="637,104,832,129"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="586,114,623,114,623,119,586,119"/>
 </map>

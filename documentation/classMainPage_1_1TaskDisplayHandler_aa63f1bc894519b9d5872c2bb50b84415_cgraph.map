@@ -1,10 +1,21 @@
 <map id="MainPage.TaskDisplayHandler.UpdateTimeRemaining" name="MainPage.TaskDisplayHandler.UpdateTimeRemaining">
-<area shape="rect" id="node1" title="Update the time remaining until the task can be completed again" alt="" coords="5,31,376,57"/>
-<area shape="rect" id="node2" href="$classMainPage_1_1TaskDisplayHandler.html#a754a230e53cedd3209a29d4d6a743719" title="When the complete state is changed update the display to match it" alt="" coords="424,31,791,57"/>
-<area shape="rect" id="node3" href="$classMainPage_1_1MainWindowController.html#a85072f5d92f4145d6213209a13936639" title="Refreshes the tasks with the proper sorting order" alt="" coords="839,31,1181,57"/>
-<area shape="rect" id="node4" href="$classMainPage_1_1MainWindowController.html#a241b480aeebdab1bc34320cad8de7712" title="Load the good habits" alt="" coords="1231,5,1569,32"/>
-<area shape="rect" id="node7" href="$classMainPage_1_1MainWindowController.html#ab5b80370512cd4273e86927fe696462d" title="Load the good tasks" alt="" coords="1229,56,1571,83"/>
-<area shape="rect" id="node5" href="$classMainPage_1_1TaskOpenPanelController.html#a5513399c20f650915ca10f54805f416e" title="Make this task a bad habit" alt="" coords="1620,5,1979,32"/>
-<area shape="rect" id="node6" href="$classMainPage_1_1TaskOpenPanelController.html#aa0b6757dbad141375c50282278b23b1a" title="Update the buttons with the appropriate color based on the current task" alt="" coords="2028,31,2379,57"/>
-<area shape="rect" id="node8" href="$classMainPage_1_1TaskOpenPanelController.html#a069a63e2b7e70cc4cb4c7e487b655700" title="Make it a good task" alt="" coords="1619,56,1980,83"/>
+<area shape="rect" id="Node000001" title="Update the time remaining until the task can be completed again." alt="" coords="5,31,376,56"/>
+<area shape="rect" id="Node000002" href="$classMainPage_1_1TaskDisplayHandler.html#a754a230e53cedd3209a29d4d6a743719" title="When the complete state is changed update the display to match it." alt="" coords="424,31,791,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="377,50,410,50,410,55,377,55"/>
+<area shape="poly" id="edge11_Node000002_Node000001" title=" " alt="" coords="424,37,390,37,390,32,424,32"/>
+<area shape="rect" id="Node000003" href="$classMainPage_1_1MainWindowController.html#a85072f5d92f4145d6213209a13936639" title="Refreshes the tasks with the proper sorting order." alt="" coords="839,31,1181,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="791,41,825,41,825,46,791,46"/>
+<area shape="rect" id="Node000004" href="$classMainPage_1_1MainWindowController.html#a241b480aeebdab1bc34320cad8de7712" title="Load the good habits." alt="" coords="1231,5,1569,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1182,30,1216,27,1217,33,1182,35"/>
+<area shape="rect" id="Node000007" href="$classMainPage_1_1MainWindowController.html#ab5b80370512cd4273e86927fe696462d" title="Load the good tasks." alt="" coords="1229,55,1571,80"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="1182,51,1215,53,1215,59,1182,57"/>
+<area shape="rect" id="Node000005" href="$classMainPage_1_1TaskOpenPanelController.html#a5513399c20f650915ca10f54805f416e" title="Make this task a bad habit." alt="" coords="1620,5,1979,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1570,24,1607,24,1607,30,1570,30"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="1620,12,1583,12,1583,6,1620,6"/>
+<area shape="rect" id="Node000006" href="$classMainPage_1_1TaskOpenPanelController.html#aa0b6757dbad141375c50282278b23b1a" title="Update the buttons with the appropriate color based on the current task." alt="" coords="2028,31,2379,56"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="1979,27,2014,29,2014,34,1979,32"/>
+<area shape="rect" id="Node000008" href="$classMainPage_1_1TaskOpenPanelController.html#a069a63e2b7e70cc4cb4c7e487b655700" title="Make it a good task." alt="" coords="1619,55,1980,80"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="1571,74,1605,74,1605,79,1571,79"/>
+<area shape="poly" id="edge10_Node000008_Node000006" title=" " alt="" coords="1980,54,2014,52,2015,57,1980,59"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="1618,61,1584,61,1584,56,1618,56"/>
 </map>

@@ -1,4 +1,6 @@
 <map id="MainPage.TaskOpenPanelController.OpenUp" name="MainPage.TaskOpenPanelController.OpenUp">
-<area shape="rect" id="node1" title="Open up the panel" alt="" coords="347,5,653,32"/>
-<area shape="rect" id="node2" href="$classMainPage_1_1TaskDisplayHandler.html#a3a1617363fbdce6fc2c78f79d87f76e6" title="Open the task editor" alt="" coords="5,5,299,32"/>
+<area shape="rect" id="Node000001" title="Open up the panel." alt="" coords="347,29,653,55"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="562,22,561,17,551,13,500,8,462,10,442,15,438,20,448,27,445,31,433,21,439,11,462,5,500,3,552,7,565,13,567,20"/>
+<area shape="rect" id="Node000002" href="$classMainPage_1_1TaskDisplayHandler.html#a3a1617363fbdce6fc2c78f79d87f76e6" title="Open the task editor." alt="" coords="5,29,299,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="333,45,299,45,299,39,333,39"/>
 </map>

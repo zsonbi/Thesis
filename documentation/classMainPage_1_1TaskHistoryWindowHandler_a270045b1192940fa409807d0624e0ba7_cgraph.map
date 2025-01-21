@@ -1,4 +1,5 @@
 <map id="MainPage.TaskHistoryWindowHandler.LoadedHistories" name="MainPage.TaskHistoryWindowHandler.LoadedHistories">
-<area shape="rect" id="node1" title="When the server response is recieved load the histories" alt="" coords="5,5,381,32"/>
-<area shape="rect" id="node2" href="$classMainPage_1_1TaskHistoryHandler.html#aa0125cc571c13b416fb8c3b1ffe469af" title="Init the task history&#39;s with the data from the server" alt="" coords="429,5,669,32"/>
+<area shape="rect" id="Node000001" title="When the server response is recieved load the histories." alt="" coords="5,5,381,31"/>
+<area shape="rect" id="Node000002" href="$classMainPage_1_1TaskHistoryHandler.html#aa0125cc571c13b416fb8c3b1ffe469af" title="Init the task history&#39;s with the data from the server." alt="" coords="429,5,669,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="382,15,416,15,416,21,382,21"/>
 </map>

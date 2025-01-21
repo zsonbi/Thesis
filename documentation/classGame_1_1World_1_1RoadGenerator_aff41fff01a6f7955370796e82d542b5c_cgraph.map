@@ -1,0 +1,4 @@
+<map id="Game.World.RoadGenerator.CheckForward" name="Game.World.RoadGenerator.CheckForward">
+<area shape="rect" id="Node000001" title="Checks if the road moving in that direction will run into an another road." alt="" coords="5,29,304,55"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="107,31,97,21,102,11,122,5,155,3,198,7,209,13,213,19,208,21,206,16,197,12,155,8,123,10,105,15,102,20,111,27"/>
+</map>

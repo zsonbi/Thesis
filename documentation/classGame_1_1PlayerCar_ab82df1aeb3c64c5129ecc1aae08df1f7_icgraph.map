@@ -1,5 +1,7 @@
 <map id="Game.PlayerCar.CancelTurbo" name="Game.PlayerCar.CancelTurbo">
-<area shape="rect" id="node1" title="Cancel the turbo bonus" alt="" coords="488,5,699,32"/>
-<area shape="rect" id="node2" href="$classGame_1_1UI_1_1GameUI.html#a97a84e72b5ac1d245d1bfd3eb802fdfd" title="Buy the turbo power up" alt="" coords="240,5,440,32"/>
-<area shape="rect" id="node3" href="$classGame_1_1UI_1_1GameUI.html#a77f6894867ecdecc2f7ca4bea695849f" title="Called every frame" alt="" coords="5,5,192,32"/>
+<area shape="rect" id="Node000001" title="Cancel the turbo bonus." alt="" coords="488,5,699,31"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1UI_1_1GameUI.html#a97a84e72b5ac1d245d1bfd3eb802fdfd" title="Buy the turbo power up." alt="" coords="240,5,440,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="475,21,440,21,440,15,475,15"/>
+<area shape="rect" id="Node000003" href="$classGame_1_1UI_1_1GameUI.html#a77f6894867ecdecc2f7ca4bea695849f" title="Called every frame." alt="" coords="5,5,192,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="226,21,192,21,192,15,226,15"/>
 </map>

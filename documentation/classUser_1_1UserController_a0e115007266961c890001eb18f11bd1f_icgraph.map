@@ -1,4 +1,5 @@
 <map id="User.UserController.CheckLoggedIn" name="User.UserController.CheckLoggedIn">
-<area shape="rect" id="node1" title="Send a request to check if the user has logged in already" alt="" coords="236,5,487,32"/>
-<area shape="rect" id="node2" href="$classUser_1_1UserController.html#a8d7a7b7d698dd47d420cc52ca90def5d" title="Start is called before the first frame update" alt="" coords="5,5,188,32"/>
+<area shape="rect" id="Node000001" title="Send a request to check if the user has logged in already." alt="" coords="236,5,487,31"/>
+<area shape="rect" id="Node000002" href="$classUser_1_1UserController.html#a8d7a7b7d698dd47d420cc52ca90def5d" title="Start is called before the first frame update." alt="" coords="5,5,188,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,21,188,21,188,15,222,15"/>
 </map>

@@ -1,4 +1,5 @@
 <map id="Utility.CoroutineRunner" name="Utility.CoroutineRunner">
-<area shape="rect" id="node1" title="Singleton class to run the coroutines so they are easier to track" alt="" coords="5,131,392,237"/>
-<area shape="rect" id="node2" title=" " alt="" coords="137,5,261,83"/>
+<area shape="rect" id="Node000001" title="Singleton class to run the coroutines so they are easier to track." alt="" coords="5,119,384,224"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="137,5,253,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,85,197,118,192,118,192,85"/>
 </map>

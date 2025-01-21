@@ -1,6 +1,7 @@
 <map id="MainPage.FriendHandler.DeleteFriend" name="MainPage.FriendHandler.DeleteFriend">
-<area shape="rect" id="node1" title="Send a request to the server that the user deleted this friend" alt="" coords="5,56,272,83"/>
-<area shape="rect" id="node2" href="$classMainPage_1_1FriendHandler.html#ad4c7d3a3693bfc7ae9ae4e730077e297" title="After the server responded successfully to the friend delete" alt="" coords="369,5,604,32"/>
-<area shape="rect" id="node3" href="$classConfig_1_1ServerConfig.html#a10be54228c36baeb2de629e8122d926f" title="Path for the friend delete api endpoint" alt="" coords="320,56,653,83"/>
-<area shape="rect" id="node4" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="355,107,619,133"/>
+<area shape="rect" id="Node000001" title="Send a request to the server that the user deleted this friend." alt="" coords="5,31,272,56"/>
+<area shape="rect" id="Node000002" href="$classConfig_1_1ServerConfig.html#a10be54228c36baeb2de629e8122d926f" title="Path for the friend delete api endpoint." alt="" coords="320,5,653,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="272,31,306,28,306,34,272,36"/>
+<area shape="rect" id="Node000003" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines." alt="" coords="355,55,619,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="272,50,341,55,341,60,272,55"/>
 </map>

@@ -1,0 +1,5 @@
+<map id="Game.World.Chunk.GetNearbyChunks" name="Game.World.Chunk.GetNearbyChunks">
+<area shape="rect" id="Node000001" title="Gets tthe nearby chunks." alt="" coords="5,5,275,31"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1World_1_1GameWorld.html#a6188226b54eb7e38659cbe8d9d76b620" title="Get the chunk without trying it to load." alt="" coords="323,5,655,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="275,15,308,15,308,21,275,21"/>
+</map>

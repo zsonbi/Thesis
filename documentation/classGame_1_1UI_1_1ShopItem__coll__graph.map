@@ -1,7 +1,13 @@
 <map id="Game.UI.ShopItem" name="Game.UI.ShopItem">
-<area shape="rect" id="node1" title="A single shop item" alt="" coords="5,773,420,983"/>
-<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="143,132,341,209"/>
-<area shape="rect" id="node4" href="$classGame_1_1UI_1_1ShopWindow.html" title="Handles the shop window&#39;s content display" alt="" coords="229,487,575,711"/>
-<area shape="rect" id="node5" href="$classUtility_1_1ModalWindow.html" title="Modal window for alerting the user" alt="" coords="279,259,602,424"/>
-<area shape="rect" id="node3" title=" " alt="" coords="180,5,304,83"/>
+<area shape="rect" id="Node000001" title="A single shop item." alt="" coords="5,805,417,1045"/>
+<area shape="rect" id="Node000002" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool." alt="" coords="145,120,336,185"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,199,237,210,225,343,218,477,214,649,213,805,208,805,209,649,213,477,220,343,231,209,232,199"/>
+<area shape="rect" id="Node000004" href="$classGame_1_1UI_1_1ShopWindow.html" title="Handles the shop window&#39;s content display." alt="" coords="227,477,571,743"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="241,199,245,300,253,358,268,414,299,476,294,478,264,416,248,359,239,300,236,199"/>
+<area shape="rect" id="Node000005" href="$classUtility_1_1ModalWindow.html" title="Modal window for alerting the user." alt="" coords="278,235,593,415"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="289,192,335,232,331,236,285,196"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="183,5,299,71"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="243,85,243,120,238,120,238,85"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="322,744,294,792,289,790,318,742"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="427,415,421,461,416,461,421,415"/>
 </map>

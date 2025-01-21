@@ -1,7 +1,13 @@
 <map id="User.UserController.CheckLoggedIn" name="User.UserController.CheckLoggedIn">
-<area shape="rect" id="node1" title="Send a request to check if the user has logged in already" alt="" coords="5,56,256,83"/>
-<area shape="rect" id="node2" href="$classUser_1_1UserController.html#a02fa4701a3a181ec2228737a5f2c57e9" title="When the login request&#39;s was responded log the user in" alt="" coords="304,56,515,83"/>
-<area shape="rect" id="node4" href="$classUser_1_1UserController.html#a3ba5f73e6358fff37d2ec5e255659756" title="Move from the user creation and login scene" alt="" coords="563,5,843,32"/>
-<area shape="rect" id="node5" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="571,107,835,133"/>
-<area shape="rect" id="node3" href="$classUser_1_1UserData.html#abb372911b5e49023a977bd064f46bb6e" title="Initialises the user instance with proper data" alt="" coords="632,56,773,83"/>
+<area shape="rect" id="Node000001" title="Send a request to check if the user has logged in already." alt="" coords="5,55,256,80"/>
+<area shape="rect" id="Node000002" href="$classUser_1_1UserController.html#a02fa4701a3a181ec2228737a5f2c57e9" title="When the login request&#39;s was responded log the user in." alt="" coords="304,55,515,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="256,65,290,65,290,70,256,70"/>
+<area shape="rect" id="Node000004" href="$classUser_1_1UserController.html#a3ba5f73e6358fff37d2ec5e255659756" title="Move from the user creation and login scene." alt="" coords="563,5,843,31"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="213,52,304,41,548,22,549,28,304,46,214,57"/>
+<area shape="rect" id="Node000005" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines." alt="" coords="571,104,835,129"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="209,77,304,90,557,108,557,114,304,95,208,83"/>
+<area shape="rect" id="Node000003" href="$classUser_1_1UserData.html#abb372911b5e49023a977bd064f46bb6e" title="Initialises the user instance with proper data." alt="" coords="632,55,773,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="515,65,618,65,618,70,515,70"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="485,52,612,30,613,36,486,57"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="486,77,613,99,612,104,485,83"/>
 </map>

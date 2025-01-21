@@ -1,4 +1,5 @@
 <map id="Utility.ThreadSafeMonoBehaviour" name="Utility.ThreadSafeMonoBehaviour">
-<area shape="rect" id="node1" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="5,131,245,208"/>
-<area shape="rect" id="node2" title=" " alt="" coords="63,5,187,83"/>
+<area shape="rect" id="Node000001" title="Safely stores if the gameobject been destroyed in a bool." alt="" coords="5,119,237,184"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="63,5,179,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,84,124,119,119,119,119,84"/>
 </map>

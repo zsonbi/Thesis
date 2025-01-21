@@ -1,4 +1,5 @@
 <map id="Game.UI.LeaderboardWindow.Show" name="Game.UI.LeaderboardWindow.Show">
-<area shape="rect" id="node1" title="Show the window" alt="" coords="309,5,564,32"/>
-<area shape="rect" id="node2" href="$classGame_1_1UI_1_1GameUI.html#a4258f849b2e7d8cdb72dd01c26de3a71" title="Show the leaderboard window" alt="" coords="5,5,261,32"/>
+<area shape="rect" id="Node000001" title="Show the window." alt="" coords="309,5,564,31"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1UI_1_1GameUI.html#a4258f849b2e7d8cdb72dd01c26de3a71" title="Show the leaderboard window." alt="" coords="5,5,261,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="296,21,262,21,262,15,296,15"/>
 </map>

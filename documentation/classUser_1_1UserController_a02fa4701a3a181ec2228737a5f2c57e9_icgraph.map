@@ -1,6 +1,9 @@
 <map id="User.UserController.LoggedIn" name="User.UserController.LoggedIn">
-<area shape="rect" id="node1" title="When the login request&#39;s was responded log the user in" alt="" coords="535,31,745,57"/>
-<area shape="rect" id="node2" href="$classUser_1_1UserController.html#a0e115007266961c890001eb18f11bd1f" title="Send a request to check if the user has logged in already" alt="" coords="236,5,487,32"/>
-<area shape="rect" id="node4" href="$classUser_1_1UserController.html#a7d9a8e16cdb6bc3702ab7987cc141b09" title="Send a login request with the login panel&#39;s fields" alt="" coords="252,56,471,83"/>
-<area shape="rect" id="node3" href="$classUser_1_1UserController.html#a8d7a7b7d698dd47d420cc52ca90def5d" title="Start is called before the first frame update" alt="" coords="5,5,188,32"/>
+<area shape="rect" id="Node000001" title="When the login request&#39;s was responded log the user in." alt="" coords="535,31,745,56"/>
+<area shape="rect" id="Node000002" href="$classUser_1_1UserController.html#a0e115007266961c890001eb18f11bd1f" title="Send a request to check if the user has logged in already." alt="" coords="236,5,487,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="521,35,487,32,487,27,521,30"/>
+<area shape="rect" id="Node000004" href="$classUser_1_1UserController.html#a7d9a8e16cdb6bc3702ab7987cc141b09" title="Send a login request with the login panel&#39;s fields." alt="" coords="252,55,471,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="521,56,471,61,471,55,520,51"/>
+<area shape="rect" id="Node000003" href="$classUser_1_1UserController.html#a8d7a7b7d698dd47d420cc52ca90def5d" title="Start is called before the first frame update." alt="" coords="5,5,188,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="222,21,188,21,188,15,222,15"/>
 </map>

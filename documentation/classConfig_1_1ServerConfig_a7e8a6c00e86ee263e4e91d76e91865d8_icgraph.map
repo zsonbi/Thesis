@@ -1,4 +1,5 @@
 <map id="Config.ServerConfig.PATH_FOR_FRIEND_ACCEPT" name="Config.ServerConfig.PATH_FOR_FRIEND_ACCEPT">
-<area shape="rect" id="node1" title="Path for the friend accept api endpoint" alt="" coords="373,5,708,32"/>
-<area shape="rect" id="node2" href="$classMainPage_1_1FriendHandler.html#a92be1ed6b9e41df4bad2004fb8913d4e" title="Send a request to the server that the user accepted the friend request" alt="" coords="5,5,325,32"/>
+<area shape="rect" id="Node000001" title="Path for the friend accept api endpoint." alt="" coords="373,5,708,31"/>
+<area shape="rect" id="Node000002" href="$classMainPage_1_1FriendHandler.html#a92be1ed6b9e41df4bad2004fb8913d4e" title="Send a request to the server that the user accepted the friend request." alt="" coords="5,5,325,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="359,21,326,21,326,15,359,15"/>
 </map>

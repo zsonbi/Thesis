@@ -1,9 +1,14 @@
 <map id="User.UserController.MoveToMainScence" name="User.UserController.MoveToMainScence">
-<area shape="rect" id="node1" title="Move from the user creation and login scene" alt="" coords="805,56,1085,83"/>
-<area shape="rect" id="node2" href="$classUser_1_1UserController.html#a0e115007266961c890001eb18f11bd1f" title="Send a request to check if the user has logged in already" alt="" coords="236,5,487,32"/>
-<area shape="rect" id="node4" href="$classUser_1_1UserController.html#a02fa4701a3a181ec2228737a5f2c57e9" title="When the login request&#39;s was responded log the user in" alt="" coords="541,56,751,83"/>
-<area shape="rect" id="node6" href="$classUser_1_1UserController.html#aa173cb240990e358e98ff052c30a93e9" title="When the register request was responded successfully register the user and log him in" alt="" coords="535,107,757,133"/>
-<area shape="rect" id="node3" href="$classUser_1_1UserController.html#a8d7a7b7d698dd47d420cc52ca90def5d" title="Start is called before the first frame update" alt="" coords="5,5,188,32"/>
-<area shape="rect" id="node5" href="$classUser_1_1UserController.html#a7d9a8e16cdb6bc3702ab7987cc141b09" title="Send a login request with the login panel&#39;s fields" alt="" coords="252,56,471,83"/>
-<area shape="rect" id="node7" href="$classUser_1_1UserController.html#ae7159709fe17c18b3f9e3a15617c1db1" title="Send a register request with the register panel&#39;s fields" alt="" coords="242,107,481,133"/>
+<area shape="rect" id="Node000001" title="Move from the user creation and login scene." alt="" coords="805,55,1085,80"/>
+<area shape="rect" id="Node000002" href="$classUser_1_1UserController.html#a0e115007266961c890001eb18f11bd1f" title="Send a request to check if the user has logged in already." alt="" coords="236,5,487,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="847,55,757,45,487,26,487,21,758,39,847,50"/>
+<area shape="rect" id="Node000004" href="$classUser_1_1UserController.html#a02fa4701a3a181ec2228737a5f2c57e9" title="When the login request&#39;s was responded log the user in." alt="" coords="541,55,751,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="792,70,751,70,751,65,792,65"/>
+<area shape="rect" id="Node000006" href="$classUser_1_1UserController.html#aa173cb240990e358e98ff052c30a93e9" title="When the register request was responded successfully register the user and log him in." alt="" coords="535,104,757,129"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="855,85,724,107,724,101,854,80"/>
+<area shape="rect" id="Node000003" href="$classUser_1_1UserController.html#a8d7a7b7d698dd47d420cc52ca90def5d" title="Start is called before the first frame update." alt="" coords="5,5,188,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="222,21,188,21,188,15,222,15"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="558,55,435,33,436,28,559,50"/>
+<area shape="rect" id="Node000005" href="$classUser_1_1UserController.html#a7d9a8e16cdb6bc3702ab7987cc141b09" title="Send a login request with the login panel&#39;s fields." alt="" coords="252,55,471,80"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="527,70,471,70,471,65,527,65"/>
 </map>

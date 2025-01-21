@@ -1,4 +1,5 @@
 <map id="MainPage.TaskHistoryWindowHandler.LoadTaskHistories" name="MainPage.TaskHistoryWindowHandler.LoadTaskHistories">
-<area shape="rect" id="node1" title="Loads the task histories from the server" alt="" coords="360,5,749,32"/>
-<area shape="rect" id="node2" href="$classMainPage_1_1TaskHistoryWindowHandler.html#aa726ff0b77b9245e98854bbd827ae9dd" title="Shows the task history window" alt="" coords="5,5,312,32"/>
+<area shape="rect" id="Node000001" title="Loads the task histories from the server." alt="" coords="360,5,749,31"/>
+<area shape="rect" id="Node000002" href="$classMainPage_1_1TaskHistoryWindowHandler.html#aa726ff0b77b9245e98854bbd827ae9dd" title="Shows the task history window." alt="" coords="5,5,312,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="346,21,312,21,312,15,346,15"/>
 </map>

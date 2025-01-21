@@ -1,6 +1,9 @@
 <map id="Game.CarController.ApplyDrive" name="Game.CarController.ApplyDrive">
-<area shape="rect" id="node1" title=" " alt="" coords="504,31,731,57"/>
-<area shape="rect" id="node2" href="$classGame_1_1CarController.html#ae3eb6260519b20b09bc1226be3919be2" title=" " alt="" coords="265,31,456,57"/>
-<area shape="rect" id="node3" href="$classGame_1_1PlayerCar.html#a35789ca2a7fb0aedfa7f7d81d0ff639d" title="Handle the user inputs" alt="" coords="5,5,217,32"/>
-<area shape="rect" id="node4" href="$classGame_1_1CopCar.html#ad1e664d118f85d0c8b21e92d519c1e0b" title="Called every frame" alt="" coords="30,56,193,83"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="504,31,731,56"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1CarController.html#ae3eb6260519b20b09bc1226be3919be2" title=" " alt="" coords="265,31,456,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="490,46,456,46,456,41,490,41"/>
+<area shape="rect" id="Node000003" href="$classGame_1_1PlayerCar.html#a35789ca2a7fb0aedfa7f7d81d0ff639d" title="Handle the user inputs." alt="" coords="5,5,217,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="251,35,217,31,218,26,252,30"/>
+<area shape="rect" id="Node000004" href="$classGame_1_1CopCar.html#ad1e664d118f85d0c8b21e92d519c1e0b" title="Called every frame." alt="" coords="30,55,193,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="252,56,193,62,193,57,251,51"/>
 </map>

@@ -1,4 +1,5 @@
 <map id="User.LoggedInChecker.LoggedOut" name="User.LoggedInChecker.LoggedOut">
-<area shape="rect" id="node1" title="Handles if the user is not logged in" alt="" coords="5,5,244,32"/>
-<area shape="rect" id="node2" href="$classUser_1_1UserData.html#a8c8911482003919ea4fbab040c755f8f" title="Signal&#39;s that the user is logged out" alt="" coords="292,5,456,32"/>
+<area shape="rect" id="Node000001" title="Handles if the user is not logged in." alt="" coords="5,5,244,31"/>
+<area shape="rect" id="Node000002" href="$classUser_1_1UserData.html#a8c8911482003919ea4fbab040c755f8f" title="Signal&#39;s that the user is logged out." alt="" coords="292,5,456,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,15,278,15,278,21,244,21"/>
 </map>

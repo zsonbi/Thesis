@@ -1,4 +1,5 @@
 <map id="MainPage.TaskOpenPanelController.DeletedTask" name="MainPage.TaskOpenPanelController.DeletedTask">
-<area shape="rect" id="node1" title="After the task were deleted from the server delete it also from the client" alt="" coords="380,5,715,32"/>
-<area shape="rect" id="node2" href="$classMainPage_1_1TaskOpenPanelController.html#a3107b94793886f6af28ac9415fb44370" title="Send a delete task request to the server" alt="" coords="5,5,332,32"/>
+<area shape="rect" id="Node000001" title="After the task were deleted from the server delete it also from the client." alt="" coords="380,5,715,31"/>
+<area shape="rect" id="Node000002" href="$classMainPage_1_1TaskOpenPanelController.html#a3107b94793886f6af28ac9415fb44370" title="Send a delete task request to the server." alt="" coords="5,5,332,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="367,21,332,21,332,15,367,15"/>
 </map>

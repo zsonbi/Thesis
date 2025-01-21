@@ -1,4 +1,5 @@
 <map id="MainPage.FriendWindowHandler.ShowRequestFail" name="MainPage.FriendWindowHandler.ShowRequestFail">
-<area shape="rect" id="node1" title="Show api request failure" alt="" coords="413,5,759,32"/>
-<area shape="rect" id="node2" href="$classMainPage_1_1FriendWindowHandler.html#ad0c4b894708ceb9acc635e9a87b306ae" title="Sends a friend request to the user which was specified in the useridentification input" alt="" coords="5,5,365,32"/>
+<area shape="rect" id="Node000001" title="Show api request failure." alt="" coords="413,5,759,31"/>
+<area shape="rect" id="Node000002" href="$classMainPage_1_1FriendWindowHandler.html#ad0c4b894708ceb9acc635e9a87b306ae" title="Sends a friend request to the user which was specified in the useridentification input." alt="" coords="5,5,365,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="400,21,365,21,365,15,400,15"/>
 </map>

@@ -1,10 +1,17 @@
 <map id="Game.UI.GameUI.BackToGameMenuWithoutSave" name="Game.UI.GameUI.BackToGameMenuWithoutSave">
-<area shape="rect" id="node1" title="Show the main menu, but don&#39;t save the scores" alt="" coords="5,81,349,108"/>
-<area shape="rect" id="node2" href="$classGame_1_1UI_1_1GameUI.html#a87baf7b6bd70298f817e2c8e5e52a33a" title="Hide the game over screen" alt="" coords="397,56,681,83"/>
-<area shape="rect" id="node8" href="$classGame_1_1Car.html#accc4c99441964b1f8d69d08871f5a478" title="Kills the car from the outside" alt="" coords="484,107,595,133"/>
-<area shape="rect" id="node3" href="$classGame_1_1UI_1_1GameUI.html#a4f9c8b23e2a0e5d86c53377ece2c9bac" title="Save the game&#39;s result" alt="" coords="729,56,981,83"/>
-<area shape="rect" id="node4" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="1029,5,1293,32"/>
-<area shape="rect" id="node5" href="$classGame_1_1UI_1_1GameUI.html#a984a1e174ca8249e0433de8d2d8a462c" title="Callback after the coins amount were saved" alt="" coords="1053,56,1269,83"/>
-<area shape="rect" id="node6" href="$classGame_1_1UI_1_1GameUI.html#ac464d5a547acb44085748e2ee265272f" title="Show if the request failed on the modal window" alt="" coords="1036,107,1287,133"/>
-<area shape="rect" id="node7" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window" alt="" coords="1341,107,1536,133"/>
+<area shape="rect" id="Node000001" title="Show the main menu, but don&#39;t save the scores." alt="" coords="5,80,349,105"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1UI_1_1GameUI.html#a87baf7b6bd70298f817e2c8e5e52a33a" title="Hide the game over screen." alt="" coords="397,55,681,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="349,78,383,76,384,81,350,83"/>
+<area shape="rect" id="Node000008" href="$classGame_1_1Car.html#accc4c99441964b1f8d69d08871f5a478" title="Kills the car from the outside." alt="" coords="484,104,595,129"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="350,101,470,109,470,115,349,107"/>
+<area shape="rect" id="Node000003" href="$classGame_1_1UI_1_1GameUI.html#a4f9c8b23e2a0e5d86c53377ece2c9bac" title="Save the game&#39;s result." alt="" coords="729,55,981,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="682,65,715,65,715,70,682,70"/>
+<area shape="rect" id="Node000004" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines." alt="" coords="1029,5,1293,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="934,52,1068,30,1069,36,935,57"/>
+<area shape="rect" id="Node000005" href="$classGame_1_1UI_1_1GameUI.html#a984a1e174ca8249e0433de8d2d8a462c" title="Callback after the coins amount were saved." alt="" coords="1053,55,1269,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="981,65,1039,65,1039,70,981,70"/>
+<area shape="rect" id="Node000006" href="$classGame_1_1UI_1_1GameUI.html#ac464d5a547acb44085748e2ee265272f" title="Show if the request failed on the modal window." alt="" coords="1036,104,1287,129"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="935,77,1069,99,1068,104,934,83"/>
+<area shape="rect" id="Node000007" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window." alt="" coords="1341,104,1536,129"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1287,114,1327,114,1327,119,1287,119"/>
 </map>

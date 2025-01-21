@@ -1,4 +1,5 @@
 <map id="MainPage.FriendHandler.Accepted" name="MainPage.FriendHandler.Accepted">
-<area shape="rect" id="node1" title="After the server responded successfully to the friend accept" alt="" coords="373,5,616,32"/>
-<area shape="rect" id="node2" href="$classMainPage_1_1FriendHandler.html#a92be1ed6b9e41df4bad2004fb8913d4e" title="Send a request to the server that the user accepted the friend request" alt="" coords="5,5,325,32"/>
+<area shape="rect" id="Node000001" title="After the server responded successfully to the friend accept." alt="" coords="373,5,616,31"/>
+<area shape="rect" id="Node000002" href="$classMainPage_1_1FriendHandler.html#a92be1ed6b9e41df4bad2004fb8913d4e" title="Send a request to the server that the user accepted the friend request." alt="" coords="5,5,325,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="360,21,326,21,326,15,360,15"/>
 </map>

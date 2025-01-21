@@ -1,4 +1,5 @@
 <map id="MainPage.TaskHistoryWindowHandler.ShowRequestFail" name="MainPage.TaskHistoryWindowHandler.ShowRequestFail">
-<area shape="rect" id="node1" title="Show the server response errors" alt="" coords="5,5,387,32"/>
-<area shape="rect" id="node2" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window" alt="" coords="435,5,629,32"/>
+<area shape="rect" id="Node000001" title="Show the server response errors." alt="" coords="5,5,387,31"/>
+<area shape="rect" id="Node000002" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window." alt="" coords="435,5,629,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="387,15,421,15,421,21,387,21"/>
 </map>

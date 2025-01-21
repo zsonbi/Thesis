@@ -1,7 +1,12 @@
 <map id="MainPage.MainWindowController.ShowTaskFail" name="MainPage.MainWindowController.ShowTaskFail">
-<area shape="rect" id="node1" title="Show the task request fail in the modal window" alt="" coords="741,56,1068,82"/>
-<area shape="rect" id="node2" href="$classMainPage_1_1TaskDisplayHandler.html#ab553f8eb77d9d038521af3813275a43d" title="Complete the task and send this to the server" alt="" coords="5,56,319,82"/>
-<area shape="rect" id="node3" href="$classMainPage_1_1TaskOpenPanelController.html#a3107b94793886f6af28ac9415fb44370" title="Send a delete task request to the server" alt="" coords="367,30,693,57"/>
-<area shape="rect" id="node4" href="$classMainPage_1_1TaskOpenPanelController.html#ab8def75cd4cdbdaf3033022ea114a8a6" title="Save the task to the server" alt="" coords="387,81,673,108"/>
-<area shape="rect" id="node5" href="$classMainPage_1_1TaskDisplayHandler.html#a98b63052d0efc73233a32b69a06bf68e" title="When the complete acknowledge were recieved from the server update the display" alt="" coords="369,132,691,158"/>
+<area shape="rect" id="Node000001" title="Show the task request fail in the modal window." alt="" coords="741,56,1068,82"/>
+<area shape="rect" id="Node000002" href="$classMainPage_1_1TaskDisplayHandler.html#ab553f8eb77d9d038521af3813275a43d" title="Complete the task and send this to the server." alt="" coords="5,55,319,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="850,55,776,36,693,21,602,11,530,8,458,11,367,21,279,37,204,57,203,52,278,32,366,16,458,6,530,3,602,6,694,16,777,31,851,50"/>
+<area shape="rect" id="Node000003" href="$classMainPage_1_1TaskOpenPanelController.html#a3107b94793886f6af28ac9415fb44370" title="Send a delete task request to the server." alt="" coords="367,31,693,56"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="728,60,693,57,694,52,728,54"/>
+<area shape="rect" id="Node000004" href="$classMainPage_1_1TaskOpenPanelController.html#ab8def75cd4cdbdaf3033022ea114a8a6" title="Save the task to the server." alt="" coords="387,80,673,106"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="728,83,674,86,673,81,727,78"/>
+<area shape="rect" id="Node000005" href="$classMainPage_1_1TaskDisplayHandler.html#a98b63052d0efc73233a32b69a06bf68e" title="When the complete acknowledge were recieved from the server update the display." alt="" coords="369,130,691,155"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="839,88,694,120,620,132,619,127,693,114,838,82"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="425,130,366,120,210,83,211,78,367,114,426,125"/>
 </map>

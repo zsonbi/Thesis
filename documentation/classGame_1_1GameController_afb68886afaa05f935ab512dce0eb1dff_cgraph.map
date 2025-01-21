@@ -1,5 +1,7 @@
 <map id="Game.GameController.Awake" name="Game.GameController.Awake">
-<area shape="rect" id="node1" title="Called when script is loaded" alt="" coords="5,31,220,57"/>
-<area shape="rect" id="node2" href="$classGame_1_1UI_1_1GameUI.html#ab68cafc652bf0b99b73dbc4742bf6973" title="Initializes the game use" alt="" coords="335,5,496,32"/>
-<area shape="rect" id="node3" href="$classGame_1_1GameController.html#ac1d8730413951a2e3f61985ebb2470cf" title="Add the loaded skin to the player variants list" alt="" coords="268,56,563,83"/>
+<area shape="rect" id="Node000001" title="Called when script is loaded." alt="" coords="5,31,220,56"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1UI_1_1GameUI.html#ab68cafc652bf0b99b73dbc4742bf6973" title="Initializes the game use." alt="" coords="335,5,496,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,32,321,23,321,29,220,37"/>
+<area shape="rect" id="Node000003" href="$classGame_1_1GameController.html#ac1d8730413951a2e3f61985ebb2470cf" title="Add the loaded skin to the player variants list." alt="" coords="268,55,563,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="220,49,254,52,254,57,220,54"/>
 </map>

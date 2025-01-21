@@ -1,5 +1,9 @@
 <map id="Game.World.RoadGenerator.CreateRoad" name="Game.World.RoadGenerator.CreateRoad">
-<area shape="rect" id="node1" title="Creates the roads recursively" alt="" coords="5,31,288,57"/>
-<area shape="rect" id="node2" href="$classGame_1_1World_1_1RoadGenerator.html#aff41fff01a6f7955370796e82d542b5c" title="Checks if the road moving in that direction will run into an another road" alt="" coords="348,5,647,32"/>
-<area shape="rect" id="node3" href="$classGame_1_1World_1_1RoadGenerator.html#a1d562d3e89d833e15f2b2ce3eba249ac" title="Check if the road is going towards the edge" alt="" coords="336,56,659,83"/>
+<area shape="rect" id="Node000001" title="Creates the roads recursively." alt="" coords="5,55,288,80"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="91,57,79,46,85,36,108,30,147,28,199,33,212,39,214,46,209,47,208,42,198,38,147,33,109,35,88,40,84,46,94,52"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1World_1_1RoadGenerator.html#aff41fff01a6f7955370796e82d542b5c" title="Checks if the road moving in that direction will run into an another road." alt="" coords="348,29,647,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="288,54,334,51,334,56,288,60"/>
+<area shape="rect" id="Node000003" href="$classGame_1_1World_1_1RoadGenerator.html#a1d562d3e89d833e15f2b2ce3eba249ac" title="Check if the road is going towards the edge." alt="" coords="336,79,659,104"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="288,74,322,77,322,82,288,80"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="442,31,429,21,436,11,459,5,497,3,550,7,563,13,565,20,560,22,559,17,549,13,497,8,459,10,439,15,435,20,445,27"/>
 </map>

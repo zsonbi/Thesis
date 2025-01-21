@@ -1,13 +1,21 @@
 <map id="User.UserData.Init" name="User.UserData.Init">
-<area shape="rect" id="node1" title="Initialises the user instance with proper data" alt="" coords="1053,81,1195,108"/>
-<area shape="rect" id="node2" href="$classUser_1_1LoggedInChecker.html#a142873ff5324726072d218102f0bee8b" title="Update the user data from the server data" alt="" coords="717,5,945,32"/>
-<area shape="rect" id="node5" href="$classUser_1_1UserController.html#a02fa4701a3a181ec2228737a5f2c57e9" title="When the login request&#39;s was responded log the user in" alt="" coords="726,56,937,83"/>
-<area shape="rect" id="node9" href="$classUser_1_1UserController.html#aa173cb240990e358e98ff052c30a93e9" title="When the register request was responded successfully register the user and log him in" alt="" coords="720,107,943,133"/>
-<area shape="rect" id="node11" href="$classMainPage_1_1MainWindowController.html#a330729fb97065041f29f7ad9eb63def3" title="Update the user with the updated value" alt="" coords="657,157,1005,184"/>
-<area shape="rect" id="node3" href="$classUser_1_1LoggedInChecker.html#a306ce5521a6109ae00667a32fd0a442c" title="Coroutine which calls the api endpoint to check if the user is still logged in" alt="" coords="265,5,609,32"/>
-<area shape="rect" id="node4" href="$classUser_1_1LoggedInChecker.html#a0f9199eb996ba1309b9bb6bad5d6268e" title="Called when the script is loaded" alt="" coords="5,5,217,32"/>
-<area shape="rect" id="node6" href="$classUser_1_1UserController.html#a0e115007266961c890001eb18f11bd1f" title="Send a request to check if the user has logged in already" alt="" coords="312,56,563,83"/>
-<area shape="rect" id="node8" href="$classUser_1_1UserController.html#a7d9a8e16cdb6bc3702ab7987cc141b09" title="Send a login request with the login panel&#39;s fields" alt="" coords="328,107,547,133"/>
-<area shape="rect" id="node7" href="$classUser_1_1UserController.html#a8d7a7b7d698dd47d420cc52ca90def5d" title="Start is called before the first frame update" alt="" coords="20,56,203,83"/>
-<area shape="rect" id="node10" href="$classUser_1_1UserController.html#ae7159709fe17c18b3f9e3a15617c1db1" title="Send a register request with the register panel&#39;s fields" alt="" coords="318,157,557,184"/>
+<area shape="rect" id="Node000001" title="Initialises the user instance with proper data." alt="" coords="1053,80,1195,105"/>
+<area shape="rect" id="Node000002" href="$classUser_1_1LoggedInChecker.html#a142873ff5324726072d218102f0bee8b" title="Update the user data from the server data." alt="" coords="717,5,945,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1085,76,1047,59,1005,45,945,32,946,27,1006,39,1048,54,1087,71"/>
+<area shape="rect" id="Node000005" href="$classUser_1_1UserController.html#a02fa4701a3a181ec2228737a5f2c57e9" title="When the login request&#39;s was responded log the user in." alt="" coords="726,55,937,80"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1040,88,936,79,937,74,1040,83"/>
+<area shape="rect" id="Node000009" href="$classUser_1_1UserController.html#aa173cb240990e358e98ff052c30a93e9" title="When the register request was responded successfully register the user and log him in." alt="" coords="720,104,943,129"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1040,102,943,110,943,105,1039,97"/>
+<area shape="rect" id="Node000010" href="$classMainPage_1_1MainWindowController.html#a330729fb97065041f29f7ad9eb63def3" title="Update the user with the updated value." alt="" coords="657,153,1005,179"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1086,114,1048,130,1006,145,954,156,953,151,1005,139,1046,125,1084,109"/>
+<area shape="rect" id="Node000003" href="$classUser_1_1LoggedInChecker.html#a306ce5521a6109ae00667a32fd0a442c" title="Coroutine which calls the api endpoint to check if the user is still logged in." alt="" coords="265,5,609,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="703,21,609,21,609,15,703,15"/>
+<area shape="rect" id="Node000004" href="$classUser_1_1LoggedInChecker.html#a0f9199eb996ba1309b9bb6bad5d6268e" title="Called when the script is loaded." alt="" coords="5,5,217,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="251,21,218,21,218,15,251,15"/>
+<area shape="rect" id="Node000006" href="$classUser_1_1UserController.html#a0e115007266961c890001eb18f11bd1f" title="Send a request to check if the user has logged in already." alt="" coords="312,55,563,80"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="712,70,563,70,563,65,712,65"/>
+<area shape="rect" id="Node000008" href="$classUser_1_1UserController.html#a7d9a8e16cdb6bc3702ab7987cc141b09" title="Send a login request with the login panel&#39;s fields." alt="" coords="328,104,547,129"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="716,84,540,107,539,101,715,79"/>
+<area shape="rect" id="Node000007" href="$classUser_1_1UserController.html#a8d7a7b7d698dd47d420cc52ca90def5d" title="Start is called before the first frame update." alt="" coords="20,55,203,80"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="298,70,203,70,203,65,298,65"/>
 </map>

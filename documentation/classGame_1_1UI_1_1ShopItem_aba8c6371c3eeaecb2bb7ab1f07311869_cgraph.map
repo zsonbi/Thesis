@@ -1,9 +1,15 @@
 <map id="Game.UI.ShopItem.Bought" name="Game.UI.ShopItem.Bought">
-<area shape="rect" id="node1" title="Callback when it is bought" alt="" coords="5,56,200,83"/>
-<area shape="rect" id="node2" href="$classGame_1_1UI_1_1ShopWindow.html#a9297b39a0fa7a77e8cf3022bc28c0b35" title="Update the shop items" alt="" coords="248,56,497,83"/>
-<area shape="rect" id="node3" href="$classGame_1_1UI_1_1ShopWindow.html#a6a703aeb6610fe526d65a9b89ad4c78e" title="Display the loaded shop items" alt="" coords="545,5,832,32"/>
-<area shape="rect" id="node5" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="557,56,821,83"/>
-<area shape="rect" id="node6" href="$classGame_1_1UI_1_1ShopWindow.html#ab11a75acddb1467e29d7624a4d12b8b9" title="Show if the request failed on the modal window" alt="" coords="549,107,829,133"/>
-<area shape="rect" id="node4" href="$classGame_1_1UI_1_1ShopItem.html#a8f8263dc4d8a04ebbd12545537c98879" title="Initializes this shop item" alt="" coords="892,5,1063,32"/>
-<area shape="rect" id="node7" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window" alt="" coords="880,107,1075,133"/>
+<area shape="rect" id="Node000001" title="Callback when it is bought." alt="" coords="5,55,200,80"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1UI_1_1ShopWindow.html#a9297b39a0fa7a77e8cf3022bc28c0b35" title="Update the shop items." alt="" coords="248,55,497,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,65,234,65,234,70,200,70"/>
+<area shape="rect" id="Node000003" href="$classGame_1_1UI_1_1ShopWindow.html#a6a703aeb6610fe526d65a9b89ad4c78e" title="Display the loaded shop items." alt="" coords="545,5,832,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="454,52,593,30,593,35,455,57"/>
+<area shape="rect" id="Node000005" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines." alt="" coords="557,55,821,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="497,65,543,65,543,70,497,70"/>
+<area shape="rect" id="Node000006" href="$classGame_1_1UI_1_1ShopWindow.html#ab11a75acddb1467e29d7624a4d12b8b9" title="Show if the request failed on the modal window." alt="" coords="549,104,829,129"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="455,77,593,99,593,104,454,83"/>
+<area shape="rect" id="Node000004" href="$classGame_1_1UI_1_1ShopItem.html#a8f8263dc4d8a04ebbd12545537c98879" title="Initializes this shop item." alt="" coords="892,5,1063,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="832,15,878,15,878,21,832,21"/>
+<area shape="rect" id="Node000007" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window." alt="" coords="880,104,1075,129"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="829,114,866,114,866,119,829,119"/>
 </map>

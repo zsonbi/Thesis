@@ -1,4 +1,0 @@
-<map id="MainPage.FriendHandler.Deleted" name="MainPage.FriendHandler.Deleted">
-<area shape="rect" id="node1" title="After the server responded successfully to the friend delete" alt="" coords="320,5,555,32"/>
-<area shape="rect" id="node2" href="$classMainPage_1_1FriendHandler.html#a118aed89960ec6338411e4130e3fe87c" title="Send a request to the server that the user deleted this friend" alt="" coords="5,5,272,32"/>
-</map>

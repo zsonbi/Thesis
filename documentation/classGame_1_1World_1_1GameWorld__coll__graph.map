@@ -1,8 +1,19 @@
 <map id="Game.World.GameWorld" name="Game.World.GameWorld">
-<area shape="rect" id="node1" title="A class for handling chunk loading and unloading" alt="" coords="5,259,356,409"/>
-<area shape="rect" id="node4" href="$classGame_1_1World_1_1Chunk.html" title="Stores a single chunk of the world" alt="" coords="124,472,571,1136"/>
-<area shape="rect" id="node2" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool" alt="" coords="188,132,387,209"/>
-<area shape="rect" id="node3" title=" " alt="" coords="225,5,349,83"/>
-<area shape="rect" id="node6" href="$classGame_1_1World_1_1RoadGenerator.html" title="Generates a new road structure" alt="" coords="145,1199,550,1437"/>
-<area shape="rect" id="node5" title=" " alt="" coords="431,266,759,402"/>
+<area shape="rect" id="Node000001" title="A class for handling chunk loading and unloading." alt="" coords="895,1292,1236,1457"/>
+<area shape="rect" id="Node000002" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool." alt="" coords="439,157,630,223"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="638,226,707,266,739,291,767,321,810,380,848,442,882,506,912,573,963,711,1001,848,1029,981,1047,1102,1059,1208,1065,1292,1060,1292,1054,1208,1042,1103,1023,982,996,850,958,712,907,575,877,509,843,444,805,383,763,324,736,295,704,270,635,231"/>
+<area shape="rect" id="Node000004" href="$classGame_1_1World_1_1Chunk.html" title="Stores a single chunk of the world." alt="" coords="316,323,753,1177"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="537,237,537,322,532,322,532,237"/>
+<area shape="rect" id="Node000006" href="$classGame_1_1World_1_1GameWorld.html" title="A class for handling chunk loading and unloading." alt="" coords="103,1292,444,1457"/>
+<area shape="poly" id="edge8_Node000006_Node000002" title=" " alt="" coords="428,228,393,245,360,267,330,293,306,324,274,384,248,448,228,513,212,581,201,649,194,718,192,855,200,986,215,1105,234,1209,253,1291,248,1292,229,1210,210,1106,195,986,186,855,189,718,196,649,207,580,222,512,243,446,269,382,302,321,326,289,357,263,391,241,426,223"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="477,5,593,71"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="537,85,537,157,532,157,532,85"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="756,1006,987,1278,983,1281,752,1010"/>
+<area shape="rect" id="Node000005" href="$classGame_1_1World_1_1RoadGenerator.html" title="Generates a new road structure." alt="" coords="468,1240,871,1509"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="638,1177,643,1201,647,1223,642,1225,637,1202,633,1178"/>
+<area shape="poly" id="edge9_Node000006_Node000004" title=" " alt="" coords="347,1178,337,1202,309,1278,304,1276,332,1200,342,1176"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="544,1241,534,1217,526,1194,531,1193,538,1215,549,1239"/>
+<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="345,1290,372,1253,395,1215,407,1191,412,1193,400,1217,376,1256,349,1293"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="5,120,325,260"/>
+<area shape="poly" id="edge10_Node000004_Node000007" title=" " alt="" coords="213,259,309,403,304,406,209,262"/>
 </map>

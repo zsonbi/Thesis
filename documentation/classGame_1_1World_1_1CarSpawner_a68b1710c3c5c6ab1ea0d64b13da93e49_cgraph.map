@@ -1,5 +1,7 @@
 <map id="Game.World.CarSpawner.SpawnPolice" name="Game.World.CarSpawner.SpawnPolice">
-<area shape="rect" id="node1" title="Spawn the given cop car" alt="" coords="5,31,275,57"/>
-<area shape="rect" id="node2" href="$classGame_1_1World_1_1Chunk.html#aa082f46d92a6ade2f934fc8f2ff3093e" title="Gets a random road&#39;s position" alt="" coords="323,5,593,32"/>
-<area shape="rect" id="node3" href="$classGame_1_1Car.html#adea5c0fa34888fc8d58fa434b205b365" title="Initializes the car" alt="" coords="403,56,513,83"/>
+<area shape="rect" id="Node000001" title="Spawn the given cop car." alt="" coords="5,31,275,56"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1World_1_1Chunk.html#aa082f46d92a6ade2f934fc8f2ff3093e" title="Gets a random road&#39;s position." alt="" coords="323,5,593,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="275,30,308,27,309,33,275,35"/>
+<area shape="rect" id="Node000003" href="$classGame_1_1Car.html#adea5c0fa34888fc8d58fa434b205b365" title="Initializes the car." alt="" coords="403,55,513,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="275,51,389,60,389,65,275,56"/>
 </map>

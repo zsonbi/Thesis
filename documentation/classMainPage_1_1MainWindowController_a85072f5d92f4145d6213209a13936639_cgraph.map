@@ -1,8 +1,16 @@
 <map id="MainPage.MainWindowController.SortingChanged" name="MainPage.MainWindowController.SortingChanged">
-<area shape="rect" id="node1" title="Refreshes the tasks with the proper sorting order" alt="" coords="5,31,348,57"/>
-<area shape="rect" id="node2" href="$classMainPage_1_1MainWindowController.html#a241b480aeebdab1bc34320cad8de7712" title="Load the good habits" alt="" coords="397,5,736,32"/>
-<area shape="rect" id="node5" href="$classMainPage_1_1MainWindowController.html#ab5b80370512cd4273e86927fe696462d" title="Load the good tasks" alt="" coords="396,56,737,83"/>
-<area shape="rect" id="node3" href="$classMainPage_1_1TaskOpenPanelController.html#a5513399c20f650915ca10f54805f416e" title="Make this task a bad habit" alt="" coords="787,5,1145,32"/>
-<area shape="rect" id="node4" href="$classMainPage_1_1TaskOpenPanelController.html#aa0b6757dbad141375c50282278b23b1a" title="Update the buttons with the appropriate color based on the current task" alt="" coords="1195,31,1545,57"/>
-<area shape="rect" id="node6" href="$classMainPage_1_1TaskOpenPanelController.html#a069a63e2b7e70cc4cb4c7e487b655700" title="Make it a good task" alt="" coords="785,56,1147,83"/>
+<area shape="rect" id="Node000001" title="Refreshes the tasks with the proper sorting order." alt="" coords="5,31,348,56"/>
+<area shape="rect" id="Node000002" href="$classMainPage_1_1MainWindowController.html#a241b480aeebdab1bc34320cad8de7712" title="Load the good habits." alt="" coords="397,5,736,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="348,30,383,27,383,33,349,35"/>
+<area shape="rect" id="Node000005" href="$classMainPage_1_1MainWindowController.html#ab5b80370512cd4273e86927fe696462d" title="Load the good tasks." alt="" coords="396,55,737,80"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="349,51,382,53,382,59,348,57"/>
+<area shape="rect" id="Node000003" href="$classMainPage_1_1TaskOpenPanelController.html#a5513399c20f650915ca10f54805f416e" title="Make this task a bad habit." alt="" coords="787,5,1145,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="736,24,773,24,773,30,736,30"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="787,12,750,12,750,6,787,6"/>
+<area shape="rect" id="Node000004" href="$classMainPage_1_1TaskOpenPanelController.html#aa0b6757dbad141375c50282278b23b1a" title="Update the buttons with the appropriate color based on the current task." alt="" coords="1195,31,1545,56"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="1146,27,1181,29,1180,34,1146,32"/>
+<area shape="rect" id="Node000006" href="$classMainPage_1_1TaskOpenPanelController.html#a069a63e2b7e70cc4cb4c7e487b655700" title="Make it a good task." alt="" coords="785,55,1147,80"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="737,74,772,74,772,79,737,79"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="1147,54,1181,52,1181,57,1147,59"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="785,61,751,61,751,56,785,56"/>
 </map>

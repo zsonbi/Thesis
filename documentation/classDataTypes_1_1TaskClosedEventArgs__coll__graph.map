@@ -1,4 +1,5 @@
 <map id="DataTypes.TaskClosedEventArgs" name="DataTypes.TaskClosedEventArgs">
-<area shape="rect" id="node1" title="Event for if the task was closed" alt="" coords="5,131,356,208"/>
-<area shape="rect" id="node2" title=" " alt="" coords="137,5,225,83"/>
+<area shape="rect" id="Node000001" title="Event for if the task was closed." alt="" coords="5,119,348,184"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="137,5,217,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,84,179,119,174,119,174,84"/>
 </map>

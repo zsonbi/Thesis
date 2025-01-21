@@ -1,4 +1,5 @@
 <map id="Game.GameController.PlayerDied" name="Game.GameController.PlayerDied">
-<area shape="rect" id="node1" title="Event for when the player is killed" alt="" coords="5,5,248,32"/>
-<area shape="rect" id="node2" href="$classGame_1_1UI_1_1GameUI.html#a4711cf98c85b51e143bb5e5a33157b81" title="Show the game over screen" alt="" coords="296,5,579,32"/>
+<area shape="rect" id="Node000001" title="Event for when the player is killed." alt="" coords="5,5,248,31"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1UI_1_1GameUI.html#a4711cf98c85b51e143bb5e5a33157b81" title="Show the game over screen." alt="" coords="296,5,579,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,15,282,15,282,21,248,21"/>
 </map>

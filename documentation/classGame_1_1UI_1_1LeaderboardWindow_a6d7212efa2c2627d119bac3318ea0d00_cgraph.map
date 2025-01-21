@@ -1,9 +1,15 @@
 <map id="Game.UI.LeaderboardWindow.LoadScores" name="Game.UI.LeaderboardWindow.LoadScores">
-<area shape="rect" id="node1" title="Load the scores" alt="" coords="5,81,299,108"/>
-<area shape="rect" id="node2" href="$classGame_1_1UI_1_1LeaderboardWindow.html#aa83c9458d4a3cf1ea754268c3c584416" title="Callback after the scores were loaded" alt="" coords="371,5,681,32"/>
-<area shape="rect" id="node4" href="$classConfig_1_1ServerConfig.html#ae1592f2810947e426b77b35e99934e4b" title="Path to api endpoint to get all the game scores since the given time (limit 100)" alt="" coords="347,56,705,83"/>
-<area shape="rect" id="node5" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines" alt="" coords="394,107,658,133"/>
-<area shape="rect" id="node6" href="$classGame_1_1UI_1_1LeaderboardWindow.html#add244b5633e10a828542b586844e9ef2" title="Show if the request failed in the modal" alt="" coords="361,157,691,184"/>
-<area shape="rect" id="node3" href="$classGame_1_1UI_1_1LeaderboardItem.html#a3d41fb9a51ff51b9e249c0831f4d788a" title="Initializes the item" alt="" coords="753,5,972,32"/>
-<area shape="rect" id="node7" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window" alt="" coords="765,157,960,184"/>
+<area shape="rect" id="Node000001" title="Load the scores." alt="" coords="5,80,299,105"/>
+<area shape="rect" id="Node000002" href="$classGame_1_1UI_1_1LeaderboardWindow.html#aa83c9458d4a3cf1ea754268c3c584416" title="Callback after the scores were loaded." alt="" coords="371,5,681,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,77,265,58,346,39,401,30,402,35,347,45,267,63,196,83"/>
+<area shape="rect" id="Node000004" href="$classConfig_1_1ServerConfig.html#ae1592f2810947e426b77b35e99934e4b" title="Path to api endpoint to get all the game scores since the given time (limit 100)" alt="" coords="347,55,705,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="299,80,333,78,333,83,299,85"/>
+<area shape="rect" id="Node000005" href="$classUtility_1_1CoroutineRunner.html#a1c473dee723f16d86bab9d8475c8214a" title="A helper method to start coroutines." alt="" coords="394,104,658,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="299,99,381,105,380,110,299,105"/>
+<area shape="rect" id="Node000006" href="$classGame_1_1UI_1_1LeaderboardWindow.html#add244b5633e10a828542b586844e9ef2" title="Show if the request failed in the modal." alt="" coords="361,153,691,179"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="199,103,347,138,410,149,409,154,346,143,198,108"/>
+<area shape="rect" id="Node000003" href="$classGame_1_1UI_1_1LeaderboardItem.html#a3d41fb9a51ff51b9e249c0831f4d788a" title="Initializes the item." alt="" coords="753,5,972,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="681,15,739,15,739,21,681,21"/>
+<area shape="rect" id="Node000007" href="$classUtility_1_1ModalWindow.html#adcef8cae2dffe4247c905d042ff0a8e3" title="Show the modal window." alt="" coords="765,153,960,179"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="691,163,751,163,751,169,691,169"/>
 </map>
