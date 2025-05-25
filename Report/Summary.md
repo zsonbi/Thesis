@@ -1,16 +1,16 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 04/11/2025 - 20:22:14 |
+| Generated on: | 05/25/2025 - 07:10:44 |
 | Parser: | MultiReportParser (3x OpenCoverParser) |
 | Assemblies: | 2 |
 | Classes: | 68 |
 | Files: | 68 |
-| Covered lines: | 2613 |
-| Uncovered lines: | 593 |
+| Covered lines: | 2618 |
+| Uncovered lines: | 588 |
 | Coverable lines: | 3206 |
 | Total lines: | 7817 |
-| Line coverage: | 81.5% (2613 of 3206) |
+| Line coverage: | 81.6% (2618 of 3206) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 469 |
@@ -33,14 +33,14 @@
 |Tests.UnityTestParent[T]|59|0|59|108|100%|0|0||5|5|100%|
 |Tests.UserTests.UserControllerTests|22|0|22|47|100%|0|0||3|3|100%|
 |Tests.UserTests.UserTestsParent[T]|4|0|4|24|100%|0|0||1|1|100%|
-|**ThesisScripts**|**1878**|**572**|**2450**|**6425**|**76.6%**|**0**|**0**|****|**413**|**497**|**83%**|
+|**ThesisScripts**|**1883**|**567**|**2450**|**6425**|**76.8%**|**0**|**0**|****|**413**|**497**|**83%**|
 |Assets.Scripts.Client.DataTypes.ChunkCellContainer|6|0|6|31|100%|0|0||5|5|100%|
 |CameraScript|7|0|7|35|100%|0|0||2|2|100%|
 |Config.ServerConfig|6|1|7|151|85.7%|0|0||6|7|85.7%|
 |DataTypes.TaskClosedEventArgs|0|4|4|17|0%|0|0||0|1|0%|
 |EdgeRoadContainer|9|0|9|33|100%|0|0||7|7|100%|
-|Game.Car|63|22|85|179|74.1%|0|0||13|13|100%|
-|Game.CarController|94|25|119|230|78.9%|0|0||14|18|77.7%|
+|Game.Car|67|18|85|179|78.8%|0|0||13|13|100%|
+|Game.CarController|95|24|119|230|79.8%|0|0||14|18|77.7%|
 |Game.CopCar|47|11|58|100|81%|0|0||1|1|100%|
 |Game.EffectScript|1|0|1|17|100%|0|0||1|1|100%|
 |Game.EnableWheelPhysicMaterial|16|0|16|45|100%|0|0||2|2|100%|
