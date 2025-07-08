@@ -9,7 +9,8 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1100 height=700 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1100 height=700
+        tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -122,5 +123,29 @@
       document.body.appendChild(script);
 
     </script>
+
+    <input id="mobileKeyboardInput" type="text"
+      style="opacity:0; position: absolute; top: 0; left: 0; z-index: 1000;" />
+
+    <script>
+  const unityCanvas = document.querySelector("#unity-canvas");
+  const inputBridge = document.getElementById("mobileKeyboardInput");
+
+  unityCanvas.addEventListener("touchstart", (e) => {
+    // Triggered when the canvas is tapped
+    const activeElement = document.activeElement;
+    if (activeElement === inputBridge) return;
+
+    setTimeout(() => {
+      inputBridge.focus();
+      inputBridge.value = "";
+    }, 100); // Let Unity process tap first
+  });
+
+  inputBridge.addEventListener("input", () => {
+    // You can optionally send this input to Unity here
+    inputBridge.value = ""; // Clear to capture next keystroke
+  });
+</script>
   </body>
 </html>
