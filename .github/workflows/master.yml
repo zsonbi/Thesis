@@ -47,7 +47,8 @@ jobs:
     needs: checklicense
     if: needs.checklicense.outputs.is_unity_license_set == 'true' 
     name: Run all tests ✨
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux]
     steps:
       - uses: actions/checkout@v4.1.2
         with:
@@ -86,7 +87,8 @@ jobs:
     needs: test
     if: contains(github.ref, 'none')
     name: Build for ${{ matrix.targetPlatform }}
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux]
     strategy:
       fail-fast: false
       matrix:

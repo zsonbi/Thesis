@@ -6,15 +6,14 @@
     <title>Unity WebGL Player | {{{ PRODUCT_NAME }}}</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    #if SHOW_DIAGNOSTICS
+#if SHOW_DIAGNOSTICS
     <link rel="stylesheet" href="<<<TemplateData/diagnostics.css>>>">
     <script src="<<<TemplateData/diagnostics.js>>>"></script>
-    #endif
+#endif
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width={{{ WIDTH }}} height={{{ HEIGHT }}}
-        tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width={{{ WIDTH }}} height={{{ HEIGHT }}} tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -25,9 +24,9 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        #if SHOW_DIAGNOSTICS
+#if SHOW_DIAGNOSTICS
         <img id="diagnostics-icon" src="TemplateData/webmemd-icon.png">
-        #endif
+#endif
         <div id="unity-build-title">{{{ PRODUCT_NAME }}}</div>
       </div>
     </div>
@@ -160,28 +159,7 @@
 
     </script>
 
-    <input id="mobileKeyboardInput" type="text"
-      style="opacity:0; position: absolute; top: 0; left: 0; z-index: 1000;" />
 
-    <script>
-  const unityCanvas = document.querySelector("#unity-canvas");
-  const inputBridge = document.getElementById("mobileKeyboardInput");
-
-  unityCanvas.addEventListener("touchstart", (e) => {
-    // Triggered when the canvas is tapped
-    const activeElement = document.activeElement;
-    if (activeElement === inputBridge) return;
-
-    setTimeout(() => {
-      inputBridge.focus();
-      inputBridge.value = "";
-    }, 100); // Let Unity process tap first
-  });
-
-  inputBridge.addEventListener("input", () => {
-    // You can optionally send this input to Unity here
-    inputBridge.value = ""; // Clear to capture next keystroke
-  });
-</script>
+    
   </body>
 </html>
