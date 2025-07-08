@@ -262,7 +262,7 @@ var assemblies = [
       { "name": "Game.UI.StarHandler", "rp": "ThesisScripts_StarHandler.html", "cl": 10, "ucl": 0, "cal": 10, "tl": 50, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.World.Building", "rp": "ThesisScripts_Building.html", "cl": 7, "ucl": 2, "cal": 9, "tl": 77, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.World.BuildingCell", "rp": "ThesisScripts_BuildingCell.html", "cl": 11, "ucl": 0, "cal": 11, "tl": 46, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Game.World.CarSpawner", "rp": "ThesisScripts_CarSpawner.html", "cl": 37, "ucl": 6, "cal": 43, "tl": 129, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.World.CarSpawner", "rp": "ThesisScripts_CarSpawner.html", "cl": 33, "ucl": 10, "cal": 43, "tl": 129, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.World.Chunk", "rp": "ThesisScripts_Chunk.html", "cl": 371, "ucl": 43, "cal": 414, "tl": 778, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.World.Coin", "rp": "ThesisScripts_Coin.html", "cl": 7, "ucl": 0, "cal": 7, "tl": 34, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.World.GameWorld", "rp": "ThesisScripts_GameWorld.html", "cl": 69, "ucl": 16, "cal": 85, "tl": 173, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
