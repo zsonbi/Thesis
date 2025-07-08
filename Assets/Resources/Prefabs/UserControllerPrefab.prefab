@@ -114,7 +114,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1185720603378340487}
   - component: {fileID: 7287695251954826518}
-  - component: {fileID: 8135026299260285344}
   m_Layer: 0
   m_Name: UserControllerPrefab
   m_TagString: MainCamera
@@ -190,14 +189,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &8135026299260285344
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3581049040374397680}
-  m_Enabled: 1
 --- !u!1 &3601191658324697731
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,7 +451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LoginPanel: {fileID: 4091310060957614868}
   registerPanel: {fileID: 3601191658324697731}
-  modalWindow: {fileID: 1311106554940877766}
+  modalWindow: {fileID: 0}
 --- !u!1 &4091310060957614868
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,17 +873,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e29da96c463b21d41bd832be152c90e6, type: 3}
---- !u!114 &1311106554940877766 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3783703360366904846, guid: e29da96c463b21d41bd832be152c90e6, type: 3}
-  m_PrefabInstance: {fileID: 2788737932795637192}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ee2fe740d6a28e4a8b595d9aea4f251, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &6336642496572281196 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8161596304387292324, guid: e29da96c463b21d41bd832be152c90e6, type: 3}
