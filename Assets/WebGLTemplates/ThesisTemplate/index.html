@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Unity WebGL Player | {{{ PRODUCT_NAME }}}</title>
@@ -10,6 +12,20 @@
     <link rel="stylesheet" href="<<<TemplateData/diagnostics.css>>>" />
     <script src="<<<TemplateData/diagnostics.js>>>"></script>
     #endif
+
+
+  <style>
+    body, html {
+      overflow: visible !important;
+      position: relative;
+    }
+
+    canvas {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+
   </head>
   <body>
 
