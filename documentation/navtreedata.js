@@ -56,9 +56,9 @@ var NAVTREEINDEX =
 "classCameraScript.html#a292a7b3c52fd201f42e5b0f25c7b4d2d",
 "classGame_1_1GameController.html#a9edcc4224cf73fc093ea0a29b6bda19a",
 "classGame_1_1World_1_1Building.html",
-"classMainPage_1_1FriendWindowHandler.html#aa9e14952826cc8ae861f67015c1156e1",
-"classUser_1_1UserData.html#a5d88a92697600df1a952dda76dd51a96",
-"structAssets_1_1Scripts_1_1Client_1_1DataTypes_1_1ChunkCellContainer.html#a0918e1d9d1b2e13a9b0c9c0e578939e9"
+"classMainPage_1_1FriendWindowHandler.html#a7350dfeb8bc7f3d5e6b6d1d78f18b866",
+"classUser_1_1UserData.html#a5c87b878e86cbc7c969d456431716c71",
+"structAssets_1_1Scripts_1_1Client_1_1DataTypes_1_1ChunkCellContainer.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
