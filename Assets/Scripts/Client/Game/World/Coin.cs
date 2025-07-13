@@ -11,6 +11,7 @@ namespace Game
         /// </summary>
         public class Coin : ThreadSafeMonoBehaviour
         {
+            private bool pickedUp=false;
             /// <summary>
             /// Called every frame
             /// Handles the coin rotation
@@ -26,8 +27,13 @@ namespace Game
             /// <param name="other">What it collided with</param>
             private void OnTriggerEnter(Collider other)
             {
+                if (pickedUp)
+                {
+                    return;
+                }
                 this.gameObject.SetActive(false);
                 other.gameObject.GetComponentInParent<PlayerCar>().PickedUpCoin();
+                pickedUp=true;
             }
         }
     }
