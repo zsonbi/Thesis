@@ -27,7 +27,7 @@ namespace Config
         /// <summary>
         /// Https version path to the backend
         /// </summary>
-        public const string SERVERPATH = "https://thesis.picidolgok.hu:8001";
+        public const string SERVERPATH = "https://thesis.picidolgok.hu";
 
         /// <summary>
         /// Needs "UserIdentification", "Password"
