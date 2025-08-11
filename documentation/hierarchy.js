@@ -43,7 +43,8 @@ var hierarchy =
         [ "User.LoggedInChecker", "classUser_1_1LoggedInChecker.html", null ],
         [ "User.UserController", "classUser_1_1UserController.html", null ],
         [ "Utility.ModalWindow", "classUtility_1_1ModalWindow.html", null ]
-      ] ]
+      ] ],
+      [ "WebGLMobileKeyboardManager", "classWebGLMobileKeyboardManager.html", null ]
     ] ],
     [ "Game.PlayerCar.PoliceContainer", "classGame_1_1PlayerCar_1_1PoliceContainer.html", null ],
     [ "Game.World.RoadGenerator", "classGame_1_1World_1_1RoadGenerator.html", null ],

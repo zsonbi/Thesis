@@ -873,13 +873,15 @@ var sectionId = 'dynsection-0';
 <g id="a_Node000021"><a xlink:href="classGame_1_1World_1_1Coin.html" target="_top" xlink:title="Coin gameobject.">
 <polygon fill="white" stroke="transparent" points="4137.5,-800 3951.5,-800 3951.5,-736 4137.5,-736 4137.5,-800"/>
 <text text-anchor="start" x="4002" y="-788" font-family="Helvetica,sans-Serif" font-size="10.00">Game.World.Coin</text>
-<text text-anchor="start" x="4042.5" y="-773" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="3955.5" y="-773" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="3963.5" y="-773" font-family="Helvetica,sans-Serif" font-size="10.00">bool pickedUp</text>
 <text text-anchor="start" x="3955.5" y="-758" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="3963.5" y="-758" font-family="Helvetica,sans-Serif" font-size="10.00">void Update()</text>
 <text text-anchor="start" x="3955.5" y="-743" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="3963.5" y="-743" font-family="Helvetica,sans-Serif" font-size="10.00">void OnTriggerEnter(Collider other)</text>
 <polygon fill="#666666" stroke="#666666" points="3951.5,-783 3951.5,-783 4137.5,-783 4137.5,-783 3951.5,-783"/>
-<polygon fill="#666666" stroke="#666666" points="3951.5,-768 3951.5,-768 4137.5,-768 4137.5,-768 3951.5,-768"/>
+<polygon fill="#666666" stroke="#666666" points="3951.5,-768 3951.5,-768 3961.5,-768 3961.5,-768 3951.5,-768"/>
+<polygon fill="#666666" stroke="#666666" points="3961.5,-768 3961.5,-768 4137.5,-768 4137.5,-768 3961.5,-768"/>
 <polygon fill="none" stroke="#666666" points="3951.5,-736 3951.5,-800 4137.5,-800 4137.5,-736 3951.5,-736"/>
 </a>
 </g>

@@ -1,9 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,672,129,697"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,696,129,721"/>
 <area shape="rect" id="Node000001" href="$classUtility_1_1CoroutineRunner.html" title="Singleton class to run the coroutines so they are easier to track." alt="" coords="211,647,384,672"/>
-<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="143,674,210,666,211,672,144,679"/>
+<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="139,690,177,682,236,669,237,675,178,687,140,696"/>
 <area shape="rect" id="Node000002" href="$classUtility_1_1ThreadSafeMonoBehaviour.html" title="Safely stores if the gameobject been destroyed in a bool." alt="" coords="177,696,417,721"/>
-<area shape="poly" id="edge3_Node000000_Node000002" title=" " alt="" coords="143,690,177,693,177,699,143,695"/>
+<area shape="poly" id="edge3_Node000000_Node000002" title=" " alt="" coords="143,706,177,706,177,711,143,711"/>
+<area shape="rect" id="Node000035" href="$classWebGLMobileKeyboardManager.html" title=" " alt="" coords="183,745,412,771"/>
+<area shape="poly" id="edge36_Node000000_Node000035" title=" " alt="" coords="135,722,178,731,232,743,231,748,177,737,134,727"/>
 <area shape="rect" id="Node000003" href="$classCameraScript.html" title="Script which follows the player&#39;s car." alt="" coords="544,5,655,31"/>
 <area shape="poly" id="edge4_Node000002_Node000003" title=" " alt="" coords="413,686,415,683,430,660,440,630,446,594,449,554,446,462,438,363,430,264,428,172,431,131,437,95,448,64,463,40,480,26,501,17,543,11,544,16,502,22,483,31,467,44,452,67,442,96,436,132,433,172,436,264,444,363,452,462,454,554,451,595,445,631,435,662,419,686,417,689"/>
 <area shape="rect" id="Node000004" href="$classGame_1_1Car.html" title="Handles the basic Car functionalities." alt="" coords="556,55,643,80"/>
@@ -37,31 +39,31 @@
 <area shape="rect" id="Node000021" href="$classGame_1_1World_1_1Coin.html" title="Coin gameobject." alt="" coords="532,745,667,771"/>
 <area shape="poly" id="edge22_Node000002_Node000021" title=" " alt="" coords="390,721,532,744,531,750,389,726"/>
 <area shape="rect" id="Node000022" href="$classGame_1_1World_1_1GameWorld.html" title="A class for handling chunk loading and unloading." alt="" coords="508,795,691,820"/>
-<area shape="poly" id="edge23_Node000002_Node000022" title=" " alt="" coords="336,725,396,754,466,781,511,792,510,797,465,786,394,759,333,730"/>
+<area shape="poly" id="edge23_Node000002_Node000022" title=" " alt="" coords="401,723,419,732,434,744,443,757,452,770,467,781,509,796,507,801,464,786,448,773,439,760,430,748,416,736,399,728"/>
 <area shape="rect" id="Node000023" href="$classGame_1_1World_1_1Prop.html" title="Prop handler." alt="" coords="532,844,667,869"/>
-<area shape="poly" id="edge24_Node000002_Node000023" title=" " alt="" coords="323,729,385,781,424,808,466,830,499,841,532,848,531,853,497,846,464,835,421,813,382,785,320,733"/>
+<area shape="poly" id="edge24_Node000002_Node000023" title=" " alt="" coords="410,726,419,732,431,744,438,757,444,783,449,808,456,820,467,831,498,846,532,854,531,859,496,851,464,835,452,823,444,810,439,784,433,759,427,747,416,736,407,730"/>
 <area shape="rect" id="Node000024" href="$classMainPage_1_1FriendHandler.html" title="Handles a single friend entry display." alt="" coords="509,893,689,919"/>
-<area shape="poly" id="edge25_Node000002_Node000024" title=" " alt="" coords="316,731,342,766,376,806,418,847,467,880,510,895,508,900,464,884,415,851,372,810,337,769,312,734"/>
+<area shape="poly" id="edge25_Node000002_Node000024" title=" " alt="" coords="412,726,419,732,434,750,442,770,444,808,446,846,453,863,467,880,487,893,510,901,508,906,485,898,464,884,448,866,440,847,438,808,437,771,430,753,415,736,408,730"/>
 <area shape="rect" id="Node000025" href="$classMainPage_1_1FriendWindowHandler.html" title="Handles the friend window display." alt="" coords="483,943,715,968"/>
-<area shape="poly" id="edge26_Node000002_Node000025" title=" " alt="" coords="312,732,334,776,368,830,413,885,438,909,467,929,490,940,488,945,464,934,435,913,409,888,364,833,330,779,307,735"/>
+<area shape="poly" id="edge26_Node000002_Node000025" title=" " alt="" coords="413,727,419,732,438,757,446,782,446,808,444,833,441,858,442,883,449,906,467,929,484,942,481,946,463,933,445,909,437,884,436,858,438,833,441,808,440,783,433,759,415,736,410,731"/>
 <area shape="rect" id="Node000026" href="$classMainPage_1_1MainWindowController.html" title="Handles the main window&#39;s controls." alt="" coords="481,992,718,1017"/>
-<area shape="poly" id="edge27_Node000002_Node000026" title=" " alt="" coords="309,734,329,786,361,854,407,922,435,953,467,978,488,990,485,994,464,983,431,956,403,925,356,856,324,788,304,735"/>
+<area shape="poly" id="edge27_Node000002_Node000026" title=" " alt="" coords="414,727,419,732,441,763,449,795,449,827,444,858,439,889,438,920,446,950,467,979,482,990,479,994,463,983,441,952,433,921,433,889,438,857,443,826,444,795,436,765,415,736,410,731"/>
 <area shape="rect" id="Node000027" href="$classMainPage_1_1ProfileHandler.html" title="Handles the user&#39;s profile such as statistics and logout button." alt="" coords="509,1041,690,1067"/>
-<area shape="poly" id="edge28_Node000002_Node000027" title=" " alt="" coords="307,734,323,796,354,876,375,918,401,959,431,996,467,1028,487,1039,509,1047,508,1052,485,1044,464,1032,428,1000,397,962,371,921,349,878,318,797,301,735"/>
+<area shape="poly" id="edge28_Node000002_Node000027" title=" " alt="" coords="414,727,419,732,434,751,444,770,453,807,451,845,443,883,436,920,434,957,443,993,453,1011,467,1028,486,1042,509,1051,508,1056,484,1047,464,1032,448,1014,438,995,429,957,431,920,438,882,446,845,448,808,439,771,430,754,415,736,410,731"/>
 <area shape="rect" id="Node000028" href="$classMainPage_1_1TaskDisplayHandler.html" title="Task prefab display handler." alt="" coords="490,1091,709,1116"/>
-<area shape="poly" id="edge29_Node000002_Node000028" title=" " alt="" coords="305,734,318,804,347,898,368,948,395,996,428,1040,467,1077,491,1091,488,1096,464,1081,424,1043,391,999,364,950,342,900,313,806,299,735"/>
+<area shape="poly" id="edge29_Node000002_Node000028" title=" " alt="" coords="415,728,419,732,436,754,448,776,454,798,457,820,453,864,443,908,433,951,430,994,433,1015,439,1036,450,1057,467,1077,491,1094,488,1098,464,1081,446,1060,434,1038,427,1016,425,994,428,950,438,907,448,863,452,820,449,799,443,778,432,757,415,736,411,732"/>
 <area shape="rect" id="Node000029" href="$classMainPage_1_1TaskHistoryHandler.html" title="Handles the task history display." alt="" coords="491,1140,707,1165"/>
-<area shape="poly" id="edge30_Node000002_Node000029" title=" " alt="" coords="303,734,314,813,325,864,340,920,362,977,389,1032,424,1083,467,1127,492,1141,489,1146,464,1131,420,1087,385,1035,357,979,335,922,320,865,309,814,298,735"/>
+<area shape="poly" id="edge30_Node000002_Node000029" title=" " alt="" coords="415,728,419,732,438,757,451,782,458,807,461,833,456,883,443,933,431,982,426,1031,429,1055,436,1079,448,1103,467,1127,492,1144,489,1148,464,1131,444,1106,431,1081,423,1056,421,1031,426,981,438,931,450,882,455,833,453,808,446,784,434,760,415,736,411,731"/>
 <area shape="rect" id="Node000030" href="$classMainPage_1_1TaskHistoryWindowHandler.html" title="Task histories window controller." alt="" coords="465,1189,733,1215"/>
-<area shape="poly" id="edge31_Node000002_Node000030" title=" " alt="" coords="302,735,310,821,319,879,334,942,355,1006,383,1069,420,1127,467,1176,484,1187,481,1191,464,1180,416,1130,379,1071,350,1008,329,943,314,880,305,822,297,735"/>
+<area shape="poly" id="edge31_Node000002_Node000030" title=" " alt="" coords="415,728,419,732,441,760,455,788,462,817,465,845,458,901,443,957,428,1013,422,1068,425,1095,432,1122,446,1149,467,1176,480,1187,477,1191,463,1180,442,1152,427,1124,419,1096,417,1068,423,1012,438,956,453,900,459,845,457,818,450,790,436,763,415,736,411,731"/>
 <area shape="rect" id="Node000031" href="$classMainPage_1_1TaskOpenPanelController.html" title="Controller for displaying, editing and creating tasks." alt="" coords="474,1239,725,1264"/>
-<area shape="poly" id="edge32_Node000002_Node000031" title=" " alt="" coords="301,735,306,829,314,893,328,963,348,1035,377,1105,417,1170,440,1199,467,1225,483,1236,480,1241,464,1229,436,1203,412,1173,373,1107,343,1036,322,964,309,894,301,830,296,735"/>
+<area shape="poly" id="edge32_Node000002_Node000031" title=" " alt="" coords="415,728,419,732,432,751,440,775,448,834,448,905,444,981,439,1057,439,1127,447,1186,456,1208,467,1226,480,1236,477,1241,463,1229,451,1211,442,1187,434,1128,434,1057,438,981,442,905,443,835,435,776,427,753,415,736,411,731"/>
 <area shape="rect" id="Node000032" href="$classUser_1_1LoggedInChecker.html" title="Checks if the user has a session stored in the backend." alt="" coords="516,1288,683,1313"/>
-<area shape="poly" id="edge33_Node000002_Node000032" title=" " alt="" coords="305,735,326,852,361,1015,384,1098,409,1174,437,1235,452,1258,467,1275,490,1289,517,1297,515,1303,488,1294,464,1279,448,1261,433,1237,404,1176,379,1100,356,1016,320,853,300,736"/>
+<area shape="poly" id="edge33_Node000002_Node000032" title=" " alt="" coords="415,728,419,732,433,753,442,779,450,844,449,922,443,1006,438,1090,437,1167,446,1231,455,1256,467,1275,490,1291,517,1300,515,1305,487,1296,463,1279,450,1258,441,1232,432,1167,433,1089,438,1006,444,922,445,845,436,780,428,755,415,736,412,732"/>
 <area shape="rect" id="Node000033" href="$classUser_1_1UserController.html" title="Handles the user actions such as registering and login." alt="" coords="525,1337,674,1363"/>
-<area shape="poly" id="edge34_Node000002_Node000033" title=" " alt="" coords="305,735,324,861,358,1039,380,1130,406,1213,435,1280,451,1305,467,1324,494,1340,525,1349,524,1354,492,1345,464,1328,447,1308,431,1282,401,1215,375,1132,353,1040,318,862,299,736"/>
+<area shape="poly" id="edge34_Node000002_Node000033" title=" " alt="" coords="415,728,419,732,434,755,443,783,452,854,450,939,443,1031,437,1122,435,1206,444,1276,454,1303,467,1324,493,1342,525,1350,524,1356,491,1347,463,1328,449,1306,439,1277,430,1206,431,1122,438,1030,445,939,446,855,438,784,429,757,415,736,412,732"/>
 <area shape="rect" id="Node000034" href="$classUtility_1_1ModalWindow.html" title="Modal window for alerting the user." alt="" coords="521,1387,677,1412"/>
-<area shape="poly" id="edge35_Node000002_Node000034" title=" " alt="" coords="304,735,321,869,354,1063,377,1162,403,1252,433,1325,450,1353,467,1373,492,1389,522,1398,520,1403,490,1394,464,1377,445,1356,429,1328,398,1254,372,1163,349,1064,316,870,299,735"/>
+<area shape="poly" id="edge35_Node000002_Node000034" title=" " alt="" coords="415,728,419,732,435,757,445,787,451,824,454,865,451,956,443,1055,436,1154,433,1245,436,1286,442,1321,452,1351,467,1373,492,1391,522,1399,520,1405,490,1396,463,1377,448,1353,437,1322,431,1286,428,1246,430,1154,438,1055,446,956,448,865,446,824,440,789,430,759,415,736,412,732"/>
 <area shape="rect" id="Node000005" href="$classGame_1_1NpcCar.html" title="Object for the npc cars It is not yet used." alt="" coords="789,31,901,56"/>
 <area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="656,59,789,46,790,51,657,64"/>
 <area shape="rect" id="Node000007" href="$classGame_1_1PlayerCar.html" title="Handles the player&#39;s car." alt="" coords="781,80,909,105"/>

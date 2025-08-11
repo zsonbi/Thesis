@@ -53,12 +53,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "BuildingCell_8cs.html",
-"classCameraScript.html#a292a7b3c52fd201f42e5b0f25c7b4d2d",
-"classGame_1_1GameController.html#a9edcc4224cf73fc093ea0a29b6bda19a",
-"classGame_1_1World_1_1Building.html",
-"classMainPage_1_1FriendWindowHandler.html#aa9e14952826cc8ae861f67015c1156e1",
-"classUser_1_1UserData.html#a5d88a92697600df1a952dda76dd51a96",
-"structAssets_1_1Scripts_1_1Client_1_1DataTypes_1_1ChunkCellContainer.html#a0918e1d9d1b2e13a9b0c9c0e578939e9"
+"classCameraScript.html",
+"classGame_1_1GameController.html#a9d697eb362c93e3208af1a5c2385742d",
+"classGame_1_1UI_1_1StarHandler.html#aef5b0407d214f3763d093725c407e985",
+"classMainPage_1_1FriendWindowHandler.html#a6ebf0f7c70458f53c427517bf84bef7d",
+"classUser_1_1UserData.html#a44525484961835f1feaa4dbe715101c0",
+"namespaces.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

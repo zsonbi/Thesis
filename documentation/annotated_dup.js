@@ -72,5 +72,6 @@ var annotated_dup =
     ] ],
     [ "CameraScript", "classCameraScript.html", "classCameraScript" ],
     [ "EdgeRoadContainer", "classEdgeRoadContainer.html", "classEdgeRoadContainer" ],
-    [ "Server", "classServer.html", "classServer" ]
+    [ "Server", "classServer.html", "classServer" ],
+    [ "WebGLMobileKeyboardManager", "classWebGLMobileKeyboardManager.html", null ]
 ];
