@@ -66,7 +66,7 @@ jobs:
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
-          customImage: zsonbi/unityci_with_blender:ubuntu-2022.3.16f1
+          customImage: zsonbi/unityci_with_blender:latest-ubuntu-6000.0.53f1
           coverageOptions: 'generateAdditionalMetrics;generateHtmlReport;generateBadgeReport;assemblyFilters:-*Assembly-CSharp*'
 
 
@@ -121,7 +121,7 @@ jobs:
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
           targetPlatform: ${{ matrix.targetPlatform }}
-          customImage: zsonbi/unityci_with_blender:ubuntu-2022.3.16f1
+          customImage: zsonbi/unityci_with_blender:latest-ubuntu-6000.0.53f1
 
       - uses: actions/upload-artifact@v4.3.3
         with:
@@ -163,7 +163,7 @@ jobs:
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
           targetPlatform: ${{ matrix.targetPlatform }}
-          customImage: zsonbi/unityci_with_blender:ubuntu_android-2022.3.16f1
+          customImage: zsonbi/unityci_with_blender:latest-android-6000.0.53f1
       - uses: actions/upload-artifact@v4.3.3
         with:
           name: Build-${{ matrix.targetPlatform }}
@@ -198,7 +198,7 @@ jobs:
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
           targetPlatform: ${{ matrix.targetPlatform }}
-          customImage: zsonbi/unityci_with_blender:ubuntu_windows-2022.3.16f1
+          customImage: zsonbi/unityci_with_blender:latest-windows-6000.0.53f1
       - uses: actions/upload-artifact@v4.3.3
         with:
           name: Build-${{ matrix.targetPlatform }}
@@ -207,7 +207,7 @@ jobs:
 
   buildForWebGL:
         needs: test
-        if: contains(github.ref, 'master') || contains(github.ref, 'dev') || contains(github.ref, 'none') 
+        if: contains(github.ref, 'master') || contains(github.ref, 'pages-mobile-fix') 
         name: Build for ${{ matrix.targetPlatform }}
         runs-on: ubuntu-latest
         strategy:
@@ -241,7 +241,7 @@ jobs:
             with:
               targetPlatform: ${{ matrix.targetPlatform }}
               buildMethod: BuildCommand.PerformBuild
-              customImage: zsonbi/unityci_with_blender:ubuntu_webgl-2022.3.16f1
+              customImage: zsonbi/unityci_with_blender:latest-webgl-6000.0.53f1
               buildName: WebGL
           - run: 
               sudo mkdir -p release;
