@@ -251,7 +251,7 @@ var assemblies = [
       { "name": "Game.CopCar", "rp": "ThesisScripts_CopCar.html", "cl": 47, "ucl": 11, "cal": 58, "tl": 100, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.EffectScript", "rp": "ThesisScripts_EffectScript.html", "cl": 1, "ucl": 0, "cal": 1, "tl": 17, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.EnableWheelPhysicMaterial", "rp": "ThesisScripts_EnableWheelPhysicMaterial.html", "cl": 16, "ucl": 0, "cal": 16, "tl": 45, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "Game.GameController", "rp": "ThesisScripts_GameController.html", "cl": 115, "ucl": 10, "cal": 125, "tl": 291, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "Game.GameController", "rp": "ThesisScripts_GameController.html", "cl": 117, "ucl": 8, "cal": 125, "tl": 291, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.NpcCar", "rp": "ThesisScripts_NpcCar.html", "cl": 6, "ucl": 0, "cal": 6, "tl": 25, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.PlayerCar", "rp": "ThesisScripts_PlayerCar.html", "cl": 124, "ucl": 49, "cal": 173, "tl": 315, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "Game.UI.GameUI", "rp": "ThesisScripts_GameUI.html", "cl": 106, "ucl": 22, "cal": 128, "tl": 327, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
